@@ -11,18 +11,20 @@ import './index.scss'
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
 interface IndexPageProps {
-  data: {
-  }
+    data: {
+    }
 }
 
 const membersQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {type: {in: ["lead", "member"]}}, sort: {order: ASC, fields: [type, family_name]}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
-            homepage
             given_name
             family_name
-            type
+            middle_name
+            homepage
+            short_bio
+            membership
             headshot {
                 childImageSharp {
                     fixed(width: 200, height: 125) {
@@ -36,23 +38,15 @@ const membersQuery = graphql`query membersAndLeads {
         nodes {
             id
             title
-            year
-            media {
-                id
-                name
-                artifact {
-                    id
-                    publicURL
-                }
-            }
-            venue {
-                short_name
-                long_name
-            }
+            award
             authors {
                 id
-                family_name
-                given_name
+            }
+            venue_year {
+                id
+                location
+                venue
+                year
             }
         }
     }
