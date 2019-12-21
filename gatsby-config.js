@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'http://localhost:1337',
+                apiURL: 'http://blackbox:1337',
                 contentTypes: [
                     'author',
                     'publication',
@@ -19,6 +19,7 @@ module.exports = {
                 queryLimit: 1000
             }
         },
+        `gatsby-plugin-graphql-codegen`,
         `gatsby-plugin-lodash`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,

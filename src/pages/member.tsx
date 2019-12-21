@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Members from '../templates/members';
-import PublicationList from '../templates/publication_list';
+import { PublicationListDisplay } from '../templates/publications';
 import { StaticQuery, graphql } from 'gatsby';
 
 import * as ReactMarkdown from 'react-markdown';
