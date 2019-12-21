@@ -19,6 +19,7 @@ module.exports = {
                 queryLimit: 1000
             }
         },
+        `gatsby-plugin-lodash`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,

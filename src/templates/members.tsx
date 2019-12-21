@@ -22,17 +22,17 @@ export default class extends React.Component<any, any> {
 
 class MemberDisplay extends React.Component<any, any> {
     constructor(props: any, context: any) {
-        super(props, context)
+        super(props, context);
     }
     public render() {
         const { data } = this.props;
         return <li>
-            {/* <Link to={`/${data.id}`}> */}
-            <a href={data.homepage} target='_blank'>
+            <Link to={`/${data.given_name}_${data.family_name}`}>
+            {/* <a href={data.homepage} target='_blank'> */}
                 <Image fixed={data.headshot.childImageSharp.fixed} />
                 {`${data.given_name} ${data.family_name}`}
-            </a>
-            {/* </Link> */}
+            {/* </a> */}
+            </Link>
         </li>;
     }
 }

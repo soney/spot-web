@@ -39,15 +39,38 @@ const membersQuery = graphql`query membersAndLeads {
             id
             title
             award
+            pub_details
             authors {
                 id
+                given_name
+                family_name
+                homepage
             }
             venue_year {
                 id
                 location
                 venue
                 year
+                conference_start
+                conference_end
             }
+            pdf {
+                publicURL
+                childImageSharp {
+                    fixed(width: 200, height: 125) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
+        }
+    }
+    allStrapiVenue {
+        nodes {
+            id,
+            strapiId
+            long_name
+            short_name
+            type
         }
     }
 }`;
@@ -84,7 +107,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     <h1>spot group</h1>
                     <p>Welcome to the homepage of the spot group.</p>
                     <Members data={data.allStrapiAuthor} />
-                    <PublicationList data={data.allStrapiPublication} />
+                    <PublicationList data={{publications: data.allStrapiPublication, venues: data.allStrapiVenue }} />
                 </div>
             )} />
         );
