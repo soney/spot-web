@@ -8,7 +8,6 @@ import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiPu
 
 import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 import '@fortawesome/fontawesome-free/scss/solid.scss';
-import { DH_NOT_SUITABLE_GENERATOR } from 'constants';
 
 const venuesQuery = graphql`query venues {
         allStrapiVenue {
@@ -25,6 +24,7 @@ const venuesQuery = graphql`query venues {
 interface PublicationListDisplayProps {
     groupByVenue: boolean;
     data: ReadonlyArray<StrapiPublication>
+    limit: number|boolean
 }
 
 export class PublicationListDisplay extends React.Component<PublicationListDisplayProps, {}> {
@@ -33,7 +33,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
     }
     public render(): JSX.Element {
         return <StaticQuery query={venuesQuery}
-                render={venuesData => <PublicationListDisplayWithVenues groupByVenue={this.props.groupByVenue} data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
+                render={venuesData => <PublicationListDisplayWithVenues limit={this.props.limit} groupByVenue={this.props.groupByVenue} data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
     }
 }
 
@@ -45,30 +45,30 @@ class PublicationListDisplayWithVenues extends React.Component<PublicationListDi
         super(props, context)
     }
     public render() {
-        const { data, groupByVenue, venues } = this.props;
-        if(groupByVenue) {
-            const venuePubs: Map<number, StrapiPublication[]> = new Map();
-            const idToVenueYear: Map<number, StrapiPublicationVenue_Year> = new Map();
-            const venueTimes: Map<number, number> = new Map();
-            data.forEach((pub) => {
-                const { venue_year } = pub;
-                const vyid = venue_year ? venue_year.id : -1;
-                if(venuePubs.has(vyid)) {
-                    venuePubs.get(vyid).push(pub);
-                } else {
-                    venuePubs.set(vyid, [pub]);
-                    idToVenueYear.set(vyid, venue_year);
-                }
+        const { data, groupByVenue, venues, limit } = this.props;
+        const venuePubs: Map<number, StrapiPublication[]> = new Map();
+        const idToVenueYear: Map<number, StrapiPublicationVenue_Year> = new Map();
+        const venueTimes: Map<number, number> = new Map();
+        data.forEach((pub) => {
+            const { venue_year } = pub;
+            const vyid = venue_year ? venue_year.id : -1;
+            if(venuePubs.has(vyid)) {
+                venuePubs.get(vyid).push(pub);
+            } else {
+                venuePubs.set(vyid, [pub]);
+                idToVenueYear.set(vyid, venue_year);
+            }
 
-                if(venue_year) {
-                    venueTimes.set(vyid, new Date(venue_year.conference_start).getTime());
-                }
-            });
-            const vyOrder = Array.from(venuePubs.keys()).sort((a, b) => {
-                const aVenueTime = venueTimes.has(a) ? venueTimes.get(a) : -1;
-                const bVenueTime = venueTimes.has(b) ? venueTimes.get(b) : -1;
-                return bVenueTime - aVenueTime;
-            });
+            if(venue_year) {
+                venueTimes.set(vyid, new Date(venue_year.conference_start).getTime());
+            }
+        });
+        const vyOrder = Array.from(venuePubs.keys()).sort((a, b) => {
+            const aVenueTime = venueTimes.has(a) ? venueTimes.get(a) : -1;
+            const bVenueTime = venueTimes.has(b) ? venueTimes.get(b) : -1;
+            return bVenueTime - aVenueTime;
+        });
+        if(groupByVenue) {
             const vyDisplays: (JSX.Element|string)[] = vyOrder.map((vyid: number) => {
                 let venueString: string;
                 const venueYear = idToVenueYear.get(vyid);
@@ -87,28 +87,32 @@ class PublicationListDisplayWithVenues extends React.Component<PublicationListDi
                     return <li key={pub.id}><PublicationSummaryWithVenuesDisplay data={pub} venues={venues} /></li>;
                 });
 
+                const venueDisplay = venueYear.homepage ? <a href={venueYear.homepage} target='_blank'>{venueString}</a> : {venueString};
+
                 return <li key={vyid}>
-                    {venueString}
+                    {venueDisplay}
                     <ul>{pubDisplays}</ul>
                 </li>;
             });
-            // console.log(vyOrder);
-            // venues.nodes.forEach((v) => {
-                // const { id, start_time } = v;
-            // })
-            // console.log(data);
+
             return <ul>
                 {vyDisplays}
             </ul>;
         } else {
+            const pubDisplays: JSX.Element[] = [];
+            vyOrder.forEach((vyid: number) => {
+                venuePubs.get(vyid).forEach((pub) => {
+                    pubDisplays.push(<li key={pub.id}><PublicationSummaryWithVenuesDisplay data={pub} venues={venues} /></li>);
+                });
+            });
 
+            return <ul>{pubDisplays}</ul>;
         }
-        console.log(data, groupByVenue, venues);
-        return <div>pubs!</div>;
     }
 }
 
-function findVenue(id: number, data: ReadonlyArray<StrapiVenue>): StrapiVenue|null {
+
+export function findVenue(id: number, data: ReadonlyArray<StrapiVenue>): StrapiVenue|null {
     for(let i: number = 0; i<data.length; i++) {
         if(id === data[i].strapiId) {
             return data[i];
@@ -184,17 +188,17 @@ export class PublicationSummaryWithVenuesDisplay extends React.Component<Publica
     public render(): JSX.Element {
         const { data, venues } = this.props;
         const authors = Array.from(data.authors) as any as StrapiAuthor[];
-        // console.log(data.authors);
-        // const authorListDisplay = <AuthorListDisplay authors={data.authors} />;
         const venue = findVenue(data.venue_year.venue, venues.nodes);
         let venue_long_name: string;
         if(venue) {
-            venue_long_name = `${venue.long_name} (${data.venue_year.year})`;
+            venue_long_name = `${venue.long_name} (${data.venue_year.year}). ${data.venue_year.location}`;
         } else {
-            venue_long_name = `(${data.venue_year.year})`;
+            venue_long_name = `(${data.venue_year.year}). ${data.venue_year.location}`;
         }
+        const downloadName = getDownloadName(data, venues.nodes);
+        // const pdfDownload = data.pdf ? <a href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return <span>
-            <AuthorListDisplay authors={authors} />. {data.title}. {venue_long_name} {data.pub_details} <AwardDisplay data={data.award} />
+            <AuthorListDisplay authors={authors} />. <Link to={`/p/${downloadName}`}>{data.title}</Link>. {venue_long_name} {data.pub_details} <AwardDisplay data={data.award} />
         </span>;
     }
 }
@@ -236,50 +240,4 @@ export function getDownloadName(pub: StrapiPublication, venues: ReadonlyArray<St
         }
     }
     return `${shortAuthors}-${short_venue_year}-${pub.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
-}
-
-class PublicationSummary extends React.Component<any, any> {
-    constructor(props: any, context: any) {
-        super(props, context)
-    }
-    public render() {
-        const { data, venues } = this.props;
-        let year_display = null;
-        let venue_display = null;
-        let venue_short_name = null;
-        let venue_location = null;
-        let year = null;
-        if(data.venue_year) {
-            const matchingVenues =  venues.nodes.filter((v: any) => v.strapiId===data.venue_year.venue);
-            if(matchingVenues.length > 0) {
-                const venue = matchingVenues[0];
-                venue_display = <span className="paper-venue">{venue.long_name}</span>;
-                venue_short_name = venue.short_name;
-            }
-            venue_location = data.venue_year.location;
-            year = data.venue_year.year;
-            year_display = <span className="paper-year">{year}</span>;
-        }
-
-        const awardDisplay = (data.award === 'best_paper') ? <i className='fas fa-trophy'></i> :
-                (data.award === 'honorable_mention' ? <i className="fas fa-award"></i>: null);
-        
-        // console.log(data.pdf);
-        const firstAuthor = data.authors.length > 0 ? data.authors[0].family_name : '';
-        const fname = `${firstAuthor}-${venue_short_name}${year}-${data.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
-        const pdfDisplay = data.pdf ? <a href={data.pdf.publicURL} download={fname}>PDF</a> : null;
-
-        // const start = new Date(new Date(data.venue_year.conference_start).getTime() + 12*60*60*1000);
-        // const end = new Date(new Date(data.venue_year.conference_end).getTime() + 12*60*60*1000);
-        // console.log(start, end);
-
-        // console.log(data);
-        return <li className='paper-summary'>
-            <AuthorListDisplay authors={data.authors} />. <span className="paper-title"><Link to={`/p/${fname}`}>{data.title}</Link></span>. {venue_display}. ({year_display}). {venue_location} {data.pub_details}.
-            {awardDisplay}
-            {pdfDisplay}
-            {/* <span className="paper-title">{data.title}.</span> <span className="paper-venue">{data.venue.long_name} ({data.venue.short_name})</span>. <span className="paper-year">{data.year}</span> */}
-            {/* {mediaDisplays} */}
-        </li>;
-    }
 }

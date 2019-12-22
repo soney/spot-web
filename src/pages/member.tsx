@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Members from '../templates/members';
 import { PublicationListDisplay } from '../templates/publications';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import * as ReactMarkdown from 'react-markdown';
 
 import Link from 'gatsby-link'
 import Image from 'gatsby-image';
+import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {
@@ -33,29 +33,34 @@ export const memberQuery = graphql`query member($id: String!) {
     }
 }`;
 
+interface MemberProps {
+    data: {
+        strapiAuthor: StrapiAuthor,
+    }
+    pageContext: {
+        pubs: ReadonlyArray<StrapiPublication>
+    }
+}
 
-
-export default class extends React.Component<any, any> {
-    constructor(props: any, context: any) {
+export default class extends React.Component<MemberProps, {}> {
+    constructor(props: MemberProps, context: {}) {
         super(props, context);
     }
     public render() {
-        const { data } = this.props;
+        const author = this.props.data.strapiAuthor;
         const pubs = this.props.pageContext.pubs;
-        const links = data.strapiAuthor.links.map((l) => {
+        const links = author.links.map((l) => {
             return <li key={l.id}><a href={l.url} target='_blank'>{l.description}</a></li>
         });
-        const pubsDisplay = pubs.map((p) => {
-            return <li>{p.title}</li>
-        })
+        const pubsDisplay = <PublicationListDisplay limit={false} data={pubs} groupByVenue={false} />
         return (
             <div>
                 <Link to='/'>(home)</Link>
-                <h1>{data.strapiAuthor.given_name} {data.strapiAuthor.family_name}</h1>
-                <Image fixed={data.strapiAuthor.headshot.childImageSharp.fixed} />
-                <a href={data.strapiAuthor.homepage} target='_blank'>Homepage</a>
+                <h1>{author.given_name} {author.family_name}</h1>
+                <Image fixed={author.headshot.childImageSharp.fixed as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
+                <a href={author.homepage} target='_blank'>Homepage</a>
                 <ul>{links}</ul>
-                <ReactMarkdown source={data.strapiAuthor.long_bio} />
+                <ReactMarkdown source={author.long_bio} />
                 <ul>{pubsDisplay}</ul>
             </div>
         );

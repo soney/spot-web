@@ -43,6 +43,9 @@ exports.createPages = ({ actions, graphql }) => {
                         location
                         venue
                         year
+                        homepage
+                        conference_start
+                        conference_end
                     }
                 }
             }
@@ -72,28 +75,48 @@ exports.createPages = ({ actions, graphql }) => {
         });
     });
     result.data.allStrapiPublication.nodes.forEach(( node ) => {
-        let venue_short_name;
-        let year;
-        if(node.venue_year) {
-            const matchingVenues = result.data.allStrapiVenue.nodes.filter((v) => v.strapiId===node.venue_year.venue);
-            if(matchingVenues.length > 0) {
-                const venue = matchingVenues[0];
-                venue_short_name = venue.short_name;
-            }
-            year = node.venue_year.year;
-        }
-        const firstAuthor = node.authors.length > 0 ? node.authors[0].family_name : '';
-        const fname = `${firstAuthor}-${venue_short_name}${year}-${node.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
+        const downloadName = getDownloadName(node, result.data.allStrapiVenue.nodes);
         createPage({
-            path: `/p/${fname}`,
+            path: `/p/${downloadName}`,
             component: path.resolve(`src/pages/publication.tsx`),
             context: {
-                id: node.id,
-                fname,
-                venue_short_name
+                id: node.id
             }
         });
     });
 })
     return getAuthors;
+}
+
+function getDownloadName(pub, venues) {
+    let shortAuthors = '';
+    if(pub.authors.length === 1) {
+        shortAuthors = `${pub.authors[0].family_name}`;
+    } else if(pub.authors.length === 2) {
+        shortAuthors = `${pub.authors[0].family_name} and ${pub.authors[1].family_name}`;
+    } else if(pub.authors.length > 2) {
+        shortAuthors = `${pub.authors[0].family_name} et al`;
+    }
+    let short_venue_year = '';
+    if(pub.venue_year) {
+        if(pub.venue_year.venue) {
+            const venue = findVenue(pub.venue_year.venue, venues);
+            if(venue) {
+                short_venue_year = `${venue.short_name}${pub.venue_year.year}`;
+            } else {
+                short_venue_year = `${pub.venue_year.year}`;
+            }
+        } else {
+            short_venue_year = ``;
+        }
+    }
+    return `${shortAuthors}-${short_venue_year}-${pub.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
+}
+function findVenue(id, data) {
+    for(let i = 0; i<data.length; i++) {
+        if(id === data[i].strapiId) {
+            return data[i];
+        }
+    }
+    return  null;
 }

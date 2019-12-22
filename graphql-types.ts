@@ -1830,15 +1830,11 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
   id?: Maybe<Scalars['String']>,
   pubs?: Maybe<Array<Maybe<SitePageContextPubs>>>,
-  fname?: Maybe<Scalars['String']>,
-  venue_short_name?: Maybe<Scalars['String']>,
 };
 
 export type SitePageContextFilterInput = {
   id?: Maybe<StringQueryOperatorInput>,
   pubs?: Maybe<SitePageContextPubsFilterListInput>,
-  fname?: Maybe<StringQueryOperatorInput>,
-  venue_short_name?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SitePageContextPubs = {
@@ -1880,6 +1876,8 @@ export type SitePageContextPubsVenue_Year = {
   location?: Maybe<Scalars['String']>,
   venue?: Maybe<Scalars['Int']>,
   year?: Maybe<Scalars['Int']>,
+  conference_start?: Maybe<Scalars['Date']>,
+  conference_end?: Maybe<Scalars['Date']>,
 };
 
 export type SitePageContextPubsVenue_YearFilterInput = {
@@ -1887,6 +1885,8 @@ export type SitePageContextPubsVenue_YearFilterInput = {
   location?: Maybe<StringQueryOperatorInput>,
   venue?: Maybe<IntQueryOperatorInput>,
   year?: Maybe<IntQueryOperatorInput>,
+  conference_start?: Maybe<DateQueryOperatorInput>,
+  conference_end?: Maybe<DateQueryOperatorInput>,
 };
 
 export type SitePageEdge = {
@@ -1999,8 +1999,8 @@ export type SitePageFieldsEnum =
   'context___pubs___venue_year___location' |
   'context___pubs___venue_year___venue' |
   'context___pubs___venue_year___year' |
-  'context___fname' |
-  'context___venue_short_name' |
+  'context___pubs___venue_year___conference_start' |
+  'context___pubs___venue_year___conference_end' |
   'pluginCreator___id' |
   'pluginCreator___parent___id' |
   'pluginCreator___parent___parent___id' |

@@ -2,15 +2,20 @@ import * as React from 'react'
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link'
 import Image from 'gatsby-image';
+import { StrapiAuthor } from '../../graphql-types';
 
-export default class extends React.Component<any, any> {
-    constructor(props: any, context: any) {
+interface MemberListDisplayProps {
+    data: ReadonlyArray<StrapiAuthor>
+}
+
+export class MemberListDisplay extends React.Component<MemberListDisplayProps, {}> {
+    constructor(props: MemberListDisplayProps, context: {}) {
         super(props, context)
     }
     public render() {
         const { data } = this.props;
-        const memberDisplays = data.nodes.map((node: any) => (
-            <MemberDisplay key={node.id} data={node} />
+        const memberDisplays = data.map((node: StrapiAuthor) => (
+            <li key={node.id}><MemberDisplay data={node} /></li>
         ));
         return <div>
             <ul>
@@ -20,19 +25,19 @@ export default class extends React.Component<any, any> {
     }
 }
 
-class MemberDisplay extends React.Component<any, any> {
-    constructor(props: any, context: any) {
+interface MemberDisplayProps {
+    data: StrapiAuthor
+}
+
+class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
+    constructor(props: MemberDisplayProps, context: {}) {
         super(props, context);
     }
     public render() {
         const { data } = this.props;
-        return <li>
-            <Link to={`/${data.given_name}_${data.family_name}`}>
-            {/* <a href={data.homepage} target='_blank'> */}
-                <Image fixed={data.headshot.childImageSharp.fixed} />
+        return <Link to={`/${data.given_name}_${data.family_name}`}>
+                <Image fixed={data.headshot.childImageSharp.fixed as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />
                 {`${data.given_name} ${data.family_name}`}
-            {/* </a> */}
-            </Link>
-        </li>;
+            </Link>;
     }
 }

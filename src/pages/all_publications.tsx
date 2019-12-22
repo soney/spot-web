@@ -8,25 +8,7 @@ import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection } from '.
 
 import './index.scss'
 
-export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
-        nodes {
-            id
-            given_name
-            family_name
-            middle_name
-            homepage
-            short_bio
-            membership
-            headshot {
-                childImageSharp {
-                    fixed(width: 200, height: 125) {
-                        ...GatsbyImageSharpFixed
-                    }
-                }
-            }
-        }
-    }
+export const indexQuery = graphql`query allPubs {
     allStrapiPublication {
         nodes {
             id
@@ -44,14 +26,8 @@ export const indexQuery = graphql`query membersAndLeads {
                 location
                 venue
                 year
-                homepage
                 conference_start
                 conference_end
-            }
-            small_thumbnail {
-                fixed(width: 200, height: 125) {
-                    ...GatsbyImageSharpFixed
-                }
             }
             pdf {
                 publicURL
@@ -67,7 +43,6 @@ export const indexQuery = graphql`query membersAndLeads {
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: StrapiAuthorGroupConnection,
         allStrapiPublication: StrapiPublicationGroupConnection
     }
 }
@@ -79,11 +54,8 @@ export default class extends React.Component<IndexPageProps, {}> {
     public render() {
         const { data } = this.props;
         return <div className='container'>
-            <h1>spot group</h1>
-            <p>Welcome to the homepage of the spot group.</p>
-            <MemberListDisplay data={data.allStrapiAuthor.nodes} />
-            <PublicationListDisplay limit={10} groupByVenue={true} data={ data.allStrapiPublication.nodes } />
-            <Link to="/all_publications">(all publications)</Link>
+            <Link to='/'>(home)</Link>
+            <PublicationListDisplay limit={false} groupByVenue={true} data={ data.allStrapiPublication.nodes } />
         </div>;
     }
 }

@@ -1,12 +1,11 @@
 import * as React from 'react'
-import Members from '../templates/members';
-import { PublicationListDisplay } from '../templates/publications';
-import { StaticQuery, graphql } from 'gatsby';
-
-import * as ReactMarkdown from 'react-markdown';
+import { AwardDisplay, getDownloadName, findVenue } from '../templates/publications';
+import { graphql } from 'gatsby';
 
 import Link from 'gatsby-link'
 import Image from 'gatsby-image';
+import { StrapiPublication, StrapiAuthor, StrapiVenueConnection } from '../../graphql-types';
+import { AuthorListDisplay } from '../templates/authors';
 
 export const pubQuery = graphql`query publication($id: String!) {
     strapiPublication(id: {eq: $id}) {
@@ -28,42 +27,66 @@ export const pubQuery = graphql`query publication($id: String!) {
             id
             year
             venue
+            homepage
+        }
+    }
+    allStrapiVenue {
+        nodes {
+            id,
+            strapiId
+            long_name
+            short_name
+            type
         }
     }
 }`;
 
-export default class extends React.Component<any, any> {
-    constructor(props: any, context: any) {
+
+interface PublicationProps {
+    data: {
+        strapiPublication: StrapiPublication,
+        allStrapiVenue: StrapiVenueConnection
+    }
+}
+
+export default class extends React.Component<PublicationProps, {}> {
+    constructor(props: PublicationProps, context: {}) {
         super(props, context);
     }
     public render() {
-        const { data } = this.props;
-        const authorsDisplay = data.strapiPublication.authors.map((author: any) => {
-            // if(author.homepage) {
-                // return <li key={author.id} className='paper-author'><a href={author.homepage} target='_blank'>{author.given_name} {author.family_name}</a></li>
-            // } else {
-                return <li key={author.id} className='paper-author'>{author.given_name} {author.family_name}</li>
-            // }
-        });
-        const awardDisplay = (data.strapiPublication.award === 'best_paper') ? <i className='fas fa-trophy'></i> :
-                (data.strapiPublication.award === 'honorable_mention' ? <i className="fas fa-award"></i>: null);
-        
-        // console.log(data.pdf);
-        // const firstAuthor = data.authors.length > 0 ? data.authors[0].family_name : '';
-        // const fname = `${firstAuthor}-${venue_short_name}${year}-${data.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
-        const fname = this.props.pageContext.fname;
-        const pdfDisplay = data.strapiPublication.pdf ? <a href={data.strapiPublication.pdf.publicURL} download={fname}>PDF</a> : null;
+        const publication = this.props.data.strapiPublication;
+        const venues = this.props.data.allStrapiVenue.nodes;
+
+        const authors = Array.from(publication.authors) as any as StrapiAuthor[];
+        const authorsDisplay = <AuthorListDisplay authors={authors} />;
+        const awardDisplay = <AwardDisplay data={publication.award} />;
+        const downloadName = getDownloadName(publication, venues);
+
+        let venue_str: string = '';
+        if(publication.venue_year) {
+            const venue = findVenue(publication.venue_year.venue, venues);
+            if(venue) {
+                venue_str = `${venue.short_name} ${publication.venue_year.year}`;
+            } else {
+                venue_str = `${publication.venue_year.year}`;
+            }
+        } else {
+            venue_str = ``;
+        }
+        console.log(publication.venue_year.homepage)
+
+        const pdfDisplay = publication.pdf ? <a href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return (
             <div>
                 <Link to='/'>(home)</Link>
-                <h1>{data.strapiPublication.title}</h1>
-                {this.props.pageContext.venue_short_name} {data.strapiPublication.venue_year.year}
+                <h1>{publication.title}</h1>
+                <h2>{venue_str}</h2>
                 {awardDisplay}
                 <ul>
                     {authorsDisplay}
                 </ul>
                 {pdfDisplay}
-                <p>{data.strapiPublication.abstract}</p>
+                <p>{publication.abstract}</p>
             </div>
         );
     }
