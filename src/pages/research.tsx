@@ -1,12 +1,10 @@
 import * as React from 'react'
-import { MemberListDisplay } from '../templates/members';
-import { PublicationListDisplay } from '../templates/publications';
+import { PublicationListDisplay } from '../components/publications';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link'
+import { Layout } from '../components/layout';
 
-import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection } from '../../graphql-types';
-
-import './index.scss'
+import { StrapiPublicationGroupConnection } from '../../graphql-types';
 
 export const indexQuery = graphql`query allPubs {
     allStrapiPublication {
@@ -26,6 +24,7 @@ export const indexQuery = graphql`query allPubs {
                 location
                 venue
                 year
+                homepage
                 conference_start
                 conference_end
             }
@@ -53,9 +52,9 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        return <div className='container'>
-            <Link to='/'>(home)</Link>
-            <PublicationListDisplay limit={false} groupByVenue={true} data={ data.allStrapiPublication.nodes } />
-        </div>;
+        // console.log(data.allStrapiPublication.nodes)
+        return <Layout>
+            <PublicationListDisplay groupByVenue={true} data={ data.allStrapiPublication.nodes } />
+        </Layout>;
     }
 }

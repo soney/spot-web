@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'http://localhost:1337',
+                apiURL: 'http://blackbox:1337',
                 contentTypes: [
                     'author',
                     'publication',

@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { AwardDisplay, getDownloadName, findVenue } from '../templates/publications';
+import { AwardDisplay, getDownloadName, findVenue } from '../components/publications';
 import { graphql } from 'gatsby';
 
 import Link from 'gatsby-link'
 import Image from 'gatsby-image';
 import { StrapiPublication, StrapiAuthor, StrapiVenueConnection } from '../../graphql-types';
-import { AuthorListDisplay } from '../templates/authors';
+import { AuthorListDisplay } from '../components/authors';
+import { Layout } from '../components/layout';
 
 export const pubQuery = graphql`query publication($id: String!) {
     strapiPublication(id: {eq: $id}) {
@@ -73,21 +74,29 @@ export default class extends React.Component<PublicationProps, {}> {
         } else {
             venue_str = ``;
         }
-        console.log(publication.venue_year.homepage)
 
         const pdfDisplay = publication.pdf ? <a href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return (
-            <div>
-                <Link to='/'>(home)</Link>
-                <h1>{publication.title}</h1>
-                <h2>{venue_str}</h2>
-                {awardDisplay}
-                <ul>
-                    {authorsDisplay}
-                </ul>
-                {pdfDisplay}
-                <p>{publication.abstract}</p>
-            </div>
+            <Layout>
+                <section className="hero">
+                    <div className="hero-body">
+                        <div className="container">
+                            <h1 className="title">{publication.title}</h1>
+                            <h2 className="subtitle">{authorsDisplay}</h2>
+                        </div>
+                    </div>
+                </section>
+                <div className="columns">
+                    <div className="column is-one-quarter">
+                        {venue_str}
+                        {awardDisplay}
+                        {pdfDisplay}
+                    </div>
+                    <div className="column">
+                        <p>{publication.abstract}</p>
+                    </div>
+                </div>
+            </Layout>
         );
     }
 }

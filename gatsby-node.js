@@ -19,8 +19,7 @@ const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
-    const getAuthors = makeRequest(graphql, `
-        {
+    const getAuthors = makeRequest(graphql, `{
             allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}) {
                 nodes {
                     id
@@ -33,6 +32,7 @@ exports.createPages = ({ actions, graphql }) => {
                 nodes {
                     id
                     title
+                    award
                     authors {
                         id
                         given_name
@@ -58,34 +58,33 @@ exports.createPages = ({ actions, graphql }) => {
                     type
                 }
             }
-    }
-`).then(result => {
-    result.data.allStrapiAuthor.nodes.forEach(( node ) => {
-        const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
-            const authors = pn.authors;
-            return authors.some((a) => a.id===node.strapiId)
+        }`).then(result => {
+            result.data.allStrapiAuthor.nodes.forEach(( node ) => {
+                const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
+                    const authors = pn.authors;
+                    return authors.some((a) => a.id===node.strapiId)
+                });
+                createPage({
+                    path: `/${node.given_name}_${node.family_name}`,
+                    component: path.resolve(`src/templates/member.tsx`),
+                    context: {
+                        id: node.id,
+                        pubs: authorPubs
+                    }
+                });
+            });
+            result.data.allStrapiPublication.nodes.forEach(( node ) => {
+                const downloadName = getDownloadName(node, result.data.allStrapiVenue.nodes);
+                createPage({
+                    path: `/p/${downloadName}`,
+                    component: path.resolve(`src/templates/publication.tsx`),
+                    context: {
+                        id: node.id
+                    }
+                });
+            });
         });
-        createPage({
-            path: `/${node.given_name}_${node.family_name}`,
-            component: path.resolve(`src/pages/member.tsx`),
-            context: {
-                id: node.id,
-                pubs: authorPubs
-            }
-        });
-    });
-    result.data.allStrapiPublication.nodes.forEach(( node ) => {
-        const downloadName = getDownloadName(node, result.data.allStrapiVenue.nodes);
-        createPage({
-            path: `/p/${downloadName}`,
-            component: path.resolve(`src/pages/publication.tsx`),
-            context: {
-                id: node.id
-            }
-        });
-    });
-})
-    return getAuthors;
+    return Promise.all([getAuthors]);
 }
 
 function getDownloadName(pub, venues) {

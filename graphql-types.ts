@@ -1840,6 +1840,7 @@ export type SitePageContextFilterInput = {
 export type SitePageContextPubs = {
   id?: Maybe<Scalars['String']>,
   title?: Maybe<Scalars['String']>,
+  award?: Maybe<Scalars['String']>,
   authors?: Maybe<Array<Maybe<SitePageContextPubsAuthors>>>,
   venue_year?: Maybe<SitePageContextPubsVenue_Year>,
 };
@@ -1863,6 +1864,7 @@ export type SitePageContextPubsAuthorsFilterListInput = {
 export type SitePageContextPubsFilterInput = {
   id?: Maybe<StringQueryOperatorInput>,
   title?: Maybe<StringQueryOperatorInput>,
+  award?: Maybe<StringQueryOperatorInput>,
   authors?: Maybe<SitePageContextPubsAuthorsFilterListInput>,
   venue_year?: Maybe<SitePageContextPubsVenue_YearFilterInput>,
 };
@@ -1876,6 +1878,7 @@ export type SitePageContextPubsVenue_Year = {
   location?: Maybe<Scalars['String']>,
   venue?: Maybe<Scalars['Int']>,
   year?: Maybe<Scalars['Int']>,
+  homepage?: Maybe<Scalars['String']>,
   conference_start?: Maybe<Scalars['Date']>,
   conference_end?: Maybe<Scalars['Date']>,
 };
@@ -1885,6 +1888,7 @@ export type SitePageContextPubsVenue_YearFilterInput = {
   location?: Maybe<StringQueryOperatorInput>,
   venue?: Maybe<IntQueryOperatorInput>,
   year?: Maybe<IntQueryOperatorInput>,
+  homepage?: Maybe<StringQueryOperatorInput>,
   conference_start?: Maybe<DateQueryOperatorInput>,
   conference_end?: Maybe<DateQueryOperatorInput>,
 };
@@ -1991,6 +1995,7 @@ export type SitePageFieldsEnum =
   'context___pubs' |
   'context___pubs___id' |
   'context___pubs___title' |
+  'context___pubs___award' |
   'context___pubs___authors' |
   'context___pubs___authors___id' |
   'context___pubs___authors___given_name' |
@@ -1999,6 +2004,7 @@ export type SitePageFieldsEnum =
   'context___pubs___venue_year___location' |
   'context___pubs___venue_year___venue' |
   'context___pubs___venue_year___year' |
+  'context___pubs___venue_year___homepage' |
   'context___pubs___venue_year___conference_start' |
   'context___pubs___venue_year___conference_end' |
   'pluginCreator___id' |
@@ -3948,3 +3954,57 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>,
 };
 
+export type VenuesQueryVariables = {};
+
+
+export type VenuesQuery = { allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };
+
+export type MembersAndLeadsQueryVariables = {};
+
+
+export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
+      Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
+      & { headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
+    )> }, allStrapiPublication: { nodes: Array<(
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'pub_details'>
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
+    )> } };
+
+export type AllMembersQueryVariables = {};
+
+
+export type AllMembersQuery = { allStrapiAuthor: { nodes: Array<(
+      Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
+      & { headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
+    )> } };
+
+export type AllPubsQueryVariables = {};
+
+
+export type AllPubsQuery = { allStrapiPublication: { nodes: Array<(
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'pub_details'>
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<(
+        Pick<File, 'publicURL'>
+        & { childImageSharp: Maybe<{ fixed: Maybe<> }> }
+      )> }
+    )> } };
+
+export type MemberQueryVariables = {
+  id: Scalars['String']
+};
+
+
+export type MemberQuery = { strapiAuthor: Maybe<(
+    Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'long_bio' | 'membership'>
+    & { links: Maybe<Array<Maybe<Pick<StrapiAuthorLinks, 'id' | 'url' | 'description'>>>>, headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
+  )> };
+
+export type PublicationQueryVariables = {
+  id: Scalars['String']
+};
+
+
+export type PublicationQuery = { strapiPublication: Maybe<(
+    Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award'>
+    & { pdf: Maybe<Pick<File, 'id' | 'publicURL'>>, authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'year' | 'venue' | 'homepage'>> }
+  )>, allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };

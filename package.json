@@ -43,7 +43,8 @@
         "@types/react-dom": "^16.9.4",
         "gatsby-cli": "^2.8.19",
         "gatsby-plugin-graphql-codegen": "^2.0.1",
-        "prettier": "^1.19.1"
+        "prettier": "^1.19.1",
+        "typescript": "^3.7.4"
     },
     "contributors": [
         "fabien0102 <fabien0102@gmail.com>",

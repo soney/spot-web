@@ -7,8 +7,8 @@ import { Layout } from '../components/layout';
 
 import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection } from '../../graphql-types';
 
-export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+export const indexQuery = graphql`query allMembers {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
             given_name
@@ -23,32 +23,6 @@ export const indexQuery = graphql`query membersAndLeads {
                         ...GatsbyImageSharpFixed
                     }
                 }
-            }
-        }
-    }
-    allStrapiPublication {
-        nodes {
-            id
-            title
-            award
-            pub_details
-            authors {
-                id
-                given_name
-                family_name
-                homepage
-            }
-            venue_year {
-                id
-                location
-                venue
-                year
-                homepage
-                conference_start
-                conference_end
-            }
-            pdf {
-                publicURL
             }
         }
     }
@@ -68,11 +42,7 @@ export default class extends React.Component<IndexPageProps, {}> {
     public render() {
         const { data } = this.props;
         return <Layout>
-            <p>Welcome to the homepage of the spot group.</p>
-            Current members <Link to="/people">(all people)</Link>
             <MemberListDisplay data={data.allStrapiAuthor.nodes} />
-            Recent publications <Link to="/all_publications">(all publications)</Link>
-            <PublicationListDisplay backTo={2016} groupByVenue={true} data={ data.allStrapiPublication.nodes } />
         </Layout>;
     }
 }

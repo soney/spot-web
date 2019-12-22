@@ -15,13 +15,11 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
     public render() {
         const { data } = this.props;
         const memberDisplays = data.map((node: StrapiAuthor) => (
-            <li key={node.id}><MemberDisplay data={node} /></li>
+            <li key={node.id} className="column"><MemberDisplay data={node} /></li>
         ));
-        return <div>
-            <ul>
-                {memberDisplays}
-            </ul>
-        </div>;
+        return <ul className="columns is-mobile">
+            {memberDisplays}
+        </ul>;
     }
 }
 
@@ -36,7 +34,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
     public render() {
         const { data } = this.props;
         return <Link to={`/${data.given_name}_${data.family_name}`}>
-                <Image fixed={data.headshot.childImageSharp.fixed as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />
+                <Image className="is-rounded" fixed={data.headshot.childImageSharp.fixed as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />
                 {`${data.given_name} ${data.family_name}`}
             </Link>;
     }
