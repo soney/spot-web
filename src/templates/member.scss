@@ -1,0 +1,17 @@
+.short-bio {
+    white-space: pre-line;
+}
+.breadcrumb {
+    background: none;
+    padding: 0px;
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "\000b7";
+    }
+}
+
+h1.person {
+    font-size: 4em;
+}
+h2 {
+    margin-top: 1.5em;
+}

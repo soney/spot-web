@@ -25,6 +25,7 @@ interface PublicationListDisplayProps {
     groupByVenue: boolean;
     data: ReadonlyArray<StrapiPublication>
     backTo?: number
+    highlightAuthors?: number[]
 }
 
 export class PublicationListDisplay extends React.Component<PublicationListDisplayProps, {}> {
@@ -33,7 +34,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
     }
     public render(): JSX.Element {
         return <StaticQuery query={venuesQuery}
-                render={venuesData => <PublicationListDisplayWithVenues backTo={this.props.backTo} groupByVenue={this.props.groupByVenue} data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
+                render={venuesData => <PublicationListDisplayWithVenues highlightAuthors={this.props.highlightAuthors} backTo={this.props.backTo} groupByVenue={this.props.groupByVenue} data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
     }
 }
 
@@ -99,22 +100,21 @@ class PublicationListDisplayWithVenues extends React.Component<PublicationListDi
                 </li>;
             });
 
-            return <ul>
+            return <ul className="publication-list">
                 {vyDisplays}
             </ul>;
         } else {
             const pubDisplays: JSX.Element[] = [];
             vyOrder.forEach((vyid: number) => {
                 venuePubs.get(vyid).forEach((pub) => {
-                    pubDisplays.push(<li key={pub.id}><PublicationSummaryWithVenuesDisplay data={pub} venues={venues} /></li>);
+                    pubDisplays.push(<li key={pub.id}><PublicationSummaryWithVenuesDisplay highlightAuthors={this.props.highlightAuthors} data={pub} venues={venues} /></li>);
                 });
             });
 
-            return <ul>{pubDisplays}</ul>;
+            return <ul className="publication-list">{pubDisplays}</ul>;
         }
     }
 }
-
 
 export function findVenue(id: number, data: ReadonlyArray<StrapiVenue>): StrapiVenue|null {
     for(let i: number = 0; i<data.length; i++) {
@@ -127,6 +127,7 @@ export function findVenue(id: number, data: ReadonlyArray<StrapiVenue>): StrapiV
     
 interface PublicationSummaryDisplayProps {
     data: StrapiPublication
+    highlightAuthors?: number[]
 }
 
 export class PublicationSummaryDisplay extends React.Component<PublicationSummaryDisplayProps, {}> {
@@ -136,7 +137,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
 
     public render(): JSX.Element {
         return <StaticQuery query={venuesQuery}
-                render={venuesData => <PublicationSummaryWithVenuesDisplay data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
+                render={venuesData => <PublicationSummaryWithVenuesDisplay data={this.props.data} venues={venuesData.allStrapiVenue} highlightAuthors={this.props.highlightAuthors} />} />;
     }
 }
 interface PublicationSummaryDisplayWithVenuesProps extends PublicationSummaryDisplayProps {
@@ -166,20 +167,17 @@ export class PublicationSummaryWithVenuesDisplay extends React.Component<Publica
         // }
         const downloadName = getDownloadName(data, venues.nodes);
         // const pdfDownload = data.pdf ? <a href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
-        return <div className="">
-            <div className="paper-title level">
-                <strong className="level-left">
-                    <div className="level-item paper-title">
-                        <Link to={`/p/${downloadName}`}>{data.title}</Link>
-                    </div>
-                </strong>
-                <span className="level-right">
-                    <span className="level-item"><AwardDisplay data={data.award} description={data.award_description} /></span>
-                    <span className="paper-venue level-item">{venue_short_name}</span>
-                </span>
+
+        return <div className="paper row">
+            <div className="col">
+                <Link className="paper-title" to={`/p/${downloadName}`}>{data.title}</Link>
+                <div className="paper-authors"><AuthorListDisplay authors={authors} withLinks={true} highlightAuthors={this.props.highlightAuthors} /></div>
+                <p className="paper-description">{data.short_description}</p>
             </div>
-            <div className="paper-authors"><AuthorListDisplay authors={authors} /></div>
-            <p>{data.short_description}</p>
+            <div className="col col-md-2 text-left">
+                <div className="paper-venue">{venue_short_name}</div>
+                <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
+            </div>
         </div>;
     }
 }

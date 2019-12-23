@@ -1,3 +1,85 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
-@import "~bulma/bulma.sass";
+// @import "~boo/bulma.sass";
+@import "~bootstrap";
+
+body {
+    font-family: 'Alegreya', serif;
+
+    nav.navbar {
+        background: none !important;
+        margin-top: 20px;
+        border-bottom: 1px solid #BBB;
+        margin-bottom: 20px;
+    }
+
+    p.spot-lead {
+        // font-size: 1.5rem;
+        // font-weight: 300;
+    }
+
+    .member-display {
+        color: #333;
+        .member-name {
+            font-weight: bold;
+        }
+        .member-short-bio {
+            font-size: 0.8em;
+            white-space: pre-line;
+        }
+    }
+    ul.publication-list {
+        list-style: none;
+        padding: 0px;
+    }
+
+    li {
+        .paper {
+            .paper-award {
+            }
+            .paper-title {
+                font-weight: bold;
+            }
+            .paper-venue {
+                font-weight: bold;
+            }
+            .paper-description {
+                color: #777;
+                margin-bottom: 0px;
+                font-style: oblique;
+                &::before {
+                    content: "Description: ";
+                    font-weight: bold;
+                }
+            }
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #F0F0F0;
+        }
+        &:last-child {
+            .paper {
+                border-bottom: none;
+            }
+        }
+    }
+    .paper-authors {
+        .paper-author.highlight {
+            font-weight: bold;
+        }
+        .author-internal-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: #BBB;
+            text-decoration-thickness: 1px;
+            &:hover {
+                text-decoration-style: unset;
+                text-decoration-color: unset;
+                text-decoration-thickness: unset;
+            }
+        }
+        .author-external-link {
+            color: inherit;
+        }
+    }
+}

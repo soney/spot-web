@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
+import { Helmet } from 'react-helmet';
 import './layout.scss'
 
 interface LayoutProperties {
@@ -8,25 +9,23 @@ interface LayoutProperties {
 export class Layout extends React.Component<LayoutProperties, {}> {
     constructor(props: LayoutProperties, context: {}) {
         super(props, context);
-        console.log(this);
     }
     public render() {
-        return <div className='container'>
-            <nav className="navbar" role="navigation" aria-label="main navigation">
-                <div className="navbar-brand">
-                    <Link className="navbar-item" to="/">
-                        spot
-                    </Link>
-                </div>
-                <div className="navbar-menu">
-                    <Link to="/" className="navbar-item">Home</Link>
-                    <Link to="/about" className="navbar-item">About</Link>
-                    <Link to="/people" className="navbar-item">People</Link>
-                    <Link to="/research" className="navbar-item">Research</Link>
-                </div>
+        return <div className='application'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Spot Group</title>
+            </Helmet>
+            <nav className="container navbar navbar-expand-sm navbar-light bg-light">
+                <Link className="navbar-brand" to="/">
+                    spot research group
+                </Link>
+                <ul className="navbar-nav">
+                    <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+                    <li className="nav-item"><Link to="/research" className="nav-link">Research</Link></li>
+                </ul>
             </nav>
-            <main>{this.props.children}</main>
-            <footer></footer>
+            <main role="main" className="">{this.props.children}</main>
         </div>;
     }
 }

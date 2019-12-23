@@ -15,11 +15,13 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
     public render() {
         const { data } = this.props;
         const memberDisplays = data.map((node: StrapiAuthor) => (
-            <li key={node.id} className="column"><MemberDisplay data={node} /></li>
+            <div key={node.id} className="col col-sm"><MemberDisplay data={node} /></div>
         ));
-        return <ul className="columns is-mobile">
-            {memberDisplays}
-        </ul>;
+        return <div className="container">
+            <div className="row">
+                {memberDisplays}
+            </div>
+        </div>;
     }
 }
 
@@ -33,9 +35,10 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        return <Link to={`/${data.given_name}_${data.family_name}`}>
-                <Image className="is-rounded" fixed={data.headshot.childImageSharp.fixed as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />
-                {`${data.given_name} ${data.family_name}`}
-            </Link>;
+        return <Link className="member-display" to={`/${data.given_name}_${data.family_name}`}>
+                    <Image className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />
+                    <div className="member-name">{`${data.given_name} ${data.family_name}`}</div>
+                    <div className="member-short-bio">{data.short_bio}</div>
+                </Link>;
     }
 }

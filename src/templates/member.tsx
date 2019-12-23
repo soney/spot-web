@@ -9,9 +9,12 @@ import Image from 'gatsby-image';
 import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 import { Layout } from '../components/layout';
 
+import './member.scss'
+
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {
         id
+        strapiId
         given_name
         family_name
         middle_name
@@ -26,8 +29,8 @@ export const memberQuery = graphql`query member($id: String!) {
         }
         headshot {
             childImageSharp {
-                fixed(width: 200, height: 125) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 900) {
+                    ...GatsbyImageSharpFluid_noBase64
                 }
             }
         }
@@ -51,36 +54,41 @@ export default class extends React.Component<MemberProps, {}> {
         const author = this.props.data.strapiAuthor;
         const pubs = this.props.pageContext.pubs;
         const links = author.links.map((l) => {
-            return <li key={l.id} className=""><a href={l.url} target='_blank'>{l.description}</a></li>
+            return <li key={l.id} className="breadcrumb-item"><a href={l.url} target='_blank'>{l.description}</a></li>
         });
-        const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} />
+        const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} highlightAuthors={[author.strapiId]} />
         return (
             <Layout>
-                <section className="hero">
-                    <div className="hero-body">
-                        <div className="container">
-                            <h1 className="title">{author.given_name} {author.family_name}</h1>
-                            <h1 className="subtitle">{author.short_bio}</h1>
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <h1 className='person'>{author.given_name} {author.family_name}</h1>
+                        </div>
+                        <div className="col text-right short-bio">
+                            {author.short_bio}
                         </div>
                     </div>
-                </section>
-                <div className="columns">
-                    <div className="column is-one-quarter">
-                        <Image fixed={author.headshot.childImageSharp.fixed as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
-                    </div>
-                    <div className="column">
-                        <p><ReactMarkdown source={author.long_bio} /></p>
-                        <nav className="breadcrumb has-dot-separator" aria-label="breadcrumbs">
-                            <ul className="">
-                                <li className=""><a href={author.homepage} target='_blank'>Homepage</a></li>
+                    <div className="row">
+                        <div className="col col-sm-3">
+                            <Image fluid={author.headshot.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
+                        </div>
+                        <div className="col">
+                            <ReactMarkdown source={author.long_bio} />
+                            <ul className="breadcrumb">
+                                <li className="breadcrumb-item"><i className="fas fa-home" />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
                                 {links}
                             </ul>
-                        </nav>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <h2 className="col">Publications</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <ul className="publication-list">{pubsDisplay}</ul>
+                        </div>
                     </div>
                 </div>
-                <section>
-                    <ul>{pubsDisplay}</ul>
-                </section>
             </Layout>
         );
     }

@@ -14,11 +14,13 @@ export const indexQuery = graphql`query allPubs {
             award
             award_description
             pub_details
+            short_description
             authors {
                 id
                 given_name
                 family_name
                 homepage
+                membership
             }
             venue_year {
                 id
@@ -55,7 +57,10 @@ export default class extends React.Component<IndexPageProps, {}> {
         const { data } = this.props;
         // console.log(data.allStrapiPublication.nodes)
         return <Layout>
-            <PublicationListDisplay groupByVenue={true} data={ data.allStrapiPublication.nodes } />
+            <div className="container">
+                <h2>Publications</h2>
+                <PublicationListDisplay groupByVenue={false} data={ data.allStrapiPublication.nodes } />
+            </div>
         </Layout>;
     }
 }

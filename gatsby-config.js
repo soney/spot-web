@@ -25,6 +25,14 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,
         {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `Alegreya`
+                ]
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `pages`,

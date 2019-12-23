@@ -1844,6 +1844,7 @@ export type SitePageContextPubs = {
   award?: Maybe<Scalars['String']>,
   award_description?: Maybe<Scalars['String']>,
   pub_details?: Maybe<Scalars['String']>,
+  short_description?: Maybe<Scalars['String']>,
   authors?: Maybe<Array<Maybe<SitePageContextPubsAuthors>>>,
   venue_year?: Maybe<SitePageContextPubsVenue_Year>,
 };
@@ -1852,12 +1853,16 @@ export type SitePageContextPubsAuthors = {
   id?: Maybe<Scalars['Int']>,
   given_name?: Maybe<Scalars['String']>,
   family_name?: Maybe<Scalars['String']>,
+  membership?: Maybe<Scalars['String']>,
+  homepage?: Maybe<Scalars['String']>,
 };
 
 export type SitePageContextPubsAuthorsFilterInput = {
   id?: Maybe<IntQueryOperatorInput>,
   given_name?: Maybe<StringQueryOperatorInput>,
   family_name?: Maybe<StringQueryOperatorInput>,
+  membership?: Maybe<StringQueryOperatorInput>,
+  homepage?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SitePageContextPubsAuthorsFilterListInput = {
@@ -1870,6 +1875,7 @@ export type SitePageContextPubsFilterInput = {
   award?: Maybe<StringQueryOperatorInput>,
   award_description?: Maybe<StringQueryOperatorInput>,
   pub_details?: Maybe<StringQueryOperatorInput>,
+  short_description?: Maybe<StringQueryOperatorInput>,
   authors?: Maybe<SitePageContextPubsAuthorsFilterListInput>,
   venue_year?: Maybe<SitePageContextPubsVenue_YearFilterInput>,
 };
@@ -2003,10 +2009,13 @@ export type SitePageFieldsEnum =
   'context___pubs___award' |
   'context___pubs___award_description' |
   'context___pubs___pub_details' |
+  'context___pubs___short_description' |
   'context___pubs___authors' |
   'context___pubs___authors___id' |
   'context___pubs___authors___given_name' |
   'context___pubs___authors___family_name' |
+  'context___pubs___authors___membership' |
+  'context___pubs___authors___homepage' |
   'context___pubs___venue_year___id' |
   'context___pubs___venue_year___location' |
   'context___pubs___venue_year___venue' |
@@ -2058,6 +2067,7 @@ export type SitePageFieldsEnum =
   'pluginCreator___pluginOptions___apiURL' |
   'pluginCreator___pluginOptions___contentTypes' |
   'pluginCreator___pluginOptions___queryLimit' |
+  'pluginCreator___pluginOptions___fonts' |
   'pluginCreator___pluginOptions___name' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___pathCheck' |
@@ -2247,6 +2257,7 @@ export type SitePluginFieldsEnum =
   'pluginOptions___apiURL' |
   'pluginOptions___contentTypes' |
   'pluginOptions___queryLimit' |
+  'pluginOptions___fonts' |
   'pluginOptions___name' |
   'pluginOptions___path' |
   'pluginOptions___pathCheck' |
@@ -2363,6 +2374,7 @@ export type SitePluginPluginOptions = {
   apiURL?: Maybe<Scalars['String']>,
   contentTypes?: Maybe<Array<Maybe<Scalars['String']>>>,
   queryLimit?: Maybe<Scalars['Int']>,
+  fonts?: Maybe<Array<Maybe<Scalars['String']>>>,
   name?: Maybe<Scalars['String']>,
   path?: Maybe<Scalars['String']>,
   pathCheck?: Maybe<Scalars['Boolean']>,
@@ -2372,6 +2384,7 @@ export type SitePluginPluginOptionsFilterInput = {
   apiURL?: Maybe<StringQueryOperatorInput>,
   contentTypes?: Maybe<StringQueryOperatorInput>,
   queryLimit?: Maybe<IntQueryOperatorInput>,
+  fonts?: Maybe<StringQueryOperatorInput>,
   name?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
@@ -3969,31 +3982,31 @@ export type VenuesQueryVariables = {};
 
 export type VenuesQuery = { allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };
 
-export type MembersAndLeadsQueryVariables = {};
-
-
-export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
-      Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
-      & { headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
-    )> }, allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details'>
-      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
-    )> } };
-
 export type AllMembersQueryVariables = {};
 
 
 export type AllMembersQuery = { allStrapiAuthor: { nodes: Array<(
       Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
-      & { headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
+      & { headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
+    )> } };
+
+export type MembersAndLeadsQueryVariables = {};
+
+
+export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
+      Pick<StrapiAuthor, 'id' | 'strapiId' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
+      & { headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
+    )> }, allStrapiPublication: { nodes: Array<(
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
     )> } };
 
 export type AllPubsQueryVariables = {};
 
 
 export type AllPubsQuery = { allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details'>
-      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<(
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<(
         Pick<File, 'publicURL'>
         & { childImageSharp: Maybe<{ fixed: Maybe<> }> }
       )> }
@@ -4005,8 +4018,8 @@ export type MemberQueryVariables = {
 
 
 export type MemberQuery = { strapiAuthor: Maybe<(
-    Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'long_bio' | 'membership'>
-    & { links: Maybe<Array<Maybe<Pick<StrapiAuthorLinks, 'id' | 'url' | 'description'>>>>, headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
+    Pick<StrapiAuthor, 'id' | 'strapiId' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'long_bio' | 'membership'>
+    & { links: Maybe<Array<Maybe<Pick<StrapiAuthorLinks, 'id' | 'url' | 'description'>>>>, headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
   )> };
 
 export type PublicationQueryVariables = {
@@ -4016,5 +4029,5 @@ export type PublicationQueryVariables = {
 
 export type PublicationQuery = { strapiPublication: Maybe<(
     Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award'>
-    & { pdf: Maybe<Pick<File, 'id' | 'publicURL'>>, authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'year' | 'venue' | 'homepage'>> }
+    & { pdf: Maybe<Pick<File, 'id' | 'publicURL'>>, authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'membership' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'year' | 'venue' | 'homepage'>> }
   )>, allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };
