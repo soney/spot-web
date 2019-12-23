@@ -68,15 +68,15 @@ body {
         }
         .author-internal-link {
             color: inherit;
-            text-decoration: underline;
-            text-decoration-style: dashed;
-            text-decoration-color: #BBB;
-            text-decoration-thickness: 1px;
-            &:hover {
-                text-decoration-style: unset;
-                text-decoration-color: unset;
-                text-decoration-thickness: unset;
-            }
+            // text-decoration: underline;
+            // text-decoration-style: dashed;
+            // text-decoration-color: #BBB;
+            // text-decoration-thickness: 1px;
+            // &:hover {
+            //     text-decoration-style: unset;
+            //     text-decoration-color: unset;
+            //     text-decoration-thickness: unset;
+            // }
         }
         .author-external-link {
             color: inherit;

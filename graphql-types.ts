@@ -1543,6 +1543,7 @@ export type QueryStrapiAuthorArgs = {
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
   links?: Maybe<StrapiAuthorLinksFilterListInput>,
+  media?: Maybe<StrapiAuthorMediaFilterListInput>,
   headshot?: Maybe<FileFilterInput>,
   strapiId?: Maybe<IntQueryOperatorInput>
 };
@@ -2429,6 +2430,7 @@ export type StrapiAuthor = Node & {
   created_at?: Maybe<Scalars['Date']>,
   updated_at?: Maybe<Scalars['Date']>,
   links?: Maybe<Array<Maybe<StrapiAuthorLinks>>>,
+  media?: Maybe<Array<Maybe<StrapiAuthorMedia>>>,
   headshot?: Maybe<File>,
   strapiId?: Maybe<Scalars['Int']>,
 };
@@ -2576,6 +2578,59 @@ export type StrapiAuthorFieldsEnum =
   'links___id' |
   'links___description' |
   'links___url' |
+  'media' |
+  'media___id' |
+  'media___description' |
+  'media___media___sourceInstanceName' |
+  'media___media___absolutePath' |
+  'media___media___relativePath' |
+  'media___media___extension' |
+  'media___media___size' |
+  'media___media___prettySize' |
+  'media___media___modifiedTime' |
+  'media___media___accessTime' |
+  'media___media___changeTime' |
+  'media___media___birthTime' |
+  'media___media___root' |
+  'media___media___dir' |
+  'media___media___base' |
+  'media___media___ext' |
+  'media___media___name' |
+  'media___media___relativeDirectory' |
+  'media___media___dev' |
+  'media___media___mode' |
+  'media___media___nlink' |
+  'media___media___uid' |
+  'media___media___gid' |
+  'media___media___rdev' |
+  'media___media___ino' |
+  'media___media___atimeMs' |
+  'media___media___mtimeMs' |
+  'media___media___ctimeMs' |
+  'media___media___atime' |
+  'media___media___mtime' |
+  'media___media___ctime' |
+  'media___media___birthtime' |
+  'media___media___birthtimeMs' |
+  'media___media___blksize' |
+  'media___media___blocks' |
+  'media___media___publicURL' |
+  'media___media___childImageSharp___id' |
+  'media___media___childImageSharp___children' |
+  'media___media___id' |
+  'media___media___parent___id' |
+  'media___media___parent___children' |
+  'media___media___children' |
+  'media___media___children___id' |
+  'media___media___children___children' |
+  'media___media___internal___content' |
+  'media___media___internal___contentDigest' |
+  'media___media___internal___description' |
+  'media___media___internal___fieldOwners' |
+  'media___media___internal___ignoreType' |
+  'media___media___internal___mediaType' |
+  'media___media___internal___owner' |
+  'media___media___internal___type' |
   'headshot___sourceInstanceName' |
   'headshot___absolutePath' |
   'headshot___relativePath' |
@@ -2732,6 +2787,7 @@ export type StrapiAuthorFilterInput = {
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
   links?: Maybe<StrapiAuthorLinksFilterListInput>,
+  media?: Maybe<StrapiAuthorMediaFilterListInput>,
   headshot?: Maybe<FileFilterInput>,
   strapiId?: Maybe<IntQueryOperatorInput>,
 };
@@ -2759,6 +2815,22 @@ export type StrapiAuthorLinksFilterInput = {
 
 export type StrapiAuthorLinksFilterListInput = {
   elemMatch?: Maybe<StrapiAuthorLinksFilterInput>,
+};
+
+export type StrapiAuthorMedia = {
+  id?: Maybe<Scalars['Int']>,
+  description?: Maybe<Scalars['String']>,
+  media?: Maybe<File>,
+};
+
+export type StrapiAuthorMediaFilterInput = {
+  id?: Maybe<IntQueryOperatorInput>,
+  description?: Maybe<StringQueryOperatorInput>,
+  media?: Maybe<FileFilterInput>,
+};
+
+export type StrapiAuthorMediaFilterListInput = {
+  elemMatch?: Maybe<StrapiAuthorMediaFilterInput>,
 };
 
 export type StrapiAuthorSortInput = {
@@ -2817,6 +2889,7 @@ export type StrapiPublicationAuthors = {
   created_at?: Maybe<Scalars['Date']>,
   updated_at?: Maybe<Scalars['Date']>,
   links?: Maybe<Array<Maybe<StrapiPublicationAuthorsLinks>>>,
+  media?: Maybe<Array<Maybe<StrapiPublicationAuthorsMedia>>>,
   headshot?: Maybe<File>,
 };
 
@@ -2848,6 +2921,7 @@ export type StrapiPublicationAuthorsFilterInput = {
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
   links?: Maybe<StrapiPublicationAuthorsLinksFilterListInput>,
+  media?: Maybe<StrapiPublicationAuthorsMediaFilterListInput>,
   headshot?: Maybe<FileFilterInput>,
 };
 
@@ -2869,6 +2943,22 @@ export type StrapiPublicationAuthorsLinksFilterInput = {
 
 export type StrapiPublicationAuthorsLinksFilterListInput = {
   elemMatch?: Maybe<StrapiPublicationAuthorsLinksFilterInput>,
+};
+
+export type StrapiPublicationAuthorsMedia = {
+  id?: Maybe<Scalars['Int']>,
+  description?: Maybe<Scalars['String']>,
+  media?: Maybe<File>,
+};
+
+export type StrapiPublicationAuthorsMediaFilterInput = {
+  id?: Maybe<IntQueryOperatorInput>,
+  description?: Maybe<StringQueryOperatorInput>,
+  media?: Maybe<FileFilterInput>,
+};
+
+export type StrapiPublicationAuthorsMediaFilterListInput = {
+  elemMatch?: Maybe<StrapiPublicationAuthorsMediaFilterInput>,
 };
 
 export type StrapiPublicationConnection = {
@@ -3574,6 +3664,45 @@ export type StrapiPublicationFieldsEnum =
   'authors___links___id' |
   'authors___links___description' |
   'authors___links___url' |
+  'authors___media' |
+  'authors___media___id' |
+  'authors___media___description' |
+  'authors___media___media___sourceInstanceName' |
+  'authors___media___media___absolutePath' |
+  'authors___media___media___relativePath' |
+  'authors___media___media___extension' |
+  'authors___media___media___size' |
+  'authors___media___media___prettySize' |
+  'authors___media___media___modifiedTime' |
+  'authors___media___media___accessTime' |
+  'authors___media___media___changeTime' |
+  'authors___media___media___birthTime' |
+  'authors___media___media___root' |
+  'authors___media___media___dir' |
+  'authors___media___media___base' |
+  'authors___media___media___ext' |
+  'authors___media___media___name' |
+  'authors___media___media___relativeDirectory' |
+  'authors___media___media___dev' |
+  'authors___media___media___mode' |
+  'authors___media___media___nlink' |
+  'authors___media___media___uid' |
+  'authors___media___media___gid' |
+  'authors___media___media___rdev' |
+  'authors___media___media___ino' |
+  'authors___media___media___atimeMs' |
+  'authors___media___media___mtimeMs' |
+  'authors___media___media___ctimeMs' |
+  'authors___media___media___atime' |
+  'authors___media___media___mtime' |
+  'authors___media___media___ctime' |
+  'authors___media___media___birthtime' |
+  'authors___media___media___birthtimeMs' |
+  'authors___media___media___blksize' |
+  'authors___media___media___blocks' |
+  'authors___media___media___publicURL' |
+  'authors___media___media___id' |
+  'authors___media___media___children' |
   'authors___headshot___sourceInstanceName' |
   'authors___headshot___absolutePath' |
   'authors___headshot___relativePath' |
@@ -4019,7 +4148,10 @@ export type MemberQueryVariables = {
 
 export type MemberQuery = { strapiAuthor: Maybe<(
     Pick<StrapiAuthor, 'id' | 'strapiId' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'long_bio' | 'membership'>
-    & { links: Maybe<Array<Maybe<Pick<StrapiAuthorLinks, 'id' | 'url' | 'description'>>>>, headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
+    & { links: Maybe<Array<Maybe<Pick<StrapiAuthorLinks, 'id' | 'url' | 'description'>>>>, media: Maybe<Array<Maybe<(
+      Pick<StrapiAuthorMedia, 'id' | 'description'>
+      & { media: Maybe<Pick<File, 'publicURL'>> }
+    )>>>, headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
   )> };
 
 export type PublicationQueryVariables = {

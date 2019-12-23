@@ -16,7 +16,7 @@ export class AuthorDisplay extends React.Component<AuthorDisplayProps, {}> {
         const { data } = this.props;
         const className = this.props.highlight ? 'highlight paper-author' : 'paper-author';
         if(this.props.withLinks) {
-            if((data.membership === 'member') || (data.membership === 'lead')) {
+            if((data.membership === 'lead')/* || (data.membership === 'member')*/) {
                 return <span className={className}><Link className="author-internal-link" to={`/${data.given_name}_${data.family_name}`}>{`${data.given_name} ${data.family_name}`}</Link></span>
             } else if(data.homepage) {
                 return <span className={className}><a className="author-external-link" href={data.homepage} target="_blank">{`${data.given_name} ${data.family_name}`}</a></span>
