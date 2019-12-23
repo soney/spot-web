@@ -151,40 +151,69 @@ export class PublicationSummaryWithVenuesDisplay extends React.Component<Publica
         const { data, venues } = this.props;
         const authors = Array.from(data.authors) as any as StrapiAuthor[];
         const venue = findVenue(data.venue_year.venue, venues.nodes);
-        let venue_long_name: string;
+        let venue_short_name: string;
         if(venue) {
-            venue_long_name = `${venue.long_name} ${data.venue_year.location}`;
+            venue_short_name = `${venue.short_name} ${data.venue_year.year}`;
         } else {
-            venue_long_name = `${data.venue_year.location}`;
+            venue_short_name = `${data.venue_year.year}`;
         }
 
         let venue_date_range: string = `(${data.venue_year.year})`;
-        if(data.venue_year.conference_start && data.venue_year.conference_end) {
-            const conference_start = new Date(data.venue_year.conference_start);
-            const conference_end = new Date(data.venue_year.conference_end);
+        // if(data.venue_year.conference_start && data.venue_year.conference_end) {
+            // const conference_start = new Date(data.venue_year.conference_start);
+            // const conference_end = new Date(data.venue_year.conference_end);
             // venue_date_range = `${getDateRangeString(conference_start, conference_end)} (${data.venue_year.year})`;
-        }
+        // }
         const downloadName = getDownloadName(data, venues.nodes);
         // const pdfDownload = data.pdf ? <a href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
-        return <div className="box">
-            <div className="paper-title"><strong><Link to={`/p/${downloadName}`}>{data.title}</Link></strong></div>
+        return <div className="">
+            <div className="paper-title level">
+                <strong className="level-left">
+                    <div className="level-item paper-title">
+                        <Link to={`/p/${downloadName}`}>{data.title}</Link>
+                    </div>
+                </strong>
+                <span className="level-right">
+                    <span className="level-item"><AwardDisplay data={data.award} description={data.award_description} /></span>
+                    <span className="paper-venue level-item">{venue_short_name}</span>
+                </span>
+            </div>
             <div className="paper-authors"><AuthorListDisplay authors={authors} /></div>
-            {venue_long_name} {venue_date_range} {data.pub_details} <AwardDisplay data={data.award} /> 
+            <p>{data.short_description}</p>
         </div>;
     }
 }
 
+enum AwardType {
+    best_paper,
+    honorable_mention,
+    none
+};
 interface AwardDisplayProps {
-    data: string|null
+    data: string|null,
+    description: string|null
 }
 export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
-    constructor(props: any, context: any) {
+    private type: AwardType;
+    private description: string;
+    constructor(props: AwardDisplayProps, context: {}) {
         super(props, context)
+        if(this.props.data === 'best_paper') {
+            this.type = AwardType.best_paper;
+            this.description = this.props.description ? this.props.description : 'Best Paper';
+        } else if(this.props.data === 'honorable_mention') {
+            this.type = AwardType.honorable_mention;
+            this.description = this.props.description ? this.props.description : 'Honorable Mention';
+        } else {
+            this.type = AwardType.none;
+            this.description = this.props.description ? this.props.description : '';
+        }
     }
     public render():JSX.Element {
-        const { data } = this.props;
-        return (data === 'best_paper') ? <i className='fas fa-trophy'></i> :
-                (data === 'honorable_mention' ? <i className="fas fa-award"></i>: <i />);
+        const iconDisplay = (this.type === AwardType.best_paper) ? <i className='fas fa-trophy'></i> :
+                        (this.type === AwardType.honorable_mention ? <i className="fas fa-award"></i>: <i />);
+                    
+        return <span className='paper-award'>{iconDisplay} {this.description}</span>;
     }
 }
 

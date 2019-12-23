@@ -12,6 +12,7 @@ export const indexQuery = graphql`query allPubs {
             id
             title
             award
+            award_description
             pub_details
             authors {
                 id

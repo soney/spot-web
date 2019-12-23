@@ -1508,6 +1508,7 @@ export type QueryStrapiPublicationArgs = {
   pub_details?: Maybe<StringQueryOperatorInput>,
   award?: Maybe<StringQueryOperatorInput>,
   status?: Maybe<StringQueryOperatorInput>,
+  award_description?: Maybe<StringQueryOperatorInput>,
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
   small_thumbnail?: Maybe<FileFilterInput>,
@@ -1841,6 +1842,8 @@ export type SitePageContextPubs = {
   id?: Maybe<Scalars['String']>,
   title?: Maybe<Scalars['String']>,
   award?: Maybe<Scalars['String']>,
+  award_description?: Maybe<Scalars['String']>,
+  pub_details?: Maybe<Scalars['String']>,
   authors?: Maybe<Array<Maybe<SitePageContextPubsAuthors>>>,
   venue_year?: Maybe<SitePageContextPubsVenue_Year>,
 };
@@ -1865,6 +1868,8 @@ export type SitePageContextPubsFilterInput = {
   id?: Maybe<StringQueryOperatorInput>,
   title?: Maybe<StringQueryOperatorInput>,
   award?: Maybe<StringQueryOperatorInput>,
+  award_description?: Maybe<StringQueryOperatorInput>,
+  pub_details?: Maybe<StringQueryOperatorInput>,
   authors?: Maybe<SitePageContextPubsAuthorsFilterListInput>,
   venue_year?: Maybe<SitePageContextPubsVenue_YearFilterInput>,
 };
@@ -1996,6 +2001,8 @@ export type SitePageFieldsEnum =
   'context___pubs___id' |
   'context___pubs___title' |
   'context___pubs___award' |
+  'context___pubs___award_description' |
+  'context___pubs___pub_details' |
   'context___pubs___authors' |
   'context___pubs___authors___id' |
   'context___pubs___authors___given_name' |
@@ -2758,6 +2765,7 @@ export type StrapiPublication = Node & {
   pub_details?: Maybe<Scalars['String']>,
   award?: Maybe<Scalars['String']>,
   status?: Maybe<Scalars['String']>,
+  award_description?: Maybe<Scalars['String']>,
   created_at?: Maybe<Scalars['Date']>,
   updated_at?: Maybe<Scalars['Date']>,
   small_thumbnail?: Maybe<File>,
@@ -2979,6 +2987,7 @@ export type StrapiPublicationFieldsEnum =
   'pub_details' |
   'award' |
   'status' |
+  'award_description' |
   'created_at' |
   'updated_at' |
   'small_thumbnail___sourceInstanceName' |
@@ -3616,6 +3625,7 @@ export type StrapiPublicationFilterInput = {
   pub_details?: Maybe<StringQueryOperatorInput>,
   award?: Maybe<StringQueryOperatorInput>,
   status?: Maybe<StringQueryOperatorInput>,
+  award_description?: Maybe<StringQueryOperatorInput>,
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
   small_thumbnail?: Maybe<FileFilterInput>,
@@ -3966,7 +3976,7 @@ export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
       Pick<StrapiAuthor, 'id' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'membership'>
       & { headshot: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<> }> }> }
     )> }, allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'pub_details'>
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details'>
       & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
     )> } };
 
@@ -3982,7 +3992,7 @@ export type AllPubsQueryVariables = {};
 
 
 export type AllPubsQuery = { allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'pub_details'>
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details'>
       & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<(
         Pick<File, 'publicURL'>
         & { childImageSharp: Maybe<{ fixed: Maybe<> }> }

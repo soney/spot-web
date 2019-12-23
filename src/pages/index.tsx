@@ -31,6 +31,7 @@ export const indexQuery = graphql`query membersAndLeads {
             id
             title
             award
+            award_description
             pub_details
             authors {
                 id
@@ -72,7 +73,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             Current members <Link to="/people">(all people)</Link>
             <MemberListDisplay data={data.allStrapiAuthor.nodes} />
             Recent publications <Link to="/all_publications">(all publications)</Link>
-            <PublicationListDisplay backTo={2016} groupByVenue={true} data={ data.allStrapiPublication.nodes } />
+            <PublicationListDisplay backTo={2016} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
         </Layout>;
     }
 }

@@ -69,13 +69,15 @@ export default class extends React.Component<MemberProps, {}> {
                         <Image fixed={author.headshot.childImageSharp.fixed as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
                     </div>
                     <div className="column">
-                        <ReactMarkdown source={author.long_bio} />
+                        <p><ReactMarkdown source={author.long_bio} /></p>
+                        <nav className="breadcrumb has-dot-separator" aria-label="breadcrumbs">
+                            <ul className="">
+                                <li className=""><a href={author.homepage} target='_blank'>Homepage</a></li>
+                                {links}
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <ul className="">
-                    <li className=""><a href={author.homepage} target='_blank'>Homepage</a></li>
-                    {links}
-                </ul>
                 <section>
                     <ul>{pubsDisplay}</ul>
                 </section>

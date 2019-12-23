@@ -33,6 +33,8 @@ exports.createPages = ({ actions, graphql }) => {
                     id
                     title
                     award
+                    award_description
+                    pub_details
                     authors {
                         id
                         given_name
