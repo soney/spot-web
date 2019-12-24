@@ -169,12 +169,12 @@ export class PublicationSummaryWithVenuesDisplay extends React.Component<Publica
         // const pdfDownload = data.pdf ? <a href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
 
         return <div className="paper row">
-            <div className="col">
+            <div className="col-sm-10">
                 <Link className="paper-title" to={`/p/${downloadName}`}>{data.title}</Link>
                 <div className="paper-authors"><AuthorListDisplay authors={authors} withLinks={true} highlightAuthors={this.props.highlightAuthors} /></div>
                 <p className="paper-description">{data.short_description}</p>
             </div>
-            <div className="col col-md-2 text-left">
+            <div className="col-sm-2 text-left">
                 <div className="paper-venue">{venue_short_name}</div>
                 <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
             </div>

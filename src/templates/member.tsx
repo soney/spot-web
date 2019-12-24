@@ -69,20 +69,20 @@ export default class extends React.Component<MemberProps, {}> {
         const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} highlightAuthors={[author.strapiId]} />
         return (
             <Layout>
-                <div className="container">
+                <div className="container-md">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-sm-8">
                             <h1 className='person'>{author.given_name} {author.family_name}</h1>
                         </div>
-                        <div className="col text-right short-bio">
+                        <div className="col-sm-4 text-right short-bio">
                             {author.short_bio}
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col col-sm-3">
+                        <div className="col-sm-3">
                             <Image fluid={author.headshot.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
                         </div>
-                        <div className="col">
+                        <div className="col-sm-9">
                             <ReactMarkdown source={author.long_bio} />
                             <ul className="breadcrumb">
                                 <li className="breadcrumb-item"><i className="fas fa-home" />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
@@ -94,11 +94,7 @@ export default class extends React.Component<MemberProps, {}> {
                     <div className="row">
                         <h2 className="col">Publications</h2>
                     </div>
-                    <div className="row">
-                        <div className="col">
-                            <ul className="publication-list">{pubsDisplay}</ul>
-                        </div>
-                    </div>
+                    <ul className="publication-list">{pubsDisplay}</ul>
                 </div>
             </Layout>
         );
