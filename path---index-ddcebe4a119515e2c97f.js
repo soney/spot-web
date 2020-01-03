@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{323:function(e,n){e.exports={data:{allStrapiPerson:{edges:[{node:{id:"Person_1",given_name:"Steve",family_name:"Oney"}},{node:{id:"Person_2",given_name:"Yan",family_name:"Chen"}},{node:{id:"Person_3",given_name:"Rebecca",family_name:"Krosnick"}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-ddcebe4a119515e2c97f.js.map
