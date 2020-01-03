@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { MemberListDisplay } from '../components/members';
-import { PublicationListDisplay } from '../components/publications';
+import { PublicationListDisplay } from '../components/publication-list';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link'
 import { Layout } from '../components/layout';

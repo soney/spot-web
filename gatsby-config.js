@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: `/spot-web`,
     siteMetadata: {
         title: `spot group`,
         author: `Steve Oney`

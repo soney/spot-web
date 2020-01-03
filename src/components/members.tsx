@@ -1,9 +1,7 @@
-import * as React from 'react'
-import { graphql } from 'gatsby';
-import Link from 'gatsby-link'
 import Image from 'gatsby-image';
+import Link from 'gatsby-link';
+import * as React from 'react';
 import { StrapiAuthor } from '../../graphql-types';
-import member from '../templates/member';
 
 interface MemberListDisplayProps {
     data: ReadonlyArray<StrapiAuthor>

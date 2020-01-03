@@ -1,11 +1,9 @@
-import * as React from 'react'
-import { PublicationListDisplay } from '../components/publications';
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link'
+import * as React from 'react';
+import { StrapiAuthorGroupConnection } from '../../graphql-types';
 import { Layout } from '../components/layout';
 import { MemberListDisplay } from '../components/members';
 
-import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection } from '../../graphql-types';
 
 export const aboutQuery = graphql`query allMembers {
     allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum"]}}, sort: {fields: [membership, family_name], order: ASC}) {

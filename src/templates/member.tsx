@@ -1,15 +1,11 @@
-import * as React from 'react'
-import { PublicationListDisplay } from '../components/publications';
 import { graphql } from 'gatsby';
-
-import * as ReactMarkdown from 'react-markdown';
-
-import Link from 'gatsby-link'
 import Image from 'gatsby-image';
+import * as React from 'react';
+import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 import { Layout } from '../components/layout';
-
-import './member.scss'
+import { PublicationListDisplay } from '../components/publication-list';
+import './member.scss';
 
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {

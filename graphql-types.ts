@@ -1563,10 +1563,8 @@ export type QuerySiteArgs = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
-  port?: Maybe<IntQueryOperatorInput>,
-  host?: Maybe<StringQueryOperatorInput>,
-  polyfill?: Maybe<BooleanQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
+  polyfill?: Maybe<BooleanQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>
 };
 
@@ -1633,10 +1631,8 @@ export type Site = Node & {
   children: Array<Node>,
   internal: Internal,
   siteMetadata?: Maybe<SiteSiteMetadata>,
-  port?: Maybe<Scalars['Int']>,
-  host?: Maybe<Scalars['String']>,
-  polyfill?: Maybe<Scalars['Boolean']>,
   pathPrefix?: Maybe<Scalars['String']>,
+  polyfill?: Maybe<Scalars['Boolean']>,
   buildTime?: Maybe<Scalars['Date']>,
 };
 
@@ -1764,10 +1760,8 @@ export type SiteFieldsEnum =
   'internal___type' |
   'siteMetadata___title' |
   'siteMetadata___author' |
-  'port' |
-  'host' |
-  'polyfill' |
   'pathPrefix' |
+  'polyfill' |
   'buildTime';
 
 export type SiteFilterInput = {
@@ -1776,10 +1770,8 @@ export type SiteFilterInput = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
-  port?: Maybe<IntQueryOperatorInput>,
-  host?: Maybe<StringQueryOperatorInput>,
-  polyfill?: Maybe<BooleanQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
+  polyfill?: Maybe<BooleanQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>,
 };
 

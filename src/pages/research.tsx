@@ -1,10 +1,9 @@
-import * as React from 'react'
-import { PublicationListDisplay } from '../components/publications';
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link'
-import { Layout } from '../components/layout';
-
+import * as React from 'react';
 import { StrapiPublicationGroupConnection } from '../../graphql-types';
+import { Layout } from '../components/layout';
+import { PublicationListDisplay } from '../components/publication-list';
+
 
 export const indexQuery = graphql`query allPubs {
     allStrapiPublication {

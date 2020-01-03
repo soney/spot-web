@@ -1,14 +1,10 @@
-import * as React from 'react'
-import { AwardDisplay, getDownloadName, findVenue } from '../components/publications';
 import { graphql } from 'gatsby';
-
-import Link from 'gatsby-link'
-import Image from 'gatsby-image';
-import { StrapiPublication, StrapiAuthor, StrapiVenueConnection } from '../../graphql-types';
+import * as React from 'react';
+import { StrapiAuthor, StrapiPublication, StrapiVenueConnection } from '../../graphql-types';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout } from '../components/layout';
-
-import './publication.scss'
+import { AwardDisplay, findVenue, getDownloadName } from '../components/publications';
+import './publication.scss';
 
 export const pubQuery = graphql`query publication($id: String!) {
     strapiPublication(id: {eq: $id}) {
