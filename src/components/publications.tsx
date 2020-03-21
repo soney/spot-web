@@ -1,9 +1,8 @@
 import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 import '@fortawesome/fontawesome-free/scss/solid.scss';
-import { graphql, StaticQuery } from 'gatsby';
 import Link from 'gatsby-link';
 import * as React from 'react';
-import { StrapiAuthor, StrapiPublication, StrapiVenue, StrapiVenueGroupConnection } from '../../graphql-types';
+import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 import { AuthorListDisplay } from './authors';
 
 

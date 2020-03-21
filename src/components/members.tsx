@@ -1,4 +1,4 @@
-import Image from 'gatsby-image';
+import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import * as React from 'react';
 import { StrapiAuthor } from '../../graphql-types';
@@ -35,7 +35,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
     public render(): JSX.Element {
         const { data } = this.props;
         const memberContent: JSX.Element[] = [
-            <Image className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />,
+            <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${data.given_name} ${data.family_name}`} />,
             <div className="member-name">{`${data.given_name} ${data.family_name}`}</div>,
             <div className="member-short-bio">{data.short_bio}</div>
         ]

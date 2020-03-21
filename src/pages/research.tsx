@@ -34,11 +34,6 @@ export const indexQuery = graphql`query allPubs {
             }
             pdf {
                 publicURL
-                childImageSharp {
-                    fixed(width: 200, height: 125) {
-                        ...GatsbyImageSharpFixed
-                    }
-                }
             }
         }
     }

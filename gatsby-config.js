@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: `/spot-web`,
+    // pathPrefix: `/spot-web`,
     siteMetadata: {
         title: `spot group`,
         author: `Steve Oney`
@@ -22,8 +22,6 @@ module.exports = {
         },
         `gatsby-plugin-graphql-codegen`,
         `gatsby-plugin-lodash`,
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-google-fonts`,
@@ -33,6 +31,8 @@ module.exports = {
                 ]
             }
         },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {

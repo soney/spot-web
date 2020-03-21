@@ -1,11 +1,11 @@
 import { graphql } from 'gatsby';
-import Image from 'gatsby-image';
 import * as React from 'react';
 import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 import { Layout } from '../components/layout';
 import { PublicationListDisplay } from '../components/publication-list';
 import './member.scss';
+import Img from "gatsby-image"
 
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {
@@ -33,7 +33,11 @@ export const memberQuery = graphql`query member($id: String!) {
         headshot {
             childImageSharp {
                 fluid(maxWidth: 900) {
-                    ...GatsbyImageSharpFluid_noBase64
+                    base64
+                    aspectRatio
+                    src
+                    srcSet
+                    sizes
                 }
             }
         }
@@ -76,7 +80,7 @@ export default class extends React.Component<MemberProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-3">
-                            <Image fluid={author.headshot.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
+                            <Img fluid={author.headshot.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
                         </div>
                         <div className="col-sm-9">
                             <ReactMarkdown source={author.long_bio} />

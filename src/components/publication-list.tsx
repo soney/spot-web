@@ -1,26 +1,9 @@
 import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 import '@fortawesome/fontawesome-free/scss/solid.scss';
-import { StaticQuery } from 'gatsby';
 import * as React from 'react';
-import { StrapiPublication, StrapiPublicationVenue, StrapiVenueGroupConnection } from '../../graphql-types';
+import { StrapiPublication, StrapiPublicationVenue } from '../../graphql-types';
 import { PublicationSummaryDisplay } from './publications';
 
-// interface PublicationListDisplayProps {
-//     groupByVenue: boolean;
-//     data: ReadonlyArray<StrapiPublication>
-//     backTo?: number
-//     highlightAuthors?: number[]
-// }
-
-// export class PublicationListDisplay extends React.Component<PublicationListDisplayProps, {}> {
-//     constructor(props: PublicationListDisplayProps, context: {}) {
-//         super(props, context)
-//     }
-//     public render(): JSX.Element {
-//         return <StaticQuery query={venuesQuery}
-//                 render={venuesData => <PublicationListDisplayWithVenues highlightAuthors={this.props.highlightAuthors} backTo={this.props.backTo} groupByVenue={this.props.groupByVenue} data={this.props.data} venues={venuesData.allStrapiVenue} />} />;
-//     }
-// }
 
 interface PublicationListDisplayProps {
     groupByVenue: boolean;

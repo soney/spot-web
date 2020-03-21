@@ -21,7 +21,11 @@ export const indexQuery = graphql`query membersAndLeads {
             headshot {
                 childImageSharp {
                     fluid(maxWidth: 700) {
-                        ...GatsbyImageSharpFluid_noBase64
+                        base64
+                        aspectRatio
+                        src
+                        srcSet
+                        sizes
                     }
                 }
             }
