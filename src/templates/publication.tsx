@@ -3,7 +3,7 @@ import * as React from 'react';
 import { StrapiAuthor, StrapiPublication, StrapiVenueConnection } from '../../graphql-types';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout } from '../components/layout';
-import { AwardDisplay, findVenue, getDownloadName } from '../components/publications';
+import { AwardDisplay, getDownloadName } from '../components/publications';
 import './publication.scss';
 
 export const pubQuery = graphql`query publication($id: String!) {
@@ -23,20 +23,11 @@ export const pubQuery = graphql`query publication($id: String!) {
             family_name
             homepage
         }
-        venue_year {
+        venue {
             id
             year
-            venue
-            homepage
-        }
-    }
-    allStrapiVenue {
-        nodes {
-            id,
-            strapiId
-            long_name
             short_name
-            type
+            homepage
         }
     }
 }`;
@@ -55,20 +46,19 @@ export default class extends React.Component<PublicationProps, {}> {
     }
     public render() {
         const publication = this.props.data.strapiPublication;
-        const venues = this.props.data.allStrapiVenue.nodes;
 
         const authors = Array.from(publication.authors) as any as StrapiAuthor[];
         const authorsDisplay = <AuthorListDisplay withLinks={true} authors={authors} />;
         const awardDisplay = <AwardDisplay data={publication.award} description={publication.award_description} />;
-        const downloadName = getDownloadName(publication, venues);
+        const downloadName = getDownloadName(publication);
 
         let venue_str: string = '';
-        if(publication.venue_year) {
-            const venue = findVenue(publication.venue_year.venue, venues);
+        if(publication.venue) {
+            const { venue } = publication;
             if(venue) {
-                venue_str = `${venue.short_name} ${publication.venue_year.year}`;
+                venue_str = `${venue.short_name} ${publication.venue.year}`;
             } else {
-                venue_str = `${publication.venue_year.year}`;
+                venue_str = `${publication.venue.year}`;
             }
         } else {
             venue_str = ``;

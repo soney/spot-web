@@ -21,7 +21,7 @@ export class Layout extends React.Component<LayoutProperties, {}> {
                     spot research group
                 </Link>
                 <ul className="navbar-nav">
-                    <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+                    {/* <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li> */}
                     <li className="nav-item"><Link to="/research" className="nav-link">Research</Link></li>
                 </ul>
             </nav>

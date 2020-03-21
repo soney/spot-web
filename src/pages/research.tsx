@@ -21,14 +21,16 @@ export const indexQuery = graphql`query allPubs {
                 homepage
                 membership
             }
-            venue_year {
+            venue {
                 id
                 location
-                venue
                 year
                 homepage
                 conference_start
                 conference_end
+                short_name
+                full_name
+                type
             }
             pdf {
                 publicURL

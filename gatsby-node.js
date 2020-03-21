@@ -43,14 +43,14 @@ exports.createPages = ({ actions, graphql }) => {
                         membership
                         homepage
                     }
-                    venue_year {
+                    venue {
                         id
                         location
-                        venue
                         year
                         homepage
                         conference_start
                         conference_end
+                        short_name
                     }
                 }
             }
@@ -58,7 +58,6 @@ exports.createPages = ({ actions, graphql }) => {
                 nodes {
                     id,
                     strapiId
-                    long_name
                     short_name
                     type
                 }
@@ -79,9 +78,9 @@ exports.createPages = ({ actions, graphql }) => {
                 });
             });
             result.data.allStrapiPublication.nodes.forEach(( node ) => {
-                const downloadName = getDownloadName(node, result.data.allStrapiVenue.nodes);
+                const downloadName = getDownloadName(node);
                 createPage({
-                    path: `/p/${downloadName}`,
+                    path: `/${downloadName}`,
                     component: path.resolve(`src/templates/publication.tsx`),
                     context: {
                         id: node.id
@@ -92,7 +91,7 @@ exports.createPages = ({ actions, graphql }) => {
     return Promise.all([getAuthors]);
 }
 
-function getDownloadName(pub, venues) {
+function getDownloadName(pub) {
     let shortAuthors = '';
     if(pub.authors.length === 1) {
         shortAuthors = `${pub.authors[0].family_name}`;
@@ -102,25 +101,10 @@ function getDownloadName(pub, venues) {
         shortAuthors = `${pub.authors[0].family_name} et al`;
     }
     let short_venue_year = '';
-    if(pub.venue_year) {
-        if(pub.venue_year.venue) {
-            const venue = findVenue(pub.venue_year.venue, venues);
-            if(venue) {
-                short_venue_year = `${venue.short_name}${pub.venue_year.year}`;
-            } else {
-                short_venue_year = `${pub.venue_year.year}`;
-            }
-        } else {
-            short_venue_year = ``;
-        }
+    if(pub.venue) {
+        short_venue_year = `${pub.venue.short_name}${pub.venue.year}`;
+    } else {
+        short_venue_year = ``;
     }
     return `${shortAuthors}-${short_venue_year}-${pub.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
-}
-function findVenue(id, data) {
-    for(let i = 0; i<data.length; i++) {
-        if(id === data[i].strapiId) {
-            return data[i];
-        }
-    }
-    return  null;
 }

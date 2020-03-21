@@ -1478,12 +1478,17 @@ export type QueryStrapiVenueArgs = {
   parent?: Maybe<NodeFilterInput>,
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
-  short_name?: Maybe<StringQueryOperatorInput>,
-  long_name?: Maybe<StringQueryOperatorInput>,
+  year?: Maybe<IntQueryOperatorInput>,
+  location?: Maybe<StringQueryOperatorInput>,
+  homepage?: Maybe<StringQueryOperatorInput>,
   type?: Maybe<StringQueryOperatorInput>,
+  short_name?: Maybe<StringQueryOperatorInput>,
+  full_name?: Maybe<StringQueryOperatorInput>,
+  conference_start?: Maybe<StringQueryOperatorInput>,
+  conference_end?: Maybe<StringQueryOperatorInput>,
+  name_year?: Maybe<StringQueryOperatorInput>,
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
-  venue_years?: Maybe<StrapiVenueVenue_YearsFilterListInput>,
   strapiId?: Maybe<IntQueryOperatorInput>
 };
 
@@ -1503,7 +1508,7 @@ export type QueryStrapiPublicationArgs = {
   internal?: Maybe<InternalFilterInput>,
   title?: Maybe<StringQueryOperatorInput>,
   abstract?: Maybe<StringQueryOperatorInput>,
-  venue_year?: Maybe<StrapiPublicationVenue_YearFilterInput>,
+  venue?: Maybe<StrapiPublicationVenueFilterInput>,
   short_description?: Maybe<StringQueryOperatorInput>,
   pub_details?: Maybe<StringQueryOperatorInput>,
   award?: Maybe<StringQueryOperatorInput>,
@@ -1563,6 +1568,8 @@ export type QuerySiteArgs = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
+  port?: Maybe<IntQueryOperatorInput>,
+  host?: Maybe<StringQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>
@@ -1631,6 +1638,8 @@ export type Site = Node & {
   children: Array<Node>,
   internal: Internal,
   siteMetadata?: Maybe<SiteSiteMetadata>,
+  port?: Maybe<Scalars['Int']>,
+  host?: Maybe<Scalars['String']>,
   pathPrefix?: Maybe<Scalars['String']>,
   polyfill?: Maybe<Scalars['Boolean']>,
   buildTime?: Maybe<Scalars['Date']>,
@@ -1760,6 +1769,8 @@ export type SiteFieldsEnum =
   'internal___type' |
   'siteMetadata___title' |
   'siteMetadata___author' |
+  'port' |
+  'host' |
   'pathPrefix' |
   'polyfill' |
   'buildTime';
@@ -1770,6 +1781,8 @@ export type SiteFilterInput = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
+  port?: Maybe<IntQueryOperatorInput>,
+  host?: Maybe<StringQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>,
@@ -1839,7 +1852,7 @@ export type SitePageContextPubs = {
   pub_details?: Maybe<Scalars['String']>,
   short_description?: Maybe<Scalars['String']>,
   authors?: Maybe<Array<Maybe<SitePageContextPubsAuthors>>>,
-  venue_year?: Maybe<SitePageContextPubsVenue_Year>,
+  venue?: Maybe<SitePageContextPubsVenue>,
 };
 
 export type SitePageContextPubsAuthors = {
@@ -1870,31 +1883,31 @@ export type SitePageContextPubsFilterInput = {
   pub_details?: Maybe<StringQueryOperatorInput>,
   short_description?: Maybe<StringQueryOperatorInput>,
   authors?: Maybe<SitePageContextPubsAuthorsFilterListInput>,
-  venue_year?: Maybe<SitePageContextPubsVenue_YearFilterInput>,
+  venue?: Maybe<SitePageContextPubsVenueFilterInput>,
 };
 
 export type SitePageContextPubsFilterListInput = {
   elemMatch?: Maybe<SitePageContextPubsFilterInput>,
 };
 
-export type SitePageContextPubsVenue_Year = {
+export type SitePageContextPubsVenue = {
   id?: Maybe<Scalars['Int']>,
   location?: Maybe<Scalars['String']>,
-  venue?: Maybe<Scalars['Int']>,
   year?: Maybe<Scalars['Int']>,
   homepage?: Maybe<Scalars['String']>,
-  conference_start?: Maybe<Scalars['Date']>,
-  conference_end?: Maybe<Scalars['Date']>,
+  conference_start?: Maybe<Scalars['String']>,
+  conference_end?: Maybe<Scalars['String']>,
+  short_name?: Maybe<Scalars['String']>,
 };
 
-export type SitePageContextPubsVenue_YearFilterInput = {
+export type SitePageContextPubsVenueFilterInput = {
   id?: Maybe<IntQueryOperatorInput>,
   location?: Maybe<StringQueryOperatorInput>,
-  venue?: Maybe<IntQueryOperatorInput>,
   year?: Maybe<IntQueryOperatorInput>,
   homepage?: Maybe<StringQueryOperatorInput>,
-  conference_start?: Maybe<DateQueryOperatorInput>,
-  conference_end?: Maybe<DateQueryOperatorInput>,
+  conference_start?: Maybe<StringQueryOperatorInput>,
+  conference_end?: Maybe<StringQueryOperatorInput>,
+  short_name?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SitePageEdge = {
@@ -2009,13 +2022,13 @@ export type SitePageFieldsEnum =
   'context___pubs___authors___family_name' |
   'context___pubs___authors___membership' |
   'context___pubs___authors___homepage' |
-  'context___pubs___venue_year___id' |
-  'context___pubs___venue_year___location' |
-  'context___pubs___venue_year___venue' |
-  'context___pubs___venue_year___year' |
-  'context___pubs___venue_year___homepage' |
-  'context___pubs___venue_year___conference_start' |
-  'context___pubs___venue_year___conference_end' |
+  'context___pubs___venue___id' |
+  'context___pubs___venue___location' |
+  'context___pubs___venue___year' |
+  'context___pubs___venue___homepage' |
+  'context___pubs___venue___conference_start' |
+  'context___pubs___venue___conference_end' |
+  'context___pubs___venue___short_name' |
   'pluginCreator___id' |
   'pluginCreator___parent___id' |
   'pluginCreator___parent___parent___id' |
@@ -2837,7 +2850,7 @@ export type StrapiPublication = Node & {
   internal: Internal,
   title?: Maybe<Scalars['String']>,
   abstract?: Maybe<Scalars['String']>,
-  venue_year?: Maybe<StrapiPublicationVenue_Year>,
+  venue?: Maybe<StrapiPublicationVenue>,
   short_description?: Maybe<Scalars['String']>,
   pub_details?: Maybe<Scalars['String']>,
   award?: Maybe<Scalars['String']>,
@@ -3069,15 +3082,18 @@ export type StrapiPublicationFieldsEnum =
   'internal___type' |
   'title' |
   'abstract' |
-  'venue_year___id' |
-  'venue_year___venue' |
-  'venue_year___year' |
-  'venue_year___location' |
-  'venue_year___conference_start' |
-  'venue_year___conference_end' |
-  'venue_year___homepage' |
-  'venue_year___created_at' |
-  'venue_year___updated_at' |
+  'venue___id' |
+  'venue___year' |
+  'venue___location' |
+  'venue___homepage' |
+  'venue___type' |
+  'venue___short_name' |
+  'venue___full_name' |
+  'venue___conference_start' |
+  'venue___conference_end' |
+  'venue___name_year' |
+  'venue___created_at' |
+  'venue___updated_at' |
   'short_description' |
   'pub_details' |
   'award' |
@@ -3754,7 +3770,7 @@ export type StrapiPublicationFilterInput = {
   internal?: Maybe<InternalFilterInput>,
   title?: Maybe<StringQueryOperatorInput>,
   abstract?: Maybe<StringQueryOperatorInput>,
-  venue_year?: Maybe<StrapiPublicationVenue_YearFilterInput>,
+  venue?: Maybe<StrapiPublicationVenueFilterInput>,
   short_description?: Maybe<StringQueryOperatorInput>,
   pub_details?: Maybe<StringQueryOperatorInput>,
   award?: Maybe<StringQueryOperatorInput>,
@@ -3784,20 +3800,23 @@ export type StrapiPublicationSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>,
 };
 
-export type StrapiPublicationVenue_Year = {
+export type StrapiPublicationVenue = {
   id?: Maybe<Scalars['Int']>,
-  venue?: Maybe<Scalars['Int']>,
   year?: Maybe<Scalars['Int']>,
   location?: Maybe<Scalars['String']>,
-  conference_start?: Maybe<Scalars['Date']>,
-  conference_end?: Maybe<Scalars['Date']>,
   homepage?: Maybe<Scalars['String']>,
+  type?: Maybe<Scalars['String']>,
+  short_name?: Maybe<Scalars['String']>,
+  full_name?: Maybe<Scalars['String']>,
+  conference_start?: Maybe<Scalars['String']>,
+  conference_end?: Maybe<Scalars['String']>,
+  name_year?: Maybe<Scalars['String']>,
   created_at?: Maybe<Scalars['Date']>,
   updated_at?: Maybe<Scalars['Date']>,
 };
 
 
-export type StrapiPublicationVenue_YearConference_StartArgs = {
+export type StrapiPublicationVenueCreated_AtArgs = {
   formatString?: Maybe<Scalars['String']>,
   fromNow?: Maybe<Scalars['Boolean']>,
   difference?: Maybe<Scalars['String']>,
@@ -3805,37 +3824,24 @@ export type StrapiPublicationVenue_YearConference_StartArgs = {
 };
 
 
-export type StrapiPublicationVenue_YearConference_EndArgs = {
+export type StrapiPublicationVenueUpdated_AtArgs = {
   formatString?: Maybe<Scalars['String']>,
   fromNow?: Maybe<Scalars['Boolean']>,
   difference?: Maybe<Scalars['String']>,
   locale?: Maybe<Scalars['String']>
 };
 
-
-export type StrapiPublicationVenue_YearCreated_AtArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-
-export type StrapiPublicationVenue_YearUpdated_AtArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-export type StrapiPublicationVenue_YearFilterInput = {
+export type StrapiPublicationVenueFilterInput = {
   id?: Maybe<IntQueryOperatorInput>,
-  venue?: Maybe<IntQueryOperatorInput>,
   year?: Maybe<IntQueryOperatorInput>,
   location?: Maybe<StringQueryOperatorInput>,
-  conference_start?: Maybe<DateQueryOperatorInput>,
-  conference_end?: Maybe<DateQueryOperatorInput>,
   homepage?: Maybe<StringQueryOperatorInput>,
+  type?: Maybe<StringQueryOperatorInput>,
+  short_name?: Maybe<StringQueryOperatorInput>,
+  full_name?: Maybe<StringQueryOperatorInput>,
+  conference_start?: Maybe<StringQueryOperatorInput>,
+  conference_end?: Maybe<StringQueryOperatorInput>,
+  name_year?: Maybe<StringQueryOperatorInput>,
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
 };
@@ -3845,12 +3851,17 @@ export type StrapiVenue = Node & {
   parent?: Maybe<Node>,
   children: Array<Node>,
   internal: Internal,
-  short_name?: Maybe<Scalars['String']>,
-  long_name?: Maybe<Scalars['String']>,
+  year?: Maybe<Scalars['Int']>,
+  location?: Maybe<Scalars['String']>,
+  homepage?: Maybe<Scalars['String']>,
   type?: Maybe<Scalars['String']>,
+  short_name?: Maybe<Scalars['String']>,
+  full_name?: Maybe<Scalars['String']>,
+  conference_start?: Maybe<Scalars['String']>,
+  conference_end?: Maybe<Scalars['String']>,
+  name_year?: Maybe<Scalars['String']>,
   created_at?: Maybe<Scalars['Date']>,
   updated_at?: Maybe<Scalars['Date']>,
-  venue_years?: Maybe<Array<Maybe<StrapiVenueVenue_Years>>>,
   strapiId?: Maybe<Scalars['Int']>,
 };
 
@@ -3984,21 +3995,17 @@ export type StrapiVenueFieldsEnum =
   'internal___mediaType' |
   'internal___owner' |
   'internal___type' |
-  'short_name' |
-  'long_name' |
+  'year' |
+  'location' |
+  'homepage' |
   'type' |
+  'short_name' |
+  'full_name' |
+  'conference_start' |
+  'conference_end' |
+  'name_year' |
   'created_at' |
   'updated_at' |
-  'venue_years' |
-  'venue_years___id' |
-  'venue_years___venue' |
-  'venue_years___year' |
-  'venue_years___location' |
-  'venue_years___conference_start' |
-  'venue_years___conference_end' |
-  'venue_years___homepage' |
-  'venue_years___created_at' |
-  'venue_years___updated_at' |
   'strapiId';
 
 export type StrapiVenueFilterInput = {
@@ -4006,12 +4013,17 @@ export type StrapiVenueFilterInput = {
   parent?: Maybe<NodeFilterInput>,
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
-  short_name?: Maybe<StringQueryOperatorInput>,
-  long_name?: Maybe<StringQueryOperatorInput>,
+  year?: Maybe<IntQueryOperatorInput>,
+  location?: Maybe<StringQueryOperatorInput>,
+  homepage?: Maybe<StringQueryOperatorInput>,
   type?: Maybe<StringQueryOperatorInput>,
+  short_name?: Maybe<StringQueryOperatorInput>,
+  full_name?: Maybe<StringQueryOperatorInput>,
+  conference_start?: Maybe<StringQueryOperatorInput>,
+  conference_end?: Maybe<StringQueryOperatorInput>,
+  name_year?: Maybe<StringQueryOperatorInput>,
   created_at?: Maybe<DateQueryOperatorInput>,
   updated_at?: Maybe<DateQueryOperatorInput>,
-  venue_years?: Maybe<StrapiVenueVenue_YearsFilterListInput>,
   strapiId?: Maybe<IntQueryOperatorInput>,
 };
 
@@ -4029,66 +4041,6 @@ export type StrapiVenueSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>,
 };
 
-export type StrapiVenueVenue_Years = {
-  id?: Maybe<Scalars['Int']>,
-  venue?: Maybe<Scalars['Int']>,
-  year?: Maybe<Scalars['Int']>,
-  location?: Maybe<Scalars['String']>,
-  conference_start?: Maybe<Scalars['Date']>,
-  conference_end?: Maybe<Scalars['Date']>,
-  homepage?: Maybe<Scalars['String']>,
-  created_at?: Maybe<Scalars['Date']>,
-  updated_at?: Maybe<Scalars['Date']>,
-};
-
-
-export type StrapiVenueVenue_YearsConference_StartArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-
-export type StrapiVenueVenue_YearsConference_EndArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-
-export type StrapiVenueVenue_YearsCreated_AtArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-
-export type StrapiVenueVenue_YearsUpdated_AtArgs = {
-  formatString?: Maybe<Scalars['String']>,
-  fromNow?: Maybe<Scalars['Boolean']>,
-  difference?: Maybe<Scalars['String']>,
-  locale?: Maybe<Scalars['String']>
-};
-
-export type StrapiVenueVenue_YearsFilterInput = {
-  id?: Maybe<IntQueryOperatorInput>,
-  venue?: Maybe<IntQueryOperatorInput>,
-  year?: Maybe<IntQueryOperatorInput>,
-  location?: Maybe<StringQueryOperatorInput>,
-  conference_start?: Maybe<DateQueryOperatorInput>,
-  conference_end?: Maybe<DateQueryOperatorInput>,
-  homepage?: Maybe<StringQueryOperatorInput>,
-  created_at?: Maybe<DateQueryOperatorInput>,
-  updated_at?: Maybe<DateQueryOperatorInput>,
-};
-
-export type StrapiVenueVenue_YearsFilterListInput = {
-  elemMatch?: Maybe<StrapiVenueVenue_YearsFilterInput>,
-};
-
 export type StringQueryOperatorInput = {
   eq?: Maybe<Scalars['String']>,
   ne?: Maybe<Scalars['String']>,
@@ -4097,11 +4049,6 @@ export type StringQueryOperatorInput = {
   regex?: Maybe<Scalars['String']>,
   glob?: Maybe<Scalars['String']>,
 };
-
-export type VenuesQueryVariables = {};
-
-
-export type VenuesQuery = { allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };
 
 export type AllMembersQueryVariables = {};
 
@@ -4119,7 +4066,7 @@ export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
       & { headshot: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<> }> }> }
     )> }, allStrapiPublication: { nodes: Array<(
       Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
-      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'short_name'>>, pdf: Maybe<Pick<File, 'publicURL'>> }
     )> } };
 
 export type AllPubsQueryVariables = {};
@@ -4127,7 +4074,7 @@ export type AllPubsQueryVariables = {};
 
 export type AllPubsQuery = { allStrapiPublication: { nodes: Array<(
       Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
-      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'location' | 'venue' | 'year' | 'homepage' | 'conference_start' | 'conference_end'>>, pdf: Maybe<(
+      & { authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'short_name' | 'full_name' | 'type'>>, pdf: Maybe<(
         Pick<File, 'publicURL'>
         & { childImageSharp: Maybe<{ fixed: Maybe<> }> }
       )> }
@@ -4153,5 +4100,5 @@ export type PublicationQueryVariables = {
 
 export type PublicationQuery = { strapiPublication: Maybe<(
     Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award'>
-    & { pdf: Maybe<Pick<File, 'id' | 'publicURL'>>, authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'membership' | 'given_name' | 'family_name' | 'homepage'>>>>, venue_year: Maybe<Pick<StrapiPublicationVenue_Year, 'id' | 'year' | 'venue' | 'homepage'>> }
-  )>, allStrapiVenue: { nodes: Array<Pick<StrapiVenue, 'id' | 'strapiId' | 'long_name' | 'short_name' | 'type'>> } };
+    & { pdf: Maybe<Pick<File, 'id' | 'publicURL'>>, authors: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'membership' | 'given_name' | 'family_name' | 'homepage'>>>>, venue: Maybe<Pick<StrapiPublicationVenue, 'id' | 'year' | 'short_name' | 'homepage'>> }
+  )> };
