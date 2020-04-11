@@ -23,6 +23,7 @@ export const indexQuery = graphql`query allPubs {
                 family_name
                 homepage
                 membership
+                use_local_homepage
             }
             venue {
                 id

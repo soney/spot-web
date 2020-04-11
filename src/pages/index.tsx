@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { MemberListDisplay } from '../components/members';
+import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link'
@@ -19,7 +19,9 @@ export const indexQuery = graphql`query membersAndLeads {
             middle_name
             homepage
             short_bio
+            long_bio
             membership
+            use_local_homepage
             headshot {
                 childImageSharp {
                     fluid(maxWidth: 700) {
@@ -88,7 +90,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             <div className="container">
                 {/* <h2 className="">People <Link className="" to="/people">(all people)</Link></h2> */}
                 <h2 className="">People</h2>
-                <MemberListDisplay highlightPubs={true} data={data.allStrapiAuthor.nodes} />
+                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={data.allStrapiAuthor.nodes} />
             </div>
             <div className="container">
                 <h2>Recent publications <Link to="/research#all-publications">(all publications)</Link></h2>

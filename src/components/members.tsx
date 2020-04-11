@@ -2,10 +2,16 @@ import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import * as React from 'react';
 import { StrapiAuthor } from '../../graphql-types';
+import * as ReactMarkdown from 'react-markdown';
+
+export enum MemberListLayout {
+    short_horizontal='short_horizontal', full_vertical='full_vertical'
+}
 
 interface MemberListDisplayProps {
     data: ReadonlyArray<StrapiAuthor>,
-    highlightPubs: boolean
+    highlightPubs: boolean,
+    layout: MemberListLayout
 }
 
 export class MemberListDisplay extends React.Component<MemberListDisplayProps, {}> {
@@ -13,20 +19,29 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
         super(props, context)
     }
     public render() {
-        const { data } = this.props;
-        const memberDisplays = data.map((node: StrapiAuthor) => (
-            <div key={node.id} className="col col-"><MemberDisplay highlightPubs={this.props.highlightPubs} data={node} /></div>
-        ));
-        return <div className="container">
-            <div className="row">
-                {memberDisplays}
-            </div>
-        </div>;
+        const { data, layout } = this.props;
+
+        if(layout === MemberListLayout.full_vertical) {
+            const memberDisplays = data.map((node: StrapiAuthor) => (
+                <MemberDisplay highlightPubs={this.props.highlightPubs} data={node} layout={this.props.layout} />
+            ));
+            return <div className="container"> {memberDisplays} </div>;
+        } else {
+            const memberDisplays = data.map((node: StrapiAuthor) => (
+                <div key={node.id} className="col col-"><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+            ));
+            return <div className="container">
+                <div className="row">
+                    {memberDisplays}
+                </div>
+            </div>;
+        }
     }
 }
 
 interface MemberDisplayProps {
     data: StrapiAuthor,
+    layout: MemberListLayout,
     highlightPubs: boolean
 }
 
@@ -37,15 +52,8 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
     private pubListElements: ChildNode[];
     public render(): JSX.Element {
         const { data } = this.props;
-        const { strapiId, given_name, family_name, short_bio } = data;
+        const { strapiId, given_name, family_name, short_bio, long_bio, homepage, links, media } = data;
         const color = data.color || '#FFFF00';
-        const memberContent: JSX.Element[] = [
-            <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${given_name} ${family_name}`} />,
-            <div>
-                <span className="member-name">{`${given_name} ${family_name}`}</span>
-            </div>,
-            <div className="member-short-bio">{short_bio}</div>
-        ];
 
         const highlightMember = () => {
             if(this.props.highlightPubs) {
@@ -115,10 +123,40 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
             }
         };
 
-        if(data.membership === 'lead') {
-            return <Link onMouseEnter = {highlightMember} onMouseLeave = {unhighlightMember} className="member-display" data-member-id={strapiId} to={`/${data.given_name}_${data.family_name}`}>{memberContent}</Link>;
+        if(this.props.layout===MemberListLayout.full_vertical) {
+            const linksElements = links.map((l) => {
+                return <li key={l.id} className="breadcrumb-item"><a href={l.url} target='_blank'>{l.description}</a></li>
+            });
+            const mediaElements = media.map((m) => {
+                return <li key={m.id} className="breadcrumb-item"><a href={m.media.publicURL} download={`${family_name}-${m.description}`} target='_blank'>{m.description}</a></li>
+            })
+            return <div className="row member-row">
+                <div className="col col-md-2">
+                    <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${given_name} ${family_name}`} />
+                </div>
+                <div className="col col-md-10">
+                    <h3>{`${given_name} ${family_name}`}</h3>
+                    <ReactMarkdown source={long_bio} />
+                    <ul className="breadcrumb">
+                        <li className="breadcrumb-item"><i className="fas fa-home" />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li>
+                        {linksElements}
+                        {mediaElements}
+                    </ul>
+                </div>
+            </div>
         } else {
-            return <a onMouseEnter={highlightMember} onMouseLeave={unhighlightMember} className="member-display" data-member-id={strapiId} href={data.homepage} target="_blank">{memberContent}</a>;
+            const memberContent: JSX.Element[] = [
+                <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${given_name} ${family_name}`} />,
+                <div>
+                    <span className="member-name">{`${given_name} ${family_name}`}</span>
+                </div>,
+                <div className="member-short-bio">{short_bio}</div>
+            ];
+            if(data.use_local_homepage) {
+                return <Link onMouseEnter = {highlightMember} onMouseLeave = {unhighlightMember} className="member-display" data-member-id={strapiId} to={`/${data.given_name}_${data.family_name}`}>{memberContent}</Link>;
+            } else {
+                return <a onMouseEnter={highlightMember} onMouseLeave={unhighlightMember} className="member-display" data-member-id={strapiId} href={data.homepage} target="_blank">{memberContent}</a>;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { MemberListDisplay } from '../components/members';
+import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link'
@@ -19,7 +19,21 @@ export const indexQuery = graphql`query team {
             middle_name
             homepage
             short_bio
+            long_bio
             membership
+            use_local_homepage
+            links {
+                id
+                url
+                description
+            }
+            media {
+                id
+                description
+                media {
+                    publicURL
+                }
+            }
             headshot {
                 childImageSharp {
                     fluid(maxWidth: 700) {
@@ -55,10 +69,10 @@ export default class extends React.Component<IndexPageProps, {}> {
         return <Layout active={SpotPage.team}>
             <div className="container">
                 <h2 className="">Current Team Members</h2>
-                <MemberListDisplay highlightPubs={false} data={data.allStrapiAuthor.nodes} />
+                <MemberListDisplay layout={MemberListLayout.full_vertical} highlightPubs={false} data={data.allStrapiAuthor.nodes} />
             </div>
             <div className="container">
-                <h2 className="">Join</h2>
+                <h2 className="">Join Us</h2>
                 <ReactMarkdown source={data.strapiGroup.joining} />
             </div>
         </Layout>;
