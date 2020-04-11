@@ -32,9 +32,24 @@ body {
     }
 
     .member-display {
+        text-decoration: none;
         color: #333;
         .member-name {
             font-weight: bold;
+        }
+        
+        &:hover {
+            .member-headshot {
+                img {
+                    filter: none;
+                }
+            }
+        }
+        .member-headshot {
+            img {
+                transition: 0.5s;
+                filter: grayscale(100%) brightness(110%) contrast(80%);
+            }
         }
         .member-short-bio {
             font-size: 0.8em;
