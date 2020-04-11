@@ -11,6 +11,19 @@ body {
         margin-top: 20px;
         border-bottom: 1px solid #BBB;
         margin-bottom: 20px;
+        .nav-item {
+            &.active {
+                .nav-link {
+                    text-decoration: underline;
+                }
+            }
+            position: relative;
+            .subtitle {
+                color: #888;
+                font-size: 0.8em;
+                display: none;
+            }
+        }
     }
 
     p.spot-lead {
@@ -44,9 +57,10 @@ body {
                 font-weight: bold;
             }
             .paper-description {
-                color: #777;
+                color: #888;
+                font-size: 0.85em;
+                text-align: justify;
                 margin-bottom: 0px;
-                font-style: oblique;
                 &::before {
                     content: "Description: ";
                     font-weight: bold;

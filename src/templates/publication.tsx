@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { StrapiAuthor, StrapiPublication, StrapiVenueConnection } from '../../graphql-types';
 import { AuthorListDisplay } from '../components/authors';
-import { Layout } from '../components/layout';
+import { Layout, SpotPage } from '../components/layout';
 import { AwardDisplay, getDownloadName } from '../components/publications';
 import './publication.scss';
 
@@ -52,7 +52,7 @@ export default class extends React.Component<PublicationProps, {}> {
         const awardDisplay = <AwardDisplay data={publication.award} description={publication.award_description} />;
         const downloadName = getDownloadName(publication);
 
-        let venue_str: string = '';
+        let venue_str: string|JSX.Element = '';
         if(publication.venue) {
             const { venue } = publication;
             if(venue) {
@@ -60,13 +60,17 @@ export default class extends React.Component<PublicationProps, {}> {
             } else {
                 venue_str = `${publication.venue.year}`;
             }
+
+            if(venue.homepage) {
+                venue_str = <a target='_blank' href={venue.homepage}>{venue_str}</a>;
+            }
         } else {
             venue_str = ``;
         }
 
         const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return (
-            <Layout>
+            <Layout active={SpotPage.research} additionalInfo={publication.title}>
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -80,7 +84,9 @@ export default class extends React.Component<PublicationProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-2">
-                            <h3 className="paper-venue">{venue_str}</h3>
+                            <h3 className="paper-venue">
+                                {venue_str}
+                            </h3>
                             {awardDisplay}
                             {pdfDisplay}
                         </div>

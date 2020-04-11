@@ -4,11 +4,13 @@ import Link from 'gatsby-link';
 import * as React from 'react';
 import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
 import { AuthorListDisplay } from './authors';
+import { PublicationDetailLevel } from './publication-list';
 
 
 interface PublicationSummaryDisplayProps {
     data: StrapiPublication
     highlightAuthors?: number[]
+    detailLevel: PublicationDetailLevel
 }
 
 export class PublicationSummaryDisplay extends React.Component<PublicationSummaryDisplayProps, {}> {
@@ -20,17 +22,21 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
         const authors = Array.from(data.authors) as any as StrapiAuthor[];
         const downloadName = getDownloadName(data);
 
-        return <div className="paper row">
-            <div className="col-sm-10">
-                <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>
-                <div className="paper-authors"><AuthorListDisplay authors={authors} withLinks={true} highlightAuthors={this.props.highlightAuthors} /></div>
-                {/* <p className="paper-description">{data.short_description}</p> */}
-            </div>
-            <div className="col-sm-2 text-left">
-                <div className="paper-venue">{data.venue.short_name} {data.venue.year}</div>
-                <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
-            </div>
-        </div>;
+        if(this.props.detailLevel === PublicationDetailLevel.title) {
+            return <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>;
+        } else {
+            return <div className="paper row" data-authors={authors.map((a) => a.id).join(',')}>
+                <div className="col-sm-10">
+                    <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>
+                    <div className="paper-authors"><AuthorListDisplay authors={authors} withLinks={true} highlightAuthors={this.props.highlightAuthors} /></div>
+                    {data.short_description && <p className="paper-description">{data.short_description}</p>}
+                </div>
+                <div className="col-sm-2 text-left">
+                    <div className="paper-venue">{data.venue.short_name} {data.venue.year}</div>
+                    <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
+                </div>
+            </div>;
+        }
     }
 }
 

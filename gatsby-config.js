@@ -15,8 +15,10 @@ module.exports = {
                 contentTypes: [
                     'author',
                     'publication',
-                    'venue'
+                    'venue',
+                    'cluster'
                 ],
+                singleTypes: [`group`],
                 queryLimit: 1000
             }
         },
@@ -32,6 +34,9 @@ module.exports = {
             }
         },
         `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`
+        },
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-filesystem`,

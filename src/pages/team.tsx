@@ -8,7 +8,7 @@ import * as ReactMarkdown from 'react-markdown';
 
 import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
 
-export const indexQuery = graphql`query membersAndLeads {
+export const indexQuery = graphql`query team {
     allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
@@ -33,44 +33,15 @@ export const indexQuery = graphql`query membersAndLeads {
             }
         }
     }
-    allStrapiPublication {
-        nodes {
-            id
-            title
-            award
-            award_description
-            pub_details
-            short_description
-            authors {
-                id
-                given_name
-                family_name
-                homepage
-                membership
-            }
-            venue {
-                id
-                location
-                year
-                homepage
-                conference_start
-                conference_end
-                short_name
-            }
-            pdf {
-                publicURL
-            }
-        }
-    }
     strapiGroup {
-        overview
+        overview 
+        joining
     }
 }`;
 
 interface IndexPageProps {
     data: {
         allStrapiAuthor: StrapiAuthorGroupConnection,
-        allStrapiPublication: StrapiPublicationGroupConnection,
         strapiGroup: StrapiGroup
     }
 }
@@ -81,18 +52,14 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        return <Layout active={SpotPage.home}>
+        return <Layout active={SpotPage.team}>
             <div className="container">
-                <ReactMarkdown source={data.strapiGroup.overview} />
+                <h2 className="">Current Team Members</h2>
+                <MemberListDisplay highlightPubs={false} data={data.allStrapiAuthor.nodes} />
             </div>
             <div className="container">
-                {/* <h2 className="">People <Link className="" to="/people">(all people)</Link></h2> */}
-                <h2 className="">People</h2>
-                <MemberListDisplay highlightPubs={true} data={data.allStrapiAuthor.nodes} />
-            </div>
-            <div className="container">
-                <h2>Recent publications <Link to="/research#all-publications">(all publications)</Link></h2>
-                <PublicationListDisplay backTo={2016} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
+                <h2 className="">Join</h2>
+                <ReactMarkdown source={data.strapiGroup.joining} />
             </div>
         </Layout>;
     }

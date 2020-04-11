@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthor, StrapiPublication } from '../../graphql-types';
-import { Layout } from '../components/layout';
+import { Layout, SpotPage } from '../components/layout';
 import { PublicationListDisplay } from '../components/publication-list';
 import './member.scss';
 import Img from "gatsby-image"
@@ -68,8 +68,8 @@ export default class extends React.Component<MemberProps, {}> {
         })
         const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} highlightAuthors={[author.strapiId]} />
         return (
-            <Layout>
-                <div className="container-md">
+            <Layout active={SpotPage.team} additionalInfo={`${author.given_name} ${author.family_name}`}>
+                <div className="container">
                     <div className="row">
                         <div className="col-sm-8">
                             <h1 className='person'>{author.given_name} {author.family_name}</h1>

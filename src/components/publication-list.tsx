@@ -4,10 +4,14 @@ import * as React from 'react';
 import { StrapiPublication, StrapiPublicationVenue } from '../../graphql-types';
 import { PublicationSummaryDisplay } from './publications';
 
+export enum PublicationDetailLevel {
+    title='title', title_author_venue='title_author_venue'
+}
 
 interface PublicationListDisplayProps {
     groupByVenue: boolean;
     data: ReadonlyArray<StrapiPublication>
+    detailLevel?: PublicationDetailLevel
     backTo?: number
     highlightAuthors?: number[]
 }
@@ -54,7 +58,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
                 }
 
                 const pubDisplays = venuePubs.get(vid).map((pub) => {
-                    return <li key={pub.id}><PublicationSummaryDisplay data={pub} /></li>;
+                    return <li key={pub.id}><PublicationSummaryDisplay detailLevel={this.props.detailLevel} data={pub} /></li>;
                 });
 
                 const venueDisplay = venue.homepage ?
@@ -74,7 +78,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
             const pubDisplays: JSX.Element[] = [];
             vOrder.forEach((vyid: number) => {
                 venuePubs.get(vyid).forEach((pub) => {
-                    pubDisplays.push(<li key={pub.id}><PublicationSummaryDisplay highlightAuthors={this.props.highlightAuthors} data={pub} /></li>);
+                    pubDisplays.push(<li key={pub.id}><PublicationSummaryDisplay detailLevel={this.props.detailLevel} highlightAuthors={this.props.highlightAuthors} data={pub} /></li>);
                 });
             });
 
