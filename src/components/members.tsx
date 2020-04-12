@@ -27,8 +27,9 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
             ));
             return <div className="container"> {memberDisplays} </div>;
         } else {
+            // const col_count = Math.floor(12/data.length);
             const memberDisplays = data.map((node: StrapiAuthor) => (
-                <div key={node.id} className="col col-"><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+                <div key={node.id} className={`col col-sm-`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
             return <div className="container">
                 <div className="row">
@@ -150,7 +151,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
-                <div className="member-short-bio">{short_bio}</div>
+                <div className="member-short-bio d-none d-sm-block">{short_bio}</div>
             ];
             if(data.use_local_homepage) {
                 return <Link onMouseEnter = {highlightMember} onMouseLeave = {unhighlightMember} className="member-display" data-member-id={strapiId} to={`/${data.given_name}_${data.family_name}`}>{memberContent}</Link>;
