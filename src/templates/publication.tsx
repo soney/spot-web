@@ -12,6 +12,7 @@ export const pubQuery = graphql`query publication($id: String!) {
         title
         abstract
         award
+        award_description
         pdf {
             id
             publicURL
