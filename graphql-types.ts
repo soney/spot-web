@@ -5364,7 +5364,7 @@ export type PublicationQueryVariables = {
 
 
 export type PublicationQuery = { strapiPublication?: Maybe<(
-    Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award'>
+    Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award' | 'award_description'>
     & { pdf?: Maybe<Pick<File, 'id' | 'publicURL'>>, authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'membership' | 'given_name' | 'family_name' | 'homepage'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'year' | 'short_name' | 'homepage'>> }
   )> };
 
