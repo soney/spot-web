@@ -5321,7 +5321,7 @@ export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
     )> }, allStrapiPublication: { nodes: Array<(
       Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
       & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'short_name'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
-    )> }, strapiGroup?: Maybe<Pick<StrapiGroup, 'overview'>> };
+    )> }, strapiGroup?: Maybe<Pick<StrapiGroup, 'overview'>>, umsiLogo?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> };
 
 export type AllPubsQueryVariables = {};
 

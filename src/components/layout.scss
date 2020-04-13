@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Alegreya', serif;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     nav.navbar {
         background: none !important;
@@ -115,5 +117,19 @@ body {
         .author-external-link {
             color: inherit;
         }
+    }
+    footer {
+        margin-top: 50px;
+        object {
+            max-width: 100%
+        }
+        .sponsors {
+            object {
+                width: 100px;
+            }
+        }
+        // svg {
+        //     width: 100%;
+        // }
     }
 }
