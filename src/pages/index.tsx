@@ -1,4 +1,3 @@
-import Img from 'gatsby-image';
 import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
