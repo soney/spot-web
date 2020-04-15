@@ -68,7 +68,7 @@ export default class extends React.Component<MemberProps, {}> {
         })
         const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} highlightAuthors={[author.strapiId]} />
         return (
-            <Layout active={SpotPage.team} additionalInfo={`${author.given_name} ${author.family_name}`}>
+            <Layout title={`${author.given_name} ${author.family_name}`} active={SpotPage.team} additionalInfo={`${author.given_name} ${author.family_name}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-8">

@@ -71,7 +71,7 @@ export default class extends React.Component<PublicationProps, {}> {
 
         const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return (
-            <Layout active={SpotPage.research} additionalInfo={publication.title}>
+            <Layout title={`${publication.title}`} active={SpotPage.research} additionalInfo={publication.title}>
                 <div className="container">
                     <div className="row">
                         <div className="col">

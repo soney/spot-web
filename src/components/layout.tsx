@@ -10,7 +10,8 @@ export enum SpotPage {
 interface LayoutProperties {
     children: (JSX.Element|string|(JSX.Element|string)[]),
     active: SpotPage,
-    additionalInfo?: string
+    additionalInfo?: string,
+    title?: string
 }
 export class Layout extends React.Component<LayoutProperties, {}> {
     constructor(props: LayoutProperties, context: {}) {
@@ -20,7 +21,7 @@ export class Layout extends React.Component<LayoutProperties, {}> {
         return <div className='application'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Spot Research Group</title>
+                <title>{ (this.props.title ? `${this.props.title} | ` : '') + 'Spot Research Group' }</title>
             </Helmet>
             <nav className="container navbar navbar-expand-sm navbar-light bg-light">
                 <Link className={"navbar-brand"+this.getActiveClass(SpotPage.home)} to="/">spot</Link>
