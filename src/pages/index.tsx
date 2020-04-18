@@ -106,7 +106,9 @@ export default class extends React.Component<IndexPageProps, {}> {
             </div>
             <footer className="container">
                 <div className="row">
-                    <h5>Affiliations:</h5>
+                    <div className="col col-sm-9">
+                        <h5>Affiliations:</h5>
+                    </div>
                 </div>
                 <div className="affiliations row">
                     <div className="col col-sm-4">
@@ -141,16 +143,18 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                 </div>
                 <div className="row">
-                    <h5>Sponsors:</h5>
+                    <div className="col col-sm-3">
+                        <h5>Sponsors:</h5>
+                    </div>
                 </div>
-                <div className="sponsors row">
+                <div className="row sponsors-row">
                     <div className="col col-sm-3">
                         <div>
                             <a href="https://nsf.gov/" target="_blank">
                                 National Science Foundation
                             </a>
                         </div>
-                        <object data="/images/nsf_logo.svg" type="image/svg+xml">
+                        <object id="nsf-logo" data="/images/nsf_logo.svg" type="image/svg+xml">
                             <img src="/images/nsf_logo.png" alt="NSF Logo" />
                         </object>
                     </div>

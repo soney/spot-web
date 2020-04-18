@@ -19,8 +19,25 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
     }
     public render(): JSX.Element {
         const { data } = this.props;
+        const { venue } = data;
         const authors = Array.from(data.authors) as any as StrapiAuthor[];
         const downloadName = getDownloadName(data);
+
+        let venue_str: string|JSX.Element = '';
+        if(venue) {
+            if(venue) {
+                venue_str = `${venue.short_name} ${venue.year}`;
+            } else {
+                venue_str = `${venue.year}`;
+            }
+
+            if(venue.homepage) {
+                venue_str = <a target='_blank' href={venue.homepage}>{venue_str}</a>;
+            }
+        } else {
+            venue_str = ``;
+        }
+        const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
 
         if(this.props.detailLevel === PublicationDetailLevel.title) {
             return <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>;
@@ -32,8 +49,9 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
                     {data.short_description && <p className="paper-description">{data.short_description}</p>}
                 </div>
                 <div className="col-sm-2 text-left">
-                    <div className="paper-venue">{data.venue.short_name} {data.venue.year}</div>
+                    <div className="paper-venue">{venue_str}</div>
                     <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
+                    <div className="paper-pdf">{pdfDisplay}</div>
                 </div>
             </div>;
         }
