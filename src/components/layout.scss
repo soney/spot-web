@@ -6,7 +6,7 @@
 $background-color: #FFF;
 $text-color: #333;
 $secondary-text-color: #888;
-$border-color: #BBB;
+$border-color: #EEE;
 
 $link-color: #007bff;
 $link-hover-color: #0056b3; 
@@ -147,9 +147,9 @@ body {
                     }
                 }
             }
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            border-bottom: $border-style;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            // border-bottom: $border-style;
         }
         &:last-child {
             .paper {
