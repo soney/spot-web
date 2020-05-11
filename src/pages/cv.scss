@@ -2,91 +2,100 @@ $font-color: black;
 $font-size: 14pt;
 
 body {
-    font-family: goudy-old-style,serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: $font-size;
-    color: $font-color;
 
-    line-height: $font-size + 2pt;
-
-    a, a:hover {
+    .cv.container {
+        font-family: goudy-old-style,serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: $font-size;
         color: $font-color;
-        text-decoration: none;
-    }
 
-    h1 {
-        font-size: 2.8em;
-        letter-spacing: -1pt;
-    }
+        line-height: $font-size + 2pt;
 
-    h2 {
-        font-size: 1.5em;
-        border-bottom: 1px solid #CCC;
-    }
+        a, a:hover {
+            color: $font-color;
+            text-decoration: none;
+        }
 
-    .affiliation {
-        .affiliation-department, .affiliation-university {
-            font-weight: bold;
+        h1 {
+            font-size: 2.8em;
+            letter-spacing: -1pt;
         }
-    }
-    .contact {
-        text-align: right;
-        .contact-spacer {
-            height: 12pt;
-        }
-    }
 
-    .side {
-        text-align: right;
-        .date-range {
-            font-style: italic;
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #CCC;
         }
-        .location {
-            font-style: italic;
-        }
-    }
 
-    .container {
-        .col.side {
-            flex: 0 0 20%;
-            max-width: 20%;
-        }
-        .col.main {
-            flex: 0 0 80%;
-            max-width: 80%;
-        }
-        .col.main,.col.side {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    }
-
-
-    .section {
-        .item {
-            &:nth-child(2) {
-                margin-top: 0em;
-            }
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-    }
-
-    .education {
-        .education-school {
-            font-weight: bold;
-        }
-        table.education-degrees, table.education-advisors {
-            td {
-                padding: 0px;
+        .affiliation {
+            .affiliation-department, .affiliation-university {
+                font-weight: bold;
             }
         }
-    }
+        .contact {
+            text-align: right;
+            .contact-spacer {
+                height: 12pt;
+            }
+        }
 
-    .experience {
-        .experience-organization {
-            font-weight: bold;
+        .side {
+            text-align: right;
+            .date-range, .date {
+                font-style: italic;
+            }
+            .location {
+                font-style: italic;
+            }
+        }
+
+        &.container {
+            .col.side {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+            .col.main {
+                flex: 0 0 80%;
+                max-width: 80%;
+            }
+            .col.main,.col.side {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+        .section {
+            .item {
+                &:nth-child(2) {
+                    margin-top: 0em;
+                }
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+
+        .education {
+            .education-school {
+                font-weight: bold;
+            }
+            table.education-degrees, table.education-advisors {
+                td {
+                    padding: 0px;
+                }
+            }
+        }
+
+        .experience {
+            .experience-organization {
+                font-weight: bold;
+            }
+        }
+
+        .grants {
+            .award-title {
+                font-weight: bold;
+            }
         }
     }
 }
