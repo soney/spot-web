@@ -24,7 +24,7 @@ To update the content of the group page, if you aren't already on the network, l
 
 ## Structure Updates
 
-To update the **structure** of the group page (the actual code in this repository), if you aren't already on the network, log into [the Michigan VPN](https://its.umich.edu/enterprise/wifi-networks/vpn) (so that [http://141.211.133.47](the CMS server) is accessible). Then:
+To update the **structure** of the group page (the actual code in this repository), if you aren't already on the network, log into [the Michigan VPN](https://its.umich.edu/enterprise/wifi-networks/vpn) so that [http://141.211.133.47](the CMS server) is accessible. Then:
 
 1. Run `git pull` and `npm install .` to be sure you have the latest version of this repo and its dependencies
 2. Run `npm run develop`
