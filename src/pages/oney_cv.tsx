@@ -204,8 +204,8 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">10/2019</div>
-                            <div className="award-amount">$598,926</div>
+                            <div className="date">01/2018</div>
+                            <div className="award-amount">$174,981</div>
                         </div>
                         <div className="col main">
                             <div className="award-title">Designing Scalable Help Tools for Programming Courses</div>
@@ -214,6 +214,285 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="award-program">Cyber-Human Systems (CHS) CRII</div>
                         </div>
                     </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2017</div>
+                            <div className="award-amount">$37,000</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">Prototyping Tools to Improve Crowd Based Training for IVA Development</div>
+                            <div className="award-team">Steve Oney and Walter Lasecki</div>
+                            <div className="award-sponsor">Clinc, Inc.</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">04/2017</div>
+                            <div className="award-amount">$198,327</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">End-User Techniques for Aggregating and Analyzing Exercise and Physical Data</div>
+                            <div className="award-team">Steve Oney, Michael Nebeling, and Sun Young Park</div>
+                            <div className="award-sponsor">Michigan Exercise Science &amp; Sports Initiative</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section awards">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Awards</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <i>Note: Does not include best paper awards or nominations (in Publications above)</i>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">09/2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">University of Michigan President's Postdoctoral Fellowship</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">10/2009</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">UIST Student Innovation Contest, 1st place</div>
+                            <div className="award-description">Part of winning team in most creative category</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">09/2009</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">Google/UNCF Scholarship</div>
+                            <div className="award-description">One-year scholarship for $10,000</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2009 &ndash; 05/2012</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">Ford Foundation Predoctoral Fellowship</div>
+                            <div className="award-description">Annual stipend of $20,000 for three years, awarded to 60 doctoral students nationwide across disciplines</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2008 &ndash; 05/2011</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">ARCS Foundation Scholarship (Pittsburgh Chapter)</div>
+                            <div className="award-description">Annual stipend of $5,000 for three years. Awarded to 13 doctoral students in the Pittsburgh area (CMU &amp; University of Pittsburgh)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2008</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">MIT Batttlecode Open Programming Competition Finalist</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2008</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">NEWMAC Academic All-Conference</div>
+                            <div className="award-description">Awarded for academic success while a member of MIT's varsity track team</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section presentations">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Invited Presentations</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2019</div>
+                            <div className="location">Bloomington, IN</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Indiana University</div>
+                            <div className="talk-title">Designing Tools for Remote Communication and Collaboration</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2018</div>
+                            <div className="location">Williamstown, MA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Williams College</div>
+                            <div className="talk-title">CS Colloquium&mdash;Designing Tools for More Effective Remote Communication</div>
+                        </div>
+                    </div>
+
+{/* 
+
+\cvitem{
+    \cvtimeloc{
+        11/2018
+    } {
+        Williamstown, MA
+    }
+}{
+    \cvplace{
+        Williams College
+    } {
+        \acs{CS} Colloquium --- Designing Tools for More Effective Remote Communication
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        11/2017
+    } {
+        Madison, WI
+    }
+}{
+    \cvplace{
+        University of Wisconsin
+    } {
+        \ac{HCI} Seminar: Designing Tools for Remote Communication Between Programmers 
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        03/2016
+    } {
+        Ann Arbor, MI
+    }
+}{
+    \cvplace{
+        University of Michigan School of Information
+    } {
+        Programming Tools that Speak our Language
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        10/2015
+    } {
+        South Bend, IN
+    }
+}{
+    \cvplace{
+        University of Notre Dame Department of Computer Science and Engineering
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        04/2015
+    } {
+        Chicago, IL
+    }
+}{
+    \cvplace{
+        University of Illinois at Chicago Department of Computer Science
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        03/2015
+    } {
+        Boston, MA
+    }
+}{
+    \cvplace{
+        Boston University Department of Computer Science
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        03/2015
+    } {
+        Palo Alto, CA
+    }
+}{
+    \cvplace{
+        FX Palo Alto Laboratory
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        03/2015
+    } {
+        Stony Brook, NY
+    }
+}{
+    \cvplace{
+        Stony Brook University Computer Science Department
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        02/2015
+    } {
+        Irvine, CA
+    }
+}{
+    \cvplace{
+        University of California at Irvine Department of Informatics
+    } {
+        Expressing Interactivity with States and Constraints
+    }
+}
+
+\cvitem{
+    \cvtimeloc{
+        03/2010
+    } {
+        Dagstuhl, Germany
+    }
+}{
+    \cvplace{
+        Dagstuhl: Practical Software Testing: Tool Automation and Human Factors
+    } {}
+}
+
+\cvitem{
+    \cvtimeloc{
+        06/2009
+    } {
+        San Jose, CA
+    }
+}{
+    \cvplace{
+        IBM Almaden Lunch Seminar
+    } {
+        FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages
+    }
+} */}
                 </div>
             </div>
     }
