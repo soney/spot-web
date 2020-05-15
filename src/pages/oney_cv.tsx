@@ -524,6 +524,101 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="venue">IEEE Transactions of Software Engineering (TSE)</div>
                         </div>
                     </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Transactions on Computer-Human Interaction (TOCHI)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2010 &endash; 2016</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2011 &endash; 2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Symposium on User Interface Software &amp; Technology (UIST)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2014</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">Conference on Human-Computer Interaction with Mobile Devices (MobileHCI)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2010, 2012</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Designing Interactive Systems (DIS)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2008, 2009</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">Philippine Journal of Science (PJS)</div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Operations Committee</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2012 &endash; 2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM CHI Operations Committee (mobile program guide)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2013 &endash; 2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM UIST Operations Committee (mobile program guide)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2013 &endash; 2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM ITS Operations Committee (mobile program guide)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2012</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM UbiComp Committee (mobile program guide)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2010, 2011</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM CHI student volunteer (mobile guide development team)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
     }
