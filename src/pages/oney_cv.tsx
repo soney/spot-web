@@ -339,160 +339,191 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="talk-title">CS Colloquium&mdash;Designing Tools for More Effective Remote Communication</div>
                         </div>
                     </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2017</div>
+                            <div className="location">Madison, WI</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of Wisconsin</div>
+                            <div className="talk-title">HCI Seminar: Designing Tools for Remote Communication Between Programmers</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">03/2016</div>
+                            <div className="location">Ann Arbor, MI</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of Michigan School of Information</div>
+                            <div className="talk-title">Programming Tools that Speak our Language</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">10/2015</div>
+                            <div className="location">South Bend, IN</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of Notre Dame Department of Computer Science and Engineering</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">04/2015</div>
+                            <div className="location">Chicago, IL</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of Illinois at Chicago Department of Computer Science</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">03/2015</div>
+                            <div className="location">Boston, MA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Boston University Department of Computer Science</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">03/2015</div>
+                            <div className="location">Palo Alto, CA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">FX Palo Alto Laboratory</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">03/2015</div>
+                            <div className="location">Stony Brook, CA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Stony Brook Computer Science Department</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">02/2015</div>
+                            <div className="location">Irvine, CA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of California at Irvine</div>
+                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">03/2010</div>
+                            <div className="location">Dagstuhl, Germany</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Dagstuhl: Practical Software Testing: Tool Automation and Human Factors</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">06/2009</div>
+                            <div className="location">San Jose, CA</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">IBM Almaden Lunch Seminar</div>
+                            <div className="talk-title">FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section service">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Service</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Program Committee</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">International Workshop on Eye Movements in Programming (EMIP)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Tangible, Embedded, and Embodied Interactions (TEI)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">Tech Notes for the ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2017, 2018, 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Symposium on User Interface Software and Technology (UIST)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018, 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM International Conference on Supporting Group Work (GROUP)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2017--2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">Programming Experience Workshop (PX)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2016--2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
+                        </div>
+                    </div>
 
-{/* 
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Peer Reviewing</h3>
+                        </div>
+                    </div>
 
-\cvitem{
-    \cvtimeloc{
-        11/2018
-    } {
-        Williamstown, MA
-    }
-}{
-    \cvplace{
-        Williams College
-    } {
-        \acs{CS} Colloquium --- Designing Tools for More Effective Remote Communication
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        11/2017
-    } {
-        Madison, WI
-    }
-}{
-    \cvplace{
-        University of Wisconsin
-    } {
-        \ac{HCI} Seminar: Designing Tools for Remote Communication Between Programmers 
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        03/2016
-    } {
-        Ann Arbor, MI
-    }
-}{
-    \cvplace{
-        University of Michigan School of Information
-    } {
-        Programming Tools that Speak our Language
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        10/2015
-    } {
-        South Bend, IN
-    }
-}{
-    \cvplace{
-        University of Notre Dame Department of Computer Science and Engineering
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        04/2015
-    } {
-        Chicago, IL
-    }
-}{
-    \cvplace{
-        University of Illinois at Chicago Department of Computer Science
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        03/2015
-    } {
-        Boston, MA
-    }
-}{
-    \cvplace{
-        Boston University Department of Computer Science
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        03/2015
-    } {
-        Palo Alto, CA
-    }
-}{
-    \cvplace{
-        FX Palo Alto Laboratory
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        03/2015
-    } {
-        Stony Brook, NY
-    }
-}{
-    \cvplace{
-        Stony Brook University Computer Science Department
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        02/2015
-    } {
-        Irvine, CA
-    }
-}{
-    \cvplace{
-        University of California at Irvine Department of Informatics
-    } {
-        Expressing Interactivity with States and Constraints
-    }
-}
-
-\cvitem{
-    \cvtimeloc{
-        03/2010
-    } {
-        Dagstuhl, Germany
-    }
-}{
-    \cvplace{
-        Dagstuhl: Practical Software Testing: Tool Automation and Human Factors
-    } {}
-}
-
-\cvitem{
-    \cvtimeloc{
-        06/2009
-    } {
-        San Jose, CA
-    }
-}{
-    \cvplace{
-        IBM Almaden Lunch Seminar
-    } {
-        FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages
-    }
-} */}
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">IEEE Transactions of Software Engineering (TSE)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
     }
