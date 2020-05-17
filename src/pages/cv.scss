@@ -28,7 +28,7 @@ body {
         }
 
         h3 {
-            font-size: 1.2em;
+            font-size: 1.0em;
             margin-top: 1em;
             margin-bottom: 0.1em;
             border-bottom: 1px solid #DDD;
@@ -48,7 +48,7 @@ body {
 
         .side {
             text-align: right;
-            .date-range, .date {
+            .date-range, .date, .semester {
                 font-style: italic;
             }
             .location {
@@ -103,6 +103,15 @@ body {
             .award-title {
                 font-weight: bold;
             }
+            .award-team::before {
+                content: "Team: "
+            }
+            .award-sponsor::before {
+                content: "Sponsor: "
+            }
+            .award-program::before {
+                content: "Program: "
+            }
         }
 
         .awards {
@@ -118,6 +127,12 @@ body {
         }
 
         .service {
+        }
+
+        .teaching {
+            .course-name {
+                font-weight: bold;
+            }
         }
     }
 }

@@ -1,13 +1,100 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
 import './cv.scss'
+import { StrapiPublicationGroupConnection } from '../../graphql-types';
+import { graphql } from 'gatsby';
 
+export const cvQuery = graphql`query cvPublications {
+    allStrapiPublication {
+        nodes {
+            id
+            title
+            award
+            award_description
+            pub_details
+            short_description
+            authors {
+                id
+                given_name
+                family_name
+                homepage
+                membership
+            }
+            venue {
+                id
+                location
+                year
+                homepage
+                conference_start
+                conference_end
+                short_name
+                type
+            }
+            pdf {
+                publicURL
+            }
+        }
+    }
+}`;
 interface IndexPageProps {
+    data: {
+        allStrapiPublication: StrapiPublicationGroupConnection,
+    }
+}
+enum PUB_TYPES {
+    CONFERENCE='C',
+    JOURNAL='J',
+    BOOK_CHAPTER='B',
+    WORKSHOP='W',
+    POSTER='P',
+    DOCTORAL_CONSORTIUM='D',
+    THESIS='T'
+};
+
+function convertPubType(typeString: string): PUB_TYPES|null {
+    if(typeString === 'conference') {
+        return PUB_TYPES.CONFERENCE;
+    } else if(typeString === 'journal') {
+        return PUB_TYPES.JOURNAL;
+    } else {
+        return null;
+    }
 }
 
 export default class extends React.Component<IndexPageProps, {}> {
     constructor(props: IndexPageProps, context: {}) {
         super(props, context);
+    }
+    private getPubElements(types: PUB_TYPES[]): JSX.Element[] {
+        const filteredRows = this.props.data.allStrapiPublication.nodes.filter((pub) => {
+            const venue = pub.venue;
+            if(venue) {
+                const venueType = venue.type;
+                if(venueType) {
+                    return types.indexOf(convertPubType(venueType)) >= 0;
+                }
+            }
+            return false;
+        });
+        const rows = filteredRows.map((pub) => {
+            const authorNames = pub.authors.map((author) => `${author.given_name} ${author.family_name}`);
+
+            let shortAuthors: string = '';
+            if(authorNames.length === 1) {
+                shortAuthors = `${authorNames[0]}`;
+            } else if(authorNames.length === 2) {
+                shortAuthors = `${authorNames[0]} and ${authorNames[1]}`;
+            } else if(authorNames.length > 2) {
+                shortAuthors = authorNames.slice(0, authorNames.length-2).join(',') + ', and ' + authorNames[authorNames.length - 1];
+            }
+            return <div className="row">
+                <div className="col side"></div>
+                <div className="col main">
+                    {shortAuthors}. ({pub.venue.year}) {pub.title}. {pub.venue.full_name}. {pub.venue.location}. {pub.venue.conference_start} {pub.venue.conference_end}
+                </div>. {pub.venue.full_name}. {pub.venue.location}. {pub.venue.conference_start} {pub.venue.conference_end}
+            </div>
+        })
+        return rows;
     }
     public render() {
         return <div className="cv container">
@@ -59,14 +146,14 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="education-school">Carnegie Mellon University</div>
                             <table className="education-degrees">
                                 <tbody>
-                                    <tr> <td>PhD&nbsp;</td><td>in Human-Computer Interaction</td> </tr>
-                                    <tr> <td>MS&nbsp;</td><td>in Human-Computer Interaction</td> </tr>
+                                    <tr><td>PhD&nbsp;</td><td>in Human-Computer Interaction</td></tr>
+                                    <tr><td>MS&nbsp;</td><td>in Human-Computer Interaction</td></tr>
                                 </tbody>
                             </table>
                             <table className="education-advisors">
                                 <tbody>
-                                    <tr> <td>Advisors:&nbsp;</td><td>Brad Myers and Joel Brandt</td> </tr>
-                                    <tr> <td>Committee:&nbsp;</td><td>Scott Hudson and John Zimmerman</td> </tr>
+                                    <tr><td>Advisors:&nbsp;</td><td>Brad Myers and Joel Brandt</td></tr>
+                                    <tr><td>Committee:&nbsp;</td><td>Scott Hudson and John Zimmerman</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -171,6 +258,60 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="experience-description">Researcher (M.Eng)</div>
                         </div>
                     </div>
+                </div>
+                <div className="section publications">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Publications</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main">
+                        <strong>Labels:</strong>
+                        &nbsp;
+                        <i className="fas fa-trophy"></i>: best paper award
+                        &nbsp; &nbsp;
+                        <i className="fas fa-award"></i>: honorable mention
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main">
+                        <strong>Approximate Acceptance Rates:</strong>
+                        &nbsp;
+                        UIST: 22%, CHI: 23%, VL/HCC: 30%, CSCW: 25%, ICSE: 19%, IMX: 26%
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Heavily-reviewed Conference Papers ({PUB_TYPES.CONFERENCE}) and Journal Manuscripts ({PUB_TYPES.JOURNAL})</h3>
+                        </div>
+                    </div>
+                    {this.getPubElements([PUB_TYPES.CONFERENCE, PUB_TYPES.JOURNAL])}
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Book Chapters ({PUB_TYPES.BOOK_CHAPTER})</h3>
+                        </div>
+                    </div>
+                    {this.getPubElements([PUB_TYPES.BOOK_CHAPTER])}
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Refereed Posters ({PUB_TYPES.POSTER}), Workshops ({PUB_TYPES.WORKSHOP}), and Doctoral Consortiums ({PUB_TYPES.DOCTORAL_CONSORTIUM})</h3>
+                        </div>
+                    </div>
+                    {this.getPubElements([PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM])}
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Theses ({PUB_TYPES.THESIS})</h3>
+                        </div>
+                    </div>
+                    {this.getPubElements([PUB_TYPES.THESIS])}
                 </div>
                 <div className="section grants">
                     <div className="row">
@@ -650,7 +791,350 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="venue">University of Michigan Interactive and Social Computing (MISC) Coordinator</div>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Other</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2009 &ndash; 2015</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">CMU Computer Science outreach roadshow volunteer (with Women@SCS &amp; SCS4All)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2011 &ndash; 2014</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) ombudsman</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2010</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) visit weekend co-chair</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2009, 2010</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) PhD lunch coordinator</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div className="section teaching">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Teaching</h2>
+                        </div>
+                    </div>
+
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2009</div>
+                            <div className="location">University of Michigan &amp; Coursera</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Python 3 Programming Specialization</div>
+                            <div className="course-url"><a href="https://www.coursera.org/specializations/python-3-programming">https://www.coursera.org/specializations/python-3-programming</a></div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2016 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Instructor &ndash; SI 106 (Programs, Information, &amp; People)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Fall 2012</div>
+                            <div className="location">Carnegie Mellon</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Instructor &ndash; Web Lab, Programming User Interfaces</div>
+                            <div className="course-description">Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.7/5.0</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Fall 2010</div>
+                            <div className="location">Carnegie Mellon</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Instructor &ndash; GUI Lab, Programming User Interfaces</div>
+                            <div className="course-description">Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.6/5.0</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Fall 2007 &amp; Spring 2008</div>
+                            <div className="location">MIT</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Instructor &ndash; GUI Lab, Programming User Interfaces</div>
+                            <div className="course-description">Taught three recitation sections per week, held weekly office hours, and graded students’ exams</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Summer 2007</div>
+                            <div className="location">MIT</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Teaching Assistant &ndash; Interphase Physics I</div>
+                            <div className="course-description">Taught three classes per week, held weekly office hours, and mentored a group of incoming MIT freshmen</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Spring 2005</div>
+                            <div className="location">MIT</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Teaching Assistant &ndash; Technology Enabled Learning (TEAL) Physics II</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Spring 2005 &ndash; Fall 2006</div>
+                            <div className="location">MIT</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Laboratory Assistant &ndash; Circuits and Electronics</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="semester">Fall 2006</div>
+                            <div className="location">MIT</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Laboratory Assistant &ndash; Computational Structures</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section supervisees">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Students Supervised</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Ph.D. Advisees</h3>
+                        </div>
+                    </div>
+
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2018 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">Lei Zhang (School of Information)</div>
+                            <div className="supervisee-thesis">(ongoing)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2018 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">(Mauli) Maulishree Pandey (School of Information)</div>
+                            <div className="supervisee-thesis">(ongoing, co-advised with Sile O'Modhrain)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2018 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">(April) Yi Wang (School of Information)</div>
+                            <div className="supervisee-thesis">(ongoing, co-advised with Christopher Brooks)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2017 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">Rebecca Krosnick (Computer Science and Engineering)</div>
+                            <div className="supervisee-thesis">(ongoing)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2015 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">Yan Chen (School of Information)</div>
+                            <div className="supervisee-thesis">(ongoing)</div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Thesis Committees</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">Ph.D.: Shih-Chieh Lin (Computer Science and Engineering)</div>
+                            <div className="student-thesis">Cross-Layer System Design for Autonomous Driving</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2017</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">Ph.D.: Sang Won Lee (Computer Science and Engineering)</div>
+                            <div className="student-thesis">Improving User Involvement Through Live, Collaborative Creation</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2017</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">Ph.D.: Xin Rong (School of Information)</div>
+                            <div className="student-thesis">Neural Language Models for Data-Driven Programming Support</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2020</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">M.S.: Andy Zhou (School of Information)</div>
+                            <div className="student-thesis"></div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2020</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">M.S.: Kangning Chen (School of Information)</div>
+                            <div className="student-thesis"></div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">M.S.: Katy Madier (School of Information)</div>
+                            <div className="student-thesis">Enabling Low-cost Co-located Virtual Reality Experiences</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">M.S.: Maulishree Pandey (School of Information)</div>
+                            <div className="student-thesis">Exploring and Designing for the Self-Tracking Needs of Recreational Athletes</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section press">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Press</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="outlet">VentureBeat, 2014</div>
+                        </div>
+                        <div className="col main">
+                            <div className="title"><a href="http://venturebeat.com/2014/06/23/adobe-and-cmu-researchers-unveil-a-brilliant-new-javascript-library-constraintjs/">Adobe and CMU researchers unveil a brilliant new JavaScript library: ConstraintJS</a></div>
+                            <div className="date">June 23</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="outlet">Wired, 2013</div>
+                        </div>
+                        <div className="col main">
+                            <div className="title"><a href="http://www.wired.com/gadgetlab/2013/05/zoomboard-smartwatch-typing/">Researchers Figure Out How You Can Type on a Smartwatch</a></div>
+                            <div className="date">May 1</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="outlet">Slashdot, 2013</div>
+                        </div>
+                        <div className="col main">
+                            <div className="title"><a href="http://hardware.slashdot.org/story/13/05/01/1313206/carnegie-mellon-offers-wee-qwerty-texting-tech-for-impossibly-tiny-devices">CMU Offers Wee QWERTY Texting Tech for Impossibly Tiny Devices</a></div>
+                            <div className="date">May 1</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="outlet">Gizmodo, 2013</div>
+                        </div>
+                        <div className="col main">
+                            <div className="title"><a href="http://gizmodo.com/how-typing-on-a-smart-watch-might-actually-make-sense-484116402">How Typing on a Smart Watch Might Actually Make Sense</a></div>
+                            <div className="date">April 29</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="outlet">MIT Tech Review, 2013</div>
+                        </div>
+                        <div className="col main">
+                            <div className="title"><a href="http://www.technologyreview.com/news/514096/a-qwerty-keyboard-for-your-wrist/">A QWERTY Keyboard for your Wrist</a></div>
+                            <div className="date">April 27</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section patents">
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <h2>Patent</h2>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col side">
+                            <div className="date">11/2016</div>
+                        </div>
+                        <div className="col main">US Patent number 9,495,134. "Methods and Apparatus for Code Segment Handling" Brandt, J. &amp; Oney, S.</div>
+                    </div>
+                </div>
+            </div>;
     }
 }
