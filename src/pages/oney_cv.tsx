@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import './cv.scss'
 import { StrapiPublicationGroupConnection } from '../../graphql-types';
 import { graphql } from 'gatsby';
+import { getDownloadName } from '../components/publications';
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export const cvQuery = graphql`query cvPublications {
     allStrapiPublication {
@@ -27,6 +30,7 @@ export const cvQuery = graphql`query cvPublications {
                 homepage
                 conference_start
                 conference_end
+                full_name
                 short_name
                 type
             }
@@ -56,6 +60,8 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return PUB_TYPES.CONFERENCE;
     } else if(typeString === 'journal') {
         return PUB_TYPES.JOURNAL;
+    } else if(typeString === 'thesis') {
+        return PUB_TYPES.THESIS;
     } else {
         return null;
     }
@@ -71,28 +77,91 @@ export default class extends React.Component<IndexPageProps, {}> {
             if(venue) {
                 const venueType = venue.type;
                 if(venueType) {
+                    console.log(venueType);
                     return types.indexOf(convertPubType(venueType)) >= 0;
                 }
             }
             return false;
         });
+        filteredRows.sort((a, b) => {
+            const ayear = a.venue.year;
+            const byear = b.venue.year;
+            const [amonth, aday] = a.venue.conference_start.split('/').map((x) => parseInt(x));
+            const [bmonth, bday] = b.venue.conference_start.split('/').map((x) => parseInt(x));
+            return (byear*365+bmonth*31+bday) - (ayear*365+amonth*31+aday);
+        });
+        let count = filteredRows.length;
+        let footNoteCount: number = 0;
         const rows = filteredRows.map((pub) => {
-            const authorNames = pub.authors.map((author) => `${author.given_name} ${author.family_name}`);
+            const authorNames = pub.authors.map((author) => {
+                const fullName = `${author.given_name} ${author.family_name}`;
+                if(fullName === 'Steve Oney') {
+                    return <b>{fullName}</b>;
+                } else {
+                    return fullName;
+                }
+            });
+            const { award, award_description } = pub;
 
-            let shortAuthors: string = '';
+            let shortAuthors: (string|JSX.Element)[] = [];
             if(authorNames.length === 1) {
-                shortAuthors = `${authorNames[0]}`;
+                shortAuthors = [authorNames[0]];
             } else if(authorNames.length === 2) {
-                shortAuthors = `${authorNames[0]} and ${authorNames[1]}`;
+                shortAuthors = [authorNames[0], ' and ', authorNames[1]];
             } else if(authorNames.length > 2) {
-                shortAuthors = authorNames.slice(0, authorNames.length-2).join(',') + ', and ' + authorNames[authorNames.length - 1];
+                authorNames.slice(0, authorNames.length-2).forEach((an) => {
+                    shortAuthors.push(an);
+                    shortAuthors.push(', ');
+                });
+                shortAuthors.push(authorNames[authorNames.length - 2]);
+                shortAuthors.push(', and ');
+                shortAuthors.push(authorNames[authorNames.length - 1]);
             }
-            return <div className="row">
-                <div className="col side"></div>
+            const convertedPubtype = convertPubType(pub.venue.type);
+            const [startMonth, startDay] = pub.venue.conference_start.split('/').map((x) => parseInt(x));
+            const [endMonth, endDay] = pub.venue.conference_end ? pub.venue.conference_end.split('/').map((x) => parseInt(x)) : [-1, -1];
+            const startMonthName = MONTHS[startMonth-1];
+
+            let dateRangeString: string = `${startMonthName} ${startDay}`;
+            if(endMonth > 0) {
+                dateRangeString += ' – ';
+
+                if(startMonth !== endMonth) {
+                    const endMonthName = MONTHS[endMonth-1];
+                    dateRangeString += endMonthName + ' ';
+                }
+                dateRangeString += endDay;
+            }
+
+            const downloadName = getDownloadName(pub);
+            const pdfDisplay = pub.pdf ? <a className="pdf-download" href={pub.pdf.publicURL} download={downloadName}>(PDF)</a> : null;
+
+            let awardFootnote: string = ''; 
+            if(award_description) {
+                footNoteCount++;
+                for(let i: number = 0; i<footNoteCount; i++) {
+                    awardFootnote += '*'
+                }
+            }
+
+            const row = <div className="paper row">
+                <div className="col side">
+                    <span className='paper-award-label'>
+                        {award=='honorable_mention' && <i className="icon-honorable_mention"></i> }
+                        {award=='best_paper' && <i className="icon-best_paper"></i> }
+                        {awardFootnote && <span>{awardFootnote}</span>}
+                        {award && ' ' }
+                    </span>
+                    <span className="paper-id">{convertedPubtype}.{count}</span>
+                    <div className='pdf-download'>{pdfDisplay}</div>
+                </div>
                 <div className="col main">
-                    {shortAuthors}. ({pub.venue.year}) {pub.title}. {pub.venue.full_name}. {pub.venue.location}. {pub.venue.conference_start} {pub.venue.conference_end}
-                </div>. {pub.venue.full_name}. {pub.venue.location}. {pub.venue.conference_start} {pub.venue.conference_end}
-            </div>
+                    {shortAuthors}. ({pub.venue.year}) {pub.title}. <i>{pub.venue.full_name} ({pub.venue.short_name})</i>. {pub.venue.location}. {dateRangeString}. {pub.pub_details}
+                    {awardFootnote && <div className="paper-award-footnote row"><div className="col">{awardFootnote}{award_description}</div></div> }
+                </div>
+            </div>;
+            count--;
+            return row;
         })
         return rows;
     }
@@ -165,7 +234,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="education-school">Massachusetts Institute of Technology</div>
-                            <div className="education-degree">MEng in Computer Science (thesis T.1 below)</div>
+                            <div className="education-degree">MEng in Computer Science</div>
                             <div className="education-degree">SB in Computer Science</div>
                             <div className="education-degree">SB in Mathematics</div>
                         </div>
@@ -271,9 +340,9 @@ export default class extends React.Component<IndexPageProps, {}> {
                         <div className="col main">
                         <strong>Labels:</strong>
                         &nbsp;
-                        <i className="fas fa-trophy"></i>: best paper award
+                        <i className="icon-best_paper"></i>: best paper award
                         &nbsp; &nbsp;
-                        <i className="fas fa-award"></i>: honorable mention
+                        <i className="icon-honorable_mention"></i>: honorable mention
                         </div>
                     </div>
                     <div className="row">

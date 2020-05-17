@@ -1,9 +1,37 @@
-$font-color: black;
+$font-color: #333;
 $font-size: 14pt;
+$award-color: $font-color;
+$link-color: $font-color;
+$link-hover-color: #0056b3;
+
+@font-face {
+    font-family: 'oney_cv';
+    src: url('oney_cv_font/oney_cv.eot');
+    src: url('oney_cv_font/oney_cv.eot?#iefix') format('embedded-opentype'),
+         url('oney_cv_font/oney_cv.woff') format('woff'),
+         url('oney_cv_font/oney_cv.ttf') format('truetype'),
+         url('oney_cv_font/oney_cv.svg#oney_cv') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+    display: inline-block;
+    font-family: 'oney_cv';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 0.8em;
+    position: relative;
+    top: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-best_paper:before{content:'\0041';}
+.icon-honorable_mention:before{content:'\0042';}
 
 body {
-
     .cv.container {
+        margin-top: 7em;
         font-family: goudy-old-style,serif;
         font-weight: 400;
         font-style: normal;
@@ -12,9 +40,12 @@ body {
 
         line-height: $font-size + 2pt;
 
-        a, a:hover {
-            color: $font-color;
+        a {
+            color: $link-color;
             text-decoration: none;
+            &:hover {
+                color: $link-hover-color;
+            }
         }
 
         h1 {
@@ -71,6 +102,27 @@ body {
             }
         }
 
+        .publications {
+            .paper-id {
+                font-style: italic;
+            }
+            .pdf-download {
+                font-style: italic;
+                font-size: 0.9em;
+            }
+            .paper {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                text-align: justify;
+            }
+            .paper-award-label {
+                color: $award-color;
+            }
+            .paper-award-footnote {
+                font-style: italic;
+                color: $award-color;
+            }
+        }
 
         .section {
             .item {
@@ -79,6 +131,7 @@ body {
                 }
                 margin-top: 1em;
                 margin-bottom: 1em;
+                page-break-inside: avoid;
             }
         }
 
@@ -129,9 +182,21 @@ body {
         .service {
         }
 
+        .supervisees {
+            .student, .supervisee {
+                font-weight: bold;
+            }
+        }
+
         .teaching {
             .course-name {
                 font-weight: bold;
+            }
+        }
+
+        .press {
+            .outlet {
+                font-style: italic;
             }
         }
     }
