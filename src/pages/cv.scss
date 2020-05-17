@@ -24,7 +24,14 @@ body {
 
         h2 {
             font-size: 1.5em;
-            border-bottom: 1px solid #CCC;
+            border-bottom: 1px solid #AAA;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 1em;
+            margin-bottom: 0.1em;
+            border-bottom: 1px solid #DDD;
         }
 
         .affiliation {
@@ -108,6 +115,9 @@ body {
             .talk-location {
                 font-weight: bold;
             }
+        }
+
+        .service {
         }
     }
 }

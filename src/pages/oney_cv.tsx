@@ -494,7 +494,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2017--2020</div>
+                            <div className="date-range">2017 &ndash; 2020</div>
                         </div>
                         <div className="col main">
                             <div className="venue">Programming Experience Workshop (PX)</div>
@@ -502,7 +502,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2016--2020</div>
+                            <div className="date-range">2016 &ndash; 2020</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
@@ -534,7 +534,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2010 &endash; 2016</div>
+                            <div className="date">2010 &ndash; 2016</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
@@ -542,7 +542,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2011 &endash; 2015</div>
+                            <div className="date">2011 &ndash; 2015</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM Symposium on User Interface Software &amp; Technology (UIST)</div>
@@ -581,7 +581,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2012 &endash; 2015</div>
+                            <div className="date-range">2012 &ndash; 2015</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM CHI Operations Committee (mobile program guide)</div>
@@ -589,7 +589,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2013 &endash; 2015</div>
+                            <div className="date-range">2013 &ndash; 2015</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM UIST Operations Committee (mobile program guide)</div>
@@ -597,7 +597,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2013 &endash; 2015</div>
+                            <div className="date-range">2013 &ndash; 2015</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM ITS Operations Committee (mobile program guide)</div>
@@ -617,6 +617,37 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="venue">ACM CHI student volunteer (mobile guide development team)</div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>UMSI</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019 &ndash; 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">School of Information Technical Curriculum Task Force</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018 &ndash; 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">School of Information BSI Committee</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2018 &ndash; 2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">University of Michigan Interactive and Social Computing (MISC) Coordinator</div>
                         </div>
                     </div>
                 </div>
