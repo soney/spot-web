@@ -35,7 +35,7 @@ export const indexQuery = graphql`query membersAndLeads {
             }
         }
     }
-    allStrapiPublication {
+    allStrapiPublication(filter: {venue: {type: {in: ["conference", "journal"]}}}) {
         nodes {
             id
             title

@@ -68,7 +68,7 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return PUB_TYPES.POSTER;
     } else if(typeString === 'workshop') {
         return PUB_TYPES.WORKSHOP;
-    } else if(typeString === 'doctoral_consortium') {
+    } else if(typeString === 'doctoralconsortium') {
         return PUB_TYPES.DOCTORAL_CONSORTIUM;
     } else {
         return null;
@@ -676,6 +676,21 @@ export default class extends React.Component<IndexPageProps, {}> {
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Service</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Organizing Committee</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="role">Graduate Consortium co-chair (with Michael Lee)</div>
+                            <div className="venue">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</div>
                         </div>
                     </div>
                     <div className="row">

@@ -8,7 +8,7 @@ import { AuthorListDisplay } from '../components/authors';
 
 
 export const indexQuery = graphql`query allPubs {
-    allStrapiPublication {
+    allStrapiPublication(filter: {venue: {type: {in: ["conference", "journal"]}}}) {
         nodes {
             id
             strapiId
