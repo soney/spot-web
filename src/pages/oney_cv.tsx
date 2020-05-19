@@ -62,6 +62,14 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return PUB_TYPES.JOURNAL;
     } else if(typeString === 'thesis') {
         return PUB_TYPES.THESIS;
+    } else if(typeString === 'bookchapter') {
+        return PUB_TYPES.BOOK_CHAPTER;
+    } else if(typeString === 'poster') {
+        return PUB_TYPES.POSTER;
+    } else if(typeString === 'workshop') {
+        return PUB_TYPES.WORKSHOP;
+    } else if(typeString === 'doctoral_consortium') {
+        return PUB_TYPES.DOCTORAL_CONSORTIUM;
     } else {
         return null;
     }
@@ -86,8 +94,9 @@ export default class extends React.Component<IndexPageProps, {}> {
         filteredRows.sort((a, b) => {
             const ayear = a.venue.year;
             const byear = b.venue.year;
-            const [amonth, aday] = a.venue.conference_start.split('/').map((x) => parseInt(x));
-            const [bmonth, bday] = b.venue.conference_start.split('/').map((x) => parseInt(x));
+
+            const [amonth, aday] = a.venue.conference_start ? a.venue.conference_start.split('/').map((x) => parseInt(x)) : [0, 0];
+            const [bmonth, bday] = b.venue.conference_start ? b.venue.conference_start.split('/').map((x) => parseInt(x)) : [0, 0];
             return (byear*365+bmonth*31+bday) - (ayear*365+amonth*31+aday);
         });
         let count = filteredRows.length;
@@ -118,19 +127,25 @@ export default class extends React.Component<IndexPageProps, {}> {
                 shortAuthors.push(authorNames[authorNames.length - 1]);
             }
             const convertedPubtype = convertPubType(pub.venue.type);
-            const [startMonth, startDay] = pub.venue.conference_start.split('/').map((x) => parseInt(x));
+            const [startMonth, startDay] = pub.venue.conference_start ? pub.venue.conference_start.split('/').map((x) => parseInt(x)) : [-1, -1];
             const [endMonth, endDay] = pub.venue.conference_end ? pub.venue.conference_end.split('/').map((x) => parseInt(x)) : [-1, -1];
             const startMonthName = MONTHS[startMonth-1];
 
-            let dateRangeString: string = `${startMonthName} ${startDay}`;
-            if(endMonth > 0) {
-                dateRangeString += ' – ';
+            let dateRangeString: string = '';
+            
+            if(startMonth > 0) {
+                dateRangeString = `${startMonthName} ${startDay}`;
 
-                if(startMonth !== endMonth) {
-                    const endMonthName = MONTHS[endMonth-1];
-                    dateRangeString += endMonthName + ' ';
+                if(endMonth > 0) {
+                    dateRangeString += ' – ';
+
+                    if(startMonth !== endMonth) {
+                        const endMonthName = MONTHS[endMonth-1];
+                        dateRangeString += endMonthName + ' ';
+                    }
+                    dateRangeString += endDay;
                 }
-                dateRangeString += endDay;
+                dateRangeString += '. '
             }
 
             const downloadName = getDownloadName(pub);
@@ -144,6 +159,13 @@ export default class extends React.Component<IndexPageProps, {}> {
                 }
             }
 
+            let venueString = `${pub.venue.full_name}`;
+            if(pub.venue.short_name) {
+                venueString += ` (${pub.venue.short_name})`;
+            }
+
+            const locationString = pub.venue.location ? `${pub.venue.location}. ` : '';
+
             const row = <div className="paper row">
                 <div className="col side">
                     <span className='paper-award-label'>
@@ -156,7 +178,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                     <div className='pdf-download'>{pdfDisplay}</div>
                 </div>
                 <div className="col main">
-                    {shortAuthors}. ({pub.venue.year}) {pub.title}. <i>{pub.venue.full_name} ({pub.venue.short_name})</i>. {pub.venue.location}. {dateRangeString}. {pub.pub_details}
+                    {shortAuthors}. ({pub.venue.year}) {pub.title}. <i>{venueString}</i>. {locationString} {pub.pub_details}
                     {awardFootnote && <div className="paper-award-footnote row"><div className="col">{awardFootnote}{award_description}</div></div> }
                 </div>
             </div>;
