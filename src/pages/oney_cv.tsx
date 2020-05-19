@@ -81,11 +81,13 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     private getPubElements(types: PUB_TYPES[]): JSX.Element[] {
         const filteredRows = this.props.data.allStrapiPublication.nodes.filter((pub) => {
+            if(!pub.authors.some((a) => a.given_name === 'Steve' && a.family_name === 'Oney')) {
+                return false;
+            }
             const venue = pub.venue;
             if(venue) {
                 const venueType = venue.type;
                 if(venueType) {
-                    console.log(venueType);
                     return types.indexOf(convertPubType(venueType)) >= 0;
                 }
             }
@@ -166,7 +168,7 @@ export default class extends React.Component<IndexPageProps, {}> {
 
             const locationString = pub.venue.location ? `${pub.venue.location}. ` : '';
 
-            const row = <div className="paper row">
+            const row = <div className="paper row" key={pub.id}>
                 <div className="col side">
                     <span className='paper-award-label'>
                         {award=='honorable_mention' && <i className="icon-honorable_mention"></i> }
