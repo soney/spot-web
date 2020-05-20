@@ -47,6 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
                         id
                         location
                         year
+                        type
                         homepage
                         conference_start
                         conference_end
