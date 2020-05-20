@@ -84,6 +84,9 @@ export default class extends React.Component<PublicationProps, {}> {
                         </div>
                     </div>
                     <div className="row">
+                        <p className="col-sm-10 paper-abstract">
+                            {publication.abstract}
+                        </p>
                         <div className="col-sm-2">
                             <h3 className="paper-venue">
                                 {venue_str}
@@ -91,9 +94,6 @@ export default class extends React.Component<PublicationProps, {}> {
                             {awardDisplay}
                             {pdfDisplay}
                         </div>
-                        <p className="col-sm-10 paper-abstract">
-                            {publication.abstract}
-                        </p>
                     </div>
                 </div>
             </Layout>
