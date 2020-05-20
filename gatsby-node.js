@@ -66,7 +66,8 @@ exports.createPages = ({ actions, graphql }) => {
             result.data.allStrapiAuthor.nodes.forEach(( node ) => {
                 const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
                     const authors = pn.authors;
-                    return authors.some((a) => a.id===node.strapiId)
+                    return authors.some((a) => a.id === node.strapiId) && 
+                        (pn.venue.type === 'conference' || pn.venue.type === 'journal');
                 });
                 createPage({
                     path: `/${node.given_name}_${node.family_name}`,
