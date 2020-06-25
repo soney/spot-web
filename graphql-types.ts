@@ -1563,6 +1563,7 @@ export type PageInfo = {
   itemCount: Scalars['Int'];
   pageCount: Scalars['Int'];
   perPage?: Maybe<Scalars['Int']>;
+  totalCount: Scalars['Int'];
 };
 
 export type Potrace = {
@@ -1900,6 +1901,7 @@ export type QueryStrapiPublicationArgs = {
   pdf?: Maybe<FileFilterInput>;
   authors?: Maybe<StrapiPublicationAuthorsFilterListInput>;
   themes?: Maybe<StrapiPublicationThemesFilterListInput>;
+  student_authors?: Maybe<StrapiPublicationStudent_AuthorsFilterListInput>;
   strapiId?: Maybe<IntQueryOperatorInput>;
 };
 
@@ -2352,6 +2354,7 @@ export type SitePageContextPubs = {
   award_description?: Maybe<Scalars['String']>;
   pub_details?: Maybe<Scalars['String']>;
   short_description?: Maybe<Scalars['String']>;
+  status?: Maybe<Scalars['String']>;
   authors?: Maybe<Array<Maybe<SitePageContextPubsAuthors>>>;
   venue?: Maybe<SitePageContextPubsVenue>;
 };
@@ -2383,6 +2386,7 @@ export type SitePageContextPubsFilterInput = {
   award_description?: Maybe<StringQueryOperatorInput>;
   pub_details?: Maybe<StringQueryOperatorInput>;
   short_description?: Maybe<StringQueryOperatorInput>;
+  status?: Maybe<StringQueryOperatorInput>;
   authors?: Maybe<SitePageContextPubsAuthorsFilterListInput>;
   venue?: Maybe<SitePageContextPubsVenueFilterInput>;
 };
@@ -2520,6 +2524,7 @@ export type SitePageFieldsEnum =
   'context___pubs___award_description' |
   'context___pubs___pub_details' |
   'context___pubs___short_description' |
+  'context___pubs___status' |
   'context___pubs___authors' |
   'context___pubs___authors___id' |
   'context___pubs___authors___given_name' |
@@ -3447,7 +3452,6 @@ export type StrapiClusterAuthors = {
   created_at?: Maybe<Scalars['Date']>;
   updated_at?: Maybe<Scalars['Date']>;
   links?: Maybe<Array<Maybe<StrapiClusterAuthorsLinks>>>;
-  media?: Maybe<Array<Maybe<StrapiClusterAuthorsMedia>>>;
   headshot?: Maybe<File>;
 };
 
@@ -3481,7 +3485,6 @@ export type StrapiClusterAuthorsFilterInput = {
   created_at?: Maybe<DateQueryOperatorInput>;
   updated_at?: Maybe<DateQueryOperatorInput>;
   links?: Maybe<StrapiClusterAuthorsLinksFilterListInput>;
-  media?: Maybe<StrapiClusterAuthorsMediaFilterListInput>;
   headshot?: Maybe<FileFilterInput>;
 };
 
@@ -3503,22 +3506,6 @@ export type StrapiClusterAuthorsLinksFilterInput = {
 
 export type StrapiClusterAuthorsLinksFilterListInput = {
   elemMatch?: Maybe<StrapiClusterAuthorsLinksFilterInput>;
-};
-
-export type StrapiClusterAuthorsMedia = {
-  id?: Maybe<Scalars['Int']>;
-  description?: Maybe<Scalars['String']>;
-  media?: Maybe<File>;
-};
-
-export type StrapiClusterAuthorsMediaFilterInput = {
-  id?: Maybe<IntQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  media?: Maybe<FileFilterInput>;
-};
-
-export type StrapiClusterAuthorsMediaFilterListInput = {
-  elemMatch?: Maybe<StrapiClusterAuthorsMediaFilterInput>;
 };
 
 export type StrapiClusterConnection = {
@@ -3656,45 +3643,6 @@ export type StrapiClusterFieldsEnum =
   'authors___links___id' |
   'authors___links___description' |
   'authors___links___url' |
-  'authors___media' |
-  'authors___media___id' |
-  'authors___media___description' |
-  'authors___media___media___sourceInstanceName' |
-  'authors___media___media___absolutePath' |
-  'authors___media___media___relativePath' |
-  'authors___media___media___extension' |
-  'authors___media___media___size' |
-  'authors___media___media___prettySize' |
-  'authors___media___media___modifiedTime' |
-  'authors___media___media___accessTime' |
-  'authors___media___media___changeTime' |
-  'authors___media___media___birthTime' |
-  'authors___media___media___root' |
-  'authors___media___media___dir' |
-  'authors___media___media___base' |
-  'authors___media___media___ext' |
-  'authors___media___media___name' |
-  'authors___media___media___relativeDirectory' |
-  'authors___media___media___dev' |
-  'authors___media___media___mode' |
-  'authors___media___media___nlink' |
-  'authors___media___media___uid' |
-  'authors___media___media___gid' |
-  'authors___media___media___rdev' |
-  'authors___media___media___ino' |
-  'authors___media___media___atimeMs' |
-  'authors___media___media___mtimeMs' |
-  'authors___media___media___ctimeMs' |
-  'authors___media___media___atime' |
-  'authors___media___media___mtime' |
-  'authors___media___media___ctime' |
-  'authors___media___media___birthtime' |
-  'authors___media___media___birthtimeMs' |
-  'authors___media___media___blksize' |
-  'authors___media___media___blocks' |
-  'authors___media___media___publicURL' |
-  'authors___media___media___id' |
-  'authors___media___media___children' |
   'authors___headshot___sourceInstanceName' |
   'authors___headshot___absolutePath' |
   'authors___headshot___relativePath' |
@@ -4082,6 +4030,7 @@ export type StrapiPublication = Node & {
   pdf?: Maybe<File>;
   authors?: Maybe<Array<Maybe<StrapiPublicationAuthors>>>;
   themes?: Maybe<Array<Maybe<StrapiPublicationThemes>>>;
+  student_authors?: Maybe<Array<Maybe<StrapiPublicationStudent_Authors>>>;
   strapiId?: Maybe<Scalars['Int']>;
 };
 
@@ -4992,6 +4941,72 @@ export type StrapiPublicationFieldsEnum =
   'themes___title' |
   'themes___created_at' |
   'themes___updated_at' |
+  'student_authors' |
+  'student_authors___id' |
+  'student_authors___given_name' |
+  'student_authors___family_name' |
+  'student_authors___membership' |
+  'student_authors___homepage' |
+  'student_authors___short_bio' |
+  'student_authors___long_bio' |
+  'student_authors___color' |
+  'student_authors___use_local_homepage' |
+  'student_authors___created_at' |
+  'student_authors___updated_at' |
+  'student_authors___links' |
+  'student_authors___links___id' |
+  'student_authors___links___description' |
+  'student_authors___links___url' |
+  'student_authors___headshot___sourceInstanceName' |
+  'student_authors___headshot___absolutePath' |
+  'student_authors___headshot___relativePath' |
+  'student_authors___headshot___extension' |
+  'student_authors___headshot___size' |
+  'student_authors___headshot___prettySize' |
+  'student_authors___headshot___modifiedTime' |
+  'student_authors___headshot___accessTime' |
+  'student_authors___headshot___changeTime' |
+  'student_authors___headshot___birthTime' |
+  'student_authors___headshot___root' |
+  'student_authors___headshot___dir' |
+  'student_authors___headshot___base' |
+  'student_authors___headshot___ext' |
+  'student_authors___headshot___name' |
+  'student_authors___headshot___relativeDirectory' |
+  'student_authors___headshot___dev' |
+  'student_authors___headshot___mode' |
+  'student_authors___headshot___nlink' |
+  'student_authors___headshot___uid' |
+  'student_authors___headshot___gid' |
+  'student_authors___headshot___rdev' |
+  'student_authors___headshot___ino' |
+  'student_authors___headshot___atimeMs' |
+  'student_authors___headshot___mtimeMs' |
+  'student_authors___headshot___ctimeMs' |
+  'student_authors___headshot___atime' |
+  'student_authors___headshot___mtime' |
+  'student_authors___headshot___ctime' |
+  'student_authors___headshot___birthtime' |
+  'student_authors___headshot___birthtimeMs' |
+  'student_authors___headshot___blksize' |
+  'student_authors___headshot___blocks' |
+  'student_authors___headshot___publicURL' |
+  'student_authors___headshot___childImageSharp___id' |
+  'student_authors___headshot___childImageSharp___children' |
+  'student_authors___headshot___id' |
+  'student_authors___headshot___parent___id' |
+  'student_authors___headshot___parent___children' |
+  'student_authors___headshot___children' |
+  'student_authors___headshot___children___id' |
+  'student_authors___headshot___children___children' |
+  'student_authors___headshot___internal___content' |
+  'student_authors___headshot___internal___contentDigest' |
+  'student_authors___headshot___internal___description' |
+  'student_authors___headshot___internal___fieldOwners' |
+  'student_authors___headshot___internal___ignoreType' |
+  'student_authors___headshot___internal___mediaType' |
+  'student_authors___headshot___internal___owner' |
+  'student_authors___headshot___internal___type' |
   'strapiId';
 
 export type StrapiPublicationFilterInput = {
@@ -5015,6 +5030,7 @@ export type StrapiPublicationFilterInput = {
   pdf?: Maybe<FileFilterInput>;
   authors?: Maybe<StrapiPublicationAuthorsFilterListInput>;
   themes?: Maybe<StrapiPublicationThemesFilterListInput>;
+  student_authors?: Maybe<StrapiPublicationStudent_AuthorsFilterListInput>;
   strapiId?: Maybe<IntQueryOperatorInput>;
 };
 
@@ -5030,6 +5046,74 @@ export type StrapiPublicationGroupConnection = {
 export type StrapiPublicationSortInput = {
   fields?: Maybe<Array<Maybe<StrapiPublicationFieldsEnum>>>;
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
+export type StrapiPublicationStudent_Authors = {
+  id?: Maybe<Scalars['Int']>;
+  given_name?: Maybe<Scalars['String']>;
+  family_name?: Maybe<Scalars['String']>;
+  membership?: Maybe<Scalars['String']>;
+  homepage?: Maybe<Scalars['String']>;
+  short_bio?: Maybe<Scalars['String']>;
+  long_bio?: Maybe<Scalars['String']>;
+  color?: Maybe<Scalars['String']>;
+  use_local_homepage?: Maybe<Scalars['Boolean']>;
+  created_at?: Maybe<Scalars['Date']>;
+  updated_at?: Maybe<Scalars['Date']>;
+  links?: Maybe<Array<Maybe<StrapiPublicationStudent_AuthorsLinks>>>;
+  headshot?: Maybe<File>;
+};
+
+
+export type StrapiPublicationStudent_AuthorsCreated_AtArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
+
+export type StrapiPublicationStudent_AuthorsUpdated_AtArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
+export type StrapiPublicationStudent_AuthorsFilterInput = {
+  id?: Maybe<IntQueryOperatorInput>;
+  given_name?: Maybe<StringQueryOperatorInput>;
+  family_name?: Maybe<StringQueryOperatorInput>;
+  membership?: Maybe<StringQueryOperatorInput>;
+  homepage?: Maybe<StringQueryOperatorInput>;
+  short_bio?: Maybe<StringQueryOperatorInput>;
+  long_bio?: Maybe<StringQueryOperatorInput>;
+  color?: Maybe<StringQueryOperatorInput>;
+  use_local_homepage?: Maybe<BooleanQueryOperatorInput>;
+  created_at?: Maybe<DateQueryOperatorInput>;
+  updated_at?: Maybe<DateQueryOperatorInput>;
+  links?: Maybe<StrapiPublicationStudent_AuthorsLinksFilterListInput>;
+  headshot?: Maybe<FileFilterInput>;
+};
+
+export type StrapiPublicationStudent_AuthorsFilterListInput = {
+  elemMatch?: Maybe<StrapiPublicationStudent_AuthorsFilterInput>;
+};
+
+export type StrapiPublicationStudent_AuthorsLinks = {
+  id?: Maybe<Scalars['Int']>;
+  description?: Maybe<Scalars['String']>;
+  url?: Maybe<Scalars['String']>;
+};
+
+export type StrapiPublicationStudent_AuthorsLinksFilterInput = {
+  id?: Maybe<IntQueryOperatorInput>;
+  description?: Maybe<StringQueryOperatorInput>;
+  url?: Maybe<StringQueryOperatorInput>;
+};
+
+export type StrapiPublicationStudent_AuthorsLinksFilterListInput = {
+  elemMatch?: Maybe<StrapiPublicationStudent_AuthorsLinksFilterInput>;
 };
 
 export type StrapiPublicationThemes = {
@@ -5325,15 +5409,15 @@ export type MembersAndLeadsQuery = { allStrapiAuthor: { nodes: Array<(
       Pick<StrapiAuthor, 'id' | 'strapiId' | 'color' | 'given_name' | 'family_name' | 'middle_name' | 'homepage' | 'short_bio' | 'long_bio' | 'membership' | 'use_local_homepage'>
       & { headshot?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>> }> }> }
     )> }, allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description' | 'status'>
       & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'short_name'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
-    )> }, strapiGroup?: Maybe<Pick<StrapiGroup, 'overview'>>, umsiLogo?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> };
+    )> }, strapiGroup?: Maybe<Pick<StrapiGroup, 'overview'>> };
 
 export type CvPublicationsQueryVariables = {};
 
 
 export type CvPublicationsQuery = { allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
+      Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description' | 'status'>
       & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'full_name' | 'short_name' | 'type'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
     )> } };
 
@@ -5341,7 +5425,7 @@ export type AllPubsQueryVariables = {};
 
 
 export type AllPubsQuery = { allStrapiPublication: { nodes: Array<(
-      Pick<StrapiPublication, 'id' | 'strapiId' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description'>
+      Pick<StrapiPublication, 'id' | 'strapiId' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description' | 'status'>
       & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership' | 'use_local_homepage'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'short_name' | 'full_name' | 'type'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
     )> }, allStrapiCluster: { nodes: Array<(
       Pick<StrapiCluster, 'id' | 'title' | 'description'>
@@ -5378,56 +5462,6 @@ export type PublicationQueryVariables = {
 
 
 export type PublicationQuery = { strapiPublication?: Maybe<(
-    Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award' | 'award_description'>
+    Pick<StrapiPublication, 'id' | 'title' | 'abstract' | 'award' | 'award_description' | 'status'>
     & { pdf?: Maybe<Pick<File, 'id' | 'publicURL'>>, authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'membership' | 'given_name' | 'family_name' | 'homepage'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'year' | 'short_name' | 'homepage'>> }
   )> };
-
-export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpFixed_TracedSvgFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpFixed_WithWebpFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpFixed_NoBase64Fragment = Pick<ImageSharpFixed, 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = Pick<ImageSharpFixed, 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpFluidFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpFluidLimitPresentationSizeFragment = { maxHeight: ImageSharpFluid['presentationHeight'], maxWidth: ImageSharpFluid['presentationWidth'] };
-
-export type GatsbyImageSharpFluid_TracedSvgFragment = Pick<ImageSharpFluid, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpFluid_WithWebpFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-export type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = Pick<ImageSharpFluid, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-export type GatsbyImageSharpFluid_NoBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-export type GatsbyImageSharpResolutionsFragment = Pick<ImageSharpResolutions, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpResolutions_TracedSvgFragment = Pick<ImageSharpResolutions, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpResolutions_WithWebpFragment = Pick<ImageSharpResolutions, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpResolutions_WithWebp_TracedSvgFragment = Pick<ImageSharpResolutions, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpResolutions_NoBase64Fragment = Pick<ImageSharpResolutions, 'width' | 'height' | 'src' | 'srcSet'>;
-
-export type GatsbyImageSharpResolutions_WithWebp_NoBase64Fragment = Pick<ImageSharpResolutions, 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
-
-export type GatsbyImageSharpSizesFragment = Pick<ImageSharpSizes, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpSizes_TracedSvgFragment = Pick<ImageSharpSizes, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpSizes_WithWebpFragment = Pick<ImageSharpSizes, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-export type GatsbyImageSharpSizes_WithWebp_TracedSvgFragment = Pick<ImageSharpSizes, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-export type GatsbyImageSharpSizes_NoBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-export type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;

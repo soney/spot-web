@@ -23,7 +23,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
 
         if(layout === MemberListLayout.full_vertical) {
             const memberDisplays = data.map((node: StrapiAuthor) => (
-                <MemberDisplay highlightPubs={this.props.highlightPubs} data={node} layout={this.props.layout} />
+                <MemberDisplay key={node.id} highlightPubs={this.props.highlightPubs} data={node} layout={this.props.layout} />
             ));
             return <div className="container"> {memberDisplays} </div>;
         } else {

@@ -38,6 +38,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
             venue_str = ``;
         }
         const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.publicURL} download={downloadName}>PDF</a> : null;
+        const condAcceptDisplay = data.status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
 
         if(this.props.detailLevel === PublicationDetailLevel.title) {
             return <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>;
@@ -50,6 +51,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
                 </div>
                 <div className="col-sm-2 text-left">
                     <div className="paper-venue">{venue_str}</div>
+                    <div className="paper-condaccept">{condAcceptDisplay}</div>
                     <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
                     <div className="paper-pdf">{pdfDisplay}</div>
                 </div>

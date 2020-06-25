@@ -13,6 +13,7 @@ export const pubQuery = graphql`query publication($id: String!) {
         abstract
         award
         award_description
+        status
         pdf {
             id
             publicURL
@@ -69,6 +70,8 @@ export default class extends React.Component<PublicationProps, {}> {
             venue_str = ``;
         }
 
+        const condAcceptDisplay = publication.status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
+
         const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
         return (
             <Layout title={`${publication.title}`} active={SpotPage.research} additionalInfo={publication.title}>
@@ -91,6 +94,7 @@ export default class extends React.Component<PublicationProps, {}> {
                             <h3 className="paper-venue">
                                 {venue_str}
                             </h3>
+                            {condAcceptDisplay}
                             {awardDisplay}
                             {pdfDisplay}
                         </div>

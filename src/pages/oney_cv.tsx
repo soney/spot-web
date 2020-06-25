@@ -8,7 +8,7 @@ import { getDownloadName } from '../components/publications';
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export const cvQuery = graphql`query cvPublications {
-    allStrapiPublication {
+    allStrapiPublication(filter: {status: {in: ["accepted"]}}) {
         nodes {
             id
             title
@@ -16,6 +16,7 @@ export const cvQuery = graphql`query cvPublications {
             award_description
             pub_details
             short_description
+            status
             authors {
                 id
                 given_name

@@ -43,6 +43,7 @@ export const indexQuery = graphql`query membersAndLeads {
             award_description
             pub_details
             short_description
+            status
             authors {
                 id
                 given_name
@@ -66,14 +67,6 @@ export const indexQuery = graphql`query membersAndLeads {
     }
     strapiGroup {
         overview
-    }
-
-    umsiLogo: file(relativePath: {eq: "static/images/umsi_logo.svg"}) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
 }`;
 
