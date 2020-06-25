@@ -24,6 +24,9 @@ export const cvQuery = graphql`query cvPublications {
                 homepage
                 membership
             }
+            student_authors {
+                id
+            }
             venue {
                 id
                 location
@@ -44,6 +47,9 @@ export const cvQuery = graphql`query cvPublications {
 interface IndexPageProps {
     data: {
         allStrapiPublication: StrapiPublicationGroupConnection,
+    },
+    location: {
+        search?: string
     }
 }
 enum PUB_TYPES {
@@ -105,13 +111,13 @@ export default class extends React.Component<IndexPageProps, {}> {
         let count = filteredRows.length;
         let footNoteCount: number = 0;
         const rows = filteredRows.map((pub) => {
+            const studentAuthorIDs = pub.student_authors.map((sa) => sa.id);
             const authorNames = pub.authors.map((author) => {
                 const fullName = `${author.given_name} ${author.family_name}`;
-                if(fullName === 'Steve Oney') {
-                    return <b>{fullName}</b>;
-                } else {
-                    return fullName;
-                }
+                const isMe = fullName === 'Steve Oney';
+                const isStudent = studentAuthorIDs.indexOf(author.id) >= 0;
+                const classNames = [' author ', isMe?' me ':null, isStudent?' student ':null].join(' ');
+                return <span className={classNames} key={author.id}>{fullName}</span>
             });
             const { award, award_description } = pub;
 
@@ -191,6 +197,7 @@ export default class extends React.Component<IndexPageProps, {}> {
         return rows;
     }
     public render() {
+        const highlightStudents = this.props.location.search.indexOf('highlight_students') >= 0;
         return <div className="cv container">
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -353,11 +360,17 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                     </div>
                 </div>
-                <div className="section publications">
+                <div className={"section publications" + (highlightStudents ? ' highlight-students' : '')}>
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Publications</h2>
+                        </div>
+                    </div>
+                    <div className="row highlight-students-note">
+                        <div className="col side"></div>
+                        <div className="col main">
+                            <p>Note: The names of authors who were students at the time of publication are <span className='student'>underlined</span> (including my name if I was a student at the time of publication).</p>
                         </div>
                     </div>
                     <div className="row">

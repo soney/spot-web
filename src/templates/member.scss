@@ -8,6 +8,13 @@
     .breadcrumb-item + .breadcrumb-item::before {
         content: "\000b7";
     }
+
+    .breadcrumb-item {
+        i.fa-home {
+            position: relative;
+            top: 3px;
+        }
+    }
 }
 
 h1.person {

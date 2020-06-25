@@ -1745,6 +1745,8 @@ export type QueryAllSitePageArgs = {
 export type QuerySiteArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
+  port?: Maybe<DateQueryOperatorInput>;
+  host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -1989,6 +1991,8 @@ export type QueryAllSitePluginArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
+  port?: Maybe<Scalars['Date']>;
+  host?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
@@ -1999,6 +2003,14 @@ export type Site = Node & {
 
 
 export type SiteBuildTimeArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
+
+export type SitePortArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
@@ -2190,6 +2202,8 @@ export type SiteFieldsEnum =
   'buildTime' |
   'siteMetadata___title' |
   'siteMetadata___author' |
+  'port' |
+  'host' |
   'polyfill' |
   'pathPrefix' |
   'id' |
@@ -2282,6 +2296,8 @@ export type SiteFieldsEnum =
 export type SiteFilterInput = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
+  port?: Maybe<DateQueryOperatorInput>;
+  host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -4945,6 +4961,7 @@ export type StrapiPublicationFieldsEnum =
   'student_authors___id' |
   'student_authors___given_name' |
   'student_authors___family_name' |
+  'student_authors___middle_name' |
   'student_authors___membership' |
   'student_authors___homepage' |
   'student_authors___short_bio' |
@@ -4957,6 +4974,45 @@ export type StrapiPublicationFieldsEnum =
   'student_authors___links___id' |
   'student_authors___links___description' |
   'student_authors___links___url' |
+  'student_authors___media' |
+  'student_authors___media___id' |
+  'student_authors___media___description' |
+  'student_authors___media___media___sourceInstanceName' |
+  'student_authors___media___media___absolutePath' |
+  'student_authors___media___media___relativePath' |
+  'student_authors___media___media___extension' |
+  'student_authors___media___media___size' |
+  'student_authors___media___media___prettySize' |
+  'student_authors___media___media___modifiedTime' |
+  'student_authors___media___media___accessTime' |
+  'student_authors___media___media___changeTime' |
+  'student_authors___media___media___birthTime' |
+  'student_authors___media___media___root' |
+  'student_authors___media___media___dir' |
+  'student_authors___media___media___base' |
+  'student_authors___media___media___ext' |
+  'student_authors___media___media___name' |
+  'student_authors___media___media___relativeDirectory' |
+  'student_authors___media___media___dev' |
+  'student_authors___media___media___mode' |
+  'student_authors___media___media___nlink' |
+  'student_authors___media___media___uid' |
+  'student_authors___media___media___gid' |
+  'student_authors___media___media___rdev' |
+  'student_authors___media___media___ino' |
+  'student_authors___media___media___atimeMs' |
+  'student_authors___media___media___mtimeMs' |
+  'student_authors___media___media___ctimeMs' |
+  'student_authors___media___media___atime' |
+  'student_authors___media___media___mtime' |
+  'student_authors___media___media___ctime' |
+  'student_authors___media___media___birthtime' |
+  'student_authors___media___media___birthtimeMs' |
+  'student_authors___media___media___blksize' |
+  'student_authors___media___media___blocks' |
+  'student_authors___media___media___publicURL' |
+  'student_authors___media___media___id' |
+  'student_authors___media___media___children' |
   'student_authors___headshot___sourceInstanceName' |
   'student_authors___headshot___absolutePath' |
   'student_authors___headshot___relativePath' |
@@ -5052,6 +5108,7 @@ export type StrapiPublicationStudent_Authors = {
   id?: Maybe<Scalars['Int']>;
   given_name?: Maybe<Scalars['String']>;
   family_name?: Maybe<Scalars['String']>;
+  middle_name?: Maybe<Scalars['String']>;
   membership?: Maybe<Scalars['String']>;
   homepage?: Maybe<Scalars['String']>;
   short_bio?: Maybe<Scalars['String']>;
@@ -5061,6 +5118,7 @@ export type StrapiPublicationStudent_Authors = {
   created_at?: Maybe<Scalars['Date']>;
   updated_at?: Maybe<Scalars['Date']>;
   links?: Maybe<Array<Maybe<StrapiPublicationStudent_AuthorsLinks>>>;
+  media?: Maybe<Array<Maybe<StrapiPublicationStudent_AuthorsMedia>>>;
   headshot?: Maybe<File>;
 };
 
@@ -5084,6 +5142,7 @@ export type StrapiPublicationStudent_AuthorsFilterInput = {
   id?: Maybe<IntQueryOperatorInput>;
   given_name?: Maybe<StringQueryOperatorInput>;
   family_name?: Maybe<StringQueryOperatorInput>;
+  middle_name?: Maybe<StringQueryOperatorInput>;
   membership?: Maybe<StringQueryOperatorInput>;
   homepage?: Maybe<StringQueryOperatorInput>;
   short_bio?: Maybe<StringQueryOperatorInput>;
@@ -5093,6 +5152,7 @@ export type StrapiPublicationStudent_AuthorsFilterInput = {
   created_at?: Maybe<DateQueryOperatorInput>;
   updated_at?: Maybe<DateQueryOperatorInput>;
   links?: Maybe<StrapiPublicationStudent_AuthorsLinksFilterListInput>;
+  media?: Maybe<StrapiPublicationStudent_AuthorsMediaFilterListInput>;
   headshot?: Maybe<FileFilterInput>;
 };
 
@@ -5114,6 +5174,22 @@ export type StrapiPublicationStudent_AuthorsLinksFilterInput = {
 
 export type StrapiPublicationStudent_AuthorsLinksFilterListInput = {
   elemMatch?: Maybe<StrapiPublicationStudent_AuthorsLinksFilterInput>;
+};
+
+export type StrapiPublicationStudent_AuthorsMedia = {
+  id?: Maybe<Scalars['Int']>;
+  description?: Maybe<Scalars['String']>;
+  media?: Maybe<File>;
+};
+
+export type StrapiPublicationStudent_AuthorsMediaFilterInput = {
+  id?: Maybe<IntQueryOperatorInput>;
+  description?: Maybe<StringQueryOperatorInput>;
+  media?: Maybe<FileFilterInput>;
+};
+
+export type StrapiPublicationStudent_AuthorsMediaFilterListInput = {
+  elemMatch?: Maybe<StrapiPublicationStudent_AuthorsMediaFilterInput>;
 };
 
 export type StrapiPublicationThemes = {
@@ -5418,7 +5494,7 @@ export type CvPublicationsQueryVariables = {};
 
 export type CvPublicationsQuery = { allStrapiPublication: { nodes: Array<(
       Pick<StrapiPublication, 'id' | 'title' | 'award' | 'award_description' | 'pub_details' | 'short_description' | 'status'>
-      & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'full_name' | 'short_name' | 'type'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
+      & { authors?: Maybe<Array<Maybe<Pick<StrapiPublicationAuthors, 'id' | 'given_name' | 'family_name' | 'homepage' | 'membership'>>>>, student_authors?: Maybe<Array<Maybe<Pick<StrapiPublicationStudent_Authors, 'id'>>>>, venue?: Maybe<Pick<StrapiPublicationVenue, 'id' | 'location' | 'year' | 'homepage' | 'conference_start' | 'conference_end' | 'full_name' | 'short_name' | 'type'>>, pdf?: Maybe<Pick<File, 'publicURL'>> }
     )> } };
 
 export type AllPubsQueryVariables = {};

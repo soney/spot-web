@@ -114,6 +114,11 @@ body {
                 margin-top: 1em;
                 margin-bottom: 1em;
                 text-align: justify;
+                .author {
+                    &.me {
+                        font-weight: bold;
+                    }
+                }
             }
             .paper-award-label {
                 color: $award-color;
@@ -121,6 +126,19 @@ body {
             .paper-award-footnote {
                 font-style: italic;
                 color: $award-color;
+            }
+
+            .highlight-students-note {
+                display: none;
+            }
+            &.highlight-students {
+                .highlight-students-note {
+                    display: flex;
+                }
+                .student {
+                    text-decoration: underline;
+                    text-decoration-thickness: 0.1px;
+                }
             }
         }
 
