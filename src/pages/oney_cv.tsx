@@ -711,7 +711,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="date">2021</div>
                         </div>
                         <div className="col main">
-                            <div className="role">Program Chair</div>
+                            <div className="role">Program Co-Chair (with Jácome Miguel Costa Cunha)</div>
                             <div className="venue">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</div>
                         </div>
                     </div>
