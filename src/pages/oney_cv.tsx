@@ -429,6 +429,18 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
+                            <div className="date">09/2020</div>
+                            <div className="award-amount">$499,209</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools</div>
+                            <div className="award-team">Steve Oney and Walter Lasecki</div>
+                            <div className="award-sponsor">National Science Foundation (NSF)</div>
+                            <div className="award-program">IIS: Cyber-Human Systems (CHS)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
                             <div className="date">07/2019</div>
                             <div className="award-amount">$10,875</div>
                         </div>
