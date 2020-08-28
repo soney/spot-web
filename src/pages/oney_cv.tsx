@@ -109,7 +109,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             return (byear*365+bmonth*31+bday) - (ayear*365+amonth*31+aday);
         });
         let count = filteredRows.length;
-        let footNoteCount: number = 0;
+        let footNoteCount: number = 1;
         const rows = filteredRows.map((pub) => {
             const studentAuthorIDs = pub.student_authors.map((sa) => sa.id);
             const authorNames = pub.authors.map((author) => {
@@ -162,10 +162,10 @@ export default class extends React.Component<IndexPageProps, {}> {
 
             let awardFootnote: string = ''; 
             if(award_description) {
-                footNoteCount++;
                 for(let i: number = 0; i<footNoteCount; i++) {
                     awardFootnote += '*'
                 }
+                // footNoteCount++;
             }
 
             let venueString = `${pub.venue.full_name}`;
@@ -704,6 +704,15 @@ export default class extends React.Component<IndexPageProps, {}> {
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Service</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2021</div>
+                        </div>
+                        <div className="col main">
+                            <div className="role">Program Chair</div>
+                            <div className="venue">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</div>
                         </div>
                     </div>
                     <div className="row">
