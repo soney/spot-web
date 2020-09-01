@@ -1141,6 +1141,16 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
+                            <div className="date">2020</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">Ph.D.: Vaspol Ruamviboonsuk (Computer Science and Engineering)</div>
+                            <div className="student-thesis">Understanding and Improving the Performance of Web Page Loads</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
                             <div className="date">2019</div>
                             <div className="location">University of Michigan</div>
                         </div>
