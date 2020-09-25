@@ -429,6 +429,18 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
+                            <div className="date">10/2020</div>
+                            <div className="award-amount">$60,000</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">Designing and Building Collaborative Tools for Mixed-Ability Programming Teams</div>
+                            <div className="award-team">Steve Oney (+ Mauli Pandey, unofficially)</div>
+                            <div className="award-sponsor">Google Inc.</div>
+                            <div className="award-program">Award for Inclusion Research Award</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
                             <div className="date">09/2020</div>
                             <div className="award-amount">$499,209</div>
                         </div>
@@ -577,6 +589,16 @@ export default class extends React.Component<IndexPageProps, {}> {
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Invited Presentations</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">10/2020</div>
+                            <div className="location">Cambridge, MA<br/>(remote)</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">MIT CSAIL HCI Seminar</div>
+                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
                         </div>
                     </div>
                     <div className="row item">
@@ -983,12 +1005,11 @@ export default class extends React.Component<IndexPageProps, {}> {
 
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2009</div>
-                            <div className="location">University of Michigan &amp; Coursera</div>
+                            <div className="date-range">2021 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="course-name">Python 3 Programming Specialization</div>
-                            <div className="course-url"><a href="https://www.coursera.org/specializations/python-3-programming">https://www.coursera.org/specializations/python-3-programming</a></div>
+                            <div className="course-name">Instructor (and creator) &ndash; SI 579 (Building Interactive Applications)</div>
                         </div>
                     </div>
                     <div className="row item">
@@ -998,6 +1019,16 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="course-name">Instructor &ndash; SI 106 (Programs, Information, &amp; People)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2009</div>
+                            <div className="location">University of Michigan &amp; Coursera</div>
+                        </div>
+                        <div className="col main">
+                            <div className="course-name">Python 3 Programming Specialization</div>
+                            <div className="course-url"><a href="https://www.coursera.org/specializations/python-3-programming">https://www.coursera.org/specializations/python-3-programming</a></div>
                         </div>
                     </div>
                     <div className="row item">
@@ -1124,12 +1155,12 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">Fall 2015 &ndash; present</div>
+                            <div className="date-range">Fall 2015 &ndash; Fall 2020</div>
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
                             <div className="supervisee">Yan Chen (School of Information)</div>
-                            <div className="supervisee-thesis">(ongoing)</div>
+                            <div className="supervisee-thesis">On-Demand Collaboration in Programming</div>
                         </div>
                     </div>
 
@@ -1185,8 +1216,8 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">M.S.: Andy Zhou (School of Information)</div>
-                            <div className="student-thesis"></div>
+                            <div className="student">M.S.: (Andy) Xunan Zhou (School of Information)</div>
+                            <div className="student-thesis">Conversational Agent Experience: What makes a good skill?</div>
                         </div>
                     </div>
                     <div className="row item">
@@ -1196,7 +1227,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="student">M.S.: Kangning Chen (School of Information)</div>
-                            <div className="student-thesis"></div>
+                            <div className="student-thesis">Providing Examples and Tool Support for Novice AR Creators</div>
                         </div>
                     </div>
                     <div className="row item">
