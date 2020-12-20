@@ -429,6 +429,16 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                     <div className="row item">
                         <div className="col side">
+                            <div className="date">11/2020</div>
+                            <div className="award-amount">$10,000</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-team">Steve Oney</div>
+                            <div className="award-sponsor">Adobe, Inc.</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
                             <div className="date">10/2020</div>
                             <div className="award-amount">$60,000</div>
                         </div>
@@ -589,6 +599,16 @@ export default class extends React.Component<IndexPageProps, {}> {
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Invited Presentations</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">12/2020</div>
+                            <div className="location">Seattle, WA<br/>(remote)</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">University of Washington DUB Seminar</div>
+                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
                         </div>
                     </div>
                     <div className="row item">

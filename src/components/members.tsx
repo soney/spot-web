@@ -5,7 +5,7 @@ import { StrapiAuthor } from '../../graphql-types';
 import * as ReactMarkdown from 'react-markdown';
 
 export enum MemberListLayout {
-    short_horizontal='short_horizontal', full_vertical='full_vertical'
+    short_horizontal='short_horizontal', full_vertical='full_vertical', tiny_head='tiny_head'
 }
 
 interface MemberListDisplayProps {
@@ -26,16 +26,28 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
                 <MemberDisplay key={node.id} highlightPubs={this.props.highlightPubs} data={node} layout={this.props.layout} />
             ));
             return <div className="container"> {memberDisplays} </div>;
-        } else {
+        } else if(layout === MemberListLayout.short_horizontal) {
             // const col_count = Math.floor(12/data.length);
             const memberDisplays = data.map((node: StrapiAuthor) => (
-                <div key={node.id} className={`col col-sm-`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+                <div key={node.id} className={`col col-md-`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
             return <div className="container">
                 <div className="row">
                     {memberDisplays}
                 </div>
             </div>;
+        } else if(layout === MemberListLayout.tiny_head) {
+            // const col_count = Math.floor(12/data.length);
+            const memberDisplays = data.map((node: StrapiAuthor) => (
+                <div key={node.id} className={`col col-md-2`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+            ));
+            return <div className="container">
+                <div className="row">
+                    {memberDisplays}
+                </div>
+            </div>;
+        } else {
+            return;
         }
     }
 }

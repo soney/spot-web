@@ -9,7 +9,7 @@ import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
 
 export const indexQuery = graphql`query team {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
             strapiId
@@ -66,10 +66,16 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
+        const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
+        const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         return <Layout active={SpotPage.team}>
             <div className="container">
                 <h2 className="">Current Team Members</h2>
-                <MemberListDisplay layout={MemberListLayout.full_vertical} highlightPubs={false} data={data.allStrapiAuthor.nodes} />
+                <MemberListDisplay layout={MemberListLayout.full_vertical} highlightPubs={false} data={currentMembers} />
+            </div>
+            <div className="container">
+                <h2 className="">Ph.D. Alumni</h2>
+                <MemberListDisplay layout={MemberListLayout.full_vertical} highlightPubs={false} data={alumMembers} />
             </div>
             <div className="container">
                 <h2 className="">Join Us</h2>

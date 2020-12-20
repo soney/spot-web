@@ -9,7 +9,7 @@ import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
 
 export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
             strapiId
@@ -84,6 +84,8 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
+        const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
+        const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         return <Layout active={SpotPage.home}>
             <div className="container">
                 <ReactMarkdown source={data.strapiGroup.overview} />
@@ -91,7 +93,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             <div className="container">
                 {/* <h2 className="">People <Link className="" to="/people">(all people)</Link></h2> */}
                 <h2 className="">People</h2>
-                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={data.allStrapiAuthor.nodes} />
+                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers, ...alumMembers]} />
             </div>
             <div className="container">
                 <h2>Recent publications <Link to="/research#all-publications">(all publications)</Link></h2>
@@ -149,6 +151,26 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <object id="nsf-logo" data="/images/nsf_logo.svg" type="image/svg+xml">
                             <img src="/images/nsf_logo.png" alt="NSF Logo" />
+                        </object>
+                    </div>
+                    <div className="col col-sm-3">
+                        <div>
+                            <a href="https://research.google/" target="_blank">
+                                Google
+                            </a>
+                        </div>
+                        <object id="google-logo" data="/images/google_logo.svg" type="image/svg+xml">
+                            <img src="/images/google_logo.png" alt="Google Logo" />
+                        </object>
+                    </div>
+                    <div className="col col-sm-3">
+                        <div>
+                            <a href="https://research.adobe.com/" target="_blank">
+                                Adobe, Inc.
+                            </a>
+                        </div>
+                        <object id="adobe-logo" data="/images/adobe_logo.svg" type="image/svg+xml">
+                            <img src="/images/adobe_logo.png" alt="Adobe Logo" />
                         </object>
                     </div>
                 </div>
