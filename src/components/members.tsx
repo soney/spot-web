@@ -3,9 +3,10 @@ import Link from 'gatsby-link';
 import * as React from 'react';
 import { StrapiAuthor } from '../../graphql-types';
 import * as ReactMarkdown from 'react-markdown';
+import { chunk } from 'lodash';
 
 export enum MemberListLayout {
-    short_horizontal='short_horizontal', full_vertical='full_vertical', tiny_head='tiny_head'
+    short_horizontal='short_horizontal', full_vertical='full_vertical', tiny_head='tiny_head', simple_list='simple_list'
 }
 
 interface MemberListDisplayProps {
@@ -15,8 +16,8 @@ interface MemberListDisplayProps {
 }
 
 export class MemberListDisplay extends React.Component<MemberListDisplayProps, {}> {
-    constructor(props: MemberListDisplayProps, context: {}) {
-        super(props, context)
+    constructor(props: MemberListDisplayProps) {
+        super(props);
     }
     public render() {
         const { data, layout } = this.props;
@@ -46,6 +47,21 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
                     {memberDisplays}
                 </div>
             </div>;
+        } else if(layout === MemberListLayout.simple_list) {
+            const memberDisplays = data.map((node: StrapiAuthor) => (
+                node.homepage ?
+                <li key={node.id}><a href={node.homepage}>{`${node.given_name} ${node.family_name}`}</a>{node.short_bio && ` (${node.short_bio})`}</li> :
+                <li key={node.id}>{`${node.given_name} ${node.family_name}`}{node.short_bio && ` (${node.short_bio})`}</li>
+            ));
+            const chunkedMemberDisplays = chunk(memberDisplays, Math.round(data.length/3));
+            const allCols = chunkedMemberDisplays.map((lst) => {
+                return <ul className="col col-md-4">{lst}</ul>
+            })
+            return <div className="container">
+                <div className="row">
+                    {allCols}
+                </div>
+            </div>;
         } else {
             return;
         }
@@ -59,8 +75,8 @@ interface MemberDisplayProps {
 }
 
 class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
-    constructor(props: MemberDisplayProps, context: {}) {
-        super(props, context);
+    constructor(props: MemberDisplayProps) {
+        super(props);
     }
     private pubListElements: ChildNode[];
     public render(): JSX.Element {

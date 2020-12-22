@@ -16,8 +16,8 @@ interface PublicationListDisplayProps {
     highlightAuthors?: number[]
 }
 export class PublicationListDisplay extends React.Component<PublicationListDisplayProps, {}> {
-    constructor(props: PublicationListDisplayProps, context: {}) {
-        super(props, context)
+    constructor(props: PublicationListDisplayProps) {
+        super(props);
     }
     public render() {
         const { data, groupByVenue, backTo } = this.props;

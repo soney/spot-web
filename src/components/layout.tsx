@@ -14,8 +14,8 @@ interface LayoutProperties {
     title?: string
 }
 export class Layout extends React.Component<LayoutProperties, {}> {
-    constructor(props: LayoutProperties, context: {}) {
-        super(props, context);
+    constructor(props: LayoutProperties) {
+        super(props);
     }
     public render() {
         return <div className='application'>

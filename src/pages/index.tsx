@@ -9,7 +9,7 @@ import * as ReactMarkdown from 'react-markdown';
 import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
 
 export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
         nodes {
             id
             strapiId
@@ -79,8 +79,8 @@ interface IndexPageProps {
 }
 
 export default class extends React.Component<IndexPageProps, {}> {
-    constructor(props: IndexPageProps, context: {}) {
-        super(props, context);
+    constructor(props: IndexPageProps) {
+        super(props);
     }
     public render() {
         const { data } = this.props;
@@ -91,12 +91,12 @@ export default class extends React.Component<IndexPageProps, {}> {
                 <ReactMarkdown source={data.strapiGroup.overview} />
             </div>
             <div className="container">
-                {/* <h2 className="">People <Link className="" to="/people">(all people)</Link></h2> */}
-                <h2 className="">People</h2>
+                <h2 className="">People <Link className="" to="/team">(more)</Link></h2>
+                {/* <h2 className="">People</h2> */}
                 <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers, ...alumMembers]} />
             </div>
             <div className="container">
-                <h2>Recent publications <Link to="/research#all-publications">(all publications)</Link></h2>
+                <h2>Recent publications <Link to="/research#all-publications">(more)</Link></h2>
                 <PublicationListDisplay backTo={2016} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
             </div>
             <footer className="container">
@@ -138,8 +138,11 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col col-sm-3">
+                    <div className="col col-sm-2">
                         <h5>Sponsors:</h5>
+                    </div>
+                    <div className="col col-sm-10 disclaimer">
+                        <p>(Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)</p>
                     </div>
                 </div>
                 <div className="row sponsors-row">

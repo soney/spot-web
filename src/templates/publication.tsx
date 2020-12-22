@@ -43,8 +43,8 @@ interface PublicationProps {
 }
 
 export default class extends React.Component<PublicationProps, {}> {
-    constructor(props: PublicationProps, context: {}) {
-        super(props, context);
+    constructor(props: PublicationProps) {
+        super(props);
     }
     public render() {
         const publication = this.props.data.strapiPublication;

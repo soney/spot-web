@@ -54,8 +54,8 @@ interface MemberProps {
 }
 
 export default class extends React.Component<MemberProps, {}> {
-    constructor(props: MemberProps, context: {}) {
-        super(props, context);
+    constructor(props: MemberProps) {
+        super(props);
     }
     public render() {
         const author = this.props.data.strapiAuthor;

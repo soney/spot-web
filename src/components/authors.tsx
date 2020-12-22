@@ -9,8 +9,8 @@ interface AuthorDisplayProps {
 }
 
 export class AuthorDisplay extends React.Component<AuthorDisplayProps, {}> {
-    constructor(props: AuthorDisplayProps, context: {}) {
-        super(props, context);
+    constructor(props: AuthorDisplayProps) {
+        super(props);
     }
     public render(): JSX.Element {
         const { data } = this.props;
@@ -32,8 +32,8 @@ interface AuthorListDisplayProps {
     highlightAuthors?: number[]
 }
 export class AuthorListDisplay extends React.Component<AuthorListDisplayProps, {}> {
-    constructor(props: AuthorListDisplayProps, context: {}) {
-        super(props, context);
+    constructor(props: AuthorListDisplayProps) {
+        super(props);
     }
 
     public render(): JSX.Element {

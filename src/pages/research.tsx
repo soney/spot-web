@@ -69,8 +69,8 @@ interface IndexPageProps {
 }
 
 export default class extends React.Component<IndexPageProps, {}> {
-    constructor(props: IndexPageProps, context: {}) {
-        super(props, context);
+    constructor(props: IndexPageProps) {
+        super(props);
     }
     public render() {
         const { data } = this.props;
