@@ -53,7 +53,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
                 <li key={node.id}><a href={node.homepage}>{`${node.given_name} ${node.family_name}`}</a>{node.short_bio && ` (${node.short_bio})`}</li> :
                 <li key={node.id}>{`${node.given_name} ${node.family_name}`}{node.short_bio && ` (${node.short_bio})`}</li>
             ));
-            const chunkedMemberDisplays = chunk(memberDisplays, Math.round(data.length/3));
+            const chunkedMemberDisplays = chunk(memberDisplays, Math.ceil(data.length/3));
             const allCols = chunkedMemberDisplays.map((lst) => {
                 return <ul className="col col-md-4">{lst}</ul>
             })
@@ -73,10 +73,14 @@ interface MemberDisplayProps {
     layout: MemberListLayout,
     highlightPubs: boolean
 }
+interface MemberDisplayState {
+    highlighted: boolean
+}
 
-class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
+class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplayState> {
     constructor(props: MemberDisplayProps) {
         super(props);
+        this.state = { highlighted: false };
     }
     private pubListElements: ChildNode[];
     public render(): JSX.Element {
@@ -85,6 +89,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
         const color = data.color || '#FFFF00';
 
         const highlightMember = () => {
+            this.setState({highlighted: true});
             if(this.props.highlightPubs) {
                 const pubList = document.querySelector('.publication-list');
                 this.pubListElements = Array.from(pubList.childNodes);
@@ -127,6 +132,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
             }
         };
         const unhighlightMember = () => {
+            this.setState({highlighted: false});
             if(this.props.highlightPubs) {
                 const pubList = document.querySelector('.publication-list');
                 this.pubListElements.forEach((el) => {
@@ -179,12 +185,13 @@ class MemberDisplay extends React.Component<MemberDisplayProps, {}> {
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
-                <div className="member-short-bio d-none d-sm-block">{short_bio}</div>
+                <div className="member-short-bio d-none d-sm-block">{short_bio}</div>,
+                // <button className="member-focus btn btn-block btn-small btn-link" onClick={highlightMember}>highlight</button>
             ];
             if(data.use_local_homepage) {
-                return <Link onMouseEnter = {highlightMember} onMouseLeave = {unhighlightMember} className="member-display" data-member-id={strapiId} to={`/${data.given_name}_${data.family_name}`}>{memberContent}</Link>;
+                return <Link aria-label={`${data.given_name} ${data.family_name}`} onMouseEnter={highlightMember} onMouseLeave={unhighlightMember} className="member-display" data-member-id={strapiId} to={`/${data.given_name}_${data.family_name}`}>{memberContent}</Link>;
             } else {
-                return <a onMouseEnter={highlightMember} onMouseLeave={unhighlightMember} className="member-display" data-member-id={strapiId} href={data.homepage} target="_blank">{memberContent}</a>;
+                return <a aria-label={`${data.given_name} ${data.family_name}`} onMouseEnter={highlightMember} onMouseLeave={unhighlightMember} className="member-display" data-member-id={strapiId} href={data.homepage} target="_blank">{memberContent}</a>;
             }
         }
     }

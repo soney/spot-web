@@ -91,12 +91,12 @@ export default class extends React.Component<IndexPageProps, {}> {
                 <ReactMarkdown source={data.strapiGroup.overview} />
             </div>
             <div className="container">
-                <h2 className="">People <Link className="" to="/team">(more)</Link></h2>
+                <h2 className="">People <Link className="" to="/team">[+]</Link></h2>
                 {/* <h2 className="">People</h2> */}
                 <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers, ...alumMembers]} />
             </div>
             <div className="container">
-                <h2>Recent publications <Link to="/research#all-publications">(more)</Link></h2>
+                <h2>Recent Publications <Link to="/research#all-publications">[+]</Link></h2>
                 <PublicationListDisplay backTo={2016} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
             </div>
             <footer className="container">

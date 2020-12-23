@@ -94,6 +94,10 @@ body {
                     filter: none;
                 }
             }
+
+            .member-focus {
+                visibility: visible;
+            }
         }
         .member-headshot {
             img {
@@ -101,10 +105,14 @@ body {
                 filter: grayscale(100%) brightness(110%) contrast(80%);
             }
         }
-        .member-short-bio {
+        .member-short-bio, .member-focus {
             font-size: 0.8em;
             white-space: pre-line;
         }
+        .member-focus {
+            visibility: hidden;
+        }
+
     }
     ul.publication-list {
         list-style: none;
