@@ -30,10 +30,10 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
         } else if(layout === MemberListLayout.short_horizontal) {
             // const col_count = Math.floor(12/data.length);
             const memberDisplays = data.map((node: StrapiAuthor) => (
-                <div key={node.id} className={`col col-md-`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+                <div key={node.id} className={`member p-2`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
             return <div className="container">
-                <div className="row">
+                <div className="flex-row d-flex">
                     {memberDisplays}
                 </div>
             </div>;

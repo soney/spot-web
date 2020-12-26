@@ -76,6 +76,10 @@ body {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    .member {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 
     .member-display {
         text-align: center;
@@ -202,8 +206,9 @@ body {
         //     width: 100%;
         // }
     }
-    .conditionally_accepted {
+    .paper-condaccept {
         color: $secondary-text-color;
+        text-align: center;
     }
     .disclaimer {
         color: $secondary-text-color;
