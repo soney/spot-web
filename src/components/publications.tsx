@@ -47,13 +47,13 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
                 <div className="col-sm-10">
                     <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>
                     <div className="paper-authors"><AuthorListDisplay authors={authors} withLinks={true} highlightAuthors={this.props.highlightAuthors} /></div>
-                    {data.short_description && <p className="paper-description">{data.short_description}</p>}
+                    {data.short_description && <p className="paper-description d-none d-md-block">{data.short_description}</p>}
                 </div>
                 <div className="col-sm-2 text-left">
-                    <div className="paper-venue">{venue_str}</div>
-                    <div className="paper-condaccept">{condAcceptDisplay}</div>
-                    <div className="paper-award"><AwardDisplay data={data.award} description={data.award_description} /></div>
-                    <div className="paper-pdf">{pdfDisplay}</div>
+                    <div className="paper-venue d-inline d-md-block">{venue_str}<span className="d-inline d-md-none">&nbsp;</span></div>
+                    {data.status === 'conditionally_accepted' && <div className="paper-condaccept d-inline d-md-block">{condAcceptDisplay}<span className="d-inline d-md-none">&nbsp;</span></div> }
+                    {data.award !== 'none' && <div className="paper-award d-inline d-md-block"><AwardDisplay data={data.award} description={data.award_description} /><span className="d-inline d-md-none">&nbsp;</span></div> }
+                    <div className="paper-pdf d-inline d-md-block">{pdfDisplay}</div>
                 </div>
             </div>;
         }

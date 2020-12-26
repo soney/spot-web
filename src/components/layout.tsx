@@ -20,6 +20,7 @@ export class Layout extends React.Component<LayoutProperties, {}> {
     public render() {
         return <div className='application'>
             <Helmet>
+                <html lang="en" />
                 <meta charSet="utf-8" />
                 <title>{ (this.props.title ? `${this.props.title} | ` : '') + 'Spot Research Group' }</title>
             </Helmet>

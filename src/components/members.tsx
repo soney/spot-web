@@ -30,9 +30,9 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
         } else if(layout === MemberListLayout.short_horizontal) {
             // const col_count = Math.floor(12/data.length);
             const memberDisplays = data.map((node: StrapiAuthor) => (
-                <div key={node.id} className={`member p-2`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
+                <div key={node.id} className={`member p-1`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
-            return <div className="container">
+            return <div className="">
                 <div className="flex-row d-flex">
                     {memberDisplays}
                 </div>
@@ -167,7 +167,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             })
             return <div className="row member-row">
                 <div className="col col-md-2">
-                    <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${given_name} ${family_name}`} />
+                    <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} />
                 </div>
                 <div className="col col-md-10">
                     <h3>{`${given_name} ${family_name}`}</h3>
@@ -181,7 +181,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             </div>
         } else {
             const memberContent: JSX.Element[] = [
-                <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} alt={`Headshot of ${given_name} ${family_name}`} />,
+                <Img className="member-headshot" fluid={data.headshot.childImageSharp.fluid as any} title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} />,
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,

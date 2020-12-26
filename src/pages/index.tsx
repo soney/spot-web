@@ -102,11 +102,11 @@ export default class extends React.Component<IndexPageProps, {}> {
             <footer className="container">
                 <div className="row">
                     <div className="col col-sm-9">
-                        <h5>Affiliations:</h5>
+                        <h2>Affiliations:</h2>
                     </div>
                 </div>
                 <div className="affiliations row">
-                    <div className="col col-sm-4">
+                    <div className="col col-md-4">
                         <div>
                             <a href="https://www.si.umich.edu/" target="_blank">
                                 Michigan School of Information
@@ -116,7 +116,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <img src="/images/umsi_logo.png" alt="Michigan SI Logo" />
                         </object>
                     </div>
-                    <div className="col col-sm-2">
+                    <div className="col col-md-2">
                         <div>
                             <a href="https://misc.si.umich.edu/" target="_blank">
                                 MISC
@@ -126,9 +126,9 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <img src="/images/misc_dark.png" alt="Michigan MISC" />
                         </object>
                     </div>
-                    <div className="col col-sm-3">
+                    <div className="col col-md-3">
                         <div>
-                            <a href="https://misc.si.umich.edu/" target="_blank">
+                            <a href="https://cse.engin.umich.edu/" target="_blank">
                                 Michigan CSE
                             </a>
                         </div>
@@ -138,15 +138,15 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col col-sm-2">
-                        <h5>Sponsors:</h5>
+                    <div className="col col-md-2">
+                        <h2>Sponsors:</h2>
                     </div>
-                    <div className="col col-sm-10 disclaimer">
+                    <div className="col col-md-10 disclaimer">
                         <p>(Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)</p>
                     </div>
                 </div>
                 <div className="row sponsors-row">
-                    <div className="col col-sm-3">
+                    <div className="col col-md-3">
                         <div>
                             <a href="https://nsf.gov/" target="_blank">
                                 National Science Foundation
@@ -156,7 +156,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <img src="/images/nsf_logo.png" alt="NSF Logo" />
                         </object>
                     </div>
-                    <div className="col col-sm-3">
+                    <div className="col col-md-3">
                         <div>
                             <a href="https://research.google/" target="_blank">
                                 Google
@@ -166,7 +166,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <img src="/images/google_logo.png" alt="Google Logo" />
                         </object>
                     </div>
-                    <div className="col col-sm-3">
+                    <div className="col col-md-3">
                         <div>
                             <a href="https://research.adobe.com/" target="_blank">
                                 Adobe, Inc.

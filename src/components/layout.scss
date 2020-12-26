@@ -4,12 +4,15 @@
 @import "~bootstrap";
 
 $background-color: #FFF;
-$text-color: #333;
-$secondary-text-color: #888;
+$text-color: #131516;
+$secondary-text-color: #655A52;
 $border-color: #EEE;
 
-$link-color: #007bff;
-$link-hover-color: #0056b3; 
+$link-color: #2F65A7;
+$link-hover-color: #2F65A7;
+// $link-color: #0056b3; 
+// $link-hover-color: #0056b3; 
+
 
 // $background-color: #222;
 // $text-color: #CCC;
@@ -141,7 +144,7 @@ body {
             .paper-description {
                 color: $secondary-text-color;
                 font-size: 0.85em;
-                text-align: justify;
+                text-align: left;
                 margin-bottom: 0px;
                 &::before {
                     content: "Description: ";
@@ -205,12 +208,17 @@ body {
         // svg {
         //     width: 100%;
         // }
+        h2 {
+            margin-top: 5px;
+            font-size: 1.5em;
+        }
+        .disclaimer {
+            padding-top: 8px;
+            color: $secondary-text-color;
+        }
     }
     .paper-condaccept {
         color: $secondary-text-color;
         text-align: center;
-    }
-    .disclaimer {
-        color: $secondary-text-color;
     }
 }
