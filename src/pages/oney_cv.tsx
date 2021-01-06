@@ -1150,7 +1150,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="supervisee">(Mauli) Maulishree Pandey (School of Information)</div>
-                            <div className="supervisee-thesis">(ongoing, co-advised with Sile O'Modhrain)</div>
+                            <div className="supervisee-thesis">(ongoing)</div>
                         </div>
                     </div>
                     <div className="row item">
