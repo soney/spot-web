@@ -44,13 +44,18 @@ export const cvQuery = graphql`query cvPublications {
         }
     }
 }`;
-interface IndexPageProps {
+interface CVPageProps {
     data: {
         allStrapiPublication: StrapiPublicationGroupConnection,
     },
     location: {
         search?: string
     }
+}
+interface CVPageState {
+    includePaperAwards: boolean;
+    underlineStudentAuthors: boolean;
+    showAllUndergraduateCollaborators: boolean;
 }
 enum PUB_TYPES {
     CONFERENCE='C',
@@ -82,9 +87,16 @@ function convertPubType(typeString: string): PUB_TYPES|null {
     }
 }
 
-export default class extends React.Component<IndexPageProps, {}> {
-    constructor(props: IndexPageProps, context: {}) {
-        super(props, context);
+
+
+export default class extends React.Component<CVPageProps, CVPageState> {
+    constructor(props: CVPageProps) {
+        super(props);
+        this.state = {
+            includePaperAwards: false,
+            underlineStudentAuthors: false,
+            showAllUndergraduateCollaborators: false
+        }
     }
     private getPubElements(types: PUB_TYPES[]): JSX.Element[] {
         const filteredRows = this.props.data.allStrapiPublication.nodes.filter((pub) => {
@@ -197,7 +209,18 @@ export default class extends React.Component<IndexPageProps, {}> {
         return rows;
     }
     public render() {
-        const highlightStudents = this.props.location.search.indexOf('highlight_students') >= 0;
+        const { includePaperAwards, underlineStudentAuthors, showAllUndergraduateCollaborators } = this.state;
+        const hsaChange = (event) => {
+            this.setState({underlineStudentAuthors: event.target.checked});
+        };
+        const ipaChange = (event) => {
+            this.setState({includePaperAwards: event.target.checked});
+        };
+        const iuChange = (event) => {
+            this.setState({showAllUndergraduateCollaborators: event.target.checked});
+        };
+        // const highlightStudents = this.props.location.search.indexOf('highlight_students') >= 0;
+        // const verboseMode = this.props.location.search.indexOf('verbose_mode') >= 0;
         return <div className="cv container">
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -360,11 +383,17 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                     </div>
                 </div>
-                <div className={"section publications" + (highlightStudents ? ' highlight-students' : '')}>
+                <div className={"section publications" + (underlineStudentAuthors ? ' highlight-students' : '')}>
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Publications</h2>
+                        </div>
+                    </div>
+                    <div className="row d-print-none">
+                        <div className="col side"></div>
+                        <div className="col main">
+                            <input id="hsacheckbox" type="checkbox" checked={this.state.underlineStudentAuthors} onChange={hsaChange} />&nbsp;<label htmlFor="hsacheckbox">Highlight Student Authors</label>
                         </div>
                     </div>
                     <div className="row highlight-students-note">
@@ -433,7 +462,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="award-amount">$10,000</div>
                         </div>
                         <div className="col main">
-                            <div className="award-team">Steve Oney</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
                             <div className="award-sponsor">Adobe, Inc.</div>
                         </div>
                     </div>
@@ -444,7 +473,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Designing and Building Collaborative Tools for Mixed-Ability Programming Teams</div>
-                            <div className="award-team">Steve Oney (+ Mauli Pandey, unofficially)</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong> (and Mauli Pandey, unofficially)</div>
                             <div className="award-sponsor">Google Inc.</div>
                             <div className="award-program">Award for Inclusion Research Award</div>
                         </div>
@@ -456,7 +485,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools</div>
-                            <div className="award-team">Steve Oney and Walter Lasecki</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong> and Walter Lasecki</div>
                             <div className="award-sponsor">National Science Foundation (NSF)</div>
                             <div className="award-program">IIS: Cyber-Human Systems (CHS)</div>
                         </div>
@@ -468,7 +497,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Applying Literate Programming Approaches to Support Semantic Annotation</div>
-                            <div className="award-team">Andrea Thomer and Steve Oney</div>
+                            <div className="award-team">Andrea Thomer (PI) and <strong>Steve Oney (co-PI)</strong></div>
                             <div className="award-sponsor">The U-M Office of Research (UMOR)</div>
                         </div>
                     </div>
@@ -479,7 +508,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Scalable Remote Peer Help for Programming Education</div>
-                            <div className="award-team">Steve Oney, Paul Resnick, and Christopher Brooks</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong>, Paul Resnick, and Christopher Brooks</div>
                             <div className="award-sponsor">National Science Foundation (NSF)</div>
                             <div className="award-program">Improving Undergraduate STEM Education: Education and Human Resources (IUSE: EHR)</div>
                         </div>
@@ -491,7 +520,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Designing Scalable Help Tools for Programming Courses</div>
-                            <div className="award-team">Steve Oney</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
                             <div className="award-sponsor">National Science Foundation (NSF)</div>
                             <div className="award-program">Cyber-Human Systems (CHS) CRII</div>
                         </div>
@@ -503,7 +532,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Prototyping Tools to Improve Crowd Based Training for IVA Development</div>
-                            <div className="award-team">Steve Oney and Walter Lasecki</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong> and Walter Lasecki</div>
                             <div className="award-sponsor">Clinc, Inc.</div>
                         </div>
                     </div>
@@ -514,7 +543,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="award-title">End-User Techniques for Aggregating and Analyzing Exercise and Physical Data</div>
-                            <div className="award-team">Steve Oney, Michael Nebeling, and Sun Young Park</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong>, Michael Nebeling, and Sun Young Park</div>
                             <div className="award-sponsor">Michigan Exercise Science &amp; Sports Initiative</div>
                         </div>
                     </div>
@@ -526,12 +555,86 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <h2>Awards</h2>
                         </div>
                     </div>
+                    <div className="row d-print-none">
+                        <div className="col side"></div>
+                        <div className="col main">
+                            <input id="ipacheckbox" type="checkbox" checked={this.state.includePaperAwards} onChange={ipaChange} />&nbsp;<label htmlFor="ipacheckbox">Include Best Paper Awards</label>
+                        </div>
+                    </div>
+                    {!includePaperAwards &&
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <i>Note: Does not include best paper awards or nominations (in Publications above)</i>
                         </div>
                     </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">08/2020</div>
+                        </div>
+                        <div className="col main">
+                            <div>IEEE VL/HCC: Best Short Paper</div>
+                            <i>EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education</i>
+                        </div>
+                    </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">08/2020</div>
+                        </div>
+                        <div className="col main">
+                            <div>CHI 2020: Honorable Mention for Best Paper</div>
+                            <i>Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives</i>
+                        </div>
+                    </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2019</div>
+                        </div>
+                        <div className="col main">
+                            <div>CSCW 2019: Best Paper</div>
+                            <i>How Data Scientists Use Computational Notebooks for Real-Time Collaboration</i>
+                        </div>
+                    </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">10/2019</div>
+                        </div>
+                        <div className="col main">
+                            <div>IEEE VL/HCC: Best Short Paper</div>
+                            <i>Studying the Benefits and Challenges of Immersive Dataflow Programming</i>
+                        </div>
+                    </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">05/2019</div>
+                        </div>
+                        <div className="col main">
+                            <div>ACM CHI 2019: Honorable Mention for Best Paper</div>
+                            <i>Implementing Multi-Touch Gestures with Touch Groups and Cross Events</i>
+                        </div>
+                    </div>
+                    }
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">10/2018</div>
+                        </div>
+                        <div className="col main">
+                            <div>ACM UIST 2018: Honorable Mention for Best Paper</div>
+                            <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
+                        </div>
+                    </div>
+                    }
                     <div className="row item">
                         <div className="col side">
                             <div className="date">09/2015</div>
@@ -540,6 +643,17 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="award-title">University of Michigan President's Postdoctoral Fellowship</div>
                         </div>
                     </div>
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">04/2013</div>
+                        </div>
+                        <div className="col main">
+                            <div>ACM CHI 2013: Honorable Mention for Best Paper</div>
+                            <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
+                        </div>
+                    </div>
+                    }
                     <div className="row item">
                         <div className="col side">
                             <div className="date">10/2009</div>
@@ -1126,10 +1240,36 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <h2>Students Supervised</h2>
                         </div>
                     </div>
+                    <div className="row d-print-none">
+                        <div className="col side"></div>
+                        <div className="col main">
+                            <input id="iucheckbox" type="checkbox" checked={this.state.showAllUndergraduateCollaborators} onChange={iuChange} />&nbsp;<label htmlFor="iucheckbox">Include Undergraduate Collaborators</label>
+                        </div>
+                    </div>
+
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-subheader">
-                            <h3>Ph.D. Advisees</h3>
+                            <h3>Dissertation Chair (Ph.D. Graduates)</h3>
+                        </div>
+                    </div>
+
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2015 &ndash; Fall 2020</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">Yan Chen (School of Information)</div>
+                            <div className="supervisee-thesis">Thesis: On-Demand Collaboration in Programming</div>
+                            <div className="supervisee-position">Currently: Postdoctoral Researcher at the University of Toronto (with Tovi Grossman)</div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Ph.D. Advisees (Ongoing)</h3>
                         </div>
                     </div>
 
@@ -1140,7 +1280,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="supervisee">Lei Zhang (School of Information)</div>
-                            <div className="supervisee-thesis">(ongoing)</div>
+                            <div className="supervisee-thesis"></div>
                         </div>
                     </div>
                     <div className="row item">
@@ -1150,7 +1290,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="supervisee">(Mauli) Maulishree Pandey (School of Information)</div>
-                            <div className="supervisee-thesis">(ongoing)</div>
+                            <div className="supervisee-thesis"></div>
                         </div>
                     </div>
                     <div className="row item">
@@ -1160,7 +1300,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="supervisee">(April) Yi Wang (School of Information)</div>
-                            <div className="supervisee-thesis">(ongoing, co-advised with Christopher Brooks)</div>
+                            <div className="supervisee-thesis">(co-advised with Christopher Brooks)</div>
                         </div>
                     </div>
                     <div className="row item">
@@ -1170,24 +1310,14 @@ export default class extends React.Component<IndexPageProps, {}> {
                         </div>
                         <div className="col main">
                             <div className="supervisee">Rebecca Krosnick (Computer Science and Engineering)</div>
-                            <div className="supervisee-thesis">(ongoing)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2015 &ndash; Fall 2020</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">Yan Chen (School of Information)</div>
-                            <div className="supervisee-thesis">On-Demand Collaboration in Programming</div>
+                            <div className="supervisee-thesis"></div>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-subheader">
-                            <h3>Thesis Committees</h3>
+                            <h3>Thesis Committees (Ph.D.)</h3>
                         </div>
                     </div>
                     <div className="row item">
@@ -1196,7 +1326,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">Ph.D.: Vaspol Ruamviboonsuk (Computer Science and Engineering)</div>
+                            <div className="student">Vaspol Ruamviboonsuk (Computer Science and Engineering)</div>
                             <div className="student-thesis">Understanding and Improving the Performance of Web Page Loads</div>
                         </div>
                     </div>
@@ -1206,7 +1336,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">Ph.D.: Shih-Chieh Lin (Computer Science and Engineering)</div>
+                            <div className="student">Shih-Chieh Lin (Computer Science and Engineering)</div>
                             <div className="student-thesis">Cross-Layer System Design for Autonomous Driving</div>
                         </div>
                     </div>
@@ -1216,7 +1346,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">Ph.D.: Sang Won Lee (Computer Science and Engineering)</div>
+                            <div className="student">Sang Won Lee (Computer Science and Engineering)</div>
                             <div className="student-thesis">Improving User Involvement Through Live, Collaborative Creation</div>
                         </div>
                     </div>
@@ -1226,8 +1356,14 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">Ph.D.: Xin Rong (School of Information)</div>
+                            <div className="student">Xin Rong (School of Information)</div>
                             <div className="student-thesis">Neural Language Models for Data-Driven Programming Support</div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Thesis Committees (M.S.)</h3>
                         </div>
                     </div>
                     <div className="row item">
@@ -1236,7 +1372,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">M.S.: (Andy) Xunan Zhou (School of Information)</div>
+                            <div className="student">Xunan (Andy) Zhou (School of Information)</div>
                             <div className="student-thesis">Conversational Agent Experience: What makes a good skill?</div>
                         </div>
                     </div>
@@ -1246,7 +1382,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">M.S.: Kangning Chen (School of Information)</div>
+                            <div className="student">Kangning Chen (School of Information)</div>
                             <div className="student-thesis">Providing Examples and Tool Support for Novice AR Creators</div>
                         </div>
                     </div>
@@ -1256,7 +1392,7 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">M.S.: Katy Madier (School of Information)</div>
+                            <div className="student">Katy Madier (School of Information)</div>
                             <div className="student-thesis">Enabling Low-cost Co-located Virtual Reality Experiences</div>
                         </div>
                     </div>
@@ -1266,10 +1402,50 @@ export default class extends React.Component<IndexPageProps, {}> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="student">M.S.: Maulishree Pandey (School of Information)</div>
+                            <div className="student">Maulishree Pandey (School of Information)</div>
                             <div className="student-thesis">Exploring and Designing for the Self-Tracking Needs of Recreational Athletes</div>
                         </div>
                     </div>
+                    {showAllUndergraduateCollaborators &&
+                    <>
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Other Mentees</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                        </div>
+                        <div className="col main">
+                            <ul>
+                                <li>Hussain Alafaireet (MSI Researcher)</li>
+                                <li>Niu Chang (Undergraduate Summer Intern.)</li>
+                                <li>Erin Deutschman (Explore CS Research Mentee.)</li>
+                                <li>Natalie Gross (UMSI, Undergraduate Researcher)</li>
+                                <li>Yunjie Guo (Michigan CSE Undergraduate Researcher)</li>
+                                <li>Jaylin Herskovitz (Former Undergraduate Researcher. Now Ph.D. student at Michigan (CSE))</li>
+                                <li>Ruidong Liu (Undergraduate researcher. Now Ph.D. student at Cornell University)</li>
+                                <li>Gabriel Matute (Former Undergraduate Researcher. Now Ph.D. student at UC Berkeley)</li>
+                                <li>Jamie Neumann (UMSI, Undergraduate Researcher)</li>
+                                <li>Rebecca Parada (UMSI, Undergraduate Researcher)</li>
+                                <li>Tami Van Omen (Undergraduate researcher.)</li>
+                                <li>Yisen Wang (Explore CS Research Mentee.)</li>
+                                <li>Ningqi Wang</li>
+                                <li>Zihan Wu (Undergraduate Summer Intern. Currently: UMSI PhD Student)</li>
+                                <li>Jie Wei Wu (MSI Researcher. Now: Google Software Engineer)</li>
+                                <li>Jessica Wu (Former Undergraduate Researcher. Now Software Engineer at Amazon)</li>
+                                <li>Yin Xie (Former MS researcher. Now interaction designer at Internet Brands)</li>
+                                <li>Johnathan Yan (Undergraduate Researcher.)</li>
+                                <li>YiWei Yang (Former CSE Undergraduate Researcher. Now Ph.D. student at the University of Washington)</li>
+                                <li>Muhan Zhao (Michigan CSE Undergraduate Researcher)</li>
+                                <li>Yuan Zhou (Undergraduate Summer Intern. Georgia Tech M.S.)</li>
+                                <li>Licheng Zhu (MSI Researcher. Now: Senior User Experience Researcher at Thompson Reuters)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </>
+                    }
                 </div>
                 <div className="section press">
                     <div className="row">
