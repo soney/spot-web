@@ -423,10 +423,17 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-subheader">
-                            <h3>Heavily-reviewed Conference Papers ({PUB_TYPES.CONFERENCE}) and Journal Manuscripts ({PUB_TYPES.JOURNAL})</h3>
+                            <h3>Heavily-reviewed Journal Manuscripts ({PUB_TYPES.JOURNAL})</h3>
                         </div>
                     </div>
-                    {this.getPubElements([PUB_TYPES.CONFERENCE, PUB_TYPES.JOURNAL])}
+                    {this.getPubElements([PUB_TYPES.JOURNAL])}
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-subheader">
+                            <h3>Heavily-reviewed Conference Papers ({PUB_TYPES.CONFERENCE})</h3>
+                        </div>
+                    </div>
+                    {this.getPubElements([PUB_TYPES.CONFERENCE])}
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-subheader">
@@ -575,7 +582,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">08/2020</div>
                         </div>
                         <div className="col main">
-                            <div>IEEE VL/HCC: Best Short Paper</div>
+                            <div className="award-title">IEEE VL/HCC: Best Short Paper</div>
                             <i>EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education</i>
                         </div>
                     </div>
@@ -586,7 +593,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">08/2020</div>
                         </div>
                         <div className="col main">
-                            <div>CHI 2020: Honorable Mention for Best Paper</div>
+                            <div className="award-title">CHI 2020: Honorable Mention for Best Paper</div>
                             <i>Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives</i>
                         </div>
                     </div>
@@ -597,7 +604,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">11/2019</div>
                         </div>
                         <div className="col main">
-                            <div>CSCW 2019: Best Paper</div>
+                            <div className="award-title">CSCW 2019: Best Paper</div>
                             <i>How Data Scientists Use Computational Notebooks for Real-Time Collaboration</i>
                         </div>
                     </div>
@@ -608,7 +615,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">10/2019</div>
                         </div>
                         <div className="col main">
-                            <div>IEEE VL/HCC: Best Short Paper</div>
+                            <div className="award-title">IEEE VL/HCC: Best Short Paper</div>
                             <i>Studying the Benefits and Challenges of Immersive Dataflow Programming</i>
                         </div>
                     </div>
@@ -619,7 +626,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">05/2019</div>
                         </div>
                         <div className="col main">
-                            <div>ACM CHI 2019: Honorable Mention for Best Paper</div>
+                            <div className="award-title">ACM CHI 2019: Honorable Mention for Best Paper</div>
                             <i>Implementing Multi-Touch Gestures with Touch Groups and Cross Events</i>
                         </div>
                     </div>
@@ -630,7 +637,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">10/2018</div>
                         </div>
                         <div className="col main">
-                            <div>ACM UIST 2018: Honorable Mention for Best Paper</div>
+                            <div className="award-title">ACM UIST 2018: Honorable Mention for Best Paper</div>
                             <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
                         </div>
                     </div>
@@ -649,7 +656,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="date">04/2013</div>
                         </div>
                         <div className="col main">
-                            <div>ACM CHI 2013: Honorable Mention for Best Paper</div>
+                            <div className="award-title">ACM CHI 2013: Honorable Mention for Best Paper</div>
                             <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
                         </div>
                     </div>
