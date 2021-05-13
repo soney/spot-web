@@ -93,7 +93,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             <div className="container">
                 <h2 className="">People <Link className="" to="/team">[+]</Link></h2>
                 {/* <h2 className="">People</h2> */}
-                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers, ...alumMembers]} />
+                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers/*, ...alumMembers*/]} />
             </div>
             <div className="container">
                 <h2>Recent Publications <Link to="/research#all-publications">[+]</Link></h2>
