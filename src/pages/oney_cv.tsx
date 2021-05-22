@@ -724,6 +724,16 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
+                            <div className="date">5/2021</div>
+                            <div className="location">(remote)</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Adobe Research HCI Seminar</div>
+                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
                             <div className="date">12/2020</div>
                             <div className="location">Seattle, WA<br/>(remote)</div>
                         </div>
