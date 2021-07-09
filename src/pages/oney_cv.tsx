@@ -492,7 +492,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                         <div className="col main">
                             <div className="award-title">Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong> and Walter Lasecki</div>
+                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
                             <div className="award-sponsor">National Science Foundation (NSF)</div>
                             <div className="award-program">IIS: Cyber-Human Systems (CHS)</div>
                         </div>
@@ -1289,7 +1289,16 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h3>Ph.D. Advisees (Ongoing)</h3>
                         </div>
                     </div>
-
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">Fall 2021 &ndash; present</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="supervisee">Ge Zhang (School of Information)</div>
+                            <div className="supervisee-thesis"></div>
+                        </div>
+                    </div>
                     <div className="row item">
                         <div className="col side">
                             <div className="date-range">Fall 2018 &ndash; present</div>
@@ -1335,6 +1344,16 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         <div className="col side"></div>
                         <div className="col main section-subheader">
                             <h3>Thesis Committees (Ph.D.)</h3>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2021</div>
+                            <div className="location">University of Michigan</div>
+                        </div>
+                        <div className="col main">
+                            <div className="student">Hari Subramonyam (School of Information)</div>
+                            <div className="student-thesis">Designing AI Experiences: Boundary Representations, Collaborative Processes, and Data Tools</div>
                         </div>
                     </div>
                     <div className="row item">
