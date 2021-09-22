@@ -568,6 +568,15 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <input id="ipacheckbox" type="checkbox" checked={this.state.includePaperAwards} onChange={ipaChange} />&nbsp;<label htmlFor="ipacheckbox">Include Best Paper Awards</label>
                         </div>
                     </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">09/2021</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">UMSI Excellence in Instruction Award</div>
+                            <div className="award-description"></div>
+                        </div>
+                    </div>
                     {!includePaperAwards &&
                     <div className="row">
                         <div className="col side"></div>
@@ -720,6 +729,26 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         <div className="col side"></div>
                         <div className="col main section-header">
                             <h2>Invited Presentations</h2>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2021</div>
+                            <div className="location">(remote)</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Stanford HCI Seminar</div>
+                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2021</div>
+                            <div className="location">(remote)</div>
+                        </div>
+                        <div className="col main">
+                            <div className="talk-location">Harvard Computer Science Colloquium</div>
+                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
                         </div>
                     </div>
                     <div className="row item">

@@ -11,7 +11,8 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'http://141.211.133.47',
+                // apiURL: 'http://141.211.133.47',
+	        apiURL: 'http://0.0.0.0:1337',
                 contentTypes: [
                     'author',
                     'publication',
