@@ -568,6 +568,14 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <input id="ipacheckbox" type="checkbox" checked={this.state.includePaperAwards} onChange={ipaChange} />&nbsp;<label htmlFor="ipacheckbox">Include Best Paper Awards</label>
                         </div>
                     </div>
+                    {!includePaperAwards &&
+                    <div className="row">
+                        <div className="col side"></div>
+                        <div className="col main section-header">
+                            <i>Note: Does not include best paper awards or nominations (in Publications above)</i>
+                        </div>
+                    </div>
+                    }
                     <div className="row item">
                         <div className="col side">
                             <div className="date">09/2021</div>
@@ -577,14 +585,6 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="award-description"></div>
                         </div>
                     </div>
-                    {!includePaperAwards &&
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-header">
-                            <i>Note: Does not include best paper awards or nominations (in Publications above)</i>
-                        </div>
-                    </div>
-                    }
                     {includePaperAwards &&
                     <div className="row item">
                         <div className="col side">
