@@ -1286,13 +1286,6 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Students Supervised</h2>
                         </div>
                     </div>
-                    <div className="row d-print-none">
-                        <div className="col side"></div>
-                        <div className="col main">
-                            <input id="iucheckbox" type="checkbox" checked={this.state.showAllUndergraduateCollaborators} onChange={iuChange} />&nbsp;<label htmlFor="iucheckbox">Include Undergraduate Collaborators</label>
-                        </div>
-                    </div>
-
                     <div className="row">
                         <div className="col side"></div>
                         <div className="col main section-subheader">
@@ -1469,6 +1462,12 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         <div className="col main">
                             <div className="student">Maulishree Pandey (School of Information)</div>
                             <div className="student-thesis">Exploring and Designing for the Self-Tracking Needs of Recreational Athletes</div>
+                        </div>
+                    </div>
+                    <div className="row d-print-none">
+                        <div className="col side"></div>
+                        <div className="col main">
+                            <input id="iucheckbox" type="checkbox" checked={this.state.showAllUndergraduateCollaborators} onChange={iuChange} />&nbsp;<label htmlFor="iucheckbox">Include Undergraduate Collaborators</label>
                         </div>
                     </div>
                     {showAllUndergraduateCollaborators &&
