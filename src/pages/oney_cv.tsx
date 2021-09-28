@@ -1114,18 +1114,26 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2019 &ndash; 2020</div>
+                            <div className="date">2018 &ndash; 2020 &amp; 2021 &ndash; present</div>
                         </div>
                         <div className="col main">
-                            <div className="venue">School of Information Technical Curriculum Task Force</div>
+                            <div className="venue">School of Information BSI Committee</div>
                         </div>
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2018 &ndash; 2020</div>
+                            <div className="date">2021 &ndash; present</div>
                         </div>
                         <div className="col main">
-                            <div className="venue">School of Information BSI Committee</div>
+                            <div className="venue">Faculty Advisor for UMSI chapter of Upsilon Pi Epsilon (International Honor Society for the Computing and Information Disciplines)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019 &ndash; 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">School of Information Technical Curriculum Task Force</div>
                         </div>
                     </div>
                     <div className="row item">
