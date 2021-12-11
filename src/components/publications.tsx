@@ -80,6 +80,9 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
         } else if(this.props.data === 'honorable_mention') {
             this.type = AwardType.honorable_mention;
             this.description = this.props.description ? this.props.description : 'Honorable Mention';
+        } else if(this.props.data === 'other_award') {
+            this.type = AwardType.other_award;
+            this.description = this.props.description ? this.props.description : 'Award';
         } else {
             this.type = AwardType.none;
             this.description = this.props.description ? this.props.description : '';
@@ -87,7 +90,8 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
     }
     public render():JSX.Element {
         const iconDisplay = (this.type === AwardType.best_paper) ? <i className='fas fa-trophy'></i> :
-                        (this.type === AwardType.honorable_mention ? <i className="fas fa-award"></i>: <i />);
+                        (this.type === AwardType.honorable_mention ? <i className="fas fa-award"></i>: 
+                        (this.type === AwardType.other_award ? <i className="fas fa-award"></i> :<i />);
                     
         return <span className='paper-award'>{iconDisplay} {this.description}</span>;
     }

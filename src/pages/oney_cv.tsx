@@ -190,6 +190,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
             const row = <div className="paper row" key={pub.id}>
                 <div className="col side">
                     <span className='paper-award-label'>
+                        {award=='other_award' && <i className="icon-other_award"></i> }
                         {award=='honorable_mention' && <i className="icon-honorable_mention"></i> }
                         {award=='best_paper' && <i className="icon-best_paper"></i> }
                         {awardFootnote && <span>{awardFootnote}</span>}
@@ -568,6 +569,17 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <input id="ipacheckbox" type="checkbox" checked={this.state.includePaperAwards} onChange={ipaChange} />&nbsp;<label htmlFor="ipacheckbox">Include Best Paper Awards</label>
                         </div>
                     </div>
+                    {includePaperAwards &&
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">11/2021</div>
+                        </div>
+                        <div className="col main">
+                            <div className="award-title">CSCW 2021: Recognition for Contribution to Diversity and Inclusion</div>
+                            <i>Understanding Accessibility and Collaboration in Programming for People with Visual Impairments</i>
+                        </div>
+                    </div>
+                    }
                     {!includePaperAwards &&
                     <div className="row">
                         <div className="col side"></div>
@@ -940,34 +952,26 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">International Workshop on Eye Movements in Programming (EMIP)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference on Tangible, Embedded, and Embodied Interactions (TEI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Tech Notes for the ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2017, 2018, 2020</div>
+                            <div className="date">2017, 2018, 2020, 2022</div>
                         </div>
                         <div className="col main">
                             <div className="venue">ACM Symposium on User Interface Software and Technology (UIST)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2022</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">2016 &ndash; 2020</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
                         </div>
                     </div>
                     <div className="row item">
@@ -988,10 +992,26 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">2016 &ndash; 2020</div>
+                            <div className="date">2019</div>
                         </div>
                         <div className="col main">
-                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
+                            <div className="venue">International Workshop on Eye Movements in Programming (EMIP)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">ACM Conference on Tangible, Embedded, and Embodied Interactions (TEI)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date">2019</div>
+                        </div>
+                        <div className="col main">
+                            <div className="venue">Tech Notes for the ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)</div>
                         </div>
                     </div>
 
@@ -1325,7 +1345,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <div className="location">University of Michigan</div>
                         </div>
                         <div className="col main">
-                            <div className="supervisee">Ge Zhang (School of Information)</div>
+                            <div className="supervisee">Ashley Zhang (School of Information)</div>
                             <div className="supervisee-thesis"></div>
                         </div>
                     </div>
