@@ -90,8 +90,8 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
     }
     public render():JSX.Element {
         const iconDisplay = (this.type === AwardType.best_paper) ? <i className='fas fa-trophy'></i> :
-                        (this.type === AwardType.honorable_mention ? <i className="fas fa-award"></i>: 
-                        (this.type === AwardType.other_award ? <i className="fas fa-award"></i> :<i />);
+                        ((this.type === AwardType.honorable_mention) ? <i className="fas fa-award"></i> : 
+                        (this.type === AwardType.other_award) ? <i className="fas fa-award"></i> :<i />);
                     
         return <span className='paper-award'>{iconDisplay} {this.description}</span>;
     }
