@@ -305,7 +305,27 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">09/2016 &ndash; present</div>
+                            <div className="date-range">09/2022 &ndash; present</div>
+                            <div className="location">Ann Arbor, MI</div>
+                        </div>
+                        <div className="col main">
+                            <div className="experience-organization">School of Information, University of Michigan</div>
+                            <div className="experience-description">Associate Professor</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2022 &ndash; present</div>
+                            <div className="location">Ann Arbor, MI</div>
+                        </div>
+                        <div className="col main">
+                            <div className="experience-organization">Computer Science and Engineering, University of Michigan</div>
+                            <div className="experience-description">Associate Professor (by courtesy)</div>
+                        </div>
+                    </div>
+                    <div className="row item">
+                        <div className="col side">
+                            <div className="date-range">09/2016 &ndash; 09/2022</div>
                             <div className="location">Ann Arbor, MI</div>
                         </div>
                         <div className="col main">
@@ -315,7 +335,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                     <div className="row item">
                         <div className="col side">
-                            <div className="date-range">01/2017 &ndash; present</div>
+                            <div className="date-range">01/2017 &ndash; 09/2022</div>
                             <div className="location">Ann Arbor, MI</div>
                         </div>
                         <div className="col main">
