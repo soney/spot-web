@@ -2,15 +2,14 @@ import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { graphql } from 'gatsby';
 import { Layout, SpotPage } from '../components/layout';
-import * as ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 
-import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
+import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types';
 
 export const indexQuery = graphql`query team {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_student"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_student"]}}, sort: [{membership: ASC}, {family_name: ASC}]) {
         nodes {
             id
-            strapiId
             color
             given_name
             family_name
@@ -25,21 +24,16 @@ export const indexQuery = graphql`query team {
                 url
                 description
             }
-            media {
-                id
-                description
-                media {
-                    publicURL
-                }
-            }
             headshot {
-                childImageSharp {
-                    fluid(maxWidth: 700) {
-                        base64
-                        aspectRatio
-                        src
-                        srcSet
-                        sizes
+                localFile {
+                    childImageSharp {
+                        fluid(maxWidth: 700) {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            sizes
+                        }
                     }
                 }
             }
@@ -53,8 +47,8 @@ export const indexQuery = graphql`query team {
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: StrapiAuthorGroupConnection,
-        strapiGroup: StrapiGroup
+        allStrapiAuthor: Strapi_AuthorGroupConnection,
+        strapiGroup: Strapi_Group
     }
 }
 
@@ -67,6 +61,7 @@ export default class extends React.Component<IndexPageProps, {}> {
         const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
         const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         const ugradMs = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'ugrad_ms_student'))
+
         return <Layout active={SpotPage.team}>
             <div className="container">
                 <h2 className="">Current Members</h2>
@@ -86,7 +81,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             }
             <div className="container">
                 <h2 className="">Join Us</h2>
-                <ReactMarkdown source={data.strapiGroup.joining} />
+                <ReactMarkdown>{data.strapiGroup.joining}</ReactMarkdown>
             </div>
         </Layout>;
     }

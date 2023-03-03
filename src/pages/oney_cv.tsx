@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
 import './cv.scss'
-import { StrapiPublicationGroupConnection } from '../../graphql-types';
+import { Strapi_PublicationGroupConnection } from '../../graphql-types';
 import { graphql } from 'gatsby';
 import { getDownloadName } from '../components/publications';
 
@@ -39,14 +39,16 @@ export const cvQuery = graphql`query cvPublications {
                 type
             }
             pdf {
-                publicURL
+                localFile {
+                    publicURL
+                }
             }
         }
     }
 }`;
 interface CVPageProps {
     data: {
-        allStrapiPublication: StrapiPublicationGroupConnection,
+        allStrapiPublication: Strapi_PublicationGroupConnection,
     },
     location: {
         search?: string
@@ -170,7 +172,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
             }
 
             const downloadName = getDownloadName(pub);
-            const pdfDisplay = pub.pdf ? <a className="pdf-download" href={pub.pdf.publicURL} download={downloadName}>(PDF)</a> : null;
+            const pdfDisplay = pub.pdf ? <a className="pdf-download" href={pub.pdf.localFile.publicURL} download={downloadName}>(PDF)</a> : null;
 
             let awardFootnote: string = ''; 
             if(award_description) {
@@ -190,7 +192,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
             const row = <div className="paper row" key={pub.id}>
                 <div className="col side">
                     <span className='paper-award-label'>
-                        {award=='other_award' && <i className="icon-other_award"></i> }
+                        {award=='other' && <i className="icon-other_award"></i> }
                         {award=='honorable_mention' && <i className="icon-honorable_mention"></i> }
                         {award=='best_paper' && <i className="icon-best_paper"></i> }
                         {awardFootnote && <span>{awardFootnote}</span>}

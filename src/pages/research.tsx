@@ -1,9 +1,9 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { StrapiPublicationGroupConnection, StrapiClusterConnection, StrapiAuthor, StrapiPublication } from '../../graphql-types';
+import { Strapi_PublicationGroupConnection, Strapi_ClusterConnection, Strapi_Author, Strapi_Publication } from '../../graphql-types';
 import { Layout, SpotPage } from '../components/layout';
 import { PublicationListDisplay, PublicationDetailLevel } from '../components/publication-list';
-import * as ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 import { AuthorListDisplay } from '../components/authors';
 
 
@@ -11,7 +11,6 @@ export const indexQuery = graphql`query allPubs {
     allStrapiPublication(filter: {venue: {type: {in: ["conference", "journal"]}}}) {
         nodes {
             id
-            strapiId
             title
             award
             award_description
@@ -38,7 +37,9 @@ export const indexQuery = graphql`query allPubs {
                 type
             }
             pdf {
-                publicURL
+                localFile {
+                    publicURL
+                }
             }
         }
     }
@@ -63,8 +64,8 @@ export const indexQuery = graphql`query allPubs {
 
 interface IndexPageProps {
     data: {
-        allStrapiPublication: StrapiPublicationGroupConnection,
-        allStrapiCluster: StrapiClusterConnection
+        allStrapiPublication: Strapi_PublicationGroupConnection,
+        allStrapiCluster: Strapi_ClusterConnection
     }
 }
 
@@ -79,13 +80,13 @@ export default class extends React.Component<IndexPageProps, {}> {
             const authorDisplays = <AuthorListDisplay withLinks={true} authors={authors as any} />
             const detailedPubs = publications.map((pub) => {
                 const { id } = pub;
-                return data.allStrapiPublication.nodes.find((p: StrapiPublication) => p.strapiId===id);
+                return data.allStrapiPublication.nodes.find((p: Strapi_Publication) => p.id===id);
             });
             return <div key={id} className="row">
                 <div className="col-md-4">
                     <h5>{title}</h5>
                     <div><strong>People: </strong>{authorDisplays}</div>
-                    <ReactMarkdown source={description} />
+                    <ReactMarkdown>{description}</ReactMarkdown>
                 </div>
                 <div className="col-md-8">
                     <div><strong>Publications: </strong></div>

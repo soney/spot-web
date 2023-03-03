@@ -1,6 +1,6 @@
 # spot group website
 
-This is the code repository for [the spot group website](http://from.so/). It uses [Gatsby](https://www.gatsbyjs.org/). It references [a custom CMS backend](https://github.com/soney/spot-web-cms) hosted at [http://141.211.133.47/](http://141.211.133.47).
+This is the code repository for [the spot group website](http://from.so/). It uses [Gatsby](https://www.gatsbyjs.org/). It references [a custom CMS backend](https://github.com/soney/spot-web-cms) hosted at [https://mspot.link/](https://mspot.link/).
 
 # Cloning this repository
 ```text
@@ -14,7 +14,7 @@ There are two kinds of updates you might want to make: **content** updates (more
 
 ## Content Updates
 
-To update the content of the group page, if you aren't already on the network, log into [the Michigan VPN](https://its.umich.edu/enterprise/wifi-networks/vpn) and visit [http://141.211.133.47/admin/auth/login](http://141.211.133.47/admin/auth/login). Then:
+To update the content of the group page, visit [https://mspot.link/admin](https://mspot.link/admin). Then:
 
 1. Run `git pull` and `npm install .` to be sure you have the latest version of this repo and its dependencies
 2. Update the content
@@ -24,7 +24,7 @@ To update the content of the group page, if you aren't already on the network, l
 
 ## Structure Updates
 
-To update the **structure** of the group page (the actual code in this repository), if you aren't already on the network, log into [the Michigan VPN](https://its.umich.edu/enterprise/wifi-networks/vpn) so that [the CMS server](http://141.211.133.47) is accessible. Then:
+To update the **structure** of the group page (the actual code in this repository):
 
 1. Run `git pull` and `npm install .` to be sure you have the latest version of this repo and its dependencies
 2. Run `npm run develop`
@@ -35,6 +35,6 @@ To update the **structure** of the group page (the actual code in this repositor
 # Important notes:
 
 - Although the site has a custom domain (`from.so`), it is hosted on [Github Pages](https://pages.github.com/). The [`gh_pages` branch of this repository](https://github.com/soney/spot-web/tree/gh-pages) is the actual webpage
-- This site does **not** dynamically reference the data from its [CMS backend](http://141.211.133.47). The CMS backend is **only** referenced when building the static pages (either `npm run build`, `npm run develop`, or `npm run deploy`).
-- Every time you want to update the deployed website, you must [connect to the UMich VPN](https://its.umich.edu/enterprise/wifi-networks/vpn) and run `npm run deploy`
+- This site does **not** dynamically reference the data from its [CMS backend](https://mspot.link/). The CMS backend is **only** referenced when building the static pages (either `npm run build`, `npm run develop`, or `npm run deploy`).
+- Every time you want to update the deployed website, you must run `npm run deploy`
 - Always be sure to pull the latest changes (`git pull`) before testing and deploying

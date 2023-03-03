@@ -2,17 +2,17 @@ import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link'
+import { Link } from 'gatsby-link'
 import { Layout, SpotPage } from '../components/layout';
-import * as ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 
-import { StrapiAuthorGroupConnection, StrapiPublicationGroupConnection, StrapiGroup } from '../../graphql-types';
+import { Strapi_AuthorGroupConnection, Strapi_PublicationGroupConnection, Strapi_Group } from '../../graphql-types';
 
+    // allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
 export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: [{ membership: ASC }, { family_name: ASC }]) {
         nodes {
             id
-            strapiId
             color
             given_name
             family_name
@@ -23,13 +23,15 @@ export const indexQuery = graphql`query membersAndLeads {
             membership
             use_local_homepage
             headshot {
-                childImageSharp {
-                    fluid(maxWidth: 700) {
-                        base64
-                        aspectRatio
-                        src
-                        srcSet
-                        sizes
+                localFile {
+                    childImageSharp {
+                        fluid(maxWidth: 700) {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            sizes
+                        }
                     }
                 }
             }
@@ -61,7 +63,9 @@ export const indexQuery = graphql`query membersAndLeads {
                 short_name
             }
             pdf {
-                publicURL
+                localFile {
+                    publicURL
+                }
             }
         }
     }
@@ -72,9 +76,9 @@ export const indexQuery = graphql`query membersAndLeads {
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: StrapiAuthorGroupConnection,
-        allStrapiPublication: StrapiPublicationGroupConnection,
-        strapiGroup: StrapiGroup
+        allStrapiAuthor: Strapi_AuthorGroupConnection,
+        allStrapiPublication: Strapi_PublicationGroupConnection,
+        strapiGroup: Strapi_Group
     }
 }
 
@@ -88,7 +92,7 @@ export default class extends React.Component<IndexPageProps, {}> {
         const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         return <Layout active={SpotPage.home}>
             <div className="container">
-                <ReactMarkdown source={data.strapiGroup.overview} />
+                <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
             </div>
             <div className="container">
                 <h2 className="">People <Link className="" to="/team">[+]</Link></h2>

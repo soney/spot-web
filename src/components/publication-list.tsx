@@ -1,7 +1,9 @@
-import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
-import '@fortawesome/fontawesome-free/scss/solid.scss';
+// import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// import '@fortawesome/fontawesome-free/scss/solid.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import * as React from 'react';
-import { StrapiPublication, StrapiPublicationVenue } from '../../graphql-types';
+import { Strapi_Publication, Strapi_Venue } from '../../graphql-types';
 import { PublicationSummaryDisplay } from './publications';
 
 export enum PublicationDetailLevel {
@@ -10,10 +12,10 @@ export enum PublicationDetailLevel {
 
 interface PublicationListDisplayProps {
     groupByVenue: boolean;
-    data: ReadonlyArray<StrapiPublication>
+    data: ReadonlyArray<Strapi_Publication>
     detailLevel?: PublicationDetailLevel
     backTo?: number
-    highlightAuthors?: number[]
+    highlightAuthors?: string[]
 }
 export class PublicationListDisplay extends React.Component<PublicationListDisplayProps, {}> {
     constructor(props: PublicationListDisplayProps) {
@@ -21,13 +23,13 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
     }
     public render() {
         const { data, groupByVenue, backTo } = this.props;
-        const venuePubs: Map<number, StrapiPublication[]> = new Map();
-        const idToVenueYear: Map<number, StrapiPublicationVenue> = new Map();
-        const venueTimes: Map<number, number> = new Map();
+        const venuePubs: Map<string, Strapi_Publication[]> = new Map();
+        const idToVenueYear: Map<string, Strapi_Venue> = new Map();
+        const venueTimes: Map<string, number> = new Map();
         data.forEach((pub) => {
             const { venue } = pub;
             if(!backTo || venue.year >= backTo) {
-                const vid = venue ? venue.id : -1;
+                const vid = venue ? venue.id : '';
                 if(venuePubs.has(vid)) {
                     venuePubs.get(vid).push(pub);
                 } else {
@@ -48,7 +50,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
             return bVenueTime - aVenueTime;
         });
         if(groupByVenue) {
-            const vyDisplays: (JSX.Element|string)[] = vOrder.map((vid: number) => {
+            const vyDisplays: (JSX.Element|string)[] = vOrder.map((vid: string) => {
                 let venueString: string;
                 const venue = idToVenueYear.get(vid);
                 if(venue) {
@@ -76,7 +78,7 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
             </ul>;
         } else {
             const pubDisplays: JSX.Element[] = [];
-            vOrder.forEach((vyid: number) => {
+            vOrder.forEach((vyid: string) => {
                 venuePubs.get(vyid).forEach((pub) => {
                     pubDisplays.push(<li key={pub.id}><PublicationSummaryDisplay detailLevel={this.props.detailLevel} highlightAuthors={this.props.highlightAuthors} data={pub} /></li>);
                 });

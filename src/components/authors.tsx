@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { StrapiAuthor } from '../../graphql-types';
-import Link from 'gatsby-link'
+import { Strapi_Author } from '../../graphql-types';
+import { Link } from 'gatsby-link'
 
 interface AuthorDisplayProps {
-    data: StrapiAuthor,
+    data: Strapi_Author,
     withLinks?: boolean,
     highlight?: boolean
 }
@@ -16,7 +16,7 @@ export class AuthorDisplay extends React.Component<AuthorDisplayProps, {}> {
         const { data } = this.props;
         const className = this.props.highlight ? 'highlight paper-author' : 'paper-author';
         if(this.props.withLinks) {
-            if((data.membership === 'lead')/* || (data.membership === 'member')*/) {
+            if(data.use_local_homepage) {
                 return <span data-author-id={data.id} className={className}><Link className="author-internal-link" to={`/${data.given_name}_${data.family_name}`}>{`${data.given_name} ${data.family_name}`}</Link></span>
             } else if(data.homepage) {
                 return <span data-author-id={data.id} className={className}><a className="author-external-link" href={data.homepage} target="_blank">{`${data.given_name} ${data.family_name}`}</a></span>
@@ -27,9 +27,9 @@ export class AuthorDisplay extends React.Component<AuthorDisplayProps, {}> {
 }
 
 interface AuthorListDisplayProps {
-    authors: ReadonlyArray<StrapiAuthor>,
+    authors: ReadonlyArray<Strapi_Author>,
     withLinks?: boolean
-    highlightAuthors?: number[]
+    highlightAuthors?: string[]
 }
 export class AuthorListDisplay extends React.Component<AuthorListDisplayProps, {}> {
     constructor(props: AuthorListDisplayProps) {

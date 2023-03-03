@@ -30,6 +30,7 @@ body {
 
     a {
         color: $link-color;
+        text-decoration: none;
         &:hover {
             color: $link-hover-color;
             text-decoration: underline;
@@ -39,7 +40,7 @@ body {
     nav.navbar {
         background: none !important;
         margin-top: 20px;
-        border-bottom: $border-style;
+        // border-bottom: $border-style;
         margin-bottom: 20px;
         .navbar-brand {
             color: $text-color;
@@ -153,13 +154,14 @@ body {
             }
             .paper-pdf {
                 text-align: center;
-                a {
-                    &::before {
-                        content: "\f1c1";
-                        font-family: "Font Awesome 5 Free", FontAwesome;
-                        margin-right: 3px;
-                    }
-                }
+                // a {
+                    // &::before {
+                        // content: "\f1c1";
+                        // font: var(--fa-font-solid);
+                        // font-family: "Font Awesome 5 Free", FontAwesome;
+                        // margin-right: 3px;
+                    // }
+                // }
             }
             padding-bottom: 12px;
             margin-bottom: 12px;

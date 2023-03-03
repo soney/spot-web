@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { StrapiAuthor, StrapiPublication, StrapiVenueConnection } from '../../graphql-types';
+import { Strapi_Author, Strapi_Publication, Strapi_VenueConnection } from '../../graphql-types';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout, SpotPage } from '../components/layout';
 import { AwardDisplay, getDownloadName } from '../components/publications';
@@ -16,11 +16,12 @@ export const pubQuery = graphql`query publication($id: String!) {
         status
         pdf {
             id
-            publicURL
+            localFile {
+                publicURL
+            }
         }
         authors {
             id
-            membership
             given_name
             family_name
             homepage
@@ -37,8 +38,8 @@ export const pubQuery = graphql`query publication($id: String!) {
 
 interface PublicationProps {
     data: {
-        strapiPublication: StrapiPublication,
-        allStrapiVenue: StrapiVenueConnection
+        strapiPublication: Strapi_Publication,
+        allStrapiVenue: Strapi_VenueConnection
     }
 }
 
@@ -49,7 +50,7 @@ export default class extends React.Component<PublicationProps, {}> {
     public render() {
         const publication = this.props.data.strapiPublication;
 
-        const authors = Array.from(publication.authors) as any as StrapiAuthor[];
+        const authors = Array.from(publication.authors) as any as Strapi_Author[];
         const authorsDisplay = <AuthorListDisplay withLinks={true} authors={authors} />;
         const awardDisplay = <AwardDisplay data={publication.award} description={publication.award_description} />;
         const downloadName = getDownloadName(publication);
@@ -72,7 +73,7 @@ export default class extends React.Component<PublicationProps, {}> {
 
         const condAcceptDisplay = publication.status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
 
-        const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.publicURL} download={downloadName}>PDF</a> : null;
+        const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.localFile.publicURL} download={downloadName}>PDF</a> : null;
         return (
             <Layout title={`${publication.title}`} active={SpotPage.research} additionalInfo={publication.title}>
                 <div className="container">

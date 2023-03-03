@@ -6,24 +6,42 @@
 
 const path = require('path');
 
-const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
-    resolve(
-        graphql(request).then(result => {
-            if(result.errors) {
-                reject(result.errors);
-            }
-            return result;
-        })
-    );
-});
+// const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
+//     resolve(
+//         graphql(request).then(result => {
+//             if(result.errors) {
+//                 reject(result.errors);
+//             }
+//             return result;
+//         })
+//     );
+// });
 
-exports.createPages = ({ actions, graphql }) => {
+// https://www.gatsbyjs.com/docs/debugging-the-build-process/
+
+const { createFilePath } = require("gatsby-source-filesystem")
+exports.onCreateNode = args => {
+//   console.log(args);
+  const { actions, node } = args
+
+  if (node.internal.type === "MarkdownRemark") {
+    const { createNodeField } = actions
+
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+
+exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
-    const getAuthors = makeRequest(graphql, `{
-            allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}}) {
+    const authors = await graphql(`{
+            allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}, use_local_homepage: {eq: true}}) {
                 nodes {
                     id
-                    strapiId
                     given_name
                     family_name
                 }
@@ -35,13 +53,14 @@ exports.createPages = ({ actions, graphql }) => {
                     award
                     award_description
                     pub_details
-                    short_description
                     status
+                    short_description
                     authors {
                         id
                         given_name
                         family_name
                         membership
+                        use_local_homepage
                         homepage
                     }
                     venue {
@@ -59,39 +78,39 @@ exports.createPages = ({ actions, graphql }) => {
             allStrapiVenue {
                 nodes {
                     id,
-                    strapiId
                     short_name
                     type
                 }
             }
-        }`).then(result => {
-            result.data.allStrapiAuthor.nodes.forEach(( node ) => {
-                const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
-                    const authors = pn.authors;
-                    return authors.some((a) => a.id === node.strapiId) && 
-                        (pn.venue.type === 'conference' || pn.venue.type === 'journal');
-                });
-                createPage({
-                    path: `/${node.given_name}_${node.family_name}`,
-                    component: path.resolve(`src/templates/member.tsx`),
-                    context: {
-                        id: node.id,
-                        pubs: authorPubs
-                    }
-                });
-            });
-            result.data.allStrapiPublication.nodes.forEach(( node ) => {
-                const downloadName = getDownloadName(node);
-                createPage({
-                    path: `/${downloadName}`,
-                    component: path.resolve(`src/templates/publication.tsx`),
-                    context: {
-                        id: node.id
-                    }
-                });
-            });
+        }`);
+    authors.data.allStrapiAuthor.nodes.forEach(( node ) => {
+        const authorPubs = authors.data.allStrapiPublication.nodes.filter((pn) => {
+            const authors = pn.authors;
+            return authors.some((a) => a.id === node.id) && 
+                (pn.venue.type === 'conference' || pn.venue.type === 'journal');
         });
-    return Promise.all([getAuthors]);
+        createPage({
+            path: `/${node.given_name}_${node.family_name}`,
+            component: path.resolve(`src/templates/member.tsx`),
+            context: {
+                id: node.id,
+                pubs: authorPubs
+            }
+        });
+    });
+
+    authors.data.allStrapiPublication.nodes.forEach(( node ) => {
+        const downloadName = getDownloadName(node);
+        createPage({
+            path: `/${downloadName}`,
+            component: path.resolve(`src/templates/publication.tsx`),
+            context: {
+                id: node.id
+            }
+        });
+    });
+
+    return authors;
 }
 
 function getDownloadName(pub) {

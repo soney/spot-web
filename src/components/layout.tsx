@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby-link'
 import { Helmet } from 'react-helmet';
 import './layout.scss'
 
@@ -24,12 +24,19 @@ export class Layout extends React.Component<LayoutProperties, {}> {
                 <meta charSet="utf-8" />
                 <title>{ (this.props.title ? `${this.props.title} | ` : '') + 'Spot Research Group' }</title>
             </Helmet>
-            <nav className="container navbar navbar-expand-sm navbar-light bg-light">
-                <Link className={"navbar-brand"+this.getActiveClass(SpotPage.home)} to="/">spot</Link>
-                <ul className="navbar-nav">
-                    <li className={"nav-item"+this.getActiveClass(SpotPage.research)}><Link to="/research" className="nav-link">Research</Link>{this.getAdditionalInfo(SpotPage.research)}</li>
-                    <li className={"nav-item"+this.getActiveClass(SpotPage.team)}><Link to="/team" className="nav-link">Team</Link>{this.getAdditionalInfo(SpotPage.team)}</li>
-                </ul>
+            <nav className="navbar navbar-expand navbar-light bg-light">
+                <div className='container'>
+                    <Link className={"navbar-brand"+this.getActiveClass(SpotPage.home)} to="/">spot</Link>
+                    {/* <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                        <span className="navbar-toggler-icon"></span>
+                    </button> */}
+                    <div className="navbar-collapse collapse" id="collapseNavbar">
+                        <ul className="navbar-nav">
+                            <li className={"nav-item"+this.getActiveClass(SpotPage.research)}><Link to="/research" className="nav-link">Research</Link>{this.getAdditionalInfo(SpotPage.research)}</li>
+                            <li className={"nav-item"+this.getActiveClass(SpotPage.team)}><Link to="/team" className="nav-link">Team</Link>{this.getAdditionalInfo(SpotPage.team)}</li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <main role="main" className="">{this.props.children}</main>
         </div>;

@@ -11,19 +11,13 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'http://141.211.133.47',
-	        //apiURL: 'http://0.0.0.0:1337',
-                contentTypes: [
-                    'author',
-                    'publication',
-                    'venue',
-                    'cluster'
-                ],
-                singleTypes: [`group`],
+                apiURL: 'https://mspot.link',
+                collectionTypes: ['author', 'publication', 'venue', 'cluster'],
+                singleTypes: ['group'],
                 queryLimit: 1000
             }
         },
-        `gatsby-plugin-graphql-codegen`,
+        // `gatsby-plugin-graphql-codegen`,
         `gatsby-plugin-lodash`,
         `gatsby-plugin-sass`,
         {
@@ -35,9 +29,7 @@ module.exports = {
             }
         },
         `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-transformer-remark`
-        },
+        `gatsby-transformer-remark`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-filesystem`,
