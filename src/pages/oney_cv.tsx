@@ -1351,7 +1351,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         <div className="col main">
                             <div className="supervisee">Yan Chen (School of Information)</div>
                             <div className="supervisee-thesis">Thesis: On-Demand Collaboration in Programming</div>
-                            <div className="supervisee-position">Currently: Postdoctoral Researcher at the University of Toronto (with Tovi Grossman)</div>
+                            <div className="supervisee-position">Currently: Assistant Professor at Virginia Tech</div>
                         </div>
                     </div>
 
