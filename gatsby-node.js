@@ -82,6 +82,21 @@ exports.createPages = async ({ actions, graphql }) => {
                     type
                 }
             }
+            strapiLeadcv {
+                name
+                affiliation {
+                    department
+                    university
+                    office
+                    street
+                    city
+                }
+                contact {
+                    homepage
+                    phone
+                    email
+                }
+            }
         }`);
     authors.data.allStrapiAuthor.nodes.forEach(( node ) => {
         const authorPubs = authors.data.allStrapiPublication.nodes.filter((pn) => {

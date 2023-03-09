@@ -4,6 +4,7 @@ module.exports = {
         title: `spot group`,
         author: `Steve Oney`
     },
+    graphqlTypegen: true,
     plugins: [
         `gatsby-plugin-react-helmet`,
         // Add typescript stack into webpack
@@ -13,7 +14,7 @@ module.exports = {
             options: {
                 apiURL: 'https://mspot.link',
                 collectionTypes: ['author', 'publication', 'venue', 'cluster'],
-                singleTypes: ['group'],
+                singleTypes: ['group', 'leadcv'],
                 queryLimit: 1000
             }
         },

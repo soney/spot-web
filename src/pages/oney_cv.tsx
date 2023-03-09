@@ -45,10 +45,26 @@ export const cvQuery = graphql`query cvPublications {
             }
         }
     }
+    strapiLeadcv {
+        name
+        affiliation {
+            department
+            university
+            office
+            street
+            city
+        }
+        contact {
+            homepage
+            phone
+            email
+        }
+    }
 }`;
 interface CVPageProps {
     data: {
         allStrapiPublication: Strapi_PublicationGroupConnection,
+        strapiLeadcv: any 
     },
     location: {
         search?: string
@@ -213,6 +229,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
     }
     public render() {
         const { includePaperAwards, underlineStudentAuthors, showAllUndergraduateCollaborators } = this.state;
+        const { data } = this.props;
         const hsaChange = (event) => {
             this.setState({underlineStudentAuthors: event.target.checked});
         };
@@ -227,13 +244,13 @@ export default class extends React.Component<CVPageProps, CVPageState> {
         return <div className="cv container">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Steve Oney &ndash; Curriculum Vitae</title>
+                    <title>{data.strapiLeadcv.name} &ndash; Curriculum Vitae</title>
                     <link rel="stylesheet" href="https://use.typekit.net/csn6djz.css"></link>
                 </Helmet>
                 <div className="row">
                     <div className="col side"></div>
                     <div className="col main">
-                        <h1 className="name_header">Steve Oney</h1>
+                        <h1 className="name_header">{data.strapiLeadcv.name}</h1>
                     </div>
                 </div>
                 <div className="row">
@@ -241,18 +258,18 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     <div className="col main">
                         <div className="row">
                             <div className="col affiliation">
-                                <div className="affiliation-department">School of Information</div>
-                                <div className="affiliation-university">University of Michigan</div>
-                                <div className="affiliation-office">4381 North Quadrangle</div>
-                                <div className="affiliation-street">105 South State Street</div>
-                                <div className="affiliation-city">Ann Arbor, MI 48109</div>
+                                <div className="affiliation-department">{data.strapiLeadcv.affiliation.department}</div>
+                                <div className="affiliation-university">{data.strapiLeadcv.affiliation.university}</div>
+                                <div className="affiliation-office">{data.strapiLeadcv.affiliation.office}</div>
+                                <div className="affiliation-street">{data.strapiLeadcv.affiliation.street}</div>
+                                <div className="affiliation-city">{data.strapiLeadcv.affiliation.city}</div>
                             </div>
                             <div className="col contact">
                                 <div className="contact-spacer"></div>
                                 <div className="contact-spacer"></div>
-                                <div className="contact-homepage"><a href="http://from.so/">http://from.so/</a></div>
-                                <div className="contact-phone"><a href="tel:17349990246">1 (734) 999–0246</a></div>
-                                <div className="contact-email"><a href="mailto:soney@umich.edu">soney@umich.edu</a></div>
+                                <div className="contact-homepage"><a href={data.strapiLeadcv.contact.homepage}>{data.strapiLeadcv.contact.homepage}</a></div>
+                                <div className="contact-phone"><a href={'tel:' + data.strapiLeadcv.contact.phone.replace(/\D/g, '')}>{data.strapiLeadcv.contact.phone}</a></div>
+                                <div className="contact-email"><a href={'mailto:' + data.strapiLeadcv.contact.email}>{data.strapiLeadcv.contact.email}</a></div>
                             </div>
                         </div>
                     </div>
