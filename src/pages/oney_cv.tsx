@@ -59,6 +59,12 @@ export const cvQuery = graphql`query cvPublications {
             phone
             email
         }
+        education {
+            university
+            location
+            committee
+            advisors
+        }
     }
 }`;
 interface CVPageProps {
@@ -104,7 +110,6 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return null;
     }
 }
-
 
 
 export default class extends React.Component<CVPageProps, CVPageState> {
@@ -230,6 +235,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
     public render() {
         const { includePaperAwards, underlineStudentAuthors, showAllUndergraduateCollaborators } = this.state;
         const { data } = this.props;
+        console.log(data);
         const hsaChange = (event) => {
             this.setState({underlineStudentAuthors: event.target.checked});
         };
