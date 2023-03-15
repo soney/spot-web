@@ -73,6 +73,11 @@ exports.createPages = async ({ actions, graphql }) => {
                         conference_end
                         short_name
                     }
+                    pdf {
+                        localFile {
+                            publicURL
+                        }
+                    }
                 }
             }
             allStrapiVenue {
