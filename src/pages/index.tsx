@@ -92,12 +92,22 @@ export default class extends React.Component<IndexPageProps, {}> {
         const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         return <Layout active={SpotPage.home}>
             <div className="container">
-                <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
+                <div className='row'>
+                    <div className='col col-sm-12'>
+                        <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
+                    </div>
+                    {/* <div className='col col-sm-3'>
+                        <h2>News <Link className="" to="/news">[+]</Link></h2>
+                    </div> */}
+                </div>
             </div>
             <div className="container">
-                <h2 className="">People <Link className="" to="/team">[+]</Link></h2>
-                {/* <h2 className="">People</h2> */}
-                <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers/*, ...alumMembers*/]} />
+                <div className='row'>
+                    <div className='col col-sm-12'>
+                        <h2 className="">People <Link className="" to="/team">[+]</Link></h2>
+                        <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers/*, ...alumMembers*/]} />
+                    </div>
+                </div>
             </div>
             <div className="container">
                 <h2>Recent Publications <Link to="/research#all-publications">[+]</Link></h2>
