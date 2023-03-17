@@ -144,7 +144,11 @@ function getDownloadName(pub) {
     }
     let short_venue_year = '';
     if(pub.venue) {
-        short_venue_year = `${pub.venue.short_name}${pub.venue.year}`;
+        if(pub.venue.short_name) {
+            short_venue_year = `${pub.venue.short_name}${pub.venue.year}`;
+        } else {
+            short_venue_year = `${pub.venue.year}`;
+        }
     } else {
         short_venue_year = ``;
     }

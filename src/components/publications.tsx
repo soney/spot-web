@@ -112,7 +112,11 @@ export function getDownloadName(pub: Strapi_Publication): string {
     }
     let short_venue_year: string = '';
     if(pub.venue) {
-        short_venue_year = `${pub.venue.short_name}${pub.venue.year}`;
+        if(pub.venue.short_name) {
+            short_venue_year = `${pub.venue.short_name}${pub.venue.year}`;
+        } else {
+            short_venue_year = `${pub.venue.year}`;
+        }
     } else {
         short_venue_year = ``;
     }
