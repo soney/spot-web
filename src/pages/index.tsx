@@ -71,6 +71,22 @@ export const indexQuery = graphql`query membersAndLeads {
     }
     strapiGroup {
         overview
+        recent_pub_cutoff_year
+    }
+    allStrapiNewsitem {
+        nodes {
+            id
+            createdAt
+            description {
+                data {
+                    description
+                }
+            }
+            relevant_people {
+                family_name
+                given_name
+            }
+        }
     }
 }`;
 
@@ -90,15 +106,21 @@ export default class extends React.Component<IndexPageProps, {}> {
         const { data } = this.props;
         const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
         const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
+        const newsItemDisplays = data.allStrapiNewsitem.nodes.map((node) => {
+            return <div key={node.id} className = 'col col-sm-3'>
+                <ReactMarkdown>{node.description.data.description}</ReactMarkdown>
+            </div>
+        });
         return <Layout active={SpotPage.home}>
             <div className="container">
                 <div className='row'>
-                    <div className='col col-sm-12'>
+                    <div className='col col-sm-9'>
                         <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
                     </div>
-                    {/* <div className='col col-sm-3'>
+                    <div className='col col-sm-3'>
                         <h2>News <Link className="" to="/news">[+]</Link></h2>
-                    </div> */}
+                        {newsItemDisplays}
+                    </div>
                 </div>
             </div>
             <div className="container">
@@ -111,7 +133,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             </div>
             <div className="container">
                 <h2>Recent Publications <Link to="/research#all-publications">[+]</Link></h2>
-                <PublicationListDisplay backTo={2016} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
+                <PublicationListDisplay backTo={data.strapiGroup.recent_pub_cutoff_year} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
             </div>
             <footer className="container">
                 <div className="row">

@@ -19,7 +19,7 @@
         "gatsby-plugin-sharp": "^5.7.0",
         "gatsby-plugin-typescript": "^5.7.0",
         "gatsby-source-filesystem": "^5.7.0",
-        "gatsby-source-strapi": "^3.0.4",
+        "gatsby-source-strapi": "^3.0.6",
         "gatsby-transformer-remark": "^6.7.0",
         "gatsby-transformer-sharp": "^5.7.0",
         "graphql": "^16.6.0",
@@ -53,9 +53,9 @@
         "simple-git": "^3.16.1",
         "typescript": "^4.9.5"
     },
-    "babelMacros" : {
-        "fontawesome-svg-core" : {
-          "license": "free"
+    "babelMacros": {
+        "fontawesome-svg-core": {
+            "license": "free"
         }
     },
     "contributors": [

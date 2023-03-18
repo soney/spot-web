@@ -6,27 +6,26 @@ import ReactMarkdown from 'react-markdown';
 
 import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types';
 
-// export const indexQuery = graphql`query news {
-//     allStrapiNewsitems {
-//         nodes {
-//             id
-//             date
-//             description
-//             relevant_people {
-//                 id
-//                 given_name
-//                 family_name
-//                 homepage
-//                 use_local_homepage
-//             }
-//         }
-//     }
-// }`;
+export const indexQuery = graphql`query news {
+    allStrapiNewsitem {
+        nodes {
+            id
+            createdAt
+            description {
+                data {
+                    description
+                }
+            }
+            relevant_people {
+                family_name
+                given_name
+            }
+        }
+    }
+}`;
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: Strapi_AuthorGroupConnection,
-        strapiGroup: Strapi_Group
     }
 }
 
@@ -36,11 +35,23 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        console.log(data);
+
+        const newsItemDisplays = data.allStrapiNewsitem.nodes.map((node) => {
+            console.log(node);
+            return <div key={node.id} className = 'col col-sm-6'>
+                <ReactMarkdown>{node.description.data.description}</ReactMarkdown>
+            </div>
+        });
+
 
         return <Layout active={SpotPage.news}>
             <div className="container">
                 <h2 className="">News</h2>
+                <div className="container">
+                    <div className='row'>
+                        {newsItemDisplays}
+                    </div>
+                </div>
             </div>
         </Layout>;
     }

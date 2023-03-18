@@ -13,7 +13,7 @@ module.exports = {
             resolve: `gatsby-source-strapi`,
             options: {
                 apiURL: 'https://mspot.link',
-                collectionTypes: ['author', 'publication', 'venue', 'cluster'],
+                collectionTypes: ['author', 'publication', 'venue', 'cluster', 'blogpost', 'newsitem'],
                 singleTypes: ['group', 'leadcv'],
                 queryLimit: 1000
             }
