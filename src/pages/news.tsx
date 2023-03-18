@@ -37,7 +37,6 @@ export default class extends React.Component<IndexPageProps, {}> {
         const { data } = this.props;
 
         const newsItemDisplays = data.allStrapiNewsitem.nodes.map((node) => {
-            console.log(node);
             return <div key={node.id} className = 'col col-sm-6'>
                 <ReactMarkdown>{node.description.data.description}</ReactMarkdown>
             </div>

@@ -114,13 +114,13 @@ export default class extends React.Component<IndexPageProps, {}> {
         return <Layout active={SpotPage.home}>
             <div className="container">
                 <div className='row'>
-                    <div className='col col-sm-9'>
+                    <div className='col col-sm-12'>
                         <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
                     </div>
-                    <div className='col col-sm-3'>
+                    {/* <div className='col col-sm-3'>
                         <h2>News <Link className="" to="/news">[+]</Link></h2>
                         {newsItemDisplays}
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="container">
