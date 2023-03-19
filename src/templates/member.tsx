@@ -78,8 +78,7 @@ export default class extends React.Component<MemberProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-3">
-                            <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} style={{borderRadius: 3}} />
-                            {/* <Img fluid={author.headshot.localFile.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} /> */}
+                            <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} imgStyle={{borderRadius: 3}} />
                         </div>
                         <div className="col-sm-9">
                             <ReactMarkdown>{author.long_bio}</ReactMarkdown>

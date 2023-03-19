@@ -31,6 +31,7 @@ export const indexQuery = graphql`query news {
                         childImageSharp {
                             gatsbyImageData(
                                 height: 20
+                                aspectRatio: 1
                                 placeholder: BLURRED
                                 formats: JPG
                             )
@@ -112,7 +113,7 @@ function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: 
         const fullName = `${person.given_name} ${person.family_name}`;
         // console.log(person.headshot);
         const headshot = person.focused_headshot || person.headshot;
-        const img = headshot ? <GatsbyImage style={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
+        const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
 
         // const personText = props.condensed ? <><FontAwesomeIcon icon={regular("user")} /></> : <><FontAwesomeIcon icon={regular("user")} />&nbsp;{fullName}</>;
         const personText = props.condensed ? img : <>{img}&nbsp;{fullName}</>;

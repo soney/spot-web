@@ -26,6 +26,7 @@ export const indexQuery = graphql`query membersAndLeads {
                     childImageSharp {
                         gatsbyImageData(
                             width: 650
+                            aspectRatio: 1
                             placeholder: BLURRED
                             formats: JPG
                         )
@@ -99,6 +100,7 @@ export const indexQuery = graphql`query membersAndLeads {
                       childImageSharp {
                         gatsbyImageData(
                           height: 20
+                          aspectRatio: 1
                           placeholder: BLURRED
                           formats: JPG
                         )
@@ -174,11 +176,11 @@ export default class extends React.Component<IndexPageProps, {}> {
         return <Layout active={SpotPage.home}>
             <div className="container">
                 <div className='row'>
-                    <div className='col col-md-7 group_description'>
+                    <div className='col-md-7 group_description'>
                         <h2>&nbsp;</h2>
                         <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
                     </div>
-                    <div className='col col-md-5 news'>
+                    <div className='col-md-5 news'>
                         <h2>News <Link className="" to="/news">[+]</Link></h2>
                         <NewsDisplay newsItems={data.allStrapiNewsitem.nodes} condensed={true} latest={4} />
                     </div>

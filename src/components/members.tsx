@@ -56,7 +56,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
             ));
             const chunkedMemberDisplays = chunk(memberDisplays, Math.ceil(data.length/3));
             const allCols = chunkedMemberDisplays.map((lst) => {
-                return <ul className="col col-md-4">{lst}</ul>
+                return <ul className="col-md-4">{lst}</ul>
             })
             return <div className="container">
                 <div className="row">
@@ -167,10 +167,10 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             //     return <li key={m.id} className="breadcrumb-item"><a href={m.media.publicURL} download={`${family_name}-${m.description}`} target='_blank'>{m.description}</a></li>
             // })
             return <div className="row member-row">
-                <div className="col col-md-2">
-                    <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} style={{borderRadius: 3}} />
+                <div className="col-sm-2">
+                    <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />
                 </div>
-                <div className="col col-md-10">
+                <div className="col-sm-10">
                     <h3>{`${given_name} ${family_name}`}</h3>
                     <ReactMarkdown>{long_bio}</ReactMarkdown>
                     <ul className="breadcrumb">
@@ -182,7 +182,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             </div>
         } else {
             const memberContent: JSX.Element[] = [
-                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} style={{borderRadius: 3}} />,
+                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
