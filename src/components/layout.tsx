@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby-link'
+import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet';
 import './layout.scss'
 
@@ -34,8 +34,8 @@ export class Layout extends React.Component<LayoutProperties, {}> {
                         <ul className="navbar-nav">
                             <li className={"nav-item"+this.getActiveClass(SpotPage.research)}><Link to="/research" className="nav-link">Research</Link>{this.getAdditionalInfo(SpotPage.research)}</li>
                             <li className={"nav-item"+this.getActiveClass(SpotPage.team)}><Link to="/team" className="nav-link">Team</Link>{this.getAdditionalInfo(SpotPage.team)}</li>
-                            {/* <li className={"nav-item"+this.getActiveClass(SpotPage.news)}><Link to="/news" className="nav-link">News</Link></li>
-                            <li className={"nav-item"+this.getActiveClass(SpotPage.writing)}><Link to="/writing" className="nav-link">Writing</Link></li> */}
+                            <li className={"nav-item"+this.getActiveClass(SpotPage.news)}><Link to="/news" className="nav-link">News</Link></li>
+                            {/* <li className={"nav-item"+this.getActiveClass(SpotPage.writing)}><Link to="/writing" className="nav-link">Writing</Link></li> */}
                         </ul>
                     </div>
                 </div>

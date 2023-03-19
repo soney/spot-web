@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
 import './cv.scss'
-import { Strapi_PublicationGroupConnection } from '../../graphql-types';
 import { graphql } from 'gatsby';
 import { getDownloadName } from '../components/publications';
 
@@ -69,8 +68,8 @@ export const cvQuery = graphql`query cvPublications {
 }`;
 interface CVPageProps {
     data: {
-        allStrapiPublication: Strapi_PublicationGroupConnection,
-        strapiLeadcv: any 
+        allStrapiPublication: Queries.STRAPI_PUBLICATIONConnection,
+        strapiLeadcv: Queries.STRAPI_LEADCV
     },
     location: {
         search?: string

@@ -1,9 +1,8 @@
 import * as React from 'react'
-import { Strapi_Author } from '../../graphql-types';
-import { Link } from 'gatsby-link'
+import { Link } from 'gatsby'
 
 interface AuthorDisplayProps {
-    data: Strapi_Author,
+    data: Queries.STRAPI_AUTHOR,
     withLinks?: boolean,
     highlight?: boolean
 }
@@ -27,7 +26,7 @@ export class AuthorDisplay extends React.Component<AuthorDisplayProps, {}> {
 }
 
 interface AuthorListDisplayProps {
-    authors: ReadonlyArray<Strapi_Author>,
+    authors: ReadonlyArray<Queries.STRAPI_AUTHOR>,
     withLinks?: boolean
     highlightAuthors?: string[]
 }

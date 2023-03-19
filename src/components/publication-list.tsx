@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import * as React from 'react';
-import { Strapi_Publication, Strapi_Venue } from '../../graphql-types';
 import { PublicationSummaryDisplay } from './publications';
 
 export enum PublicationDetailLevel {
@@ -12,7 +11,7 @@ export enum PublicationDetailLevel {
 
 interface PublicationListDisplayProps {
     groupByVenue: boolean;
-    data: ReadonlyArray<Strapi_Publication>
+    data: ReadonlyArray<Queries.STRAPI_PUBLICATION>
     detailLevel?: PublicationDetailLevel
     backTo?: number
     highlightAuthors?: string[]
@@ -23,8 +22,8 @@ export class PublicationListDisplay extends React.Component<PublicationListDispl
     }
     public render() {
         const { data, groupByVenue, backTo } = this.props;
-        const venuePubs: Map<string, Strapi_Publication[]> = new Map();
-        const idToVenueYear: Map<string, Strapi_Venue> = new Map();
+        const venuePubs: Map<string, Queries.STRAPI_PUBLICATION[]> = new Map();
+        const idToVenueYear: Map<string, Queries.STRAPI_VENUE> = new Map();
         const venueTimes: Map<string, number> = new Map();
         data.forEach((pub) => {
             const { venue } = pub;

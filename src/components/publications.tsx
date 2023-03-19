@@ -2,15 +2,14 @@
 // import '@fortawesome/fontawesome-free/scss/solid.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-import { Link } from 'gatsby-link';
+import { Link } from 'gatsby';
 import * as React from 'react';
-import { Strapi_Author, Strapi_Publication } from '../../graphql-types';
 import { AuthorListDisplay } from './authors';
 import { PublicationDetailLevel } from './publication-list';
 
 
 interface PublicationSummaryDisplayProps {
-    data: Strapi_Publication
+    data: Queries.STRAPI_PUBLICATION
     highlightAuthors?: string[]
     detailLevel: PublicationDetailLevel
 }
@@ -22,7 +21,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
     public render(): JSX.Element {
         const { data } = this.props;
         const { venue } = data;
-        const authors = Array.from(data.authors) as any as Strapi_Author[];
+        const authors = Array.from(data.authors) as any as Queries.STRAPI_AUTHOR[];
         const downloadName = getDownloadName(data);
 
         let venue_str: string|JSX.Element = '';
@@ -101,7 +100,7 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
     }
 }
 
-export function getDownloadName(pub: Strapi_Publication): string {
+export function getDownloadName(pub: Queries.STRAPI_PUBLICATION): string {
     let shortAuthors: string = '';
     if(pub.authors.length === 1) {
         shortAuthors = `${pub.authors[0].family_name}`;

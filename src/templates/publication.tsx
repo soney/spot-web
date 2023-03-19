@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Strapi_Author, Strapi_Publication, Strapi_VenueConnection } from '../../graphql-types';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout, SpotPage } from '../components/layout';
 import { AwardDisplay, getDownloadName } from '../components/publications';
@@ -30,6 +29,7 @@ export const pubQuery = graphql`query publication($id: String!) {
             id
             year
             short_name
+            name_year
             homepage
         }
     }
@@ -38,8 +38,8 @@ export const pubQuery = graphql`query publication($id: String!) {
 
 interface PublicationProps {
     data: {
-        strapiPublication: Strapi_Publication,
-        allStrapiVenue: Strapi_VenueConnection
+        strapiPublication: Queries.STRAPI_PUBLICATION,
+        allStrapiVenue: Queries.STRAPI_VENUEConnection
     }
 }
 
@@ -50,7 +50,7 @@ export default class extends React.Component<PublicationProps, {}> {
     public render() {
         const publication = this.props.data.strapiPublication;
 
-        const authors = Array.from(publication.authors) as any as Strapi_Author[];
+        const authors = Array.from(publication.authors) as any as Queries.STRAPI_AUTHOR[];
         const authorsDisplay = <AuthorListDisplay withLinks={true} authors={authors} />;
         const awardDisplay = <AwardDisplay data={publication.award} description={publication.award_description} />;
         const downloadName = getDownloadName(publication);
@@ -59,7 +59,11 @@ export default class extends React.Component<PublicationProps, {}> {
         if(publication.venue) {
             const { venue } = publication;
             if(venue) {
-                venue_str = `${venue.short_name} ${publication.venue.year}`;
+                if(venue.short_name) {
+                    venue_str = `${venue.short_name} ${publication.venue.year}`;
+                } else {
+                    venue_str = `${venue.name_year}`;
+                }
             } else {
                 venue_str = `${publication.venue.year}`;
             }

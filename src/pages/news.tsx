@@ -1,56 +1,169 @@
 import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Layout, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
-
-import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { getDownloadName } from '../components/publications';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const indexQuery = graphql`query news {
     allStrapiNewsitem {
         nodes {
             id
             createdAt
+            date
             description {
                 data {
                     description
                 }
             }
             relevant_people {
+                id
                 family_name
                 given_name
+                homepage
+                use_local_homepage
+                color
+                focused_headshot {
+                    localFile {
+                        childImageSharp {
+                            gatsbyImageData(
+                                height: 20
+                                placeholder: BLURRED
+                                formats: JPG
+                            )
+                            fluid(maxWidth: 700) {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                sizes
+                            }
+                        }
+                    }
+                }
+                headshot {
+                    localFile {
+                        childImageSharp {
+                            gatsbyImageData(
+                                height: 20
+                                placeholder: BLURRED
+                                formats: JPG
+                            )
+                            fluid(maxWidth: 700) {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                sizes
+                            }
+                        }
+                    }
+                }
+            }
+            relevant_publications {
+                id
+                title
+                authors {
+                    family_name
+                    given_name
+                }
+                venue {
+                    id
+                    location
+                    year
+                    homepage
+                    conference_start
+                    conference_end
+                    short_name
+                    full_name
+                    type
+                }
             }
         }
     }
 }`;
 
-interface IndexPageProps {
+
+const monthNames: string[] = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+const shortMonthNames: string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function toMonthAndYear(dateString: string, useShortMonth: boolean): string {
+    const dateParts = dateString.split("-");
+    const monthNumber = parseInt(dateParts[1]);
+    const year = useShortMonth ? `'${dateParts[0].substring(2)}` : dateParts[0];
+    const monthName = useShortMonth ? shortMonthNames[monthNumber - 1] : monthNames[monthNumber - 1];
+
+    return `${monthName} ${year}`;
+}
+
+function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: boolean}): JSX.Element {
+    const newsItem = props.newsItem;
+    const date = newsItem.date || newsItem.createdAt;
+    const dateDisplay = date ? <strong>{toMonthAndYear(date, props.condensed===true)}: </strong> : '';
+
+    const relevantPeopleDisplays = newsItem.relevant_people.map((person) => {
+        const fullName = `${person.given_name} ${person.family_name}`;
+        // console.log(person.headshot);
+        const headshot = person.focused_headshot || person.headshot;
+        const img = headshot ? <GatsbyImage style={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
+
+        // const personText = props.condensed ? <><FontAwesomeIcon icon={regular("user")} /></> : <><FontAwesomeIcon icon={regular("user")} />&nbsp;{fullName}</>;
+        const personText = props.condensed ? img : <>{img}&nbsp;{fullName}</>;
+        let personLink;
+        if(person.use_local_homepage) {
+            personLink = <Link style={props.condensed && {color: person.color}} className="author-internal-link" to={`/${person.given_name}_${person.family_name}`} title={fullName}>{personText}</Link>
+        } else if(person.homepage) {
+            personLink = <a style={props.condensed && {color: person.color}} className="author-external-link" href={person.homepage} target="_blank" title={fullName}>{personText}</a>;
+        } else {
+            personLink = <span title={fullName}>{personText}</span>;
+        }
+        return <li key={person.id} className='relevant-person'>{personLink}</li>;
+    });
+
+    const relevantPublicationDisplays = newsItem.relevant_publications.map((pub) => {
+        const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FontAwesomeIcon icon={regular('file-lines')} /> : <FontAwesomeIcon icon={regular('file')} />;
+        const pubText = props.condensed ? icon : <>{icon}&nbsp;{pub.title}</>;
+        return <li key={pub.id} className='relevant-publication'><Link to={"/" + getDownloadName(pub)} title={pub.title}>{pubText}</Link></li>
+    });
+
+    return <li className='news-item'>
+        {dateDisplay}<ReactMarkdown>{newsItem.description.data.description}</ReactMarkdown>
+        <ul>{relevantPeopleDisplays}{relevantPublicationDisplays}</ul>
+    </li>
+};
+
+export function NewsDisplay(props: {newsItems: readonly Queries.STRAPI_NEWSITEM[], condensed?: boolean, latest: number|false}): JSX.Element {
+    const newsItems = props.newsItems.slice();
+    const sortedNewsItems = newsItems.sort((a, b) => { const aDate = (a.date || a.createdAt); const bDate = (b.date || b.createdAt); return aDate > bDate ? -1 : aDate < bDate ? 1 : 0;});
+    const news = props.latest===false ? sortedNewsItems : sortedNewsItems.slice(0, props.latest);
+    const newsItemDisplays = news.map((newsItem) => <NewsItemDisplay condensed={props.condensed} key={newsItem.id} newsItem={newsItem} />);
+    return <ul className='news-container'>{newsItemDisplays}</ul>;
+};
+
+interface NewsPageProps {
     data: {
+        allStrapiNewsitem: Queries.STRAPI_NEWSITEMConnection
     }
 }
 
-export default class extends React.Component<IndexPageProps, {}> {
-    constructor(props: IndexPageProps) {
+export default class extends React.Component<NewsPageProps, {}> {
+    constructor(props: NewsPageProps) {
         super(props);
     }
     public render() {
         const { data } = this.props;
 
-        const newsItemDisplays = data.allStrapiNewsitem.nodes.map((node) => {
-            return <div key={node.id} className = 'col col-sm-6'>
-                <ReactMarkdown>{node.description.data.description}</ReactMarkdown>
-            </div>
-        });
-
-
         return <Layout active={SpotPage.news}>
-            <div className="container">
+            <div className="news-page container">
                 <h2 className="">News</h2>
-                <div className="container">
-                    <div className='row'>
-                        {newsItemDisplays}
-                    </div>
-                </div>
+                <NewsDisplay newsItems={data.allStrapiNewsitem.nodes} latest={false} />
             </div>
         </Layout>;
     }

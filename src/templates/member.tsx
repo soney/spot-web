@@ -1,13 +1,12 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Strapi_Author, Strapi_Publication } from '../../graphql-types';
 import { Layout, SpotPage } from '../components/layout';
 import { PublicationListDisplay } from '../components/publication-list';
 import './member.scss';
-import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {
@@ -27,6 +26,11 @@ export const memberQuery = graphql`query member($id: String!) {
         headshot {
             localFile {
                 childImageSharp {
+                    gatsbyImageData(
+                        width: 900
+                        placeholder: BLURRED
+                        formats: JPG
+                    )
                     fluid(maxWidth: 900) {
                         base64
                         aspectRatio
@@ -42,10 +46,10 @@ export const memberQuery = graphql`query member($id: String!) {
 
 interface MemberProps {
     data: {
-        strapiAuthor: Strapi_Author,
+        strapiAuthor: Queries.STRAPI_AUTHOR,
     }
     pageContext: {
-        pubs: ReadonlyArray<Strapi_Publication>
+        pubs: ReadonlyArray<Queries.STRAPI_PUBLICATION>
     }
 }
 
@@ -74,7 +78,8 @@ export default class extends React.Component<MemberProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-3">
-                            <Img fluid={author.headshot.localFile.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} />
+                            <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} style={{borderRadius: 3}} />
+                            {/* <Img fluid={author.headshot.localFile.childImageSharp.fluid as any} alt={`Headshot of ${author.given_name} ${author.family_name}`} /> */}
                         </div>
                         <div className="col-sm-9">
                             <ReactMarkdown>{author.long_bio}</ReactMarkdown>

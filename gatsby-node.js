@@ -19,22 +19,21 @@ const path = require('path');
 
 // https://www.gatsbyjs.com/docs/debugging-the-build-process/
 
-const { createFilePath } = require("gatsby-source-filesystem")
-exports.onCreateNode = args => {
-//   console.log(args);
-  const { actions, node } = args
+// const { createFilePath } = require("gatsby-source-filesystem")
+// exports.onCreateNode = args => {
+//   const { actions, node, getNode } = args
 
-  if (node.internal.type === "MarkdownRemark") {
-    const { createNodeField } = actions
+//   if (node.internal.type === "MarkdownRemark") {
+//     const { createNodeField, createFilePath } = actions
 
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
-}
+//     const value = createFilePath({ node, getNode })
+//     createNodeField({
+//       name: `slug`,
+//       node,
+//       value,
+//     })
+//   }
+// }
 
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;

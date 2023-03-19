@@ -10,6 +10,8 @@ $border-color: #EEE;
 
 $link-color: #2F65A7;
 $link-hover-color: #2F65A7;
+
+$suble-color: #CCC;
 // $link-color: #0056b3; 
 // $link-hover-color: #0056b3; 
 
@@ -37,11 +39,60 @@ body {
         }
     }
 
+    .news, .group_description {
+        h2 {
+            margin-top: 0px;
+        }
+    }
+
+    // .member-news-avatar {
+        // img {
+        //     border: 2px solid $secondary-text-color;
+        //     border-radius: 50%;
+        // }
+    // }
+
+    .news-container {
+        padding-left: 0px;
+    }
+
+    .news {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+
+                ul {
+                    display: inline;
+                    li {
+                        a {
+                            color: $secondary-text-color;
+                        }
+                        color: $secondary-text-color;
+                        display: inline;
+                        padding-left: 1px;
+                        padding-right: 1px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    li.news-item {
+        p {
+            display: inline;
+        }
+    }
+
     nav.navbar {
         background: none !important;
         margin-top: 20px;
         // border-bottom: $border-style;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         .navbar-brand {
             color: $text-color;
             &:hover {

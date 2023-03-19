@@ -1,18 +1,17 @@
-import Img from 'gatsby-image';
-import { Link } from 'gatsby-link';
+import { Link } from 'gatsby';
 import * as React from 'react';
-import { Strapi_Author } from '../../graphql-types';
 import ReactMarkdown from 'react-markdown'
 import { chunk } from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export enum MemberListLayout {
     short_horizontal='short_horizontal', full_vertical='full_vertical', tiny_head='tiny_head', simple_list='simple_list'
 }
 
 interface MemberListDisplayProps {
-    data: ReadonlyArray<Strapi_Author>,
+    data: ReadonlyArray<Queries.STRAPI_AUTHOR>,
     highlightPubs: boolean,
     layout: MemberListLayout
 }
@@ -25,13 +24,13 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
         const { data, layout } = this.props;
 
         if(layout === MemberListLayout.full_vertical) {
-            const memberDisplays = data.map((node: Strapi_Author) => (
+            const memberDisplays = data.map((node: Queries.STRAPI_AUTHOR) => (
                 <MemberDisplay key={node.id} highlightPubs={this.props.highlightPubs} data={node} layout={this.props.layout} />
             ));
             return <div className="container"> {memberDisplays} </div>;
         } else if(layout === MemberListLayout.short_horizontal) {
             // const col_count = Math.floor(12/data.length);
-            const memberDisplays = data.map((node: Strapi_Author) => (
+            const memberDisplays = data.map((node: Queries.STRAPI_AUTHOR) => (
                 <div key={node.id} className={`member p-1`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
             return <div className="">
@@ -41,7 +40,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
             </div>;
         } else if(layout === MemberListLayout.tiny_head) {
             // const col_count = Math.floor(12/data.length);
-            const memberDisplays = data.map((node: Strapi_Author) => (
+            const memberDisplays = data.map((node: Queries.STRAPI_AUTHOR) => (
                 <div key={node.id} className={`col col-md-2`}><MemberDisplay layout={this.props.layout} highlightPubs={this.props.highlightPubs} data={node} /></div>
             ));
             return <div className="container">
@@ -50,7 +49,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
                 </div>
             </div>;
         } else if(layout === MemberListLayout.simple_list) {
-            const memberDisplays = data.map((node: Strapi_Author) => (
+            const memberDisplays = data.map((node: Queries.STRAPI_AUTHOR) => (
                 node.homepage ?
                 <li key={node.id}><a href={node.homepage}>{`${node.given_name} ${node.family_name}`}</a>{node.short_bio && ` (${node.short_bio})`}</li> :
                 <li key={node.id}>{`${node.given_name} ${node.family_name}`}{node.short_bio && ` (${node.short_bio})`}</li>
@@ -71,7 +70,7 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
 }
 
 interface MemberDisplayProps {
-    data: Strapi_Author,
+    data: Queries.STRAPI_AUTHOR,
     layout: MemberListLayout,
     highlightPubs: boolean
 }
@@ -169,7 +168,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             // })
             return <div className="row member-row">
                 <div className="col col-md-2">
-                    <Img className="member-headshot" fluid={data.headshot.localFile.childImageSharp.fluid as any} title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} />
+                    <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} style={{borderRadius: 3}} />
                 </div>
                 <div className="col col-md-10">
                     <h3>{`${given_name} ${family_name}`}</h3>
@@ -183,7 +182,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             </div>
         } else {
             const memberContent: JSX.Element[] = [
-                <Img className="member-headshot" fluid={data.headshot.localFile.childImageSharp.fluid as any} title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} />,
+                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} style={{borderRadius: 3}} />,
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,

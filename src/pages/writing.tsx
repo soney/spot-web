@@ -5,8 +5,6 @@ import { graphql } from 'gatsby';
 import { Layout, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 
-import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types';
-
 // export const indexQuery = graphql`query news {
 //     allStrapiNewsitems {
 //         nodes {
@@ -26,8 +24,6 @@ import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types'
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: Strapi_AuthorGroupConnection,
-        strapiGroup: Strapi_Group
     }
 }
 

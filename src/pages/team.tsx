@@ -4,8 +4,6 @@ import { graphql } from 'gatsby';
 import { Layout, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 
-import { Strapi_AuthorGroupConnection, Strapi_Group } from '../../graphql-types';
-
 export const indexQuery = graphql`query team {
     allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_student"]}}, sort: [{membership: ASC}, {family_name: ASC}]) {
         nodes {
@@ -27,6 +25,11 @@ export const indexQuery = graphql`query team {
             headshot {
                 localFile {
                     childImageSharp {
+                        gatsbyImageData(
+                            width: 650
+                            placeholder: BLURRED
+                            formats: JPG
+                        )
                         fluid(maxWidth: 700) {
                             base64
                             aspectRatio
@@ -47,8 +50,8 @@ export const indexQuery = graphql`query team {
 
 interface IndexPageProps {
     data: {
-        allStrapiAuthor: Strapi_AuthorGroupConnection,
-        strapiGroup: Strapi_Group
+        allStrapiAuthor: Queries.STRAPI_AUTHORGroupConnection,
+        strapiGroup: Queries.STRAPI_GROUP
     }
 }
 

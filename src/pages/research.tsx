@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Strapi_PublicationGroupConnection, Strapi_ClusterConnection, Strapi_Author, Strapi_Publication } from '../../graphql-types';
 import { Layout, SpotPage } from '../components/layout';
 import { PublicationListDisplay, PublicationDetailLevel } from '../components/publication-list';
 import ReactMarkdown from 'react-markdown';
@@ -64,8 +63,8 @@ export const indexQuery = graphql`query allPubs {
 
 interface IndexPageProps {
     data: {
-        allStrapiPublication: Strapi_PublicationGroupConnection,
-        allStrapiCluster: Strapi_ClusterConnection
+        allStrapiPublication: Queries.STRAPI_PUBLICATIONConnection,
+        allStrapiCluster: Queries.STRAPI_CLUSTERConnection
     }
 }
 
@@ -80,7 +79,7 @@ export default class extends React.Component<IndexPageProps, {}> {
             const authorDisplays = <AuthorListDisplay withLinks={true} authors={authors as any} />
             const detailedPubs = publications.map((pub) => {
                 const { id } = pub;
-                return data.allStrapiPublication.nodes.find((p: Strapi_Publication) => p.id===id);
+                return data.allStrapiPublication.nodes.find((p: Queries.STRAPI_PUBLICATION) => p.id===id);
             });
             return <div key={id} className="row">
                 <div className="col-md-4">
