@@ -6,6 +6,9 @@ import { Link } from 'gatsby'
 import { Layout, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 import { NewsDisplay } from './news';
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false
 
     // allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
 export const indexQuery = graphql`query membersAndLeads {
