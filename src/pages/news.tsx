@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { getDownloadName } from '../components/publications';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false
 
 export const indexQuery = graphql`query news {
     allStrapiNewsitem {
