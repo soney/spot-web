@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet';
 import './cv.scss'
 import { graphql } from 'gatsby';
-import { getDownloadName } from '../components/publications';
+import { getAwardText, getDownloadName } from '../components/publications';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -36,6 +36,7 @@ export const cvQuery = graphql`query cvPublications {
                 conference_end
                 full_name
                 short_name
+                name_year
                 type
             }
             pdf {
@@ -105,6 +106,54 @@ export const cvQuery = graphql`query cvPublications {
             program
             sponsor
             team
+            title
+        }
+        awards {
+            date_end
+            date_start
+            description
+            id
+            title
+        }
+        service {
+            category
+            date_end
+            date_start
+            description
+            id
+            title
+        }
+        supervised_students {
+            category
+            current_position
+            date_end
+            date_start
+            id
+            institution
+            student_department
+            student_name
+            thesis_title
+        }
+        invited_presentations {
+            id
+            date
+            institution
+            location
+            title
+        }
+        teaching {
+            id
+            description
+            date_start
+            date_end
+            institution
+            title
+        }
+        press {
+            description
+            id
+            link
+            publication
             title
         }
     }
@@ -278,7 +327,6 @@ export default class extends React.Component<CVPageProps, CVPageState> {
     public render() {
         const { includePaperAwards, underlineStudentAuthors, showAllUndergraduateCollaborators } = this.state;
         const { data } = this.props;
-        console.log(data);
         const hsaChange = (event) => {
             this.setState({underlineStudentAuthors: event.target.checked});
         };
@@ -350,19 +398,15 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                                         (edu.advisors || edu.committee) &&
                                             <table className="education-advisors">
                                                 <tbody>
-                                                    {
-                                                        edu.advisors && <tr><td>Advisors:&nbsp;</td><td>{edu.advisors}</td></tr>
-                                                    }
-                                                    {
-                                                        edu.committee && <tr><td>Committee:&nbsp;</td><td>{edu.committee}</td></tr>
-                                                    }
+                                                    { edu.advisors && <tr><td>Advisors:&nbsp;</td><td>{edu.advisors}</td></tr> }
+                                                    { edu.committee && <tr><td>Committee:&nbsp;</td><td>{edu.committee}</td></tr> }
                                                 </tbody>
                                             </table>
                                     }
                                 </div>
-                                </div>
-                            ))
-                        }
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="section experience">
                     <div className="row">
@@ -423,41 +467,25 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         UIST: 22%, CHI: 23%, VL/HCC: 30%, CSCW: 25%, ICSE: 19%, IMX: 26%
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Heavily-reviewed Journal Manuscripts ({PUB_TYPES.JOURNAL})</h3>
-                        </div>
-                    </div>
-                    {this.getPubElements([PUB_TYPES.JOURNAL])}
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Heavily-reviewed Conference Papers ({PUB_TYPES.CONFERENCE})</h3>
-                        </div>
-                    </div>
-                    {this.getPubElements([PUB_TYPES.CONFERENCE])}
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Book Chapters ({PUB_TYPES.BOOK_CHAPTER})</h3>
-                        </div>
-                    </div>
-                    {this.getPubElements([PUB_TYPES.BOOK_CHAPTER])}
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Refereed Posters ({PUB_TYPES.POSTER}), Workshops ({PUB_TYPES.WORKSHOP}), and Doctoral Consortiums ({PUB_TYPES.DOCTORAL_CONSORTIUM})</h3>
-                        </div>
-                    </div>
-                    {this.getPubElements([PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM])}
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Theses ({PUB_TYPES.THESIS})</h3>
-                        </div>
-                    </div>
-                    {this.getPubElements([PUB_TYPES.THESIS])}
+                    {
+                        [
+                            [`Heavily-reviewed Journal Manuscripts (${PUB_TYPES.JOURNAL})`, [PUB_TYPES.JOURNAL]],
+                            [`Heavily-reviewed Conference Papers (${PUB_TYPES.CONFERENCE})`, [PUB_TYPES.CONFERENCE]],
+                            [`Book Chapters (${PUB_TYPES.BOOK_CHAPTER})`, [PUB_TYPES.BOOK_CHAPTER]],
+                            [`Refereed Posters (${PUB_TYPES.POSTER}), Workshops (${PUB_TYPES.WORKSHOP}), and Doctoral Consortiums (${PUB_TYPES.DOCTORAL_CONSORTIUM})`, [PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM]],
+                            [`Theses (${PUB_TYPES.THESIS})`, [PUB_TYPES.THESIS]],
+                        ].map(([sectionTitle, pubElementTypes]) => (
+                            <>
+                                <div className="row">
+                                    <div className="col side"></div>
+                                    <div className="col main section-subheader">
+                                        <h3>{sectionTitle}</h3>
+                                    </div>
+                                </div>
+                                {this.getPubElements(pubElementTypes as PUB_TYPES[])}
+                            </>
+                        ))
+                    }
                 </div>
                 <div className="section grants">
                     <div className="row">
@@ -496,17 +524,6 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <input id="ipacheckbox" type="checkbox" checked={this.state.includePaperAwards} onChange={ipaChange} />&nbsp;<label htmlFor="ipacheckbox">Include Best Paper Awards</label>
                         </div>
                     </div>
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2021</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">CSCW 2021: Recognition for Contribution to Diversity and Inclusion</div>
-                            <i>Understanding Accessibility and Collaboration in Programming for People with Visual Impairments</i>
-                        </div>
-                    </div>
-                    }
                     {!includePaperAwards &&
                     <div className="row">
                         <div className="col side"></div>
@@ -515,153 +532,51 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                     </div>
                     }
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">09/2021</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">UMSI Excellence in Instruction Award</div>
-                            <div className="award-description"></div>
-                        </div>
-                    </div>
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">08/2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">IEEE VL/HCC: Best Short Paper</div>
-                            <i>EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education</i>
-                        </div>
-                    </div>
+                    {
+                        [
+                            ...data.strapiLeadcv.awards,
+                            ...( includePaperAwards ? data.allStrapiPublication.nodes.filter((pub) => ( pub.award !== 'none')) : [])
+                        ].sort((a, b) => {
+                            function getDateString(x: Queries.STRAPI__COMPONENT_CV_AWARD|Queries.STRAPI_PUBLICATION) {
+                                if(x.hasOwnProperty('venue')) {
+                                    const venue = (x as Queries.STRAPI_PUBLICATION).venue;
+                                    return `${venue.conference_start}/${venue.year}`;
+                                } else {
+                                    const award = x as Queries.STRAPI__COMPONENT_CV_AWARD;
+                                    const dateStart = award.date_start.split('/');
+                                    return `${dateStart[0]}/1/${dateStart[1]}`;
+                                }
+                            }
+                            const aDate = new Date(getDateString(a)).getTime();
+                            const bDate = new Date(getDateString(b)).getTime();
+                            return bDate - aDate;
+                        }).map((award: Queries.STRAPI__COMPONENT_CV_AWARD|Queries.STRAPI_PUBLICATION) => {
+                            if(award.hasOwnProperty('venue')) { // publication
+                                const pub = award as Queries.STRAPI_PUBLICATION;
+
+                                return <div className="row item">
+                                    <div className="col side">
+                                        <div className="date">{getVenueMonthYear(pub.venue)}</div>
+                                    </div>
+                                    <div className="col main">
+                                        <div className="award-title">{pub.venue.name_year}: {getAwardText(pub.award, pub.award_description)}</div>
+                                        <i>{pub.title}</i>
+                                    </div>
+                                </div>;
+                            } else {
+                                const award_item = award as Queries.STRAPI__COMPONENT_CV_AWARD;
+                                return <div className="row item" key={award_item.id}>
+                                    <div className="col side">
+                                        {getDateRangeEl(award_item.date_start, award_item.date_end)}
+                                    </div>
+                                    <div className="col main">
+                                        <div className="award-title">{award_item.title}</div>
+                                        {award_item.description && <div className="award-description">{award_item.description}</div>}
+                                    </div>
+                                </div>
+                            }
+                        })
                     }
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">08/2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">CHI 2020: Honorable Mention for Best Paper</div>
-                            <i>Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives</i>
-                        </div>
-                    </div>
-                    }
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">CSCW 2019: Best Paper</div>
-                            <i>How Data Scientists Use Computational Notebooks for Real-Time Collaboration</i>
-                        </div>
-                    </div>
-                    }
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">IEEE VL/HCC: Best Short Paper</div>
-                            <i>Studying the Benefits and Challenges of Immersive Dataflow Programming</i>
-                        </div>
-                    </div>
-                    }
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">05/2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">ACM CHI 2019: Honorable Mention for Best Paper</div>
-                            <i>Implementing Multi-Touch Gestures with Touch Groups and Cross Events</i>
-                        </div>
-                    </div>
-                    }
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2018</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">ACM UIST 2018: Honorable Mention for Best Paper</div>
-                            <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
-                        </div>
-                    </div>
-                    }
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">09/2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">University of Michigan President's Postdoctoral Fellowship</div>
-                        </div>
-                    </div>
-                    {includePaperAwards &&
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">04/2013</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">ACM CHI 2013: Honorable Mention for Best Paper</div>
-                            <i>Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features</i>
-                        </div>
-                    </div>
-                    }
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2009</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">UIST Student Innovation Contest, 1st place</div>
-                            <div className="award-description">Part of winning team in most creative category</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">09/2009</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Google/UNCF Scholarship</div>
-                            <div className="award-description">One-year scholarship for $10,000</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2009 &ndash; 05/2012</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Ford Foundation Predoctoral Fellowship</div>
-                            <div className="award-description">Annual stipend of $20,000 for three years, awarded to 60 doctoral students nationwide across disciplines</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2008 &ndash; 05/2011</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">ARCS Foundation Scholarship (Pittsburgh Chapter)</div>
-                            <div className="award-description">Annual stipend of $5,000 for three years. Awarded to 13 doctoral students in the Pittsburgh area (CMU &amp; University of Pittsburgh)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2008</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">MIT Batttlecode Open Programming Competition Finalist</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2008</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">NEWMAC Academic All-Conference</div>
-                            <div className="award-description">Awarded for academic success while a member of MIT's varsity track team</div>
-                        </div>
-                    </div>
                 </div>
                 <div className="section presentations">
                     <div className="row">
@@ -670,175 +585,20 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Invited Presentations</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2021</div>
-                            <div className="location">(remote)</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Stanford HCI Seminar</div>
-                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2021</div>
-                            <div className="location">(remote)</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Harvard Computer Science Colloquium</div>
-                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">5/2021</div>
-                            <div className="location">(remote)</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Adobe Research HCI Seminar</div>
-                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">12/2020</div>
-                            <div className="location">Seattle, WA<br/>(remote)</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of Washington DUB Seminar</div>
-                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2020</div>
-                            <div className="location">Cambridge, MA<br/>(remote)</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">MIT CSAIL HCI Seminar</div>
-                            <div className="talk-title">Designing Tools for Remote Communication in Programming</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2019</div>
-                            <div className="location">Bloomington, IN</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Indiana University</div>
-                            <div className="talk-title">Designing Tools for Remote Communication and Collaboration</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2018</div>
-                            <div className="location">Williamstown, MA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Williams College</div>
-                            <div className="talk-title">CS Colloquium&mdash;Designing Tools for More Effective Remote Communication</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2017</div>
-                            <div className="location">Madison, WI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of Wisconsin</div>
-                            <div className="talk-title">HCI Seminar: Designing Tools for Remote Communication Between Programmers</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">03/2016</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of Michigan School of Information</div>
-                            <div className="talk-title">Programming Tools that Speak our Language</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2015</div>
-                            <div className="location">South Bend, IN</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of Notre Dame Department of Computer Science and Engineering</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">04/2015</div>
-                            <div className="location">Chicago, IL</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of Illinois at Chicago Department of Computer Science</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">03/2015</div>
-                            <div className="location">Boston, MA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Boston University Department of Computer Science</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">03/2015</div>
-                            <div className="location">Palo Alto, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">FX Palo Alto Laboratory</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">03/2015</div>
-                            <div className="location">Stony Brook, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Stony Brook Computer Science Department</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">02/2015</div>
-                            <div className="location">Irvine, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">University of California at Irvine</div>
-                            <div className="talk-title">Expressing Interactivity with States and Constraints</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">03/2010</div>
-                            <div className="location">Dagstuhl, Germany</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">Dagstuhl: Practical Software Testing: Tool Automation and Human Factors</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">06/2009</div>
-                            <div className="location">San Jose, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="talk-location">IBM Almaden Lunch Seminar</div>
-                            <div className="talk-title">FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages</div>
-                        </div>
-                    </div>
+                    {
+                        data.strapiLeadcv.invited_presentations.map((talk, index) => (
+                            <div className="row item" key={talk.id}>
+                                <div className="col side">
+                                    <div className="date">{talk.date}</div>
+                                    <div className="location">{talk.location}</div>
+                                </div>
+                                <div className="col main">
+                                    <div className="talk-location">{talk.institution}</div>
+                                    <div className="talk-title">{talk.title}</div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="section service">
                     <div className="row">
@@ -847,288 +607,38 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Service</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2021</div>
-                        </div>
-                        <div className="col main">
-                            <div className="role">Program Co-Chair (with Jácome Miguel Costa Cunha)</div>
-                            <div className="venue">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Organizing Committee</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="role">Graduate Consortium co-chair (with Michael Lee)</div>
-                            <div className="venue">IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)</div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Program Committee</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2017, 2018, 2020, 2022</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Symposium on User Interface Software and Technology (UIST)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2022</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2016 &ndash; 2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018, 2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM International Conference on Supporting Group Work (GROUP)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2017 &ndash; 2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Programming Experience Workshop (PX)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">International Workshop on Eye Movements in Programming (EMIP)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference on Tangible, Embedded, and Embodied Interactions (TEI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Tech Notes for the ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)</div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Peer Reviewing</h3>
-                        </div>
-                    </div>
-
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">IEEE Transactions of Software Engineering (TSE)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Transactions on Computer-Human Interaction (TOCHI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2010 &ndash; 2016</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference on Human Factors in Computing Systems (CHI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2011 &ndash; 2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Symposium on User Interface Software &amp; Technology (UIST)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2014</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Conference on Human-Computer Interaction with Mobile Devices (MobileHCI)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2010, 2012</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM Conference on Designing Interactive Systems (DIS)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2008, 2009</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Philippine Journal of Science (PJS)</div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Operations Committee</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2012 &ndash; 2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM CHI Operations Committee (mobile program guide)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2013 &ndash; 2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM UIST Operations Committee (mobile program guide)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2013 &ndash; 2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM ITS Operations Committee (mobile program guide)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2012</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM UbiComp Committee (mobile program guide)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2010, 2011</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">ACM CHI student volunteer (mobile guide development team)</div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>UMSI</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018 &ndash; 2020 &amp; 2021 &ndash; present</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">School of Information BSI Committee</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2021 &ndash; present</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">Faculty Advisor for UMSI chapter of Upsilon Pi Epsilon (International Honor Society for the Computing and Information Disciplines)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019 &ndash; 2020</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">School of Information Technical Curriculum Task Force</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018 &ndash; 2019</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">University of Michigan Interactive and Social Computing (MISC) Coordinator</div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Other</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2009 &ndash; 2015</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">CMU Computer Science outreach roadshow volunteer (with Women@SCS &amp; SCS4All)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2011 &ndash; 2014</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) ombudsman</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2010</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) visit weekend co-chair</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2009, 2010</div>
-                        </div>
-                        <div className="col main">
-                            <div className="venue">CMU Human-Computer Interaction Institute (HCII) PhD lunch coordinator</div>
-                        </div>
-                    </div>
+                    {
+                        [
+                            [`Organizing Committee`, 'organizing_committee'],
+                            [`Program Committee`, 'program_committee'],
+                            [`Peer Reviewing`, 'peer_review'],
+                            [`Operations Committee`, 'operations_committee'],
+                            [`UMSI`, 'department'],
+                            [`Other`, 'other'],
+                        ].map(([sectionTitle, category]) => (
+                            <>
+                                <div className="row">
+                                    <div className="col side"></div>
+                                    <div className="col main section-subheader">
+                                        <h3>{sectionTitle}</h3>
+                                    </div>
+                                </div>
+                                {
+                                    data.strapiLeadcv.service.filter((service_item) => service_item.category === category).map((service_item) => (
+                                        <div className="row item" key={service_item.id}>
+                                            <div className="col side">
+                                                {getDateRangeEl(service_item.date_start, service_item.date_end)}
+                                            </div>
+                                            <div className="col main">
+                                                <div className="role">{service_item.title}</div>
+                                                {service_item.description && <div className="venue">{service_item.description}</div>}
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </>
+                        ))
+                    }
                 </div>
                 <div className="section teaching">
                     <div className="row">
@@ -1138,101 +648,20 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                     </div>
 
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2021 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Instructor (and creator) &ndash; SI 579 (Building Interactive Applications)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">2016 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Instructor &ndash; SI 106 (Programs, Information, &amp; People)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2009</div>
-                            <div className="location">University of Michigan &amp; Coursera</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Python 3 Programming Specialization</div>
-                            <div className="course-url"><a href="https://www.coursera.org/specializations/python-3-programming">https://www.coursera.org/specializations/python-3-programming</a></div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Fall 2012</div>
-                            <div className="location">Carnegie Mellon</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Instructor &ndash; Web Lab, Programming User Interfaces</div>
-                            <div className="course-description">Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.7/5.0</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Fall 2010</div>
-                            <div className="location">Carnegie Mellon</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Instructor &ndash; GUI Lab, Programming User Interfaces</div>
-                            <div className="course-description">Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.6/5.0</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Fall 2007 &amp; Spring 2008</div>
-                            <div className="location">MIT</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Instructor &ndash; GUI Lab, Programming User Interfaces</div>
-                            <div className="course-description">Taught three recitation sections per week, held weekly office hours, and graded students’ exams</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Summer 2007</div>
-                            <div className="location">MIT</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Teaching Assistant &ndash; Interphase Physics I</div>
-                            <div className="course-description">Taught three classes per week, held weekly office hours, and mentored a group of incoming MIT freshmen</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Spring 2005</div>
-                            <div className="location">MIT</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Teaching Assistant &ndash; Technology Enabled Learning (TEAL) Physics II</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Spring 2005 &ndash; Fall 2006</div>
-                            <div className="location">MIT</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Laboratory Assistant &ndash; Circuits and Electronics</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="semester">Fall 2006</div>
-                            <div className="location">MIT</div>
-                        </div>
-                        <div className="col main">
-                            <div className="course-name">Laboratory Assistant &ndash; Computational Structures</div>
-                        </div>
-                    </div>
+                    {
+                        data.strapiLeadcv.teaching.map((teaching) => (
+                            <div className="row item">
+                                <div className="col side">
+                                    <div className="date-range">{getDateRangeEl(teaching.date_start, teaching.date_end)}</div>
+                                    <div className="location">{teaching.institution}</div>
+                                </div>
+                                <div className="col main">
+                                    <div className="course-name">{teaching.title}</div>
+                                    <ReactMarkdown className="course-description">{teaching.description}</ReactMarkdown>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="section supervisees">
                     <div className="row">
@@ -1241,184 +670,38 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Students Supervised</h2>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Dissertation Chair (Ph.D. Graduates)</h3>
-                        </div>
-                    </div>
-
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2015 &ndash; Fall 2020</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">Yan Chen (School of Information)</div>
-                            <div className="supervisee-thesis">Thesis: On-Demand Collaboration in Programming</div>
-                            <div className="supervisee-position">Currently: Assistant Professor at Virginia Tech</div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Ph.D. Advisees (Ongoing)</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2021 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">Ashley Zhang (School of Information)</div>
-                            <div className="supervisee-thesis"></div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2018 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">Lei Zhang (School of Information)</div>
-                            <div className="supervisee-thesis"></div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2018 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">(Mauli) Maulishree Pandey (School of Information)</div>
-                            <div className="supervisee-thesis"></div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2018 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">(April) Yi Wang (School of Information)</div>
-                            <div className="supervisee-thesis">(co-advised with Christopher Brooks)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">Fall 2017 &ndash; present</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="supervisee">Rebecca Krosnick (Computer Science and Engineering)</div>
-                            <div className="supervisee-thesis"></div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Thesis Committees (Ph.D.)</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2021</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Hari Subramonyam (School of Information)</div>
-                            <div className="student-thesis">Designing AI Experiences: Boundary Representations, Collaborative Processes, and Data Tools</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2020</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Vaspol Ruamviboonsuk (Computer Science and Engineering)</div>
-                            <div className="student-thesis">Understanding and Improving the Performance of Web Page Loads</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Shih-Chieh Lin (Computer Science and Engineering)</div>
-                            <div className="student-thesis">Cross-Layer System Design for Autonomous Driving</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2017</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Sang Won Lee (Computer Science and Engineering)</div>
-                            <div className="student-thesis">Improving User Involvement Through Live, Collaborative Creation</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2017</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Xin Rong (School of Information)</div>
-                            <div className="student-thesis">Neural Language Models for Data-Driven Programming Support</div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Thesis Committees (M.S.)</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2020</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Xunan (Andy) Zhou (School of Information)</div>
-                            <div className="student-thesis">Conversational Agent Experience: What makes a good skill?</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2020</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Kangning Chen (School of Information)</div>
-                            <div className="student-thesis">Providing Examples and Tool Support for Novice AR Creators</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2019</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Katy Madier (School of Information)</div>
-                            <div className="student-thesis">Enabling Low-cost Co-located Virtual Reality Experiences</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">2018</div>
-                            <div className="location">University of Michigan</div>
-                        </div>
-                        <div className="col main">
-                            <div className="student">Maulishree Pandey (School of Information)</div>
-                            <div className="student-thesis">Exploring and Designing for the Self-Tracking Needs of Recreational Athletes</div>
-                        </div>
-                    </div>
+                    {
+                        [
+                            [`Dissertation Chair (Ph.D. Graduates)`, 'dissertation_chair'],
+                            [`Ph.D. Advisees (Ongoing)`, 'ongoing_advisee'],
+                            [`Thesis Committees (Ph.D.)`, 'phd_thesis_committee'],
+                            [`Thesis Committees (M.S.)`, 'ms_thesis_committee'],
+                        ].map(([sectionTitle, category]) => (
+                            <>
+                                <div className="row">
+                                    <div className="col side"></div>
+                                    <div className="col main section-subheader">
+                                        <h3>{sectionTitle}</h3>
+                                    </div>
+                                </div>
+                                {
+                                    data.strapiLeadcv.supervised_students.filter((student) => student.category === category).map((student) => (
+                                        <div className="row item" key={student.id}>
+                                            <div className="col side">
+                                                {getDateRangeEl(student.date_start, student.date_end)}
+                                                <div className="location">{student.institution}</div>
+                                            </div>
+                                            <div className="col main">
+                                                <div className="supervisee">{student.student_name}{student.student_department && ` (${student.student_department})`}</div>
+                                                {student.thesis_title && <div className="supervisee-thesis">Thesis: {student.thesis_title}</div>}
+                                                {student.current_position && <div className="supervisee-position">Currently: {student.current_position}</div>}
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </>
+                        ))
+                    }
                     <div className="row d-print-none">
                         <div className="col side"></div>
                         <div className="col main">
@@ -1426,27 +709,27 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                     </div>
                     {showAllUndergraduateCollaborators &&
-                    <>
-                    <div className="row">
-                        <div className="col side"></div>
-                        <div className="col main section-subheader">
-                            <h3>Other Mentees</h3>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                        </div>
-                        <div className="col main">
-                            <ul>
-                                {
-                                    data.allStrapiAuthor.nodes.map((author) => (
-                                        <li>{author.given_name} {author.family_name} {author.short_bio && `(${author.short_bio})`}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                    </>
+                        <>
+                            <div className="row">
+                                <div className="col side"></div>
+                                <div className="col main section-subheader">
+                                    <h3>Other Mentees</h3>
+                                </div>
+                            </div>
+                            <div className="row item">
+                                <div className="col side">
+                                </div>
+                                <div className="col main">
+                                    <ul>
+                                        {
+                                            data.allStrapiAuthor.nodes.map((author) => (
+                                                <li key={author.id}>{author.given_name} {author.family_name} {author.short_bio && `(${author.short_bio})`}</li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </>
                     }
                 </div>
                 <div className="section press">
@@ -1456,51 +739,20 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Press</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="outlet">VentureBeat, 2014</div>
-                        </div>
-                        <div className="col main">
-                            <div className="title"><a href="http://venturebeat.com/2014/06/23/adobe-and-cmu-researchers-unveil-a-brilliant-new-javascript-library-constraintjs/">Adobe and CMU researchers unveil a brilliant new JavaScript library: ConstraintJS</a></div>
-                            <div className="date">June 23</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="outlet">Wired, 2013</div>
-                        </div>
-                        <div className="col main">
-                            <div className="title"><a href="http://www.wired.com/gadgetlab/2013/05/zoomboard-smartwatch-typing/">Researchers Figure Out How You Can Type on a Smartwatch</a></div>
-                            <div className="date">May 1</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="outlet">Slashdot, 2013</div>
-                        </div>
-                        <div className="col main">
-                            <div className="title"><a href="http://hardware.slashdot.org/story/13/05/01/1313206/carnegie-mellon-offers-wee-qwerty-texting-tech-for-impossibly-tiny-devices">CMU Offers Wee QWERTY Texting Tech for Impossibly Tiny Devices</a></div>
-                            <div className="date">May 1</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="outlet">Gizmodo, 2013</div>
-                        </div>
-                        <div className="col main">
-                            <div className="title"><a href="http://gizmodo.com/how-typing-on-a-smart-watch-might-actually-make-sense-484116402">How Typing on a Smart Watch Might Actually Make Sense</a></div>
-                            <div className="date">April 29</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="outlet">MIT Tech Review, 2013</div>
-                        </div>
-                        <div className="col main">
-                            <div className="title"><a href="http://www.technologyreview.com/news/514096/a-qwerty-keyboard-for-your-wrist/">A QWERTY Keyboard for your Wrist</a></div>
-                            <div className="date">April 27</div>
-                        </div>
-                    </div>
+
+                    {
+                        data.strapiLeadcv.press.map((press) => (
+                            <div className="row item" key={press.id}>
+                                <div className="col side">
+                                    <div className="outlet">{press.publication}</div>
+                                </div>
+                                <div className="col main">
+                                    <div className="title"><a href={press.link}>{press.title}</a></div>
+                                    <div className="date">{press.description}</div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="section patents">
                     <div className="row">
@@ -1512,7 +764,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
 
                     {
                         data.strapiLeadcv.patents.map((patent) => (
-                            <div className="row">
+                            <div className="row" key={patent.id}>
                                 <div className="col side">
                                     {getDateRangeEl(patent.date)}
                                 </div>
@@ -1551,4 +803,7 @@ function formatDollarAmount(value: number): string {
         maximumFractionDigits: 2
     });
     return `$${formattedValue}`;
+}
+function getVenueMonthYear(venue: Queries.STRAPI_VENUE): string {
+    return `${venue.conference_start.split('/')[0].padStart(2, '0')}/${venue.year}`;
 }

@@ -78,16 +78,20 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
         super(props, context)
         if(this.props.data === 'best_paper') {
             this.type = AwardType.best_paper;
-            this.description = this.props.description ? this.props.description : 'Best Paper';
+            this.description = getAwardText(this.props.data, this.props.description);
+            // this.description = this.props.description ? this.props.description : 'Best Paper';
         } else if(this.props.data === 'honorable_mention') {
             this.type = AwardType.honorable_mention;
-            this.description = this.props.description ? this.props.description : 'Honorable Mention';
+            this.description = getAwardText(this.props.data, this.props.description);
+            // this.description = this.props.description ? this.props.description : 'Honorable Mention';
         } else if(this.props.data === 'other') {
             this.type = AwardType.other;
-            this.description = this.props.description ? this.props.description : 'Award';
+            this.description = getAwardText(this.props.data, this.props.description);
+            // this.description = this.props.description ? this.props.description : 'Award';
         } else {
             this.type = AwardType.none;
-            this.description = this.props.description ? this.props.description : '';
+            this.description = getAwardText(this.props.data, this.props.description);
+            // this.description = this.props.description ? this.props.description : '';
         }
     }
     public render():JSX.Element {
@@ -97,6 +101,20 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
                         (this.type === AwardType.other) ? <FontAwesomeIcon icon={solid("award")} /> : null);
                     
         return <span className='paper-award'>{iconDisplay} {this.description}</span>;
+    }
+}
+
+export function getAwardText(award: string, award_description: string): string {
+    if(award_description) {
+        return award_description;
+    } else if(award === 'best_paper') {
+        return 'Best Paper';
+    } else if(award === 'honorable_mention') {
+        return 'Honorable Mention';
+    } else if(award === 'other') {
+        return 'Award';
+    } else {
+        return '';
     }
 }
 
