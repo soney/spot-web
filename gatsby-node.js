@@ -45,7 +45,9 @@ exports.createPages = async ({ actions, graphql }) => {
                     family_name
                 }
             }
-            allStrapiPublication {
+            allStrapiPublication (
+                sort: {venue: {year: DESC}}
+            ) {
                 nodes {
                     id
                     title

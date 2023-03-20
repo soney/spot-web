@@ -8,7 +8,10 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export const cvQuery = graphql`query cvPublications {
-    allStrapiPublication(filter: {status: {in: ["accepted"]}}) {
+    allStrapiPublication(
+        filter: {status: {in: ["accepted"]}}
+        sort: {venue: {year: DESC}}
+    ) {
         nodes {
             id
             title
