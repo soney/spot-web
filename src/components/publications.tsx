@@ -7,6 +7,9 @@ import * as React from 'react';
 import { AuthorListDisplay } from './authors';
 import { PublicationDetailLevel } from './publication-list';
 
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false
 
 interface PublicationSummaryDisplayProps {
     data: Queries.STRAPI_PUBLICATION
