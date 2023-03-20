@@ -168,7 +168,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             // })
             return <div className="row member-row">
                 <div className="col-sm-2">
-                    <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />
+                    <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />
                 </div>
                 <div className="col-sm-10">
                     <h3>{`${given_name} ${family_name}`}</h3>
@@ -182,7 +182,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             </div>
         } else {
             const memberContent: JSX.Element[] = [
-                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
+                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
                 <div>
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
