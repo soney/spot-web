@@ -44,6 +44,19 @@ export const cvQuery = graphql`query cvPublications {
             }
         }
     }
+    allStrapiAuthor(filter: {membership: {in: ["ugrad_ms_student"]}}, sort: [{membership: ASC}, {family_name: ASC}]) {
+        nodes {
+            id
+            color
+            given_name
+            family_name
+            middle_name
+            homepage
+            short_bio
+            long_bio
+            membership
+        }
+    }
     strapiLeadcv {
         name
         affiliation {
@@ -71,11 +84,25 @@ export const cvQuery = graphql`query cvPublications {
             university
             id
         }
+        professional_experience {
+            id
+            date_start
+            date_end
+            institution
+            location
+            title
+        }
+        patents {
+            id
+            title
+            date
+        }
     }
 }`;
 interface CVPageProps {
     data: {
         allStrapiPublication: Queries.STRAPI_PUBLICATIONConnection,
+        allStrapiAuthor: Queries.STRAPI_AUTHORConnection,
         strapiLeadcv: Queries.STRAPI_LEADCV
     },
     location: {
@@ -334,106 +361,20 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Professional Experience</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2022 &ndash; present</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">School of Information, University of Michigan</div>
-                            <div className="experience-description">Associate Professor</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2022 &ndash; present</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">Computer Science and Engineering, University of Michigan</div>
-                            <div className="experience-description">Associate Professor (by courtesy)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2016 &ndash; 09/2022</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">School of Information, University of Michigan</div>
-                            <div className="experience-description">Assistant Professor</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">01/2017 &ndash; 09/2022</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">Computer Science and Engineering, University of Michigan</div>
-                            <div className="experience-description">Assistant Professor (by courtesy)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2015 &ndash; 09/2016</div>
-                            <div className="location">Ann Arbor, MI</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">School of Information, University of Michigan</div>
-                            <div className="experience-description">Presidents Post-Doctoral Fellow</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2008 &ndash; 04/2015</div>
-                            <div className="location">Pittsburgh, PA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">Carnegie Mellon University (Human-Computer Interaction Institute)</div>
-                            <div className="experience-description">Graduate student and researcher</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">03/2013 &ndash; 06/2013</div>
-                            <div className="location">San Francisco, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">Advanced Technologies Labs, Adobe Systems, Research Intern</div>
-                            <div className="experience-description">Research Intern</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">06/2011 &ndash; 09/2011</div>
-                            <div className="location">San Francisco, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">Advanced Technologies Labs, Adobe Systems</div>
-                            <div className="experience-description">Research Intern</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">05/2009 &ndash; 08/2009</div>
-                            <div className="location">San Jose, CA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">IBM Research, Alamaden, Research Intern</div>
-                            <div className="experience-description">Research Intern</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">01/2007 &ndash; 08/2008</div>
-                            <div className="location">Cambridge, MA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="experience-organization">MIT Media Lab, Cognitive Machines Group</div>
-                            <div className="experience-description">Researcher (M.Eng)</div>
-                        </div>
-                    </div>
+                    {
+                        data.strapiLeadcv.professional_experience.map((exp) => (
+                            <div className="row item" key={exp.id}>
+                                <div className="col side">
+                                    {getDateRangeEl(exp.date_start, exp.date_end)}
+                                    {getLocationEl(exp.location)}
+                                </div>
+                                <div className="col main">
+                                    <div className="experience-organization">{exp.institution}</div>
+                                    <div className="experience-description">{exp.title}</div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className={"section publications" + (underlineStudentAuthors ? ' highlight-students' : '')}>
                     <div className="row">
@@ -461,7 +402,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         &nbsp;
                         <i className="icon-best_paper"></i>: best paper award
                         &nbsp; &nbsp;
-                        <i className="icon-honorable_mention"></i>: honorable mention
+                        <i className="icon-honorable_mention"></i>: honorable mention or other award
                         </div>
                     </div>
                     <div className="row">
@@ -1562,28 +1503,11 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                         <div className="col main">
                             <ul>
-                                <li>Hussain Alafaireet (MSI Researcher)</li>
-                                <li>Niu Chang (Undergraduate Summer Intern.)</li>
-                                <li>Erin Deutschman (Explore CS Research Mentee.)</li>
-                                <li>Natalie Gross (UMSI, Undergraduate Researcher)</li>
-                                <li>Yunjie Guo (Michigan CSE Undergraduate Researcher)</li>
-                                <li>Jaylin Herskovitz (Former Undergraduate Researcher. Now Ph.D. student at Michigan (CSE))</li>
-                                <li>Ruidong Liu (Undergraduate researcher. Now Ph.D. student at Cornell University)</li>
-                                <li>Gabriel Matute (Former Undergraduate Researcher. Now Ph.D. student at UC Berkeley)</li>
-                                <li>Jamie Neumann (UMSI, Undergraduate Researcher)</li>
-                                <li>Rebecca Parada (UMSI, Undergraduate Researcher)</li>
-                                <li>Tami Van Omen (Undergraduate researcher.)</li>
-                                <li>Yisen Wang (Explore CS Research Mentee.)</li>
-                                <li>Ningqi Wang</li>
-                                <li>Zihan Wu (Undergraduate Summer Intern. Currently: UMSI PhD Student)</li>
-                                <li>Jie Wei Wu (MSI Researcher. Now: Google Software Engineer)</li>
-                                <li>Jessica Wu (Former Undergraduate Researcher. Now Software Engineer at Amazon)</li>
-                                <li>Yin Xie (Former MS researcher. Now interaction designer at Internet Brands)</li>
-                                <li>Johnathan Yan (Undergraduate Researcher.)</li>
-                                <li>YiWei Yang (Former CSE Undergraduate Researcher. Now Ph.D. student at the University of Washington)</li>
-                                <li>Muhan Zhao (Michigan CSE Undergraduate Researcher)</li>
-                                <li>Yuan Zhou (Undergraduate Summer Intern. Georgia Tech M.S.)</li>
-                                <li>Licheng Zhu (MSI Researcher. Now: Senior User Experience Researcher at Thompson Reuters)</li>
+                                {
+                                    data.allStrapiAuthor.nodes.map((author) => (
+                                        <li>{author.given_name} {author.family_name} {author.short_bio && `(${author.short_bio})`}</li>
+                                    ))
+                                }
                             </ul>
                         </div>
                     </div>
@@ -1651,12 +1575,16 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col side">
-                            <div className="date">11/2016</div>
-                        </div>
-                        <div className="col main">US Patent number 9,495,134. "Methods and Apparatus for Code Segment Handling" Brandt, J. &amp; Oney, S.</div>
-                    </div>
+                    {
+                        data.strapiLeadcv.patents.map((patent) => (
+                            <div className="row">
+                                <div className="col side">
+                                    {getDateRangeEl(patent.date)}
+                                </div>
+                                <div className="col main">{patent.title}</div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>;
     }
@@ -1672,7 +1600,7 @@ function getDateRangeEl(start: string, end?: string): JSX.Element {
     if(startEl && endEl) {
         return <div className="date-range">{startEl} &ndash; {endEl}</div>;
     } else {
-        return <div className="date-range">{startEl || endEl}</div>;
+        return <div className="date">{startEl || endEl}</div>;
     }
 }
 function getDateItem(d: string): JSX.Element | string {
