@@ -59,10 +59,17 @@ export const cvQuery = graphql`query cvPublications {
             email
         }
         education {
-            university
-            location
-            committee
             advisors
+            committee
+            date_end
+            date_start
+            degrees {
+                strapi_json_value
+                id
+            }
+            location
+            university
+            id
         }
     }
 }`;
@@ -286,39 +293,39 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Education</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side col-2">
-                            <div className="date-range">09/2008 &ndash; 04/2015</div>
-                            <div className="location">Pittsburgh, PA</div>
-                        </div>
-                        <div className="col main col-8">
-                            <div className="education-school">Carnegie Mellon University</div>
-                            <table className="education-degrees">
-                                <tbody>
-                                    <tr><td>PhD&nbsp;</td><td>in Human-Computer Interaction</td></tr>
-                                    <tr><td>MS&nbsp;</td><td>in Human-Computer Interaction</td></tr>
-                                </tbody>
-                            </table>
-                            <table className="education-advisors">
-                                <tbody>
-                                    <tr><td>Advisors:&nbsp;</td><td>Brad Myers and Joel Brandt</td></tr>
-                                    <tr><td>Committee:&nbsp;</td><td>Scott Hudson and John Zimmerman</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date-range">09/2003 &ndash; 08/2008</div>
-                            <div className="location">Cambridge, MA</div>
-                        </div>
-                        <div className="col main">
-                            <div className="education-school">Massachusetts Institute of Technology</div>
-                            <div className="education-degree">MEng in Computer Science</div>
-                            <div className="education-degree">SB in Computer Science</div>
-                            <div className="education-degree">SB in Mathematics</div>
-                        </div>
-                    </div>
+                    {
+                        data.strapiLeadcv.education.map((edu) => (
+                            <div className="row item" key={edu.id}>
+                                <div className="col side col-2">
+                                    {getDateRangeEl(edu.date_start, edu.date_end)}
+                                    {getLocationEl(edu.location)}
+                                </div>
+                                <div className="col main col-8">
+                                    <div className="education-school">{edu.university}</div>
+                                    <table className="education-degrees">
+                                        <tbody>
+                                            {edu.degrees.strapi_json_value.map((degree, index) => (
+                                                <tr key={index}><td>{degree[0]}&nbsp;</td><td>in {degree[1]}</td></tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                    {
+                                        (edu.advisors || edu.committee) &&
+                                            <table className="education-advisors">
+                                                <tbody>
+                                                    {
+                                                        edu.advisors && <tr><td>Advisors:&nbsp;</td><td>{edu.advisors}</td></tr>
+                                                    }
+                                                    {
+                                                        edu.committee && <tr><td>Committee:&nbsp;</td><td>{edu.committee}</td></tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                    }
+                                </div>
+                                </div>
+                            ))
+                        }
                 </div>
                 <div className="section experience">
                     <div className="row">
@@ -1652,5 +1659,26 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                     </div>
                 </div>
             </div>;
+    }
+}
+
+function getLocationEl(loc: string): JSX.Element {
+    return <div className="location">{loc}</div>;
+}
+function getDateRangeEl(start: string, end?: string): JSX.Element {
+    const startEl = start && getDateItem(start);
+    const endEl   = end   && getDateItem(end  );
+
+    if(startEl && endEl) {
+        return <div className="date-range">{startEl} &ndash; {endEl}</div>;
+    } else {
+        return <div className="date-range">{startEl || endEl}</div>;
+    }
+}
+function getDateItem(d: string): JSX.Element | string {
+    if(d === 'present') {
+        return <i>present</i>;
+    } else {
+        return d;
     }
 }
