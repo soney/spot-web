@@ -129,6 +129,7 @@ export const cvQuery = graphql`query cvPublications {
             date_end
             date_start
             id
+            coadvisor
             institution
             student_department
             student_name
@@ -693,7 +694,8 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                                             </div>
                                             <div className="col main">
                                                 <div className="supervisee">{student.student_name}{student.student_department && ` (${student.student_department})`}</div>
-                                                {student.thesis_title && <div className="supervisee-thesis">Thesis: {student.thesis_title}</div>}
+                                                {student.thesis_title && <div className="supervisee-thesis">{student.thesis_title}</div>}
+                                                {student.coadvisor && <div className="supervisee-coadvisor">(co-advised with {student.coadvisor})</div>}
                                                 {student.current_position && <div className="supervisee-position">Currently: {student.current_position}</div>}
                                             </div>
                                         </div>
