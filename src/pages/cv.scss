@@ -184,6 +184,9 @@ body {
             .award-program::before {
                 content: "Program: "
             }
+            .award-team {
+                p { display: inline; }
+            }
         }
 
         .awards {

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import './cv.scss'
 import { graphql } from 'gatsby';
 import { getDownloadName } from '../components/publications';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -96,6 +97,15 @@ export const cvQuery = graphql`query cvPublications {
             id
             title
             date
+        }
+        grants {
+            amount
+            date
+            id
+            program
+            sponsor
+            team
+            title
         }
     }
 }`;
@@ -456,97 +466,22 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             <h2>Grants</h2>
                         </div>
                     </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2020</div>
-                            <div className="award-amount">$10,000</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
-                            <div className="award-sponsor">Adobe, Inc.</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2020</div>
-                            <div className="award-amount">$60,000</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Designing and Building Collaborative Tools for Mixed-Ability Programming Teams</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong> (and Mauli Pandey, unofficially)</div>
-                            <div className="award-sponsor">Google Inc.</div>
-                            <div className="award-program">Award for Inclusion Research Award</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">09/2020</div>
-                            <div className="award-amount">$499,209</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
-                            <div className="award-sponsor">National Science Foundation (NSF)</div>
-                            <div className="award-program">IIS: Cyber-Human Systems (CHS)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">07/2019</div>
-                            <div className="award-amount">$10,875</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Applying Literate Programming Approaches to Support Semantic Annotation</div>
-                            <div className="award-team">Andrea Thomer (PI) and <strong>Steve Oney (co-PI)</strong></div>
-                            <div className="award-sponsor">The U-M Office of Research (UMOR)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">10/2019</div>
-                            <div className="award-amount">$598,926</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Scalable Remote Peer Help for Programming Education</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong>, Paul Resnick, and Christopher Brooks</div>
-                            <div className="award-sponsor">National Science Foundation (NSF)</div>
-                            <div className="award-program">Improving Undergraduate STEM Education: Education and Human Resources (IUSE: EHR)</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">01/2018</div>
-                            <div className="award-amount">$174,981</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Designing Scalable Help Tools for Programming Courses</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong></div>
-                            <div className="award-sponsor">National Science Foundation (NSF)</div>
-                            <div className="award-program">Cyber-Human Systems (CHS) CRII</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">11/2017</div>
-                            <div className="award-amount">$37,000</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">Prototyping Tools to Improve Crowd Based Training for IVA Development</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong> and Walter Lasecki</div>
-                            <div className="award-sponsor">Clinc, Inc.</div>
-                        </div>
-                    </div>
-                    <div className="row item">
-                        <div className="col side">
-                            <div className="date">04/2017</div>
-                            <div className="award-amount">$198,327</div>
-                        </div>
-                        <div className="col main">
-                            <div className="award-title">End-User Techniques for Aggregating and Analyzing Exercise and Physical Data</div>
-                            <div className="award-team"><strong>Steve Oney (PI)</strong>, Michael Nebeling, and Sun Young Park</div>
-                            <div className="award-sponsor">Michigan Exercise Science &amp; Sports Initiative</div>
-                        </div>
-                    </div>
+                    {
+                        data.strapiLeadcv.grants.map((grant) => (
+                            <div className="row item" key={grant.id}>
+                                <div className="col side">
+                                    <div className="date">{grant.date}</div>
+                                    <div className="award-amount">{formatDollarAmount(grant.amount)}</div>
+                                </div>
+                                <div className="col main">
+                                    {grant.title && <div className="award-title">{grant.title}</div>}
+                                    <ReactMarkdown className="award-team">{grant.team}</ReactMarkdown>
+                                    <div className="award-sponsor">{grant.sponsor}</div>
+                                    {grant.program && <div className="award-program">{grant.program}</div>}
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="section awards">
                     <div className="row">
@@ -1609,4 +1544,11 @@ function getDateItem(d: string): JSX.Element | string {
     } else {
         return d;
     }
+}
+function formatDollarAmount(value: number): string {
+    const formattedValue = value.toLocaleString('en-US', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+    });
+    return `$${formattedValue}`;
 }
