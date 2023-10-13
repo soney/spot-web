@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import './cv.scss'
 import { graphql } from 'gatsby';
 import { getAwardText, getDownloadName } from '../components/publications';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
