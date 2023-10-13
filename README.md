@@ -14,7 +14,7 @@ There are two kinds of updates you might want to make: **content** updates (more
 
 ## Content Updates
 
-To update the content of the group page, visit [https://mspot.link/admin](https://mspot.link/admin). Then, *carefully* update the content. Changes that you make should be automatically deployed after some delay. After 5--10 minutes, check if your changes showed up correctly.
+To update the content of the group page, visit [https://mspot.link/admin](https://mspot.link/admin). Then, *carefully* update the content. Changes that you make should be automatically deployed after some delay. After ~10 minutes, check if your changes showed up correctly.
 
 ## Structure Updates
 
