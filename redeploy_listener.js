@@ -32,22 +32,50 @@ function deploy() {
     });
 }
 
+function pause(ms) {
+    return new Promise((resolve, reject) => {
+	setTimeout(resolve, ms);
+    });
+}
+
+let inWaitingPeriod = false;
+let currentlyBuilding = false;
+let pending = false;
+const build = async () => {
+    if(currentlyBuilding && !inWaitingPeriod) {
+	pending = true;
+    } else {
+	let shouldRebuildWhenDone = pending;
+	pending = false;
+	currentlyBuilding = true;
+
+	inWaitingPeriod = true;
+	await pause(1000 * 5);
+	inWaitingPeriod = false;
+        await pull();
+        await deploy();
+	currentlyBuilding = false;
+	if(shouldRebuildWhenDone) {
+	    await build();
+	    pending = false;
+	}
+    }
+};
+
+
 const port = 8889;
-http.createServer((req, res) => {
-    pull().then((changed) => {
-        return deploy();
-    }).then(() => {
-        res.end('ok');
-    })
+http.createServer(async (req, res) => {
+    res.end(inWaitingPeriod ? 'noted' : (currentlyBuilding ? 'queue' : 'build'));
+    await build();
 }).listen(port);
 
-setInterval(() => {
+setInterval(async () => {
     console.log('auto pull...');
-    pull().then((changed) => {
-        if(changed) {
-            return deploy();
-        }
-    });
-}, 1000*60*30);
+    const changed = await pull();
+
+    if(changed) {
+        await deploy();
+    }
+}, 1000*60*60*24);
 
 console.log(`listening on port ${port}`);
