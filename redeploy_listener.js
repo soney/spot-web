@@ -7,17 +7,22 @@ const directoryGit = simpleGit(__dirname);
 function pull() {
     return new Promise((resolve, reject) => {
         directoryGit.pull((err, update) => {
-            if(update.files.length > 0) {
-                resolve(true);
+            if(err) {
+                console.error(err);
+                reject(err);
             } else {
-                resolve(false);
+                if(update && update.files && update.files.length > 0) {
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
             }
         });
     })
 }
 function deploy() {
     return new Promise((resolve, reject) => {
-        const buildSpawn = spawn('npm', ['run', 'build'], {stdio: 'inherit', shell: true})
+        const buildSpawn = spawn('npm', ['run', 'deploy'], {stdio: 'inherit', shell: true})
         buildSpawn.on('error', (err) => {
             console.error(err);
         });
@@ -34,31 +39,47 @@ function deploy() {
 
 function pause(ms) {
     return new Promise((resolve, reject) => {
-	setTimeout(resolve, ms);
+        setTimeout(resolve, ms);
     });
 }
+
+async function doBuild() {
+    await pull();
+    await deploy();
+}
+
+// async function simulateBuild() {
+//     console.log('Simulating build...');
+//     await pause(1000 * 5);
+//     console.log('Done simulating build');
+// }
 
 let inWaitingPeriod = false;
 let currentlyBuilding = false;
 let pending = false;
 const build = async () => {
-    if(currentlyBuilding && !inWaitingPeriod) {
-	pending = true;
+    if(inWaitingPeriod) {
+        // console.log("In waiting period, not building");
+        return;
+    } else if(currentlyBuilding) {
+        // console.log("Adding to queue");
+        pending = true;
     } else {
-	let shouldRebuildWhenDone = pending;
-	pending = false;
-	currentlyBuilding = true;
+        // console.log("Building");
+        pending = false;
+        currentlyBuilding = true;
 
-	inWaitingPeriod = true;
-	await pause(1000 * 5);
-	inWaitingPeriod = false;
-        await pull();
-        await deploy();
-	currentlyBuilding = false;
-	if(shouldRebuildWhenDone) {
-	    await build();
-	    pending = false;
-	}
+        inWaitingPeriod = true;
+        // console.log("Begin pause");
+        await pause(1000 * 60 * 5);
+        // console.log("End pause");
+        inWaitingPeriod = false;
+        await doBuild();
+        currentlyBuilding = false;
+        if(pending) {
+            await build();
+            pending = false;
+        }
     }
 };
 
@@ -69,13 +90,13 @@ http.createServer(async (req, res) => {
     await build();
 }).listen(port);
 
-setInterval(async () => {
-    console.log('auto pull...');
-    const changed = await pull();
+// setInterval(async () => {
+//     console.log('auto pull...');
+//     const changed = await pull();
 
-    if(changed) {
-        await deploy();
-    }
-}, 1000*60*60*24);
+//     if(changed) {
+//         await deploy();
+//     }
+// }, 1000*60*60*24);
 
 console.log(`listening on port ${port}`);
