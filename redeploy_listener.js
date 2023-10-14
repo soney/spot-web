@@ -48,31 +48,26 @@ async function doBuild() {
     await deploy();
 }
 
-// async function simulateBuild() {
-//     console.log('Simulating build...');
-//     await pause(1000 * 5);
-//     console.log('Done simulating build');
-// }
 
 let inWaitingPeriod = false;
 let currentlyBuilding = false;
 let pending = false;
 const build = async () => {
     if(inWaitingPeriod) {
-        // console.log("In waiting period, not building");
+        console.log("In waiting period, not building");
         return;
     } else if(currentlyBuilding) {
-        // console.log("Adding to queue");
+        console.log("Adding to queue");
         pending = true;
     } else {
-        // console.log("Building");
+        console.log("Building");
         pending = false;
         currentlyBuilding = true;
 
         inWaitingPeriod = true;
-        // console.log("Begin pause");
+        console.log("Begin pause");
         await pause(1000 * 60 * 5);
-        // console.log("End pause");
+        console.log("End pause");
         inWaitingPeriod = false;
         await doBuild();
         currentlyBuilding = false;
