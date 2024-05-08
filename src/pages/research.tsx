@@ -7,7 +7,10 @@ import { AuthorListDisplay } from '../components/authors';
 
 
 export const indexQuery = graphql`query allPubs {
-    allStrapiPublication(filter: {venue: {type: {in: ["conference", "journal"]}}}) {
+    allStrapiPublication(
+        filter: {venue: {type: {in: ["conference", "journal"]}}}
+        sort: {venue: {year: DESC}}
+    ) {
         nodes {
             id
             title
