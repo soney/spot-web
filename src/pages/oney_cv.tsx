@@ -184,6 +184,8 @@ enum PUB_TYPES {
     WORKSHOP='W',
     POSTER='P',
     DOCTORAL_CONSORTIUM='D',
+    DEMO='E',
+    PANEL='A',
     THESIS='T'
 };
 
@@ -202,6 +204,10 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return PUB_TYPES.WORKSHOP;
     } else if(typeString === 'doctoralconsortium') {
         return PUB_TYPES.DOCTORAL_CONSORTIUM;
+    } else if(typeString === 'panel') {
+        return PUB_TYPES.PANEL;
+    } else if(typeString === 'demo') {
+        return PUB_TYPES.DEMO;
     } else {
         return null;
     }
@@ -476,7 +482,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             [`Heavily-reviewed Journal Manuscripts (${PUB_TYPES.JOURNAL})`, [PUB_TYPES.JOURNAL]],
                             [`Heavily-reviewed Conference Papers (${PUB_TYPES.CONFERENCE})`, [PUB_TYPES.CONFERENCE]],
                             [`Book Chapters (${PUB_TYPES.BOOK_CHAPTER})`, [PUB_TYPES.BOOK_CHAPTER]],
-                            [`Refereed Posters (${PUB_TYPES.POSTER}), Workshops (${PUB_TYPES.WORKSHOP}), and Doctoral Consortiums (${PUB_TYPES.DOCTORAL_CONSORTIUM})`, [PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM]],
+                            [`Refereed Posters (${PUB_TYPES.POSTER}), Workshops (${PUB_TYPES.WORKSHOP}), Doctoral Consortiums (${PUB_TYPES.DOCTORAL_CONSORTIUM}), Demos (${PUB_TYPES.DEMO}), and Panels (${PUB_TYPES.PANEL})`, [PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM, PUB_TYPES.DEMO, PUB_TYPES.PANEL]],
                             [`Theses (${PUB_TYPES.THESIS})`, [PUB_TYPES.THESIS]],
                         ].map(([sectionTitle, pubElementTypes]) => (
                             <>
