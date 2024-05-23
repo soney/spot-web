@@ -186,7 +186,8 @@ enum PUB_TYPES {
     DOCTORAL_CONSORTIUM='D',
     DEMO='E',
     PANEL='A',
-    THESIS='T'
+    THESIS='T',
+    PREPRINT='R'
 };
 
 function convertPubType(typeString: string): PUB_TYPES|null {
@@ -208,6 +209,8 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return PUB_TYPES.PANEL;
     } else if(typeString === 'demo') {
         return PUB_TYPES.DEMO;
+    } else if(typeString === 'preprint') {
+        return PUB_TYPES.PREPRINT;
     } else {
         return null;
     }
@@ -483,6 +486,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             [`Heavily-reviewed Conference Papers (${PUB_TYPES.CONFERENCE})`, [PUB_TYPES.CONFERENCE]],
                             [`Book Chapters (${PUB_TYPES.BOOK_CHAPTER})`, [PUB_TYPES.BOOK_CHAPTER]],
                             [`Refereed Posters (${PUB_TYPES.POSTER}), Workshops (${PUB_TYPES.WORKSHOP}), Doctoral Consortiums (${PUB_TYPES.DOCTORAL_CONSORTIUM}), Demos (${PUB_TYPES.DEMO}), and Panels (${PUB_TYPES.PANEL})`, [PUB_TYPES.POSTER, PUB_TYPES.WORKSHOP, PUB_TYPES.DOCTORAL_CONSORTIUM, PUB_TYPES.DEMO, PUB_TYPES.PANEL]],
+                            [`Preprints (${PUB_TYPES.PREPRINT})`, [PUB_TYPES.PREPRINT]],
                             [`Theses (${PUB_TYPES.THESIS})`, [PUB_TYPES.THESIS]],
                         ].map(([sectionTitle, pubElementTypes]) => (
                             <>
@@ -685,7 +689,9 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                             [`Dissertation Chair (Ph.D. Graduates)`, 'dissertation_chair'],
                             [`Ph.D. Advisees (Ongoing)`, 'ongoing_advisee'],
                             [`Thesis Committees (Ph.D.)`, 'phd_thesis_committee'],
+                            [`Thesis Chair (M.S.)`, 'ms_thesis_chair'],
                             [`Thesis Committees (M.S.)`, 'ms_thesis_committee'],
+                            [`Thesis Chair (Undergraduate)`, 'ugrad_thesis_chair'],
                         ].map(([sectionTitle, category]) => (
                             <>
                                 <div className="row">
