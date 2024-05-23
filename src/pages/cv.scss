@@ -4,6 +4,9 @@ $award-color: $font-color;
 $link-color: $font-color;
 $link-hover-color: #0056b3;
 
+@media print {
+}
+
 @font-face {
     font-family: 'oney_cv';
     src: url('oney_cv_font/oney_cv.eot');
