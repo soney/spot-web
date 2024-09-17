@@ -124,6 +124,7 @@ body {
     .member {
         flex-basis: 0;
         flex-grow: 1;
+        max-width: 350px;
     }
 
     .member-display {

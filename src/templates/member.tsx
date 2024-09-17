@@ -25,6 +25,7 @@ export const memberQuery = graphql`query member($id: String!) {
         }
         headshot {
             localFile {
+                publicURL
                 childImageSharp {
                     gatsbyImageData(
                         width: 900
@@ -78,7 +79,9 @@ export default class extends React.Component<MemberProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-3">
-                            <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} imgStyle={{borderRadius: 3}} />
+                            <a href={author.headshot.localFile.publicURL} target='_blank'>
+                                <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} imgStyle={{borderRadius: 3}} />
+                            </a>
                         </div>
                         <div className="col-sm-9">
                             <ReactMarkdown>{author.long_bio}</ReactMarkdown>
