@@ -5,7 +5,7 @@ import { Layout, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 
 export const indexQuery = graphql`query team {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_student"]}}, sort: [{membership: ASC}, {family_name: ASC}]) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_student", "member-postdoc"]}}, sort: [{membership: ASC}, {family_name: ASC}]) {
         nodes {
             id
             color
@@ -61,7 +61,18 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
+        // const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
+        const currentMembers = data.allStrapiAuthor.nodes
+                                        .filter(node => ['lead', 'member', 'member-postdoc'].includes(node.membership))
+                                        .sort((a, b) => {
+                                            const membershipOrder = {
+                                            'lead': 1,
+                                            'member-postdoc': 2,
+                                            'member': 3
+                                            };
+
+                                            return membershipOrder[a.membership] - membershipOrder[b.membership];
+                                        });
         const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         const ugradMs = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'ugrad_ms_student'))
 

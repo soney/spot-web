@@ -12,7 +12,7 @@ config.autoAddCss = false
 
     // allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
 export const indexQuery = graphql`query membersAndLeads {
-    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: [{ membership: ASC }, { family_name: ASC }]) {
+    allStrapiAuthor(filter: {membership: {in: ["lead", "member", "member-postdoc", "alum", "ugrad_ms_intern"]}}, sort: [{ membership: ASC }, { family_name: ASC }]) {
         nodes {
             id
             color
@@ -177,7 +177,19 @@ export default class extends React.Component<IndexPageProps, {}> {
     }
     public render() {
         const { data } = this.props;
-        const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member'))
+        const currentMembers = data.allStrapiAuthor.nodes
+                                        .filter(node => ['lead', 'member', 'member-postdoc'].includes(node.membership))
+                                        .sort((a, b) => {
+                                            const membershipOrder = {
+                                            'lead': 1,
+                                            'member-postdoc': 2,
+                                            'member': 3
+                                            };
+
+                                            return membershipOrder[a.membership] - membershipOrder[b.membership];
+                                        });
+
+        // const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member' || node.membership==='member-postdoc'))
         // const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
         return <Layout active={SpotPage.home}>
             <div className="container">
