@@ -291,4 +291,19 @@ body {
         color: $secondary-text-color;
         text-align: center;
     }
+    .blogpost {
+        .title {
+            font-weight: bold;
+        }
+        .created {
+            color: $secondary-text-color;
+            font-style: italic;
+            &::before {
+                content: " (";
+            }
+            &::after {
+                content: ")";
+            }
+        }
+    }
 }

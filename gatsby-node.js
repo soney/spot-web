@@ -37,7 +37,7 @@ const path = require('path');
 
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
-    const authors = await graphql(`{
+    const result = await graphql(`{
             allStrapiAuthor(filter: {membership: {in: ["lead", "member"]}, use_local_homepage: {eq: true}}) {
                 nodes {
                     id
@@ -103,9 +103,28 @@ exports.createPages = async ({ actions, graphql }) => {
                     email
                 }
             }
+            allStrapiBlogpost {
+                nodes {
+                    id
+                    title
+                    created
+                    authors {
+                        id
+                        given_name
+                        family_name
+                        homepage
+                    }
+                    content {
+                        data {
+                            id
+                        }
+                    }
+                    google_doc
+                }
+            }
         }`);
-    authors.data.allStrapiAuthor.nodes.forEach(( node ) => {
-        const authorPubs = authors.data.allStrapiPublication.nodes.filter((pn) => {
+    result.data.allStrapiAuthor.nodes.forEach(( node ) => {
+        const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
             const authors = pn.authors;
             return authors.some((a) => a.id === node.id) && 
                 (pn.venue.type === 'conference' || pn.venue.type === 'journal');
@@ -120,7 +139,7 @@ exports.createPages = async ({ actions, graphql }) => {
         });
     });
 
-    authors.data.allStrapiPublication.nodes.forEach(( node ) => {
+    result.data.allStrapiPublication.nodes.forEach(( node ) => {
         const downloadName = getDownloadName(node);
         createPage({
             path: `/${downloadName}`,
@@ -131,7 +150,18 @@ exports.createPages = async ({ actions, graphql }) => {
         });
     });
 
-    return authors;
+    result.data.allStrapiBlogpost.nodes.forEach(( node ) => {
+        const writingName = getWritingName(node);
+        createPage({
+            path: `/writing/${writingName}`,
+            component: path.resolve(`src/templates/blogpost.tsx`),
+            context: {
+                id: node.id
+            }
+        });
+    });
+
+    return result;
 }
 
 function getDownloadName(pub) {
@@ -154,4 +184,8 @@ function getDownloadName(pub) {
         short_venue_year = ``;
     }
     return `${shortAuthors}-${short_venue_year}-${pub.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
+}
+
+function getWritingName(blogpost) {
+    return `${blogpost.title}`.replace(/ /g, '_').replace(/[^\w_-]/g, '');
 }

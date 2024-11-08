@@ -181,8 +181,8 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
                 </div>
             </div>
         } else {
-            const memberContent: JSX.Element[] = [
-                <GatsbyImage key="img" image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
+            const memberContent: (JSX.Element|false)[] = [
+                data.headshot ? <GatsbyImage key="img" image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} /> : false,
                 <div key="name">
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
