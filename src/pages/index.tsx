@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby'
 import { Layout, SpotPage, LayoutHead } from '../components/layout';
@@ -77,6 +79,7 @@ export const indexQuery = graphql`query membersAndLeads {
     strapiGroup {
         overview
         recent_pub_cutoff_year
+        announcement
     }
     allStrapiNewsitem {
         nodes {
@@ -172,6 +175,7 @@ export default class extends React.Component<IndexPageProps, {}> {
 
                                             return membershipOrder[a.membership] - membershipOrder[b.membership];
                                         });
+        const hasAnnouncement = data.strapiGroup.announcement && data.strapiGroup.announcement.trim() !== '';
 
         // const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member' || node.membership==='member-postdoc'))
         // const alumMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'alum'))
@@ -188,6 +192,15 @@ export default class extends React.Component<IndexPageProps, {}> {
                     </div>
                 </div>
             </div>
+            {hasAnnouncement &&
+                    <div className="container">
+                        <div className='row'>
+                            <div className="col-md-12 announcements">
+                                <ReactMarkdown>{data.strapiGroup.announcement}</ReactMarkdown>
+                            </div>
+                        </div>
+                    </div>
+            }
             <div className="container">
                 <div className='row'>
                     <div className='col col-sm-12'>

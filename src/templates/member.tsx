@@ -53,7 +53,6 @@ export const Head = LayoutHead((props: MemberProps) => `${props.data.strapiAutho
 export default class extends React.Component<MemberProps, {}> {
     constructor(props: MemberProps) {
         super(props);
-        console.log(props);
     }
     public render() {
         const author = this.props.data.strapiAuthor;

@@ -12,6 +12,11 @@ $link-color: #2F65A7;
 $link-hover-color: #2F65A7;
 
 $suble-color: #CCC;
+
+$announcement-background-color: #F5F5F5;
+$announcement-foreground-color: #424242;
+$announcement-bullhorn-color: #FFCB05;
+
 // $link-color: #0056b3; 
 // $link-hover-color: #0056b3; 
 
@@ -45,6 +50,26 @@ body {
         }
     }
 
+    .announcements {
+        background-color: $announcement-background-color;
+        color: $announcement-foreground-color;
+        border-radius: 3px;
+        position: relative;
+        border: 1px solid $announcement-bullhorn-color;
+        .bullhorn {
+            float: right;
+            opacity: 0.4;
+            // color: $announcement-bullhorn-color;
+            font-size: 1.2em;
+            // position: absolute;
+            // left: -25px;
+        }
+        > p {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            text-wrap: wrap;
+        }
+    }
 
     .news {
         ul {
