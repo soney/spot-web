@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import { PublicationListDisplay, PublicationDetailLevel } from '../components/publication-list';
 import ReactMarkdown from 'react-markdown';
 import { AuthorListDisplay } from '../components/authors';
@@ -71,6 +71,7 @@ interface IndexPageProps {
     }
 }
 
+export const Head = LayoutHead('Research');
 export default class extends React.Component<IndexPageProps, {}> {
     constructor(props: IndexPageProps) {
         super(props);

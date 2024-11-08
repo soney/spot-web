@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet';
 import './layout.scss'
 
 export enum SpotPage {
@@ -13,17 +12,28 @@ interface LayoutProperties {
     additionalInfo?: string,
     title?: string
 }
+export const LayoutHead = (getTitle?:((props: any) => string) | string) => {
+    return (props: LayoutProperties) => { // https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+        const titleStarter = getTitle ? (typeof getTitle === 'string' ? getTitle : getTitle(props)) + ' | ' : '';
+        return <>
+            <html lang="en" />
+            <meta charSet="utf-8" />
+            <title>{ titleStarter + 'Spot Research Group' }</title>
+        </>
+    };
+};
+
 export class Layout extends React.Component<LayoutProperties, {}> {
     constructor(props: LayoutProperties) {
         super(props);
     }
     public render() {
         return <div className='application'>
-            <Helmet>
+            {/* <Helmet>
                 <html lang="en" />
                 <meta charSet="utf-8" />
                 <title>{ (this.props.title ? `${this.props.title} | ` : '') + 'Spot Research Group' }</title>
-            </Helmet>
+            </Helmet> */}
             <nav className="navbar navbar-expand navbar-light bg-light">
                 <div className='container'>
                     <Link className={"navbar-brand"+this.getActiveClass(SpotPage.home)} to="/">spot</Link>

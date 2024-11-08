@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { graphql, Link } from 'gatsby';
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -37,14 +37,8 @@ export const indexQuery = graphql`query news {
                                 aspectRatio: 1
                                 placeholder: BLURRED
                                 formats: JPG
+                                layout: CONSTRAINED
                             )
-                            fluid(maxWidth: 700) {
-                                base64
-                                aspectRatio
-                                src
-                                srcSet
-                                sizes
-                            }
                         }
                     }
                 }
@@ -55,14 +49,8 @@ export const indexQuery = graphql`query news {
                                 height: 20
                                 placeholder: BLURRED
                                 formats: JPG
+                                layout: CONSTRAINED
                             )
-                            fluid(maxWidth: 700) {
-                                base64
-                                aspectRatio
-                                src
-                                srcSet
-                                sizes
-                            }
                         }
                     }
                 }
@@ -157,6 +145,7 @@ interface NewsPageProps {
     }
 }
 
+export const Head = LayoutHead('News');
 export default class extends React.Component<NewsPageProps, {}> {
     constructor(props: NewsPageProps) {
         super(props);

@@ -6,12 +6,12 @@ module.exports = {
     },
     graphqlTypegen: true,
     plugins: [
-        `gatsby-plugin-react-helmet`,
         // Add typescript stack into webpack
         `gatsby-plugin-typescript`,
         {
             resolve: `gatsby-source-strapi`,
             options: {
+                version: 5,
                 apiURL: 'https://mspot.link',
                 collectionTypes: ['author', 'publication', 'venue', 'cluster', 'blogpost', 'newsitem'],
                 singleTypes: ['group', 'leadcv'],

@@ -55,8 +55,8 @@ export class MemberListDisplay extends React.Component<MemberListDisplayProps, {
                 <li key={node.id}>{`${node.given_name} ${node.family_name}`}{node.short_bio && ` (${node.short_bio})`}</li>
             ));
             const chunkedMemberDisplays = chunk(memberDisplays, Math.ceil(data.length/3));
-            const allCols = chunkedMemberDisplays.map((lst) => {
-                return <ul className="col-md-4">{lst}</ul>
+            const allCols = chunkedMemberDisplays.map((lst, i) => {
+                return <ul className="col-md-4" key={i}>{lst}</ul>
             })
             return <div className="container">
                 <div className="row">
@@ -182,11 +182,11 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             </div>
         } else {
             const memberContent: JSX.Element[] = [
-                <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
-                <div>
+                <GatsbyImage key="img" image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />,
+                <div key="name">
                     <span className="member-name">{`${given_name} ${family_name}`}</span>
                 </div>,
-                <div className="member-short-bio d-none d-sm-block">{short_bio}</div>,
+                <div key="short-bio" className="member-short-bio d-none d-sm-block">{short_bio}</div>,
                 // <button className="member-focus btn btn-block btn-small btn-link" onClick={highlightMember}>highlight</button>
             ];
             if(data.use_local_homepage) {

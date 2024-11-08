@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { graphql } from 'gatsby';
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 
 export const indexQuery = graphql`query team {
@@ -26,17 +26,11 @@ export const indexQuery = graphql`query team {
                 localFile {
                     childImageSharp {
                         gatsbyImageData(
-                            width: 650
+                            width: 700
                             placeholder: BLURRED
                             formats: JPG
+                            layout: CONSTRAINED
                         )
-                        fluid(maxWidth: 700) {
-                            base64
-                            aspectRatio
-                            src
-                            srcSet
-                            sizes
-                        }
                     }
                 }
             }
@@ -55,6 +49,8 @@ interface IndexPageProps {
     }
 }
 
+export const Head = LayoutHead('Team');
+
 export default class extends React.Component<IndexPageProps, {}> {
     constructor(props: IndexPageProps) {
         super(props);
@@ -66,9 +62,9 @@ export default class extends React.Component<IndexPageProps, {}> {
                                         .filter(node => ['lead', 'member', 'member-postdoc'].includes(node.membership))
                                         .sort((a, b) => {
                                             const membershipOrder = {
-                                            'lead': 1,
-                                            'member-postdoc': 2,
-                                            'member': 3
+                                                'lead': 1,
+                                                'member-postdoc': 2,
+                                                'member': 3
                                             };
 
                                             return membershipOrder[a.membership] - membershipOrder[b.membership];

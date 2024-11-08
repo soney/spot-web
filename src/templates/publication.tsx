@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import { AuthorListDisplay } from '../components/authors';
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import { AwardDisplay, getDownloadName } from '../components/publications';
 import './publication.scss';
 
@@ -43,6 +43,8 @@ interface PublicationProps {
     }
 }
 
+export const Head = LayoutHead((props: PublicationProps) => `${props.data.strapiPublication.title}`);
+
 export default class extends React.Component<PublicationProps, {}> {
     constructor(props: PublicationProps) {
         super(props);
@@ -79,7 +81,7 @@ export default class extends React.Component<PublicationProps, {}> {
 
         const pdfDisplay = publication.pdf ? <a className="btn btn-primary btn-block" href={publication.pdf.localFile.publicURL} download={downloadName}>PDF</a> : null;
         return (
-            <Layout title={`${publication.title}`} active={SpotPage.research} additionalInfo={publication.title}>
+            <Layout active={SpotPage.research} additionalInfo={publication.title}>
                 <div className="container">
                     <div className="row">
                         <div className="col">

@@ -1,9 +1,6 @@
 
 import * as React from 'react'
-import { MemberListDisplay, MemberListLayout } from '../components/members';
-import { graphql } from 'gatsby';
-import { Layout, SpotPage } from '../components/layout';
-import ReactMarkdown from 'react-markdown';
+import { Layout, SpotPage, LayoutHead } from '../components/layout';
 
 // export const indexQuery = graphql`query news {
 //     allStrapiNewsitems {
@@ -27,13 +24,14 @@ interface IndexPageProps {
     }
 }
 
+export const Head = LayoutHead('Writing');
+
 export default class extends React.Component<IndexPageProps, {}> {
     constructor(props: IndexPageProps) {
         super(props);
     }
     public render() {
         const { data } = this.props;
-        console.log(data);
 
         return <Layout active={SpotPage.writing}>
             <div className="container">

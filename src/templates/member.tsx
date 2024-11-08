@@ -1,11 +1,11 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import { PublicationListDisplay } from '../components/publication-list';
 import './member.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const memberQuery = graphql`query member($id: String!) {
@@ -31,14 +31,8 @@ export const memberQuery = graphql`query member($id: String!) {
                         width: 900
                         placeholder: BLURRED
                         formats: JPG
+                        layout: CONSTRAINED
                     )
-                    fluid(maxWidth: 900) {
-                        base64
-                        aspectRatio
-                        src
-                        srcSet
-                        sizes
-                    }
                 }
             }
         }
@@ -54,9 +48,12 @@ interface MemberProps {
     }
 }
 
+export const Head = LayoutHead((props: MemberProps) => `${props.data.strapiAuthor.given_name} ${props.data.strapiAuthor.family_name}`);
+
 export default class extends React.Component<MemberProps, {}> {
     constructor(props: MemberProps) {
         super(props);
+        console.log(props);
     }
     public render() {
         const author = this.props.data.strapiAuthor;
@@ -67,7 +64,7 @@ export default class extends React.Component<MemberProps, {}> {
 
         const pubsDisplay = <PublicationListDisplay data={pubs} groupByVenue={false} highlightAuthors={[author.id]} />
         return (
-            <Layout title={`${author.given_name} ${author.family_name}`} active={SpotPage.team} additionalInfo={`${author.given_name} ${author.family_name}`}>
+            <Layout active={SpotPage.team} additionalInfo={`${author.given_name} ${author.family_name}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-8">

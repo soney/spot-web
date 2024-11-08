@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Helmet } from 'react-helmet';
 import './cv.scss'
 import { graphql } from 'gatsby';
 import { getAwardText, getDownloadName } from '../components/publications';
@@ -215,7 +214,13 @@ function convertPubType(typeString: string): PUB_TYPES|null {
         return null;
     }
 }
-
+export const Head = (props: CVPageProps) => { // https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+    return <>
+        <meta charSet="utf-8" />
+        <title>{props.data.strapiLeadcv.name} &ndash; Curriculum Vitae</title>
+        <link rel="stylesheet" href="https://use.typekit.net/csn6djz.css"></link>
+    </>;
+}
 
 export default class extends React.Component<CVPageProps, CVPageState> {
     constructor(props: CVPageProps) {
@@ -352,11 +357,11 @@ export default class extends React.Component<CVPageProps, CVPageState> {
         // const highlightStudents = this.props.location.search.indexOf('highlight_students') >= 0;
         // const verboseMode = this.props.location.search.indexOf('verbose_mode') >= 0;
         return <div className="cv container">
-                <Helmet>
+                {/* <Helmet>
                     <meta charSet="utf-8" />
                     <title>{data.strapiLeadcv.name} &ndash; Curriculum Vitae</title>
                     <link rel="stylesheet" href="https://use.typekit.net/csn6djz.css"></link>
-                </Helmet>
+                </Helmet> */}
                 <div className="row">
                     <div className="col side"></div>
                     <div className="col main">

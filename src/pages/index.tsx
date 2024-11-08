@@ -3,7 +3,7 @@ import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { PublicationListDisplay } from '../components/publication-list';
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby'
-import { Layout, SpotPage } from '../components/layout';
+import { Layout, SpotPage, LayoutHead } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
 import { NewsDisplay } from './news';
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -28,18 +28,12 @@ export const indexQuery = graphql`query membersAndLeads {
                 localFile {
                     childImageSharp {
                         gatsbyImageData(
-                            width: 650
+                            width: 700
                             aspectRatio: 1
                             placeholder: BLURRED
                             formats: JPG
+                            layout: CONSTRAINED
                         )
-                        fluid(maxWidth: 700) {
-                            base64
-                            aspectRatio
-                            src
-                            srcSet
-                            sizes
-                        }
                     }
                 }
             }
@@ -109,14 +103,8 @@ export const indexQuery = graphql`query membersAndLeads {
                           aspectRatio: 1
                           placeholder: BLURRED
                           formats: JPG
+                          layout: CONSTRAINED
                         )
-                        fluid {
-                          base64
-                          aspectRatio
-                          src
-                          srcSet
-                          sizes
-                        }
                       }
                     }
                 }
@@ -127,14 +115,8 @@ export const indexQuery = graphql`query membersAndLeads {
                           height: 20
                           placeholder: BLURRED
                           formats: JPG
+                          layout: CONSTRAINED
                         )
-                        fluid {
-                          base64
-                          aspectRatio
-                          src
-                          srcSet
-                          sizes
-                        }
                       }
                     }
                 }
@@ -170,6 +152,8 @@ interface IndexPageProps {
         allStrapiNewsitem: Queries.STRAPI_NEWSITEMConnection,
     }
 }
+
+export const Head = LayoutHead();
 
 export default class extends React.Component<IndexPageProps, {}> {
     constructor(props: IndexPageProps) {
