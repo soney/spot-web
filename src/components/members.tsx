@@ -2,8 +2,9 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown'
 import { chunk } from 'lodash';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { House } from 'lucide-react';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export enum MemberListLayout {
@@ -160,6 +161,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
         };
 
         if(this.props.layout===MemberListLayout.full_vertical) {
+            console.log(links);
             const linksElements = links.map((l) => {
                 return <li key={l.id} className="breadcrumb-item"><a href={l.url} target='_blank'>{l.description}</a></li>
             });
@@ -174,7 +176,8 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
                     <h3>{`${given_name} ${family_name}`}</h3>
                     <ReactMarkdown>{long_bio}</ReactMarkdown>
                     <ul className="breadcrumb">
-                        <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li>
+                        {/* <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li> */}
+                        <li className="breadcrumb-item"><House />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li>
                         {linksElements}
                         {/* {mediaElements} */}
                     </ul>

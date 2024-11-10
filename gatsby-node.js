@@ -108,21 +108,10 @@ exports.createPages = async ({ actions, graphql }) => {
                     id
                     title
                     created
-                    authors {
-                        id
-                        given_name
-                        family_name
-                        homepage
-                    }
-                    content {
-                        data {
-                            id
-                        }
-                    }
-                    google_doc
                 }
             }
         }`);
+
     result.data.allStrapiAuthor.nodes.forEach(( node ) => {
         const authorPubs = result.data.allStrapiPublication.nodes.filter((pn) => {
             const authors = pn.authors;
@@ -160,8 +149,6 @@ exports.createPages = async ({ actions, graphql }) => {
             }
         });
     });
-
-    return result;
 }
 
 function getDownloadName(pub) {

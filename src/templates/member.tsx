@@ -4,9 +4,10 @@ import ReactMarkdown from 'react-markdown';
 import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import { PublicationListDisplay } from '../components/publication-list';
 import './member.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { House } from 'lucide-react';
 
 export const memberQuery = graphql`query member($id: String!) {
     strapiAuthor(id: {eq: $id}) {
@@ -75,14 +76,17 @@ export default class extends React.Component<MemberProps, {}> {
                     </div>
                     <div className="row">
                         <div className="col-sm-3">
+                            {author.headshot &&
                             <a href={author.headshot.localFile.publicURL} target='_blank'>
                                 <GatsbyImage image={author.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${author.given_name} ${author.family_name}`} alt={`Headshot of ${author.given_name} ${author.family_name}`} imgStyle={{borderRadius: 3}} />
                             </a>
+                            }
                         </div>
                         <div className="col-sm-9">
                             <ReactMarkdown>{author.long_bio}</ReactMarkdown>
                             <ul className="breadcrumb">
-                                <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
+                                {/* <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li> */}
+                                <li className="breadcrumb-item"><House />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
                                 {links}
                             </ul>
                         </div>

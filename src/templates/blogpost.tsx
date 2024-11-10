@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout, LayoutHead, SpotPage } from '../components/layout';
-import { AwardDisplay, getDownloadName } from '../components/publications';
+import { ExternalLink } from 'lucide-react';
 import './blogpost.scss';
 import { getCreatedEditedString } from '../pages/writing';
 import Markdown from 'react-markdown';
@@ -48,11 +48,11 @@ export default class extends React.Component<BlogPostProps, {}> {
             return <Layout active={SpotPage.writing}>
                 <div className="container">
                     <strong>{blogpost.title}</strong> by <AuthorListDisplay authors={blogpost.authors} withLinks={true} />, {getCreatedEditedString(blogpost.created)}
+                    <a className="float-end" href={blogpost.google_doc} target="_blank">Open in new window <ExternalLink size={18} /></a>
                     <iframe className="writing-post" src={embedURL}></iframe>
                 </div>
             </Layout>;
         } else {
-            console.log(blogpost);
             return <Layout active={SpotPage.writing}>
                 <div className="container">
                     <h2 className="">{blogpost.title}</h2>

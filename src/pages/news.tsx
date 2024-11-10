@@ -3,13 +3,14 @@ import { MemberListDisplay, MemberListLayout } from '../components/members';
 import { graphql, Link } from 'gatsby';
 import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import ReactMarkdown from 'react-markdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { getDownloadName } from '../components/publications';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false
+import { FileText, User, File } from 'lucide-react';
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// config.autoAddCss = false
 
 export const indexQuery = graphql`query news {
     allStrapiNewsitem {
@@ -102,9 +103,9 @@ function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: 
 
     const relevantPeopleDisplays = newsItem.relevant_people.map((person) => {
         const fullName = `${person.given_name} ${person.family_name}`;
-        // console.log(person.headshot);
         const headshot = person.focused_headshot || person.headshot;
-        const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
+        // const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
+        const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <User />;
 
         // const personText = props.condensed ? <><FontAwesomeIcon icon={regular("user")} /></> : <><FontAwesomeIcon icon={regular("user")} />&nbsp;{fullName}</>;
         const personText = props.condensed ? img : <>{img}&nbsp;{fullName}</>;
@@ -120,7 +121,8 @@ function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: 
     });
 
     const relevantPublicationDisplays = newsItem.relevant_publications.map((pub) => {
-        const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FontAwesomeIcon icon={regular('file-lines')} /> : <FontAwesomeIcon icon={regular('file')} />;
+        // const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FontAwesomeIcon icon={regular('file-lines')} /> : <FontAwesomeIcon icon={regular('file')} />;
+        const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FileText /> : <File />;
         const pubText = props.condensed ? icon : <>{icon}&nbsp;{pub.title}</>;
         return <li key={pub.id} className='relevant-publication'><Link to={"/" + getDownloadName(pub)} title={pub.title}>{pubText}</Link></li>
     });

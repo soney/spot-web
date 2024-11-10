@@ -4,10 +4,6 @@
     "version": "1.0.0",
     "author": "Steve Oney <soney@umich.edu>",
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.5.2",
-        "@fortawesome/free-regular-svg-icons": "^6.6.0",
-        "@fortawesome/free-solid-svg-icons": "^6.6.0",
-        "@fortawesome/react-fontawesome": "^0.2.2",
         "bootstrap": "^5.3.3",
         "gatsby": "^5.14.0",
         "gatsby-plugin-google-fonts": "^1.0.1",
@@ -21,6 +17,8 @@
         "gatsby-transformer-remark": "^6.14.0",
         "gatsby-transformer-sharp": "^5.14.0",
         "lodash": "^4.17.21",
+        "lucide": "^0.456.0",
+        "lucide-react": "^0.456.0",
         "node-sass": "^9.0.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
@@ -48,14 +46,5 @@
         "prettier": "^3.3.3",
         "simple-git": "^3.27.0",
         "typescript": "^5.6.3"
-    },
-    "babelMacros": {
-        "fontawesome-svg-core": {
-            "license": "free"
-        }
-    },
-    "contributors": [
-        "fabien0102 <fabien0102@gmail.com>",
-        "Hays Clark <hays.clark@gmail.com>"
-    ]
+    }
 }

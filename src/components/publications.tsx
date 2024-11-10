@@ -1,15 +1,17 @@
 // import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 // import '@fortawesome/fontawesome-free/scss/solid.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { AuthorListDisplay } from './authors';
 import { PublicationDetailLevel } from './publication-list';
 
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false
+import { Trophy, Award, FileDown } from 'lucide-react';
+
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// config.autoAddCss = false
 
 interface PublicationSummaryDisplayProps {
     data: Queries.STRAPI_PUBLICATION
@@ -18,8 +20,8 @@ interface PublicationSummaryDisplayProps {
 }
 
 export class PublicationSummaryDisplay extends React.Component<PublicationSummaryDisplayProps, {}> {
-    constructor(props: PublicationSummaryDisplayProps, context: {}) {
-        super(props, context)
+    constructor(props: PublicationSummaryDisplayProps) {
+        super(props);
     }
     public render(): JSX.Element {
         const { data } = this.props;
@@ -41,7 +43,8 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
         } else {
             venue_str = ``;
         }
-        const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.localFile.publicURL} download={downloadName}><FontAwesomeIcon icon={regular("file-pdf")} /> PDF</a> : null;
+        // const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.localFile.publicURL} download={downloadName}><FontAwesomeIcon icon={regular("file-pdf")} /> PDF</a> : null;
+        const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.localFile.publicURL} download={downloadName}><FileDown size={18} /> PDF</a> : null;
         const condAcceptDisplay = data.status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
 
         if(this.props.detailLevel === PublicationDetailLevel.title) {
@@ -99,9 +102,12 @@ export class AwardDisplay extends React.Component<AwardDisplayProps, {}> {
     }
     public render():JSX.Element {
 
-        const iconDisplay = (this.type === AwardType.best_paper) ? <FontAwesomeIcon icon={solid("trophy")} /> :
-                        ((this.type === AwardType.honorable_mention) ? <FontAwesomeIcon icon={solid("award")} /> : 
-                        (this.type === AwardType.other) ? <FontAwesomeIcon icon={solid("award")} /> : null);
+        // const iconDisplay = (this.type === AwardType.best_paper) ? <FontAwesomeIcon icon={solid("trophy")} /> :
+        //                 ((this.type === AwardType.honorable_mention) ? <FontAwesomeIcon icon={solid("award")} /> : 
+        //                 (this.type === AwardType.other) ? <FontAwesomeIcon icon={solid("award")} /> : null);
+        const iconDisplay = (this.type === AwardType.best_paper) ? <Trophy size={18} /> :
+                        ((this.type === AwardType.honorable_mention) ? <Award size={18} /> : 
+                        (this.type === AwardType.other) ? <Award size={18} /> : null);
                     
         return <span className='paper-award'>{iconDisplay} {this.description}</span>;
     }

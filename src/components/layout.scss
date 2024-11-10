@@ -1,7 +1,8 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
 // @import "~boo/bulma.sass";
-@import "~bootstrap";
+// @import "~bootstrap";
+@use "../../node_modules/bootstrap/scss/bootstrap";
 
 $background-color: #FFF;
 $text-color: #131516;
