@@ -161,8 +161,7 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
         };
 
         if(this.props.layout===MemberListLayout.full_vertical) {
-            console.log(links);
-            const linksElements = links.map((l) => {
+            const linksElements = (links ?? []).map((l) => {
                 return <li key={l.id} className="breadcrumb-item"><a href={l.url} target='_blank'>{l.description}</a></li>
             });
             // const mediaElements = media.map((m) => {
@@ -170,14 +169,16 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             // })
             return <div className="row member-row">
                 <div className="col-sm-2">
+                    {data.headshot && 
                     <GatsbyImage image={data.headshot.localFile.childImageSharp.gatsbyImageData} className="member-headshot" title={`Headshot of ${given_name} ${family_name}`} alt={`Headshot of ${given_name} ${family_name}`} imgStyle={{borderRadius: 3}} />
+                    }
                 </div>
                 <div className="col-sm-10">
                     <h3>{`${given_name} ${family_name}`}</h3>
                     <ReactMarkdown>{long_bio}</ReactMarkdown>
                     <ul className="breadcrumb">
                         {/* <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li> */}
-                        <li className="breadcrumb-item"><House />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li>
+                        <li className="breadcrumb-item"><House size={18} />&nbsp;<a href={homepage} target='_blank'>Homepage</a></li>
                         {linksElements}
                         {/* {mediaElements} */}
                     </ul>

@@ -86,7 +86,7 @@ export default class extends React.Component<MemberProps, {}> {
                             <ReactMarkdown>{author.long_bio}</ReactMarkdown>
                             <ul className="breadcrumb">
                                 {/* <li className="breadcrumb-item"><FontAwesomeIcon icon={solid("house")} />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li> */}
-                                <li className="breadcrumb-item"><House />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
+                                <li className="breadcrumb-item"><House size={18} />&nbsp;<a href={author.homepage} target='_blank'>Homepage</a></li>
                                 {links}
                             </ul>
                         </div>
