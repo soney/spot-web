@@ -1,7 +1,11 @@
-iframe.writing-post {
-    width: 100%;
-    height: calc(100vh - 250px);
-    border: 1px solid #ccc;
-    min-height: 500px;
-    border-radius: 3px;
+body {
+    margin-bottom: 0px;
+
+    iframe.writing-post {
+        width: 100%;
+        height: calc(100vh - 200px);
+        border: 1px solid #ccc;
+        min-height: 500px;
+        border-radius: 3px;
+    }
 }
