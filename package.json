@@ -19,10 +19,10 @@
         "lodash": "^4.17.21",
         "lucide": "^0.456.0",
         "lucide-react": "^0.456.0",
-        "node-sass": "^9.0.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
-        "react-markdown": "^9.0.1"
+        "react-markdown": "^9.0.1",
+        "sass": "^1.80.6"
     },
     "keywords": [
         "gatsby, typescript"
@@ -31,6 +31,7 @@
     "main": "n/a",
     "scripts": {
         "build": "npx gatsby build",
+        "clean": "npx gatsby clean",
         "develop": "npx gatsby develop",
         "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
         "deploy": "npx gatsby build --prefix-paths && npx gh-pages -d public",
