@@ -1,3 +1,7 @@
+function addQueryLimits(collectionTypes, queryLimit) {
+    return collectionTypes.map((singularName) => ({singularName, queryLimit}));
+}
+
 module.exports = {
     // pathPrefix: `/spot-web`,
     siteMetadata: {
@@ -13,13 +17,12 @@ module.exports = {
             options: {
                 version: 5,
                 apiURL: 'https://mspot.link',
-                collectionTypes: ['author', 'publication', 'venue', 'cluster', 'blogpost', 'newsitem'],
-                singleTypes: ['group', 'leadcv'],
-                queryLimit: 1000
+                collectionTypes: addQueryLimits(['author', 'publication', 'venue', 'cluster', 'blogpost', 'newsitem'], 100),
+                singleTypes: addQueryLimits(['group', 'leadcv'], 100),
             }
         },
         // `gatsby-plugin-graphql-codegen`,
-        `gatsby-plugin-lodash`,
+        // `gatsby-plugin-lodash`,
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-google-fonts`,

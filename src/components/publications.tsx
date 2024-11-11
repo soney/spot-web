@@ -1,7 +1,3 @@
-// import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
-// import '@fortawesome/fontawesome-free/scss/solid.scss';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { AuthorListDisplay } from './authors';

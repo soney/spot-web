@@ -1,7 +1,6 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown'
-import { chunk } from 'lodash';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { House } from 'lucide-react';
@@ -200,4 +199,14 @@ class MemberDisplay extends React.Component<MemberDisplayProps, MemberDisplaySta
             }
         }
     }
+}
+
+function chunk<T>(array: T[], size: number): T[][] {
+    if (size <= 0) throw new Error("Size must be greater than 0");
+
+    const result: T[][] = [];
+    for (let i = 0; i < array.length; i += size) {
+        result.push(array.slice(i, i + size));
+    }
+    return result;
 }
