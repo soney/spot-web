@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import './layout.scss'
+import classNames from 'classnames';
 
 export enum SpotPage {
     home='home', research='research', team='team', news='news', writing='writing'
@@ -19,7 +20,7 @@ export const LayoutHead = (getTitle?:((props: any) => string) | string) => {
             <html lang="en" />
             <meta charSet="utf-8" />
             <title>{ titleStarter + 'Spot Research Group' }</title>
-        </>
+        </>;
     };
 };
 
@@ -28,6 +29,7 @@ export class Layout extends React.Component<LayoutProperties, {}> {
         super(props);
     }
     public render() {
+        console.log(this.props);
         return <div className='application'>
             {/* <Helmet>
                 <html lang="en" />

@@ -3,9 +3,9 @@ import * as React from 'react';
 import { AuthorListDisplay } from '../components/authors';
 import { Layout, LayoutHead, SpotPage } from '../components/layout';
 import { ExternalLink } from 'lucide-react';
-import './blogpost.scss';
 import { getCreatedEditedString } from '../pages/writing';
 import Markdown from 'react-markdown';
+import './blogpost.scss';
 
 export const pubQuery = graphql`query blogpost($id: String!) {
     strapiBlogpost(id: {eq: $id}) {
@@ -46,15 +46,17 @@ export default class extends React.Component<BlogPostProps, {}> {
         if(blogpost.google_doc) {
             const embedURL = addEmbeddedTrueToUrl(blogpost.google_doc);
             return <Layout active={SpotPage.writing}>
-                <div className="container">
-                    <strong>{blogpost.title}</strong> by <AuthorListDisplay authors={blogpost.authors} withLinks={true} />, {getCreatedEditedString(blogpost.created)}
-                    <a className="float-end" href={blogpost.google_doc} target="_blank">Open in new window <ExternalLink size={18} /></a>
+                <div className="container writing">
+                    <div className="post-info">
+                        <strong>{blogpost.title}</strong> by <AuthorListDisplay authors={blogpost.authors} withLinks={true} />, {getCreatedEditedString(blogpost.created)}
+                        <a className="float-end" href={blogpost.google_doc} target="_blank">Open in new window <ExternalLink size={18} /></a>
+                    </div>
                     <iframe className="writing-post" src={embedURL}></iframe>
                 </div>
             </Layout>;
         } else {
             return <Layout active={SpotPage.writing}>
-                <div className="container">
+                <div className="container writing">
                     <h2 className="">{blogpost.title}</h2>
                     by <AuthorListDisplay authors={blogpost.authors} withLinks={true} />, {getCreatedEditedString(blogpost.created)}
                     <Markdown>{blogpost.content.data.content}</Markdown>

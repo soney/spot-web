@@ -4,8 +4,10 @@
 // @import "~bootstrap";
 @use "../../node_modules/bootstrap/scss/bootstrap";
 
-$background-color: #FFF;
-$text-color: #131516;
+// $text-color: #131516;
+// $background-color: #FFF;
+$background-color: #FAF9F6;
+$text-color: #28282B;
 $secondary-text-color: #655A52;
 $border-color: #EEE;
 
@@ -33,8 +35,8 @@ body {
     background-color: $background-color;
     color: $text-color;
     font-family: 'Alegreya', serif;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    // margin-top: 50px;
+    // margin-bottom: 100px;
 
     a {
         color: $link-color;
@@ -264,6 +266,7 @@ body {
     }
     footer {
         margin-top: 50px;
+        margin-bottom: 100px;
         object {
             max-width: 100%
         }
