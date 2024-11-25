@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import './layout.scss'
-import classNames from 'classnames';
 
 export enum SpotPage {
     home='home', research='research', team='team', news='news', writing='writing'
