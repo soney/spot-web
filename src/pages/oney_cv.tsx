@@ -517,7 +517,7 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                                 <div className="col main">
                                     {grant.title && <div className="award-title">{grant.title}</div>}
                                     {/* <ReactMarkdown className="award-team">{grant.team}</ReactMarkdown> */}
-                                    <ReactMarkdown>{grant.team}</ReactMarkdown>
+                                    <div className="award-team"><ReactMarkdown>{grant.team}</ReactMarkdown></div>
                                     <div className="award-sponsor">{grant.sponsor}</div>
                                     {grant.program && <div className="award-program">{grant.program}</div>}
                                 </div>
