@@ -8,7 +8,7 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 export const cvQuery = graphql`query cvPublications {
     allStrapiPublication(
-        filter: {status: {in: ["accepted"]}}
+        filter: {submission_status: {in: ["accepted"]}}
         sort: {venue: {year: DESC}}
     ) {
         nodes {
@@ -18,7 +18,7 @@ export const cvQuery = graphql`query cvPublications {
             award_description
             pub_details
             short_description
-            status
+            submission_status
             authors {
                 id
                 given_name

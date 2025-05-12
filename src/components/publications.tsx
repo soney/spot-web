@@ -41,7 +41,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
         }
         // const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.localFile.publicURL} download={downloadName}><FontAwesomeIcon icon={regular("file-pdf")} /> PDF</a> : null;
         const pdfDisplay = data.pdf ? <a className="pdf-download" href={data.pdf.localFile.publicURL} download={downloadName}><FileDown size={18} /> PDF</a> : null;
-        const condAcceptDisplay = data.status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
+        const condAcceptDisplay = data.submission_status === 'conditionally_accepted' ? <span className="conditionally_accepted">(conditionally accepted)</span> : null;
 
         if(this.props.detailLevel === PublicationDetailLevel.title) {
             return <Link className="paper-title" to={`/${downloadName}`}>{data.title}</Link>;
@@ -54,7 +54,7 @@ export class PublicationSummaryDisplay extends React.Component<PublicationSummar
                 </div>
                 <div className="col-sm-2 text-left">
                     <div className="paper-venue d-inline d-md-block">{venue_str}<span className="d-inline d-md-none">&nbsp;</span></div>
-                    {data.status === 'conditionally_accepted' && <div className="paper-condaccept d-inline d-md-block">{condAcceptDisplay}<span className="d-inline d-md-none">&nbsp;</span></div> }
+                    {data.submission_status === 'conditionally_accepted' && <div className="paper-condaccept d-inline d-md-block">{condAcceptDisplay}<span className="d-inline d-md-none">&nbsp;</span></div> }
                     {data.award !== 'none' && <div className="paper-award d-inline d-md-block"><AwardDisplay data={data.award} description={data.award_description} /><span className="d-inline d-md-none">&nbsp;</span></div> }
                     <div className="paper-pdf d-inline d-md-block">{pdfDisplay}</div>
                 </div>
