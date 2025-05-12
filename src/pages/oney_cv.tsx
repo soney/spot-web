@@ -356,11 +356,6 @@ export default class extends React.Component<CVPageProps, CVPageState> {
         // const highlightStudents = this.props.location.search.indexOf('highlight_students') >= 0;
         // const verboseMode = this.props.location.search.indexOf('verbose_mode') >= 0;
         return <div className="cv container">
-                {/* <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>{data.strapiLeadcv.name} &ndash; Curriculum Vitae</title>
-                    <link rel="stylesheet" href="https://use.typekit.net/csn6djz.css"></link>
-                </Helmet> */}
                 <div className="row">
                     <div className="col side"></div>
                     <div className="col main">
@@ -521,7 +516,8 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                                 </div>
                                 <div className="col main">
                                     {grant.title && <div className="award-title">{grant.title}</div>}
-                                    <ReactMarkdown className="award-team">{grant.team}</ReactMarkdown>
+                                    {/* <ReactMarkdown className="award-team">{grant.team}</ReactMarkdown> */}
+                                    <ReactMarkdown>{grant.team}</ReactMarkdown>
                                     <div className="award-sponsor">{grant.sponsor}</div>
                                     {grant.program && <div className="award-program">{grant.program}</div>}
                                 </div>
@@ -675,7 +671,8 @@ export default class extends React.Component<CVPageProps, CVPageState> {
                                 </div>
                                 <div className="col main">
                                     <div className="course-name">{teaching.title}</div>
-                                    <ReactMarkdown className="course-description">{teaching.description}</ReactMarkdown>
+                                    {/* <ReactMarkdown className="course-description">{teaching.description}</ReactMarkdown> */}
+                                    <ReactMarkdown>{teaching.description}</ReactMarkdown>
                                 </div>
                             </div>
                         ))
