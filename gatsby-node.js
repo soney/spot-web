@@ -54,7 +54,7 @@ exports.createPages = async ({ actions, graphql }) => {
                     award
                     award_description
                     pub_details
-                    status
+                    submission_status
                     short_description
                     authors {
                         id
