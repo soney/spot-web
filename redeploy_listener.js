@@ -22,7 +22,7 @@ function pull() {
 }
 function deploy() {
     return new Promise((resolve, reject) => {
-        const buildSpawn = spawn('npm', ['run', 'deploy'], {stdio: 'inherit', shell: true})
+        const buildSpawn = spawn('yarn', ['deploy'], {stdio: 'inherit', shell: true})
         buildSpawn.on('error', (err) => {
             console.error(err);
         });
@@ -54,18 +54,18 @@ let currentlyBuilding = false;
 let pending = false;
 const build = async () => {
     if(inWaitingPeriod) {
-        console.log("In waiting period, not building");
+        console.log(getDateString() + ": " + "In waiting period, not building");
         return;
     } else if(currentlyBuilding) {
-        console.log("Adding to queue");
+        console.log(getDateString() + ": " + "Adding to queue");
         pending = true;
     } else {
-        console.log("Building");
+        console.log(getDateString() + ": " + "Request to build recieved. Entering waiting period");
         pending = false;
         currentlyBuilding = true;
 
         inWaitingPeriod = true;
-        console.log("Begin pause");
+        console.log(getDateString() + ": " + "Begin pause");
         await pause(1000 * 60 * 5);
         console.log("End pause");
         inWaitingPeriod = false;
@@ -95,3 +95,20 @@ http.createServer(async (req, res) => {
 // }, 1000*60*60*24);
 
 console.log(`listening on port ${port}`);
+
+function getDateString() {
+	const now = new Date();
+
+	const options = {
+	  weekday: 'long',
+	  year: 'numeric',
+	  month: 'long',
+	  day: 'numeric',
+	  hour: 'numeric',
+	  minute: '2-digit',
+	  hour12: true, // for AM/PM format
+	};
+
+	const naturalString = now.toLocaleString('en-US', options);
+	return naturalString;
+}
