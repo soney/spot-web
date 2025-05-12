@@ -67,7 +67,7 @@ const build = async () => {
         inWaitingPeriod = true;
         console.log(getDateString() + ": " + "Begin pause");
         await pause(1000 * 60 * 5);
-        console.log("End pause");
+        console.log(getDateString() + ": " + "End pause");
         inWaitingPeriod = false;
         await doBuild();
         currentlyBuilding = false;
@@ -107,6 +107,7 @@ function getDateString() {
 	  hour: 'numeric',
 	  minute: '2-digit',
 	  hour12: true, // for AM/PM format
+      timeZone: 'America/New_York'
 	};
 
 	const naturalString = now.toLocaleString('en-US', options);
