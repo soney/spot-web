@@ -182,11 +182,12 @@ export default class extends React.Component<IndexPageProps, {}> {
         return <Layout active={SpotPage.home}>
             <div className="container">
                 <div className='row'>
-                    <div className='col-md-7 group_description'>
-                        <h2>&nbsp;</h2>
+                    <div className='col-md-7 group_description' aria-label="Group Description">
+                        <h2 className="visually-hidden">Group Description</h2>
+                        <p className="h2">&nbsp;</p>
                         <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
                     </div>
-                    <div className='col-md-5 news'>
+                    <div className='col-md-5 news' aria-label="News">
                         <h2>News <Link className="" to="/news">[+]</Link></h2>
                         <NewsDisplay newsItems={data.allStrapiNewsitem.nodes} condensed={true} latest={4} />
                     </div>
