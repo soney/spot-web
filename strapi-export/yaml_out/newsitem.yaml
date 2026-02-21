@@ -1,0 +1,108 @@
+- id: 2024-10-01_excited_to_welcome_dr_maryam_arab_as_a
+  date: '2024-10-01'
+  description: Excited to welcome Dr. Maryam Arab as a new Postdoctoral Researcher!
+  relevant_people:
+    - maryam_arab
+- id: 2024-06-04_ashley_https_gezhangrp_com_will_be_presenting_her
+  date: '2024-06-04'
+  description: >-
+    [Ashley](https://gezhangrp.com/) will be presenting her paper on representing code at scale at Learning @ Scale in
+    Atlanta!
+  relevant_people:
+    - ashley_zhang
+  relevant_publications:
+    - cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
+- id: 2024-01-08_dr_rebecca_krosnick_https_public_websites_umich_edu
+  date: '2024-01-08'
+  description: >-
+    [Dr. Rebecca Krosnick](https://public.websites.umich.edu/~rkros/) (2023 Ph.D. graduate) joined
+    [Postman](https://www.postman.com/) as a software engineer! Congratulations, Dr. Krosnick!
+  relevant_people:
+    - rebecca_krosnick
+- id: 2023-11-06_congratulations_to_dr_rebecca_krosnick_on_her_awesome
+  date: '2023-11-06'
+  description: Congratulations to Dr. Rebecca Krosnick on her awesome Ph.D. defense!
+  relevant_people:
+    - rebecca_krosnick
+- id: 2023-11-01_april_wang_https_aprilwang_me_2023_alum_joined
+  date: '2023-11-01'
+  description: >-
+    [April Wang](https://aprilwang.me/) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer Science.
+    Congratulations, Professor Wang!
+  relevant_people:
+    - april_wang
+- id: 2023-11-01_mauli_pandey_https_pandeymauli_github_io_research_2023
+  date: '2023-11-01'
+  description: >-
+    [Mauli Pandey](https://pandeymauli.github.io/research/) (2023 alum) joined Google as a UX Researcher.
+    Congratulations, Dr. Pandey!
+  relevant_people:
+    - mauli_pandey
+- id: 2023-10-05_ashley_zhang_presented_at_vl_hcc_2023_in
+  date: '2023-10-05'
+  description: 'Ashley Zhang presented at VL/HCC 2023 in Washington, D.C.!'
+  relevant_people:
+    - ashley_zhang
+  relevant_publications:
+    - runex_augmenting_regular_expression_code_search_with_runtime_values_2023
+- id: 2023-09-07_steve_oney_was_elected_to_the_vl_hcc
+  date: '2023-09-07'
+  description: 'Steve Oney was elected to [the VL/HCC steering committee](https://conferences.computer.org/VLHCC/SC-members.html)'
+  relevant_people:
+    - steve_oney
+- id: 2023-09-01_congratulations_to_dr_mauli_pandey_and_dr_april
+  date: '2023-09-01'
+  description: Congratulations to Dr. Mauli Pandey and Dr. April Wang on their exceptional Ph.D. defenses!
+  relevant_people:
+    - mauli_pandey
+    - april_wang
+- id: 2023-09-01_we_welcomed_jiacheng_zhang_a_new_umsi_ph
+  date: '2023-09-01'
+  description: 'We welcomed Jiacheng Zhang, a new UMSI Ph.D. student, to the spot group!'
+  relevant_people:
+    - jiacheng_zhang
+- id: 2023-04-01_april_https_aprilwang_me_ashley_https_gezhangrp_com
+  date: '2023-04-01'
+  description: >-
+    [April](https://aprilwang.me/), [Ashley](https://gezhangrp.com/), [Lei](https://raynezhang.me),
+    [Mauli](https://pandeymauli.github.io/research/), and [Rebecca](http://www-personal.umich.edu/~rkros/) will be in
+    Hamburg for CHI 2023. Say "hi" if you're there!
+  relevant_people:
+    - april_wang
+    - ashley_zhang
+    - lei_zhang
+    - rebecca_krosnick
+    - mauli_pandey
+  relevant_publications:
+    - colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023
+    - vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
+    - vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
+    - how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023
+    - promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
+- id: 2023-01-01_yan_chen_https_chensivan_github_io_2020_alum
+  date: '2023-01-01'
+  description: >-
+    [Yan Chen](https://chensivan.github.io/) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
+    Congratulations, Professor Chen!
+  relevant_people:
+    - yan_chen
+- id: lei_zhang_https_raynez_art_bio_will_join
+  description: >-
+    [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
+    Professor after a one-term postdoc at Princeton. Congratulations, Lei!
+  relevant_people:
+    - lei_zhang
+- id: several_group_members_and_alumni_will_be_in
+  description: Several group members (and alumni) will be in Hawaii for CHI 2024. Say "hi" if you're there!
+  relevant_people:
+    - ashley_zhang
+    - lei_zhang
+    - mauli_pandey
+    - yan_chen
+    - april_wang
+  relevant_publications:
+    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
+- id: congratulations_to_dr_lei_zhang_on_his_wonderful
+  description: Congratulations to Dr. Lei Zhang on his wonderful Ph.D. defense!
+  relevant_people:
+    - lei_zhang

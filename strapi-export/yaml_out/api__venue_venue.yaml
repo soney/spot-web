@@ -1,0 +1,2104 @@
+- type: 'api::venue.venue'
+  id: 30
+  data:
+    short_name: IS-EUD DC
+    year: 2011
+    createdAt: '2023-03-02T18:42:18.516Z'
+    updatedAt: '2023-03-07T16:02:55.643Z'
+    location: 'Torre Canne, Italy'
+    full_name: 'Doctoral Consortium: IS-EUD'
+    conference_start: 6/7
+    conference_end: null
+    homepage: 'http://iseud11.di.uniba.it/doctoral.html'
+    type: doctoralconsortium
+    name_year: IS-EUD DC 2011
+    documentId: shbt8p1r0phwuq6s0y633ka2
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 30
+        data:
+          short_name: IS-EUD DC
+          year: 2011
+          createdAt: '2023-03-02T18:42:18.516Z'
+          updatedAt: '2023-03-07T16:02:55.643Z'
+          location: 'Torre Canne, Italy'
+          full_name: 'Doctoral Consortium: IS-EUD'
+          conference_start: 6/7
+          conference_end: null
+          homepage: 'http://iseud11.di.uniba.it/doctoral.html'
+          type: doctoralconsortium
+          name_year: IS-EUD DC 2011
+          documentId: shbt8p1r0phwuq6s0y633ka2
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 32
+  data:
+    short_name: VL/HCC GC
+    year: 2009
+    createdAt: '2023-03-02T18:42:18.960Z'
+    updatedAt: '2023-03-07T16:03:09.070Z'
+    location: 'Corvallis, OR, USA'
+    full_name: 'Graduate Consortium: VL/HCC'
+    conference_start: 9/20
+    conference_end: null
+    homepage: 'https://eecs.oregonstate.edu/vlhcc09/graduate.html'
+    type: doctoralconsortium
+    name_year: VL/HCC 2009 GC
+    documentId: lyk0uzn419uh95o8p6ifdcoh
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 32
+        data:
+          short_name: VL/HCC GC
+          year: 2009
+          createdAt: '2023-03-02T18:42:18.960Z'
+          updatedAt: '2023-03-07T16:03:09.070Z'
+          location: 'Corvallis, OR, USA'
+          full_name: 'Graduate Consortium: VL/HCC'
+          conference_start: 9/20
+          conference_end: null
+          homepage: 'https://eecs.oregonstate.edu/vlhcc09/graduate.html'
+          type: doctoralconsortium
+          name_year: VL/HCC 2009 GC
+          documentId: lyk0uzn419uh95o8p6ifdcoh
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 43
+  data:
+    short_name: EDI
+    year: 2023
+    createdAt: '2023-03-07T20:49:59.281Z'
+    updatedAt: '2023-03-07T20:49:59.281Z'
+    location: null
+    full_name: 'Equity, Diversity, and Inclusion in Software Engineering'
+    conference_start: null
+    conference_end: null
+    homepage: null
+    type: bookchapter
+    name_year: EDI 2023
+    documentId: kgdhm27oh00yffmpam5yy5lw
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 43
+        data:
+          short_name: EDI
+          year: 2023
+          createdAt: '2023-03-07T20:49:59.281Z'
+          updatedAt: '2023-03-07T20:49:59.281Z'
+          location: null
+          full_name: 'Equity, Diversity, and Inclusion in Software Engineering'
+          conference_start: null
+          conference_end: null
+          homepage: null
+          type: bookchapter
+          name_year: EDI 2023
+          documentId: kgdhm27oh00yffmpam5yy5lw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 33
+  data:
+    short_name: null
+    year: 2009
+    createdAt: '2023-03-02T18:42:19.172Z'
+    updatedAt: '2023-03-17T01:46:36.758Z'
+    location: 'Boston, MA, USA'
+    full_name: Workshop on Computational Creativity (CHI)
+    conference_start: 4/4
+    conference_end: null
+    homepage: 'https://dl.acm.org/doi/10.1145/1520340.1520728'
+    type: workshop
+    name_year: Computational Creativity Workshop at CHI
+    documentId: mu1bd2tsthzaisg6wfbwwfti
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 33
+        data:
+          short_name: null
+          year: 2009
+          createdAt: '2023-03-02T18:42:19.172Z'
+          updatedAt: '2023-03-17T01:46:36.758Z'
+          location: 'Boston, MA, USA'
+          full_name: Workshop on Computational Creativity (CHI)
+          conference_start: 4/4
+          conference_end: null
+          homepage: 'https://dl.acm.org/doi/10.1145/1520340.1520728'
+          type: workshop
+          name_year: Computational Creativity Workshop at CHI
+          documentId: mu1bd2tsthzaisg6wfbwwfti
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 36
+  data:
+    short_name: LIVE
+    year: 2020
+    createdAt: '2023-03-02T18:42:20.161Z'
+    updatedAt: '2023-03-17T01:56:48.493Z'
+    location: (Virtual/Online)
+    full_name: Workshop on Live Programming
+    conference_start: null
+    conference_end: null
+    homepage: 'https://2020.splashcon.org/home/live-2020'
+    type: workshop
+    name_year: LIVE 2020
+    documentId: kh02xc6vs8xlpwbz3qo8qvpm
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 36
+        data:
+          short_name: LIVE
+          year: 2020
+          createdAt: '2023-03-02T18:42:20.161Z'
+          updatedAt: '2023-03-17T01:56:48.493Z'
+          location: (Virtual/Online)
+          full_name: Workshop on Live Programming
+          conference_start: null
+          conference_end: null
+          homepage: 'https://2020.splashcon.org/home/live-2020'
+          type: workshop
+          name_year: LIVE 2020
+          documentId: kh02xc6vs8xlpwbz3qo8qvpm
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 50
+  data:
+    short_name: IDE Workshop
+    year: 2024
+    createdAt: '2024-05-22T13:49:41.262Z'
+    updatedAt: '2024-05-22T13:49:41.262Z'
+    location: 'Lisbon, Portugal'
+    full_name: The IDE Workshop
+    conference_start: 4/20
+    conference_end: 4/20
+    homepage: 'https://ide-workshop.github.io/'
+    type: workshop
+    name_year: IDE Workshop 2024
+    documentId: yol3604ym8y2y66244d17uwb
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 50
+        data:
+          short_name: IDE Workshop
+          year: 2024
+          createdAt: '2024-05-22T13:49:41.262Z'
+          updatedAt: '2024-05-22T13:49:41.262Z'
+          location: 'Lisbon, Portugal'
+          full_name: The IDE Workshop
+          conference_start: 4/20
+          conference_end: 4/20
+          homepage: 'https://ide-workshop.github.io/'
+          type: workshop
+          name_year: IDE Workshop 2024
+          documentId: yol3604ym8y2y66244d17uwb
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 1
+  data:
+    short_name: VL/HCC
+    year: 2009
+    createdAt: '2023-03-02T18:42:11.792Z'
+    updatedAt: '2023-03-02T18:42:11.792Z'
+    location: 'Corvallis, OR, USA'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 9/20
+    conference_end: 9/24
+    homepage: 'https://eecs.oregonstate.edu/vlhcc09/'
+    type: conference
+    name_year: VL/HCC 2009
+    documentId: p6tisib3pupty9wymvvnvu9i
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 1
+        data:
+          short_name: VL/HCC
+          year: 2009
+          createdAt: '2023-03-02T18:42:11.792Z'
+          updatedAt: '2023-03-02T18:42:11.792Z'
+          location: 'Corvallis, OR, USA'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 9/20
+          conference_end: 9/24
+          homepage: 'https://eecs.oregonstate.edu/vlhcc09/'
+          type: conference
+          name_year: VL/HCC 2009
+          documentId: p6tisib3pupty9wymvvnvu9i
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 2
+  data:
+    short_name: CHI
+    year: 2010
+    createdAt: '2023-03-02T18:42:12.017Z'
+    updatedAt: '2023-03-02T18:42:12.017Z'
+    location: 'Atlanta, GA, USA'
+    full_name: The ACM Conference on Human Factors in Computing Systems
+    conference_start: 4/10
+    conference_end: 4/15
+    homepage: 'http://www.chi2010.org/'
+    type: conference
+    name_year: CHI 2010
+    documentId: bz96fsxu6l0rcvtz9anbqt31
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 2
+        data:
+          short_name: CHI
+          year: 2010
+          createdAt: '2023-03-02T18:42:12.017Z'
+          updatedAt: '2023-03-02T18:42:12.017Z'
+          location: 'Atlanta, GA, USA'
+          full_name: The ACM Conference on Human Factors in Computing Systems
+          conference_start: 4/10
+          conference_end: 4/15
+          homepage: 'http://www.chi2010.org/'
+          type: conference
+          name_year: CHI 2010
+          documentId: bz96fsxu6l0rcvtz9anbqt31
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 3
+  data:
+    short_name: IS-EUD
+    year: 2011
+    createdAt: '2023-03-02T18:42:12.253Z'
+    updatedAt: '2023-03-02T18:42:12.253Z'
+    location: 'Torre Canne, Italy'
+    full_name: International Symposium on End-User Development
+    conference_start: 6/7
+    conference_end: 6/10
+    homepage: 'http://iseud11.di.uniba.it/'
+    type: conference
+    name_year: IS-EUD 2011
+    documentId: h6vzzhtmaqme4tox58gekfqf
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 3
+        data:
+          short_name: IS-EUD
+          year: 2011
+          createdAt: '2023-03-02T18:42:12.253Z'
+          updatedAt: '2023-03-02T18:42:12.253Z'
+          location: 'Torre Canne, Italy'
+          full_name: International Symposium on End-User Development
+          conference_start: 6/7
+          conference_end: 6/10
+          homepage: 'http://iseud11.di.uniba.it/'
+          type: conference
+          name_year: IS-EUD 2011
+          documentId: h6vzzhtmaqme4tox58gekfqf
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 4
+  data:
+    short_name: UIST
+    year: 2012
+    createdAt: '2023-03-02T18:42:12.492Z'
+    updatedAt: '2023-03-02T18:42:12.492Z'
+    location: 'Cambridge, MA, USA'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/7
+    conference_end: 10/10
+    homepage: 'http://uist.acm.org/uist2012/'
+    type: conference
+    name_year: UIST 2012
+    documentId: ff4013jdwd6pzhyxf4djsvrw
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 4
+        data:
+          short_name: UIST
+          year: 2012
+          createdAt: '2023-03-02T18:42:12.492Z'
+          updatedAt: '2023-03-02T18:42:12.492Z'
+          location: 'Cambridge, MA, USA'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/7
+          conference_end: 10/10
+          homepage: 'http://uist.acm.org/uist2012/'
+          type: conference
+          name_year: UIST 2012
+          documentId: ff4013jdwd6pzhyxf4djsvrw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 5
+  data:
+    short_name: CHI
+    year: 2013
+    createdAt: '2023-03-02T18:42:12.760Z'
+    updatedAt: '2023-03-02T18:42:12.760Z'
+    location: 'Paris, France'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/27
+    conference_end: 5/2
+    homepage: 'http://chi2013.acm.org/'
+    type: conference
+    name_year: CHI 2013
+    documentId: fviube5q3g6jfxyrj93h99xq
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 5
+        data:
+          short_name: CHI
+          year: 2013
+          createdAt: '2023-03-02T18:42:12.760Z'
+          updatedAt: '2023-03-02T18:42:12.760Z'
+          location: 'Paris, France'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/27
+          conference_end: 5/2
+          homepage: 'http://chi2013.acm.org/'
+          type: conference
+          name_year: CHI 2013
+          documentId: fviube5q3g6jfxyrj93h99xq
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 6
+  data:
+    short_name: UIST
+    year: 2014
+    createdAt: '2023-03-02T18:42:12.979Z'
+    updatedAt: '2023-03-02T18:42:12.979Z'
+    location: 'Honolulu, HI, USA'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/5
+    conference_end: 10/8
+    homepage: 'http://uist.acm.org/uist2014/'
+    type: conference
+    name_year: UIST 2014
+    documentId: c67tqc33dp8v5f1vdkq0o41m
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 6
+        data:
+          short_name: UIST
+          year: 2014
+          createdAt: '2023-03-02T18:42:12.979Z'
+          updatedAt: '2023-03-02T18:42:12.979Z'
+          location: 'Honolulu, HI, USA'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/5
+          conference_end: 10/8
+          homepage: 'http://uist.acm.org/uist2014/'
+          type: conference
+          name_year: UIST 2014
+          documentId: c67tqc33dp8v5f1vdkq0o41m
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 7
+  data:
+    short_name: CHI
+    year: 2016
+    createdAt: '2023-03-02T18:42:13.201Z'
+    updatedAt: '2023-03-02T18:42:13.201Z'
+    location: 'San Jose, CA, USA'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/7
+    conference_end: 5/12
+    homepage: 'https://chi2016.acm.org/wp/'
+    type: conference
+    name_year: CHI 2016
+    documentId: m0b528ucm5tc3mro6mdkzy7n
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 7
+        data:
+          short_name: CHI
+          year: 2016
+          createdAt: '2023-03-02T18:42:13.201Z'
+          updatedAt: '2023-03-02T18:42:13.201Z'
+          location: 'San Jose, CA, USA'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/7
+          conference_end: 5/12
+          homepage: 'https://chi2016.acm.org/wp/'
+          type: conference
+          name_year: CHI 2016
+          documentId: m0b528ucm5tc3mro6mdkzy7n
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 8
+  data:
+    short_name: UIST
+    year: 2016
+    createdAt: '2023-03-02T18:42:13.420Z'
+    updatedAt: '2023-03-02T18:42:13.420Z'
+    location: 'Tokyo, Japan'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/16
+    conference_end: 10/19
+    homepage: 'http://uist.acm.org/uist2016/'
+    type: conference
+    name_year: UIST 2016
+    documentId: f76e18joniky30v52mrgrk1l
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 8
+        data:
+          short_name: UIST
+          year: 2016
+          createdAt: '2023-03-02T18:42:13.420Z'
+          updatedAt: '2023-03-02T18:42:13.420Z'
+          location: 'Tokyo, Japan'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/16
+          conference_end: 10/19
+          homepage: 'http://uist.acm.org/uist2016/'
+          type: conference
+          name_year: UIST 2016
+          documentId: f76e18joniky30v52mrgrk1l
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 9
+  data:
+    short_name: CHI
+    year: 2017
+    createdAt: '2023-03-02T18:42:13.641Z'
+    updatedAt: '2023-03-02T18:42:13.641Z'
+    location: 'Denver, CO, USA'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/6
+    conference_end: 5/11
+    homepage: 'https://chi2017.acm.org/'
+    type: conference
+    name_year: CHI 2017
+    documentId: s9pvc4ty3ecplueprvwwsgq7
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 9
+        data:
+          short_name: CHI
+          year: 2017
+          createdAt: '2023-03-02T18:42:13.641Z'
+          updatedAt: '2023-03-02T18:42:13.641Z'
+          location: 'Denver, CO, USA'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/6
+          conference_end: 5/11
+          homepage: 'https://chi2017.acm.org/'
+          type: conference
+          name_year: CHI 2017
+          documentId: s9pvc4ty3ecplueprvwwsgq7
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 10
+  data:
+    short_name: UIST
+    year: 2018
+    createdAt: '2023-03-02T18:42:13.885Z'
+    updatedAt: '2023-03-02T18:42:13.885Z'
+    location: 'Berlin, Germany'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/14
+    conference_end: 10/17
+    homepage: 'http://uist.acm.org/uist2018/'
+    type: conference
+    name_year: UIST 2018
+    documentId: vy52ehyz0tkw8xyqa5tr51kv
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 10
+        data:
+          short_name: UIST
+          year: 2018
+          createdAt: '2023-03-02T18:42:13.885Z'
+          updatedAt: '2023-03-02T18:42:13.885Z'
+          location: 'Berlin, Germany'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/14
+          conference_end: 10/17
+          homepage: 'http://uist.acm.org/uist2018/'
+          type: conference
+          name_year: UIST 2018
+          documentId: vy52ehyz0tkw8xyqa5tr51kv
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 11
+  data:
+    short_name: VL/HCC
+    year: 2018
+    createdAt: '2023-03-02T18:42:14.107Z'
+    updatedAt: '2023-03-02T18:42:14.107Z'
+    location: 'Lisbon, Portugal'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 10/1
+    conference_end: 10/4
+    homepage: 'https://vlhcc18.github.io/'
+    type: conference
+    name_year: VL/HCC 2018
+    documentId: q5c2omviimlg75e6va8xlzvw
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 11
+        data:
+          short_name: VL/HCC
+          year: 2018
+          createdAt: '2023-03-02T18:42:14.107Z'
+          updatedAt: '2023-03-02T18:42:14.107Z'
+          location: 'Lisbon, Portugal'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 10/1
+          conference_end: 10/4
+          homepage: 'https://vlhcc18.github.io/'
+          type: conference
+          name_year: VL/HCC 2018
+          documentId: q5c2omviimlg75e6va8xlzvw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 12
+  data:
+    short_name: ICSE
+    year: 2012
+    createdAt: '2023-03-02T18:42:14.365Z'
+    updatedAt: '2023-03-02T18:42:14.365Z'
+    location: 'Zürich, Switzerland'
+    full_name: The International Conference on Software Engineering
+    conference_start: 6/2
+    conference_end: 6/9
+    homepage: 'https://files.ifi.uzh.ch/icseweb/'
+    type: conference
+    name_year: ICSE 2012
+    documentId: tr8x5vkkd37v3g25ir8iauy3
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 12
+        data:
+          short_name: ICSE
+          year: 2012
+          createdAt: '2023-03-02T18:42:14.365Z'
+          updatedAt: '2023-03-02T18:42:14.365Z'
+          location: 'Zürich, Switzerland'
+          full_name: The International Conference on Software Engineering
+          conference_start: 6/2
+          conference_end: 6/9
+          homepage: 'https://files.ifi.uzh.ch/icseweb/'
+          type: conference
+          name_year: ICSE 2012
+          documentId: tr8x5vkkd37v3g25ir8iauy3
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 13
+  data:
+    short_name: CSCW
+    year: 2018
+    createdAt: '2023-03-02T18:42:14.605Z'
+    updatedAt: '2023-03-02T18:42:14.605Z'
+    location: 'New York, NY, USA'
+    full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+    conference_start: 11/3
+    conference_end: 11/7
+    homepage: 'http://cscw.acm.org/2018/'
+    type: journal
+    name_year: CSCW 2018
+    documentId: sljhshahwi5a4wff6cqis9rv
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 13
+        data:
+          short_name: CSCW
+          year: 2018
+          createdAt: '2023-03-02T18:42:14.605Z'
+          updatedAt: '2023-03-02T18:42:14.605Z'
+          location: 'New York, NY, USA'
+          full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+          conference_start: 11/3
+          conference_end: 11/7
+          homepage: 'http://cscw.acm.org/2018/'
+          type: journal
+          name_year: CSCW 2018
+          documentId: sljhshahwi5a4wff6cqis9rv
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 14
+  data:
+    short_name: CHI
+    year: 2019
+    createdAt: '2023-03-02T18:42:14.811Z'
+    updatedAt: '2023-03-02T18:42:14.811Z'
+    location: 'Glasgow, Scotland'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/4
+    conference_end: 5/9
+    homepage: 'http://chi2019.acm.org/'
+    type: conference
+    name_year: CHI 2019
+    documentId: v7jfn5dc3dgxbhrdz6frbb1v
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 14
+        data:
+          short_name: CHI
+          year: 2019
+          createdAt: '2023-03-02T18:42:14.811Z'
+          updatedAt: '2023-03-02T18:42:14.811Z'
+          location: 'Glasgow, Scotland'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/4
+          conference_end: 5/9
+          homepage: 'http://chi2019.acm.org/'
+          type: conference
+          name_year: CHI 2019
+          documentId: v7jfn5dc3dgxbhrdz6frbb1v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 15
+  data:
+    short_name: VL/HCC
+    year: 2019
+    createdAt: '2023-03-02T18:42:15.041Z'
+    updatedAt: '2023-03-02T18:42:15.041Z'
+    location: 'Memphis, TN, USA'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 10/14
+    conference_end: 10/18
+    homepage: 'https://human-se.github.io/vlhcc2019/'
+    type: conference
+    name_year: VL/HCC 2019
+    documentId: onda4a88zq946wk5bl3lx0ok
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 15
+        data:
+          short_name: VL/HCC
+          year: 2019
+          createdAt: '2023-03-02T18:42:15.041Z'
+          updatedAt: '2023-03-02T18:42:15.041Z'
+          location: 'Memphis, TN, USA'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 10/14
+          conference_end: 10/18
+          homepage: 'https://human-se.github.io/vlhcc2019/'
+          type: conference
+          name_year: VL/HCC 2019
+          documentId: onda4a88zq946wk5bl3lx0ok
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 16
+  data:
+    short_name: CSCW
+    year: 2019
+    createdAt: '2023-03-02T18:42:15.295Z'
+    updatedAt: '2023-03-02T18:42:15.295Z'
+    location: 'Austin, TX, USA'
+    full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+    conference_start: 11/9
+    conference_end: 11/13
+    homepage: 'https://cscw.acm.org/2019/'
+    type: journal
+    name_year: CSCW 2019
+    documentId: pyfs139t41uvguqsoqvxdw1v
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 16
+        data:
+          short_name: CSCW
+          year: 2019
+          createdAt: '2023-03-02T18:42:15.295Z'
+          updatedAt: '2023-03-02T18:42:15.295Z'
+          location: 'Austin, TX, USA'
+          full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+          conference_start: 11/9
+          conference_end: 11/13
+          homepage: 'https://cscw.acm.org/2019/'
+          type: journal
+          name_year: CSCW 2019
+          documentId: pyfs139t41uvguqsoqvxdw1v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 17
+  data:
+    short_name: CHI
+    year: 2020
+    createdAt: '2023-03-02T18:42:15.512Z'
+    updatedAt: '2023-03-02T18:42:15.512Z'
+    location: 'Honolulu, Hawai''i'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/25
+    conference_end: 4/30
+    homepage: 'https://chi2020.acm.org/'
+    type: conference
+    name_year: CHI 2020
+    documentId: rtnahi97jeanekqgbuo408e2
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 17
+        data:
+          short_name: CHI
+          year: 2020
+          createdAt: '2023-03-02T18:42:15.512Z'
+          updatedAt: '2023-03-02T18:42:15.512Z'
+          location: 'Honolulu, Hawai''i'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/25
+          conference_end: 4/30
+          homepage: 'https://chi2020.acm.org/'
+          type: conference
+          name_year: CHI 2020
+          documentId: rtnahi97jeanekqgbuo408e2
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 18
+  data:
+    short_name: IMX
+    year: 2020
+    createdAt: '2023-03-02T18:42:15.722Z'
+    updatedAt: '2023-03-02T18:42:15.722Z'
+    location: 'Barcelona, Spain'
+    full_name: The ACM International Conference on Interactive Media Experiences
+    conference_start: 6/17
+    conference_end: 6/19
+    homepage: 'https://imx.acm.org/2020/'
+    type: conference
+    name_year: IMX 2020
+    documentId: mipgc4ifs6l2hd0ke49ivjxn
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 18
+        data:
+          short_name: IMX
+          year: 2020
+          createdAt: '2023-03-02T18:42:15.722Z'
+          updatedAt: '2023-03-02T18:42:15.722Z'
+          location: 'Barcelona, Spain'
+          full_name: The ACM International Conference on Interactive Media Experiences
+          conference_start: 6/17
+          conference_end: 6/19
+          homepage: 'https://imx.acm.org/2020/'
+          type: conference
+          name_year: IMX 2020
+          documentId: mipgc4ifs6l2hd0ke49ivjxn
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 19
+  data:
+    short_name: CHI
+    year: 2012
+    createdAt: '2023-03-02T18:42:15.941Z'
+    updatedAt: '2023-03-02T18:42:15.941Z'
+    location: 'Austin, TX, USA'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/5
+    conference_end: 5/10
+    homepage: 'http://chi2012.acm.org/index.shtml'
+    type: conference
+    name_year: CHI 2012
+    documentId: xedt7vxf5k2lr7jdky858b8n
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 19
+        data:
+          short_name: CHI
+          year: 2012
+          createdAt: '2023-03-02T18:42:15.941Z'
+          updatedAt: '2023-03-02T18:42:15.941Z'
+          location: 'Austin, TX, USA'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/5
+          conference_end: 5/10
+          homepage: 'http://chi2012.acm.org/index.shtml'
+          type: conference
+          name_year: CHI 2012
+          documentId: xedt7vxf5k2lr7jdky858b8n
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 20
+  data:
+    short_name: VL/HCC
+    year: 2020
+    createdAt: '2023-03-02T18:42:16.181Z'
+    updatedAt: '2023-03-02T18:42:16.181Z'
+    location: 'Dunedin, New Zealand'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 8/10
+    conference_end: 8/14
+    homepage: 'https://conf.researchr.org/home/vlhcc2020'
+    type: conference
+    name_year: VL/HCC 2020
+    documentId: kawqpj6n4brbyyqftm48xfyk
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 20
+        data:
+          short_name: VL/HCC
+          year: 2020
+          createdAt: '2023-03-02T18:42:16.181Z'
+          updatedAt: '2023-03-02T18:42:16.181Z'
+          location: 'Dunedin, New Zealand'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 8/10
+          conference_end: 8/14
+          homepage: 'https://conf.researchr.org/home/vlhcc2020'
+          type: conference
+          name_year: VL/HCC 2020
+          documentId: kawqpj6n4brbyyqftm48xfyk
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 21
+  data:
+    short_name: MIT
+    year: 2008
+    createdAt: '2023-03-02T18:42:16.418Z'
+    updatedAt: '2023-03-02T18:42:16.418Z'
+    location: 'Cambridge, MA, USA'
+    full_name: M.eng Thesis
+    conference_start: 08/1
+    conference_end: null
+    homepage: null
+    type: thesis
+    name_year: MIT 2008
+    documentId: pcdtfgorr8tugq2rev1iwqzi
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 21
+        data:
+          short_name: MIT
+          year: 2008
+          createdAt: '2023-03-02T18:42:16.418Z'
+          updatedAt: '2023-03-02T18:42:16.418Z'
+          location: 'Cambridge, MA, USA'
+          full_name: M.eng Thesis
+          conference_start: 08/1
+          conference_end: null
+          homepage: null
+          type: thesis
+          name_year: MIT 2008
+          documentId: pcdtfgorr8tugq2rev1iwqzi
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 22
+  data:
+    short_name: CMU
+    year: 2015
+    createdAt: '2023-03-02T18:42:16.628Z'
+    updatedAt: '2023-03-02T18:42:16.628Z'
+    location: 'Pittsburgh, PA'
+    full_name: Ph.D. Thesis
+    conference_start: 04/01
+    conference_end: null
+    homepage: null
+    type: thesis
+    name_year: CMU 2015
+    documentId: w3x2mlt3l7n3w0zh56qt3dby
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 22
+        data:
+          short_name: CMU
+          year: 2015
+          createdAt: '2023-03-02T18:42:16.628Z'
+          updatedAt: '2023-03-02T18:42:16.628Z'
+          location: 'Pittsburgh, PA'
+          full_name: Ph.D. Thesis
+          conference_start: 04/01
+          conference_end: null
+          homepage: null
+          type: thesis
+          name_year: CMU 2015
+          documentId: w3x2mlt3l7n3w0zh56qt3dby
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 24
+  data:
+    short_name: PervasiveHealth
+    year: 2019
+    createdAt: '2023-03-02T18:42:17.055Z'
+    updatedAt: '2023-03-02T18:42:17.055Z'
+    location: 'Trento, Italy'
+    full_name: EAI International Conference on Pervasive Computing Technologies for Healthcare
+    conference_start: 5/20
+    conference_end: 5/23
+    homepage: 'http://pervasivehealth2019.eai-conferences.org/'
+    type: poster
+    name_year: PervasiveHealth 2019
+    documentId: jzhacncta6xtvrs2tigx6azt
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 24
+        data:
+          short_name: PervasiveHealth
+          year: 2019
+          createdAt: '2023-03-02T18:42:17.055Z'
+          updatedAt: '2023-03-02T18:42:17.055Z'
+          location: 'Trento, Italy'
+          full_name: EAI International Conference on Pervasive Computing Technologies for Healthcare
+          conference_start: 5/20
+          conference_end: 5/23
+          homepage: 'http://pervasivehealth2019.eai-conferences.org/'
+          type: poster
+          name_year: PervasiveHealth 2019
+          documentId: jzhacncta6xtvrs2tigx6azt
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 25
+  data:
+    short_name: HuSDat
+    year: 2019
+    createdAt: '2023-03-02T18:42:17.278Z'
+    updatedAt: '2023-03-02T18:42:17.278Z'
+    location: 'Glasgow, Scotland'
+    full_name: >-
+      Human-Centered Study of Data Science Work Practices Workshop, ACM Conference on Human Factors in Computing Systems
+      (CHI)
+    conference_start: 5/4
+    conference_end: ''
+    homepage: 'https://husdatworkshop.github.io/'
+    type: workshop
+    name_year: HuSDat @ CHI 19
+    documentId: ak7s47z0oudaafc5vg8lz7w5
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 25
+        data:
+          short_name: HuSDat
+          year: 2019
+          createdAt: '2023-03-02T18:42:17.278Z'
+          updatedAt: '2023-03-02T18:42:17.278Z'
+          location: 'Glasgow, Scotland'
+          full_name: >-
+            Human-Centered Study of Data Science Work Practices Workshop, ACM Conference on Human Factors in Computing
+            Systems (CHI)
+          conference_start: 5/4
+          conference_end: ''
+          homepage: 'https://husdatworkshop.github.io/'
+          type: workshop
+          name_year: HuSDat @ CHI 19
+          documentId: ak7s47z0oudaafc5vg8lz7w5
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 26
+  data:
+    short_name: PX/18
+    year: 2018
+    createdAt: '2023-03-02T18:42:17.505Z'
+    updatedAt: '2023-03-02T18:42:17.505Z'
+    location: 'Nice, France'
+    full_name: Programming Experience
+    conference_start: 4/10
+    conference_end: null
+    homepage: 'https://2018.programming-conference.org/track/px-2018-papers/'
+    type: workshop
+    name_year: PX/18
+    documentId: bzmmaqtvtffrptsqfz75jrkr
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 26
+        data:
+          short_name: PX/18
+          year: 2018
+          createdAt: '2023-03-02T18:42:17.505Z'
+          updatedAt: '2023-03-02T18:42:17.505Z'
+          location: 'Nice, France'
+          full_name: Programming Experience
+          conference_start: 4/10
+          conference_end: null
+          homepage: 'https://2018.programming-conference.org/track/px-2018-papers/'
+          type: workshop
+          name_year: PX/18
+          documentId: bzmmaqtvtffrptsqfz75jrkr
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 27
+  data:
+    short_name: CI
+    year: 2016
+    createdAt: '2023-03-02T18:42:17.810Z'
+    updatedAt: '2023-03-02T18:42:17.810Z'
+    location: 'New York, NY, USA'
+    full_name: Collective Intelligence
+    conference_start: 6/1
+    conference_end: 6/3
+    homepage: 'https://sites.google.com/a/stern.nyu.edu/collective-intelligence-conference/call-for-papers'
+    type: workshop
+    name_year: CI 2016
+    documentId: vubnnzgi234mx16z87sn2qpk
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 27
+        data:
+          short_name: CI
+          year: 2016
+          createdAt: '2023-03-02T18:42:17.810Z'
+          updatedAt: '2023-03-02T18:42:17.810Z'
+          location: 'New York, NY, USA'
+          full_name: Collective Intelligence
+          conference_start: 6/1
+          conference_end: 6/3
+          homepage: 'https://sites.google.com/a/stern.nyu.edu/collective-intelligence-conference/call-for-papers'
+          type: workshop
+          name_year: CI 2016
+          documentId: vubnnzgi234mx16z87sn2qpk
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 23
+  data:
+    short_name: EUD
+    year: 2016
+    createdAt: '2023-03-02T18:42:16.845Z'
+    updatedAt: '2025-05-12T18:36:31.027Z'
+    location: null
+    full_name: Advances in End User Development
+    conference_start: null
+    conference_end: null
+    homepage: null
+    type: bookchapter
+    name_year: Advances in End User Development (2016)
+    documentId: nswswn6i8edxmayn7qn5vn48
+    locale: null
+    publishedAt: '2025-05-12T18:36:31.003Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 23
+        data:
+          short_name: EUD
+          year: 2016
+          createdAt: '2023-03-02T18:42:16.845Z'
+          updatedAt: '2025-05-12T18:36:31.027Z'
+          location: null
+          full_name: Advances in End User Development
+          conference_start: null
+          conference_end: null
+          homepage: null
+          type: bookchapter
+          name_year: Advances in End User Development (2016)
+          documentId: nswswn6i8edxmayn7qn5vn48
+          locale: null
+          publishedAt: '2025-05-12T18:36:31.003Z'
+- type: 'api::venue.venue'
+  id: 28
+  data:
+    short_name: LIVE
+    year: 2013
+    createdAt: '2023-03-02T18:42:18.028Z'
+    updatedAt: '2023-03-02T18:42:18.028Z'
+    location: 'San Francisco, CA, USA'
+    full_name: International Workshop on Live Programming at ICSE
+    conference_start: 5/19
+    conference_end: null
+    homepage: 'https://liveprogramming.github.io/2013/'
+    type: workshop
+    name_year: LIVE 2013
+    documentId: p4dl31ytqec05dnowj6a3bhc
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 28
+        data:
+          short_name: LIVE
+          year: 2013
+          createdAt: '2023-03-02T18:42:18.028Z'
+          updatedAt: '2023-03-02T18:42:18.028Z'
+          location: 'San Francisco, CA, USA'
+          full_name: International Workshop on Live Programming at ICSE
+          conference_start: 5/19
+          conference_end: null
+          homepage: 'https://liveprogramming.github.io/2013/'
+          type: workshop
+          name_year: LIVE 2013
+          documentId: p4dl31ytqec05dnowj6a3bhc
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 34
+  data:
+    short_name: UIST
+    year: 2020
+    createdAt: '2023-03-02T18:42:19.469Z'
+    updatedAt: '2023-03-02T18:42:19.469Z'
+    location: 'Minneapolis, MN, USA'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/20
+    conference_end: 10/23
+    homepage: 'https://uist.acm.org/uist2020/'
+    type: conference
+    name_year: UIST 2020
+    documentId: otw4fav40ftnwtbx7lvrcqv4
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 34
+        data:
+          short_name: UIST
+          year: 2020
+          createdAt: '2023-03-02T18:42:19.469Z'
+          updatedAt: '2023-03-02T18:42:19.469Z'
+          location: 'Minneapolis, MN, USA'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/20
+          conference_end: 10/23
+          homepage: 'https://uist.acm.org/uist2020/'
+          type: conference
+          name_year: UIST 2020
+          documentId: otw4fav40ftnwtbx7lvrcqv4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 37
+  data:
+    short_name: CHI
+    year: 2021
+    createdAt: '2023-03-02T18:42:20.484Z'
+    updatedAt: '2023-03-02T18:42:20.484Z'
+    location: (Virtual/Online)
+    full_name: ACM Conference on Human Factors in Computing Systems
+    conference_start: 5/8
+    conference_end: 5/13
+    homepage: 'https://chi2021.acm.org/'
+    type: conference
+    name_year: CHI 2021
+    documentId: yxabun4sc45d0uu63vc7vslu
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 37
+        data:
+          short_name: CHI
+          year: 2021
+          createdAt: '2023-03-02T18:42:20.484Z'
+          updatedAt: '2023-03-02T18:42:20.484Z'
+          location: (Virtual/Online)
+          full_name: ACM Conference on Human Factors in Computing Systems
+          conference_start: 5/8
+          conference_end: 5/13
+          homepage: 'https://chi2021.acm.org/'
+          type: conference
+          name_year: CHI 2021
+          documentId: yxabun4sc45d0uu63vc7vslu
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 31
+  data:
+    short_name: VL/HCC GC
+    year: 2010
+    createdAt: '2023-03-02T18:42:18.751Z'
+    updatedAt: '2023-03-07T16:03:24.039Z'
+    location: 'Madrid, Spain'
+    full_name: 'Graduate Consortium: VL/HCC'
+    conference_start: 9/21
+    conference_end: null
+    homepage: 'http://www.dei.inf.uc3m.es/vlhcc10/GRADUATE%20CONSORTIUM.html'
+    type: doctoralconsortium
+    name_year: VL/HCC GC 2010
+    documentId: qvo1q4r782h0gtsrts34p4ig
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 31
+        data:
+          short_name: VL/HCC GC
+          year: 2010
+          createdAt: '2023-03-02T18:42:18.751Z'
+          updatedAt: '2023-03-07T16:03:24.039Z'
+          location: 'Madrid, Spain'
+          full_name: 'Graduate Consortium: VL/HCC'
+          conference_start: 9/21
+          conference_end: null
+          homepage: 'http://www.dei.inf.uc3m.es/vlhcc10/GRADUATE%20CONSORTIUM.html'
+          type: doctoralconsortium
+          name_year: VL/HCC GC 2010
+          documentId: qvo1q4r782h0gtsrts34p4ig
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 45
+  data:
+    short_name: CHI EA
+    year: 2021
+    createdAt: '2023-04-15T18:57:52.091Z'
+    updatedAt: '2023-04-15T18:57:52.091Z'
+    location: (Virtual/Online)
+    full_name: Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/8
+    conference_end: 5/13
+    homepage: 'https://chi2021.acm.org/'
+    type: poster
+    name_year: EA at CHI 2021
+    documentId: asmknaqgshvqqzn76imox5o1
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 45
+        data:
+          short_name: CHI EA
+          year: 2021
+          createdAt: '2023-04-15T18:57:52.091Z'
+          updatedAt: '2023-04-15T18:57:52.091Z'
+          location: (Virtual/Online)
+          full_name: Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/8
+          conference_end: 5/13
+          homepage: 'https://chi2021.acm.org/'
+          type: poster
+          name_year: EA at CHI 2021
+          documentId: asmknaqgshvqqzn76imox5o1
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 46
+  data:
+    short_name: VL/HCC
+    year: 2023
+    createdAt: '2023-10-13T14:30:58.563Z'
+    updatedAt: '2023-10-13T14:30:58.563Z'
+    location: 'Washington, D.C.'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 10/2
+    conference_end: 10/6
+    homepage: 'https://conf.researchr.org/home/vlhcc-2023'
+    type: conference
+    name_year: VL/HCC 2023
+    documentId: ua4dr256vruzmnj1n0r8pn5s
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 46
+        data:
+          short_name: VL/HCC
+          year: 2023
+          createdAt: '2023-10-13T14:30:58.563Z'
+          updatedAt: '2023-10-13T14:30:58.563Z'
+          location: 'Washington, D.C.'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 10/2
+          conference_end: 10/6
+          homepage: 'https://conf.researchr.org/home/vlhcc-2023'
+          type: conference
+          name_year: VL/HCC 2023
+          documentId: ua4dr256vruzmnj1n0r8pn5s
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 47
+  data:
+    short_name: CHI
+    year: 2024
+    createdAt: '2024-01-20T02:48:52.843Z'
+    updatedAt: '2024-01-20T02:48:52.843Z'
+    location: 'Honolulu, Hawaiʻi'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/11
+    conference_end: 5/16
+    homepage: 'https://chi2024.acm.org/'
+    type: conference
+    name_year: CHI 2024
+    documentId: rubmukd5y7r2nte01mpghqo8
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 47
+        data:
+          short_name: CHI
+          year: 2024
+          createdAt: '2024-01-20T02:48:52.843Z'
+          updatedAt: '2024-01-20T02:48:52.843Z'
+          location: 'Honolulu, Hawaiʻi'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/11
+          conference_end: 5/16
+          homepage: 'https://chi2024.acm.org/'
+          type: conference
+          name_year: CHI 2024
+          documentId: rubmukd5y7r2nte01mpghqo8
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 48
+  data:
+    short_name: L@S
+    year: 2024
+    createdAt: '2024-04-27T16:16:39.743Z'
+    updatedAt: '2024-04-27T16:16:39.743Z'
+    location: 'Atlanta, GA'
+    full_name: ACM Conference on Learning @ Scale
+    conference_start: 7/18
+    conference_end: 7/20
+    homepage: 'https://learningatscale.hosting.acm.org/las2024/'
+    type: conference
+    name_year: L@S 2024
+    documentId: p0qryqcplcc3nbqcojulm62z
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 48
+        data:
+          short_name: L@S
+          year: 2024
+          createdAt: '2024-04-27T16:16:39.743Z'
+          updatedAt: '2024-04-27T16:16:39.743Z'
+          location: 'Atlanta, GA'
+          full_name: ACM Conference on Learning @ Scale
+          conference_start: 7/18
+          conference_end: 7/20
+          homepage: 'https://learningatscale.hosting.acm.org/las2024/'
+          type: conference
+          name_year: L@S 2024
+          documentId: p0qryqcplcc3nbqcojulm62z
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 38
+  data:
+    short_name: VL/HCC
+    year: 2021
+    createdAt: '2023-03-03T17:22:31.718Z'
+    updatedAt: '2023-03-03T17:23:13.551Z'
+    location: (Virtual/Online)
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 10/10
+    conference_end: 10/13
+    homepage: 'https://conf.researchr.org/home/vlhcc-2021'
+    type: conference
+    name_year: VL/HCC 2021
+    documentId: oekybq8j303wttg5vi3apoaw
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 38
+        data:
+          short_name: VL/HCC
+          year: 2021
+          createdAt: '2023-03-03T17:22:31.718Z'
+          updatedAt: '2023-03-03T17:23:13.551Z'
+          location: (Virtual/Online)
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 10/10
+          conference_end: 10/13
+          homepage: 'https://conf.researchr.org/home/vlhcc-2021'
+          type: conference
+          name_year: VL/HCC 2021
+          documentId: oekybq8j303wttg5vi3apoaw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 39
+  data:
+    short_name: VL/HCC
+    year: 2022
+    createdAt: '2023-03-03T17:24:05.931Z'
+    updatedAt: '2023-03-03T17:24:33.417Z'
+    location: 'Rome, Italy'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 9/12
+    conference_end: 9/16
+    homepage: 'https://conf.researchr.org/home/vlhcc-2022'
+    type: conference
+    name_year: VL/HCC 2022
+    documentId: hehepx0uf3xvcs6vof4m485p
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 39
+        data:
+          short_name: VL/HCC
+          year: 2022
+          createdAt: '2023-03-03T17:24:05.931Z'
+          updatedAt: '2023-03-03T17:24:33.417Z'
+          location: 'Rome, Italy'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 9/12
+          conference_end: 9/16
+          homepage: 'https://conf.researchr.org/home/vlhcc-2022'
+          type: conference
+          name_year: VL/HCC 2022
+          documentId: hehepx0uf3xvcs6vof4m485p
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 40
+  data:
+    short_name: CSCW
+    year: 2021
+    createdAt: '2023-03-03T17:25:47.939Z'
+    updatedAt: '2023-03-03T17:25:48.845Z'
+    location: 'Toronto, Canada'
+    full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+    conference_start: 10/23
+    conference_end: 10/27
+    homepage: 'https://cscw.acm.org/2021/'
+    type: journal
+    name_year: CSCW 2021
+    documentId: ixah9ewo76qn36yo008wjzie
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 40
+        data:
+          short_name: CSCW
+          year: 2021
+          createdAt: '2023-03-03T17:25:47.939Z'
+          updatedAt: '2023-03-03T17:25:48.845Z'
+          location: 'Toronto, Canada'
+          full_name: The ACM Conference on Computer-Supported Cooperative Work and Social Computing
+          conference_start: 10/23
+          conference_end: 10/27
+          homepage: 'https://cscw.acm.org/2021/'
+          type: journal
+          name_year: CSCW 2021
+          documentId: ixah9ewo76qn36yo008wjzie
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 41
+  data:
+    short_name: CHI
+    year: 2023
+    createdAt: '2023-03-03T17:26:43.810Z'
+    updatedAt: '2023-03-03T17:26:44.608Z'
+    location: 'Hamburg, Germany'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/23
+    conference_end: 4/28
+    homepage: 'https://chi2023.acm.org/'
+    type: conference
+    name_year: CHI 2023
+    documentId: eyc9s6xn5hz080d5djgbefvs
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 41
+        data:
+          short_name: CHI
+          year: 2023
+          createdAt: '2023-03-03T17:26:43.810Z'
+          updatedAt: '2023-03-03T17:26:44.608Z'
+          location: 'Hamburg, Germany'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/23
+          conference_end: 4/28
+          homepage: 'https://chi2023.acm.org/'
+          type: conference
+          name_year: CHI 2023
+          documentId: eyc9s6xn5hz080d5djgbefvs
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 42
+  data:
+    short_name: CHI LBW
+    year: 2023
+    createdAt: '2023-03-03T18:44:35.544Z'
+    updatedAt: '2023-03-03T18:44:36.672Z'
+    location: 'Hamburg, Germany'
+    full_name: Late-Breaking Work at The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/23
+    conference_end: 4/28
+    homepage: 'https://chi2023.acm.org/'
+    type: poster
+    name_year: LBW at CHI 2023
+    documentId: g39v3r1g4e29p7nfu1wxkxdu
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 42
+        data:
+          short_name: CHI LBW
+          year: 2023
+          createdAt: '2023-03-03T18:44:35.544Z'
+          updatedAt: '2023-03-03T18:44:36.672Z'
+          location: 'Hamburg, Germany'
+          full_name: Late-Breaking Work at The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/23
+          conference_end: 4/28
+          homepage: 'https://chi2023.acm.org/'
+          type: poster
+          name_year: LBW at CHI 2023
+          documentId: g39v3r1g4e29p7nfu1wxkxdu
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 35
+  data:
+    short_name: MSNFWS
+    year: 2020
+    createdAt: '2023-03-02T18:42:19.804Z'
+    updatedAt: '2023-03-07T15:29:38.007Z'
+    location: (Virtual/Online)
+    full_name: Microsoft New Future of Work Symposium
+    conference_start: 8/3
+    conference_end: 8/5
+    homepage: 'https://www.microsoft.com/en-us/research/event/new-future-of-work/'
+    type: workshop
+    name_year: MSNFWS 2020
+    documentId: c1twwdmiuayeg46gky5dedwo
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 35
+        data:
+          short_name: MSNFWS
+          year: 2020
+          createdAt: '2023-03-02T18:42:19.804Z'
+          updatedAt: '2023-03-07T15:29:38.007Z'
+          location: (Virtual/Online)
+          full_name: Microsoft New Future of Work Symposium
+          conference_start: 8/3
+          conference_end: 8/5
+          homepage: 'https://www.microsoft.com/en-us/research/event/new-future-of-work/'
+          type: workshop
+          name_year: MSNFWS 2020
+          documentId: c1twwdmiuayeg46gky5dedwo
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 49
+  data:
+    short_name: CHI EA
+    year: 2024
+    createdAt: '2024-05-22T13:31:50.026Z'
+    updatedAt: '2024-05-22T14:20:46.453Z'
+    location: 'Honolulu, Hawaiʻi'
+    full_name: Extended Abstracts of the ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 5/11
+    conference_end: 5/16
+    homepage: 'https://chi2024.acm.org/'
+    type: panel
+    name_year: CHI 2024 EA
+    documentId: cl5lnhdei9shb4k46tcf72hn
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 49
+        data:
+          short_name: CHI EA
+          year: 2024
+          createdAt: '2024-05-22T13:31:50.026Z'
+          updatedAt: '2024-05-22T14:20:46.453Z'
+          location: 'Honolulu, Hawaiʻi'
+          full_name: Extended Abstracts of the ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 5/11
+          conference_end: 5/16
+          homepage: 'https://chi2024.acm.org/'
+          type: panel
+          name_year: CHI 2024 EA
+          documentId: cl5lnhdei9shb4k46tcf72hn
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 51
+  data:
+    short_name: L@S Demos
+    year: 2024
+    createdAt: '2024-05-22T14:32:48.210Z'
+    updatedAt: '2024-05-22T14:32:48.210Z'
+    location: 'Atlanta, GA'
+    full_name: Demos at the ACM Conference on Learning @ Scale
+    conference_start: 7/18
+    conference_end: 7/20
+    homepage: 'https://learningatscale.hosting.acm.org/las2024/'
+    type: demo
+    name_year: L@S Demos 2024
+    documentId: rxxebs5yfloksuud0h1ad2fm
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 51
+        data:
+          short_name: L@S Demos
+          year: 2024
+          createdAt: '2024-05-22T14:32:48.210Z'
+          updatedAt: '2024-05-22T14:32:48.210Z'
+          location: 'Atlanta, GA'
+          full_name: Demos at the ACM Conference on Learning @ Scale
+          conference_start: 7/18
+          conference_end: 7/20
+          homepage: 'https://learningatscale.hosting.acm.org/las2024/'
+          type: demo
+          name_year: L@S Demos 2024
+          documentId: rxxebs5yfloksuud0h1ad2fm
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 52
+  data:
+    short_name: (Preprint)
+    year: 2024
+    createdAt: '2024-05-23T02:41:37.299Z'
+    updatedAt: '2024-05-23T03:08:13.924Z'
+    location: null
+    full_name: null
+    conference_start: null
+    conference_end: null
+    homepage: null
+    type: preprint
+    name_year: (Preprint)
+    documentId: hnpt20ttlti43v3m4h5gpxhv
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 52
+        data:
+          short_name: (Preprint)
+          year: 2024
+          createdAt: '2024-05-23T02:41:37.299Z'
+          updatedAt: '2024-05-23T03:08:13.924Z'
+          location: null
+          full_name: null
+          conference_start: null
+          conference_end: null
+          homepage: null
+          type: preprint
+          name_year: (Preprint)
+          documentId: hnpt20ttlti43v3m4h5gpxhv
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 53
+  data:
+    short_name: VL/HCC
+    year: 2024
+    createdAt: '2024-07-02T02:34:48.039Z'
+    updatedAt: '2024-07-02T02:34:48.039Z'
+    location: 'Liverpool, UK'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 9/2
+    conference_end: 9/6
+    homepage: 'https://conf.researchr.org/home/vlhcc-2024'
+    type: conference
+    name_year: VL/HCC 2024
+    documentId: y4h78dsrhutlku48gcjeb2d9
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 53
+        data:
+          short_name: VL/HCC
+          year: 2024
+          createdAt: '2024-07-02T02:34:48.039Z'
+          updatedAt: '2024-07-02T02:34:48.039Z'
+          location: 'Liverpool, UK'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 9/2
+          conference_end: 9/6
+          homepage: 'https://conf.researchr.org/home/vlhcc-2024'
+          type: conference
+          name_year: VL/HCC 2024
+          documentId: y4h78dsrhutlku48gcjeb2d9
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 54
+  data:
+    short_name: UIST
+    year: 2024
+    createdAt: '2024-07-02T02:36:53.261Z'
+    updatedAt: '2024-07-02T02:36:53.261Z'
+    location: 'Pittsburgh, PA, USA'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 10/13
+    conference_end: 10/16
+    homepage: 'https://uist.acm.org/2024/'
+    type: conference
+    name_year: UIST 2024
+    documentId: mf299tuzyrxu4u5wzk7bg080
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.387Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 54
+        data:
+          short_name: UIST
+          year: 2024
+          createdAt: '2024-07-02T02:36:53.261Z'
+          updatedAt: '2024-07-02T02:36:53.261Z'
+          location: 'Pittsburgh, PA, USA'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 10/13
+          conference_end: 10/16
+          homepage: 'https://uist.acm.org/2024/'
+          type: conference
+          name_year: UIST 2024
+          documentId: mf299tuzyrxu4u5wzk7bg080
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.387Z'
+- type: 'api::venue.venue'
+  id: 55
+  data:
+    short_name: CHI2025-CompUI
+    year: 2025
+    createdAt: '2025-05-12T18:27:43.477Z'
+    updatedAt: '2025-05-12T18:34:35.953Z'
+    location: 'Yokohama, Japan'
+    full_name: 'Designing and Developing User Interfaces with AI: Advancing  Tools, Workflows, and Practices'
+    conference_start: 5/27
+    conference_end: 5/27
+    homepage: 'https://sites.google.com/view/computational-uichi25'
+    type: workshop
+    name_year: CHI 2025 Computational UI Workshop
+    documentId: zfgggldmf05ok2h8uda1gkwd
+    locale: null
+    publishedAt: '2025-05-12T18:34:35.923Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 55
+        data:
+          short_name: CHI2025-CompUI
+          year: 2025
+          createdAt: '2025-05-12T18:27:43.477Z'
+          updatedAt: '2025-05-12T18:34:35.953Z'
+          location: 'Yokohama, Japan'
+          full_name: 'Designing and Developing User Interfaces with AI: Advancing  Tools, Workflows, and Practices'
+          conference_start: 5/27
+          conference_end: 5/27
+          homepage: 'https://sites.google.com/view/computational-uichi25'
+          type: workshop
+          name_year: CHI 2025 Computational UI Workshop
+          documentId: zfgggldmf05ok2h8uda1gkwd
+          locale: null
+          publishedAt: '2025-05-12T18:34:35.923Z'
+- type: 'api::venue.venue'
+  id: 44
+  data:
+    short_name: CHI2023-CompUI
+    year: 2023
+    createdAt: '2023-03-17T01:42:49.319Z'
+    updatedAt: '2025-05-12T18:35:22.082Z'
+    location: 'Hamburg, Germany'
+    full_name: 'CHI 2023 Workshop: Future of Computational Approaches for Understanding & Adapting User Interfaces'
+    conference_start: 4/23
+    conference_end: 4/23
+    homepage: 'https://sites.google.com/nd.edu/computational-uichi23/home'
+    type: workshop
+    name_year: Computational UI Workshop at CHI 2023
+    documentId: ali0bs2rxoi6st3fp6xe8tcu
+    locale: null
+    publishedAt: '2025-05-12T18:35:22.067Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 44
+        data:
+          short_name: CHI2023-CompUI
+          year: 2023
+          createdAt: '2023-03-17T01:42:49.319Z'
+          updatedAt: '2025-05-12T18:35:22.082Z'
+          location: 'Hamburg, Germany'
+          full_name: 'CHI 2023 Workshop: Future of Computational Approaches for Understanding & Adapting User Interfaces'
+          conference_start: 4/23
+          conference_end: 4/23
+          homepage: 'https://sites.google.com/nd.edu/computational-uichi23/home'
+          type: workshop
+          name_year: Computational UI Workshop at CHI 2023
+          documentId: ali0bs2rxoi6st3fp6xe8tcu
+          locale: null
+          publishedAt: '2025-05-12T18:35:22.067Z'
+- type: 'api::venue.venue'
+  id: 56
+  data:
+    short_name: CHI2025-AE&AI
+    year: 2025
+    createdAt: '2025-05-12T18:27:45.403Z'
+    updatedAt: '2025-05-12T18:35:51.135Z'
+    location: 'Yokohama, Japan'
+    full_name: CHI 2025 Workshop on Augmented Educators and AI
+    conference_start: 5/26
+    conference_end: 5/26
+    homepage: 'https://sites.google.com/view/augemted-educators-and-ai/home'
+    type: workshop
+    name_year: CHI 2025 Workshop on Augmented Educators and AI
+    documentId: tblo2n9wsusrp2ge5rcdt570
+    locale: null
+    publishedAt: '2025-05-12T18:35:51.102Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 56
+        data:
+          short_name: CHI2025-AE&AI
+          year: 2025
+          createdAt: '2025-05-12T18:27:45.403Z'
+          updatedAt: '2025-05-12T18:35:51.135Z'
+          location: 'Yokohama, Japan'
+          full_name: CHI 2025 Workshop on Augmented Educators and AI
+          conference_start: 5/26
+          conference_end: 5/26
+          homepage: 'https://sites.google.com/view/augemted-educators-and-ai/home'
+          type: workshop
+          name_year: CHI 2025 Workshop on Augmented Educators and AI
+          documentId: tblo2n9wsusrp2ge5rcdt570
+          locale: null
+          publishedAt: '2025-05-12T18:35:51.102Z'
+- type: 'api::venue.venue'
+  id: 29
+  data:
+    short_name: null
+    year: 2013
+    createdAt: '2023-03-02T18:42:18.280Z'
+    updatedAt: '2025-05-12T18:36:14.993Z'
+    location: 'Paris, France'
+    full_name: CHI 2013 Workshop on Evaluation Methods for Creativity Support Environments
+    conference_start: 4/28
+    conference_end: 4/28
+    homepage: 'https://dl.acm.org/doi/10.1145/2468356.2479670'
+    type: workshop
+    name_year: Creativity Support Evaluation 2013
+    documentId: a4y69yn7tlp994mss6rdn89d
+    locale: null
+    publishedAt: '2025-05-12T18:36:14.967Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 29
+        data:
+          short_name: null
+          year: 2013
+          createdAt: '2023-03-02T18:42:18.280Z'
+          updatedAt: '2025-05-12T18:36:14.993Z'
+          location: 'Paris, France'
+          full_name: CHI 2013 Workshop on Evaluation Methods for Creativity Support Environments
+          conference_start: 4/28
+          conference_end: 4/28
+          homepage: 'https://dl.acm.org/doi/10.1145/2468356.2479670'
+          type: workshop
+          name_year: Creativity Support Evaluation 2013
+          documentId: a4y69yn7tlp994mss6rdn89d
+          locale: null
+          publishedAt: '2025-05-12T18:36:14.967Z'
+- type: 'api::venue.venue'
+  id: 57
+  data:
+    short_name: UIST
+    year: 2025
+    createdAt: '2025-08-02T19:49:09.923Z'
+    updatedAt: '2025-08-02T19:49:09.923Z'
+    location: 'Busan, Korea'
+    full_name: The ACM Symposium on User Interface Software and Technology
+    conference_start: 09/28
+    conference_end: 10/1
+    homepage: 'https://uist.acm.org/2025/'
+    type: conference
+    name_year: UIST 2025
+    documentId: mc1x1rrlkj5moy2xqftypg0i
+    locale: null
+    publishedAt: '2025-08-02T19:49:09.911Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 57
+        data:
+          short_name: UIST
+          year: 2025
+          createdAt: '2025-08-02T19:49:09.923Z'
+          updatedAt: '2025-08-02T19:49:09.923Z'
+          location: 'Busan, Korea'
+          full_name: The ACM Symposium on User Interface Software and Technology
+          conference_start: 09/28
+          conference_end: 10/1
+          homepage: 'https://uist.acm.org/2025/'
+          type: conference
+          name_year: UIST 2025
+          documentId: mc1x1rrlkj5moy2xqftypg0i
+          locale: null
+          publishedAt: '2025-08-02T19:49:09.911Z'
+- type: 'api::venue.venue'
+  id: 58
+  data:
+    short_name: VL/HCC
+    year: 2025
+    createdAt: '2025-08-02T19:53:45.798Z'
+    updatedAt: '2025-08-02T19:53:45.798Z'
+    location: 'Raleigh, NC, USA'
+    full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+    conference_start: 10/7
+    conference_end: 10/10
+    homepage: 'https://conf.researchr.org/home/vlhcc-2025'
+    type: conference
+    name_year: VL/HCC 2025
+    documentId: c1c2bd3o9shf018f0xluhhl6
+    locale: null
+    publishedAt: '2025-08-02T19:53:45.790Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 58
+        data:
+          short_name: VL/HCC
+          year: 2025
+          createdAt: '2025-08-02T19:53:45.798Z'
+          updatedAt: '2025-08-02T19:53:45.798Z'
+          location: 'Raleigh, NC, USA'
+          full_name: IEEE Symposium on Visual Languages and Human-Centric Computing
+          conference_start: 10/7
+          conference_end: 10/10
+          homepage: 'https://conf.researchr.org/home/vlhcc-2025'
+          type: conference
+          name_year: VL/HCC 2025
+          documentId: c1c2bd3o9shf018f0xluhhl6
+          locale: null
+          publishedAt: '2025-08-02T19:53:45.790Z'
+- type: 'api::venue.venue'
+  id: 59
+  data:
+    short_name: CHI
+    year: 2026
+    createdAt: '2026-02-21T03:13:46.590Z'
+    updatedAt: '2026-02-21T03:13:46.590Z'
+    location: 'Barcelona, Spain'
+    full_name: The ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/13
+    conference_end: 4/17
+    homepage: 'https://chi2026.acm.org'
+    type: conference
+    name_year: CHI 2026
+    documentId: ojpxmc317ml4u9xvurl2ynw9
+    locale: null
+    publishedAt: '2026-02-21T03:13:46.576Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 59
+        data:
+          short_name: CHI
+          year: 2026
+          createdAt: '2026-02-21T03:13:46.590Z'
+          updatedAt: '2026-02-21T03:13:46.590Z'
+          location: 'Barcelona, Spain'
+          full_name: The ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/13
+          conference_end: 4/17
+          homepage: 'https://chi2026.acm.org'
+          type: conference
+          name_year: CHI 2026
+          documentId: ojpxmc317ml4u9xvurl2ynw9
+          locale: null
+          publishedAt: '2026-02-21T03:13:46.576Z'
+- type: 'api::venue.venue'
+  id: 60
+  data:
+    short_name: CHI Posters
+    year: 2026
+    createdAt: '2026-02-21T03:16:36.522Z'
+    updatedAt: '2026-02-21T03:16:36.522Z'
+    location: 'Barcelona, Spain'
+    full_name: Posters of the ACM CHI Conference on Human Factors in Computing Systems
+    conference_start: 4/13
+    conference_end: 4/17
+    homepage: 'https://chi2026.acm.org'
+    type: poster
+    name_year: CHI 2026 Poster
+    documentId: d8kmrctdo8x69qekpmt9xqwr
+    locale: null
+    publishedAt: '2026-02-21T03:16:36.517Z'
+    localizations:
+      - type: 'api::venue.venue'
+        id: 60
+        data:
+          short_name: CHI Posters
+          year: 2026
+          createdAt: '2026-02-21T03:16:36.522Z'
+          updatedAt: '2026-02-21T03:16:36.522Z'
+          location: 'Barcelona, Spain'
+          full_name: Posters of the ACM CHI Conference on Human Factors in Computing Systems
+          conference_start: 4/13
+          conference_end: 4/17
+          homepage: 'https://chi2026.acm.org'
+          type: poster
+          name_year: CHI 2026 Poster
+          documentId: d8kmrctdo8x69qekpmt9xqwr
+          locale: null
+          publishedAt: '2026-02-21T03:16:36.517Z'

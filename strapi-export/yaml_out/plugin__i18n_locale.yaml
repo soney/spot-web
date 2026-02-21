@@ -1,0 +1,42 @@
+- type: 'plugin::i18n.locale'
+  id: 1
+  data:
+    name: English (en)
+    code: en
+    createdAt: '2023-03-01T15:23:01.217Z'
+    updatedAt: '2023-03-01T15:23:01.217Z'
+    documentId: s22khwb9v57i4v1dghm9dpbf
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.292Z'
+    localizations:
+      - type: 'plugin::i18n.locale'
+        id: 1
+        data:
+          name: English (en)
+          code: en
+          createdAt: '2023-03-01T15:23:01.217Z'
+          updatedAt: '2023-03-01T15:23:01.217Z'
+          documentId: s22khwb9v57i4v1dghm9dpbf
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.292Z'
+- type: 'plugin::i18n.locale'
+  id: 2
+  data:
+    name: Chinese (zh)
+    code: zh
+    createdAt: '2024-11-08T14:58:02.376Z'
+    updatedAt: '2024-11-08T14:58:02.376Z'
+    documentId: d17hov8xnudsjx8biidpocnc
+    locale: null
+    publishedAt: '2024-11-08T14:58:02.388Z'
+    localizations:
+      - type: 'plugin::i18n.locale'
+        id: 2
+        data:
+          name: Chinese (zh)
+          code: zh
+          createdAt: '2024-11-08T14:58:02.376Z'
+          updatedAt: '2024-11-08T14:58:02.376Z'
+          documentId: d17hov8xnudsjx8biidpocnc
+          locale: null
+          publishedAt: '2024-11-08T14:58:02.388Z'

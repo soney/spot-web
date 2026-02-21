@@ -1,0 +1,690 @@
+- id: steve_oney
+  given_name: Steve
+  family_name: Oney
+  middle_name: ''
+  membership: lead
+  homepage: 'https://from.so/Steve_Oney'
+  short_bio: |-
+    Associate Professor
+    Michigan SI & CSE
+  long_bio: >-
+    Steve Oney is an Associate Professor at the [University of Michigan School of
+    Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/) (by
+    courtesy). His research focuses on enabling and encouraging more people to write and customize computer programs by
+    creating new programming tools and exploring usability issues in programming environments. Steve completed his Ph.D
+    in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where he was advised by
+    [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel Brandt](https://joelbrandt.com/). He also
+    attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS M.Eng in 2008).
+  color: '#FFC14A'
+  use_local_homepage: true
+  links:
+    - url: 'https://from.so/oney_cv/'
+      description: CV
+    - url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+      description: Google Scholar
+    - url: 'https://github.com/soney'
+      description: GitHub
+    - url: 'https://www.name-coach.com/steve-oney'
+      description: "\U0001F509 Hear my name"
+  headshot: images/UMSI_Steve_Oney_042024_05_8ed6a273af.JPG
+  focused_headshot: images/UMSI_Oney_focused_f75e0919d9.JPG
+- id: maryam_arab
+  given_name: Maryam
+  family_name: Arab
+  membership: member-postdoc
+  homepage: 'https://sites.google.com/view/maryamarab/home'
+  short_bio: |-
+    Postdoctoral Scholar
+    Michigan SI
+  long_bio: >-
+    Dr. Maryam Arab is a Postdoctoral Scholar in the School of Information, working with [Dr. Steve
+    Oney](https://from.so/Steve_Oney). Dr. Maryam Arab earned her Ph.D. in the Department of Computer Science at [George
+    Mason University](https://cs.gmu.edu/), with [Dr. Thomas D. LaToza](https://cs.gmu.edu/~tlatoza/) in the [DevX
+    lab](https://devx.cs.gmu.edu/). She is passionate about Human-Computer Interaction (HCI) and specializes in
+    designing programming tools that harmonize machine and human intelligence. Her research investigates how
+    human-computer interaction would be effective in designing programming tools and how to blend machine and human
+    intelligence.
+  color: '#79A4E5'
+  headshot: images/maryam1_25a871e879.jpeg
+  focused_headshot: images/maryam1_87408f5974.jpeg
+- id: ashley_zhang
+  given_name: Ashley
+  family_name: Zhang
+  membership: member
+  homepage: 'https://gezhangrp.com/'
+  short_bio: |-
+    Ph.D. Student
+    Michigan SI
+  long_bio: >-
+    Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/), advised by
+    Steve Oney. She is generally interested in designing interactive systems to scale instruction and learning in
+    programming education. Currently, she is working around tools to make students' code understandable at scale for
+    programming instructors. Ashley received her B.S. in Computer Science from [Peking
+    University](http://english.pku.edu.cn/) in July, 2021.
+  color: '#a19cb9'
+  links:
+    - url: 'https://twitter.com/gezhang001'
+      description: Twitter
+    - url: 'https://github.com/AshleyZG'
+      description: GitHub
+    - url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+      description: Google Scholar
+    - url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+      description: CV
+  headshot: images/ashley_headshot_864ec07f24.jpg
+  focused_headshot: images/ashley_focused_headshot_8e9682a021.jpg
+- id: jiacheng_zhang
+  given_name: Jiacheng
+  family_name: Zhang
+  membership: member
+  homepage: 'https://susan-zjc.github.io/'
+  short_bio: |-
+    Ph.D. Student
+    Michigan SI
+  long_bio: >-
+    Jiacheng Zhang is a first-year PhD student advised by [Professor Steve Oney](https://from.so/Steve_Oney/). Before
+    that, she earned her Bachelor's degree in Computer Science from [the University of Michigan](https://umich.edu/) and
+    a Bachelor's in Electrical and Computer Engineering from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
+    Her research interest lies in Human-Centered Artificial Intelligence. 
+  color: ' #D3BB91'
+  headshot: images/jiacheng_8cc7e6f683.png
+  focused_headshot: images/jiacheng_headshot_58b9408ac9.jpg
+- id: xiangyu_zhou
+  given_name: Xiangyu
+  family_name: Zhou
+  membership: member
+  homepage: 'https://kevinxiangyuzhou.github.io'
+  short_bio: |-
+    Ph.D. Student
+    Michigan CSE
+  color: '#855238'
+  headshot: images/xiangyu_7264f83ff0.JPG
+  focused_headshot: images/xiangyu_head_a2114057de.JPG
+- id: rebecca_krosnick
+  given_name: Rebecca
+  family_name: Krosnick
+  membership: alum
+  homepage: 'http://www-personal.umich.edu/~rkros/'
+  short_bio: |-
+    Ph.D. student
+    Michigan CSE
+  long_bio: >-
+    Dr. Krosnick is a software engineer at [Postman Labs](https://www.postman.com/). She earned her PhD from [the EECS
+    department at the University of Michigan](https://eecs.engin.umich.edu/), advised by [Professor Steve
+    Oney](https://from.so/Steve_Oney). She is generally interested in designing end-user programming systems. She
+    currently is exploring ways to make creating and editing web macros more intuitive and visual, and less
+    script-heavy. She has also designed programming-by-demonstration systems for creating responsive and interactive
+    user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received her SB and MEng in
+    Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor Rob
+    Miller](https://www.csail.mit.edu/person/rob-miller). 
+  color: '#BC7B71'
+  links:
+    - url: 'https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao'
+      description: Google Scholar
+    - url: 'https://twitter.com/rkrosnick'
+      description: Twitter
+    - url: 'https://www.linkedin.com/in/rebecca-krosnick-315b2180'
+      description: Linkedin
+  headshot: images/rkros_907631941f.jpg
+  focused_headshot: images/rebecca_focused_headshot_4f823c5f1b.jpg
+- id: april_wang
+  given_name: April
+  family_name: Wang
+  membership: alum
+  homepage: 'https://aprilwang.me/'
+  short_bio: |-
+    Assistant Professor
+    ETH Zürich
+  long_bio: >-
+    Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of Computer
+    Science. She completed her Ph.D. at the [School of Information at the University of
+    Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor
+    Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different collaboration needs and
+    challenges around data science, and design better programming tools to support collaborative data science. April
+    received her B.Eng. in Computer Science from [Zhejiang University](http://www.zju.edu.cn/english/) and M.Sc. degree
+    in Computer Science from [Simon Fraser University](https://www.sfu.ca/), where her Masters thesis investigated
+    non-programmers learning computational literacy.
+  color: ' #EABB6C'
+  links:
+    - url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+      description: Google Scholar
+    - url: 'https://github.com/LittleAprilFool'
+      description: Github
+    - url: 'https://twitter.com/AprilWang95'
+      description: Twitter
+  headshot: images/april_wang_29a426371b.jpeg
+  focused_headshot: images/april_focused_headshot_9f99a1cc53.jpeg
+- id: lei_zhang
+  given_name: Lei
+  family_name: Zhang
+  membership: alum
+  homepage: 'http://raynezhang.me/'
+  short_bio: |-
+    Postdoctoral Researcher
+    Princeton University
+  long_bio: >-
+    Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an Assistant
+    Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei earned his Ph.D.
+    at the [University of Michigan School of Information](https://www.si.umich.edu/), advised by [Professor Steve
+    Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/). His research in human-computer
+    interaction focuses on building authoring tools that enable end-users to craft immersive experiences, such as
+    Augmented Reality (AR) and Virtual Reality (VR). By developing interactive systems, his work explores techniques
+    that leverage computation and interaction to empower people's creativity, collaboration, and communication in the
+    context of content creation. He holds a BE in Software Engineering from Shanghai Jiao Tong University. In his
+    leisure time, Lei is into music production, skateboards, and 35mm film photography.
+  color: '#7594F0'
+  links:
+    - url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+      description: Google Scholar
+    - url: 'https://github.com/RayneZhang/'
+      description: Github
+    - url: 'https://twitter.com/itsraynez'
+      description: Twitter
+  headshot: images/lei_0a65b284f1.jpg
+  focused_headshot: images/lei_focused_headshot_3f8a6e87d9.jpg
+- id: mauli_pandey
+  given_name: Mauli
+  family_name: Pandey
+  membership: alum
+  homepage: 'https://pandeymauli.github.io/research/'
+  short_bio: |-
+    UX Researcher
+    Google
+  long_bio: >-
+    Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of Michigan School
+    of Information](https://www.si.umich.edu/), where she was advised by [Steve Oney](https://from.so/Steve_Oney). Her
+    research interests lie at the intersection of Human-Computer Interaction, Accessibility, and Programming. She is
+    interested in lowering the barriers to programming and education for people with visual impairments by understanding
+    their experiences through qualitative research methods. Before starting her PhD, Mauli was in the MS program (2018)
+    at the University of Michigan School of Information. During her MS, she also worked closely with [Matthew
+    Kay](http://www.mjskay.com/), [Michael Nebeling](http://www.michael-nebeling.de/), and [Sun Young
+    Park](http://sunyoungpark.weebly.com/). For her undergraduate studies, she attended the [Indian Institute of
+    Technology Guwahati](http://www.iitg.ac.in/) (Design and Electronics, 2014), and was advised by [Pradeep
+    Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+  color: ' #D3BDC1'
+  links:
+    - url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+      description: Google Scholar
+    - url: 'https://github.com/pandeymauli/'
+      description: Github
+    - url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+      description: LinkedIn
+  headshot: images/mauli_bc5a8b65bc.jpg
+  focused_headshot: images/mauli_focused_headshot_7dda7be6e4.jpg
+- id: yan_chen
+  given_name: Yan
+  family_name: Chen
+  membership: alum
+  homepage: 'https://chensivan.github.io/'
+  short_bio: |-
+    Assistant Professor
+    Virginia Tech
+  long_bio: >-
+    Dr. Yan Chen is an Assistant Professor of [Computer Science](https://cs.vt.edu/) at [Virginia
+    Tech](https://www.vt.edu/). Yan earned his PhD at [the University of Michigan](https://umich.edu/), advised by [Dr.
+    Steve Oney](https://umich.edu/). After his Ph.D., he was a postdoctoral researcher at the [University of
+    Toronto](https://www.utoronto.ca/), working with [Tovi Grossman](https://www.tovigrossman.com/).  His research aims
+    to leverage human computation and machine intelligence to effectively solve complex tasks that require domain
+    expertise, such as software development, video curation. He studies problems that users face with existing tools and
+    methods, and builds computational systems to assist users via efficient collaboration and hybrid crowd-machine
+    workflows.
+  color: '#A5AFAD'
+  links:
+    - url: 'https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en'
+      description: Google Scholar
+  headshot: images/IMG_0816_6ffff75971.JPG
+  focused_headshot: images/yan_focused_headshot_7dc466e28a.JPG
+- id: zihan_wu
+  given_name: Zihan
+  family_name: Wu
+  membership: ugrad_ms_student
+  homepage: 'https://www.zihanwu.com/'
+  short_bio: 'Undergraduate Summer Intern. Currently: UMSI PhD Student'
+- id: tami_van_omen
+  given_name: Tami
+  family_name: Van Omen
+  membership: ugrad_ms_student
+  short_bio: Undergraduate researcher
+- id: yisen_wang
+  given_name: Yisen
+  family_name: Wang
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/yisen-wang-7308751a0'
+  short_bio: Explore CS Research Mentee.
+- id: ningqi_wang
+  given_name: Ningqi
+  family_name: Wang
+  membership: ugrad_ms_student
+  short_bio: Undergraduate Intern. MS Student at Carnegie Mellon
+- id: jie_wei_wu
+  given_name: Jie Wei
+  family_name: Wu
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/jie-wei-w-880a1552'
+  short_bio: 'MSI Researcher. Now: Google Software Engineer'
+- id: jessica_wu
+  given_name: Jessica
+  family_name: Wu
+  membership: ugrad_ms_student
+  short_bio: Former Undergraduate Researcher. Now Software Engineer at Amazon
+- id: johnathan_yan
+  given_name: Johnathan
+  family_name: Yan
+  membership: ugrad_ms_student
+  short_bio: Undergraduate Researcher
+- id: jamie_neumann
+  given_name: Jamie
+  family_name: Neumann
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/jamie-neumann/'
+  short_bio: 'UMSI, Undergraduate Researcher'
+- id: rebecca_parada
+  given_name: Rebecca
+  family_name: Parada
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/paradar6/'
+  short_bio: 'UMSI, Undergraduate Researcher'
+- id: yin_xie
+  given_name: Yin
+  family_name: Xie
+  membership: ugrad_ms_student
+  short_bio: Former MS researcher. Now interaction designer at Internet Brands
+- id: yiwei_yang
+  given_name: YiWei
+  family_name: Yang
+  membership: ugrad_ms_student
+  homepage: 'https://yanyiwei.github.io/'
+  short_bio: Former CSE Undergraduate Researcher. Now Ph.D. student at the University of Washington
+- id: licheng_zhu
+  given_name: Licheng
+  family_name: Zhu
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/lichengzhu'
+  short_bio: 'MSI Researcher. Now: Senior User Experience Researcher at Thompson Reuters'
+- id: yuan_zhou
+  given_name: Yuan
+  family_name: Zhou
+  membership: ugrad_ms_student
+  homepage: 'https://www.andyzhou.space/'
+  short_bio: Undergraduate Summer Intern. Georgia Tech M.S.
+- id: hussain_alafaireet
+  given_name: Hussain
+  family_name: Alafaireet
+  membership: ugrad_ms_student
+  short_bio: MSI Researcher
+- id: niu_chang
+  given_name: Niu
+  family_name: Chang
+  membership: ugrad_ms_student
+  short_bio: Undergraduate Summer Intern
+- id: erin_deutschman
+  given_name: Erin
+  family_name: Deutschman
+  membership: ugrad_ms_student
+  homepage: 'https://www.linkedin.com/in/erindeutschman'
+  short_bio: Explore CS Research Mentee
+- id: natalie_gross
+  given_name: Natalie
+  family_name: Gross
+  membership: ugrad_ms_student
+  homepage: 'https://grosnata.wixsite.com/nataliegross'
+  short_bio: 'UMSI, Undergraduate Researcher'
+- id: yunjie_guo
+  given_name: Yunjie
+  family_name: Guo
+  membership: ugrad_ms_student
+  short_bio: Michigan CSE Undergraduate Researcher
+- id: jaylin_herskovitz
+  given_name: Jaylin
+  family_name: Herskovitz
+  membership: ugrad_ms_student
+  homepage: 'https://jayl.in/'
+  short_bio: Former Undergraduate Researcher. Now Ph.D. student at Michigan (CSE)
+- id: ruidong_liu
+  given_name: Ruidong
+  family_name: Liu
+  membership: ugrad_ms_student
+  short_bio: Undergraduate researcher. Now Ph.D. student at Cornell University
+- id: gabriel_matute
+  given_name: Gabriel
+  family_name: Matute
+  membership: ugrad_ms_student
+  short_bio: Former Undergraduate Researcher. Now Ph.D. student at UC Berkeley
+- id: muhan_zhao
+  given_name: Muhan
+  family_name: Zhao
+  membership: ugrad_ms_student
+  short_bio: Michigan CSE Undergraduate Researcher
+- id: yinuo_yang
+  given_name: Yinuo
+  family_name: Yang
+  membership: ugrad_ms_student
+- id: hanning_li
+  given_name: Hanning
+  family_name: Li
+  membership: ugrad_ms_student
+- id: rushal_butala
+  given_name: Rushal
+  family_name: Butala
+  membership: ugrad_ms_student
+- id: tisha_jain
+  given_name: Tisha
+  family_name: Jain
+  membership: ugrad_ms_student
+- id: shweta_kumar
+  given_name: Shweta
+  family_name: Kumar
+  membership: ugrad_ms_student
+- id: carl_fan
+  given_name: Carl
+  family_name: Fan
+  membership: ugrad_ms_student
+- id: brad_myers
+  given_name: Brad
+  family_name: Myers
+  homepage: 'http://www.cs.cmu.edu/~bam/'
+- id: john_zimmerman
+  given_name: John
+  family_name: Zimmerman
+  homepage: 'http://www.cs.cmu.edu/~johnz/'
+- id: kursat_ozenc
+  given_name: Kursat
+  family_name: Ozenc
+  homepage: 'http://kursatozenc.com/'
+- id: miso_kim
+  given_name: Miso
+  family_name: Kim
+- id: john_barton
+  given_name: John
+  family_name: Barton
+- id: tessa_lau
+  given_name: Tessa
+  family_name: Lau
+  homepage: 'http://tlau.org/'
+- id: jeffrey_nichols
+  given_name: Jeffrey
+  family_name: Nichols
+  homepage: 'http://www.jeffreynichols.com/'
+- id: joel_brandt
+  given_name: Joel
+  family_name: Brandt
+  homepage: 'https://research.adobe.com/person/joel-brandt/'
+- id: rahul_pandita
+  given_name: Rahul
+  family_name: Pandita
+- id: xusheng_xiao
+  given_name: Xusheng
+  family_name: Xiao
+- id: hao_zhong
+  given_name: Hao
+  family_name: Zhong
+- id: tao_xie
+  given_name: Tao
+  family_name: Xie
+  homepage: 'http://taoxie.cs.illinois.edu/'
+- id: amit_paradkar
+  given_name: Amit
+  family_name: Paradkar
+- id: chris_harrison
+  given_name: Chris
+  family_name: Harrison
+  homepage: 'http://www.chrisharrison.net/'
+- id: amy_ogan
+  given_name: Amy
+  family_name: Ogan
+  homepage: 'http://amyogan.com/'
+- id: jason_wiese
+  given_name: Jason
+  family_name: Wiese
+  homepage: 'http://jasonwiese.net/'
+- id: youngseok_yoon
+  given_name: YoungSeok
+  family_name: Yoon
+  homepage: 'https://research.yyoon.net/'
+- id: xin_rong
+  given_name: Xin
+  family_name: Rong
+- id: shiyan_yan
+  given_name: Shiyan
+  family_name: Yan
+- id: mira_dontcheva
+  given_name: Mira
+  family_name: Dontcheva
+  homepage: 'https://research.adobe.com/person/mira-dontcheva/'
+- id: eytan_adar
+  given_name: Eytan
+  family_name: Adar
+  homepage: 'http://www.cond.org/'
+- id: sang_won_lee
+  given_name: Sang Won
+  family_name: Lee
+  homepage: 'https://people.cs.vt.edu/sangwonlee/'
+- id: yin_xie_2
+  given_name: Yin
+  family_name: Xie
+- id: yiwei_yang_2
+  given_name: YiWei
+  family_name: Yang
+- id: shih_chieh_lin
+  given_name: Shih-Chieh
+  family_name: Lin
+  homepage: 'https://web.eecs.umich.edu/~shihclin/'
+- id: chang_hong_hsu
+  given_name: Chang-Hong
+  family_name: Hsu
+- id: walter_talamonti
+  given_name: Walter
+  family_name: Talamonti
+  homepage: 'https://scholar.google.com/citations?user=34eyP4gAAAAJ&hl=en'
+- id: yunqi_zhang
+  given_name: Yunqi
+  family_name: Zhang
+  homepage: 'http://web.eecs.umich.edu/~yunqi/'
+- id: jason_mars
+  given_name: Jason
+  family_name: Mars
+  homepage: 'http://jasonmars.org/'
+- id: lingjia_tang
+  given_name: Lingjia
+  family_name: Tang
+  homepage: 'http://www.lingjia.org/'
+- id: alan_lundgard
+  given_name: Alan
+  family_name: Lundgard
+  homepage: 'https://www.alanlundgard.com/'
+- id: michael_nebeling
+  given_name: Michael
+  family_name: Nebeling
+  homepage: 'http://michael-nebeling.de/'
+- id: christopher_brooks
+  given_name: Christopher
+  family_name: Brooks
+  homepage: 'http://christopherbrooks.ca/'
+- id: paul_resnick
+  given_name: Paul
+  family_name: Resnick
+  homepage: 'http://presnick.people.si.umich.edu/'
+- id: anant_mittal
+  given_name: Anant
+  family_name: Mittal
+- id: hari_subramonyam
+  given_name: Hari
+  family_name: Subramonyam
+  homepage: 'http://haridecoded.com/'
+- id: sile_o_modhrain
+  given_name: Sile
+  family_name: O'Modhrain
+  homepage: 'http://www.somodhrain.com/'
+- id: jean_song
+  given_name: Jean
+  family_name: Song
+  homepage: 'https://jyskwon.github.io/'
+- id: ian_wehrman
+  given_name: Ian
+  family_name: Wehrman
+- id: tovi_grossman
+  given_name: Tovi
+  family_name: Grossman
+  homepage: 'https://www.tovigrossman.com/'
+- id: andr_s_monroy_hern_ndez
+  given_name: Andrés
+  family_name: Monroy-Hernández
+  homepage: 'http://www.andresmh.com/'
+- id: rajan_vaish
+  given_name: Rajan
+  family_name: Vaish
+- id: jaylin_herskovitz_2
+  given_name: Jaylin
+  family_name: Herskovitz
+  homepage: 'https://jayl.in/'
+- id: gabriel_matute_2
+  given_name: Gabriel
+  family_name: Matute
+- id: sun_young_park
+  given_name: Sun Young
+  family_name: Park
+  homepage: 'http://sunyoungpark.weebly.com/'
+- id: louis_spinelli
+  given_name: Louis
+  family_name: Spinelli
+- id: amy_ko
+  given_name: Amy
+  family_name: Ko
+  homepage: 'https://faculty.washington.edu/ajko/'
+- id: chris_scaffidi
+  given_name: Chris
+  family_name: Scaffidi
+  homepage: 'http://web.engr.oregonstate.edu/~scaffidc/'
+- id: kerry_chang
+  given_name: Kerry
+  family_name: Chang
+  homepage: 'https://www.cs.cmu.edu/~shihpinc/'
+- id: mary_beth_kery
+  given_name: Mary Beth
+  family_name: Kery
+  homepage: 'https://marybethkery.com/'
+- id: toby_li
+  given_name: Toby
+  family_name: Li
+  homepage: 'http://toby.li/'
+- id: jasmine_jones
+  given_name: Jasmine
+  family_name: Jones
+  homepage: 'http://seejazzwork.com/'
+- id: fraser_anderson
+  given_name: Fraser
+  family_name: Anderson
+  homepage: 'https://www.autodesk.com/research/people/fraser-anderson'
+- id: justin_matejka
+  given_name: Justin
+  family_name: Matejka
+  homepage: 'https://www.autodesk.com/research/people/justin-matejka'
+- id: george_fitzmaurice
+  given_name: George
+  family_name: Fitzmaurice
+  homepage: 'https://www.autodesk.com/research/people/george-fitzmaurice'
+- id: jacob_gettig
+  given_name: Jacob
+  family_name: Gettig
+- id: walter_lasecki
+  given_name: Walter
+  family_name: Lasecki
+- id: brooke_sasia
+  given_name: Brooke
+  family_name: Sasia
+- id: john_chung
+  given_name: John
+  family_name: Chung
+  homepage: 'https://johnr0.github.io/'
+- id: vaishnav_kameswaran
+  given_name: Vaishnav
+  family_name: Kameswaran
+  homepage: 'http://vaikam.people.si.umich.edu/'
+- id: hrishikesh_rao
+  given_name: Hrishikesh
+  family_name: Rao
+  homepage: 'https://hrishirao.com/'
+- id: sharvari_bondre
+  given_name: Sharvari
+  family_name: Bondre
+  homepage: 'https://shara.page/'
+- id: jin_pan
+  given_name: Jin
+  family_name: Pan
+- id: ashutosh_agrawal
+  given_name: Ashutosh
+  family_name: Agrawal
+- id: anhong_guo
+  given_name: Anhong
+  family_name: Guo
+  homepage: 'https://guoanhong.com/'
+- id: andrew_head
+  given_name: Andrew
+  family_name: Head
+  homepage: 'https://andrewhead.info/'
+- id: jaimie_drozdal
+  given_name: Jaimie
+  family_name: Drozdal
+- id: xuye_liu
+  given_name: Xuye
+  family_name: Liu
+- id: shiyu_xu
+  given_name: Shiyu
+  family_name: Xu
+- id: dakuo_wang
+  given_name: Dakuo
+  family_name: Wang
+- id: soya_park
+  given_name: Soya
+  family_name: Park
+- id: andrew_begel
+  given_name: Andrew
+  family_name: Begel
+  homepage: 'https://andrewbegel.com/'
+- id: xiaohang_tang
+  given_name: Xiaohang
+  family_name: Tang
+  homepage: 'https://xiaohang-tang.github.io/'
+- id: jane_im
+  given_name: Jane
+  family_name: Im
+  homepage: 'https://imjane.net/'
+- id: himanshu_zade
+  given_name: Himanshu
+  family_name: Zade
+  homepage: 'http://students.washington.edu/himanz/'
+- id: pamela_wisniewski
+  given_name: Pamela
+  family_name: Wisniewski
+  homepage: 'https://stirlab.org/'
+- id: kentaro_toyama
+  given_name: Kentaro
+  family_name: Toyama
+  homepage: 'http://www.kentarotoyama.org/'
+- id: chen_yang
+  given_name: Chen
+  family_name: Yang
+- id: victor_bursztyn
+  given_name: Victor
+  family_name: Bursztyn
+- id: gromit_chan
+  given_name: Gromit
+  family_name: Chan
+- id: shunan_guo
+  given_name: Shunan
+  family_name: Guo
+- id: eunyee_koh
+  given_name: Eunyee
+  family_name: Koh
+- id: jane_hoffswell
+  given_name: Jane
+  family_name: Hoffswell
+- id: jiawen_li
+  given_name: Jiawen
+  family_name: Li
+- id: yan_ru_jhou
+  given_name: Yan-Ru
+  family_name: Jhou
+- id: shamita_rao
+  given_name: Shamita
+  family_name: Rao

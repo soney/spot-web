@@ -1,0 +1,1581 @@
+- type: 'plugin::users-permissions.permission'
+  id: 1
+  data:
+    action: 'plugin::users-permissions.user.me'
+    createdAt: '2023-03-01T15:23:01.331Z'
+    updatedAt: '2023-03-01T15:23:01.331Z'
+    documentId: sdcn8idnngmvdrmsm6bc8ao9
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 1
+        data:
+          action: 'plugin::users-permissions.user.me'
+          createdAt: '2023-03-01T15:23:01.331Z'
+          updatedAt: '2023-03-01T15:23:01.331Z'
+          documentId: sdcn8idnngmvdrmsm6bc8ao9
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 2
+  data:
+    action: 'plugin::users-permissions.auth.changePassword'
+    createdAt: '2023-03-01T15:23:01.331Z'
+    updatedAt: '2023-03-01T15:23:01.331Z'
+    documentId: vhoxuszgcyal3mpf64zpi33g
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 2
+        data:
+          action: 'plugin::users-permissions.auth.changePassword'
+          createdAt: '2023-03-01T15:23:01.331Z'
+          updatedAt: '2023-03-01T15:23:01.331Z'
+          documentId: vhoxuszgcyal3mpf64zpi33g
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 3
+  data:
+    action: 'plugin::users-permissions.auth.callback'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: rbegtp1trpcmz4624ga8rigq
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 3
+        data:
+          action: 'plugin::users-permissions.auth.callback'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: rbegtp1trpcmz4624ga8rigq
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 4
+  data:
+    action: 'plugin::users-permissions.auth.connect'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: xdaervivdvoqij4bnzcb4oru
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 4
+        data:
+          action: 'plugin::users-permissions.auth.connect'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: xdaervivdvoqij4bnzcb4oru
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 5
+  data:
+    action: 'plugin::users-permissions.auth.forgotPassword'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: v3rkzxcy7el77s2ziy2n6de5
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 5
+        data:
+          action: 'plugin::users-permissions.auth.forgotPassword'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: v3rkzxcy7el77s2ziy2n6de5
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 6
+  data:
+    action: 'plugin::users-permissions.auth.resetPassword'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: iqx526jnlkl3kiid9egjptog
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 6
+        data:
+          action: 'plugin::users-permissions.auth.resetPassword'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: iqx526jnlkl3kiid9egjptog
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 7
+  data:
+    action: 'plugin::users-permissions.auth.register'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: bx6lo68p03gqrarshi5lj3dw
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 7
+        data:
+          action: 'plugin::users-permissions.auth.register'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: bx6lo68p03gqrarshi5lj3dw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 8
+  data:
+    action: 'plugin::users-permissions.auth.emailConfirmation'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: n0bzhq934cfha9dnae3f3bmd
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 8
+        data:
+          action: 'plugin::users-permissions.auth.emailConfirmation'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: n0bzhq934cfha9dnae3f3bmd
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 9
+  data:
+    action: 'plugin::users-permissions.auth.sendEmailConfirmation'
+    createdAt: '2023-03-01T15:23:01.349Z'
+    updatedAt: '2023-03-01T15:23:01.349Z'
+    documentId: jyqfb2e493p4njdybnvlral8
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 9
+        data:
+          action: 'plugin::users-permissions.auth.sendEmailConfirmation'
+          createdAt: '2023-03-01T15:23:01.349Z'
+          updatedAt: '2023-03-01T15:23:01.349Z'
+          documentId: jyqfb2e493p4njdybnvlral8
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 10
+  data:
+    action: 'api::author.author.find'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: gn26ejzdv8lfrt35z2agnhdv
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 10
+        data:
+          action: 'api::author.author.find'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: gn26ejzdv8lfrt35z2agnhdv
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 11
+  data:
+    action: 'api::author.author.findOne'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: g99c0s3sj147i6fjyz8io03f
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 11
+        data:
+          action: 'api::author.author.findOne'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: g99c0s3sj147i6fjyz8io03f
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 12
+  data:
+    action: 'api::publication.publication.find'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: lg96tonhqm543sqqej7dzs8p
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 12
+        data:
+          action: 'api::publication.publication.find'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: lg96tonhqm543sqqej7dzs8p
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 13
+  data:
+    action: 'api::publication.publication.findOne'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: xcfrh26u1t7mstanq0bv73nm
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 13
+        data:
+          action: 'api::publication.publication.findOne'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: xcfrh26u1t7mstanq0bv73nm
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 14
+  data:
+    action: 'api::venue.venue.find'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: ai5zfrei6587dkh0f6f67e4i
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 14
+        data:
+          action: 'api::venue.venue.find'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: ai5zfrei6587dkh0f6f67e4i
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 15
+  data:
+    action: 'api::venue.venue.findOne'
+    createdAt: '2023-03-01T19:59:14.688Z'
+    updatedAt: '2023-03-01T19:59:14.688Z'
+    documentId: hzxvy5xp13ouo8y4yc1a5gos
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 15
+        data:
+          action: 'api::venue.venue.findOne'
+          createdAt: '2023-03-01T19:59:14.688Z'
+          updatedAt: '2023-03-01T19:59:14.688Z'
+          documentId: hzxvy5xp13ouo8y4yc1a5gos
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 16
+  data:
+    action: 'plugin::content-type-builder.components.getComponents'
+    createdAt: '2023-03-01T23:21:24.053Z'
+    updatedAt: '2023-03-01T23:21:24.053Z'
+    documentId: y7f09ierxhyy3p3qxi61qsix
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 16
+        data:
+          action: 'plugin::content-type-builder.components.getComponents'
+          createdAt: '2023-03-01T23:21:24.053Z'
+          updatedAt: '2023-03-01T23:21:24.053Z'
+          documentId: y7f09ierxhyy3p3qxi61qsix
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 17
+  data:
+    action: 'plugin::content-type-builder.components.getComponent'
+    createdAt: '2023-03-01T23:21:24.054Z'
+    updatedAt: '2023-03-01T23:21:24.054Z'
+    documentId: necs48cvlrspbn2ow05hfv9j
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 17
+        data:
+          action: 'plugin::content-type-builder.components.getComponent'
+          createdAt: '2023-03-01T23:21:24.054Z'
+          updatedAt: '2023-03-01T23:21:24.054Z'
+          documentId: necs48cvlrspbn2ow05hfv9j
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 18
+  data:
+    action: 'plugin::content-type-builder.content-types.getContentTypes'
+    createdAt: '2023-03-01T23:21:24.054Z'
+    updatedAt: '2023-03-01T23:21:24.054Z'
+    documentId: fa98wcnkvnp4y8mp90z2elkf
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 18
+        data:
+          action: 'plugin::content-type-builder.content-types.getContentTypes'
+          createdAt: '2023-03-01T23:21:24.054Z'
+          updatedAt: '2023-03-01T23:21:24.054Z'
+          documentId: fa98wcnkvnp4y8mp90z2elkf
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 19
+  data:
+    action: 'plugin::content-type-builder.content-types.getContentType'
+    createdAt: '2023-03-01T23:21:24.054Z'
+    updatedAt: '2023-03-01T23:21:24.054Z'
+    documentId: ejl119om9flskpqxo1w0gw24
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 19
+        data:
+          action: 'plugin::content-type-builder.content-types.getContentType'
+          createdAt: '2023-03-01T23:21:24.054Z'
+          updatedAt: '2023-03-01T23:21:24.054Z'
+          documentId: ejl119om9flskpqxo1w0gw24
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 25
+  data:
+    action: 'api::cluster.cluster.find'
+    createdAt: '2023-03-02T19:40:25.816Z'
+    updatedAt: '2023-03-02T19:40:25.816Z'
+    documentId: st3mi04eayqqkhym8n2h80sj
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 25
+        data:
+          action: 'api::cluster.cluster.find'
+          createdAt: '2023-03-02T19:40:25.816Z'
+          updatedAt: '2023-03-02T19:40:25.816Z'
+          documentId: st3mi04eayqqkhym8n2h80sj
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 26
+  data:
+    action: 'api::cluster.cluster.findOne'
+    createdAt: '2023-03-02T19:40:25.816Z'
+    updatedAt: '2023-03-02T19:40:25.816Z'
+    documentId: eomniy6n5y4hgg60cic93t9k
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 26
+        data:
+          action: 'api::cluster.cluster.findOne'
+          createdAt: '2023-03-02T19:40:25.816Z'
+          updatedAt: '2023-03-02T19:40:25.816Z'
+          documentId: eomniy6n5y4hgg60cic93t9k
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 28
+  data:
+    action: 'api::group.group.find'
+    createdAt: '2023-03-02T21:10:42.932Z'
+    updatedAt: '2023-03-02T21:10:42.932Z'
+    documentId: lg38kof98me8p4bzng4nrk0v
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 28
+        data:
+          action: 'api::group.group.find'
+          createdAt: '2023-03-02T21:10:42.932Z'
+          updatedAt: '2023-03-02T21:10:42.932Z'
+          documentId: lg38kof98me8p4bzng4nrk0v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 29
+  data:
+    action: 'api::author.author.find'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: uke1who9417w7z92j3ixo0wp
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 29
+        data:
+          action: 'api::author.author.find'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: uke1who9417w7z92j3ixo0wp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 30
+  data:
+    action: 'api::author.author.findOne'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: oeq9b8me9w2q2mmpeaxt5jub
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 30
+        data:
+          action: 'api::author.author.findOne'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: oeq9b8me9w2q2mmpeaxt5jub
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 31
+  data:
+    action: 'api::author.author.create'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: lfsvw1n4zkjaqsfuolfwlbrl
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 31
+        data:
+          action: 'api::author.author.create'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: lfsvw1n4zkjaqsfuolfwlbrl
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 32
+  data:
+    action: 'api::author.author.update'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: yjh0bm9ilr0vow3xi6c47wg5
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 32
+        data:
+          action: 'api::author.author.update'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: yjh0bm9ilr0vow3xi6c47wg5
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 33
+  data:
+    action: 'api::author.author.delete'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: dwt1llxwyr3u5qem760ydzke
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 33
+        data:
+          action: 'api::author.author.delete'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: dwt1llxwyr3u5qem760ydzke
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 34
+  data:
+    action: 'api::cluster.cluster.find'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: i3tmu43h12l2exdecz52tuo9
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 34
+        data:
+          action: 'api::cluster.cluster.find'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: i3tmu43h12l2exdecz52tuo9
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 35
+  data:
+    action: 'api::cluster.cluster.findOne'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: wdf72uj77zjvksgbnohs0ezr
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 35
+        data:
+          action: 'api::cluster.cluster.findOne'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: wdf72uj77zjvksgbnohs0ezr
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 36
+  data:
+    action: 'api::cluster.cluster.create'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: r7kuay82hpya15kn8tqtvqn3
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 36
+        data:
+          action: 'api::cluster.cluster.create'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: r7kuay82hpya15kn8tqtvqn3
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 37
+  data:
+    action: 'api::cluster.cluster.update'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: lmqn034ei81hefgiy8f4z2ny
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 37
+        data:
+          action: 'api::cluster.cluster.update'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: lmqn034ei81hefgiy8f4z2ny
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 38
+  data:
+    action: 'api::cluster.cluster.delete'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: l3n044nw5u20cipsajcqq53j
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 38
+        data:
+          action: 'api::cluster.cluster.delete'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: l3n044nw5u20cipsajcqq53j
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 39
+  data:
+    action: 'api::publication.publication.find'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: hxievzrxzk3db6mtd6njl3s2
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 39
+        data:
+          action: 'api::publication.publication.find'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: hxievzrxzk3db6mtd6njl3s2
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 40
+  data:
+    action: 'api::publication.publication.findOne'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: w2ec48bkrroq5kuaps0anfqf
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 40
+        data:
+          action: 'api::publication.publication.findOne'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: w2ec48bkrroq5kuaps0anfqf
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 41
+  data:
+    action: 'api::publication.publication.create'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: b2qww8og3tstot7ldpffmv5n
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 41
+        data:
+          action: 'api::publication.publication.create'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: b2qww8og3tstot7ldpffmv5n
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 42
+  data:
+    action: 'api::publication.publication.update'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: qfq5z9eg3thp9emr008jldy4
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 42
+        data:
+          action: 'api::publication.publication.update'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: qfq5z9eg3thp9emr008jldy4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 43
+  data:
+    action: 'api::publication.publication.delete'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: yupii3w81o5py5wnvb815ly6
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 43
+        data:
+          action: 'api::publication.publication.delete'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: yupii3w81o5py5wnvb815ly6
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 44
+  data:
+    action: 'api::venue.venue.find'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: ec2m0f6v3xc5pf1ou7617pfb
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 44
+        data:
+          action: 'api::venue.venue.find'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: ec2m0f6v3xc5pf1ou7617pfb
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 45
+  data:
+    action: 'api::venue.venue.findOne'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: b22wozefzm3uqa5z681aiial
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 45
+        data:
+          action: 'api::venue.venue.findOne'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: b22wozefzm3uqa5z681aiial
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 46
+  data:
+    action: 'api::venue.venue.update'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: xy3xounu88p2o1of9iky7qnr
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 46
+        data:
+          action: 'api::venue.venue.update'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: xy3xounu88p2o1of9iky7qnr
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 47
+  data:
+    action: 'api::venue.venue.create'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: n63wgm8lebtif0rpb15j7838
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 47
+        data:
+          action: 'api::venue.venue.create'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: n63wgm8lebtif0rpb15j7838
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 48
+  data:
+    action: 'api::venue.venue.delete'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: ox27d93m3lgvv73gpovpxv36
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 48
+        data:
+          action: 'api::venue.venue.delete'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: ox27d93m3lgvv73gpovpxv36
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 50
+  data:
+    action: 'plugin::upload.content-api.findOne'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: jypdsc03yvxh4614vju3ckol
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 50
+        data:
+          action: 'plugin::upload.content-api.findOne'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: jypdsc03yvxh4614vju3ckol
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 49
+  data:
+    action: 'plugin::upload.content-api.find'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: w7cw7kfx95pe6swmtm8vshmm
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 49
+        data:
+          action: 'plugin::upload.content-api.find'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: w7cw7kfx95pe6swmtm8vshmm
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 51
+  data:
+    action: 'plugin::upload.content-api.destroy'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: d7t1mgats3m6lyfcwarhb8bf
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 51
+        data:
+          action: 'plugin::upload.content-api.destroy'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: d7t1mgats3m6lyfcwarhb8bf
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 52
+  data:
+    action: 'plugin::upload.content-api.upload'
+    createdAt: '2023-03-04T03:56:07.710Z'
+    updatedAt: '2023-03-04T03:56:07.710Z'
+    documentId: fc63s8otwojre0rgxiv3ev9d
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 52
+        data:
+          action: 'plugin::upload.content-api.upload'
+          createdAt: '2023-03-04T03:56:07.710Z'
+          updatedAt: '2023-03-04T03:56:07.710Z'
+          documentId: fc63s8otwojre0rgxiv3ev9d
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 1
+      data:
+        name: Authenticated
+        description: Default role given to authenticated user.
+        type: authenticated
+        createdAt: '2023-03-01T15:23:01.317Z'
+        updatedAt: '2023-03-04T03:56:07.703Z'
+        documentId: ydsrsfcd2nudezes868p6ez2
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 54
+  data:
+    action: 'api::leadcv.leadcv.find'
+    createdAt: '2023-03-08T03:29:50.188Z'
+    updatedAt: '2023-03-08T03:29:50.188Z'
+    documentId: tpbkjr2jb02l37pnxn5s4xvh
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 54
+        data:
+          action: 'api::leadcv.leadcv.find'
+          createdAt: '2023-03-08T03:29:50.188Z'
+          updatedAt: '2023-03-08T03:29:50.188Z'
+          documentId: tpbkjr2jb02l37pnxn5s4xvh
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 55
+  data:
+    action: 'api::newsitem.newsitem.find'
+    createdAt: '2023-03-17T16:21:27.986Z'
+    updatedAt: '2023-03-17T16:21:27.986Z'
+    documentId: fki66pdnu419oxiqrygehuhe
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 55
+        data:
+          action: 'api::newsitem.newsitem.find'
+          createdAt: '2023-03-17T16:21:27.986Z'
+          updatedAt: '2023-03-17T16:21:27.986Z'
+          documentId: fki66pdnu419oxiqrygehuhe
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 56
+  data:
+    action: 'api::newsitem.newsitem.findOne'
+    createdAt: '2023-03-17T16:21:27.986Z'
+    updatedAt: '2023-03-17T16:21:27.986Z'
+    documentId: e2bchezaa66mwptzu8pg6t6f
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 56
+        data:
+          action: 'api::newsitem.newsitem.findOne'
+          createdAt: '2023-03-17T16:21:27.986Z'
+          updatedAt: '2023-03-17T16:21:27.986Z'
+          documentId: e2bchezaa66mwptzu8pg6t6f
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 59
+  data:
+    action: 'api::blogpost.blogpost.find'
+    createdAt: '2023-03-18T02:56:39.585Z'
+    updatedAt: '2023-03-18T02:56:39.585Z'
+    documentId: ymfk9g2fo27xl6wyepllofxg
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 59
+        data:
+          action: 'api::blogpost.blogpost.find'
+          createdAt: '2023-03-18T02:56:39.585Z'
+          updatedAt: '2023-03-18T02:56:39.585Z'
+          documentId: ymfk9g2fo27xl6wyepllofxg
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'
+- type: 'plugin::users-permissions.permission'
+  id: 60
+  data:
+    action: 'api::blogpost.blogpost.findOne'
+    createdAt: '2023-03-18T02:56:39.585Z'
+    updatedAt: '2023-03-18T02:56:39.585Z'
+    documentId: n7szs5lj8rgq6cf8xv1cf0ei
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.315Z'
+    localizations:
+      - type: 'plugin::users-permissions.permission'
+        id: 60
+        data:
+          action: 'api::blogpost.blogpost.findOne'
+          createdAt: '2023-03-18T02:56:39.585Z'
+          updatedAt: '2023-03-18T02:56:39.585Z'
+          documentId: n7szs5lj8rgq6cf8xv1cf0ei
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.315Z'
+    role:
+      type: 'plugin::users-permissions.role'
+      id: 2
+      data:
+        name: Public
+        description: Default role given to unauthenticated user.
+        type: public
+        createdAt: '2023-03-01T15:23:01.322Z'
+        updatedAt: '2023-03-18T02:59:17.814Z'
+        documentId: f7i9rkuf8r0v1i1rx9a8jleg
+        locale: null
+        publishedAt: '2024-11-04T18:31:54.322Z'

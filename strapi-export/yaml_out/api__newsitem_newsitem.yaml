@@ -1,0 +1,1475 @@
+- type: 'api::newsitem.newsitem'
+  id: 2
+  data:
+    date: '2023-04-01'
+    description: >-
+      [April](https://aprilwang.me/), [Ashley](https://gezhangrp.com/), [Lei](https://raynezhang.me),
+      [Mauli](https://pandeymauli.github.io/research/), and [Rebecca](http://www-personal.umich.edu/~rkros/) will be in
+      Hamburg for CHI 2023. Say "hi" if you're there!
+    createdAt: '2023-03-18T17:50:24.797Z'
+    updatedAt: '2023-03-19T03:32:37.038Z'
+    documentId: e6e8gn4zbbjpllo65sspeewc
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 72
+        data:
+          createdAt: '2023-03-03T17:54:19.071Z'
+          updatedAt: '2024-07-23T03:03:06.676Z'
+          given_name: Ashley
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://gezhangrp.com/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/),
+            advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and
+            learning in programming education. Currently, she is working around tools to make students' code
+            understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from
+            [Peking University](http://english.pku.edu.cn/) in July, 2021.
+          color: '#a19cb9'
+          use_local_homepage: false
+          documentId: y8sr78d1ye9ll0vuj2ef2h8v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 18
+              url: 'https://twitter.com/gezhang001'
+              description: Twitter
+            - id: 19
+              url: 'https://github.com/AshleyZG'
+              description: GitHub
+            - id: 20
+              url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+              description: Google Scholar
+            - id: 23
+              url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+              description: CV
+      - type: 'api::author.author'
+        id: 6
+        data:
+          createdAt: '2023-03-02T18:42:27.785Z'
+          updatedAt: '2024-10-01T17:53:21.504Z'
+          given_name: Lei
+          family_name: Zhang
+          middle_name: null
+          membership: alum
+          homepage: 'http://raynezhang.me/'
+          short_bio: |-
+            Postdoctoral Researcher
+            Princeton University
+          long_bio: >-
+            Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an
+            Assistant Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei
+            earned his Ph.D. at the [University of Michigan School of Information](https://www.si.umich.edu/), advised
+            by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/).
+            His research in human-computer interaction focuses on building authoring tools that enable end-users to
+            craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing
+            interactive systems, his work explores techniques that leverage computation and interaction to empower
+            people's creativity, collaboration, and communication in the context of content creation. He holds a BE in
+            Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production,
+            skateboards, and 35mm film photography.
+          color: '#7594F0'
+          use_local_homepage: false
+          documentId: jlfla2kwny0lc8llkktg7yw4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 13
+              url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 14
+              url: 'https://github.com/RayneZhang/'
+              description: Github
+            - id: 16
+              url: 'https://twitter.com/itsraynez'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 8
+        data:
+          createdAt: '2023-03-02T18:42:28.231Z'
+          updatedAt: '2024-01-12T21:26:56.335Z'
+          given_name: Rebecca
+          family_name: Krosnick
+          middle_name: null
+          membership: alum
+          homepage: 'http://www-personal.umich.edu/~rkros/'
+          short_bio: |-
+            Ph.D. student
+            Michigan CSE
+          long_bio: >-
+            Dr. Krosnick is a software engineer at [Postman Labs](https://www.postman.com/). She earned her PhD from
+            [the EECS department at the University of Michigan](https://eecs.engin.umich.edu/), advised by [Professor
+            Steve Oney](https://from.so/Steve_Oney). She is generally interested in designing end-user programming
+            systems. She currently is exploring ways to make creating and editing web macros more intuitive and visual,
+            and less script-heavy. She has also designed programming-by-demonstration systems for creating responsive
+            and interactive user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received
+            her SB and MEng in Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor
+            Rob Miller](https://www.csail.mit.edu/person/rob-miller). 
+          color: '#BC7B71'
+          use_local_homepage: false
+          documentId: ld8o7ygrlx8uvxueds7uufnp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 4
+              url: 'https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 5
+              url: 'https://twitter.com/rkrosnick'
+              description: Twitter
+            - id: 6
+              url: 'https://www.linkedin.com/in/rebecca-krosnick-315b2180'
+              description: Linkedin
+      - type: 'api::author.author'
+        id: 7
+        data:
+          createdAt: '2023-03-02T18:42:28.012Z'
+          updatedAt: '2024-01-12T22:43:22.648Z'
+          given_name: Mauli
+          family_name: Pandey
+          middle_name: null
+          membership: alum
+          homepage: 'https://pandeymauli.github.io/research/'
+          short_bio: |-
+            UX Researcher
+            Google
+          long_bio: >-
+            Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of
+            Michigan School of Information](https://www.si.umich.edu/), where she was advised by [Steve
+            Oney](https://from.so/Steve_Oney). Her research interests lie at the intersection of Human-Computer
+            Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and
+            education for people with visual impairments by understanding their experiences through qualitative research
+            methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of
+            Information. During her MS, she also worked closely with [Matthew Kay](http://www.mjskay.com/), [Michael
+            Nebeling](http://www.michael-nebeling.de/), and [Sun Young Park](http://sunyoungpark.weebly.com/). For her
+            undergraduate studies, she attended the [Indian Institute of Technology Guwahati](http://www.iitg.ac.in/)
+            (Design and Electronics, 2014), and was advised by [Pradeep
+            Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+          color: ' #D3BDC1'
+          use_local_homepage: false
+          documentId: tr2137by2kxppuspruzqcwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 7
+              url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 8
+              url: 'https://github.com/pandeymauli/'
+              description: Github
+            - id: 9
+              url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+              description: LinkedIn
+    relevant_publications:
+      - type: 'api::publication.publication'
+        id: 50
+        data:
+          title: 'Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials'
+          abstract: >-
+            Multi-stage programming tutorials are key learning resources for programmers, using progressive incremental
+            steps to teach them how to build larger software systems. A good multi-stage tutorial describes the code
+            clearly, explains the rationale and code changes for each step, and allows readers to experiment as they
+            work through the tutorial. In practice, it is time-consuming for authors to create tutorials with these
+            attributes. In this paper, we introduce Colaroid, an interactive authoring tool for creating high quality
+            multi-stage tutorials. Colaroid tutorials are augmented computational notebooks, where snippets and outputs
+            represent a snapshot of a project, with source code differences highlighted, complete source code context
+            for each snippet, and the ability to load and tinker with any stage of the project in a linked IDE. In two
+            laboratory studies, we found Colaroid makes it easy to create multi-stage tutorials, while offering
+            advantages to readers compared to video and web-based tutorials.
+          short_description: >-
+            Colaroid is an extension to the Visual Studio Code IDE that makes it easier to create mutli-step tutorials
+            about a large code sample. Developers can write their code in the IDE and as they are writing their code,
+            Colaroid allows them to divide their work into steps. Colaroid tutorials are augmented computational
+            notebooks, where snippets and outputs represent a snapshot of a project, with source code differences
+            highlighted, complete source code context for each snippet, and the ability to load and tinker with any
+            stage of the project in a linked IDE.
+          award: honorable_mention
+          award_description: null
+          createdAt: '2023-03-03T18:29:03.754Z'
+          updatedAt: '2025-05-12T19:16:29.018Z'
+          pub_details: null
+          documentId: t7s5dcxnseisb0le7wmxew4q
+          locale: null
+          publishedAt: '2025-05-12T19:16:28.924Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 51
+        data:
+          title: 'VizProg: Identifying Misunderstandings by Visualizing Students'' Coding Progress'
+          abstract: >-
+            Programming instructors often conduct in-class exercises to help them identify students that are falling
+            behind and surface students' misconceptions. However, as we found in interviews with programming
+            instructors, monitoring students' progress during exercises is difficult, particularly for large classes. We
+            present VizProg, a system that allows instructors to monitor and inspect students' coding progress in
+            real-time during in-class exercises. VizProg represents students' statuses as a 2D Euclidean spatial map
+            that encodes the students' problem-solving approaches and progress in real-time. VizProg allows instructors
+            to navigate the temporal and structural evolution of students' code, understand relationships between code,
+            and determine when to provide feedback. A comparison experiment showed that VizProg helped to identify more
+            students' problems than a baseline system. VizProg also provides richer and more comprehensive information
+            for identifying important student behavior. By managing students' activities at scale, this work presents a
+            new paradigm for improving the quality of live learning.
+          short_description: >-
+            VizProg is a tool that allows instructors of large programming classes to monitor students' progress at
+            scale. It represents students' code in a 2D map where dots representing students move further to the right
+            as they get closer to a correct solution. VizProg uses vertical space to represent different approaches to
+            solving the problem (so students towards the bottom of the map are using a different approach than students
+            at the top of the map).
+          award: honorable_mention
+          award_description: null
+          createdAt: '2023-03-03T18:30:18.213Z'
+          updatedAt: '2024-10-24T17:08:35.208Z'
+          pub_details: null
+          documentId: maf44rugxwnrym1npi4v56h0
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 49
+        data:
+          title: 'VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality'
+          abstract: ' Immersive authoring tools allow users to intuitively create and manipulate 3D scenes while immersed in Virtual Reality (VR). Collaboratively designing these scenes is a creative process that involves numerous edits, explorations of design alternatives, and frequent communication with collaborators. Version Control Systems (VCSs) help users achieve this by keeping track of the version history and creating a shared hub for communication. However, most VCSs are unsuitable for managing the version history of VR content because their underlying line differencing mechanism is designed for text and lacks the semantic information of 3D content; and the widely adopted commit model is designed for asynchronous collaboration rather than real-time awareness and communication in VR. We introduce VRGit, a new collaborative VCS that visualizes version history as a directed graph composed of 3D miniatures, and enables users to easily navigate versions, create branches, as well as preview and reuse versions directly in VR. Beyond individual uses, VRGit also facilitates synchronous collaboration in VR by providing awareness of users’ activities and version history through portals and shared history visualizations. In a lab study with 14 participants (seven groups), we demonstrate that VRGit enables users to easily manage version history both individually and collaboratively in VR.'
+          short_description: >-
+            A version control system designed especially for Virtual Reality (VR). VRGit allows users to view and
+            navigate the version history of a 3-D scene while immersed in VR. It also allows users to share and discuss
+            history graphs collaboratively.
+          award: none
+          award_description: null
+          createdAt: '2023-03-03T18:08:04.589Z'
+          updatedAt: '2023-03-07T17:33:44.575Z'
+          pub_details: null
+          documentId: eq848qqg14s5v8c0k15rz5ce
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 52
+        data:
+          title: How Pairing by Code Similarity Influences Discussions in Peer Learning
+          abstract: >-
+            Peer learning, as a form of collaborative learning, has been widely used in programming courses as a means
+            of promoting active learning and enhancing students' programming skills. However, it is challenging for
+            instructors to group students effectively so that they can have fruitful conversations. We conducted a study
+            with 15 students from an introductory programming course to investigate whether and how grouping students
+            with similar or different solutions affects the discussions that take place within groups. The findings
+            indicate that pairing students by the similarity of their code might influence students' learning and coding
+            skills. Specifically, students who were paired with people that had different solutions had, on average,
+            more engaging conversations and were more likely to write more diverse solutions in the future. The results
+            also highlight the need for tools to facilitate the pairing process in programming courses in order to
+            optimize the learning outcomes for students. 
+          short_description: null
+          award: none
+          award_description: null
+          createdAt: '2023-03-03T18:45:36.810Z'
+          updatedAt: '2025-05-12T18:54:10.590Z'
+          pub_details: null
+          documentId: cwvuwekk2e56lh7mtd1apviy
+          locale: null
+          publishedAt: '2025-05-12T18:54:10.441Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 54
+        data:
+          title: Promises and Pitfalls of Using LLMs for Scraping Web UIs
+          abstract: >-
+            ChatGPT and other publicly available large language models (LLMs) put AI into the hands of everyday computer
+            users, offering the possibility of automating computer tasks. One candidate task is web scraping. We
+            informally experimented with ChatGPT to explore the potential promises and pitfalls of using it for scraping
+            data from web user interfaces. We share our observations and considerations for future human-LLM web
+            scraping systems.
+          short_description: null
+          award: none
+          award_description: null
+          createdAt: '2023-03-17T01:43:44.986Z'
+          updatedAt: '2025-05-12T18:53:29.972Z'
+          pub_details: null
+          documentId: s5ptp0khfl1jkw8hws7txepi
+          locale: null
+          publishedAt: '2025-05-12T18:53:29.784Z'
+          submission_status: null
+          youtube_videos: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 2
+        data:
+          date: '2023-04-01'
+          description: >-
+            [April](https://aprilwang.me/), [Ashley](https://gezhangrp.com/), [Lei](https://raynezhang.me),
+            [Mauli](https://pandeymauli.github.io/research/), and [Rebecca](http://www-personal.umich.edu/~rkros/) will
+            be in Hamburg for CHI 2023. Say "hi" if you're there!
+          createdAt: '2023-03-18T17:50:24.797Z'
+          updatedAt: '2023-03-19T03:32:37.038Z'
+          documentId: e6e8gn4zbbjpllo65sspeewc
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 6
+  data:
+    date: '2023-11-01'
+    description: >-
+      [April Wang](https://aprilwang.me/) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer Science.
+      Congratulations, Professor Wang!
+    createdAt: '2023-10-12T21:17:13.858Z'
+    updatedAt: '2023-10-12T21:17:22.435Z'
+    documentId: ap13uw5o19zops3ccregpo1b
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 6
+        data:
+          date: '2023-11-01'
+          description: >-
+            [April Wang](https://aprilwang.me/) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer
+            Science. Congratulations, Professor Wang!
+          createdAt: '2023-10-12T21:17:13.858Z'
+          updatedAt: '2023-10-12T21:17:22.435Z'
+          documentId: ap13uw5o19zops3ccregpo1b
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 7
+  data:
+    date: '2023-11-01'
+    description: >-
+      [Mauli Pandey](https://pandeymauli.github.io/research/) (2023 alum) joined Google as a UX Researcher.
+      Congratulations, Dr. Pandey!
+    createdAt: '2023-10-12T21:17:52.834Z'
+    updatedAt: '2023-10-13T14:26:53.522Z'
+    documentId: dz7eqnu2qcszcxw6a0iicpmk
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 7
+        data:
+          createdAt: '2023-03-02T18:42:28.012Z'
+          updatedAt: '2024-01-12T22:43:22.648Z'
+          given_name: Mauli
+          family_name: Pandey
+          middle_name: null
+          membership: alum
+          homepage: 'https://pandeymauli.github.io/research/'
+          short_bio: |-
+            UX Researcher
+            Google
+          long_bio: >-
+            Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of
+            Michigan School of Information](https://www.si.umich.edu/), where she was advised by [Steve
+            Oney](https://from.so/Steve_Oney). Her research interests lie at the intersection of Human-Computer
+            Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and
+            education for people with visual impairments by understanding their experiences through qualitative research
+            methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of
+            Information. During her MS, she also worked closely with [Matthew Kay](http://www.mjskay.com/), [Michael
+            Nebeling](http://www.michael-nebeling.de/), and [Sun Young Park](http://sunyoungpark.weebly.com/). For her
+            undergraduate studies, she attended the [Indian Institute of Technology Guwahati](http://www.iitg.ac.in/)
+            (Design and Electronics, 2014), and was advised by [Pradeep
+            Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+          color: ' #D3BDC1'
+          use_local_homepage: false
+          documentId: tr2137by2kxppuspruzqcwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 7
+              url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 8
+              url: 'https://github.com/pandeymauli/'
+              description: Github
+            - id: 9
+              url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+              description: LinkedIn
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 7
+        data:
+          date: '2023-11-01'
+          description: >-
+            [Mauli Pandey](https://pandeymauli.github.io/research/) (2023 alum) joined Google as a UX Researcher.
+            Congratulations, Dr. Pandey!
+          createdAt: '2023-10-12T21:17:52.834Z'
+          updatedAt: '2023-10-13T14:26:53.522Z'
+          documentId: dz7eqnu2qcszcxw6a0iicpmk
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 8
+  data:
+    date: '2023-09-01'
+    description: Congratulations to Dr. Mauli Pandey and Dr. April Wang on their exceptional Ph.D. defenses!
+    createdAt: '2023-10-13T14:27:54.132Z'
+    updatedAt: '2023-10-13T14:27:54.132Z'
+    documentId: jlzslr8t19yfn06suoqxsr1j
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 7
+        data:
+          createdAt: '2023-03-02T18:42:28.012Z'
+          updatedAt: '2024-01-12T22:43:22.648Z'
+          given_name: Mauli
+          family_name: Pandey
+          middle_name: null
+          membership: alum
+          homepage: 'https://pandeymauli.github.io/research/'
+          short_bio: |-
+            UX Researcher
+            Google
+          long_bio: >-
+            Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of
+            Michigan School of Information](https://www.si.umich.edu/), where she was advised by [Steve
+            Oney](https://from.so/Steve_Oney). Her research interests lie at the intersection of Human-Computer
+            Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and
+            education for people with visual impairments by understanding their experiences through qualitative research
+            methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of
+            Information. During her MS, she also worked closely with [Matthew Kay](http://www.mjskay.com/), [Michael
+            Nebeling](http://www.michael-nebeling.de/), and [Sun Young Park](http://sunyoungpark.weebly.com/). For her
+            undergraduate studies, she attended the [Indian Institute of Technology Guwahati](http://www.iitg.ac.in/)
+            (Design and Electronics, 2014), and was advised by [Pradeep
+            Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+          color: ' #D3BDC1'
+          use_local_homepage: false
+          documentId: tr2137by2kxppuspruzqcwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 7
+              url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 8
+              url: 'https://github.com/pandeymauli/'
+              description: Github
+            - id: 9
+              url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+              description: LinkedIn
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 8
+        data:
+          date: '2023-09-01'
+          description: Congratulations to Dr. Mauli Pandey and Dr. April Wang on their exceptional Ph.D. defenses!
+          createdAt: '2023-10-13T14:27:54.132Z'
+          updatedAt: '2023-10-13T14:27:54.132Z'
+          documentId: jlzslr8t19yfn06suoqxsr1j
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 9
+  data:
+    date: '2023-09-07'
+    description: 'Steve Oney was elected to [the VL/HCC steering committee](https://conferences.computer.org/VLHCC/SC-members.html)'
+    createdAt: '2023-10-13T14:29:38.122Z'
+    updatedAt: '2023-10-13T14:29:38.122Z'
+    documentId: ly6y7t0j95xqk7ja9v0iwoly
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 9
+        data:
+          date: '2023-09-07'
+          description: >-
+            Steve Oney was elected to [the VL/HCC steering
+            committee](https://conferences.computer.org/VLHCC/SC-members.html)
+          createdAt: '2023-10-13T14:29:38.122Z'
+          updatedAt: '2023-10-13T14:29:38.122Z'
+          documentId: ly6y7t0j95xqk7ja9v0iwoly
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 10
+  data:
+    date: '2023-10-05'
+    description: 'Ashley Zhang presented at VL/HCC 2023 in Washington, D.C.!'
+    createdAt: '2023-10-13T14:47:53.179Z'
+    updatedAt: '2023-10-13T14:47:53.179Z'
+    documentId: exuzrj9fiad265lmiz0k0e7q
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 72
+        data:
+          createdAt: '2023-03-03T17:54:19.071Z'
+          updatedAt: '2024-07-23T03:03:06.676Z'
+          given_name: Ashley
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://gezhangrp.com/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/),
+            advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and
+            learning in programming education. Currently, she is working around tools to make students' code
+            understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from
+            [Peking University](http://english.pku.edu.cn/) in July, 2021.
+          color: '#a19cb9'
+          use_local_homepage: false
+          documentId: y8sr78d1ye9ll0vuj2ef2h8v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 18
+              url: 'https://twitter.com/gezhang001'
+              description: Twitter
+            - id: 19
+              url: 'https://github.com/AshleyZG'
+              description: GitHub
+            - id: 20
+              url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+              description: Google Scholar
+            - id: 23
+              url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+              description: CV
+    relevant_publications:
+      - type: 'api::publication.publication'
+        id: 56
+        data:
+          title: "\tRunEx: Augmenting Regular-Expression Code Search with Runtime Values"
+          abstract: >-
+            Programming instructors frequently use in-class exercises to help students reinforce concepts learned in
+            lecture. However, identifying class-wide patterns and mistakes in students' code can be challenging,
+            especially for large classes. Conventional code search tools are insufficient for this purpose as they are
+            not designed for finding semantic structures underlying large students' code corpus, where the code samples
+            are similar, relatively small, and written by novice programmers. To address this limitation, we introduce
+            RunEx, a novel code search tool where instructors can effortlessly generate queries with minimal prior
+            knowledge of code search and rapidly search through a large code corpus. The tool consists of two parts: 1)
+            a syntax that augments regular expressions with runtime values, and 2) a user interface that enables
+            instructors to construct runtime and syntax-based queries with high expressiveness and apply combined
+            filters to code examples. Our comparison experiment shows that RunEx outperforms baseline systems with text
+            matching alone in identifying code patterns with higher accuracy. Furthermore, RunEx features a user
+            interface that requires minimal prior knowledge to create search queries. Through searching and analyzing
+            students' code with runtime values at scale, our work introduces a new paradigm for understanding patterns
+            and errors in programming education.
+          short_description: >-
+            A system that improves code search by augmenting regular expressions with the ability to specify constraints
+            on runtime values of specific expressions.
+          award: none
+          award_description: null
+          createdAt: '2023-10-13T14:36:17.770Z'
+          updatedAt: '2023-10-13T14:36:17.770Z'
+          pub_details: null
+          documentId: n78cw9t7j9a4crsuiz65yo86
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 10
+        data:
+          date: '2023-10-05'
+          description: 'Ashley Zhang presented at VL/HCC 2023 in Washington, D.C.!'
+          createdAt: '2023-10-13T14:47:53.179Z'
+          updatedAt: '2023-10-13T14:47:53.179Z'
+          documentId: exuzrj9fiad265lmiz0k0e7q
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 11
+  data:
+    date: '2023-09-01'
+    description: 'We welcomed Jiacheng Zhang, a new UMSI Ph.D. student, to the spot group!'
+    createdAt: '2023-10-13T14:49:06.316Z'
+    updatedAt: '2023-10-13T14:49:06.316Z'
+    documentId: akmm9vrspxtzfilqmxxi569i
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 102
+        data:
+          createdAt: '2023-10-12T20:57:48.155Z'
+          updatedAt: '2023-10-13T23:37:15.015Z'
+          given_name: Jiacheng
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://susan-zjc.github.io/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Jiacheng Zhang is a first-year PhD student advised by [Professor Steve Oney](https://from.so/Steve_Oney/).
+            Before that, she earned her Bachelor's degree in Computer Science from [the University of
+            Michigan](https://umich.edu/) and a Bachelor's in Electrical and Computer Engineering from [Shanghai Jiao
+            Tong University](https://en.sjtu.edu.cn/). Her research interest lies in Human-Centered Artificial
+            Intelligence. 
+          color: ' #D3BB91'
+          use_local_homepage: false
+          documentId: ta577v8l2iij9cpjns35ibu5
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 11
+        data:
+          date: '2023-09-01'
+          description: 'We welcomed Jiacheng Zhang, a new UMSI Ph.D. student, to the spot group!'
+          createdAt: '2023-10-13T14:49:06.316Z'
+          updatedAt: '2023-10-13T14:49:06.316Z'
+          documentId: akmm9vrspxtzfilqmxxi569i
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 12
+  data:
+    date: '2023-11-06'
+    description: Congratulations to Dr. Rebecca Krosnick on her awesome Ph.D. defense!
+    createdAt: '2023-11-06T19:43:52.400Z'
+    updatedAt: '2023-11-06T19:43:52.400Z'
+    documentId: u21pkdgve8af81u39vt7ut0j
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 8
+        data:
+          createdAt: '2023-03-02T18:42:28.231Z'
+          updatedAt: '2024-01-12T21:26:56.335Z'
+          given_name: Rebecca
+          family_name: Krosnick
+          middle_name: null
+          membership: alum
+          homepage: 'http://www-personal.umich.edu/~rkros/'
+          short_bio: |-
+            Ph.D. student
+            Michigan CSE
+          long_bio: >-
+            Dr. Krosnick is a software engineer at [Postman Labs](https://www.postman.com/). She earned her PhD from
+            [the EECS department at the University of Michigan](https://eecs.engin.umich.edu/), advised by [Professor
+            Steve Oney](https://from.so/Steve_Oney). She is generally interested in designing end-user programming
+            systems. She currently is exploring ways to make creating and editing web macros more intuitive and visual,
+            and less script-heavy. She has also designed programming-by-demonstration systems for creating responsive
+            and interactive user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received
+            her SB and MEng in Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor
+            Rob Miller](https://www.csail.mit.edu/person/rob-miller). 
+          color: '#BC7B71'
+          use_local_homepage: false
+          documentId: ld8o7ygrlx8uvxueds7uufnp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 4
+              url: 'https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 5
+              url: 'https://twitter.com/rkrosnick'
+              description: Twitter
+            - id: 6
+              url: 'https://www.linkedin.com/in/rebecca-krosnick-315b2180'
+              description: Linkedin
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 12
+        data:
+          date: '2023-11-06'
+          description: Congratulations to Dr. Rebecca Krosnick on her awesome Ph.D. defense!
+          createdAt: '2023-11-06T19:43:52.400Z'
+          updatedAt: '2023-11-06T19:43:52.400Z'
+          documentId: u21pkdgve8af81u39vt7ut0j
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 14
+  data:
+    date: '2024-01-08'
+    description: >-
+      [Dr. Rebecca Krosnick](https://public.websites.umich.edu/~rkros/) (2023 Ph.D. graduate) joined
+      [Postman](https://www.postman.com/) as a software engineer! Congratulations, Dr. Krosnick!
+    createdAt: '2024-01-12T21:23:36.357Z'
+    updatedAt: '2024-01-12T21:25:48.716Z'
+    documentId: cknuq2s6hqbchoqzucyt0xf8
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 8
+        data:
+          createdAt: '2023-03-02T18:42:28.231Z'
+          updatedAt: '2024-01-12T21:26:56.335Z'
+          given_name: Rebecca
+          family_name: Krosnick
+          middle_name: null
+          membership: alum
+          homepage: 'http://www-personal.umich.edu/~rkros/'
+          short_bio: |-
+            Ph.D. student
+            Michigan CSE
+          long_bio: >-
+            Dr. Krosnick is a software engineer at [Postman Labs](https://www.postman.com/). She earned her PhD from
+            [the EECS department at the University of Michigan](https://eecs.engin.umich.edu/), advised by [Professor
+            Steve Oney](https://from.so/Steve_Oney). She is generally interested in designing end-user programming
+            systems. She currently is exploring ways to make creating and editing web macros more intuitive and visual,
+            and less script-heavy. She has also designed programming-by-demonstration systems for creating responsive
+            and interactive user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received
+            her SB and MEng in Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor
+            Rob Miller](https://www.csail.mit.edu/person/rob-miller). 
+          color: '#BC7B71'
+          use_local_homepage: false
+          documentId: ld8o7ygrlx8uvxueds7uufnp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 4
+              url: 'https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 5
+              url: 'https://twitter.com/rkrosnick'
+              description: Twitter
+            - id: 6
+              url: 'https://www.linkedin.com/in/rebecca-krosnick-315b2180'
+              description: Linkedin
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 14
+        data:
+          date: '2024-01-08'
+          description: >-
+            [Dr. Rebecca Krosnick](https://public.websites.umich.edu/~rkros/) (2023 Ph.D. graduate) joined
+            [Postman](https://www.postman.com/) as a software engineer! Congratulations, Dr. Krosnick!
+          createdAt: '2024-01-12T21:23:36.357Z'
+          updatedAt: '2024-01-12T21:25:48.716Z'
+          documentId: cknuq2s6hqbchoqzucyt0xf8
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 15
+  data:
+    date: null
+    description: >-
+      [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
+      Professor after a one-term postdoc at Princeton. Congratulations, Lei!
+    createdAt: '2024-04-27T15:57:49.246Z'
+    updatedAt: '2024-04-27T16:09:42.984Z'
+    documentId: tu2s0w84umfk9nftmohqb736
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 6
+        data:
+          createdAt: '2023-03-02T18:42:27.785Z'
+          updatedAt: '2024-10-01T17:53:21.504Z'
+          given_name: Lei
+          family_name: Zhang
+          middle_name: null
+          membership: alum
+          homepage: 'http://raynezhang.me/'
+          short_bio: |-
+            Postdoctoral Researcher
+            Princeton University
+          long_bio: >-
+            Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an
+            Assistant Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei
+            earned his Ph.D. at the [University of Michigan School of Information](https://www.si.umich.edu/), advised
+            by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/).
+            His research in human-computer interaction focuses on building authoring tools that enable end-users to
+            craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing
+            interactive systems, his work explores techniques that leverage computation and interaction to empower
+            people's creativity, collaboration, and communication in the context of content creation. He holds a BE in
+            Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production,
+            skateboards, and 35mm film photography.
+          color: '#7594F0'
+          use_local_homepage: false
+          documentId: jlfla2kwny0lc8llkktg7yw4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 13
+              url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 14
+              url: 'https://github.com/RayneZhang/'
+              description: Github
+            - id: 16
+              url: 'https://twitter.com/itsraynez'
+              description: Twitter
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 15
+        data:
+          date: null
+          description: >-
+            [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an
+            Assistant Professor after a one-term postdoc at Princeton. Congratulations, Lei!
+          createdAt: '2024-04-27T15:57:49.246Z'
+          updatedAt: '2024-04-27T16:09:42.984Z'
+          documentId: tu2s0w84umfk9nftmohqb736
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 17
+  data:
+    date: '2024-06-04'
+    description: >-
+      [Ashley](https://gezhangrp.com/) will be presenting her paper on representing code at scale at Learning @ Scale in
+      Atlanta!
+    createdAt: '2024-04-27T16:27:56.666Z'
+    updatedAt: '2024-04-27T16:27:56.666Z'
+    documentId: hez6mzxrhd12b57xl10vzmfn
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 72
+        data:
+          createdAt: '2023-03-03T17:54:19.071Z'
+          updatedAt: '2024-07-23T03:03:06.676Z'
+          given_name: Ashley
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://gezhangrp.com/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/),
+            advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and
+            learning in programming education. Currently, she is working around tools to make students' code
+            understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from
+            [Peking University](http://english.pku.edu.cn/) in July, 2021.
+          color: '#a19cb9'
+          use_local_homepage: false
+          documentId: y8sr78d1ye9ll0vuj2ef2h8v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 18
+              url: 'https://twitter.com/gezhang001'
+              description: Twitter
+            - id: 19
+              url: 'https://github.com/AshleyZG'
+              description: GitHub
+            - id: 20
+              url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+              description: Google Scholar
+            - id: 23
+              url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+              description: CV
+    relevant_publications:
+      - type: 'api::publication.publication'
+        id: 58
+        data:
+          title: 'CFlow: Supporting Semantic Flow Analysis of Students'' Code in Programming Problems at Scale'
+          abstract: >-
+            The high demand for computer science education has led to high enrollments, with thousands of students in
+            many introductory courses. In such large courses, it can be overwhelmingly difficult for instructors to
+            understand class-wide problem-solving patterns or issues, which is crucial for improving instruction and
+            addressing important pedagogical challenges. In this paper, we propose a technique and system, *CFlow*, for
+            creating understandable and navigable representations of code at scale. CFlow is able to represent thousands
+            of code samples in a visualization that resembles a single code sample. CFlow creates scalable code
+            representations by (1) clustering individual statements with similar semantic purposes, (2) presenting
+            clustered statements in a way that maintains semantic relationships between statements, (3) representing the
+            correctness of different variations as a histogram, and (4) allowing users to navigate through solutions
+            interactively using semantic filters. With a multi-level view design, users can navigate high-level
+            patterns, and low-level implementations. This is in contrast to prior tools that either limit their focus on
+            isolated statements (and thus discard the surrounding context of those statements) or cluster entire code
+            samples (which can lead to large numbers of clusters---for example, if there are *n* code features and *m*
+            implementations of each, there can be m^n clusters). We evaluated the effectiveness of CFlow with a
+            comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled
+            twice as many desired patterns from over 6,000 submissions.
+          short_description: >-
+            Introduces CFlow, a system for visualizing and analyzing large numbers of student code submissions to help
+            instructors understand common mistakes and patterns. CFlow uses semantic labeling and code structure
+            analysis to cluster code lines across submissions and present them in a visualization that resembles a
+            single code sample, allowing instructors to see the overall semantic flow while still being able to dive
+            into individual submissions.
+          award: best_paper
+          award_description: null
+          createdAt: '2024-04-27T16:20:41.161Z'
+          updatedAt: '2024-07-19T22:40:01.588Z'
+          pub_details: null
+          documentId: ajfqq2s32x9hd14aouv36dba
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 17
+        data:
+          date: '2024-06-04'
+          description: >-
+            [Ashley](https://gezhangrp.com/) will be presenting her paper on representing code at scale at Learning @
+            Scale in Atlanta!
+          createdAt: '2024-04-27T16:27:56.666Z'
+          updatedAt: '2024-04-27T16:27:56.666Z'
+          documentId: hez6mzxrhd12b57xl10vzmfn
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 16
+  data:
+    date: null
+    description: Several group members (and alumni) will be in Hawaii for CHI 2024. Say "hi" if you're there!
+    createdAt: '2024-04-27T16:26:58.805Z'
+    updatedAt: '2024-05-15T16:19:34.869Z'
+    documentId: qnv5133guc2komjbgqd5ugh4
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 72
+        data:
+          createdAt: '2023-03-03T17:54:19.071Z'
+          updatedAt: '2024-07-23T03:03:06.676Z'
+          given_name: Ashley
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://gezhangrp.com/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/),
+            advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and
+            learning in programming education. Currently, she is working around tools to make students' code
+            understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from
+            [Peking University](http://english.pku.edu.cn/) in July, 2021.
+          color: '#a19cb9'
+          use_local_homepage: false
+          documentId: y8sr78d1ye9ll0vuj2ef2h8v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 18
+              url: 'https://twitter.com/gezhang001'
+              description: Twitter
+            - id: 19
+              url: 'https://github.com/AshleyZG'
+              description: GitHub
+            - id: 20
+              url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+              description: Google Scholar
+            - id: 23
+              url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+              description: CV
+      - type: 'api::author.author'
+        id: 6
+        data:
+          createdAt: '2023-03-02T18:42:27.785Z'
+          updatedAt: '2024-10-01T17:53:21.504Z'
+          given_name: Lei
+          family_name: Zhang
+          middle_name: null
+          membership: alum
+          homepage: 'http://raynezhang.me/'
+          short_bio: |-
+            Postdoctoral Researcher
+            Princeton University
+          long_bio: >-
+            Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an
+            Assistant Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei
+            earned his Ph.D. at the [University of Michigan School of Information](https://www.si.umich.edu/), advised
+            by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/).
+            His research in human-computer interaction focuses on building authoring tools that enable end-users to
+            craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing
+            interactive systems, his work explores techniques that leverage computation and interaction to empower
+            people's creativity, collaboration, and communication in the context of content creation. He holds a BE in
+            Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production,
+            skateboards, and 35mm film photography.
+          color: '#7594F0'
+          use_local_homepage: false
+          documentId: jlfla2kwny0lc8llkktg7yw4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 13
+              url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 14
+              url: 'https://github.com/RayneZhang/'
+              description: Github
+            - id: 16
+              url: 'https://twitter.com/itsraynez'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 7
+        data:
+          createdAt: '2023-03-02T18:42:28.012Z'
+          updatedAt: '2024-01-12T22:43:22.648Z'
+          given_name: Mauli
+          family_name: Pandey
+          middle_name: null
+          membership: alum
+          homepage: 'https://pandeymauli.github.io/research/'
+          short_bio: |-
+            UX Researcher
+            Google
+          long_bio: >-
+            Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of
+            Michigan School of Information](https://www.si.umich.edu/), where she was advised by [Steve
+            Oney](https://from.so/Steve_Oney). Her research interests lie at the intersection of Human-Computer
+            Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and
+            education for people with visual impairments by understanding their experiences through qualitative research
+            methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of
+            Information. During her MS, she also worked closely with [Matthew Kay](http://www.mjskay.com/), [Michael
+            Nebeling](http://www.michael-nebeling.de/), and [Sun Young Park](http://sunyoungpark.weebly.com/). For her
+            undergraduate studies, she attended the [Indian Institute of Technology Guwahati](http://www.iitg.ac.in/)
+            (Design and Electronics, 2014), and was advised by [Pradeep
+            Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+          color: ' #D3BDC1'
+          use_local_homepage: false
+          documentId: tr2137by2kxppuspruzqcwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 7
+              url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 8
+              url: 'https://github.com/pandeymauli/'
+              description: Github
+            - id: 9
+              url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+              description: LinkedIn
+      - type: 'api::author.author'
+        id: 9
+        data:
+          createdAt: '2023-03-02T18:42:28.459Z'
+          updatedAt: '2024-01-12T22:43:08.783Z'
+          given_name: Yan
+          family_name: Chen
+          middle_name: null
+          membership: alum
+          homepage: 'https://chensivan.github.io/'
+          short_bio: |-
+            Assistant Professor
+            Virginia Tech
+          long_bio: >-
+            Dr. Yan Chen is an Assistant Professor of [Computer Science](https://cs.vt.edu/) at [Virginia
+            Tech](https://www.vt.edu/). Yan earned his PhD at [the University of Michigan](https://umich.edu/), advised
+            by [Dr. Steve Oney](https://umich.edu/). After his Ph.D., he was a postdoctoral researcher at the
+            [University of Toronto](https://www.utoronto.ca/), working with [Tovi
+            Grossman](https://www.tovigrossman.com/).  His research aims to leverage human computation and machine
+            intelligence to effectively solve complex tasks that require domain expertise, such as software development,
+            video curation. He studies problems that users face with existing tools and methods, and builds
+            computational systems to assist users via efficient collaboration and hybrid crowd-machine workflows.
+          color: '#A5AFAD'
+          use_local_homepage: false
+          documentId: q0vgcl8tv06952kf6ej23r05
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 21
+              url: 'https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en'
+              description: Google Scholar
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+    relevant_publications:
+      - type: 'api::publication.publication'
+        id: 57
+        data:
+          title: Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
+          abstract: >-
+            Code readability is crucial for program comprehension, maintenance, and collaboration. However, many of the
+            standards for writing readable code are derived from sighted developers' readability needs. We conducted a
+            qualitative study with 16 blind and visually impaired (BVI) developers to better understand their
+            readability preferences for common code formatting rules such as identifier naming conventions, line length,
+            and use of indentation. Our findings revealed how BVI developers' preferences contrast with those of sighted
+            developers and how we can expand the existing rules to improve code readability on screen readers. Based on
+            the findings, we contribute an inclusive understanding of code readability and derive implications for
+            programming languages, development environments, and style guides. Our work helps broaden the meaning of
+            readable code in software engineering and accessibility research.
+          short_description: >-
+            Explores the code readability preferences of blind and visually impaired (BVI) developers and how they
+            differ from sighted developers, through a qualitative study. Contributes an inclusive taxonomy for code
+            readability and recommendations for programming tools, code standards, and languages to better support BVI
+            developers.
+          award: none
+          award_description: null
+          createdAt: '2024-01-20T02:50:35.784Z'
+          updatedAt: '2024-05-22T16:33:26.574Z'
+          pub_details: null
+          documentId: wbkgj2zn7dv8vaq4tnclza4w
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 16
+        data:
+          date: null
+          description: Several group members (and alumni) will be in Hawaii for CHI 2024. Say "hi" if you're there!
+          createdAt: '2024-04-27T16:26:58.805Z'
+          updatedAt: '2024-05-15T16:19:34.869Z'
+          documentId: qnv5133guc2komjbgqd5ugh4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 1
+  data:
+    date: '2023-01-01'
+    description: >-
+      [Yan Chen](https://chensivan.github.io/) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
+      Congratulations, Professor Chen!
+    createdAt: '2023-03-17T16:19:47.267Z'
+    updatedAt: '2023-03-18T20:23:18.387Z'
+    documentId: lvcry3dos3uo96gbftawn89v
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 9
+        data:
+          createdAt: '2023-03-02T18:42:28.459Z'
+          updatedAt: '2024-01-12T22:43:08.783Z'
+          given_name: Yan
+          family_name: Chen
+          middle_name: null
+          membership: alum
+          homepage: 'https://chensivan.github.io/'
+          short_bio: |-
+            Assistant Professor
+            Virginia Tech
+          long_bio: >-
+            Dr. Yan Chen is an Assistant Professor of [Computer Science](https://cs.vt.edu/) at [Virginia
+            Tech](https://www.vt.edu/). Yan earned his PhD at [the University of Michigan](https://umich.edu/), advised
+            by [Dr. Steve Oney](https://umich.edu/). After his Ph.D., he was a postdoctoral researcher at the
+            [University of Toronto](https://www.utoronto.ca/), working with [Tovi
+            Grossman](https://www.tovigrossman.com/).  His research aims to leverage human computation and machine
+            intelligence to effectively solve complex tasks that require domain expertise, such as software development,
+            video curation. He studies problems that users face with existing tools and methods, and builds
+            computational systems to assist users via efficient collaboration and hybrid crowd-machine workflows.
+          color: '#A5AFAD'
+          use_local_homepage: false
+          documentId: q0vgcl8tv06952kf6ej23r05
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 21
+              url: 'https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en'
+              description: Google Scholar
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 1
+        data:
+          date: '2023-01-01'
+          description: >-
+            [Yan Chen](https://chensivan.github.io/) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
+            Congratulations, Professor Chen!
+          createdAt: '2023-03-17T16:19:47.267Z'
+          updatedAt: '2023-03-18T20:23:18.387Z'
+          documentId: lvcry3dos3uo96gbftawn89v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 18
+  data:
+    date: null
+    description: Congratulations to Dr. Lei Zhang on his wonderful Ph.D. defense!
+    createdAt: '2024-06-21T19:32:31.826Z'
+    updatedAt: '2024-06-21T19:32:31.826Z'
+    documentId: dryv58q82eyl6zo0ck1t24pp
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 6
+        data:
+          createdAt: '2023-03-02T18:42:27.785Z'
+          updatedAt: '2024-10-01T17:53:21.504Z'
+          given_name: Lei
+          family_name: Zhang
+          middle_name: null
+          membership: alum
+          homepage: 'http://raynezhang.me/'
+          short_bio: |-
+            Postdoctoral Researcher
+            Princeton University
+          long_bio: >-
+            Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an
+            Assistant Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei
+            earned his Ph.D. at the [University of Michigan School of Information](https://www.si.umich.edu/), advised
+            by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/).
+            His research in human-computer interaction focuses on building authoring tools that enable end-users to
+            craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing
+            interactive systems, his work explores techniques that leverage computation and interaction to empower
+            people's creativity, collaboration, and communication in the context of content creation. He holds a BE in
+            Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production,
+            skateboards, and 35mm film photography.
+          color: '#7594F0'
+          use_local_homepage: false
+          documentId: jlfla2kwny0lc8llkktg7yw4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 13
+              url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 14
+              url: 'https://github.com/RayneZhang/'
+              description: Github
+            - id: 16
+              url: 'https://twitter.com/itsraynez'
+              description: Twitter
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 18
+        data:
+          date: null
+          description: Congratulations to Dr. Lei Zhang on his wonderful Ph.D. defense!
+          createdAt: '2024-06-21T19:32:31.826Z'
+          updatedAt: '2024-06-21T19:32:31.826Z'
+          documentId: dryv58q82eyl6zo0ck1t24pp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'
+- type: 'api::newsitem.newsitem'
+  id: 19
+  data:
+    date: '2024-10-01'
+    description: Excited to welcome Dr. Maryam Arab as a new Postdoctoral Researcher!
+    createdAt: '2024-09-17T16:23:33.215Z'
+    updatedAt: '2024-09-17T16:23:33.215Z'
+    documentId: wbdhe5y5vaw2agcwiwtf4jel
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.367Z'
+    relevant_people:
+      - type: 'api::author.author'
+        id: 112
+        data:
+          createdAt: '2024-09-16T17:52:24.190Z'
+          updatedAt: '2024-09-17T18:51:35.624Z'
+          given_name: Maryam
+          family_name: Arab
+          middle_name: null
+          membership: member-postdoc
+          homepage: 'https://sites.google.com/view/maryamarab/home'
+          short_bio: |-
+            Postdoctoral Scholar
+            Michigan SI
+          long_bio: >-
+            Dr. Maryam Arab is a Postdoctoral Scholar in the School of Information, working with [Dr. Steve
+            Oney](https://from.so/Steve_Oney). Dr. Maryam Arab earned her Ph.D. in the Department of Computer Science at
+            [George Mason University](https://cs.gmu.edu/), with [Dr. Thomas D. LaToza](https://cs.gmu.edu/~tlatoza/) in
+            the [DevX lab](https://devx.cs.gmu.edu/). She is passionate about Human-Computer Interaction (HCI) and
+            specializes in designing programming tools that harmonize machine and human intelligence. Her research
+            investigates how human-computer interaction would be effective in designing programming tools and how to
+            blend machine and human intelligence.
+          color: '#79A4E5'
+          use_local_homepage: false
+          documentId: ghevsfm0n90kz71ab0bx0oia
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links: []
+    localizations:
+      - type: 'api::newsitem.newsitem'
+        id: 19
+        data:
+          date: '2024-10-01'
+          description: Excited to welcome Dr. Maryam Arab as a new Postdoctoral Researcher!
+          createdAt: '2024-09-17T16:23:33.215Z'
+          updatedAt: '2024-09-17T16:23:33.215Z'
+          documentId: wbdhe5y5vaw2agcwiwtf4jel
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.367Z'

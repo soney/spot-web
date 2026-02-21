@@ -1,0 +1,1668 @@
+- type: 'api::cluster.cluster'
+  id: 5
+  data:
+    title: Accessibility
+    createdAt: '2023-03-02T19:14:17.108Z'
+    updatedAt: '2023-03-02T22:02:22.748Z'
+    description: ' '
+    documentId: xwstn058yubvbr12gtolbx8z
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 14
+        data:
+          title: 'Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture'
+          abstract: >-
+            Many web pages developed today require navigation by visual interaction—seeing, hovering, pointing,
+            clicking, and dragging with the mouse over dynamic page content. These forms of interaction are increasingly
+            popular as developer trends have moved from static, linearly structured pages to dynamic, interactive pages.
+            However, they are also often in-accessible to blind web users who tend to rely on keyboard-based screen
+            readers to navigate the web. Despite existing web accessibility standards, engineering web pages to be
+            equally accessible via both keyboard and visuomotor mouse-based interactions is often not a priority for
+            developers. Improving access to this kind of visual, interactive web content has been a long-standing goal
+            of HCI researchers, but the obstacles have exceeded the many proposed solutions:  promoting developer best
+            practices, automatically generating accessible versions of existing web pages, and sighted-guides, such as
+            screen and cursor-sharing, which tend to diminish the end user’s agency and privacy. In this paper, we
+            present a collaborative approach to helping blind web users overcome inaccessible parts of existing web
+            pages. We introduce Arboretum, a new architecture that enables any web user to seamlessly hand off
+            controlled parts of their browsing session to remote users, while maintaining control over the interface via
+            a “propose and accept/reject” mechanism. We illustrate the benefit of Arboretum by using it to implement
+            Arbility, a browser that allows blind users to hand off targeted visual interaction tasks to remote crowd
+            workers without forfeiting agency. We evaluate the entire system in a study with nine blind web users,
+            showing that Arbility allows blind users to access web content that was previously inaccessible via a screen
+            reader alone.
+          short_description: >-
+            A system that helps visually impaired web users overcome accessibility barriers through targeted handoffs of
+            tasks that require visual-spatial interaction.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:47.573Z'
+          updatedAt: '2023-03-03T16:13:54.606Z'
+          pub_details: pp 937-949
+          documentId: nm3jid9trwyv2j6wb64owz3p
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 21
+        data:
+          title: 'Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People'
+          abstract: >-
+            People often use text in their drawings to communicate their ideas. For visually impaired people, adding
+            textual information to tactile graphics is challenging. Labeling in braille is a laborious process and
+            clutters the drawings. Audio labels provide an alternative way to add text. However, digital drawing tools
+            for visually impaired people have not examined the use of audio for creating labels. We conducted a study
+            comprising three tasks with 11 visually impaired adults. Our goal was to understand how participants
+            explored and created labeled tactile graphics (both braille and audio), and their interaction preferences.
+            We find that audio labels were quicker to use and easier to create. However, braille labels enabled flexible
+            exploration strategies. We also find that participants preferred multimodal interaction commands, and report
+            hand postures and movements observed during the drawing process for designing recognizable interactions.
+            Based on our findings, we derive design implications for digital drawing tools.
+          short_description: A study to better understand how visually impaired people explore and create labeled tactile graphics.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:49.358Z'
+          updatedAt: '2024-05-22T16:43:41.037Z'
+          pub_details: null
+          documentId: iysv1xb38t4avjp2c9nts5rn
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 46
+        data:
+          title: Understanding Accessibility and Collaboration in Programming for People with Visual Impairments
+          abstract: >-
+            There has been a growing interest in CSCW and HCI to understand the experiences of programmers in the
+            workplace. However, the large majority of these studies have focused on sighted programmers and as a result,
+            the experiences of programmers with visual impairments in professional contexts remain understudied. We
+            address this gap by reporting on findings from semi-structured interviews with 22 programmers with visual
+            impairments. We found that programmers with visual impairments interact with a complex ecosystem of tools
+            and a significant part of their job entails performing work to overcome the accessibility challenges
+            inherent in this ecosystem. Furthermore, we found that the visual nature of various programming activities
+            impedes collaboration, which necessitates the co-creation of new work practices through a series of
+            sociotechnical interactions. These sociotechnical interactions often required invisible work and
+            articulation work on the part of the programmers with visual impairments.
+          short_description: >-
+            A study into how programmers with visual impairments work in the context of programming teams. We describe
+            how some collaborative practices can impede collaboration and required invisible work and articulation work
+            on the part of the programmers with visual impairments.
+          award: other
+          award_description: ' Recognition for Contribution to Diversity and Inclusion'
+          createdAt: '2023-03-03T17:39:25.757Z'
+          updatedAt: '2023-03-10T17:42:36.193Z'
+          pub_details: null
+          documentId: nynq6aeittfbjsxw6gfu8gln
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 47
+        data:
+          title: Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments
+          abstract: >-
+            The availability of numerous UI components, the promise of accessibility, and cross-platform support have
+            made UI frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among
+            software developers. However, their widespread use also highlights the need to understand the experiences of
+            programmers with visual impairments with them. We adopted a mixed-methods design comprising two studies to
+            understand the accessibility and challenges of developing interfaces with UI frameworks and libraries. In
+            Study 1, we analyzed 96 randomly-sampled archived threads of Program-L, a mailing list primarily comprising
+            programmers with visual impairments. In Study 2, we interviewed 18 programmers with visual impairments to
+            confirm the findings from Study 1 and gain a deeper understanding of their motivations and experiences in
+            using UI frameworks. Our participants considered UI development essential to their programming
+            responsibilities and sought to acquire relevant skills and expertise. However, accessibility barriers in
+            programming tools and UI frameworks complicated the processes of writing UI code, debugging, testing, and
+            collaborating with sighted colleagues. Our paper concludes with recommendations grounded in empirical
+            findings to improve the accessibility of frameworks and libraries.
+          short_description: >-
+            Two studies into the accessibility and challenges of developing interfaces with UI frameworks and libraries.
+            Accessibility barriers in programming tools and UI frameworks can complicate the processes of writing UI
+            code, debugging, testing, and collaborating with sighted colleagues. This paper presents recommendations
+            grounded in empirical findings to improve the accessibility of frameworks and libraries.
+          award: none
+          award_description: null
+          createdAt: '2023-03-03T17:41:39.710Z'
+          updatedAt: '2025-05-12T19:32:55.949Z'
+          pub_details: null
+          documentId: rg204dnqxow6o9brm7v9dnlu
+          locale: null
+          publishedAt: '2025-05-12T19:32:55.737Z'
+          submission_status: accepted
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 57
+        data:
+          title: Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
+          abstract: >-
+            Code readability is crucial for program comprehension, maintenance, and collaboration. However, many of the
+            standards for writing readable code are derived from sighted developers' readability needs. We conducted a
+            qualitative study with 16 blind and visually impaired (BVI) developers to better understand their
+            readability preferences for common code formatting rules such as identifier naming conventions, line length,
+            and use of indentation. Our findings revealed how BVI developers' preferences contrast with those of sighted
+            developers and how we can expand the existing rules to improve code readability on screen readers. Based on
+            the findings, we contribute an inclusive understanding of code readability and derive implications for
+            programming languages, development environments, and style guides. Our work helps broaden the meaning of
+            readable code in software engineering and accessibility research.
+          short_description: >-
+            Explores the code readability preferences of blind and visually impaired (BVI) developers and how they
+            differ from sighted developers, through a qualitative study. Contributes an inclusive taxonomy for code
+            readability and recommendations for programming tools, code standards, and languages to better support BVI
+            developers.
+          award: none
+          award_description: null
+          createdAt: '2024-01-20T02:50:35.784Z'
+          updatedAt: '2024-05-22T16:33:26.574Z'
+          pub_details: null
+          documentId: wbkgj2zn7dv8vaq4tnclza4w
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 7
+        data:
+          createdAt: '2023-03-02T18:42:28.012Z'
+          updatedAt: '2024-01-12T22:43:22.648Z'
+          given_name: Mauli
+          family_name: Pandey
+          middle_name: null
+          membership: alum
+          homepage: 'https://pandeymauli.github.io/research/'
+          short_bio: |-
+            UX Researcher
+            Google
+          long_bio: >-
+            Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the [University of
+            Michigan School of Information](https://www.si.umich.edu/), where she was advised by [Steve
+            Oney](https://from.so/Steve_Oney). Her research interests lie at the intersection of Human-Computer
+            Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and
+            education for people with visual impairments by understanding their experiences through qualitative research
+            methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of
+            Information. During her MS, she also worked closely with [Matthew Kay](http://www.mjskay.com/), [Michael
+            Nebeling](http://www.michael-nebeling.de/), and [Sun Young Park](http://sunyoungpark.weebly.com/). For her
+            undergraduate studies, she attended the [Indian Institute of Technology Guwahati](http://www.iitg.ac.in/)
+            (Design and Electronics, 2014), and was advised by [Pradeep
+            Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+          color: ' #D3BDC1'
+          use_local_homepage: false
+          documentId: tr2137by2kxppuspruzqcwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 7
+              url: 'https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 8
+              url: 'https://github.com/pandeymauli/'
+              description: Github
+            - id: 9
+              url: 'https://www.linkedin.com/in/mauli-pandey-16942146/'
+              description: LinkedIn
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 5
+        data:
+          title: Accessibility
+          createdAt: '2023-03-02T19:14:17.108Z'
+          updatedAt: '2023-03-02T22:02:22.748Z'
+          description: ' '
+          documentId: xwstn058yubvbr12gtolbx8z
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 1
+  data:
+    title: Building & Testing Interactive UIs
+    createdAt: '2023-03-02T19:13:22.960Z'
+    updatedAt: '2023-03-02T22:02:28.431Z'
+    description: ' '
+    documentId: sozw1g2e7143gpul8fl9qs5o
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 39
+        data:
+          title: 'FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality'
+          abstract: >-
+            Immersive authoring is a paradigm where users create Virtual Reality (VR) content directly while situated in
+            the immersive virtual environment. Immersive authoring tools can enable an intuitive developer workflow by
+            enabling programming primitives to be modified through direct manipulation while providing immediate
+            feedback. However, state-of-the-art immersive authoring tools are not expressive enough to build complex
+            interactive scenes. We present FlowMatic, an immersive authoring tool that allows novices to create fully
+            interactive VR scenes comparable to real-world VR applications. Using a visual dataflow notation, FlowMatic
+            allows users to declaratively specify the behaviors of virtual objects based on a set of operators.
+            FlowMatic also includes a set of novel interaction techniques of directly manipulating programming
+            primitives in a way that can leverage our innate spatial reasoning skills. We demonstrate the usability and
+            advantages of FlowMatic through our preliminary user study compared with a 2D desktop-based authoring tool.
+            We also demonstrate the expressiveness of FlowMatic through several complex interactive examples that would
+            be impossible to implement using prior immersive authoring tools. By combining a visual program
+            representation with expressive programming primitives and a natural User Interface (UI) for authoring
+            programs, FlowMatic shows how programmers can build fully interactive virtual experiences with immersive
+            authoring in the future.
+          short_description: >-
+            FlowMatic allows users to users to specify interactive behaviors (how to respond to users) while immersed in
+            Virtual Reality (VR). It adapts dataflow programming to allow programming primitives to be modified through
+            direct manipulation and provides immediate feedback.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:53.569Z'
+          updatedAt: '2023-03-10T17:26:22.667Z'
+          pub_details: null
+          documentId: vry9jjcbi3sk6anv8af7l9w7
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 20
+        data:
+          title: Improving Crowd-Supported GUI Testing with Structural Guidance
+          abstract: >-
+            Crowd testing is an emerging practice in Graphical User Interface (GUI) testing where developers recruit a
+            large number of crowd testers to test GUI features. It is often easier and faster than a dedicated quality
+            assurance team, and its output is more realistic than that of automated testing. However, crowds of testers
+            working in parallel tend to focus on a small set of commonly-used User Interface (UI) navigation paths,
+            which can lead to low test coverage and redundant effort. In this paper, we introduce two techniques to
+            increase crowd testers’ coverage: interactive event-flow graphs and GUI-level guidance. The interactive
+            event-flow graphs tracks and aggregates every tester’s interactions into a single directed graph that
+            visualizes the cases that have already been explored. Crowd testers can interact with the graphs to find new
+            navigation paths and increase the coverage of the created tests. We also use the graphs to augment the GUI
+            (GUI-level guidance) to help testers avoid only exploring common paths. Our evaluation with 30 crowd testers
+            on 11 different test pages shows that the techniques can help testers avoid redundant effort while also
+            increasing untrained testers’ coverage by 55%. These techniques can help us develop more robust software
+            that works in more mission-critical settings not only by performing more thorough testing with the same
+            effort that has been put in before, but also by integrating them into different parts of the development
+            pipeline to make more reliable software in the early development stage.
+          short_description: >-
+            Two techniques, interactive event-flow graphs and GUI-level guidance, that guide GUI testers to discover
+            more test cases and avoid duplicate test cases.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:49.102Z'
+          updatedAt: '2024-05-22T16:43:25.695Z'
+          pub_details: null
+          documentId: sj25kmbdds4iv64hmp8pg2w2
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 16
+        data:
+          title: Implementing Multi-Touch Gestures with Touch Groups and Cross Events
+          abstract: >-
+            Multi-touch gestures can be very difficult to program correctly because they require that developers build
+            high-level abstractions from low-level touch events. In this paper, we introduce  programming  primitives 
+            that  enable  programmers to implement  multi-touch  gestures  in  a  more  understandable way by helping
+            them build these abstractions. Our design of these primitives was guided by a formative study, in which we
+            observed developers’ natural implementations of custom gestures. Touch groups provide summaries of multiple
+            fingers rather  than  requiring that  programmers track them manually. Cross events allow programmers to
+            summarize the movement of one or a group of fingers. We implemented these two primitives in two
+            environments: a declarative programming  system  and in a standard imperative programming language. We found
+            that these primitives are capable of defining nuanced multi-touch gestures, which we illustrate through a
+            series of examples. Further, in two user evaluations of these programming primitives, we found that
+            multi-touch behaviors implemented in these programming primitives  are  more understandable than those
+            implemented with standard touch events.
+          short_description: >-
+            Proposes two primitives to improve multi-touch programming: touch groups (which summarize multiple fingers
+            rather than tracking them manually) and cross events (which summarize the movement of touch groups).
+          award: honorable_mention
+          award_description: ''
+          createdAt: '2023-03-02T18:51:48.116Z'
+          updatedAt: '2023-03-03T16:36:03.246Z'
+          pub_details: Paper No. 355
+          documentId: vspoy202fzet8oqfwyzs36b5
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 12
+        data:
+          title: 'Expresso: Building Responsive Interfaces with Keyframes'
+          abstract: >-
+            Web developers use responsive web design to create user  interfaces that can adapt to many form factors. To 
+            define responsive  pages,  developers  must  use  Cascading  Style  Sheets (CSS) or libraries and tools
+            built  on  top of it. CSS provides high customizability, but requires significant experience. As a result,
+            non-programmers and novice programmers generally lack a means of easily building custom responsive web
+            pages. In  this paper, we  present a new approach that allows users to create custom responsive user
+            interfaces without writing program code. We demonstrate the  feasibility  and  effectiveness of the approach
+            through a new system we built, named Expresso. With Expresso, users define “keyframes”—examples of how their
+            UI should look for particular viewport  sizes—by simply directly manipulating elements  in  a WYSIWYG
+            editor. Expresso uses these keyframes to infer  rules about the responsive  behavior  of  elements,  and
+            automatically renders the appropriate CSS for a given  viewport size. To allow users to create the desired
+            appearance of their page at all viewport sizes, Expresso lets users define either a “smooth” or “jump” 
+            transition between  adjacent keyframes. We conduct a user study and show that participants are able to
+            effectively use Expresso to build realistic responsive interfaces.
+          short_description: >-
+            A programming-by-demonstration approach for creating responsive UIs, where users create keyframes at a few
+            representative viewport sizes and specify smooth or jump (i.e., linear interpolation) transitions between
+            them.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:47.112Z'
+          updatedAt: '2023-03-03T16:32:50.654Z'
+          pub_details: pp 39-47
+          documentId: fe07yrge88mvp1a4u6ntwu2n
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 8
+        data:
+          title: 'InterState: A Language and Environment for Expressing Interface Behavior'
+          abstract: >-
+            InterState is a new programming language and environment that addresses the challenges of writing and
+            reusing  user interface code. InterState represents interactive  behaviors clearly and concisely using a
+            combination of novel forms of state machines and constraints.  It  also  introduces new language features
+            that allow programmers to easily modularize and  reuse  behaviors. InterState uses  a new visual  notation
+            that  allows  programmers to better understand and navigate their code. InterState also includes a live
+            editor that immediately updates the running application in response to changes in the editor and vice versa
+            to help programmers understand the state of their program. Finally, InterState can interface with code and
+            widgets written in other languages, for example to create a user interface in InterState that communicates
+            with a database. We evaluated the understandability of InterState’s programming primitives in a comparative
+            laboratory study. We found  that participants were twice as fast at understanding and  modifying GUI
+            components when they were implemented  with InterState than when they were implemented in a conventional
+            textual event-callback style. We  evaluated  InterState’s scalability with a series  of  benchmarks and
+            example applications and found  that it can scale to implement  complex behaviors involving thousands of
+            objects and constraints.
+          short_description: ''
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:46.214Z'
+          updatedAt: '2023-03-03T16:38:28.570Z'
+          pub_details: pp 263-272
+          documentId: fayniifv3qrqhaqhbvlj8l3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 6
+        data:
+          title: 'ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States'
+          abstract: >-
+            Interactive behaviors in GUIs are often described in terms of states, transitions, and constraints, where
+            the constraints only hold in certain states. These constraints maintain relationships among objects, control
+            the graphical layout, and link the user interface to an underlying data model. However, no existing Web
+            implementation technology provides direct support for all of these, so the code for  maintaining constraints
+            and tracking state may end up spread across multiple languages  and  libraries. In this paper we describe
+            ConstraintJS, a system that integrates constraints and finite state machines (FSMs) with Web languages. A
+            key role for the FSMs is to enable and disable constraints based on the interface’s current mode, making it
+            possible to write constraints that sometimes hold. We illustrate that constraints combined with FSMs can be
+            a clearer way of defining many interactive behaviors with a series of examples.
+          short_description: ''
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:45.672Z'
+          updatedAt: '2023-03-10T17:56:25.423Z'
+          pub_details: pp 229-238
+          documentId: w5p6lkihj571vgvfv5tf370i
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 1
+        data:
+          title: 'FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages'
+          abstract: >-
+            For developers debugging their own code, augmenting the code of others, or trying  to learn the
+            implementation details of interactive behaviors, understanding how web pages work is a fundamental problem.
+            FireCrystal is a new Firefox extension that allows developers to indicate interactive  behaviors of
+            interest, and shows the specific code (Javascript, CSS, and HTML) that is responsible for those behaviors.
+            FireCrystal  provides an execution timeline that  users can scrub back and forth, and the ability to select
+            items of interest in the actual web page UI to see the associated code. FireCrystal may be especially useful
+            for developers who are trying to learn the implementation details of interactive behaviors, so they can
+            reuse these behaviors in their own web site.
+          short_description: >-
+            FireCrystal is (was) a Firefox extension for inspecting dynamic behaviors in web pages. When a developer
+            wants to understand how some dynamic behavior in a page is implemented, FireCrystal helps them by
+            identifying the code that runs in between DOM changes.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:44.431Z'
+          updatedAt: '2023-03-15T19:17:21.197Z'
+          pub_details: pp 105-108
+          documentId: h1op9myn4hxt30jo61wb9zip
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+      - type: 'api::author.author'
+        id: 8
+        data:
+          createdAt: '2023-03-02T18:42:28.231Z'
+          updatedAt: '2024-01-12T21:26:56.335Z'
+          given_name: Rebecca
+          family_name: Krosnick
+          middle_name: null
+          membership: alum
+          homepage: 'http://www-personal.umich.edu/~rkros/'
+          short_bio: |-
+            Ph.D. student
+            Michigan CSE
+          long_bio: >-
+            Dr. Krosnick is a software engineer at [Postman Labs](https://www.postman.com/). She earned her PhD from
+            [the EECS department at the University of Michigan](https://eecs.engin.umich.edu/), advised by [Professor
+            Steve Oney](https://from.so/Steve_Oney). She is generally interested in designing end-user programming
+            systems. She currently is exploring ways to make creating and editing web macros more intuitive and visual,
+            and less script-heavy. She has also designed programming-by-demonstration systems for creating responsive
+            and interactive user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received
+            her SB and MEng in Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor
+            Rob Miller](https://www.csail.mit.edu/person/rob-miller). 
+          color: '#BC7B71'
+          use_local_homepage: false
+          documentId: ld8o7ygrlx8uvxueds7uufnp
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 4
+              url: 'https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao'
+              description: Google Scholar
+            - id: 5
+              url: 'https://twitter.com/rkrosnick'
+              description: Twitter
+            - id: 6
+              url: 'https://www.linkedin.com/in/rebecca-krosnick-315b2180'
+              description: Linkedin
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 1
+        data:
+          title: Building & Testing Interactive UIs
+          createdAt: '2023-03-02T19:13:22.960Z'
+          updatedAt: '2023-03-02T22:02:28.431Z'
+          description: ' '
+          documentId: sozw1g2e7143gpul8fl9qs5o
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 6
+  data:
+    title: Collaborative Data Science
+    createdAt: '2023-03-02T19:14:28.311Z'
+    updatedAt: '2023-03-02T22:02:32.675Z'
+    description: ' '
+    documentId: v27dshiwo4u9eu4bbemj4myc
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 19
+        data:
+          title: 'Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives'
+          abstract: >-
+            When teams of data scientists collaborate on computational notebooks, their discussions often contain
+            valuable insight into their design decisions. These discussions not only explain analysis in the current
+            notebooks but also alternative paths, which are often poorly documented. However, these discussions are
+            disconnected from the notebooks for which they could provide valuable context. We propose Callisto, an
+            extension to computational notebooks that captures and stores contextual links between discussion messages
+            and notebook elements with minimal effort from users. Callisto allows notebook readers to better understand
+            the current notebook content and the overall problem-solving process that led to it, by making it possible
+            to browse the discussions and code history relevant to any part of the notebook. This is particularly
+            helpful for onboarding new notebook collaborators to avoid misinterpretations and duplicated work, as we
+            found in a two-stage evaluation with 32 data science students.
+          short_description: >-
+            We designed Callisto, a Jupyter Notebook extension for better explaining messy notebooks. Callisto captures
+            and stores contextual links between discussion messages and notebook elements with minimal effort from
+            users. Callisto allows notebook readers to better understand the current notebook content and the overall
+            problem-solving process that led to it, by making it possible to browse the discussions and code history
+            relevant to any part of the notebook.
+          award: honorable_mention
+          award_description: ''
+          createdAt: '2023-03-02T18:51:48.859Z'
+          updatedAt: '2024-05-22T16:43:55.632Z'
+          pub_details: null
+          documentId: c9au0pmfrypo2kcira0euhqo
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 18
+        data:
+          title: How Data Scientists Use Computational Notebooks for Real-Time Collaboration
+          abstract: >-
+            Effective collaboration in data science can leverage domain expertise from each team member and thus improve
+            the quality and efficiency of the work. Computational notebooks give data scientists a convenient
+            interactive solution for sharing and keeping track of the data exploration process through a combination of
+            code, narrative text, visualizations, and other rich media. In this paper, we report how synchronous editing
+            in computational notebooks changes the way data scientists work together compared to working on individual
+            notebooks. We first conducted a formative survey with 195 data scientists to understand their past
+            experience with collaboration in the context of data science. Next, we carried out an observational study of
+            24 data scientists working in pairs remotely to solve a typical data science predictive modeling problem,
+            working on either notebooks supported by synchronous groupware or individual notebooks in a collaborative
+            setting. The study showed that working on the synchronous notebooks improves collaboration by creating a
+            shared context, encouraging more exploration, and reducing communication costs. However, the current
+            synchronous editing features may lead to unbalanced participation and activity interference without
+            strategic coordination.The synchronous notebooks may also amplify the tension between quick exploration and
+            clear explanations.Building on these findings, we propose several design implications aimed at better
+            supporting collaborativeediting in computational notebooks, and thus improving efficiency in teamwork among
+            data scientists.
+          short_description: >-
+            We reported how synchronous editing in computational notebooks changes the way data scientists work together
+            compared to working on individual notebooks through a formative survey and an observational study. Working
+            on the synchronous notebooks improves collaboration by creating a shared context, encouraging more
+            exploration, and reducing communication costs. However, the current synchronous editing features may lead to
+            unbalanced participation and activity interference without strategic coordination.
+          award: best_paper
+          award_description: ''
+          createdAt: '2023-03-02T18:51:48.636Z'
+          updatedAt: '2023-03-03T16:35:05.545Z'
+          pub_details: 'Volume 3, Article No. 39'
+          documentId: h7363l7qhwaunfj6e5tz324e
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 43
+        data:
+          createdAt: '2023-03-02T18:42:36.500Z'
+          updatedAt: '2023-03-02T18:42:36.500Z'
+          given_name: Christopher
+          family_name: Brooks
+          middle_name: null
+          membership: collaborator
+          homepage: 'http://christopherbrooks.ca/'
+          short_bio: null
+          long_bio: null
+          color: null
+          use_local_homepage: false
+          documentId: z97cpxla7k5dwu946hzbvc1t
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links: []
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 6
+        data:
+          title: Collaborative Data Science
+          createdAt: '2023-03-02T19:14:28.311Z'
+          updatedAt: '2023-03-02T22:02:32.675Z'
+          description: ' '
+          documentId: v27dshiwo4u9eu4bbemj4myc
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 3
+  data:
+    title: Communicating about Code
+    createdAt: '2023-03-02T19:13:52.753Z'
+    updatedAt: '2023-03-02T22:02:39.026Z'
+    description: ' '
+    documentId: eq62p2xoiv7prweygjnz6fjl
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 19
+        data:
+          title: 'Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives'
+          abstract: >-
+            When teams of data scientists collaborate on computational notebooks, their discussions often contain
+            valuable insight into their design decisions. These discussions not only explain analysis in the current
+            notebooks but also alternative paths, which are often poorly documented. However, these discussions are
+            disconnected from the notebooks for which they could provide valuable context. We propose Callisto, an
+            extension to computational notebooks that captures and stores contextual links between discussion messages
+            and notebook elements with minimal effort from users. Callisto allows notebook readers to better understand
+            the current notebook content and the overall problem-solving process that led to it, by making it possible
+            to browse the discussions and code history relevant to any part of the notebook. This is particularly
+            helpful for onboarding new notebook collaborators to avoid misinterpretations and duplicated work, as we
+            found in a two-stage evaluation with 32 data science students.
+          short_description: >-
+            We designed Callisto, a Jupyter Notebook extension for better explaining messy notebooks. Callisto captures
+            and stores contextual links between discussion messages and notebook elements with minimal effort from
+            users. Callisto allows notebook readers to better understand the current notebook content and the overall
+            problem-solving process that led to it, by making it possible to browse the discussions and code history
+            relevant to any part of the notebook.
+          award: honorable_mention
+          award_description: ''
+          createdAt: '2023-03-02T18:51:48.859Z'
+          updatedAt: '2024-05-22T16:43:55.632Z'
+          pub_details: null
+          documentId: c9au0pmfrypo2kcira0euhqo
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 18
+        data:
+          title: How Data Scientists Use Computational Notebooks for Real-Time Collaboration
+          abstract: >-
+            Effective collaboration in data science can leverage domain expertise from each team member and thus improve
+            the quality and efficiency of the work. Computational notebooks give data scientists a convenient
+            interactive solution for sharing and keeping track of the data exploration process through a combination of
+            code, narrative text, visualizations, and other rich media. In this paper, we report how synchronous editing
+            in computational notebooks changes the way data scientists work together compared to working on individual
+            notebooks. We first conducted a formative survey with 195 data scientists to understand their past
+            experience with collaboration in the context of data science. Next, we carried out an observational study of
+            24 data scientists working in pairs remotely to solve a typical data science predictive modeling problem,
+            working on either notebooks supported by synchronous groupware or individual notebooks in a collaborative
+            setting. The study showed that working on the synchronous notebooks improves collaboration by creating a
+            shared context, encouraging more exploration, and reducing communication costs. However, the current
+            synchronous editing features may lead to unbalanced participation and activity interference without
+            strategic coordination.The synchronous notebooks may also amplify the tension between quick exploration and
+            clear explanations.Building on these findings, we propose several design implications aimed at better
+            supporting collaborativeediting in computational notebooks, and thus improving efficiency in teamwork among
+            data scientists.
+          short_description: >-
+            We reported how synchronous editing in computational notebooks changes the way data scientists work together
+            compared to working on individual notebooks through a formative survey and an observational study. Working
+            on the synchronous notebooks improves collaboration by creating a shared context, encouraging more
+            exploration, and reducing communication costs. However, the current synchronous editing features may lead to
+            unbalanced participation and activity interference without strategic coordination.
+          award: best_paper
+          award_description: ''
+          createdAt: '2023-03-02T18:51:48.636Z'
+          updatedAt: '2023-03-03T16:35:05.545Z'
+          pub_details: 'Volume 3, Article No. 39'
+          documentId: h7363l7qhwaunfj6e5tz324e
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 15
+        data:
+          title: Creating Guided Code Explanations with chat.codes
+          abstract: >-
+            Effective communication is crucial for programmers of all skill levels. However, communicating about code
+            can be difficult, particularly in asynchronous settings where one user writes an explanation for another
+            user to read and understand later on. Communicating about code is uniquely difficult for two reasons. First,
+            code-related explanations are dichotomous, containing fragments of code and associated natural language
+            descriptions that are not necessarily sequential. Second, instructions’ explanations of code often involve
+            multiple stages of modifying code in steps throughout their explanation, but these intermediate steps are
+            difficult to capture. This paper introduces chat.codes, a new tool for creating guided explanations about
+            code, meant to be consumed asynchronously. chat.codes introduces three features that make it easier to
+            communicate about code. First, it introduces deictic code references, which allow users to reference
+            specific region of code in parts of their explanations. Second, it tracks and summarizes code edits in-line
+            with messages, allowing users to create explanations in stages. Third, it tracks every version of code,
+            enabling future users to back-track to previous version of code to reconstruct the context for code
+            references. An evaluation showed that these features were beneficial for both instructors and students in an
+            introductory programming course.
+          short_description: >-
+            Introduces three features to improve textual-based conversations about code: deictic code references (where
+            a message points to a specific region of code), in-line code diffs (to show how code changed throughout a
+            conversation), and conversation version tracking (which allows viewers to view the state of code as it
+            evolves through out the conversation).
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:47.856Z'
+          updatedAt: '2023-03-03T16:20:02.555Z'
+          pub_details: 'Volume 2, Article No. 131'
+          documentId: tuhkovy160jkzk3l7nd7nkp4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 72
+        data:
+          title: 'CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories'
+          abstract: >-
+            Code edit histories can offer instructors valuable insight into students' problem-solving processes,
+            revealing unproductive behaviors that final code alone cannot capture. For example, a correct solution may
+            contain large copy-and-pasted segments (suggesting the code originated elsewhere) or unguided
+            trial-and-error (suggesting a lack of clear strategy). Timelines are a common way to visualize code
+            histories, but existing timeline visualizations of code or document histories show only when and where edits
+            occurred, not what changed. Without this context, it is difficult to answer key questions about how students
+            invested effort or to infer their intentions. We present CodeStream, a visualization system that augments
+            timelines with situational code annotations, whose granularity and visibility dynamically adapt to scale and
+            interaction state. A comparison study shows that CodeStream enables context-aware navigation of coding
+            histories, supporting fast and accurate pattern identification, and helping instructors reason about
+            students' coding behaviors and identify who may need intervention.
+          short_description: >-
+            Introduces a visualization system that helps instructors interpret students’ keystroke-level coding
+            histories. While traditional timelines show when and where edits occurred, they do not reveal what changed.
+            CodeStream augments timelines with zoomable code annotations, multi-level structural summaries, and a
+            cumulative effort heatmap, allowing instructors to see both the content and intensity of edits without
+            constant context switching.
+          award: none
+          award_description: null
+          createdAt: '2026-02-21T03:23:11.155Z'
+          updatedAt: '2026-02-21T03:23:11.155Z'
+          pub_details: null
+          documentId: ovt15a8kczjj3yshrl2rp126
+          locale: null
+          publishedAt: '2026-02-21T03:23:11.131Z'
+          submission_status: accepted
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 5
+        data:
+          createdAt: '2023-03-02T18:42:27.538Z'
+          updatedAt: '2024-01-12T22:42:51.717Z'
+          given_name: April
+          family_name: Wang
+          middle_name: null
+          membership: alum
+          homepage: 'https://aprilwang.me/'
+          short_bio: |-
+            Assistant Professor
+            ETH Zürich
+          long_bio: >-
+            Dr. April Wang is an Assistant Professor at [ETH Zürich](https://ethz.ch/en.html) in the Department of
+            Computer Science. She completed her Ph.D. at the [School of Information at the University of
+            Michigan](https://www.si.umich.edu/), advised by [Professor Steve Oney](https://from.so/Steve_Oney) and
+            [Professor Christopher Brooks](http://christopherbrooks.ca/). Her work aims to understand different
+            collaboration needs and challenges around data science, and design better programming tools to support
+            collaborative data science. April received her B.Eng. in Computer Science from [Zhejiang
+            University](http://www.zju.edu.cn/english/) and M.Sc. degree in Computer Science from [Simon Fraser
+            University](https://www.sfu.ca/), where her Masters thesis investigated non-programmers learning
+            computational literacy.
+          color: ' #EABB6C'
+          use_local_homepage: false
+          documentId: ffiljafojr8t3x1cx2leiu3r
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 10
+              url: 'https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 11
+              url: 'https://github.com/LittleAprilFool'
+              description: Github
+            - id: 12
+              url: 'https://twitter.com/AprilWang95'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+      - type: 'api::author.author'
+        id: 43
+        data:
+          createdAt: '2023-03-02T18:42:36.500Z'
+          updatedAt: '2023-03-02T18:42:36.500Z'
+          given_name: Christopher
+          family_name: Brooks
+          middle_name: null
+          membership: collaborator
+          homepage: 'http://christopherbrooks.ca/'
+          short_bio: null
+          long_bio: null
+          color: null
+          use_local_homepage: false
+          documentId: z97cpxla7k5dwu946hzbvc1t
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links: []
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 3
+        data:
+          title: Communicating about Code
+          createdAt: '2023-03-02T19:13:52.753Z'
+          updatedAt: '2023-03-02T22:02:39.026Z'
+          description: ' '
+          documentId: eq62p2xoiv7prweygjnz6fjl
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 4
+  data:
+    title: Immersive Programming
+    createdAt: '2023-03-02T19:14:03.989Z'
+    updatedAt: '2023-03-02T22:02:43.070Z'
+    description: ' '
+    documentId: uhjejce21t0kz1msjdukweci
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 39
+        data:
+          title: 'FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality'
+          abstract: >-
+            Immersive authoring is a paradigm where users create Virtual Reality (VR) content directly while situated in
+            the immersive virtual environment. Immersive authoring tools can enable an intuitive developer workflow by
+            enabling programming primitives to be modified through direct manipulation while providing immediate
+            feedback. However, state-of-the-art immersive authoring tools are not expressive enough to build complex
+            interactive scenes. We present FlowMatic, an immersive authoring tool that allows novices to create fully
+            interactive VR scenes comparable to real-world VR applications. Using a visual dataflow notation, FlowMatic
+            allows users to declaratively specify the behaviors of virtual objects based on a set of operators.
+            FlowMatic also includes a set of novel interaction techniques of directly manipulating programming
+            primitives in a way that can leverage our innate spatial reasoning skills. We demonstrate the usability and
+            advantages of FlowMatic through our preliminary user study compared with a 2D desktop-based authoring tool.
+            We also demonstrate the expressiveness of FlowMatic through several complex interactive examples that would
+            be impossible to implement using prior immersive authoring tools. By combining a visual program
+            representation with expressive programming primitives and a natural User Interface (UI) for authoring
+            programs, FlowMatic shows how programmers can build fully interactive virtual experiences with immersive
+            authoring in the future.
+          short_description: >-
+            FlowMatic allows users to users to specify interactive behaviors (how to respond to users) while immersed in
+            Virtual Reality (VR). It adapts dataflow programming to allow programming primitives to be modified through
+            direct manipulation and provides immediate feedback.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:53.569Z'
+          updatedAt: '2023-03-10T17:26:22.667Z'
+          pub_details: null
+          documentId: vry9jjcbi3sk6anv8af7l9w7
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 17
+        data:
+          title: Studying the Benefits and Challenges of Immersive Dataflow Programming
+          abstract: >-
+            Creating Virtual Reality (VR) applications normally requires  advanced  knowledge of imperative 
+            programming, 3D modeling, reactive programming,  and geometry. Immersive  authoring tools  propose to reduce
+            the learning curve of VR programming by allowing users to create  VR content  while immersed in VR.
+            Immersive  authoring  can take advantage  of many of the features that make VR applications intuitive and
+            natural to use—users can manipulate programming  primitives through direct manipulation, immediately see the
+            output of their code, and use their innate spatial reasoning  capabilities  when viewing a program. In this
+            paper, we investigate the benefits and challenges of immersive dataflow authoring. We implemented an
+            immersive authoring tool that enables dataflow programming in VR and conducted a series  of  retrospective
+            interviews. We also describe design implications for future immersive authoring tools.
+          short_description: >-
+            In this paper, we study the benefits and challenges of immersive dataflow authoring, a paradigm that allows
+            users to build VR applications using dataflow notation while immersed in the VR world.
+          award: best_paper
+          award_description: Best Short Paper
+          createdAt: '2023-03-02T18:51:48.368Z'
+          updatedAt: '2023-03-03T16:51:14.693Z'
+          pub_details: pp 223-227
+          documentId: dwetm2xaw36x7k8rykdkoz3p
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 49
+        data:
+          title: 'VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality'
+          abstract: ' Immersive authoring tools allow users to intuitively create and manipulate 3D scenes while immersed in Virtual Reality (VR). Collaboratively designing these scenes is a creative process that involves numerous edits, explorations of design alternatives, and frequent communication with collaborators. Version Control Systems (VCSs) help users achieve this by keeping track of the version history and creating a shared hub for communication. However, most VCSs are unsuitable for managing the version history of VR content because their underlying line differencing mechanism is designed for text and lacks the semantic information of 3D content; and the widely adopted commit model is designed for asynchronous collaboration rather than real-time awareness and communication in VR. We introduce VRGit, a new collaborative VCS that visualizes version history as a directed graph composed of 3D miniatures, and enables users to easily navigate versions, create branches, as well as preview and reuse versions directly in VR. Beyond individual uses, VRGit also facilitates synchronous collaboration in VR by providing awareness of users’ activities and version history through portals and shared history visualizations. In a lab study with 14 participants (seven groups), we demonstrate that VRGit enables users to easily manage version history both individually and collaboratively in VR.'
+          short_description: >-
+            A version control system designed especially for Virtual Reality (VR). VRGit allows users to view and
+            navigate the version history of a 3-D scene while immersed in VR. It also allows users to share and discuss
+            history graphs collaboratively.
+          award: none
+          award_description: null
+          createdAt: '2023-03-03T18:08:04.589Z'
+          updatedAt: '2023-03-07T17:33:44.575Z'
+          pub_details: null
+          documentId: eq848qqg14s5v8c0k15rz5ce
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 6
+        data:
+          createdAt: '2023-03-02T18:42:27.785Z'
+          updatedAt: '2024-10-01T17:53:21.504Z'
+          given_name: Lei
+          family_name: Zhang
+          middle_name: null
+          membership: alum
+          homepage: 'http://raynezhang.me/'
+          short_bio: |-
+            Postdoctoral Researcher
+            Princeton University
+          long_bio: >-
+            Lei is a Postdoctoral Scholar at [Princeton University](https://hci.princeton.edu/) and will begin as an
+            Assistant Professor at [the New Jersey Institute of Technology](https://informatics.njit.edu/) in 2025. Lei
+            earned his Ph.D. at the [University of Michigan School of Information](https://www.si.umich.edu/), advised
+            by [Professor Steve Oney](https://from.so/Steve_Oney) and [Professor Anhong Guo](https://guoanhong.com/).
+            His research in human-computer interaction focuses on building authoring tools that enable end-users to
+            craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing
+            interactive systems, his work explores techniques that leverage computation and interaction to empower
+            people's creativity, collaboration, and communication in the context of content creation. He holds a BE in
+            Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production,
+            skateboards, and 35mm film photography.
+          color: '#7594F0'
+          use_local_homepage: false
+          documentId: jlfla2kwny0lc8llkktg7yw4
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 13
+              url: 'https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 14
+              url: 'https://github.com/RayneZhang/'
+              description: Github
+            - id: 16
+              url: 'https://twitter.com/itsraynez'
+              description: Twitter
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 4
+        data:
+          title: Immersive Programming
+          createdAt: '2023-03-02T19:14:03.989Z'
+          updatedAt: '2023-03-02T22:02:43.070Z'
+          description: ' '
+          documentId: uhjejce21t0kz1msjdukweci
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 2
+  data:
+    title: On-Demand Support for Programmers
+    createdAt: '2023-03-02T19:13:39.586Z'
+    updatedAt: '2023-03-03T17:45:56.448Z'
+    description: ' '
+    documentId: ysn6qzghgloftzhwezom10us
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 42
+        data:
+          title: 'CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing'
+          abstract: >-
+            User Interface (UI) mockups are commonly used as shared context during interface development collaboration.
+            In practice, UI designers often use screenshots and sketches to create mockups of desired UI behaviors for
+            communication. However, in the later stages of UI development, interfaces can be arbitrarily complex, making
+            it labor-intensive to sketch, and static screenshots are limited in the types of interactive and dynamic
+            behaviors they can express. We introduce CoCapture, a system that allows designer requesters to easily
+            create UI behavior mockups on existing web interfaces by demonstrating and remixing, and to accurately
+            describe their requests to helpers by referencing the resulting mockups using hypertext. We showed that the
+            requester participants could more accurately describe UI behaviors with CoCapture than with existing sketch
+            and communication tools. The helper participants found the descriptions of desired UI behaviors in CoCapture
+            clear and easy to follow. Our approach can help teams develop UIs efficiently by bridging communication gaps
+            with more accurate visual context.
+          short_description: >-
+            CoCapture is a tool for creating behavior mockups for websites in the later stage of UI development. Unlike
+            most other prototyping tools, CoCapture assumes that a partially functional UI exists and allows designers
+            to describe UI behaviors by creating mockups that modify the existing UI behaviors by demonstrating and
+            remixing.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:54.244Z'
+          updatedAt: '2023-03-10T17:28:36.707Z'
+          pub_details: null
+          documentId: nwi5yic4al1a7ycpy8iezgqq
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 11
+        data:
+          title: 'Codeon: On-Demand Software Development Assistance'
+          abstract: >-
+            Software developers  rely on support from a variety  of resources—including other developers—but the
+            coordination cost  of finding  another developer  with  relevant experience, explaining the context of the
+            problem, composing a specific help request,  and  providing  access to relevant  code is prohibitively high
+            for all but the largest of tasks.  Existing technologies  for  synchronous communication  (e.g.  voice chat)
+            have high scheduling costs, and asynchronous communication tools (e.g. forums) require developers to
+            carefully describe their code context to yield useful responses. This paper introduces Codeon, a system that
+            enables more effective task hand-off  between end-user developers and remote helpers by allowing
+            asynchronous responses to on-demand requests. With Codeon, developers can request help by speaking their
+            requests aloud within the context of their IDE. Codeon automatically captures the relevant code context and
+            allows remote helpers to respond with high-level descriptions, code annotations, code snippets, and 
+            natural  language explanations. Developers can then immediately view and integrate these  responses  into 
+            their  code. In this paper, we describe Codeon, the studies that guided its design,  and our evaluation that
+            its effectiveness as a support tool. In our evaluation,developers using Codeon completed  nearly twice as
+            many tasks as those who used state-of-the-art synchronous video and code sharing tools, by reducing the
+            coordination costs of seeking assistance from other developers.
+          short_description: >-
+            CodeOn enables effective task hand-offs between developers and remote helpers by allowing asynchronous
+            responses to on-demand requests.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:46.892Z'
+          updatedAt: '2023-03-03T16:19:09.158Z'
+          pub_details: pp 6220-6231
+          documentId: npa668ghcbe32iumstp7eucw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 9
+        data:
+          title: Towards Providing On-Demand Expert Support for Software Developers
+          abstract: >-
+            Software development is an expert task that requires complex reasoning and  the  ability  to  recall
+            language or API-specific details. In practice, developers often seek support from IDE tools, Web resources,
+            or other developers to help fill in gaps in their knowledge on-demand. In this paper, we present two studies
+            that seek to inform the design of future systems that use  remote  experts  to  support  developers  on 
+            demand. The first explores what types of questions developers would ask a hypothetical assistant capable of
+            answering any question they pose. The second study explores the interactions between developers and remote
+            “experts” in supporting roles. Our results suggest eight key system features needed for on-demand re-mote
+            developer assistants to be effective, which has implications for future human-powered development tools.
+          short_description: >-
+            Two studies that present the opportunities and the design recommendations of on-demand remote support
+            systems for developers.
+          award: none
+          award_description: ''
+          createdAt: '2023-03-02T18:51:46.454Z'
+          updatedAt: '2023-03-03T16:56:48.549Z'
+          pub_details: pp 3192-3203
+          documentId: qrz3bl9agai4v59s208es4bm
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 9
+        data:
+          createdAt: '2023-03-02T18:42:28.459Z'
+          updatedAt: '2024-01-12T22:43:08.783Z'
+          given_name: Yan
+          family_name: Chen
+          middle_name: null
+          membership: alum
+          homepage: 'https://chensivan.github.io/'
+          short_bio: |-
+            Assistant Professor
+            Virginia Tech
+          long_bio: >-
+            Dr. Yan Chen is an Assistant Professor of [Computer Science](https://cs.vt.edu/) at [Virginia
+            Tech](https://www.vt.edu/). Yan earned his PhD at [the University of Michigan](https://umich.edu/), advised
+            by [Dr. Steve Oney](https://umich.edu/). After his Ph.D., he was a postdoctoral researcher at the
+            [University of Toronto](https://www.utoronto.ca/), working with [Tovi
+            Grossman](https://www.tovigrossman.com/).  His research aims to leverage human computation and machine
+            intelligence to effectively solve complex tasks that require domain expertise, such as software development,
+            video curation. He studies problems that users face with existing tools and methods, and builds
+            computational systems to assist users via efficient collaboration and hybrid crowd-machine workflows.
+          color: '#A5AFAD'
+          use_local_homepage: false
+          documentId: q0vgcl8tv06952kf6ej23r05
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 21
+              url: 'https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en'
+              description: Google Scholar
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 2
+        data:
+          title: On-Demand Support for Programmers
+          createdAt: '2023-03-02T19:13:39.586Z'
+          updatedAt: '2023-03-03T17:45:56.448Z'
+          description: ' '
+          documentId: ysn6qzghgloftzhwezom10us
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
+- type: 'api::cluster.cluster'
+  id: 7
+  data:
+    title: Programming Education
+    createdAt: '2023-03-03T18:35:26.228Z'
+    updatedAt: '2023-03-03T18:35:26.228Z'
+    description: null
+    documentId: utgnwloradkpppvkjk7v4oey
+    locale: null
+    publishedAt: '2024-11-04T18:31:54.350Z'
+    publications:
+      - type: 'api::publication.publication'
+        id: 23
+        data:
+          title: 'EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education'
+          abstract: >-
+            Programming support mechanisms, such as online discussion forums and in-person office hours, are important
+            in CS education. However, it is challenging to provide personalized feedback at scale using these methods;
+            online forums lack personalized assistance, and in-person support at office hours scales poorly. To address
+            these challenges, we introduce EdCode, a remote support system that allows students to remotely interact
+            with instructors to seek personalized assistance and allows instructors to scale their answers. We
+            accomplish this by enabling students to communicate with instructors within their working context (through
+            their IDE), and instructors to compose their answers using hypertext that references students’ code. These
+            features help instructors provide personalized assistance remotely, in a way that resembles in-person
+            support. In addition, instructors can curate and publish their answers for an entire class by selecting only
+            the relevant part of the code referenced, thereby precluding plagiarism. We evaluated our approach with a
+            series of usability studies in three different setups: instructor- focused, student-focused, and an
+            end-to-end study. We were able to confirm the need for and potential benefits of EdCode in programming
+            courses. Students found that the perceived quality of support from EdCode was comparable to that of answers
+            from in-person office hours, and both students and instructors found publishing and viewing other students’
+            answers helpful.
+          short_description: >-
+            EdCode applies a semi-asychronous on-demand help seeking model in a learning setting, aiming towards provide
+            more personalized support at scale.
+          award: best_paper
+          award_description: Best Short Paper
+          createdAt: '2023-03-02T18:51:49.835Z'
+          updatedAt: '2023-03-03T16:25:14.110Z'
+          pub_details: null
+          documentId: o3sgnxaqunp6oei8omtwxtxa
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 45
+        data:
+          title: ' PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises'
+          abstract: >-
+            Peer assessment, as a form of collaborative learning, can engage students in active learning and improve
+            students' learning gains. However, current teaching platforms and programming environments provide little
+            support to integrate peer assessment for in-class programming exercises. We identified challenges in
+            conducting in-class programming exercises and adopting peer assessment through formative interviews with
+            instructors of introductory programming courses. To address these challenges, we introduce PuzzleMe, a
+            programming exercises tool to help CS instructors to conduct engaging and learning effective in-class
+            programming exercises. PuzzleMe leverages peer assessment to support a collaboration model where students
+            provide timely feedback on peers' work. We propose two assessment techniques tailored to in-class
+            programming exercises: live peer testing and live peer code review. Live peer testing can improve students'
+            code robustness by allowing students to create and share lightweight tests with peers. Live peer code review
+            can improve students' code understanding by intelligently grouping students to maximize meaningful code
+            reviews. A two-week deployment study revealed that PuzzleMe encourages students to write high-quality test
+            cases, identify code problems, correct misunderstandings, and learn a diverse set of problem-solving
+            approaches from peers.
+          short_description: >-
+            A tool that enhances in-class programming exercises by (1) enabling students to write unit tests that can be
+            shared with the rest of the class (and used to test other students' code), (2) enables peer code reviews
+            where students are intelligently grouped with other students to perform code reviews. PuzzleMe is intended
+            for introductory classes and also includes a design to make testing more lightweight. 
+          award: none
+          award_description: null
+          createdAt: '2023-03-03T17:37:20.984Z'
+          updatedAt: '2023-03-10T17:37:05.076Z'
+          pub_details: null
+          documentId: lto34i18et54agnpd7piiwsw
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 51
+        data:
+          title: 'VizProg: Identifying Misunderstandings by Visualizing Students'' Coding Progress'
+          abstract: >-
+            Programming instructors often conduct in-class exercises to help them identify students that are falling
+            behind and surface students' misconceptions. However, as we found in interviews with programming
+            instructors, monitoring students' progress during exercises is difficult, particularly for large classes. We
+            present VizProg, a system that allows instructors to monitor and inspect students' coding progress in
+            real-time during in-class exercises. VizProg represents students' statuses as a 2D Euclidean spatial map
+            that encodes the students' problem-solving approaches and progress in real-time. VizProg allows instructors
+            to navigate the temporal and structural evolution of students' code, understand relationships between code,
+            and determine when to provide feedback. A comparison experiment showed that VizProg helped to identify more
+            students' problems than a baseline system. VizProg also provides richer and more comprehensive information
+            for identifying important student behavior. By managing students' activities at scale, this work presents a
+            new paradigm for improving the quality of live learning.
+          short_description: >-
+            VizProg is a tool that allows instructors of large programming classes to monitor students' progress at
+            scale. It represents students' code in a 2D map where dots representing students move further to the right
+            as they get closer to a correct solution. VizProg uses vertical space to represent different approaches to
+            solving the problem (so students towards the bottom of the map are using a different approach than students
+            at the top of the map).
+          award: honorable_mention
+          award_description: null
+          createdAt: '2023-03-03T18:30:18.213Z'
+          updatedAt: '2024-10-24T17:08:35.208Z'
+          pub_details: null
+          documentId: maf44rugxwnrym1npi4v56h0
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 56
+        data:
+          title: "\tRunEx: Augmenting Regular-Expression Code Search with Runtime Values"
+          abstract: >-
+            Programming instructors frequently use in-class exercises to help students reinforce concepts learned in
+            lecture. However, identifying class-wide patterns and mistakes in students' code can be challenging,
+            especially for large classes. Conventional code search tools are insufficient for this purpose as they are
+            not designed for finding semantic structures underlying large students' code corpus, where the code samples
+            are similar, relatively small, and written by novice programmers. To address this limitation, we introduce
+            RunEx, a novel code search tool where instructors can effortlessly generate queries with minimal prior
+            knowledge of code search and rapidly search through a large code corpus. The tool consists of two parts: 1)
+            a syntax that augments regular expressions with runtime values, and 2) a user interface that enables
+            instructors to construct runtime and syntax-based queries with high expressiveness and apply combined
+            filters to code examples. Our comparison experiment shows that RunEx outperforms baseline systems with text
+            matching alone in identifying code patterns with higher accuracy. Furthermore, RunEx features a user
+            interface that requires minimal prior knowledge to create search queries. Through searching and analyzing
+            students' code with runtime values at scale, our work introduces a new paradigm for understanding patterns
+            and errors in programming education.
+          short_description: >-
+            A system that improves code search by augmenting regular expressions with the ability to specify constraints
+            on runtime values of specific expressions.
+          award: none
+          award_description: null
+          createdAt: '2023-10-13T14:36:17.770Z'
+          updatedAt: '2023-10-13T14:36:17.770Z'
+          pub_details: null
+          documentId: n78cw9t7j9a4crsuiz65yo86
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+      - type: 'api::publication.publication'
+        id: 58
+        data:
+          title: 'CFlow: Supporting Semantic Flow Analysis of Students'' Code in Programming Problems at Scale'
+          abstract: >-
+            The high demand for computer science education has led to high enrollments, with thousands of students in
+            many introductory courses. In such large courses, it can be overwhelmingly difficult for instructors to
+            understand class-wide problem-solving patterns or issues, which is crucial for improving instruction and
+            addressing important pedagogical challenges. In this paper, we propose a technique and system, *CFlow*, for
+            creating understandable and navigable representations of code at scale. CFlow is able to represent thousands
+            of code samples in a visualization that resembles a single code sample. CFlow creates scalable code
+            representations by (1) clustering individual statements with similar semantic purposes, (2) presenting
+            clustered statements in a way that maintains semantic relationships between statements, (3) representing the
+            correctness of different variations as a histogram, and (4) allowing users to navigate through solutions
+            interactively using semantic filters. With a multi-level view design, users can navigate high-level
+            patterns, and low-level implementations. This is in contrast to prior tools that either limit their focus on
+            isolated statements (and thus discard the surrounding context of those statements) or cluster entire code
+            samples (which can lead to large numbers of clusters---for example, if there are *n* code features and *m*
+            implementations of each, there can be m^n clusters). We evaluated the effectiveness of CFlow with a
+            comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled
+            twice as many desired patterns from over 6,000 submissions.
+          short_description: >-
+            Introduces CFlow, a system for visualizing and analyzing large numbers of student code submissions to help
+            instructors understand common mistakes and patterns. CFlow uses semantic labeling and code structure
+            analysis to cluster code lines across submissions and present them in a visualization that resembles a
+            single code sample, allowing instructors to see the overall semantic flow while still being able to dive
+            into individual submissions.
+          award: best_paper
+          award_description: null
+          createdAt: '2024-04-27T16:20:41.161Z'
+          updatedAt: '2024-07-19T22:40:01.588Z'
+          pub_details: null
+          documentId: ajfqq2s32x9hd14aouv36dba
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.378Z'
+          submission_status: null
+          youtube_videos: []
+    authors:
+      - type: 'api::author.author'
+        id: 72
+        data:
+          createdAt: '2023-03-03T17:54:19.071Z'
+          updatedAt: '2024-07-23T03:03:06.676Z'
+          given_name: Ashley
+          family_name: Zhang
+          middle_name: null
+          membership: member
+          homepage: 'https://gezhangrp.com/'
+          short_bio: |-
+            Ph.D. Student
+            Michigan SI
+          long_bio: >-
+            Ashley is a PhD student at [the University of Michigan School of Information](https://www.si.umich.edu/),
+            advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and
+            learning in programming education. Currently, she is working around tools to make students' code
+            understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from
+            [Peking University](http://english.pku.edu.cn/) in July, 2021.
+          color: '#a19cb9'
+          use_local_homepage: false
+          documentId: y8sr78d1ye9ll0vuj2ef2h8v
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links:
+            - id: 18
+              url: 'https://twitter.com/gezhang001'
+              description: Twitter
+            - id: 19
+              url: 'https://github.com/AshleyZG'
+              description: GitHub
+            - id: 20
+              url: 'https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ'
+              description: Google Scholar
+            - id: 23
+              url: 'https://gezhangrp.com/assets/misc/cv.pdf'
+              description: CV
+      - type: 'api::author.author'
+        id: 4
+        data:
+          createdAt: '2023-03-02T18:42:27.304Z'
+          updatedAt: '2024-11-10T19:31:49.798Z'
+          given_name: Steve
+          family_name: Oney
+          middle_name: ''
+          membership: lead
+          homepage: 'https://from.so/Steve_Oney'
+          short_bio: |-
+            Associate Professor
+            Michigan SI & CSE
+          long_bio: >-
+            Steve Oney is an Associate Professor at the [University of Michigan School of
+            Information](https://www.si.umich.edu/) and [Computer Science and Engineering](https://cse.engin.umich.edu/)
+            (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer
+            programs by creating new programming tools and exploring usability issues in programming environments. Steve
+            completed his Ph.D in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where
+            he was advised by [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel
+            Brandt](https://joelbrandt.com/). He also attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS
+            M.Eng in 2008).
+          color: '#FFC14A'
+          use_local_homepage: true
+          documentId: mts4hjrrgsx2z84y1hpp2o05
+          locale: null
+          publishedAt: '2024-11-10T19:31:49.644Z'
+          links:
+            - id: 1
+              url: 'https://from.so/oney_cv/'
+              description: CV
+            - id: 2
+              url: 'https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en'
+              description: Google Scholar
+            - id: 3
+              url: 'https://github.com/soney'
+              description: GitHub
+            - id: 22
+              url: 'https://www.name-coach.com/steve-oney'
+              description: "\U0001F509 Hear my name"
+      - type: 'api::author.author'
+        id: 112
+        data:
+          createdAt: '2024-09-16T17:52:24.190Z'
+          updatedAt: '2024-09-17T18:51:35.624Z'
+          given_name: Maryam
+          family_name: Arab
+          middle_name: null
+          membership: member-postdoc
+          homepage: 'https://sites.google.com/view/maryamarab/home'
+          short_bio: |-
+            Postdoctoral Scholar
+            Michigan SI
+          long_bio: >-
+            Dr. Maryam Arab is a Postdoctoral Scholar in the School of Information, working with [Dr. Steve
+            Oney](https://from.so/Steve_Oney). Dr. Maryam Arab earned her Ph.D. in the Department of Computer Science at
+            [George Mason University](https://cs.gmu.edu/), with [Dr. Thomas D. LaToza](https://cs.gmu.edu/~tlatoza/) in
+            the [DevX lab](https://devx.cs.gmu.edu/). She is passionate about Human-Computer Interaction (HCI) and
+            specializes in designing programming tools that harmonize machine and human intelligence. Her research
+            investigates how human-computer interaction would be effective in designing programming tools and how to
+            blend machine and human intelligence.
+          color: '#79A4E5'
+          use_local_homepage: false
+          documentId: ghevsfm0n90kz71ab0bx0oia
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.336Z'
+          links: []
+    localizations:
+      - type: 'api::cluster.cluster'
+        id: 7
+        data:
+          title: Programming Education
+          createdAt: '2023-03-03T18:35:26.228Z'
+          updatedAt: '2023-03-03T18:35:26.228Z'
+          description: null
+          documentId: utgnwloradkpppvkjk7v4oey
+          locale: null
+          publishedAt: '2024-11-04T18:31:54.350Z'
