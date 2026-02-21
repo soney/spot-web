@@ -1,0 +1,1600 @@
+- id: codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
+  title: 'CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories'
+  abstract: >-
+    Code edit histories can offer instructors valuable insight into students' problem-solving processes, revealing
+    unproductive behaviors that final code alone cannot capture. For example, a correct solution may contain large
+    copy-and-pasted segments (suggesting the code originated elsewhere) or unguided trial-and-error (suggesting a lack
+    of clear strategy). Timelines are a common way to visualize code histories, but existing timeline visualizations of
+    code or document histories show only when and where edits occurred, not what changed. Without this context, it is
+    difficult to answer key questions about how students invested effort or to infer their intentions. We present
+    CodeStream, a visualization system that augments timelines with situational code annotations, whose granularity and
+    visibility dynamically adapt to scale and interaction state. A comparison study shows that CodeStream enables
+    context-aware navigation of coding histories, supporting fast and accurate pattern identification, and helping
+    instructors reason about students' coding behaviors and identify who may need intervention.
+  short_description: >-
+    Introduces a visualization system that helps instructors interpret students’ keystroke-level coding histories. While
+    traditional timelines show when and where edits occurred, they do not reveal what changed. CodeStream augments
+    timelines with zoomable code annotations, multi-level structural summaries, and a cumulative effort heatmap,
+    allowing instructors to see both the content and intensity of edits without constant context switching.
+  authors:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+    - maryam_arab
+    - yan_chen
+    - steve_oney
+  student_authors:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+  venue: chi_2026
+- id: simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
+  title: Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation
+  authors:
+    - xiangyu_zhou
+    - steve_oney
+  student_authors:
+    - xiangyu_zhou
+  venue: chi_posters_2026
+- id: co_advisor_learning_programming_strategies_in_context_2025
+  title: 'Co-Advisor: Learning Programming Strategies in Context'
+  abstract: >-
+    Programming instruction often focuses on syntax and algorithms. However, mastering programming also requires the
+    building strategic knowledge of skills such as debugging, problem solving, and program design. These critical skills
+    are difficult to teach explicitly because they often involve tacit knowledge, context-specific understanding, and
+    adaptive decision-making. Large Language Models (LLMs) can be effective in helping with syntactic and algorithmic
+    questions but can fail to provide strategic knowledge. This is partly because strategic knowledge involves nuanced
+    contexts that span code and runtime states, requires subjective judgments, and dynamically evolves based on the
+    outcomes of users’ actions. We introduce Co-Advisor, a context-aware strategy recommendation tool that leverages LLM
+    to evaluate problem context and monitor the programmer’s actions to provide personalized constructive feedback.
+    Unlike prior work, Co-Advisor can dynamically align expert strategies with real-time programmer actions and code
+    context, offering actionable, personalized strategic knowledge. In a formative evaluation with 14 programmers
+    involved in two debugging tasks, we found that those using Co-Advisor to receive context-related feedback alongside
+    expert strategies were significantly more successful than those without context-related feedback. They demonstrated
+    greater engagement and had an improved learning experience, gaining insight into the reasons behind their mistakes,
+    correcting them, and understanding the rationale behind their actions. Thus, Co-Advisor enhances conceptual
+    understanding and strategic problem-solving.
+  short_description: >-
+    A context-aware learning tool that helps programmers develop strategic problem-solving skills like debugging and
+    program design. Integrated with Visual Studio Code, it analyzes the learner’s code, runtime state, and actions to
+    recommend expert strategies tailored to a developer's context. As learners follow these strategies, Co-Advisor
+    provides real-time feedback to make it easier for developers to understand strategic knowledge in context.
+  authors:
+    - maryam_arab
+    - hanning_li
+    - rushal_butala
+    - steve_oney
+  student_authors:
+    - hanning_li
+    - rushal_butala
+  venue: vl_hcc_2025
+  pdf: pdfs/coadvisor_1e625165af.pdf
+- id: convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025
+  title: 'ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems'
+  abstract: >-
+    Following the rapid emergence of large language models, Multi-Agent Systems (MASs) became a promising approach for
+    accomplishing complex tasks. In MASs, multiple autonomous agents with predetermined roles collaborate by dividing
+    responsibilities. However, MAS developers often struggle to understand and diagnose agents' behavior from thousands
+    of inter-agent messages across multiple complex conversations. To identify key requirements and challenges related
+    to evaluating, debugging, and managing MASs, we conducted a formative study with six MAS developers. We then
+    introduce ConvoMap, a prototype that addresses a key challenge of MAS development---understanding agents' behaviors
+    across multiple conversations. ConvoMap integrates automated qualitative coding to enable multi-level inspection of
+    agents' behavior. ConvoMap can then visualize hundreds of MAS conversations by representing messages as points on a
+    2D map that encode their semantic meanings and interactions between agents. To better support navigation and deeper
+    analysis, ConvoMap provides topic overviews and highlights relevant text segments. A comparison study showed that
+    ConvoMap helped to understand agents' behavior more accurately than the baseline.
+  short_description: >-
+    A visualization system that helps developers understand and debug large collections of conversations between AI
+    agents in Multi-Agent Systems (MASs). ConvoMap contains visualizations to show the flow of interactions between
+    agents and the topics covered. ConvoMap allows MAS developers to spot behavioral patterns, trace errors, and compare
+    outcomes at scale.
+  authors:
+    - ashley_zhang
+    - victor_bursztyn
+    - gromit_chan
+    - shunan_guo
+    - eunyee_koh
+    - steve_oney
+    - jane_hoffswell
+  student_authors:
+    - ashley_zhang
+  venue: vl_hcc_2025
+  pdf: pdfs/convomap_a1af435f23.pdf
+- id: multi_click_cross_tab_web_automation_via_action_generalization_2025
+  title: 'Multi-Click: Cross-Tab Web Automation via Action Generalization'
+  abstract: >-
+    Repetitive actions are a common and frustrating part of using the web. Prior work has proposed automating repetitive
+    actions with natural language descriptions, demonstrations, and pseudocode. However, these approaches introduce
+    abstractions that can be difficult to write, evaluate, and fit within web workflows. We describe a new approach,
+    Multi-Click, for simultaneously performing the same action (e.g., clicking or typing) across multiple pages while
+    maintaining the immediacy and understandability of direct manipulation. Users can intuitively select groups of
+    analogous elements within or across windows/tabs (e.g., equivalent elements in different instantiations of a
+    template) and interact with these elements as if each simultaneously had keyboard or cursor focus (e.g., one click
+    propagates to multiple targets). Multi-Click introduces algorithms for identifying analogous elements from
+    structural and visual attributes; techniques for intuitively selecting and visualizing targets; and uses interactive
+    data grids to manage variation in text entry and retrieval tasks.
+  short_description: >-
+    Proposes "action generalization"---a technique for applying the same action across multiple contexts automatically.
+    Multi-click lets users select a "generalization strategy" to determine which elements a given action (e.g., click or
+    text entry) will apply to within a given page or across multiple tabs. Unlike prior web automation tools,
+    multi-click works at the *interaction* level, rather than requiring a separate script representation of automation
+    macros, which can improve the directness and understandability of bulk actions.
+  authors:
+    - jiacheng_zhang
+    - jiawen_li
+    - maryam_arab
+    - steve_oney
+  student_authors:
+    - jiacheng_zhang
+    - jiawen_li
+  venue: uist_2025
+  pdf: pdfs/multiclick_23163a891a.pdf
+- id: spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025
+  title: 'SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises'
+  abstract: >-
+    Monitoring in-class programming exercises can help instructors identify struggling students and common challenges.
+    However, understanding students' progress can be prohibitively difficult, particularly for multi-faceted problems
+    that include multiple steps with complex interdependencies, have no predictable completion order, or involve
+    evaluation criteria that are difficult to summarize across many students (e.g., exercises building interactive
+    web-based user interfaces). We introduce SPARK, a coding exercise monitoring dashboard designed to address these
+    challenges. SPARK allows instructors to flexibly group substeps into checkpoints based on exercise requirements,
+    suggests automated tests for these checkpoints, and generates visualizations to track progress across steps. SPARK
+    also allows instructors to inspect intermediate outputs, providing deeper insights into solution variations. We also
+    construct a dataset of 40-minute keystroke coding data from N=22 learners solving two web programming exercises and
+    provide empirical insights into the perceived usefulness of SPARK through a within-subjects evaluation with 16
+    programming instructors.
+  short_description: >-
+    A dashboard for programming instructors that lets them monitor student progress on complex, multi-step programming
+    exercises. SPARK lets instructors define checkpoints, automatically generates tests for each step, and visualizes
+    progress across students. SPARK also enables inspection of intermediate outputs and runtime states to reveal common
+    challenges and misconceptions.
+  award: honorable_mention
+  authors:
+    - yinuo_yang
+    - ashley_zhang
+    - steve_oney
+    - april_wang
+  student_authors:
+    - yinuo_yang
+    - ashley_zhang
+  venue: vl_hcc_2025
+  pdf: pdfs/spark_1eaf069649.pdf
+- id: understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025
+  title: Understanding And Guiding Student-AI Interaction In Future Programming Education
+  authors:
+    - ashley_zhang
+    - yinuo_yang
+    - maryam_arab
+    - yan_chen
+    - steve_oney
+  student_authors:
+    - ashley_zhang
+    - yinuo_yang
+  venue: chi2025_ae_ai_2025
+  pdf: pdfs/CHI_2025_Education_Workshop_ff2c06f9e3.pdf
+- id: understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025
+  title: Understanding Challenges and Needs of Using AI in Web Automation Systems
+  abstract: >-
+    Web automation—the process of simulating user interactions with websites—has gained significant attention due to
+    advances in Artificial Intelligence and increased digitization of services. While web automation offers potential
+    benefits by streamlining tasks and addressing accessibility barriers, it also introduces unique challenges due to
+    the complexities of automating interactions with interfaces designed for humans. Beyond technical advancements,
+    addressing these challenges requires meeting human-centric needs and concerns surrounding web automation. In this
+    paper, we explore critical questions about users’ web automation needs and preferences through a series of
+    interviews with a diverse group of participants, including individuals across various age ranges and users with
+    visual impairments. Our findings offer insights on how users weigh concerns such as privacy, error rates,
+    efficiency, and usefulness in deciding what level of automation might be appropriate for a given task. We highlight
+    critical areas for improvement inautomation tools and design principles for future systems.
+  authors:
+    - jiacheng_zhang
+    - carl_fan
+    - steve_oney
+  student_authors:
+    - jiacheng_zhang
+    - carl_fan
+  venue: chi2025_compui_2025
+  pdf: pdfs/Understanding_Challenges_and_Needs_of_Using_AI_in_Web_Automation_Systems_d0301309a2.pdf
+- id: don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024
+  title: '"Don''t Step on My Toes": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks'
+  abstract: >-
+    Real-time collaborative editing in computational notebooks can improve the efficiency of teamwork for data
+    scientists. However, working together through synchronous editing of notebooks introduces new challenges. Data
+    scientists may inadvertently interfere with each others' work by altering the shared codebase and runtime state if
+    they do not set up a social protocol for working together and monitoring their collaborators' progress. In this
+    paper, we propose a real-time collaborative editing model for resolving conflict edits in computational notebooks
+    that introduces three levels of edit protection to help collaborators avoid introducing errors to both the program
+    source code and changes to the runtime state. 
+  authors:
+    - april_wang
+    - zihan_wu
+    - christopher_brooks
+    - steve_oney
+  student_authors:
+    - zihan_wu
+  venue: ide_workshop_2024
+  pdf: pdfs/3643796_3648453_21685d6467.pdf
+- id: cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
+  title: 'CFlow: Supporting Semantic Flow Analysis of Students'' Code in Programming Problems at Scale'
+  abstract: >-
+    The high demand for computer science education has led to high enrollments, with thousands of students in many
+    introductory courses. In such large courses, it can be overwhelmingly difficult for instructors to understand
+    class-wide problem-solving patterns or issues, which is crucial for improving instruction and addressing important
+    pedagogical challenges. In this paper, we propose a technique and system, *CFlow*, for creating understandable and
+    navigable representations of code at scale. CFlow is able to represent thousands of code samples in a visualization
+    that resembles a single code sample. CFlow creates scalable code representations by (1) clustering individual
+    statements with similar semantic purposes, (2) presenting clustered statements in a way that maintains semantic
+    relationships between statements, (3) representing the correctness of different variations as a histogram, and (4)
+    allowing users to navigate through solutions interactively using semantic filters. With a multi-level view design,
+    users can navigate high-level patterns, and low-level implementations. This is in contrast to prior tools that
+    either limit their focus on isolated statements (and thus discard the surrounding context of those statements) or
+    cluster entire code samples (which can lead to large numbers of clusters---for example, if there are *n* code
+    features and *m* implementations of each, there can be m^n clusters). We evaluated the effectiveness of CFlow with a
+    comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled twice as
+    many desired patterns from over 6,000 submissions.
+  short_description: >-
+    Introduces CFlow, a system for visualizing and analyzing large numbers of student code submissions to help
+    instructors understand common mistakes and patterns. CFlow uses semantic labeling and code structure analysis to
+    cluster code lines across submissions and present them in a visualization that resembles a single code sample,
+    allowing instructors to see the overall semantic flow while still being able to dive into individual submissions.
+  award: best_paper
+  authors:
+    - ashley_zhang
+    - xiaohang_tang
+    - steve_oney
+    - yan_chen
+  student_authors:
+    - ashley_zhang
+    - xiaohang_tang
+  venue: l_s_2024
+  pdf: pdfs/C_Flow_L_S24_f41252a77c.pdf
+- id: demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
+  title: 'Demonstration of CFlow: Supporting Semantic Flow Analysis of Students'' Code in Programming Problems at Scale'
+  authors:
+    - ashley_zhang
+    - xiaohang_tang
+    - steve_oney
+    - yan_chen
+  student_authors:
+    - ashley_zhang
+    - xiaohang_tang
+  venue: l_s_demos_2024
+  pdf: pdfs/3657604_3664717_3cea35607c.pdf
+- id: edbooks_ai_enhanced_interactive_narratives_for_programming_education_2024
+  title: 'EDBooks: AI-Enhanced Interactive Narratives for Programming Education'
+  authors:
+    - steve_oney
+  venue: preprint_2024
+  pdf: pdfs/ED_Books_69edbee2e2.pdf
+- id: improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024
+  title: Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction
+  authors:
+    - jane_im
+    - himanshu_zade
+    - steve_oney
+    - pamela_wisniewski
+    - kentaro_toyama
+  student_authors:
+    - jane_im
+  venue: chi_ea_2024
+  pdf: pdfs/3613905_3643971_178dac72ea.pdf
+- id: scrapeviz_hierarchical_representations_for_web_scraping_macros_2024
+  title: 'ScrapeViz: Hierarchical Representations for Web Scraping Macros'
+  abstract: >-
+    Programming-by-demonstration (PBD) makes it possible to create web scraping macros without writing code. However, it
+    can still be challenging for users to understand the exact scraping behavior that is inferred and to verify that the
+    scraped data is correct, especially when scraping occurs across multiple website pages. We present ScrapeViz, a new
+    PBD tool for authoring and visualizing distributed hierarchical web scraping macros. ScrapeViz's key novelty is in
+    providing users a visual representation of their web scraping macro -- the sequences of pages visited, generalized
+    scraping behavior across similar pages and page elements through grouping layouts and color coding, and the source
+    of scraped data through an interactive output table linked to page context. We conducted a lab study with 12
+    participants comparing ScrapeViz to the existing web scraping tool Rousillon and saw that participants found
+    ScrapeViz helpful for understanding high-level scraping behavior, the source of scraped data, and anomalies, and for
+    validating macros in real-time while authoring.
+  short_description: >-
+    A programming-by-demonstration tool that helps users create and visualize web scraping macros across multiple pages.
+    ScrapeViz offers a visual storyboard of scraping behaviors, making it easier to understand, trace data sources, and
+    identify errors. 
+  authors:
+    - rebecca_krosnick
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: vl_hcc_2024
+  pdf: pdfs/Scrape_Viz_VLHCC_2024_f1c7671149.pdf
+- id: towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
+  title: Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
+  abstract: >-
+    Code readability is crucial for program comprehension, maintenance, and collaboration. However, many of the
+    standards for writing readable code are derived from sighted developers' readability needs. We conducted a
+    qualitative study with 16 blind and visually impaired (BVI) developers to better understand their readability
+    preferences for common code formatting rules such as identifier naming conventions, line length, and use of
+    indentation. Our findings revealed how BVI developers' preferences contrast with those of sighted developers and how
+    we can expand the existing rules to improve code readability on screen readers. Based on the findings, we contribute
+    an inclusive understanding of code readability and derive implications for programming languages, development
+    environments, and style guides. Our work helps broaden the meaning of readable code in software engineering and
+    accessibility research.
+  short_description: >-
+    Explores the code readability preferences of blind and visually impaired (BVI) developers and how they differ from
+    sighted developers, through a qualitative study. Contributes an inclusive taxonomy for code readability and
+    recommendations for programming tools, code standards, and languages to better support BVI developers.
+  authors:
+    - mauli_pandey
+    - steve_oney
+    - andrew_begel
+  student_authors:
+    - mauli_pandey
+  venue: chi_2024
+  pdf: pdfs/chi24_617_TAPS_a20eff5b9d.pdf
+- id: vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024
+  title: 'VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring'
+  authors:
+    - yinuo_yang
+    - steve_oney
+  student_authors:
+    - yinuo_yang
+  venue: l_s_demos_2024
+  pdf: pdfs/3657604_3664716_9053c7f0b9.pdf
+- id: vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024
+  title: 'VRCopilot: Authoring 3D Layouts with Generative Models in VR'
+  abstract: ' Immersive authoring provides an intuitive medium for users to create 3D scenes via direct manipulation in Virtual Reality (VR). Recent advances in generative AI have enabled the automatic creation of realistic 3D layouts. However, it is unclear how capabilities of generative AI can be utilized in immersive authoring to support fluid interactions, user agency, and creativity. We introduce VRCopilot, a mixed-initiative system that integrates pre-trained generative AI models into immersive authoring, to facilitate human-AI co-creation in VR. VRCopilot presents multimodal interactions to support rapid prototyping and iterations with AI, and intermediate representations such as wireframes to augment user controllability over the created content. Through a series of user studies, we evaluated the potential and challenges in manual, semi-automatic, and fully automatic creation in immersive authoring. We found that creation with generative AI increased efficiency, and semi-automatic creation with wireframes enhanced the creation experience and user agency compared to fully automatic approaches.'
+  short_description: >-
+    A mixed-initiative tool for immersive 3D layout design in VR. It integrates generative AI to assist users in
+    co-creating room layouts using voice commands, multimodal interactions, and wireframe-based representations.
+    VRCopilot supports three modes: manual creation, automatic AI generation, and scaffolded creation with wireframes,
+    balancing user control and automation.
+  authors:
+    - lei_zhang
+    - jin_pan
+    - jacob_gettig
+    - steve_oney
+    - anhong_guo
+  student_authors:
+    - lei_zhang
+    - jin_pan
+    - jacob_gettig
+  venue: uist_2024
+  pdf: pdfs/VR_Copilot_765259750e.pdf
+- id: colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023
+  title: 'Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials'
+  abstract: >-
+    Multi-stage programming tutorials are key learning resources for programmers, using progressive incremental steps to
+    teach them how to build larger software systems. A good multi-stage tutorial describes the code clearly, explains
+    the rationale and code changes for each step, and allows readers to experiment as they work through the tutorial. In
+    practice, it is time-consuming for authors to create tutorials with these attributes. In this paper, we introduce
+    Colaroid, an interactive authoring tool for creating high quality multi-stage tutorials. Colaroid tutorials are
+    augmented computational notebooks, where snippets and outputs represent a snapshot of a project, with source code
+    differences highlighted, complete source code context for each snippet, and the ability to load and tinker with any
+    stage of the project in a linked IDE. In two laboratory studies, we found Colaroid makes it easy to create
+    multi-stage tutorials, while offering advantages to readers compared to video and web-based tutorials.
+  short_description: >-
+    Colaroid is an extension to the Visual Studio Code IDE that makes it easier to create mutli-step tutorials about a
+    large code sample. Developers can write their code in the IDE and as they are writing their code, Colaroid allows
+    them to divide their work into steps. Colaroid tutorials are augmented computational notebooks, where snippets and
+    outputs represent a snapshot of a project, with source code differences highlighted, complete source code context
+    for each snippet, and the ability to load and tinker with any stage of the project in a linked IDE.
+  award: honorable_mention
+  authors:
+    - april_wang
+    - andrew_head
+    - ashley_zhang
+    - steve_oney
+    - christopher_brooks
+  student_authors:
+    - april_wang
+    - ashley_zhang
+  venue: chi_2023
+  pdf: pdfs/chi23b_sub3896_cam_i16_5b54870747.pdf
+- id: how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023
+  title: How Pairing by Code Similarity Influences Discussions in Peer Learning
+  abstract: >-
+    Peer learning, as a form of collaborative learning, has been widely used in programming courses as a means of
+    promoting active learning and enhancing students' programming skills. However, it is challenging for instructors to
+    group students effectively so that they can have fruitful conversations. We conducted a study with 15 students from
+    an introductory programming course to investigate whether and how grouping students with similar or different
+    solutions affects the discussions that take place within groups. The findings indicate that pairing students by the
+    similarity of their code might influence students' learning and coding skills. Specifically, students who were
+    paired with people that had different solutions had, on average, more engaging conversations and were more likely to
+    write more diverse solutions in the future. The results also highlight the need for tools to facilitate the pairing
+    process in programming courses in order to optimize the learning outcomes for students. 
+  authors:
+    - shiyu_xu
+    - ashley_zhang
+    - steve_oney
+  student_authors:
+    - shiyu_xu
+    - ashley_zhang
+  venue: chi_lbw_2023
+  pdf: pdfs/3544549_3585837_7633d80412.pdf
+- id: promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
+  title: Promises and Pitfalls of Using LLMs for Scraping Web UIs
+  abstract: >-
+    ChatGPT and other publicly available large language models (LLMs) put AI into the hands of everyday computer users,
+    offering the possibility of automating computer tasks. One candidate task is web scraping. We informally
+    experimented with ChatGPT to explore the potential promises and pitfalls of using it for scraping data from web user
+    interfaces. We share our observations and considerations for future human-LLM web scraping systems.
+  authors:
+    - rebecca_krosnick
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: chi2023_compui_2023
+  pdf: pdfs/LL_Ms_webscraping_CHI_2023_workshop_2c88ec5615.pdf
+- id: runex_augmenting_regular_expression_code_search_with_runtime_values_2023
+  title: 'RunEx: Augmenting Regular-Expression Code Search with Runtime Values'
+  abstract: >-
+    Programming instructors frequently use in-class exercises to help students reinforce concepts learned in lecture.
+    However, identifying class-wide patterns and mistakes in students' code can be challenging, especially for large
+    classes. Conventional code search tools are insufficient for this purpose as they are not designed for finding
+    semantic structures underlying large students' code corpus, where the code samples are similar, relatively small,
+    and written by novice programmers. To address this limitation, we introduce RunEx, a novel code search tool where
+    instructors can effortlessly generate queries with minimal prior knowledge of code search and rapidly search through
+    a large code corpus. The tool consists of two parts: 1) a syntax that augments regular expressions with runtime
+    values, and 2) a user interface that enables instructors to construct runtime and syntax-based queries with high
+    expressiveness and apply combined filters to code examples. Our comparison experiment shows that RunEx outperforms
+    baseline systems with text matching alone in identifying code patterns with higher accuracy. Furthermore, RunEx
+    features a user interface that requires minimal prior knowledge to create search queries. Through searching and
+    analyzing students' code with runtime values at scale, our work introduces a new paradigm for understanding patterns
+    and errors in programming education.
+  short_description: >-
+    A system that improves code search by augmenting regular expressions with the ability to specify constraints on
+    runtime values of specific expressions.
+  authors:
+    - ashley_zhang
+    - yan_chen
+    - steve_oney
+  student_authors:
+    - ashley_zhang
+  venue: vl_hcc_2023
+  pdf: pdfs/Run_Exp_VLHCC_2023_386558a2d3.pdf
+- id: ui_development_in_mixed_ability_software_engineering_teams_2023
+  title: UI Development in Mixed-Ability Software Engineering Teams
+  abstract: >-
+    The tools and techniques that software engineers use to collaborate are critical in deciding who can contribute to
+    software projects and the roles they can play within those teams. We conducted two qualitative studies to better
+    understand the strategies that mixed-ability teams — specifically teams where some team members identify as having a
+    visual impairment and some do not — use to collaborate on user interface (UI) development. The consistent growth of
+    UI developer job roles has made many programmers seek UI engineering jobs. It is important to better understand the
+    accessibility of the profession and identify ways to make it more inclusive. In this chapter, we report on the
+    challenges in tool usage, programming practices, and communication that programmers with visual impairments
+    encounter in the specific application area of interactive UI programming as they collaborate with their colleagues.
+    We conclude with recommendations for building more inclusive software engineering teams by fostering communication
+    and help-seeking interactions and we derive implications for UI frameworks that aim to support accessible
+    application development.
+  authors:
+    - mauli_pandey
+    - sharvari_bondre
+    - vaishnav_kameswaran
+    - hrishikesh_rao
+    - sile_o_modhrain
+    - steve_oney
+  student_authors:
+    - mauli_pandey
+    - sharvari_bondre
+    - vaishnav_kameswaran
+    - hrishikesh_rao
+  venue: edi_2023
+  pdf: pdfs/UI_Development_Experiences_of_Programmers_with_Vis_abe39236b5.pdf
+- id: vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
+  title: 'VizProg: Identifying Misunderstandings by Visualizing Students'' Coding Progress'
+  abstract: >-
+    Programming instructors often conduct in-class exercises to help them identify students that are falling behind and
+    surface students' misconceptions. However, as we found in interviews with programming instructors, monitoring
+    students' progress during exercises is difficult, particularly for large classes. We present VizProg, a system that
+    allows instructors to monitor and inspect students' coding progress in real-time during in-class exercises. VizProg
+    represents students' statuses as a 2D Euclidean spatial map that encodes the students' problem-solving approaches
+    and progress in real-time. VizProg allows instructors to navigate the temporal and structural evolution of students'
+    code, understand relationships between code, and determine when to provide feedback. A comparison experiment showed
+    that VizProg helped to identify more students' problems than a baseline system. VizProg also provides richer and
+    more comprehensive information for identifying important student behavior. By managing students' activities at
+    scale, this work presents a new paradigm for improving the quality of live learning.
+  short_description: >-
+    VizProg is a tool that allows instructors of large programming classes to monitor students' progress at scale. It
+    represents students' code in a 2D map where dots representing students move further to the right as they get closer
+    to a correct solution. VizProg uses vertical space to represent different approaches to solving the problem (so
+    students towards the bottom of the map are using a different approach than students at the top of the map).
+  award: honorable_mention
+  authors:
+    - ashley_zhang
+    - yan_chen
+    - steve_oney
+  student_authors:
+    - ashley_zhang
+  venue: chi_2023
+  pdf: pdfs/chi23b_sub1516_cam_i16_6c90ec9599.pdf
+- id: vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
+  title: 'VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality'
+  abstract: ' Immersive authoring tools allow users to intuitively create and manipulate 3D scenes while immersed in Virtual Reality (VR). Collaboratively designing these scenes is a creative process that involves numerous edits, explorations of design alternatives, and frequent communication with collaborators. Version Control Systems (VCSs) help users achieve this by keeping track of the version history and creating a shared hub for communication. However, most VCSs are unsuitable for managing the version history of VR content because their underlying line differencing mechanism is designed for text and lacks the semantic information of 3D content; and the widely adopted commit model is designed for asynchronous collaboration rather than real-time awareness and communication in VR. We introduce VRGit, a new collaborative VCS that visualizes version history as a directed graph composed of 3D miniatures, and enables users to easily navigate versions, create branches, as well as preview and reuse versions directly in VR. Beyond individual uses, VRGit also facilitates synchronous collaboration in VR by providing awareness of users’ activities and version history through portals and shared history visualizations. In a lab study with 14 participants (seven groups), we demonstrate that VRGit enables users to easily manage version history both individually and collaboratively in VR.'
+  short_description: >-
+    A version control system designed especially for Virtual Reality (VR). VRGit allows users to view and navigate the
+    version history of a 3-D scene while immersed in VR. It also allows users to share and discuss history graphs
+    collaboratively.
+  authors:
+    - lei_zhang
+    - ashutosh_agrawal
+    - steve_oney
+    - anhong_guo
+  student_authors:
+    - lei_zhang
+    - ashutosh_agrawal
+  venue: chi_2023
+  pdf: pdfs/chi23b_sub2651_cam_i16_72c0f8c806.pdf
+- id: accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
+  title: Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments
+  abstract: >-
+    The availability of numerous UI components, the promise of accessibility, and cross-platform support have made UI
+    frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among software
+    developers. However, their widespread use also highlights the need to understand the experiences of programmers with
+    visual impairments with them. We adopted a mixed-methods design comprising two studies to understand the
+    accessibility and challenges of developing interfaces with UI frameworks and libraries. In Study 1, we analyzed 96
+    randomly-sampled archived threads of Program-L, a mailing list primarily comprising programmers with visual
+    impairments. In Study 2, we interviewed 18 programmers with visual impairments to confirm the findings from Study 1
+    and gain a deeper understanding of their motivations and experiences in using UI frameworks. Our participants
+    considered UI development essential to their programming responsibilities and sought to acquire relevant skills and
+    expertise. However, accessibility barriers in programming tools and UI frameworks complicated the processes of
+    writing UI code, debugging, testing, and collaborating with sighted colleagues. Our paper concludes with
+    recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries.
+  short_description: >-
+    Two studies into the accessibility and challenges of developing interfaces with UI frameworks and libraries.
+    Accessibility barriers in programming tools and UI frameworks can complicate the processes of writing UI code,
+    debugging, testing, and collaborating with sighted colleagues. This paper presents recommendations grounded in
+    empirical findings to improve the accessibility of frameworks and libraries.
+  authors:
+    - mauli_pandey
+    - sharvari_bondre
+    - sile_o_modhrain
+    - steve_oney
+  student_authors:
+    - mauli_pandey
+    - sharvari_bondre
+  venue: vl_hcc_2022
+  pdf: pdfs/accessibiliy_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_a421d92729.pdf
+- id: parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022
+  title: 'ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization'
+  abstract: >-
+    Prior work in programming-by-demonstration (PBD) has explored ways to enable end-users to create custom automation
+    without needing to write code. We propose a new end-user specification model – asking the end-user to explicitly
+    identify parts of their natural language query that can be generalized. We built a PBD system, ParamMacros, where
+    users first generalize a concrete natural language question – identifying parameters and their possible values – and
+    then create a demonstration of how to answer the question on the website of interest. ParamMacros then infers a
+    generalized program by using the user-provided parameter values to identify relevant patterns in the website’s
+    structure. In a lab study we found that participants were able to meaningfully parameterize natural language queries
+    and felt such a parameterization and demonstration process would be useful for creating custom automation.
+  short_description: >-
+    ParamMacros is a PBD system where users specify a natural language question about a website. ParamMacros then
+    leverages the DOM structure to help generalize and parameterize to similar natural language questions.
+  authors:
+    - rebecca_krosnick
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: vl_hcc_2022
+  pdf: pdfs/parammacros_a344f5e751.pdf
+- id: cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
+  title: 'CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing'
+  abstract: >-
+    User Interface (UI) mockups are commonly used as shared context during interface development collaboration. In
+    practice, UI designers often use screenshots and sketches to create mockups of desired UI behaviors for
+    communication. However, in the later stages of UI development, interfaces can be arbitrarily complex, making it
+    labor-intensive to sketch, and static screenshots are limited in the types of interactive and dynamic behaviors they
+    can express. We introduce CoCapture, a system that allows designer requesters to easily create UI behavior mockups
+    on existing web interfaces by demonstrating and remixing, and to accurately describe their requests to helpers by
+    referencing the resulting mockups using hypertext. We showed that the requester participants could more accurately
+    describe UI behaviors with CoCapture than with existing sketch and communication tools. The helper participants
+    found the descriptions of desired UI behaviors in CoCapture clear and easy to follow. Our approach can help teams
+    develop UIs efficiently by bridging communication gaps with more accurate visual context.
+  short_description: >-
+    CoCapture is a tool for creating behavior mockups for websites in the later stage of UI development. Unlike most
+    other prototyping tools, CoCapture assumes that a partially functional UI exists and allows designers to describe UI
+    behaviors by creating mockups that modify the existing UI behaviors by demonstrating and remixing.
+  authors:
+    - yan_chen
+    - sang_won_lee
+    - steve_oney
+  student_authors:
+    - yan_chen
+  venue: chi_2021
+  pdf: pdfs/cocapture_bca6d3e564.pdf
+- id: puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
+  title: 'PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises'
+  abstract: >-
+    Peer assessment, as a form of collaborative learning, can engage students in active learning and improve students'
+    learning gains. However, current teaching platforms and programming environments provide little support to integrate
+    peer assessment for in-class programming exercises. We identified challenges in conducting in-class programming
+    exercises and adopting peer assessment through formative interviews with instructors of introductory programming
+    courses. To address these challenges, we introduce PuzzleMe, a programming exercises tool to help CS instructors to
+    conduct engaging and learning effective in-class programming exercises. PuzzleMe leverages peer assessment to
+    support a collaboration model where students provide timely feedback on peers' work. We propose two assessment
+    techniques tailored to in-class programming exercises: live peer testing and live peer code review. Live peer
+    testing can improve students' code robustness by allowing students to create and share lightweight tests with peers.
+    Live peer code review can improve students' code understanding by intelligently grouping students to maximize
+    meaningful code reviews. A two-week deployment study revealed that PuzzleMe encourages students to write
+    high-quality test cases, identify code problems, correct misunderstandings, and learn a diverse set of
+    problem-solving approaches from peers.
+  short_description: >-
+    A tool that enhances in-class programming exercises by (1) enabling students to write unit tests that can be shared
+    with the rest of the class (and used to test other students' code), (2) enables peer code reviews where students are
+    intelligently grouped with other students to perform code reviews. PuzzleMe is intended for introductory classes and
+    also includes a design to make testing more lightweight. 
+  authors:
+    - april_wang
+    - yan_chen
+    - john_chung
+    - christopher_brooks
+    - steve_oney
+  student_authors:
+    - april_wang
+    - john_chung
+  venue: cscw_2021
+  pdf: pdfs/puzzleme_3a6f09cd6c.pdf
+- id: think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021
+  title: 'Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture'
+  abstract: >-
+    When users complete computing tasks, knowledge they leverage and their intent is most often lost because it is
+    tedious or challenging to capture. This makes it harder to understand why a colleague designed a component a certain
+    way or remember requirements for software you wrote a year ago. We introduce think-aloud computing, a novel
+    application of think-aloud where users are encouraged to speak while they work to capture rich knowledge with
+    relatively low effort. Through a formative study encouraging think-aloud, we find people shared information about
+    design intent, work processes, problems encountered, to-do items, and other useful information. We developed a
+    prototype that supports think-aloud computing by prompting users to speak and contextualizing speech with labels and
+    context. Our evaluation shows subtler design decisions and process explanations were captured in think-aloud than
+    via traditional documentation. Participants who created slides or 3D models reported think-aloud required similar
+    effort as traditional documentation.
+  short_description: >-
+    Introduces "think-aloud computing", an application of think-alouds where users are encourage to speak in order to
+    capture process-related as they work. For example, it might capture design intent, to-do items, problems
+    encountered, and more. We present a formative study of think-aloud computing and a prototype of a tool to support
+    think-aloud computing.
+  authors:
+    - rebecca_krosnick
+    - fraser_anderson
+    - justin_matejka
+    - steve_oney
+    - walter_lasecki
+    - tovi_grossman
+    - george_fitzmaurice
+  student_authors:
+    - rebecca_krosnick
+  venue: chi_2021
+  pdf: pdfs/think_aloud_computing_20b20cdef3.pdf
+- id: understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
+  title: Understanding Accessibility and Collaboration in Programming for People with Visual Impairments
+  abstract: >-
+    There has been a growing interest in CSCW and HCI to understand the experiences of programmers in the workplace.
+    However, the large majority of these studies have focused on sighted programmers and as a result, the experiences of
+    programmers with visual impairments in professional contexts remain understudied. We address this gap by reporting
+    on findings from semi-structured interviews with 22 programmers with visual impairments. We found that programmers
+    with visual impairments interact with a complex ecosystem of tools and a significant part of their job entails
+    performing work to overcome the accessibility challenges inherent in this ecosystem. Furthermore, we found that the
+    visual nature of various programming activities impedes collaboration, which necessitates the co-creation of new
+    work practices through a series of sociotechnical interactions. These sociotechnical interactions often required
+    invisible work and articulation work on the part of the programmers with visual impairments.
+  short_description: >-
+    A study into how programmers with visual impairments work in the context of programming teams. We describe how some
+    collaborative practices can impede collaboration and required invisible work and articulation work on the part of
+    the programmers with visual impairments.
+  award: other
+  award_description: ' Recognition for Contribution to Diversity and Inclusion'
+  authors:
+    - mauli_pandey
+    - vaishnav_kameswaran
+    - hrishikesh_rao
+    - sile_o_modhrain
+    - steve_oney
+  student_authors:
+    - mauli_pandey
+    - vaishnav_kameswaran
+    - hrishikesh_rao
+  venue: cscw_2021
+  pdf: pdfs/understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_a7c39a3385.pdf
+- id: understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021
+  title: Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts
+  abstract: "\tFor web scraping and personal task automation purposes, programmers write scripts to interact with websites. This is related to writing end-to-end UI test automation suites for computer software, but on third-party websites that the programmer does not own, introducing new challenges. A programmer might know what semantic operations they want their script to perform, but translating this to code can be difficult. The programmer must investigate the website's internal structure, content, and how UI elements behave, and then write code to click, type, and otherwise interact with UI elements. Many tools and frameworks for creating web automation scripts exist but the challenges programmers face in using them remains understudied. We conducted two studies to study how programmers write web automation scripts. The first study focuses on understanding general challenges. The second focuses on the ways website UI context and script feedback can be helpful. We also provide a set of design findings that detail the kinds of context and feedback developers need while writing web scripts."
+  short_description: >-
+    Two studies to better understand the challenges of writing web automation code (particularly the kinds of context
+    and feedback that are helpful when writing web automation code).
+  authors:
+    - rebecca_krosnick
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: vl_hcc_2021
+  pdf: pdfs/understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_cac3276d6b.pdf
+- id: what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021
+  title: What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle
+  abstract: >-
+    Many data scientists use computational notebooks to test and present their work, as a notebook can weave code and
+    documentation together (computational narrative), and support rapid iteration on code experiments. However, it is
+    not easy to write good documentation in a data science notebook, partially because there is a lack of a corpus of
+    well-documented notebooks as exemplars for data scientists to follow. To cope with this challenge, this work looks
+    at Kaggle — a large online community for data scientists to host and participate in machine learning competitions —
+    and considers highly-voted Kaggle notebooks as a proxy for well-documented notebooks. Through a qualitative analysis
+    at both the notebook level and the markdown-cell level, we find these notebooks are indeed well documented in
+    reference to previous literature. Our analysis also reveals nine categories of content that data scientists write in
+    their documentation cells, and these documentation cells often interplay with different stages of the data science
+    lifecycle. We conclude the paper with design implications and future research directions.
+  authors:
+    - april_wang
+    - dakuo_wang
+    - jaimie_drozdal
+    - xuye_liu
+    - soya_park
+    - steve_oney
+    - christopher_brooks
+  student_authors:
+    - april_wang
+    - soya_park
+    - xuye_liu
+  venue: chi_ea_2021
+  pdf: pdfs/3411763_3451617_8d2c7c37df.pdf
+- id: a_hybrid_crowd_machine_workflow_for_program_synthesis_2020
+  title: A Hybrid Crowd-Machine Workflow for Program Synthesis
+  abstract: >-
+    Despite advances in machine learning, there has been little progress towards creating automated systems that can
+    reliably solve difficult tasks, such as programming or scripting. In this paper, we propose techniques for
+    increasing the reliability of automated systems for program synthesis task via a hybrid workflow that augments the
+    system with input from crowds of human workers. Unlike previous hybrid workflow systems, which have been focused on
+    less complex tasks that crowd workers can do in their entirety (e.g., image labeling), our pro- posed workflow
+    handles tasks that untrained crowd workers cannot do alone (i.e., scripting). We show that we can improve the
+    performance of an automated system by integrating crowd workers into targeted portions of the task workflow. We
+    evaluate our approach by creating BashOn, a system that increases the accuracy of an automated program that
+    generates Bash shell commands from natural language descriptions by nearly 30%.
+  short_description: >-
+    BashOn introduces a crowdsourcing approach to help make program synthesis systems more robust, reliable, and
+    trustworthy, and reduces the cost of downstream data collection for training a program synthesis system.
+  authors:
+    - yan_chen
+    - jaylin_herskovitz_2
+    - walter_lasecki
+    - steve_oney
+  student_authors:
+    - yan_chen
+    - jaylin_herskovitz_2
+  venue: vl_hcc_2020
+  pdf: pdfs/bashon_vlhcc_2020_463356b312.pdf
+- id: callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
+  title: 'Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives'
+  abstract: >-
+    When teams of data scientists collaborate on computational notebooks, their discussions often contain valuable
+    insight into their design decisions. These discussions not only explain analysis in the current notebooks but also
+    alternative paths, which are often poorly documented. However, these discussions are disconnected from the notebooks
+    for which they could provide valuable context. We propose Callisto, an extension to computational notebooks that
+    captures and stores contextual links between discussion messages and notebook elements with minimal effort from
+    users. Callisto allows notebook readers to better understand the current notebook content and the overall
+    problem-solving process that led to it, by making it possible to browse the discussions and code history relevant to
+    any part of the notebook. This is particularly helpful for onboarding new notebook collaborators to avoid
+    misinterpretations and duplicated work, as we found in a two-stage evaluation with 32 data science students.
+  short_description: >-
+    We designed Callisto, a Jupyter Notebook extension for better explaining messy notebooks. Callisto captures and
+    stores contextual links between discussion messages and notebook elements with minimal effort from users. Callisto
+    allows notebook readers to better understand the current notebook content and the overall problem-solving process
+    that led to it, by making it possible to browse the discussions and code history relevant to any part of the
+    notebook.
+  award: honorable_mention
+  authors:
+    - april_wang
+    - zihan_wu
+    - christopher_brooks
+    - steve_oney
+  student_authors:
+    - april_wang
+    - zihan_wu
+  venue: chi_2020
+  pdf: pdfs/callisto_7a6c405ff4.pdf
+- id: edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020
+  title: 'EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education'
+  abstract: >-
+    Programming support mechanisms, such as online discussion forums and in-person office hours, are important in CS
+    education. However, it is challenging to provide personalized feedback at scale using these methods; online forums
+    lack personalized assistance, and in-person support at office hours scales poorly. To address these challenges, we
+    introduce EdCode, a remote support system that allows students to remotely interact with instructors to seek
+    personalized assistance and allows instructors to scale their answers. We accomplish this by enabling students to
+    communicate with instructors within their working context (through their IDE), and instructors to compose their
+    answers using hypertext that references students’ code. These features help instructors provide personalized
+    assistance remotely, in a way that resembles in-person support. In addition, instructors can curate and publish
+    their answers for an entire class by selecting only the relevant part of the code referenced, thereby precluding
+    plagiarism. We evaluated our approach with a series of usability studies in three different setups: instructor-
+    focused, student-focused, and an end-to-end study. We were able to confirm the need for and potential benefits of
+    EdCode in programming courses. Students found that the perceived quality of support from EdCode was comparable to
+    that of answers from in-person office hours, and both students and instructors found publishing and viewing other
+    students’ answers helpful.
+  short_description: >-
+    EdCode applies a semi-asychronous on-demand help seeking model in a learning setting, aiming towards provide more
+    personalized support at scale.
+  award: best_paper
+  award_description: Best Short Paper
+  authors:
+    - yan_chen
+    - gabriel_matute_2
+    - april_wang
+    - jaylin_herskovitz_2
+    - sang_won_lee
+    - walter_lasecki
+    - steve_oney
+  student_authors:
+    - yan_chen
+    - april_wang
+    - gabriel_matute_2
+    - jaylin_herskovitz_2
+  venue: vl_hcc_2020
+  pdf: pdfs/edcode_5c533ed1f4.pdf
+- id: explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
+  title: 'Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People'
+  abstract: >-
+    People often use text in their drawings to communicate their ideas. For visually impaired people, adding textual
+    information to tactile graphics is challenging. Labeling in braille is a laborious process and clutters the
+    drawings. Audio labels provide an alternative way to add text. However, digital drawing tools for visually impaired
+    people have not examined the use of audio for creating labels. We conducted a study comprising three tasks with 11
+    visually impaired adults. Our goal was to understand how participants explored and created labeled tactile graphics
+    (both braille and audio), and their interaction preferences. We find that audio labels were quicker to use and
+    easier to create. However, braille labels enabled flexible exploration strategies. We also find that participants
+    preferred multimodal interaction commands, and report hand postures and movements observed during the drawing
+    process for designing recognizable interactions. Based on our findings, we derive design implications for digital
+    drawing tools.
+  short_description: A study to better understand how visually impaired people explore and create labeled tactile graphics.
+  authors:
+    - mauli_pandey
+    - hari_subramonyam
+    - brooke_sasia
+    - steve_oney
+    - sile_o_modhrain
+  student_authors:
+    - mauli_pandey
+    - hari_subramonyam
+  venue: chi_2020
+  pdf: pdfs/explore_create_annotate_10541aca0e.pdf
+- id: flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
+  title: 'FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality'
+  abstract: >-
+    Immersive authoring is a paradigm where users create Virtual Reality (VR) content directly while situated in the
+    immersive virtual environment. Immersive authoring tools can enable an intuitive developer workflow by enabling
+    programming primitives to be modified through direct manipulation while providing immediate feedback. However,
+    state-of-the-art immersive authoring tools are not expressive enough to build complex interactive scenes. We present
+    FlowMatic, an immersive authoring tool that allows novices to create fully interactive VR scenes comparable to
+    real-world VR applications. Using a visual dataflow notation, FlowMatic allows users to declaratively specify the
+    behaviors of virtual objects based on a set of operators. FlowMatic also includes a set of novel interaction
+    techniques of directly manipulating programming primitives in a way that can leverage our innate spatial reasoning
+    skills. We demonstrate the usability and advantages of FlowMatic through our preliminary user study compared with a
+    2D desktop-based authoring tool. We also demonstrate the expressiveness of FlowMatic through several complex
+    interactive examples that would be impossible to implement using prior immersive authoring tools. By combining a
+    visual program representation with expressive programming primitives and a natural User Interface (UI) for authoring
+    programs, FlowMatic shows how programmers can build fully interactive virtual experiences with immersive authoring
+    in the future.
+  short_description: >-
+    FlowMatic allows users to users to specify interactive behaviors (how to respond to users) while immersed in Virtual
+    Reality (VR). It adapts dataflow programming to allow programming primitives to be modified through direct
+    manipulation and provides immediate feedback.
+  authors:
+    - lei_zhang
+    - steve_oney
+  student_authors:
+    - lei_zhang
+  venue: uist_2020
+  pdf: pdfs/flowmatic_100a6c33fe.pdf
+- id: improving_crowd_supported_gui_testing_with_structural_guidance_2020
+  title: Improving Crowd-Supported GUI Testing with Structural Guidance
+  abstract: >-
+    Crowd testing is an emerging practice in Graphical User Interface (GUI) testing where developers recruit a large
+    number of crowd testers to test GUI features. It is often easier and faster than a dedicated quality assurance team,
+    and its output is more realistic than that of automated testing. However, crowds of testers working in parallel tend
+    to focus on a small set of commonly-used User Interface (UI) navigation paths, which can lead to low test coverage
+    and redundant effort. In this paper, we introduce two techniques to increase crowd testers’ coverage: interactive
+    event-flow graphs and GUI-level guidance. The interactive event-flow graphs tracks and aggregates every tester’s
+    interactions into a single directed graph that visualizes the cases that have already been explored. Crowd testers
+    can interact with the graphs to find new navigation paths and increase the coverage of the created tests. We also
+    use the graphs to augment the GUI (GUI-level guidance) to help testers avoid only exploring common paths. Our
+    evaluation with 30 crowd testers on 11 different test pages shows that the techniques can help testers avoid
+    redundant effort while also increasing untrained testers’ coverage by 55%. These techniques can help us develop more
+    robust software that works in more mission-critical settings not only by performing more thorough testing with the
+    same effort that has been put in before, but also by integrating them into different parts of the development
+    pipeline to make more reliable software in the early development stage.
+  short_description: >-
+    Two techniques, interactive event-flow graphs and GUI-level guidance, that guide GUI testers to discover more test
+    cases and avoid duplicate test cases.
+  authors:
+    - yan_chen
+    - mauli_pandey
+    - jean_song
+    - walter_lasecki
+    - steve_oney
+  student_authors:
+    - yan_chen
+    - mauli_pandey
+  venue: chi_2020
+  pdf: pdfs/improving_crowd_supported_gui_testing_with_structural_guidance_d5cc985ee0.pdf
+- id: on_demand_collaboration_in_programming_2020
+  title: On-Demand Collaboration in Programming
+  abstract: >
+    Many teams have shifted to online remote collaboration as a result of COVID-19, from professional development teams
+    to programming classes to computing-related workspaces. This paper explores on-demand remote help seeking in
+    programming, a type of collaboration that occurs when developers seek online support for their tasks as needed.
+    Traditionally, this collaboration happens within teams and organizations where people are familiar with the context
+    of the tasks. Recently, this collaboration has become ubiquitous due to the success of paid online crowdsourcing
+    marketplaces (e.g., Upwork) and Q&A sites (e.g., Stack Overflow). We discuss prior work in the field of on-demand
+    collaboration in software development, analyze how the idea can be tested in programming areas like physical
+    computing, and examine existing and new challenges that should be further explored.
+
+
+    Many teams have shifted to online remote collaboration as a result of COVID-19, from professional development teams
+    to programming classes to computing-related workspaces. This paper explores on-demand remote help seeking in
+    programming, a type of collaboration that occurs when developers seek online support for their tasks as needed, and
+    argues that a key challenge in scaling remote on-demand collaboration in programming is to facilitate effective
+    context capturing and workforce coordination. Traditionally, this collaboration happens within teams and
+    organizations where people are familiar with the context of the tasks. Recently, this collaboration has become
+    ubiquitous due to the success of paid online crowdsourcing marketplaces (e.g., Upwork) and Q\&A sites (e.g., Stack
+    Overflow). We discuss prior work on on-demand collaboration in programming, analyze how the idea can be tested in
+    physical computing as well, and examine existing and new challenges that should be further explored.
+  authors:
+    - yan_chen
+    - jasmine_jones
+    - steve_oney
+  student_authors:
+    - yan_chen
+  venue: msnfws_2020
+  pdf: pdfs/on_demand_collaboration_in_programming_0176df33a6.pdf
+- id: sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020
+  title: 'Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale'
+  abstract: >-
+    User-generated content platforms curate their vast repositories into thematic compilations that facilitate the
+    discovery of high-quality material. Platforms that seek tight editorial control employ people to do this curation,
+    but this process involves time-consuming routine tasks, such as sifting through thousands of videos. We introduce
+    Sifter, a system that improves the curation process by combining automated techniques with a human-powered two-stage
+    pipeline that browses, selects, and reaches an agreement. We evaluated Sifter by creating 12 compilations from over
+    34,000 user-generated videos. Sifter was more than three times faster than dedicated curators, and its output was of
+    comparable quality. We reflect on the challenges and opportunities introduced by Sifter to inform the design of
+    content curation systems that need subjective human judgments of videos at scale.
+  short_description: >-
+    Sifter improves the video curation process by combining automated techniques with a human-powered two-stage pipeline
+    that browses, selects, and reaches an agreement.
+  authors:
+    - yan_chen
+    - andr_s_monroy_hern_ndez
+    - ian_wehrman
+    - steve_oney
+    - walter_lasecki
+    - rajan_vaish
+  student_authors:
+    - yan_chen
+  venue: imx_2020
+  pdf: pdfs/Sifter_7525abeccc.pdf
+- id: toward_providing_live_feedback_in_web_automation_ides_2020
+  title: Toward Providing Live Feedback in Web Automation IDEs
+  abstract: >-
+    Web automation can help users save time and energy by automatically performing tedious web tasks for them. However,
+    macro scripts can be difficult for users to understand and edit, whether they are a colleague viewing the macro for
+    the first time, or the macro creator trying to edit their macro months after it was first created. A major barrier
+    to understanding macro scripts is that they lack user interface (UI) context. Users cannot look at a macro script
+    and understand exactly what UI elements are being interacted with and what effect commands have on the UI. To
+    explore how we might expand macro representations to include visual context, we built VizMac, a tool that lets users
+    record their actions on a web page to generate a macro script and see their recording as an animation. Users can
+    inspect the animation to see the UI state before and after a given line of code is run, and can see the UI elements
+    corresponding to UI selectors in the code visually highlighted. These features help provide an understanding of the
+    code that has been generated. Through a user study we saw that participants appreciated the animation features, but
+    often still struggled to identify the source of errors when they occurred. We believe providing live feedback of the
+    script’s outcome will help users identify the source of errors more efficiently and effectively, and we present
+    several design goals and challenges.
+  authors:
+    - rebecca_krosnick
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: live_2020
+  pdf: pdfs/toward_providing_live_feedback_in_web_automation_ides_f166109343.pdf
+- id: exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019
+  title: Exploring the Tracking Needs and Practices of  Recreational Athletes.
+  authors:
+    - mauli_pandey
+    - michael_nebeling
+    - sun_young_park
+    - steve_oney
+  student_authors:
+    - mauli_pandey
+  venue: pervasivehealth_2019
+  pdf: pdfs/exploring_the_tracking_needs_and_practices_of_recreational_athletes_97a9865625.pdf
+- id: how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
+  title: How Data Scientists Use Computational Notebooks for Real-Time Collaboration
+  abstract: >-
+    Effective collaboration in data science can leverage domain expertise from each team member and thus improve the
+    quality and efficiency of the work. Computational notebooks give data scientists a convenient interactive solution
+    for sharing and keeping track of the data exploration process through a combination of code, narrative text,
+    visualizations, and other rich media. In this paper, we report how synchronous editing in computational notebooks
+    changes the way data scientists work together compared to working on individual notebooks. We first conducted a
+    formative survey with 195 data scientists to understand their past experience with collaboration in the context of
+    data science. Next, we carried out an observational study of 24 data scientists working in pairs remotely to solve a
+    typical data science predictive modeling problem, working on either notebooks supported by synchronous groupware or
+    individual notebooks in a collaborative setting. The study showed that working on the synchronous notebooks improves
+    collaboration by creating a shared context, encouraging more exploration, and reducing communication costs. However,
+    the current synchronous editing features may lead to unbalanced participation and activity interference without
+    strategic coordination.The synchronous notebooks may also amplify the tension between quick exploration and clear
+    explanations.Building on these findings, we propose several design implications aimed at better supporting
+    collaborativeediting in computational notebooks, and thus improving efficiency in teamwork among data scientists.
+  short_description: >-
+    We reported how synchronous editing in computational notebooks changes the way data scientists work together
+    compared to working on individual notebooks through a formative survey and an observational study. Working on the
+    synchronous notebooks improves collaboration by creating a shared context, encouraging more exploration, and
+    reducing communication costs. However, the current synchronous editing features may lead to unbalanced participation
+    and activity interference without strategic coordination.
+  award: best_paper
+  pub_details: 'Volume 3, Article No. 39'
+  authors:
+    - april_wang
+    - anant_mittal
+    - christopher_brooks
+    - steve_oney
+  student_authors:
+    - anant_mittal
+    - april_wang
+  venue: cscw_2019
+  pdf: pdfs/how_data_scientists_use_computational_notebooks_799e931951.pdf
+- id: implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
+  title: Implementing Multi-Touch Gestures with Touch Groups and Cross Events
+  abstract: >-
+    Multi-touch gestures can be very difficult to program correctly because they require that developers build
+    high-level abstractions from low-level touch events. In this paper, we introduce  programming  primitives  that 
+    enable  programmers to implement  multi-touch  gestures  in  a  more  understandable way by helping them build these
+    abstractions. Our design of these primitives was guided by a formative study, in which we observed developers’
+    natural implementations of custom gestures. Touch groups provide summaries of multiple fingers rather  than 
+    requiring that  programmers track them manually. Cross events allow programmers to summarize the movement of one or
+    a group of fingers. We implemented these two primitives in two environments: a declarative programming  system  and
+    in a standard imperative programming language. We found that these primitives are capable of defining nuanced
+    multi-touch gestures, which we illustrate through a series of examples. Further, in two user evaluations of these
+    programming primitives, we found that multi-touch behaviors implemented in these programming primitives  are  more
+    understandable than those implemented with standard touch events.
+  short_description: >-
+    Proposes two primitives to improve multi-touch programming: touch groups (which summarize multiple fingers rather
+    than tracking them manually) and cross events (which summarize the movement of touch groups).
+  award: honorable_mention
+  pub_details: Paper No. 355
+  authors:
+    - steve_oney
+    - rebecca_krosnick
+    - joel_brandt
+    - brad_myers
+  student_authors:
+    - rebecca_krosnick
+  venue: chi_2019
+  pdf: pdfs/implementing_multitouch_gestures_with_touch_groups_and_cross_events_9d006274fc.pdf
+- id: redesigning_notebooks_for_data_science_education_2019
+  title: Redesigning Notebooks for Data Science Education
+  authors:
+    - april_wang
+    - steve_oney
+    - christopher_brooks
+  student_authors:
+    - april_wang
+  venue: husdat_2019
+  pdf: pdfs/redesigning_notebooks_for_data_science_education_4920099323.pdf
+- id: studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
+  title: Studying the Benefits and Challenges of Immersive Dataflow Programming
+  abstract: >-
+    Creating Virtual Reality (VR) applications normally requires  advanced  knowledge of imperative  programming, 3D
+    modeling, reactive programming,  and geometry. Immersive  authoring tools  propose to reduce the learning curve of
+    VR programming by allowing users to create  VR content  while immersed in VR. Immersive  authoring  can take
+    advantage  of many of the features that make VR applications intuitive and natural to use—users can manipulate
+    programming  primitives through direct manipulation, immediately see the output of their code, and use their innate
+    spatial reasoning  capabilities  when viewing a program. In this paper, we investigate the benefits and challenges
+    of immersive dataflow authoring. We implemented an immersive authoring tool that enables dataflow programming in VR
+    and conducted a series  of  retrospective interviews. We also describe design implications for future immersive
+    authoring tools.
+  short_description: >-
+    In this paper, we study the benefits and challenges of immersive dataflow authoring, a paradigm that allows users to
+    build VR applications using dataflow notation while immersed in the VR world.
+  award: best_paper
+  award_description: Best Short Paper
+  pub_details: pp 223-227
+  authors:
+    - lei_zhang
+    - steve_oney
+  student_authors:
+    - lei_zhang
+  venue: vl_hcc_2019
+  pdf: pdfs/studying_the_benefits_and_challenges_of_immersive_dataflow_programming_4af00ecb86.pdf
+- id: adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018
+  title: 'Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features'
+  abstract: >-
+    Advanced Driver Assistance Systems (ADAS) come equipped on most modern vehicles and are intended to assist the
+    driver and enhance the driving experience through features such as lane keeping system and adaptive cruise control.
+    However, recent studies show that few people utilize these features for several reasons. First, ADAS features were
+    not common until recently. Second, most users are unfamiliar with these features and do not know what to expect.
+    Finally, the interface for operating these features is not intuitive. To help drivers understand ADAS features, we
+    present a conversational in-vehicle digital assistant that responds to drivers’ questions and commands in natural
+    language. With the system prototyped herein, drivers can ask questions or command using unconstrained natural
+    language in the vehicle, and the assistant trained by using advanced machine learning techniques, coupled with
+    access to vehicle signals, responds in real-time based on conversational context. Results of our system prototyped
+    on a production vehicle are presented, demonstrating its effectiveness in improving driver understanding and
+    usability of ADAS.
+  short_description: A conversational digital assistant to help drivers use and understand Advanced Driver Assistance Systems (ADAS).
+  award: honorable_mention
+  pub_details: pp 531-542
+  authors:
+    - shih_chieh_lin
+    - chang_hong_hsu
+    - walter_talamonti
+    - yunqi_zhang
+    - steve_oney
+    - jason_mars
+    - lingjia_tang
+  student_authors:
+    - shih_chieh_lin
+  venue: uist_2018
+  pdf: pdfs/adasa_4e85e06eb1.pdf
+- id: arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
+  title: 'Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture'
+  abstract: >-
+    Many web pages developed today require navigation by visual interaction—seeing, hovering, pointing, clicking, and
+    dragging with the mouse over dynamic page content. These forms of interaction are increasingly popular as developer
+    trends have moved from static, linearly structured pages to dynamic, interactive pages. However, they are also often
+    in-accessible to blind web users who tend to rely on keyboard-based screen readers to navigate the web. Despite
+    existing web accessibility standards, engineering web pages to be equally accessible via both keyboard and
+    visuomotor mouse-based interactions is often not a priority for developers. Improving access to this kind of visual,
+    interactive web content has been a long-standing goal of HCI researchers, but the obstacles have exceeded the many
+    proposed solutions:  promoting developer best practices, automatically generating accessible versions of existing
+    web pages, and sighted-guides, such as screen and cursor-sharing, which tend to diminish the end user’s agency and
+    privacy. In this paper, we present a collaborative approach to helping blind web users overcome inaccessible parts
+    of existing web pages. We introduce Arboretum, a new architecture that enables any web user to seamlessly hand off
+    controlled parts of their browsing session to remote users, while maintaining control over the interface via a
+    “propose and accept/reject” mechanism. We illustrate the benefit of Arboretum by using it to implement Arbility, a
+    browser that allows blind users to hand off targeted visual interaction tasks to remote crowd workers without
+    forfeiting agency. We evaluate the entire system in a study with nine blind web users, showing that Arbility allows
+    blind users to access web content that was previously inaccessible via a screen reader alone.
+  short_description: >-
+    A system that helps visually impaired web users overcome accessibility barriers through targeted handoffs of tasks
+    that require visual-spatial interaction.
+  pub_details: pp 937-949
+  authors:
+    - steve_oney
+    - alan_lundgard
+    - rebecca_krosnick
+    - michael_nebeling
+    - walter_lasecki
+  student_authors:
+    - alan_lundgard
+    - rebecca_krosnick
+  venue: uist_2018
+  pdf: pdfs/arboretum_0d6ad1cca7.pdf
+- id: attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018
+  title: 'Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques'
+  authors:
+    - louis_spinelli
+    - mauli_pandey
+    - steve_oney
+  student_authors:
+    - louis_spinelli
+    - mauli_pandey
+  venue: px_18_2018
+  pdf: pdfs/attention_035981c667.pdf
+- id: creating_guided_code_explanations_with_chat_codes_2018
+  title: Creating Guided Code Explanations with chat.codes
+  abstract: >-
+    Effective communication is crucial for programmers of all skill levels. However, communicating about code can be
+    difficult, particularly in asynchronous settings where one user writes an explanation for another user to read and
+    understand later on. Communicating about code is uniquely difficult for two reasons. First, code-related
+    explanations are dichotomous, containing fragments of code and associated natural language descriptions that are not
+    necessarily sequential. Second, instructions’ explanations of code often involve multiple stages of modifying code
+    in steps throughout their explanation, but these intermediate steps are difficult to capture. This paper introduces
+    chat.codes, a new tool for creating guided explanations about code, meant to be consumed asynchronously. chat.codes
+    introduces three features that make it easier to communicate about code. First, it introduces deictic code
+    references, which allow users to reference specific region of code in parts of their explanations. Second, it tracks
+    and summarizes code edits in-line with messages, allowing users to create explanations in stages. Third, it tracks
+    every version of code, enabling future users to back-track to previous version of code to reconstruct the context
+    for code references. An evaluation showed that these features were beneficial for both instructors and students in
+    an introductory programming course.
+  short_description: >-
+    Introduces three features to improve textual-based conversations about code: deictic code references (where a
+    message points to a specific region of code), in-line code diffs (to show how code changed throughout a
+    conversation), and conversation version tracking (which allows viewers to view the state of code as it evolves
+    through out the conversation).
+  pub_details: 'Volume 2, Article No. 131'
+  authors:
+    - steve_oney
+    - christopher_brooks
+    - paul_resnick
+  venue: cscw_2018
+  pdf: pdfs/chatcodes_f5910ae135.pdf
+- id: expresso_building_responsive_interfaces_with_keyframes_2018
+  title: 'Expresso: Building Responsive Interfaces with Keyframes'
+  abstract: >-
+    Web developers use responsive web design to create user  interfaces that can adapt to many form factors. To  define
+    responsive  pages,  developers  must  use  Cascading  Style  Sheets (CSS) or libraries and tools built  on  top of
+    it. CSS provides high customizability, but requires significant experience. As a result, non-programmers and novice
+    programmers generally lack a means of easily building custom responsive web pages. In  this paper, we  present a new
+    approach that allows users to create custom responsive user interfaces without writing program code. We demonstrate
+    the  feasibility  and  effectiveness of the approach through a new system we built, named Expresso. With Expresso,
+    users define “keyframes”—examples of how their UI should look for particular viewport  sizes—by simply directly
+    manipulating elements  in  a WYSIWYG editor. Expresso uses these keyframes to infer  rules about the responsive 
+    behavior  of  elements,  and automatically renders the appropriate CSS for a given  viewport size. To allow users to
+    create the desired appearance of their page at all viewport sizes, Expresso lets users define either a “smooth” or
+    “jump”  transition between  adjacent keyframes. We conduct a user study and show that participants are able to
+    effectively use Expresso to build realistic responsive interfaces.
+  short_description: >-
+    A programming-by-demonstration approach for creating responsive UIs, where users create keyframes at a few
+    representative viewport sizes and specify smooth or jump (i.e., linear interpolation) transitions between them.
+  pub_details: pp 39-47
+  authors:
+    - rebecca_krosnick
+    - sang_won_lee
+    - walter_lasecki
+    - steve_oney
+  student_authors:
+    - rebecca_krosnick
+  venue: vl_hcc_2018
+  pdf: pdfs/expresso_e0af1ea51a.pdf
+- id: codeon_on_demand_software_development_assistance_2017
+  title: 'Codeon: On-Demand Software Development Assistance'
+  abstract: >-
+    Software developers  rely on support from a variety  of resources—including other developers—but the coordination
+    cost  of finding  another developer  with  relevant experience, explaining the context of the problem, composing a
+    specific help request,  and  providing  access to relevant  code is prohibitively high for all but the largest of
+    tasks.  Existing technologies  for  synchronous communication  (e.g.  voice chat) have high scheduling costs, and
+    asynchronous communication tools (e.g. forums) require developers to carefully describe their code context to yield
+    useful responses. This paper introduces Codeon, a system that enables more effective task hand-off  between end-user
+    developers and remote helpers by allowing asynchronous responses to on-demand requests. With Codeon, developers can
+    request help by speaking their requests aloud within the context of their IDE. Codeon automatically captures the
+    relevant code context and allows remote helpers to respond with high-level descriptions, code annotations, code
+    snippets, and  natural  language explanations. Developers can then immediately view and integrate these  responses 
+    into  their  code. In this paper, we describe Codeon, the studies that guided its design,  and our evaluation that
+    its effectiveness as a support tool. In our evaluation,developers using Codeon completed  nearly twice as many tasks
+    as those who used state-of-the-art synchronous video and code sharing tools, by reducing the coordination costs of
+    seeking assistance from other developers.
+  short_description: >-
+    CodeOn enables effective task hand-offs between developers and remote helpers by allowing asynchronous responses to
+    on-demand requests.
+  pub_details: pp 6220-6231
+  authors:
+    - yan_chen
+    - sang_won_lee
+    - yin_xie_2
+    - yiwei_yang_2
+    - walter_lasecki
+    - steve_oney
+  student_authors:
+    - yiwei_yang_2
+    - sang_won_lee
+    - tao_xie
+    - yan_chen
+  venue: chi_2017
+  pdf: pdfs/codeon_b1597a046f.pdf
+- id: codemend_assisting_interactive_programming_with_bimodal_embedding_2016
+  title: 'CodeMend: Assisting Interactive Programming with Bimodal Embedding'
+  abstract: >-
+    Software APIs often contain too many methods and parameters for developers to memorize or navigate effectively.
+    In-stead, developers resort to finding answers through online search engines and systems such as Stack Overflow.
+    However, the process of finding and integrating a working solution is often very time-consuming. Though code search
+    engines have increased in quality, there remain significant language-and workflow-gaps in meeting end-user needs.
+    Novice and intermediate programmers often lack the “language” to query, and the expertise in transferring found code
+    to their task. To address this problem, we present CodeMend, a system to support finding and integration of code.
+    CodeMend leverages a neural embedding model to jointly model natural language and code as mined from large Web and
+    code datasets. We also demonstrate a novel, mixed-initiative, interface to support query and integration steps.
+    Through CodeMend, end-users describe their goal in natural language. The system makes salient the relevant API
+    functions, the lines in the end-user’s program that should be changed, as well as proposing the actual change. We
+    demonstrate the utility and accuracy of CodeMend through lab and simulation studies.
+  short_description: A system that helps programmers find appropriate API functions and parameter values from natural language.
+  pub_details: pp 247-258
+  authors:
+    - xin_rong
+    - shiyan_yan
+    - steve_oney
+    - mira_dontcheva
+    - eytan_adar
+  student_authors:
+    - xin_rong
+    - shiyan_yan
+  venue: uist_2016
+  pdf: pdfs/codemend_9b04987287.pdf
+- id: expert_crowd_support_systems_for_software_developers_2016
+  title: Expert Crowd Support Systems for Software Developers
+  authors:
+    - yan_chen
+    - steve_oney
+    - walter_lasecki
+  student_authors:
+    - yan_chen
+  venue: ci_2016
+  pdf: pdfs/expert_crowd_support_systems_e1f1ea7a69.pdf
+- id: making_end_user_development_more_natural_2016
+  title: Making End User Development More Natural
+  authors:
+    - brad_myers
+    - amy_ko
+    - chris_scaffidi
+    - steve_oney
+    - youngseok_yoon
+    - kerry_chang
+    - mary_beth_kery
+    - toby_li
+  student_authors:
+    - mary_beth_kery
+    - toby_li
+  venue: eud_2016
+  pdf: pdfs/making_end_user_development_more_natural_c6bbf14ce7.pdf
+- id: towards_providing_on_demand_expert_support_for_software_developers_2016
+  title: Towards Providing On-Demand Expert Support for Software Developers
+  abstract: >-
+    Software development is an expert task that requires complex reasoning and  the  ability  to  recall language or
+    API-specific details. In practice, developers often seek support from IDE tools, Web resources, or other developers
+    to help fill in gaps in their knowledge on-demand. In this paper, we present two studies that seek to inform the
+    design of future systems that use  remote  experts  to  support  developers  on  demand. The first explores what
+    types of questions developers would ask a hypothetical assistant capable of answering any question they pose. The
+    second study explores the interactions between developers and remote “experts” in supporting roles. Our results
+    suggest eight key system features needed for on-demand re-mote developer assistants to be effective, which has
+    implications for future human-powered development tools.
+  short_description: >-
+    Two studies that present the opportunities and the design recommendations of on-demand remote support systems for
+    developers.
+  pub_details: pp 3192-3203
+  authors:
+    - yan_chen
+    - steve_oney
+    - walter_lasecki
+  student_authors:
+    - yan_chen
+  venue: chi_2016
+  pdf: pdfs/towards_ondemand_support_e5db25bc47.pdf
+- id: expressing_interactivity_with_states_and_constraints_2015
+  title: Expressing Interactivity with States and Constraints
+  authors:
+    - steve_oney
+  student_authors:
+    - steve_oney
+  venue: cmu_2015
+  pdf: pdfs/expressing_interactivity_with_states_and_constraints_phd_thesis_83ef61475b.pdf
+- id: interstate_a_language_and_environment_for_expressing_interface_behavior_2014
+  title: 'InterState: A Language and Environment for Expressing Interface Behavior'
+  abstract: >-
+    InterState is a new programming language and environment that addresses the challenges of writing and reusing  user
+    interface code. InterState represents interactive  behaviors clearly and concisely using a combination of novel
+    forms of state machines and constraints.  It  also  introduces new language features that allow programmers to
+    easily modularize and  reuse  behaviors. InterState uses  a new visual  notation that  allows  programmers to better
+    understand and navigate their code. InterState also includes a live editor that immediately updates the running
+    application in response to changes in the editor and vice versa to help programmers understand the state of their
+    program. Finally, InterState can interface with code and widgets written in other languages, for example to create a
+    user interface in InterState that communicates with a database. We evaluated the understandability of InterState’s
+    programming primitives in a comparative laboratory study. We found  that participants were twice as fast at
+    understanding and  modifying GUI components when they were implemented  with InterState than when they were
+    implemented in a conventional textual event-callback style. We  evaluated  InterState’s scalability with a series 
+    of  benchmarks and example applications and found  that it can scale to implement  complex behaviors involving
+    thousands of objects and constraints.
+  pub_details: pp 263-272
+  authors:
+    - steve_oney
+    - brad_myers
+    - joel_brandt
+  student_authors:
+    - steve_oney
+  venue: uist_2014
+  pdf: pdfs/interstate_e6f26a7666.pdf
+- id: creativity_support_in_authoring_and_backtracking_2013
+  title: Creativity Support in Authoring and Backtracking
+  authors:
+    - brad_myers
+    - steve_oney
+    - youngseok_yoon
+    - joel_brandt
+  student_authors:
+    - steve_oney
+    - youngseok_yoon
+  venue: chi_2013_workshop_on_evaluation_methods_for_creativity_support_environments_2013
+  pdf: pdfs/creativity_support_be4e99e888.pdf
+- id: euclase_a_live_development_environment_with_constraints_and_fsms_2013
+  title: 'Euclase: A Live Development Environment with Constraints and FSMs'
+  authors:
+    - steve_oney
+    - brad_myers
+    - joel_brandt
+  student_authors:
+    - steve_oney
+  venue: live_2013
+  pdf: pdfs/euclase_live_319fe4012d.pdf
+- id: zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013
+  title: 'ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices'
+  abstract: >-
+    The proliferation of touchscreen devices has made soft keyboards a routine part of life. However, ultra-small
+    computing platforms like the Sony  SmartWatch and Apple  iPod Nano lack a means of text entry. This limits their
+    potential, despite the fact they are capable computers. In this work, we present a soft keyboard  interaction
+    technique called ZoomBoard that enables text entry on ultra-small devices. Our approach uses  iterative  zooming  to
+    enlarge otherwise impossibly tiny keys to comfortable size. We based our design on a QWERTY layout, so that it is
+    immediately familiar to users and leverages existing skill. As the ultimate test, we ran a text entry experiment on
+    a keyboard measuring just 16x6mm–smaller than a US penny. After eight practice trials, users achieved an average of
+    9.3 words per minute, with accuracy comparable to a full-sized physical keyboard. This compares favorably to
+    existing mobile text input methods.
+  award: honorable_mention
+  pub_details: pp 2799-3002
+  authors:
+    - steve_oney
+    - chris_harrison
+    - amy_ogan
+    - jason_wiese
+  student_authors:
+    - amy_ogan
+    - jason_wiese
+    - chris_harrison
+    - steve_oney
+  venue: chi_2013
+  pdf: pdfs/zoomboard_3f3a88ede1.pdf
+- id: codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012
+  title: 'Codelets: Linking Interactive Documentation and Example Code in the Editor'
+  abstract: >-
+    Programmers frequently use instructive code examples found on the Web to overcome  cognitive  barriers  while
+    programming. These examples couple the concrete functionality of code  with  rich  contextual information  about how
+    the code works. However, using these examples necessitates understanding, configuring, and integrating the code, all
+    of which typically take place after the example enters the user’s code and has been removed from its original
+    instructive context. In short, a user’s interaction with an example continues well after the code is pasted. This
+    paper investigates whether treating  examples  as  “first-class” objects in the code editor—rather than simply  as
+    strings of text—will allow programmers to use examples more effectively. We explore this through the creation  and 
+    evaluation of Codelets. A Codelet is presented  inline with the user’s code, and consists of a block of example code
+    and an interactive helper widget that assists the user in understanding and integrating  the  example. The Codelet
+    persists through-out the example’s lifecycle, remaining accessible even after configuration and integration is done.
+    A comparative laboratory study with 20  participants found that programmers were able to complete tasks involving
+    examples an average of 43%  faster when  using  Codelets than when using a standard Web browser.
+  short_description: >-
+    A system that helps programmers use examples from the web better by embedding interactive explanations and
+    cutomizers in the programmer's code editor.
+  pub_details: pp 2697-2706
+  authors:
+    - steve_oney
+    - joel_brandt
+  student_authors:
+    - steve_oney
+  venue: chi_2012
+  pdf: pdfs/codelets_c55f5f7e93.pdf
+- id: constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
+  title: 'ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States'
+  abstract: >-
+    Interactive behaviors in GUIs are often described in terms of states, transitions, and constraints, where the
+    constraints only hold in certain states. These constraints maintain relationships among objects, control the
+    graphical layout, and link the user interface to an underlying data model. However, no existing Web implementation
+    technology provides direct support for all of these, so the code for  maintaining constraints and tracking state may
+    end up spread across multiple languages  and  libraries. In this paper we describe ConstraintJS, a system that
+    integrates constraints and finite state machines (FSMs) with Web languages. A key role for the FSMs is to enable and
+    disable constraints based on the interface’s current mode, making it possible to write constraints that sometimes
+    hold. We illustrate that constraints combined with FSMs can be a clearer way of defining many interactive behaviors
+    with a series of examples.
+  pub_details: pp 229-238
+  authors:
+    - steve_oney
+    - brad_myers
+    - joel_brandt
+  student_authors:
+    - steve_oney
+  venue: uist_2012
+  pdf: pdfs/constraintjs_34900d6474.pdf
+- id: inferring_method_specifications_from_natural_language_api_descriptions_2012
+  title: Inferring Method Specifications from Natural Language API Descriptions
+  abstract: >-
+    Application  Programming  Interface  (API)  docu-ments  are  a  typical  way  of  describing  legal  usage  of 
+    reusablesoftware  libraries,  thus  facilitating  software  reuse.  However,even  with  such  documents, 
+    developers  often  overlook  somedocuments  and  build  software  systems  that  are  inconsistentwith   the  
+    legal   usage   of   those   libraries.   Existing   softwareverification  tools  require  formal  specifications 
+    (such  as  codecontracts), and therefore cannot directly verify the legal usagedescribed  in  natural  language 
+    text  in  API  documents  againstcode  using  that  library.  However,  in  practice,  most  librariesdo  not  come 
+    with  formal  specifications,  thus  hindering  tool-based  verification.  To  address  this  issue,  we  propose 
+    a  novelapproach to infer formal specifications from natural languagetext  of  API  documents.  Our  evaluation 
+    results  show  that  ourapproach  achieves  an  average  of  92%  precision  and  93%recall in identifying sentences
+    that describe code contracts frommore than 2500 sentences of API documents. Furthermore, ourresults show that our
+    approach has an average 83% accuracyin inferring specifications from over 1600 sentences describingcode  contracts.
+  pub_details: pp 815-825
+  authors:
+    - rahul_pandita
+    - xusheng_xiao
+    - hao_zhong
+    - tao_xie
+    - steve_oney
+    - amit_paradkar
+  student_authors:
+    - rahul_pandita
+    - steve_oney
+  venue: icse_2012
+  pdf: pdfs/inferring_method_spects_from_nl_descriptions_75b9f8712f.pdf
+- id: development_tools_for_interactive_behaviors_2011
+  title: Development Tools for Interactive Behaviors
+  authors:
+    - steve_oney
+  student_authors:
+    - steve_oney
+  venue: is_eud_dc_2011
+  pdf: pdfs/dev_tools_for_interactive_behaviors_f28c61f988.pdf
+- id: playbook_revision_control_comparison_for_interactive_mockups_2011
+  title: 'Playbook: Revision Control & Comparison for Interactive Mockups'
+  abstract: >-
+    When designing interactive interfaces and behaviors, interface designers compare and contrast multiple design ideas,
+    often creating and testing many intermediate user interface prototypes before deciding on a final design. However,
+    existing interface prototyping and creation tools do not effectively let designers explore, compare, or keep track
+    of older  versions of interface mockups, implicitly making the  assumption that the users of these tools will work
+    with one design alternative at a time. To explore how to enable designers to work with multiple designs in a
+    prototyping tool, we created Playbook, a new system oriented  towards helping interface designers keep track of,
+    compare, and create interactive mockups. In this paper, we describe Playbook and discuss ways that future
+    prototyping tools can better support the workflow of designers.
+  pub_details: pp 2697-2706
+  authors:
+    - steve_oney
+    - john_barton
+    - brad_myers
+    - tessa_lau
+    - jeffrey_nichols
+  student_authors:
+    - steve_oney
+  venue: is_eud_2011
+  pdf: pdfs/playbook_6f3c2f2d9a.pdf
+- id: democratizing_computational_tools_for_interaction_designers_2010
+  title: Democratizing Computational Tools for Interaction Designers
+  authors:
+    - steve_oney
+  student_authors:
+    - steve_oney
+  venue: vl_hcc_gc_2010
+  pdf: pdfs/democratizing_comp_tools_57d1a61a09.pdf
+- id: how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010
+  title: How to Support Designers in Getting Hold of the Immaterial Material of Software
+  abstract: >-
+    When designing novel GUI controls, interaction  designers are challenged by the “immaterial” materiality of the
+    digital domain; they lack tools that effectively support a reflecting conversation  with the material of software as
+    they attempt to conceive, refine, and communicate their ideas. To investigate this situation, we conducted two
+    participatory design workshops. In the first  workshop, focused on conceiving, we observed  that designers want to
+    invent controls by exploring  gestures, context, and examples.  In  the  second workshop, on refining and 
+    communicating,  designers proposed tools  that could refine  movement, document context through usage  scenarios,
+    and support the use of examples. In this workshop they struggled to effectively communicate their ideas for
+    developers because  their ideas had not been fully  explored. In  reflecting on this struggle, we began to see an 
+    opportunity for the output of a design tool  to  be a boundary object that would allow for an ongoing conversation
+    between the design and the material of software, in which the developer acts as a mediator for software.
+  pub_details: pp 2513-2522
+  authors:
+    - kursat_ozenc
+    - miso_kim
+    - john_zimmerman
+    - steve_oney
+    - brad_myers
+  student_authors:
+    - kursat_ozenc
+    - miso_kim
+    - steve_oney
+  venue: chi_2010
+  pdf: pdfs/how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_df21d021e9.pdf
+- id: empowering_designers_with_creativity_support_tools_2009
+  title: Empowering Designers with Creativity Support Tools
+  authors:
+    - steve_oney
+  student_authors:
+    - steve_oney
+  venue: vl_hcc_gc_2009
+  pdf: pdfs/empowering_designers_with_creativity_support_tools_69fdf27ee8.pdf
+- id: firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
+  title: 'FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages'
+  abstract: >-
+    For developers debugging their own code, augmenting the code of others, or trying  to learn the implementation
+    details of interactive behaviors, understanding how web pages work is a fundamental problem. FireCrystal is a new
+    Firefox extension that allows developers to indicate interactive  behaviors of interest, and shows the specific code
+    (Javascript, CSS, and HTML) that is responsible for those behaviors. FireCrystal  provides an execution timeline
+    that  users can scrub back and forth, and the ability to select items of interest in the actual web page UI to see
+    the associated code. FireCrystal may be especially useful for developers who are trying to learn the implementation
+    details of interactive behaviors, so they can reuse these behaviors in their own web site.
+  short_description: >-
+    FireCrystal is (was) a Firefox extension for inspecting dynamic behaviors in web pages. When a developer wants to
+    understand how some dynamic behavior in a page is implemented, FireCrystal helps them by identifying the code that
+    runs in between DOM changes.
+  pub_details: pp 105-108
+  authors:
+    - steve_oney
+    - brad_myers
+  student_authors:
+    - steve_oney
+  venue: vl_hcc_2009
+  pdf: pdfs/firecrystal_6a8d5e5aea.pdf
+- id: visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009
+  title: 'Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors'
+  authors:
+    - steve_oney
+    - brad_myers
+    - john_zimmerman
+  student_authors:
+    - steve_oney
+  venue: workshop_on_computational_creativity_chi_2009
+  pdf: pdfs/visions_for_euclase_6b2f433e11.pdf
+- id: natural_language_search_of_structured_documents_2008
+  title: Natural Language Search of Structured Documents
+  authors:
+    - steve_oney
+  student_authors:
+    - steve_oney
+  venue: mit_2008
+  pdf: pdfs/natural_language_search_of_structured_documents_93e16e0f23.pdf

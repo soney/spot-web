@@ -33,7 +33,7 @@ function toImagesRelativePath(urlValue) {
   if (!relative) return null;
   const filename = relative.split("/").filter(Boolean).pop();
   if (!filename) return null;
-  return `images/${filename}`;
+  return `images/people/${filename}`;
 }
 
 function extractAssetRelativeUrl(value) {
