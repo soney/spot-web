@@ -465,6 +465,65 @@ function normalizeNewsitems(records, peopleIds, publicationIds) {
   return newsitems;
 }
 
+function selectPreferredLeadcvRecord(records) {
+  if (records.length === 1) return records[0];
+  const published = records.find((record) => {
+    const entity = sourceEntity(record);
+    return !isBlank(entity.publishedAt);
+  });
+  return published ?? records[0];
+}
+
+function cleanLeadcvValue(value) {
+  if (value == null) return undefined;
+
+  if (Array.isArray(value)) {
+    const cleaned = value.map(cleanLeadcvValue).filter((item) => item !== undefined);
+    return cleaned.length > 0 ? cleaned : undefined;
+  }
+
+  if (typeof value === "object") {
+    const out = {};
+    for (const [key, nested] of Object.entries(value)) {
+      if (key === "id") continue;
+      const cleaned = cleanLeadcvValue(nested);
+      if (cleaned !== undefined) {
+        out[key] = cleaned;
+      }
+    }
+    return Object.keys(out).length > 0 ? out : undefined;
+  }
+
+  if (typeof value === "string") {
+    return value.trim() === "" ? undefined : value;
+  }
+
+  return value;
+}
+
+function normalizeLeadcv(records) {
+  const grouped = new Map();
+  for (const record of records) {
+    const meta = sourceMeta(record);
+    const key =
+      meta.documentId != null && String(meta.documentId).trim() !== ""
+        ? `doc:${String(meta.documentId)}`
+        : `raw:${String(meta.rawId ?? "")}`;
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(record);
+  }
+
+  const selected = [...grouped.values()].map(selectPreferredLeadcvRecord);
+  const record = selected[0];
+  if (!record) return {};
+
+  const entity = { ...sourceEntity(record) };
+  removeMetadataFields(entity);
+  delete entity.localizations;
+
+  return cleanLeadcvValue(entity) ?? {};
+}
+
 function normalizePublications(records, peopleIds, venueIds, _clusterIds) {
   const usedIds = new Set();
   const venueYearById = venueIds.yearById ?? new Map();
@@ -576,6 +635,7 @@ function main() {
   const publicationsIn = path.join(inputDir, "api__publication_publication.yaml");
   const blogpostsIn = path.join(inputDir, "api__blogpost_blogpost.yaml");
   const newsitemsIn = path.join(inputDir, "api__newsitem_newsitem.yaml");
+  const leadcvIn = path.join(inputDir, "api__leadcv_leadcv.yaml");
 
   fs.mkdirSync(outputDir, { recursive: true });
 
@@ -585,6 +645,7 @@ function main() {
   const publicationsRaw = loadYamlArray(publicationsIn, "publications input");
   const blogpostsRaw = loadYamlArray(blogpostsIn, "blogposts input");
   const newsitemsRaw = loadYamlArray(newsitemsIn, "newsitems input");
+  const leadcvRaw = loadYamlArray(leadcvIn, "leadcv input");
 
   const peopleNorm = normalizePeople(peopleRaw);
   const venuesNorm = normalizeVenues(venuesRaw);
@@ -592,6 +653,7 @@ function main() {
   const publicationsNorm = normalizePublications(publicationsRaw, peopleNorm, venuesNorm, clustersNorm);
   const blogpostsNorm = normalizeBlogposts(blogpostsRaw, peopleNorm);
   const newsitemsNorm = normalizeNewsitems(newsitemsRaw, peopleNorm, publicationsNorm);
+  const leadcvNorm = normalizeLeadcv(leadcvRaw);
   attachClusterPublicationRefs(clustersNorm.clusters, publicationsNorm.publications);
 
   const peopleOut = path.join(outputDir, "people.yaml");
@@ -600,6 +662,7 @@ function main() {
   const publicationsOut = path.join(outputDir, "publications.yaml");
   const blogpostsOut = path.join(outputDir, "blog.yaml");
   const newsitemsOut = path.join(outputDir, "news.yaml");
+  const leadcvOut = path.join(outputDir, "leadcv.yaml");
 
   dumpYaml(peopleOut, peopleNorm.people);
   dumpYaml(venuesOut, venuesNorm.venues);
@@ -607,6 +670,7 @@ function main() {
   dumpYaml(publicationsOut, publicationsNorm.publications);
   dumpYaml(blogpostsOut, blogpostsNorm);
   dumpYaml(newsitemsOut, newsitemsNorm);
+  dumpYaml(leadcvOut, leadcvNorm);
 
   console.log(`Wrote ${peopleNorm.people.length} people to ${peopleOut}`);
   console.log(`Wrote ${venuesNorm.venues.length} venues to ${venuesOut}`);
@@ -614,6 +678,7 @@ function main() {
   console.log(`Wrote ${publicationsNorm.publications.length} publications to ${publicationsOut}`);
   console.log(`Wrote ${blogpostsNorm.length} blogposts to ${blogpostsOut}`);
   console.log(`Wrote ${newsitemsNorm.length} newsitems to ${newsitemsOut}`);
+  console.log(`Wrote leadcv to ${leadcvOut}`);
 }
 
 main();
