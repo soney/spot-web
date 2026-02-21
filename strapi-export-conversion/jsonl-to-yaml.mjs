@@ -172,9 +172,10 @@ function attachLinkedEntities(entities, links) {
 
 function main() {
   const scriptDir = path.dirname(fileURLToPath(import.meta.url));
-  const entitiesPath = path.join(scriptDir, "entities", "entities_00001.jsonl");
-  const linksPath = path.join(scriptDir, "links", "links_00001.jsonl");
-  const outDir = process.argv[2] ?? path.join(scriptDir, "yaml_out");
+  const exportDir = path.resolve(scriptDir, "..", "strapi-export");
+  const entitiesPath = path.join(exportDir, "entities", "entities_00001.jsonl");
+  const linksPath = path.join(exportDir, "links", "links_00001.jsonl");
+  const outDir = process.argv[2] ?? path.join(exportDir, "yaml_out");
 
   fs.mkdirSync(outDir, { recursive: true });
 

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
+import { fileURLToPath } from "node:url";
 
 function slugPart(value) {
   return String(value ?? "")
@@ -564,8 +565,10 @@ function dumpYaml(filePath, value) {
 }
 
 function main() {
-  const inputDir = process.argv[2] ?? "export/yaml_out";
-  const outputDir = process.argv[3] ?? "export/normalized";
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const exportDir = path.resolve(scriptDir, "..", "strapi-export");
+  const inputDir = process.argv[2] ?? path.join(exportDir, "yaml_out");
+  const outputDir = process.argv[3] ?? path.join(exportDir, "normalized");
 
   const peopleIn = path.join(inputDir, "api__author_author.yaml");
   const venuesIn = path.join(inputDir, "api__venue_venue.yaml");
