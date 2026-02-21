@@ -4,20 +4,20 @@ $award-color: $font-color;
 $link-color: $font-color;
 $link-hover-color: #0056b3;
 
-@media print {
-}
+@media print {}
 
 @font-face {
     font-family: 'oney_cv';
     src: url('oney_cv_font/oney_cv.eot');
     src: url('oney_cv_font/oney_cv.eot?#iefix') format('embedded-opentype'),
-         url('oney_cv_font/oney_cv.woff') format('woff'),
-         url('oney_cv_font/oney_cv.ttf') format('truetype'),
-         url('oney_cv_font/oney_cv.svg#oney_cv') format('svg');
+        url('oney_cv_font/oney_cv.woff') format('woff'),
+        url('oney_cv_font/oney_cv.ttf') format('truetype'),
+        url('oney_cv_font/oney_cv.svg#oney_cv') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-[class*='icon-']:before{
+
+[class*='icon-']:before {
     display: inline-block;
     font-family: 'oney_cv';
     font-style: normal;
@@ -29,14 +29,23 @@ $link-hover-color: #0056b3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-best_paper:before{content:'\0041';}
-.icon-honorable_mention:before{content:'\0042';}
-.icon-other_award:before{content:'\0042';}
+
+.icon-best_paper:before {
+    content: '\0041';
+}
+
+.icon-honorable_mention:before {
+    content: '\0042';
+}
+
+.icon-other_award:before {
+    content: '\0042';
+}
 
 body {
     .cv.container {
         margin-top: 7em;
-        font-family: goudy-old-style,serif;
+        font-family: goudy-old-style, serif;
         font-weight: 400;
         font-style: normal;
         font-size: $font-size;
@@ -47,6 +56,7 @@ body {
         a {
             color: $link-color;
             text-decoration: none;
+
             &:hover {
                 color: $link-hover-color;
             }
@@ -70,12 +80,16 @@ body {
         }
 
         .affiliation {
-            .affiliation-department, .affiliation-university {
+
+            .affiliation-department,
+            .affiliation-university {
                 font-weight: bold;
             }
         }
+
         .contact {
             text-align: right;
+
             .contact-spacer {
                 height: 12pt;
             }
@@ -83,9 +97,13 @@ body {
 
         .side {
             text-align: right;
-            .date-range, .date, .semester {
+
+            .date-range,
+            .date,
+            .semester {
                 font-style: italic;
             }
+
             .location {
                 font-style: italic;
             }
@@ -93,14 +111,19 @@ body {
 
         &.container {
             .col.side {
+                order: 1;
                 flex: 0 0 20%;
                 max-width: 20%;
             }
+
             .col.main {
+                order: 2;
                 flex: 0 0 80%;
                 max-width: 80%;
             }
-            .col.main,.col.side {
+
+            .col.main,
+            .col.side {
                 padding-left: 5px;
                 padding-right: 5px;
             }
@@ -110,23 +133,32 @@ body {
             .paper-id {
                 font-style: italic;
             }
+
             .pdf-download {
                 font-style: italic;
                 font-size: 0.9em;
             }
+
             .paper {
                 margin-top: 1em;
                 margin-bottom: 1em;
                 text-align: justify;
+
                 .author {
                     &.me {
                         font-weight: bold;
                     }
                 }
+
+                cite {
+                    font-style: normal;
+                }
             }
+
             .paper-award-label {
                 color: $award-color;
             }
+
             .paper-award-footnote {
                 font-style: italic;
                 color: $award-color;
@@ -135,10 +167,12 @@ body {
             .highlight-students-note {
                 display: none;
             }
+
             &.highlight-students {
                 .highlight-students-note {
                     display: flex;
                 }
+
                 .student {
                     text-decoration: underline;
                     text-decoration-thickness: 0.1px;
@@ -151,6 +185,7 @@ body {
                 &:nth-child(2) {
                     margin-top: 0em;
                 }
+
                 margin-top: 1em;
                 margin-bottom: 1em;
                 page-break-inside: avoid;
@@ -161,7 +196,9 @@ body {
             .education-school {
                 font-weight: bold;
             }
-            table.education-degrees, table.education-advisors {
+
+            table.education-degrees,
+            table.education-advisors {
                 td {
                     padding: 0px;
                 }
@@ -178,17 +215,23 @@ body {
             .award-title {
                 font-weight: bold;
             }
+
             .award-team::before {
                 content: "Team: "
             }
+
             .award-sponsor::before {
                 content: "Sponsor: "
             }
+
             .award-program::before {
                 content: "Program: "
             }
+
             .award-team {
-                p { display: inline; }
+                p {
+                    display: inline;
+                }
             }
         }
 
@@ -204,11 +247,12 @@ body {
             }
         }
 
-        .service {
-        }
+        .service {}
 
         .supervisees {
-            .student, .supervisee {
+
+            .student,
+            .supervisee {
                 font-weight: bold;
             }
         }

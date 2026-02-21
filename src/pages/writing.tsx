@@ -46,7 +46,7 @@ export default class extends React.Component<WritingPageProps, {}> {
 
         return <Layout active={SpotPage.writing}>
             <div className="container">
-                <h2 className="">Writing</h2>
+                <h1 className="h2">Writing</h1>
                 <ul>{posts}</ul>
             </div>
         </Layout>;

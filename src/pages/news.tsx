@@ -96,24 +96,24 @@ function toMonthAndYear(dateString: string, useShortMonth: boolean): string {
     return `${monthName} ${year}`;
 }
 
-function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: boolean}): JSX.Element {
+function NewsItemDisplay(props: { newsItem: Queries.STRAPI_NEWSITEM, condensed?: boolean }): JSX.Element {
     const newsItem = props.newsItem;
     const date = newsItem.date || newsItem.createdAt;
-    const dateDisplay = date ? <strong>{toMonthAndYear(date, props.condensed===true)}: </strong> : '';
+    const dateDisplay = date ? <strong>{toMonthAndYear(date, props.condensed === true)}: </strong> : '';
 
     const relevantPeopleDisplays = newsItem.relevant_people.map((person) => {
         const fullName = `${person.given_name} ${person.family_name}`;
         const headshot = person.focused_headshot || person.headshot;
         // const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <FontAwesomeIcon icon={regular("user")} />;
-        const img = headshot ? <GatsbyImage imgStyle={{borderRadius: '50%', border: `2px solid ${person.color}`}} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <User />;
+        const img = headshot ? <GatsbyImage imgStyle={{ borderRadius: '50%', border: `2px solid ${person.color}` }} className="member-news-avatar" image={headshot.localFile.childImageSharp.gatsbyImageData} alt={`Headshot of ${fullName}`} /> : <User />;
 
         // const personText = props.condensed ? <><FontAwesomeIcon icon={regular("user")} /></> : <><FontAwesomeIcon icon={regular("user")} />&nbsp;{fullName}</>;
         const personText = props.condensed ? img : <>{img}&nbsp;{fullName}</>;
         let personLink;
-        if(person.use_local_homepage) {
-            personLink = <Link style={props.condensed && {color: person.color}} className="author-internal-link" to={`/${person.given_name}_${person.family_name}`} title={fullName}>{personText}</Link>
-        } else if(person.homepage) {
-            personLink = <a style={props.condensed && {color: person.color}} className="author-external-link" href={person.homepage} target="_blank" title={fullName}>{personText}</a>;
+        if (person.use_local_homepage) {
+            personLink = <Link style={props.condensed && { color: person.color }} className="author-internal-link" to={`/${person.given_name}_${person.family_name}`} title={fullName}>{personText}</Link>
+        } else if (person.homepage) {
+            personLink = <a style={props.condensed && { color: person.color }} className="author-external-link" href={person.homepage} target="_blank" title={fullName}>{personText}</a>;
         } else {
             personLink = <span title={fullName}>{personText}</span>;
         }
@@ -122,7 +122,7 @@ function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: 
 
     const relevantPublicationDisplays = newsItem.relevant_publications.map((pub) => {
         // const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FontAwesomeIcon icon={regular('file-lines')} /> : <FontAwesomeIcon icon={regular('file')} />;
-        const icon = ['journal', 'conference'].indexOf(pub.venue.type)>=0 ? <FileText /> : <File />;
+        const icon = ['journal', 'conference'].indexOf(pub.venue.type) >= 0 ? <FileText /> : <File />;
         const pubText = props.condensed ? icon : <>{icon}&nbsp;{pub.title}</>;
         return <li key={pub.id} className='relevant-publication'><Link to={"/" + getDownloadName(pub)} title={pub.title}>{pubText}</Link></li>
     });
@@ -133,10 +133,10 @@ function NewsItemDisplay(props: {newsItem: Queries.STRAPI_NEWSITEM, condensed?: 
     </li>
 };
 
-export function NewsDisplay(props: {newsItems: readonly Queries.STRAPI_NEWSITEM[], condensed?: boolean, latest: number|false}): JSX.Element {
+export function NewsDisplay(props: { newsItems: readonly Queries.STRAPI_NEWSITEM[], condensed?: boolean, latest: number | false }): JSX.Element {
     const newsItems = props.newsItems.slice();
-    const sortedNewsItems = newsItems.sort((a, b) => { const aDate = (a.date || a.createdAt); const bDate = (b.date || b.createdAt); return aDate > bDate ? -1 : aDate < bDate ? 1 : 0;});
-    const news = props.latest===false ? sortedNewsItems : sortedNewsItems.slice(0, props.latest);
+    const sortedNewsItems = newsItems.sort((a, b) => { const aDate = (a.date || a.createdAt); const bDate = (b.date || b.createdAt); return aDate > bDate ? -1 : aDate < bDate ? 1 : 0; });
+    const news = props.latest === false ? sortedNewsItems : sortedNewsItems.slice(0, props.latest);
     const newsItemDisplays = news.map((newsItem) => <NewsItemDisplay condensed={props.condensed} key={newsItem.id} newsItem={newsItem} />);
     return <ul className='news-container'>{newsItemDisplays}</ul>;
 };
@@ -157,7 +157,7 @@ export default class extends React.Component<NewsPageProps, {}> {
 
         return <Layout active={SpotPage.news}>
             <div className="news-page container">
-                <h2 className="">News</h2>
+                <h1 className="h2">News</h1>
                 <NewsDisplay newsItems={data.allStrapiNewsitem.nodes} latest={false} />
             </div>
         </Layout>;

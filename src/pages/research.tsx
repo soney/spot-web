@@ -83,11 +83,11 @@ export default class extends React.Component<IndexPageProps, {}> {
             const authorDisplays = <AuthorListDisplay withLinks={true} authors={authors as any} />
             const detailedPubs = publications.map((pub) => {
                 const { id } = pub;
-                return data.allStrapiPublication.nodes.find((p: Queries.STRAPI_PUBLICATION) => p.id===id);
+                return data.allStrapiPublication.nodes.find((p: Queries.STRAPI_PUBLICATION) => p.id === id);
             });
             return <div key={id} className="row">
                 <div className="col-md-4">
-                    <h5>{title}</h5>
+                    <h3 className="h5">{title}</h3>
                     <div><strong>People: </strong>{authorDisplays}</div>
                     <ReactMarkdown>{description}</ReactMarkdown>
                 </div>
@@ -101,8 +101,9 @@ export default class extends React.Component<IndexPageProps, {}> {
 
         return <Layout active={SpotPage.research}>
             <div className="container">
+                <h1 className="visually-hidden">Spot Research</h1>
                 <h2>Focus Areas</h2> {focusAreas}
-                <h2 id='all-publications'>All Publications</h2> <PublicationListDisplay groupByVenue={false} data={ data.allStrapiPublication.nodes } />
+                <h2 id='all-publications'>All Publications</h2> <PublicationListDisplay groupByVenue={false} data={data.allStrapiPublication.nodes} />
             </div>
         </Layout>;
     }

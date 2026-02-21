@@ -12,7 +12,7 @@ import { NewsDisplay } from './news';
 // import "@fortawesome/fontawesome-svg-core/styles.css";
 // config.autoAddCss = false
 
-    // allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
+// allStrapiAuthor(filter: {membership: {in: ["lead", "member", "alum", "ugrad_ms_intern"]}}, sort: {fields: [membership, family_name], order: ASC}) {
 export const indexQuery = graphql`query membersAndLeads {
     allStrapiAuthor(filter: {membership: {in: ["lead", "member", "member-postdoc", "alum", "ugrad_ms_intern"]}}, sort: [{ membership: ASC }, { family_name: ASC }]) {
         nodes {
@@ -165,16 +165,16 @@ export default class extends React.Component<IndexPageProps, {}> {
     public render() {
         const { data } = this.props;
         const currentMembers = data.allStrapiAuthor.nodes
-                                        .filter(node => ['lead', 'member', 'member-postdoc'].includes(node.membership))
-                                        .sort((a, b) => {
-                                            const membershipOrder = {
-                                            'lead': 1,
-                                            'member-postdoc': 2,
-                                            'member': 3
-                                            };
+            .filter(node => ['lead', 'member', 'member-postdoc'].includes(node.membership))
+            .sort((a, b) => {
+                const membershipOrder = {
+                    'lead': 1,
+                    'member-postdoc': 2,
+                    'member': 3
+                };
 
-                                            return membershipOrder[a.membership] - membershipOrder[b.membership];
-                                        });
+                return membershipOrder[a.membership] - membershipOrder[b.membership];
+            });
         const hasAnnouncement = data.strapiGroup.announcement && data.strapiGroup.announcement.trim() !== '';
 
         // const currentMembers = data.allStrapiAuthor.nodes.filter((node) => (node.membership === 'lead' || node.membership==='member' || node.membership==='member-postdoc'))
@@ -183,36 +183,36 @@ export default class extends React.Component<IndexPageProps, {}> {
             <div className="container">
                 <div className='row'>
                     <div className='col-md-7 group_description' aria-label="Group Description">
-                        <h2 className="visually-hidden">Group Description</h2>
+                        <h1 className="visually-hidden">SPOT Research Group</h1>
                         <p className="h2">&nbsp;</p>
                         <ReactMarkdown>{data.strapiGroup.overview}</ReactMarkdown>
                     </div>
                     <div className='col-md-5 news' aria-label="News">
-                        <h2>News <Link className="" to="/news">[+]</Link></h2>
+                        <h2><Link className="" to="/news"><span className="text-body">News</span><span aria-hidden="true"> [+]</span></Link></h2>
                         <NewsDisplay newsItems={data.allStrapiNewsitem.nodes} condensed={true} latest={4} />
                     </div>
                 </div>
             </div>
             {hasAnnouncement &&
-                    <div className="container">
-                        <div className='row'>
-                            <div className="col-md-12 announcements">
-                                <ReactMarkdown>{data.strapiGroup.announcement}</ReactMarkdown>
-                            </div>
+                <div className="container">
+                    <div className='row'>
+                        <div className="col-md-12 announcements">
+                            <ReactMarkdown>{data.strapiGroup.announcement}</ReactMarkdown>
                         </div>
                     </div>
+                </div>
             }
             <div className="container">
                 <div className='row'>
                     <div className='col col-sm-12'>
-                        <h2 className="">People <Link className="" to="/team">[+]</Link></h2>
+                        <h2 className=""><Link className="" to="/team"><span className="text-body">People</span><span aria-hidden="true"> [+]</span></Link></h2>
                         <MemberListDisplay layout={MemberListLayout.short_horizontal} highlightPubs={true} data={[...currentMembers/*, ...alumMembers*/]} />
                     </div>
                 </div>
             </div>
             <div className="container">
-                <h2>Recent Publications <Link to="/research#all-publications">[+]</Link></h2>
-                <PublicationListDisplay backTo={data.strapiGroup.recent_pub_cutoff_year} groupByVenue={false} data={ data.allStrapiPublication.nodes } />
+                <h2><Link to="/research#all-publications"><span className="text-body">Recent Publications</span><span aria-hidden="true"> [+]</span></Link></h2>
+                <PublicationListDisplay backTo={data.strapiGroup.recent_pub_cutoff_year} groupByVenue={false} data={data.allStrapiPublication.nodes} />
             </div>
             <footer className="container">
                 <div className="row">
