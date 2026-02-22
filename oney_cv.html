@@ -30,14 +30,6 @@ title: Curriculum Vitae
   body:not(.show-paper-awards) .paper-award-item {
     display: none;
   }
-
-  body:not(.separate-journal-conference) .cv-separated-pubs {
-    display: none;
-  }
-
-  body.separate-journal-conference .cv-combined-pubs {
-    display: none;
-  }
 </style>
 <div class="cv container">
   <div class="row">
@@ -47,7 +39,7 @@ title: Curriculum Vitae
     </div>
   </div>
 
-  <section class="cv-section row">
+  <section class="cv-section section row">
     <div class="col side"></div>
     <div class="col main">
       <div class="row">
@@ -160,7 +152,7 @@ title: Curriculum Vitae
   {% assign all_publications = site.data.publications %}
   {% assign venues_by_year_desc = site.data.venues | sort: "year" | reverse %}
   {% if all_publications and all_publications.size > 0 %}
-  <section class="cv-section">
+  <section class="cv-section section publications">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Publications</h2>
@@ -168,231 +160,75 @@ title: Curriculum Vitae
     <div class="row">
       <div class="col side"></div>
       <div class="col main">
-        <div class="cv-student-author-toggle">
+        <div class="cv-student-author-toggle d-print-none">
           <label for="highlight-student-authors-toggle">
             <input type="checkbox" id="highlight-student-authors-toggle">
             Highlight student authors
           </label>
-          <br>
-          <label for="separate-journal-conference-toggle">
-            <input type="checkbox" id="separate-journal-conference-toggle">
-            Separate journal and conference papers
-          </label>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        <strong>Labels:</strong> <i class="bi bi-trophy"></i> Best Paper Award, <i class="bi bi-award"></i> Honorable
+        Mention or other recognition
+        <br />
+        <strong>Approximate acceptance rates:</strong> UIST: 22%, CHI: 23%, VL/HCC: 30%, CSCW: 25%, ICSE: 19%, IMX: 26%
+      </div>
+    </div>
 
-        {% assign journal_ven_ids = site.data.venues | where: "type", "journal" | map: "id" %}
-        {% assign conf_ven_ids = site.data.venues | where: "type", "conference" | map: "id" %}
 
-        {% assign journal_total = 0 %}
-        {% assign conference_total = 0 %}
-        {% assign bookchapter_total = 0 %}
-        {% assign poster_total = 0 %}
-        {% assign workshop_total = 0 %}
-        {% assign doctoral_total = 0 %}
-        {% assign demo_total = 0 %}
-        {% assign panel_total = 0 %}
-        {% assign preprint_total = 0 %}
-        {% assign thesis_total = 0 %}
+    {% capture publication_category_specs_raw %}
+    journal::Heavily-reviewed Journal Manuscripts (J)::journal::default::detailed||
+    conference::Heavily-reviewed Conference Papers (C)::conference::default::detailed||
+    bookchapter::Book Chapters (B)::bookchapter::default::detailed||
+    other_refereed::Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E), and Panels
+    (A)::poster,workshop,doctoralconsortium,demo,panel::default::detailed||
+    preprint::Preprints (R)::preprint::default::detailed||
+    thesis::Theses (T)::thesis::default::detailed
+    {% endcapture %}
+    {% assign publication_category_specs = publication_category_specs_raw | strip | split: "||" %}
 
-        {% for pub in all_publications %}
-        {% assign v = site.data.venues | where: "id", pub.venue | first %}
-        {% if v.type == 'journal' %} {% assign journal_total = journal_total | plus: 1 %}
-        {% elsif v.type == 'conference' %} {% assign conference_total = conference_total | plus: 1 %}
-        {% elsif v.type == 'bookchapter' %} {% assign bookchapter_total = bookchapter_total | plus: 1 %}
-        {% elsif v.type == 'poster' %} {% assign poster_total = poster_total | plus: 1 %}
-        {% elsif v.type == 'workshop' %} {% assign workshop_total = workshop_total | plus: 1 %}
-        {% elsif v.type == 'doctoralconsortium' %} {% assign doctoral_total = doctoral_total | plus: 1 %}
-        {% elsif v.type == 'demo' %} {% assign demo_total = demo_total | plus: 1 %}
-        {% elsif v.type == 'panel' %} {% assign panel_total = panel_total | plus: 1 %}
-        {% elsif v.type == 'preprint' %} {% assign preprint_total = preprint_total | plus: 1 %}
-        {% elsif v.type == 'thesis' %} {% assign thesis_total = thesis_total | plus: 1 %}
-        {% endif %}
-        {% endfor %}
+    {% assign combined_publication_sections = "" %}
+    {% assign default_publication_sections = "" %}
 
-        {% assign combined_total = journal_total | plus: conference_total %}
-        {% assign combined_count = combined_total %}
-        {% capture pub_combined_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'journal' or venue.type == 'conference' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        {% if venue.type == 'journal' %}
-        {% assign pub_code = 'J' %}
-        {% else %}
-        {% assign pub_code = 'C' %}
-        {% endif %}
-        <li><strong>{{ pub_code }}{{ combined_count }}</strong>. {% include cv_publication_citation.html pub=pub
-          venue=venue
-          %}</li>
-        {% assign combined_count = combined_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
+    {% for spec in publication_category_specs %}
+    {% assign parts = spec | strip | split: "::" %}
+    {% assign section_title = parts[1] %}
+    {% assign allowed_types = parts[2] %}
+    {% assign section_bucket = parts[3] %}
+    {% assign item_variant = parts[4] %}
 
-        {% assign journal_count = journal_total %}
-        {% capture pub_journal_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'journal' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        <li class="paper row">
-          <div class="col main">
-            {% include cv_publication_citation.html pub=pub venue=venue %}
-          </div>
-          <div class="col side">
-            <span class="paper-id">J{{ journal_count }}</span>
-            {% if pub.award and pub.award != 'none' %}
-            <div class="paper-award-label">
-              <i class="icon-{{ pub.award }}"></i>
-              {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
-              {{ award_text }}
-            </div>
-            {% endif %}
-            <div class="date-range">
-              {{ pub.date_start }}{% if pub.date_end %} – {{ pub.date_end }}{% endif %}
-            </div>
-            <div class="location">{{ pub.location }}</div>
-          </div>
-        </li>
-        {% assign journal_count = journal_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
+    {% capture publication_items %}
+    {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
+    allowed_types=allowed_types item_variant=item_variant %}
+    {% endcapture %}
+    {% assign publication_items_stripped = publication_items | strip %}
+    {% if publication_items_stripped != "" %}
+    {% capture publication_section %}
+    <div class="row">
+      <div class="col side"></div>
+      <h3 class="col main">{{ section_title }}</h3>
+    </div>
+    <ul class="cv-list">{{ publication_items }}</ul>
+    {% endcapture %}
+    {% if section_bucket == "combined" %}
+    {% assign combined_publication_sections = combined_publication_sections | append: publication_section %}
+    {% else %}
+    {% assign default_publication_sections = default_publication_sections | append: publication_section %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 
-        {% assign conference_count = conference_total %}
-        {% capture pub_conference_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'conference' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        <li><strong>C{{ conference_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}
-        </li>
-        {% assign conference_count = conference_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
+    {% assign combined_publication_sections_stripped = combined_publication_sections | strip %}
+    {% if combined_publication_sections_stripped != "" %}
+    <div class="cv-combined-pubs">
+      {{ combined_publication_sections }}
+    </div>
+    {% endif %}
 
-        {% assign bookchapter_count = bookchapter_total %}
-        {% capture pub_bookchapter_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'bookchapter' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        <li><strong>B{{ bookchapter_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}
-        </li>
-        {% assign bookchapter_count = bookchapter_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
-
-        {% assign poster_count = poster_total %}
-        {% assign workshop_count = workshop_total %}
-        {% assign doctoral_count = doctoral_total %}
-        {% assign demo_count = demo_total %}
-        {% assign panel_count = panel_total %}
-        {% capture pub_other_refereed_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'poster' or venue.type == 'workshop' or venue.type == 'doctoralconsortium' or venue.type ==
-        'demo' or venue.type == 'panel' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        {% if venue.type == 'poster' %}
-        {% assign pub_code = "P" | append: poster_count %}
-        {% assign poster_count = poster_count | minus: 1 %}
-        {% elsif venue.type == 'workshop' %}
-        {% assign pub_code = "W" | append: workshop_count %}
-        {% assign workshop_count = workshop_count | minus: 1 %}
-        {% elsif venue.type == 'doctoralconsortium' %}
-        {% assign pub_code = "D" | append: doctoral_count %}
-        {% assign doctoral_count = doctoral_count | minus: 1 %}
-        {% elsif venue.type == 'demo' %}
-        {% assign pub_code = "E" | append: demo_count %}
-        {% assign demo_count = demo_count | minus: 1 %}
-        {% else %}
-        {% assign pub_code = "A" | append: panel_count %}
-        {% assign panel_count = panel_count | minus: 1 %}
-        {% endif %}
-        <li><strong>{{ pub_code }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
-
-        {% assign preprint_count = preprint_total %}
-        {% capture pub_preprint_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'preprint' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        <li><strong>R{{ preprint_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
-        {% assign preprint_count = preprint_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
-
-        {% assign thesis_count = thesis_total %}
-        {% capture pub_thesis_items %}
-        {% for venue in venues_by_year_desc %}
-        {% if venue.type == 'thesis' %}
-        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-        {% for pub in venue_pubs %}
-        <li><strong>T{{ thesis_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
-        {% assign thesis_count = thesis_count | minus: 1 %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endcapture %}
-
-        {% assign pub_combined_items_stripped = pub_combined_items | strip %}
-        {% if pub_combined_items_stripped != "" %}
-        <div class="cv-combined-pubs">
-          <h3>Heavily-reviewed Journal Manuscripts (J) and Conference Papers (C)</h3>
-          <ul class="cv-list">{{ pub_combined_items }}</ul>
-        </div>
-        {% endif %}
-
-        <div class="cv-separated-pubs">
-          {% assign pub_journal_items_stripped = pub_journal_items | strip %}
-          {% if pub_journal_items_stripped != "" %}
-          <h3>Heavily-reviewed Journal Manuscripts (J)</h3>
-          <ul class="cv-list">{{ pub_journal_items }}</ul>
-          {% endif %}
-
-          {% assign pub_conference_items_stripped = pub_conference_items | strip %}
-          {% if pub_conference_items_stripped != "" %}
-          <h3>Heavily-reviewed Conference Papers (C)</h3>
-          <ul class="cv-list">{{ pub_conference_items }}</ul>
-          {% endif %}
-        </div>
-
-        {% assign pub_bookchapter_items_stripped = pub_bookchapter_items | strip %}
-        {% if pub_bookchapter_items_stripped != "" %}
-        <h3>Book Chapters (B)</h3>
-        <ul class="cv-list">{{ pub_bookchapter_items }}</ul>
-        {% endif %}
-
-        {% assign pub_other_refereed_items_stripped = pub_other_refereed_items | strip %}
-        {% if pub_other_refereed_items_stripped != "" %}
-        <h3>Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E), and Panels (A)</h3>
-        <ul class="cv-list">{{ pub_other_refereed_items }}</ul>
-        {% endif %}
-
-        {% assign pub_preprint_items_stripped = pub_preprint_items | strip %}
-        {% if pub_preprint_items_stripped != "" %}
-        <h3>Preprints (R)</h3>
-        <ul class="cv-list">{{ pub_preprint_items }}</ul>
-        {% endif %}
-
-        {% assign pub_thesis_items_stripped = pub_thesis_items | strip %}
-        {% if pub_thesis_items_stripped != "" %}
-        <h3>Theses (T)</h3>
-        <ul class="cv-list">{{ pub_thesis_items }}</ul>
-        {% endif %}
+    {{ default_publication_sections }}
   </section>
   {% endif %}
 
@@ -422,15 +258,21 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.awards %}
-  <section class="cv-section">
-    <h2>Awards</h2>
-    <div class="cv-student-author-toggle">
-      <label for="show-paper-awards-toggle">
-        <input type="checkbox" id="show-paper-awards-toggle">
-        Include paper awards
-      </label>
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Awards</h2>
     </div>
-    <ul class="cv-list">
+    <div class="cv-student-author-toggle d-print-none row">
+      <div class="col side"></div>
+      <div class="col main">
+        <label for="show-paper-awards-toggle">
+          <input type="checkbox" id="show-paper-awards-toggle">
+          Include paper awards
+        </label>
+      </div>
+    </div>
+    <ul class="cv-list list-unstyled">
       {% assign award_strings_raw = "" %}
 
       {% for item in cv.awards %}
@@ -441,10 +283,17 @@ title: Curriculum Vitae
       {% endif %}
 
       {% capture item_html %}
-      <li>
-        <strong>{{ item.title }}</strong>{% if item.description %}: {{ item.description }}{% endif %}
-        {% if item.date_start or item.date_end %} ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{%
-        endif %}){% endif %}
+      <li class="row item">
+        <div class="col main">
+          <div class="award-title">{{ item.title }}</div>
+          {% if item.description %}<div class="award-description">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
       </li>
       {% endcapture %}
       {% assign sortable_str = year | append: "-A" | append: forloop.index | append: "::::" | append: item_html %}
@@ -458,10 +307,23 @@ title: Curriculum Vitae
       {% if pub.award and pub.award != 'none' %}
       {% assign year = venue.year | default: "0000" %}
       {% capture item_html %}
-      <li class="paper-award-item">
-        {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
-        <strong>{{ award_text }}</strong>: for <em>{{ pub.title }}</em>{% if venue.short_name %} at {{ venue.short_name
-        }}{% endif %} ({{ year }})
+      <li class="paper-award-item row item">
+        <div class="col main">
+          {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
+          <div class="award-title">{{venue.short_name}}: {{ award_text }}</div>
+          <div class="award-description">{{ pub.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {% if venue.conference_start %}
+            {% assign parts = venue.conference_start | split: "/" %}
+            {% if parts.size == 2 %}
+            {{ parts.first }}/
+            {%-endif %}
+            {%-endif %}
+            {{-year }}
+          </div>
+        </div>
       </li>
       {% endcapture %}
       {% assign sortable_str = year | append: "-P" | append: award_index | append: "::::" | append: item_html %}
@@ -547,18 +409,24 @@ title: Curriculum Vitae
       {% endif %}
 
       {% if items.size > 0 %}
-      <h3>{{ group_title }}</h3>
-      <ul class="cv-list">
+      <div class="row">
+        <h3 class="col main">{{ group_title }}</h3>
+        <div class="col side"></div>
+      </div>
+      <ul class="cv-list list-unstyled">
         {% for item in items %}
-        <li>
-          {% if item.title %}<strong>{{ item.title }}</strong>{% endif %}
-          {% if item.description %}{% if item.title %}. {% endif %}{{ item.description }}{% endif %}
-          {% if item.date_start or item.date_end %}
-          ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %})
-          {% endif %}
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank" rel="noopener">link</a>
-          {% endif %}
+        <li class="row item">
+          <div class="col main">
+            {% if item.title %}<div class="role">{{ item.title }}</div>{% endif %}
+            {% if item.description %}<div class="description">{{ item.description }}</div>{% endif %}
+          </div>
+          <div class="col side">
+            <div class="date">
+              {% if item.date_start or item.date_end %}
+              {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+              {% endif %}
+            </div>
+          </div>
         </li>
         {% endfor %}
       </ul>
@@ -568,8 +436,11 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.supervised_students %}
-  <section class="cv-section">
-    <h2>Students Supervised</h2>
+  <section class="cv-section section">
+    <div class="row">
+      <h2 class="col main">Students Supervised</h2>
+      <div class="col side"></div>
+    </div>
 
     {% assign supervised_dissertation_chair = cv.supervised_students | where: "category", "dissertation_chair" %}
     {% assign supervised_ongoing_advisee = cv.supervised_students | where: "category", "ongoing_advisee" %}
@@ -602,19 +473,30 @@ title: Curriculum Vitae
     {% endif %}
 
     {% if items.size > 0 %}
-    <h3>{{ group_title }}</h3>
-    <ul class="cv-list">
+    <div class="row">
+      <h3 class="col main">{{ group_title }}</h3>
+      <div class="col side"></div>
+    </div>
+    <ul class="cv-list list-unstyled">
       {% for item in items %}
-      <li>
-        {% if item.student_name %}<strong>{{ item.student_name }}</strong>{% endif %}
-        {% if item.student_department %}, {{ item.student_department }}{% endif %}
-        {% if item.institution %}, {{ item.institution }}{% endif %}
-        {% if item.thesis_title %}. "{{ item.thesis_title }}"{% endif %}
-        {% if item.current_position %}. {{ item.current_position }}{% endif %}
-        {% if item.coadvisor %}. Co-advisor: {{ item.coadvisor }}{% endif %}
-        {% if item.date_start or item.date_end %}
-        ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %})
-        {% endif %}
+      <li class="row item">
+        <div class="col main">
+          <div class="supervisee">{{ item.student_name }} {% if item.student_department %}({{ item.student_department
+            }}){% endif %}</div>
+          <div class="supervisee-thesis">{{ item.thesis_title }}</div>
+          {% if item.coadvisor %}<div class="supervisee-coadvisor">(co-advised with {{ item.coadvisor }})</div>{% endif
+          %}
+          {% if item.current_position %}<div class="supervisee-position">Currently: {{ item.current_position }}</div>{%
+          endif %}
+        </div>
+        <div class="col side">
+          <div class="date">
+            {% if item.date_start or item.date_end %}
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+            {% endif %}
+          </div>
+          <div class="location">{% if item.institution %}{{ item.institution }}{% endif %}</div>
+        </div>
       </li>
       {% endfor %}
     </ul>
@@ -625,22 +507,26 @@ title: Curriculum Vitae
 
   {% assign ugrad_ms_students = site.data.people | where: "membership", "ugrad_ms_student" | sort: "family_name" %}
   {% if ugrad_ms_students.size > 0 %}
-  <section class="cv-section">
-    <div class="cv-student-author-toggle">
-      <label for="show-other-mentees-toggle">
-        <input type="checkbox" id="show-other-mentees-toggle">
-        Include undergraduate and master's collaborators
-      </label>
-    </div>
-    <h3 class="cv-other-mentees-header">Other Mentees</h3>
-    <ul class="cv-list cv-other-mentees-list">
-      {% for student in ugrad_ms_students %}
-      <li>
-        <strong>{{ student.given_name }} {{ student.family_name }}</strong>{% if student.short_bio %}. {{
-        student.short_bio }}{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        <div class="cv-student-author-toggle d-print-none">
+          <label for="show-other-mentees-toggle">
+            <input type="checkbox" id="show-other-mentees-toggle">
+            Include undergraduate and master's collaborators
+          </label>
+        </div>
+        <h3 class="cv-other-mentees-header">Other Mentees</h3>
+        <ul class="cv-list cv-other-mentees-list">
+          {% for student in ugrad_ms_students %}
+          <li>
+            <strong>{{ student.given_name }} {{ student.family_name }}</strong>{% if student.short_bio %}. {{
+            student.short_bio }}{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
   </section>
   {% endif %}
 
@@ -731,6 +617,5 @@ title: Curriculum Vitae
     setupToggle('highlight-student-authors-toggle', 'students', 'highlight-student-authors');
     setupToggle('show-other-mentees-toggle', 'mentees', 'show-other-mentees');
     setupToggle('show-paper-awards-toggle', 'awards', 'show-paper-awards');
-    setupToggle('separate-journal-conference-toggle', 'separate_pubs', 'separate-journal-conference');
   })();
 </script>

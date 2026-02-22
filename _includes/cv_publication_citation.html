@@ -1,32 +1,18 @@
 {% assign pub = include.pub %}
 {% assign venue = include.venue %}
 
-{% include author_list.html ids=pub.authors student_ids=pub.student_authors with_links=false %}.
+{% include author_list.html ids=pub.authors student_ids=pub.student_authors highlight_id="steve_oney" with_links=false
+%}.
 {% if venue and venue.year %} ({{ venue.year }}){% endif %}
 {{ pub.title }}.
 {% if venue %}
-  {% if venue.full_name %}
-    {{ venue.full_name }}
-  {% else %}
-    {{ venue.short_name }}
-  {% endif %}
-  {% if venue.full_name and venue.short_name and venue.short_name != venue.full_name %}
-    ({{ venue.short_name }})
-  {% endif %}.
-  {% if venue.location %} {{ venue.location }}.{% endif %}
+{% if venue.full_name %}
+{{ venue.full_name }}
+{% else %}
+{{ venue.short_name }}
 {% endif %}
-{% if pub.pdf %}
-  {% assign pdf_items = pub.pdf | join: "||" | split: "||" %}
-  {% assign pdf_count = 0 %}
-  {% for pdf_path in pdf_items %}
-    {% assign pdf_clean = pdf_path | strip %}
-    {% if pdf_clean != "" and pdf_clean contains ".pdf" %}
-      {% assign pdf_count = pdf_count | plus: 1 %}
-      {% if pdf_count == 1 %}
-        <a href="{{ '/assets/' | append: pdf_clean | relative_url }}" target="_blank" rel="noopener">[PDF]</a>
-      {% else %}
-        <a href="{{ '/assets/' | append: pdf_clean | relative_url }}" target="_blank" rel="noopener">[PDF {{ pdf_count }}]</a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+{% if venue.full_name and venue.short_name and venue.short_name != venue.full_name %}
+({{ venue.short_name }})
+{%-endif-%}.
+{%-if venue.location %} {{ venue.location }}.{% endif %}
 {% endif %}

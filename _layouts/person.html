@@ -52,7 +52,7 @@ nav: team
     <h2>Publications</h2>
     <ul class="publication-list">
       {% for pub in authored %}
-      <li>{% include publication_item.html pub=pub heading_level="h3" %}</li>
+      <li>{% include publication_item.html pub=pub heading_level="h3" highlight_id=person.id %}</li>
       {% endfor %}
     </ul>
   </section>

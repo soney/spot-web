@@ -1,0 +1,138 @@
+{% assign all_publications = include.all_publications %}
+{% assign venues = include.venues %}
+{% assign allowed_types = include.allowed_types | split: "," %}
+{% assign item_variant = include.item_variant | default: "compact" %}
+
+{% assign journal_total = 0 %}
+{% assign conference_total = 0 %}
+{% assign bookchapter_total = 0 %}
+{% assign poster_total = 0 %}
+{% assign workshop_total = 0 %}
+{% assign doctoral_total = 0 %}
+{% assign demo_total = 0 %}
+{% assign panel_total = 0 %}
+{% assign preprint_total = 0 %}
+{% assign thesis_total = 0 %}
+
+{% for pub in all_publications %}
+{% assign venue = site.data.venues | where: "id", pub.venue | first %}
+{% if venue %}
+{% assign type_allowed = false %}
+{% for raw_type in allowed_types %}
+{% assign allowed_type = raw_type | strip %}
+{% if venue.type == allowed_type %}
+{% assign type_allowed = true %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% if type_allowed %}
+{% case venue.type %}
+{% when "journal" %}
+{% assign journal_total = journal_total | plus: 1 %}
+{% when "conference" %}
+{% assign conference_total = conference_total | plus: 1 %}
+{% when "bookchapter" %}
+{% assign bookchapter_total = bookchapter_total | plus: 1 %}
+{% when "poster" %}
+{% assign poster_total = poster_total | plus: 1 %}
+{% when "workshop" %}
+{% assign workshop_total = workshop_total | plus: 1 %}
+{% when "doctoralconsortium" %}
+{% assign doctoral_total = doctoral_total | plus: 1 %}
+{% when "demo" %}
+{% assign demo_total = demo_total | plus: 1 %}
+{% when "panel" %}
+{% assign panel_total = panel_total | plus: 1 %}
+{% when "preprint" %}
+{% assign preprint_total = preprint_total | plus: 1 %}
+{% when "thesis" %}
+{% assign thesis_total = thesis_total | plus: 1 %}
+{% endcase %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% assign journal_count = journal_total %}
+{% assign conference_count = conference_total %}
+{% assign bookchapter_count = bookchapter_total %}
+{% assign poster_count = poster_total %}
+{% assign workshop_count = workshop_total %}
+{% assign doctoral_count = doctoral_total %}
+{% assign demo_count = demo_total %}
+{% assign panel_count = panel_total %}
+{% assign preprint_count = preprint_total %}
+{% assign thesis_count = thesis_total %}
+
+{% for venue in venues %}
+{% assign type_allowed = false %}
+{% for raw_type in allowed_types %}
+{% assign allowed_type = raw_type | strip %}
+{% if venue.type == allowed_type %}
+{% assign type_allowed = true %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% if type_allowed %}
+{% assign venue_pubs = all_publications | where: "venue", venue.id %}
+{% for pub in venue_pubs %}
+{% assign type_prefix = "" %}
+{% case venue.type %}
+{% when "journal" %}
+{% assign type_prefix = "J" %}
+{% when "conference" %}
+{% assign type_prefix = "C" %}
+{% when "bookchapter" %}
+{% assign type_prefix = "B" %}
+{% when "poster" %}
+{% assign type_prefix = "P" %}
+{% when "workshop" %}
+{% assign type_prefix = "W" %}
+{% when "doctoralconsortium" %}
+{% assign type_prefix = "D" %}
+{% when "demo" %}
+{% assign type_prefix = "E" %}
+{% when "panel" %}
+{% assign type_prefix = "A" %}
+{% when "preprint" %}
+{% assign type_prefix = "R" %}
+{% when "thesis" %}
+{% assign type_prefix = "T" %}
+{% endcase %}
+
+{% assign pub_code = type_prefix | append: "." %}
+{% case venue.type %}
+{% when "journal" %}
+{% assign pub_code = type_prefix | append: journal_count %}
+{% assign journal_count = journal_count | minus: 1 %}
+{% when "conference" %}
+{% assign pub_code = type_prefix | append: conference_count %}
+{% assign conference_count = conference_count | minus: 1 %}
+{% when "bookchapter" %}
+{% assign pub_code = type_prefix | append: bookchapter_count %}
+{% assign bookchapter_count = bookchapter_count | minus: 1 %}
+{% when "poster" %}
+{% assign pub_code = type_prefix | append: poster_count %}
+{% assign poster_count = poster_count | minus: 1 %}
+{% when "workshop" %}
+{% assign pub_code = type_prefix | append: workshop_count %}
+{% assign workshop_count = workshop_count | minus: 1 %}
+{% when "doctoralconsortium" %}
+{% assign pub_code = type_prefix | append: doctoral_count %}
+{% assign doctoral_count = doctoral_count | minus: 1 %}
+{% when "demo" %}
+{% assign pub_code = type_prefix | append: demo_count %}
+{% assign demo_count = demo_count | minus: 1 %}
+{% when "panel" %}
+{% assign pub_code = type_prefix | append: panel_count %}
+{% assign panel_count = panel_count | minus: 1 %}
+{% when "preprint" %}
+{% assign pub_code = type_prefix | append: preprint_count %}
+{% assign preprint_count = preprint_count | minus: 1 %}
+{% when "thesis" %}
+{% assign pub_code = type_prefix | append: thesis_count %}
+{% assign thesis_count = thesis_count | minus: 1 %}
+{% endcase %}
+{% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code variant=item_variant %}
+{% endfor %}
+{% endif %}
+{% endfor %}

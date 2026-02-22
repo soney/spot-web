@@ -25,7 +25,7 @@ nav: home
             [+]</span></a></h2>
       <ul class="news-list short list-unstyled">
         {% for item in latest_news limit:4 %}
-        {% include news_item.html item=item date_format="%b %Y" %}
+        {% include news_item.html item=item date_format="%b '%y" %}
         {% endfor %}
       </ul>
     </section>
@@ -74,13 +74,14 @@ nav: home
           aria-hidden="true"> [+]</span></a></h2>
     <ul class="publication-list">
       {% assign cutoff = group.recent_pub_cutoff_year | default: 2000 %}
+      {% assign max_pubs = group.recent_pub_count | default: 999999 %}
       {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
       {% assign shown = 0 %}
       {% for venue in sorted_venues %}
       {% if venue.year and venue.year >= cutoff %}
       {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
       {% for pub in venue_pubs %}
-      {% if shown < 8 %} <li>{% include publication_item.html pub=pub %}</li>
+      {% if shown < max_pubs %} <li>{% include publication_item.html pub=pub %}</li>
         {% assign shown = shown | plus: 1 %}
         {% endif %}
         {% endfor %}

@@ -1,0 +1,47 @@
+{% assign pub = include.pub %}
+{% assign venue = include.venue %}
+{% assign pub_code = include.pub_code %}
+{% assign variant = include.variant | default: "compact" %}
+
+{% if variant == "detailed" %}
+<li class="paper row item">
+  <div class="col main">
+    {% include cv_publication_citation.html pub=pub venue=venue %}
+    {% if pub.award_description %}
+    <div class="award-description">*{{ pub.award_description }}</div>
+    {% endif %}
+  </div>
+  <div class="col side">
+    {% if pub.award and pub.award != "none" %}
+    <span class="paper-award-label">
+      {% if pub.award == 'best_paper' %}
+      <i class="bi bi-trophy"></i>{% if pub.award_description %}*{% endif %}
+      {% else %}
+      <i class="bi bi-award"></i>{% if pub.award_description %}*{% endif %}
+      {% endif %}
+    </span>
+    {% endif %}
+    <span class="paper-id">{{ pub_code }}</span>
+    {% if pub.pdf %}
+    {% assign pdf_items = pub.pdf | join: "||" | split: "||" %}
+    {% assign pdf_count = 0 %}
+    {% for pdf_path in pdf_items %}
+    {% assign pdf_clean = pdf_path | strip %}
+    {% if pdf_clean != "" and pdf_clean contains ".pdf" %}
+    {% assign pdf_count = pdf_count | plus: 1 %}
+    <div class="pdf-download">
+      <a href="{{ '/assets/' | append: pdf_clean | relative_url }}" class="pdf-download" target="_blank"
+        rel="noopener">(PDF)</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <div class="date-range">
+      {{ pub.date_start }}{% if pub.date_end %} – {{ pub.date_end }}{% endif %}
+    </div>
+    <div class="location">{{ pub.location }}</div>
+  </div>
+</li>
+{% else %}
+<li><strong>{{ pub_code }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
+{% endif %}
