@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkspot_web=self.webpackChunkspot_web||[]).push([[453],{731:function(e,t,l){l.r(t);var a=l(6540),n=l(4810);t.default=()=>a.createElement("div",null,a.createElement("h1",null,"NOT FOUND"),a.createElement("p",null,"You just hit a route that doesn't exist."),a.createElement(n.N_,{to:"/"},"(go back to the homepage)"))}}]);
-//# sourceMappingURL=component---src-pages-404-tsx-1dda2200ce068a35e463.js.map
