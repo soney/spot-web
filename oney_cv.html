@@ -17,6 +17,17 @@ title: Curriculum Vitae
     gap: 0.4rem;
   }
 
+  .highlight-students-note {
+    display: none;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  body.highlight-student-authors .highlight-students-note {
+    display: block;
+  }
+
   body.highlight-student-authors .paper-author.student-author {
     text-decoration: underline;
     text-underline-offset: 0.15em;
@@ -171,6 +182,10 @@ title: Curriculum Vitae
     <div class="row">
       <div class="col side"></div>
       <div class="col main">
+        <div class="highlight-students-note">
+          Note: The names of authors who were students at the time of publication are <u>underlined</u> (including my
+          name if I was a student at the time of publication).
+        </div>
         <strong>Labels:</strong> <i class="bi bi-trophy"></i> Best Paper Award, <i class="bi bi-award"></i> Honorable
         Mention or other recognition
         <br />
@@ -233,7 +248,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.grants %}
-  <section class="cv-section section">
+  <section class="cv-section section grants">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Grants</h2>
@@ -243,13 +258,23 @@ title: Curriculum Vitae
       <li class="row item">
         <div class="col side">
           {% if item.date %}<div class="award-date">{{ item.date }}</div>{% endif %}
-          {% if item.amount %}<div class="award-amount">${{ item.amount }}</div>{% endif %}
+          {% if item.amount %}
+          {% assign amount_str = item.amount | append: "" %}
+          {% assign amount_chars = amount_str | split: "" | reverse %}
+          {% assign with_commas = "" %}
+          {% for char in amount_chars %}
+          {% assign mod = forloop.index0 | modulo: 3 %}
+          {% if mod == 0 and forloop.index0 > 0 %}{% assign with_commas = with_commas | append: "," %}{% endif %}
+          {% assign with_commas = with_commas | append: char %}
+          {% endfor %}
+          <div class="award-amount">${{ with_commas | split: "" | reverse | join: "" }}</div>
+          {% endif %}
         </div>
         <div class="col main">
           {% if item.title %}<div class="award-title">{{ item.title }}</div>{% endif %}
-          <div class="award-team">Team: {{ item.team | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
-          {% if item.sponsor %}<div class="award-sponsor">Sponsor: {{ item.sponsor }}</div>{% endif %}
-          {% if item.program %}<div class="award-program">Program: {{ item.program }}</div>{% endif %}
+          <div class="award-team">{{ item.team | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% if item.sponsor %}<div class="award-sponsor">{{ item.sponsor }}</div>{% endif %}
+          {% if item.program %}<div class="award-program">{{ item.program }}</div>{% endif %}
         </div>
       </li>
       {% endfor %}
@@ -258,7 +283,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.awards %}
-  <section class="cv-section section">
+  <section class="cv-section section awards">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Awards</h2>
@@ -346,7 +371,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.invited_presentations %}
-  <section class="cv-section section">
+  <section class="cv-section section presentations">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Invited Presentations</h2>
@@ -369,7 +394,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.service %}
-  <section class="cv-section section">
+  <section class="cv-section section service">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Service</h2>
@@ -436,7 +461,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.supervised_students %}
-  <section class="cv-section section">
+  <section class="cv-section section supervisees">
     <div class="row">
       <h2 class="col main">Students Supervised</h2>
       <div class="col side"></div>
@@ -531,7 +556,7 @@ title: Curriculum Vitae
   {% endif %}
 
   {% if cv.press %}
-  <section class="cv-section section">
+  <section class="cv-section section press">
     <div class="row">
       <div class="col side"></div>
       <h2 class="col main">Press</h2>

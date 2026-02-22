@@ -1,11 +1,11 @@
----
----
-
-$font-color: #333;
-$font-size: 14pt;
-$award-color: $font-color;
-$link-color: $font-color;
-$link-hover-color: #0056b3;
+:root {
+    --font-color: #333;
+    --font-size: 14pt;
+    --line-height: calc(var(--font-size) + 2pt);
+    --award-color: var(--font-color);
+    --link-color: var(--font-color);
+    --link-hover-color: #0056b3;
+}
 
 @media print {}
 
@@ -51,17 +51,17 @@ body {
         font-family: goudy-old-style, serif;
         font-weight: 400;
         font-style: normal;
-        font-size: $font-size;
-        color: $font-color;
+        font-size: var(--font-size);
+        color: var(--font-color);
 
-        line-height: $font-size + 2pt;
+        line-height: var(--line-height);
 
         a {
-            color: $link-color;
+            color: var(--link-color);
             text-decoration: none;
 
             &:hover {
-                color: $link-hover-color;
+                color: var(--link-hover-color);
             }
         }
 
@@ -71,6 +71,7 @@ body {
         }
 
         h2 {
+            margin-top: 1.5em;
             font-size: 1.5em;
             border-bottom: 1px solid #AAA;
         }
@@ -86,6 +87,14 @@ body {
             padding-left: 0;
         }
 
+        ul.cv-list {
+            padding-left: 0px;
+
+            li:first-child {
+                margin-top: 0;
+            }
+        }
+
         .affiliation {
 
             .affiliation-department,
@@ -97,9 +106,7 @@ body {
         .contact {
             text-align: right;
 
-            .contact-spacer {
-                // height: 12pt;
-            }
+            .contact-spacer {}
         }
 
         .side {
@@ -151,10 +158,8 @@ body {
                 margin-bottom: 1em;
                 text-align: justify;
 
-                .author {
-                    &.me {
-                        font-weight: bold;
-                    }
+                .paper-author.highlight {
+                    font-weight: bold;
                 }
 
                 cite {
@@ -163,28 +168,14 @@ body {
             }
 
             .paper-award-label {
-                color: $award-color;
+                color: var(--award-color);
             }
 
             .paper-award-footnote {
                 font-style: italic;
-                color: $award-color;
+                color: var(--award-color);
             }
 
-            .highlight-students-note {
-                display: none;
-            }
-
-            &.highlight-students {
-                .highlight-students-note {
-                    display: flex;
-                }
-
-                .student {
-                    text-decoration: underline;
-                    text-decoration-thickness: 0.1px;
-                }
-            }
         }
 
         .section {
@@ -276,4 +267,21 @@ body {
             }
         }
     }
+
+    .highlight-students-note {
+        display: none;
+    }
+
+    &.highlight-students {
+        .highlight-students-note {
+            display: flex;
+        }
+
+        .student {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1px;
+        }
+    }
+
+    margin-bottom: 100px;
 }

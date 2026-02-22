@@ -1,20 +1,18 @@
 {
-  "name": "spot-web",
-  "description": "Homepage for the SPOT group at the University of Michigan",
-  "version": "1.0.0",
-  "author": "Steve Oney <soney@umich.edu>",
-  "license": "MIT",
-  "scripts": {
-    "convert:strapi": "node strapi-export-conversion/jsonl-to-yaml.mjs && node strapi-export-conversion/normalize-content.mjs",
-    "build": "bundle exec jekyll build",
-    "develop": "bundle exec jekyll serve --livereload",
-    "clean": "rm -rf _site .jekyll-cache .jekyll-metadata",
-    "deploy": "bundle exec jekyll build && npx gh-pages -d _site"
-  },
-  "dependencies": {
-    "js-yaml": "^4.1.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  }
+    "name": "spot-web",
+    "description": "Homepage for the SPOT group at the University of Michigan",
+    "version": "1.0.0",
+    "author": "Steve Oney <soney@umich.edu>",
+    "license": "MIT",
+    "scripts": {
+        "convert:strapi": "node strapi-export-conversion/jsonl-to-yaml.mjs && node strapi-export-conversion/normalize-content.mjs",
+        "build": "bundle exec jekyll build",
+        "develop": "bundle exec jekyll serve --livereload",
+        "clean": "rm -rf _site .jekyll-cache .jekyll-metadata",
+        "deploy": "bundle exec jekyll build && npx gh-pages -d _site"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.3.0",
+        "js-yaml": "^4.1.1"
+    }
 }

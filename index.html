@@ -78,7 +78,9 @@ nav: home
       {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
       {% assign shown = 0 %}
       {% for venue in sorted_venues %}
-      {% if venue.year and venue.year >= cutoff %}
+      {% assign is_included_type = false %}
+      {% if venue.type == "journal" or venue.type == "conference" %}{% assign is_included_type = true %}{% endif %}
+      {% if venue.year and venue.year >= cutoff and is_included_type == true %}
       {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
       {% for pub in venue_pubs %}
       {% if shown < max_pubs %} <li>{% include publication_item.html pub=pub %}</li>
@@ -106,7 +108,7 @@ nav: home
             src="{{ '/assets/images/logos/cse_logo.svg' | relative_url }}" alt="Michigan CSE"></a>
       </div>
     </div>
-    <h2 class="d-flex justify-content-between align-items-end">
+    <h2 class="d-flex justify-content-between align-items-end mt-5">
       Sponsors
       <span class="text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
         (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)

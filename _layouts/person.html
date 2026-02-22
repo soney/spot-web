@@ -46,7 +46,15 @@ nav: team
     </div>
   </section>
 
-  {% assign authored = site.data.publications | where_exp: "p", "p.authors contains person.id" %}
+  {% assign all_authored = site.data.publications | where_exp: "p", "p.authors contains person.id" %}
+  {% assign authored = "" | split: "" %}
+  {% for pub in all_authored %}
+  {% assign venue = site.data.venues | where: "id", pub.venue | first %}
+  {% if venue.type == "conference" or venue.type == "journal" %}
+  {% assign authored = authored | push: pub %}
+  {% endif %}
+  {% endfor %}
+
   {% if authored.size > 0 %}
   <section class="section-card">
     <h2>Publications</h2>
