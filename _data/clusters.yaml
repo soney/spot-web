@@ -3,36 +3,72 @@
   authors:
     - mauli_pandey
     - steve_oney
+  papers:
+    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
+    - accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
+    - understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
+    - explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
+    - arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
 - id: building_testing_interactive_uis
   title: Building & Testing Interactive UIs
   authors:
     - steve_oney
     - rebecca_krosnick
+  papers:
+    - flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
+    - improving_crowd_supported_gui_testing_with_structural_guidance_2020
+    - implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
+    - expresso_building_responsive_interfaces_with_keyframes_2018
+    - interstate_a_language_and_environment_for_expressing_interface_behavior_2014
+    - constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
+    - firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
 - id: collaborative_data_science
   title: Collaborative Data Science
   authors:
     - april_wang
     - christopher_brooks
     - steve_oney
+  papers:
+    - callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
+    - how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
 - id: communicating_about_code
   title: Communicating about Code
   authors:
     - april_wang
     - steve_oney
     - christopher_brooks
+  papers:
+    - codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
+    - callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
+    - how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
+    - creating_guided_code_explanations_with_chat_codes_2018
 - id: immersive_programming
   title: Immersive Programming
   authors:
     - lei_zhang
     - steve_oney
+  papers:
+    - vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
+    - flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
+    - studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
 - id: on_demand_support_for_programmers
   title: On-Demand Support for Programmers
   authors:
     - yan_chen
     - steve_oney
+  papers:
+    - cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
+    - codeon_on_demand_software_development_assistance_2017
+    - towards_providing_on_demand_expert_support_for_software_developers_2016
 - id: programming_education
   title: Programming Education
   authors:
     - ashley_zhang
     - steve_oney
     - maryam_arab
+  papers:
+    - cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
+    - runex_augmenting_regular_expression_code_search_with_runtime_values_2023
+    - vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
+    - puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
+    - edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020

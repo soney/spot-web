@@ -1,0 +1,36 @@
+{% assign ids = include.ids | default: empty %}
+{% assign student_ids = include.student_ids | default: empty %}
+<span class="paper-author-list">
+  {% for author_id in ids %}
+  {%- assign person = site.data.people | where: "id", author_id | first -%}
+  {%- assign is_student_author = false -%}
+  {%- if student_ids contains author_id -%}
+    {%- assign is_student_author = true -%}
+  {%- endif -%}
+  {%- unless forloop.first -%}
+  {%- if forloop.last -%}
+  {%- if forloop.length > 2 -%}, and {% else %} and {% endif -%}
+  {%- else -%}, {% endif -%}
+  {%- endunless -%}
+
+    {% if person %}
+  <span class="paper-author{% if is_student_author %} student-author{% endif %}" data-author-id="{{ person.id }}">
+    {%- if include.with_links == true or include.with_links == 'true' -%}
+    {%- if person.use_local_homepage -%}
+    <a class="author-internal-link" href="{{ '/people/' | append: person.id | append: '/' | relative_url }}">{{- person.given_name }} {{
+      person.family_name -}}</a>
+    {%- elsif person.homepage -%}
+    <a class="author-external-link" href="{{ person.homepage }}" target="_blank" rel="noopener">{{- person.given_name
+      }} {{ person.family_name -}}</a>
+    {%- else -%}
+    {{- person.given_name }} {{ person.family_name -}}
+    {%- endif -%}
+    {%- else -%}
+    {{- person.given_name }} {{ person.family_name -}}
+    {%- endif -%}
+  </span>
+  {%- else -%}
+  <span class="paper-author{% if is_student_author %} student-author{% endif %}">{{- author_id -}}</span>
+  {%- endif -%}
+  {%- endfor -%}
+</span>

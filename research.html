@@ -1,0 +1,61 @@
+---
+layout: default
+title: Research
+nav: research
+---
+
+<div class="container">
+  <h1>Research</h1>
+
+  <h2>Focus Areas</h2>
+  {% for cluster in site.data.clusters %}
+  <section class="section-card row" id="cluster-{{ cluster.id }}">
+    <div class="col-md-4">
+      <h3>{{ cluster.title }}</h3>
+      {% if cluster.authors %}
+      <p><strong>People:</strong> {% include author_list.html ids=cluster.authors with_links=true %}</p>
+      {% endif %}
+      </div>
+    <div class="col-md-8">
+      {% assign focus_papers = cluster.papers | default: cluster.publications %}
+      {% if focus_papers %}
+      <p><strong>Publications:</strong></p>
+      <ul class="list-unstyled">
+        {% for pub_id in focus_papers %}
+        {% assign focus_pub = site.data.publications | where: "id", pub_id | first %}
+        {% if focus_pub %}
+        <li>{{ focus_pub.title }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% if cluster.description %}
+    {{ cluster.description | markdownify }}
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <h2 id="all-publications">All Publications</h2>
+  {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+  {% for venue in sorted_venues %}
+  {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
+  {% if venue_pubs.size > 0 %}
+  <section class="section-card" id="venue-{{ venue.id }}">
+    <h3 class="visually-hidden">
+      {% if venue.homepage %}
+      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{{ venue.short_name | default: venue.full_name }} {{
+        venue.year }}</a>
+      {% else %}
+      {{ venue.short_name | default: venue.full_name }} {{ venue.year }}
+      {% endif %}
+    </h3>
+    <ul class="publication-list">
+      {% for pub in venue_pubs %}
+      <li>{% include publication_item.html pub=pub heading_level="h4" %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% endfor %}
+</div>

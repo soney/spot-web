@@ -60,7 +60,11 @@ function extractAssetRelativeUrl(value) {
 }
 
 function sourceEntity(record) {
-  if (record?.data && typeof record.data === "object" && !Array.isArray(record.data)) {
+  if (
+    record?.data &&
+    typeof record.data === "object" &&
+    !Array.isArray(record.data)
+  ) {
     return record.data;
   }
   if (record && typeof record === "object" && !Array.isArray(record)) {
@@ -118,7 +122,9 @@ function makePersonBaseId(entity, index) {
 }
 
 function normalizePeople(records) {
-  const sorted = [...records].sort((a, b) => membershipRank(a) - membershipRank(b));
+  const sorted = [...records].sort(
+    (a, b) => membershipRank(a) - membershipRank(b),
+  );
   const usedIds = new Set();
   const idByRawId = new Map();
   const idByDocumentId = new Map();
@@ -140,14 +146,16 @@ function normalizePeople(records) {
     if (Array.isArray(entity.links)) {
       entity.links = entity.links
         .map((link) => {
-          if (!link || typeof link !== "object" || Array.isArray(link)) return link;
+          if (!link || typeof link !== "object" || Array.isArray(link))
+            return link;
           const { id: _ignore, ...rest } = link;
           return rest;
         })
         .filter((link) => link != null);
     }
 
-    if (Array.isArray(entity.links) && entity.links.length === 0) delete entity.links;
+    if (Array.isArray(entity.links) && entity.links.length === 0)
+      delete entity.links;
 
     delete entity.localizations;
     delete entity.clusters;
@@ -168,7 +176,8 @@ function normalizePeople(records) {
 
     const id = uniqueId(makePersonBaseId(entity, index), usedIds);
     if (meta.rawId != null) idByRawId.set(String(meta.rawId), id);
-    if (meta.documentId != null) idByDocumentId.set(String(meta.documentId), id);
+    if (meta.documentId != null)
+      idByDocumentId.set(String(meta.documentId), id);
 
     return { id, ...entity };
   });
@@ -221,7 +230,8 @@ function normalizeVenues(records) {
 
     const id = uniqueId(makeVenueBaseId(entity, index), usedIds);
     if (meta.rawId != null) idByRawId.set(String(meta.rawId), id);
-    if (meta.documentId != null) idByDocumentId.set(String(meta.documentId), id);
+    if (meta.documentId != null)
+      idByDocumentId.set(String(meta.documentId), id);
     if (Number.isFinite(Number(entity.year))) {
       yearById.set(id, Number(entity.year));
     }
@@ -250,7 +260,11 @@ function normalizeClusters(records, peopleIds) {
 
     removeMetadataFields(entity);
     if (isBlank(entity.description)) delete entity.description;
-    const authorIds = mapLinkedArrayToIds(entity.authors, peopleIds.idByRawId, peopleIds.idByDocumentId);
+    const authorIds = mapLinkedArrayToIds(
+      entity.authors,
+      peopleIds.idByRawId,
+      peopleIds.idByDocumentId,
+    );
     delete entity.authors;
     delete entity.publications;
     delete entity.localizations;
@@ -261,12 +275,17 @@ function normalizeClusters(records, peopleIds) {
 
     const id = uniqueId(makeClusterBaseId(entity, index), usedIds);
     if (meta.rawId != null) idByRawId.set(String(meta.rawId), id);
-    if (meta.documentId != null) idByDocumentId.set(String(meta.documentId), id);
+    if (meta.documentId != null)
+      idByDocumentId.set(String(meta.documentId), id);
 
     return { id, ...entity };
   });
 
-  clusters.sort((a, b) => String(a?.title ?? a?.id ?? "").localeCompare(String(b?.title ?? b?.id ?? "")));
+  clusters.sort((a, b) =>
+    String(a?.title ?? a?.id ?? "").localeCompare(
+      String(b?.title ?? b?.id ?? ""),
+    ),
+  );
   return { clusters, idByRawId, idByDocumentId };
 }
 
@@ -308,11 +327,23 @@ function mapLinkedPdfFilenames(items) {
     }
 
     const data = item?.data;
-    if (!filename && data && typeof data === "object" && typeof data.url === "string" && data.url.trim() !== "") {
+    if (
+      !filename &&
+      data &&
+      typeof data === "object" &&
+      typeof data.url === "string" &&
+      data.url.trim() !== ""
+    ) {
       const cleanUrl = data.url.split("?")[0].split("#")[0];
       filename = cleanUrl.substring(cleanUrl.lastIndexOf("/") + 1);
     }
-    if (!filename && data && typeof data === "object" && typeof data.name === "string" && data.name.trim() !== "") {
+    if (
+      !filename &&
+      data &&
+      typeof data === "object" &&
+      typeof data.name === "string" &&
+      data.name.trim() !== ""
+    ) {
       filename = data.name.trim();
     }
     if (filename) out.push(`pdfs/${filename}`);
@@ -392,7 +423,11 @@ function normalizeBlogposts(records, peopleIds) {
     removeMetadataFields(entity);
     delete entity.localizations;
 
-    const authorIds = mapLinkedArrayToIds(entity.authors, peopleIds.idByRawId, peopleIds.idByDocumentId);
+    const authorIds = mapLinkedArrayToIds(
+      entity.authors,
+      peopleIds.idByRawId,
+      peopleIds.idByDocumentId,
+    );
     delete entity.authors;
     if (authorIds.length > 0) entity.authors = authorIds;
 
@@ -405,7 +440,9 @@ function normalizeBlogposts(records, peopleIds) {
     return { id, ...entity };
   });
 
-  blogposts.sort((a, b) => String(b?.created ?? "").localeCompare(String(a?.created ?? "")));
+  blogposts.sort((a, b) =>
+    String(b?.created ?? "").localeCompare(String(a?.created ?? "")),
+  );
   return blogposts;
 }
 
@@ -416,6 +453,21 @@ function selectPreferredNewsitemRecord(records) {
     return !isBlank(entity.publishedAt);
   });
   return published ?? records[0];
+}
+
+function dateFromPublishedAt(value) {
+  if (isBlank(value)) return null;
+
+  const raw = String(value).trim();
+  const isoDateMatch = raw.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (isoDateMatch) return isoDateMatch[1];
+
+  const parsed = new Date(raw);
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed.toISOString().slice(0, 10);
+  }
+
+  return raw;
 }
 
 function normalizeNewsitems(records, peopleIds, publicationIds) {
@@ -434,6 +486,7 @@ function normalizeNewsitems(records, peopleIds, publicationIds) {
 
   const newsitems = deduped.map((record) => {
     const entity = { ...sourceEntity(record) };
+    const publishedFallbackDate = dateFromPublishedAt(entity.publishedAt);
 
     removeMetadataFields(entity);
     delete entity.localizations;
@@ -441,28 +494,73 @@ function normalizeNewsitems(records, peopleIds, publicationIds) {
     const relevantPeopleIds = mapLinkedArrayToIds(
       entity.relevant_people,
       peopleIds.idByRawId,
-      peopleIds.idByDocumentId
+      peopleIds.idByDocumentId,
     );
     const relevantPublicationIds = mapLinkedArrayToIds(
       entity.relevant_publications,
       publicationIds.idByRawId,
-      publicationIds.idByDocumentId
+      publicationIds.idByDocumentId,
     );
 
     delete entity.relevant_people;
     delete entity.relevant_publications;
 
-    if (relevantPeopleIds.length > 0) entity.relevant_people = relevantPeopleIds;
-    if (relevantPublicationIds.length > 0) entity.relevant_publications = relevantPublicationIds;
+    if (relevantPeopleIds.length > 0)
+      entity.relevant_people = relevantPeopleIds;
+    if (relevantPublicationIds.length > 0)
+      entity.relevant_publications = relevantPublicationIds;
 
+    if (isBlank(entity.date) && !isBlank(publishedFallbackDate)) {
+      entity.date = publishedFallbackDate;
+    }
     if (isBlank(entity.description)) delete entity.description;
     if (isBlank(entity.date)) delete entity.date;
 
     return entity;
   });
 
-  newsitems.sort((a, b) => String(b?.date ?? "").localeCompare(String(a?.date ?? "")));
+  newsitems.sort((a, b) =>
+    String(b?.date ?? "").localeCompare(String(a?.date ?? "")),
+  );
   return newsitems;
+}
+
+function selectPreferredGroupRecord(records) {
+  if (records.length === 1) return records[0];
+  const published = records.find((record) => {
+    const entity = sourceEntity(record);
+    return !isBlank(entity.publishedAt);
+  });
+  return published ?? records[0];
+}
+
+function normalizeGroup(records) {
+  const grouped = new Map();
+  for (const record of records) {
+    const meta = sourceMeta(record);
+    const key =
+      meta.documentId != null && String(meta.documentId).trim() !== ""
+        ? `doc:${String(meta.documentId)}`
+        : `raw:${String(meta.rawId ?? "")}`;
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(record);
+  }
+
+  const selected = [...grouped.values()].map(selectPreferredGroupRecord);
+  const record = selected[0];
+  if (!record) return {};
+
+  const entity = { ...sourceEntity(record) };
+  removeMetadataFields(entity);
+  delete entity.localizations;
+
+  if (isBlank(entity.overview)) delete entity.overview;
+  if (isBlank(entity.joining)) delete entity.joining;
+  if (isBlank(entity.announcement)) delete entity.announcement;
+  if (isBlank(entity.recent_pub_cutoff_year))
+    delete entity.recent_pub_cutoff_year;
+
+  return entity;
 }
 
 function selectPreferredLeadcvRecord(records) {
@@ -478,7 +576,9 @@ function cleanLeadcvValue(value) {
   if (value == null) return undefined;
 
   if (Array.isArray(value)) {
-    const cleaned = value.map(cleanLeadcvValue).filter((item) => item !== undefined);
+    const cleaned = value
+      .map(cleanLeadcvValue)
+      .filter((item) => item !== undefined);
     return cleaned.length > 0 ? cleaned : undefined;
   }
 
@@ -524,7 +624,7 @@ function normalizeLeadcv(records) {
   return cleanLeadcvValue(entity) ?? {};
 }
 
-function normalizePublications(records, peopleIds, venueIds, _clusterIds) {
+function normalizePublications(records, peopleIds, venueIds, clusterIds) {
   const usedIds = new Set();
   const venueYearById = venueIds.yearById ?? new Map();
   const idByRawId = new Map();
@@ -545,19 +645,36 @@ function normalizePublications(records, peopleIds, venueIds, _clusterIds) {
     if (entity.award === "none") delete entity.award;
     if (isBlank(entity.award_description)) delete entity.award_description;
     if (isBlank(entity.pub_details)) delete entity.pub_details;
-    if (entity.submission_status === "accepted") delete entity.submission_status;
+    if (entity.submission_status === "accepted")
+      delete entity.submission_status;
     if (isBlank(entity.submission_status)) delete entity.submission_status;
-    if (Array.isArray(entity.youtube_videos) && entity.youtube_videos.length === 0) {
+    if (
+      Array.isArray(entity.youtube_videos) &&
+      entity.youtube_videos.length === 0
+    ) {
       delete entity.youtube_videos;
     }
 
-    const authorIds = mapLinkedArrayToIds(entity.authors, peopleIds.idByRawId, peopleIds.idByDocumentId);
+    const authorIds = mapLinkedArrayToIds(
+      entity.authors,
+      peopleIds.idByRawId,
+      peopleIds.idByDocumentId,
+    );
     const studentAuthorIds = mapLinkedArrayToIds(
       entity.student_authors,
       peopleIds.idByRawId,
-      peopleIds.idByDocumentId
+      peopleIds.idByDocumentId,
     );
-    const venueId = resolveLinkedId(entity.venue, venueIds.idByRawId, venueIds.idByDocumentId);
+    const clusterIdsForPublication = mapLinkedArrayToIds(
+      entity.clusters,
+      clusterIds.idByRawId,
+      clusterIds.idByDocumentId,
+    );
+    const venueId = resolveLinkedId(
+      entity.venue,
+      venueIds.idByRawId,
+      venueIds.idByDocumentId,
+    );
     const pdfFilenames = mapLinkedPdfFilenames(entity.pdf);
 
     delete entity.authors;
@@ -569,13 +686,19 @@ function normalizePublications(records, peopleIds, venueIds, _clusterIds) {
 
     if (authorIds.length > 0) entity.authors = authorIds;
     if (studentAuthorIds.length > 0) entity.student_authors = studentAuthorIds;
+    if (clusterIdsForPublication.length > 0)
+      entity.clusters = clusterIdsForPublication;
     if (venueId) entity.venue = venueId;
     if (pdfFilenames.length === 1) entity.pdf = pdfFilenames[0];
     if (pdfFilenames.length > 1) entity.pdf = pdfFilenames;
 
-    const id = uniqueId(makePublicationBaseId(entity, index, venueYearById), usedIds);
+    const id = uniqueId(
+      makePublicationBaseId(entity, index, venueYearById),
+      usedIds,
+    );
     if (meta.rawId != null) idByRawId.set(String(meta.rawId), id);
-    if (meta.documentId != null) idByDocumentId.set(String(meta.documentId), id);
+    if (meta.documentId != null)
+      idByDocumentId.set(String(meta.documentId), id);
     return { id, ...entity };
   });
 
@@ -595,12 +718,13 @@ function attachClusterPublicationRefs(clusters, publications) {
   }
 
   for (const cluster of clusters) {
-    const refs = byClusterId.get(cluster.id) ?? [];
+    const refs = [...new Set(byClusterId.get(cluster.id) ?? [])];
     if (refs.length > 0) {
-      cluster.publications = refs;
+      cluster.papers = refs;
     } else {
-      delete cluster.publications;
+      delete cluster.papers;
     }
+    delete cluster.publications;
   }
 }
 
@@ -625,16 +749,21 @@ function dumpYaml(filePath, value) {
 
 function main() {
   const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const siteDir = path.resolve(scriptDir, "..");
   const exportDir = path.resolve(scriptDir, "..", "strapi-export");
   const inputDir = process.argv[2] ?? path.join(exportDir, "yaml_out");
-  const outputDir = process.argv[3] ?? path.join(exportDir, "normalized");
+  const outputDir = process.argv[3] ?? path.join(siteDir, "_data");
 
   const peopleIn = path.join(inputDir, "api__author_author.yaml");
   const venuesIn = path.join(inputDir, "api__venue_venue.yaml");
   const clustersIn = path.join(inputDir, "api__cluster_cluster.yaml");
-  const publicationsIn = path.join(inputDir, "api__publication_publication.yaml");
+  const publicationsIn = path.join(
+    inputDir,
+    "api__publication_publication.yaml",
+  );
   const blogpostsIn = path.join(inputDir, "api__blogpost_blogpost.yaml");
   const newsitemsIn = path.join(inputDir, "api__newsitem_newsitem.yaml");
+  const groupIn = path.join(inputDir, "api__group_group.yaml");
   const leadcvIn = path.join(inputDir, "api__leadcv_leadcv.yaml");
 
   fs.mkdirSync(outputDir, { recursive: true });
@@ -645,16 +774,30 @@ function main() {
   const publicationsRaw = loadYamlArray(publicationsIn, "publications input");
   const blogpostsRaw = loadYamlArray(blogpostsIn, "blogposts input");
   const newsitemsRaw = loadYamlArray(newsitemsIn, "newsitems input");
+  const groupRaw = loadYamlArray(groupIn, "group input");
   const leadcvRaw = loadYamlArray(leadcvIn, "leadcv input");
 
   const peopleNorm = normalizePeople(peopleRaw);
   const venuesNorm = normalizeVenues(venuesRaw);
   const clustersNorm = normalizeClusters(clustersRaw, peopleNorm);
-  const publicationsNorm = normalizePublications(publicationsRaw, peopleNorm, venuesNorm, clustersNorm);
+  const publicationsNorm = normalizePublications(
+    publicationsRaw,
+    peopleNorm,
+    venuesNorm,
+    clustersNorm,
+  );
   const blogpostsNorm = normalizeBlogposts(blogpostsRaw, peopleNorm);
-  const newsitemsNorm = normalizeNewsitems(newsitemsRaw, peopleNorm, publicationsNorm);
+  const newsitemsNorm = normalizeNewsitems(
+    newsitemsRaw,
+    peopleNorm,
+    publicationsNorm,
+  );
+  const groupNorm = normalizeGroup(groupRaw);
   const leadcvNorm = normalizeLeadcv(leadcvRaw);
-  attachClusterPublicationRefs(clustersNorm.clusters, publicationsNorm.publications);
+  attachClusterPublicationRefs(
+    clustersNorm.clusters,
+    publicationsNorm.publications,
+  );
 
   const peopleOut = path.join(outputDir, "people.yaml");
   const venuesOut = path.join(outputDir, "venues.yaml");
@@ -662,6 +805,7 @@ function main() {
   const publicationsOut = path.join(outputDir, "publications.yaml");
   const blogpostsOut = path.join(outputDir, "blog.yaml");
   const newsitemsOut = path.join(outputDir, "news.yaml");
+  const groupOut = path.join(outputDir, "group.yaml");
   const leadcvOut = path.join(outputDir, "leadcv.yaml");
 
   dumpYaml(peopleOut, peopleNorm.people);
@@ -670,14 +814,20 @@ function main() {
   dumpYaml(publicationsOut, publicationsNorm.publications);
   dumpYaml(blogpostsOut, blogpostsNorm);
   dumpYaml(newsitemsOut, newsitemsNorm);
+  dumpYaml(groupOut, groupNorm);
   dumpYaml(leadcvOut, leadcvNorm);
 
   console.log(`Wrote ${peopleNorm.people.length} people to ${peopleOut}`);
   console.log(`Wrote ${venuesNorm.venues.length} venues to ${venuesOut}`);
-  console.log(`Wrote ${clustersNorm.clusters.length} clusters to ${clustersOut}`);
-  console.log(`Wrote ${publicationsNorm.publications.length} publications to ${publicationsOut}`);
+  console.log(
+    `Wrote ${clustersNorm.clusters.length} clusters to ${clustersOut}`,
+  );
+  console.log(
+    `Wrote ${publicationsNorm.publications.length} publications to ${publicationsOut}`,
+  );
   console.log(`Wrote ${blogpostsNorm.length} blogposts to ${blogpostsOut}`);
   console.log(`Wrote ${newsitemsNorm.length} newsitems to ${newsitemsOut}`);
+  console.log(`Wrote group to ${groupOut}`);
   console.log(`Wrote leadcv to ${leadcvOut}`);
 }
 

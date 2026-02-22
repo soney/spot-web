@@ -1,0 +1,129 @@
+---
+layout: default
+title: Home
+nav: home
+---
+
+{% assign group = site.data.group %}
+{% assign news_with_date = site.data.news | where_exp: "n", "n.date" | sort: "date" | reverse %}
+{% assign news_without_date = site.data.news | where_exp: "n", "n.date == nil" %}
+{% assign latest_news = news_with_date | concat: news_without_date %}
+
+<div class="container">
+  <h1 class="visually-hidden">SPOT Research Group</h1>
+
+  <div class="row">
+    {% if group.overview %}
+    <section class="section-card group_description col-md-7">
+      <h2 class="invisible" aria-hidden="true">About</h2>
+      {{ group.overview | markdownify }}
+    </section>
+    {% endif %}
+
+    <section class="col-md-5 news">
+      <h2><a href="{{ '/news/' | relative_url }}"><span class="text-body">News</span><span aria-hidden="true">
+            [+]</span></a></h2>
+      <ul class="news-list short list-unstyled">
+        {% for item in latest_news limit:4 %}
+        {% include news_item.html item=item date_format="%b %Y" %}
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+
+  {% if group.announcement %}
+  <section class="section-card">
+    {{ group.announcement | markdownify }}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2><a href="{{ '/team/' | relative_url }}"><span class="text-body">People</span><span aria-hidden="true">
+          [+]</span></a></h2>
+    <ul class="flex-row d-flex list-unstyled row">
+      {% assign current_order = "lead,member-postdoc,member" | split: "," %}
+      {% for membership in current_order %}
+      {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
+      {% for person in current_members %}
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="{{ '/team#' | append: person.id | relative_url }}">
+          {% assign photo = person.headshot %}
+          {% if photo %}
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="{{ '/assets/' | append: photo | relative_url }}"
+              alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
+          </div>
+          {% endif %}
+          <div class="card-body p-0">
+            <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
+            {% if person.short_bio %}
+            <div class="member-short-bio d-none d-sm-block">{{ person.short_bio }}</div>
+            {% endif %}
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2><a href="{{ '/research/' | relative_url }}"><span class="text-body">Recent Publications</span><span
+          aria-hidden="true"> [+]</span></a></h2>
+    <ul class="publication-list">
+      {% assign cutoff = group.recent_pub_cutoff_year | default: 2000 %}
+      {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+      {% assign shown = 0 %}
+      {% for venue in sorted_venues %}
+      {% if venue.year and venue.year >= cutoff %}
+      {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
+      {% for pub in venue_pubs %}
+      {% if shown < 8 %} <li>{% include publication_item.html pub=pub %}</li>
+        {% assign shown = shown | plus: 1 %}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+  </section>
+
+  <footer class="container">
+    <h2>Affiliations</h2>
+    <div class="affiliations row">
+      <div class="col-md-4">
+        <a href="https://www.si.umich.edu/" target="_blank" rel="noopener">Michigan School of Information<br /><img
+            src="{{ '/assets/images/logos/umsi_logo.svg' | relative_url }}" alt="Michigan School of Information"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://misc.si.umich.edu/" target="_blank" rel="noopener">MISC<br /><img
+            src="{{ '/assets/images/logos/misc_dark.svg' | relative_url }}" alt="MISC"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener">Michigan CSE<br /><img
+            src="{{ '/assets/images/logos/cse_logo.svg' | relative_url }}" alt="Michigan CSE"></a>
+      </div>
+    </div>
+    <h2 class="d-flex justify-content-between align-items-end">
+      Sponsors
+      <span class="text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
+        (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)
+      </span>
+    </h2>
+    <div class="row">
+      <div class="col col-md-3">
+        <a href="https://nsf.gov/" target="_blank" rel="noopener">National Science Foundation<br /><img
+            src="{{ '/assets/images/logos/nsf_logo.svg' | relative_url }}" alt="NSF" style="height: 100px;"></a>
+      </div>
+      <div class="col col-md-4">
+        <a href="https://research.google/" target="_blank" rel="noopener">Google<br /><img
+            src="{{ '/assets/images/logos/google_logo.svg' | relative_url }}" style="height: 100px;" alt="Google"></a>
+      </div>
+      <div class="col col-md-3">
+        <a href="https://research.adobe.com/" target="_blank" rel="noopener">Adobe<br /><img
+            src="{{ '/assets/images/logos/adobe_logo.svg' | relative_url }}" style="height: 100px;" alt="Adobe"></a>
+      </div>
+    </div>
+  </footer>
+</div>

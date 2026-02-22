@@ -1,0 +1,17 @@
+---
+layout: default
+title: News
+nav: news
+---
+
+<div class="container news">
+  <h1>News</h1>
+  {% assign news_with_date = site.data.news | where_exp: "n", "n.date" | sort: "date" | reverse %}
+  {% assign news_without_date = site.data.news | where_exp: "n", "n.date == nil" %}
+  {% assign all_news = news_with_date | concat: news_without_date %}
+  <ul class="news-list">
+    {% for item in all_news %}
+    {% include news_item.html item=item %}
+    {% endfor %}
+  </ul>
+</div>

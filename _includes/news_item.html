@@ -1,0 +1,51 @@
+{% assign item = include.item %}
+<li class="news-item">
+  {% if item.date %}
+  {% assign date_format = include.date_format | default: "%B %Y" %}
+  <p class="news-item-date"><strong>{{ item.date | date: date_format }}:</strong></p>
+  {% endif %}
+  {{ item.description | markdownify }}
+
+  {% if item.relevant_people or item.relevant_publications %}
+  <ul class="news-links">
+    {% if item.relevant_people %}
+    {% for person_id in item.relevant_people %}
+    {% assign person = site.data.people | where: "id", person_id | first %}
+    {% if person %}
+    {% assign photo = person.focused_headshot | default: person.headshot %}
+    <li>
+      <a class="chip" href="{{ '/team#' | append: person.id | relative_url }}"
+        title="{{ person.given_name }} {{ person.family_name }}">
+        {% if photo %}
+        <img src="{{ '/assets/' | append: photo | relative_url }}"
+          alt="Headshot of {{ person.given_name }} {{ person.family_name }}" {% if person.color
+          %}style="border: 2px solid {{ person.color }};" {% endif %}>
+        {% endif %}
+        <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if item.relevant_publications %}
+    {% for pub_id in item.relevant_publications %}
+    {% assign pub = site.data.publications | where: "id", pub_id | first %}
+    {% if pub %}
+    <li>
+      <a class="chip" href="{{ '/research#pub-' | append: pub.id | relative_url }}" title="{{ pub.title }}">
+        {% assign venue = site.data.venues | where: "id", pub.venue | first %}
+        {% if venue and venue.type == 'conference' %}
+        <i class="bi bi-file-earmark-text"></i>
+        {% else %}
+        <i class="bi bi-file-earmark"></i>
+        {% endif %}
+        <p class="publication-title">{{ pub.title | truncate: 64 }}</p>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+  </ul>
+  {% endif %}
+</li>

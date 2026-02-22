@@ -1,0 +1,54 @@
+---
+layout: default
+title: Team
+nav: team
+---
+
+<div class="container">
+  <h1>Team</h1>
+
+  <h2>Current Members</h2>
+  {% assign current_order = "lead,member-postdoc,member" | split: "," %}
+  {% for membership in current_order %}
+  {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
+  {% for person in current_members %}
+  {% include member_block.html person=person %}
+  {% endfor %}
+  {% endfor %}
+
+  {% assign alumni = site.data.people | where: "membership", "alum" | sort: "family_name" %}
+  {% if alumni.size > 0 %}
+  <h2>Ph.D. Alumni</h2>
+  {% for person in alumni %}
+  {% include member_block.html person=person %}
+  {% endfor %}
+  {% endif %}
+
+  <h2>Other Collaborators (Undergraduate and Master's Students)</h2>
+  <ul class="collaborator-list">
+    {% assign all_people = site.data.people | sort: "family_name" %}
+    {% for person in all_people %}
+    {% if person.membership == 'ugrad_ms_student' %}
+    <li>
+      <strong>
+        {% if person.homepage %}
+        <a class="text-body" href="{{ person.homepage }}" target="_blank" rel="noopener noreferrer">
+          {{ person.given_name }} {{ person.family_name }}
+        </a>
+        {% else %}
+        {{ person.given_name }} {{ person.family_name }}
+        {% endif %}
+      </strong>
+      {% if person.short_bio %}
+      <span class="text-muted">{{ person.short_bio }}</span>
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% if site.data.group.joining %}
+  <h2>Join Us</h2>
+  {{ site.data.group.joining | markdownify }}
+  {% endif %}
+</div>

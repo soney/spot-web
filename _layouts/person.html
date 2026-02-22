@@ -1,0 +1,64 @@
+---
+layout: default
+nav: team
+---
+
+{% assign person = site.data.people | where: "id", page.person_id | first %}
+
+<div class="container">
+  {% if person %}
+  <p><a href="{{ '/team/' | relative_url }}#{{ person.id }}">&larr; Back to team</a></p>
+
+  <section class="row member-row" id="{{ person.id }}">
+    <div class="col-sm-3">
+      {% assign photo = person.headshot %}
+      {% if photo %}
+      <img class="member-headshot img-fluid rounded" src="{{ '/assets/' | append: photo | relative_url }}"
+        alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
+      {% endif %}
+    </div>
+
+    <div class="col-sm-9">
+      <h1>{{ person.given_name }} {{ person.family_name }}</h1>
+
+      {% if person.long_bio %}
+      {{ person.long_bio | markdownify }}
+      {% endif %}
+
+      {% if person.homepage or person.links %}
+      <ul class="breadcrumb">
+        {% if person.homepage %}
+        <li class="breadcrumb-item">
+          <a href="{{ person.homepage }}" target="_blank" rel="noopener">
+            <i class="bi bi-house"></i> Homepage
+          </a>
+        </li>
+        {% endif %}
+        {% if person.links %}
+        {% for link in person.links %}
+        <li class="breadcrumb-item">
+          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.description }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
+  </section>
+
+  {% assign authored = site.data.publications | where_exp: "p", "p.authors contains person.id" %}
+  {% if authored.size > 0 %}
+  <section class="section-card">
+    <h2>Publications</h2>
+    <ul class="publication-list">
+      {% for pub in authored %}
+      <li>{% include publication_item.html pub=pub heading_level="h3" %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% else %}
+  <h1>Person not found</h1>
+  <p>The requested profile page does not map to a known person ID.</p>
+  {% endif %}
+</div>

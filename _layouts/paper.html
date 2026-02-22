@@ -1,0 +1,63 @@
+---
+layout: default
+nav: research
+---
+
+{% assign pub = site.data.publications | where: "id", page.pub_id | first %}
+
+<div class="container">
+  {% if pub %}
+  <p><a href="{{ '/research/' | relative_url }}#pub-{{ pub.id }}">&larr; Back to research</a></p>
+
+  <h1 class="h2">{{ pub.title }}</h1>
+  <div class="paper-authors fs-5">{% include author_list.html ids=pub.authors with_links=true %}</div>
+
+
+  {% if pub.abstract %}
+  <section class="section-card row">
+    <div class="col-sm-10">
+      {{ pub.abstract | markdownify }}
+    </div>
+    <div class="col-sm-2">
+      {% assign venue = site.data.venues | where: "id", pub.venue | first %}
+      {% if venue %}
+      {% capture venue_label %}
+      {% if venue.short_name %}{{ venue.short_name }} {% endif %}{{ venue.year }}
+      {% endcapture %}
+      <div class="paper-venue mb-3">
+        {% if venue.homepage %}
+        <a href="{{ venue.homepage }}" target="_blank" rel="noopener" class="fs-4">{{ venue_label | strip
+          }}</a>
+        {% else %}
+        <span class="fs-4">{{ venue_label | strip }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if pub.award and pub.award != 'none' %}
+      <div class="paper-award mb-3 text-secondary fs-5">
+        {% if pub.award == 'best_paper' %}
+        <i class="bi bi-trophy"></i>
+        {% else %}
+        <i class="bi bi-award"></i>
+        {% endif %}
+        {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
+      </div>
+      {% endif %}
+
+      {% if pub.pdf %}
+      <div class="paper-pdf">
+        <a class="btn btn-primary btn-lg pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}"
+          target="_blank" rel="noopener">
+          <i class="bi bi-file-earmark-pdf"></i> Download PDF
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+  {% else %}
+  <h1>Publication not found</h1>
+  <p>The requested publication page does not map to a known publication ID.</p>
+  {% endif %}
+</div>

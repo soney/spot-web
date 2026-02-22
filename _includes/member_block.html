@@ -1,0 +1,36 @@
+{% assign person = include.person %}
+<section class="row member-row" id="{{ person.id }}">
+  <div class="col-sm-2">
+    {% assign photo = person.headshot %}
+    {% if photo %}
+    <img class="member-headshot img-fluid rounded" src="{{ '/assets/' | append: photo | relative_url }}"
+      alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
+    {% endif %}
+  </div>
+  <div class="col-sm-10">
+
+    <h3>{{ person.given_name }} {{ person.family_name }}</h3>
+
+    {% if person.long_bio %}
+    {{ person.long_bio | markdownify }}
+    {% endif %}
+
+    {% if person.homepage or person.links %}
+    <ul class="breadcrumb">
+      {% if person.use_local_homepage %}
+      <li class="breadcrumb-item"><a href="{{ '/people/' | append: person.id | append: '/' | relative_url }}"><i
+            class="bi bi-house"></i> Homepage</a></li>
+      {% elsif person.homepage %}
+      <li class="breadcrumb-item"><a href="{{ person.homepage }}" target="_blank" rel="noopener"><i
+            class="bi bi-house"></i> Homepage</a></li>
+      {% endif %}
+      {% if person.links %}
+      {% for link in person.links %}
+      <li class="breadcrumb-item"><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.description }}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
+    </ul>
+    {% endif %}
+  </div>
+</section>

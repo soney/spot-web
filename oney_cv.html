@@ -1,0 +1,736 @@
+---
+layout: cv
+title: Curriculum Vitae
+---
+
+{% assign cv = site.data.leadcv %}
+<style>
+  .cv-student-author-toggle {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .cv-student-author-toggle label {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+  }
+
+  body.highlight-student-authors .paper-author.student-author {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  body:not(.show-other-mentees) .cv-other-mentees-list,
+  body:not(.show-other-mentees) .cv-other-mentees-header {
+    display: none;
+  }
+
+  body:not(.show-paper-awards) .paper-award-item {
+    display: none;
+  }
+
+  body:not(.separate-journal-conference) .cv-separated-pubs {
+    display: none;
+  }
+
+  body.separate-journal-conference .cv-combined-pubs {
+    display: none;
+  }
+</style>
+<div class="cv container">
+  <div class="row">
+    <div class="col side"></div>
+    <div class="col main">
+      <h1>{{ cv.name }}</h1>
+    </div>
+  </div>
+
+  <section class="cv-section row">
+    <div class="col side"></div>
+    <div class="col main">
+      <div class="row">
+        {% if cv.affiliation %}
+        <h2 class="visually-hidden">Affiliation</h2>
+        <address class="col affiliation">
+          <div class="affiliation-department">{{ cv.affiliation.department }}</div>
+          <div class="affiliation-university">{{ cv.affiliation.university }}</div>
+          <div class="affiliation-office">{{ cv.affiliation.office }}</div>
+          <div class="affiliation-street">{{ cv.affiliation.street }}</div>
+          <div class="affiliation-city">{{ cv.affiliation.city }}</div>
+        </address>
+        {% endif %}
+
+        {% if cv.contact %}
+        <h2 class="visually-hidden">Contact</h2>
+        <div class="col contact">
+          <div class="contact-spacer">&nbsp;</div>
+          <div class="contact-spacer">&nbsp;</div>
+          {% if cv.contact.homepage %}<div class="contact-homepage"><a href="{{ cv.contact.homepage }}" target="_blank"
+              rel="noopener">{{ cv.contact.homepage }}</a></div>{% endif %}
+          {% if cv.contact.phone %}<div class="contact-phone"><a href="tel:{{ cv.contact.phone }}">{{ cv.contact.phone
+              }}</a></div>{% endif %}
+          {% if cv.contact.email %}<div class="contact-email"><a href="mailto:{{ cv.contact.email }}">{{
+              cv.contact.email
+              }}</a></div>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  {% if cv.education %}
+  <section class="cv-section section education">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Education</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.education %}
+      <li class="row item">
+        <div class="col main">
+          <div class="education-school">{{ item.university }}</div>
+          {% if item.degrees %}
+          <table class="education-degrees">
+            <tbody>
+              {% for degree in item.degrees %}
+              <tr>
+                <td>{{ degree[0] }}</td>
+                <td>&nbsp;in {{ degree[1] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% endif %}
+          <table>
+            <tbody>
+              {% if item.advisors %}
+              <tr>
+                <td>Advisors:</td>
+                <td>&nbsp;{{ item.advisors }}</td>
+              </tr>
+              {% endif %}
+              {% if item.committee %}
+              <tr>
+                <td>Committee:</td>
+                <td>&nbsp;{{ item.committee }}</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.professional_experience %}
+  <section class="cv-section section experience">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Professional Experience</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.professional_experience %}
+      <li class="row item">
+        <div class="col main">
+          <div class="experience-organization">{{ item.institution }}</div>
+          <div class="experience-title">{{ item.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% assign all_publications = site.data.publications %}
+  {% assign venues_by_year_desc = site.data.venues | sort: "year" | reverse %}
+  {% if all_publications and all_publications.size > 0 %}
+  <section class="cv-section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Publications</h2>
+    </div>
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        <div class="cv-student-author-toggle">
+          <label for="highlight-student-authors-toggle">
+            <input type="checkbox" id="highlight-student-authors-toggle">
+            Highlight student authors
+          </label>
+          <br>
+          <label for="separate-journal-conference-toggle">
+            <input type="checkbox" id="separate-journal-conference-toggle">
+            Separate journal and conference papers
+          </label>
+        </div>
+
+        {% assign journal_ven_ids = site.data.venues | where: "type", "journal" | map: "id" %}
+        {% assign conf_ven_ids = site.data.venues | where: "type", "conference" | map: "id" %}
+
+        {% assign journal_total = 0 %}
+        {% assign conference_total = 0 %}
+        {% assign bookchapter_total = 0 %}
+        {% assign poster_total = 0 %}
+        {% assign workshop_total = 0 %}
+        {% assign doctoral_total = 0 %}
+        {% assign demo_total = 0 %}
+        {% assign panel_total = 0 %}
+        {% assign preprint_total = 0 %}
+        {% assign thesis_total = 0 %}
+
+        {% for pub in all_publications %}
+        {% assign v = site.data.venues | where: "id", pub.venue | first %}
+        {% if v.type == 'journal' %} {% assign journal_total = journal_total | plus: 1 %}
+        {% elsif v.type == 'conference' %} {% assign conference_total = conference_total | plus: 1 %}
+        {% elsif v.type == 'bookchapter' %} {% assign bookchapter_total = bookchapter_total | plus: 1 %}
+        {% elsif v.type == 'poster' %} {% assign poster_total = poster_total | plus: 1 %}
+        {% elsif v.type == 'workshop' %} {% assign workshop_total = workshop_total | plus: 1 %}
+        {% elsif v.type == 'doctoralconsortium' %} {% assign doctoral_total = doctoral_total | plus: 1 %}
+        {% elsif v.type == 'demo' %} {% assign demo_total = demo_total | plus: 1 %}
+        {% elsif v.type == 'panel' %} {% assign panel_total = panel_total | plus: 1 %}
+        {% elsif v.type == 'preprint' %} {% assign preprint_total = preprint_total | plus: 1 %}
+        {% elsif v.type == 'thesis' %} {% assign thesis_total = thesis_total | plus: 1 %}
+        {% endif %}
+        {% endfor %}
+
+        {% assign combined_total = journal_total | plus: conference_total %}
+        {% assign combined_count = combined_total %}
+        {% capture pub_combined_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'journal' or venue.type == 'conference' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        {% if venue.type == 'journal' %}
+        {% assign pub_code = 'J' %}
+        {% else %}
+        {% assign pub_code = 'C' %}
+        {% endif %}
+        <li><strong>{{ pub_code }}{{ combined_count }}</strong>. {% include cv_publication_citation.html pub=pub
+          venue=venue
+          %}</li>
+        {% assign combined_count = combined_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign journal_count = journal_total %}
+        {% capture pub_journal_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'journal' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        <li class="paper row">
+          <div class="col main">
+            {% include cv_publication_citation.html pub=pub venue=venue %}
+          </div>
+          <div class="col side">
+            <span class="paper-id">J{{ journal_count }}</span>
+            {% if pub.award and pub.award != 'none' %}
+            <div class="paper-award-label">
+              <i class="icon-{{ pub.award }}"></i>
+              {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
+              {{ award_text }}
+            </div>
+            {% endif %}
+            <div class="date-range">
+              {{ pub.date_start }}{% if pub.date_end %} – {{ pub.date_end }}{% endif %}
+            </div>
+            <div class="location">{{ pub.location }}</div>
+          </div>
+        </li>
+        {% assign journal_count = journal_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign conference_count = conference_total %}
+        {% capture pub_conference_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'conference' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        <li><strong>C{{ conference_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}
+        </li>
+        {% assign conference_count = conference_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign bookchapter_count = bookchapter_total %}
+        {% capture pub_bookchapter_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'bookchapter' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        <li><strong>B{{ bookchapter_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}
+        </li>
+        {% assign bookchapter_count = bookchapter_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign poster_count = poster_total %}
+        {% assign workshop_count = workshop_total %}
+        {% assign doctoral_count = doctoral_total %}
+        {% assign demo_count = demo_total %}
+        {% assign panel_count = panel_total %}
+        {% capture pub_other_refereed_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'poster' or venue.type == 'workshop' or venue.type == 'doctoralconsortium' or venue.type ==
+        'demo' or venue.type == 'panel' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        {% if venue.type == 'poster' %}
+        {% assign pub_code = "P" | append: poster_count %}
+        {% assign poster_count = poster_count | minus: 1 %}
+        {% elsif venue.type == 'workshop' %}
+        {% assign pub_code = "W" | append: workshop_count %}
+        {% assign workshop_count = workshop_count | minus: 1 %}
+        {% elsif venue.type == 'doctoralconsortium' %}
+        {% assign pub_code = "D" | append: doctoral_count %}
+        {% assign doctoral_count = doctoral_count | minus: 1 %}
+        {% elsif venue.type == 'demo' %}
+        {% assign pub_code = "E" | append: demo_count %}
+        {% assign demo_count = demo_count | minus: 1 %}
+        {% else %}
+        {% assign pub_code = "A" | append: panel_count %}
+        {% assign panel_count = panel_count | minus: 1 %}
+        {% endif %}
+        <li><strong>{{ pub_code }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign preprint_count = preprint_total %}
+        {% capture pub_preprint_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'preprint' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        <li><strong>R{{ preprint_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
+        {% assign preprint_count = preprint_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign thesis_count = thesis_total %}
+        {% capture pub_thesis_items %}
+        {% for venue in venues_by_year_desc %}
+        {% if venue.type == 'thesis' %}
+        {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+        {% for pub in venue_pubs %}
+        <li><strong>T{{ thesis_count }}</strong>. {% include cv_publication_citation.html pub=pub venue=venue %}</li>
+        {% assign thesis_count = thesis_count | minus: 1 %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% endcapture %}
+
+        {% assign pub_combined_items_stripped = pub_combined_items | strip %}
+        {% if pub_combined_items_stripped != "" %}
+        <div class="cv-combined-pubs">
+          <h3>Heavily-reviewed Journal Manuscripts (J) and Conference Papers (C)</h3>
+          <ul class="cv-list">{{ pub_combined_items }}</ul>
+        </div>
+        {% endif %}
+
+        <div class="cv-separated-pubs">
+          {% assign pub_journal_items_stripped = pub_journal_items | strip %}
+          {% if pub_journal_items_stripped != "" %}
+          <h3>Heavily-reviewed Journal Manuscripts (J)</h3>
+          <ul class="cv-list">{{ pub_journal_items }}</ul>
+          {% endif %}
+
+          {% assign pub_conference_items_stripped = pub_conference_items | strip %}
+          {% if pub_conference_items_stripped != "" %}
+          <h3>Heavily-reviewed Conference Papers (C)</h3>
+          <ul class="cv-list">{{ pub_conference_items }}</ul>
+          {% endif %}
+        </div>
+
+        {% assign pub_bookchapter_items_stripped = pub_bookchapter_items | strip %}
+        {% if pub_bookchapter_items_stripped != "" %}
+        <h3>Book Chapters (B)</h3>
+        <ul class="cv-list">{{ pub_bookchapter_items }}</ul>
+        {% endif %}
+
+        {% assign pub_other_refereed_items_stripped = pub_other_refereed_items | strip %}
+        {% if pub_other_refereed_items_stripped != "" %}
+        <h3>Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E), and Panels (A)</h3>
+        <ul class="cv-list">{{ pub_other_refereed_items }}</ul>
+        {% endif %}
+
+        {% assign pub_preprint_items_stripped = pub_preprint_items | strip %}
+        {% if pub_preprint_items_stripped != "" %}
+        <h3>Preprints (R)</h3>
+        <ul class="cv-list">{{ pub_preprint_items }}</ul>
+        {% endif %}
+
+        {% assign pub_thesis_items_stripped = pub_thesis_items | strip %}
+        {% if pub_thesis_items_stripped != "" %}
+        <h3>Theses (T)</h3>
+        <ul class="cv-list">{{ pub_thesis_items }}</ul>
+        {% endif %}
+  </section>
+  {% endif %}
+
+  {% if cv.grants %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Grants</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.grants %}
+      <li class="row item">
+        <div class="col side">
+          {% if item.date %}<div class="award-date">{{ item.date }}</div>{% endif %}
+          {% if item.amount %}<div class="award-amount">${{ item.amount }}</div>{% endif %}
+        </div>
+        <div class="col main">
+          {% if item.title %}<div class="award-title">{{ item.title }}</div>{% endif %}
+          <div class="award-team">Team: {{ item.team | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% if item.sponsor %}<div class="award-sponsor">Sponsor: {{ item.sponsor }}</div>{% endif %}
+          {% if item.program %}<div class="award-program">Program: {{ item.program }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.awards %}
+  <section class="cv-section">
+    <h2>Awards</h2>
+    <div class="cv-student-author-toggle">
+      <label for="show-paper-awards-toggle">
+        <input type="checkbox" id="show-paper-awards-toggle">
+        Include paper awards
+      </label>
+    </div>
+    <ul class="cv-list">
+      {% assign award_strings_raw = "" %}
+
+      {% for item in cv.awards %}
+      {% assign year = "0000" %}
+      {% if item.date_start %}
+      {% assign date_parts = item.date_start | split: "/" %}
+      {% assign year = date_parts.last %}
+      {% endif %}
+
+      {% capture item_html %}
+      <li>
+        <strong>{{ item.title }}</strong>{% if item.description %}: {{ item.description }}{% endif %}
+        {% if item.date_start or item.date_end %} ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{%
+        endif %}){% endif %}
+      </li>
+      {% endcapture %}
+      {% assign sortable_str = year | append: "-A" | append: forloop.index | append: "::::" | append: item_html %}
+      {% assign award_strings_raw = award_strings_raw | append: sortable_str | append: ";;;;" %}
+      {% endfor %}
+
+      {% assign award_index = 0 %}
+      {% for venue in venues_by_year_desc %}
+      {% assign venue_pubs = all_publications | where: "venue", venue.id %}
+      {% for pub in venue_pubs %}
+      {% if pub.award and pub.award != 'none' %}
+      {% assign year = venue.year | default: "0000" %}
+      {% capture item_html %}
+      <li class="paper-award-item">
+        {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
+        <strong>{{ award_text }}</strong>: for <em>{{ pub.title }}</em>{% if venue.short_name %} at {{ venue.short_name
+        }}{% endif %} ({{ year }})
+      </li>
+      {% endcapture %}
+      {% assign sortable_str = year | append: "-P" | append: award_index | append: "::::" | append: item_html %}
+      {% assign award_strings_raw = award_strings_raw | append: sortable_str | append: ";;;;" %}
+      {% assign award_index = award_index | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+
+      {% assign award_strings_sorted = award_strings_raw | split: ";;;;" | sort | reverse %}
+
+      {% for str in award_strings_sorted %}
+      {% if str != "" %}
+      {% assign parts = str | split: "::::" %}
+      {{ parts[1] }}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.invited_presentations %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Invited Presentations</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.invited_presentations %}
+      <li class="row item">
+        <div class="col main">
+          <div class="talk-location">{{ item.institution }}</div>
+          <div class="talk-title">{{ item.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date">{{ item.date }}</div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.service %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Service</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% assign service_organizing = cv.service | where: "category", "organizing_committee" %}
+      {% assign service_program = cv.service | where: "category", "program_committee" %}
+      {% assign service_peer_review = cv.service | where: "category", "peer_review" %}
+      {% assign service_operations = cv.service | where: "category", "operations_committee" %}
+      {% assign service_umsi = cv.service | where_exp: "item", "item.category == 'department' or item.category ==
+      'umsi'"
+      %}
+      {% assign service_other = cv.service | where_exp: "item", "item.category != 'organizing_committee' and
+      item.category
+      != 'program_committee' and item.category != 'peer_review' and item.category != 'operations_committee' and
+      item.category != 'department' and item.category != 'umsi'" %}
+
+      {% assign service_groups = "Organizing Committee|service_organizing,Program Committee|service_program,Peer
+      Review|service_peer_review,Operations|service_operations,UMSI|service_umsi,Other|service_other" | split: "," %}
+      {% for group in service_groups %}
+      {% assign parts = group | split: "|" %}
+      {% assign group_title = parts[0] %}
+      {% assign group_key = parts[1] %}
+
+      {% if group_key == "service_organizing" %}
+      {% assign items = service_organizing %}
+      {% elsif group_key == "service_program" %}
+      {% assign items = service_program %}
+      {% elsif group_key == "service_peer_review" %}
+      {% assign items = service_peer_review %}
+      {% elsif group_key == "service_operations" %}
+      {% assign items = service_operations %}
+      {% elsif group_key == "service_umsi" %}
+      {% assign items = service_umsi %}
+      {% else %}
+      {% assign items = service_other %}
+      {% endif %}
+
+      {% if items.size > 0 %}
+      <h3>{{ group_title }}</h3>
+      <ul class="cv-list">
+        {% for item in items %}
+        <li>
+          {% if item.title %}<strong>{{ item.title }}</strong>{% endif %}
+          {% if item.description %}{% if item.title %}. {% endif %}{{ item.description }}{% endif %}
+          {% if item.date_start or item.date_end %}
+          ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %})
+          {% endif %}
+          {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" rel="noopener">link</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if cv.supervised_students %}
+  <section class="cv-section">
+    <h2>Students Supervised</h2>
+
+    {% assign supervised_dissertation_chair = cv.supervised_students | where: "category", "dissertation_chair" %}
+    {% assign supervised_ongoing_advisee = cv.supervised_students | where: "category", "ongoing_advisee" %}
+    {% assign supervised_phd_committee = cv.supervised_students | where: "category", "phd_thesis_committee" %}
+    {% assign supervised_ms_chair = cv.supervised_students | where: "category", "ms_thesis_chair" %}
+    {% assign supervised_ms_committee = cv.supervised_students | where: "category", "ms_thesis_committee" %}
+    {% assign supervised_ugrad_chair = cv.supervised_students | where: "category", "ugrad_thesis_chair" %}
+
+    {% assign supervised_groups = "Dissertation Chair (Ph.D. Graduates)|supervised_dissertation_chair,Ph.D. Advisees
+    (Ongoing)|supervised_ongoing_advisee,Thesis Committees (Ph.D.)|supervised_phd_committee,Thesis Chair
+    (M.S.)|supervised_ms_chair,Thesis Committees (M.S.)|supervised_ms_committee,Thesis Chair
+    (Undergraduate)|supervised_ugrad_chair" | split: "," %}
+    {% for group in supervised_groups %}
+    {% assign parts = group | split: "|" %}
+    {% assign group_title = parts[0] %}
+    {% assign group_key = parts[1] %}
+
+    {% if group_key == "supervised_dissertation_chair" %}
+    {% assign items = supervised_dissertation_chair %}
+    {% elsif group_key == "supervised_ongoing_advisee" %}
+    {% assign items = supervised_ongoing_advisee %}
+    {% elsif group_key == "supervised_phd_committee" %}
+    {% assign items = supervised_phd_committee %}
+    {% elsif group_key == "supervised_ms_chair" %}
+    {% assign items = supervised_ms_chair %}
+    {% elsif group_key == "supervised_ms_committee" %}
+    {% assign items = supervised_ms_committee %}
+    {% else %}
+    {% assign items = supervised_ugrad_chair %}
+    {% endif %}
+
+    {% if items.size > 0 %}
+    <h3>{{ group_title }}</h3>
+    <ul class="cv-list">
+      {% for item in items %}
+      <li>
+        {% if item.student_name %}<strong>{{ item.student_name }}</strong>{% endif %}
+        {% if item.student_department %}, {{ item.student_department }}{% endif %}
+        {% if item.institution %}, {{ item.institution }}{% endif %}
+        {% if item.thesis_title %}. "{{ item.thesis_title }}"{% endif %}
+        {% if item.current_position %}. {{ item.current_position }}{% endif %}
+        {% if item.coadvisor %}. Co-advisor: {{ item.coadvisor }}{% endif %}
+        {% if item.date_start or item.date_end %}
+        ({{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %})
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% assign ugrad_ms_students = site.data.people | where: "membership", "ugrad_ms_student" | sort: "family_name" %}
+  {% if ugrad_ms_students.size > 0 %}
+  <section class="cv-section">
+    <div class="cv-student-author-toggle">
+      <label for="show-other-mentees-toggle">
+        <input type="checkbox" id="show-other-mentees-toggle">
+        Include undergraduate and master's collaborators
+      </label>
+    </div>
+    <h3 class="cv-other-mentees-header">Other Mentees</h3>
+    <ul class="cv-list cv-other-mentees-list">
+      {% for student in ugrad_ms_students %}
+      <li>
+        <strong>{{ student.given_name }} {{ student.family_name }}</strong>{% if student.short_bio %}. {{
+        student.short_bio }}{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.press %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Press</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.press %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}
+          {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a>
+          {% else %}
+          {{ item.title }}
+          {% endif %}
+          {% endif %}
+          {% if item.description %} <div class="date">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          {% if item.publication %}<div class="outlet">{{ item.publication }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.patents %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Patent</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.patents %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}{{ item.title }}{% endif %}
+        </div>
+        <div class="col side">
+          {% if item.date %}<div class="date">{{ item.date }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+
+
+</div>
+
+<script>
+  (function () {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    function setupToggle(checkboxId, paramName, cssClass) {
+      var checkbox = document.getElementById(checkboxId);
+      if (!checkbox) return;
+
+      // Check URL on load
+      if (urlParams.get(paramName) === 'true') {
+        checkbox.checked = true;
+      }
+
+      // Initialize body class
+      document.body.classList.toggle(cssClass, checkbox.checked);
+
+      // Handle changes
+      checkbox.addEventListener('change', function () {
+        document.body.classList.toggle(cssClass, checkbox.checked);
+
+        // Update URL silently
+        const currentUrl = new URL(window.location);
+        if (checkbox.checked) {
+          currentUrl.searchParams.set(paramName, 'true');
+        } else {
+          currentUrl.searchParams.delete(paramName);
+        }
+        window.history.replaceState({}, '', currentUrl);
+      });
+    }
+
+    setupToggle('highlight-student-authors-toggle', 'students', 'highlight-student-authors');
+    setupToggle('show-other-mentees-toggle', 'mentees', 'show-other-mentees');
+    setupToggle('show-paper-awards-toggle', 'awards', 'show-paper-awards');
+    setupToggle('separate-journal-conference-toggle', 'separate_pubs', 'separate-journal-conference');
+  })();
+</script>

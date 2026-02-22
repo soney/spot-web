@@ -1,47 +1,20 @@
 {
-    "name": "spot-web",
-    "description": "Homepage for the spot group at the University of Michigan",
-    "version": "1.0.0",
-    "author": "Steve Oney <soney@umich.edu>",
-    "dependencies": {
-        "bootstrap": "^5.3.8",
-        "gatsby": "^5.16.1",
-        "gatsby-plugin-google-fonts": "^1.0.1",
-        "gatsby-plugin-image": "^3.16.0",
-        "gatsby-plugin-sass": "^6.16.0",
-        "gatsby-plugin-sharp": "^5.16.0",
-        "gatsby-plugin-typescript": "^5.16.0",
-        "gatsby-source-filesystem": "^5.16.0",
-        "gatsby-source-strapi": "^5.0.4",
-        "gatsby-transformer-remark": "^6.16.0",
-        "gatsby-transformer-sharp": "^5.16.0",
-        "lucide": "^0.575.0",
-        "lucide-react": "^0.575.0",
-        "react": "19.2.4",
-        "react-dom": "19.2.4",
-        "react-markdown": "^10.1.0",
-        "sass": "^1.97.3"
-    },
-    "keywords": [
-        "gatsby, typescript"
-    ],
-    "license": "MIT",
-    "main": "n/a",
-    "scripts": {
-        "build": "npx gatsby build",
-        "clean": "npx gatsby clean",
-        "develop": "npx gatsby develop",
-        "deploy": "npx gatsby build --prefix-paths && npx gh-pages -d public",
-        "deploy-watch": "node redeploy_listener.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-        "@types/node": "^25.3.0",
-        "@types/react": "^19.2.14",
-        "@types/react-dom": "^19.2.3",
-        "gatsby-cli": "^5.16.0",
-        "gh-pages": "^6.3.0",
-        "simple-git": "^3.31.1",
-        "typescript": "^5.9.3"
-    }
+  "name": "spot-web",
+  "description": "Homepage for the SPOT group at the University of Michigan",
+  "version": "1.0.0",
+  "author": "Steve Oney <soney@umich.edu>",
+  "license": "MIT",
+  "scripts": {
+    "convert:strapi": "node strapi-export-conversion/jsonl-to-yaml.mjs && node strapi-export-conversion/normalize-content.mjs",
+    "build": "bundle exec jekyll build",
+    "develop": "bundle exec jekyll serve --livereload",
+    "clean": "rm -rf _site .jekyll-cache .jekyll-metadata",
+    "deploy": "bundle exec jekyll build && npx gh-pages -d _site"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }

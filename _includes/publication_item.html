@@ -1,0 +1,54 @@
+{% assign pub = include.pub %}
+{% assign venue = site.data.venues | where: "id", pub.venue | first %}
+<article class="paper row" id="pub-{{ pub.id }}" data-authors="{{ pub.authors | default: empty | join: ',' }}">
+  <div class="col-sm-10">
+    {% assign h_level = include.heading_level | default: 'h3' %}
+    <{{h_level}} class="paper-title"><a href="{{ '/papers/' | append: pub.id | append: '/' | relative_url }}">{{ pub.title }}</a></{{h_level}}>
+    <div class="paper-authors">{% include author_list.html ids=pub.authors with_links=true %}</div>
+    {% if pub.short_description %}
+    <p class="paper-description d-none d-md-block">{{ pub.short_description }}</p>
+    {% elsif pub.abstract %}
+    <p class="paper-description d-none d-md-block">{{ pub.abstract | truncate: 320 }}</p>
+    {% endif %}
+  </div>
+  <div class="col-sm-2 text-left">
+    {% if venue %}
+    {% capture venue_label %}
+    {% if venue.short_name %}{{ venue.short_name }} {% endif %}{{ venue.year }}
+    {% endcapture %}
+    <div class="paper-venue d-inline d-md-block">
+      {% if venue.homepage %}
+      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{{ venue_label | strip }}</a>
+      {% else %}
+      {{ venue_label | strip }}
+      {% endif %}
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    {% endif %}
+
+    {% if pub.submission_status == 'conditionally_accepted' %}
+    <div class="paper-condaccept d-inline d-md-block">
+      (conditionally accepted)<span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    {% endif %}
+
+    {% if pub.award and pub.award != 'none' %}
+    <div class="paper-award d-inline d-md-block">
+      {% if pub.award == 'best_paper' %}
+      <i class="bi bi-trophy"></i>
+      {% else %}
+      <i class="bi bi-award"></i>
+      {% endif %}
+      {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    {% endif %}
+
+    {% if pub.pdf %}
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    {% endif %}
+  </div>
+</article>

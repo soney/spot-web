@@ -1,8 +1,28 @@
-- date: '2024-10-01'
+- date: "2024-11-04"
+  description: >-
+    [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
+    Professor after a one-term postdoc at Princeton. Congratulations, Lei!
+  relevant_people:
+    - lei_zhang
+- date: "2024-11-04"
+  description: Several group members (and alumni) will be in Hawaii for CHI 2024. Say "hi" if you're there!
+  relevant_people:
+    - ashley_zhang
+    - lei_zhang
+    - mauli_pandey
+    - yan_chen
+    - april_wang
+  relevant_publications:
+    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
+- date: "2024-11-04"
+  description: Congratulations to Dr. Lei Zhang on his wonderful Ph.D. defense!
+  relevant_people:
+    - lei_zhang
+- date: "2024-10-01"
   description: Excited to welcome Dr. Maryam Arab as a new Postdoctoral Researcher!
   relevant_people:
     - maryam_arab
-- date: '2024-06-04'
+- date: "2024-06-04"
   description: >-
     [Ashley](https://gezhangrp.com/) will be presenting her paper on representing code at scale at Learning @ Scale in
     Atlanta!
@@ -10,48 +30,48 @@
     - ashley_zhang
   relevant_publications:
     - cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
-- date: '2024-01-08'
+- date: "2024-01-08"
   description: >-
     [Dr. Rebecca Krosnick](https://public.websites.umich.edu/~rkros/) (2023 Ph.D. graduate) joined
     [Postman](https://www.postman.com/) as a software engineer! Congratulations, Dr. Krosnick!
   relevant_people:
     - rebecca_krosnick
-- date: '2023-11-06'
+- date: "2023-11-06"
   description: Congratulations to Dr. Rebecca Krosnick on her awesome Ph.D. defense!
   relevant_people:
     - rebecca_krosnick
-- date: '2023-11-01'
+- date: "2023-11-01"
   description: >-
     [April Wang](https://aprilwang.me/) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer Science.
     Congratulations, Professor Wang!
   relevant_people:
     - april_wang
-- date: '2023-11-01'
+- date: "2023-11-01"
   description: >-
     [Mauli Pandey](https://pandeymauli.github.io/research/) (2023 alum) joined Google as a UX Researcher.
     Congratulations, Dr. Pandey!
   relevant_people:
     - mauli_pandey
-- date: '2023-10-05'
-  description: 'Ashley Zhang presented at VL/HCC 2023 in Washington, D.C.!'
+- date: "2023-10-05"
+  description: Ashley Zhang presented at VL/HCC 2023 in Washington, D.C.!
   relevant_people:
     - ashley_zhang
   relevant_publications:
     - runex_augmenting_regular_expression_code_search_with_runtime_values_2023
-- date: '2023-09-07'
-  description: 'Steve Oney was elected to [the VL/HCC steering committee](https://conferences.computer.org/VLHCC/SC-members.html)'
+- date: "2023-09-07"
+  description: Steve Oney was elected to [the VL/HCC steering committee](https://conferences.computer.org/VLHCC/SC-members.html)
   relevant_people:
     - steve_oney
-- date: '2023-09-01'
+- date: "2023-09-01"
   description: Congratulations to Dr. Mauli Pandey and Dr. April Wang on their exceptional Ph.D. defenses!
   relevant_people:
     - mauli_pandey
     - april_wang
-- date: '2023-09-01'
-  description: 'We welcomed Jiacheng Zhang, a new UMSI Ph.D. student, to the spot group!'
+- date: "2023-09-01"
+  description: We welcomed Jiacheng Zhang, a new UMSI Ph.D. student, to the spot group!
   relevant_people:
     - jiacheng_zhang
-- date: '2023-04-01'
+- date: "2023-04-01"
   description: >-
     [April](https://aprilwang.me/), [Ashley](https://gezhangrp.com/), [Lei](https://raynezhang.me),
     [Mauli](https://pandeymauli.github.io/research/), and [Rebecca](http://www-personal.umich.edu/~rkros/) will be in
@@ -68,26 +88,9 @@
     - vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
     - how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023
     - promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
-- date: '2023-01-01'
+- date: "2023-01-01"
   description: >-
     [Yan Chen](https://chensivan.github.io/) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
     Congratulations, Professor Chen!
   relevant_people:
     - yan_chen
-- description: >-
-    [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
-    Professor after a one-term postdoc at Princeton. Congratulations, Lei!
-  relevant_people:
-    - lei_zhang
-- description: Several group members (and alumni) will be in Hawaii for CHI 2024. Say "hi" if you're there!
-  relevant_people:
-    - ashley_zhang
-    - lei_zhang
-    - mauli_pandey
-    - yan_chen
-    - april_wang
-  relevant_publications:
-    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
-- description: Congratulations to Dr. Lei Zhang on his wonderful Ph.D. defense!
-  relevant_people:
-    - lei_zhang

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Writing
+nav: writing
+---
+
+<div class="container">
+  <h1>Writing</h1>
+  {% assign posts = site.data.blog | sort: "created" | reverse %}
+  <ul>
+    {% for post in posts %}
+    <li class="blogpost">
+      {% if post.google_doc %}
+      <a href="{{ post.google_doc }}" target="_blank" rel="noopener">
+        <span class="title">{{ post.title }}</span> |
+        <span class="post-authors">
+          by {% include author_list.html ids=post.authors with_links=false %}
+        </span>
+      </a>
+      {% else %}
+      <span class="title">{{ post.title }}</span>
+      {% endif %}
+      <span class="created">{% if post.created %}{{ post.created | date: "%B %d, %Y" }}{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
