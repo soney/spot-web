@@ -6,10 +6,10 @@
     "license": "MIT",
     "scripts": {
         "convert:strapi": "node strapi-export-conversion/jsonl-to-yaml.mjs && node strapi-export-conversion/normalize-content.mjs",
-        "build": "bundle exec jekyll build",
-        "develop": "bundle exec jekyll serve --livereload",
-        "clean": "rm -rf _site .jekyll-cache .jekyll-metadata",
-        "deploy": "bundle exec jekyll build && npx gh-pages -d _site"
+        "build": "ruby scripts/generate-paper-pages.rb && ruby scripts/generate-person-pages.rb && bundle exec jekyll build",
+        "develop": "ruby scripts/generate-paper-pages.rb && ruby scripts/generate-person-pages.rb && bundle exec jekyll serve --livereload",
+        "clean": "rm -rf _site .jekyll-cache .jekyll-metadata _papers _people_pages",
+        "deploy": "npm run clean && ruby scripts/generate-paper-pages.rb && ruby scripts/generate-person-pages.rb && bundle exec jekyll build && npx gh-pages -d _site"
     },
     "devDependencies": {
         "gh-pages": "^6.3.0",
