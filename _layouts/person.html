@@ -48,10 +48,13 @@ nav: team
 
   {% assign all_authored = site.data.publications | where_exp: "p", "p.authors contains person.id" %}
   {% assign authored = "" | split: "" %}
-  {% for pub in all_authored %}
-  {% assign venue = site.data.venues | where: "id", pub.venue | first %}
+  {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+  {% for venue in sorted_venues %}
   {% if venue.type == "conference" or venue.type == "journal" %}
+  {% assign venue_pubs = all_authored | where: "venue", venue.id %}
+  {% for pub in venue_pubs %}
   {% assign authored = authored | push: pub %}
+  {% endfor %}
   {% endif %}
   {% endfor %}
 
