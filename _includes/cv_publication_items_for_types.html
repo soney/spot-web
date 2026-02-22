@@ -102,34 +102,34 @@
 {% assign pub_code = type_prefix | append: "." %}
 {% case venue.type %}
 {% when "journal" %}
-{% assign pub_code = type_prefix | append: journal_count %}
+{% assign pub_code = pub_code | append: journal_count %}
 {% assign journal_count = journal_count | minus: 1 %}
 {% when "conference" %}
-{% assign pub_code = type_prefix | append: conference_count %}
+{% assign pub_code = pub_code | append: conference_count %}
 {% assign conference_count = conference_count | minus: 1 %}
 {% when "bookchapter" %}
-{% assign pub_code = type_prefix | append: bookchapter_count %}
+{% assign pub_code = pub_code | append: bookchapter_count %}
 {% assign bookchapter_count = bookchapter_count | minus: 1 %}
 {% when "poster" %}
-{% assign pub_code = type_prefix | append: poster_count %}
+{% assign pub_code = pub_code | append: poster_count %}
 {% assign poster_count = poster_count | minus: 1 %}
 {% when "workshop" %}
-{% assign pub_code = type_prefix | append: workshop_count %}
+{% assign pub_code = pub_code | append: workshop_count %}
 {% assign workshop_count = workshop_count | minus: 1 %}
 {% when "doctoralconsortium" %}
-{% assign pub_code = type_prefix | append: doctoral_count %}
+{% assign pub_code = pub_code | append: doctoral_count %}
 {% assign doctoral_count = doctoral_count | minus: 1 %}
 {% when "demo" %}
-{% assign pub_code = type_prefix | append: demo_count %}
+{% assign pub_code = pub_code | append: demo_count %}
 {% assign demo_count = demo_count | minus: 1 %}
 {% when "panel" %}
-{% assign pub_code = type_prefix | append: panel_count %}
+{% assign pub_code = pub_code | append: panel_count %}
 {% assign panel_count = panel_count | minus: 1 %}
 {% when "preprint" %}
-{% assign pub_code = type_prefix | append: preprint_count %}
+{% assign pub_code = pub_code | append: preprint_count %}
 {% assign preprint_count = preprint_count | minus: 1 %}
 {% when "thesis" %}
-{% assign pub_code = type_prefix | append: thesis_count %}
+{% assign pub_code = pub_code | append: thesis_count %}
 {% assign thesis_count = thesis_count | minus: 1 %}
 {% endcase %}
 {% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code variant=item_variant %}

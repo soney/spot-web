@@ -15,6 +15,7 @@
     --announcement-background-color: #F5F5F5;
     --announcement-foreground-color: #424242;
     --announcement-bullhorn-color: #FFCB05;
+    --bs-breadcrumb-divider: " · ";
 }
 
 body {

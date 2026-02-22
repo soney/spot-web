@@ -18,7 +18,7 @@
   color: "#FFC14A"
   use_local_homepage: true
   links:
-    - url: https://from.so/oney_cv/
+    - url: /oney_cv/
       description: CV
     - url: https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en
       description: Google Scholar
@@ -85,7 +85,7 @@
     Jiacheng Zhang is a first-year PhD student advised by [Professor Steve Oney](https://from.so/Steve_Oney/). Before
     that, she earned her Bachelor's degree in Computer Science from [the University of Michigan](https://umich.edu/) and
     a Bachelor's in Electrical and Computer Engineering from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
-    Her research interest lies in Human-Centered Artificial Intelligence. 
+    Her research interest lies in Human-Centered Artificial Intelligence.
   color: " #D3BB91"
   headshot: images/people/jiacheng_8cc7e6f683.png
   focused_headshot: images/people/jiacheng_headshot_58b9408ac9.jpg
@@ -116,7 +116,7 @@
     script-heavy. She has also designed programming-by-demonstration systems for creating responsive and interactive
     user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received her SB and MEng in
     Computer Science from [MIT](https://web.mit.edu/), where she was advised by [Professor Rob
-    Miller](https://www.csail.mit.edu/person/rob-miller). 
+    Miller](https://www.csail.mit.edu/person/rob-miller).
   color: "#BC7B71"
   links:
     - url: https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao
@@ -200,7 +200,7 @@
     Kay](http://www.mjskay.com/), [Michael Nebeling](http://www.michael-nebeling.de/), and [Sun Young
     Park](http://sunyoungpark.weebly.com/). For her undergraduate studies, she attended the [Indian Institute of
     Technology Guwahati](http://www.iitg.ac.in/) (Design and Electronics, 2014), and was advised by [Pradeep
-    Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html). 
+    Yammiyavar](https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html).
   color: " #D3BDC1"
   links:
     - url: https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao
