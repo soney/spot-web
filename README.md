@@ -4,42 +4,20 @@ This repository powers [from.so](https://from.so) using [Jekyll](https://jekyllr
 
 ## Local development
 
-1. Install Ruby gems:
+1. Install dependencies:
 
 ```bash
 bundle install
+npm install
 ```
 
 2. Build and serve:
 
 ```bash
-bundle exec jekyll serve --livereload
+npm run develop
 ```
 
 3. Open `http://127.0.0.1:4000`.
-
-## Content pipeline (Strapi export -> Jekyll `_data`)
-
-Raw Strapi export files live under `strapi-export/`.
-
-Run the conversion pipeline:
-
-```bash
-npm run convert:strapi
-```
-
-This will:
-
-1. Regenerate `strapi-export/yaml_out/*.yaml` from exported JSONL.
-2. Normalize content into Jekyll data files in `_data/`:
-   - `people.yaml`
-   - `venues.yaml`
-   - `clusters.yaml`
-   - `publications.yaml`
-   - `blog.yaml`
-   - `news.yaml`
-   - `group.yaml`
-   - `leadcv.yaml`
 
 ## Deploy
 
@@ -48,3 +26,15 @@ npm run deploy
 ```
 
 This builds to `_site/` and publishes via `gh-pages`.
+
+## Adding a new paper
+
+1. Add the _venue_ to `_data/venues.yaml` (if it doesn't already exist).
+2. Ensure all the _authors_ are listed in `_data/people.yaml`.
+3. Add the paper to `_data/publications.yaml`.
+   - Ensure the `venue` field matches the `id` in `_data/venues.yaml`.
+   - Ensure the `authors` field contains the `id` of each author in `_data/people.yaml`.
+4. Run `npm run develop` to build and serve the site.
+   - Note: You might need to re-run `npm run develop` to regenerate the paper _page_ (e.g., `/papers/...`)
+5. Verify the paper is displayed correctly.
+6. Run `npm run deploy` to deploy the site.
