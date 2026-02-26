@@ -13,8 +13,10 @@ nav: team
     <div class="col-sm-3">
       {% assign photo = person.headshot %}
       {% if photo %}
-      <img class="member-headshot img-fluid rounded" src="{{ '/assets/' | append: photo | relative_url }}"
-        alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
+      <a href="{{ '/assets/' | append: photo | relative_url }}">
+        <img class="member-headshot img-fluid rounded" src="{{ '/assets/' | append: photo | relative_url }}"
+          alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
+      </a>
       {% endif %}
     </div>
 
