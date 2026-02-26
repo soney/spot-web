@@ -46,6 +46,9 @@
 }
 
 body {
+    background-color: rgb(243, 240, 235);
+    color: rgb(30, 30, 28);
+
     .cv.container {
         margin-top: 7em;
         font-family: goudy-old-style, serif;

@@ -31,8 +31,9 @@ nav: home
     </section>
   </div>
 
-  {% if group.announcement %}
-  <section class="section-card">
+  {% if group.announcement and group.announcement != "" %}
+  <section class="section-card announcements container alert alert-light py-3">
+    <h2 class="h5 visually-hidden">Announcements</h2>
     {{ group.announcement | markdownify }}
   </section>
   {% endif %}
