@@ -51,7 +51,7 @@
   given_name: Ashley
   family_name: Zhang
   membership: member
-  homepage: https://gezhangrp.com/
+  homepage: https://gezhang.me
   short_bio: |-
     Ph.D. Student
     Michigan SI
@@ -108,7 +108,7 @@
     1. Developing interactive programming and automation tools that make data extraction, analysis, and web interaction more efficient and accessible.
 
     2. Studying how people move, decide, and adapt during interactive tasks, and creating simulation models that reproduce these behaviors to inform better interface and AI system design.
-    
+
 - id: rebecca_krosnick
   given_name: Rebecca
   family_name: Krosnick
