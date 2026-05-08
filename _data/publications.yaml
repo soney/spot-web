@@ -32,6 +32,7 @@
   clusters:
     - communicating_about_code
   venue: chi_2026
+  pdf: pdfs/codestream_augmenting_timelines_chi26.pdf
 - id: simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
   title: Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation
   authors:
@@ -40,6 +41,7 @@
   student_authors:
     - xiangyu_zhou
   venue: chi_posters_2026
+  pdf: pdfs/simulating_human_cursor_trajectories_path_sensitive.pdf
 - id: co_advisor_learning_programming_strategies_in_context_2025
   title: "Co-Advisor: Learning Programming Strategies in Context"
   abstract: >-
@@ -49,8 +51,8 @@
     adaptive decision-making. Large Language Models (LLMs) can be effective in helping with syntactic and algorithmic
     questions but can fail to provide strategic knowledge. This is partly because strategic knowledge involves nuanced
     contexts that span code and runtime states, requires subjective judgments, and dynamically evolves based on the
-    outcomes of users’ actions. We introduce Co-Advisor, a context-aware strategy recommendation tool that leverages LLM
-    to evaluate problem context and monitor the programmer’s actions to provide personalized constructive feedback.
+    outcomes of users' actions. We introduce Co-Advisor, a context-aware strategy recommendation tool that leverages LLM
+    to evaluate problem context and monitor the programmer's actions to provide personalized constructive feedback.
     Unlike prior work, Co-Advisor can dynamically align expert strategies with real-time programmer actions and code
     context, offering actionable, personalized strategic knowledge. In a formative evaluation with 14 programmers
     involved in two debugging tasks, we found that those using Co-Advisor to receive context-related feedback alongside
@@ -60,7 +62,7 @@
     understanding and strategic problem-solving.
   short_description: >-
     A context-aware learning tool that helps programmers develop strategic problem-solving skills like debugging and
-    program design. Integrated with Visual Studio Code, it analyzes the learner’s code, runtime state, and actions to
+    program design. Integrated with Visual Studio Code, it analyzes the learner's code, runtime state, and actions to
     recommend expert strategies tailored to a developer's context. As learners follow these strategies, Co-Advisor
     provides real-time feedback to make it easier for developers to understand strategic knowledge in context.
   authors:

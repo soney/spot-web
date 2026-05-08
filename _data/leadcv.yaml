@@ -222,7 +222,7 @@ invited_presentations:
     institution: IBM Almaden Lunch Seminar
     title: "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages"
 service:
-  - title: Steering Committee
+  - title: Steering Committee (Vice-Chair 2024-2025, Chair 2025-present)
     category: organizing_committee
     description: IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)
     date_start: "2023"
@@ -233,9 +233,9 @@ service:
     date_start: "2026"
   - title: Most Influential Paper Award Co-Chair
     category: organizing_committee
-    description: VL/HCC 2024 and 2025
+    description: VL/HCC 2024 – 2026
     date_start: "2024"
-    date_end: "2025"
+    date_end: "2026"
   - title: Program Co-Chair (with Jácome Miguel Costa Cunha)
     category: organizing_committee
     description: IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)
@@ -447,12 +447,46 @@ supervised_students:
     category: dissertation_chair
     date_start: Fall 2017
     date_end: Summer 2023
+  - student_name: Xiangyu Zhou
+    student_department: Computer Science and Engineering
+    institution: University of Michigan
+    category: ongoing_advisee
+    date_start: Fall 2025
+    date_end: present
   - student_name: Jiacheng Zhang
     student_department: Scool of Information
     institution: University of Michigan
     category: ongoing_advisee
     date_start: Fall 2023
     date_end: present
+  - student_name: John Allen
+    student_department: Computer Science Department
+    institution: Washington University in St. Louis
+    thesis_title: "Code Stories for Software Repurposing"
+    category: phd_thesis_committee
+    date_start: "2025"
+  - student_name: Xinying Hou
+    student_department: School of Information
+    institution: University of Michigan
+    category: phd_thesis_committee
+    date_start: "2025"
+  - student_name: Jingyuan Zhu
+    student_department: Computer Science and Engineering
+    thesis_title: "Solutions for Link Rot on the Modern Web"
+    institution: University of Michigan
+    category: phd_thesis_committee
+    date_start: "2025"
+  - student_name: David Moon
+    student_department: Computer Science and Engineering
+    thesis_title: "Syntactic Completions with Material Obligations"
+    institution: University of Michigan
+    category: phd_thesis_committee
+    date_start: "2025"
+  - student_name: Andrew Blinn
+    student_department: Computer Science and Engineering
+    institution: University of Michigan
+    category: phd_thesis_committee
+    date_start: "2025"
   - student_name: Hari Subramonyam
     student_department: School of Information
     thesis_title: "Designing AI Experiences: Boundary Representations, Collaborative Processes, and Data Tools"
@@ -483,6 +517,12 @@ supervised_students:
     institution: University of Michigan
     category: phd_thesis_committee
     date_start: "2017"
+  - student_name: Shalini Madan
+    student_department: School of Information
+    thesis_title: "Accessibility Heuristics for Vibe Coding Interfaces"
+    institution: University of Michigan
+    category: ms_thesis_committee
+    date_start: "2026"
   - student_name: Xunan (Andy) Zhou
     student_department: School of Information
     thesis_title: "Conversational Agent Experience: What makes a good skill?"
