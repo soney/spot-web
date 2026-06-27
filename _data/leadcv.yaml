@@ -236,6 +236,11 @@ service:
     description: VL/HCC 2024 – 2026
     date_start: "2024"
     date_end: "2026"
+  - title: Sponsorship Co-Chair
+    category: organizing_committee
+    description: UIST 2022 – 2023
+    date_start: "2022"
+    date_end: "2023"
   - title: Program Co-Chair (with Jácome Miguel Costa Cunha)
     category: organizing_committee
     description: IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)
@@ -312,10 +317,14 @@ service:
   - title: ACM CHI student volunteer (mobile guide development team)
     category: operations_committee
     date_start: 2010, 2011
+  - title: MSI Program Committee Chair
+    category: department
+    date_start: "2026"
+    date_end: "present"
   - title: UMSI Culture and Community Committee Co-Chair
     category: department
     date_start: "2023"
-    date_end: (present)
+    date_end: "2026"
   - title: School of Information BSI Committee
     category: department
     date_start: 2018 – 2020 & 2021 – 2022
