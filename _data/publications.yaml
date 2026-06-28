@@ -1,3 +1,21 @@
+- id: editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
+  title: "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code"
+  abstract: >-
+    Programming instructors have diverse philosophies about integrating generative AI into their classes. Some encourage students to use AI, while others restrict or forbid it. Regardless of their approach, all instructors benefit from understanding how their students actually use AI while writing code. Such insight helps instructors assess whether AI use aligns with their pedagogical goals, enables timely intervention when they find unproductive usage patterns, and establishes effective policies for AI use. However, our survey with programming instructors found that many instructors lack visibility into how students use AI in their code-writing processes. To address this challenge, we introduce Editrail, an interactive system that enables instructors to track students' AI usage, create personalized assessments, and provide timely interventions, all within the workflow of monitoring coding histories. We found that Editrail enables instructors to detect AI use that conflicts with pedagogical goals accurately and to determine when and which students require intervention.
+  authors:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+    - maryam_arab
+    - yan_chen
+    - steve_oney
+  student_authors:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+  venue: uist_2026
 - id: codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
   title: "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories"
   abstract: >-
@@ -12,10 +30,7 @@
     context-aware navigation of coding histories, supporting fast and accurate pattern identification, and helping
     instructors reason about students' coding behaviors and identify who may need intervention.
   short_description: >-
-    Introduces a visualization system that helps instructors interpret students’ keystroke-level coding histories. While
-    traditional timelines show when and where edits occurred, they do not reveal what changed. CodeStream augments
-    timelines with zoomable code annotations, multi-level structural summaries, and a cumulative effort heatmap,
-    allowing instructors to see both the content and intensity of edits without constant context switching.
+    Introduces a visualization system that helps instructors interpret students’ keystroke-level coding histories. While traditional timelines show when and where edits occurred, they do not reveal what changed. CodeStream augments timelines with zoomable code annotations, multi-level structural summaries, and a cumulative effort heatmap, allowing instructors to see both the content and intensity of edits without constant context switching.
   authors:
     - ashley_zhang
     - yan_ru_jhou
