@@ -28,12 +28,6 @@
     </div>
     {% endif %}
 
-    {% if pub.submission_status == 'conditionally_accepted' %}
-    <div class="paper-condaccept d-inline d-md-block">
-      (conditionally accepted)<span class="d-inline d-md-none">&nbsp;</span>
-    </div>
-    {% endif %}
-
     {% if pub.award and pub.award != 'none' %}
     <div class="paper-award d-inline d-md-block">
       {% include award_icon.html award=pub.award %}

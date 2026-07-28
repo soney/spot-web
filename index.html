@@ -5,9 +5,8 @@ nav: home
 ---
 
 {% assign group = site.data.group %}
-{% assign news_with_date = site.data.news | where_exp: "n", "n.date" | sort: "date" | reverse %}
-{% assign news_without_date = site.data.news | where_exp: "n", "n.date == nil" %}
-{% assign latest_news = news_with_date | concat: news_without_date %}
+{% comment %} sort places undated items first, so reverse puts them last {% endcomment %}
+{% assign latest_news = site.data.news | sort: "date" | reverse %}
 
 <div class="container">
   <h1 class="visually-hidden">SPOT Research Group</h1>

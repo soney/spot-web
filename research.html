@@ -17,7 +17,7 @@ nav: research
       {% endif %}
     </div>
     <div class="col-md-8">
-      {% assign focus_papers = cluster.papers | default: cluster.publications %}
+      {% assign focus_papers = cluster.papers %}
       {% if focus_papers %}
       <p><strong>Publications:</strong></p>
       <ul class="list-unstyled">
@@ -31,9 +31,6 @@ nav: research
       </ul>
       {% endif %}
     </div>
-    {% if cluster.description %}
-    {{ cluster.description | markdownify }}
-    {% endif %}
   </section>
   {% endfor %}
 
