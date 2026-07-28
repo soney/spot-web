@@ -7,44 +7,6 @@
     --link-hover-color: #0056b3;
 }
 
-@media print {}
-
-@font-face {
-    font-family: 'oney_cv';
-    src: url('oney_cv_font/oney_cv.eot');
-    src: url('oney_cv_font/oney_cv.eot?#iefix') format('embedded-opentype'),
-        url('oney_cv_font/oney_cv.woff') format('woff'),
-        url('oney_cv_font/oney_cv.ttf') format('truetype'),
-        url('oney_cv_font/oney_cv.svg#oney_cv') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class*='icon-']:before {
-    display: inline-block;
-    font-family: 'oney_cv';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size: 0.8em;
-    position: relative;
-    top: 2px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-best_paper:before {
-    content: '\0041';
-}
-
-.icon-honorable_mention:before {
-    content: '\0042';
-}
-
-.icon-other_award:before {
-    content: '\0042';
-}
-
 body {
     background-color: rgb(243, 240, 235);
     color: rgb(30, 30, 28);
@@ -108,8 +70,6 @@ body {
 
         .contact {
             text-align: right;
-
-            .contact-spacer {}
         }
 
         .side {
@@ -247,8 +207,6 @@ body {
                 font-weight: bold;
             }
         }
-
-        .service {}
 
         .supervisees {
 
