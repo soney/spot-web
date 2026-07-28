@@ -1,3 +1,14 @@
+{% comment %}
+  One publication row for site-facing lists: linked title, authors, and
+  short description in the main column; venue, award, and PDF link in
+  the side column.
+
+  Parameters:
+    pub           the publication record (from publications.yaml).
+    heading_level (optional) heading tag for the title, default h3.
+    highlight_id  (optional) people.yaml id to emphasize in the author
+                  list.
+{% endcomment %}
 {% assign pub = include.pub %}
 {% assign venue = site.data.venues | where: "id", pub.venue | first %}
 <article class="paper row" id="pub-{{ pub.id }}" data-authors="{{ pub.authors | default: empty | join: ',' }}">

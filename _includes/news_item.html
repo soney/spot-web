@@ -1,3 +1,11 @@
+{% comment %}
+  One news list entry: optional date, markdown description, and chips
+  linking to related people and publications.
+
+  Parameters:
+    item         the news record (from news.yaml).
+    date_format  (optional) strftime format for the date, default "%B %Y".
+{% endcomment %}
 {% assign item = include.item %}
 <li class="news-item">
   {% if item.date %}
