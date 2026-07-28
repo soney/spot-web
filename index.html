@@ -75,59 +75,9 @@ nav: home
           aria-hidden="true"> [+]</span></a></h2>
     <ul class="publication-list">
       {% assign cutoff = group.recent_pub_cutoff_year | default: 2000 %}
-      {% assign max_pubs = group.recent_pub_count | default: 999999 %}
-      {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
-      {% assign shown = 0 %}
-      {% for venue in sorted_venues %}
-      {% assign is_included_type = false %}
-      {% if venue.type == "journal" or venue.type == "conference" %}{% assign is_included_type = true %}{% endif %}
-      {% if venue.year and venue.year >= cutoff and is_included_type == true %}
-      {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
-      {% for pub in venue_pubs %}
-      {% if shown < max_pubs %} <li>{% include publication_item.html pub=pub %}</li>
-        {% assign shown = shown | plus: 1 %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
+      {% include publication_list_items.html min_year=cutoff limit=group.recent_pub_count %}
     </ul>
   </section>
 
-  <footer class="container">
-    <h2>Affiliations</h2>
-    <div class="affiliations row">
-      <div class="col-md-4">
-        <a href="https://www.si.umich.edu/" target="_blank" rel="noopener">Michigan School of Information<br /><img
-            src="{{ '/assets/images/logos/umsi_logo.svg' | relative_url }}" alt="Michigan School of Information"></a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://misc.si.umich.edu/" target="_blank" rel="noopener">MISC<br /><img
-            src="{{ '/assets/images/logos/misc_dark.svg' | relative_url }}" alt="MISC"></a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener">Michigan CSE<br /><img
-            src="{{ '/assets/images/logos/cse_logo.svg' | relative_url }}" alt="Michigan CSE"></a>
-      </div>
-    </div>
-    <h2 class="d-flex justify-content-between align-items-end mt-5">
-      Sponsors
-      <span class="text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
-        (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)
-      </span>
-    </h2>
-    <div class="row">
-      <div class="col col-md-3">
-        <a href="https://nsf.gov/" target="_blank" rel="noopener">National Science Foundation<br /><img
-            src="{{ '/assets/images/logos/nsf_logo.svg' | relative_url }}" alt="NSF" style="height: 100px;"></a>
-      </div>
-      <div class="col col-md-4">
-        <a href="https://research.google/" target="_blank" rel="noopener">Google<br /><img
-            src="{{ '/assets/images/logos/google_logo.svg' | relative_url }}" style="height: 100px;" alt="Google"></a>
-      </div>
-      <div class="col col-md-3">
-        <a href="https://research.adobe.com/" target="_blank" rel="noopener">Adobe<br /><img
-            src="{{ '/assets/images/logos/adobe_logo.svg' | relative_url }}" style="height: 100px;" alt="Adobe"></a>
-      </div>
-    </div>
-  </footer>
+  {% include affiliations_footer.html %}
 </div>

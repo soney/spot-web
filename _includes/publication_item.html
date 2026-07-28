@@ -36,11 +36,7 @@
 
     {% if pub.award and pub.award != 'none' %}
     <div class="paper-award d-inline d-md-block">
-      {% if pub.award == 'best_paper' %}
-      <i class="bi bi-trophy"></i>
-      {% else %}
-      <i class="bi bi-award"></i>
-      {% endif %}
+      {% include award_icon.html award=pub.award %}
       {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
       <span class="d-inline d-md-none">&nbsp;</span>
     </div>

@@ -286,6 +286,10 @@ body {
         margin-top: 50px;
         margin-bottom: 100px;
 
+        .sponsor-logo {
+            height: 100px;
+        }
+
         object {
             max-width: 100%
         }

@@ -37,11 +37,7 @@ nav: research
 
       {% if pub.award and pub.award != 'none' %}
       <div class="paper-award mb-3 text-secondary fs-5">
-        {% if pub.award == 'best_paper' %}
-        <i class="bi bi-trophy"></i>
-        {% else %}
-        <i class="bi bi-award"></i>
-        {% endif %}
+        {% include award_icon.html award=pub.award %}
         {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
       </div>
       {% endif %}

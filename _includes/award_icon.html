@@ -1,0 +1,13 @@
+{% comment %}
+  Bootstrap icon for a publication award: a trophy for best-paper awards,
+  the generic award ribbon for everything else.
+
+  Parameters:
+    award  the publication's award value (e.g. "best_paper",
+           "honorable_mention").
+{% endcomment %}
+{% if include.award == 'best_paper' %}
+<i class="bi bi-trophy"></i>
+{% else %}
+<i class="bi bi-award"></i>
+{% endif %}

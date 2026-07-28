@@ -1,0 +1,41 @@
+{% comment %}
+  Homepage footer listing affiliation and sponsor logos. Only the SVG
+  logos in assets/images/logos/ are referenced. No parameters.
+{% endcomment %}
+<footer class="container">
+  <h2>Affiliations</h2>
+  <div class="affiliations row">
+    <div class="col-md-4">
+      <a href="https://www.si.umich.edu/" target="_blank" rel="noopener">Michigan School of Information<br /><img
+          src="{{ '/assets/images/logos/umsi_logo.svg' | relative_url }}" alt="Michigan School of Information"></a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://misc.si.umich.edu/" target="_blank" rel="noopener">MISC<br /><img
+          src="{{ '/assets/images/logos/misc_dark.svg' | relative_url }}" alt="MISC"></a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener">Michigan CSE<br /><img
+          src="{{ '/assets/images/logos/cse_logo.svg' | relative_url }}" alt="Michigan CSE"></a>
+    </div>
+  </div>
+  <h2 class="d-flex justify-content-between align-items-end mt-5">
+    Sponsors
+    <span class="text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
+      (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)
+    </span>
+  </h2>
+  <div class="row">
+    <div class="col col-md-3">
+      <a href="https://nsf.gov/" target="_blank" rel="noopener">National Science Foundation<br /><img
+          src="{{ '/assets/images/logos/nsf_logo.svg' | relative_url }}" alt="NSF" class="sponsor-logo"></a>
+    </div>
+    <div class="col col-md-4">
+      <a href="https://research.google/" target="_blank" rel="noopener">Google<br /><img
+          src="{{ '/assets/images/logos/google_logo.svg' | relative_url }}" class="sponsor-logo" alt="Google"></a>
+    </div>
+    <div class="col col-md-3">
+      <a href="https://research.adobe.com/" target="_blank" rel="noopener">Adobe<br /><img
+          src="{{ '/assets/images/logos/adobe_logo.svg' | relative_url }}" class="sponsor-logo" alt="Adobe"></a>
+    </div>
+  </div>
+</footer>
