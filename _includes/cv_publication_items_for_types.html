@@ -1,138 +1,65 @@
+{% comment %}
+  Renders CV publication entries (cv_publication_item.html) for one CV
+  section, numbering each publication with its type prefix from
+  _data/publication_types.yaml (J.12, C.31, ...). Numbers count down from
+  the per-type total, so with the venue-year-descending render order the
+  newest publication of a type carries the highest number.
+
+  Parameters:
+    all_publications  publication records to draw from.
+    venues            venue records sorted year-descending; defines the
+                      render order.
+    allowed_types     array of venue type strings for this section (from
+                      _data/cv_publication_sections.yaml).
+
+  Liquid has no hashes, so remaining_counts is an array parallel to
+  site.data.publication_types standing in for a type -> count map.
+{% endcomment %}
 {% assign all_publications = include.all_publications %}
 {% assign venues = include.venues %}
-{% assign allowed_types = include.allowed_types | split: "," %}
-{% assign item_variant = include.item_variant | default: "compact" %}
+{% assign allowed_types = include.allowed_types %}
 
-{% assign journal_total = 0 %}
-{% assign conference_total = 0 %}
-{% assign bookchapter_total = 0 %}
-{% assign poster_total = 0 %}
-{% assign workshop_total = 0 %}
-{% assign doctoral_total = 0 %}
-{% assign demo_total = 0 %}
-{% assign panel_total = 0 %}
-{% assign preprint_total = 0 %}
-{% assign thesis_total = 0 %}
-
-{% for pub in all_publications %}
-{% assign venue = site.data.venues | where: "id", pub.venue | first %}
-{% if venue %}
-{% assign type_allowed = false %}
-{% for raw_type in allowed_types %}
-{% assign allowed_type = raw_type | strip %}
-{% if venue.type == allowed_type %}
-{% assign type_allowed = true %}
-{% break %}
-{% endif %}
+{% comment %} Pass 1: total publications per type. {% endcomment %}
+{% assign remaining_counts = "" | split: "" %}
+{% for pub_type in site.data.publication_types %}
+{% assign type_total = 0 %}
+{% assign type_venues = venues | where: "type", pub_type.type %}
+{% for type_venue in type_venues %}
+{% assign type_venue_pubs = all_publications | where: "venue", type_venue.id %}
+{% assign type_total = type_total | plus: type_venue_pubs.size %}
 {% endfor %}
-{% if type_allowed %}
-{% case venue.type %}
-{% when "journal" %}
-{% assign journal_total = journal_total | plus: 1 %}
-{% when "conference" %}
-{% assign conference_total = conference_total | plus: 1 %}
-{% when "bookchapter" %}
-{% assign bookchapter_total = bookchapter_total | plus: 1 %}
-{% when "poster" %}
-{% assign poster_total = poster_total | plus: 1 %}
-{% when "workshop" %}
-{% assign workshop_total = workshop_total | plus: 1 %}
-{% when "doctoralconsortium" %}
-{% assign doctoral_total = doctoral_total | plus: 1 %}
-{% when "demo" %}
-{% assign demo_total = demo_total | plus: 1 %}
-{% when "panel" %}
-{% assign panel_total = panel_total | plus: 1 %}
-{% when "preprint" %}
-{% assign preprint_total = preprint_total | plus: 1 %}
-{% when "thesis" %}
-{% assign thesis_total = thesis_total | plus: 1 %}
-{% endcase %}
-{% endif %}
-{% endif %}
+{% assign remaining_counts = remaining_counts | push: type_total %}
 {% endfor %}
 
-{% assign journal_count = journal_total %}
-{% assign conference_count = conference_total %}
-{% assign bookchapter_count = bookchapter_total %}
-{% assign poster_count = poster_total %}
-{% assign workshop_count = workshop_total %}
-{% assign doctoral_count = doctoral_total %}
-{% assign demo_count = demo_total %}
-{% assign panel_count = panel_total %}
-{% assign preprint_count = preprint_total %}
-{% assign thesis_count = thesis_total %}
-
+{% comment %}
+  Pass 2: render newest venue first; each entry takes its type's current
+  count as the number, then decrements it (rebuilding the array, since
+  Liquid arrays are immutable).
+{% endcomment %}
 {% for venue in venues %}
-{% assign type_allowed = false %}
-{% for raw_type in allowed_types %}
-{% assign allowed_type = raw_type | strip %}
-{% if venue.type == allowed_type %}
-{% assign type_allowed = true %}
+{% unless allowed_types contains venue.type %}{% continue %}{% endunless %}
+{% assign type_index = -1 %}
+{% for pub_type in site.data.publication_types %}
+{% if pub_type.type == venue.type %}
+{% assign type_index = forloop.index0 %}
+{% assign type_prefix = pub_type.prefix %}
 {% break %}
 {% endif %}
 {% endfor %}
-{% if type_allowed %}
+{% if type_index == -1 %}{% continue %}{% endif %}
 {% assign venue_pubs = all_publications | where: "venue", venue.id %}
 {% for pub in venue_pubs %}
-{% assign type_prefix = "" %}
-{% case venue.type %}
-{% when "journal" %}
-{% assign type_prefix = "J" %}
-{% when "conference" %}
-{% assign type_prefix = "C" %}
-{% when "bookchapter" %}
-{% assign type_prefix = "B" %}
-{% when "poster" %}
-{% assign type_prefix = "P" %}
-{% when "workshop" %}
-{% assign type_prefix = "W" %}
-{% when "doctoralconsortium" %}
-{% assign type_prefix = "D" %}
-{% when "demo" %}
-{% assign type_prefix = "E" %}
-{% when "panel" %}
-{% assign type_prefix = "A" %}
-{% when "preprint" %}
-{% assign type_prefix = "R" %}
-{% when "thesis" %}
-{% assign type_prefix = "T" %}
-{% endcase %}
-
-{% assign pub_code = type_prefix | append: "." %}
-{% case venue.type %}
-{% when "journal" %}
-{% assign pub_code = pub_code | append: journal_count %}
-{% assign journal_count = journal_count | minus: 1 %}
-{% when "conference" %}
-{% assign pub_code = pub_code | append: conference_count %}
-{% assign conference_count = conference_count | minus: 1 %}
-{% when "bookchapter" %}
-{% assign pub_code = pub_code | append: bookchapter_count %}
-{% assign bookchapter_count = bookchapter_count | minus: 1 %}
-{% when "poster" %}
-{% assign pub_code = pub_code | append: poster_count %}
-{% assign poster_count = poster_count | minus: 1 %}
-{% when "workshop" %}
-{% assign pub_code = pub_code | append: workshop_count %}
-{% assign workshop_count = workshop_count | minus: 1 %}
-{% when "doctoralconsortium" %}
-{% assign pub_code = pub_code | append: doctoral_count %}
-{% assign doctoral_count = doctoral_count | minus: 1 %}
-{% when "demo" %}
-{% assign pub_code = pub_code | append: demo_count %}
-{% assign demo_count = demo_count | minus: 1 %}
-{% when "panel" %}
-{% assign pub_code = pub_code | append: panel_count %}
-{% assign panel_count = panel_count | minus: 1 %}
-{% when "preprint" %}
-{% assign pub_code = pub_code | append: preprint_count %}
-{% assign preprint_count = preprint_count | minus: 1 %}
-{% when "thesis" %}
-{% assign pub_code = pub_code | append: thesis_count %}
-{% assign thesis_count = thesis_count | minus: 1 %}
-{% endcase %}
-{% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code variant=item_variant %}
-{% endfor %}
+{% assign pub_code = type_prefix | append: "." | append: remaining_counts[type_index] %}
+{% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code %}
+{% assign updated_counts = "" | split: "" %}
+{% for count in remaining_counts %}
+{% if forloop.index0 == type_index %}
+{% assign decremented = count | minus: 1 %}
+{% assign updated_counts = updated_counts | push: decremented %}
+{% else %}
+{% assign updated_counts = updated_counts | push: count %}
 {% endif %}
+{% endfor %}
+{% assign remaining_counts = updated_counts %}
+{% endfor %}
 {% endfor %}

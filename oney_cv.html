@@ -201,56 +201,20 @@ title: Steve Oney - Curriculum Vitae
     </div>
 
 
-    {% capture publication_category_specs_raw %}
-    journal::Heavily-reviewed Journal Manuscripts (J)::journal::default::detailed||
-    conference::Heavily-reviewed Conference Papers (C)::conference::default::detailed||
-    bookchapter::Book Chapters (B)::bookchapter::default::detailed||
-    other_refereed::Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E), and Panels
-    (A)::poster,workshop,doctoralconsortium,demo,panel::default::detailed||
-    preprint::Preprints (R)::preprint::default::detailed||
-    thesis::Theses (T)::thesis::default::detailed
-    {% endcapture %}
-    {% assign publication_category_specs = publication_category_specs_raw | strip | split: "||" %}
-
-    {% assign combined_publication_sections = "" %}
-    {% assign default_publication_sections = "" %}
-
-    {% for spec in publication_category_specs %}
-    {% assign parts = spec | strip | split: "::" %}
-    {% assign section_title = parts[1] %}
-    {% assign allowed_types = parts[2] %}
-    {% assign section_bucket = parts[3] %}
-    {% assign item_variant = parts[4] %}
-
+    {% for pub_section in site.data.cv_publication_sections %}
     {% capture publication_items %}
     {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
-    allowed_types=allowed_types item_variant=item_variant %}
+    allowed_types=pub_section.types %}
     {% endcapture %}
     {% assign publication_items_stripped = publication_items | strip %}
     {% if publication_items_stripped != "" %}
-    {% capture publication_section %}
     <div class="row">
       <div class="col side"></div>
-      <h3 class="col main">{{ section_title }}</h3>
+      <h3 class="col main">{{ pub_section.title }}</h3>
     </div>
     <ul class="cv-list">{{ publication_items }}</ul>
-    {% endcapture %}
-    {% if section_bucket == "combined" %}
-    {% assign combined_publication_sections = combined_publication_sections | append: publication_section %}
-    {% else %}
-    {% assign default_publication_sections = default_publication_sections | append: publication_section %}
-    {% endif %}
     {% endif %}
     {% endfor %}
-
-    {% assign combined_publication_sections_stripped = combined_publication_sections | strip %}
-    {% if combined_publication_sections_stripped != "" %}
-    <div class="cv-combined-pubs">
-      {{ combined_publication_sections }}
-    </div>
-    {% endif %}
-
-    {{ default_publication_sections }}
   </section>
   {% endif %}
 
