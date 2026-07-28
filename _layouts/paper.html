@@ -13,10 +13,11 @@ nav: research
   <div class="paper-authors fs-5">{% include author_list.html ids=pub.authors with_links=true %}</div>
 
 
-  {% if pub.abstract %}
   <section class="section-card row">
     <div class="col-sm-10">
+      {% if pub.abstract %}
       {{ pub.abstract | markdownify }}
+      {% endif %}
     </div>
     <div class="col-sm-2">
       {% assign venue = site.data.venues | where: "id", pub.venue | first %}
@@ -55,7 +56,6 @@ nav: research
       {% endif %}
     </div>
   </section>
-  {% endif %}
   {% else %}
   <h1>Publication not found</h1>
   <p>The requested publication page does not map to a known publication ID.</p>
