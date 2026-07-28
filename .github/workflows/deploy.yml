@@ -1,0 +1,44 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # reads .ruby-version; bundle install + gem cache
+
+      - name: Generate collection stubs
+        run: ruby scripts/generate-pages.rb
+
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Verify CNAME survived the build
+        run: test -f _site/CNAME && grep -qx 'from.so' _site/CNAME
+
+      - name: Deploy to gh-pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          force_orphan: true
