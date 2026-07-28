@@ -431,6 +431,33 @@ title: Steve Oney - Curriculum Vitae
   </section>
   {% endif %}
 
+  {% if cv.teaching %}
+  <section class="cv-section section teaching">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Teaching</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.teaching %}
+      <li class="row item">
+        <div class="col main">
+          <div class="course-name">{{ item.title }}</div>
+          {% if item.description %}
+          <div class="description">{{ item.description | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.institution }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% if cv.supervised_students %}
   <section class="cv-section section supervisees">
     <div class="row">
