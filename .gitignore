@@ -3,6 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.bundle/
 
 # Generated collection stubs (rebuilt by scripts/generate-pages.rb)
 _papers/

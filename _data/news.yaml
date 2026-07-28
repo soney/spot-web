@@ -1,3 +1,84 @@
+- date: "2026-07-15"
+  description: >-
+    [Dr. Maryam Arab](https://sites.google.com/view/maryamarab/home) will join SUNY Albany as a Visiting Assistant
+    Professor in September. Congratulations, Professor Arab!
+  relevant_people:
+    - maryam_arab
+- date: "2026-07-01"
+  description: >-
+    [Ashley](https://gezhang.me)'s paper on visualizing student-AI interaction in code was accepted to UIST 2026!
+  relevant_people:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+    - maryam_arab
+    - yan_chen
+  relevant_publications:
+    - editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
+- date: "2026-04-13"
+  description: >-
+    Several group members will be in Barcelona for CHI 2026! [Ashley](https://gezhang.me) will present her paper on
+    navigating coding histories at scale and [Xiangyu](https://kevinxiangyuzhou.github.io) will present his poster on
+    simulating cursor trajectories for GUI evaluation.
+  relevant_people:
+    - ashley_zhang
+    - yan_ru_jhou
+    - yinuo_yang
+    - shamita_rao
+    - maryam_arab
+    - yan_chen
+    - xiangyu_zhou
+  relevant_publications:
+    - codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
+    - simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
+- date: "2025-10-07"
+  description: >-
+    The group will present three papers at VL/HCC 2025 in Raleigh, on learning programming strategies in context,
+    visualizing conversations in multi-agent systems, and monitoring programming exercises in real time!
+  relevant_people:
+    - maryam_arab
+    - hanning_li
+    - rushal_butala
+    - ashley_zhang
+    - yinuo_yang
+    - april_wang
+  relevant_publications:
+    - co_advisor_learning_programming_strategies_in_context_2025
+    - convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025
+    - spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025
+- date: "2025-10-01"
+  description: Steve Oney started as president of [the VL/HCC steering committee](https://conferences.computer.org/VLHCC/SC-members.html)!
+  relevant_people:
+    - steve_oney
+- date: "2025-10-01"
+  description: Steve Oney is the general chair for [UIST 2026](https://uist.acm.org/2026/), which will be in Detroit!
+  relevant_people:
+    - steve_oney
+- date: "2025-09-28"
+  description: >-
+    [Jiacheng](https://susan-zjc.github.io/) will be presenting her paper on cross-tab web automation at UIST 2025 in
+    Busan!
+  relevant_people:
+    - jiacheng_zhang
+    - jiawen_li
+    - maryam_arab
+  relevant_publications:
+    - multi_click_cross_tab_web_automation_via_action_generalization_2025
+- date: "2025-04-26"
+  description: >-
+    Several group members will be in Yokohama for CHI 2025, with workshop papers on student-AI interaction in
+    programming education and on using AI in web automation systems. Say "hi" if you're there!
+  relevant_people:
+    - ashley_zhang
+    - yinuo_yang
+    - jiacheng_zhang
+    - carl_fan
+    - maryam_arab
+    - yan_chen
+  relevant_publications:
+    - understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025
+    - understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025
 - date: "2024-04-01"
   description: >-
     [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
