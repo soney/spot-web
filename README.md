@@ -60,6 +60,7 @@ _layouts/
   paper.html                  # /papers/<id>/ pages; looks up the pub by page.pub_id
   person.html                 # /people/<id>/ pages; looks up the person by page.person_id
 _includes/                    # shared partials; each documents its parameters in a header
+_plugins/                     # local Ruby plugins (CV publication numbering filter)
 _papers/, _people_pages/      # GENERATED front-matter-only stubs — do not edit (gitignored)
 scripts/generate-pages.rb     # regenerates those stubs from the data files
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs

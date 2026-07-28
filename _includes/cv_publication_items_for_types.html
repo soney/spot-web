@@ -1,9 +1,9 @@
 {% comment %}
   Renders CV publication entries (cv_publication_item.html) for one CV
-  section, numbering each publication with its type prefix from
-  _data/publication_types.yaml (J.12, C.31, ...). Numbers count down from
-  the per-type total, so with the venue-year-descending render order the
-  newest publication of a type carries the highest number.
+  section, in venue-year-descending order. Each entry's numbering code
+  (J.12, C.31, ...) comes from the cv_publication_codes filter defined
+  in _plugins/cv_publication_codes.rb, using the prefixes in
+  _data/publication_types.yaml.
 
   Parameters:
     all_publications  publication records to draw from.
@@ -11,55 +11,13 @@
                       render order.
     allowed_types     array of venue type strings for this section (from
                       _data/cv_publication_sections.yaml).
-
-  Liquid has no hashes, so remaining_counts is an array parallel to
-  site.data.publication_types standing in for a type -> count map.
 {% endcomment %}
-{% assign all_publications = include.all_publications %}
-{% assign venues = include.venues %}
-{% assign allowed_types = include.allowed_types %}
-
-{% comment %} Pass 1: total publications per type. {% endcomment %}
-{% assign remaining_counts = "" | split: "" %}
-{% for pub_type in site.data.publication_types %}
-{% assign type_total = 0 %}
-{% assign type_venues = venues | where: "type", pub_type.type %}
-{% for type_venue in type_venues %}
-{% assign type_venue_pubs = all_publications | where: "venue", type_venue.id %}
-{% assign type_total = type_total | plus: type_venue_pubs.size %}
-{% endfor %}
-{% assign remaining_counts = remaining_counts | push: type_total %}
-{% endfor %}
-
-{% comment %}
-  Pass 2: render newest venue first; each entry takes its type's current
-  count as the number, then decrements it (rebuilding the array, since
-  Liquid arrays are immutable).
-{% endcomment %}
-{% for venue in venues %}
-{% unless allowed_types contains venue.type %}{% continue %}{% endunless %}
-{% assign type_index = -1 %}
-{% for pub_type in site.data.publication_types %}
-{% if pub_type.type == venue.type %}
-{% assign type_index = forloop.index0 %}
-{% assign type_prefix = pub_type.prefix %}
-{% break %}
-{% endif %}
-{% endfor %}
-{% if type_index == -1 %}{% continue %}{% endif %}
-{% assign venue_pubs = all_publications | where: "venue", venue.id %}
+{% assign pub_codes = include.all_publications | cv_publication_codes: include.venues, site.data.publication_types %}
+{% for venue in include.venues %}
+{% unless include.allowed_types contains venue.type %}{% continue %}{% endunless %}
+{% assign venue_pubs = include.all_publications | where: "venue", venue.id %}
 {% for pub in venue_pubs %}
-{% assign pub_code = type_prefix | append: "." | append: remaining_counts[type_index] %}
+{% assign pub_code = pub_codes[pub.id] %}
 {% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code %}
-{% assign updated_counts = "" | split: "" %}
-{% for count in remaining_counts %}
-{% if forloop.index0 == type_index %}
-{% assign decremented = count | minus: 1 %}
-{% assign updated_counts = updated_counts | push: decremented %}
-{% else %}
-{% assign updated_counts = updated_counts | push: count %}
-{% endif %}
-{% endfor %}
-{% assign remaining_counts = updated_counts %}
 {% endfor %}
 {% endfor %}
