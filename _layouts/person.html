@@ -48,25 +48,15 @@ nav: team
     </div>
   </section>
 
-  {% assign all_authored = site.data.publications | where_exp: "p", "p.authors contains person.id" %}
-  {% assign authored = "" | split: "" %}
-  {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
-  {% for venue in sorted_venues %}
-  {% if venue.type == "conference" or venue.type == "journal" %}
-  {% assign venue_pubs = all_authored | where: "venue", venue.id %}
-  {% for pub in venue_pubs %}
-  {% assign authored = authored | push: pub %}
-  {% endfor %}
-  {% endif %}
-  {% endfor %}
+  {% capture authored_items %}
+  {% include publication_list_items.html author_id=person.id heading_level="h3" highlight_id=person.id %}
+  {% endcapture %}
 
-  {% if authored.size > 0 %}
+  {% if authored_items contains '<li' %}
   <section class="section-card">
     <h2>Publications</h2>
     <ul class="publication-list">
-      {% for pub in authored %}
-      <li>{% include publication_item.html pub=pub heading_level="h3" highlight_id=person.id %}</li>
-      {% endfor %}
+      {{ authored_items }}
     </ul>
   </section>
   {% endif %}

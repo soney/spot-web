@@ -1,0 +1,17 @@
+# The publication sections of the CV (oney_cv.html), in display order.
+# Each section lists the venue types it contains; numbering prefixes for
+# each type live in publication_types.yaml.
+- title: Heavily-reviewed Journal Manuscripts (J)
+  types: [journal]
+- title: Heavily-reviewed Conference Papers (C)
+  types: [conference]
+- title: Book Chapters (B)
+  types: [bookchapter]
+- title: >-
+    Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E),
+    and Panels (A)
+  types: [poster, workshop, doctoralconsortium, demo, panel]
+- title: Preprints (R)
+  types: [preprint]
+- title: Theses (T)
+  types: [thesis]

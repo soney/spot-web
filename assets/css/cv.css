@@ -7,44 +7,6 @@
     --link-hover-color: #0056b3;
 }
 
-@media print {}
-
-@font-face {
-    font-family: 'oney_cv';
-    src: url('oney_cv_font/oney_cv.eot');
-    src: url('oney_cv_font/oney_cv.eot?#iefix') format('embedded-opentype'),
-        url('oney_cv_font/oney_cv.woff') format('woff'),
-        url('oney_cv_font/oney_cv.ttf') format('truetype'),
-        url('oney_cv_font/oney_cv.svg#oney_cv') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class*='icon-']:before {
-    display: inline-block;
-    font-family: 'oney_cv';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size: 0.8em;
-    position: relative;
-    top: 2px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-best_paper:before {
-    content: '\0041';
-}
-
-.icon-honorable_mention:before {
-    content: '\0042';
-}
-
-.icon-other_award:before {
-    content: '\0042';
-}
-
 body {
     background-color: rgb(243, 240, 235);
     color: rgb(30, 30, 28);
@@ -108,8 +70,6 @@ body {
 
         .contact {
             text-align: right;
-
-            .contact-spacer {}
         }
 
         .side {
@@ -248,8 +208,6 @@ body {
             }
         }
 
-        .service {}
-
         .supervisees {
 
             .student,
@@ -271,20 +229,45 @@ body {
         }
     }
 
-    .highlight-students-note {
-        display: none;
-    }
-
-    &.highlight-students {
-        .highlight-students-note {
-            display: flex;
-        }
-
-        .student {
-            text-decoration: underline;
-            text-decoration-thickness: 0.1px;
-        }
-    }
-
     margin-bottom: 100px;
+}
+
+/* Interactive toggles: checkboxes in oney_cv.html wired up by
+   assets/js/cv.js, which mirrors each one to a body class and a URL
+   parameter. */
+.cv-student-author-toggle {
+    margin: 0.5rem 0 1rem;
+}
+
+.cv-student-author-toggle label {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+}
+
+.highlight-students-note {
+    display: none;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+body.highlight-student-authors .highlight-students-note {
+    display: block;
+}
+
+body.highlight-student-authors .paper-author.student-author {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+body:not(.show-other-mentees) .cv-other-mentees-list,
+body:not(.show-other-mentees) .cv-other-mentees-header {
+    display: none;
+}
+
+body:not(.show-paper-awards) .paper-award-item {
+    display: none;
 }

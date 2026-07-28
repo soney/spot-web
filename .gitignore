@@ -4,6 +4,10 @@ _site
 .jekyll-metadata
 vendor
 
+# Generated collection stubs (rebuilt by scripts/generate-pages.rb)
+_papers/
+_people_pages/
+
 .DS_Store
 node_modules
 .cache

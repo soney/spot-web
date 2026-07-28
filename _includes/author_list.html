@@ -1,3 +1,19 @@
+{% comment %}
+  Comma-and-"and" separated list of author names. Known authors can be
+  rendered as links; ids with no people.yaml record render as plain text.
+
+  Parameters:
+    ids           array of people.yaml ids, in author order.
+    with_links    when true, names link to the person's local page (if
+                  use_local_homepage) or their homepage.
+    student_ids   (optional) ids marked with the student-author class
+                  (the CV underlines these when its toggle is on).
+    highlight_id  (optional) id marked with the highlight class (bolded).
+
+  Note: the `person` assign below leaks into the calling scope (Liquid
+  includes share scope), so callers must not rely on their own `person`
+  variable after including this file.
+{% endcomment %}
 {% assign ids = include.ids | default: empty %}
 {% assign student_ids = include.student_ids | default: empty %}
 <span class="paper-author-list">

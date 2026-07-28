@@ -1,0 +1,23 @@
+# Maps each venue type to its CV numbering prefix (e.g. the third-newest
+# journal paper is J.<n>). Order here defines the counting array used by
+# _includes/cv_publication_items_for_types.html.
+- type: journal
+  prefix: J
+- type: conference
+  prefix: C
+- type: bookchapter
+  prefix: B
+- type: poster
+  prefix: P
+- type: workshop
+  prefix: W
+- type: doctoralconsortium
+  prefix: D
+- type: demo
+  prefix: E
+- type: panel
+  prefix: A
+- type: preprint
+  prefix: R
+- type: thesis
+  prefix: T

@@ -1,3 +1,9 @@
+{% comment %}
+  Team-page row for one person: headshot, name, bio, and links.
+
+  Parameters:
+    person  the person record (from people.yaml).
+{% endcomment %}
 {% assign person = include.person %}
 <section class="row member-row" id="{{ person.id }}">
   <div class="col-sm-2">

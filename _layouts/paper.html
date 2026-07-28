@@ -13,10 +13,11 @@ nav: research
   <div class="paper-authors fs-5">{% include author_list.html ids=pub.authors with_links=true %}</div>
 
 
-  {% if pub.abstract %}
   <section class="section-card row">
     <div class="col-sm-10">
+      {% if pub.abstract %}
       {{ pub.abstract | markdownify }}
+      {% endif %}
     </div>
     <div class="col-sm-2">
       {% assign venue = site.data.venues | where: "id", pub.venue | first %}
@@ -36,11 +37,7 @@ nav: research
 
       {% if pub.award and pub.award != 'none' %}
       <div class="paper-award mb-3 text-secondary fs-5">
-        {% if pub.award == 'best_paper' %}
-        <i class="bi bi-trophy"></i>
-        {% else %}
-        <i class="bi bi-award"></i>
-        {% endif %}
+        {% include award_icon.html award=pub.award %}
         {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
       </div>
       {% endif %}
@@ -55,7 +52,6 @@ nav: research
       {% endif %}
     </div>
   </section>
-  {% endif %}
   {% else %}
   <h1>Publication not found</h1>
   <p>The requested publication page does not map to a known publication ID.</p>

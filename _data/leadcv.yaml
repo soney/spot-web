@@ -86,46 +86,46 @@ professional_experience:
 grants:
   - team: "**Steve Oney (PI)**"
     sponsor: Adobe, Inc.
-    amount: 10000
+    amount: "10,000"
     date: 11/2020
   - title: Designing and Building Collaborative Tools for Mixed-Ability Programming Teams
     team: "**Steve Oney (PI)** (and Mauli Pandey, unofficially)"
     sponsor: Google Inc.
     program: Award for Inclusion Research
-    amount: 60000
+    amount: "60,000"
     date: 10/2020
   - title: Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools
     team: "**Steve Oney (PI)**"
     sponsor: National Science Foundation (NSF)
     program: "IIS: Cyber-Human Systems (CHS)"
-    amount: 499209
+    amount: "499,209"
     date: 09/2020
   - title: Applying Literate Programming Approaches to Support Semantic Annotation
     team: Andrea Thomer (PI) and **Steve Oney (co-PI)**
     sponsor: The U-M Office of Research (UMOR)
-    amount: 10875
+    amount: "10,875"
     date: 07/2019
   - title: Scalable Remote Peer Help for Programming Education
     team: "**Steve Oney (PI)**, Paul Resnick, and Christopher Brooks"
     sponsor: National Science Foundation (NSF)
     program: "Improving Undergraduate STEM Education: Education and Human Resources (IUSE: EHR)"
-    amount: 598926
+    amount: "598,926"
     date: 10/2019
   - title: Designing Scalable Help Tools for Programming Courses
     team: "**Steve Oney (PI)**"
     sponsor: National Science Foundation (NSF)
     program: Cyber-Human Systems (CHS) CRII
-    amount: 174981
+    amount: "174,981"
     date: 01/2018
   - title: Prototyping Tools to Improve Crowd Based Training for IVA Development
     team: "**Steve Oney (PI)** and Walter Lasecki"
     sponsor: Clinc, Inc.
-    amount: 37000
+    amount: "37,000"
     date: 11/2017
   - title: End-User Techniques for Aggregating and Analyzing Exercise and Physical Data
     team: "**Steve Oney (PI)**, Michael Nebeling, and Sun Young Park"
     sponsor: Michigan Exercise Science & Sports Initiative
-    amount: 198327
+    amount: "198,327"
     date: 04/2017
 awards:
   - title: UMSI Excellence in Instruction Award

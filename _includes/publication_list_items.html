@@ -1,0 +1,38 @@
+{% comment %}
+  Renders publication <li> entries grouped by venue, newest venue year
+  first, for use inside a <ul class="publication-list">. Each entry is a
+  publication_item.html row.
+
+  Parameters:
+    types         (optional) comma-separated venue types to include,
+                  e.g. "conference,journal". Defaults to "conference,journal".
+    author_id     (optional) only show publications authored by this
+                  people.yaml id.
+    min_year      (optional) only show venues from this year onward.
+    limit         (optional) stop after this many publications.
+    heading_level (optional) heading tag for each paper title, passed
+                  through to publication_item.html (defaults to h3 there).
+    highlight_id  (optional) people.yaml id whose name is emphasized in
+                  author lists, passed through to publication_item.html.
+{% endcomment %}
+{% assign list_types = include.types | default: "conference,journal" | split: "," %}
+{% assign list_limit = include.limit | default: 999999 %}
+{% assign list_author = include.author_id %}
+{% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+{% assign shown = 0 %}
+{% for venue in sorted_venues %}
+{% unless list_types contains venue.type %}{% continue %}{% endunless %}
+{% if include.min_year %}
+{% unless venue.year and venue.year >= include.min_year %}{% continue %}{% endunless %}
+{% endif %}
+{% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
+{% if list_author %}
+{% assign venue_pubs = venue_pubs | where_exp: "p", "p.authors contains list_author" %}
+{% endif %}
+{% for pub in venue_pubs %}
+{% if shown < list_limit %}
+<li>{% include publication_item.html pub=pub heading_level=include.heading_level highlight_id=include.highlight_id %}</li>
+{% assign shown = shown | plus: 1 %}
+{% endif %}
+{% endfor %}
+{% endfor %}

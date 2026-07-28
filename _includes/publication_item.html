@@ -1,3 +1,14 @@
+{% comment %}
+  One publication row for site-facing lists: linked title, authors, and
+  short description in the main column; venue, award, and PDF link in
+  the side column.
+
+  Parameters:
+    pub           the publication record (from publications.yaml).
+    heading_level (optional) heading tag for the title, default h3.
+    highlight_id  (optional) people.yaml id to emphasize in the author
+                  list.
+{% endcomment %}
 {% assign pub = include.pub %}
 {% assign venue = site.data.venues | where: "id", pub.venue | first %}
 <article class="paper row" id="pub-{{ pub.id }}" data-authors="{{ pub.authors | default: empty | join: ',' }}">
@@ -28,19 +39,9 @@
     </div>
     {% endif %}
 
-    {% if pub.submission_status == 'conditionally_accepted' %}
-    <div class="paper-condaccept d-inline d-md-block">
-      (conditionally accepted)<span class="d-inline d-md-none">&nbsp;</span>
-    </div>
-    {% endif %}
-
     {% if pub.award and pub.award != 'none' %}
     <div class="paper-award d-inline d-md-block">
-      {% if pub.award == 'best_paper' %}
-      <i class="bi bi-trophy"></i>
-      {% else %}
-      <i class="bi bi-award"></i>
-      {% endif %}
+      {% include award_icon.html award=pub.award %}
       {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
       <span class="d-inline d-md-none">&nbsp;</span>
     </div>

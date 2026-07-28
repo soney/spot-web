@@ -4,44 +4,6 @@ title: Steve Oney - Curriculum Vitae
 ---
 
 {% assign cv = site.data.leadcv %}
-<style>
-  .cv-student-author-toggle {
-    margin: 0.5rem 0 1rem;
-  }
-
-  .cv-student-author-toggle label {
-    align-items: center;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 0.95rem;
-    gap: 0.4rem;
-  }
-
-  .highlight-students-note {
-    display: none;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 0.5rem;
-  }
-
-  body.highlight-student-authors .highlight-students-note {
-    display: block;
-  }
-
-  body.highlight-student-authors .paper-author.student-author {
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
-
-  body:not(.show-other-mentees) .cv-other-mentees-list,
-  body:not(.show-other-mentees) .cv-other-mentees-header {
-    display: none;
-  }
-
-  body:not(.show-paper-awards) .paper-award-item {
-    display: none;
-  }
-</style>
 <div class="cv container">
   <div class="row">
     <div class="col side"></div>
@@ -201,56 +163,20 @@ title: Steve Oney - Curriculum Vitae
     </div>
 
 
-    {% capture publication_category_specs_raw %}
-    journal::Heavily-reviewed Journal Manuscripts (J)::journal::default::detailed||
-    conference::Heavily-reviewed Conference Papers (C)::conference::default::detailed||
-    bookchapter::Book Chapters (B)::bookchapter::default::detailed||
-    other_refereed::Refereed Posters (P), Workshops (W), Doctoral Consortiums (D), Demos (E), and Panels
-    (A)::poster,workshop,doctoralconsortium,demo,panel::default::detailed||
-    preprint::Preprints (R)::preprint::default::detailed||
-    thesis::Theses (T)::thesis::default::detailed
-    {% endcapture %}
-    {% assign publication_category_specs = publication_category_specs_raw | strip | split: "||" %}
-
-    {% assign combined_publication_sections = "" %}
-    {% assign default_publication_sections = "" %}
-
-    {% for spec in publication_category_specs %}
-    {% assign parts = spec | strip | split: "::" %}
-    {% assign section_title = parts[1] %}
-    {% assign allowed_types = parts[2] %}
-    {% assign section_bucket = parts[3] %}
-    {% assign item_variant = parts[4] %}
-
+    {% for pub_section in site.data.cv_publication_sections %}
     {% capture publication_items %}
     {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
-    allowed_types=allowed_types item_variant=item_variant %}
+    allowed_types=pub_section.types %}
     {% endcapture %}
     {% assign publication_items_stripped = publication_items | strip %}
     {% if publication_items_stripped != "" %}
-    {% capture publication_section %}
     <div class="row">
       <div class="col side"></div>
-      <h3 class="col main">{{ section_title }}</h3>
+      <h3 class="col main">{{ pub_section.title }}</h3>
     </div>
     <ul class="cv-list">{{ publication_items }}</ul>
-    {% endcapture %}
-    {% if section_bucket == "combined" %}
-    {% assign combined_publication_sections = combined_publication_sections | append: publication_section %}
-    {% else %}
-    {% assign default_publication_sections = default_publication_sections | append: publication_section %}
-    {% endif %}
     {% endif %}
     {% endfor %}
-
-    {% assign combined_publication_sections_stripped = combined_publication_sections | strip %}
-    {% if combined_publication_sections_stripped != "" %}
-    <div class="cv-combined-pubs">
-      {{ combined_publication_sections }}
-    </div>
-    {% endif %}
-
-    {{ default_publication_sections }}
   </section>
   {% endif %}
 
@@ -266,15 +192,7 @@ title: Steve Oney - Curriculum Vitae
         <div class="col side">
           {% if item.date %}<div class="award-date">{{ item.date }}</div>{% endif %}
           {% if item.amount %}
-          {% assign amount_str = item.amount | append: "" %}
-          {% assign amount_chars = amount_str | split: "" | reverse %}
-          {% assign with_commas = "" %}
-          {% for char in amount_chars %}
-          {% assign mod = forloop.index0 | modulo: 3 %}
-          {% if mod == 0 and forloop.index0 > 0 %}{% assign with_commas = with_commas | append: "," %}{% endif %}
-          {% assign with_commas = with_commas | append: char %}
-          {% endfor %}
-          <div class="award-amount">${{ with_commas | split: "" | reverse | join: "" }}</div>
+          <div class="award-amount">${{ item.amount }}</div>
           {% endif %}
         </div>
         <div class="col main">
@@ -305,6 +223,13 @@ title: Steve Oney - Curriculum Vitae
       </div>
     </div>
     <ul class="cv-list list-unstyled">
+      {% comment %}
+        Merges two differently-shaped streams (cv.awards and paper awards)
+        into one year-descending list. Liquid can't sort mixed collections
+        by a computed key, so each entry is encoded as
+        "YYYY-{A|P}{index}::::<rendered html>", joined with ";;;;", then
+        string-sorted and split back apart.
+      {% endcomment %}
       {% assign award_strings_raw = "" %}
 
       {% for item in cv.awards %}
@@ -467,6 +392,33 @@ title: Steve Oney - Curriculum Vitae
   </section>
   {% endif %}
 
+  {% if cv.teaching %}
+  <section class="cv-section section teaching">
+    <div class="row">
+      <div class="col side"></div>
+      <h2 class="col main">Teaching</h2>
+    </div>
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.teaching %}
+      <li class="row item">
+        <div class="col main">
+          <div class="course-name">{{ item.title }}</div>
+          {% if item.description %}
+          <div class="description">{{ item.description | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.institution }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% if cv.supervised_students %}
   <section class="cv-section section supervisees">
     <div class="row">
@@ -615,39 +567,4 @@ title: Steve Oney - Curriculum Vitae
 
 </div>
 
-<script>
-  (function () {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    function setupToggle(checkboxId, paramName, cssClass) {
-      var checkbox = document.getElementById(checkboxId);
-      if (!checkbox) return;
-
-      // Check URL on load
-      if (urlParams.get(paramName) === 'true') {
-        checkbox.checked = true;
-      }
-
-      // Initialize body class
-      document.body.classList.toggle(cssClass, checkbox.checked);
-
-      // Handle changes
-      checkbox.addEventListener('change', function () {
-        document.body.classList.toggle(cssClass, checkbox.checked);
-
-        // Update URL silently
-        const currentUrl = new URL(window.location);
-        if (checkbox.checked) {
-          currentUrl.searchParams.set(paramName, 'true');
-        } else {
-          currentUrl.searchParams.delete(paramName);
-        }
-        window.history.replaceState({}, '', currentUrl);
-      });
-    }
-
-    setupToggle('highlight-student-authors-toggle', 'students', 'highlight-student-authors');
-    setupToggle('show-other-mentees-toggle', 'mentees', 'show-other-mentees');
-    setupToggle('show-paper-awards-toggle', 'awards', 'show-paper-awards');
-  })();
-</script>
+<script src="{{ '/assets/js/cv.js' | relative_url }}"></script>
