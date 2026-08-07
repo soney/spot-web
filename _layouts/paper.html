@@ -42,12 +42,26 @@ nav: research
       {% if pub.pdf %}
       <div class="paper-pdf">
         <a class="btn btn-primary btn-lg pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}"
-          target="_blank" rel="noopener">
+          download="{{ pub | pdf_download_name }}" target="_blank" rel="noopener">
           <i class="bi bi-file-earmark-pdf"></i> PDF
         </a>
       </div>
       {% endif %}
+
+      {% if pub.doi %}
+      <div class="paper-doi mt-3">
+        <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
+          <i class="bi bi-link-45deg"></i> Publisher page
+        </a>
+      </div>
+      {% endif %}
     </div>
+  </section>
+  <section class="section-card paper-cite">
+    <details>
+      <summary><i class="bi bi-quote"></i> Cite this paper (BibTeX)</summary>
+      <pre class="bibtex"><code>{{ pub | bibtex | escape }}</code></pre>
+    </details>
   </section>
   {% else %}
   <h1>Publication not found</h1>

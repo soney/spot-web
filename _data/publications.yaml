@@ -45,18 +45,20 @@
     - yinuo_yang
     - shamita_rao
   venue: chi_2026
-  pdf: pdfs/codestream_augmenting_timelines_chi26.pdf
+  pdf: pdfs/zhang-codestream-chi2026.pdf
 - id: simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
   title: Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation
+  doi: 10.1145/3772363.3798829
   authors:
     - xiangyu_zhou
     - steve_oney
   student_authors:
     - xiangyu_zhou
   venue: chi_posters_2026
-  pdf: pdfs/simulating_human_cursor_trajectories_path_sensitive.pdf
+  pdf: pdfs/zhou-simulating-human-cursor-chiposters2026.pdf
 - id: co_advisor_learning_programming_strategies_in_context_2025
   title: "Co-Advisor: Learning Programming Strategies in Context"
+  doi: 10.1109/vl-hcc65237.2025.00045
   abstract: >-
     Programming instruction often focuses on syntax and algorithms. However, mastering programming also requires the
     building strategic knowledge of skills such as debugging, problem solving, and program design. These critical skills
@@ -87,9 +89,10 @@
     - hanning_li
     - rushal_butala
   venue: vl_hcc_2025
-  pdf: pdfs/coadvisor_1e625165af.pdf
+  pdf: pdfs/arab-co-advisor-vlhcc2025.pdf
 - id: convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025
   title: "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems"
+  doi: 10.1109/vl-hcc65237.2025.00043
   abstract: >-
     Following the rapid emergence of large language models, Multi-Agent Systems (MASs) became a promising approach for
     accomplishing complex tasks. In MASs, multiple autonomous agents with predetermined roles collaborate by dividing
@@ -118,9 +121,10 @@
   student_authors:
     - ashley_zhang
   venue: vl_hcc_2025
-  pdf: pdfs/convomap_a1af435f23.pdf
+  pdf: pdfs/zhang-convomap-vlhcc2025.pdf
 - id: multi_click_cross_tab_web_automation_via_action_generalization_2025
   title: "Multi-Click: Cross-Tab Web Automation via Action Generalization"
+  doi: 10.1145/3746059.3747780
   abstract: >-
     Repetitive actions are a common and frustrating part of using the web. Prior work has proposed automating repetitive
     actions with natural language descriptions, demonstrations, and pseudocode. However, these approaches introduce
@@ -147,9 +151,10 @@
     - jiacheng_zhang
     - jiawen_li
   venue: uist_2025
-  pdf: pdfs/multiclick_23163a891a.pdf
+  pdf: pdfs/zhang-multi-click-uist2025.pdf
 - id: spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025
   title: "SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises"
+  doi: 10.1109/vl-hcc65237.2025.00018
   abstract: >-
     Monitoring in-class programming exercises can help instructors identify struggling students and common challenges.
     However, understanding students' progress can be prohibitively difficult, particularly for multi-faceted problems
@@ -177,7 +182,7 @@
     - yinuo_yang
     - ashley_zhang
   venue: vl_hcc_2025
-  pdf: pdfs/spark_1eaf069649.pdf
+  pdf: pdfs/yang-spark-vlhcc2025.pdf
 - id: understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025
   title: Understanding And Guiding Student-AI Interaction In Future Programming Education
   authors:
@@ -190,7 +195,7 @@
     - ashley_zhang
     - yinuo_yang
   venue: chi2025_ae_ai_2025
-  pdf: pdfs/CHI_2025_Education_Workshop_ff2c06f9e3.pdf
+  pdf: pdfs/zhang-understanding-guiding-student-ai-chi2025aeai.pdf
 - id: understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025
   title: Understanding Challenges and Needs of Using AI in Web Automation Systems
   abstract: >-
@@ -212,9 +217,10 @@
     - jiacheng_zhang
     - carl_fan
   venue: chi2025_compui_2025
-  pdf: pdfs/Understanding_Challenges_and_Needs_of_Using_AI_in_Web_Automation_Systems_d0301309a2.pdf
+  pdf: pdfs/zhang-understanding-challenges-needs-chi2025compui.pdf
 - id: don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024
   title: "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks"
+  doi: 10.1145/3643796.3648453
   abstract: >-
     Real-time collaborative editing in computational notebooks can improve the efficiency of teamwork for data
     scientists. However, working together through synchronous editing of notebooks introduces new challenges. Data
@@ -231,9 +237,10 @@
   student_authors:
     - zihan_wu
   venue: ide_workshop_2024
-  pdf: pdfs/3643796_3648453_21685d6467.pdf
+  pdf: pdfs/wang-dont-step-on-my-toes-ideworkshop2024.pdf
 - id: cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
   title: "CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale"
+  doi: 10.1145/3657604.3662025
   abstract: >-
     The high demand for computer science education has led to high enrollments, with thousands of students in many
     introductory courses. In such large courses, it can be overwhelmingly difficult for instructors to understand
@@ -265,9 +272,10 @@
     - ashley_zhang
     - xiaohang_tang
   venue: l_s_2024
-  pdf: pdfs/C_Flow_L_S24_f41252a77c.pdf
+  pdf: pdfs/zhang-cflow-ls2024.pdf
 - id: demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
   title: "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale"
+  doi: 10.1145/3657604.3664717
   authors:
     - ashley_zhang
     - xiaohang_tang
@@ -277,15 +285,16 @@
     - ashley_zhang
     - xiaohang_tang
   venue: l_s_demos_2024
-  pdf: pdfs/3657604_3664717_3cea35607c.pdf
+  pdf: pdfs/zhang-demonstration-of-cflow-lsdemos2024.pdf
 - id: edbooks_ai_enhanced_interactive_narratives_for_programming_education_2024
   title: "EDBooks: AI-Enhanced Interactive Narratives for Programming Education"
   authors:
     - steve_oney
   venue: preprint_2024
-  pdf: pdfs/ED_Books_69edbee2e2.pdf
+  pdf: pdfs/oney-edbooks-preprint2024.pdf
 - id: improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024
   title: Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction
+  doi: 10.1145/3613905.3643971
   authors:
     - jane_im
     - himanshu_zade
@@ -295,9 +304,10 @@
   student_authors:
     - jane_im
   venue: chi_ea_2024
-  pdf: pdfs/3613905_3643971_178dac72ea.pdf
+  pdf: pdfs/im-improving-advising-relationships-chiea2024.pdf
 - id: scrapeviz_hierarchical_representations_for_web_scraping_macros_2024
   title: "ScrapeViz: Hierarchical Representations for Web Scraping Macros"
+  doi: 10.1109/vl/hcc60511.2024.00040
   abstract: >-
     Programming-by-demonstration (PBD) makes it possible to create web scraping macros without writing code. However, it
     can still be challenging for users to understand the exact scraping behavior that is inferred and to verify that the
@@ -319,9 +329,10 @@
   student_authors:
     - rebecca_krosnick
   venue: vl_hcc_2024
-  pdf: pdfs/Scrape_Viz_VLHCC_2024_f1c7671149.pdf
+  pdf: pdfs/krosnick-scrapeviz-vlhcc2024.pdf
 - id: towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
   title: Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
+  doi: 10.1145/3613904.3642512
   abstract: >-
     Code readability is crucial for program comprehension, maintenance, and collaboration. However, many of the
     standards for writing readable code are derived from sighted developers' readability needs. We conducted a
@@ -343,18 +354,20 @@
   student_authors:
     - mauli_pandey
   venue: chi_2024
-  pdf: pdfs/chi24_617_TAPS_a20eff5b9d.pdf
+  pdf: pdfs/pandey-inclusive-source-code-chi2024.pdf
 - id: vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024
   title: "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring"
+  doi: 10.1145/3657604.3664716
   authors:
     - yinuo_yang
     - steve_oney
   student_authors:
     - yinuo_yang
   venue: l_s_demos_2024
-  pdf: pdfs/3657604_3664716_9053c7f0b9.pdf
+  pdf: pdfs/yang-vizcode-lsdemos2024.pdf
 - id: vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024
   title: "VRCopilot: Authoring 3D Layouts with Generative Models in VR"
+  doi: 10.1145/3654777.3676451
   abstract: " Immersive authoring provides an intuitive medium for users to create 3D scenes via direct manipulation in Virtual Reality (VR). Recent advances in generative AI have enabled the automatic creation of realistic 3D layouts. However, it is unclear how capabilities of generative AI can be utilized in immersive authoring to support fluid interactions, user agency, and creativity. We introduce VRCopilot, a mixed-initiative system that integrates pre-trained generative AI models into immersive authoring, to facilitate human-AI co-creation in VR. VRCopilot presents multimodal interactions to support rapid prototyping and iterations with AI, and intermediate representations such as wireframes to augment user controllability over the created content. Through a series of user studies, we evaluated the potential and challenges in manual, semi-automatic, and fully automatic creation in immersive authoring. We found that creation with generative AI increased efficiency, and semi-automatic creation with wireframes enhanced the creation experience and user agency compared to fully automatic approaches."
   short_description: >-
     A mixed-initiative tool for immersive 3D layout design in VR. It integrates generative AI to assist users in
@@ -372,9 +385,10 @@
     - jin_pan
     - jacob_gettig
   venue: uist_2024
-  pdf: pdfs/VR_Copilot_765259750e.pdf
+  pdf: pdfs/zhang-vrcopilot-uist2024.pdf
 - id: colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023
   title: "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials"
+  doi: 10.1145/3544548.3581525
   abstract: >-
     Multi-stage programming tutorials are key learning resources for programmers, using progressive incremental steps to
     teach them how to build larger software systems. A good multi-stage tutorial describes the code clearly, explains
@@ -402,9 +416,10 @@
     - april_wang
     - ashley_zhang
   venue: chi_2023
-  pdf: pdfs/chi23b_sub3896_cam_i16_5b54870747.pdf
+  pdf: pdfs/wang-colaroid-chi2023.pdf
 - id: how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023
   title: How Pairing by Code Similarity Influences Discussions in Peer Learning
+  doi: 10.1145/3544549.3585837
   abstract: >-
     Peer learning, as a form of collaborative learning, has been widely used in programming courses as a means of
     promoting active learning and enhancing students' programming skills. However, it is challenging for instructors to
@@ -423,7 +438,7 @@
     - shiyu_xu
     - ashley_zhang
   venue: chi_lbw_2023
-  pdf: pdfs/3544549_3585837_7633d80412.pdf
+  pdf: pdfs/xu-how-pairing-code-chilbw2023.pdf
 - id: promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
   title: Promises and Pitfalls of Using LLMs for Scraping Web UIs
   abstract: >-
@@ -437,9 +452,10 @@
   student_authors:
     - rebecca_krosnick
   venue: chi2023_compui_2023
-  pdf: pdfs/LL_Ms_webscraping_CHI_2023_workshop_2c88ec5615.pdf
+  pdf: pdfs/krosnick-promises-pitfalls-llms-chi2023compui.pdf
 - id: runex_augmenting_regular_expression_code_search_with_runtime_values_2023
   title: "RunEx: Augmenting Regular-Expression Code Search with Runtime Values"
+  doi: 10.1109/vl-hcc57772.2023.00024
   abstract: >-
     Programming instructors frequently use in-class exercises to help students reinforce concepts learned in lecture.
     However, identifying class-wide patterns and mistakes in students' code can be challenging, especially for large
@@ -464,7 +480,7 @@
   student_authors:
     - ashley_zhang
   venue: vl_hcc_2023
-  pdf: pdfs/Run_Exp_VLHCC_2023_386558a2d3.pdf
+  pdf: pdfs/zhang-runex-vlhcc2023.pdf
 - id: ui_development_in_mixed_ability_software_engineering_teams_2023
   title: UI Development in Mixed-Ability Software Engineering Teams
   abstract: >-
@@ -492,9 +508,10 @@
     - vaishnav_kameswaran
     - hrishikesh_rao
   venue: edi_2023
-  pdf: pdfs/UI_Development_Experiences_of_Programmers_with_Vis_abe39236b5.pdf
+  pdf: pdfs/pandey-ui-development-mixed-ability-edi2023.pdf
 - id: vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
   title: "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress"
+  doi: 10.1145/3544548.3581516
   abstract: >-
     Programming instructors often conduct in-class exercises to help them identify students that are falling behind and
     surface students' misconceptions. However, as we found in interviews with programming instructors, monitoring
@@ -519,9 +536,10 @@
   student_authors:
     - ashley_zhang
   venue: chi_2023
-  pdf: pdfs/chi23b_sub1516_cam_i16_6c90ec9599.pdf
+  pdf: pdfs/zhang-vizprog-chi2023.pdf
 - id: vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
   title: "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality"
+  doi: 10.1145/3544548.3581136
   abstract: " Immersive authoring tools allow users to intuitively create and manipulate 3D scenes while immersed in Virtual Reality (VR). Collaboratively designing these scenes is a creative process that involves numerous edits, explorations of design alternatives, and frequent communication with collaborators. Version Control Systems (VCSs) help users achieve this by keeping track of the version history and creating a shared hub for communication. However, most VCSs are unsuitable for managing the version history of VR content because their underlying line differencing mechanism is designed for text and lacks the semantic information of 3D content; and the widely adopted commit model is designed for asynchronous collaboration rather than real-time awareness and communication in VR. We introduce VRGit, a new collaborative VCS that visualizes version history as a directed graph composed of 3D miniatures, and enables users to easily navigate versions, create branches, as well as preview and reuse versions directly in VR. Beyond individual uses, VRGit also facilitates synchronous collaboration in VR by providing awareness of users’ activities and version history through portals and shared history visualizations. In a lab study with 14 participants (seven groups), we demonstrate that VRGit enables users to easily manage version history both individually and collaboratively in VR."
   short_description: >-
     A version control system designed especially for Virtual Reality (VR). VRGit allows users to view and navigate the
@@ -536,9 +554,10 @@
     - lei_zhang
     - ashutosh_agrawal
   venue: chi_2023
-  pdf: pdfs/chi23b_sub2651_cam_i16_72c0f8c806.pdf
+  pdf: pdfs/zhang-vrgit-chi2023.pdf
 - id: accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
   title: Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments
+  doi: 10.1109/vl/hcc53370.2022.9833098
   abstract: >-
     The availability of numerous UI components, the promise of accessibility, and cross-platform support have made UI
     frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among software
@@ -566,9 +585,10 @@
     - mauli_pandey
     - sharvari_bondre
   venue: vl_hcc_2022
-  pdf: pdfs/accessibiliy_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_a421d92729.pdf
+  pdf: pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf
 - id: parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022
   title: "ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization"
+  doi: 10.1109/vl/hcc53370.2022.9833005
   abstract: >-
     Prior work in programming-by-demonstration (PBD) has explored ways to enable end-users to create custom automation
     without needing to write code. We propose a new end-user specification model – asking the end-user to explicitly
@@ -587,9 +607,10 @@
   student_authors:
     - rebecca_krosnick
   venue: vl_hcc_2022
-  pdf: pdfs/parammacros_a344f5e751.pdf
+  pdf: pdfs/krosnick-parammacros-vlhcc2022.pdf
 - id: cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
   title: "CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing"
+  doi: 10.1145/3411764.3445573
   abstract: >-
     User Interface (UI) mockups are commonly used as shared context during interface development collaboration. In
     practice, UI designers often use screenshots and sketches to create mockups of desired UI behaviors for
@@ -612,9 +633,10 @@
   student_authors:
     - yan_chen
   venue: chi_2021
-  pdf: pdfs/cocapture_bca6d3e564.pdf
+  pdf: pdfs/chen-cocapture-chi2021.pdf
 - id: puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
   title: "PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises"
+  doi: 10.1145/3479559
   abstract: >-
     Peer assessment, as a form of collaborative learning, can engage students in active learning and improve students'
     learning gains. However, current teaching platforms and programming environments provide little support to integrate
@@ -644,9 +666,10 @@
     - april_wang
     - john_chung
   venue: cscw_2021
-  pdf: pdfs/puzzleme_3a6f09cd6c.pdf
+  pdf: pdfs/wang-puzzleme-cscw2021.pdf
 - id: think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021
   title: "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture"
+  doi: 10.1145/3411764.3445066
   abstract: >-
     When users complete computing tasks, knowledge they leverage and their intent is most often lost because it is
     tedious or challenging to capture. This makes it harder to understand why a colleague designed a component a certain
@@ -674,9 +697,10 @@
   student_authors:
     - rebecca_krosnick
   venue: chi_2021
-  pdf: pdfs/think_aloud_computing_20b20cdef3.pdf
+  pdf: pdfs/krosnick-think-aloud-computing-chi2021.pdf
 - id: understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
   title: Understanding Accessibility and Collaboration in Programming for People with Visual Impairments
+  doi: 10.1145/3449203
   abstract: >-
     There has been a growing interest in CSCW and HCI to understand the experiences of programmers in the workplace.
     However, the large majority of these studies have focused on sighted programmers and as a result, the experiences of
@@ -704,9 +728,10 @@
     - vaishnav_kameswaran
     - hrishikesh_rao
   venue: cscw_2021
-  pdf: pdfs/understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_a7c39a3385.pdf
+  pdf: pdfs/pandey-understanding-accessibility-collaboration-cscw2021.pdf
 - id: understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021
   title: Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts
+  doi: 10.1109/vl/hcc51201.2021.9576476
   abstract: "\tFor web scraping and personal task automation purposes, programmers write scripts to interact with websites. This is related to writing end-to-end UI test automation suites for computer software, but on third-party websites that the programmer does not own, introducing new challenges. A programmer might know what semantic operations they want their script to perform, but translating this to code can be difficult. The programmer must investigate the website's internal structure, content, and how UI elements behave, and then write code to click, type, and otherwise interact with UI elements. Many tools and frameworks for creating web automation scripts exist but the challenges programmers face in using them remains understudied. We conducted two studies to study how programmers write web automation scripts. The first study focuses on understanding general challenges. The second focuses on the ways website UI context and script feedback can be helpful. We also provide a set of design findings that detail the kinds of context and feedback developers need while writing web scripts."
   short_description: >-
     Two studies to better understand the challenges of writing web automation code (particularly the kinds of context
@@ -717,9 +742,10 @@
   student_authors:
     - rebecca_krosnick
   venue: vl_hcc_2021
-  pdf: pdfs/understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_cac3276d6b.pdf
+  pdf: pdfs/krosnick-understanding-challenges-needs-vlhcc2021.pdf
 - id: what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021
   title: What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle
+  doi: 10.1145/3411763.3451617
   abstract: >-
     Many data scientists use computational notebooks to test and present their work, as a notebook can weave code and
     documentation together (computational narrative), and support rapid iteration on code experiments. However, it is
@@ -744,7 +770,7 @@
     - soya_park
     - xuye_liu
   venue: chi_ea_2021
-  pdf: pdfs/3411763_3451617_8d2c7c37df.pdf
+  pdf: pdfs/wang-what-makes-well-documented-chiea2021.pdf
 - id: a_hybrid_crowd_machine_workflow_for_program_synthesis_2020
   title: A Hybrid Crowd-Machine Workflow for Program Synthesis
   abstract: >-
@@ -769,9 +795,10 @@
     - yan_chen
     - jaylin_herskovitz
   venue: vl_hcc_2020
-  pdf: pdfs/bashon_vlhcc_2020_463356b312.pdf
+  pdf: pdfs/chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf
 - id: callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
   title: "Callisto: Capturing the \"Why\" by Connecting Conversations with Computational Narratives"
+  doi: 10.1145/3313831.3376740
   abstract: >-
     When teams of data scientists collaborate on computational notebooks, their discussions often contain valuable
     insight into their design decisions. These discussions not only explain analysis in the current notebooks but also
@@ -798,9 +825,10 @@
     - april_wang
     - zihan_wu
   venue: chi_2020
-  pdf: pdfs/callisto_7a6c405ff4.pdf
+  pdf: pdfs/wang-callisto-chi2020.pdf
 - id: edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020
   title: "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education"
+  doi: 10.1109/vl/hcc50065.2020.9127260
   abstract: >-
     Programming support mechanisms, such as online discussion forums and in-person office hours, are important in CS
     education. However, it is challenging to provide personalized feedback at scale using these methods; online forums
@@ -835,9 +863,10 @@
     - gabriel_matute
     - jaylin_herskovitz
   venue: vl_hcc_2020
-  pdf: pdfs/edcode_5c533ed1f4.pdf
+  pdf: pdfs/chen-edcode-vlhcc2020.pdf
 - id: explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
   title: "Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People"
+  doi: 10.1145/3313831.3376349
   abstract: >-
     People often use text in their drawings to communicate their ideas. For visually impaired people, adding textual
     information to tactile graphics is challenging. Labeling in braille is a laborious process and clutters the
@@ -860,9 +889,10 @@
     - mauli_pandey
     - hari_subramonyam
   venue: chi_2020
-  pdf: pdfs/explore_create_annotate_10541aca0e.pdf
+  pdf: pdfs/pandey-explore-create-annotate-chi2020.pdf
 - id: flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
   title: "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality"
+  doi: 10.1145/3379337.3415824
   abstract: >-
     Immersive authoring is a paradigm where users create Virtual Reality (VR) content directly while situated in the
     immersive virtual environment. Immersive authoring tools can enable an intuitive developer workflow by enabling
@@ -888,9 +918,10 @@
   student_authors:
     - lei_zhang
   venue: uist_2020
-  pdf: pdfs/flowmatic_100a6c33fe.pdf
+  pdf: pdfs/zhang-flowmatic-uist2020.pdf
 - id: improving_crowd_supported_gui_testing_with_structural_guidance_2020
   title: Improving Crowd-Supported GUI Testing with Structural Guidance
+  doi: 10.1145/3313831.3376835
   abstract: >-
     Crowd testing is an emerging practice in Graphical User Interface (GUI) testing where developers recruit a large
     number of crowd testers to test GUI features. It is often easier and faster than a dedicated quality assurance team,
@@ -919,7 +950,7 @@
     - yan_chen
     - mauli_pandey
   venue: chi_2020
-  pdf: pdfs/improving_crowd_supported_gui_testing_with_structural_guidance_d5cc985ee0.pdf
+  pdf: pdfs/chen-improving-crowd-supported-gui-chi2020.pdf
 - id: on_demand_collaboration_in_programming_2020
   title: On-Demand Collaboration in Programming
   abstract: >
@@ -949,9 +980,10 @@
   student_authors:
     - yan_chen
   venue: msnfws_2020
-  pdf: pdfs/on_demand_collaboration_in_programming_0176df33a6.pdf
+  pdf: pdfs/chen-on-demand-collaboration-programming-msnfws2020.pdf
 - id: sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020
   title: "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale"
+  doi: 10.1145/3391614.3393657
   abstract: >-
     User-generated content platforms curate their vast repositories into thematic compilations that facilitate the
     discovery of high-quality material. Platforms that seek tight editorial control employ people to do this curation,
@@ -974,7 +1006,7 @@
   student_authors:
     - yan_chen
   venue: imx_2020
-  pdf: pdfs/Sifter_7525abeccc.pdf
+  pdf: pdfs/chen-sifter-imx2020.pdf
 - id: toward_providing_live_feedback_in_web_automation_ides_2020
   title: Toward Providing Live Feedback in Web Automation IDEs
   abstract: >-
@@ -997,7 +1029,7 @@
   student_authors:
     - rebecca_krosnick
   venue: live_2020
-  pdf: pdfs/toward_providing_live_feedback_in_web_automation_ides_f166109343.pdf
+  pdf: pdfs/krosnick-providing-live-feedback-live2020.pdf
 - id: exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019
   title: Exploring the Tracking Needs and Practices of  Recreational Athletes.
   authors:
@@ -1008,9 +1040,10 @@
   student_authors:
     - mauli_pandey
   venue: pervasivehealth_2019
-  pdf: pdfs/exploring_the_tracking_needs_and_practices_of_recreational_athletes_97a9865625.pdf
+  pdf: pdfs/pandey-exploring-tracking-needs-pervasivehealth2019.pdf
 - id: how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
   title: How Data Scientists Use Computational Notebooks for Real-Time Collaboration
+  doi: 10.1145/3359141
   abstract: >-
     Effective collaboration in data science can leverage domain expertise from each team member and thus improve the
     quality and efficiency of the work. Computational notebooks give data scientists a convenient interactive solution
@@ -1042,9 +1075,10 @@
     - anant_mittal
     - april_wang
   venue: cscw_2019
-  pdf: pdfs/how_data_scientists_use_computational_notebooks_799e931951.pdf
+  pdf: pdfs/wang-how-data-scientists-cscw2019.pdf
 - id: implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
   title: Implementing Multi-Touch Gestures with Touch Groups and Cross Events
+  doi: 10.1145/3290605.3300585
   abstract: >-
     Multi-touch gestures can be very difficult to program correctly because they require that developers build
     high-level abstractions from low-level touch events. In this paper, we introduce  programming  primitives  that 
@@ -1069,7 +1103,7 @@
   student_authors:
     - rebecca_krosnick
   venue: chi_2019
-  pdf: pdfs/implementing_multitouch_gestures_with_touch_groups_and_cross_events_9d006274fc.pdf
+  pdf: pdfs/oney-implementing-multi-touch-gestures-chi2019.pdf
 - id: redesigning_notebooks_for_data_science_education_2019
   title: Redesigning Notebooks for Data Science Education
   authors:
@@ -1079,9 +1113,10 @@
   student_authors:
     - april_wang
   venue: husdat_2019
-  pdf: pdfs/redesigning_notebooks_for_data_science_education_4920099323.pdf
+  pdf: pdfs/wang-redesigning-notebooks-data-husdat2019.pdf
 - id: studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
   title: Studying the Benefits and Challenges of Immersive Dataflow Programming
+  doi: 10.1109/vlhcc.2019.8818856
   abstract: >-
     Creating Virtual Reality (VR) applications normally requires  advanced  knowledge of imperative  programming, 3D
     modeling, reactive programming,  and geometry. Immersive  authoring tools  propose to reduce the learning curve of
@@ -1103,9 +1138,10 @@
   student_authors:
     - lei_zhang
   venue: vl_hcc_2019
-  pdf: pdfs/studying_the_benefits_and_challenges_of_immersive_dataflow_programming_4af00ecb86.pdf
+  pdf: pdfs/zhang-studying-benefits-challenges-vlhcc2019.pdf
 - id: adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018
   title: "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features"
+  doi: 10.1145/3242587.3242593
   abstract: >-
     Advanced Driver Assistance Systems (ADAS) come equipped on most modern vehicles and are intended to assist the
     driver and enhance the driving experience through features such as lane keeping system and adaptive cruise control.
@@ -1131,9 +1167,10 @@
   student_authors:
     - shih_chieh_lin
   venue: uist_2018
-  pdf: pdfs/adasa_4e85e06eb1.pdf
+  pdf: pdfs/lin-adasa-uist2018.pdf
 - id: arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
   title: "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture"
+  doi: 10.1145/3242587.3242649
   abstract: >-
     Many web pages developed today require navigation by visual interaction—seeing, hovering, pointing, clicking, and
     dragging with the mouse over dynamic page content. These forms of interaction are increasingly popular as developer
@@ -1164,9 +1201,10 @@
     - alan_lundgard
     - rebecca_krosnick
   venue: uist_2018
-  pdf: pdfs/arboretum_0d6ad1cca7.pdf
+  pdf: pdfs/oney-arboretum-and-arbility-uist2018.pdf
 - id: attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018
   title: "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques"
+  doi: 10.1145/3191697.3214338
   authors:
     - louis_spinelli
     - mauli_pandey
@@ -1175,9 +1213,10 @@
     - louis_spinelli
     - mauli_pandey
   venue: px_18_2018
-  pdf: pdfs/attention_035981c667.pdf
+  pdf: pdfs/spinelli-attention-patterns-for-code-animations-px182018.pdf
 - id: creating_guided_code_explanations_with_chat_codes_2018
   title: Creating Guided Code Explanations with chat.codes
+  doi: 10.1145/3274400
   abstract: >-
     Effective communication is crucial for programmers of all skill levels. However, communicating about code can be
     difficult, particularly in asynchronous settings where one user writes an explanation for another user to read and
@@ -1202,9 +1241,10 @@
     - christopher_brooks
     - paul_resnick
   venue: cscw_2018
-  pdf: pdfs/chatcodes_f5910ae135.pdf
+  pdf: pdfs/oney-creating-guided-code-cscw2018.pdf
 - id: expresso_building_responsive_interfaces_with_keyframes_2018
   title: "Expresso: Building Responsive Interfaces with Keyframes"
+  doi: 10.1109/vlhcc.2018.8506516
   abstract: >-
     Web developers use responsive web design to create user  interfaces that can adapt to many form factors. To  define
     responsive  pages,  developers  must  use  Cascading  Style  Sheets (CSS) or libraries and tools built  on  top of
@@ -1229,9 +1269,10 @@
   student_authors:
     - rebecca_krosnick
   venue: vl_hcc_2018
-  pdf: pdfs/expresso_e0af1ea51a.pdf
+  pdf: pdfs/krosnick-expresso-vlhcc2018.pdf
 - id: codeon_on_demand_software_development_assistance_2017
   title: "Codeon: On-Demand Software Development Assistance"
+  doi: 10.1145/3025453.3025972
   abstract: >-
     Software developers  rely on support from a variety  of resources—including other developers—but the coordination
     cost  of finding  another developer  with  relevant experience, explaining the context of the problem, composing a
@@ -1263,9 +1304,10 @@
     - tao_xie
     - yan_chen
   venue: chi_2017
-  pdf: pdfs/codeon_b1597a046f.pdf
+  pdf: pdfs/chen-codeon-chi2017.pdf
 - id: codemend_assisting_interactive_programming_with_bimodal_embedding_2016
   title: "CodeMend: Assisting Interactive Programming with Bimodal Embedding"
+  doi: 10.1145/2984511.2984544
   abstract: >-
     Software APIs often contain too many methods and parameters for developers to memorize or navigate effectively.
     In-stead, developers resort to finding answers through online search engines and systems such as Stack Overflow.
@@ -1289,7 +1331,7 @@
     - xin_rong
     - shiyan_yan
   venue: uist_2016
-  pdf: pdfs/codemend_9b04987287.pdf
+  pdf: pdfs/rong-codemend-uist2016.pdf
 - id: expert_crowd_support_systems_for_software_developers_2016
   title: Expert Crowd Support Systems for Software Developers
   authors:
@@ -1299,9 +1341,10 @@
   student_authors:
     - yan_chen
   venue: ci_2016
-  pdf: pdfs/expert_crowd_support_systems_e1f1ea7a69.pdf
+  pdf: pdfs/chen-expert-crowd-support-ci2016.pdf
 - id: making_end_user_development_more_natural_2016
   title: Making End User Development More Natural
+  doi: 10.1007/978-3-319-60291-2_1
   authors:
     - brad_myers
     - amy_ko
@@ -1315,9 +1358,10 @@
     - mary_beth_kery
     - toby_li
   venue: eud_2016
-  pdf: pdfs/making_end_user_development_more_natural_c6bbf14ce7.pdf
+  pdf: pdfs/myers-making-end-user-eud2016.pdf
 - id: towards_providing_on_demand_expert_support_for_software_developers_2016
   title: Towards Providing On-Demand Expert Support for Software Developers
+  doi: 10.1145/2858036.2858512
   abstract: >-
     Software development is an expert task that requires complex reasoning and  the  ability  to  recall language or
     API-specific details. In practice, developers often seek support from IDE tools, Web resources, or other developers
@@ -1337,7 +1381,7 @@
   student_authors:
     - yan_chen
   venue: chi_2016
-  pdf: pdfs/towards_ondemand_support_e5db25bc47.pdf
+  pdf: pdfs/chen-providing-on-demand-expert-chi2016.pdf
 - id: expressing_interactivity_with_states_and_constraints_2015
   title: Expressing Interactivity with States and Constraints
   authors:
@@ -1345,9 +1389,10 @@
   student_authors:
     - steve_oney
   venue: cmu_2015
-  pdf: pdfs/expressing_interactivity_with_states_and_constraints_phd_thesis_83ef61475b.pdf
+  pdf: pdfs/oney-expressing-interactivity-states-cmu2015.pdf
 - id: interstate_a_language_and_environment_for_expressing_interface_behavior_2014
   title: "InterState: A Language and Environment for Expressing Interface Behavior"
+  doi: 10.1145/2642918.2647358
   abstract: >-
     InterState is a new programming language and environment that addresses the challenges of writing and reusing  user
     interface code. InterState represents interactive  behaviors clearly and concisely using a combination of novel
@@ -1369,7 +1414,7 @@
   student_authors:
     - steve_oney
   venue: uist_2014
-  pdf: pdfs/interstate_e6f26a7666.pdf
+  pdf: pdfs/oney-interstate-uist2014.pdf
 - id: creativity_support_in_authoring_and_backtracking_2013
   title: Creativity Support in Authoring and Backtracking
   authors:
@@ -1381,9 +1426,10 @@
     - steve_oney
     - youngseok_yoon
   venue: chi_2013_workshop_on_evaluation_methods_for_creativity_support_environments_2013
-  pdf: pdfs/creativity_support_be4e99e888.pdf
+  pdf: pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf
 - id: euclase_a_live_development_environment_with_constraints_and_fsms_2013
   title: "Euclase: A Live Development Environment with Constraints and FSMs"
+  doi: 10.1109/live.2013.6617342
   authors:
     - steve_oney
     - brad_myers
@@ -1391,9 +1437,10 @@
   student_authors:
     - steve_oney
   venue: live_2013
-  pdf: pdfs/euclase_live_319fe4012d.pdf
+  pdf: pdfs/oney-euclase-live2013.pdf
 - id: zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013
   title: "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices"
+  doi: 10.1145/2470654.2481387
   abstract: >-
     The proliferation of touchscreen devices has made soft keyboards a routine part of life. However, ultra-small
     computing platforms like the Sony  SmartWatch and Apple  iPod Nano lack a means of text entry. This limits their
@@ -1416,9 +1463,10 @@
     - chris_harrison
     - steve_oney
   venue: chi_2013
-  pdf: pdfs/zoomboard_3f3a88ede1.pdf
+  pdf: pdfs/oney-zoomboard-chi2013.pdf
 - id: codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012
   title: "Codelets: Linking Interactive Documentation and Example Code in the Editor"
+  doi: 10.1145/2207676.2208664
   abstract: >-
     Programmers frequently use instructive code examples found on the Web to overcome  cognitive  barriers  while
     programming. These examples couple the concrete functionality of code  with  rich  contextual information  about how
@@ -1441,9 +1489,10 @@
   student_authors:
     - steve_oney
   venue: chi_2012
-  pdf: pdfs/codelets_c55f5f7e93.pdf
+  pdf: pdfs/oney-codelets-chi2012.pdf
 - id: constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
   title: "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States"
+  doi: 10.1145/2380116.2380146
   abstract: >-
     Interactive behaviors in GUIs are often described in terms of states, transitions, and constraints, where the
     constraints only hold in certain states. These constraints maintain relationships among objects, control the
@@ -1461,9 +1510,10 @@
   student_authors:
     - steve_oney
   venue: uist_2012
-  pdf: pdfs/constraintjs_34900d6474.pdf
+  pdf: pdfs/oney-constraintjs-uist2012.pdf
 - id: inferring_method_specifications_from_natural_language_api_descriptions_2012
   title: Inferring Method Specifications from Natural Language API Descriptions
+  doi: 10.1109/icse.2012.6227137
   abstract: >-
     Application  Programming  Interface  (API)  docu-ments  are  a  typical  way  of  describing  legal  usage  of 
     reusablesoftware  libraries,  thus  facilitating  software  reuse.  However,even  with  such  documents, 
@@ -1487,15 +1537,16 @@
     - rahul_pandita
     - steve_oney
   venue: icse_2012
-  pdf: pdfs/inferring_method_spects_from_nl_descriptions_75b9f8712f.pdf
+  pdf: pdfs/pandita-inferring-method-specifications-icse2012.pdf
 - id: development_tools_for_interactive_behaviors_2011
   title: Development Tools for Interactive Behaviors
+  doi: 10.1007/978-3-642-21530-8_49
   authors:
     - steve_oney
   student_authors:
     - steve_oney
   venue: is_eud_dc_2011
-  pdf: pdfs/dev_tools_for_interactive_behaviors_f28c61f988.pdf
+  pdf: pdfs/oney-development-tools-interactive-iseuddc2011.pdf
 - id: playbook_revision_control_comparison_for_interactive_mockups_2011
   title: "Playbook: Revision Control & Comparison for Interactive Mockups"
   abstract: >-
@@ -1516,17 +1567,19 @@
   student_authors:
     - steve_oney
   venue: is_eud_2011
-  pdf: pdfs/playbook_6f3c2f2d9a.pdf
+  pdf: pdfs/oney-playbook-iseud2011.pdf
 - id: democratizing_computational_tools_for_interaction_designers_2010
   title: Democratizing Computational Tools for Interaction Designers
+  doi: 10.1109/vlhcc.2010.43
   authors:
     - steve_oney
   student_authors:
     - steve_oney
   venue: vl_hcc_gc_2010
-  pdf: pdfs/democratizing_comp_tools_57d1a61a09.pdf
+  pdf: pdfs/oney-democratizing-computational-tools-vlhccgc2010.pdf
 - id: how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010
   title: How to Support Designers in Getting Hold of the Immaterial Material of Software
+  doi: 10.1145/1753326.1753707
   abstract: >-
     When designing novel GUI controls, interaction  designers are challenged by the “immaterial” materiality of the
     digital domain; they lack tools that effectively support a reflecting conversation  with the material of software as
@@ -1549,17 +1602,19 @@
     - miso_kim
     - steve_oney
   venue: chi_2010
-  pdf: pdfs/how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_df21d021e9.pdf
+  pdf: pdfs/ozenc-how-support-designers-chi2010.pdf
 - id: empowering_designers_with_creativity_support_tools_2009
   title: Empowering Designers with Creativity Support Tools
+  doi: 10.1109/vlhcc.2009.5295244
   authors:
     - steve_oney
   student_authors:
     - steve_oney
   venue: vl_hcc_gc_2009
-  pdf: pdfs/empowering_designers_with_creativity_support_tools_69fdf27ee8.pdf
+  pdf: pdfs/oney-empowering-designers-creativity-vlhccgc2009.pdf
 - id: firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
   title: "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages"
+  doi: 10.1109/vlhcc.2009.5295287
   abstract: >-
     For developers debugging their own code, augmenting the code of others, or trying  to learn the implementation
     details of interactive behaviors, understanding how web pages work is a fundamental problem. FireCrystal is a new
@@ -1578,7 +1633,7 @@
   student_authors:
     - steve_oney
   venue: vl_hcc_2009
-  pdf: pdfs/firecrystal_6a8d5e5aea.pdf
+  pdf: pdfs/oney-firecrystal-vlhcc2009.pdf
 - id: visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009
   title: "Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors"
   authors:
@@ -1588,7 +1643,7 @@
   student_authors:
     - steve_oney
   venue: workshop_on_computational_creativity_chi_2009
-  pdf: pdfs/visions_for_euclase_6b2f433e11.pdf
+  pdf: pdfs/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf
 - id: natural_language_search_of_structured_documents_2008
   title: Natural Language Search of Structured Documents
   authors:
@@ -1596,4 +1651,4 @@
   student_authors:
     - steve_oney
   venue: mit_2008
-  pdf: pdfs/natural_language_search_of_structured_documents_93e16e0f23.pdf
+  pdf: pdfs/oney-natural-language-search-mit2008.pdf
