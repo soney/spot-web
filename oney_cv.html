@@ -126,7 +126,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% comment %} Only this CV's subject's papers -- never the whole group's. {% endcomment %}
   {% assign all_publications = site.data.publications | where_exp: "p", "p.authors contains cv.person" %}
-  {% assign venues_by_year_desc = site.data.venues | sort: "year" | reverse %}
+  {% assign venues_by_year_desc = site.data.venues | venues_by_date_desc %}
   {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
   {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
   {% if all_publications and all_publications.size > 0 %}

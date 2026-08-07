@@ -35,7 +35,7 @@ nav: research
   {% endfor %}
 
   <h2 id="all-publications">All Publications</h2>
-  {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+  {% assign sorted_venues = site.data.venues | venues_by_date_desc %}
   {% for venue in sorted_venues %}
   {% if site.publication_list_types contains venue.type %}
   {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
