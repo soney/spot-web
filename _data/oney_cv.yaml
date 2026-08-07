@@ -1,3 +1,17 @@
+# Steve Oney's academic CV -- the material that is NOT publications.
+# Rendered by oney_cv.html; publications come from the shared
+# publications.yaml / venues.yaml / people.yaml.
+#
+# `person` is the people.yaml id this CV belongs to. It is what the
+# publications query filters on, so the CV can only ever claim papers this
+# person actually co-authored.
+#
+# THIS IS ONE PERSON'S CV, DELIBERATELY. It is not a template and nothing
+# loops over it. If someone else in the group ever wants a CV on this site,
+# copy this file and oney_cv.html and change the `person` -- do not try to
+# generalize these two files into a collection. Group members' CVs belong on
+# their own domains, which outlive their time here.
+person: steve_oney
 name: Steve Oney
 affiliation:
   department: School of Information

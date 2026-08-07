@@ -3,7 +3,7 @@ layout: cv
 title: Steve Oney - Curriculum Vitae
 ---
 
-{% assign cv = site.data.leadcv %}
+{% assign cv = site.data.oney_cv %}
 <div class="cv container">
   <div class="row">
     <div class="col side"></div>
@@ -36,7 +36,8 @@ title: Steve Oney - Curriculum Vitae
               &nbsp;
             </div>
             <div class="d-none d-print-block">
-              <em>Latest CV: <a href="https://from.so/oney_cv" target="_blank" rel="noopener">from.so/oney_cv</a></em>
+              <em>Latest CV: <a href="https://from.so/oney_cv" target="_blank" rel="noopener">from.so/oney_cv</a>
+                <br />Edition: {{ site.time | date: "%B %Y" }}</em>
             </div>
           </div>
           {% if cv.contact.homepage %}<div class="contact-homepage"><a href="{{ cv.contact.homepage }}" target="_blank"
@@ -123,7 +124,8 @@ title: Steve Oney - Curriculum Vitae
   </section>
   {% endif %}
 
-  {% assign all_publications = site.data.publications %}
+  {% comment %} Only this CV's subject's papers -- never the whole group's. {% endcomment %}
+  {% assign all_publications = site.data.publications | where_exp: "p", "p.authors contains cv.person" %}
   {% assign venues_by_year_desc = site.data.venues | sort: "year" | reverse %}
   {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
   {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
@@ -155,7 +157,7 @@ title: Steve Oney - Curriculum Vitae
     {% for pub_section in site.data.cv_publication_sections %}
     {% capture publication_items %}
     {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
-    allowed_types=pub_section.types pub_codes=pub_codes %}
+    allowed_types=pub_section.types pub_codes=pub_codes highlight_id=cv.person %}
     {% endcapture %}
     {% assign publication_items_stripped = publication_items | strip %}
     {% if publication_items_stripped != "" %}

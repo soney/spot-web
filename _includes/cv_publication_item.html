@@ -7,6 +7,7 @@
     venue     the publication's venue record (from venues.yaml).
     pub_code  the CV numbering code, e.g. "C.31" (assigned by
               cv_publication_items_for_types.html).
+    highlight_id  people.yaml id whose name is emphasized in the author list.
 {% endcomment %}
 {% assign pub = include.pub %}
 {% assign venue = include.venue %}
@@ -14,7 +15,7 @@
 
 <li class="paper row item">
   <div class="col main">
-    {% include cv_publication_citation.html pub=pub venue=venue %}
+    {% include cv_publication_citation.html pub=pub venue=venue highlight_id=include.highlight_id %}
     {% if pub.award_description %}
     <div class="award-description">*{{ pub.award_description }}</div>
     {% endif %}

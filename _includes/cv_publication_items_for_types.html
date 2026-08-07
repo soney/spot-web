@@ -11,6 +11,8 @@
                       render order.
     allowed_types     array of venue type strings for this section (from
                       _data/cv_publication_sections.yaml).
+    highlight_id      people.yaml id whose name is emphasized in the author
+                      list -- the CV's subject.
     pub_codes         publication id -> numbering code map, built once by
                       the caller with the cv_publication_codes filter. The
                       map is global across sections, so it must be built
@@ -22,6 +24,6 @@
 {% assign venue_pubs = include.all_publications | where: "venue", venue.id %}
 {% for pub in venue_pubs %}
 {% assign pub_code = pub_codes[pub.id] %}
-{% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code %}
+{% include cv_publication_item.html pub=pub venue=venue pub_code=pub_code highlight_id=include.highlight_id %}
 {% endfor %}
 {% endfor %}
