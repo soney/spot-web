@@ -309,4 +309,20 @@ body {
         white-space: normal;
         width: auto;
     }
+
+    .paper-cite {
+        summary {
+            cursor: pointer;
+            color: var(--secondary-text-color);
+        }
+
+        pre.bibtex {
+            background: #F7F7F7;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-top: 0.75rem;
+            overflow-x: auto;
+            padding: 0.75rem;
+        }
+    }
 }

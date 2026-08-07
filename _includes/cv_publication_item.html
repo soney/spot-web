@@ -29,7 +29,8 @@
     <span class="paper-id">{{ pub_code }}</span>
     {% if pub.pdf %}
     <div class="pdf-download">
-      <a href="{{ '/assets/' | append: pub.pdf | relative_url }}" class="pdf-download" target="_blank"
+      <a href="{{ '/assets/' | append: pub.pdf | relative_url }}" class="pdf-download"
+        download="{{ pub | pdf_download_name }}" target="_blank"
         rel="noopener">(PDF)</a>
     </div>
     {% endif %}

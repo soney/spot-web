@@ -46,7 +46,8 @@
 
     {% if pub.pdf %}
     <div class="paper-pdf d-inline d-md-block">
-      <a class="pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}" target="_blank" rel="noopener"><i
+      <a class="pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}"
+        download="{{ pub | pdf_download_name }}" target="_blank" rel="noopener"><i
           class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
     </div>
     {% endif %}
