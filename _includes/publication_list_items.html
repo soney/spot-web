@@ -23,7 +23,7 @@
 {% endif %}
 {% assign list_limit = include.limit | default: 999999 %}
 {% assign list_author = include.author_id %}
-{% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
+{% assign sorted_venues = site.data.venues | venues_by_date_desc %}
 {% assign shown = 0 %}
 {% for venue in sorted_venues %}
 {% unless list_types contains venue.type %}{% continue %}{% endunless %}
