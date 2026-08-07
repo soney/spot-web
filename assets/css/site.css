@@ -489,23 +489,23 @@ body {
         }
 
         footer img[src*="nsf_logo"] {
-            /* The one mark a knockout cannot carry. NSF's seal is 209 shapes
-               across four fills (#005699, #99add2, #d3b34e, #fff) plus a radial
-               gradient, and its design lives in the tonal differences between
-               them -- brightness(0) collapses all of that to a single white and
-               the seal renders as a featureless blob. The others survive
-               because they are wordmarks or monochrome, where the boundaries
-               are shape edges rather than colour changes.
+            /* NSF is the one mark brightness(0) invert(1) cannot carry. Its
+               seal is 209 shapes over four fills plus a radial gradient, and
+               its form lives in the tonal differences between them -- flatten
+               them all to one white and it renders as a featureless blob.
 
-               So give this one back the white surface it was drawn for. The
-               mark then sits at exactly its light-mode contrast, and the plate
-               is 17.80:1 against the page. content-box keeps the mark at its
-               full 100px inside the plate rather than shrinking it to 84. */
-            filter: none;
-            background-color: #FFF;
-            border-radius: 6px;
-            box-sizing: content-box;
-            padding: 8px;
+               So invert the tones instead of erasing them. grayscale collapses
+               the seal to luminance, invert turns the light paper dark and the
+               dark ink light, and brightness(2) lifts the result to match the
+               pure-white knockouts beside it. Black stays black under a
+               multiply, so the paper drops out to the page rather than becoming
+               a grey panel. The globe lands at white (17.80:1 on the page), the
+               gear at ~#999 (about 6:1), and the NSF letters knock out dark --
+               which is what a reverse version of this seal looks like.
+
+               Checked by rendering: at brightness(1.35) the mark reads visibly
+               greyer than the CSE wordmark next to it; at 2 they match. */
+            filter: grayscale(1) invert(1) brightness(2);
         }
     }
 }
