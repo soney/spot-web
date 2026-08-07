@@ -7,8 +7,6 @@ nav: research
 
 <div class="container">
   {% if pub %}
-  <p><a href="{{ '/research/' | relative_url }}#pub-{{ pub.id }}">&larr; Back to research</a></p>
-
   <h1 class="h2">{{ pub.title }}</h1>
   <div class="paper-authors fs-5">{% include author_list.html ids=pub.authors with_links=true %}</div>
 

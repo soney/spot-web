@@ -10,7 +10,20 @@
     --announcement-background-color: #F5F5F5;
     --announcement-foreground-color: #424242;
     --announcement-bullhorn-color: #FFCB05;
+
+    --code-background-color: #F7F7F7;
+
     --bs-breadcrumb-divider: " · ";
+}
+
+html {
+    /* Slightly larger than the 16px Bootstrap default. A percentage, not a px
+       value: a reader who has raised their browser's default font size keeps
+       that increase scaled, whereas `font-size: 17px` would override it.
+       Everything on the site is sized in rem or em, so proportions hold --
+       including .paper-title, which is in rem and would otherwise have stayed
+       behind if this were set on body. */
+    font-size: 106.25%;
 }
 
 body {
@@ -108,6 +121,14 @@ body {
 
         .navbar-brand {
             color: var(--text-color);
+        }
+
+        .nav-back {
+            /* Sits on the navbar row, pushed right by .ms-auto, so a "back"
+               affordance reads as chrome rather than as page content. Same
+               muted colour as the tabs. */
+            color: var(--secondary-text-color);
+            white-space: nowrap;
         }
 
         .nav-item {
@@ -316,12 +337,151 @@ body {
         }
 
         pre.bibtex {
-            background: #F7F7F7;
+            background: var(--code-background-color);
             border-radius: 3px;
             font-size: 0.8em;
             margin-top: 0.5rem;
             overflow-x: auto;
             padding: 0.75rem;
+        }
+    }
+}
+
+/* Dark mode, following the OS preference. There is no toggle and no
+   JavaScript: everything below is a re-pointing of the custom properties
+   above, so the theme is decided by the time the first pixel is painted and
+   there is nothing to flash. The <meta name="color-scheme"> in
+   _layouts/default.html covers the one gap CSS cannot -- the canvas the
+   browser paints while these stylesheets are still downloading.
+
+   Bootstrap 5.3 ships a dark theme, but it keys off a data-bs-theme attribute
+   and never reads prefers-color-scheme, and CSS cannot set an attribute.
+   Rather than add a script for it, the four --bs-* tokens that the utilities
+   in this site's markup actually read are re-pointed at the site's own tokens
+   below. This works because site.css loads after Bootstrap (default.html line
+   9, then line 15) and :root ties Bootstrap's `:root, [data-bs-theme=light]`
+   on specificity, so source order decides. Keep those two <link> tags in that
+   order; reversing them would silently restore Bootstrap's light values.
+
+   `screen and` is load-bearing. Browsers drop background-color when printing
+   but honour color, so an unscoped query would print light text onto white
+   paper. With `screen`, printed pages are identical to today.
+
+   Every ratio below was computed with the WCAG 2.1 relative-luminance formula
+   and floored to 2dp, so none is overstated. Body text needs 4.5:1; borders,
+   focus rings and other graphical boundaries need 3:1. */
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --text-color: #E6E9EB;
+        /* 14.59:1 on the page, 12.66:1 on the announcement panel, 12.33:1 on code */
+        --background-color: #16181A;
+        /* luminance 0.00898 -- 1.17:1 off pure black, so it reads as a surface */
+
+        --secondary-text-color: #9C9289;
+        /* 5.83:1 on the page, 5.06:1 on the announcement panel, 4.93:1 on code.
+           Kept dim enough to still read as secondary: it is 40% of the body
+           text's ratio here, against 36% in light mode. */
+
+        --link-color: #84B0E6;
+        /* 7.91:1. The light #2F65A7 is only 3.00:1 against this page -- it is a
+           mid-tone blue built for white. This is the same hue (213.1 vs 213.0
+           degrees) lightened, so it still reads as the site's blue. */
+        --link-hover-color: #84B0E6;
+
+        --announcement-background-color: #212528;
+        --announcement-foreground-color: #C2C7CB;
+        /* 9.06:1 on the panel above; the panel is 1.15:1 off the page */
+        /* --announcement-bullhorn-color stays #FFCB05: as a border it is
+           10.14:1 on the panel, where it needs 3:1. It is the U-M maize and
+           the one colour dark mode improves for free. */
+
+        --code-background-color: #23272B;
+        /* 1.18:1 off the page, and body text on it is 12.33:1 */
+        --image-edge-color: #8C949C;
+        /* 5.79:1 against the page (computed here; not in the palette table) */
+
+        /* Bootstrap's colour utilities read these four and ship light-theme
+           values for them. .text-body is on the three homepage section
+           headings and the sponsors note, .text-muted on the team bios,
+           .text-secondary on paper award labels, and --bs-secondary-color also
+           colours the " · " breadcrumb separators. All of them set color with
+           !important, so the variable is the only override point. Left alone
+           they land around 1.15:1 here, i.e. invisible.
+           These are Bootstrap 5.3 names; a major version bump would need them
+           rechecked, and the failure mode is silent. */
+        --bs-body-color: var(--text-color);
+        --bs-body-color-rgb: 230, 233, 235;
+        /* .text-body -- 14.59:1, was 1.15:1 */
+        --bs-secondary-color: var(--secondary-text-color);
+        /* .text-muted and the breadcrumb dividers -- 5.83:1, was 1.11:1 */
+        --bs-secondary-rgb: 156, 146, 137;
+        --bs-code-color: #E685B5;
+        /* 7.10:1. Bootstrap's light #d63384 is 3.95:1 here; this is Bootstrap
+           5.3's own dark-theme code colour. Reaches every `code` span in a
+           markdownified long_bio or group overview. */
+        /* .text-secondary -- 5.83:1. Bootstrap does not redeclare this one even
+           in its own dark theme, which is why the token is the right lever. */
+    }
+
+    body {
+
+        .nav-link:focus-visible {
+            /* Bootstrap removes the focus outline here and substitutes a
+               25%-alpha blue glow, which composites to about 1.3:1 on this
+               page. Maize is 11.69:1. Dark only: the same glow is 1.41:1 in
+               light mode, but repairing that would change light mode. */
+            box-shadow: none;
+            outline: 2px solid var(--announcement-bullhorn-color);
+            outline-offset: 2px;
+        }
+
+        .btn:focus-visible {
+            /* Same problem as .nav-link above: Bootstrap sets outline:0 and
+               leaves a 25%-alpha blue glow, which composites to #244E8C --
+               2.15:1 on the page and 1.41:1 on the focused fill, so the focus
+               state is invisible. Maize at outline-offset 2px sits against the
+               page on both sides: 11.69:1. */
+            box-shadow: none;
+            outline: 2px solid var(--announcement-bullhorn-color);
+            outline-offset: 2px;
+        }
+
+        .member-display.card img.member-headshot {
+            /* brightness below 1 so the photo recedes toward the dark page,
+               mirroring what brightness(110%) does against white. */
+            filter: grayscale(100%) brightness(85%) contrast(90%);
+        }
+
+        .news-links img,
+        img.member-headshot {
+            /* Half the headshots have edge pixels darker than the page and
+               dissolve into it, and one of the ten accent colours in
+               people.yaml (#855238) drops to 2.76:1 as a chip border here. A
+               ring rather than a border: it costs no layout, and it sits
+               outside the inline border the chips carry, so it never has to
+               beat an inline style. The other nine accents all improve on
+               dark, so they are left alone. */
+            box-shadow: 0 0 0 1px var(--image-edge-color);
+        }
+
+        footer img {
+            /* The institutional marks are dark on transparent -- umsi and cse
+               #002E5E, misc #294E91, nsf #005699, and adobe's wordmark carries
+               no fill at all so it renders #000. Against the page they run
+               1.31:1 to 2.4:1: gone. brightness(0) flattens each mark to black
+               while preserving its alpha, then invert(1) makes it white, so
+               every logo becomes a clean white knockout at 17.80:1 against the
+               page -- the standard reverse treatment institutions publish for
+               dark backgrounds.
+
+               This is applied to all six rather than only the four dark ones:
+               a row mixing white knockouts with full-colour marks reads as an
+               accident. The cost is the brand colours -- Michigan maize,
+               Google's four, Adobe's red -- which is a deliberate trade for a
+               single coherent row. */
+            filter: brightness(0) invert(1);
         }
     }
 }

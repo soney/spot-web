@@ -26,6 +26,8 @@ module Jekyll
         layout: "paper",
         nav: "research",
         id_field: "pub_id",
+        back_url: ->(id) { "/research/#pub-#{id}" },
+        back_label: "Back to research",
         include: ->(_record) { true },
         title: ->(record, id) { record["title"] || id }
       },
@@ -35,6 +37,8 @@ module Jekyll
         layout: "person",
         nav: "team",
         id_field: "person_id",
+        back_url: ->(id) { "/team/##{id}" },
+        back_label: "Back to team",
         include: ->(record) { record["use_local_homepage"] == true },
         title: lambda { |record, id|
           name = [record["given_name"], record["family_name"]].compact.join(" ").strip
@@ -81,6 +85,9 @@ module Jekyll
       page.data[source[:id_field]] = id
       page.data["nav"] = source[:nav]
       page.data["permalink"] = "/#{source[:dir]}/#{id}/"
+      # Rendered in the navbar by _layouts/default.html.
+      page.data["back_url"] = source[:back_url].call(id)
+      page.data["back_label"] = source[:back_label]
       page
     end
   end

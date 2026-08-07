@@ -5,10 +5,14 @@
     --award-color: var(--font-color);
     --link-color: var(--font-color);
     --link-hover-color: #0056b3;
+    --paper-color: rgb(243, 240, 235);
+    --rule-strong-color: #AAA;
+    --rule-subtle-color: #DDD;
+    --note-color: #555;
 }
 
 body {
-    background-color: rgb(243, 240, 235);
+    background-color: var(--paper-color);
 
     .cv.container {
         margin-top: 7em;
@@ -37,14 +41,14 @@ body {
         h2 {
             margin-top: 1.5em;
             font-size: 1.5em;
-            border-bottom: 1px solid #AAA;
+            border-bottom: 1px solid var(--rule-strong-color);
         }
 
         h3 {
             font-size: 1.0em;
             margin-top: 1em;
             margin-bottom: 0.1em;
-            border-bottom: 1px solid #DDD;
+            border-bottom: 1px solid var(--rule-subtle-color);
         }
 
         ul.cv-list {
@@ -230,7 +234,7 @@ body {
 .highlight-students-note {
     display: none;
     font-style: italic;
-    color: #555;
+    color: var(--note-color);
     margin-bottom: 0.5rem;
 }
 
@@ -250,6 +254,58 @@ body:not(.show-other-mentees) .cv-other-mentees-header {
 
 body:not(.show-paper-awards) .paper-award-item {
     display: none;
+}
+
+/* Dark mode: warm dark paper, not a second copy of the site's palette. Same
+   mechanism as site.css -- pure CSS keyed off the OS preference, with
+   <meta name="color-scheme" content="light dark"> in _layouts/cv.html so the
+   canvas and the three toggle checkboxes (which are bare UA controls, not
+   Bootstrap ones) are already dark before this file loads.
+
+   The light background rgb(243, 240, 235) is warm: its red channel sits 8
+   above its blue, and that cast is what makes the page read as paper rather
+   than as a screen. #1B1815 keeps the spread at 6 and the text is warm too, so
+   the CV stays a visibly warmer document than the main site's cool #16181A.
+
+   `screen and` matters more here than in site.css. The @media print block
+   below overrides `body { color }` at specificity (0,0,1), but the CV's text
+   colour actually comes from the nested `body .cv.container { color:
+   var(--font-color) }` at (0,2,1), which outranks it -- so without `screen` a
+   dark --font-color would survive into print and the CV would come out
+   #E7E1D8 on white paper, 1.29:1. Invisible. With `screen`, print is untouched
+   and byte-identical to today.
+
+   Ratios are WCAG 2.1, floored to 2dp. The two heading rules are the one place
+   where a contrast floor is the wrong target: #AAA on paper is a deliberately
+   faint 2.04:1 hairline, and carrying #AAA straight onto #1B1815 would give
+   7:1 -- a bright bar shouting across the page. They are decorative rules, not
+   UI boundaries, so the 3:1 bar does not apply; these match the light-mode
+   subtlety instead. */
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --font-color: #E7E1D8;
+        /* 13.60:1. Also drives --award-color and --link-color, which are both
+           already var(--font-color) -- custom-property substitution is lazy, so
+           redefining this one updates all three. */
+        --link-hover-color: #84B0E6;
+        /* 7.85:1 -- the same blue the main site uses in dark mode */
+
+        --paper-color: #1B1815;
+        /* luminance 0.00940 */
+        --rule-strong-color: #514B44;
+        /* 2.05:1 -- the light #AAA is 2.04:1 */
+        --rule-subtle-color: #2A2724;
+        /* 1.19:1 -- the light #DDD is 1.19:1 */
+        --bs-body-color: var(--font-color);
+        /* cv.css sets body's background but never its colour, so Bootstrap's
+           light #212529 leaked through at 1.14:1 on dark paper. Print is
+           unaffected: @media print sets body{color:#000} at equal specificity
+           and wins on source order. */
+        --note-color: #B0A69B;
+        /* 7.38:1 */
+    }
 }
 
 /* Print/PDF export tuning (was assets/css/cv-pdfout.css). */
