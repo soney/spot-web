@@ -7,8 +7,6 @@ nav: team
 
 <div class="container">
   {% if person %}
-  <p><a href="{{ '/team/' | relative_url }}#{{ person.id }}">&larr; Back to team</a></p>
-
   <section class="row member-row" id="{{ person.id }}">
     <div class="col-sm-3">
       {% assign photo = person.headshot %}
