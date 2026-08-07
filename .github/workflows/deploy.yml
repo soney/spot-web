@@ -24,9 +24,6 @@ jobs:
         with:
           bundler-cache: true # reads .ruby-version; bundle install + gem cache
 
-      - name: Generate collection stubs
-        run: ruby scripts/generate-pages.rb
-
       - name: Build site
         run: bundle exec jekyll build
         env:

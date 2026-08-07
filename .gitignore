@@ -5,10 +5,7 @@ _site
 vendor
 .bundle/
 
-# Generated collection stubs (rebuilt by scripts/generate-pages.rb)
-_papers/
-_people_pages/
-
 .DS_Store
 node_modules
+package-lock.json
 .cache
