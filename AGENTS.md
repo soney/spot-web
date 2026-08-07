@@ -77,7 +77,8 @@ nothing.
 ## Invariants that fail silently
 
 Nothing in this repo validates that a referenced id exists, that a referenced
-file exists, or that a `type` is one you meant. These build cleanly and render
+file exists, that a `doi` points at the right paper, or that a `type` is one
+you meant. These build cleanly and render
 wrongly, which makes them the things to get right the first time.
 
 - **Reuse an existing person's `id`; never create a second record for them.**
@@ -117,6 +118,10 @@ wrongly, which makes them the things to get right the first time.
   November conference precedes an April one in the same year, and a venue with no
   `conference_start` sorts after the dated ones. Give every new venue a
   `conference_start` or it will sink to the bottom of its year.
+- **A wrong `doi` is invisible.** It renders as a "Publisher page" link and as
+  `doi`/`url` lines in the BibTeX entry, and nothing checks that it resolves or
+  that it points at this paper. Confirm the title, first author and year on
+  Crossref before adding one; omit the field rather than guess.
 - **A venue `type` outside the ten in `_data/publication_types.yaml`** is
   accepted silently and drops the paper from every publication list, CV
   included. A legal but non-`conference`/`journal` type puts the paper on the CV
