@@ -399,8 +399,12 @@ body {
 
         --code-background-color: #23272B;
         /* 1.18:1 off the page, and body text on it is 12.33:1 */
-        --image-edge-color: #8C949C;
-        /* 5.79:1 against the page (computed here; not in the palette table) */
+        --image-edge-color: #6B7278;
+        /* 3.64:1 against the page (computed here; not in the palette table).
+           Deliberately dim: at 5.79:1 the ring read as a bright outline around
+           every photo. This still clears the 3:1 boundary bar, which is the
+           floor for the job it does -- carrying the edge where a headshot or an
+           accent border would otherwise dissolve into the page. */
 
         /* Bootstrap's colour utilities read these four and ship light-theme
            values for them. .text-body is on the three homepage section
