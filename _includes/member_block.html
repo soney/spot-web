@@ -21,22 +21,6 @@
     {{ person.long_bio | markdownify }}
     {% endif %}
 
-    {% if person.homepage or person.links %}
-    <ul class="breadcrumb">
-      {% if person.use_local_homepage %}
-      <li class="breadcrumb-item"><a href="{{ '/people/' | append: person.id | append: '/' | relative_url }}"><i
-            class="bi bi-house"></i> Homepage</a></li>
-      {% elsif person.homepage %}
-      <li class="breadcrumb-item"><a href="{{ person.homepage }}" target="_blank" rel="noopener"><i
-            class="bi bi-house"></i> Homepage</a></li>
-      {% endif %}
-      {% if person.links %}
-      {% for link in person.links %}
-      <li class="breadcrumb-item"><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.description }}</a>
-      </li>
-      {% endfor %}
-      {% endif %}
-    </ul>
-    {% endif %}
+    {% include person_links.html person=person local_homepage=true %}
   </div>
 </section>

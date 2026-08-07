@@ -27,24 +27,8 @@ nav: team
       {{ person.long_bio | markdownify }}
       {% endif %}
 
-      {% if person.homepage or person.links %}
-      <ul class="breadcrumb">
-        {% if person.homepage %}
-        <li class="breadcrumb-item">
-          <a href="{{ person.homepage }}" target="_blank" rel="noopener">
-            <i class="bi bi-house"></i> Homepage
-          </a>
-        </li>
-        {% endif %}
-        {% if person.links %}
-        {% for link in person.links %}
-        <li class="breadcrumb-item">
-          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.description }}</a>
-        </li>
-        {% endfor %}
-        {% endif %}
-      </ul>
-      {% endif %}
+      {% comment %} local_homepage=false: this IS the local page, so link out instead. {% endcomment %}
+      {% include person_links.html person=person local_homepage=false %}
     </div>
   </section>
 
@@ -52,7 +36,8 @@ nav: team
   {% include publication_list_items.html author_id=person.id heading_level="h3" highlight_id=person.id %}
   {% endcapture %}
 
-  {% if authored_items contains '<li' %}
+  {% assign authored_items_stripped = authored_items | strip %}
+  {% if authored_items_stripped != "" %}
   <section class="section-card">
     <h2>Publications</h2>
     <ul class="publication-list">

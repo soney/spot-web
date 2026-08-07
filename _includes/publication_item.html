@@ -26,14 +26,11 @@
   </div>
   <div class="col-sm-2 text-left">
     {% if venue %}
-    {% capture venue_label %}
-    {% if venue.short_name %}{{ venue.short_name }} {% endif %}{{ venue.year }}
-    {% endcapture %}
     <div class="paper-venue d-inline d-md-block">
       {% if venue.homepage %}
-      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{{ venue_label | strip }}</a>
+      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{% include venue_label.html venue=venue %}</a>
       {% else %}
-      {{ venue_label | strip }}
+      {% include venue_label.html venue=venue %}
       {% endif %}
       <span class="d-inline d-md-none">&nbsp;</span>
     </div>
