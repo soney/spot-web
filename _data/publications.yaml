@@ -44,8 +44,6 @@
     - yan_ru_jhou
     - yinuo_yang
     - shamita_rao
-  clusters:
-    - communicating_about_code
   venue: chi_2026
   pdf: pdfs/codestream_augmenting_timelines_chi26.pdf
 - id: simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
@@ -266,8 +264,6 @@
   student_authors:
     - ashley_zhang
     - xiaohang_tang
-  clusters:
-    - programming_education
   venue: l_s_2024
   pdf: pdfs/C_Flow_L_S24_f41252a77c.pdf
 - id: demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
@@ -346,8 +342,6 @@
     - andrew_begel
   student_authors:
     - mauli_pandey
-  clusters:
-    - accessibility
   venue: chi_2024
   pdf: pdfs/chi24_617_TAPS_a20eff5b9d.pdf
 - id: vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024
@@ -469,8 +463,6 @@
     - steve_oney
   student_authors:
     - ashley_zhang
-  clusters:
-    - programming_education
   venue: vl_hcc_2023
   pdf: pdfs/Run_Exp_VLHCC_2023_386558a2d3.pdf
 - id: ui_development_in_mixed_ability_software_engineering_teams_2023
@@ -526,8 +518,6 @@
     - steve_oney
   student_authors:
     - ashley_zhang
-  clusters:
-    - programming_education
   venue: chi_2023
   pdf: pdfs/chi23b_sub1516_cam_i16_6c90ec9599.pdf
 - id: vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
@@ -545,8 +535,6 @@
   student_authors:
     - lei_zhang
     - ashutosh_agrawal
-  clusters:
-    - immersive_programming
   venue: chi_2023
   pdf: pdfs/chi23b_sub2651_cam_i16_72c0f8c806.pdf
 - id: accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
@@ -577,8 +565,6 @@
   student_authors:
     - mauli_pandey
     - sharvari_bondre
-  clusters:
-    - accessibility
   venue: vl_hcc_2022
   pdf: pdfs/accessibiliy_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_a421d92729.pdf
 - id: parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022
@@ -625,8 +611,6 @@
     - steve_oney
   student_authors:
     - yan_chen
-  clusters:
-    - on_demand_support_for_programmers
   venue: chi_2021
   pdf: pdfs/cocapture_bca6d3e564.pdf
 - id: puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
@@ -659,8 +643,6 @@
   student_authors:
     - april_wang
     - john_chung
-  clusters:
-    - programming_education
   venue: cscw_2021
   pdf: pdfs/puzzleme_3a6f09cd6c.pdf
 - id: think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021
@@ -721,8 +703,6 @@
     - mauli_pandey
     - vaishnav_kameswaran
     - hrishikesh_rao
-  clusters:
-    - accessibility
   venue: cscw_2021
   pdf: pdfs/understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_a7c39a3385.pdf
 - id: understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021
@@ -782,12 +762,12 @@
     trustworthy, and reduces the cost of downstream data collection for training a program synthesis system.
   authors:
     - yan_chen
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
     - walter_lasecki
     - steve_oney
   student_authors:
     - yan_chen
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
   venue: vl_hcc_2020
   pdf: pdfs/bashon_vlhcc_2020_463356b312.pdf
 - id: callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
@@ -817,9 +797,6 @@
   student_authors:
     - april_wang
     - zihan_wu
-  clusters:
-    - collaborative_data_science
-    - communicating_about_code
   venue: chi_2020
   pdf: pdfs/callisto_7a6c405ff4.pdf
 - id: edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020
@@ -846,19 +823,17 @@
   award_description: Best Short Paper
   authors:
     - yan_chen
-    - gabriel_matute_2
+    - gabriel_matute
     - april_wang
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
     - sang_won_lee
     - walter_lasecki
     - steve_oney
   student_authors:
     - yan_chen
     - april_wang
-    - gabriel_matute_2
-    - jaylin_herskovitz_2
-  clusters:
-    - programming_education
+    - gabriel_matute
+    - jaylin_herskovitz
   venue: vl_hcc_2020
   pdf: pdfs/edcode_5c533ed1f4.pdf
 - id: explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
@@ -884,8 +859,6 @@
   student_authors:
     - mauli_pandey
     - hari_subramonyam
-  clusters:
-    - accessibility
   venue: chi_2020
   pdf: pdfs/explore_create_annotate_10541aca0e.pdf
 - id: flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
@@ -914,9 +887,6 @@
     - steve_oney
   student_authors:
     - lei_zhang
-  clusters:
-    - building_testing_interactive_uis
-    - immersive_programming
   venue: uist_2020
   pdf: pdfs/flowmatic_100a6c33fe.pdf
 - id: improving_crowd_supported_gui_testing_with_structural_guidance_2020
@@ -948,8 +918,6 @@
   student_authors:
     - yan_chen
     - mauli_pandey
-  clusters:
-    - building_testing_interactive_uis
   venue: chi_2020
   pdf: pdfs/improving_crowd_supported_gui_testing_with_structural_guidance_d5cc985ee0.pdf
 - id: on_demand_collaboration_in_programming_2020
@@ -1065,7 +1033,6 @@
     reducing communication costs. However, the current synchronous editing features may lead to unbalanced participation
     and activity interference without strategic coordination.
   award: best_paper
-  pub_details: Volume 3, Article No. 39
   authors:
     - april_wang
     - anant_mittal
@@ -1074,9 +1041,6 @@
   student_authors:
     - anant_mittal
     - april_wang
-  clusters:
-    - collaborative_data_science
-    - communicating_about_code
   venue: cscw_2019
   pdf: pdfs/how_data_scientists_use_computational_notebooks_799e931951.pdf
 - id: implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
@@ -1097,7 +1061,6 @@
     Proposes two primitives to improve multi-touch programming: touch groups (which summarize multiple fingers rather
     than tracking them manually) and cross events (which summarize the movement of touch groups).
   award: honorable_mention
-  pub_details: Paper No. 355
   authors:
     - steve_oney
     - rebecca_krosnick
@@ -1105,8 +1068,6 @@
     - brad_myers
   student_authors:
     - rebecca_krosnick
-  clusters:
-    - building_testing_interactive_uis
   venue: chi_2019
   pdf: pdfs/implementing_multitouch_gestures_with_touch_groups_and_cross_events_9d006274fc.pdf
 - id: redesigning_notebooks_for_data_science_education_2019
@@ -1136,14 +1097,11 @@
     build VR applications using dataflow notation while immersed in the VR world.
   award: best_paper
   award_description: Best Short Paper
-  pub_details: pp 223-227
   authors:
     - lei_zhang
     - steve_oney
   student_authors:
     - lei_zhang
-  clusters:
-    - immersive_programming
   venue: vl_hcc_2019
   pdf: pdfs/studying_the_benefits_and_challenges_of_immersive_dataflow_programming_4af00ecb86.pdf
 - id: adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018
@@ -1162,7 +1120,6 @@
     usability of ADAS.
   short_description: A conversational digital assistant to help drivers use and understand Advanced Driver Assistance Systems (ADAS).
   award: honorable_mention
-  pub_details: pp 531-542
   authors:
     - shih_chieh_lin
     - chang_hong_hsu
@@ -1197,7 +1154,6 @@
   short_description: >-
     A system that helps visually impaired web users overcome accessibility barriers through targeted handoffs of tasks
     that require visual-spatial interaction.
-  pub_details: pp 937-949
   authors:
     - steve_oney
     - alan_lundgard
@@ -1207,8 +1163,6 @@
   student_authors:
     - alan_lundgard
     - rebecca_krosnick
-  clusters:
-    - accessibility
   venue: uist_2018
   pdf: pdfs/arboretum_0d6ad1cca7.pdf
 - id: attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018
@@ -1243,13 +1197,10 @@
     message points to a specific region of code), in-line code diffs (to show how code changed throughout a
     conversation), and conversation version tracking (which allows viewers to view the state of code as it evolves
     through out the conversation).
-  pub_details: Volume 2, Article No. 131
   authors:
     - steve_oney
     - christopher_brooks
     - paul_resnick
-  clusters:
-    - communicating_about_code
   venue: cscw_2018
   pdf: pdfs/chatcodes_f5910ae135.pdf
 - id: expresso_building_responsive_interfaces_with_keyframes_2018
@@ -1270,7 +1221,6 @@
   short_description: >-
     A programming-by-demonstration approach for creating responsive UIs, where users create keyframes at a few
     representative viewport sizes and specify smooth or jump (i.e., linear interpolation) transitions between them.
-  pub_details: pp 39-47
   authors:
     - rebecca_krosnick
     - sang_won_lee
@@ -1278,8 +1228,6 @@
     - steve_oney
   student_authors:
     - rebecca_krosnick
-  clusters:
-    - building_testing_interactive_uis
   venue: vl_hcc_2018
   pdf: pdfs/expresso_e0af1ea51a.pdf
 - id: codeon_on_demand_software_development_assistance_2017
@@ -1302,21 +1250,18 @@
   short_description: >-
     CodeOn enables effective task hand-offs between developers and remote helpers by allowing asynchronous responses to
     on-demand requests.
-  pub_details: pp 6220-6231
   authors:
     - yan_chen
     - sang_won_lee
-    - yin_xie_2
-    - yiwei_yang_2
+    - yin_xie
+    - yiwei_yang
     - walter_lasecki
     - steve_oney
   student_authors:
-    - yiwei_yang_2
+    - yiwei_yang
     - sang_won_lee
     - tao_xie
     - yan_chen
-  clusters:
-    - on_demand_support_for_programmers
   venue: chi_2017
   pdf: pdfs/codeon_b1597a046f.pdf
 - id: codemend_assisting_interactive_programming_with_bimodal_embedding_2016
@@ -1334,7 +1279,6 @@
     functions, the lines in the end-user’s program that should be changed, as well as proposing the actual change. We
     demonstrate the utility and accuracy of CodeMend through lab and simulation studies.
   short_description: A system that helps programmers find appropriate API functions and parameter values from natural language.
-  pub_details: pp 247-258
   authors:
     - xin_rong
     - shiyan_yan
@@ -1386,15 +1330,12 @@
   short_description: >-
     Two studies that present the opportunities and the design recommendations of on-demand remote support systems for
     developers.
-  pub_details: pp 3192-3203
   authors:
     - yan_chen
     - steve_oney
     - walter_lasecki
   student_authors:
     - yan_chen
-  clusters:
-    - on_demand_support_for_programmers
   venue: chi_2016
   pdf: pdfs/towards_ondemand_support_e5db25bc47.pdf
 - id: expressing_interactivity_with_states_and_constraints_2015
@@ -1421,15 +1362,12 @@
     implemented in a conventional textual event-callback style. We  evaluated  InterState’s scalability with a series 
     of  benchmarks and example applications and found  that it can scale to implement  complex behaviors involving
     thousands of objects and constraints.
-  pub_details: pp 263-272
   authors:
     - steve_oney
     - brad_myers
     - joel_brandt
   student_authors:
     - steve_oney
-  clusters:
-    - building_testing_interactive_uis
   venue: uist_2014
   pdf: pdfs/interstate_e6f26a7666.pdf
 - id: creativity_support_in_authoring_and_backtracking_2013
@@ -1467,7 +1405,6 @@
     9.3 words per minute, with accuracy comparable to a full-sized physical keyboard. This compares favorably to
     existing mobile text input methods.
   award: honorable_mention
-  pub_details: pp 2799-3002
   authors:
     - steve_oney
     - chris_harrison
@@ -1498,7 +1435,6 @@
   short_description: >-
     A system that helps programmers use examples from the web better by embedding interactive explanations and
     cutomizers in the programmer's code editor.
-  pub_details: pp 2697-2706
   authors:
     - steve_oney
     - joel_brandt
@@ -1518,15 +1454,12 @@
     disable constraints based on the interface’s current mode, making it possible to write constraints that sometimes
     hold. We illustrate that constraints combined with FSMs can be a clearer way of defining many interactive behaviors
     with a series of examples.
-  pub_details: pp 229-238
   authors:
     - steve_oney
     - brad_myers
     - joel_brandt
   student_authors:
     - steve_oney
-  clusters:
-    - building_testing_interactive_uis
   venue: uist_2012
   pdf: pdfs/constraintjs_34900d6474.pdf
 - id: inferring_method_specifications_from_natural_language_api_descriptions_2012
@@ -1543,7 +1476,6 @@
     results  show  that  ourapproach  achieves  an  average  of  92%  precision  and  93%recall in identifying sentences
     that describe code contracts frommore than 2500 sentences of API documents. Furthermore, ourresults show that our
     approach has an average 83% accuracyin inferring specifications from over 1600 sentences describingcode  contracts.
-  pub_details: pp 815-825
   authors:
     - rahul_pandita
     - xusheng_xiao
@@ -1575,7 +1507,6 @@
     prototyping tool, we created Playbook, a new system oriented  towards helping interface designers keep track of,
     compare, and create interactive mockups. In this paper, we describe Playbook and discuss ways that future
     prototyping tools can better support the workflow of designers.
-  pub_details: pp 2697-2706
   authors:
     - steve_oney
     - john_barton
@@ -1607,7 +1538,6 @@
     developers because  their ideas had not been fully  explored. In  reflecting on this struggle, we began to see an 
     opportunity for the output of a design tool  to  be a boundary object that would allow for an ongoing conversation
     between the design and the material of software, in which the developer acts as a mediator for software.
-  pub_details: pp 2513-2522
   authors:
     - kursat_ozenc
     - miso_kim
@@ -1642,14 +1572,11 @@
     FireCrystal is (was) a Firefox extension for inspecting dynamic behaviors in web pages. When a developer wants to
     understand how some dynamic behavior in a page is implemented, FireCrystal helps them by identifying the code that
     runs in between DOM changes.
-  pub_details: pp 105-108
   authors:
     - steve_oney
     - brad_myers
   student_authors:
     - steve_oney
-  clusters:
-    - building_testing_interactive_uis
   venue: vl_hcc_2009
   pdf: pdfs/firecrystal_6a8d5e5aea.pdf
 - id: visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009

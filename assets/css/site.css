@@ -3,7 +3,6 @@
     --background-color: #FFF;
 
     --secondary-text-color: #655A52;
-    --border-color: #EEE;
 
     --link-color: #2F65A7;
     --link-hover-color: #2F65A7;
@@ -50,13 +49,6 @@ body {
         border-radius: 3px;
         position: relative;
         border: 1px solid var(--announcement-bullhorn-color);
-        /* border-bottom-width: 2px; */
-
-        .bullhorn {
-            float: right;
-            opacity: 0.4;
-            font-size: 1.2em;
-        }
 
         >p {
             margin-bottom: 0rem;
@@ -110,7 +102,7 @@ body {
     }
 
     nav.navbar {
-        background: none !important;
+        background: none;
         margin-top: 20px;
         margin-bottom: 0px;
 
@@ -234,12 +226,6 @@ body {
 
             padding-bottom: 12px;
             margin-bottom: 12px;
-        }
-
-        &:last-child {
-            .paper {
-                border-bottom: none;
-            }
         }
     }
 

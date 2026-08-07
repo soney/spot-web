@@ -22,15 +22,12 @@ nav: research
     <div class="col-sm-2">
       {% assign venue = site.data.venues | where: "id", pub.venue | first %}
       {% if venue %}
-      {% capture venue_label %}
-      {% if venue.short_name %}{{ venue.short_name }} {% endif %}{{ venue.year }}
-      {% endcapture %}
       <div class="paper-venue mb-3">
         {% if venue.homepage %}
-        <a href="{{ venue.homepage }}" target="_blank" rel="noopener" class="fs-4">{{ venue_label | strip
-          }}</a>
+        <a href="{{ venue.homepage }}" target="_blank" rel="noopener" class="fs-4">{% include venue_label.html
+          venue=venue %}</a>
         {% else %}
-        <span class="fs-4">{{ venue_label | strip }}</span>
+        <span class="fs-4">{% include venue_label.html venue=venue %}</span>
         {% endif %}
       </div>
       {% endif %}

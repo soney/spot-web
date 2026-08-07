@@ -1,17 +1,17 @@
 - date: "2026-08-07"
   description: >-
-    [Steve Oney](https://from.so/) just launched [a new Coursera specilization: Practical JavaScript: From Scratch to React](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
+    [Steve Oney](/team#steve_oney) just launched [a new Coursera specialization: Practical JavaScript: From Scratch to React](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
   relevant_people:
     - steve_oney
 - date: "2026-07-15"
   description: >-
-    [Dr. Maryam Arab](https://sites.google.com/view/maryamarab/home) will join [SUNY Albany](https://www.albany.edu/computer-science) as a Visiting Assistant
+    [Dr. Maryam Arab](/team#maryam_arab) will join [SUNY Albany](https://www.albany.edu/computer-science) as a Visiting Assistant
     Professor in September. Congratulations, Professor Arab!
   relevant_people:
     - maryam_arab
 - date: "2026-07-01"
   description: >-
-    [Ashley](https://gezhang.me)'s paper on visualizing student-AI interaction in code was accepted to UIST 2026!
+    [Ashley](/team#ashley_zhang)'s paper on visualizing student-AI interaction in code was accepted to UIST 2026!
   relevant_people:
     - ashley_zhang
     - yan_ru_jhou
@@ -23,8 +23,8 @@
     - editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
 - date: "2026-04-13"
   description: >-
-    Several group members will be in Barcelona for CHI 2026! [Ashley](https://gezhang.me) will present her paper on
-    navigating coding histories at scale and [Xiangyu](https://kevinxiangyuzhou.github.io) will present his poster on
+    Several group members will be in Barcelona for CHI 2026! [Ashley](/team#ashley_zhang) will present her paper on
+    navigating coding histories at scale and [Xiangyu](/team#xiangyu_zhou) will present his poster on
     simulating cursor trajectories for GUI evaluation.
   relevant_people:
     - ashley_zhang
@@ -62,7 +62,7 @@
     - steve_oney
 - date: "2025-09-28"
   description: >-
-    [Jiacheng](https://susan-zjc.github.io/) will be presenting her paper on cross-tab web automation at UIST 2025 in
+    [Jiacheng](/team#jiacheng_zhang) will be presenting her paper on cross-tab web automation at UIST 2025 in
     Busan!
   relevant_people:
     - jiacheng_zhang
@@ -86,7 +86,7 @@
     - understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025
 - date: "2024-04-01"
   description: >-
-    [Lei Zhang](https://raynez.art/bio/) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
+    [Lei Zhang](/team#lei_zhang) will join [NJIT Informatics](https://informatics.njit.edu/) as an Assistant
     Professor after a one-term postdoc at Princeton. Congratulations, Lei!
   relevant_people:
     - lei_zhang
@@ -110,7 +110,7 @@
     - maryam_arab
 - date: "2024-06-04"
   description: >-
-    [Ashley](https://gezhangrp.com/) will be presenting her paper on representing code at scale at Learning @ Scale in
+    [Ashley](/team#ashley_zhang) will be presenting her paper on representing code at scale at Learning @ Scale in
     Atlanta!
   relevant_people:
     - ashley_zhang
@@ -118,7 +118,7 @@
     - cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
 - date: "2024-01-08"
   description: >-
-    [Dr. Rebecca Krosnick](https://public.websites.umich.edu/~rkros/) (2023 Ph.D. graduate) joined
+    [Dr. Rebecca Krosnick](/team#rebecca_krosnick) (2023 Ph.D. graduate) joined
     [Postman](https://www.postman.com/) as a software engineer! Congratulations, Dr. Krosnick!
   relevant_people:
     - rebecca_krosnick
@@ -128,13 +128,13 @@
     - rebecca_krosnick
 - date: "2023-11-01"
   description: >-
-    [April Wang](https://aprilwang.me/) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer Science.
+    [April Wang](/team#april_wang) (2023 alum) joined ETH Zürich as an Assistant Professor in Computer Science.
     Congratulations, Professor Wang!
   relevant_people:
     - april_wang
 - date: "2023-11-01"
   description: >-
-    [Mauli Pandey](https://pandeymauli.github.io/research/) (2023 alum) joined Google as a UX Researcher.
+    [Mauli Pandey](/team#mauli_pandey) (2023 alum) joined Google as a UX Researcher.
     Congratulations, Dr. Pandey!
   relevant_people:
     - mauli_pandey
@@ -159,8 +159,8 @@
     - jiacheng_zhang
 - date: "2023-04-01"
   description: >-
-    [April](https://aprilwang.me/), [Ashley](https://gezhangrp.com/), [Lei](https://raynezhang.me),
-    [Mauli](https://pandeymauli.github.io/research/), and [Rebecca](http://www-personal.umich.edu/~rkros/) will be in
+    [April](/team#april_wang), [Ashley](/team#ashley_zhang), [Lei](/team#lei_zhang),
+    [Mauli](/team#mauli_pandey), and [Rebecca](/team#rebecca_krosnick) will be in
     Hamburg for CHI 2023. Say "hi" if you're there!
   relevant_people:
     - april_wang
@@ -176,7 +176,7 @@
     - promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
 - date: "2023-01-01"
   description: >-
-    [Yan Chen](https://chensivan.github.io/) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
+    [Yan Chen](/team#yan_chen) (2020 alum) joined Virginia Tech CS as an Assistant Professor.
     Congratulations, Professor Chen!
   relevant_people:
     - yan_chen

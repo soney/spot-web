@@ -1,0 +1,10 @@
+{% comment %}
+  A venue as it is labelled next to a publication: short name plus year,
+  e.g. "UIST 2024". Two venues have no short_name, so it falls back to the
+  full name rather than rendering a bare year.
+
+  Parameters:
+    venue  the venue record (from venues.yaml).
+{% endcomment %}
+{%- assign label_venue = include.venue -%}
+{{- label_venue.short_name | default: label_venue.full_name }} {{ label_venue.year -}}

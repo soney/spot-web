@@ -10,6 +10,12 @@
 # each type's total, so the newest publication of a type carries the
 # highest number.
 #
+# HAZARD: because numbers count DOWN from each type's total, inserting an
+# *older* publication shifts the code of every newer one of that type. A
+# research statement or cover letter that cites "J.12" will quietly point at a
+# different paper afterward. Codes are stable only as long as you add
+# publications newer than everything already listed.
+#
 # This lives in Ruby because the counting needs a mutable per-type
 # counter, which Liquid cannot express cleanly. Plugins are fine here:
 # the site is always built with `bundle exec jekyll build` (locally or

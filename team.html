@@ -8,8 +8,7 @@ nav: team
   <h1>Team</h1>
 
   <h2>Current Members</h2>
-  {% assign current_order = "lead,member-postdoc,member" | split: "," %}
-  {% for membership in current_order %}
+  {% for membership in site.data.group.member_order %}
   {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
   {% for person in current_members %}
   {% include member_block.html person=person %}
@@ -26,10 +25,9 @@ nav: team
 
   <h2>Other Collaborators (Undergraduate and Master's Students)</h2>
   <ul class="collaborator-list">
-    {% assign all_people = site.data.people | sort: "family_name" %}
-    {% for person in all_people %}
-    {% if person.membership == 'ugrad_ms_student' %}
-    <li>
+    {% assign collaborators = site.data.people | where: "membership", "ugrad_ms_student" | sort: "family_name" %}
+    {% for person in collaborators %}
+    <li id="{{ person.id }}">
       <strong>
         {% if person.homepage %}
         <a class="text-body" href="{{ person.homepage }}" target="_blank" rel="noopener noreferrer">
@@ -43,7 +41,6 @@ nav: team
       <span class="text-muted">{{ person.short_bio }}</span>
       {% endif %}
     </li>
-    {% endif %}
     {% endfor %}
   </ul>
 

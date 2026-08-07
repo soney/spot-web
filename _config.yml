@@ -1,8 +1,16 @@
 title: SPOT Research Group
+brand: spot
 email: soney@umich.edu
 description: Human-centered research on programming tools and practices.
 baseurl: ""
 url: "https://from.so"
+
+# Which venue types appear in the site's publication lists (homepage,
+# /research, person pages). The CV uses its own, longer list from
+# _data/cv_publication_sections.yaml.
+publication_list_types:
+  - conference
+  - journal
 
 markdown: kramdown
 kramdown:
@@ -12,20 +20,11 @@ permalink: pretty
 plugins:
   - jekyll-feed
 
-collections:
-  papers:
-    output: true
-    permalink: /papers/:name/
-  people_pages:
-    output: true
-    permalink: /people/:name/
-
 # Jekyll already excludes Gemfile*, node_modules, vendor, and dotfiles by
 # default; this list only needs what those defaults miss. CNAME must NOT be
 # excluded — it has to be copied into _site for the custom domain to survive
 # a gh-pages deploy.
 exclude:
-  - scripts/
   - package.json
   - package-lock.json
   - README.md

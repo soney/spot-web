@@ -9,16 +9,12 @@
     student_ids   (optional) ids marked with the student-author class
                   (the CV underlines these when its toggle is on).
     highlight_id  (optional) id marked with the highlight class (bolded).
-
-  Note: the `person` assign below leaks into the calling scope (Liquid
-  includes share scope), so callers must not rely on their own `person`
-  variable after including this file.
 {% endcomment %}
-{% assign ids = include.ids | default: empty %}
-{% assign student_ids = include.student_ids | default: empty %}
+{% assign ids = include.ids %}
+{% assign student_ids = include.student_ids %}
 <span class="paper-author-list">
   {% for author_id in ids %}
-  {%- assign person = site.data.people | where: "id", author_id | first -%}
+  {%- assign author_person = site.data.people | where: "id", author_id | first -%}
   {%- assign is_student_author = false -%}
   {%- if student_ids contains author_id -%}
   {%- assign is_student_author = true -%}
@@ -29,23 +25,23 @@
   {%- else -%}, {% endif -%}
   {%- endunless -%}
 
-  {% if person %}
+  {% if author_person %}
   <span
     class="paper-author{% if is_student_author %} student-author{% endif %}{% if author_id == include.highlight_id %} highlight{% endif %}"
-    data-author-id="{{ person.id }}">
-    {%- if include.with_links == true or include.with_links == 'true' -%}
-    {%- if person.use_local_homepage -%}
-    <a class="author-internal-link" href="{{ '/people/' | append: person.id | append: '/' | relative_url }}">{{-
-      person.given_name }} {{
-      person.family_name -}}</a>
-    {%- elsif person.homepage -%}
-    <a class="author-external-link" href="{{ person.homepage }}" target="_blank" rel="noopener">{{- person.given_name
-      }} {{ person.family_name -}}</a>
+    data-author-id="{{ author_person.id }}">
+    {%- if include.with_links -%}
+    {%- if author_person.use_local_homepage -%}
+    <a class="author-internal-link" href="{{ '/people/' | append: author_person.id | append: '/' | relative_url }}">{{-
+      author_person.given_name }} {{
+      author_person.family_name -}}</a>
+    {%- elsif author_person.homepage -%}
+    <a class="author-external-link" href="{{ author_person.homepage }}" target="_blank" rel="noopener">{{-
+      author_person.given_name }} {{ author_person.family_name -}}</a>
     {%- else -%}
-    {{- person.given_name }} {{ person.family_name -}}
+    {{- author_person.given_name }} {{ author_person.family_name -}}
     {%- endif -%}
     {%- else -%}
-    {{- person.given_name }} {{ person.family_name -}}
+    {{- author_person.given_name }} {{ author_person.family_name -}}
     {%- endif -%}
   </span>
   {%- else -%}

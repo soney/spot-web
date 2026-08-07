@@ -1,0 +1,15 @@
+{% comment %}
+  One CV section heading: an empty side column and the title in the main
+  column. cv.css gives .col.side and .col.main explicit flex `order`, so the
+  side column renders first regardless of the order they appear in here.
+
+  Parameters:
+    title  the heading text.
+    level  (optional) heading tag, "h2" (default) for a section, "h3" for a
+           group inside one.
+{% endcomment %}
+{%- assign heading_level = include.level | default: "h2" -%}
+<div class="row">
+  <div class="col side"></div>
+  <{{ heading_level }} class="col main">{{ include.title }}</{{ heading_level }}>
+</div>

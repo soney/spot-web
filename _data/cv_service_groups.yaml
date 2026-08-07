@@ -1,0 +1,18 @@
+# Service groups on the CV, in render order (oney_cv.html).
+#
+# `categories` lists the `category` values from oney_cv.yaml `service` records
+# that this group collects. The last group sets `catch_all: true` instead: it
+# picks up every record no other group claimed, so a record with a new or
+# misspelled category still shows up rather than silently disappearing.
+- title: Organizing Committee
+  categories: [organizing_committee]
+- title: Program Committee
+  categories: [program_committee]
+- title: Peer Review
+  categories: [peer_review]
+- title: Operations
+  categories: [operations_committee]
+- title: UMSI
+  categories: [department, umsi]
+- title: Other
+  catch_all: true

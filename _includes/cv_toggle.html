@@ -1,0 +1,28 @@
+{% comment %}
+  One CV checkbox toggle. assets/js/cv.js finds these by class and reads the
+  data attributes, so the three strings that make a toggle work live together
+  here instead of being spread across the template, the JS and the CSS.
+
+  Parameters:
+    label       the visible label text.
+    param       URL parameter name that pre-selects the toggle
+                (e.g. "?students=true"). Changing it breaks previously
+                shared links.
+    body_class  class toggled on <body>; cv.css keys its rules off this.
+    row         (optional) true to make the wrapper itself the grid row,
+                for call sites that are not already inside one.
+{% endcomment %}
+<div class="cv-toggle d-print-none{% if include.row %} row{% endif %}" data-param="{{ include.param }}"
+  data-body-class="{{ include.body_class }}">
+  {%- if include.row %}
+  <div class="col side"></div>
+  <div class="col main">
+    {%- endif %}
+    <label>
+      <input type="checkbox">
+      {{ include.label }}
+    </label>
+    {%- if include.row %}
+  </div>
+  {%- endif %}
+</div>

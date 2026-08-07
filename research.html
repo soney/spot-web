@@ -37,16 +37,15 @@ nav: research
   <h2 id="all-publications">All Publications</h2>
   {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}
   {% for venue in sorted_venues %}
-  {% if venue.type == "conference" or venue.type == "journal" %}
+  {% if site.publication_list_types contains venue.type %}
   {% assign venue_pubs = site.data.publications | where: "venue", venue.id %}
   {% if venue_pubs.size > 0 %}
   <section class="section-card" id="venue-{{ venue.id }}">
     <h3 class="visually-hidden">
       {% if venue.homepage %}
-      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{{ venue.short_name | default: venue.full_name }} {{
-        venue.year }}</a>
+      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{% include venue_label.html venue=venue %}</a>
       {% else %}
-      {{ venue.short_name | default: venue.full_name }} {{ venue.year }}
+      {% include venue_label.html venue=venue %}
       {% endif %}
     </h3>
     <ul class="publication-list">

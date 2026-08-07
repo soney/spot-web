@@ -5,14 +5,8 @@
     "author": "Steve Oney <soney@umich.edu>",
     "license": "MIT",
     "scripts": {
-        "generate": "ruby scripts/generate-pages.rb",
-        "build": "npm run generate && bundle exec jekyll build",
-        "develop": "npm run generate && bundle exec jekyll serve --livereload",
-        "develop:lan": "npm run generate && bundle exec jekyll serve --livereload --host 0.0.0.0",
-        "clean": "rm -rf _site .jekyll-cache .jekyll-metadata _papers _people_pages",
-        "deploy": "npm run clean && npm run generate && JEKYLL_ENV=production bundle exec jekyll build && npx gh-pages -d _site"
-    },
-    "devDependencies": {
-        "gh-pages": "^6.3.0"
+        "develop": "bundle exec jekyll serve --livereload",
+        "develop:lan": "bundle exec jekyll serve --livereload --host 0.0.0.0",
+        "clean": "rm -rf _site .jekyll-cache .jekyll-metadata"
     }
 }

@@ -1,0 +1,32 @@
+{% comment %}
+  A page whose only job is to send visitors somewhere else: a meta refresh,
+  a canonical link so search engines credit the target rather than this URL,
+  a JS fallback, and a visible link for anyone with both disabled.
+
+  Used by the vanity and legacy URLs at the repo root. Those pages carry only
+  a `permalink` in their front matter and no layout, so this include is the
+  whole document.
+
+  Parameters:
+    to     the target path, root-relative (e.g. "/people/steve_oney/").
+    label  link text for the visible fallback.
+{% endcomment %}
+{%- assign target = include.to | relative_url -%}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url={{ target }}">
+    <link rel="canonical" href="{{ target }}" />
+    <title>Redirecting...</title>
+</head>
+
+<body>
+    If you are not redirected automatically, follow this <a href="{{ target }}">{{ include.label }}</a>.
+    <script>
+        window.location.href = "{{ target }}";
+    </script>
+</body>
+
+</html>

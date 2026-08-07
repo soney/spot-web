@@ -1,15 +1,16 @@
 {% comment %}
-  Citation line for a CV publication entry: authors (Steve bolded,
-  students marked), year, title, and venue.
+  Citation line for a CV publication entry: authors (the CV's subject
+  bolded, students marked), year, title, and venue.
 
   Parameters:
-    pub    the publication record (from publications.yaml).
-    venue  the publication's venue record (from venues.yaml).
+    pub           the publication record (from publications.yaml).
+    venue         the publication's venue record (from venues.yaml).
+    highlight_id  people.yaml id whose name is emphasized (the CV's subject).
 {% endcomment %}
 {% assign pub = include.pub %}
 {% assign venue = include.venue %}
 
-{% include author_list.html ids=pub.authors student_ids=pub.student_authors highlight_id="steve_oney" with_links=false
+{% include author_list.html ids=pub.authors student_ids=pub.student_authors highlight_id=include.highlight_id with_links=false
 %}.
 {% if venue and venue.year %} ({{ venue.year }}){% endif %}
 {{ pub.title }}.
