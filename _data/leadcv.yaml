@@ -6,7 +6,7 @@ affiliation:
   street: 2200 Hayward Street
   city: Ann Arbor, MI 48109
 contact:
-  homepage: http://from.so/
+  homepage: https://from.so/
   phone: 1 (734) 999–0246
   email: soney@umich.edu
 education:
@@ -229,16 +229,16 @@ service:
     date_end: "2027"
   - title: General Chair (with Michael Nebeling)
     category: organizing_committee
-    description: UIST 2026
+    description: UIST
     date_start: "2026"
   - title: Most Influential Paper Award Co-Chair
     category: organizing_committee
-    description: VL/HCC 2024 – 2026
+    description: VL/HCC
     date_start: "2024"
     date_end: "2026"
   - title: Sponsorship Co-Chair
     category: organizing_committee
-    description: UIST 2022 – 2023
+    description: UIST
     date_start: "2022"
     date_end: "2023"
   - title: Program Co-Chair (with Jácome Miguel Costa Cunha)
@@ -468,7 +468,7 @@ supervised_students:
     date_start: Fall 2025
     date_end: present
   - student_name: Jiacheng Zhang
-    student_department: Scool of Information
+    student_department: School of Information
     institution: University of Michigan
     category: ongoing_advisee
     date_start: Fall 2023
@@ -495,6 +495,7 @@ supervised_students:
     thesis_title: "Syntactic Completions with Material Obligations"
     institution: University of Michigan
     category: phd_thesis_committee
+    milestone: defense
     date_start: "2025"
   - student_name: Andrew Blinn
     student_department: Computer Science and Engineering
@@ -579,6 +580,7 @@ supervised_students:
     student_department: Computer Science and Engineering
     institution: University of Michigan
     category: phd_thesis_committee
+    milestone: proposal
     date_start: "2023"
   - student_name: Yinuo Yang
     institution: University of Michigan
@@ -590,11 +592,6 @@ supervised_students:
     date_start: "2024"
   - student_name: Zihan Wu
     thesis_title: Designing and Evaluating Fine-Grained Interactive Practice Tools for Novice Programming Learners
-    institution: University of Michigan
-    category: phd_thesis_committee
-    date_start: "2025"
-  - student_name: Jingyuan Zhu
-    student_department: Computer Science and Engineering
     institution: University of Michigan
     category: phd_thesis_committee
     date_start: "2025"

@@ -782,12 +782,12 @@
     trustworthy, and reduces the cost of downstream data collection for training a program synthesis system.
   authors:
     - yan_chen
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
     - walter_lasecki
     - steve_oney
   student_authors:
     - yan_chen
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
   venue: vl_hcc_2020
   pdf: pdfs/bashon_vlhcc_2020_463356b312.pdf
 - id: callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
@@ -846,17 +846,17 @@
   award_description: Best Short Paper
   authors:
     - yan_chen
-    - gabriel_matute_2
+    - gabriel_matute
     - april_wang
-    - jaylin_herskovitz_2
+    - jaylin_herskovitz
     - sang_won_lee
     - walter_lasecki
     - steve_oney
   student_authors:
     - yan_chen
     - april_wang
-    - gabriel_matute_2
-    - jaylin_herskovitz_2
+    - gabriel_matute
+    - jaylin_herskovitz
   clusters:
     - programming_education
   venue: vl_hcc_2020
@@ -1306,12 +1306,12 @@
   authors:
     - yan_chen
     - sang_won_lee
-    - yin_xie_2
-    - yiwei_yang_2
+    - yin_xie
+    - yiwei_yang
     - walter_lasecki
     - steve_oney
   student_authors:
-    - yiwei_yang_2
+    - yiwei_yang
     - sang_won_lee
     - tao_xie
     - yan_chen

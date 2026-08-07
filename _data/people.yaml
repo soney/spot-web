@@ -113,7 +113,7 @@
   given_name: Rebecca
   family_name: Krosnick
   membership: alum
-  homepage: http://www-personal.umich.edu/~rkros/
+  homepage: https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en
   short_bio: |-
     Ph.D. student
     Michigan CSE
@@ -167,7 +167,7 @@
   given_name: Lei
   family_name: Zhang
   membership: alum
-  homepage: http://raynezhang.me/
+  homepage: https://raynez.art/
   short_bio: |-
     Postdoctoral Researcher
     Princeton University
@@ -468,12 +468,6 @@
   given_name: Sang Won
   family_name: Lee
   homepage: https://people.cs.vt.edu/sangwonlee/
-- id: yin_xie_2
-  given_name: Yin
-  family_name: Xie
-- id: yiwei_yang_2
-  given_name: YiWei
-  family_name: Yang
 - id: shih_chieh_lin
   given_name: Shih-Chieh
   family_name: Lin
@@ -542,13 +536,6 @@
 - id: rajan_vaish
   given_name: Rajan
   family_name: Vaish
-- id: jaylin_herskovitz_2
-  given_name: Jaylin
-  family_name: Herskovitz
-  homepage: https://jayl.in/
-- id: gabriel_matute_2
-  given_name: Gabriel
-  family_name: Matute
 - id: sun_young_park
   given_name: Sun Young
   family_name: Park
