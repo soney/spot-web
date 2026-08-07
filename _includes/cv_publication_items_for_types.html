@@ -11,8 +11,12 @@
                       render order.
     allowed_types     array of venue type strings for this section (from
                       _data/cv_publication_sections.yaml).
+    pub_codes         publication id -> numbering code map, built once by
+                      the caller with the cv_publication_codes filter. The
+                      map is global across sections, so it must be built
+                      from *all* publications, not this section's subset.
 {% endcomment %}
-{% assign pub_codes = include.all_publications | cv_publication_codes: include.venues, site.data.publication_types %}
+{% assign pub_codes = include.pub_codes %}
 {% for venue in include.venues %}
 {% unless include.allowed_types contains venue.type %}{% continue %}{% endunless %}
 {% assign venue_pubs = include.all_publications | where: "venue", venue.id %}

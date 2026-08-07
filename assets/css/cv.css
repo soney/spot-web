@@ -9,7 +9,6 @@
 
 body {
     background-color: rgb(243, 240, 235);
-    color: rgb(30, 30, 28);
 
     .cv.container {
         margin-top: 7em;
@@ -48,10 +47,6 @@ body {
             border-bottom: 1px solid #DDD;
         }
 
-        ul.unstyled-list {
-            padding-left: 0;
-        }
-
         ul.cv-list {
             padding-left: 0px;
 
@@ -76,8 +71,7 @@ body {
             text-align: right;
 
             .date-range,
-            .date,
-            .semester {
+            .date {
                 font-style: italic;
             }
 
@@ -86,24 +80,22 @@ body {
             }
         }
 
-        &.container {
-            .col.side {
-                order: 1;
-                flex: 0 0 20%;
-                max-width: 20%;
-            }
+        .col.side {
+            order: 1;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
 
-            .col.main {
-                order: 2;
-                flex: 0 0 80%;
-                max-width: 80%;
-            }
+        .col.main {
+            order: 2;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
 
-            .col.main,
-            .col.side {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
+        .col.main,
+        .col.side {
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
         .publications {
@@ -134,19 +126,10 @@ body {
                 color: var(--award-color);
             }
 
-            .paper-award-footnote {
-                font-style: italic;
-                color: var(--award-color);
-            }
-
         }
 
         .section {
             .item {
-                &:nth-child(2) {
-                    margin-top: 0em;
-                }
-
                 margin-top: 1em;
                 margin-bottom: 1em;
                 page-break-inside: avoid;
@@ -158,8 +141,7 @@ body {
                 font-weight: bold;
             }
 
-            table.education-degrees,
-            table.education-advisors {
+            table.education-degrees {
                 td {
                     padding: 0px;
                 }
@@ -209,8 +191,6 @@ body {
         }
 
         .supervisees {
-
-            .student,
             .supervisee {
                 font-weight: bold;
             }
@@ -235,11 +215,11 @@ body {
 /* Interactive toggles: checkboxes in oney_cv.html wired up by
    assets/js/cv.js, which mirrors each one to a body class and a URL
    parameter. */
-.cv-student-author-toggle {
+.cv-toggle {
     margin: 0.5rem 0 1rem;
 }
 
-.cv-student-author-toggle label {
+.cv-toggle label {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
@@ -270,4 +250,22 @@ body:not(.show-other-mentees) .cv-other-mentees-header {
 
 body:not(.show-paper-awards) .paper-award-item {
     display: none;
+}
+
+/* Print/PDF export tuning (was assets/css/cv-pdfout.css). */
+@media print {
+    body {
+        zoom: 0.8;
+        -moz-transform: scale(0.8);
+        -moz-transform-origin: 0 0;
+        background-color: #fff;
+        color: #000;
+    }
+
+    body .cv.container {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
 }

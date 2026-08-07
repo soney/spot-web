@@ -54,10 +54,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.education %}
   <section class="cv-section section education">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Education</h2>
-    </div>
+    {% include cv_section_heading.html title="Education" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.education %}
       <li class="row item">
@@ -106,10 +103,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.professional_experience %}
   <section class="cv-section section experience">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Professional Experience</h2>
-    </div>
+    {% include cv_section_heading.html title="Professional Experience" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.professional_experience %}
       <li class="row item">
@@ -131,21 +125,16 @@ title: Steve Oney - Curriculum Vitae
 
   {% assign all_publications = site.data.publications %}
   {% assign venues_by_year_desc = site.data.venues | sort: "year" | reverse %}
+  {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
+  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
   {% if all_publications and all_publications.size > 0 %}
   <section class="cv-section section publications">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Publications</h2>
-    </div>
+    {% include cv_section_heading.html title="Publications" %}
     <div class="row">
       <div class="col side"></div>
       <div class="col main">
-        <div class="cv-student-author-toggle d-print-none">
-          <label for="highlight-student-authors-toggle">
-            <input type="checkbox" id="highlight-student-authors-toggle">
-            Highlight student authors
-          </label>
-        </div>
+        {% include cv_toggle.html label="Highlight student authors" param="students"
+        body_class="highlight-student-authors" %}
       </div>
     </div>
     <div class="row">
@@ -166,14 +155,11 @@ title: Steve Oney - Curriculum Vitae
     {% for pub_section in site.data.cv_publication_sections %}
     {% capture publication_items %}
     {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
-    allowed_types=pub_section.types %}
+    allowed_types=pub_section.types pub_codes=pub_codes %}
     {% endcapture %}
     {% assign publication_items_stripped = publication_items | strip %}
     {% if publication_items_stripped != "" %}
-    <div class="row">
-      <div class="col side"></div>
-      <h3 class="col main">{{ pub_section.title }}</h3>
-    </div>
+    {% include cv_section_heading.html title=pub_section.title level="h3" %}
     <ul class="cv-list">{{ publication_items }}</ul>
     {% endif %}
     {% endfor %}
@@ -182,10 +168,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.grants %}
   <section class="cv-section section grants">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Grants</h2>
-    </div>
+    {% include cv_section_heading.html title="Grants" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.grants %}
       <li class="row item">
@@ -209,61 +192,21 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.awards %}
   <section class="cv-section section awards">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Awards</h2>
-    </div>
-    <div class="cv-student-author-toggle d-print-none row">
-      <div class="col side"></div>
-      <div class="col main">
-        <label for="show-paper-awards-toggle">
-          <input type="checkbox" id="show-paper-awards-toggle">
-          Include paper awards
-        </label>
-      </div>
-    </div>
+    {% include cv_section_heading.html title="Awards" %}
+    {% include cv_toggle.html label="Include paper awards" param="awards" body_class="show-paper-awards"
+    row=true %}
     <ul class="cv-list list-unstyled">
       {% comment %}
-        Merges two differently-shaped streams (cv.awards and paper awards)
-        into one year-descending list. Liquid can't sort mixed collections
-        by a computed key, so each entry is encoded as
-        "YYYY-{A|P}{index}::::<rendered html>", joined with ";;;;", then
-        string-sorted and split back apart.
+        cv.awards and the awards attached to publications are two differently
+        shaped streams merged into one year-descending list. The merge and the
+        ordering live in _plugins/cv_award_entries.rb, which documents the
+        ordering rules it deliberately preserves.
       {% endcomment %}
-      {% assign award_strings_raw = "" %}
-
-      {% for item in cv.awards %}
-      {% assign year = "0000" %}
-      {% if item.date_start %}
-      {% assign date_parts = item.date_start | split: "/" %}
-      {% assign year = date_parts.last %}
-      {% endif %}
-
-      {% capture item_html %}
-      <li class="row item">
-        <div class="col main">
-          <div class="award-title">{{ item.title }}</div>
-          {% if item.description %}<div class="award-description">{{ item.description }}</div>{% endif %}
-        </div>
-        <div class="col side">
-          <div class="date-range">
-            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
-          </div>
-          <div class="location">{{ item.location }}</div>
-        </div>
-      </li>
-      {% endcapture %}
-      {% assign sortable_str = year | append: "-A" | append: forloop.index | append: "::::" | append: item_html %}
-      {% assign award_strings_raw = award_strings_raw | append: sortable_str | append: ";;;;" %}
-      {% endfor %}
-
-      {% assign award_index = 0 %}
-      {% for venue in venues_by_year_desc %}
-      {% assign venue_pubs = all_publications | where: "venue", venue.id %}
-      {% for pub in venue_pubs %}
-      {% if pub.award and pub.award != 'none' %}
-      {% assign year = venue.year | default: "0000" %}
-      {% capture item_html %}
+      {% assign award_entries = cv.awards | cv_award_entries: venues_by_year_desc, all_publications %}
+      {% for entry in award_entries %}
+      {% if entry.kind == "paper_award" %}
+      {% assign pub = entry.pub %}
+      {% assign venue = entry.venue %}
       <li class="paper-award-item row item">
         <div class="col main">
           {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
@@ -278,24 +221,24 @@ title: Steve Oney - Curriculum Vitae
             {{ parts.first }}/
             {%-endif %}
             {%-endif %}
-            {{-year }}
+            {{-venue.year }}
           </div>
         </div>
       </li>
-      {% endcapture %}
-      {% assign sortable_str = year | append: "-P" | append: award_index | append: "::::" | append: item_html %}
-      {% assign award_strings_raw = award_strings_raw | append: sortable_str | append: ";;;;" %}
-      {% assign award_index = award_index | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-      {% endfor %}
-
-      {% assign award_strings_sorted = award_strings_raw | split: ";;;;" | sort | reverse %}
-
-      {% for str in award_strings_sorted %}
-      {% if str != "" %}
-      {% assign parts = str | split: "::::" %}
-      {{ parts[1] }}
+      {% else %}
+      {% assign item = entry.item %}
+      <li class="row item">
+        <div class="col main">
+          <div class="award-title">{{ item.title }}</div>
+          {% if item.description %}<div class="award-description">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
       {% endif %}
       {% endfor %}
     </ul>
@@ -304,10 +247,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.invited_presentations %}
   <section class="cv-section section presentations">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Invited Presentations</h2>
-    </div>
+    {% include cv_section_heading.html title="Invited Presentations" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.invited_presentations %}
       <li class="row item">
@@ -327,77 +267,37 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.service %}
   <section class="cv-section section service">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Service</h2>
-    </div>
+    {% include cv_section_heading.html title="Service" %}
+    {% assign service_groups = cv.service | cv_grouped_records: site.data.cv_service_groups %}
+    {% for group in service_groups %}
+    {% assign items = group.items %}
+    {% if items.size > 0 %}
+    {% include cv_section_heading.html title=group.title level="h3" %}
     <ul class="cv-list list-unstyled">
-      {% assign service_organizing = cv.service | where: "category", "organizing_committee" %}
-      {% assign service_program = cv.service | where: "category", "program_committee" %}
-      {% assign service_peer_review = cv.service | where: "category", "peer_review" %}
-      {% assign service_operations = cv.service | where: "category", "operations_committee" %}
-      {% assign service_umsi = cv.service | where_exp: "item", "item.category == 'department' or item.category ==
-      'umsi'"
-      %}
-      {% assign service_other = cv.service | where_exp: "item", "item.category != 'organizing_committee' and
-      item.category
-      != 'program_committee' and item.category != 'peer_review' and item.category != 'operations_committee' and
-      item.category != 'department' and item.category != 'umsi'" %}
-
-      {% assign service_groups = "Organizing Committee|service_organizing,Program Committee|service_program,Peer
-      Review|service_peer_review,Operations|service_operations,UMSI|service_umsi,Other|service_other" | split: "," %}
-      {% for group in service_groups %}
-      {% assign parts = group | split: "|" %}
-      {% assign group_title = parts[0] %}
-      {% assign group_key = parts[1] %}
-
-      {% if group_key == "service_organizing" %}
-      {% assign items = service_organizing %}
-      {% elsif group_key == "service_program" %}
-      {% assign items = service_program %}
-      {% elsif group_key == "service_peer_review" %}
-      {% assign items = service_peer_review %}
-      {% elsif group_key == "service_operations" %}
-      {% assign items = service_operations %}
-      {% elsif group_key == "service_umsi" %}
-      {% assign items = service_umsi %}
-      {% else %}
-      {% assign items = service_other %}
-      {% endif %}
-
-      {% if items.size > 0 %}
-      <div class="row">
-        <h3 class="col main">{{ group_title }}</h3>
-        <div class="col side"></div>
-      </div>
-      <ul class="cv-list list-unstyled">
-        {% for item in items %}
-        <li class="row item">
-          <div class="col main">
-            {% if item.title %}<div class="role">{{ item.title }}</div>{% endif %}
-            {% if item.description %}<div class="description">{{ item.description }}</div>{% endif %}
+      {% for item in items %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}<div class="role">{{ item.title }}</div>{% endif %}
+          {% if item.description %}<div class="description">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          <div class="date">
+            {% if item.date_start or item.date_end %}
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+            {% endif %}
           </div>
-          <div class="col side">
-            <div class="date">
-              {% if item.date_start or item.date_end %}
-              {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
-              {% endif %}
-            </div>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
+        </div>
+      </li>
       {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
   </section>
   {% endif %}
 
   {% if cv.teaching %}
   <section class="cv-section section teaching">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Teaching</h2>
-    </div>
+    {% include cv_section_heading.html title="Teaching" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.teaching %}
       <li class="row item">
@@ -421,46 +321,13 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.supervised_students %}
   <section class="cv-section section supervisees">
-    <div class="row">
-      <h2 class="col main">Students Supervised</h2>
-      <div class="col side"></div>
-    </div>
+    {% include cv_section_heading.html title="Students Supervised" %}
 
-    {% assign supervised_dissertation_chair = cv.supervised_students | where: "category", "dissertation_chair" %}
-    {% assign supervised_ongoing_advisee = cv.supervised_students | where: "category", "ongoing_advisee" %}
-    {% assign supervised_phd_committee = cv.supervised_students | where: "category", "phd_thesis_committee" %}
-    {% assign supervised_ms_chair = cv.supervised_students | where: "category", "ms_thesis_chair" %}
-    {% assign supervised_ms_committee = cv.supervised_students | where: "category", "ms_thesis_committee" %}
-    {% assign supervised_ugrad_chair = cv.supervised_students | where: "category", "ugrad_thesis_chair" %}
-
-    {% assign supervised_groups = "Dissertation Chair (Ph.D. Graduates)|supervised_dissertation_chair,Ph.D. Advisees
-    (Ongoing)|supervised_ongoing_advisee,Thesis Committees (Ph.D.)|supervised_phd_committee,Thesis Chair
-    (M.S.)|supervised_ms_chair,Thesis Committees (M.S.)|supervised_ms_committee,Thesis Chair
-    (Undergraduate)|supervised_ugrad_chair" | split: "," %}
-    {% for group in supervised_groups %}
-    {% assign parts = group | split: "|" %}
-    {% assign group_title = parts[0] %}
-    {% assign group_key = parts[1] %}
-
-    {% if group_key == "supervised_dissertation_chair" %}
-    {% assign items = supervised_dissertation_chair %}
-    {% elsif group_key == "supervised_ongoing_advisee" %}
-    {% assign items = supervised_ongoing_advisee %}
-    {% elsif group_key == "supervised_phd_committee" %}
-    {% assign items = supervised_phd_committee %}
-    {% elsif group_key == "supervised_ms_chair" %}
-    {% assign items = supervised_ms_chair %}
-    {% elsif group_key == "supervised_ms_committee" %}
-    {% assign items = supervised_ms_committee %}
-    {% else %}
-    {% assign items = supervised_ugrad_chair %}
-    {% endif %}
-
+    {% assign supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
+    {% for group in supervision_groups %}
+    {% assign items = group.items %}
     {% if items.size > 0 %}
-    <div class="row">
-      <h3 class="col main">{{ group_title }}</h3>
-      <div class="col side"></div>
-    </div>
+    {% include cv_section_heading.html title=group.title level="h3" %}
     <ul class="cv-list list-unstyled">
       {% for item in items %}
       <li class="row item">
@@ -476,7 +343,8 @@ title: Steve Oney - Curriculum Vitae
         <div class="col side">
           <div class="date">
             {% if item.date_start or item.date_end %}
-            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}{% if item.milestone %} ({{
+            item.milestone }}){% endif %}
             {% endif %}
           </div>
           <div class="location">{% if item.institution %}{{ item.institution }}{% endif %}</div>
@@ -495,12 +363,8 @@ title: Steve Oney - Curriculum Vitae
     <div class="row">
       <div class="col side"></div>
       <div class="col main">
-        <div class="cv-student-author-toggle d-print-none">
-          <label for="show-other-mentees-toggle">
-            <input type="checkbox" id="show-other-mentees-toggle">
-            Include undergraduate and master's collaborators
-          </label>
-        </div>
+        {% include cv_toggle.html label="Include undergraduate and master's collaborators" param="mentees"
+        body_class="show-other-mentees" %}
         <h3 class="cv-other-mentees-header">Other Mentees</h3>
         <ul class="cv-list cv-other-mentees-list">
           {% for student in ugrad_ms_students %}
@@ -511,15 +375,13 @@ title: Steve Oney - Curriculum Vitae
           {% endfor %}
         </ul>
       </div>
+    </div>
   </section>
   {% endif %}
 
   {% if cv.press %}
   <section class="cv-section section press">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Press</h2>
-    </div>
+    {% include cv_section_heading.html title="Press" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.press %}
       <li class="row item">
@@ -544,10 +406,7 @@ title: Steve Oney - Curriculum Vitae
 
   {% if cv.patents %}
   <section class="cv-section section">
-    <div class="row">
-      <div class="col side"></div>
-      <h2 class="col main">Patent</h2>
-    </div>
+    {% include cv_section_heading.html title="Patent" %}
     <ul class="cv-list list-unstyled">
       {% for item in cv.patents %}
       <li class="row item">

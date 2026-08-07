@@ -1,6 +1,8 @@
 # Maps each venue type to its CV numbering prefix (e.g. the third-newest
-# journal paper is J.<n>). Order here defines the counting array used by
-# _includes/cv_publication_items_for_types.html.
+# journal paper is J.<n>). Read by the cv_publication_codes filter in
+# _plugins/cv_publication_codes.rb, which looks types up by name -- the order
+# of this list does not matter. A venue type absent from this list gets no
+# numbering code.
 - type: journal
   prefix: J
 - type: conference
