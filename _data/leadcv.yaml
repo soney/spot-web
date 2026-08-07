@@ -360,6 +360,11 @@ service:
     category: other
     date_start: "2025"
 teaching:
+  - title: "Practical JavaScript: From Scratch to React (Coursera Specialization)"
+    description: >-
+      [https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
+    institution: University of Michigan & Coursera
+    date_start: "2026"
   - title: Instructor (and creator) – SI 379 (Building Interactive Applications)
     institution: University of Michigan
     date_start: "2023"
