@@ -22,6 +22,12 @@
     {% if person %}
     {% assign photo = person.focused_headshot | default: person.headshot %}
     <li>
+      {% comment %}
+        Only people with a `membership` are rendered on /team, so only they
+        have a #<id> anchor to link to. Everyone else gets an unlinked chip
+        rather than a link to nowhere.
+      {% endcomment %}
+      {% if person.membership %}
       <a class="chip" href="{{ '/team#' | append: person.id | relative_url }}"
         title="{{ person.given_name }} {{ person.family_name }}">
         {% if photo %}
@@ -31,6 +37,16 @@
         {% endif %}
         <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
       </a>
+      {% else %}
+      <span class="chip" title="{{ person.given_name }} {{ person.family_name }}">
+        {% if photo %}
+        <img src="{{ '/assets/' | append: photo | relative_url }}"
+          alt="Headshot of {{ person.given_name }} {{ person.family_name }}" {% if person.color
+          %}style="border: 2px solid {{ person.color }};" {% endif %}>
+        {% endif %}
+        <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
+      </span>
+      {% endif %}
     </li>
     {% endif %}
     {% endfor %}
