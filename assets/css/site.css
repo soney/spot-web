@@ -483,5 +483,25 @@ body {
                single coherent row. */
             filter: brightness(0) invert(1);
         }
+
+        footer img[src*="nsf_logo"] {
+            /* The one mark a knockout cannot carry. NSF's seal is 209 shapes
+               across four fills (#005699, #99add2, #d3b34e, #fff) plus a radial
+               gradient, and its design lives in the tonal differences between
+               them -- brightness(0) collapses all of that to a single white and
+               the seal renders as a featureless blob. The others survive
+               because they are wordmarks or monochrome, where the boundaries
+               are shape edges rather than colour changes.
+
+               So give this one back the white surface it was drawn for. The
+               mark then sits at exactly its light-mode contrast, and the plate
+               is 17.80:1 against the page. content-box keeps the mark at its
+               full 100px inside the plate rather than shrinking it to 84. */
+            filter: none;
+            background-color: #FFF;
+            border-radius: 6px;
+            box-sizing: content-box;
+            padding: 8px;
+        }
     }
 }

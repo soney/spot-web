@@ -2,6 +2,10 @@
   Homepage footer listing affiliation and sponsor logos, from
   _data/affiliations.yaml. No parameters.
 
+  The logos carry no visible caption -- `name` survives only as the img alt,
+  which is what gives each link its accessible name for a screen reader. Do
+  not drop alt when editing this.
+
   Two loops rather than one: sponsor images carry the sponsor-logo class
   (site.css sizes them) and the two groups sit in differently-classed rows.
 {% endcomment %}
@@ -10,7 +14,7 @@
   <div class="affiliations row">
     {% for item in site.data.affiliations.affiliations %}
     <div class="{{ item.width }}">
-      <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}<br /><img
+      <a href="{{ item.url }}" target="_blank" rel="noopener"><img
           src="{{ '/assets/' | append: item.logo | relative_url }}" alt="{{ item.alt | default: item.name }}"></a>
     </div>
     {% endfor %}
@@ -24,7 +28,7 @@
   <div class="row">
     {% for item in site.data.affiliations.sponsors %}
     <div class="{{ item.width }}">
-      <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}<br /><img
+      <a href="{{ item.url }}" target="_blank" rel="noopener"><img
           src="{{ '/assets/' | append: item.logo | relative_url }}" alt="{{ item.alt | default: item.name }}"
           class="sponsor-logo"></a>
     </div>
