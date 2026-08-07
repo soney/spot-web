@@ -21,29 +21,23 @@
     <div class="container">
       <a class="d-block skip-to-content-link" href="#content">Skip to main content</a>
     </div>
-    <nav class="navbar navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-expand">
       <div class="container">
-        <a class="navbar-brand{% if page.nav == 'home' %} active{% endif %}" href="{{ '/' | relative_url }}">spot</a>
+        <a class="navbar-brand{% if page.nav == 'home' %} active{% endif %}"
+          href="{{ '/' | relative_url }}">{{ site.brand }}</a>
         <div class="navbar-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item{% if page.nav == 'research' %} active{% endif %}">
-              <a class="nav-link" href="{{ '/research/' | relative_url }}">Research</a>
+            {% for tab in site.data.nav %}
+            <li class="nav-item{% if page.nav == tab.key %} active{% endif %}">
+              <a class="nav-link" href="{{ tab.url | relative_url }}">{{ tab.title }}</a>
             </li>
-            <li class="nav-item{% if page.nav == 'team' %} active{% endif %}">
-              <a class="nav-link" href="{{ '/team/' | relative_url }}">Team</a>
-            </li>
-            <li class="nav-item{% if page.nav == 'news' %} active{% endif %}">
-              <a class="nav-link" href="{{ '/news/' | relative_url }}">News</a>
-            </li>
-            <li class="nav-item{% if page.nav == 'writing' %} active{% endif %}">
-              <a class="nav-link" href="{{ '/writing/' | relative_url }}">Writing</a>
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
     </nav>
 
-    <main id="content" role="main" class="page-content{% if page.wide %} page-content-wide{% endif %}">
+    <main id="content" role="main" class="page-content">
       {{ content }}
     </main>
   </div>

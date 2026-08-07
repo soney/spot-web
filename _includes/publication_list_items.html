@@ -5,7 +5,8 @@
 
   Parameters:
     types         (optional) comma-separated venue types to include,
-                  e.g. "conference,journal". Defaults to "conference,journal".
+                  e.g. "conference,journal". Defaults to
+                  site.publication_list_types (see _config.yml).
     author_id     (optional) only show publications authored by this
                   people.yaml id.
     min_year      (optional) only show venues from this year onward.
@@ -15,7 +16,11 @@
     highlight_id  (optional) people.yaml id whose name is emphasized in
                   author lists, passed through to publication_item.html.
 {% endcomment %}
-{% assign list_types = include.types | default: "conference,journal" | split: "," %}
+{% if include.types %}
+{% assign list_types = include.types | split: "," %}
+{% else %}
+{% assign list_types = site.publication_list_types %}
+{% endif %}
 {% assign list_limit = include.limit | default: 999999 %}
 {% assign list_author = include.author_id %}
 {% assign sorted_venues = site.data.venues | sort: "year" | reverse %}

@@ -1,0 +1,37 @@
+# Logos in the homepage footer, rendered by _includes/affiliations_footer.html.
+#
+#   name   link text
+#   alt    (optional) img alt text, when it differs from the link text
+#   logo   path under assets/
+#   width  Bootstrap column classes for that cell
+#
+# The sponsor widths are deliberately uneven (3 + 4 + 3 of 12) -- that is how
+# the markup read before this file existed, kept verbatim so moving the data
+# out did not change the layout. Normalizing them is a separate decision.
+affiliations:
+  - name: Michigan School of Information
+    url: https://www.si.umich.edu/
+    logo: images/logos/umsi_logo.svg
+    width: col-md-4
+  - name: MISC
+    url: https://misc.si.umich.edu/
+    logo: images/logos/misc_dark.svg
+    width: col-md-4
+  - name: Michigan CSE
+    url: https://cse.engin.umich.edu/
+    logo: images/logos/cse_logo.svg
+    width: col-md-4
+sponsors:
+  - name: National Science Foundation
+    alt: NSF
+    url: https://nsf.gov/
+    logo: images/logos/nsf_logo.svg
+    width: col col-md-3
+  - name: Google
+    url: https://research.google/
+    logo: images/logos/google_logo.svg
+    width: col col-md-4
+  - name: Adobe
+    url: https://research.adobe.com/
+    logo: images/logos/adobe_logo.svg
+    width: col col-md-3

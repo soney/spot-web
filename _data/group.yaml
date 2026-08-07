@@ -23,3 +23,11 @@ joining: >-
   [soney@umich.edu](mailto:soney@umich.edu).
 recent_pub_cutoff_year: 2019
 announcement: ""
+
+# Order in which current-member tiers are listed on the homepage and /team.
+# These are `membership` values from people.yaml; a member whose tier is not
+# listed here is not shown in the "current members" grids at all.
+member_order:
+  - lead
+  - member-postdoc
+  - member

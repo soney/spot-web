@@ -1,8 +1,16 @@
 title: SPOT Research Group
+brand: spot
 email: soney@umich.edu
 description: Human-centered research on programming tools and practices.
 baseurl: ""
 url: "https://from.so"
+
+# Which venue types appear in the site's publication lists (homepage,
+# /research, person pages). The CV uses its own, longer list from
+# _data/cv_publication_sections.yaml.
+publication_list_types:
+  - conference
+  - journal
 
 markdown: kramdown
 kramdown:

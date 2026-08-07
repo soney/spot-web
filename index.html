@@ -41,8 +41,7 @@ nav: home
     <h2><a href="{{ '/team/' | relative_url }}"><span class="text-body">People</span><span aria-hidden="true">
           [+]</span></a></h2>
     <ul class="flex-row d-flex list-unstyled row">
-      {% assign current_order = "lead,member-postdoc,member" | split: "," %}
-      {% for membership in current_order %}
+      {% for membership in group.member_order %}
       {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
       {% for person in current_members %}
       <li class="member col d-flex p-1">
@@ -74,7 +73,7 @@ nav: home
           aria-hidden="true"> [+]</span></a></h2>
     <ul class="publication-list">
       {% assign cutoff = group.recent_pub_cutoff_year | default: 2000 %}
-      {% include publication_list_items.html min_year=cutoff limit=group.recent_pub_count %}
+      {% include publication_list_items.html min_year=cutoff %}
     </ul>
   </section>
 

@@ -1,0 +1,17 @@
+# Site navigation bar, rendered by _layouts/default.html.
+#
+# `key` is what a page sets as its `nav:` front-matter value to mark itself
+# the active tab. The brand link uses the key "home". Order here is the order
+# the tabs appear in.
+- key: research
+  title: Research
+  url: /research/
+- key: team
+  title: Team
+  url: /team/
+- key: news
+  title: News
+  url: /news/
+- key: writing
+  title: Writing
+  url: /writing/

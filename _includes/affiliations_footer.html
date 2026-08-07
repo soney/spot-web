@@ -1,22 +1,19 @@
 {% comment %}
-  Homepage footer listing affiliation and sponsor logos. Only the SVG
-  logos in assets/images/logos/ are referenced. No parameters.
+  Homepage footer listing affiliation and sponsor logos, from
+  _data/affiliations.yaml. No parameters.
+
+  Two loops rather than one: sponsor images carry the sponsor-logo class
+  (site.css sizes them) and the two groups sit in differently-classed rows.
 {% endcomment %}
 <footer class="container">
   <h2>Affiliations</h2>
   <div class="affiliations row">
-    <div class="col-md-4">
-      <a href="https://www.si.umich.edu/" target="_blank" rel="noopener">Michigan School of Information<br /><img
-          src="{{ '/assets/images/logos/umsi_logo.svg' | relative_url }}" alt="Michigan School of Information"></a>
+    {% for item in site.data.affiliations.affiliations %}
+    <div class="{{ item.width }}">
+      <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}<br /><img
+          src="{{ '/assets/' | append: item.logo | relative_url }}" alt="{{ item.alt | default: item.name }}"></a>
     </div>
-    <div class="col-md-4">
-      <a href="https://misc.si.umich.edu/" target="_blank" rel="noopener">MISC<br /><img
-          src="{{ '/assets/images/logos/misc_dark.svg' | relative_url }}" alt="MISC"></a>
-    </div>
-    <div class="col-md-4">
-      <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener">Michigan CSE<br /><img
-          src="{{ '/assets/images/logos/cse_logo.svg' | relative_url }}" alt="Michigan CSE"></a>
-    </div>
+    {% endfor %}
   </div>
   <h2 class="d-flex justify-content-between align-items-end mt-5">
     Sponsors
@@ -25,17 +22,12 @@
     </span>
   </h2>
   <div class="row">
-    <div class="col col-md-3">
-      <a href="https://nsf.gov/" target="_blank" rel="noopener">National Science Foundation<br /><img
-          src="{{ '/assets/images/logos/nsf_logo.svg' | relative_url }}" alt="NSF" class="sponsor-logo"></a>
+    {% for item in site.data.affiliations.sponsors %}
+    <div class="{{ item.width }}">
+      <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}<br /><img
+          src="{{ '/assets/' | append: item.logo | relative_url }}" alt="{{ item.alt | default: item.name }}"
+          class="sponsor-logo"></a>
     </div>
-    <div class="col col-md-4">
-      <a href="https://research.google/" target="_blank" rel="noopener">Google<br /><img
-          src="{{ '/assets/images/logos/google_logo.svg' | relative_url }}" class="sponsor-logo" alt="Google"></a>
-    </div>
-    <div class="col col-md-3">
-      <a href="https://research.adobe.com/" target="_blank" rel="noopener">Adobe<br /><img
-          src="{{ '/assets/images/logos/adobe_logo.svg' | relative_url }}" class="sponsor-logo" alt="Adobe"></a>
-    </div>
+    {% endfor %}
   </div>
 </footer>
