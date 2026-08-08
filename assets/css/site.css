@@ -190,6 +190,16 @@ body {
         }
     }
 
+    .group-areas {
+        font-size: 0.9em;
+        margin-top: 1rem;
+    }
+
+    .cluster-description {
+        color: var(--secondary-text-color);
+        font-size: 0.9em;
+    }
+
     .collaborator-list {
         column-count: 1;
 

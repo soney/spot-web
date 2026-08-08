@@ -16,6 +16,15 @@ nav: home
     <section class="section-card group_description col-md-7">
       <h2 class="invisible" aria-hidden="true">About</h2>
       {{ group.overview | markdownify }}
+      {% comment %}
+        Built from clusters.yaml rather than written into the overview text, so
+        the list here can never disagree with the areas on /research.
+      {% endcomment %}
+      <p class="group-areas"><strong>What we work on:</strong>
+        {% for cluster in site.data.clusters %}<a
+          href="{{ '/research/#cluster-' | append: cluster.id | relative_url }}">{{ cluster.title }}</a>{% unless
+          forloop.last %} <span aria-hidden="true">&middot;</span> {% endunless %}{% endfor %}
+      </p>
     </section>
     {% endif %}
 
