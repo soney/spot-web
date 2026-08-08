@@ -12,6 +12,7 @@ nav: research
   <section class="section-card row" id="cluster-{{ cluster.id }}">
     <div class="col-md-4">
       <h3>{{ cluster.title }}</h3>
+      {% if cluster.description %}<p class="cluster-description">{{ cluster.description }}</p>{% endif %}
       {% if cluster.authors %}
       <p><strong>People:</strong> {% include author_list.html ids=cluster.authors with_links=true %}</p>
       {% endif %}
