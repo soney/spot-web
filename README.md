@@ -49,7 +49,7 @@ _data/
   news.yaml                   # news items, with links to people/publications by id
   clusters.yaml               # research focus areas shown on /research
   group.yaml                  # homepage overview/joining text, member tier order, settings
-  blog.yaml                   # /writing entries (links to Google Docs)
+  blog.yaml                   # /writing entries (links to Google Docs, one page each)
   nav.yaml                    # the navbar tabs
   affiliations.yaml           # homepage footer logos
   oney_cv.yaml                # Steve's CV: everything on it that isn't a publication
@@ -62,9 +62,10 @@ _layouts/
   cv.html                     # standalone shell for the CV (different fonts/styles)
   paper.html                  # /papers/<id>/ pages; looks up the pub by page.pub_id
   person.html                 # /people/<id>/ pages; looks up the person by page.person_id
+  writing.html                # /writing/<slug>/ pages; looks up the entry by page.post_id
 _includes/                    # shared partials; each documents its parameters in a header
 _plugins/
-  generate_data_pages.rb      # creates the /papers/ and /people/ pages from the data
+  generate_data_pages.rb      # creates the /papers/, /people/ and /writing/ pages from the data
   cv_publication_codes.rb     # CV publication numbering (J.12, C.31, ...)
   cv_award_entries.rb         # merges CV awards and paper awards into one sorted list
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
@@ -78,12 +79,15 @@ How a paper page appears: `_plugins/generate_data_pages.rb` runs during the
 build and adds a page at `/papers/<id>/` for every record in
 `publications.yaml`; `_layouts/paper.html` renders it by looking the record up
 in `site.data`. Person pages work the same way, but only for people with
-`use_local_homepage: true`. Nothing is written to disk, so there is no
-generated-file step to keep in sync.
+`use_local_homepage: true`, and writing pages the same again, at
+`/writing/<slug>/` for every record in `blog.yaml`. Nothing is written to disk,
+so there is no generated-file step to keep in sync.
 
 Records reference each other by `id`: a publication's `venue` must match a
 venue id, and its `authors` list people ids. The `id` of a publication is also
-its URL slug.
+its URL slug. Writing entries are the one exception: they carry a separate
+`slug` for the URL, because those links are meant to be sent to people and so
+must not move when an entry is retitled.
 
 The CV (`oney_cv.html`) renders `_data/oney_cv.yaml` plus the publication data,
 and numbers publications per type (J.12, C.31, ...) using the prefixes in
@@ -151,7 +155,7 @@ Every task below is a YAML edit in `_data/`. You never write an HTML file, never
 run a generator script, and never restart the dev server — see
 [How the site is put together](#how-the-site-is-put-together) for why.
 
-The theme running through all four is that **a mistake here usually produces
+The theme running through all five is that **a mistake here usually produces
 silently wrong output rather than an error.** Jekyll does not validate that a
 referenced id exists, that a referenced file exists, or that a `type` is one you
 meant. The gotchas called out below are the ones that build cleanly and render
@@ -160,6 +164,7 @@ wrongly; they are worth reading even if you have done the task before.
 - [Adding a paper](#adding-a-paper)
 - [Adding a news item](#adding-a-news-item)
 - [Adding or updating a person](#adding-or-updating-a-person)
+- [Adding a writing entry](#adding-a-writing-entry)
 - [Updating a profile picture](#updating-a-profile-picture)
 - [Checking your work](#checking-your-work)
 
@@ -588,6 +593,68 @@ The image check compares against `Dir.children` rather than calling
 case-insensitive filesystem, and catches a path written with a leading slash or
 an `assets/` prefix.
 
+### Adding a writing entry
+
+Writing lives in `_data/blog.yaml`, a flat list. Each record produces two
+things: a row on `/writing/`, and its own page at `/writing/<slug>/` rendered by
+`_layouts/writing.html`. The prose itself stays in the Google Doc — the
+generated page is a landing page that names the document, credits it, and links
+out to it.
+
+| Key | Required | What it does |
+| --- | --- | --- |
+| `id` | yes | Lookup key. The generated page carries it; nothing else references it |
+| `slug` | effectively yes | The URL: `/writing/<slug>/`. Permanent once published |
+| `title` | yes | Heading, `<title>`, and the link text on `/writing/` |
+| `description` | no | One line under the title, and the link preview text |
+| `created` | effectively yes | Sort key and the displayed date |
+| `google_doc` | yes | Target of the "Read the document" button |
+| `authors` | yes | List of `people.yaml` ids |
+
+```yaml
+- id: spot_phd_application_guide_2024-11-06
+  slug: SPOT_PhD_Application_Guide
+  title: SPOT PhD Application Guide
+  description: The SPOT group's guide for prospective Ph.D. applicants.
+  created: "2024-11-06"
+  google_doc: >-
+    https://docs.google.com/document/d/e/2PACX-1vQJ41KZ.../pub
+  authors:
+    - steve_oney
+```
+
+**The point of `slug` is that the URL is the thing you send people, so it has to
+outlive edits to the entry.** `id` encodes the creation date and `title` can be
+rewritten; neither is a safe basis for a URL that is already sitting in other
+people's inboxes. Pick a slug that reads well in an email — the convention is
+the title with spaces as underscores, keeping capitalisation, as in
+`SPOT_PhD_Application_Guide` — and then treat it as permanent. Changing it later
+404s every link already sent, with no build error and nothing on the site to
+show for it. At least one is also hard-coded in `_data/group.yaml`'s `joining`
+text, so grep before you touch one.
+
+**Omitting `slug` is legal and silent.** The URL falls back to the `id`, so the
+entry lands at `/writing/spot_phd_application_guide_2024-11-06/` — it works, it
+is just not a URL anyone wants to paste. Two entries resolving to the same slug
+*is* reported: `DataPageGenerator` warns and keeps the first, so the second entry
+has no page while still appearing on `/writing/` with a link to the first one's.
+
+**`google_doc` must be the published URL, not the edit URL.** Docs' "Publish to
+the web" gives a `/d/e/2PACX-.../pub` link that anyone can open; a `/d/<id>/edit`
+URL sends most readers to a permission-request screen instead, which builds and
+renders identically. Use the `>-` folded form, as above, so the long URL can wrap.
+
+**`created` sorts as a string,** exactly as in [Adding a news
+item](#adding-a-news-item): `/writing/` does `sort: "created" | reverse`, so only
+zero-padded ISO `YYYY-MM-DD` orders correctly, and a malformed date floats to the
+top. Quote it.
+
+**`description` is optional but it is what the link preview says.** Without one,
+a `/writing/` URL pasted into Slack or a mail client falls back to the site-wide
+description from `_config.yml`, which says nothing about the document. One
+factual sentence is enough. Author ids behave as everywhere else — an id with no
+`people.yaml` record renders as the raw string.
+
 ### Updating a profile picture
 
 A photo is an image file under `assets/images/people/` plus one or two path
@@ -679,8 +746,8 @@ npm run develop        # = bundle exec jekyll serve --livereload
 ```
 
 Editing `_data/*.yaml` while the server runs regenerates the site *and* the
-generated paper and person pages — a brand-new record goes from 404 to 200
-without a restart. Do not use `--detach`; it disables the watcher, and the
+generated paper, person and writing pages — a brand-new record goes from 404 to
+200 without a restart. Do not use `--detach`; it disables the watcher, and the
 message saying so is easy to miss.
 
 Depending on what you changed, check:
@@ -695,6 +762,11 @@ Depending on what you changed, check:
 - `http://127.0.0.1:4000/news` — full news list, in the right order, with the
   right number of chips
 - `http://127.0.0.1:4000/team` and any `#<id>` anchor you linked
+- `http://127.0.0.1:4000/writing/` and the `/writing/<slug>/` page behind each
+  title — the slug in the URL bar is the one you meant, and "Read the document"
+  opens the Doc without a permission prompt (check it signed out, or in a
+  private window; signed in as its owner, an unpublished Doc opens fine for you
+  and for nobody else)
 - `http://127.0.0.1:4000/oney_cv/?students=true&awards=true` — the citation, its
   `C.n` code, the student underlines, and the award entry. Both toggles are off
   by default

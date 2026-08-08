@@ -1,12 +1,24 @@
+# Entries on /writing/, each of which also gets its own page at
+# /writing/<slug>/ (see _plugins/generate_data_pages.rb).
+#
+# `slug` is the shareable part of the URL and is what other people paste into
+# emails; treat it as permanent once an entry is published. It is separate from
+# `id` so that retitling an entry, or the date in an id, cannot move a URL that
+# has already been sent out. Omitting it falls back to the `id`, which builds
+# fine and gives an ugly URL.
 - id: spot_phd_application_guide_2024-11-06
+  slug: SPOT_PhD_Application_Guide
   title: SPOT PhD Application Guide
+  description: The SPOT group's guide for prospective Ph.D. applicants.
   created: "2024-11-06"
   google_doc: >-
     https://docs.google.com/document/d/e/2PACX-1vQJ41KZVDJVHL1kdQQN4yV9g1Dnz6vMZ4S_OLZ4vkeP8dhHagg0bv8cmUln1VBRZxV3tluWhZi_eyP7/pub
   authors:
     - steve_oney
 - id: spot_group_rebuttal_guide_2024-11-06
+  slug: SPOT_Group_Rebuttal_Guide
   title: SPOT Group Rebuttal Guide
+  description: The SPOT group's guide to writing rebuttals to paper reviews.
   created: "2024-11-06"
   google_doc: >-
     https://docs.google.com/document/d/e/2PACX-1vQYevBCrBfo5UticD5YuXon9qs4I-ZM2vKScggqv35RPDIPJNebXlB9n7oXUsk0t__LJGaf_pgYRTPN/pub

@@ -320,6 +320,29 @@ body {
         }
     }
 
+    /* /writing/<slug>/. The date is its own class rather than the .created
+       above, which wraps itself in parentheses for the inline listing on
+       /writing/ and reads as an aside when it is on its own line. */
+    .writing-page {
+        .writing-date {
+            color: var(--secondary-text-color);
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .writing-description {
+            margin-top: 1.5rem;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .writing-read {
+            margin-top: 1.5rem;
+        }
+    }
+
     .skip-to-content-link:not(:focus):not(:active) {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
