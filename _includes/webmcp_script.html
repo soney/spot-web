@@ -1,0 +1,24 @@
+{% comment %}
+  Loads assets/js/webmcp.js, which registers this site's WebMCP tools, and
+  hands it the three things it cannot work out for itself: where the generated
+  JSON lives (through relative_url, so a baseurl change does not break it), and
+  which record the current page is about.
+
+  Deferred and last in <body>: in every browser without the WebMCP API -- which
+  today is all of them except Chrome with the origin trial -- the script reads
+  one property, finds nothing, and returns without fetching anything.
+
+  Parameters (all optional):
+    paper_id   publications.yaml id, on a /papers/<id>/ page. Lets
+               get_publication default to the paper being viewed.
+    person_id  people.yaml id, on a /people/<id>/ page. Same, for get_person.
+    cv_page    true on /oney_cv/, which is the only page with display options
+               for set_cv_display_options to operate.
+{%- endcomment -%}
+<script defer src="{{ '/assets/js/webmcp.js' | relative_url }}"
+  data-mcp-index="{{ '/assets/mcp/index.json' | relative_url }}"
+  data-mcp-cv="{{ '/assets/mcp/cv.json' | relative_url }}"
+  data-mcp-page="{{ page.url }}"{% if include.paper_id %}
+  data-mcp-paper-id="{{ include.paper_id }}"{% endif %}{% if include.person_id %}
+  data-mcp-person-id="{{ include.person_id }}"{% endif %}{% if include.cv_page %}
+  data-mcp-cv-page="true"{% endif %}></script>

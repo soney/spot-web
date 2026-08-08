@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /assets/mcp/index.json
+---
+{{ site | mcp_index_json }}

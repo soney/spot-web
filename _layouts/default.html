@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   {% feed_meta %}
+  {%- include webmcp_origin_trial.html %}
 </head>
 
 <body>
@@ -45,6 +46,8 @@
       {{ content }}
     </main>
   </div>
+
+  {% include webmcp_script.html paper_id=page.pub_id person_id=page.person_id %}
 </body>
 
 </html>
