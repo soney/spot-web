@@ -17,7 +17,7 @@ nav: team
 
   {% assign alumni = site.data.people | where: "membership", "alum" | sort: "family_name" %}
   {% if alumni.size > 0 %}
-  <h2>Ph.D. Alumni</h2>
+  <h2>Ph.D. and Postdoc Alumni</h2>
   {% for person in alumni %}
   {% include member_block.html person=person %}
   {% endfor %}

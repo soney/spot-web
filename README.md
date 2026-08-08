@@ -404,8 +404,9 @@ Any other key is silently ignored.
 the homepage grid and under "Current Members" on `/team`, in the order given by
 `member_order` in `_data/group.yaml`; within a tier, order is alphabetical by
 `family_name` and there is no per-person override. `alum` appears only in
-`/team`'s "Ph.D. Alumni" section — that heading is hard-coded, so `alum` really
-means *Ph.D. graduate*; a departing undergrad or master's student goes to
+`/team`'s "Ph.D. and Postdoc Alumni" section — that heading is hard-coded and
+there is no separate postdoc-alum tier, so a departing postdoc becomes `alum`
+too; a departing undergrad or master's student goes to
 `ugrad_ms_student`, which renders as the plain bullet list under "Other
 Collaborators". Omitting `membership` is correct for external co-authors.
 
@@ -449,8 +450,9 @@ that page — clearing the flag turns both vanity URLs into redirects to a 404. 
 you turn it on for someone new, give them a `membership` too, or the page's
 "Back to team" link lands on nothing.
 
-**Moving someone from member to alum** is one line, `membership: member` →
-`membership: alum`, plus two things that do not happen automatically:
+**Moving someone from member to alum** is one line, `membership: member` (or
+`member-postdoc`) → `membership: alum`, plus two things that do not happen
+automatically:
 
 - Their `short_bio` stops rendering anywhere (alums are not in `member_order`,
   and `member_block.html` never prints it). **Move their new title and employer
@@ -460,7 +462,9 @@ you turn it on for someone new, give them a `membership` too, or the page's
   list matched by free-text `student_name`, with no link to the `people.yaml`
   record, so nothing propagates and nothing warns. A graduating Ph.D. advisee
   moves from `category: ongoing_advisee` to `category: dissertation_chair`, with
-  `date_end` and `current_position` filled in. Group headings come from
+  `date_end` and `current_position` filled in. A departing postdoc has no
+  matching category — `cv_supervision_groups.yaml` covers Ph.D. and thesis roles
+  only — so there is nothing to move for them. Group headings come from
   `_data/cv_supervision_groups.yaml` and there is no catch-all, so a typo'd
   `category` makes the record vanish — that one does print a
   `cv_grouped_records:` warning.
@@ -543,7 +547,7 @@ a normal commit containing a binary file plus a YAML edit.
 | Field | Where it renders | Size on screen | Cropping |
 | --- | --- | --- | --- |
 | `headshot` | homepage People grid | square tile, ~220 CSS px | **center-cropped to a square**, and grayscale until hover |
-| `headshot` | `/team` rows, including Ph.D. Alumni | ~165–190 CSS px | not cropped (`img-fluid`) |
+| `headshot` | `/team` rows, including Ph.D. and Postdoc Alumni | ~165–190 CSS px | not cropped (`img-fluid`) |
 | `headshot` | `/people/<id>/` | ~260–300 CSS px, **linked to the full-resolution file** | not cropped |
 | `focused_headshot` | news chips on `/` and `/news` | **20×20 CSS px circle**, bordered in the person's `color` | forced to 20×20 with no `object-fit` — a non-square image is **stretched** |
 
