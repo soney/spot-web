@@ -12,7 +12,7 @@ news, research focus areas, and one person's CV.
 ## Architecture
 
 Read the "How the site is put together" section of `README.md` for the full
-picture. The three facts that change how you work:
+picture. The four facts that change how you work:
 
 1. **Almost all content is YAML in `_data/`.** The `.html` files at the root and
    in `_layouts/`/`_includes/` are thin views over it. A content change is
@@ -26,13 +26,20 @@ picture. The three facts that change how you work:
 3. **Records reference each other by `id`.** A publication's `venue` must match
    a `venues.yaml` id; its `authors` are `people.yaml` ids; `news.yaml` and
    `clusters.yaml` reference both by id. Ids are also URL slugs.
+4. **The same data is exposed to AI agents through WebMCP.**
+   `assets/js/webmcp.js` registers eleven tools that answer from JSON built by
+   `_plugins/mcp_index.rb` out of `_data/`. Nothing is maintained per record —
+   adding a paper or a person puts it there — so this is only your problem when
+   you add a *field*, or change how a template derives one. See the "WebMCP"
+   section of `README.md`.
 
-Four Ruby plugins live in `_plugins/`: `generate_data_pages.rb`,
-`cv_publication_codes.rb` (the CV's J.12/C.31 numbering),
-`cv_award_entries.rb`, and `cv_grouped_records.rb`. Each opens with a comment
+Seven Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
+(the BibTeX filter), `venue_order.rb`, `cv_publication_codes.rb` (the CV's
+J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`, and
+`mcp_index.rb` (the JSON behind the WebMCP tools). Each opens with a comment
 explaining what it does and the constraint that put it in Ruby rather than
-Liquid — read it before changing one; the last three exist because Liquid
-cannot express the counting, sorting, or bucketing they do.
+Liquid — read it before changing one; most of them exist because Liquid cannot
+express the counting, sorting, or bucketing they do.
 
 ## Running and verifying
 
@@ -138,6 +145,14 @@ wrongly, which makes them the things to get right the first time.
 - **`news.yaml` dates sort as strings.** `sort: "date" | reverse` is correct
   only for zero-padded ISO `YYYY-MM-DD`. A malformed date renders a plausible
   month and floats to the top of the list.
+- **A rule the templates enforce has a second copy in `_plugins/mcp_index.rb`.**
+  Which people get a `/team#<id>` anchor, which get a `/people/<id>/` page, how
+  author names are joined, which venue order a list uses — the WebMCP JSON
+  derives all of it, so that a tool answer and the rendered page cannot
+  disagree. Change one of those rules in a template and the JSON keeps the old
+  one, silently: nothing cross-checks them, and `diff -r _site` will not catch
+  it because both outputs changed the way you asked. Grep `mcp_index.rb` for the
+  rule you are about to change.
 
 ## Deployment
 

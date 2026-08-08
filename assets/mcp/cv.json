@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /assets/mcp/cv.json
+---
+{{ site | mcp_cv_json }}

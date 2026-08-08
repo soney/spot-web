@@ -12,6 +12,23 @@ publication_list_types:
   - conference
   - journal
 
+# Chrome origin trial token for WebMCP, rendered into every page's <head> by
+# _includes/webmcp_origin_trial.html. WebMCP is not a shipped web platform
+# feature: until it is, `document.modelContext` exists for ordinary visitors
+# only on an origin that has opted into the trial.
+#
+# EXPIRES 2026-11-17. After that the tools quietly stop existing for everyone
+# but developers with chrome://flags/#enable-webmcp-testing on -- no error, no
+# build failure, nothing on the page changes. Renew at
+# https://developer.chrome.com/origintrials for the origin https://from.so, or
+# empty this if the trial has ended because the API shipped.
+#
+# The token is bound to https://from.so and is not a secret -- it is served in
+# the HTML of every page, which is why it belongs in version control. Emptying
+# it is always safe: assets/js/webmcp.js registers nothing when the API is
+# absent, so the site behaves exactly as it did before any of this existed.
+webmcp_origin_trial_token: "AoHQkJuWU/5j3w9gOC+OueHq90hE2o0SgLgNTBx4G4prW+L8QnyU6tI+hYcnX1rcpWEItWab4XUVLv6eADmzzAUAAABHeyJvcmlnaW4iOiJodHRwczovL2Zyb20uc286NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0="
+
 markdown: kramdown
 kramdown:
   input: GFM

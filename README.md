@@ -68,7 +68,10 @@ _plugins/
   cv_publication_codes.rb     # CV publication numbering (J.12, C.31, ...)
   cv_award_entries.rb         # merges CV awards and paper awards into one sorted list
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
+  mcp_index.rb                # builds the JSON the WebMCP tools answer from
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
+  js/webmcp.js                # registers this site's tools for AI agents
+  mcp/                        # one line of Liquid each; generates the tools' JSON
 ```
 
 How a paper page appears: `_plugins/generate_data_pages.rb` runs during the
@@ -92,6 +95,55 @@ person's CV rather than a template; see the comment at the top of that file.
 Its interactive toggles (student authors, mentees, paper awards) are declared
 by `_includes/cv_toggle.html` and driven by `assets/js/cv.js` via URL
 parameters.
+
+### WebMCP: the site's tools for AI agents
+
+The site registers [WebMCP](https://github.com/webmachinelearning/webmcp) tools,
+so a browser agent on any page can search the publications, look someone up,
+read the CV, or open a page — from the data, rather than by scraping whatever
+HTML happens to be on screen. Eleven tools, all in `assets/js/webmcp.js`:
+`search_publications`, `get_publication`, `get_bibtex`, `list_people`,
+`get_person`, `list_research_areas`, `list_news`, `get_group_info`, `get_cv`,
+`navigate_to_page`, and `set_cv_display_options` (the CV page only).
+
+The whole implementation:
+
+```
+_plugins/mcp_index.rb                builds the JSON, out of the same _data/
+assets/mcp/index.json                one line of Liquid -> /assets/mcp/index.json
+assets/mcp/cv.json                   ditto, for the CV
+assets/js/webmcp.js                  registers the tools and answers the calls
+_includes/webmcp_script.html         loads it, and tells it what page this is
+_includes/webmcp_origin_trial.html   the Chrome origin-trial <meta>, if configured
+```
+
+**There is nothing to maintain per record.** `mcp_index.rb` reads `_data/` the
+same way the templates do — the same venue order, the same author-name joining,
+the same BibTeX filter — so adding a paper or a person puts it in the JSON
+automatically. If you add a *field* that an agent should see, add it there; if
+you add a *record*, you are already done.
+
+**WebMCP is not a shipped browser feature.** It is a W3C Community Group draft,
+available in Chrome only behind an origin trial. In every other browser
+`document.modelContext` does not exist, so `webmcp.js` reads one property, finds
+nothing, and returns — no fetch, no cost, nothing on the page changes.
+
+from.so is enrolled in the trial: `webmcp_origin_trial_token` in `_config.yml`
+holds the token, and `_includes/webmcp_origin_trial.html` renders it into the
+`<head>` of both layouts. **It expires on 2026-11-17.** When it does, the tools
+stop existing for the public and *nothing announces it* — the build still
+succeeds, every page still renders, and no test fails. Renew it at
+[developer.chrome.com/origintrials](https://developer.chrome.com/origintrials)
+for `https://from.so`, or empty the setting if the trial ended because the API
+shipped. The token is public by design (it is served in every page), so it
+belongs in version control.
+
+To test without a token, or after it expires, enable
+`chrome://flags/#enable-webmcp-testing` → *WebMCP for testing*.
+
+Both JSON files are generated, so neither is committed; they are ~260 KB and
+~38 KB, which gzip to about 55 KB and 9 KB. Nothing is fetched until an agent
+calls a tool, and the CV file only when a tool needs the CV.
 
 ## Common tasks
 
