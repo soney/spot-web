@@ -1,74 +1,129 @@
-- id: accessibility
-  title: Accessibility
-  authors:
-    - mauli_pandey
-    - steve_oney
-  papers:
-    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
-    - accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
-    - understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
-    - explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
-    - arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
-- id: building_testing_interactive_uis
-  title: Building & Testing Interactive UIs
-  authors:
-    - steve_oney
-    - rebecca_krosnick
-  papers:
-    - flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
-    - improving_crowd_supported_gui_testing_with_structural_guidance_2020
-    - implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
-    - expresso_building_responsive_interfaces_with_keyframes_2018
-    - interstate_a_language_and_environment_for_expressing_interface_behavior_2014
-    - constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
-    - firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
-- id: collaborative_data_science
-  title: Collaborative Data Science
-  authors:
-    - april_wang
-    - christopher_brooks
-    - steve_oney
-  papers:
-    - callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
-    - how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
-- id: communicating_about_code
-  title: Communicating about Code
-  authors:
-    - april_wang
-    - steve_oney
-    - christopher_brooks
-  papers:
-    - codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
-    - callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
-    - how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
-    - creating_guided_code_explanations_with_chat_codes_2018
-- id: immersive_programming
-  title: Immersive Programming
-  authors:
-    - lei_zhang
-    - steve_oney
-  papers:
-    - vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
-    - flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
-    - studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
-- id: on_demand_support_for_programmers
-  title: On-Demand Support for Programmers
-  authors:
-    - yan_chen
-    - steve_oney
-  papers:
-    - cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
-    - codeon_on_demand_software_development_assistance_2017
-    - towards_providing_on_demand_expert_support_for_software_developers_2016
+# Research focus areas, rendered on /research and listed on the homepage.
+#
+# Order here is the order they appear in both places; it runs roughly by how
+# active the area is rather than alphabetically.
+#
+#   title        the heading
+#   description  one sentence, shown under the heading. Says what the area is
+#                about, so a reader does not have to infer it from the papers.
+#   authors      people.yaml ids, rendered as the "People" line
+#   papers       publications.yaml ids, in the order they should be listed
+#
+# Not every publication belongs to an area, and that is deliberate -- stretching
+# an area title until everything fits makes all of them vaguer.
+
 - id: programming_education
-  title: Programming Education
+  title: Programming Education at Scale
+  description: >-
+    Instructors can see the code a class turns in, but not how any of it got written. We build tools that make a
+    whole class's problem-solving process visible in time to act on it -- including how students use AI.
   authors:
     - ashley_zhang
     - steve_oney
     - maryam_arab
   papers:
+    - editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
+    - codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
+    - spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025
+    - co_advisor_learning_programming_strategies_in_context_2025
     - cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
     - runex_augmenting_regular_expression_code_search_with_runtime_values_2023
     - vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
     - puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
     - edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020
+- id: web_automation
+  title: Web Automation and Programming by Demonstration
+  description: >-
+    People want to automate work on websites they do not control. We study what makes that hard, and build tools
+    that let them demonstrate what they want and then see what was inferred from the demonstration.
+  authors:
+    - rebecca_krosnick
+    - jiacheng_zhang
+    - maryam_arab
+    - steve_oney
+  papers:
+    - multi_click_cross_tab_web_automation_via_action_generalization_2025
+    - scrapeviz_hierarchical_representations_for_web_scraping_macros_2024
+    - parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022
+    - understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021
+- id: building_testing_interactive_uis
+  title: Building and Testing Interactive Interfaces
+  description: >-
+    Interactive behavior is scattered across event handlers, which makes it hard to write, hard to read, and
+    hard to test. We design notations, editors, and prototyping tools for expressing behavior directly, and
+    techniques for finding where an interface breaks.
+  authors:
+    - steve_oney
+    - rebecca_krosnick
+  papers:
+    - simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
+    - cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
+    - improving_crowd_supported_gui_testing_with_structural_guidance_2020
+    - implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
+    - expresso_building_responsive_interfaces_with_keyframes_2018
+    - interstate_a_language_and_environment_for_expressing_interface_behavior_2014
+    - constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
+    - playbook_revision_control_comparison_for_interactive_mockups_2011
+    - how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010
+    - firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
+- id: communicating_about_code
+  title: Explaining Code and Capturing Process
+  description: >-
+    Code records the result of a decision but not the reasoning behind it. We build editors, notebooks, and
+    visualizations that capture the intent, discussion, and process behind an artifact, and keep them attached
+    to it.
+  authors:
+    - april_wang
+    - steve_oney
+    - christopher_brooks
+  papers:
+    - convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025
+    - colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023
+    - think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021
+    - callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
+    - how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
+    - creating_guided_code_explanations_with_chat_codes_2018
+    - codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012
+- id: accessibility
+  title: Accessibility of Programming and the Web
+  description: >-
+    Programming tools are visual by default, which shapes who can contribute to software and in what role. We
+    study how blind and low-vision developers actually work, alone and on mixed-ability teams, and what their
+    tools would have to change.
+  authors:
+    - mauli_pandey
+    - steve_oney
+  papers:
+    - towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
+    - ui_development_in_mixed_ability_software_engineering_teams_2023
+    - accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
+    - understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
+    - explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
+    - arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
+- id: immersive_programming
+  title: Immersive Authoring
+  description: >-
+    Building 3D content means describing spatial things through a 2D screen. We build tools for authoring,
+    versioning, and co-creating scenes with generative models from inside VR.
+  authors:
+    - lei_zhang
+    - steve_oney
+  papers:
+    - vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024
+    - vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
+    - flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
+    - studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
+- id: on_demand_support_for_programmers
+  title: On-Demand Help for Programmers
+  description: >-
+    A stuck programmer needs a helper who already has their context. We built systems that package that context,
+    route it to an expert, a crowd, or a program synthesizer, and get the answer back into the editor -- mostly
+    between 2016 and 2020.
+  authors:
+    - yan_chen
+    - steve_oney
+  papers:
+    - a_hybrid_crowd_machine_workflow_for_program_synthesis_2020
+    - codeon_on_demand_software_development_assistance_2017
+    - codemend_assisting_interactive_programming_with_bimodal_embedding_2016
+    - towards_providing_on_demand_expert_support_for_software_developers_2016
