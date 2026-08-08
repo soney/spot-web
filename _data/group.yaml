@@ -1,13 +1,7 @@
 overview: >-
-  Computer programming skills are becoming indispensable for a variety of professions. However, computer programming is
-  often prohibitively difficult to learn or do correctly. Many programming languages and tools were designed around the
-  needs and limitations of the computers executing code, which can lead to design features that are counterintuitive for
-  the people who use those tools.
-
-
   We are a research group at the [University of Michigan](https://umich.edu/), primarily in the [School of
   Information](https://www.si.umich.edu/) and [Computer Science](https://cse.engin.umich.edu/). Our research focuses on
-  understanding the factors that make programming tools usable and designing & building new tools for programmers.
+  understanding the factors that make programming tools usable and designing & building new tools for programmers and people learning to program.
 joining: >-
   We are always excited to work with motivated and talented students.
 
@@ -21,7 +15,7 @@ joining: >-
   When you do, it will email the current members of the team so that we can see if there are any potentially matching
   projects. If you are unable to fill out that form for any reason, please reach out to
   [soney@umich.edu](mailto:soney@umich.edu).
-recent_pub_cutoff_year: 2019
+recent_pub_cutoff_year: 2020
 announcement: ""
 
 # Order in which current-member tiers are listed on the homepage and /team.
