@@ -5,8 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  {%- comment -%}
+    `page.description` is set per page where there is something better to say
+    than the site-wide line; _plugins/generate_data_pages.rb sets it on writing
+    pages from blog.yaml. The Open Graph and Twitter tags exist so that a
+    from.so URL pasted into Slack, iMessage or a mail client previews as the
+    page it points at rather than as a bare link -- which is the whole reason
+    /writing/<slug>/ pages exist. No og:image: there is no per-page artwork to
+    point at, and a wrong one is worse than none.
+
+    The last assign below closes with `%}` rather than `-%}` on purpose. Strip
+    that newline too and the whole block collapses onto the color-scheme line,
+    dragging <title> up with it -- which renders identically but shows up as a
+    changed line on every page of an `_site` diff, burying the real change.
+  {%- endcomment -%}
+  {%- assign meta_title = page.title | default: site.title -%}
+  {%- assign meta_description = page.description | default: site.description | strip_html | normalize_whitespace | strip %}
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ meta_description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

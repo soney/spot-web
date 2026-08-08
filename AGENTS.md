@@ -18,14 +18,16 @@ picture. The four facts that change how you work:
    in `_layouts/`/`_includes/` are thin views over it. A content change is
    almost always a `_data/*.yaml` edit and nothing else. Do not add an HTML file
    per paper or per person.
-2. **`/papers/<id>/` and `/people/<id>/` are generated at build time** by
-   `_plugins/generate_data_pages.rb`. Nothing is written to disk. There is no
-   `scripts/generate-pages.rb`, no `_papers/`, and no `_people_pages/` — if you
-   have seen those in older docs or commit messages, they are gone. Person pages
-   are generated only for records with `use_local_homepage: true`.
+2. **`/papers/<id>/`, `/people/<id>/` and `/writing/<slug>/` are generated at
+   build time** by `_plugins/generate_data_pages.rb`. Nothing is written to
+   disk. There is no `scripts/generate-pages.rb`, no `_papers/`, and no
+   `_people_pages/` — if you have seen those in older docs or commit messages,
+   they are gone. Person pages are generated only for records with
+   `use_local_homepage: true`.
 3. **Records reference each other by `id`.** A publication's `venue` must match
    a `venues.yaml` id; its `authors` are `people.yaml` ids; `news.yaml` and
-   `clusters.yaml` reference both by id. Ids are also URL slugs.
+   `clusters.yaml` reference both by id. Ids are also URL slugs — except in
+   `blog.yaml`, where a separate `slug` field owns the URL.
 4. **The same data is exposed to AI agents through WebMCP.**
    `assets/js/webmcp.js` registers eleven tools that answer from JSON built by
    `_plugins/mcp_index.rb` out of `_data/`. Nothing is maintained per record —
@@ -142,6 +144,12 @@ wrongly, which makes them the things to get right the first time.
 - **Use the `>-` folded block for any Markdown-bearing YAML string** (news
   `description`, `long_bio`). A plain scalar breaks on a leading `[`, on `: `,
   and on a space-preceded `#`, which truncates the line silently.
+- **A `blog.yaml` `slug` is a published URL.** `/writing/<slug>/` links are
+  meant to be sent to people, and one of them is hard-coded in `group.yaml`'s
+  `joining` text. Changing a slug 404s every copy already in someone's inbox,
+  and nothing on the site looks any different afterwards. Treat an existing slug
+  as permanent; grep for it before editing one. Dropping the field is silent
+  too — the URL quietly falls back to the `id`, which encodes a date.
 - **`news.yaml` dates sort as strings.** `sort: "date" | reverse` is correct
   only for zero-padded ISO `YYYY-MM-DD`. A malformed date renders a plausible
   month and floats to the top of the list.
@@ -180,6 +188,7 @@ each, under **Common tasks**:
 - Adding a paper (PDF, venue, authors, publication record, CV effects)
 - Adding a news item
 - Adding or updating a person, including member → alum
+- Adding a writing entry (`blog.yaml`, and why `slug` is permanent)
 - Updating a profile picture
 - Checking your work
 
