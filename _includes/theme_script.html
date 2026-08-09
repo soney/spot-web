@@ -1,0 +1,87 @@
+{%- comment -%}
+  Resolves the light/dark theme and stamps it on <html> as data-theme, which is
+  what the dark-mode blocks in assets/css/site.css and assets/css/cv.css key
+  off. Also wires up the navbar toggle from _includes/theme_toggle.html, if the
+  page has one.
+
+  Inline and blocking, in <head> before the stylesheets, on purpose. The
+  attribute has to exist before the first pixel is painted or a reader whose
+  stored choice differs from their OS preference sees the wrong theme flash.
+  That rules out a deferred external file, and an external blocking one would
+  cost a round trip for ~40 lines.
+
+  This script is an override, not the mechanism. The stylesheets carry both
+  palettes in light-dark() pairs and follow the OS on their own, so with
+  JavaScript off -- when nothing below ever runs and the attribute is never set
+  -- a reader on a dark OS still gets the dark site. All this adds is the
+  ability to disagree with the OS. The toggle itself hides in that case (the
+  stylesheets key its display off `:root[data-theme]`), so there is no control
+  that does nothing when clicked.
+
+  Storing nothing until the reader clicks is what lets `stored()` double as
+  "has the reader chosen?", which is how the OS-preference listener knows
+  whether it is still allowed to follow along -- and it is why an untouched
+  browser gets the pure-CSS path above rather than a value this script guessed.
+{%- endcomment -%}
+<script>
+  (function () {
+    var STORAGE_KEY = 'theme';
+    var root = document.documentElement;
+    var query = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function stored() {
+      // localStorage throws, rather than returning null, in Safari's private
+      // mode and wherever site data is blocked. Treated as "no choice yet".
+      try {
+        var choice = localStorage.getItem(STORAGE_KEY);
+        return choice === 'light' || choice === 'dark' ? choice : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function apply(theme) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
+      root.dataset.theme = theme;
+
+      var button = document.querySelector('[data-theme-toggle]');
+      if (button) {
+        // Names what the click does, matching the icon, which is the one the
+        // reader is switching to. Set here rather than in the markup because
+        // Liquid cannot know the theme at build time.
+        var label = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+      }
+    }
+
+    apply(stored() || (query.matches ? 'dark' : 'light'));
+
+    query.addEventListener('change', function (event) {
+      if (!stored()) apply(event.matches ? 'dark' : 'light');
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('[data-theme-toggle]');
+      if (!button) return;
+
+      // The button did not exist during the first apply() above, so it is
+      // still carrying the placeholder label from the include.
+      apply(root.dataset.theme);
+
+      button.addEventListener('click', function () {
+        var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        try {
+          localStorage.setItem(STORAGE_KEY, next);
+        } catch (e) {
+          // Choice will not survive the page, but the click still works.
+        }
+        apply(next);
+      });
+    });
+  })();
+</script>

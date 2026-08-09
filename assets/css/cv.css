@@ -1,14 +1,79 @@
+/* The palette, both themes at once, same mechanism as site.css:
+   `light-dark(light, dark)` picks by the used value of `color-scheme`, which
+   follows the OS until _includes/theme_script.html stamps data-theme on <html>
+   to carry the reader's choice. Every value the dark theme changes here is a
+   colour, so unlike site.css there is no residue -- this block is the whole of
+   dark mode for the CV.
+
+   Dark is warm dark paper, not a second copy of the site's palette. The light
+   rgb(243, 240, 235) is warm: its red channel sits 8 above its blue, and that
+   cast is what makes the page read as paper rather than as a screen. #1B1815
+   keeps the spread at 6 and the text is warm too, so the CV stays a visibly
+   warmer document than the main site's cool #16181A.
+
+   Ratios are WCAG 2.1, floored to 2dp. The two rule colours are the one place
+   where a contrast floor is the wrong target: #AAA on paper is a deliberately
+   faint 2.04:1 hairline, and carrying #AAA straight onto #1B1815 would give
+   7:1 -- a bright bar shouting across the page. They are decorative rules, not
+   UI boundaries, so the 3:1 bar does not apply; the dark halves match the
+   light-mode subtlety instead. */
 :root {
-    --font-color: #333;
+    color-scheme: light dark;
+
+    --font-color: light-dark(#333, #E7E1D8);
+    /* dark: 13.60:1. Also drives --award-color and --link-color, which are both
+       already var(--font-color) -- custom-property substitution is lazy, so
+       redefining this one updates all three. */
     --font-size: 14pt;
     --line-height: calc(var(--font-size) + 2pt);
     --award-color: var(--font-color);
     --link-color: var(--font-color);
-    --link-hover-color: #0056b3;
-    --paper-color: rgb(243, 240, 235);
-    --rule-strong-color: #AAA;
-    --rule-subtle-color: #DDD;
-    --note-color: #555;
+    --link-hover-color: light-dark(#0056b3, #84B0E6);
+    /* dark: 7.85:1 -- the same blue the main site uses in dark mode */
+    --paper-color: light-dark(rgb(243, 240, 235), #1B1815);
+    /* dark: luminance 0.00940 */
+    --rule-strong-color: light-dark(#AAA, #514B44);
+    /* dark 2.05:1 -- the light #AAA is 2.04:1 */
+    --rule-subtle-color: light-dark(#DDD, #2A2724);
+    /* dark 1.19:1 -- the light #DDD is 1.19:1 */
+    --note-color: light-dark(#555, #B0A69B);
+    /* dark: 7.38:1 */
+
+    --bs-body-color: light-dark(#212529, #E7E1D8);
+    /* cv.css sets body's background but never its colour, so Bootstrap's light
+       #212529 leaked through at 1.14:1 on dark paper. The light half is
+       Bootstrap 5.3.8's own default, so light mode resolves exactly as it did
+       before this was declared here. */
+}
+
+/* --- Which theme is on -------------------------------------------------
+   As in site.css: light-dark() follows the OS until the script stamps a
+   choice, which is what keeps the CV dark for a reader with JavaScript off and
+   a dark OS. */
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* Paper is always light. This matters more here than in site.css: the @media
+   print block at the end of this file overrides `body { color }` at (0,0,1),
+   but the CV's text colour actually comes from the nested
+   `body .cv.container { color: var(--font-color) }` at (0,2,1), which outranks
+   it -- so a dark --font-color reaching paper would print #E7E1D8 on white,
+   1.29:1. Invisible. Forcing color-scheme here resolves --font-color to its
+   light half before that ever arises.
+
+   `:root[data-theme]` ties `:root[data-theme="dark"]` above at (0,2,0) and
+   wins on source order, so it has to stay below it. */
+@media print {
+
+    :root,
+    :root[data-theme] {
+        color-scheme: light;
+    }
 }
 
 body {
@@ -231,6 +296,74 @@ body {
     gap: 0.4rem;
 }
 
+/* Light/dark toggle. The behavioural half of this -- hidden until the script
+   has run, and which of the two icons shows -- is deliberately restated here
+   rather than shared with site.css: this stylesheet is a standalone parallel of
+   that one, with its own palette, its own dark block and its own print block,
+   and the CV does not load site.css. Three rules is a smaller price than a
+   third stylesheet, and if they ever drift the symptom is loud (both icons, or
+   neither), not silent.
+
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
+
+:root[data-theme] .theme-toggle {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Show the theme being switched *to*, matching the aria-label the script sets:
+   moon while light, sun while dark. Keyed off the attribute rather than
+   swapped by the script so the correct icon is painted on the first frame. */
+:root[data-theme="dark"] .theme-toggle-to-dark,
+:root:not([data-theme="dark"]) .theme-toggle-to-light {
+    display: none;
+}
+
+.cv-theme-toggle {
+    /* Absolute, and outside <main>, so it occupies no space in the document:
+       in flow it would push all 7em of deliberate whitespace above the name
+       further down. No positioned ancestor, so this resolves against the
+       initial containing block -- i.e. the page's top-right corner -- which
+       also sidesteps the .cv.container top margin collapsing through <main>
+       and dragging a main-relative offset down onto the name.
+
+       Sized in rem rather than the CV's --font-size, because it is chrome
+       around the document rather than part of it, and should not grow with the
+       document's type. */
+    background: none;
+    border: 0;
+    color: var(--note-color);
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+}
+
+.cv-theme-toggle:hover {
+    /* The CV's own hover convention: links go to --link-hover-color. This is a
+       control rather than a link, so it settles on the body colour instead --
+       the same "darken toward the text" move, without borrowing the blue that
+       marks something as followable. */
+    color: var(--font-color);
+}
+
+.cv-theme-toggle:focus-visible {
+    /* --font-color is the CV's body text, so it clears the 3:1 a focus ring
+       needs in both themes by construction: 12.63:1 on paper, 13.60:1 on dark
+       paper. Nothing else on this page sets a focus style, so there is no
+       Bootstrap glow to suppress here. */
+    outline: 2px solid var(--font-color);
+    outline-offset: 2px;
+}
+
 .highlight-students-note {
     display: none;
     font-style: italic;
@@ -254,58 +387,6 @@ body:not(.show-other-mentees) .cv-other-mentees-header {
 
 body:not(.show-paper-awards) .paper-award-item {
     display: none;
-}
-
-/* Dark mode: warm dark paper, not a second copy of the site's palette. Same
-   mechanism as site.css -- pure CSS keyed off the OS preference, with
-   <meta name="color-scheme" content="light dark"> in _layouts/cv.html so the
-   canvas and the three toggle checkboxes (which are bare UA controls, not
-   Bootstrap ones) are already dark before this file loads.
-
-   The light background rgb(243, 240, 235) is warm: its red channel sits 8
-   above its blue, and that cast is what makes the page read as paper rather
-   than as a screen. #1B1815 keeps the spread at 6 and the text is warm too, so
-   the CV stays a visibly warmer document than the main site's cool #16181A.
-
-   `screen and` matters more here than in site.css. The @media print block
-   below overrides `body { color }` at specificity (0,0,1), but the CV's text
-   colour actually comes from the nested `body .cv.container { color:
-   var(--font-color) }` at (0,2,1), which outranks it -- so without `screen` a
-   dark --font-color would survive into print and the CV would come out
-   #E7E1D8 on white paper, 1.29:1. Invisible. With `screen`, print is untouched
-   and byte-identical to today.
-
-   Ratios are WCAG 2.1, floored to 2dp. The two heading rules are the one place
-   where a contrast floor is the wrong target: #AAA on paper is a deliberately
-   faint 2.04:1 hairline, and carrying #AAA straight onto #1B1815 would give
-   7:1 -- a bright bar shouting across the page. They are decorative rules, not
-   UI boundaries, so the 3:1 bar does not apply; these match the light-mode
-   subtlety instead. */
-@media screen and (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-
-        --font-color: #E7E1D8;
-        /* 13.60:1. Also drives --award-color and --link-color, which are both
-           already var(--font-color) -- custom-property substitution is lazy, so
-           redefining this one updates all three. */
-        --link-hover-color: #84B0E6;
-        /* 7.85:1 -- the same blue the main site uses in dark mode */
-
-        --paper-color: #1B1815;
-        /* luminance 0.00940 */
-        --rule-strong-color: #514B44;
-        /* 2.05:1 -- the light #AAA is 2.04:1 */
-        --rule-subtle-color: #2A2724;
-        /* 1.19:1 -- the light #DDD is 1.19:1 */
-        --bs-body-color: var(--font-color);
-        /* cv.css sets body's background but never its colour, so Bootstrap's
-           light #212529 leaked through at 1.14:1 on dark paper. Print is
-           unaffected: @media print sets body{color:#000} at equal specificity
-           and wins on source order. */
-        --note-color: #B0A69B;
-        /* 7.38:1 */
-    }
 }
 
 /* Print/PDF export tuning (was assets/css/cv-pdfout.css). */

@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   {%- comment -%}
+    Ahead of every stylesheet on purpose. A script tag placed after a <link
+    rel=stylesheet> cannot execute until that sheet has downloaded, and the
+    three below are on CDNs -- so from here the theme is stamped on the first
+    parse rather than a round trip later.
+  {%- endcomment -%}
+  {%- include theme_script.html %}
+  {%- comment -%}
     `page.description` is set per page where there is something better to say
     than the site-wide line; _plugins/generate_data_pages.rb sets it on writing
     pages from blog.yaml. The Open Graph and Twitter tags exist so that a
@@ -61,6 +68,7 @@
         {% if page.back_url %}
         <a class="nav-link nav-back ms-auto" href="{{ page.back_url | relative_url }}">&larr; {{ page.back_label }}</a>
         {% endif %}
+        {% include theme_toggle.html class="nav-link" %}
       </div>
     </nav>
 

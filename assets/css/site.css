@@ -1,17 +1,71 @@
+/* The palette, both themes at once. `light-dark(light, dark)` picks by the
+   used value of `color-scheme`, which is what makes one declaration serve two
+   themes and, more to the point, serve them from two different sources: the OS
+   preference when nothing has been chosen, and the reader's choice when it
+   has. The three rules under "Which theme is on" below are the whole of that
+   switch. Writing this as a prefers-color-scheme block plus an attribute block
+   would mean two copies of every value here, and Liquid-style silent drift
+   between them is the failure this repo is least able to catch.
+
+   Every ratio noted below was computed with the WCAG 2.1 relative-luminance
+   formula and floored to 2dp, so none is overstated. Body text needs 4.5:1;
+   borders, focus rings and other graphical boundaries need 3:1. */
 :root {
-    --text-color: #131516;
-    --background-color: #FFF;
+    color-scheme: light dark;
 
-    --secondary-text-color: #655A52;
+    --text-color: light-dark(#131516, #E6E9EB);
+    /* dark: 14.59:1 on the page, 12.66:1 on the announcement panel, 12.33:1 on code */
+    --background-color: light-dark(#FFF, #16181A);
+    /* dark: luminance 0.00898 -- 1.17:1 off pure black, so it reads as a surface */
 
-    --link-color: #2F65A7;
-    --link-hover-color: #2F65A7;
+    --secondary-text-color: light-dark(#655A52, #9C9289);
+    /* dark: 5.83:1 on the page, 5.06:1 on the announcement panel, 4.93:1 on
+       code. Kept dim enough to still read as secondary: it is 40% of the body
+       text's ratio there, against 36% in light mode. */
 
-    --announcement-background-color: #F5F5F5;
-    --announcement-foreground-color: #424242;
+    --link-color: light-dark(#2F65A7, #84B0E6);
+    /* dark: 7.91:1. The light #2F65A7 is only 3.00:1 against the dark page --
+       it is a mid-tone blue built for white. #84B0E6 is the same hue (213.1 vs
+       213.0 degrees) lightened, so it still reads as the site's blue. */
+    --link-hover-color: light-dark(#2F65A7, #84B0E6);
+
+    --announcement-background-color: light-dark(#F5F5F5, #212528);
+    --announcement-foreground-color: light-dark(#424242, #C2C7CB);
+    /* dark: 9.06:1 on the panel above; the panel is 1.15:1 off the page */
     --announcement-bullhorn-color: #FFCB05;
+    /* One value for both: as a border on the dark panel it is 10.14:1, where it
+       needs 3:1. It is the U-M maize and the one colour dark mode improves for
+       free. */
 
-    --code-background-color: #F7F7F7;
+    --code-background-color: light-dark(#F7F7F7, #23272B);
+    /* dark: 1.18:1 off the page, and body text on it is 12.33:1 */
+
+    /* Bootstrap's colour utilities read the five tokens below and ship
+       light-theme values for them. .text-body is on the three homepage section
+       headings and the sponsors note, .text-muted on the team bios,
+       .text-secondary on paper award labels, and --bs-secondary-color also
+       colours the " · " breadcrumb separators. All of them set color with
+       !important, so the variable is the only override point. Left alone they
+       land around 1.15:1 on the dark page, i.e. invisible.
+
+       The light halves are Bootstrap 5.3.8's own defaults, read back out of the
+       browser rather than typed from memory, so light mode resolves to exactly
+       what it did before these were declared here. This works because site.css
+       loads after Bootstrap (default.html line 9, then line 15) and :root ties
+       Bootstrap's `:root, [data-bs-theme=light]` on specificity, so source
+       order decides. Keep those two <link> tags in that order; reversing them
+       would silently restore Bootstrap's light values.
+
+       These are Bootstrap 5.3 names; a major version bump would need them
+       rechecked, and the failure mode is silent. */
+    --bs-body-color: light-dark(#212529, #E6E9EB);
+    /* .text-body -- dark 14.59:1, was 1.15:1 */
+    --bs-secondary-color: light-dark(rgba(33, 37, 41, 0.75), #9C9289);
+    /* .text-muted and the breadcrumb dividers -- dark 5.83:1, was 1.11:1 */
+    --bs-code-color: light-dark(#d63384, #E685B5);
+    /* dark 7.10:1. Bootstrap's light #d63384 is 3.95:1 there; #E685B5 is
+       Bootstrap 5.3's own dark-theme code colour. Reaches every `code` span in
+       a markdownified long_bio or group overview. */
 
     --bs-breadcrumb-divider: " · ";
 }
@@ -118,6 +172,19 @@ body {
         background: none;
         margin-top: 20px;
         margin-bottom: 0px;
+
+        /* .navbar-expand pins this row to one line, and .nav-back below is
+           nowrap, so on a page with a back link under about 500px the row
+           already ran past the right edge and scrolled the whole document
+           sideways. The theme toggle sits at the end of that row, so it went
+           off-screen with it -- a control you have to scroll horizontally to
+           find is not one you can use. Bootstrap's .navbar > .container takes
+           `flex-wrap: inherit`, so setting it here is what reaches it.
+
+           This only engages once the row overflows: at every width where the
+           navbar already fitted on one line, wrap and nowrap lay out
+           identically. */
+        flex-wrap: wrap;
 
         .navbar-brand {
             color: var(--text-color);
@@ -380,165 +447,234 @@ body {
     }
 }
 
-/* Dark mode, following the OS preference. There is no toggle and no
-   JavaScript: everything below is a re-pointing of the custom properties
-   above, so the theme is decided by the time the first pixel is painted and
-   there is nothing to flash. The <meta name="color-scheme"> in
-   _layouts/default.html covers the one gap CSS cannot -- the canvas the
-   browser paints while these stylesheets are still downloading.
+/* The navbar's light/dark toggle (_includes/theme_toggle.html). Top level
+   rather than nested inside `body nav.navbar` above because every rule here is
+   conditioned on <html>, and `:root[data-theme] &` reads worse than it looks.
+   It carries Bootstrap's .nav-link, which zeroes a button's background and
+   border for exactly this case; only the parts specific to an icon button are
+   below.
 
-   Bootstrap 5.3 ships a dark theme, but it keys off a data-bs-theme attribute
-   and never reads prefers-color-scheme, and CSS cannot set an attribute.
-   Rather than add a script for it, the four --bs-* tokens that the utilities
-   in this site's markup actually read are re-pointed at the site's own tokens
-   below. This works because site.css loads after Bootstrap (default.html line
-   9, then line 15) and :root ties Bootstrap's `:root, [data-bs-theme=light]`
-   on specificity, so source order decides. Keep those two <link> tags in that
-   order; reversing them would silently restore Bootstrap's light values.
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
 
-   `screen and` is load-bearing. Browsers drop background-color when printing
-   but honour color, so an unscoped query would print light text onto white
-   paper. With `screen`, printed pages are identical to today.
+:root[data-theme] .theme-toggle {
+    /* inline-flex, so the icon centres in the box rather than sitting on the
+       text baseline it does not have. */
+    align-items: center;
+    color: var(--secondary-text-color);
+    display: inline-flex;
+    font-size: 1.05rem;
+    justify-content: center;
+    line-height: 1;
+    padding: 0.5rem;
+}
 
-   Every ratio below was computed with the WCAG 2.1 relative-luminance formula
-   and floored to 2dp, so none is overstated. Body text needs 4.5:1; borders,
-   focus rings and other graphical boundaries need 3:1. */
+.theme-toggle:hover {
+    /* Matches what an active nav tab does: darken to the body colour. Beats
+       Bootstrap's .nav-link:hover on source order at equal specificity. */
+    color: var(--text-color);
+}
+
+/* Show the theme being switched *to*, matching the aria-label the script sets:
+   moon while light, sun while dark. Keyed off the attribute rather than
+   swapped by the script so the correct icon is painted on the first frame --
+   the theme is settled in <head>, but the script does not touch the DOM until
+   DOMContentLoaded. */
+:root[data-theme="dark"] .theme-toggle-to-dark,
+:root:not([data-theme="dark"]) .theme-toggle-to-light {
+    display: none;
+}
+
+/* --- Which theme is on -------------------------------------------------
+   Three rules, and the whole switch. `color-scheme: light dark` in :root above
+   means light-dark() follows the OS by default -- which is the no-JavaScript
+   path, and the reason the palette still works with the script disabled. The
+   two attribute rules below let _includes/theme_script.html override that with
+   the reader's stored choice by stamping data-theme on <html> in <head>.
+
+   The script sets no inline color-scheme of its own: an inline style would
+   outrank the print rule below, which is the one place a chosen theme must not
+   win. */
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* Paper is always light, whatever the OS says and whatever the reader chose.
+   This replaces the `@media screen and (...)` scoping the dark block used to
+   carry: browsers drop background-color when printing but honour color, so a
+   dark palette reaching paper would print light text onto white.
+
+   `:root[data-theme]` is not redundant -- a bare `:root` is (0,1,0) and would
+   lose to `:root[data-theme="dark"]` at (0,2,0) above, media query or not.
+   This ties that at (0,2,0) and wins on source order, so it has to stay below
+   them. */
+@media print {
+
+    :root,
+    :root[data-theme] {
+        color-scheme: light;
+    }
+}
+
+/* --- Dark mode, the parts light-dark() cannot carry ---------------------
+   Everything else about dark mode is in the palette at the top of this file.
+   These five values are here because light-dark() takes two <color>s and
+   these are not colours: three are filter lists, and two are the bare comma
+   triples Bootstrap feeds to rgba().
+
+   So this is the one thing in the file that genuinely exists twice, and the
+   two copies must stay identical. The first covers a reader with no stored
+   choice -- which includes every reader with JavaScript off, since the
+   attribute only ever exists because the script set it -- and the second
+   covers a reader who chose dark. Five declarations was the price of keeping
+   the no-JS path; forty-five was not.
+
+   Both are scoped to `screen` so none of it reaches paper, matching the print
+   rule above. */
 @media screen and (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-
-        --text-color: #E6E9EB;
-        /* 14.59:1 on the page, 12.66:1 on the announcement panel, 12.33:1 on code */
-        --background-color: #16181A;
-        /* luminance 0.00898 -- 1.17:1 off pure black, so it reads as a surface */
-
-        --secondary-text-color: #9C9289;
-        /* 5.83:1 on the page, 5.06:1 on the announcement panel, 4.93:1 on code.
-           Kept dim enough to still read as secondary: it is 40% of the body
-           text's ratio here, against 36% in light mode. */
-
-        --link-color: #84B0E6;
-        /* 7.91:1. The light #2F65A7 is only 3.00:1 against this page -- it is a
-           mid-tone blue built for white. This is the same hue (213.1 vs 213.0
-           degrees) lightened, so it still reads as the site's blue. */
-        --link-hover-color: #84B0E6;
-
-        --announcement-background-color: #212528;
-        --announcement-foreground-color: #C2C7CB;
-        /* 9.06:1 on the panel above; the panel is 1.15:1 off the page */
-        /* --announcement-bullhorn-color stays #FFCB05: as a border it is
-           10.14:1 on the panel, where it needs 3:1. It is the U-M maize and
-           the one colour dark mode improves for free. */
-
-        --code-background-color: #23272B;
-        /* 1.18:1 off the page, and body text on it is 12.33:1 */
-        --image-edge-color: #6B7278;
-        /* 3.64:1 against the page (computed here; not in the palette table).
-           Deliberately dim: at 5.79:1 the ring read as a bright outline around
-           every photo. This still clears the 3:1 boundary bar, which is the
-           floor for the job it does -- carrying the edge where a headshot or an
-           accent border would otherwise dissolve into the page. */
-
-        /* Bootstrap's colour utilities read these four and ship light-theme
-           values for them. .text-body is on the three homepage section
-           headings and the sponsors note, .text-muted on the team bios,
-           .text-secondary on paper award labels, and --bs-secondary-color also
-           colours the " · " breadcrumb separators. All of them set color with
-           !important, so the variable is the only override point. Left alone
-           they land around 1.15:1 here, i.e. invisible.
-           These are Bootstrap 5.3 names; a major version bump would need them
-           rechecked, and the failure mode is silent. */
-        --bs-body-color: var(--text-color);
+    :root:not([data-theme]) {
+        --headshot-filter: grayscale(100%) brightness(85%) contrast(90%);
+        --footer-logo-filter: brightness(0) invert(1);
+        --footer-nsf-filter: grayscale(1) invert(1) brightness(2);
+        --image-edge-shadow: 0 0 0 1px #6B7278;
+        --focus-ring: 2px solid #FFCB05;
+        --focus-ring-offset: 2px;
         --bs-body-color-rgb: 230, 233, 235;
-        /* .text-body -- 14.59:1, was 1.15:1 */
-        --bs-secondary-color: var(--secondary-text-color);
-        /* .text-muted and the breadcrumb dividers -- 5.83:1, was 1.11:1 */
         --bs-secondary-rgb: 156, 146, 137;
-        --bs-code-color: #E685B5;
-        /* 7.10:1. Bootstrap's light #d63384 is 3.95:1 here; this is Bootstrap
-           5.3's own dark-theme code colour. Reaches every `code` span in a
-           markdownified long_bio or group overview. */
-        /* .text-secondary -- 5.83:1. Bootstrap does not redeclare this one even
-           in its own dark theme, which is why the token is the right lever. */
+    }
+}
+
+@media screen {
+    :root[data-theme="dark"] {
+        --headshot-filter: grayscale(100%) brightness(85%) contrast(90%);
+        --footer-logo-filter: brightness(0) invert(1);
+        --footer-nsf-filter: grayscale(1) invert(1) brightness(2);
+        --image-edge-shadow: 0 0 0 1px #6B7278;
+        --focus-ring: 2px solid #FFCB05;
+        --focus-ring-offset: 2px;
+        --bs-body-color-rgb: 230, 233, 235;
+        --bs-secondary-rgb: 156, 146, 137;
+    }
+}
+
+/* The light halves of those five, and the rules that read them. Every rule
+   below is unconditional: the variable carries the theme, so there is no
+   second selector to keep in step. */
+:root {
+    --headshot-filter: grayscale(100%) brightness(110%) contrast(80%);
+    /* Dark drops brightness below 1 so the photo recedes toward the dark page,
+       mirroring what brightness(110%) does against white. */
+    --footer-logo-filter: none;
+    --footer-nsf-filter: none;
+    --image-edge-shadow: none;
+    /* Dark: #6B7278 is 3.64:1 against the page -- deliberately dim, because at
+       5.79:1 the ring read as a bright outline around every photo, and 3:1 is
+       the floor for the boundary job it does.
+
+       `none` rather than a transparent ring: a transparent one would paint
+       nothing either, but it would show up on every headshot in a computed-
+       style diff, and "diff the output and expect nothing" is how changes are
+       checked in this repo. */
+    --focus-ring: 0;
+    --focus-ring-offset: 0;
+    /* `0` is exactly what Bootstrap sets for .nav-link/.btn :focus-visible, so
+       light mode keeps the glow it shipped with, untouched. */
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-secondary-rgb: 108, 117, 125;
+}
+
+body {
+
+    .nav-link:focus-visible,
+    .btn:focus-visible {
+        /* Bootstrap sets outline:0 on both and leaves a 25%-alpha blue glow,
+           which composites to about 1.3:1 on the dark page -- and to #244E8C on
+           a focused .btn fill, 1.41:1. Maize at outline-offset 2px sits against
+           the page on both sides: 11.69:1.
+
+           --focus-ring is `0` in light mode, which is exactly what Bootstrap
+           sets, so light-mode readers keep the glow the site shipped with.
+
+           The glow is left in place in dark mode too, where the old rule used
+           to suppress it with box-shadow:none. It cannot be suppressed from
+           here: `box-shadow: var(--x)` with --x unset is invalid at
+           computed-value time and resolves to none, which would strip light
+           mode's only focus indicator. At 1.3:1 the glow is not visible under
+           the maize ring anyway, and a dark-only rule to remove it is the
+           duplication this arrangement exists to avoid. */
+        outline: var(--focus-ring);
+        outline-offset: var(--focus-ring-offset);
     }
 
-    body {
-
-        .nav-link:focus-visible {
-            /* Bootstrap removes the focus outline here and substitutes a
-               25%-alpha blue glow, which composites to about 1.3:1 on this
-               page. Maize is 11.69:1. Dark only: the same glow is 1.41:1 in
-               light mode, but repairing that would change light mode. */
-            box-shadow: none;
-            outline: 2px solid var(--announcement-bullhorn-color);
-            outline-offset: 2px;
-        }
-
-        .btn:focus-visible {
-            /* Same problem as .nav-link above: Bootstrap sets outline:0 and
-               leaves a 25%-alpha blue glow, which composites to #244E8C --
-               2.15:1 on the page and 1.41:1 on the focused fill, so the focus
-               state is invisible. Maize at outline-offset 2px sits against the
-               page on both sides: 11.69:1. */
-            box-shadow: none;
-            outline: 2px solid var(--announcement-bullhorn-color);
-            outline-offset: 2px;
-        }
-
-        .member-display.card img.member-headshot {
-            /* brightness below 1 so the photo recedes toward the dark page,
-               mirroring what brightness(110%) does against white. */
-            filter: grayscale(100%) brightness(85%) contrast(90%);
-        }
-
-        .news-links img,
-        img.member-headshot {
-            /* Half the headshots have edge pixels darker than the page and
-               dissolve into it, and one of the ten accent colours in
-               people.yaml (#855238) drops to 2.76:1 as a chip border here. A
-               ring rather than a border: it costs no layout, and it sits
-               outside the inline border the chips carry, so it never has to
-               beat an inline style. The other nine accents all improve on
-               dark, so they are left alone. */
-            box-shadow: 0 0 0 1px var(--image-edge-color);
-        }
-
-        footer img {
-            /* The institutional marks are dark on transparent -- umsi and cse
-               #002E5E, misc #294E91, nsf #005699, and adobe's wordmark carries
-               no fill at all so it renders #000. Against the page they run
-               1.31:1 to 2.4:1: gone. brightness(0) flattens each mark to black
-               while preserving its alpha, then invert(1) makes it white, so
-               every logo becomes a clean white knockout at 17.80:1 against the
-               page -- the standard reverse treatment institutions publish for
-               dark backgrounds.
-
-               This is applied to all six rather than only the four dark ones:
-               a row mixing white knockouts with full-colour marks reads as an
-               accident. The cost is the brand colours -- Michigan maize,
-               Google's four, Adobe's red -- which is a deliberate trade for a
-               single coherent row. */
-            filter: brightness(0) invert(1);
-        }
-
-        footer img[src*="nsf_logo"] {
-            /* NSF is the one mark brightness(0) invert(1) cannot carry. Its
-               seal is 209 shapes over four fills plus a radial gradient, and
-               its form lives in the tonal differences between them -- flatten
-               them all to one white and it renders as a featureless blob.
-
-               So invert the tones instead of erasing them. grayscale collapses
-               the seal to luminance, invert turns the light paper dark and the
-               dark ink light, and brightness(2) lifts the result to match the
-               pure-white knockouts beside it. Black stays black under a
-               multiply, so the paper drops out to the page rather than becoming
-               a grey panel. The globe lands at white (17.80:1 on the page), the
-               gear at ~#999 (about 6:1), and the NSF letters knock out dark --
-               which is what a reverse version of this seal looks like.
-
-               Checked by rendering: at brightness(1.35) the mark reads visibly
-               greyer than the CSE wordmark next to it; at 2 they match. */
-            filter: grayscale(1) invert(1) brightness(2);
-        }
+    .member-display.card img.member-headshot {
+        filter: var(--headshot-filter);
     }
+
+    .news-links img,
+    img.member-headshot {
+        /* A ring rather than a border: it costs no layout, and it sits outside
+           the inline border the chips carry, so it never has to beat an inline
+           style. `none` in light mode, so nothing is painted there. */
+        box-shadow: var(--image-edge-shadow);
+    }
+
+    footer img {
+        /* The institutional marks are dark on transparent -- umsi and cse
+           #002E5E, misc #294E91, nsf #005699, and adobe's wordmark carries no
+           fill at all so it renders #000. Against the dark page they run 1.31:1
+           to 2.4:1: gone. brightness(0) flattens each mark to black while
+           preserving its alpha, then invert(1) makes it white, so every logo
+           becomes a clean white knockout at 17.80:1 -- the standard reverse
+           treatment institutions publish for dark backgrounds.
+
+           Applied to all six rather than only the four dark ones: a row mixing
+           white knockouts with full-colour marks reads as an accident. The cost
+           is the brand colours -- Michigan maize, Google's four, Adobe's red --
+           which is a deliberate trade for a single coherent row. */
+        filter: var(--footer-logo-filter);
+    }
+
+    footer img[src*="nsf_logo"] {
+        /* NSF is the one mark brightness(0) invert(1) cannot carry. Its seal is
+           209 shapes over four fills plus a radial gradient, and its form lives
+           in the tonal differences between them -- flatten them all to one
+           white and it renders as a featureless blob.
+
+           So invert the tones instead of erasing them. grayscale collapses the
+           seal to luminance, invert turns the light paper dark and the dark ink
+           light, and brightness(2) lifts the result to match the pure-white
+           knockouts beside it. Black stays black under a multiply, so the paper
+           drops out to the page rather than becoming a grey panel. The globe
+           lands at white (17.80:1 on the page), the gear at ~#999 (about 6:1),
+           and the NSF letters knock out dark -- which is what a reverse version
+           of this seal looks like.
+
+           Checked by rendering: at brightness(1.35) the mark reads visibly
+           greyer than the CSE wordmark next to it; at 2 they match. */
+        filter: var(--footer-nsf-filter);
+    }
+}
+
+/* The toggle's focus ring. It carries .nav-link, so the rule above would hand
+   it --focus-ring -- which is `0` in light mode, leaving nothing but
+   Bootstrap's 1.4:1 glow on a control this site added. This is `body`-prefixed
+   and last in the file deliberately: it ties that rule at (0,2,1), so source
+   order is what decides, and moving either one above the other would silently
+   turn the ring off.
+
+   light-dark() rather than --focus-ring so each theme gets the right colour:
+   blue is a text colour in light (4.71:1 on white) where maize is 1.6:1 and
+   useless, and maize in dark is 11.69:1 and matches the ring on every other
+   navbar tab. */
+body .theme-toggle:focus-visible {
+    outline: 2px solid light-dark(#2F65A7, #FFCB05);
+    outline-offset: 2px;
 }
