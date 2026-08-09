@@ -32,8 +32,18 @@ title: Steve Oney - Curriculum Vitae
         <div class="col contact">
           <div class="contact-spacer">&nbsp;</div>
           <div class="contact-spacer">
+            {% comment %}
+              The two variants mirror each other: print points readers at the
+              web CV, screen points them at the PDF. /oney_cv.pdf is written
+              into _site by the deploy workflow (which runs
+              script/export_cv_pdf.sh), not by Jekyll, so under
+              `npm run develop` this link 404s until you export one yourself:
+              script/export_cv_pdf.sh _site/oney_cv.pdf. Print keeps hiding
+              the link so the PDF never links to itself.
+            {% endcomment %}
             <div class="d-print-none">
-              &nbsp;
+              <em><a href="{{ '/oney_cv.pdf' | relative_url }}" target="_blank" rel="noopener"><i
+                    class="bi bi-file-earmark-pdf"></i> Download PDF</a></em>
             </div>
             <div class="d-none d-print-block">
               <em>Latest CV: <a href="https://from.so/oney_cv" target="_blank" rel="noopener">from.so/oney_cv</a>

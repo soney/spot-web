@@ -24,13 +24,21 @@ jobs:
         with:
           bundler-cache: true # reads .ruby-version; bundle install + gem cache
 
-      - name: Build site
-        run: bundle exec jekyll build
+      # script/export_cv_pdf.sh runs `jekyll build` itself, so this one step
+      # produces both the deployed _site and the PDF the CV page's "Download
+      # PDF" link points at. Do not add a separate build step before it: the
+      # script's own rebuild would silently overwrite that step's output.
+      # The PDF lands in _site directly, bypassing Jekyll, so _config.yml's
+      # exclude of the root-level oney_cv.pdf does not apply to it.
+      - name: Build site and export the CV PDF
+        run: script/export_cv_pdf.sh _site/oney_cv.pdf
         env:
           JEKYLL_ENV: production
 
-      - name: Verify CNAME survived the build
-        run: test -f _site/CNAME && grep -qx 'from.so' _site/CNAME
+      - name: Verify CNAME and the CV PDF survived the build
+        run: |
+          test -f _site/CNAME && grep -qx 'from.so' _site/CNAME
+          test -s _site/oney_cv.pdf
 
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

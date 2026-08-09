@@ -769,6 +769,14 @@ script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
 script/export_cv_pdf.sh --students --awards  # the CV page's toggles, as flags
 ```
 
+You rarely need to run this by hand: the deploy workflow runs it on every
+push to `main`, writing `_site/oney_cv.pdf`, so the live site always serves a
+fresh PDF at <https://from.so/oney_cv.pdf> and the web CV's "Download PDF"
+link (screen-only; print hides it so the PDF never links to itself) always
+resolves. Locally that link 404s under `npm run develop` until you export
+one yourself with `script/export_cv_pdf.sh _site/oney_cv.pdf` — and the next
+build wipes it again.
+
 The script builds the site, serves `_site` on a free port, and prints
 `/oney_cv/` with headless Chrome. There is no second layout to maintain: the
 `@media print` block in `assets/css/cv.css` — which reproduces the typography
@@ -779,19 +787,25 @@ what File > Print in Chrome produces. Printing from the browser works the
 same way, and the toggles carry over: print
 `/oney_cv/?students=true&awards=true` to get the flagged variants.
 
-Three things worth knowing:
+Four things worth knowing:
 
 - **The gray page footer needs Chrome 131 or newer** — it is a CSS
   `@page` margin box, which Firefox and Safari do not implement. Printing
   from those browsers loses the footer and nothing else.
 - **The Typekit webfont needs network.** Offline, the PDF falls back to a
-  generic serif and looks visibly wrong. `--students`/`--awards`/`--mentees`
-  map to the page's URL parameters, so a flagged export shows exactly what
-  the browser shows with that toggle on.
+  generic serif and looks visibly wrong.
+- **Every checkbox on the CV page is a flag.** The script reads its flag
+  list from `oney_cv.html`'s `cv_toggle` includes at run time, so a new
+  checkbox becomes a flag with no script edit (`--help` prints the current
+  list). Each flag maps to its checkbox's URL parameter (`--students` to
+  `?students=true`), so a flagged export shows exactly what the browser
+  shows with that toggle on.
 - **The default output name `oney_cv.pdf` is deliberately protected**: it is
   gitignored and in `_config.yml`'s `exclude`, because a root-level file
   with any other name would be copied into `_site` by the next build and
-  published. If you pass a custom output path, keep it outside the repo.
+  published. If you pass a custom output path, keep it outside the repo —
+  or inside `_site/`, which is what the deploy workflow does: Jekyll never
+  copies `_site` into itself, and the next build simply wipes it.
 
 The script detects `google-chrome`, `chromium`, or the macOS Chrome app;
 `CHROME=/path/to/chrome` overrides. It retries with `--no-sandbox` only if
