@@ -470,7 +470,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `homepage` | no | External URL: the "Homepage" breadcrumb, the name-link in the `/team` collaborator list, and the author link in publication lists |
 | `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
-| `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}` |
+| `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}`. Links to services listed in `_data/link_icons.yaml` (Google Scholar, GitHub, Twitter, LinkedIn, a `CV`, ...) get that service's icon automatically; add a rule there to cover a new service |
 | `color` | no | Border color of their news-item chip. Nothing else |
 | `headshot` | no | Path relative to `assets/`, e.g. `images/people/foo.jpg` |
 | `focused_headshot` | no | Tight square crop for the small round news chips; falls back to `headshot` |

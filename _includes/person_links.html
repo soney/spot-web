@@ -1,6 +1,8 @@
 {% comment %}
   A person's links as a breadcrumb list: their homepage, then any extra
-  links from their people.yaml record.
+  links from their people.yaml record. A link to a service listed in
+  _data/link_icons.yaml (Google Scholar, GitHub, ...) gets that service's
+  icon in front of its description; any other link renders as plain text.
 
   Parameters:
     person          the person record (from people.yaml).
@@ -21,7 +23,24 @@
   {% endif %}
   {% if links_person.links %}
   {% for link in links_person.links %}
-  <li class="breadcrumb-item"><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.description }}</a>
+  {%- assign link_icon = nil -%}
+  {%- assign link_description_down = link.description | downcase -%}
+  {%- for rule in site.data.link_icons -%}
+  {%- if rule.url_contains -%}
+  {%- if link.url contains rule.url_contains -%}
+  {%- assign link_icon = rule.icon -%}
+  {%- break -%}
+  {%- endif -%}
+  {%- elsif rule.description -%}
+  {%- assign rule_description_down = rule.description | downcase -%}
+  {%- if link_description_down == rule_description_down -%}
+  {%- assign link_icon = rule.icon -%}
+  {%- break -%}
+  {%- endif -%}
+  {%- endif -%}
+  {%- endfor -%}
+  <li class="breadcrumb-item"><a href="{{ link.url }}" target="_blank" rel="noopener">{% if link_icon %}<i
+        class="bi {{ link_icon }}"></i> {% endif %}{{ link.description }}</a>
   </li>
   {% endfor %}
   {% endif %}
