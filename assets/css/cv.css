@@ -39,6 +39,11 @@
     --note-color: light-dark(#555, #B0A69B);
     /* dark: 7.38:1 */
 
+    --hover-surface-color: light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.1));
+    /* The disc behind the theme toggle on hover, as in site.css. Alpha rather
+       than opaque, so it sits on the warm paper without needing a warm value
+       of its own. */
+
     --bs-body-color: light-dark(#212529, #E7E1D8);
     /* cv.css sets body's background but never its colour, so Bootstrap's light
        #212529 leaked through at 1.14:1 on dark paper. The light half is
@@ -373,18 +378,25 @@ body {
        document's type. */
     background: none;
     border: 0;
+    border-radius: 50%;
     color: var(--note-color);
     font-size: 1.1rem;
     line-height: 1;
     padding: 0.5rem;
     pointer-events: auto;
+    /* Colour only, no motion -- see the matching note in site.css. */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-.cv-theme-toggle:hover {
-    /* The CV's own hover convention: links go to --link-hover-color. This is a
-       control rather than a link, so it settles on the body colour instead --
-       the same "darken toward the text" move, without borrowing the blue that
-       marks something as followable. */
+.cv-theme-toggle:hover,
+.cv-theme-toggle:focus-visible {
+    /* The CV's own hover convention is that links go to --link-hover-color.
+       This is a control rather than a link, so it settles on the body colour
+       instead -- the same "darken toward the text" move, without borrowing the
+       blue that marks something as followable -- and gains a disc behind it,
+       because on a single icon in a wide margin the colour shift alone is easy
+       to miss. */
+    background-color: var(--hover-surface-color);
     color: var(--font-color);
 }
 
