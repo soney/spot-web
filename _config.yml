@@ -49,3 +49,6 @@ exclude:
   - CLAUDE.md
   - LICENSE
   - script
+  # script/export_cv_pdf.sh's default output, which would otherwise be
+  # copied into _site and published by the next build.
+  - oney_cv.pdf

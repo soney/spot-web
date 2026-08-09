@@ -9,3 +9,7 @@ vendor
 node_modules
 package-lock.json
 .cache
+
+# script/export_cv_pdf.sh's default output; also excluded in _config.yml so
+# a build cannot copy it into _site and publish it.
+oney_cv.pdf

@@ -761,6 +761,42 @@ on such a record displays nowhere. It becomes visible on `/team` for the three
 member tiers and for `alum`; on the homepage grid for the three member tiers
 only; and on a news chip for *any* record, even one with no `membership`.
 
+### Exporting the CV as a PDF
+
+```bash
+script/export_cv_pdf.sh                      # oney_cv.pdf in the repo root
+script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
+script/export_cv_pdf.sh --students --awards  # the CV page's toggles, as flags
+```
+
+The script builds the site, serves `_site` on a free port, and prints
+`/oney_cv/` with headless Chrome. There is no second layout to maintain: the
+`@media print` block in `assets/css/cv.css` — which reproduces the typography
+of the old LaTeX CV that predates the web version (its `oneycv.cls` and
+reference PDF live untracked in the maintainer's checkout, under `old-cv/`)
+— is the single source of truth, so the script's output is exactly
+what File > Print in Chrome produces. Printing from the browser works the
+same way, and the toggles carry over: print
+`/oney_cv/?students=true&awards=true` to get the flagged variants.
+
+Three things worth knowing:
+
+- **The gray page footer needs Chrome 131 or newer** — it is a CSS
+  `@page` margin box, which Firefox and Safari do not implement. Printing
+  from those browsers loses the footer and nothing else.
+- **The Typekit webfont needs network.** Offline, the PDF falls back to a
+  generic serif and looks visibly wrong. `--students`/`--awards`/`--mentees`
+  map to the page's URL parameters, so a flagged export shows exactly what
+  the browser shows with that toggle on.
+- **The default output name `oney_cv.pdf` is deliberately protected**: it is
+  gitignored and in `_config.yml`'s `exclude`, because a root-level file
+  with any other name would be copied into `_site` by the next build and
+  published. If you pass a custom output path, keep it outside the repo.
+
+The script detects `google-chrome`, `chromium`, or the macOS Chrome app;
+`CHROME=/path/to/chrome` overrides. It retries with `--no-sandbox` only if
+the first attempt fails, which containers sometimes need.
+
 ### Checking your work
 
 First time on a machine, `bundle install` (see

@@ -190,6 +190,8 @@ each, under **Common tasks**:
 - Adding or updating a person, including member → alum
 - Adding a writing entry (`blog.yaml`, and why `slug` is permanent)
 - Updating a profile picture
+- Exporting the CV as a PDF (`script/export_cv_pdf.sh`; the print CSS is the
+  single source of truth for how it looks)
 - Checking your work
 
 Follow those rather than reconstructing the steps from the templates, and update
