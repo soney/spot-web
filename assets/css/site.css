@@ -275,6 +275,35 @@ body {
         font-size: 0.9em;
     }
 
+    /* The "On this page" outline under the h1 on /research and /team. Each
+       page builds its list from the same data and the same conditionals as
+       the sections it links to, so an entry cannot outlive its section.
+       One line, top-level sections only, joined by the same " · " the
+       breadcrumb separators use. */
+    .page-outline {
+        font-size: 0.9em;
+
+        .page-outline-label {
+            color: var(--secondary-text-color);
+        }
+
+        ul {
+            display: inline;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li+li::before {
+            content: " · ";
+            color: var(--secondary-text-color);
+        }
+    }
+
     .collaborator-list {
         column-count: 1;
 
