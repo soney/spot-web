@@ -331,15 +331,44 @@ body {
     display: block;
 }
 
-.cv-theme-toggle {
-    /* Absolute, and outside <main>, so it occupies no space in the document:
-       in flow it would push all 7em of deliberate whitespace above the name
-       further down. No positioned ancestor, so this resolves against the
-       initial containing block -- i.e. the page's top-right corner -- which
-       also sidesteps the .cv.container top margin collapsing through <main>
-       and dragging a main-relative offset down onto the name.
+.cv-theme-toggle-bar {
+    /* Absolute, and outside <main>, so the toggle occupies no space in the
+       document: in flow it would push all 7em of deliberate whitespace above
+       the name further down. No positioned ancestor, so this resolves against
+       the initial containing block -- which also sidesteps the .cv.container
+       top margin collapsing through <main> and dragging a main-relative offset
+       down onto the name.
 
-       Sized in rem rather than the CV's --font-size, because it is chrome
+       left and right both 0 with .container's own `width: 100%` and auto side
+       margins is what centres it: for an absolutely positioned box with left,
+       width and right all resolved, auto margins are required to take equal
+       values, so the bar lands exactly where .cv.container does and stays
+       there at every breakpoint without this file repeating a single
+       max-width.
+
+       padding-right overrides .container's 12px gutter to the 5px that
+       `.col.main` uses. The CV's rows carry Bootstrap's -12px gutter margin,
+       so the columns reach the container's border edge and their 5px padding
+       is what actually sets the right edge of the contact block, the section
+       rules and every date in the side column. Matching it puts the toggle on
+       that same line rather than 7px outside it. */
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+
+    /* The bar spans the full width of the CV, so without this it would be an
+       invisible sheet lying across the top of the page waiting to swallow a
+       click. Nothing sits under it today; this is so nothing has to remember
+       that later. */
+    pointer-events: none;
+}
+
+.cv-theme-toggle {
+    /* Sized in rem rather than the CV's --font-size, because it is chrome
        around the document rather than part of it, and should not grow with the
        document's type. */
     background: none;
@@ -348,9 +377,7 @@ body {
     font-size: 1.1rem;
     line-height: 1;
     padding: 0.5rem;
-    position: absolute;
-    right: 1.2rem;
-    top: 1.2rem;
+    pointer-events: auto;
 }
 
 .cv-theme-toggle:hover {
