@@ -7,7 +7,15 @@ nav: research
 <div class="container">
   <h1>Research</h1>
 
-  <h2>Focus Areas</h2>
+  <nav class="page-outline" aria-label="Page contents">
+    <span class="page-outline-label">On this page:</span>
+    <ul>
+      <li><a href="#focus-areas">Focus Areas</a></li>
+      <li><a href="#all-publications">All Publications</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="focus-areas">Focus Areas</h2>
   {% for cluster in site.data.clusters %}
   <section class="section-card row" id="cluster-{{ cluster.id }}">
     <div class="col-md-4">

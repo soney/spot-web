@@ -7,7 +7,22 @@ nav: team
 <div class="container">
   <h1>Team</h1>
 
-  <h2>Current Members</h2>
+  {% assign alumni = site.data.people | where: "membership", "alum" | sort: "family_name" %}
+  <nav class="page-outline" aria-label="Page contents">
+    <span class="page-outline-label">On this page:</span>
+    <ul>
+      <li><a href="#current-members">Current Members</a></li>
+      {% if alumni.size > 0 %}
+      <li><a href="#alumni">Ph.D. and Postdoc Alumni</a></li>
+      {% endif %}
+      <li><a href="#collaborators">Other Collaborators</a></li>
+      {% if site.data.group.joining %}
+      <li><a href="#join-us">Join Us</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+
+  <h2 id="current-members">Current Members</h2>
   {% for membership in site.data.group.member_order %}
   {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
   {% for person in current_members %}
@@ -15,15 +30,14 @@ nav: team
   {% endfor %}
   {% endfor %}
 
-  {% assign alumni = site.data.people | where: "membership", "alum" | sort: "family_name" %}
   {% if alumni.size > 0 %}
-  <h2>Ph.D. and Postdoc Alumni</h2>
+  <h2 id="alumni">Ph.D. and Postdoc Alumni</h2>
   {% for person in alumni %}
   {% include member_block.html person=person %}
   {% endfor %}
   {% endif %}
 
-  <h2>Other Collaborators (Undergraduate and Master's Students)</h2>
+  <h2 id="collaborators">Other Collaborators (Undergraduate and Master's Students)</h2>
   <ul class="collaborator-list">
     {% assign collaborators = site.data.people | where: "membership", "ugrad_ms_student" | sort: "family_name" %}
     {% for person in collaborators %}
@@ -45,7 +59,7 @@ nav: team
   </ul>
 
   {% if site.data.group.joining %}
-  <h2>Join Us</h2>
+  <h2 id="join-us">Join Us</h2>
   {{ site.data.group.joining | markdownify }}
   {% endif %}
 </div>
