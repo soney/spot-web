@@ -479,22 +479,30 @@ body {
     color: var(--text-color);
 }
 
-/* Show the theme being switched *to*, matching the aria-label the script sets:
-   moon while light, sun while dark. Keyed off the attribute rather than
-   swapped by the script so the correct icon is painted on the first frame --
-   the theme is settled in <head>, but the script does not touch the DOM until
-   DOMContentLoaded. */
-:root[data-theme="dark"] .theme-toggle-to-dark,
-:root:not([data-theme="dark"]) .theme-toggle-to-light {
+/* Show the state the site is in: half-circle on auto, sun on light, moon on
+   dark. Keyed off the attribute rather than swapped by the script so the
+   correct icon is painted on the first frame -- the choice is settled in
+   <head>, but the script does not touch the DOM until DOMContentLoaded.
+
+   Hidden by default rather than each icon hiding the other two, so an
+   unrecognised data-theme shows nothing rather than all three stacked. */
+.theme-toggle-icon {
     display: none;
 }
 
+:root[data-theme="auto"] .theme-toggle-icon-auto,
+:root[data-theme="light"] .theme-toggle-icon-light,
+:root[data-theme="dark"] .theme-toggle-icon-dark {
+    display: block;
+}
+
 /* --- Which theme is on -------------------------------------------------
-   Three rules, and the whole switch. `color-scheme: light dark` in :root above
-   means light-dark() follows the OS by default -- which is the no-JavaScript
-   path, and the reason the palette still works with the script disabled. The
-   two attribute rules below let _includes/theme_script.html override that with
-   the reader's stored choice by stamping data-theme on <html> in <head>.
+   Two rules, and the whole switch. `color-scheme: light dark` in :root above
+   means light-dark() follows the OS by default, which covers two cases at
+   once: a reader with JavaScript off, and a reader who chose auto. That is why
+   data-theme="auto" appears nowhere below -- it is the absence of an override,
+   so it needs no rule, and an OS that flips at dusk repaints without anything
+   here running. The two rules below are the overrides.
 
    The script sets no inline color-scheme of its own: an inline style would
    outrank the print rule below, which is the one place a chosen theme must not
@@ -531,16 +539,18 @@ body {
    triples Bootstrap feeds to rgba().
 
    So this is the one thing in the file that genuinely exists twice, and the
-   two copies must stay identical. The first covers a reader with no stored
-   choice -- which includes every reader with JavaScript off, since the
-   attribute only ever exists because the script set it -- and the second
-   covers a reader who chose dark. Five declarations was the price of keeping
-   the no-JS path; forty-five was not.
+   two copies must stay identical. The first covers everyone following the OS:
+   a reader who chose auto, and a reader with JavaScript off, for whom the
+   attribute was never set at all. The second covers a reader who chose dark.
+   Five declarations was the price of keeping the no-JS path; forty-five was
+   not.
 
    Both are scoped to `screen` so none of it reaches paper, matching the print
    rule above. */
 @media screen and (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
+
+    :root:not([data-theme]),
+    :root[data-theme="auto"] {
         --headshot-filter: grayscale(100%) brightness(85%) contrast(90%);
         --footer-logo-filter: brightness(0) invert(1);
         --footer-nsf-filter: grayscale(1) invert(1) brightness(2);
