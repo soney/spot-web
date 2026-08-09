@@ -119,6 +119,19 @@ body {
         margin-top: 20px;
         margin-bottom: 0px;
 
+        /* .navbar-expand pins this row to one line, and .nav-back below is
+           nowrap, so on a page with a back link under about 500px the row
+           already ran past the right edge and scrolled the whole document
+           sideways. The theme toggle sits at the end of that row, so it went
+           off-screen with it -- a control you have to scroll horizontally to
+           find is not one you can use. Bootstrap's .navbar > .container takes
+           `flex-wrap: inherit`, so setting it here is what reaches it.
+
+           This only engages once the row overflows: at every width where the
+           navbar already fitted on one line, wrap and nowrap lay out
+           identically. */
+        flex-wrap: wrap;
+
         .navbar-brand {
             color: var(--text-color);
         }
