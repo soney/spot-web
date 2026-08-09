@@ -1,8 +1,8 @@
 {%- comment -%}
-  The navbar's light/dark toggle. _includes/theme_script.html finds it by
+  The light/dark toggle. _includes/theme_script.html finds it by
   data-theme-toggle, gives it a real aria-label, and handles the click.
 
-  Both icons are in the markup and site.css shows whichever matches the current
+  Both icons are in the markup and CSS shows whichever matches the current
   data-theme, rather than the script swapping a class. That way the right icon
   is there at first paint -- the theme is decided in <head>, but the script's
   DOM work does not happen until DOMContentLoaded, and picking the icon in JS
@@ -11,8 +11,17 @@
   The visible icon is the theme being switched *to*, so the moon reads as "go
   dark". The aria-label says the same thing in words; the icons are aria-hidden
   so the button announces once, not three times.
+
+  Parameters:
+    class  extra classes for the call site to skin the button with. The two
+           layouts style it differently and load different stylesheets, so
+           .theme-toggle carries only the behaviour the two share (hidden until
+           the script has run, and which icon shows) and this carries the look.
+           The site navbar passes Bootstrap's .nav-link; the CV passes
+           .d-print-none, since a toggle means nothing on paper.
 {%- endcomment -%}
-<button type="button" class="nav-link theme-toggle" data-theme-toggle aria-label="Switch theme">
+<button type="button" class="theme-toggle{% if include.class %} {{ include.class }}{% endif %}" data-theme-toggle
+  aria-label="Switch theme">
   <i class="bi bi-moon-stars theme-toggle-to-dark" aria-hidden="true"></i>
   <i class="bi bi-sun theme-toggle-to-light" aria-hidden="true"></i>
 </button>

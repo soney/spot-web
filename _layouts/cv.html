@@ -22,6 +22,17 @@
 </head>
 
 <body>
+  {%- comment -%}
+    Outside <main> and before it: the button is positioned into the empty
+    margin above the name, and keeping it out of the document means it cannot
+    disturb the CV's own layout. cv.css does the placing.
+
+    Closing with `%}` rather than `-%}`: stripping that newline too would pull
+    the button up onto the <body> tag, which renders identically but shows as a
+    changed line rather than an added one in an _site diff.
+  {%- endcomment %}
+  {% include theme_toggle.html class="cv-theme-toggle d-print-none" %}
+
   <main id="content" role="main" class="page-content page-content-wide">
     {{ content }}
   </main>

@@ -231,6 +231,74 @@ body {
     gap: 0.4rem;
 }
 
+/* Light/dark toggle. The behavioural half of this -- hidden until the script
+   has run, and which of the two icons shows -- is deliberately restated here
+   rather than shared with site.css: this stylesheet is a standalone parallel of
+   that one, with its own palette, its own dark block and its own print block,
+   and the CV does not load site.css. Three rules is a smaller price than a
+   third stylesheet, and if they ever drift the symptom is loud (both icons, or
+   neither), not silent.
+
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
+
+:root[data-theme] .theme-toggle {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Show the theme being switched *to*, matching the aria-label the script sets:
+   moon while light, sun while dark. Keyed off the attribute rather than
+   swapped by the script so the correct icon is painted on the first frame. */
+:root[data-theme="dark"] .theme-toggle-to-dark,
+:root:not([data-theme="dark"]) .theme-toggle-to-light {
+    display: none;
+}
+
+.cv-theme-toggle {
+    /* Absolute, and outside <main>, so it occupies no space in the document:
+       in flow it would push all 7em of deliberate whitespace above the name
+       further down. No positioned ancestor, so this resolves against the
+       initial containing block -- i.e. the page's top-right corner -- which
+       also sidesteps the .cv.container top margin collapsing through <main>
+       and dragging a main-relative offset down onto the name.
+
+       Sized in rem rather than the CV's --font-size, because it is chrome
+       around the document rather than part of it, and should not grow with the
+       document's type. */
+    background: none;
+    border: 0;
+    color: var(--note-color);
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+}
+
+.cv-theme-toggle:hover {
+    /* The CV's own hover convention: links go to --link-hover-color. This is a
+       control rather than a link, so it settles on the body colour instead --
+       the same "darken toward the text" move, without borrowing the blue that
+       marks something as followable. */
+    color: var(--font-color);
+}
+
+.cv-theme-toggle:focus-visible {
+    /* --font-color is the CV's body text, so it clears the 3:1 a focus ring
+       needs in both themes by construction: 12.63:1 on paper, 13.60:1 on dark
+       paper. Nothing else on this page sets a focus style, so there is no
+       Bootstrap glow to suppress here. */
+    outline: 2px solid var(--font-color);
+    outline-offset: 2px;
+}
+
 .highlight-students-note {
     display: none;
     font-style: italic;
