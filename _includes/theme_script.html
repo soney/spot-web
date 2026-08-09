@@ -8,22 +8,20 @@
   attribute has to exist before the first pixel is painted or a reader whose
   stored choice differs from their OS preference sees the wrong theme flash.
   That rules out a deferred external file, and an external blocking one would
-  cost a round trip for ~40 lines. `data-theme` is always set once this runs --
-  the CSS never reads prefers-color-scheme -- so there is exactly one thing
-  deciding the theme rather than a media query and an attribute that have to be
-  kept saying the same thing.
+  cost a round trip for ~40 lines.
 
-  The consequence is that with JavaScript off the attribute is never set and
-  the site stays light even for a reader whose OS is dark. The toggle hides
-  itself in that case (site.css keys its display off `:root[data-theme]`) so
-  there is no dead control, and light mode is the design the site shipped with
-  rather than a broken state. Restoring the no-JS path would mean a second copy
-  of the whole dark palette behind a media query, which is the kind of
-  duplication that goes silently out of sync.
+  This script is an override, not the mechanism. The stylesheets carry both
+  palettes in light-dark() pairs and follow the OS on their own, so with
+  JavaScript off -- when nothing below ever runs and the attribute is never set
+  -- a reader on a dark OS still gets the dark site. All this adds is the
+  ability to disagree with the OS. The toggle itself hides in that case (the
+  stylesheets key its display off `:root[data-theme]`), so there is no control
+  that does nothing when clicked.
 
   Storing nothing until the reader clicks is what lets `stored()` double as
   "has the reader chosen?", which is how the OS-preference listener knows
-  whether it is still allowed to follow along.
+  whether it is still allowed to follow along -- and it is why an untouched
+  browser gets the pure-CSS path above rather than a value this script guessed.
 {%- endcomment -%}
 <script>
   (function () {
@@ -43,11 +41,12 @@
     }
 
     function apply(theme) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
       root.dataset.theme = theme;
-      // Belt and braces with <meta name="color-scheme">: that covers the OS
-      // preference, this covers a stored choice that disagrees with it, so
-      // form controls and the canvas match the page in both cases.
-      root.style.colorScheme = theme;
 
       var button = document.querySelector('[data-theme-toggle]');
       if (button) {
