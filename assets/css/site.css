@@ -219,6 +219,14 @@ body {
         margin-top: 10px;
     }
 
+    /* The "(she/her)" after a name in a member-row or person-page heading.
+       Sized in em so it tracks the h3 on /team and the h1 on /people/<id>/. */
+    .pronouns {
+        font-size: 0.6em;
+        font-weight: normal;
+        color: var(--bs-secondary-color);
+    }
+
     .member {
         flex-basis: 0;
         flex-grow: 1;

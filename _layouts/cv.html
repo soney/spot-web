@@ -27,11 +27,17 @@
     margin above the name, and keeping it out of the document means it cannot
     disturb the CV's own layout. cv.css does the placing.
 
+    The wrapper carries Bootstrap's own .container so the button lines up with
+    the right edge of the CV itself rather than with the window. Reusing the
+    class rather than repeating its max-widths in cv.css means the alignment
+    tracks every breakpoint on its own, and cannot drift if the CV's container
+    ever changes size.
+
     Closing with `%}` rather than `-%}`: stripping that newline too would pull
     the button up onto the <body> tag, which renders identically but shows as a
     changed line rather than an added one in an _site diff.
   {%- endcomment %}
-  {% include theme_toggle.html class="cv-theme-toggle d-print-none" %}
+  <div class="cv-theme-toggle-bar container d-print-none">{% include theme_toggle.html class="cv-theme-toggle" %}</div>
 
   <main id="content" role="main" class="page-content page-content-wide">
     {{ content }}

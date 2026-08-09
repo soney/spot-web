@@ -3,6 +3,8 @@
   family_name: Oney
   membership: lead
   homepage: https://from.so/Steve_Oney
+  name_coach: https://www.name-coach.com/steve-oney
+  pronouns: he/him
   short_bio: |-
     Associate Professor
     Michigan SI & CSE
@@ -23,8 +25,6 @@
       description: Google Scholar
     - url: https://github.com/soney
       description: GitHub
-    - url: https://www.name-coach.com/steve-oney
-      description: 🔉 Hear my name
   headshot: images/people/UMSI_Steve_Oney_042024_05_8ed6a273af.JPG
   focused_headshot: images/people/UMSI_Oney_focused_f75e0919d9.JPG
 - id: maryam_arab

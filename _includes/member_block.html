@@ -15,7 +15,8 @@
   </div>
   <div class="col-sm-10">
 
-    <h3>{{ person.given_name }} {{ person.family_name }}</h3>
+    <h3>{{ person.given_name }} {{ person.family_name }}{% if person.pronouns %} <span class="pronouns">({{
+        person.pronouns }})</span>{% endif %}</h3>
 
     {% if person.long_bio %}
     {{ person.long_bio | markdownify }}
