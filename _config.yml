@@ -48,3 +48,4 @@ exclude:
   - AGENTS.md
   - CLAUDE.md
   - LICENSE
+  - script

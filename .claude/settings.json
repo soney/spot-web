@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "ruby \"$CLAUDE_PROJECT_DIR/script/pdf_audit.rb\" --hook 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Checking assets/pdfs/ against publications.yaml"
+          }
+        ]
+      }
+    ]
+  }
+}
