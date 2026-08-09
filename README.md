@@ -468,6 +468,8 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `family_name` | yes | Also the **sort key** for every list of people on the site |
 | `membership` | group members only | Which tier they render in; omit for external co-authors |
 | `homepage` | no | External URL: the "Homepage" breadcrumb, the name-link in the `/team` collaborator list, and the author link in publication lists |
+| `pronouns` | no | e.g. `she/her`. Shown in parentheses after the name on their `/team` member row and `/people/<id>/` page. Nowhere else — not on the homepage grid, author lists, news chips, or the `/team` collaborator list |
+| `name_coach` | no | URL of a name-pronunciation recording (e.g. a [name-coach.com](https://www.name-coach.com/) page). Renders a "Hear my name" breadcrumb link right after "Homepage", in the same places `pronouns` shows |
 | `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
 | `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}` |
@@ -563,6 +565,8 @@ A complete member record:
   family_name: Rivera
   membership: member
   homepage: https://jamierivera.example.edu/
+  pronouns: they/them
+  name_coach: https://www.name-coach.com/jamie-rivera
   short_bio: |-
     Ph.D. Student
     Michigan SI
