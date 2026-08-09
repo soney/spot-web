@@ -47,9 +47,10 @@
 }
 
 /* --- Which theme is on -------------------------------------------------
-   As in site.css: light-dark() follows the OS until the script stamps a
-   choice, which is what keeps the CV dark for a reader with JavaScript off and
-   a dark OS. */
+   As in site.css: light-dark() follows the OS until the script stamps an
+   override, which is what keeps the CV dark for a reader with JavaScript off
+   and a dark OS -- and for one who chose auto, which is why data-theme="auto"
+   needs no rule here. */
 :root[data-theme="light"] {
     color-scheme: light;
 }
@@ -317,12 +318,17 @@ body {
     justify-content: center;
 }
 
-/* Show the theme being switched *to*, matching the aria-label the script sets:
-   moon while light, sun while dark. Keyed off the attribute rather than
-   swapped by the script so the correct icon is painted on the first frame. */
-:root[data-theme="dark"] .theme-toggle-to-dark,
-:root:not([data-theme="dark"]) .theme-toggle-to-light {
+/* Show the state the site is in: half-circle on auto, sun on light, moon on
+   dark. Keyed off the attribute rather than swapped by the script so the
+   correct icon is painted on the first frame. */
+.theme-toggle-icon {
     display: none;
+}
+
+:root[data-theme="auto"] .theme-toggle-icon-auto,
+:root[data-theme="light"] .theme-toggle-icon-light,
+:root[data-theme="dark"] .theme-toggle-icon-dark {
+    display: block;
 }
 
 .cv-theme-toggle {

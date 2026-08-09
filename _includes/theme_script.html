@@ -1,8 +1,6 @@
 {%- comment -%}
-  Resolves the light/dark theme and stamps it on <html> as data-theme, which is
-  what the dark-mode blocks in assets/css/site.css and assets/css/cv.css key
-  off. Also wires up the navbar toggle from _includes/theme_toggle.html, if the
-  page has one.
+  Applies the reader's stored theme choice and cycles it when the toggle in
+  _includes/theme_toggle.html is clicked.
 
   Inline and blocking, in <head> before the stylesheets, on purpose. The
   attribute has to exist before the first pixel is painted or a reader whose
@@ -14,56 +12,61 @@
   palettes in light-dark() pairs and follow the OS on their own, so with
   JavaScript off -- when nothing below ever runs and the attribute is never set
   -- a reader on a dark OS still gets the dark site. All this adds is the
-  ability to disagree with the OS. The toggle itself hides in that case (the
-  stylesheets key its display off `:root[data-theme]`), so there is no control
-  that does nothing when clicked.
+  ability to disagree with the OS, and a way back to agreeing with it. The
+  toggle itself hides in that case (the stylesheets key its display off
+  `:root[data-theme]`), so there is no control that does nothing when clicked.
 
-  Storing nothing until the reader clicks is what lets `stored()` double as
-  "has the reader chosen?", which is how the OS-preference listener knows
-  whether it is still allowed to follow along -- and it is why an untouched
-  browser gets the pure-CSS path above rather than a value this script guessed.
+  data-theme holds the *choice*, not the theme it resolves to. That is what
+  makes "auto" free: the stylesheets already follow the OS by default, so auto
+  needs no rule of its own, and no code here to re-resolve it when the OS
+  flips at dusk -- `color-scheme: light dark` repaints on its own. Storing the
+  resolved value instead would need a prefers-color-scheme listener, and would
+  leave the site unable to tell "dark because they asked" from "dark because it
+  is night", which is exactly the distinction auto exists to keep.
 {%- endcomment -%}
 <script>
   (function () {
     var STORAGE_KEY = 'theme';
+    // Cycle order, and the set of values data-theme may hold. Auto first: it is
+    // where an untouched browser sits, so the cycle reads as "leave it alone,
+    // force light, force dark, leave it alone".
+    var CHOICES = ['auto', 'light', 'dark'];
+    var NEXT_LABEL = { auto: 'light', light: 'dark', dark: 'auto' };
     var root = document.documentElement;
-    var query = window.matchMedia('(prefers-color-scheme: dark)');
 
     function stored() {
       // localStorage throws, rather than returning null, in Safari's private
-      // mode and wherever site data is blocked. Treated as "no choice yet".
+      // mode and wherever site data is blocked. Treated as "no choice yet",
+      // which is auto.
       try {
         var choice = localStorage.getItem(STORAGE_KEY);
-        return choice === 'light' || choice === 'dark' ? choice : null;
+        return CHOICES.indexOf(choice) === -1 ? 'auto' : choice;
       } catch (e) {
-        return null;
+        return 'auto';
       }
     }
 
-    function apply(theme) {
+    function apply(choice) {
       // The attribute is the whole of it. The stylesheets turn it into a
       // color-scheme, which is what light-dark() reads -- deliberately not set
       // as an inline style here, because an inline style outranks every rule
       // in a stylesheet including the @media print one that forces paper back
       // to light, and a reader who chose dark must not print a dark CV.
-      root.dataset.theme = theme;
+      root.dataset.theme = choice;
 
       var button = document.querySelector('[data-theme-toggle]');
       if (button) {
-        // Names what the click does, matching the icon, which is the one the
-        // reader is switching to. Set here rather than in the markup because
-        // Liquid cannot know the theme at build time.
-        var label = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
+        // Both halves: what is on now, which the icon also shows, and what the
+        // next click does, which with three states the icon cannot. Set here
+        // rather than in the markup because Liquid cannot know the choice at
+        // build time.
+        var label = 'Theme: ' + choice + '. Switch to ' + NEXT_LABEL[choice] + '.';
         button.setAttribute('aria-label', label);
         button.setAttribute('title', label);
       }
     }
 
-    apply(stored() || (query.matches ? 'dark' : 'light'));
-
-    query.addEventListener('change', function (event) {
-      if (!stored()) apply(event.matches ? 'dark' : 'light');
-    });
+    apply(stored());
 
     document.addEventListener('DOMContentLoaded', function () {
       var button = document.querySelector('[data-theme-toggle]');
@@ -74,7 +77,7 @@
       apply(root.dataset.theme);
 
       button.addEventListener('click', function () {
-        var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        var next = CHOICES[(CHOICES.indexOf(root.dataset.theme) + 1) % CHOICES.length];
         try {
           localStorage.setItem(STORAGE_KEY, next);
         } catch (e) {

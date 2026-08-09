@@ -1,16 +1,22 @@
 {%- comment -%}
-  The light/dark toggle. _includes/theme_script.html finds it by
-  data-theme-toggle, gives it a real aria-label, and handles the click.
+  The light/dark/auto toggle. _includes/theme_script.html finds it by
+  data-theme-toggle, gives it a real aria-label, and cycles it on click.
 
-  Both icons are in the markup and CSS shows whichever matches the current
-  data-theme, rather than the script swapping a class. That way the right icon
-  is there at first paint -- the theme is decided in <head>, but the script's
-  DOM work does not happen until DOMContentLoaded, and picking the icon in JS
-  would show the wrong one until then.
+  Three states, so the icon shows the state the site is *in* rather than the
+  one a click would move to. With two states "click me to go dark" was
+  unambiguous; with three, an icon meaning "next" cannot say which of the other
+  two is next, and a control that reports its own state is what a reader can
+  actually check at a glance. The aria-label carries both: what is on now, and
+  what the next click does.
 
-  The visible icon is the theme being switched *to*, so the moon reads as "go
-  dark". The aria-label says the same thing in words; the icons are aria-hidden
-  so the button announces once, not three times.
+  All three icons are in the markup and CSS shows whichever matches data-theme,
+  rather than the script swapping a class. That way the right icon is there at
+  first paint -- the theme is decided in <head>, but the script's DOM work does
+  not happen until DOMContentLoaded, and picking the icon in JS would show the
+  wrong one until then.
+
+  bi-circle-half for auto is the same glyph Bootstrap's own docs use for it,
+  and it reads as "half one, half the other" without needing a legend.
 
   Parameters:
     class  extra classes for the call site to skin the button with. The two
@@ -22,6 +28,7 @@
 {%- endcomment -%}
 <button type="button" class="theme-toggle{% if include.class %} {{ include.class }}{% endif %}" data-theme-toggle
   aria-label="Switch theme">
-  <i class="bi bi-moon-stars theme-toggle-to-dark" aria-hidden="true"></i>
-  <i class="bi bi-sun theme-toggle-to-light" aria-hidden="true"></i>
+  <i class="bi bi-circle-half theme-toggle-icon theme-toggle-icon-auto" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-icon theme-toggle-icon-light" aria-hidden="true"></i>
+  <i class="bi bi-moon theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true"></i>
 </button>
