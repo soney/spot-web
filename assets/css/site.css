@@ -40,6 +40,14 @@
     --code-background-color: light-dark(#F7F7F7, #23272B);
     /* dark: 1.18:1 off the page, and body text on it is 12.33:1 */
 
+    --hover-surface-color: light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.1));
+    /* The disc behind an icon button on hover. Alpha rather than a pair of
+       opaque greys so it composites onto whatever is behind it and needs no
+       retuning if a surface colour moves. Purely decorative -- it carries no
+       information the icon and its label do not -- so no contrast floor
+       applies to the disc itself; what has to stay legible is the icon on top
+       of it, and that goes to full --text-color on hover. */
+
     /* Bootstrap's colour utilities read the five tokens below and ship
        light-theme values for them. .text-body is on the three homepage section
        headings and the sponsors note, .text-muted on the team bios,
@@ -509,17 +517,37 @@ body {
     /* inline-flex, so the icon centres in the box rather than sitting on the
        text baseline it does not have. */
     align-items: center;
+    border-radius: 50%;
     color: var(--secondary-text-color);
     display: inline-flex;
     font-size: 1.05rem;
     justify-content: center;
     line-height: 1;
     padding: 0.5rem;
+    /* Colour only, no motion: a fade needs no prefers-reduced-motion guard,
+       where a scale or a spin would. It also softens the icon's colour change
+       when the theme itself flips. */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-.theme-toggle:hover {
-    /* Matches what an active nav tab does: darken to the body colour. Beats
-       Bootstrap's .nav-link:hover on source order at equal specificity. */
+:root[data-theme] .theme-toggle:hover,
+:root[data-theme] .theme-toggle:focus-visible {
+    /* Two things at once, because on an icon the colour shift alone is easy to
+       miss: the icon darkens to the body colour, matching what an active nav
+       tab does, and a disc appears behind it so the control reads as a button
+       rather than as decoration. Beats Bootstrap's .nav-link:hover on source
+       order at equal specificity.
+
+       :focus-visible gets the same treatment so a keyboard reader sees the
+       control light up the way a pointer does, not just the ring around it.
+
+       :root[data-theme] is on the front to win, not to select: the resting
+       colour is set by `:root[data-theme] .theme-toggle` at (0,3,0), which
+       outranks a bare `.theme-toggle:hover` at (0,2,0). Without the prefix the
+       icon keeps its muted colour through the hover and only the disc appears.
+       Anything that changes the resting rule's selector has to change this one
+       to match. */
+    background-color: var(--hover-surface-color);
     color: var(--text-color);
 }
 
