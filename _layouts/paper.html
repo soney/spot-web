@@ -6,61 +6,63 @@ nav: research
 {% assign pub = site.data.publications | where: "id", page.pub_id | first %}
 
 <div class="container">
+  <div class="paper-page">
   {% if pub %}
   <h1 class="h2">{{ pub.title }}</h1>
   <div class="paper-authors fs-5">{% include author_list.html ids=pub.authors with_links=true %}</div>
 
+  {% assign venue = site.data.venues | where: "id", pub.venue | first %}
+  {% assign has_award = false %}
+  {% if pub.award and pub.award != 'none' %}{% assign has_award = true %}{% endif %}
+  {% if venue or has_award %}
+  <p class="paper-meta">
+    {%- if venue -%}
+    <span class="paper-venue">
+      {%- if venue.homepage -%}
+      <a href="{{ venue.homepage }}" target="_blank" rel="noopener">{% include venue_label.html venue=venue %}</a>
+      {%- else -%}
+      {%- include venue_label.html venue=venue -%}
+      {%- endif -%}
+    </span>
+    {%- endif -%}
+    {%- if venue and has_award %} <span aria-hidden="true">&middot;</span> {% endif -%}
+    {%- if has_award -%}
+    <span class="paper-award">
+      {%- include award_icon.html award=pub.award %}
+      {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize -}}
+    </span>
+    {%- endif -%}
+  </p>
+  {% endif %}
 
-  <section class="section-card row">
-    <div class="col-sm-10">
-      {% if pub.abstract %}
-      {{ pub.abstract | markdownify }}
-      {% endif %}
-    </div>
-    <div class="col-sm-2">
-      {% assign venue = site.data.venues | where: "id", pub.venue | first %}
-      {% if venue %}
-      <div class="paper-venue mb-3">
-        {% if venue.homepage %}
-        <a href="{{ venue.homepage }}" target="_blank" rel="noopener" class="fs-4">{% include venue_label.html
-          venue=venue %}</a>
-        {% else %}
-        <span class="fs-4">{% include venue_label.html venue=venue %}</span>
-        {% endif %}
-      </div>
-      {% endif %}
+  <div class="paper-actions">
+    {% if pub.pdf %}
+    <a class="btn btn-primary pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}"
+      download="{{ pub | pdf_download_name }}" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+    </a>
+    {% endif %}
+    {% if pub.doi %}
+    <a class="paper-doi" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> Publisher page
+    </a>
+    {% endif %}
+  </div>
 
-      {% if pub.award and pub.award != 'none' %}
-      <div class="paper-award mb-3 text-secondary fs-5">
-        {% include award_icon.html award=pub.award %}
-        {{ pub.award_description | default: pub.award | replace: "_", " " | capitalize }}
-      </div>
-      {% endif %}
-
-      {% if pub.pdf %}
-      <div class="paper-pdf">
-        <a class="btn btn-primary btn-lg pdf-download" href="{{ '/assets/' | append: pub.pdf | relative_url }}"
-          download="{{ pub | pdf_download_name }}" target="_blank" rel="noopener">
-          <i class="bi bi-file-earmark-pdf"></i> PDF
-        </a>
-      </div>
-      {% endif %}
-
-      {% if pub.doi %}
-      <div class="paper-doi mt-3">
-        <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
-          <i class="bi bi-link-45deg"></i> Publisher page
-        </a>
-      </div>
-      {% endif %}
-    </div>
+  {% if pub.abstract %}
+  <section class="section-card paper-abstract">
+    <h2 class="h5">Abstract</h2>
+    {{ pub.abstract | markdownify }}
   </section>
+  {% endif %}
+
   <section class="section-card paper-cite">
-    <h2 class="h5"><i class="bi bi-quote"></i> Cite this paper (BibTeX)</h2>
+    <h2 class="h5">Cite this paper (BibTeX)</h2>
     <pre class="bibtex"><code>{{ pub | bibtex | escape }}</code></pre>
   </section>
   {% else %}
   <h1>Publication not found</h1>
   <p>The requested publication page does not map to a known publication ID.</p>
   {% endif %}
+  </div>
 </div>

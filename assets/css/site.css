@@ -431,15 +431,51 @@ body {
         width: auto;
     }
 
-    .paper-cite {
-        h2 {
-            margin-top: 0;
+    /* /papers/<id>/. One text column on a single left edge, capped at a
+       readable measure -- the abstract at full container width ran past 100
+       characters a line. The hierarchy is carried by colour and spacing, not
+       by per-element font sizes: title, authors, then everything about the
+       venue in one muted line, then the two actions on one row. */
+    .paper-page {
+        max-width: 46rem;
+
+        .paper-meta {
+            color: var(--secondary-text-color);
+            margin: 0.25rem 0 0;
+
+            a {
+                color: var(--secondary-text-color);
+            }
+        }
+
+        .paper-actions {
+            align-items: center;
+            column-gap: 1.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+            row-gap: 0.5rem;
+        }
+
+        .section-card {
+            margin-top: 2.25rem;
+
+            /* The card's margin above owns the spacing, so the global
+               `h2 { margin-top: 1.5em }` must not add to it. */
+            h2 {
+                margin-top: 0;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
         }
 
         pre.bibtex {
             background: var(--code-background-color);
             border-radius: 3px;
             font-size: 0.8em;
+            margin-bottom: 0;
             margin-top: 0.5rem;
             overflow-x: auto;
             padding: 0.75rem;
