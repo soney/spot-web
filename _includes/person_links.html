@@ -1,6 +1,7 @@
 {% comment %}
-  A person's links as a breadcrumb list: their homepage, then any extra
-  links from their people.yaml record. A link to a service listed in
+  A person's links as a breadcrumb list: their homepage, then their name
+  pronunciation recording (name_coach), then any extra links from their
+  people.yaml record. An extra link to a service listed in
   _data/link_icons.yaml (Google Scholar, GitHub, ...) gets that service's
   icon in front of its description; any other link renders as plain text.
 
@@ -12,7 +13,7 @@
                     since linking there from itself would be circular.
 {% endcomment %}
 {%- assign links_person = include.person -%}
-{% if links_person.homepage or links_person.links %}
+{% if links_person.homepage or links_person.name_coach or links_person.links %}
 <ul class="breadcrumb">
   {% if include.local_homepage and links_person.use_local_homepage %}
   <li class="breadcrumb-item"><a href="{{ '/people/' | append: links_person.id | append: '/' | relative_url }}"><i
@@ -20,6 +21,10 @@
   {% elsif links_person.homepage %}
   <li class="breadcrumb-item"><a href="{{ links_person.homepage }}" target="_blank" rel="noopener"><i
         class="bi bi-house"></i> Homepage</a></li>
+  {% endif %}
+  {% if links_person.name_coach %}
+  <li class="breadcrumb-item"><a href="{{ links_person.name_coach }}" target="_blank" rel="noopener"><i
+        class="bi bi-volume-up"></i> Hear my name</a></li>
   {% endif %}
   {% if links_person.links %}
   {% for link in links_person.links %}

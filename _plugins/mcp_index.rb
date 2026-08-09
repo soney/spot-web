@@ -229,6 +229,8 @@ module Jekyll
           "title" => one_line(person["short_bio"]),
           "bio" => person["long_bio"],
           "homepage" => person["homepage"],
+          "pronouns" => person["pronouns"],
+          "name_coach" => person["name_coach"],
           "path" => person_path(person),
           "photo_path" => person["headshot"] && "/assets/#{person["headshot"]}",
           "links" => Array(person["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },

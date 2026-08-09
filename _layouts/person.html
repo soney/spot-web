@@ -19,7 +19,8 @@ nav: team
     </div>
 
     <div class="col-sm-9">
-      <h1>{{ person.given_name }} {{ person.family_name }}</h1>
+      <h1>{{ person.given_name }} {{ person.family_name }}{% if person.pronouns %} <span class="pronouns">({{
+          person.pronouns }})</span>{% endif %}</h1>
 
       {% if person.long_bio %}
       {{ person.long_bio | markdownify }}
