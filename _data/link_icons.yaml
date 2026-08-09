@@ -1,0 +1,51 @@
+# Icons for the extra links in a people.yaml `links:` list, rendered by
+# _includes/person_links.html. Each rule pairs a Bootstrap Icons class
+# (https://icons.getbootstrap.com — the version is pinned in _layouts/default.html)
+# with one way to recognize the link:
+#
+#   url_contains  plain substring match against the link's `url`. Use this for
+#                 services that live at a fixed domain.
+#   description   case-insensitive exact match against the link's `description`.
+#                 Use this when the URL is unpredictable — a CV can be a PDF
+#                 anywhere, a Mastodon account is on any instance.
+#
+# Rules are tried top to bottom and the first match wins; a link that matches
+# nothing renders as plain text, exactly as before this file existed. Matching
+# is presentation-only, so a miss costs nothing but the icon.
+#
+# Google Scholar has no Bootstrap brand icon; the mortarboard is the stand-in.
+- url_contains: scholar.google.com
+  icon: bi-mortarboard
+- url_contains: github.com
+  icon: bi-github
+- url_contains: twitter.com
+  icon: bi-twitter
+# Bare "x.com" would also match domains that merely end in x, e.g. netflix.com.
+- url_contains: //x.com
+  icon: bi-twitter-x
+- url_contains: //www.x.com
+  icon: bi-twitter-x
+- url_contains: linkedin.com
+  icon: bi-linkedin
+- url_contains: bsky.app
+  icon: bi-bluesky
+- url_contains: youtube.com
+  icon: bi-youtube
+- url_contains: instagram.com
+  icon: bi-instagram
+- url_contains: facebook.com
+  icon: bi-facebook
+- url_contains: medium.com
+  icon: bi-medium
+- url_contains: substack.com
+  icon: bi-substack
+- url_contains: stackoverflow.com
+  icon: bi-stack-overflow
+- url_contains: threads.net
+  icon: bi-threads
+- url_contains: "mailto:"
+  icon: bi-envelope
+- description: CV
+  icon: bi-file-earmark-person
+- description: Mastodon
+  icon: bi-mastodon
