@@ -395,20 +395,292 @@ body:not(.show-paper-awards) .paper-award-item {
     display: none;
 }
 
-/* Print/PDF export tuning (was assets/css/cv-pdfout.css). */
+/* Print: reproduce the look of the old LaTeX CV (oneycv.cls, kept untracked
+   in the maintainer's checkout under old-cv/ alongside the reference PDF) --
+   12pt Goudy Old Style at 13pt leading on letter paper, a 1.5in right-aligned
+   italic label column, 16pt bold section heads ruled from the content column
+   to the right margin, and the gray "name -- curriculum vitae" footer. Every
+   size below is the class's own value converted 1:1, with the LaTeX source
+   noted -- or, where CSS boxes and TeX glue disagree, tuned until the ink
+   matches the old PDF's measured geometry, with the measurement noted. A
+   deliberate departure is always visible as a comment that says so. */
 @media print {
-    body {
-        zoom: 0.8;
-        -moz-transform: scale(0.8);
-        -moz-transform-origin: 0 0;
-        background-color: #fff;
-        color: #000;
+    @page {
+        size: letter;
+        /* geometry: left=0.75in, right=0.75in, top=0.5in, bottom=1.7in. The
+           big bottom margin is where the footer lives. */
+        margin: 0.5in 0.75in 1.7in 0.75in;
+
+        /* \cfoot: right-aligned, gray 0.6 (#999). A margin box, so engines
+           without them (Firefox, Safari) lose the footer and nothing else.
+           vertical-align: top hangs it just under the text block the way
+           fancyhdr's footskip does, rather than centered in 1.7in of margin;
+           19pt of padding puts the ink 90pt from the page bottom, where the
+           old PDF's footer sits. One knowing loss: the LaTeX footer bolds
+           "Steve Oney" and a margin box takes a single string in a single
+           weight, so the whole line is regular here. */
+        @bottom-right {
+            content: "Steve Oney \2014  curriculum vitae, page " counter(page) " of " counter(pages);
+            font-family: goudy-old-style, serif;
+            font-size: 12pt;
+            color: #999;
+            vertical-align: top;
+            padding-top: 19pt;
+        }
     }
 
-    body .cv.container {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: calc(100% - 20px);
-        max-width: calc(100% - 20px);
+    :root,
+    :root[data-theme] {
+        /* 12pt article with \linespread{0.9}: 14.5pt baselineskip * 0.9 =
+           13.05pt. 12.75pt rather than 13pt because Chrome snaps printed
+           line boxes to whole CSS pixels: 13pt is 17.33px and alternates
+           17px and 18px lines inside a paragraph, where 12.75pt is exactly
+           17px and reproduces the LaTeX PDF's perfectly uniform rhythm.
+           LaTeX ink is pure black, not the screen's #333. */
+        --font-size: 12pt;
+        --line-height: 12.75pt;
+        --font-color: #000;
+    }
+
+    body {
+        background-color: #fff;
+        margin-bottom: 0;
+
+        .cv.container {
+            /* @page owns the margins; \makecvtitle opens with \vspace*{36pt},
+               and only page 1 carries it, same as the LaTeX title. 31pt
+               rather than 36pt: the h1's line box carries half-leading that
+               \vspace* does not, and 31pt lands the name's ink at the old
+               PDF's measured 71.8pt from the page top. */
+            margin: 31pt 0 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+
+            .row {
+                /* Bootstrap's negative row margins would poke through the
+                   page box now that the container has no padding. */
+                --bs-gutter-x: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            ul.cv-list {
+                /* Bootstrap's 1rem ul margin would ride on top of every
+                   between-section gap; TeX has no such glue, and spacing
+                   here belongs to the headings and items alone. */
+                margin-bottom: 0;
+            }
+
+            /* \def\@colwidth1{1.5in}, \def\@separation{.25cm}: the label
+               column is 1.5in with the gap carved out of its right edge, so
+               content starts exactly 1.5in into the text block. */
+            .col.side {
+                flex: 0 0 1.5in;
+                max-width: 1.5in;
+                padding: 0 0.25cm 0 0;
+                /* \cvitem wraps the whole label in \textit, so the whole
+                   column leans -- except grant amounts, excepted below.
+                   Icon glyphs are immune: bootstrap-icons pins its ::before
+                   to font-style normal. */
+                font-style: italic;
+            }
+
+            .col.main {
+                flex: 0 0 calc(100% - 1.5in);
+                max-width: calc(100% - 1.5in);
+                padding: 0;
+                /* LaTeX justifies and hyphenates everything by default. */
+                text-align: justify;
+                hyphens: auto;
+            }
+
+            /* Both minipages in \makecvtitle are [b]: the address block and
+               the contact block share a bottom edge. On the row, not the
+               columns, so the shorter of the two is the one that moves. The
+               address margin is Bootstrap's 1rem on <address>; flex-end
+               aligns outer margin edges, so it has to go or the address text
+               floats 1rem above the contact's. */
+            .row:has(> .col.contact) {
+                align-items: flex-end;
+
+                > .col.affiliation {
+                    margin-bottom: 0;
+                }
+            }
+
+            h1 {
+                /* \fontsize{30}{36} with LetterSpace=-1, i.e. 1% of 30pt;
+                   \linespread{0.9} scales the 36pt to 32.4pt. The negative
+                   margin eats the line box's remaining bottom half-leading:
+                   name-to-address ink measures 13.2pt in the old PDF
+                   (\vspace*{12pt} plus the following line's ascent gap). */
+                font-size: 30pt;
+                line-height: 32.4pt;
+                letter-spacing: -0.3pt;
+                margin: 0 0 -3pt;
+            }
+
+            h2 {
+                /* \titleformat{\section}: \bf 16pt, baselineskip 16pt *
+                   \linespread 0.9 = 14.4pt. 12pt below the rule reproduces
+                   the old PDF's measured 13.3-13.9pt rule-to-first-entry
+                   ink gap once the first line's half-leading is added. */
+                font-size: 16pt;
+                line-height: 14.4pt;
+                font-weight: bold;
+                margin: 0 0 12pt;
+                /* The rule is the ::after below; the screen's 1px #AAA
+                   border would print as a second, heavier line under it. */
+                border-bottom: none;
+            }
+
+            h3 {
+                /* \titleformat{\subsection}: 12pt, baselineskip 12pt * 0.9
+                   = 10.8pt; 6pt below the rule for the old PDF's 7.6pt ink
+                   gap to the first entry. */
+                font-size: 12pt;
+                line-height: 10.8pt;
+                margin: 0 0 6pt;
+                border-bottom: none;
+            }
+
+            /* The rules are ::after boxes, scaled: the old CV's rules are
+               true hairlines -- \hrulefill at 0.01cm (0.28pt) black,
+               \thinhrulefill at 0.001cm in darkgray (gray 0.4, #666) -- and
+               Chrome's print paint snaps sub-pixel borders AND sub-pixel
+               box heights up to a full 1px (0.75pt), measured on the PDF
+               output either way. A transform happens after paint, so a 1px
+               box scaled by 0.375 lands in the PDF as a genuine 0.28pt
+               hairline. The h3's 0.001cm is the one size not taken 1:1: at
+               ~0.03pt it survives neither every printer nor every viewer,
+               so it is scaled to 0.1pt -- still visibly fainter than the
+               h2's. The margin-top holds the rule off the text (the old
+               PDF clears h3 descenders by ~2.9pt); padding-bottom would
+               not, since a ::after box comes before its host's padding.
+               Each heading is a .col.main, so its rule spans the content
+               column only, as in the PDF. */
+            h2::after,
+            h3::after {
+                content: "";
+                display: block;
+                height: 1px;
+                margin-top: 2pt;
+                background: #000;
+                transform: scaleY(0.375);
+                transform-origin: top;
+            }
+
+            h3::after {
+                margin-top: 3pt;
+                background: #666;
+                transform: scaleY(0.133);
+            }
+
+            /* Space above a heading sits on its row, not on the heading: a
+               flex item's margin is trapped inside the row box, where a
+               page break cannot truncate it -- and TeX drops this glue when
+               a section opens a page. 20pt rather than the class's
+               \vspace{24pt}: measured against the old PDF, whose sections
+               sit ~22pt of ink below the previous entry, less the line
+               boxes' own ~2pt of half-leading. The rows also refuse a break
+               right after themselves: a stranded heading is worse than the
+               uneven page ends LaTeX produces. :has() because the break and
+               the margin belong between sibling rows, not inside the
+               heading; :not(.visually-hidden) keeps this off the title
+               block's row, whose h2s are the hidden Affiliation/Contact
+               labels. */
+            .row:has(> h2:not(.visually-hidden)),
+            .row:has(> h3) {
+                break-after: avoid;
+                break-inside: avoid;
+                margin-top: 20pt;
+            }
+
+            .row:has(> h3) {
+                /* Mid-list h3s carry ~17pt of ink gap in the old PDF. */
+                margin-top: 16pt;
+            }
+
+            /* The class's \vspace{24pt} lands differently depending on the
+               glue above it: measured on the old PDF's page 1, the ink gap
+               above Education (following the title block) is 14.9pt and
+               above Professional Experience 28.1pt, against ~22pt for the
+               sections after them. Two scoped values reproduce the page
+               everyone actually sees. */
+            .education .row:has(> h2:not(.visually-hidden)) {
+                margin-top: 14pt;
+            }
+
+            .experience .row:has(> h2:not(.visually-hidden)) {
+                margin-top: 24pt;
+            }
+
+            /* Service and Students Supervised open with an h3 directly
+               under the h2's rule; the old PDF closes that gap to 8.3pt,
+               which the h2's own 12pt bottom margin alone already
+               overshoots. */
+            .row:has(> h2:not(.visually-hidden)) + .row:has(> h3) {
+                margin-top: -4pt;
+            }
+
+            /* \cvitem: \vspace{.08in} + .05in = 9.4pt between entries; two
+               CSS line boxes contribute ~1pt of half-leading TeX's baseline
+               grid does not, so 8.4pt of margin reproduces the old PDF's
+               measured 9.4pt ink gap. Sibling margins collapse, so the sum
+               rides on margin-top alone; the existing li:first-child
+               { margin-top: 0 } keeps the h2's own margin in charge of the
+               first gap. */
+            .section .item,
+            .publications .paper {
+                margin-top: 8.4pt;
+                margin-bottom: 0;
+            }
+
+            /* \pdflink: {\small ...} at 12pt is 10.9pt, in RGB(0,39,76) --
+               the one spot of colour. An absolute size because the class
+               sits on the wrapping div and the anchor both, and an em value
+               would compound; the margin sets the code-to-link pitch at the
+               old PDF's measured 13.9pt. */
+            .publications .pdf-download {
+                color: #00274C;
+                font-size: 10.9pt;
+                line-height: 11pt;
+                margin-top: 1.6pt;
+            }
+
+            /* The old CV's award dingbats are ~8pt of solid black ink; the
+               site's outline icons at the full 12pt read far bigger and
+               lighter beside the same codes. */
+            .publications .paper-award-label {
+                font-size: 8.5pt;
+            }
+
+            /* The old CV set grant amounts in math mode: upright digits
+               under the italic date. */
+            .grants .award-amount {
+                font-style: normal;
+            }
+
+            /* The UA stylesheet's 1px td padding shifts the Advisors and
+               Committee lines 0.7pt right of the column edge and opens
+               their line pitch ~1.5pt beyond the body's; the screen only
+               zeroes the degrees table. */
+            .education table td {
+                padding: 0;
+            }
+        }
+    }
+
+    /* The default print state hides the paper-award entries, so the Awards
+       list's real :first-child is display:none and the screen's first-child
+       margin reset lands on it -- leaving the first *visible* entry a full
+       inter-item margin below the h2 rule where every other section gets
+       none. This picks out the first li that no non-award li precedes,
+       which in the hidden state is the first visible one. Scoped to that
+       state: with the toggle on, the true first child is visible and the
+       existing reset already covers it. */
+    body:not(.show-paper-awards) .cv.container .awards ul.cv-list > li:not(.paper-award-item):not(li:not(.paper-award-item) ~ li) {
+        margin-top: 0;
     }
 }
