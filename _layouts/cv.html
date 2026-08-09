@@ -5,6 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  {%- comment -%}
+    No toggle on this page -- it has no navbar to put one in -- but the script
+    still runs, so a choice made on the main site carries over to the CV
+    instead of the CV reverting to the OS preference under the reader. Ahead of
+    the stylesheets for the reason given in _layouts/default.html.
+  {%- endcomment -%}
+  {%- include theme_script.html %}
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">

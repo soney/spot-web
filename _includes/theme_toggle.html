@@ -1,0 +1,18 @@
+{%- comment -%}
+  The navbar's light/dark toggle. _includes/theme_script.html finds it by
+  data-theme-toggle, gives it a real aria-label, and handles the click.
+
+  Both icons are in the markup and site.css shows whichever matches the current
+  data-theme, rather than the script swapping a class. That way the right icon
+  is there at first paint -- the theme is decided in <head>, but the script's
+  DOM work does not happen until DOMContentLoaded, and picking the icon in JS
+  would show the wrong one until then.
+
+  The visible icon is the theme being switched *to*, so the moon reads as "go
+  dark". The aria-label says the same thing in words; the icons are aria-hidden
+  so the button announces once, not three times.
+{%- endcomment -%}
+<button type="button" class="nav-link theme-toggle" data-theme-toggle aria-label="Switch theme">
+  <i class="bi bi-moon-stars theme-toggle-to-dark" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-to-light" aria-hidden="true"></i>
+</button>

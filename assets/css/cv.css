@@ -257,23 +257,28 @@ body:not(.show-paper-awards) .paper-award-item {
 }
 
 /* Dark mode: warm dark paper, not a second copy of the site's palette. Same
-   mechanism as site.css -- pure CSS keyed off the OS preference, with
+   mechanism as site.css -- keyed off the data-theme attribute that
+   _includes/theme_script.html stamps on <html> in <head>, with
    <meta name="color-scheme" content="light dark"> in _layouts/cv.html so the
    canvas and the three toggle checkboxes (which are bare UA controls, not
    Bootstrap ones) are already dark before this file loads.
+
+   This page has no toggle of its own -- there is no navbar to put one in --
+   but the script runs here too, so a choice made on the main site carries over
+   rather than the CV reverting to the OS preference under the reader.
 
    The light background rgb(243, 240, 235) is warm: its red channel sits 8
    above its blue, and that cast is what makes the page read as paper rather
    than as a screen. #1B1815 keeps the spread at 6 and the text is warm too, so
    the CV stays a visibly warmer document than the main site's cool #16181A.
 
-   `screen and` matters more here than in site.css. The @media print block
+   `@media screen` matters more here than in site.css. The @media print block
    below overrides `body { color }` at specificity (0,0,1), but the CV's text
    colour actually comes from the nested `body .cv.container { color:
-   var(--font-color) }` at (0,2,1), which outranks it -- so without `screen` a
-   dark --font-color would survive into print and the CV would come out
-   #E7E1D8 on white paper, 1.29:1. Invisible. With `screen`, print is untouched
-   and byte-identical to today.
+   var(--font-color) }` at (0,2,1), which outranks it -- so unscoped, a dark
+   --font-color would survive into print and the CV would come out #E7E1D8 on
+   white paper, 1.29:1. Invisible. With `screen`, print is untouched and
+   byte-identical to today whichever theme is on screen.
 
    Ratios are WCAG 2.1, floored to 2dp. The two heading rules are the one place
    where a contrast floor is the wrong target: #AAA on paper is a deliberately
@@ -281,8 +286,8 @@ body:not(.show-paper-awards) .paper-award-item {
    7:1 -- a bright bar shouting across the page. They are decorative rules, not
    UI boundaries, so the 3:1 bar does not apply; these match the light-mode
    subtlety instead. */
-@media screen and (prefers-color-scheme: dark) {
-    :root {
+@media screen {
+    :root[data-theme="dark"] {
         color-scheme: dark;
 
         --font-color: #E7E1D8;

@@ -380,31 +380,95 @@ body {
     }
 }
 
-/* Dark mode, following the OS preference. There is no toggle and no
-   JavaScript: everything below is a re-pointing of the custom properties
-   above, so the theme is decided by the time the first pixel is painted and
-   there is nothing to flash. The <meta name="color-scheme"> in
-   _layouts/default.html covers the one gap CSS cannot -- the canvas the
-   browser paints while these stylesheets are still downloading.
+/* The navbar's light/dark toggle (_includes/theme_toggle.html). Top level
+   rather than nested inside `body nav.navbar` above because every rule here is
+   conditioned on <html>, and `:root[data-theme] &` reads worse than it looks.
+   It carries Bootstrap's .nav-link, which zeroes a button's background and
+   border for exactly this case; only the parts specific to an icon button are
+   below.
 
-   Bootstrap 5.3 ships a dark theme, but it keys off a data-bs-theme attribute
-   and never reads prefers-color-scheme, and CSS cannot set an attribute.
-   Rather than add a script for it, the four --bs-* tokens that the utilities
-   in this site's markup actually read are re-pointed at the site's own tokens
-   below. This works because site.css loads after Bootstrap (default.html line
-   9, then line 15) and :root ties Bootstrap's `:root, [data-bs-theme=light]`
-   on specificity, so source order decides. Keep those two <link> tags in that
-   order; reversing them would silently restore Bootstrap's light values.
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
 
-   `screen and` is load-bearing. Browsers drop background-color when printing
-   but honour color, so an unscoped query would print light text onto white
-   paper. With `screen`, printed pages are identical to today.
+:root[data-theme] .theme-toggle {
+    /* inline-flex, so the icon centres in the box rather than sitting on the
+       text baseline it does not have. */
+    align-items: center;
+    color: var(--secondary-text-color);
+    display: inline-flex;
+    font-size: 1.05rem;
+    justify-content: center;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.theme-toggle:hover {
+    /* Matches what an active nav tab does: darken to the body colour. Beats
+       Bootstrap's .nav-link:hover on source order at equal specificity. */
+    color: var(--text-color);
+}
+
+.theme-toggle:focus-visible {
+    /* Bootstrap sets outline:0 here and substitutes a 25%-alpha blue glow that
+       composites to about 1.4:1 in light mode -- invisible. --link-color is a
+       text colour, so it clears the 3:1 a focus ring needs (4.71:1 on white).
+
+       Light mode only in practice: the button carries .nav-link, so in dark the
+       maize `.nav-link:focus-visible` rule further down wins on specificity
+       (0,4,1 against this rule's 0,2,0) and the ring matches the other tabs at
+       11.69:1. Both routes end at a visible ring, which is the point; this one
+       is also what covers the button if it ever loses .nav-link. */
+    box-shadow: none;
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+/* Show the theme being switched *to*, matching the aria-label the script sets:
+   moon while light, sun while dark. Keyed off the attribute rather than
+   swapped by the script so the correct icon is painted on the first frame --
+   the theme is settled in <head>, but the script does not touch the DOM until
+   DOMContentLoaded. */
+:root[data-theme="dark"] .theme-toggle-to-dark,
+:root:not([data-theme="dark"]) .theme-toggle-to-light {
+    display: none;
+}
+
+/* Dark mode. Everything below is a re-pointing of the custom properties above,
+   so switching themes costs one attribute change and no reflow of anything
+   else.
+
+   Keyed off `data-theme` on <html> rather than prefers-color-scheme, because
+   the reader can now override the OS preference with the navbar toggle. The
+   inline script in _includes/theme_script.html resolves the two into a single
+   value and stamps it in <head>, before the first pixel is painted, so there
+   is still nothing to flash -- and only one thing deciding the theme, rather
+   than a media query and an attribute that would have to be kept agreeing.
+   The <meta name="color-scheme"> in _layouts/default.html covers the one gap
+   neither can -- the canvas the browser paints while these stylesheets are
+   still downloading.
+
+   Bootstrap 5.3 ships a dark theme, but it keys off its own data-bs-theme
+   attribute, which nothing here sets. The four --bs-* tokens that the
+   utilities in this site's markup actually read are re-pointed at the site's
+   own tokens below. This works because site.css loads after Bootstrap
+   (default.html line 9, then line 15) and the selector beats Bootstrap's
+   `:root, [data-bs-theme=light]`. Keep those two <link> tags in that order;
+   reversing them would silently restore Bootstrap's light values.
+
+   `@media screen` is load-bearing. Browsers drop background-color when
+   printing but honour color, so unscoped rules would print light text onto
+   white paper. Wrapped this way, printed pages are identical to today
+   whichever theme the reader is viewing in.
 
    Every ratio below was computed with the WCAG 2.1 relative-luminance formula
    and floored to 2dp, so none is overstated. Body text needs 4.5:1; borders,
    focus rings and other graphical boundaries need 3:1. */
-@media screen and (prefers-color-scheme: dark) {
-    :root {
+@media screen {
+    :root[data-theme="dark"] {
         color-scheme: dark;
 
         --text-color: #E6E9EB;
@@ -462,7 +526,7 @@ body {
            in its own dark theme, which is why the token is the right lever. */
     }
 
-    body {
+    :root[data-theme="dark"] body {
 
         .nav-link:focus-visible {
             /* Bootstrap removes the focus outline here and substitutes a
