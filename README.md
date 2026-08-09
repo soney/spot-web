@@ -73,7 +73,12 @@ _plugins/
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
   js/webmcp.js                # registers this site's tools for AI agents
   mcp/                        # one line of Liquid each; generates the tools' JSON
+script/
+  pdf_audit.rb                # assets/pdfs/ vs. publications.yaml; derives PDF filenames
 ```
+
+`script/pdf_audit.rb` is deliberately stdlib-only Ruby (no `bundle exec`), so it
+is cheap enough to run from an editor hook on every prompt.
 
 How a paper page appears: `_plugins/generate_data_pages.rb` runs during the
 build and adds a page at `/papers/<id>/` for every record in
@@ -178,11 +183,27 @@ You will touch, in this order:
 4. `_data/publications.yaml` — the paper record
 5. (optional) `_data/news.yaml`, `_data/clusters.yaml`
 
-**The PDF.** Drop the file in `assets/pdfs/`; any filename works. Reference it
-in the record **relative to `assets/`** — `pdf: pdfs/codestream_chi26.pdf`.
-Templates build the URL as `/assets/` + `pdf`, so `pdf: /assets/pdfs/foo.pdf` or
-`pdf: assets/pdfs/foo.pdf` renders a PDF button that 404s, with no build error.
-`pdf` is optional; omit it and no button renders anywhere.
+**The PDF.** Drop the file in `assets/pdfs/` and rename it to
+`<surname>-<short-title>-<venue><year>.pdf`. Nothing enforces the convention,
+but every one of the 73 PDFs follows it, so the name is derived rather than
+invented — once the record exists, ask for it:
+
+```bash
+ruby script/pdf_audit.rb --name <publication-id>
+```
+
+The three pieces are the first author's surname, the system name before the
+title's colon (`CodeStream: Augmenting…` → `codestream`) or the first three
+meaningful words when there is no colon (`Simulating Human Cursor Trajectories
+for…` → `simulating-human-cursor`), and the venue's `short_name` stripped of
+punctuation plus its year (`VL/HCC` 2025 → `vlhcc2025`), skipping the year when
+the short name already carries one (`CHI2025-CompUI`).
+
+Reference it in the record **relative to `assets/`** —
+`pdf: pdfs/zhang-codestream-chi2026.pdf`. Templates build the URL as `/assets/`
++ `pdf`, so `pdf: /assets/pdfs/foo.pdf` or `pdf: assets/pdfs/foo.pdf` renders a
+PDF button that 404s, with no build error. `pdf` is optional; omit it and no
+button renders anywhere.
 
 **The venue.** Look in `_data/venues.yaml` first — ids are `<venue>_<year>`
 (`chi_2026`, `uist_2025`, `vl_hcc_2024`, `chi_posters_2026`). If it's there,
@@ -775,6 +796,19 @@ Depending on what you changed, check:
 Run a clean `bundle exec jekyll build` once and read the output. That is where
 `DataPageGenerator` and `cv_grouped_records` warnings appear; they scroll past
 easily during serve.
+
+If you touched a PDF, also run the audit:
+
+```bash
+ruby script/pdf_audit.rb
+```
+
+It reports PDFs in `assets/pdfs/` that no record references, and records whose
+`pdf:` names a file that does not exist. Neither is a build error — the second
+renders a button that 404s — so this is the only thing that catches them.
+`--verify-names` additionally checks every referenced PDF against the naming
+convention. Claude Code runs the audit automatically via a `UserPromptSubmit`
+hook in `.claude/settings.json`, and `/add-paper` walks the whole recipe above.
 
 Then push to `main`; see [Deploy](#deploy).
 
