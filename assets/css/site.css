@@ -485,14 +485,13 @@ body {
         width: auto;
     }
 
-    /* /papers/<id>/. One text column on a single left edge, capped at a
-       readable measure -- the abstract at full container width ran past 100
-       characters a line. The hierarchy is carried by colour and spacing, not
-       by per-element font sizes: title, authors, then everything about the
-       venue in one muted line, then the two actions on one row. */
+    /* /papers/<id>/. One text column on a single left edge, running the full
+       width of the .container like every other page -- this class scopes the
+       rules below rather than setting a measure of its own. The hierarchy is
+       carried by colour and spacing, not by per-element font sizes: title,
+       authors, then everything about the venue in one muted line, then the two
+       actions on one row. */
     .paper-page {
-        max-width: 46rem;
-
         .paper-meta {
             color: var(--secondary-text-color);
             margin: 0.25rem 0 0;
