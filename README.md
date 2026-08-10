@@ -469,8 +469,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `membership` | group members only | Which tier they render in; omit for external co-authors |
 | `homepage` | no | External URL: the "Homepage" breadcrumb, the name-link in the `/team` collaborator list, and the author link in publication lists |
 | `pronouns` | no | e.g. `she/her`. Shown in parentheses after the name on their `/team` member row and `/people/<id>/` page. Nowhere else — not on the homepage grid, author lists, news chips, or the `/team` collaborator list |
-| `name_recording` | no | Self-hosted name-pronunciation audio: a path relative to `assets/`, e.g. `audio/steve_oney_name_pronunciation.mp3`. Renders a "Hear my name" breadcrumb link right after "Homepage" that plays the recording in place (no-JS fallback: the link opens the file). Wins over `name_coach` when a record has both |
-| `name_coach` | no | URL of an externally hosted name-pronunciation page (e.g. on [name-coach.com](https://www.name-coach.com/)). Same "Hear my name" breadcrumb link, but it opens the external page in a new tab instead of playing in place. Prefer `name_recording` when the audio file itself is available |
+| `name_recording` | no | Name-pronunciation audio: a path relative to `assets/`, e.g. `audio/steve_oney_name_pronunciation.mp3`. Renders a "Hear my name" breadcrumb link right after "Homepage" that plays the recording in place (no-JS fallback: the link opens the file), in the same places `pronouns` shows |
 | `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
 | `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}`. Links to services listed in `_data/link_icons.yaml` (Google Scholar, GitHub, Twitter, LinkedIn, a `CV`, ...) get that service's icon automatically; add a rule there to cover a new service |
@@ -567,7 +566,7 @@ A complete member record:
   membership: member
   homepage: https://jamierivera.example.edu/
   pronouns: they/them
-  name_coach: https://www.name-coach.com/jamie-rivera
+  name_recording: audio/jamie_rivera_name_pronunciation.mp3
   short_bio: |-
     Ph.D. Student
     Michigan SI
