@@ -646,7 +646,8 @@
             statusText,
             person.path ? 'Page: ' + url(data, person.path) : null,
             person.homepage ? 'Homepage: ' + person.homepage : null,
-            person.name_coach ? 'Name pronunciation recording: ' + person.name_coach : null
+            person.name_recording ? 'Name pronunciation recording: ' + url(data, person.name_recording) :
+              person.name_coach ? 'Name pronunciation recording: ' + person.name_coach : null
           ];
           (person.links || []).forEach(function (link) {
             body.push(link.description + ': ' + (link.url.charAt(0) === '/' ? url(data, link.url) : link.url));

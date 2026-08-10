@@ -235,6 +235,15 @@ body {
         color: var(--bs-secondary-color);
     }
 
+    /* The "Hear my name" breadcrumb link while its recording plays
+       (_includes/name_recording_script.html toggles the class). Only the
+       speaker icon pulses, so a second click reads as "stop" without the
+       label shifting. The keyframes are at top level below body -- CSS
+       nesting does not allow @keyframes inside a style rule. */
+    a[data-name-recording].playing .bi {
+        animation: name-recording-pulse 1.2s ease-in-out infinite;
+    }
+
     .member {
         flex-basis: 0;
         flex-grow: 1;
@@ -525,6 +534,12 @@ body {
             overflow-x: auto;
             padding: 0.75rem;
         }
+    }
+}
+
+@keyframes name-recording-pulse {
+    50% {
+        opacity: 0.35;
     }
 }
 

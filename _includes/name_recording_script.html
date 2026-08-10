@@ -1,0 +1,38 @@
+{%- comment -%}
+  Plays a person's name-pronunciation recording in place. person_links.html
+  renders the recording as an <a data-name-recording> whose href is the audio
+  file under assets/, so without JavaScript the link opens the file and the
+  browser's own player takes over; with it, a click plays right there and a
+  second click stops. One delegated listener rather than one per link because
+  /team renders person_links.html once per member, and it is included from
+  default.html unconditionally for the same reason theme_script.html is: the
+  pages that need it (/team, /people/<id>/) share the layout with everything
+  else, and on a page with no matching link it does nothing.
+
+  The audio element is created on first click, not in the markup, so the
+  browser does not fetch or buffer anything for a control nobody uses. The
+  .playing class is the only visual state; site.css styles it.
+
+  Parameters: none.
+{%- endcomment -%}
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-name-recording]');
+    if (!link) return;
+    event.preventDefault();
+    var audio = link.nameRecordingAudio;
+    if (!audio) {
+      audio = new Audio(link.href);
+      link.nameRecordingAudio = audio;
+      audio.addEventListener('ended', function () { link.classList.remove('playing'); });
+      audio.addEventListener('pause', function () { link.classList.remove('playing'); });
+      audio.addEventListener('play', function () { link.classList.add('playing'); });
+    }
+    if (audio.paused) {
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+</script>
