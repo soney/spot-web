@@ -1,0 +1,31 @@
+{%- comment -%}
+  The viewport meta plus everything needed to actually disable pinch and
+  double-tap zoom on mobile. One include rather than a line per layout because
+  no single mechanism covers both platforms, and a partial copy looks done
+  while still zooming on an iPhone:
+
+  - maximum-scale=1 / user-scalable=no: honored by Android browsers; Safari
+    on iOS has ignored both for user gestures since iOS 10. Still worth
+    keeping for iOS because maximum-scale=1 suppresses the automatic zoom
+    when a form control is focused.
+  - touch-action: pan-x pan-y on <html>: scroll and tap stay allowed, zoom
+    gestures (pinch, double-tap, double-tap-drag) are excluded, in browsers
+    that route page zoom through touch-action. Inline rather than in the
+    stylesheets because this page-wide policy would otherwise have to be
+    repeated in both site.css and cv.css.
+  - gesturestart: the non-standard iOS event that fires on pinch; preventing
+    it is what actually stops Safari's pinch zoom. No-op elsewhere, since
+    only WebKit on iOS fires gesture events.
+
+  OS-level accessibility zoom (triple-tap magnifier, browser text scaling) is
+  browser chrome, not a page gesture, so it keeps working.
+{%- endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  html {
+    touch-action: pan-x pan-y;
+  }
+</style>
+<script>
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+</script>
