@@ -17,7 +17,7 @@
 
     <h3>{{ person.given_name }} {{ person.family_name }}{% if person.name_recording %} {% include
       name_recording_link.html person=person %}{% endif %}</h3>
-    {% if person.pronouns %}<p class="pronouns">{{ person.pronouns }}</p>{% endif %}
+    {% if person.pronouns %}<p class="pronouns">Pronouns: {{ person.pronouns }}</p>{% endif %}
 
     {% if person.long_bio %}
     {{ person.long_bio | markdownify }}
