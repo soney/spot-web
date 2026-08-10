@@ -231,6 +231,7 @@ module Jekyll
           "homepage" => person["homepage"],
           "pronouns" => person["pronouns"],
           "name_coach" => person["name_coach"],
+          "name_recording" => person["name_recording"] && "/assets/#{person["name_recording"]}",
           "path" => person_path(person),
           "photo_path" => person["headshot"] && "/assets/#{person["headshot"]}",
           "links" => Array(person["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
