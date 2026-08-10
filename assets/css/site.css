@@ -227,19 +227,32 @@ body {
         margin-top: 10px;
     }
 
-    /* The "(she/her)" after a name in a member-row or person-page heading.
-       Sized in em so it tracks the h3 on /team and the h1 on /people/<id>/. */
+    /* The "she/her" line below a name in a member-row or person-page
+       heading. Its own block now (not nested in the h1/h3), so it is sized
+       in rem rather than tracking the heading's em scale. */
     .pronouns {
-        font-size: 0.6em;
+        font-size: 0.9rem;
         font-weight: normal;
         color: var(--bs-secondary-color);
+        margin-top: -0.25rem;
+        margin-bottom: 0.5rem;
     }
 
-    /* The "Hear my name" breadcrumb link while its recording plays
+    /* The speaker icon that plays a name-pronunciation recording, inline
+       right after the name in a member-row or person-page heading
+       (_includes/name_recording_link.html). Sized in em so it tracks the
+       h3 on /team and the h1 on /people/<id>/, same as .pronouns used to. */
+    .name-recording-link {
+        font-size: 0.6em;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    /* The speaker icon while its recording plays
        (_includes/name_recording_script.html toggles the class). Only the
-       speaker icon pulses, so a second click reads as "stop" without the
-       label shifting. The keyframes are at top level below body -- CSS
-       nesting does not allow @keyframes inside a style rule. */
+       icon pulses, so a second click reads as "stop" without anything else
+       shifting. The keyframes are at top level below body -- CSS nesting
+       does not allow @keyframes inside a style rule. */
     a[data-name-recording].playing .bi {
         animation: name-recording-pulse 1.2s ease-in-out infinite;
     }
