@@ -780,7 +780,7 @@
               data.publications.length + ' publications on the site.',
             'Contact: ' + data.site.contact_email,
             'Affiliated with: ' + data.group.affiliations.map(function (item) { return item.name; }).join(', '),
-            'Sponsors: ' + data.group.sponsors.map(function (item) { return item.name; }).join(', '),
+            'Support: ' + data.group.sponsors.map(function (item) { return item.name; }).join(', '),
             '',
             'Joining the group:',
             absoluteLinks(data, data.group.joining),
