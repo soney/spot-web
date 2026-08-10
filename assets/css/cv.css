@@ -434,6 +434,63 @@ body:not(.show-paper-awards) .paper-award-item {
     display: none;
 }
 
+/* Small screens: the label column stops being a column. Under 768px the
+   fixed 20% side column shreds its own content -- "09/2008 -- 04/2015"
+   becomes four lines with a date broken across them, and the address block
+   beside the contact block wraps once per word -- so each .col.side stacks
+   above its .col.main as a one-line kicker instead: display: flex lays its
+   inner divs (date range and location; paper code and PDF link) out inline,
+   and muted-and-smaller carries the hierarchy that right-alignment used to.
+   `screen` is belt and braces: a letter page is 816 CSS px wide, so print
+   could never match a 767.98px query anyway, but saying so costs a word. */
+@media screen and (max-width: 767.98px) {
+    body .cv.container {
+        /* 7em of whitespace above the name is a desktop luxury. 3.5em still
+           clears the absolutely-positioned theme toggle in the top margin. */
+        margin-top: 3.5em;
+
+        .col.side,
+        .col.main {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col.side {
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 0.6em;
+            font-size: 0.9em;
+            color: var(--note-color);
+        }
+
+        /* The title block's pair stacks too -- address, then contact -- and
+           both read better left-aligned once nothing sits beside them. */
+        .row > .col.affiliation,
+        .row > .col.contact {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .contact {
+            text-align: left;
+            margin-top: 0.75em;
+        }
+
+        /* Desktop-only vertical-alignment shims; stacked, each is just a
+           blank line. :first-child spares the second spacer, which holds
+           the screen's "Download PDF" link. */
+        .contact > .contact-spacer:first-child {
+            display: none;
+        }
+
+        /* Justification at ~45 characters a line is rivers, not tidiness. */
+        .publications .paper {
+            text-align: left;
+        }
+    }
+}
+
 /* Print: reproduce the look of the old LaTeX CV (oneycv.cls, kept untracked
    in the maintainer's checkout under old-cv/ alongside the reference PDF) --
    12pt Goudy Old Style at 13pt leading on letter paper, a 1.5in right-aligned

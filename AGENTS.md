@@ -166,6 +166,11 @@ wrongly, which makes them the things to get right the first time.
 
 `.github/workflows/deploy.yml` builds on push to `main` and force-pushes `_site`
 to `gh-pages`; pull requests run the same build as a check without deploying.
+The build step is `script/export_cv_pdf.sh _site/oney_cv.pdf`, which runs
+`jekyll build` itself and then prints the CV, so every deploy also publishes a
+fresh `/oney_cv.pdf` for the web CV's "Download PDF" link. Do not add a
+separate `jekyll build` step in front of it — the script's rebuild would
+silently overwrite that step's `_site`.
 
 **GitHub Pages must stay pointed at the `gh-pages` branch.** Because this repo
 has `_plugins/`, and Pages' own Jekyll runs in safe mode and ignores plugins,

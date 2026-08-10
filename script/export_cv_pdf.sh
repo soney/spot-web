@@ -10,11 +10,14 @@
 #
 #   script/export_cv_pdf.sh                      # oney_cv.pdf in the repo root
 #   script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
-#   script/export_cv_pdf.sh --students --awards  # the CV's toggles, as flags
-#   script/export_cv_pdf.sh --mentees            # include ugrad/MS mentees
+#   script/export_cv_pdf.sh --students --awards  # the CV's checkboxes, as flags
 #
-# The flags map to the page's own URL parameters (?students=true&...), so a
-# flagged export shows exactly what the browser shows with that toggle on.
+# Every checkbox on the CV is a flag: the list is read at run time from the
+# page's cv_toggle includes, so a checkbox added to oney_cv.html is a flag
+# here with no edit to this script (--help prints the current list). Each
+# flag maps to its checkbox's URL parameter (--students to ?students=true),
+# so a flagged export shows exactly what the browser shows with that toggle
+# on.
 # The default output name is gitignored and excluded in _config.yml, so the
 # exported file can be neither committed nor copied into _site by a build.
 #
@@ -28,19 +31,35 @@ set -euo pipefail
 # Resolved before any cd: usage() reads this file through $0, and a relative
 # $0 stops working the moment the script leaves the caller's directory.
 self=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
-usage() { sed -n '3,24p' "$self" | sed 's/^# \{0,1\}//'; }
+usage() {
+  sed -n '3,27p' "$self" | sed 's/^# \{0,1\}//'
+  echo
+  echo "flags (the CV's checkboxes): $(printf -- '--%s ' $toggles)"
+}
 
 orig_dir=$PWD
 cd "$(dirname "$self")/.."
+
+# The flag list IS the page's checkbox list: every cv_toggle include in
+# oney_cv.html names its URL parameter (param="students"). Coming out empty
+# means the page or the include's syntax moved, so every flag would be
+# rejected as unknown; say why up front.
+toggles=$(grep -oE '[[:space:]]param="[^"]+"' oney_cv.html | cut -d'"' -f2 | sort -u)
+[ -n "$toggles" ] || echo "warning: no cv_toggle params found in oney_cv.html; toggle flags will not work" >&2
 
 out=""
 params=()
 for arg in "$@"; do
   case "$arg" in
-    --students) params+=("students=true") ;;
-    --awards)   params+=("awards=true") ;;
-    --mentees)  params+=("mentees=true") ;;
     -h|--help)  usage; exit 0 ;;
+    --*)
+      name=${arg#--}
+      if printf '%s\n' "$toggles" | grep -qxF -- "$name"; then
+        params+=("$name=true")
+      else
+        echo "unknown flag: $arg" >&2; usage >&2; exit 1
+      fi
+      ;;
     -*)         echo "unknown flag: $arg" >&2; usage >&2; exit 1 ;;
     *)
       # A second bare argument is almost always a mistyped flag; taking it
