@@ -8,10 +8,13 @@
 
   Two loops rather than one: sponsor images carry the sponsor-logo class
   (site.css sizes them) and the two groups sit in differently-classed rows.
+
+  The visible heading says "Support", but the data key stays `sponsors` -- it
+  is also read by _plugins/mcp_index.rb, whose output webmcp.js consumes.
 {% endcomment %}
 <footer class="container">
   <h2>Affiliations</h2>
-  <div class="affiliations row">
+  <div class="affiliations row gy-4">
     {% for item in site.data.affiliations.affiliations %}
     <div class="{{ item.width }}">
       <a href="{{ item.url }}" target="_blank" rel="noopener"><img
@@ -19,13 +22,13 @@
     </div>
     {% endfor %}
   </div>
-  <h2 class="d-flex justify-content-between align-items-end mt-5">
-    Sponsors
-    <span class="text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
+  <h2 class="d-md-flex justify-content-between align-items-end mt-5">
+    Support
+    <span class="d-block d-md-inline text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
       (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)
     </span>
   </h2>
-  <div class="row">
+  <div class="row gy-4">
     {% for item in site.data.affiliations.sponsors %}
     <div class="{{ item.width }}">
       <a href="{{ item.url }}" target="_blank" rel="noopener"><img
