@@ -1,0 +1,15 @@
+{% comment %}
+  The speaker icon that plays a person's name-pronunciation recording,
+  meant to sit right next to their name in a heading. Playback happens in
+  place via the delegated click listener in
+  _includes/name_recording_script.html, keyed off the data-name-recording
+  attribute; the href is the audio file itself so the link still opens and
+  plays it even without JavaScript.
+
+  Parameters:
+    person  the person record (from people.yaml); caller must check
+            person.name_recording before including this.
+{% endcomment %}
+<a class="name-recording-link" href="{{ '/assets/' | append: include.person.name_recording | relative_url }}"
+  data-name-recording aria-label="Hear {{ include.person.given_name }}'s name pronounced"><i
+    class="bi bi-volume-up"></i></a>
