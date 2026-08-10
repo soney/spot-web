@@ -534,6 +534,52 @@ body {
             overflow-x: auto;
             padding: 0.75rem;
         }
+
+        .paper-cite-header {
+            align-items: baseline;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 0.75rem;
+            justify-content: space-between;
+
+            /* pre.bibtex's margin-top owns the gap below the row, as it did
+               when the heading stood alone; as a flex item the heading's own
+               margin no longer collapses with it and would double the space. */
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        /* Hidden until assets/js/paper.js adds `is-ready`: with JavaScript
+           off (or no Clipboard API) the button could only fail, so it is
+           simply not there -- the .theme-toggle reasoning below. */
+        .bibtex-copy {
+            display: none;
+        }
+
+        .bibtex-copy.is-ready {
+            align-items: center;
+            background: none;
+            /* --secondary-text-color clears the 3:1 boundary floor against
+               the page in both themes (5.83:1 dark, 6.70:1 light). */
+            border: 1px solid var(--secondary-text-color);
+            border-radius: 3px;
+            color: var(--secondary-text-color);
+            display: inline-flex;
+            font-size: 0.85rem;
+            gap: 0.35em;
+            line-height: 1;
+            padding: 0.3em 0.6em;
+            /* Colour only, no motion, so no prefers-reduced-motion guard is
+               needed (the .theme-toggle reasoning again). */
+            transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+        }
+
+        .bibtex-copy.is-ready:hover,
+        .bibtex-copy.is-ready:focus-visible {
+            background-color: var(--hover-surface-color);
+            color: var(--text-color);
+        }
     }
 }
 

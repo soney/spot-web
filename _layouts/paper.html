@@ -57,9 +57,19 @@ nav: research
   {% endif %}
 
   <section class="section-card paper-cite">
-    <h2 class="h5">Cite this paper (BibTeX)</h2>
+    <div class="paper-cite-header">
+      <h2 class="h5">Cite this paper (BibTeX)</h2>
+      {%- comment -%}
+        Hidden by site.css until assets/js/paper.js wires it up, so with
+        JavaScript off the button is not there rather than dead.
+      {%- endcomment -%}
+      <button type="button" class="bibtex-copy" aria-live="polite">
+        <i class="bi bi-clipboard" aria-hidden="true"></i> Copy
+      </button>
+    </div>
     <pre class="bibtex"><code>{{ pub | bibtex | escape }}</code></pre>
   </section>
+  <script src="{{ '/assets/js/paper.js' | relative_url }}"></script>
   {% else %}
   <h1>Publication not found</h1>
   <p>The requested publication page does not map to a known publication ID.</p>
