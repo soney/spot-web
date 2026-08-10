@@ -1,15 +1,14 @@
 {% comment %}
   A person's links as a breadcrumb list: their homepage, then their name
   pronunciation recording, then any extra links from their people.yaml
-  record. A self-hosted recording (name_recording, a path under assets/)
+  record. The recording (name_recording, an audio path under assets/)
   renders as a "Hear my name" link that plays in place -- the behaviour
   lives in _includes/name_recording_script.html, keyed off the
   data-name-recording attribute, and the href is the audio file itself so
-  the link still works without JavaScript. A name_coach URL renders as a
-  plain external link; name_recording wins when a record has both. An
-  extra link to a service listed in _data/link_icons.yaml (Google Scholar,
-  GitHub, ...) gets that service's icon in front of its description; any
-  other link renders as plain text.
+  the link still works without JavaScript. An extra link to a service
+  listed in _data/link_icons.yaml (Google Scholar, GitHub, ...) gets that
+  service's icon in front of its description; any other link renders as
+  plain text.
 
   Parameters:
     person          the person record (from people.yaml).
@@ -19,7 +18,7 @@
                     since linking there from itself would be circular.
 {% endcomment %}
 {%- assign links_person = include.person -%}
-{% if links_person.homepage or links_person.name_recording or links_person.name_coach or links_person.links %}
+{% if links_person.homepage or links_person.name_recording or links_person.links %}
 <ul class="breadcrumb">
   {% if include.local_homepage and links_person.use_local_homepage %}
   <li class="breadcrumb-item"><a href="{{ '/people/' | append: links_person.id | append: '/' | relative_url }}"><i
@@ -31,9 +30,6 @@
   {% if links_person.name_recording %}
   <li class="breadcrumb-item"><a href="{{ '/assets/' | append: links_person.name_recording | relative_url }}"
       data-name-recording><i class="bi bi-volume-up"></i> Hear my name</a></li>
-  {% elsif links_person.name_coach %}
-  <li class="breadcrumb-item"><a href="{{ links_person.name_coach }}" target="_blank" rel="noopener"><i
-        class="bi bi-volume-up"></i> Hear my name</a></li>
   {% endif %}
   {% if links_person.links %}
   {% for link in links_person.links %}
