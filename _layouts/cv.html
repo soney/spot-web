@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   {%- comment -%}
+    iOS data detectors restyle anything that parses as a date, address or
+    phone number as a tappable link -- on a page this dense with dates, that
+    shows up as one half of "09/2008 - 04/2015" tinted differently from the
+    other. This disables only the automatic detection; the contact block's
+    explicit tel: and mailto: anchors are untouched.
+  {%- endcomment %}
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  {%- comment -%}
     No toggle on this page -- it has no navbar to put one in -- but the script
     still runs, so a choice made on the main site carries over to the CV
     instead of the CV reverting to the OS preference under the reader. Ahead of
