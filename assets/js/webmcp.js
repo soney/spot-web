@@ -595,6 +595,7 @@
       name: 'get_person',
       description:
         'Get one person\'s bio, role, homepage, other links, and the papers they co-authored on this site. ' +
+        'For the few people with a long-form profile page, the full profile too. ' +
         'Accepts a full or partial name ("Oney", "Ashley Zhang") or a person id. On a /people/ page you may ' +
         'omit the name to get the person whose page is being viewed. Use list_people to see who is here.',
       annotations: { readOnlyHint: true },
@@ -652,6 +653,9 @@
             body.push(link.description + ': ' + (link.url.charAt(0) === '/' ? url(data, link.url) : link.url));
           });
           if (person.bio) body.push('', absoluteLinks(data, person.bio));
+          // The long-form profile from their page, when they have one. After
+          // the bio, which stays the one-paragraph summary.
+          if (person.profile) body.push('', absoluteLinks(data, person.profile));
 
           if (input.include_publications !== false && pubs.length) {
             body.push('', 'Publications on this site (' + pubs.length + '), newest first:');

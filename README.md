@@ -472,6 +472,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `name_recording` | no | Name-pronunciation audio: a path relative to `assets/`, e.g. `audio/steve_oney_name_pronunciation.mp3`. Renders a "Hear my name" breadcrumb link right after "Homepage" that plays the recording in place (no-JS fallback: the link opens the file), in the same places `pronouns` shows |
 | `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
+| `profile` | no | A long-form profile — several paragraphs, with headings if you want them — shown only on `/people/<id>/`, below the headshot row and above their publications. Markdown. Needs `use_local_homepage: true`, or there is no page to put it on |
 | `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}`. Links to services listed in `_data/link_icons.yaml` (Google Scholar, GitHub, Twitter, LinkedIn, a `CV`, ...) get that service's icon automatically; add a rule there to cover a new service |
 | `color` | no | Border color of their news-item chip. Nothing else |
 | `headshot` | no | Path relative to `assets/`, e.g. `images/people/foo.jpg` |
@@ -512,6 +513,48 @@ run-on line in the `/team` collaborator list and on the CV. Write
 do. `long_bio` is markdownified and appears on `/team` and `/people/<id>/`, but
 never on the homepage. In a `>-` folded `long_bio`, keep every continuation line
 at the same indent — a deeper-indented line becomes a code block.
+
+**`profile` is the long version, and it renders in exactly one place:**
+`/people/<id>/`, as a full-width block under the headshot row and above their
+publications. `long_bio` stays what it is — the one paragraph that introduces
+them on `/team` — and the `/team` row grows a "Full profile →" link to the page
+instead of growing the profile itself. That is the whole point of the split: a
+profile can be as long as someone wants without `/team` turning into a wall of
+text. It is Markdown, so `##` headings, lists and links all work; `steve_oney`
+is the only record with one today.
+
+A `profile` needs `use_local_homepage: true`, since that flag is what generates
+the page. Without it the profile renders nowhere at all and `/team` looks
+untouched, so the build says so:
+
+```
+DataPageGenerator: "maryam_arab" has a profile: but no page to put it on;
+add `use_local_homepage: true` (bare, unquoted) to people.yaml
+```
+
+Read the `use_local_homepage` paragraph below before setting it — it also
+repoints every author link on the site away from their external homepage, which
+is a real trade-off for someone who maintains their own site.
+
+**A multi-paragraph folded scalar needs two blank lines between paragraphs**, in
+`profile` as in `group.yaml`'s `joining`. YAML folds a single blank line to one
+`\n`, and Markdown reads one newline as a line break inside the same paragraph,
+so one blank line silently runs two paragraphs into one. Headings survive it —
+they are block-level and interrupt the paragraph either way — which is what
+makes this hard to spot: the page keeps its structure and only the prose is
+wrong. Two blank lines give the `\n\n` Markdown needs:
+
+```yaml
+  profile: >-
+    ## Research
+
+
+    The premise behind most of this work is that the hard part of programming
+    is rarely the syntax.
+
+
+    That work runs across several threads: ...
+```
 
 **Quote `color`.** `color: "#FFC14A"` is correct; unquoted, the `#` starts a
 YAML comment, the field parses as null, the build succeeds, and the chip just
