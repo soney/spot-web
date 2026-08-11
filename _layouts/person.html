@@ -32,6 +32,18 @@ nav: team
     </div>
   </section>
 
+  {% comment %}
+    The long-form profile, which renders here and nowhere else -- /team shows
+    only the one-paragraph long_bio. Full width rather than inside the
+    col-sm-9 beside the headshot, because it is long enough to run past the
+    photo and may carry its own headings.
+  {% endcomment %}
+  {% if person.profile %}
+  <section class="person-profile">
+    {{ person.profile | markdownify }}
+  </section>
+  {% endif %}
+
   {% capture authored_items %}
   {% include publication_list_items.html author_id=person.id heading_level="h3" highlight_id=person.id %}
   {% endcapture %}

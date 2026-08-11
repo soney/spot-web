@@ -12,16 +12,36 @@
     local_homepage  when true, a person with use_local_homepage: true gets a
                     "Homepage" link to their /people/<id>/ page instead of
                     their external homepage. The person page passes false,
-                    since linking there from itself would be circular.
+                    which for that person means no homepage item at all --
+                    see below.
 {% endcomment %}
 {%- assign links_person = include.person -%}
-{% if links_person.homepage or links_person.links %}
+{%- comment -%}
+  Which homepage this row links to, if any.
+
+  `use_local_homepage: true` says their /people/<id>/ page IS their homepage.
+  So it is the breadcrumb target everywhere else, and on the page itself there
+  is nothing to link: a "Homepage" item there points at the page you are
+  already reading. Their external `homepage` is deliberately not the fallback
+  in that case -- for steve_oney it is a vanity URL that redirects straight
+  back here, and someone who keeps a genuinely separate site should list it
+  under `links:`, where it reads as what it is rather than as a second
+  homepage.
+{%- endcomment -%}
+{%- assign homepage_url = nil -%}
+{%- assign homepage_external = false -%}
+{%- if links_person.use_local_homepage -%}
+{%- if include.local_homepage -%}
+{%- assign homepage_url = '/people/' | append: links_person.id | append: '/' | relative_url -%}
+{%- endif -%}
+{%- elsif links_person.homepage -%}
+{%- assign homepage_url = links_person.homepage -%}
+{%- assign homepage_external = true -%}
+{%- endif -%}
+{% if homepage_url or links_person.links %}
 <ul class="breadcrumb">
-  {% if include.local_homepage and links_person.use_local_homepage %}
-  <li class="breadcrumb-item"><a href="{{ '/people/' | append: links_person.id | append: '/' | relative_url }}"><i
-        class="bi bi-house"></i> Homepage</a></li>
-  {% elsif links_person.homepage %}
-  <li class="breadcrumb-item"><a href="{{ links_person.homepage }}" target="_blank" rel="noopener"><i
+  {% if homepage_url %}
+  <li class="breadcrumb-item"><a href="{{ homepage_url }}"{% if homepage_external %} target="_blank" rel="noopener"{% endif %}><i
         class="bi bi-house"></i> Homepage</a></li>
   {% endif %}
   {% if links_person.links %}

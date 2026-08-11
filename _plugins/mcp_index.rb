@@ -232,6 +232,10 @@ module Jekyll
           "group_status" => group_status(person, data),
           "title" => one_line(person["short_bio"]),
           "bio" => person["long_bio"],
+          # Only present for the people whose /people/<id>/ page renders it;
+          # a profile on a record with no page is unreachable on the site, so
+          # a tool must not answer from it either.
+          "profile" => (person["profile"] if person["use_local_homepage"] == true),
           "homepage" => person["homepage"],
           "pronouns" => person["pronouns"],
           "name_recording" => person["name_recording"] && "/assets/#{person["name_recording"]}",

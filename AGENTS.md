@@ -144,12 +144,21 @@ wrongly, which makes them the things to get right the first time.
   `journal`.
 - **`use_local_homepage` must be a bare, unquoted `true`.** The plugin compares
   with `== true`; the templates only test Liquid truthiness. Quoted, every
-  author link site-wide points at a page that was never generated.
+  author link site-wide points at a page that was never generated. It is also
+  what gates the `profile` field, whose only home is `/people/<id>/` — that
+  case does warn (`DataPageGenerator: "<id>" has a profile: but no page to put
+  it on`), because the profile would otherwise render nowhere while `/team`
+  looked untouched.
 - **Quote hex colors.** `color: #FFC14A` unquoted is a YAML comment and parses
   as null; the build succeeds and the chip loses its border.
 - **Use the `>-` folded block for any Markdown-bearing YAML string** (news
-  `description`, `long_bio`). A plain scalar breaks on a leading `[`, on `: `,
-  and on a space-preceded `#`, which truncates the line silently.
+  `description`, `long_bio`, `profile`). A plain scalar breaks on a leading `[`,
+  on `: `, and on a space-preceded `#`, which truncates the line silently.
+- **A multi-paragraph folded scalar needs *two* blank lines per paragraph
+  break** (`profile`, `group.yaml`'s `joining`). YAML folds one blank line to a
+  single `\n`, which Markdown reads as a line break inside the same paragraph,
+  so two paragraphs silently become one. Headings still render, so the page
+  keeps its shape and only the prose is wrong.
 - **A `_data/teaching.yaml` entry reaches a page only through its `person`.**
   That file is the one source for the CV's Teaching section and the person
   page's, so a mistyped id renders the course in neither place, with no

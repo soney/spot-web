@@ -1,5 +1,6 @@
 {% comment %}
-  Team-page row for one person: headshot, name, bio, and links.
+  Team-page row for one person: headshot, name, bio, a link to their full
+  profile if they have one, and their links.
 
   Parameters:
     person  the person record (from people.yaml).
@@ -21,6 +22,18 @@
 
     {% if person.long_bio %}
     {{ person.long_bio | markdownify }}
+    {% endif %}
+
+    {%- comment -%}
+      A `profile` renders only on /people/<id>/, so this row is where someone
+      finds out there is more to read. Gated on use_local_homepage as well
+      because that flag is what generates the page: without it there is no
+      page to link to, and the profile renders nowhere at all (the build
+      warns -- see _plugins/generate_data_pages.rb).
+    {%- endcomment -%}
+    {% if person.profile and person.use_local_homepage %}
+    <p class="person-profile-link"><a href="{{ '/people/' | append: person.id | append: '/' | relative_url }}">Full
+        profile <i class="bi bi-arrow-right"></i></a></p>
     {% endif %}
 
     {% include person_links.html person=person local_homepage=true %}

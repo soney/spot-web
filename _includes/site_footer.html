@@ -1,0 +1,33 @@
+{% comment %}
+  The site-wide footer -- copyright line and a link to the repository this site
+  is built from. Rendered by _layouts/default.html below <main>, so it is on
+  every page that uses that layout, including the generated /papers/<id>/,
+  /people/<id>/ and /writing/<slug>/ pages. No parameters.
+
+  Deliberately not on _layouts/cv.html: that page is also the source of the
+  downloadable PDF (script/export_cv_pdf.sh prints it), and a "source on
+  GitHub" line does not belong on a CV someone has printed. The redirect pages
+  (/me/, /Steve_Oney/) carry no layout at all and are likewise untouched.
+
+  The homepage already ends in a <footer> of its own -- the affiliation and
+  sponsor logos from affiliations_footer.html -- so on `/` this is the second
+  one. That is why the rules in site.css hang off .site-footer rather than
+  `footer`: the bare element selector is the logo row's, and this needs
+  tighter margins than the 50px/100px that block wants.
+
+  The year is the build's, not a literal, and the site rebuilds on every push
+  to main -- see .github/workflows. It is formatted to %Y alone so the built
+  HTML only changes once a year, which keeps the `diff -r _site` check in
+  AGENTS.md quiet in between.
+{% endcomment %}
+<footer class="site-footer">
+  <div class="container">
+    <p class="site-footer-line text-muted">
+      &copy; {{ site.time | date: "%Y" }} Steve Oney
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/soney/spot-web" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Source on GitHub
+      </a>
+    </p>
+  </div>
+</footer>
