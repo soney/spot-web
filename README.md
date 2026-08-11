@@ -520,8 +520,9 @@ publications. `long_bio` stays what it is — the one paragraph that introduces
 them on `/team` — and the `/team` row grows a "Full profile →" link to the page
 instead of growing the profile itself. That is the whole point of the split: a
 profile can be as long as someone wants without `/team` turning into a wall of
-text. It is Markdown, so `##` headings, lists and links all work; `steve_oney`
-is the only record with one today.
+text. It is Markdown, so `##` headings, lists and links all work. No record
+has one today, so nothing on the site renders a profile block or a "Full
+profile →" link until someone writes one.
 
 A `profile` needs `use_local_homepage: true`, since that flag is what generates
 the page. Without it the profile renders nowhere at all and `/team` looks

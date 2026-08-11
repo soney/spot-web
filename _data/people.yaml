@@ -16,51 +16,6 @@
     in [Carnegie Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/) where he was advised by
     [Professor Brad Myers](https://www.cs.cmu.edu/~bam/) and [Dr. Joel Brandt](https://joelbrandt.com/). He also
     attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS M.Eng in 2008).
-  profile: >-
-    ## Research
-
-
-    The premise behind most of this work is that the hard part of programming is
-    rarely the syntax. It is understanding what a program is already doing,
-    finding out what went wrong, and getting the help you need at the moment you
-    need it. The [SPOT group](/team/) builds tools that make those moments
-    easier, and studies what happens when people use them.
-
-
-    That work runs across several threads: [programming education at
-    scale](/research/#cluster-programming_education), [building and testing
-    interactive interfaces](/research/#cluster-building_testing_interactive_uis),
-    [explaining code and capturing
-    process](/research/#cluster-communicating_about_code), and [accessibility of
-    programming and the web](/research/#cluster-accessibility). The
-    [research](/research/) page has all of them, each with the papers behind it.
-
-
-    ## Background
-
-
-    Steve has been at the University of Michigan since 2015, first as a
-    President's Postdoctoral Fellow, then as an Assistant Professor from 2016
-    and an Associate Professor since 2022. His Ph.D. and M.S. are from [Carnegie
-    Mellon's Human-Computer Interaction Institute](https://hcii.cmu.edu/), where
-    he worked with [Brad Myers](https://www.cs.cmu.edu/~bam/) and [Joel
-    Brandt](https://joelbrandt.com/); before that he was at
-    [MIT](https://web.mit.edu/) for an S.B. in computer science, an S.B. in
-    mathematics, and an M.Eng., with research stints at the MIT Media Lab, IBM
-    Research Almaden, and Adobe's Advanced Technologies Labs.
-
-
-    ## Teaching
-
-
-    Steve created and teaches SI 379 (Building Interactive Applications) and
-    teaches SI 106 (Programs, Information, & People) at Michigan, and co-teaches
-    SI 506 (Programming I) and SI 347 (Human-Computer Interaction). Outside the
-    university, he has taught the [Python 3
-    Programming](https://www.coursera.org/specializations/python-3-programming)
-    and [Practical JavaScript: From Scratch to
-    React](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
-    specializations on Coursera. The full record is in the [CV](/oney_cv/).
   color: "#FFC14A"
   use_local_homepage: true
   links:
