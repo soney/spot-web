@@ -48,6 +48,14 @@
        applies to the disc itself; what has to stay legible is the icon on top
        of it, and that goes to full --text-color on hover. */
 
+    --footer-rule-color: light-dark(#DDD, #2E3236);
+    /* The hairline above the site footer. Decorative only -- it divides two
+       blocks that whitespace already divides -- so the 3:1 floor for a
+       meaningful boundary does not apply, and both halves are deliberately
+       under it: 1.35:1 on the light page, 1.37:1 on the dark one. Matched to
+       each other rather than to a ratio, so the rule reads as the same
+       hairline in both themes instead of thickening in one. */
+
     /* Bootstrap's colour utilities read the five tokens below and ship
        light-theme values for them. .text-body is on the three homepage section
        headings and the sponsors note, .text-muted on the team bios,
@@ -419,6 +427,37 @@ body {
         h2 {
             margin-top: 5px;
             font-size: 1.5em;
+        }
+    }
+
+    .site-footer {
+        /* The rule above is the homepage logo row's; this is the copyright
+           line under every page, and it wants neither of those margins. The
+           100px bottom would double up with the one `body` already carries,
+           and on the homepage -- the one page that has both footers -- the
+           50px top is the wrong side of the gap: the logo row's own 100px
+           bottom margin collapses against it and wins, so this reads as a
+           closing line rather than a third section. .site-footer beats the
+           bare element selector on specificity, so source order does not
+           matter here. */
+        margin-top: 40px;
+        margin-bottom: 0;
+
+        .site-footer-line {
+            /* The hairline sits on the <p>, not on .site-footer, so it ends
+               where the text does. A border on the footer itself would run
+               the full window width, and one on the .container would still
+               overshoot by that container's horizontal padding. */
+            border-top: 1px solid var(--footer-rule-color);
+            padding-top: 12px;
+            margin-bottom: 0;
+            font-size: 0.85em;
+        }
+
+        .bi-github {
+            /* Optical, not structural: the glyph's box sits high against
+               Alegreya's baseline at this size. */
+            vertical-align: -0.08em;
         }
     }
 
