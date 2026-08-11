@@ -662,6 +662,47 @@ body {
             color: var(--text-color);
         }
     }
+
+    /* The Teaching section on /people/<id>/. Each entry is a title and one
+       muted line, so a single column would run the page long for no gain --
+       these sit side by side across the full width of the .container instead,
+       under the publication list. auto-fill against a min track rather than a
+       fixed column count, so the same rule gives three columns on a desktop,
+       two on a tablet and one on a phone; 17rem is a little wider than the
+       longest course title ("Instructor (and creator) – SI 379 (Building
+       Interactive Applications)") wraps to comfortably. */
+    .person-teaching {
+        .teaching-list {
+            display: grid;
+            gap: 1.5rem 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .teaching-title {
+            font-weight: bold;
+        }
+
+        .teaching-meta {
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+        }
+
+        .teaching-description {
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            margin-top: 0.25rem;
+
+            /* Two of these descriptions are a bare Coursera URL, which has no
+               space in it to break at and would otherwise push its grid column
+               wider than its track. */
+            a {
+                overflow-wrap: anywhere;
+            }
+        }
+    }
 }
 
 @keyframes name-recording-pulse {

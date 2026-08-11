@@ -594,8 +594,8 @@
     {
       name: 'get_person',
       description:
-        'Get one person\'s bio, role, homepage, other links, and the papers they co-authored on this site. ' +
-        'For the few people with a long-form profile page, the full profile too. ' +
+        'Get one person\'s bio, role, homepage, other links, the courses they teach, and the papers they ' +
+        'co-authored on this site. For the few people with a long-form profile page, the full profile too. ' +
         'Accepts a full or partial name ("Oney", "Ashley Zhang") or a person id. On a /people/ page you may ' +
         'omit the name to get the person whose page is being viewed. Use list_people to see who is here.',
       annotations: { readOnlyHint: true },
@@ -666,6 +666,18 @@
               body.push('… and ' + (pubs.length - 12) + ' more; use search_publications with author "' +
                 person.name + '".');
             }
+          }
+
+          // The courses their page lists, which is a recent subset of what a
+          // CV would carry -- so this says "on this site" rather than implying
+          // it is everything they have ever taught. get_cv has the full list
+          // for the person whose CV is here.
+          if ((person.teaching || []).length) {
+            body.push('', 'Teaching listed on this site (' + person.teaching.length + '):');
+            body.push(person.teaching.map(function (course) {
+              return '- ' + [course.title, course.institution,
+                [course.date_start, course.date_end].filter(Boolean).join('–')].filter(Boolean).join(' — ');
+            }).join('\n'));
           }
 
           return reply(lines(body));

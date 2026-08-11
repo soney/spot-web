@@ -307,11 +307,17 @@ title: Steve Oney - Curriculum Vitae
   </section>
   {% endif %}
 
-  {% if cv.teaching %}
+  {%- comment -%}
+    Teaching comes from the shared _data/teaching.yaml rather than from
+    oney_cv.yaml, so this section and the one on /people/<person>/ cannot
+    disagree. The CV gets every entry; the page gets a subset.
+  {%- endcomment -%}
+  {%- assign teaching = site.data.teaching | teaching_entries: cv.person -%}
+  {% if teaching.size > 0 %}
   <section class="cv-section section teaching">
     {% include cv_section_heading.html title="Teaching" %}
     <ul class="cv-list list-unstyled">
-      {% for item in cv.teaching %}
+      {% for item in teaching %}
       <li class="row item">
         <div class="col main">
           <div class="course-name">{{ item.title }}</div>

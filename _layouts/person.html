@@ -48,12 +48,45 @@ nav: team
   {% include publication_list_items.html author_id=person.id heading_level="h3" highlight_id=person.id %}
   {% endcapture %}
 
+  {% comment %}
+    The two section ids are linkable URLs -- /people/<id>/#teaching is meant to
+    be sent to someone -- so treat them as permanent, the way a blog.yaml slug
+    is. The person's own id is already taken by the bio section above, which
+    keeps /team#<id> and /people/<id>/#<id> naming the same person.
+  {% endcomment %}
   {% assign authored_items_stripped = authored_items | strip %}
   {% if authored_items_stripped != "" %}
-  <section class="section-card">
+  <section class="section-card" id="publications">
     <h2>Publications</h2>
     <ul class="publication-list">
       {{ authored_items }}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% comment %}
+    The same _data/teaching.yaml the CV renders, minus the entries it keeps to
+    itself -- see _plugins/teaching_entries.rb. A person with no teaching
+    records gets no section, so this is not Steve-specific.
+  {% endcomment %}
+  {% assign teaching = site.data.teaching | teaching_page_entries: person.id %}
+  {% if teaching.size > 0 %}
+  <section class="section-card person-teaching" id="teaching">
+    <h2>Teaching</h2>
+    <ul class="teaching-list">
+      {% for course in teaching %}
+      <li class="teaching-item">
+        <div class="teaching-title">{{ course.title }}</div>
+        <div class="teaching-meta">
+          {{ course.date_start }}{% if course.date_end %} – {{ course.date_end }}{% endif %}{% if course.institution %}
+          <span aria-hidden="true">&middot;</span> {{ course.institution }}{% endif %}
+        </div>
+        {% if course.description %}
+        <div class="teaching-description">{{ course.description | markdownify | remove: '<p>' | remove: '</p>' | strip
+          }}</div>
+        {% endif %}
+      </li>
+      {% endfor %}
     </ul>
   </section>
   {% endif %}

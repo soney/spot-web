@@ -35,9 +35,10 @@ picture. The four facts that change how you work:
    you add a *field*, or change how a template derives one. See the "WebMCP"
    section of `README.md`.
 
-Seven Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
+Eight Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
 (the BibTeX filter), `venue_order.rb`, `cv_publication_codes.rb` (the CV's
-J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`, and
+J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`,
+`teaching_entries.rb` (the two views of `_data/teaching.yaml`), and
 `mcp_index.rb` (the JSON behind the WebMCP tools). Each opens with a comment
 explaining what it does and the constraint that put it in Ruby rather than
 Liquid — read it before changing one; most of them exist because Liquid cannot
@@ -110,6 +111,11 @@ wrongly, which makes them the things to get right the first time.
   slash or an `assets/` prefix yields a broken link or image with no build
   error. Extension case matters: several existing files are `.JPG`, and a
   mismatch works on macOS and 404s on from.so.
+- **A person page's `#publications` and `#teaching` anchors are shareable
+  URLs**, in the way a `blog.yaml` slug is: `_layouts/person.html` owns both
+  ids, and renaming one 404s nothing but scrolls every link already sent
+  nowhere. The bio section keeps the person's own id, so `/team#<id>` and
+  `/people/<id>/#<id>` name the same person.
 - **`/team#<id>` anchors exist only for people with a `membership` field.**
   Most `people.yaml` records have none. A `[Name](/team#their_id)` link for such
   a person is a live link that scrolls nowhere. A `membership` value that is not
@@ -153,6 +159,14 @@ wrongly, which makes them the things to get right the first time.
   single `\n`, which Markdown reads as a line break inside the same paragraph,
   so two paragraphs silently become one. Headings still render, so the page
   keeps its shape and only the prose is wrong.
+- **A `_data/teaching.yaml` entry reaches a page only through its `person`.**
+  That file is the one source for the CV's Teaching section and the person
+  page's, so a mistyped id renders the course in neither place, with no
+  warning. The person page also shows a *subset*: `teaching_entries.rb` drops
+  anything marked `cv_only: true` or ending before the file's `page_since`
+  (2016 today), so an entry that is on the CV and not on the page is usually
+  the cutoff doing its job. Changing `page_since` silently changes what the
+  page lists.
 - **A `blog.yaml` `slug` is a published URL.** `/writing/<slug>/` links are
   meant to be sent to people, and one of them is hard-coded in `group.yaml`'s
   `joining` text. Changing a slug 404s every copy already in someone's inbox,
@@ -203,6 +217,8 @@ each, under **Common tasks**:
 - Adding a news item
 - Adding or updating a person, including member → alum
 - Adding a writing entry (`blog.yaml`, and why `slug` is permanent)
+- Adding a course you taught (`teaching.yaml`, and the two ways an entry stays
+  on the CV without reaching the person page)
 - Updating a profile picture
 - Exporting the CV as a PDF (`script/export_cv_pdf.sh`; the print CSS is the
   single source of truth for how it looks)
