@@ -290,8 +290,12 @@ body {
 /* Interactive toggles: checkboxes in oney_cv.html wired up by
    assets/js/cv.js, which mirrors each one to a body class and a URL
    parameter. */
+/* margin-block, not the four-value shorthand: cv_toggle.html's `row` variant
+   puts .row on this same element, and a shorthand would reset Bootstrap's
+   negative inline row margins to 0 -- indenting that toggle's .col.main by
+   half a gutter while every other column in the section stays put. */
 .cv-toggle {
-    margin: 0.5rem 0 1rem;
+    margin-block: 0.5rem 1rem;
 }
 
 .cv-toggle label {
