@@ -90,7 +90,10 @@ module Jekyll
         "awards" => cv["awards"],
         "invited_presentations" => cv["invited_presentations"],
         "service" => cv["service"],
-        "teaching" => cv["teaching"],
+        # From _data/teaching.yaml, filtered by `person` exactly as
+        # oney_cv.html filters it -- the CV's own list, not the shorter one a
+        # person page shows.
+        "teaching" => teaching_records(teaching_entries(data["teaching"], subject)),
         "supervised_students" => cv["supervised_students"],
         "press" => cv["press"],
         "patents" => cv["patents"],
@@ -222,6 +225,7 @@ module Jekyll
       end
 
       Array(data["people"]).map do |person|
+        teaching = teaching_records(teaching_page_entries(data["teaching"], person["id"]))
         {
           "id" => person["id"],
           "name" => full_name(person),
@@ -234,8 +238,30 @@ module Jekyll
           "path" => person_path(person),
           "photo_path" => person["headshot"] && "/assets/#{person["headshot"]}",
           "links" => Array(person["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
+          "teaching" => (teaching unless teaching.empty?),
           "publication_ids" => pubs_by_author[person["id"]]
         }.compact
+      end
+    end
+
+    # The teaching entries as a tool should see them. `person` and `cv_only`
+    # are how _data/teaching.yaml routes a record to a page; which entries are
+    # in this list already says that, so publishing them would only invite a
+    # consumer to re-derive a decision the filters have made.
+    #
+    # NOTE: people_records passes the page subset and mcp_cv_json the whole
+    # list, because that is the split the two templates render. Handing
+    # get_person the CV's list would have it name courses that /people/<id>/
+    # does not show.
+    def teaching_records(entries)
+      Array(entries).map do |entry|
+        {
+          "title" => entry["title"],
+          "institution" => entry["institution"],
+          "description" => squish(entry["description"]),
+          "date_start" => entry["date_start"].to_s,
+          "date_end" => entry["date_end"].to_s
+        }.compact.reject { |_key, value| value == "" }
       end
     end
 

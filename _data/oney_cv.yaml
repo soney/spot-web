@@ -373,65 +373,8 @@ service:
   - title: CSE Promotion and Tenure Committee
     category: other
     date_start: "2025"
-teaching:
-  - title: "Practical JavaScript: From Scratch to React (Coursera Specialization)"
-    description: >-
-      [https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
-    institution: University of Michigan & Coursera
-    date_start: "2026"
-  - title: Co-Instructor – SI 506 (Programming I)
-    institution: University of Michigan
-    date_start: Fall 2025, Fall 2026
-  - title: Co-Instructor – SI 347 (Human-Computer Interaction)
-    institution: University of Michigan
-    date_start: Winter 2026
-  - title: Instructor (and creator) – SI 379 (Building Interactive Applications)
-    institution: University of Michigan
-    date_start: "2023"
-    date_end: present
-  - title: Instructor (and creator) – SI 579 (Building Interactive Applications)
-    institution: University of Michigan
-    date_start: "2021"
-    date_end: "2023"
-  - title: Instructor – SI 106 (Programs, Information, & People)
-    institution: University of Michigan
-    date_start: "2016"
-    date_end: present
-  - title: Python 3 Programming Specialization
-    description: >-
-      [https://www.coursera.org/specializations/python-3-programming](https://www.coursera.org/specializations/python-3-programming)
-    institution: University of Michigan & Coursera
-    date_start: "2019"
-  - title: Instructor – Web Lab, Programming User Interfaces
-    description: >-
-      Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor
-      rating: 4.7/5.0
-    institution: Carnegie Mellon
-    date_start: Fall 2012
-  - title: Instructor – GUI Lab, Programming User Interfaces
-    description: >-
-      Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor
-      rating: 4.6/5.0
-    institution: Carnegie Mellon
-    date_start: Fall 2010
-  - title: Instructor – GUI Lab, Programming User Interfaces
-    description: Taught three recitation sections per week, held weekly office hours, and graded students’ exams
-    institution: MIT
-    date_start: Fall 2007 & Spring 2008
-  - title: Teaching Assistant – Interphase Physics I
-    description: Taught three classes per week, held weekly office hours, and mentored a group of incoming MIT freshmen
-    institution: MIT
-    date_start: Summer 2007
-  - title: Teaching Assistant – Technology Enabled Learning (TEAL) Physics II
-    institution: MIT
-    date_start: Spring 2005
-  - title: Laboratory Assistant – Circuits and Electronics
-    institution: MIT
-    date_start: Spring 2005
-    date_end: Fall 2006
-  - title: Laboratory Assistant – Computational Structures
-    institution: MIT
-    date_start: Fall 2006
+# Teaching lives in _data/teaching.yaml, filtered by the `person` above: the CV
+# and that person's page render the same records, so a course is added once.
 supervised_students:
   - student_name: Yan Chen
     student_department: School of Information

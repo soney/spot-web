@@ -1,0 +1,102 @@
+# Courses taught, in display order (newest first).
+#
+# This is the single source behind two places: the CV's Teaching section
+# (oney_cv.html) and the Teaching section on a person page
+# (_layouts/person.html). Add a course once and it appears in both. It lives
+# here rather than in oney_cv.yaml -- which is deliberately one person's CV --
+# for the same reason publications do: it is shared data that the CV filters,
+# not CV-only material.
+#
+# `person` is a people.yaml id, and it is what both templates filter on. A typo
+# is silent: the entry renders nowhere.
+#
+# A CV is exhaustive and a homepage is not, so two things keep an entry off the
+# person page while leaving it on the CV:
+#
+#   page_since     the cutoff below: an entry whose last year is earlier stays
+#                  on the CV only. An entry still running (`date_end: present`)
+#                  is never cut, whenever it started.
+#   cv_only: true  a per-entry opt-out, for something recent that the page
+#                  should not list anyway.
+#
+# Both are applied by _plugins/teaching_entries.rb, which reads the years out
+# of the date strings ("Fall 2007 & Spring 2008") that Liquid cannot parse.
+
+# 2016 is the first Michigan course, so this cuts the CMU and MIT teaching and
+# nothing else. It is the coarse net; `cv_only: true` on a record is how to
+# hold back something inside the window.
+page_since: 2016
+
+entries:
+  - person: steve_oney
+    title: "Practical JavaScript: From Scratch to React (Coursera Specialization)"
+    description: >-
+      [https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)
+    institution: University of Michigan & Coursera
+    date_start: "2026"
+  - person: steve_oney
+    title: Co-Instructor – SI 506 (Programming I)
+    institution: University of Michigan
+    date_start: Fall 2025, Fall 2026
+  - person: steve_oney
+    title: Co-Instructor – SI 347 (Human-Computer Interaction)
+    institution: University of Michigan
+    date_start: Winter 2026
+  - person: steve_oney
+    title: Instructor (and creator) – SI 379 (Building Interactive Applications)
+    institution: University of Michigan
+    date_start: "2023"
+    date_end: present
+  - person: steve_oney
+    title: Instructor (and creator) – SI 579 (Building Interactive Applications)
+    institution: University of Michigan
+    date_start: "2021"
+    date_end: "2023"
+  - person: steve_oney
+    title: Instructor – SI 106 (Programs, Information, & People)
+    institution: University of Michigan
+    date_start: "2016"
+    date_end: present
+  - person: steve_oney
+    title: Python 3 Programming Specialization
+    description: >-
+      [https://www.coursera.org/specializations/python-3-programming](https://www.coursera.org/specializations/python-3-programming)
+    institution: University of Michigan & Coursera
+    date_start: "2019"
+  - person: steve_oney
+    title: Instructor – Web Lab, Programming User Interfaces
+    description: >-
+      Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor
+      rating: 4.7/5.0
+    institution: Carnegie Mellon
+    date_start: Fall 2012
+  - person: steve_oney
+    title: Instructor – GUI Lab, Programming User Interfaces
+    description: >-
+      Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor
+      rating: 4.6/5.0
+    institution: Carnegie Mellon
+    date_start: Fall 2010
+  - person: steve_oney
+    title: Instructor – GUI Lab, Programming User Interfaces
+    description: Taught three recitation sections per week, held weekly office hours, and graded students’ exams
+    institution: MIT
+    date_start: Fall 2007 & Spring 2008
+  - person: steve_oney
+    title: Teaching Assistant – Interphase Physics I
+    description: Taught three classes per week, held weekly office hours, and mentored a group of incoming MIT freshmen
+    institution: MIT
+    date_start: Summer 2007
+  - person: steve_oney
+    title: Teaching Assistant – Technology Enabled Learning (TEAL) Physics II
+    institution: MIT
+    date_start: Spring 2005
+  - person: steve_oney
+    title: Laboratory Assistant – Circuits and Electronics
+    institution: MIT
+    date_start: Spring 2005
+    date_end: Fall 2006
+  - person: steve_oney
+    title: Laboratory Assistant – Computational Structures
+    institution: MIT
+    date_start: Fall 2006

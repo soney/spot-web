@@ -52,7 +52,8 @@ _data/
   blog.yaml                   # /writing entries (links to Google Docs, one page each)
   nav.yaml                    # the navbar tabs
   affiliations.yaml           # homepage footer logos
-  oney_cv.yaml                # Steve's CV: everything on it that isn't a publication
+  oney_cv.yaml                # Steve's CV: everything on it that isn't a publication or a course
+  teaching.yaml               # courses taught, by person id; feeds the CV and the person page
   publication_types.yaml      # venue type -> CV numbering prefix (J, C, B, ...)
   cv_publication_sections.yaml# the CV's publication section headings and types
   cv_service_groups.yaml      # the CV's Service group headings and categories
@@ -69,6 +70,7 @@ _plugins/
   cv_publication_codes.rb     # CV publication numbering (J.12, C.31, ...)
   cv_award_entries.rb         # merges CV awards and paper awards into one sorted list
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
+  teaching_entries.rb         # one person's courses: the CV's list, and the shorter page one
   mcp_index.rb                # builds the JSON the WebMCP tools answer from
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
   js/webmcp.js                # registers this site's tools for AI agents
@@ -100,6 +102,14 @@ and numbers publications per type (J.12, C.31, ...) using the prefixes in
 publication list filters on it — so the CV can only claim papers that person
 actually co-authored, not everything on the group site. It is deliberately one
 person's CV rather than a template; see the comment at the top of that file.
+
+Teaching is filtered on that `person` the same way, out of
+`_data/teaching.yaml`. That file is the single source behind both the CV's
+Teaching section and the one on `/people/<id>/`, so a course is added once and
+appears in both. The page gets the shorter list: `_plugins/teaching_entries.rb`
+drops any entry marked `cv_only: true`, and any whose last year falls before
+the file's `page_since` — see
+[Adding a course you taught](#adding-a-course-you-taught).
 
 Its interactive toggles (student authors, mentees, paper awards) are declared
 by `_includes/cv_toggle.html` and driven by `assets/js/cv.js` via URL
@@ -160,7 +170,7 @@ Every task below is a YAML edit in `_data/`. You never write an HTML file, never
 run a generator script, and never restart the dev server — see
 [How the site is put together](#how-the-site-is-put-together) for why.
 
-The theme running through all five is that **a mistake here usually produces
+The theme running through all six is that **a mistake here usually produces
 silently wrong output rather than an error.** Jekyll does not validate that a
 referenced id exists, that a referenced file exists, or that a `type` is one you
 meant. The gotchas called out below are the ones that build cleanly and render
@@ -170,6 +180,7 @@ wrongly; they are worth reading even if you have done the task before.
 - [Adding a news item](#adding-a-news-item)
 - [Adding or updating a person](#adding-or-updating-a-person)
 - [Adding a writing entry](#adding-a-writing-entry)
+- [Adding a course you taught](#adding-a-course-you-taught)
 - [Updating a profile picture](#updating-a-profile-picture)
 - [Checking your work](#checking-your-work)
 
@@ -680,6 +691,66 @@ description from `_config.yml`, which says nothing about the document. One
 factual sentence is enough. Author ids behave as everywhere else — an id with no
 `people.yaml` record renders as the raw string.
 
+### Adding a course you taught
+
+One record in `_data/teaching.yaml`. It is the single source behind two
+sections — the CV's Teaching section and the one at the bottom of
+`/people/<id>/` — so there is nothing to add in a second place, and no way for
+the two to drift apart:
+
+```yaml
+  - person: steve_oney
+    title: Instructor – SI 379 (Building Interactive Applications)
+    institution: University of Michigan
+    date_start: "2023"
+    date_end: present
+```
+
+- **`person` is a people.yaml id**, and it is the whole of how a record finds
+  its way onto a page. A typo is silent in the usual way: the entry renders
+  nowhere, on neither the CV nor the page.
+- **File order is display order**, newest first, on both. Nothing sorts these —
+  the dates are prose ("Fall 2007 & Spring 2008") and there is no key to sort
+  on.
+- **Quote a bare year**: `date_start: "2023"`. Unquoted it is an integer, which
+  still renders, but the cutoff below is the only thing that reads these and it
+  is easier to keep one shape.
+- `date_end: present` marks a course as still running. Nothing else means that;
+  `ongoing` and `current` are accepted as synonyms and no other value is.
+- `description` is Markdown, and both sections render it inline. Use the `>-`
+  folded block for anything with a `[`, a `: ` or a `#` in it, as everywhere
+  else in `_data/`.
+
+**The page shows a subset of the CV's list, and there are two ways to control
+it** (both applied by `_plugins/teaching_entries.rb`):
+
+- **`page_since`**, at the top of the file, is a year: an entry whose last year
+  falls before it stays on the CV only. It is 2016 today — the first Michigan
+  course — so it cuts the CMU and MIT teaching and nothing else. An entry with
+  `date_end: present` is never cut, whenever it started.
+- **`cv_only: true`** on one record keeps that record off the page regardless
+  of its dates. This is the one to reach for when the call is per-course rather
+  than "everything before year N"; the cutoff is the coarse net.
+
+The cutoff reads the years out of the date strings, taking the latest one it
+finds in either field — so "Fall 2025, Fall 2026" is a 2026 entry and
+`date_start: Spring 2005` / `date_end: Fall 2006` is a 2006 one. An entry it
+can find no year in at all is kept rather than dropped.
+
+The section appears on any person page whose person has records here, and does
+not appear at all when they have none, so this is not Steve-specific. What is
+Steve-specific is the CV: `oney_cv.html` renders the entries for its own
+`person:` and nothing else reads the file.
+
+Check both after adding one: `/oney_cv/` (the full list, in place) and
+`/people/<id>/#teaching` (the section under Publications, three columns on a
+desktop). That anchor and `#publications` are the person page's two section
+ids; like a `blog.yaml` slug they are links meant to be sent to people, so
+treat them as permanent. The bio section keeps the person's own id, so
+`/team#<id>` and `/people/<id>/#<id>` name the same person.
+If a new entry is missing from the page but present on the CV, its last year is
+below `page_since` — that is the mechanism working, not a bug.
+
 ### Updating a profile picture
 
 A photo is an image file under `assets/images/people/` plus one or two path
@@ -845,7 +916,10 @@ Depending on what you changed, check:
 - `http://127.0.0.1:4000/oney_cv/?students=true&awards=true` — the citation, its
   `C.n` code, the student underlines, and the award entry. Both toggles are off
   by default
-- `http://127.0.0.1:4000/people/steve_oney/` — the only per-person page today
+- `http://127.0.0.1:4000/people/steve_oney/` — the only per-person page today.
+  Its Teaching section is the same `_data/teaching.yaml` the CV renders, minus
+  the entries `page_since` and `cv_only` hold back, so check a course edit in
+  both places
 
 Run a clean `bundle exec jekyll build` once and read the output. That is where
 `DataPageGenerator` and `cv_grouped_records` warnings appear; they scroll past
