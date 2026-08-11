@@ -235,6 +235,36 @@ body {
         margin-top: 10px;
     }
 
+    /* The long-form `profile` on /people/<id>/, below the headshot row and
+       above Publications (_layouts/person.html). Its own headings are the
+       author's, so they are pulled down a size to sit under the page h1 and
+       to not compete with the "Publications" h2 that follows. */
+    .person-profile {
+        margin-top: 2rem;
+
+        h2 {
+            font-size: 1.35rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+        }
+
+        /* Undoes the global `h2 { margin-top: 1.5em }` for a profile that
+           opens on a heading, which would otherwise sit twice as far below
+           the bio as one that opens on a paragraph. */
+        > :first-child {
+            margin-top: 0;
+        }
+    }
+
+    /* "Full profile →" on a /team row, for the people whose long-form profile
+       lives on their own page (_includes/member_block.html). */
+    .person-profile-link {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
     /* The "she/her" line below a name in a member-row or person-page
        heading. Its own block now (not nested in the h1/h3), so it is sized
        in rem rather than tracking the heading's em scale. */

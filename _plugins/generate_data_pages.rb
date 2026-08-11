@@ -35,6 +35,9 @@ module Jekyll
     #   id_field     front-matter key the layout reads to find its record
     #   slug         URL segment under dir/
     #   description  optional; fills <meta name="description"> and og:description
+    #   excluded     optional; called for records `include` rejected. Returns a
+    #                warning string when dropping the record loses content that
+    #                has no other home on the site, nil otherwise.
     SOURCES = [
       {
         data_key: "publications",
@@ -58,6 +61,17 @@ module Jekyll
         back_url: ->(id) { "/team/##{id}" },
         back_label: "Back to team",
         include: ->(record) { record["use_local_homepage"] == true },
+        # `profile` is the only field that renders on /people/<id>/ and nowhere
+        # else, so without the page it is prose nobody can reach -- and the
+        # /team row looks exactly as it did before. Catches both the missing
+        # flag and the quoted `use_local_homepage: "true"`, which is truthy in
+        # Liquid and false here.
+        excluded: lambda { |record|
+          next nil unless record["profile"]
+
+          "#{record["id"].inspect} has a profile: but no page to put it on; " \
+            "add `use_local_homepage: true` (bare, unquoted) to people.yaml"
+        },
         title: lambda { |record, id|
           name = [record["given_name"], record["family_name"]].compact.join(" ").strip
           name.empty? ? id : name
@@ -94,7 +108,11 @@ module Jekyll
         seen_slugs = {}
         records.each do |record|
           next unless record.is_a?(Hash)
-          next unless source[:include].call(record)
+          unless source[:include].call(record)
+            warning = source[:excluded]&.call(record)
+            Jekyll.logger.warn "DataPageGenerator:", warning if warning
+            next
+          end
 
           id = record["id"].to_s.strip
           next if id.empty?
