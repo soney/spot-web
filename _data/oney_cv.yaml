@@ -526,6 +526,7 @@ supervised_students:
     category: ms_thesis_chair
     date_start: "2018"
   - student_name: KJ Green
+    thesis_title: AI-Driven Programming Education for Black, Latinx, and Afro-Caribbean Communities
     institution: University of Michigan
     category: ms_thesis_chair
     date_start: "2024"
@@ -550,6 +551,7 @@ supervised_students:
     category: ugrad_thesis_chair
     date_start: "2024"
   - student_name: Carl Fan
+    thesis_title: Human-Centered Needs and Preferences for AI-Assisted Web Automation
     institution: University of Michigan
     category: ms_thesis_chair
     date_start: "2024"
