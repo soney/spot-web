@@ -553,6 +553,7 @@ supervised_students:
     institution: University of Michigan
     category: ms_thesis_chair
     date_start: "2024"
+    date_end: "2026"
   - student_name: Zihan Wu
     thesis_title: Designing and Evaluating Fine-Grained Interactive Practice Tools for Novice Programming Learners
     institution: University of Michigan
