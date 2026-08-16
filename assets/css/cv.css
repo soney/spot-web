@@ -379,6 +379,22 @@ body {
             }
         }
 
+        /* A short window cannot afford the rail's name alignment: the
+           rail is fixed, so whatever the ~134px offset pushes below the
+           fold can never be scrolled to. Fully unfolded the rail runs to
+           roughly 380px, so below ~540px of height it starts losing
+           entries; from there it gives up the name and sits on the
+           toggle's 25px line like every other variant. bottom caps the
+           box at the viewport and overflow lets the rail scroll within
+           itself, so even a truly tiny window can still reach Patent. */
+        @media screen and (min-width: 1400px) and (max-height: 540px) {
+            .cv-outline {
+                bottom: 12px;
+                overflow-y: auto;
+                top: 25px;
+            }
+        }
+
         .side {
             text-align: right;
 
