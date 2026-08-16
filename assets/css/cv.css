@@ -169,12 +169,11 @@ body {
             width: auto;
         }
 
-        /* The outline, in its two lives. Below 1720px it is a static block
+        /* The outline, in its two lives. Below 1400px it is a static block
            in the flow between the title and Education -- a "Contents"
            label over one wrapping row of links -- which scrolls away with
-           the page. From 1720px up, where the free margin beside the
-           1320px container is really wide enough, the same markup becomes
-           a rail fixed in that margin, persisting while the reader
+           the page. From 1400px up the same markup becomes a rail fixed
+           in the margin beside the paper, persisting while the reader
            scrolls. In both, the header text is a link back to the top.
            Print sees neither (the nav carries d-print-none).
 
@@ -233,15 +232,30 @@ body {
             }
         }
 
-        /* The rail. Pinned to the container's left edge (50vw - 660px)
-           rather than the viewport's, so the gap to the paper is constant
-           and the rail reads as belonging to it. The in-flow variant's
-           row/col grid is flattened away, and .active trades the
-           colour-only accent for a bar sitting on the list's hairline,
-           where it reads as the rule thickening. */
-        @media screen and (min-width: 1720px) {
+        /* The rail. Pinned to the paper's left edge rather than the
+           viewport's, so the 24px gap to the paper is constant and the
+           rail reads as belonging to it; the whole rail block is 184px
+           (160px of rail + the gap). The in-flow variant's row/col grid
+           is flattened away, and .active trades the colour-only accent
+           for a bar sitting on the list's hairline, where it reads as
+           the rule thickening.
+
+           Two geometries, split at 1720px. From 1720px up the container
+           is its full 1320px, centred as usual, and the rail sits in the
+           free margin beside it: 50vw - 660px is the paper's left edge,
+           184px more is the rail's. Between 1400px and 1720px that
+           margin is far too narrow -- a fullscreen MacBook window is
+           1440-1512px, leaving 60-96px beside a 1320px paper -- so the
+           container block below caps the paper at 1140px (the width
+           every 1200-1399px reader already gets) and centres rail and
+           paper together as one 1324px unit. The paper's left edge lands
+           at 50vw - 478px; the rail, 184px to its left, at 50vw - 662px.
+           1400px is Bootstrap's own xxl boundary: below it the container
+           is already 1140px and even the shifted unit needs ~1350px, so
+           there is nothing left to gain. */
+        @media screen and (min-width: 1400px) {
             .cv-outline {
-                left: calc(50vw - 660px - 184px);
+                left: calc(50vw - 478px - 184px);
                 margin-top: 0;
                 position: fixed;
                 top: 9rem;
@@ -310,6 +324,21 @@ body {
                     font-size: 0.94em;
                     padding-left: 2em;
                 }
+            }
+        }
+
+        /* The narrow-viewport half of the rail geometry above: paper at
+           1140px, pushed right of centre so the rail-and-paper unit is
+           what centres. margin-right stays Bootstrap's auto, so only the
+           left edge is pinned. */
+        @media screen and (min-width: 1400px) and (max-width: 1719.98px) {
+            margin-left: calc(50vw - 478px);
+            max-width: 1140px;
+        }
+
+        @media screen and (min-width: 1720px) {
+            .cv-outline {
+                left: calc(50vw - 660px - 184px);
             }
         }
 
@@ -545,6 +574,18 @@ body {
        click. Nothing sits under it today; this is so nothing has to remember
        that later. */
     pointer-events: none;
+}
+
+/* The bar borrows .container for its centring, so when the outline rail's
+   1400-1720px band narrows the paper and pushes it off-centre (see the rail
+   block above), the bar has to follow with the same numbers or the toggle
+   drifts 92px off the paper's right edge. margin-right stays .container's
+   auto and absorbs the slack on the right. */
+@media screen and (min-width: 1400px) and (max-width: 1719.98px) {
+    .cv-theme-toggle-bar.container {
+        margin-left: calc(50vw - 478px);
+        max-width: 1140px;
+    }
 }
 
 .cv-theme-toggle {

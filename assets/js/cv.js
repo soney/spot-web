@@ -45,7 +45,7 @@
 // Scroll-spy for the outline rail: marks the link of the section on screen
 // with .active (cv.css draws the accent and unfolds that section's
 // subsection list), and within it the subsection on screen the same way.
-// The rail is CSS-hidden below 1720px, but the bookkeeping is cheap enough
+// The rail is CSS-hidden below 1400px, but the bookkeeping is cheap enough
 // that gating it on visibility is not worth the resize listener it would
 // take. Rects are read live on each pass, so sections that grow or shrink
 // under the CV's toggles stay correctly tracked.
