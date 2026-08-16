@@ -170,12 +170,13 @@ body {
         }
 
         /* The outline, in its two lives. Below 1400px it is a static block
-           in the flow between the title and Education -- a "Contents"
-           label over one wrapping row of links -- which scrolls away with
-           the page. From 1400px up the same markup becomes a rail fixed
-           in the margin beside the paper, persisting while the reader
-           scrolls. In both, the header text is a link back to the top.
-           Print sees neither (the nav carries d-print-none).
+           in the flow at the top of the page, above the name -- a
+           "Contents" label over one wrapping row of links -- which
+           scrolls away with the page. From 1400px up the same markup
+           becomes a rail fixed in the margin beside the paper, persisting
+           while the reader scrolls. In both, the header text is a link
+           back to the top. Print sees neither (the nav carries
+           d-print-none).
 
            Set in a small system sans, unlike everything else on the page:
            this is reader chrome around the document, like the theme toggle,
@@ -187,7 +188,11 @@ body {
            where the current section is always trivially the first one. */
         .cv-outline {
             font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-            margin-top: 2.5em;
+            /* The gap to the name below it. Nothing above needs one: the
+               nav is the container's first child, so it sits in the same
+               place the name used to, at the container's 7em top margin
+               (3.5em on small screens). */
+            margin-bottom: 2.5em;
 
             .cv-outline-header {
                 color: var(--note-color);
@@ -256,7 +261,6 @@ body {
         @media screen and (min-width: 1400px) {
             .cv-outline {
                 left: calc(50vw - 478px - 184px);
-                margin-top: 0;
                 position: fixed;
                 top: 9rem;
                 width: 160px;

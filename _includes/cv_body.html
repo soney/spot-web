@@ -8,70 +8,6 @@
 {% endcomment %}
 {% assign cv = site.data.cvs[page.cv_person] %}
 <div class="cv container">
-  <div class="row">
-    <div class="col side"></div>
-    <div class="col main">
-      <h1>{{ cv.name }}</h1>
-    </div>
-  </div>
-
-  <section class="cv-section section row">
-    <div class="col side"></div>
-    <div class="col main">
-      <div class="row">
-        {% if cv.affiliation %}
-        <h2 class="visually-hidden">Affiliation</h2>
-        <address class="col affiliation">
-          <div class="affiliation-department">{{ cv.affiliation.department }}</div>
-          <div class="affiliation-university">{{ cv.affiliation.university }}</div>
-          <div class="affiliation-office">{{ cv.affiliation.office }}</div>
-          <div class="affiliation-street">{{ cv.affiliation.street }}</div>
-          <div class="affiliation-city">{{ cv.affiliation.city }}</div>
-        </address>
-        {% endif %}
-
-        {% if cv.contact %}
-        <h2 class="visually-hidden">Contact</h2>
-        <div class="col contact">
-          <div class="contact-spacer">&nbsp;</div>
-          <div class="contact-spacer">
-            {% comment %}
-              The two variants mirror each other: print points readers at the
-              web CV (`short_url`), screen points them at the PDF (`pdf_url`).
-              Both come from the CV's data file and either line simply drops
-              out when its field is absent. The PDF is written into _site by
-              the deploy workflow (which runs script/export_cv_pdf.sh), not by
-              Jekyll, so under `npm run develop` that link 404s until you
-              export one yourself: script/export_cv_pdf.sh _site/oney_cv.pdf.
-              Print keeps hiding the link so the PDF never links to itself.
-            {% endcomment %}
-            {% if cv.pdf_url %}
-            <div class="d-print-none">
-              <em><a href="{{ cv.pdf_url | relative_url }}" target="_blank" rel="noopener"><i
-                    class="bi bi-file-earmark-pdf"></i> Download PDF</a></em>
-            </div>
-            {% endif %}
-            {% if cv.short_url %}
-            <div class="d-none d-print-block">
-              <em>Latest CV: <a href="{{ cv.short_url }}" target="_blank" rel="noopener">{{ cv.short_url | remove:
-                "https://" | remove: "http://" }}</a>
-                <br />Updated {{ site.time | date: "%B %Y" }}</em>
-            </div>
-            {% endif %}
-          </div>
-          {% if cv.contact.homepage %}<div class="contact-homepage"><a href="{{ cv.contact.homepage }}" target="_blank"
-              rel="noopener">{{ cv.contact.homepage }}</a></div>{% endif %}
-          {% if cv.contact.phone %}<div class="contact-phone"><a href="tel:{{ cv.contact.phone }}">{{ cv.contact.phone
-              }}</a></div>{% endif %}
-          {% if cv.contact.email %}<div class="contact-email"><a href="mailto:{{ cv.contact.email }}">{{
-              cv.contact.email
-              }}</a></div>{% endif %}
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </section>
-
   {%- comment -%}
     These two are assigned up here, above the outline, rather than at their
     own sections, so each outline entry and its section test the identical
@@ -105,8 +41,8 @@
     cv.css renders it two ways from this one block of markup: on viewports
     wide enough to have real margin beside the paper it is a fixed rail that
     persists while the reader scrolls, and on everything narrower it stays
-    here in the flow, a static block between the title and Education that
-    scrolls away with the page. The row/col wrapper is what aligns that
+    here in the flow, a static block at the top of the page, above the
+    name, that scrolls away with the page. The row/col wrapper is what aligns that
     in-flow variant with the main column; the rail variant flattens it.
     The header text links back to the top -- "#top" matches no element on
     the page, which is the HTML-spec'd way to say "scroll to the very
@@ -183,6 +119,70 @@
       </div>
     </div>
   </nav>
+
+  <div class="row">
+    <div class="col side"></div>
+    <div class="col main">
+      <h1>{{ cv.name }}</h1>
+    </div>
+  </div>
+
+  <section class="cv-section section row">
+    <div class="col side"></div>
+    <div class="col main">
+      <div class="row">
+        {% if cv.affiliation %}
+        <h2 class="visually-hidden">Affiliation</h2>
+        <address class="col affiliation">
+          <div class="affiliation-department">{{ cv.affiliation.department }}</div>
+          <div class="affiliation-university">{{ cv.affiliation.university }}</div>
+          <div class="affiliation-office">{{ cv.affiliation.office }}</div>
+          <div class="affiliation-street">{{ cv.affiliation.street }}</div>
+          <div class="affiliation-city">{{ cv.affiliation.city }}</div>
+        </address>
+        {% endif %}
+
+        {% if cv.contact %}
+        <h2 class="visually-hidden">Contact</h2>
+        <div class="col contact">
+          <div class="contact-spacer">&nbsp;</div>
+          <div class="contact-spacer">
+            {% comment %}
+              The two variants mirror each other: print points readers at the
+              web CV (`short_url`), screen points them at the PDF (`pdf_url`).
+              Both come from the CV's data file and either line simply drops
+              out when its field is absent. The PDF is written into _site by
+              the deploy workflow (which runs script/export_cv_pdf.sh), not by
+              Jekyll, so under `npm run develop` that link 404s until you
+              export one yourself: script/export_cv_pdf.sh _site/oney_cv.pdf.
+              Print keeps hiding the link so the PDF never links to itself.
+            {% endcomment %}
+            {% if cv.pdf_url %}
+            <div class="d-print-none">
+              <em><a href="{{ cv.pdf_url | relative_url }}" target="_blank" rel="noopener"><i
+                    class="bi bi-file-earmark-pdf"></i> Download PDF</a></em>
+            </div>
+            {% endif %}
+            {% if cv.short_url %}
+            <div class="d-none d-print-block">
+              <em>Latest CV: <a href="{{ cv.short_url }}" target="_blank" rel="noopener">{{ cv.short_url | remove:
+                "https://" | remove: "http://" }}</a>
+                <br />Updated {{ site.time | date: "%B %Y" }}</em>
+            </div>
+            {% endif %}
+          </div>
+          {% if cv.contact.homepage %}<div class="contact-homepage"><a href="{{ cv.contact.homepage }}" target="_blank"
+              rel="noopener">{{ cv.contact.homepage }}</a></div>{% endif %}
+          {% if cv.contact.phone %}<div class="contact-phone"><a href="tel:{{ cv.contact.phone }}">{{ cv.contact.phone
+              }}</a></div>{% endif %}
+          {% if cv.contact.email %}<div class="contact-email"><a href="mailto:{{ cv.contact.email }}">{{
+              cv.contact.email
+              }}</a></div>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
 
   {% if cv.education %}
   <section id="education" class="cv-section section education">
