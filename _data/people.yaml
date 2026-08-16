@@ -18,6 +18,9 @@
     attended [MIT](https://web.mit.edu/) (CS & math S.B. in 2007, CS M.Eng in 2008).
   color: "#FFC14A"
   use_local_homepage: true
+  aliases:
+    - me
+    - Steve_Oney
   links:
     - url: /people/steve_oney/cv/
       description: CV
