@@ -111,6 +111,6 @@ the only reliable check that a refactor changed nothing.
 
 Serve with `npm run develop` at `http://127.0.0.1:4000` for a real browser
 check. The CV's student underlines and paper awards are off by default:
-`/oney_cv/?students=true&awards=true`.
+`/people/steve_oney/cv/?students=true&awards=true`.
 
 **Do not commit or push unless asked** — a push to `main` deploys the live site.

@@ -1,6 +1,8 @@
-# Student supervision groups on the CV, in render order (oney_cv.html).
+# Student supervision groups on the CV, in render order
+# (_includes/cv_body.html).
 #
-# `categories` lists the `category` values from oney_cv.yaml
+# `categories` lists the `category` values from a CV's
+# (_data/cvs/<person_id>.yaml)
 # `supervised_students` records that this group collects. There is deliberately
 # no catch-all here (the hand-rolled version this replaced had none either), so
 # a record whose category is not listed below cannot be rendered — the build

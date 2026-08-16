@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
 # Provides the `cv_award_entries` Liquid filter used by the Awards section of
-# oney_cv.html.
+# _includes/cv_body.html.
 #
 # The section merges two differently-shaped streams into one year-descending
-# list: the plain awards in oney_cv.yaml, and the awards attached to
+# list: the plain awards in the CV's _data/cvs/ file, and the awards attached to
 # publications. Liquid cannot sort a mixed collection by a computed key, so
 # the template used to encode each entry as "YYYY-{A|P}{index}::::<html>",
 # join them, string-sort, and split them back apart.
 #
 # This filter does the merge and the ordering; the template still renders both
 # shapes. Each returned entry is a hash with:
-#   "kind"   "award" for a oney_cv.yaml award, "paper_award" for a publication's
-#   "item"   the oney_cv.yaml award record   (kind == "award")
+#   "kind"   "award" for a CV-file award, "paper_award" for a publication's
+#   "item"   the CV-file award record      (kind == "award")
 #   "pub"    the publication record         (kind == "paper_award")
 #   "venue"  the publication's venue record (kind == "paper_award")
 #

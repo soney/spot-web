@@ -28,7 +28,7 @@ minting a second one silently splits their work.
   valid HTML: a chip whose anchor goes nowhere, an author name that is actually
   a raw id, a CV entry hidden behind a toggle. `npm run develop` serves at
   `http://127.0.0.1:4000`; drive it with the Chrome tools if they are available,
-  and remember `/oney_cv/?students=true&awards=true`.
+  and remember `/people/steve_oney/cv/?students=true&awards=true`.
 - **Use `Grep`/`Read` to find a record.** The `_data` files are single long YAML
   lists; `grep -n "^- id:" _data/people.yaml` or a search for a family name gets
   you there faster than parsing the file.

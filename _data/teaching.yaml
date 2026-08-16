@@ -1,11 +1,11 @@
 # Courses taught, in display order (newest first).
 #
 # This is the single source behind two places: the CV's Teaching section
-# (oney_cv.html) and the Teaching section on a person page
+# (_includes/cv_body.html) and the Teaching section on a person page
 # (_layouts/person.html). Add a course once and it appears in both. It lives
-# here rather than in oney_cv.yaml -- which is deliberately one person's CV --
-# for the same reason publications do: it is shared data that the CV filters,
-# not CV-only material.
+# here rather than in a _data/cvs/<person_id>.yaml -- which is one person's
+# CV -- for the same reason publications do: it is shared data that the CV
+# filters, not CV-only material.
 #
 # `person` is a people.yaml id, and it is what both templates filter on. A typo
 # is silent: the entry renders nowhere.

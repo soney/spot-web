@@ -66,22 +66,32 @@ module Jekyll
 
     def mcp_cv_json(_site_drop)
       data = mcp_site.data
-      cv = data["oney_cv"]
-      return JSON.pretty_generate({}) unless cv
+      cvs = data["cvs"]
+      return JSON.pretty_generate({}) unless cvs.is_a?(Hash) && !cvs.empty?
+
+      # The WebMCP surface publishes one CV -- get_cv takes no person
+      # argument -- so this takes _data/cvs/ in filename order and today
+      # there is exactly one file. A second CV must widen get_cv's contract,
+      # not lose a coin flip here, hence the warning.
+      if cvs.size > 1
+        Jekyll.logger.warn "McpIndex:",
+                           "_data/cvs/ has #{cvs.size} CVs but get_cv publishes only the first " \
+                           "(#{cvs.keys.sort.first}); teach webmcp.js about multiple CVs"
+      end
+      subject, cv = cvs.sort.first
 
       # The CV numbers only the papers its subject co-authored, counting down
       # per type in venue order -- so the codes are correct only when computed
-      # from exactly the set oney_cv.html renders. Computing them from every
+      # from exactly the set cv_body.html renders. Computing them from every
       # publication instead would shift each one by however many papers the
       # subject is not an author on.
-      subject = cv["person"]
       subject_pubs = Array(data["publications"]).select { |pub| Array(pub["authors"]).include?(subject) }
       codes = cv_publication_codes(subject_pubs, venues_by_date_desc(data["venues"]), data["publication_types"])
 
       JSON.pretty_generate(
         "person_id" => subject,
         "name" => cv["name"],
-        "path" => "/oney_cv/",
+        "path" => "/people/#{subject}/cv/",
         "affiliation" => cv["affiliation"],
         "contact" => cv["contact"],
         "education" => cv["education"],
@@ -91,7 +101,7 @@ module Jekyll
         "invited_presentations" => cv["invited_presentations"],
         "service" => cv["service"],
         # From _data/teaching.yaml, filtered by `person` exactly as
-        # oney_cv.html filters it -- the CV's own list, not the shorter one a
+        # cv_body.html filters it -- the CV's own list, not the shorter one a
         # person page shows.
         "teaching" => teaching_records(teaching_entries(data["teaching"], subject)),
         "supervised_students" => cv["supervised_students"],

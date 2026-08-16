@@ -12,8 +12,8 @@
     paper_id   publications.yaml id, on a /papers/<id>/ page. Lets
                get_publication default to the paper being viewed.
     person_id  people.yaml id, on a /people/<id>/ page. Same, for get_person.
-    cv_page    true on /oney_cv/, which is the only page with display options
-               for set_cv_display_options to operate.
+    cv_page    true on the /people/<id>/cv/ pages, the only pages with
+               display options for set_cv_display_options to operate.
 {%- endcomment -%}
 <script defer src="{{ '/assets/js/webmcp.js' | relative_url }}"
   data-mcp-index="{{ '/assets/mcp/index.json' | relative_url }}"

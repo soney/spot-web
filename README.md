@@ -52,7 +52,7 @@ _data/
   blog.yaml                   # /writing entries (links to Google Docs, one page each)
   nav.yaml                    # the navbar tabs
   affiliations.yaml           # homepage footer logos
-  oney_cv.yaml                # Steve's CV: everything on it that isn't a publication or a course
+  cvs/steve_oney.yaml         # Steve's CV: everything on it that isn't a publication or a course; one file per person, named by people.yaml id
   teaching.yaml               # courses taught, by person id; feeds the CV and the person page
   publication_types.yaml      # venue type -> CV numbering prefix (J, C, B, ...)
   cv_publication_sections.yaml# the CV's publication section headings and types
@@ -96,12 +96,16 @@ its URL slug. Writing entries are the one exception: they carry a separate
 `slug` for the URL, because those links are meant to be sent to people and so
 must not move when an entry is retitled.
 
-The CV (`oney_cv.html`) renders `_data/oney_cv.yaml` plus the publication data,
-and numbers publications per type (J.12, C.31, ...) using the prefixes in
-`publication_types.yaml`. `oney_cv.yaml` declares `person: steve_oney`, and the
-publication list filters on it — so the CV can only claim papers that person
-actually co-authored, not everything on the group site. It is deliberately one
-person's CV rather than a template; see the comment at the top of that file.
+CV pages (`/people/<person_id>/cv/`) are generated at build time by
+`_plugins/generate_cv_pages.rb`, one per `_data/cvs/<person_id>.yaml`, and
+rendered by `_includes/cv_body.html` from that file plus the publication data,
+numbering publications per type (J.12, C.31, ...) using the prefixes in
+`publication_types.yaml`. The filename is the person: it must be a
+`people.yaml` id, and the publication and teaching lists filter on it — so a
+CV can only claim papers its person actually co-authored, not everything on
+the group site. `/oney_cv/` is a vanity redirect to Steve's
+(`/people/steve_oney/cv/`) that carries the query string through, so shared
+toggle links keep working.
 
 Teaching is filtered on that `person` the same way, out of
 `_data/teaching.yaml`. That file is the single source behind both the CV's
@@ -364,7 +368,7 @@ Optionally announce it in `_data/news.yaml` and file it under a focus area by
 adding its id to the right cluster's `papers:` list in `_data/clusters.yaml`.
 
 Then check `/papers/<id>/`, `/research#pub-<id>`, the homepage, and
-`/oney_cv/?students=true&awards=true` — see
+`/people/steve_oney/cv/?students=true&awards=true` — see
 [Checking your work](#checking-your-work). Watch for these, all of which build
 cleanly:
 
@@ -385,7 +389,8 @@ cleanly:
   points at a different paper. Codes are stable only when you add papers newer
   than everything already listed.
 - **Paper awards and student underlines are hidden on the CV by default.** They
-  render only with the toggles on: `/oney_cv/?students=true&awards=true`.
+  render only with the toggles on:
+  `/people/steve_oney/cv/?students=true&awards=true`.
   Without those parameters you will think `award` and `student_authors` did
   nothing.
 
@@ -603,7 +608,7 @@ automatically:
   and `member_block.html` never prints it). **Move their new title and employer
   into the first sentence of `long_bio`** or the site will keep describing them
   as a current student. This is the silent-wrong-output failure in this task.
-- **Update `_data/oney_cv.yaml` by hand.** `supervised_students:` is a separate
+- **Update `_data/cvs/steve_oney.yaml` by hand.** `supervised_students:` is a separate
   list matched by free-text `student_name`, with no link to the `people.yaml`
   record, so nothing propagates and nothing warns. A graduating Ph.D. advisee
   moves from `category: ongoing_advisee` to `category: dissertation_chair`, with
@@ -620,7 +625,7 @@ exist for their papers to attribute correctly.
 Two other data files name people by hand and are not derived from
 `people.yaml`, so check whether a new member belongs in them:
 `_data/clusters.yaml` (`authors:` per cluster, rendered as the "People:" line on
-`/research`) and `_data/oney_cv.yaml` (`supervised_students:`).
+`/research`) and `_data/cvs/steve_oney.yaml` (`supervised_students:`).
 
 A complete member record:
 
@@ -792,11 +797,12 @@ finds in either field — so "Fall 2025, Fall 2026" is a 2026 entry and
 can find no year in at all is kept rather than dropped.
 
 The section appears on any person page whose person has records here, and does
-not appear at all when they have none, so this is not Steve-specific. What is
-Steve-specific is the CV: `oney_cv.html` renders the entries for its own
-`person:` and nothing else reads the file.
+not appear at all when they have none, so this is not Steve-specific. Neither
+is the CV: each `/people/<person_id>/cv/` renders the entries for its own
+person, and nothing else reads the file.
 
-Check both after adding one: `/oney_cv/` (the full list, in place) and
+Check both after adding one: `/people/steve_oney/cv/` (the full list, in
+place) and
 `/people/<id>/#teaching` (the section under Publications, three columns on a
 desktop). That anchor and `#publications` are the person page's two section
 ids; like a `blog.yaml` slug they are links meant to be sent to people, so
@@ -892,6 +898,7 @@ only; and on a news chip for *any* record, even one with no `membership`.
 script/export_cv_pdf.sh                      # oney_cv.pdf in the repo root
 script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
 script/export_cv_pdf.sh --students --awards  # the CV page's toggles, as flags
+script/export_cv_pdf.sh --person=<id> out.pdf  # another _data/cvs/ CV
 ```
 
 You rarely need to run this by hand: the deploy workflow runs it on every
@@ -903,14 +910,16 @@ one yourself with `script/export_cv_pdf.sh _site/oney_cv.pdf` — and the next
 build wipes it again.
 
 The script builds the site, serves `_site` on a free port, and prints
-`/oney_cv/` with headless Chrome. There is no second layout to maintain: the
+`/people/steve_oney/cv/` with headless Chrome. There is no second layout to
+maintain: the
 `@media print` block in `assets/css/cv.css` — which reproduces the typography
 of the old LaTeX CV that predates the web version (its `oneycv.cls` and
 reference PDF live untracked in the maintainer's checkout, under `old-cv/`)
 — is the single source of truth, so the script's output is exactly
 what File > Print in Chrome produces. Printing from the browser works the
 same way, and the toggles carry over: print
-`/oney_cv/?students=true&awards=true` to get the flagged variants.
+`/people/steve_oney/cv/?students=true&awards=true` to get the flagged
+variants.
 
 Four things worth knowing:
 
@@ -920,9 +929,9 @@ Four things worth knowing:
 - **The Typekit webfont needs network.** Offline, the PDF falls back to a
   generic serif and looks visibly wrong.
 - **Every checkbox on the CV page is a flag.** The script reads its flag
-  list from `oney_cv.html`'s `cv_toggle` includes at run time, so a new
-  checkbox becomes a flag with no script edit (`--help` prints the current
-  list). Each flag maps to its checkbox's URL parameter (`--students` to
+  list from `_includes/cv_body.html`'s `cv_toggle` includes at run time, so a
+  new checkbox becomes a flag with no script edit (`--help` prints the
+  current list). Each flag maps to its checkbox's URL parameter (`--students` to
   `?students=true`), so a flagged export shows exactly what the browser
   shows with that toggle on.
 - **The default output name `oney_cv.pdf` is deliberately protected**: it is
@@ -967,9 +976,9 @@ Depending on what you changed, check:
   opens the Doc without a permission prompt (check it signed out, or in a
   private window; signed in as its owner, an unpublished Doc opens fine for you
   and for nobody else)
-- `http://127.0.0.1:4000/oney_cv/?students=true&awards=true` — the citation, its
-  `C.n` code, the student underlines, and the award entry. Both toggles are off
-  by default
+- `http://127.0.0.1:4000/people/steve_oney/cv/?students=true&awards=true` — the
+  citation, its `C.n` code, the student underlines, and the award entry. Both
+  toggles are off by default
 - `http://127.0.0.1:4000/people/steve_oney/` — the only per-person page today.
   Its Teaching section is the same `_data/teaching.yaml` the CV renders, minus
   the entries `page_since` and `cv_only` hold back, so check a course edit in
