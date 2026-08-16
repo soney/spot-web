@@ -698,9 +698,31 @@ body:not(.show-paper-awards) .paper-award-item {
    could never match a 767.98px query anyway, but saying so costs a word. */
 @media screen and (max-width: 767.98px) {
     body .cv.container {
-        /* 7em of whitespace above the name is a desktop luxury. 3.5em still
-           clears the absolutely-positioned theme toggle in the top margin. */
-        margin-top: 3.5em;
+        /* 7em of whitespace above the name is a desktop luxury. 25px is
+           the same constant the tablet band uses for the outline's top:
+           the outline is the first thing in the flow here, so this puts
+           the Contents header's line on the theme toggle's, same as
+           every other width, and the name simply follows the outline
+           down the page. */
+        margin-top: 25px;
+
+        /* A CV field can carry an unbreakable token wider than a phone
+           column -- a Coursera URL under Teaching is 377px of it -- and
+           the page scrolled sideways by however much stuck out.
+           break-word rather than anywhere so min-content sizes (the
+           flexed .col.side among them) stay put; only lines that would
+           already overflow may break. */
+        overflow-wrap: break-word;
+
+        /* The affiliation/contact row nests inside .col.main, whose 5px
+           padding is where a Bootstrap row expects a 12px gutter, so its
+           -12px margins poked 7px past the viewport on each side -- the
+           page's other sideways scroll. A 10px gutter makes the row
+           flush, and its columns' 5px padding lands the text on exactly
+           the pixel the 12px default put it. */
+        .col.main > .row {
+            --bs-gutter-x: 10px;
+        }
 
         .col.side,
         .col.main {
