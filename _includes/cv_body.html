@@ -1,0 +1,567 @@
+{% comment %}
+  The whole of a CV page's body, rendered by _layouts/cv.html for the
+  /people/<person_id>/cv/ pages that _plugins/generate_cv_pages.rb builds
+  from _data/cvs/<person_id>.yaml. `page.cv_person` is that person id: it
+  selects the CV record and filters the shared publications and teaching
+  data, so a CV can only ever claim papers and courses its person is
+  actually on.
+{% endcomment %}
+{% assign cv = site.data.cvs[page.cv_person] %}
+<div class="cv container">
+  <div class="row">
+    <div class="col side"></div>
+    <div class="col main">
+      <h1>{{ cv.name }}</h1>
+    </div>
+  </div>
+
+  <section class="cv-section section row">
+    <div class="col side"></div>
+    <div class="col main">
+      <div class="row">
+        {% if cv.affiliation %}
+        <h2 class="visually-hidden">Affiliation</h2>
+        <address class="col affiliation">
+          <div class="affiliation-department">{{ cv.affiliation.department }}</div>
+          <div class="affiliation-university">{{ cv.affiliation.university }}</div>
+          <div class="affiliation-office">{{ cv.affiliation.office }}</div>
+          <div class="affiliation-street">{{ cv.affiliation.street }}</div>
+          <div class="affiliation-city">{{ cv.affiliation.city }}</div>
+        </address>
+        {% endif %}
+
+        {% if cv.contact %}
+        <h2 class="visually-hidden">Contact</h2>
+        <div class="col contact">
+          <div class="contact-spacer">&nbsp;</div>
+          <div class="contact-spacer">
+            {% comment %}
+              The two variants mirror each other: print points readers at the
+              web CV (`short_url`), screen points them at the PDF (`pdf_url`).
+              Both come from the CV's data file and either line simply drops
+              out when its field is absent. The PDF is written into _site by
+              the deploy workflow (which runs script/export_cv_pdf.sh), not by
+              Jekyll, so under `npm run develop` that link 404s until you
+              export one yourself: script/export_cv_pdf.sh _site/oney_cv.pdf.
+              Print keeps hiding the link so the PDF never links to itself.
+            {% endcomment %}
+            {% if cv.pdf_url %}
+            <div class="d-print-none">
+              <em><a href="{{ cv.pdf_url | relative_url }}" target="_blank" rel="noopener"><i
+                    class="bi bi-file-earmark-pdf"></i> Download PDF</a></em>
+            </div>
+            {% endif %}
+            {% if cv.short_url %}
+            <div class="d-none d-print-block">
+              <em>Latest CV: <a href="{{ cv.short_url }}" target="_blank" rel="noopener">{{ cv.short_url | remove:
+                "https://" | remove: "http://" }}</a>
+                <br />Updated {{ site.time | date: "%B %Y" }}</em>
+            </div>
+            {% endif %}
+          </div>
+          {% if cv.contact.homepage %}<div class="contact-homepage"><a href="{{ cv.contact.homepage }}" target="_blank"
+              rel="noopener">{{ cv.contact.homepage }}</a></div>{% endif %}
+          {% if cv.contact.phone %}<div class="contact-phone"><a href="tel:{{ cv.contact.phone }}">{{ cv.contact.phone
+              }}</a></div>{% endif %}
+          {% if cv.contact.email %}<div class="contact-email"><a href="mailto:{{ cv.contact.email }}">{{
+              cv.contact.email
+              }}</a></div>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%}
+    These two are assigned up here, above the outline, rather than at their
+    own sections, so each outline entry and its section test the identical
+    condition -- the outline cannot link to a section that did not render.
+    all_publications is only this CV's subject's papers -- never the whole
+    group's. teaching comes from the shared _data/teaching.yaml rather than
+    from the CV's own file, so this section and the one on /people/<person>/
+    cannot disagree; the CV gets every entry, the page a subset.
+  {%- endcomment -%}
+  {% assign all_publications = site.data.publications | where_exp: "p", "p.authors contains page.cv_person" %}
+  {%- assign teaching = site.data.teaching | teaching_entries: page.cv_person -%}
+  {%- comment -%}
+    Outline support: the rail unfolds the active section's h3 subsections,
+    and a subsection may only be linked when its heading will actually
+    render. venues_by_year_desc therefore moves up here (the Publications
+    section reassigns it, harmlessly), and pub_types_present collects the
+    venue types this person has published as a space-padded string, so
+    ` conference ` can be probed without one type name matching inside
+    another. Service and supervision groups run through the same filter
+    their sections use, so outline and section agree about which groups
+    exist.
+  {%- endcomment -%}
+  {% assign venues_by_year_desc = site.data.venues | venues_by_date_desc %}
+  {%- capture pub_types_present %}{% for pub in all_publications %}{% assign outline_venue = venues_by_year_desc | where: "id", pub.venue | first %} {{ outline_venue.type }}{% endfor %} {% endcapture -%}
+
+  {% comment %}
+    The outline: the CV's section links under a "Contents" header, with
+    assets/js/cv.js marking the section being scrolled over as .active.
+    Screen-only -- d-print-none keeps it out of the print/PDF CV, which
+    reproduces the old LaTeX CV and has no place for hyperlinked chrome.
+    cv.css renders it two ways from this one block of markup: on viewports
+    wide enough to have real margin beside the paper it is a fixed rail that
+    persists while the reader scrolls, and on everything narrower it stays
+    here in the flow, a static block between the title and Education that
+    scrolls away with the page. The row/col wrapper is what aligns that
+    in-flow variant with the main column; the rail variant flattens it.
+    The header text links back to the top -- "#top" matches no element on
+    the page, which is the HTML-spec'd way to say "scroll to the very
+    top" -- and each section target id sits on the section element itself.
+
+    The nested lists are the h3 subsections of their section, linked by the
+    slugified group title, which is exactly the id cv_section_heading.html
+    stamps on the h3 -- the two agree by construction. They render in the
+    rail alone, unfolding under the section the reader is in: the reveal
+    keys off the .active that the scroll-spy places, so with JavaScript
+    off (or in the flow variant) they are simply never shown and the
+    outline stays the flat list of sections.
+  {% endcomment %}
+  <nav class="cv-outline d-print-none" aria-label="Contents">
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        <div class="cv-outline-header"><a href="#top">Contents</a></div>
+        <ul class="list-unstyled">
+          {% if cv.education %}<li><a href="#education">Education</a></li>{% endif %}
+          {% if cv.professional_experience %}<li><a href="#experience">Professional Experience</a></li>{% endif %}
+          {% if all_publications and all_publications.size > 0 %}
+          <li>
+            <a href="#publications">Publications</a>
+            <ul class="list-unstyled">
+              {% for pub_section in site.data.cv_publication_sections %}
+              {%- assign pub_section_has_items = false -%}
+              {%- for pub_type in pub_section.types -%}
+              {%- capture pub_type_probe %} {{ pub_type }} {% endcapture -%}
+              {%- if pub_types_present contains pub_type_probe -%}
+              {%- assign pub_section_has_items = true -%}
+              {%- endif -%}
+              {%- endfor -%}
+              {%- if pub_section_has_items %}
+              <li><a href="#{{ pub_section.title | slugify }}">{{ pub_section.title }}</a></li>
+              {%- endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% if cv.grants %}<li><a href="#grants">Grants</a></li>{% endif %}
+          {% if cv.awards %}<li><a href="#awards">Awards</a></li>{% endif %}
+          {% if cv.invited_presentations %}<li><a href="#presentations">Invited Presentations</a></li>{% endif %}
+          {% if cv.service %}
+          <li>
+            <a href="#service">Service</a>
+            {% assign outline_service_groups = cv.service | cv_grouped_records: site.data.cv_service_groups %}
+            <ul class="list-unstyled">
+              {% for group in outline_service_groups %}
+              {%- if group.items.size > 0 %}
+              <li><a href="#{{ group.title | slugify }}">{{ group.title }}</a></li>
+              {%- endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% if teaching.size > 0 %}<li><a href="#teaching">Teaching</a></li>{% endif %}
+          {% if cv.supervised_students %}
+          <li>
+            <a href="#students">Students Supervised</a>
+            {% assign outline_supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
+            <ul class="list-unstyled">
+              {% for group in outline_supervision_groups %}
+              {%- if group.items.size > 0 %}
+              <li><a href="#{{ group.title | slugify }}">{{ group.title }}</a></li>
+              {%- endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% if cv.press %}<li><a href="#press">Press</a></li>{% endif %}
+          {% if cv.patents %}<li><a href="#patent">Patent</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% if cv.education %}
+  <section id="education" class="cv-section section education">
+    {% include cv_section_heading.html title="Education" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.education %}
+      <li class="row item">
+        <div class="col main">
+          <div class="education-school">{{ item.university }}</div>
+          {% if item.degrees %}
+          <table class="education-degrees">
+            <tbody>
+              {% for degree in item.degrees %}
+              <tr>
+                <td>{{ degree[0] }}</td>
+                <td>&nbsp;in {{ degree[1] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% endif %}
+          <table>
+            <tbody>
+              {% if item.advisors %}
+              <tr>
+                <td>Advisors:</td>
+                <td>&nbsp;{{ item.advisors }}</td>
+              </tr>
+              {% endif %}
+              {% if item.committee %}
+              <tr>
+                <td>Committee:</td>
+                <td>&nbsp;{{ item.committee }}</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.professional_experience %}
+  <section id="experience" class="cv-section section experience">
+    {% include cv_section_heading.html title="Professional Experience" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.professional_experience %}
+      <li class="row item">
+        <div class="col main">
+          <div class="experience-organization">{{ item.institution }}</div>
+          <div class="experience-title">{{ item.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% assign venues_by_year_desc = site.data.venues | venues_by_date_desc %}
+  {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
+  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
+  {% if all_publications and all_publications.size > 0 %}
+  <section id="publications" class="cv-section section publications">
+    {% include cv_section_heading.html title="Publications" %}
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        {% include cv_toggle.html label="Highlight student authors" param="students"
+        body_class="highlight-student-authors" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        <div class="highlight-students-note">
+          Note: The names of authors who were students at the time of publication are <u>underlined</u> (including my
+          name if I was a student at the time of publication).
+        </div>
+        <strong>Labels:</strong> <i class="bi bi-trophy"></i> Best Paper Award, <i class="bi bi-award"></i> Honorable
+        Mention or other recognition
+        <br />
+        <strong>Approximate acceptance rates:</strong> UIST: 22%, CHI: 23%, VL/HCC: 30%, CSCW: 25%, ICSE: 19%, IMX: 26%
+      </div>
+    </div>
+
+
+    {% for pub_section in site.data.cv_publication_sections %}
+    {% capture publication_items %}
+    {% include cv_publication_items_for_types.html all_publications=all_publications venues=venues_by_year_desc
+    allowed_types=pub_section.types pub_codes=pub_codes highlight_id=page.cv_person %}
+    {% endcapture %}
+    {% assign publication_items_stripped = publication_items | strip %}
+    {% if publication_items_stripped != "" %}
+    {% include cv_section_heading.html title=pub_section.title level="h3" %}
+    <ul class="cv-list">{{ publication_items }}</ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if cv.grants %}
+  <section id="grants" class="cv-section section grants">
+    {% include cv_section_heading.html title="Grants" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.grants %}
+      <li class="row item">
+        <div class="col side">
+          {% if item.date %}<div class="award-date">{{ item.date }}</div>{% endif %}
+          {% if item.amount %}
+          <div class="award-amount">${{ item.amount }}</div>
+          {% endif %}
+        </div>
+        <div class="col main">
+          {% if item.title %}<div class="award-title">{{ item.title }}</div>{% endif %}
+          <div class="award-team">{{ item.team | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% if item.sponsor %}<div class="award-sponsor">{{ item.sponsor }}</div>{% endif %}
+          {% if item.program %}<div class="award-program">{{ item.program }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.awards %}
+  <section id="awards" class="cv-section section awards">
+    {% include cv_section_heading.html title="Awards" %}
+    {% include cv_toggle.html label="Include paper awards" param="awards" body_class="show-paper-awards"
+    row=true %}
+    <ul class="cv-list list-unstyled">
+      {% comment %}
+        cv.awards and the awards attached to publications are two differently
+        shaped streams merged into one year-descending list. The merge and the
+        ordering live in _plugins/cv_award_entries.rb, which documents the
+        ordering rules it deliberately preserves.
+      {% endcomment %}
+      {% assign award_entries = cv.awards | cv_award_entries: venues_by_year_desc, all_publications %}
+      {% for entry in award_entries %}
+      {% if entry.kind == "paper_award" %}
+      {% assign pub = entry.pub %}
+      {% assign venue = entry.venue %}
+      <li class="paper-award-item row item">
+        <div class="col main">
+          {% assign award_text = pub.award_description | default: pub.award | replace: "_", " " | capitalize %}
+          <div class="award-title">{{venue.short_name}}: {{ award_text }}</div>
+          <div class="award-description">{{ pub.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {% if venue.conference_start %}
+            {% assign parts = venue.conference_start | split: "/" %}
+            {% if parts.size == 2 %}
+            {{ parts.first }}/
+            {%-endif %}
+            {%-endif %}
+            {{-venue.year }}
+          </div>
+        </div>
+      </li>
+      {% else %}
+      {% assign item = entry.item %}
+      <li class="row item">
+        <div class="col main">
+          <div class="award-title">{{ item.title }}</div>
+          {% if item.description %}<div class="award-description">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.invited_presentations %}
+  <section id="presentations" class="cv-section section presentations">
+    {% include cv_section_heading.html title="Invited Presentations" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.invited_presentations %}
+      <li class="row item">
+        <div class="col main">
+          <div class="talk-location">{{ item.institution }}</div>
+          <div class="talk-title">{{ item.title }}</div>
+        </div>
+        <div class="col side">
+          <div class="date">{{ item.date }}</div>
+          <div class="location">{{ item.location }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.service %}
+  <section id="service" class="cv-section section service">
+    {% include cv_section_heading.html title="Service" %}
+    {% assign service_groups = cv.service | cv_grouped_records: site.data.cv_service_groups %}
+    {% for group in service_groups %}
+    {% assign items = group.items %}
+    {% if items.size > 0 %}
+    {% include cv_section_heading.html title=group.title level="h3" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in items %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}<div class="role">{{ item.title }}</div>{% endif %}
+          {% if item.description %}<div class="description">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          <div class="date">
+            {% if item.date_start or item.date_end %}
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if teaching.size > 0 %}
+  <section id="teaching" class="cv-section section teaching">
+    {% include cv_section_heading.html title="Teaching" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in teaching %}
+      <li class="row item">
+        <div class="col main">
+          <div class="course-name">{{ item.title }}</div>
+          {% if item.description %}
+          <div class="description">{{ item.description | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          {% endif %}
+        </div>
+        <div class="col side">
+          <div class="date-range">
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}
+          </div>
+          <div class="location">{{ item.institution }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.supervised_students %}
+  <section id="students" class="cv-section section supervisees">
+    {% include cv_section_heading.html title="Students Supervised" %}
+
+    {% assign supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
+    {% for group in supervision_groups %}
+    {% assign items = group.items %}
+    {% if items.size > 0 %}
+    {% include cv_section_heading.html title=group.title level="h3" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in items %}
+      <li class="row item">
+        <div class="col main">
+          <div class="supervisee">{{ item.student_name }} {% if item.student_department %}({{ item.student_department
+            }}){% endif %}</div>
+          <div class="supervisee-thesis">{{ item.thesis_title }}</div>
+          {% if item.coadvisor %}<div class="supervisee-coadvisor">(co-advised with {{ item.coadvisor }})</div>{% endif
+          %}
+          {% if item.current_position %}<div class="supervisee-position">Currently: {{ item.current_position }}</div>{%
+          endif %}
+        </div>
+        <div class="col side">
+          <div class="date">
+            {% if item.date_start or item.date_end %}
+            {{ item.date_start }}{% if item.date_end %} – {{ item.date_end }}{% endif %}{% if item.milestone %} ({{
+            item.milestone }}){% endif %}
+            {% endif %}
+          </div>
+          <div class="location">{% if item.institution %}{{ item.institution }}{% endif %}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {%- comment -%}
+    Group-level data, not per-person: people.yaml's ugrad_ms_student tier is
+    the whole group's collaborator list, so this section belongs only on the
+    group lead's CV. Without the guard, a second _data/cvs/ file would
+    silently claim every mentee in the group.
+  {%- endcomment -%}
+  {% assign cv_person_record = site.data.people | where: "id", page.cv_person | first %}
+  {% assign ugrad_ms_students = site.data.people | where: "membership", "ugrad_ms_student" | sort: "family_name" %}
+  {% if cv_person_record.membership == "lead" and ugrad_ms_students.size > 0 %}
+  <section class="cv-section section">
+    <div class="row">
+      <div class="col side"></div>
+      <div class="col main">
+        {% include cv_toggle.html label="Include undergraduate and master's collaborators" param="mentees"
+        body_class="show-other-mentees" %}
+        <h3 class="cv-other-mentees-header">Other Mentees</h3>
+        <ul class="cv-list cv-other-mentees-list">
+          {% for student in ugrad_ms_students %}
+          <li>
+            <strong>{{ student.given_name }} {{ student.family_name }}</strong>{% if student.short_bio %}. {{
+            student.short_bio }}{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if cv.press %}
+  <section id="press" class="cv-section section press">
+    {% include cv_section_heading.html title="Press" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.press %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}
+          {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a>
+          {% else %}
+          {{ item.title }}
+          {% endif %}
+          {% endif %}
+          {% if item.description %} <div class="date">{{ item.description }}</div>{% endif %}
+        </div>
+        <div class="col side">
+          {% if item.publication %}<div class="outlet">{{ item.publication }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv.patents %}
+  <section id="patent" class="cv-section section">
+    {% include cv_section_heading.html title="Patent" %}
+    <ul class="cv-list list-unstyled">
+      {% for item in cv.patents %}
+      <li class="row item">
+        <div class="col main">
+          {% if item.title %}{{ item.title }}{% endif %}
+        </div>
+        <div class="col side">
+          {% if item.date %}<div class="date">{{ item.date }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+
+
+</div>
+
+<script src="{{ '/assets/js/cv.js' | relative_url }}"></script>

@@ -8,8 +8,13 @@
   whole document.
 
   Parameters:
-    to     the target path, root-relative (e.g. "/people/steve_oney/").
-    label  link text for the visible fallback.
+    to              the target path, root-relative (e.g. "/people/steve_oney/").
+    label           link text for the visible fallback.
+    preserve_query  optional; set true when the target reads the query string
+                    or fragment (the CV's ?students=true toggles), so the JS
+                    redirect carries them through. The meta refresh cannot --
+                    with JavaScript off they are dropped, which is the best a
+                    static page can do.
 {% endcomment %}
 {%- assign target = include.to | relative_url -%}
 <!DOCTYPE html>
@@ -26,7 +31,7 @@
 <body>
     If you are not redirected automatically, follow this <a href="{{ target }}">{{ include.label }}</a>.
     <script>
-        window.location.href = "{{ target }}";
+        window.location.href = "{{ target }}"{% if include.preserve_query %} + window.location.search + window.location.hash{% endif %};
     </script>
 </body>
 

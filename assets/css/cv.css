@@ -142,6 +142,177 @@ body {
             text-align: right;
         }
 
+        /* Per-section back-to-top: a small chrome-sans link that
+           cv_section_heading.html adds to every h2 row, parked at the
+           right end of the heading's rule. Absolute, and a sibling of the
+           heading rather than a child, so "top" never joins the section's
+           accessible name. The bottom offset parks it just above the rule,
+           which sits the h2's 0.5rem reboot margin above the row's edge;
+           hover picks up the shared a:hover blue on its own. */
+        .row:has(> .cv-top-link) {
+            position: relative;
+        }
+
+        .cv-top-link {
+            bottom: 0.75rem;
+            color: var(--note-color);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.06em;
+            /* Bootstrap's `.row > *` gives every row child width: 100% and
+               the gutter padding. Undone here, or the absolute box spans
+               the whole row and its text lands at the LEFT end of the
+               heading instead of the right. */
+            padding: 0;
+            position: absolute;
+            right: 5px;
+            width: auto;
+        }
+
+        /* The outline, in its two lives. Below 1720px it is a static block
+           in the flow between the title and Education -- a "Contents"
+           label over one wrapping row of links -- which scrolls away with
+           the page. From 1720px up, where the free margin beside the
+           1320px container is really wide enough, the same markup becomes
+           a rail fixed in that margin, persisting while the reader
+           scrolls. In both, the header text is a link back to the top.
+           Print sees neither (the nav carries d-print-none).
+
+           Set in a small system sans, unlike everything else on the page:
+           this is reader chrome around the document, like the theme toggle,
+           and Goudy at chrome sizes reads as document text gone wrong
+           rather than as a control. Everything is the note colour so eleven
+           links do not out-shout the page. assets/js/cv.js moves .active to
+           the link of the section being scrolled over, but only the rail
+           renders it -- the in-flow variant sits at the top of the page,
+           where the current section is always trivially the first one. */
+        .cv-outline {
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            margin-top: 2.5em;
+
+            .cv-outline-header {
+                color: var(--note-color);
+                font-size: 0.68rem;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+            }
+
+            ul {
+                column-gap: 0.75em;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.75rem;
+                margin: 0.6em 0 0;
+                row-gap: 0.3em;
+            }
+
+            /* The dot rides the following entry, so a wrapped line opens
+               with a (quiet) dot rather than ending with a dangling one. */
+            li + li::before {
+                content: "\00B7";
+                color: var(--note-color);
+                margin-right: 0.75em;
+            }
+
+            /* Subsection lists exist for the rail alone, where they unfold
+               under the active section. Here in the flow variant they are
+               never shown -- and with JavaScript off nothing is ever
+               .active, so the rail, too, degrades to the flat list of
+               sections. */
+            li > ul {
+                display: none;
+            }
+
+            a {
+                color: var(--note-color);
+            }
+
+            a:hover,
+            a:focus-visible {
+                color: var(--link-hover-color);
+            }
+        }
+
+        /* The rail. Pinned to the container's left edge (50vw - 660px)
+           rather than the viewport's, so the gap to the paper is constant
+           and the rail reads as belonging to it. The in-flow variant's
+           row/col grid is flattened away, and .active trades the
+           colour-only accent for a bar sitting on the list's hairline,
+           where it reads as the rule thickening. */
+        @media screen and (min-width: 1720px) {
+            .cv-outline {
+                left: calc(50vw - 660px - 184px);
+                margin-top: 0;
+                position: fixed;
+                top: 9rem;
+                width: 160px;
+
+                .row {
+                    display: block;
+                    margin: 0;
+                }
+
+                .col.side {
+                    display: none;
+                }
+
+                .col.main {
+                    flex: none;
+                    max-width: none;
+                    padding: 0;
+                }
+
+                .cv-outline-header {
+                    font-size: 0.62rem;
+                    margin-bottom: 0.6em;
+                    padding-left: 1.15em;
+                }
+
+                ul {
+                    border-left: 1px solid var(--rule-subtle-color);
+                    display: block;
+                    font-size: 0.72rem;
+                    line-height: 1.5;
+                    margin-top: 0;
+                }
+
+                li + li::before {
+                    content: none;
+                }
+
+                a {
+                    border-left: 2px solid transparent;
+                    display: block;
+                    margin-left: -1px;
+                    padding: 0.3em 0 0.3em 1em;
+                }
+
+                a.active {
+                    border-left-color: var(--font-color);
+                    color: var(--font-color);
+                }
+
+                /* The active section's subsections, unfolded. The nested
+                   list carries no rule of its own: its links share the
+                   outer hairline, sitting deeper on it, and the active
+                   subsection takes the same accent as the section. */
+                li > ul {
+                    border-left: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li:has(> a.active) > ul {
+                    display: block;
+                }
+
+                li > ul a {
+                    font-size: 0.94em;
+                    padding-left: 2em;
+                }
+            }
+        }
+
         .side {
             text-align: right;
 
@@ -511,22 +682,13 @@ body:not(.show-paper-awards) .paper-award-item {
            big bottom margin is where the footer lives. */
         margin: 0.5in 0.75in 1.7in 0.75in;
 
-        /* \cfoot: right-aligned, gray 0.6 (#999). A margin box, so engines
-           without them (Firefox, Safari) lose the footer and nothing else.
-           vertical-align: top hangs it just under the text block the way
-           fancyhdr's footskip does, rather than centered in 1.7in of margin;
-           19pt of padding puts the ink 90pt from the page bottom, where the
-           old PDF's footer sits. One knowing loss: the LaTeX footer bolds
-           "Steve Oney" and a margin box takes a single string in a single
-           weight, so the whole line is regular here. */
-        @bottom-right {
-            content: "Steve Oney \2014  curriculum vitae, page " counter(page) " of " counter(pages);
-            font-family: goudy-old-style, serif;
-            font-size: 12pt;
-            color: #999;
-            vertical-align: top;
-            padding-top: 19pt;
-        }
+        /* The \cfoot footer ("<name> -- curriculum vitae, page N of M") is
+           NOT here: its string carries the CV subject's name, and an @page
+           margin box takes only a literal, so _layouts/cv.html generates the
+           @bottom-right rule per page with the name from the CV's data --
+           in an inline <style> after this stylesheet, so it wins the
+           cascade. The page geometry stays here because it is the same for
+           every CV. */
     }
 
     :root,

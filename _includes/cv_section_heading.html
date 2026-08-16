@@ -3,13 +3,28 @@
   column. cv.css gives .col.side and .col.main explicit flex `order`, so the
   side column renders first regardless of the order they appear in here.
 
+  h2 rows also carry a small screen-only "top" link that cv.css parks at
+  the right end of the heading's rule -- a sibling of the heading, not a
+  child, so "top" never joins the section's accessible name. "#top" matches
+  no element on the page, which is the HTML-spec'd way to say "scroll to
+  the very top".
+
   Parameters:
     title  the heading text.
     level  (optional) heading tag, "h2" (default) for a section, "h3" for a
            group inside one.
 {% endcomment %}
+{%- comment -%}
+  h3s carry an id, the slugified title, so the outline's subsection links
+  (cv_body.html slugifies the same strings) land on them -- the two agree by
+  construction. Two h3s with the same title anywhere on the CV would
+  collide; today every group title is distinct.
+{%- endcomment -%}
 {%- assign heading_level = include.level | default: "h2" -%}
 <div class="row">
   <div class="col side"></div>
-  <{{ heading_level }} class="col main">{{ include.title }}</{{ heading_level }}>
+  <{{ heading_level }} class="col main"{% if heading_level == "h3" %} id="{{ include.title | slugify }}"{% endif %}>{{ include.title }}</{{ heading_level }}>
+  {%- if heading_level == "h2" %}
+  <a class="cv-top-link d-print-none" href="#top">&uarr; top</a>
+  {%- endif %}
 </div>

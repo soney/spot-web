@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Provides the `cv_grouped_records` Liquid filter, which buckets CV records
-# (oney_cv.yaml's `service` and `supervised_students`) into the display groups
+# (a _data/cvs/ file's `service` and `supervised_students`) into the display groups
 # defined in _data/cv_service_groups.yaml and _data/cv_supervision_groups.yaml.
 #
 # A group declares the categories it collects:

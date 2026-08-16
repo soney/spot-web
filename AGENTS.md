@@ -81,8 +81,9 @@ category) appear there and scroll past during serve.
 
 Verify in the browser at `http://127.0.0.1:4000`. The CV's student-author
 underlines and paper awards are **off by default** — check them at
-`/oney_cv/?students=true&awards=true` or you will conclude your edit did
-nothing.
+`/people/steve_oney/cv/?students=true&awards=true` or you will conclude your
+edit did nothing. (`/oney_cv/` is a redirect to that page that carries the
+query string through.)
 
 ## Invariants that fail silently
 

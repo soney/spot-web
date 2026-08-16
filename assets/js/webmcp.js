@@ -355,7 +355,7 @@
 
   // ----------------------------------------------------------------- tools
 
-  // The sections get_cv will read, in the order oney_cv.html renders them.
+  // The sections get_cv will read, in the order cv_body.html renders them.
   // "publications" is not a key of cv.json -- it is assembled from the index
   // plus that file's publication_codes map.
   var CV_SECTIONS = ['contact', 'education', 'professional_experience', 'publications', 'grants',
@@ -947,7 +947,7 @@
             path = area.path;
             label = area.title;
           } else {
-            var named = { home: '/', research: '/research/', team: '/team/', news: '/news/', writing: '/writing/', cv: '/oney_cv/' };
+            var named = { home: '/', research: '/research/', team: '/team/', news: '/news/', writing: '/writing/', cv: '/people/steve_oney/cv/' };
             // hasOwnProperty, not `named[x]`: "constructor" and "toString" are
             // truthy on any object literal, and would sail past a `!path` check
             // straight into location.assign.

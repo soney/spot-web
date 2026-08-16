@@ -1,6 +1,7 @@
-# Service groups on the CV, in render order (oney_cv.html).
+# Service groups on the CV, in render order (_includes/cv_body.html).
 #
-# `categories` lists the `category` values from oney_cv.yaml `service` records
+# `categories` lists the `category` values from a CV's
+# (_data/cvs/<person_id>.yaml) `service` records
 # that this group collects. The last group sets `catch_all: true` instead: it
 # picks up every record no other group claimed, so a record with a new or
 # misspelled category still shows up rather than silently disappearing.

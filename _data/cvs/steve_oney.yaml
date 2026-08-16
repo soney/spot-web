@@ -1,18 +1,30 @@
 # Steve Oney's academic CV -- the material that is NOT publications.
-# Rendered by oney_cv.html; publications come from the shared
-# publications.yaml / venues.yaml / people.yaml.
+# Rendered at /people/steve_oney/cv/ by _includes/cv_body.html; publications
+# come from the shared publications.yaml / venues.yaml / people.yaml.
 #
-# `person` is the people.yaml id this CV belongs to. It is what the
-# publications query filters on, so the CV can only ever claim papers this
-# person actually co-authored.
+# THE FILENAME IS THE PERSON. Every _data/cvs/<person_id>.yaml gets a page at
+# /people/<person_id>/cv/, generated at build time by
+# _plugins/generate_cv_pages.rb and never written to disk -- to add a CV, add
+# a file here; there is no template to copy beyond this one. <person_id> must
+# be that person's people.yaml id: it is what the publications and teaching
+# queries filter on, so the CV can only ever claim papers its person actually
+# co-authored. A filename matching no people.yaml id still builds cleanly and
+# renders a CV whose publication list is silently empty; the generator warns
+# when that happens.
 #
-# THIS IS ONE PERSON'S CV, DELIBERATELY. It is not a template and nothing
-# loops over it. If someone else in the group ever wants a CV on this site,
-# copy this file and oney_cv.html and change the `person` -- do not try to
-# generalize these two files into a collection. Group members' CVs belong on
-# their own domains, which outlive their time here.
-person: steve_oney
+# `pdf_url` and `short_url` are optional; a CV without them renders neither
+# line. `pdf_url` is the screen's "Download PDF" link -- the deploy workflow
+# writes the PDF itself (.github/workflows/deploy.yml runs
+# script/export_cv_pdf.sh), Jekyll never does. So a second CV that wants the
+# link needs two things that do not happen by themselves: its own export
+# step in deploy.yml (script/export_cv_pdf.sh --person=<id> _site/<path>)
+# and a pdf_url pointing at that path -- a pdf_url without the deploy step
+# renders a link that 404s on the live site.
+# `short_url` is the "Latest CV: ..." pointer shown only in print, and should
+# be a URL that outlives any page reshuffle (from.so/oney_cv is a redirect).
 name: Steve Oney
+pdf_url: /oney_cv.pdf
+short_url: https://from.so/oney_cv
 affiliation:
   department: School of Information
   university: University of Michigan

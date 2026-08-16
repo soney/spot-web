@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
 #
-# Renders the CV page to a PDF by printing it with headless Chrome. The
+# Renders a CV page to a PDF by printing it with headless Chrome. The
 # @media print block in assets/css/cv.css is the single source of truth for
 # how the PDF looks (it reproduces the old LaTeX CV), so this produces
 # exactly what File > Print in Chrome produces — no second layout to keep in
-# sync. The page footer ("Steve Oney — curriculum vitae, page N of M") is a
+# sync. The page footer ("<name> — curriculum vitae, page N of M") is a
 # CSS margin box and needs Chrome 131 or newer; older Chrome loses the
 # footer and nothing else.
 #
 #   script/export_cv_pdf.sh                      # oney_cv.pdf in the repo root
 #   script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
 #   script/export_cv_pdf.sh --students --awards  # the CV's checkboxes, as flags
+#   script/export_cv_pdf.sh --person=<id> out.pdf  # another _data/cvs/ CV
+#
+# --person picks which /people/<id>/cv/ page to print; it defaults to
+# steve_oney. Any other person requires an explicit output path, because only
+# the default oney_cv.pdf name is protected from being republished (below).
 #
 # Every checkbox on the CV is a flag: the list is read at run time from the
-# page's cv_toggle includes, so a checkbox added to oney_cv.html is a flag
-# here with no edit to this script (--help prints the current list). Each
+# page's cv_toggle includes, so a checkbox added to _includes/cv_body.html is
+# a flag here with no edit to this script (--help prints the current list). Each
 # flag maps to its checkbox's URL parameter (--students to ?students=true),
 # so a flagged export shows exactly what the browser shows with that toggle
 # on.
@@ -32,7 +37,7 @@ set -euo pipefail
 # $0 stops working the moment the script leaves the caller's directory.
 self=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
 usage() {
-  sed -n '3,27p' "$self" | sed 's/^# \{0,1\}//'
+  sed -n '3,32p' "$self" | sed 's/^# \{0,1\}//'
   echo
   echo "flags (the CV's checkboxes): $(printf -- '--%s ' $toggles)"
 }
@@ -41,17 +46,19 @@ orig_dir=$PWD
 cd "$(dirname "$self")/.."
 
 # The flag list IS the page's checkbox list: every cv_toggle include in
-# oney_cv.html names its URL parameter (param="students"). Coming out empty
-# means the page or the include's syntax moved, so every flag would be
-# rejected as unknown; say why up front.
-toggles=$(grep -oE '[[:space:]]param="[^"]+"' oney_cv.html | cut -d'"' -f2 | sort -u)
-[ -n "$toggles" ] || echo "warning: no cv_toggle params found in oney_cv.html; toggle flags will not work" >&2
+# _includes/cv_body.html names its URL parameter (param="students"). Coming
+# out empty means the page or the include's syntax moved, so every flag would
+# be rejected as unknown; say why up front.
+toggles=$(grep -oE '[[:space:]]param="[^"]+"' _includes/cv_body.html | cut -d'"' -f2 | sort -u)
+[ -n "$toggles" ] || echo "warning: no cv_toggle params found in _includes/cv_body.html; toggle flags will not work" >&2
 
 out=""
+person=""
 params=()
 for arg in "$@"; do
   case "$arg" in
     -h|--help)  usage; exit 0 ;;
+    --person=*) person=${arg#--person=} ;;
     --*)
       name=${arg#--}
       if printf '%s\n' "$toggles" | grep -qxF -- "$name"; then
@@ -73,9 +80,22 @@ for arg in "$@"; do
   esac
 done
 
+person=${person:-steve_oney}
+
 # Resolve a relative output path against where the caller ran from, not
-# against the repo root this script cd'd to.
-out=${out:-oney_cv.pdf}
+# against the repo root this script cd'd to. The default name exists only
+# for the default person: oney_cv.pdf is the one root-level name that is
+# gitignored and excluded from _site, so any other person's export must say
+# where it goes (outside the repo, or into _site/).
+if [ -z "$out" ]; then
+  if [ "$person" = "steve_oney" ]; then
+    out=oney_cv.pdf
+  else
+    echo "--person=$person needs an explicit output path: only oney_cv.pdf" >&2
+    echo "is protected from being copied into _site and published by the next build" >&2
+    exit 1
+  fi
+fi
 case "$out" in
   /*) ;;
   *) [ "$orig_dir" != "$PWD" ] && out="$orig_dir/$out" ;;
@@ -113,7 +133,7 @@ bundle exec ruby -run -e httpd -- _site --port="$port" --bind-address=127.0.0.1 
 server_pid=$!
 trap 'kill "$server_pid" 2>/dev/null || true' EXIT
 
-url="http://127.0.0.1:$port/oney_cv/"
+url="http://127.0.0.1:$port/people/$person/cv/"
 if [ ${#params[@]} -gt 0 ]; then
   url="$url?$(IFS='&'; echo "${params[*]}")"
 fi
@@ -124,14 +144,14 @@ fi
 # plausible-looking PDF if this fell through.
 ready=""
 for _ in $(seq 1 50); do
-  if curl -fsS -o /dev/null "http://127.0.0.1:$port/oney_cv/" 2>/dev/null; then
+  if curl -fsS -o /dev/null "http://127.0.0.1:$port/people/$person/cv/" 2>/dev/null; then
     ready=1
     break
   fi
   kill -0 "$server_pid" 2>/dev/null || { echo "server died before serving" >&2; exit 1; }
   sleep 0.2
 done
-[ -n "$ready" ] || { echo "server is up but /oney_cv/ never answered; is the page in _site?" >&2; exit 1; }
+[ -n "$ready" ] || { echo "server is up but /people/$person/cv/ never answered; is there a _data/cvs/$person.yaml?" >&2; exit 1; }
 
 # A previous export may already sit at $out (the default name lives in the
 # repo root between runs); remove it so the success check below can only

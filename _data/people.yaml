@@ -19,7 +19,7 @@
   color: "#FFC14A"
   use_local_homepage: true
   links:
-    - url: /oney_cv/
+    - url: /people/steve_oney/cv/
       description: CV
     - url: https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en
       description: Google Scholar
