@@ -771,6 +771,19 @@ body:not(.show-paper-awards) .paper-award-item {
                 }
             }
 
+            /* The "Latest CV: ..." pointer ends in an italic v, and an
+               italic terminal overhangs its advance width. Right-aligned
+               flush to the text block, that overhang lands in the page
+               margin, where Chrome's print clip shaves it off the PDF. A
+               point of padding pulls the line inside the clip; nothing
+               else in the contact block ends in an italic overhang, so
+               only this div needs it, and 1pt is under half the width of
+               the terminal -- invisible as misalignment, visible as the
+               glyph coming back whole. */
+            .contact .d-print-block {
+                padding-right: 1pt;
+            }
+
             h1 {
                 /* \fontsize{30}{36} with LetterSpace=-1, i.e. 1% of 30pt;
                    \linespread{0.9} scales the 36pt to 32.4pt. The negative

@@ -494,6 +494,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `headshot` | no | Path relative to `assets/`, e.g. `images/people/foo.jpg` |
 | `focused_headshot` | no | Tight square crop for the small round news chips; falls back to `headshot` |
 | `use_local_homepage` | no | `true` generates `/people/<id>/` and repoints their links to it |
+| `aliases` | no | Vanity URLs, e.g. `[me, Steve_Oney]`: each entry `x` generates `/x/` redirecting to `/people/<id>/`, plus `/x/cv/` redirecting to their CV when `_data/cvs/<id>.yaml` exists (with the query string carried through, for the CV's toggle links). Entries are URL segments taken verbatim. Needs `use_local_homepage: true`, or every alias redirects to a 404 — the build warns |
 
 Any other key is silently ignored.
 
@@ -594,11 +595,12 @@ straight back. If someone with this flag also keeps a real site elsewhere, put
 it in `links:` with a description like `Personal site`, where it reads as one
 more link rather than as a competing homepage.
 
-`steve_oney` is the only record with the flag today, and `me.html` and
-`Steve_Oney.html` are meta-refresh redirects to that page — clearing the flag
-turns both vanity URLs into redirects to a 404. If you turn it on for someone
-new, give them a `membership` too, or the page's "Back to team" link lands on
-nothing.
+`steve_oney` is the only record with the flag today, and his `aliases`
+(`/me/`, `/Steve_Oney/`, plus `/me/cv/` for the CV) are meta-refresh redirects
+generated from it by `_plugins/generate_alias_pages.rb` — clearing the flag
+turns every alias into a redirect to a 404, which the build warns about. If
+you turn it on for someone new, give them a `membership` too, or the page's
+"Back to team" link lands on nothing.
 
 **Moving someone from member to alum** is one line, `membership: member` (or
 `member-postdoc`) → `membership: alum`, plus two things that do not happen

@@ -21,10 +21,12 @@
 # and a pdf_url pointing at that path -- a pdf_url without the deploy step
 # renders a link that 404s on the live site.
 # `short_url` is the "Latest CV: ..." pointer shown only in print, and should
-# be a URL that outlives any page reshuffle (from.so/oney_cv is a redirect).
+# be a URL that outlives any page reshuffle -- from.so/me/cv is generated
+# from this person's `aliases:` in people.yaml (the older from.so/oney_cv
+# still redirects too).
 name: Steve Oney
 pdf_url: /oney_cv.pdf
-short_url: https://from.so/oney_cv
+short_url: https://from.so/me/cv
 affiliation:
   department: School of Information
   university: University of Michigan
