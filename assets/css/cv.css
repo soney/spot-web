@@ -169,14 +169,18 @@ body {
             width: auto;
         }
 
-        /* The outline, in its two lives. Below 1400px it is a static block
-           in the flow at the top of the page, above the name -- a
-           "Contents" label over one wrapping row of links -- which
-           scrolls away with the page. From 1400px up the same markup
-           becomes a rail fixed in the margin beside the paper, persisting
-           while the reader scrolls. In both, the header text is a link
-           back to the top. Print sees neither (the nav carries
-           d-print-none).
+        /* The outline, in its three lives, all from this one block of
+           markup. On phones (below 768px) it is a static block at the
+           top of the flow, above the name -- a "Contents" label over a
+           few wrapping rows of links -- which scrolls away with the
+           page. From 768px up to the rail it keeps that shape but
+           leaves the flow, climbing into the container's 7em top margin
+           to share the line the theme toggle sits on, so the name keeps
+           the whitespace it was designed with. From 1400px up it is a
+           rail fixed in the margin beside the paper, top-aligned with
+           the name, persisting while the reader scrolls. In all three,
+           the header text is a link back to the top. Print sees none of
+           them (the nav carries d-print-none).
 
            Set in a small system sans, unlike everything else on the page:
            this is reader chrome around the document, like the theme toggle,
@@ -188,10 +192,10 @@ body {
            where the current section is always trivially the first one. */
         .cv-outline {
             font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-            /* The gap to the name below it. Nothing above needs one: the
-               nav is the container's first child, so it sits in the same
-               place the name used to, at the container's 7em top margin
-               (3.5em on small screens). */
+            /* The phone variant's gap to the name below it. Nothing
+               above needs one: the nav is the container's first child,
+               so it starts at the container's 3.5em top margin. The
+               other two variants are out of flow and never feel this. */
             margin-bottom: 2.5em;
 
             .cv-outline-header {
@@ -237,6 +241,29 @@ body {
             }
         }
 
+        /* The second life: up into the top margin. The container turns
+           positioning anchor (nothing else positions against it), and
+           -7em -- the same em basis the margin itself is declared in --
+           lifts the block out of the container exactly to the top of
+           the page, where 25px then sets the header's line so its
+           centre matches the theme toggle button's: the bar's 1.2rem
+           offset plus half the button's 2.1rem box is 36px, less half
+           this line's 16pt line-height. The name never moves, and even
+           a link list wrapped to three rows at 768px stays inside the
+           7em margin above it. left and right of 12px are .container's
+           own gutter, so the box spans exactly the width the flow
+           variant had. */
+        @media screen and (min-width: 768px) and (max-width: 1399.98px) {
+            position: relative;
+
+            .cv-outline {
+                left: 12px;
+                position: absolute;
+                right: 12px;
+                top: calc(25px - 7em);
+            }
+        }
+
         /* The rail. Pinned to the paper's left edge rather than the
            viewport's, so the 24px gap to the paper is constant and the
            rail reads as belonging to it; the whole rail block is 184px
@@ -262,7 +289,13 @@ body {
             .cv-outline {
                 left: calc(50vw - 478px - 184px);
                 position: fixed;
-                top: 9rem;
+                /* Top-aligned with the name: 7em is the container's own
+                   top margin (same em basis), so this is the h1's box
+                   top; the pixel nudge closes the difference between the
+                   h1's leading above its cap line and this label's,
+                   measured on the rendered page, so CONTENTS and the
+                   name share a cap line. */
+                top: calc(7em + 2px);
                 width: 160px;
 
                 .row {

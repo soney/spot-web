@@ -38,12 +38,14 @@
     assets/js/cv.js marking the section being scrolled over as .active.
     Screen-only -- d-print-none keeps it out of the print/PDF CV, which
     reproduces the old LaTeX CV and has no place for hyperlinked chrome.
-    cv.css renders it two ways from this one block of markup: on viewports
+    cv.css renders it three ways from this one block of markup: on viewports
     wide enough to have real margin beside the paper it is a fixed rail that
-    persists while the reader scrolls, and on everything narrower it stays
-    here in the flow, a static block at the top of the page, above the
-    name, that scrolls away with the page. The row/col wrapper is what aligns that
-    in-flow variant with the main column; the rail variant flattens it.
+    persists while the reader scrolls; on middling ones it is lifted out of
+    the flow into the container's top margin, on the theme toggle's line;
+    and on phones it stays here in the flow, a static block at the top of
+    the page, above the name, that scrolls away with the page. The row/col
+    wrapper is what aligns the non-rail variants with the main column; the
+    rail variant flattens it.
     The header text links back to the top -- "#top" matches no element on
     the page, which is the HTML-spec'd way to say "scroll to the very
     top" -- and each section target id sits on the section element itself.
