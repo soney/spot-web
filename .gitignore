@@ -6,6 +6,11 @@ vendor
 .bundle/
 
 .DS_Store
+# AppleDouble sidecars: macOS writes one "._<name>" per file when it saves to
+# a Samba/SMB share or any other non-HFS volume, so they turn up in bulk next
+# to real files. Jekyll skips them on its own (they are dotfiles), so this is
+# only about keeping them out of commits.
+._*
 node_modules
 package-lock.json
 .cache
