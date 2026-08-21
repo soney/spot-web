@@ -243,13 +243,20 @@ body {
                 pointer-events: none;
             }
 
-            /* :active covers touch, where there is no hover: pressing the
+            /* Reveal is disabled for now, so the splatter stays at
+               opacity 0 and the navbar shows only the word. The markup and
+               the positioning above are left in place; uncomment this rule
+               to turn the effect back on.
+
+               :active covers touch, where there is no hover: pressing the
                word shows the paint for the moment before the page changes. */
+            /*
             &:hover .splatter,
             &:focus-visible .splatter,
             &:active .splatter {
                 opacity: 1;
             }
+            */
         }
 
         .nav-back {
