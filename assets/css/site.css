@@ -204,6 +204,52 @@ body {
 
         .navbar-brand {
             color: var(--text-color);
+
+            /* The paint splatter behind the wordmark: one splat per alum in
+               their `color`, an <img> emitted by the {% splatter %} tag
+               (_plugins/splatter.rb builds the file). At rest the navbar
+               shows only the word; hovering or focusing the link fades the
+               paint in behind it. The cluster is a bit larger than the word,
+               so the letters sit on paint rather than beside it.
+
+               Absolutely positioned and centred on the word; `isolation`
+               opens a stacking context so the z-indexes below stay local.
+               pointer-events:none keeps the invisible image from widening
+               the link's hover and click area to the size of the spray. */
+            position: relative;
+            isolation: isolate;
+
+            .brand-text {
+                position: relative;
+                z-index: 1;
+            }
+
+            .splatter {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                /* The image is 340x240 units with the splat cluster filling
+                   the middle ~220 of its width, which makes the cluster a
+                   bit wider than the word. */
+                width: 340%;
+                height: auto;
+                /* Centred on the x-height rather than the line box: the
+                   letters sit below the box's middle (cap height above,
+                   descender below), so the cluster is pushed down a little. */
+                transform: translate(-50%, -44%);
+                z-index: 0;
+                opacity: 0;
+                transition: opacity 0.25s ease-in-out;
+                pointer-events: none;
+            }
+
+            /* :active covers touch, where there is no hover: pressing the
+               word shows the paint for the moment before the page changes. */
+            &:hover .splatter,
+            &:focus-visible .splatter,
+            &:active .splatter {
+                opacity: 1;
+            }
         }
 
         .nav-back {

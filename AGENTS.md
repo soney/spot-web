@@ -35,11 +35,14 @@ picture. The four facts that change how you work:
    you add a *field*, or change how a template derives one. See the "WebMCP"
    section of `README.md`.
 
-Eight Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
+Nine Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
 (the BibTeX filter), `venue_order.rb`, `cv_publication_codes.rb` (the CV's
 J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`,
-`teaching_entries.rb` (the two views of `_data/teaching.yaml`), and
-`mcp_index.rb` (the JSON behind the WebMCP tools). Each opens with a comment
+`teaching_entries.rb` (the two views of `_data/teaching.yaml`), `mcp_index.rb`
+(the JSON behind the WebMCP tools), and `splatter.rb` (generates
+`/assets/images/splatter.svg`, the navbar wordmark's paint splatter — one
+seeded splat per alum in their `color` — and the `{% splatter %}` tag that
+shows it; like the data pages, the file exists only in `_site`). Each opens with a comment
 explaining what it does and the constraint that put it in Ruby rather than
 Liquid — read it before changing one; most of them exist because Liquid cannot
 express the counting, sorting, or bucketing they do.
