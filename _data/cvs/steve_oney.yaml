@@ -456,6 +456,11 @@ supervised_students:
     category: ongoing_advisee
     date_start: Fall 2023
     date_end: present
+  - student_name: Kihoon Son (손기훈)
+    student_department: School of Computing
+    institution: KAIST
+    category: phd_thesis_committee
+    date_start: "2026"
   - student_name: John Allen
     student_department: Computer Science Department
     institution: Washington University in St. Louis
@@ -479,7 +484,6 @@ supervised_students:
     thesis_title: "Syntactic Completions with Material Obligations"
     institution: University of Michigan
     category: phd_thesis_committee
-    milestone: defense
     date_start: "2025"
   - student_name: Andrew Blinn
     student_department: Computer Science and Engineering
