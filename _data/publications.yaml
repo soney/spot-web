@@ -1,3 +1,15 @@
+- id: navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026
+  title: "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers"
+  authors:
+    - maryam_arab
+    - jenny_liang
+    - valentina_hong
+    - steve_oney
+    - thomas_latoza
+  student_authors:
+    - jenny_liang
+    - valentina_hong
+  venue: tse_2026
 - id: editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
   title: "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code"
   abstract: >-
@@ -1302,7 +1314,7 @@
   student_authors:
     - yiwei_yang
     - sang_won_lee
-    - tao_xie
+    - yin_xie
     - yan_chen
   venue: chi_2017
   pdf: pdfs/chen-codeon-chi2017.pdf

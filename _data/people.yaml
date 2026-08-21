@@ -687,3 +687,14 @@
 - id: shamita_rao
   given_name: Shamita
   family_name: Rao
+- id: jenny_liang
+  given_name: Jenny
+  family_name: Liang
+  homepage: https://jennyliang.me
+- id: valentina_hong
+  given_name: Valentina
+  family_name: Hong
+- id: thomas_latoza
+  given_name: Thomas
+  family_name: LaToza
+  homepage: https://people.cs.gmu.edu/~tlatoza/

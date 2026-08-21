@@ -28,6 +28,12 @@
   conference_start: 4/13
   homepage: https://chi2026.acm.org
   type: poster
+- id: tse_2026
+  short_name: TSE
+  year: 2026
+  full_name: IEEE Transactions on Software Engineering
+  homepage: https://www.computer.org/csdl/journal/ts
+  type: journal
 - id: chi2025_ae_ai_2025
   short_name: CHI2025-AE&AI
   year: 2025
