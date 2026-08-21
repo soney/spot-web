@@ -72,6 +72,7 @@ _plugins/
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
   teaching_entries.rb         # one person's courses: the CV's list, and the shorter page one
   mcp_index.rb                # builds the JSON the WebMCP tools answer from
+  splatter.rb                 # builds /assets/images/splatter.svg (one paint splat per alum) and the {% splatter %} tag that shows it
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
   js/webmcp.js                # registers this site's tools for AI agents
   mcp/                        # one line of Liquid each; generates the tools' JSON
@@ -490,7 +491,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
 | `profile` | no | A long-form profile — several paragraphs, with headings if you want them — shown only on `/people/<id>/`, below the headshot row and above their publications. Markdown. Needs `use_local_homepage: true`, or there is no page to put it on |
 | `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}`. Links to services listed in `_data/link_icons.yaml` (Google Scholar, GitHub, Twitter, LinkedIn, a `CV`, ...) get that service's icon automatically; add a rule there to cover a new service |
-| `color` | no | Border color of their news-item chip. Nothing else |
+| `color` | no | Border color of their news-item chip, and — for people with `membership: alum` — the colour of their splat in the paint splatter behind the navbar wordmark (`/assets/images/splatter.svg`, generated at build time by `_plugins/splatter.rb` — there is no file to edit). An alum without a `color` is simply left out of the splatter |
 | `headshot` | no | Path relative to `assets/`, e.g. `images/people/foo.jpg` |
 | `focused_headshot` | no | Tight square crop for the small round news chips; falls back to `headshot` |
 | `use_local_homepage` | no | `true` generates `/people/<id>/` and repoints their links to it |
