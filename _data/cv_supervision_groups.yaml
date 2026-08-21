@@ -10,12 +10,12 @@
 # no catch-all here (the hand-rolled version this replaced had none either), so
 # a record whose category is not listed below cannot be rendered — the build
 # warns when that happens.
-- title: Postdoctoral Scholars
-  categories: [postdoc]
 - title: Dissertation Chair (Ph.D. Graduates)
   categories: [dissertation_chair]
 - title: Ph.D. Advisees (Ongoing)
   categories: [ongoing_advisee]
+- title: Postdoctoral Scholars
+  categories: [postdoc]
 - title: Thesis Committees (Ph.D.)
   categories: [phd_thesis_committee]
 - title: Thesis Chair (M.S.)
