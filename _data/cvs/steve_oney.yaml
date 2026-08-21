@@ -390,6 +390,12 @@ service:
 # Teaching lives in _data/teaching.yaml, filtered by the `person` above: the CV
 # and that person's page render the same records, so a course is added once.
 supervised_students:
+  - student_name: Maryam Arab
+    student_department: School of Information
+    institution: University of Michigan
+    category: postdoc
+    date_start: Fall 2024
+    date_end: present
   - student_name: Yan Chen
     student_department: School of Information
     thesis_title: On-Demand Collaboration in Programming
@@ -458,6 +464,7 @@ supervised_students:
     date_start: "2025"
   - student_name: Xinying Hou
     student_department: School of Information
+    thesis_title: "Advancing Personalized, Engaging Learning and Assessment in the AI Era"
     institution: University of Michigan
     category: phd_thesis_committee
     date_start: "2025"
@@ -554,12 +561,6 @@ supervised_students:
     institution: University of Michigan
     category: ms_thesis_chair
     date_start: "2024"
-  - student_name: David Moon
-    student_department: Computer Science and Engineering
-    institution: University of Michigan
-    category: phd_thesis_committee
-    milestone: proposal
-    date_start: "2023"
   - student_name: Yinuo Yang
     institution: University of Michigan
     category: ugrad_thesis_chair

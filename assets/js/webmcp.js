@@ -992,7 +992,7 @@
         type: 'object',
         properties: {
           students: { type: 'boolean', description: 'Underline authors who were students at the time of publication.' },
-          mentees: { type: 'boolean', description: 'Include undergraduate and master\'s collaborators in Students Supervised.' },
+          mentees: { type: 'boolean', description: 'Include undergraduate and master\'s collaborators in Advising.' },
           awards: { type: 'boolean', description: 'Include paper awards in the Awards section.' }
         }
       },

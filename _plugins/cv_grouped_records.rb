@@ -15,7 +15,7 @@
 # the CV with no error, which is how the old hand-rolled version behaved before
 # it was made data-driven.
 #
-# Where there is no catch-all group (Students Supervised), an unclaimed record
+# Where there is no catch-all group (Advising), an unclaimed record
 # still cannot be rendered -- so warn at build time rather than dropping it
 # silently.
 module Jekyll

@@ -104,7 +104,7 @@
           {% if teaching.size > 0 %}<li><a href="#teaching">Teaching</a></li>{% endif %}
           {% if cv.supervised_students %}
           <li>
-            <a href="#students">Students Supervised</a>
+            <a href="#advising">Advising</a>
             {% assign outline_supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
             <ul class="list-unstyled">
               {% for group in outline_supervision_groups %}
@@ -453,8 +453,8 @@
   {% endif %}
 
   {% if cv.supervised_students %}
-  <section id="students" class="cv-section section supervisees">
-    {% include cv_section_heading.html title="Students Supervised" %}
+  <section id="advising" class="cv-section section supervisees">
+    {% include cv_section_heading.html title="Advising" %}
 
     {% assign supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
     {% for group in supervision_groups %}

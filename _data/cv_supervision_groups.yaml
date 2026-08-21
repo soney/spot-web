@@ -1,5 +1,8 @@
-# Student supervision groups on the CV, in render order
-# (_includes/cv_body.html).
+# Advising groups on the CV, in render order (_includes/cv_body.html).
+#
+# The section covers postdocs as well as students, so a record here is not
+# necessarily a student -- the `student_name` field name predates that and is
+# just "the person's name".
 #
 # `categories` lists the `category` values from a CV's
 # (_data/cvs/<person_id>.yaml)
@@ -7,6 +10,8 @@
 # no catch-all here (the hand-rolled version this replaced had none either), so
 # a record whose category is not listed below cannot be rendered — the build
 # warns when that happens.
+- title: Postdoctoral Scholars
+  categories: [postdoc]
 - title: Dissertation Chair (Ph.D. Graduates)
   categories: [dissertation_chair]
 - title: Ph.D. Advisees (Ongoing)

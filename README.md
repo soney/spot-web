@@ -57,7 +57,7 @@ _data/
   publication_types.yaml      # venue type -> CV numbering prefix (J, C, B, ...)
   cv_publication_sections.yaml# the CV's publication section headings and types
   cv_service_groups.yaml      # the CV's Service group headings and categories
-  cv_supervision_groups.yaml  # the CV's Students Supervised headings and categories
+  cv_supervision_groups.yaml  # the CV's Advising headings and categories
 _layouts/
   default.html                # site chrome (head, navbar); used by every page but the CV
   cv.html                     # standalone shell for the CV (different fonts/styles)
@@ -614,9 +614,10 @@ automatically:
   list matched by free-text `student_name`, with no link to the `people.yaml`
   record, so nothing propagates and nothing warns. A graduating Ph.D. advisee
   moves from `category: ongoing_advisee` to `category: dissertation_chair`, with
-  `date_end` and `current_position` filled in. A departing postdoc has no
-  matching category — `cv_supervision_groups.yaml` covers Ph.D. and thesis roles
-  only — so there is nothing to move for them. Group headings come from
+  `date_end` and `current_position` filled in. A departing postdoc keeps
+  `category: postdoc` and just gains `date_end` and `current_position` — the
+  CV's Advising section covers postdocs as well as Ph.D. and thesis roles.
+  Group headings come from
   `_data/cv_supervision_groups.yaml` and there is no catch-all, so a typo'd
   `category` makes the record vanish — that one does print a
   `cv_grouped_records:` warning.
