@@ -24,6 +24,15 @@ jobs:
         with:
           bundler-cache: true # reads .ruby-version; bundle install + gem cache
 
+      # Chrome prints a BLANK where it has no glyph rather than failing, and
+      # the CV carries names in Korean and Chinese (_data/cvs/), so a bare
+      # runner produces a PDF that looks fine except for the missing
+      # characters. poppler-utils is for the check below.
+      - name: Install fonts the CV PDF needs
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk poppler-utils
+
       # script/export_cv_pdf.sh runs `jekyll build` itself, so this one step
       # produces both the deployed _site and the PDF the CV page's "Download
       # PDF" link points at. Do not add a separate build step before it: the
@@ -39,6 +48,16 @@ jobs:
         run: |
           test -f _site/CNAME && grep -qx 'from.so' _site/CNAME
           test -s _site/oney_cv.pdf
+          # A missing glyph is not a build failure -- it is a blank in the
+          # PDF -- so assert it instead: if any CV carries CJK text, the
+          # printed PDF must have embedded a CJK font to draw it with.
+          if grep -qP '[\x{3000}-\x{9fff}\x{ac00}-\x{d7af}]' _data/cvs/*.yaml; then
+            pdffonts _site/oney_cv.pdf | grep -qiE 'noto.*(cjk|sans.?(kr|sc|jp|tc))' || {
+              echo "::error::CV data contains CJK but no CJK font is embedded in oney_cv.pdf -- those names printed blank"
+              pdffonts _site/oney_cv.pdf
+              exit 1
+            }
+          fi
 
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

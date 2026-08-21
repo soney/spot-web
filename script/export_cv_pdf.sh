@@ -30,6 +30,14 @@
 # network for the Typekit webfont — offline, the text falls back to a
 # generic serif. The static server is WEBrick via `ruby -run`, which the
 # bundle already carries as a Jekyll dependency.
+#
+# It also needs whatever fonts the CV's text actually calls for. Chrome
+# prints a BLANK where it has no glyph rather than failing, so a PDF that
+# exported cleanly can still be missing characters. The CV carries names in
+# Korean and Chinese, so a machine without CJK fonts (a bare CI runner, say)
+# silently drops them — deploy.yml installs fonts-noto-cjk for exactly this
+# reason. A desktop usually has them already, which is why a correct local
+# PDF is not evidence that the deployed one is correct.
 
 set -euo pipefail
 
@@ -37,7 +45,7 @@ set -euo pipefail
 # $0 stops working the moment the script leaves the caller's directory.
 self=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
 usage() {
-  sed -n '3,32p' "$self" | sed 's/^# \{0,1\}//'
+  sed -n '3,40p' "$self" | sed 's/^# \{0,1\}//'
   echo
   echo "flags (the CV's checkboxes): $(printf -- '--%s ' $toggles)"
 }
