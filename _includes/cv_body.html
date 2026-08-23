@@ -122,6 +122,26 @@
     </div>
   </nav>
 
+  {% comment %}
+    The CV's WebMCP tool, set_cv_display_options, in its declarative form
+    (https://developer.chrome.com/docs/ai/webmcp/declarative-api): a <form>
+    with `toolname` and `tooldescription` is registered by the browser as a
+    tool, and its fields are the parameters. The fields are the three
+    cv_toggle.html checkboxes, which sit in the sections they affect and
+    point back here with form="cv-display-options"; a form-associated
+    element counts exactly as a nested one would. So this element renders
+    nothing -- it is a registration, not a UI.
+
+    `toolautosubmit` makes an agent's call fill the checkboxes and submit
+    at once; cv.js handles that submit, applies the toggles, and answers the
+    agent through the SubmitEvent's respondWith(). Without JavaScript the form
+    is inert, which is what it was already in a browser without WebMCP.
+    Remove `toolname` or `tooldescription` and the tool is unregistered.
+  {% endcomment %}
+  <form id="cv-display-options" class="d-print-none" method="get" toolautosubmit
+    toolname="set_cv_display_options"
+    tooldescription="Turn the display options on {{ cv.name }}'s CV page on or off: underlining authors who were students when a paper was published, listing undergraduate and master's mentees, and showing paper awards. All three are off by default. Only changes what this page shows; use get_cv to read the CV's contents."></form>
+
   <div class="row">
     <div class="col side"></div>
     <div class="col main">
@@ -267,7 +287,8 @@
       <div class="col side"></div>
       <div class="col main">
         {% include cv_toggle.html label="Highlight student authors" param="students"
-        body_class="highlight-student-authors" %}
+        body_class="highlight-student-authors"
+        tool_description="Underline authors who were students at the time of publication." %}
       </div>
     </div>
     <div class="row">
@@ -327,7 +348,7 @@
   <section id="awards" class="cv-section section awards">
     {% include cv_section_heading.html title="Awards" %}
     {% include cv_toggle.html label="Include paper awards" param="awards" body_class="show-paper-awards"
-    row=true %}
+    row=true tool_description="Include paper awards (best paper, honorable mention) in the Awards section." %}
     <ul class="cv-list list-unstyled">
       {% comment %}
         cv.awards and the awards attached to publications are two differently
@@ -504,7 +525,8 @@
       <div class="col side"></div>
       <div class="col main">
         {% include cv_toggle.html label="Include undergraduate and master's collaborators" param="mentees"
-        body_class="show-other-mentees" %}
+        body_class="show-other-mentees"
+        tool_description="Include undergraduate and master's collaborators in the Advising section." %}
         <h3 class="cv-other-mentees-header">Other Mentees</h3>
         <ul class="cv-list cv-other-mentees-list">
           {% for student in ugrad_ms_students %}

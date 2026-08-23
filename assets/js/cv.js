@@ -6,40 +6,66 @@
 // Toggles are declared in the markup by _includes/cv_toggle.html, which
 // emits data-param and data-body-class; nothing here needs updating to add
 // one.
+//
+// The same checkboxes are the parameters of the CV's WebMCP tool,
+// set_cv_display_options -- the `cv-display-options` form in cv_body.html,
+// which the browser registers from its toolname/tooldescription attributes
+// (https://developer.chrome.com/docs/ai/webmcp/declarative-api). When an agent
+// calls it, the browser sets the checkboxes to the agent's values and, because
+// the form has `toolautosubmit`, submits it. No `change` event fires for a
+// checkbox set that way, so the submit handler below re-applies every toggle
+// from its checkbox, then answers the agent through e.respondWith(). A human
+// never submits this form: it has no button, and the toggles work on change.
 (function () {
-  const urlParams = new URLSearchParams(window.location.search);
+  var urlParams = new URLSearchParams(window.location.search);
+  var toggles = [];
 
-  function setupToggle(toggle) {
-    var checkbox = toggle.querySelector('input[type="checkbox"]');
-    if (!checkbox) return;
-
-    var paramName = toggle.dataset.param;
-    var cssClass = toggle.dataset.bodyClass;
-
-    // Check URL on load
-    if (urlParams.get(paramName) === 'true') {
-      checkbox.checked = true;
+  // The one place a checkbox's state becomes the page's state.
+  function apply(toggle) {
+    var checkbox = toggle.checkbox;
+    document.body.classList.toggle(toggle.bodyClass, checkbox.checked);
+    var currentUrl = new URL(window.location);
+    if (checkbox.checked) {
+      currentUrl.searchParams.set(toggle.param, 'true');
+    } else {
+      currentUrl.searchParams.delete(toggle.param);
     }
-
-    // Initialize body class
-    document.body.classList.toggle(cssClass, checkbox.checked);
-
-    // Handle changes
-    checkbox.addEventListener('change', function () {
-      document.body.classList.toggle(cssClass, checkbox.checked);
-
-      // Update URL silently
-      const currentUrl = new URL(window.location);
-      if (checkbox.checked) {
-        currentUrl.searchParams.set(paramName, 'true');
-      } else {
-        currentUrl.searchParams.delete(paramName);
-      }
-      window.history.replaceState({}, '', currentUrl);
-    });
+    window.history.replaceState({}, '', currentUrl);
   }
 
-  document.querySelectorAll('.cv-toggle[data-param]').forEach(setupToggle);
+  document.querySelectorAll('.cv-toggle[data-param]').forEach(function (element) {
+    var checkbox = element.querySelector('input[type="checkbox"]');
+    if (!checkbox) return;
+    var toggle = { checkbox: checkbox, param: element.dataset.param, bodyClass: element.dataset.bodyClass };
+    toggles.push(toggle);
+
+    // Check URL on load
+    if (urlParams.get(toggle.param) === 'true') {
+      checkbox.checked = true;
+    }
+    // Initialize body class
+    document.body.classList.toggle(toggle.bodyClass, checkbox.checked);
+
+    checkbox.addEventListener('change', function () { apply(toggle); });
+  });
+
+  var form = document.getElementById('cv-display-options');
+  if (!form) return;
+  form.addEventListener('submit', function (event) {
+    // Never let the form navigate: a GET submission of itself would reload
+    // the page with ?students=on, which is not the URL shape shared links use.
+    event.preventDefault();
+    toggles.forEach(apply);
+    if (!event.agentInvoked || typeof event.respondWith !== 'function') return;
+    // A sentence of state, not of content: the tool changes what the page
+    // shows, and get_cv is how an agent reads the CV.
+    var states = toggles.map(function (toggle) {
+      return toggle.param + (toggle.checkbox.checked ? ' on' : ' off');
+    });
+    event.respondWith(Promise.resolve(
+      'CV display options are now: ' + states.join(', ') + '. The page shows them at ' + window.location.href
+    ));
+  });
 })();
 
 // Scroll-spy for the outline rail: marks the link of the section on screen
