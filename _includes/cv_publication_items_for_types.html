@@ -1,9 +1,10 @@
 {% comment %}
   Renders CV publication entries (cv_publication_item.html) for one CV
   section, in venue-year-descending order. Each entry's numbering code
-  (J.12, C.31, ...) comes from the cv_publication_codes filter defined
-  in _plugins/cv_publication_codes.rb, using the prefixes in
-  _data/publication_types.yaml.
+  (J.45, C.31, ...) comes from the cv_publication_codes filter defined
+  in _plugins/cv_publication_codes.rb: the letter from
+  _data/publication_types.yaml, the number from the paper's position in its
+  section's sequence.
 
   Parameters:
     all_publications  publication records to draw from.
@@ -16,7 +17,9 @@
     pub_codes         publication id -> numbering code map, built once by
                       the caller with the cv_publication_codes filter. The
                       map is global across sections, so it must be built
-                      from *all* publications, not this section's subset.
+                      from *all* publications, not this section's subset --
+                      and a section's own numbers are not contiguous when
+                      another section is a split view of the same types.
 {% endcomment %}
 {% assign pub_codes = include.pub_codes %}
 {% for venue in include.venues %}

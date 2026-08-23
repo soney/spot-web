@@ -259,8 +259,15 @@
   {% endif %}
 
   {% assign venues_by_year_desc = site.data.venues | venues_by_date_desc %}
-  {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
-  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
+  {% comment %}
+    Global across sections, so build it once from every publication. The
+    sections go in because they decide what is numbered alongside what: a
+    section holding several types runs as one sequence (W.1, D.2, D.3), and
+    the split journal/conference view reuses the numbers the merged one hands
+    out. See _plugins/cv_publication_codes.rb.
+  {% endcomment %}
+  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types,
+  site.data.cv_publication_sections %}
   {% if all_publications and all_publications.size > 0 %}
   <section id="publications" class="cv-section section publications">
     {% include cv_section_heading.html title="Publications" %}

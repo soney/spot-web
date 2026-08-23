@@ -129,10 +129,12 @@ wrongly, which makes them the things to get right the first time.
   `ugrad_ms_student` renders the person nowhere at all — while still making
   their news chip link to that non-existent anchor.
 - **The CV's publication codes shift when you insert an older paper.**
-  `cv_publication_codes.rb` counts *down* from each type's total, so adding a
-  2014 conference paper renumbers every newer conference paper. External
-  documents citing "C.31" then point at a different paper. Say so if a change
-  causes it.
+  `cv_publication_codes.rb` numbers up from the oldest paper in a *numbering
+  group* — a section's whole type list, not one type — so adding a 2014
+  conference paper renumbers every newer conference paper *and* every newer
+  journal paper beside it, and an old workshop paper renumbers the posters and
+  demos in its section. External documents citing "C.31" then point at a
+  different paper. Say so if a change causes it.
 - **The CV carries both journal/conference groupings and shows one.**
   `_data/cv_publication_sections.yaml` marks a publication section
   `variant: merged` (the default: journal and conference papers in one
@@ -140,7 +142,10 @@ wrongly, which makes them the things to get right the first time.
   conference papers" checkbox reveals). Both are built into the page and
   `assets/css/cv.css` hides one, so the two variants must cover exactly the
   same venue types — a type listed in one and not the other vanishes from the
-  CV in that state alone, and nothing warns.
+  CV in that state alone, and nothing warns. The merged section is also the
+  one that *numbers* those types: `cv_publication_codes.rb` skips
+  `variant: split` sections when working out its numbering groups, which is
+  what keeps J.45 the same code whichever view is on screen.
 - **Venue order within a year comes from `conference_start`.** Templates use the
   `venues_by_date_desc` filter (`_plugins/venue_order.rb`): year descending, then
   `conference_start` descending, then position in the file as a tiebreak. So a

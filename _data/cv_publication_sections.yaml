@@ -1,6 +1,10 @@
 # The publication sections of the CV (_includes/cv_body.html), in display order.
-# Each section lists the venue types it contains; numbering prefixes for
-# each type live in publication_types.yaml.
+# Each section lists the venue types it contains; the letter each type's
+# numbering code starts with lives in publication_types.yaml.
+#
+# A section is also a numbering group: the types it holds are numbered as one
+# sequence rather than one per type, so the mixed section below runs W.1, D.2,
+# D.3, D.4, W.5. Regrouping the types here therefore renumbers the CV.
 #
 # `variant` (optional) ties a section to the CV's "Separate journal and
 # conference papers" checkbox: a `merged` section renders only while the box
