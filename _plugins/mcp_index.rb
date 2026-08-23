@@ -98,7 +98,8 @@ module Jekyll
       # publication instead would shift each one by however many papers the
       # subject is not an author on.
       subject_pubs = Array(data["publications"]).select { |pub| Array(pub["authors"]).include?(subject) }
-      codes = cv_publication_codes(subject_pubs, venues_by_date_desc(data["venues"]), data["publication_types"])
+      codes = cv_publication_codes(subject_pubs, venues_by_date_desc(data["venues"]), data["publication_types"],
+                                   data["cv_publication_sections"])
 
       JSON.pretty_generate(
         "_about" => "#{cv["name"]}'s academic CV, generated from #{mcp_site.config["title"]}'s data at build " \

@@ -79,7 +79,8 @@
               {%- endif -%}
               {%- endfor -%}
               {%- if pub_section_has_items %}
-              <li><a href="#{{ pub_section.title | slugify }}">{{ pub_section.title }}</a></li>
+              <li{% if pub_section.variant %} class="pub-variant-{{ pub_section.variant }}"{% endif %}><a
+                  href="#{{ pub_section.title | slugify }}">{{ pub_section.title }}</a></li>
               {%- endif %}
               {% endfor %}
             </ul>
@@ -105,7 +106,7 @@
           {% if cv.supervised_students %}
           <li>
             <a href="#advising">Advising</a>
-            {% assign outline_supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
+            {% assign outline_supervision_groups = cv.supervised_students | cv_records_by_date_desc | cv_grouped_records: site.data.cv_supervision_groups %}
             <ul class="list-unstyled">
               {% for group in outline_supervision_groups %}
               {%- if group.items.size > 0 %}
@@ -126,7 +127,7 @@
     The CV's WebMCP tool, set_cv_display_options, in its declarative form
     (https://developer.chrome.com/docs/ai/webmcp/declarative-api): a <form>
     with `toolname` and `tooldescription` is registered by the browser as a
-    tool, and its fields are the parameters. The fields are the three
+    tool, and its fields are the parameters. The fields are the
     cv_toggle.html checkboxes, which sit in the sections they affect and
     point back here with form="cv-display-options"; a form-associated
     element counts exactly as a nested one would. So this element renders
@@ -140,7 +141,7 @@
   {% endcomment %}
   <form id="cv-display-options" class="d-print-none" method="get" toolautosubmit
     toolname="set_cv_display_options"
-    tooldescription="Turn the display options on {{ cv.name }}'s CV page on or off: underlining authors who were students when a paper was published, listing undergraduate and master's mentees, and showing paper awards. All three are off by default. Only changes what this page shows; use get_cv to read the CV's contents."></form>
+    tooldescription="Turn the display options on {{ cv.name }}'s CV page on or off: separating journal and conference papers, underlining authors who were students when a paper was published, listing undergraduate and master's mentees, and showing paper awards. All are off by default. Only changes what this page shows; use get_cv to read the CV's contents."></form>
 
   <div class="row">
     <div class="col side"></div>
@@ -278,17 +279,34 @@
   {% endif %}
 
   {% assign venues_by_year_desc = site.data.venues | venues_by_date_desc %}
-  {% comment %} Global across sections, so build it once from every publication. {% endcomment %}
-  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types %}
+  {% comment %}
+    Global across sections, so build it once from every publication. The
+    sections go in because they decide what is numbered alongside what: a
+    section holding several types runs as one sequence (W.1, D.2, D.3), and
+    the split journal/conference view reuses the numbers the merged one hands
+    out. See _plugins/cv_publication_codes.rb.
+  {% endcomment %}
+  {% assign pub_codes = all_publications | cv_publication_codes: venues_by_year_desc, site.data.publication_types,
+  site.data.cv_publication_sections %}
   {% if all_publications and all_publications.size > 0 %}
   <section id="publications" class="cv-section section publications">
     {% include cv_section_heading.html title="Publications" %}
     <div class="row">
       <div class="col side"></div>
       <div class="col main">
-        {% include cv_toggle.html label="Highlight student authors" param="students"
-        body_class="highlight-student-authors"
-        tool_description="Underline authors who were students at the time of publication." %}
+        {%- comment -%}
+          Both toggles on one line where the column is wide enough for them,
+          one each where it is not. They keep their own margin-block, which is
+          what spaces the two lines when they do wrap.
+        {%- endcomment -%}
+        <div class="cv-toggles d-print-none">
+          {% include cv_toggle.html label="Separate journal and conference papers" param="split"
+          body_class="split-journal-conference"
+          tool_description="Group the publication list into separate journal and conference sections instead of one list." %}
+          {% include cv_toggle.html label="Highlight student authors" param="students"
+          body_class="highlight-student-authors"
+          tool_description="Underline authors who were students at the time of publication." %}
+        </div>
       </div>
     </div>
     <div class="row">
@@ -313,8 +331,10 @@
     {% endcapture %}
     {% assign publication_items_stripped = publication_items | strip %}
     {% if publication_items_stripped != "" %}
-    {% include cv_section_heading.html title=pub_section.title level="h3" %}
-    <ul class="cv-list">{{ publication_items }}</ul>
+    <div class="cv-pub-section{% if pub_section.variant %} pub-variant-{{ pub_section.variant }}{% endif %}">
+      {% include cv_section_heading.html title=pub_section.title level="h3" %}
+      <ul class="cv-list">{{ publication_items }}</ul>
+    </div>
     {% endif %}
     {% endfor %}
   </section>
@@ -324,7 +344,14 @@
   <section id="grants" class="cv-section section grants">
     {% include cv_section_heading.html title="Grants" %}
     <ul class="cv-list list-unstyled">
-      {% for item in cv.grants %}
+      {% comment %}
+        Sorted here rather than in the data file, so a grant can be appended
+        wherever it is convenient: cv_record_order.rb reads the MM/YYYY `date`
+        and puts the newest first, the order the Awards section beneath this
+        one is in.
+      {% endcomment %}
+      {% assign grants = cv.grants | cv_records_by_date_desc %}
+      {% for item in grants %}
       <li class="row item">
         <div class="col side">
           {% if item.date %}<div class="award-date">{{ item.date }}</div>{% endif %}
@@ -369,10 +396,17 @@
         </div>
         <div class="col side">
           <div class="date-range">
+            {%- comment -%}
+              venues.yaml writes conference_start as M/D ("4/20"), so the month
+              arrives unpadded and would read as 4/2023 in a column where every
+              hand-entered CV date is 04/2015. prepend+slice pads it back to two
+              digits here rather than in the data, which keeps the documented
+              venue format alone and cannot be undone by the next venue added.
+            {%- endcomment -%}
             {% if venue.conference_start %}
             {% assign parts = venue.conference_start | split: "/" %}
             {% if parts.size == 2 %}
-            {{ parts.first }}/
+            {{ parts.first | prepend: "0" | slice: -2, 2 }}/
             {%-endif %}
             {%-endif %}
             {{-venue.year }}
@@ -477,7 +511,7 @@
   <section id="advising" class="cv-section section supervisees">
     {% include cv_section_heading.html title="Advising" %}
 
-    {% assign supervision_groups = cv.supervised_students | cv_grouped_records: site.data.cv_supervision_groups %}
+    {% assign supervision_groups = cv.supervised_students | cv_records_by_date_desc | cv_grouped_records: site.data.cv_supervision_groups %}
     {% for group in supervision_groups %}
     {% assign items = group.items %}
     {% if items.size > 0 %}

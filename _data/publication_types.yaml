@@ -1,8 +1,13 @@
-# Maps each venue type to its CV numbering prefix (e.g. the third-newest
-# journal paper is J.<n>). Read by the cv_publication_codes filter in
-# _plugins/cv_publication_codes.rb, which looks types up by name -- the order
-# of this list does not matter. A venue type absent from this list gets no
-# numbering code.
+# Maps each venue type to the letter its CV numbering code starts with. Read
+# by the cv_publication_codes filter in _plugins/cv_publication_codes.rb, which
+# looks types up by name -- the order of this list does not matter. A venue
+# type absent from this list gets no numbering code.
+#
+# The letter is all that lives here. The number beside it is the paper's
+# position among everything numbered alongside it, which is a property of the
+# CV's sections rather than of the type: the types a section holds are numbered
+# as one sequence, so a section of workshops and doctoral consortiums runs
+# W.1, D.2, D.3, D.4, W.5. See _data/cv_publication_sections.yaml.
 - type: journal
   prefix: J
 - type: conference
