@@ -10,6 +10,12 @@ require "json"
 # Both are called from the one-line files in assets/mcp/. See the comment at the
 # top of assets/js/webmcp.js for what reads them and why.
 #
+# _plugins/structured_data.rb is the second consumer: the JSON-LD and Google
+# Scholar tags in a page's <head> are rendered from the same single-record
+# builders (publication_record, person_record) that the lists below map over,
+# so a paper's authors, venue and links are derived once and published three
+# ways -- tool result, structured data, rendered page -- that cannot disagree.
+#
 # The point of these files is that an agent asking "what has this group
 # published about accessibility" should get an answer from the data, not from
 # whatever HTML happens to be on the page the user is standing on. So the JSON
@@ -49,6 +55,12 @@ module Jekyll
       data = mcp_site.data
 
       JSON.pretty_generate(
+        # For a reader that found the file without the site around it -- an
+        # agent following /llms.txt, say. webmcp.js ignores the key.
+        "_about" => "#{mcp_site.config["title"]} (#{mcp_site.config["url"]}): publications, people, research " \
+                    "areas, news and writing, generated from the site's data at build time. Ids are stable " \
+                    "and double as URL slugs; every `path` is served at #{mcp_site.config["url"]}. " \
+                    "See #{mcp_site.config["url"]}/llms.txt.",
         "site" => {
           "name" => mcp_site.config["title"],
           "url" => "#{mcp_site.config["url"]}#{mcp_site.config["baseurl"]}",
@@ -89,6 +101,9 @@ module Jekyll
       codes = cv_publication_codes(subject_pubs, venues_by_date_desc(data["venues"]), data["publication_types"])
 
       JSON.pretty_generate(
+        "_about" => "#{cv["name"]}'s academic CV, generated from #{mcp_site.config["title"]}'s data at build " \
+                    "time; the rendered CV is at #{mcp_site.config["url"]}/people/#{subject}/cv/. " \
+                    "publication_codes maps publication ids (see index.json) to the CV's numbering.",
         "person_id" => subject,
         "name" => cv["name"],
         "path" => "/people/#{subject}/cv/",
@@ -172,37 +187,45 @@ module Jekyll
     # keep in sync.
     def publication_records(data)
       venues_by_id = index_by_id(data["venues"])
+      areas_by_pub = areas_by_publication(data)
+      ordered_publications(data).map { |pub| publication_record(pub, venues_by_id, areas_by_pub) }
+    end
 
+    def areas_by_publication(data)
       areas_by_pub = Hash.new { |hash, key| hash[key] = [] }
       Array(data["clusters"]).each do |cluster|
         Array(cluster["papers"]).each { |pub_id| areas_by_pub[pub_id] << cluster["id"] }
       end
+      areas_by_pub
+    end
 
-      ordered_publications(data).map do |pub|
-        venue = venues_by_id[pub["venue"]]
-        {
-          "id" => pub["id"],
-          "title" => pub["title"],
-          "path" => "/papers/#{pub["id"]}/",
-          "year" => venue && venue["year"],
-          "type" => venue && venue["type"],
-          "venue" => venue && venue_label(venue),
-          "venue_id" => pub["venue"],
-          "venue_full_name" => venue && venue["full_name"],
-          "venue_location" => venue && venue["location"],
-          "authors" => author_names(pub["authors"]),
-          "author_ids" => Array(pub["authors"]),
-          "student_author_ids" => Array(pub["student_authors"]),
-          "summary" => squish(pub["short_description"]),
-          "abstract" => squish(pub["abstract"]),
-          "pdf_path" => pub["pdf"] && "/assets/#{pub["pdf"]}",
-          "pdf_filename" => pub["pdf"] && pdf_download_name(pub),
-          "doi" => pub["doi"],
-          "award" => award_label(pub),
-          "bibtex" => bibtex(pub),
-          "research_area_ids" => areas_by_pub[pub["id"]]
-        }.compact
-      end
+    # One publication, denormalized. structured_data.rb calls this for the
+    # paper whose page it is rendering; the two lookup tables are passed in so
+    # the list above builds them once rather than per paper.
+    def publication_record(pub, venues_by_id, areas_by_pub)
+      venue = venues_by_id[pub["venue"]]
+      {
+        "id" => pub["id"],
+        "title" => pub["title"],
+        "path" => "/papers/#{pub["id"]}/",
+        "year" => venue && venue["year"],
+        "type" => venue && venue["type"],
+        "venue" => venue && venue_label(venue),
+        "venue_id" => pub["venue"],
+        "venue_full_name" => venue && venue["full_name"],
+        "venue_location" => venue && venue["location"],
+        "authors" => author_names(pub["authors"]),
+        "author_ids" => Array(pub["authors"]),
+        "student_author_ids" => Array(pub["student_authors"]),
+        "summary" => squish(pub["short_description"]),
+        "abstract" => squish(pub["abstract"]),
+        "pdf_path" => pub["pdf"] && "/assets/#{pub["pdf"]}",
+        "pdf_filename" => pub["pdf"] && pdf_download_name(pub),
+        "doi" => pub["doi"],
+        "award" => award_label(pub),
+        "bibtex" => bibtex(pub),
+        "research_area_ids" => areas_by_pub[pub["id"]]
+      }.compact
     end
 
     # "UIST 2024" -- what venue_label.html renders, so a tool result and the
@@ -229,33 +252,41 @@ module Jekyll
       # Same order as the top-level publications list, so a person's papers read
       # newest-first exactly as they do on their page -- walking
       # data["publications"] here instead would silently hand back file order.
+      pubs_by_author = publications_by_author(data)
+      Array(data["people"]).map { |person| person_record(person, data, pubs_by_author) }
+    end
+
+    def publications_by_author(data)
       pubs_by_author = Hash.new { |hash, key| hash[key] = [] }
       ordered_publications(data).each do |pub|
         Array(pub["authors"]).each { |author_id| pubs_by_author[author_id] << pub["id"] }
       end
+      pubs_by_author
+    end
 
-      Array(data["people"]).map do |person|
-        teaching = teaching_records(teaching_page_entries(data["teaching"], person["id"]))
-        {
-          "id" => person["id"],
-          "name" => full_name(person),
-          "group_status" => group_status(person, data),
-          "title" => one_line(person["short_bio"]),
-          "bio" => person["long_bio"],
-          # Only present for the people whose /people/<id>/ page renders it;
-          # a profile on a record with no page is unreachable on the site, so
-          # a tool must not answer from it either.
-          "profile" => (person["profile"] if person["use_local_homepage"] == true),
-          "homepage" => person["homepage"],
-          "pronouns" => person["pronouns"],
-          "name_recording" => person["name_recording"] && "/assets/#{person["name_recording"]}",
-          "path" => person_path(person),
-          "photo_path" => person["headshot"] && "/assets/#{person["headshot"]}",
-          "links" => Array(person["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
-          "teaching" => (teaching unless teaching.empty?),
-          "publication_ids" => pubs_by_author[person["id"]]
-        }.compact
-      end
+    # One person, denormalized; structured_data.rb's counterpart of
+    # publication_record.
+    def person_record(person, data, pubs_by_author)
+      teaching = teaching_records(teaching_page_entries(data["teaching"], person["id"]))
+      {
+        "id" => person["id"],
+        "name" => full_name(person),
+        "group_status" => group_status(person, data),
+        "title" => one_line(person["short_bio"]),
+        "bio" => person["long_bio"],
+        # Only present for the people whose /people/<id>/ page renders it;
+        # a profile on a record with no page is unreachable on the site, so
+        # a tool must not answer from it either.
+        "profile" => (person["profile"] if person["use_local_homepage"] == true),
+        "homepage" => person["homepage"],
+        "pronouns" => person["pronouns"],
+        "name_recording" => person["name_recording"] && "/assets/#{person["name_recording"]}",
+        "path" => person_path(person),
+        "photo_path" => person["headshot"] && "/assets/#{person["headshot"]}",
+        "links" => Array(person["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
+        "teaching" => (teaching unless teaching.empty?),
+        "publication_ids" => pubs_by_author[person["id"]]
+      }.compact
     end
 
     # The teaching entries as a tool should see them. `person` and `cv_only`

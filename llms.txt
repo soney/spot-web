@@ -1,0 +1,67 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+{%- comment -%}
+  /llms.txt, in the format at https://llmstxt.org: an H1, a blockquote
+  summary, then H2 sections of "- [name](url): note" links. It is the
+  machine-readable front door for an AI agent or crawler that does not have
+  WebMCP -- the one place that says what this site is and where the
+  structured copies of its content live. Everything here is rendered from
+  _data/ and _config.yml, so it cannot drift from the pages it points at.
+
+  Kept short on purpose: the spec expects the file itself to be small and the
+  links to carry the detail. The JSON it points at is built by
+  _plugins/mcp_index.rb (see the "WebMCP" section of README.md).
+{%- endcomment -%}
+{%- assign group = site.data.group -%}
+{%- assign members = site.data.people | where_exp: "p", "p.membership" | where_exp: "p", "p.membership != 'alum'" | where_exp: "p", "p.membership != 'ugrad_ms_student'" -%}
+# {{ site.title }}
+
+> {{ site.description }} The SPOT group is a research group at the University of Michigan School of Information and Computer Science and Engineering, led by Steve Oney. This site lists the group's publications (with abstracts, PDFs and BibTeX), its members, its research focus areas, news, and guides it has written.
+
+The whole site is generated from YAML data, and that data is published in two JSON files meant for programs. Every publication, person and research area has a stable id that is also its URL slug; the JSON carries the same ids and the path each record is served at.
+
+## Machine-readable data
+
+- [index.json]({{ '/assets/mcp/index.json' | absolute_url }}): every publication (title, authors, venue, year, abstract, PDF and DOI links, BibTeX, research areas), every person (name, role, bio, links, their papers), the research areas, the news, and the group's overview and how-to-join text
+- [cv.json]({{ '/assets/mcp/cv.json' | absolute_url }}): Steve Oney's CV — education, positions, grants, awards, talks, service, teaching, students supervised, press, patents, and the CV's numbered publication list
+- [sitemap.xml]({{ '/sitemap.xml' | absolute_url }}): every page on the site
+- In Chrome, the same data is exposed as WebMCP tools (`document.modelContext`) on every page: search_publications, get_publication, get_bibtex, list_people, get_person, list_research_areas, list_news, get_group_info, get_cv, navigate_to_page, and set_cv_display_options on the CV page
+
+## Pages
+
+- [Home]({{ '/' | absolute_url }}): overview, recent publications and news
+- [Research]({{ '/research/' | absolute_url }}): the focus areas and the full publication list; each paper also has its own page at /papers/<id>/ with abstract, PDF, DOI and BibTeX, and Google Scholar citation metadata
+- [Team]({{ '/team/' | absolute_url }}): current members, alumni, and student collaborators
+- [News]({{ '/news/' | absolute_url }}): paper acceptances, awards and talks, newest first
+- [Writing]({{ '/writing/' | absolute_url }}): guides the group has published
+- [Steve Oney's CV]({{ '/people/steve_oney/cv/' | absolute_url }}): the full academic CV, also as a PDF at {{ '/oney_cv.pdf' | absolute_url }}
+
+## Research areas
+{% for cluster in site.data.clusters %}
+- [{{ cluster.title }}]({{ '/research/#cluster-' | append: cluster.id | absolute_url }}): {{ cluster.description | strip_newlines | normalize_whitespace }}
+{%- endfor %}
+
+## Current members
+{% for person in members %}
+{%- assign name = person.given_name | append: " " | append: person.family_name %}
+{%- if person.use_local_homepage == true %}
+- [{{ name }}]({{ '/people/' | append: person.id | append: '/' | absolute_url }}): {{ person.short_bio | strip | split: "
+" | join: ", " }}
+{%- else %}
+- [{{ name }}]({{ '/team/#' | append: person.id | absolute_url }}): {{ person.short_bio | strip | split: "
+" | join: ", " }}
+{%- endif %}
+{%- endfor %}
+
+## Writing
+{% for post in site.data.blog %}
+{%- assign slug = post.slug | default: post.id %}
+- [{{ post.title }}]({{ '/writing/' | append: slug | append: '/' | absolute_url }}): {{ post.description | strip_newlines | normalize_whitespace }}
+{%- endfor %}
+
+## Contact
+
+- Email: {{ site.email }}
+- How to join the group, for prospective PhD, master's, undergraduate and high-school students: {{ '/team/#join-us' | absolute_url }}

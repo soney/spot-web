@@ -67,6 +67,9 @@ module Jekyll
     def redirect_page(site, slug, to, label, preserve_query)
       page = PageWithoutAFile.new(site, site.source, slug, "index.html")
       page.data["permalink"] = "/#{slug}/"
+      # A redirect is not a page to index: its canonical link already credits
+      # the target, and jekyll-sitemap would otherwise list both URLs.
+      page.data["sitemap"] = false
       preserve = preserve_query ? " preserve_query=true" : ""
       page.content = "{% include redirect.html to=\"#{to}\" label=\"#{label}\"#{preserve} %}\n"
       page

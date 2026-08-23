@@ -72,10 +72,12 @@ _plugins/
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
   teaching_entries.rb         # one person's courses: the CV's list, and the shorter page one
   mcp_index.rb                # builds the JSON the WebMCP tools answer from
+  structured_data.rb          # the JSON-LD and Google Scholar tags in each page's <head>, from the same records
   splatter.rb                 # builds /assets/images/splatter.svg (one paint splat per alum) and the {% splatter %} tag that shows it
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
-  js/webmcp.js                # registers this site's tools for AI agents
+  js/webmcp.js                # the imperative WebMCP tools for AI agents (the declarative one is in the CV markup)
   mcp/                        # one line of Liquid each; generates the tools' JSON
+robots.txt, llms.txt          # crawler policy and the agent-facing site index, both rendered from the data
 script/
   pdf_audit.rb                # assets/pdfs/ vs. publications.yaml; derives PDF filenames
 ```
@@ -122,13 +124,24 @@ parameters.
 
 ### WebMCP: the site's tools for AI agents
 
-The site registers [WebMCP](https://github.com/webmachinelearning/webmcp) tools,
+The site exposes [WebMCP](https://developer.chrome.com/docs/ai/webmcp) tools,
 so a browser agent on any page can search the publications, look someone up,
 read the CV, or open a page — from the data, rather than by scraping whatever
-HTML happens to be on screen. Eleven tools, all in `assets/js/webmcp.js`:
-`search_publications`, `get_publication`, `get_bibtex`, `list_people`,
-`get_person`, `list_research_areas`, `list_news`, `get_group_info`, `get_cv`,
-`navigate_to_page`, and `set_cv_display_options` (the CV page only).
+HTML happens to be on screen. Eleven tools, built two ways:
+
+- **Ten imperative tools**, registered by `assets/js/webmcp.js` through
+  [`document.modelContext.registerTool()`](https://developer.chrome.com/docs/ai/webmcp/imperative-api):
+  `search_publications`, `get_publication`, `get_bibtex`, `list_people`,
+  `get_person`, `list_research_areas`, `list_news`, `get_group_info`, `get_cv`,
+  and `navigate_to_page`. They answer from JSON built out of `_data/`.
+- **One declarative tool**, `set_cv_display_options`, which is the
+  [`<form toolname="…">`](https://developer.chrome.com/docs/ai/webmcp/declarative-api)
+  in `_includes/cv_body.html`. The browser registers it from the markup. Its
+  parameters are the CV's three display checkboxes (`_includes/cv_toggle.html`
+  gives each a `name`, a `toolparamdescription`, and `form="cv-display-options"`
+  so they count as the form's fields from wherever they sit on the page), and
+  `assets/js/cv.js` handles the submit — applies the toggles, then answers the
+  agent through the `SubmitEvent`'s `respondWith()`.
 
 The whole implementation:
 
@@ -136,8 +149,11 @@ The whole implementation:
 _plugins/mcp_index.rb                builds the JSON, out of the same _data/
 assets/mcp/index.json                one line of Liquid -> /assets/mcp/index.json
 assets/mcp/cv.json                   ditto, for the CV
-assets/js/webmcp.js                  registers the tools and answers the calls
+assets/js/webmcp.js                  the ten imperative tools
 _includes/webmcp_script.html         loads it, and tells it what page this is
+_includes/cv_body.html               the declarative <form> (set_cv_display_options)
+_includes/cv_toggle.html             its three checkbox parameters
+assets/js/cv.js                      its submit handler, which answers the agent
 _includes/webmcp_origin_trial.html   the Chrome origin-trial <meta>, if configured
 ```
 
@@ -147,10 +163,27 @@ the same BibTeX filter — so adding a paper or a person puts it in the JSON
 automatically. If you add a *field* that an agent should see, add it there; if
 you add a *record*, you are already done.
 
+**Writing a tool.** An imperative tool is an entry in `TOOLS` in `webmcp.js`:
+`name`, `description`, a JSON Schema `inputSchema`, `annotations`
+(`readOnlyHint: true` unless it does something), and `execute(input, { signal })`,
+which resolves to a plain string — Chrome passes a string to the agent as-is,
+JSON-encodes anything else, and turns a thrown error into an opaque failure, so
+a tool that cannot answer returns a sentence saying what to call instead. Chrome
+does not validate the arguments against the schema before calling `execute`,
+and as of Chrome 151 does not pass the second `{ signal }` argument, so coerce
+inputs and default that parameter. A declarative tool is a `<form>` with
+`toolname` and `tooldescription`; each named field is a parameter, typed from
+the control (checkbox → boolean, `<select>` → enum, `type=number` → number),
+described by `toolparamdescription` or, failing that, its `<label>`. Add
+`toolautosubmit` and the agent's call submits the form; in the `submit` handler,
+`preventDefault()`, do the work, and `e.respondWith(promise)` when
+`e.agentInvoked` is true.
+
 **WebMCP is not a shipped browser feature.** It is a W3C Community Group draft,
-available in Chrome only behind an origin trial. In every other browser
-`document.modelContext` does not exist, so `webmcp.js` reads one property, finds
-nothing, and returns — no fetch, no cost, nothing on the page changes.
+available in Chrome only behind an origin trial or a flag. In every other
+browser `document.modelContext` does not exist, so `webmcp.js` reads one
+property, finds nothing, and returns — no fetch, no cost, nothing on the page
+changes — and the CV's form is an ordinary form with nothing to submit it.
 
 from.so is enrolled in the trial: `webmcp_origin_trial_token` in `_config.yml`
 holds the token, and `_includes/webmcp_origin_trial.html` renders it into the
@@ -162,12 +195,76 @@ for `https://from.so`, or empty the setting if the trial ended because the API
 shipped. The token is public by design (it is served in every page), so it
 belongs in version control.
 
-To test without a token, or after it expires, enable
-`chrome://flags/#enable-webmcp-testing` → *WebMCP for testing*.
+**Checking the tools.** The token is bound to `https://from.so`, so on the dev
+server (or after the token expires) the API only exists with
+`chrome://flags/#enable-webmcp-testing` → *WebMCP for testing* enabled and
+Chrome relaunched. Then, on any page, in DevTools:
 
-Both JSON files are generated, so neither is committed; they are ~260 KB and
+```js
+(await document.modelContext.getTools()).map(t => t.name)
+```
+
+lists the tools — ten everywhere, eleven on the CV page — and
+
+```js
+const [tool] = (await document.modelContext.getTools()).filter(t => t.name === 'search_publications');
+await document.modelContext.executeTool(tool, '{"query": "accessibility", "limit": 2}')
+```
+
+calls one. Chrome's [Model Context Tool Inspector](https://chromewebstore.google.com/detail/model-context-tool-inspec/gbpdfapgefenggkahomfgkhfehlcenpd)
+extension does the same from a side panel, with a chat that drives the tools
+through Gemini. For a check from the command line, headless Chrome works:
+`google-chrome --headless=new --enable-features=WebMCP` plus the remote
+debugging port exposes the same `document.modelContext` to a CDP client.
+
+Both JSON files are generated, so neither is committed; they are ~270 KB and
 ~38 KB, which gzip to about 55 KB and 9 KB. Nothing is fetched until an agent
 calls a tool, and the CV file only when a tool needs the CV.
+
+### Crawlers, search engines, and structured data
+
+Besides the WebMCP tools, the site carries the things a crawler or an agent
+without WebMCP reads. All of it is rendered from `_data/` at build time, so
+there is nothing to maintain per record here either.
+
+- **Google Scholar tags.** Every `/papers/<id>/` page has the `citation_*`
+  `<meta>` tags Scholar's indexer requires (title, one tag per author, year,
+  the venue as `citation_conference_title` or `citation_journal_title`, the
+  PDF URL, the DOI). Scholar reads only these — not Open Graph or JSON-LD —
+  so without them the papers and their PDFs would not be attached to Scholar
+  records from this site. A preprint gets no venue tag, on purpose.
+- **JSON-LD.** A `<script type="application/ld+json">` block on the homepage
+  (the group as a `ResearchOrganization` with its members, parent university,
+  funders and research areas, plus the `WebSite`), on every paper
+  (`ScholarlyArticle`: authors, venue, abstract, PDF, DOI, award, research
+  areas), on every person page (`Person`) and on every writing page
+  (`Article`). The group's node is `https://from.so/#organization` and each
+  person's is their page URL, so the nodes on different pages describe the
+  same entities.
+- **`sitemap.xml`** from `jekyll-sitemap`: every page plus the PDFs. Redirect
+  pages (`/oney_cv/`, the `aliases:` in `people.yaml`) and the JSON are kept
+  out with `sitemap: false`.
+- **`robots.txt`**: everything allowed, the AI crawlers named individually so
+  that excluding one later is a one-line change, and the sitemap location.
+- **`llms.txt`** (the [llmstxt.org](https://llmstxt.org) convention): a short
+  Markdown index for agents — what the site is, where `index.json` and
+  `cv.json` are, the main pages, the research areas, the current members, the
+  writing, and how to get in touch.
+
+Both `<head>` pieces come from `_plugins/structured_data.rb`, through
+`_includes/structured_data.html` in `_layouts/default.html`. That plugin
+builds each paper and person with `mcp_index.rb`'s own `publication_record`
+and `person_record`, so the tags, the JSON-LD, the WebMCP JSON and the
+rendered page all derive an author list, a venue label or a PDF path in one
+place. If you change how a template derives one of those, change it there and
+everything follows.
+
+To check the output: `bundle exec jekyll build`, then read the `<head>` of
+`_site/papers/<id>/index.html`; paste a page URL into Google's
+[Rich Results Test](https://search.google.com/test/rich-results) or the
+[Schema Markup Validator](https://validator.schema.org/) for the JSON-LD.
+Google Scholar has no validator — its [inclusion guidelines](https://scholar.google.com/intl/en/scholar/inclusion.html)
+are the reference, and a paper appears (or not) a few weeks after a crawl.
 
 ## Common tasks
 
