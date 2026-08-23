@@ -1,0 +1,38 @@
+---
+permalink: /robots.txt
+sitemap: false
+---
+{%- comment -%}
+  Crawler policy for from.so. Everything is public, and the point of the file
+  is to be explicit about it: an absent robots.txt also means "allowed", but
+  it gives no place to say so, and no place to point at the sitemap.
+
+  Liquid so the sitemap line follows site.url rather than hard-coding the host;
+  permalink so the file lands at the root under the name crawlers look for.
+
+  The AI crawlers are named rather than folded into `*` so that a later
+  decision to keep any of them out is one line here, not a rewrite. Today each
+  is allowed. The names are the user agents their operators document:
+  Google-Extended is Google's opt-out for Gemini training (it does not affect
+  Search), GPTBot OpenAI's, ClaudeBot Anthropic's, PerplexityBot and CCBot
+  (Common Crawl) the other two that honour this file.
+{%- endcomment -%}
+User-agent: *
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

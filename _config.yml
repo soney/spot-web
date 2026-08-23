@@ -36,6 +36,7 @@ kramdown:
 permalink: pretty
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Jekyll already excludes Gemfile*, node_modules, vendor, and dotfiles by
 # default; this list only needs what those defaults miss. CNAME must NOT be

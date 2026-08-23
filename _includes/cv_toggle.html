@@ -3,14 +3,24 @@
   data attributes, so the three strings that make a toggle work live together
   here instead of being spread across the template, the JS and the CSS.
 
+  The checkbox is also one parameter of the CV's WebMCP tool: it belongs to
+  the `cv-display-options` form in cv_body.html (through the form= attribute,
+  since the toggles sit in the sections they affect rather than inside the
+  form), named by `param`, so the tool's schema has a boolean of that name
+  and an agent's call lands on this very checkbox. `tool_description` is what
+  the agent reads about it; without one the browser falls back to the label.
+
   Parameters:
-    label       the visible label text.
-    param       URL parameter name that pre-selects the toggle
-                (e.g. "?students=true"). Changing it breaks previously
-                shared links.
-    body_class  class toggled on <body>; cv.css keys its rules off this.
-    row         (optional) true to make the wrapper itself the grid row,
-                for call sites that are not already inside one.
+    label             the visible label text.
+    param             URL parameter name that pre-selects the toggle
+                      (e.g. "?students=true") and the tool parameter's
+                      name. Changing it breaks previously shared links and
+                      any agent prompt that names the parameter.
+    body_class        class toggled on <body>; cv.css keys its rules off this.
+    tool_description  (optional) one sentence for the agent, in terms of what
+                      the option does to the CV.
+    row               (optional) true to make the wrapper itself the grid row,
+                      for call sites that are not already inside one.
 {% endcomment %}
 <div class="cv-toggle d-print-none{% if include.row %} row{% endif %}" data-param="{{ include.param }}"
   data-body-class="{{ include.body_class }}">
@@ -19,7 +29,8 @@
   <div class="col main">
     {%- endif %}
     <label>
-      <input type="checkbox">
+      <input type="checkbox" name="{{ include.param }}" form="cv-display-options"
+        {%- if include.tool_description %} toolparamdescription="{{ include.tool_description }}"{% endif %}>
       {{ include.label }}
     </label>
     {%- if include.row %}

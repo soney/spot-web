@@ -3,11 +3,15 @@
   opt in with. No parameters; the token is `webmcp_origin_trial_token` in
   _config.yml, and the comment there says how to get one.
 
-  Without a token, document.modelContext is undefined for ordinary visitors and
-  every tool in assets/js/webmcp.js is simply never registered -- the site works
-  exactly as it did, and only someone who has turned the flag on in
-  chrome://flags sees the tools. Nothing else about the implementation depends
-  on this tag; it is the switch that makes it reach the public.
+  Without a token, document.modelContext is undefined for ordinary visitors:
+  assets/js/webmcp.js registers nothing, and the CV page's <form toolname=...>
+  is an ordinary form the browser ignores -- the site works exactly as it did,
+  and only someone who has turned on chrome://flags/#enable-webmcp-testing
+  sees the tools. Nothing else about the implementation depends on this tag;
+  it is the switch that makes it reach the public.
+
+  It has to be in <head>, before any script that uses the API; both layouts
+  include it there.
 {% endcomment %}
 {%- assign origin_trial_token = site.webmcp_origin_trial_token | strip -%}
 {%- if origin_trial_token != "" %}

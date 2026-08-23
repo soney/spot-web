@@ -29,19 +29,30 @@ picture. The four facts that change how you work:
    `clusters.yaml` reference both by id. Ids are also URL slugs — except in
    `blog.yaml`, where a separate `slug` field owns the URL.
 4. **The same data is exposed to AI agents through WebMCP.**
-   `assets/js/webmcp.js` registers eleven tools that answer from JSON built by
-   `_plugins/mcp_index.rb` out of `_data/`. Nothing is maintained per record —
-   adding a paper or a person puts it there — so this is only your problem when
-   you add a *field*, or change how a template derives one. See the "WebMCP"
-   section of `README.md`.
+   `assets/js/webmcp.js` registers ten imperative tools
+   (`document.modelContext.registerTool()`) that answer from JSON built by
+   `_plugins/mcp_index.rb` out of `_data/`; the CV page adds one declarative
+   tool, the `<form toolname="set_cv_display_options">` in
+   `_includes/cv_body.html`, whose fields are the CV's display checkboxes and
+   whose submit handler in `assets/js/cv.js` answers the agent. Nothing is
+   maintained per record — adding a paper or a person puts it there — so this
+   is only your problem when you add a *field*, or change how a template
+   derives one. See the "WebMCP" section of `README.md`, which also says how to
+   check the tools in Chrome. The same records feed the Google Scholar tags
+   and the JSON-LD in every page's `<head>` (`_plugins/structured_data.rb`),
+   `sitemap.xml`, `robots.txt` and `llms.txt` — see "Crawlers, search
+   engines, and structured data" in `README.md`.
 
-Ten Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
+Thirteen Ruby plugins live in `_plugins/`: `generate_data_pages.rb`,
+`generate_cv_pages.rb` (the `/people/<id>/cv/` pages) and
+`generate_alias_pages.rb` (the `aliases:` redirects), `citation.rb`
 (the BibTeX filter), `venue_order.rb`, `cv_publication_codes.rb` (the CV's
 J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`,
 `cv_record_order.rb` (the date order of the CV's Advising and Grants
 sections),
 `teaching_entries.rb` (the two views of `_data/teaching.yaml`), `mcp_index.rb`
-(the JSON behind the WebMCP tools), and `splatter.rb` (generates
+(the JSON behind the WebMCP tools), `structured_data.rb` (the JSON-LD and
+Scholar tags, built from `mcp_index.rb`'s records), and `splatter.rb` (generates
 `/assets/images/splatter.svg`, the navbar wordmark's paint splatter — one
 seeded splat per alum in their `color` — and the `{% splatter %}` tag that
 shows it; like the data pages, the file exists only in `_site`). Each opens with a comment
@@ -195,7 +206,8 @@ wrongly, which makes them the things to get right the first time.
 - **`news.yaml` dates sort as strings.** `sort: "date" | reverse` is correct
   only for zero-padded ISO `YYYY-MM-DD`. A malformed date renders a plausible
   month and floats to the top of the list.
-- **A rule the templates enforce has a second copy in `_plugins/mcp_index.rb`.**
+- **A rule the templates enforce has a second copy in `_plugins/mcp_index.rb`**
+  (and, through it, in the JSON-LD and Scholar tags `structured_data.rb` emits).
   Which people get a `/team#<id>` anchor, which get a `/people/<id>/` page, how
   author names are joined, which venue order a list uses — the WebMCP JSON
   derives all of it, so that a tool answer and the rendered page cannot
@@ -249,8 +261,9 @@ them when you change something they describe.
 ## Conventions
 
 - Ruby in `_plugins/` is `# frozen_string_literal: true`, plain Jekyll API, and
-  uses nothing outside the two gems in the `Gemfile` (`jekyll`,
-  `jekyll-feed`). Keep each file's header comment accurate when you change it.
+  uses nothing outside the three gems in the `Gemfile` (`jekyll`,
+  `jekyll-feed`, `jekyll-sitemap`). Keep each file's header comment accurate
+  when you change it.
 - **Liquid filter modules share one namespace**, private helpers included:
   every `register_filter` module is mixed into the same object, so two plugins
   that both define a `sort_key` do not coexist — the one loaded second wins,

@@ -1,24 +1,25 @@
 {% comment %}
-  Loads assets/js/webmcp.js, which registers this site's WebMCP tools, and
-  hands it the three things it cannot work out for itself: where the generated
-  JSON lives (through relative_url, so a baseurl change does not break it), and
-  which record the current page is about.
+  Loads assets/js/webmcp.js, which registers this site's imperative WebMCP
+  tools, and hands it the things it cannot work out for itself: where the
+  generated JSON lives (through relative_url, so a baseurl change does not
+  break it), and which record the current page is about.
 
-  Deferred and last in <body>: in every browser without the WebMCP API -- which
-  today is all of them except Chrome with the origin trial -- the script reads
-  one property, finds nothing, and returns without fetching anything.
+  Deferred and last in <body>: in every browser without the WebMCP API -- all
+  of them except Chrome in the origin trial or with the testing flag on -- the
+  script reads one property, finds nothing, and returns without fetching
+  anything.
+
+  The CV page's set_cv_display_options tool is not loaded here: it is
+  declarative, a <form toolname="..."> in cv_body.html that the browser
+  registers on its own.
 
   Parameters (all optional):
     paper_id   publications.yaml id, on a /papers/<id>/ page. Lets
                get_publication default to the paper being viewed.
     person_id  people.yaml id, on a /people/<id>/ page. Same, for get_person.
-    cv_page    true on the /people/<id>/cv/ pages, the only pages with
-               display options for set_cv_display_options to operate.
 {%- endcomment -%}
 <script defer src="{{ '/assets/js/webmcp.js' | relative_url }}"
   data-mcp-index="{{ '/assets/mcp/index.json' | relative_url }}"
-  data-mcp-cv="{{ '/assets/mcp/cv.json' | relative_url }}"
-  data-mcp-page="{{ page.url }}"{% if include.paper_id %}
+  data-mcp-cv="{{ '/assets/mcp/cv.json' | relative_url }}"{% if include.paper_id %}
   data-mcp-paper-id="{{ include.paper_id }}"{% endif %}{% if include.person_id %}
-  data-mcp-person-id="{{ include.person_id }}"{% endif %}{% if include.cv_page %}
-  data-mcp-cv-page="true"{% endif %}></script>
+  data-mcp-person-id="{{ include.person_id }}"{% endif %}></script>

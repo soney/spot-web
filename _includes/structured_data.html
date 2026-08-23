@@ -1,0 +1,23 @@
+{% comment %}
+  The page's structured data for crawlers and agents, in <head>: a JSON-LD
+  block on the homepage and on every paper, person and writing page, and the
+  Google Scholar citation_* tags on paper pages. Both are rendered by
+  _plugins/structured_data.rb from the same records the WebMCP JSON carries,
+  so they cannot disagree with a tool's answer or with the page.
+
+  Which page this is comes from the front matter the generators stamp
+  (page.pub_id, page.person_id, page.post_id) or the URL; a listing page
+  renders nothing here. No parameters.
+{%- endcomment -%}
+{%- if page.pub_id -%}
+{%- assign sd_pub = site.data.publications | where: "id", page.pub_id | first -%}
+{%- if sd_pub %}
+  {{ sd_pub | scholar_meta_tags | strip | replace: "
+", "
+  " }}
+{%- endif -%}
+{%- endif -%}
+{%- assign sd_jsonld = page | structured_data_jsonld -%}
+{%- if sd_jsonld != "" %}
+  {{ sd_jsonld }}
+{%- endif -%}
