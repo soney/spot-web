@@ -55,7 +55,7 @@ _data/
   cvs/steve_oney.yaml         # Steve's CV: everything on it that isn't a publication or a course; one file per person, named by people.yaml id
   teaching.yaml               # courses taught, by person id; feeds the CV and the person page
   publication_types.yaml      # venue type -> CV numbering prefix (J, C, B, ...)
-  cv_publication_sections.yaml# the CV's publication section headings and types
+  cv_publication_sections.yaml# the CV's publication section headings and types, and which of them the journal/conference split toggle shows
   cv_service_groups.yaml      # the CV's Service group headings and categories
   cv_supervision_groups.yaml  # the CV's Advising headings and categories
 _layouts/
@@ -68,8 +68,9 @@ _includes/                    # shared partials; each documents its parameters i
 _plugins/
   generate_data_pages.rb      # creates the /papers/, /people/ and /writing/ pages from the data
   cv_publication_codes.rb     # CV publication numbering (J.12, C.31, ...)
-  cv_award_entries.rb         # merges CV awards and paper awards into one sorted list
+  cv_award_entries.rb         # merges CV awards and paper awards into one list, year then month descending
   cv_grouped_records.rb       # buckets CV service/supervision records into display groups
+  cv_record_order.rb          # orders the CV's Advising and Grants records by date, most recent first
   teaching_entries.rb         # one person's courses: the CV's list, and the shorter page one
   mcp_index.rb                # builds the JSON the WebMCP tools answer from
   splatter.rb                 # builds /assets/images/splatter.svg (one paint splat per alum) and the {% splatter %} tag that shows it
@@ -116,9 +117,14 @@ drops any entry marked `cv_only: true`, and any whose last year falls before
 the file's `page_since` — see
 [Adding a course you taught](#adding-a-course-you-taught).
 
-Its interactive toggles (student authors, mentees, paper awards) are declared
-by `_includes/cv_toggle.html` and driven by `assets/js/cv.js` via URL
-parameters.
+Its interactive toggles (student authors, the journal/conference split,
+mentees, paper awards) are declared by `_includes/cv_toggle.html` and driven by
+`assets/js/cv.js` via URL parameters. Each one mirrors a class onto `<body>`
+that `assets/css/cv.css` keys off, so a toggle can only ever show or hide
+markup the build already produced — which is why the Publications section
+carries both of its groupings, one hidden, rather than regrouping anything in
+the browser. `_data/cv_publication_sections.yaml` says which section belongs
+to which grouping.
 
 ### WebMCP: the site's tools for AI agents
 
@@ -233,7 +239,7 @@ just reference its `id`.
 | `full_name` | in practice | The CV citation; the site label if `short_name` is missing |
 | `short_name` | in practice | The "CHI 2026" label next to the paper on the site |
 | `location` | optional | Trailing "Barcelona, Spain." in the CV citation |
-| `conference_start` | in practice | `M/D`, e.g. `5/10`. **Orders venues within a year** (see below) and supplies the `5/2026` date on the CV's *Awards* entries. Omit it and the venue sorts after every dated venue of its year. |
+| `conference_start` | in practice | `M/D`, e.g. `5/10`. **Orders venues within a year** (see below), and supplies both the `05/2026` date on the CV's *Awards* entries and their order within a year (the CV zero-pads the month; write it here either way). Omit it and the venue sorts after every dated venue of its year, in the publication lists and in *Awards* alike. |
 | `homepage` | optional | Makes the venue label a link |
 
 ```yaml
@@ -394,6 +400,11 @@ cleanly:
   `/people/steve_oney/cv/?students=true&awards=true`.
   Without those parameters you will think `award` and `student_authors` did
   nothing.
+- **Journal and conference papers share one CV section by default.** The
+  "Separate journal and conference papers" checkbox (`?split=true`) is what
+  gives each type its own heading, so a new journal paper lands in the middle
+  of the combined, date-ordered list unless you ask for the split. The `J.n`
+  and `C.n` codes are per type either way.
 
 ### Adding a news item
 
@@ -621,7 +632,12 @@ automatically:
   Group headings come from
   `_data/cv_supervision_groups.yaml` and there is no catch-all, so a typo'd
   `category` makes the record vanish — that one does print a
-  `cv_grouped_records:` warning.
+  `cv_grouped_records:` warning. Where in the list you add the record does not
+  matter: `_plugins/cv_record_order.rb` sorts each group by date, most recent
+  first, reading `date_end` (or `date_start` where there is no end) and
+  treating `present` as the most recent date there is. It parses `Fall 2018`
+  and a bare `2025`; a date in some other shape sinks the record to the bottom
+  of its group.
 
 Do **not** rename the id or delete the record; a departed member still needs to
 exist for their papers to attribute correctly.
@@ -902,6 +918,7 @@ only; and on a news chip for *any* record, even one with no `membership`.
 script/export_cv_pdf.sh                      # oney_cv.pdf in the repo root
 script/export_cv_pdf.sh ~/Desktop/cv.pdf     # somewhere else
 script/export_cv_pdf.sh --students --awards  # the CV page's toggles, as flags
+script/export_cv_pdf.sh --split              # journals and conference papers apart
 script/export_cv_pdf.sh --person=<id> out.pdf  # another _data/cvs/ CV
 ```
 
@@ -982,7 +999,8 @@ Depending on what you changed, check:
   and for nobody else)
 - `http://127.0.0.1:4000/people/steve_oney/cv/?students=true&awards=true` — the
   citation, its `C.n` code, the student underlines, and the award entry. Both
-  toggles are off by default
+  toggles are off by default; add `&split=true` to see the paper under its own
+  journal or conference heading instead of in the combined section
 - `http://127.0.0.1:4000/people/steve_oney/` — the only per-person page today.
   Its Teaching section is the same `_data/teaching.yaml` the CV renders, minus
   the entries `page_since` and `cv_only` hold back, so check a course edit in

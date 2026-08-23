@@ -35,9 +35,11 @@ picture. The four facts that change how you work:
    you add a *field*, or change how a template derives one. See the "WebMCP"
    section of `README.md`.
 
-Nine Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
+Ten Ruby plugins live in `_plugins/`: `generate_data_pages.rb`, `citation.rb`
 (the BibTeX filter), `venue_order.rb`, `cv_publication_codes.rb` (the CV's
 J.12/C.31 numbering), `cv_award_entries.rb`, `cv_grouped_records.rb`,
+`cv_record_order.rb` (the date order of the CV's Advising and Grants
+sections),
 `teaching_entries.rb` (the two views of `_data/teaching.yaml`), `mcp_index.rb`
 (the JSON behind the WebMCP tools), and `splatter.rb` (generates
 `/assets/images/splatter.svg`, the navbar wordmark's paint splatter — one
@@ -131,6 +133,14 @@ wrongly, which makes them the things to get right the first time.
   2014 conference paper renumbers every newer conference paper. External
   documents citing "C.31" then point at a different paper. Say so if a change
   causes it.
+- **The CV carries both journal/conference groupings and shows one.**
+  `_data/cv_publication_sections.yaml` marks a publication section
+  `variant: merged` (the default: journal and conference papers in one
+  date-ordered list) or `variant: split` (what the CV's "Separate journal and
+  conference papers" checkbox reveals). Both are built into the page and
+  `assets/css/cv.css` hides one, so the two variants must cover exactly the
+  same venue types — a type listed in one and not the other vanishes from the
+  CV in that state alone, and nothing warns.
 - **Venue order within a year comes from `conference_start`.** Templates use the
   `venues_by_date_desc` filter (`_plugins/venue_order.rb`): year descending, then
   `conference_start` descending, then position in the file as a tiebreak. So a
@@ -236,6 +246,12 @@ them when you change something they describe.
 - Ruby in `_plugins/` is `# frozen_string_literal: true`, plain Jekyll API, and
   uses nothing outside the two gems in the `Gemfile` (`jekyll`,
   `jekyll-feed`). Keep each file's header comment accurate when you change it.
+- **Liquid filter modules share one namespace**, private helpers included:
+  every `register_filter` module is mixed into the same object, so two plugins
+  that both define a `sort_key` do not coexist — the one loaded second wins,
+  and the loser fails as a wrong-number-of-arguments error somewhere else
+  entirely. Prefix a helper with what it belongs to (`award_sort_key`,
+  `record_sort_key`) rather than naming it for what it does.
 - Each file in `_includes/` opens with a `{% comment %}` block documenting its
   parameters. Keep it accurate when you add or rename one.
 - CSS in `assets/css/` is hand-written, no preprocessor.

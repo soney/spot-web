@@ -1,7 +1,8 @@
-// Wires up the CV's checkbox toggles (student-author highlighting, other
-// mentees, paper awards). Each checkbox mirrors its state to a class on
-// <body> (which the CSS in cv.css keys off) and to a URL parameter, so
-// toggle states survive reload and can be shared as links.
+// Wires up the CV's checkbox toggles (student-author highlighting, the
+// journal/conference split, other mentees, paper awards). Each checkbox
+// mirrors its state to a class on <body> (which the CSS in cv.css keys off)
+// and to a URL parameter, so toggle states survive reload and can be shared
+// as links.
 //
 // Toggles are declared in the markup by _includes/cv_toggle.html, which
 // emits data-param and data-body-class; nothing here needs updating to add
@@ -85,6 +86,11 @@
     // while the reader is still above its first subsection heading.
     var currentSub = null;
     current.subs.forEach(function (sub) {
+      // Skip the ones a toggle has hidden -- the journal/conference split
+      // builds both groupings into the page and shows one. A display:none
+      // heading measures as a zero rect at the top of the viewport, which
+      // reads as "scrolled well past" and would win the band outright.
+      if (sub.target.offsetParent === null) return;
       if (sub.target.getBoundingClientRect().top <= 120) currentSub = sub;
     });
     pairs.forEach(function (pair) {

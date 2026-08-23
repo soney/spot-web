@@ -703,6 +703,18 @@ body:not(.show-paper-awards) .paper-award-item {
     display: none;
 }
 
+/* The journal/conference split toggle. The page carries both groupings of the
+   same papers -- one section holding journal and conference papers together
+   (the default) and the two single-type sections -- and this picks which of
+   them the reader sees; _data/cv_publication_sections.yaml declares which
+   section belongs to which grouping. The outline's entries carry the same
+   classes as the sections they link to, so the rail can never offer a link to
+   a heading that is not on the page. */
+body:not(.split-journal-conference) .pub-variant-split,
+body.split-journal-conference .pub-variant-merged {
+    display: none;
+}
+
 /* Small screens: the label column stops being a column. Under 768px the
    fixed 20% side column shreds its own content -- "09/2008 -- 04/2015"
    becomes four lines with a date broken across them, and the address block

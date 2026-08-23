@@ -1,10 +1,23 @@
 # The publication sections of the CV (_includes/cv_body.html), in display order.
 # Each section lists the venue types it contains; numbering prefixes for
 # each type live in publication_types.yaml.
+#
+# `variant` (optional) ties a section to the CV's "Separate journal and
+# conference papers" checkbox: a `merged` section renders only while the box
+# is off, a `split` section only while it is on, and a section without a
+# `variant` renders either way. Both variants are always built into the page
+# and assets/css/cv.css hides one of them, so together they must cover exactly
+# the same venue types -- a type listed in one variant but not the other
+# vanishes from the CV in the state it is missing from, with no build warning.
+- title: Heavily-reviewed Journal Manuscripts (J) and Conference Papers (C)
+  types: [journal, conference]
+  variant: merged
 - title: Heavily-reviewed Journal Manuscripts (J)
   types: [journal]
+  variant: split
 - title: Heavily-reviewed Conference Papers (C)
   types: [conference]
+  variant: split
 - title: Book Chapters (B)
   types: [bookchapter]
 - title: >-
