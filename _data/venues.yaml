@@ -4,6 +4,16 @@
 # (e.g. `venue.year >= min_year`), and a quoted year fails the build with
 # "comparison of String with 2019 failed", naming neither this file nor the
 # record at fault.
+#
+# `published_date` is the day the venue's papers were published, as a quoted
+# ISO date ("2024-09-21"). It exists only for venues with no
+# `conference_start` to date them -- journals, book chapters, preprints -- and
+# is read only by _plugins/structured_data.rb, which needs a real day for
+# JSON-LD's datePublished. Do NOT reach for `conference_start` instead:
+# venue_order.rb and cv_award_entries.rb key on that field, so adding it to an
+# undated venue silently reorders the publication lists and renumbers the CV.
+# Omitting `published_date` is safe -- the paper page then carries no
+# datePublished, which beats carrying one the site invented.
 - id: uist_2026
   short_name: UIST
   year: 2026
@@ -69,6 +79,7 @@
 - id: preprint_2024
   short_name: (Preprint)
   year: 2024
+  published_date: "2024-11-16"
   type: preprint
 - id: chi_2024
   short_name: CHI
@@ -150,10 +161,13 @@
   conference_start: 4/23
   homepage: https://sites.google.com/nd.edu/computational-uichi23/home
   type: workshop
-- id: edi_2023
+- id: edi_2024
   short_name: EDI
-  year: 2023
+  year: 2024
   full_name: Equity, Diversity, and Inclusion in Software Engineering
+  # Apress published the book on 2024-09-21 (Crossref, chapter DOI
+  # 10.1007/978-1-4842-9651-6_8).
+  published_date: "2024-09-21"
   type: bookchapter
 - id: vl_hcc_2023
   short_name: VL/HCC
@@ -225,6 +239,8 @@
   location: (Virtual/Online)
   full_name: Workshop on Live Programming
   homepage: https://2020.splashcon.org/home/live-2020
+  # The workshop ran 2020-11-17, per the SPLASH 2020 program.
+  published_date: "2020-11-17"
   type: workshop
 - id: msnfws_2020
   short_name: MSNFWS
@@ -348,10 +364,13 @@
   conference_start: 6/1
   homepage: https://sites.google.com/a/stern.nyu.edu/collective-intelligence-conference/call-for-papers
   type: workshop
-- id: eud_2016
+- id: eud_2017
   short_name: EUD
-  year: 2016
-  full_name: Advances in End User Development
+  year: 2017
+  full_name: New Perspectives in End-User Development
+  # Springer published the chapter on 2017-08-11 (Crossref, DOI
+  # 10.1007/978-3-319-60291-2_1).
+  published_date: "2017-08-11"
   type: bookchapter
 - id: uist_2016
   short_name: UIST

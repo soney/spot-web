@@ -337,6 +337,7 @@ just reference its `id`.
 | `short_name` | in practice | The "CHI 2026" label next to the paper on the site |
 | `location` | optional | Trailing "Barcelona, Spain." in the CV citation |
 | `conference_start` | in practice | `M/D`, e.g. `5/10`. **Orders venues within a year** (see below), and supplies both the `05/2026` date on the CV's *Awards* entries and their order within a year (the CV zero-pads the month; write it here either way). Omit it and the venue sorts after every dated venue of its year, in the publication lists and in *Awards* alike. |
+| `published_date` | only for undated venues | A quoted ISO date (`"2024-09-21"`) for a venue with no `conference_start` — a journal, book chapter or preprint. Read only by the JSON-LD in `_plugins/structured_data.rb`, which needs a real day for `datePublished`; it does **not** affect sort order, and a venue that has `conference_start` does not need it. Omit it when the date is genuinely unknown (a paper in press) — the page then carries no `datePublished`. |
 | `homepage` | optional | Makes the venue label a link |
 
 ```yaml
@@ -436,7 +437,7 @@ nothing to write or keep in sync. The entry type follows the venue's `type`
 would collide.
 
 Adding a `doi` is the one thing that improves a citation by hand: it adds the
-publisher link on the page and `doi`/`url` lines to the BibTeX. 55 of 73 papers
+publisher link on the page and `doi`/`url` lines to the BibTeX. 56 of 74 papers
 have one. The rest are workshop papers, theses, and work that is not published
 yet — leave `doi` off entirely rather than guessing, because a wrong DOI on a
 CV is worse than a missing one. To find one, search
@@ -597,6 +598,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `family_name` | yes | Also the **sort key** for every list of people on the site |
 | `membership` | group members only | Which tier they render in; omit for external co-authors |
 | `homepage` | no | External URL: the "Homepage" breadcrumb, the name-link in the `/team` collaborator list, and the author link in publication lists |
+| `orcid` | no | Bare ORCID iD — `0000-0002-5823-1499`, not the full URL. Read only by the JSON-LD in `_plugins/structured_data.rb`, which emits it as an `identifier` and as an `https://orcid.org/…` `sameAs` on every node for that person, author nodes on paper pages included. Nothing renders on the page. A wrong iD is worse than a missing one, so confirm the person before pasting: best is a publisher record (Crossref returns the iDs authors asserted at submission), then an ORCID profile that lists one of their papers here or links the same `homepage`. A plain name search is the weakest evidence — an ORCID search returning exactly one person of that name is usually right, but check the affiliation on the record |
 | `pronouns` | no | e.g. `she/her`. Shown in parentheses after the name on their `/team` member row and `/people/<id>/` page. Nowhere else — not on the homepage grid, author lists, news chips, or the `/team` collaborator list |
 | `name_recording` | no | Name-pronunciation audio: a path relative to `assets/`, e.g. `audio/steve_oney_name_pronunciation.mp3`. Renders a "Hear my name" breadcrumb link right after "Homepage" that plays the recording in place (no-JS fallback: the link opens the file), in the same places `pronouns` shows |
 | `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
