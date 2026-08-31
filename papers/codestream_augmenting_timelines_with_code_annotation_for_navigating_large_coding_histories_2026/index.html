@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  html {
+    touch-action: pan-x pan-y;
+  }
+</style>
+<script>
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+</script>
+
+  <meta name="color-scheme" content="light dark"><script>
+  (function () {
+    var STORAGE_KEY = 'theme';
+    // Cycle order, and the set of values data-theme may hold. Auto first: it is
+    // where an untouched browser sits, so the cycle reads as "leave it alone,
+    // force light, force dark, leave it alone".
+    var CHOICES = ['auto', 'light', 'dark'];
+    var NEXT_LABEL = { auto: 'light', light: 'dark', dark: 'auto' };
+    var root = document.documentElement;
+
+    function stored() {
+      // localStorage throws, rather than returning null, in Safari's private
+      // mode and wherever site data is blocked. Treated as "no choice yet",
+      // which is auto.
+      try {
+        var choice = localStorage.getItem(STORAGE_KEY);
+        return CHOICES.indexOf(choice) === -1 ? 'auto' : choice;
+      } catch (e) {
+        return 'auto';
+      }
+    }
+
+    function apply(choice) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
+      root.dataset.theme = choice;
+
+      var button = document.querySelector('[data-theme-toggle]');
+      if (button) {
+        // Both halves: what is on now, which the icon also shows, and what the
+        // next click does, which with three states the icon cannot. Set here
+        // rather than in the markup because Liquid cannot know the choice at
+        // build time.
+        var label = 'Theme: ' + choice + '. Switch to ' + NEXT_LABEL[choice] + '.';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+      }
+    }
+
+    apply(stored());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('[data-theme-toggle]');
+      if (!button) return;
+
+      // The button did not exist during the first apply() above, so it is
+      // still carrying the placeholder label from the include.
+      apply(root.dataset.theme);
+
+      button.addEventListener('click', function () {
+        var next = CHOICES[(CHOICES.indexOf(root.dataset.theme) + 1) % CHOICES.length];
+        try {
+          localStorage.setItem(STORAGE_KEY, next);
+        } catch (e) {
+          // Choice will not survive the page, but the click still works.
+        }
+        apply(next);
+      });
+    });
+  })();
+</script>
+
+  <title>CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories | SPOT Research Group</title>
+  <meta name="description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SPOT Research Group">
+  <meta property="og:title" content="CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories">
+  <meta property="og:description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:url" content="https://from.so/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/">
+  <meta name="twitter:card" content="summary">
+  <meta name="citation_title" content="CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories">
+  <meta name="citation_author" content="Ashley Zhang">
+  <meta name="citation_author" content="Yan-Ru Jhou">
+  <meta name="citation_author" content="Yinuo Yang">
+  <meta name="citation_author" content="Shamita Rao">
+  <meta name="citation_author" content="Maryam Arab">
+  <meta name="citation_author" content="Yan Chen">
+  <meta name="citation_author" content="Steve Oney">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="The ACM CHI Conference on Human Factors in Computing Systems">
+  <meta name="citation_pdf_url" content="https://from.so/assets/pdfs/zhang-codestream-chi2026.pdf">
+  <meta name="citation_abstract_html_url" content="https://from.so/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/">
+  <meta name="citation_language" content="en">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://from.so/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/",
+  "url": "https://from.so/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/",
+  "mainEntityOfPage": "https://from.so/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/",
+  "headline": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
+  "name": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
+  "inLanguage": "en",
+  "datePublished": "2026-04-13T00:00:00Z",
+  "abstract": "Code edit histories can offer instructors valuable insight into students' problem-solving processes, revealing unproductive behaviors that final code alone cannot capture. For example, a correct solution may contain large copy-and-pasted segments (suggesting the code originated elsewhere) or unguided trial-and-error (suggesting a lack of clear strategy). Timelines are a common way to visualize code histories, but existing timeline visualizations of code or document histories show only when and where edits occurred, not what changed. Without this context, it is difficult to answer key questions about how students invested effort or to infer their intentions. We present CodeStream, a visualization system that augments timelines with situational code annotations, whose granularity and visibility dynamically adapt to scale and interaction state. A comparison study shows that CodeStream enables context-aware navigation of coding histories, supporting fast and accurate pattern identification, and helping instructors reason about students' coding behaviors and identify who may need intervention.",
+  "description": "Introduces a visualization system that helps instructors interpret students’ keystroke-level coding histories. While traditional timelines show when and where edits occurred, they do not reveal what changed. CodeStream augments timelines with zoomable code annotations, multi-level structural summaries, and a cumulative effort heatmap, allowing instructors to see both the content and intensity of edits without constant context switching.",
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://from.so/team/#ashley_zhang",
+      "name": "Ashley Zhang",
+      "givenName": "Ashley",
+      "familyName": "Zhang",
+      "url": "https://from.so/team/#ashley_zhang",
+      "sameAs": [
+        "https://gezhang.me",
+        "https://orcid.org/0000-0001-5978-3714",
+        "https://twitter.com/gezhang001",
+        "https://github.com/AshleyZG",
+        "https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0001-5978-3714"
+      },
+      "jobTitle": "Ph.D. Student"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan-Ru Jhou",
+      "givenName": "Yan-Ru",
+      "familyName": "Jhou",
+      "sameAs": [
+        "https://orcid.org/0009-0000-9987-0492"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0000-9987-0492"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://from.so/team/#yinuo_yang",
+      "name": "Yinuo Yang",
+      "givenName": "Yinuo",
+      "familyName": "Yang",
+      "url": "https://from.so/team/#yinuo_yang",
+      "sameAs": [
+        "https://orcid.org/0009-0003-8184-719X"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0003-8184-719X"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Shamita Rao",
+      "givenName": "Shamita",
+      "familyName": "Rao",
+      "sameAs": [
+        "https://orcid.org/0009-0001-7761-5615"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0001-7761-5615"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://from.so/team/#maryam_arab",
+      "name": "Maryam Arab",
+      "givenName": "Maryam",
+      "familyName": "Arab",
+      "url": "https://from.so/team/#maryam_arab",
+      "sameAs": [
+        "https://sites.google.com/view/maryamarab/home",
+        "https://orcid.org/0000-0001-9040-4313"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0001-9040-4313"
+      },
+      "jobTitle": "Postdoctoral Scholar"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://from.so/team/#yan_chen",
+      "name": "Yan Chen",
+      "givenName": "Yan",
+      "familyName": "Chen",
+      "url": "https://from.so/team/#yan_chen",
+      "sameAs": [
+        "https://chensivan.github.io/",
+        "https://orcid.org/0000-0002-1646-6935",
+        "https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-1646-6935"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://from.so/people/steve_oney/",
+      "name": "Steve Oney",
+      "givenName": "Steve",
+      "familyName": "Oney",
+      "url": "https://from.so/people/steve_oney/",
+      "sameAs": [
+        "https://orcid.org/0000-0002-5823-1499",
+        "https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en",
+        "https://github.com/soney"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-5823-1499"
+      },
+      "jobTitle": "Associate Professor"
+    }
+  ],
+  "keywords": [
+    "Programming Education at Scale"
+  ],
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://from.so/assets/pdfs/zhang-codestream-chi2026.pdf"
+  },
+  "isAccessibleForFree": true,
+  "publication": {
+    "@type": "PublicationEvent",
+    "name": "The ACM CHI Conference on Human Factors in Computing Systems",
+    "alternateName": "CHI 2026",
+    "startDate": "2026-04-13T00:00:00Z",
+    "location": {
+      "@type": "Place",
+      "name": "Barcelona, Spain"
+    }
+  }
+}
+</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link type="application/atom+xml" rel="alternate" href="https://from.so/feed.xml" title="SPOT Research Group" />
+<meta http-equiv="origin-trial" content="AoHQkJuWU/5j3w9gOC+OueHq90hE2o0SgLgNTBx4G4prW+L8QnyU6tI+hYcnX1rcpWEItWab4XUVLv6eADmzzAUAAABHeyJvcmlnaW4iOiJodHRwczovL2Zyb20uc286NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0=">
+</head>
+
+<body>
+  <div class="application">
+    <div class="container">
+      <a class="d-block skip-to-content-link" href="#content">Skip to main content</a>
+    </div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        
+        <a class="navbar-brand"
+          href="/"><img class="splatter" src="/assets/images/splatter.svg" alt="" width="340" height="240"><span class="brand-text">spot</span></a>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/">Team</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/news/">News</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/writing/">Writing</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+        <a class="nav-link nav-back ms-auto" href="/research/#pub-codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026">&larr; Back to research</a>
+        
+        <button type="button" class="theme-toggle nav-link" data-theme-toggle
+  aria-label="Switch theme">
+  <i class="bi bi-circle-half theme-toggle-icon theme-toggle-icon-auto" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-icon theme-toggle-icon-light" aria-hidden="true"></i>
+  <i class="bi bi-moon theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true"></i>
+</button>
+      </div>
+    </nav>
+
+    <main id="content" role="main" class="page-content">
+      
+
+<div class="container">
+  <div class="paper-page">
+  
+  <h1 class="h2">CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories</h1>
+  <div class="paper-authors fs-5">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_ru_jhou">Yan-Ru Jhou</span>, 
+  <span
+    class="paper-author"
+    data-author-id="yinuo_yang">Yinuo Yang</span>, 
+  <span
+    class="paper-author"
+    data-author-id="shamita_rao">Shamita Rao</span>, 
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+
+  
+  
+  
+  
+  <p class="paper-meta"><span class="paper-venue"><a href="https://chi2026.acm.org" target="_blank" rel="noopener">CHI 2026</a></span></p>
+  
+
+  <div class="paper-actions">
+    
+    <a class="btn btn-primary pdf-download" href="/assets/pdfs/zhang-codestream-chi2026.pdf"
+      download="Zhang-CodeStream-CHI-2026.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+    </a>
+    
+    
+  </div>
+
+  
+  <section class="section-card paper-abstract">
+    <h2 class="h5">Abstract</h2>
+    <p>Code edit histories can offer instructors valuable insight into students’ problem-solving processes, revealing unproductive behaviors that final code alone cannot capture. For example, a correct solution may contain large copy-and-pasted segments (suggesting the code originated elsewhere) or unguided trial-and-error (suggesting a lack of clear strategy). Timelines are a common way to visualize code histories, but existing timeline visualizations of code or document histories show only when and where edits occurred, not what changed. Without this context, it is difficult to answer key questions about how students invested effort or to infer their intentions. We present CodeStream, a visualization system that augments timelines with situational code annotations, whose granularity and visibility dynamically adapt to scale and interaction state. A comparison study shows that CodeStream enables context-aware navigation of coding histories, supporting fast and accurate pattern identification, and helping instructors reason about students’ coding behaviors and identify who may need intervention.</p>
+
+  </section>
+  
+
+  <section class="section-card paper-cite">
+    <div class="paper-cite-header">
+      <h2 class="h5">Cite this paper (BibTeX)</h2><button type="button" class="bibtex-copy" aria-live="polite">
+        <i class="bi bi-clipboard" aria-hidden="true"></i> Copy
+      </button>
+    </div>
+    <pre class="bibtex"><code>@inproceedings{zhang2026codestream,
+  author    = {Zhang, Ashley and Jhou, Yan-Ru and Yang, Yinuo and Rao, Shamita and Arab, Maryam and Chen, Yan and Oney, Steve},
+  title     = {{CodeStream}: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories},
+  booktitle = {The ACM CHI Conference on Human Factors in Computing Systems},
+  year      = {2026}
+}</code></pre>
+  </section>
+  <script src="/assets/js/paper.js"></script>
+  
+  </div>
+</div>
+
+    </main>
+
+    
+<footer class="site-footer">
+  <div class="container">
+    <p class="site-footer-line text-muted">
+      &copy; 2026 Steve Oney
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/soney/spot-web" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Source on GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+  </div>
+
+  <script defer src="/assets/js/webmcp.js"
+  data-mcp-index="/assets/mcp/index.json"
+  data-mcp-cv="/assets/mcp/cv.json"
+  data-mcp-paper-id="codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026"></script>
+
+  <script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-name-recording]');
+    if (!link) return;
+    event.preventDefault();
+    var audio = link.nameRecordingAudio;
+    if (!audio) {
+      audio = new Audio(link.href);
+      link.nameRecordingAudio = audio;
+      audio.addEventListener('ended', function () { link.classList.remove('playing'); });
+      audio.addEventListener('pause', function () { link.classList.remove('playing'); });
+      audio.addEventListener('play', function () { link.classList.add('playing'); });
+    }
+    if (audio.paused) {
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+</script>
+
+</body>
+
+</html>

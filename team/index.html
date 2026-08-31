@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  html {
+    touch-action: pan-x pan-y;
+  }
+</style>
+<script>
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+</script>
+
+  <meta name="color-scheme" content="light dark"><script>
+  (function () {
+    var STORAGE_KEY = 'theme';
+    // Cycle order, and the set of values data-theme may hold. Auto first: it is
+    // where an untouched browser sits, so the cycle reads as "leave it alone,
+    // force light, force dark, leave it alone".
+    var CHOICES = ['auto', 'light', 'dark'];
+    var NEXT_LABEL = { auto: 'light', light: 'dark', dark: 'auto' };
+    var root = document.documentElement;
+
+    function stored() {
+      // localStorage throws, rather than returning null, in Safari's private
+      // mode and wherever site data is blocked. Treated as "no choice yet",
+      // which is auto.
+      try {
+        var choice = localStorage.getItem(STORAGE_KEY);
+        return CHOICES.indexOf(choice) === -1 ? 'auto' : choice;
+      } catch (e) {
+        return 'auto';
+      }
+    }
+
+    function apply(choice) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
+      root.dataset.theme = choice;
+
+      var button = document.querySelector('[data-theme-toggle]');
+      if (button) {
+        // Both halves: what is on now, which the icon also shows, and what the
+        // next click does, which with three states the icon cannot. Set here
+        // rather than in the markup because Liquid cannot know the choice at
+        // build time.
+        var label = 'Theme: ' + choice + '. Switch to ' + NEXT_LABEL[choice] + '.';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+      }
+    }
+
+    apply(stored());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('[data-theme-toggle]');
+      if (!button) return;
+
+      // The button did not exist during the first apply() above, so it is
+      // still carrying the placeholder label from the include.
+      apply(root.dataset.theme);
+
+      button.addEventListener('click', function () {
+        var next = CHOICES[(CHOICES.indexOf(root.dataset.theme) + 1) % CHOICES.length];
+        try {
+          localStorage.setItem(STORAGE_KEY, next);
+        } catch (e) {
+          // Choice will not survive the page, but the click still works.
+        }
+        apply(next);
+      });
+    });
+  })();
+</script>
+
+  <title>Team | SPOT Research Group</title>
+  <meta name="description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SPOT Research Group">
+  <meta property="og:title" content="Team">
+  <meta property="og:description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:url" content="https://from.so/team/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link type="application/atom+xml" rel="alternate" href="https://from.so/feed.xml" title="SPOT Research Group" />
+<meta http-equiv="origin-trial" content="AoHQkJuWU/5j3w9gOC+OueHq90hE2o0SgLgNTBx4G4prW+L8QnyU6tI+hYcnX1rcpWEItWab4XUVLv6eADmzzAUAAABHeyJvcmlnaW4iOiJodHRwczovL2Zyb20uc286NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0=">
+</head>
+
+<body>
+  <div class="application">
+    <div class="container">
+      <a class="d-block skip-to-content-link" href="#content">Skip to main content</a>
+    </div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        
+        <a class="navbar-brand"
+          href="/"><img class="splatter" src="/assets/images/splatter.svg" alt="" width="340" height="240"><span class="brand-text">spot</span></a>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="/team/">Team</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/news/">News</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/writing/">Writing</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+        <button type="button" class="theme-toggle nav-link" data-theme-toggle
+  aria-label="Switch theme">
+  <i class="bi bi-circle-half theme-toggle-icon theme-toggle-icon-auto" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-icon theme-toggle-icon-light" aria-hidden="true"></i>
+  <i class="bi bi-moon theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true"></i>
+</button>
+      </div>
+    </nav>
+
+    <main id="content" role="main" class="page-content">
+      <div class="container">
+  <h1>Team</h1>
+
+  
+  <nav class="page-outline" aria-label="Page contents">
+    <span class="page-outline-label">On this page:</span>
+    <ul>
+      <li><a href="#current-members">Current Members</a></li>
+      
+      <li><a href="#alumni">Ph.D. and Postdoc Alumni</a></li>
+      
+      <li><a href="#collaborators">Other Collaborators</a></li>
+      
+      <li><a href="#join-us">Join Us</a></li>
+      
+    </ul>
+  </nav>
+
+  <h2 id="current-members">Current Members</h2>
+  
+  
+  
+  
+
+<section class="row member-row" id="steve_oney">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/UMSI_Steve_Oney_042024_05_8ed6a273af.JPG"
+      alt="Headshot of Steve Oney">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Steve Oney 
+<a class="name-recording-link" href="/assets/audio/steve_oney_name_pronunciation.mp3"
+  data-name-recording aria-label="Hear Steve's name pronounced"><i
+    class="bi bi-volume-up"></i></a>
+</h3>
+    <p class="pronouns">Pronouns: he/him</p>
+
+    
+    <p>Steve Oney is an Associate Professor at the <a href="https://www.si.umich.edu/">University of Michigan School of Information</a> and <a href="https://cse.engin.umich.edu/">Computer Science and Engineering</a> (by courtesy). His research focuses on enabling and encouraging more people to write and customize computer programs by creating new programming tools and exploring usability issues in programming environments. Steve completed his Ph.D in <a href="https://hcii.cmu.edu/">Carnegie Mellon’s Human-Computer Interaction Institute</a> where he was advised by <a href="https://www.cs.cmu.edu/~bam/">Professor Brad Myers</a> and <a href="https://joelbrandt.com/">Dr. Joel Brandt</a>. He also attended <a href="https://web.mit.edu/">MIT</a> (CS &amp; math S.B. in 2007, CS M.Eng in 2008).</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="/people/steve_oney/"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="/people/steve_oney/cv/" target="_blank" rel="noopener"><i
+        class="bi bi-file-earmark-person"></i> CV</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://github.com/soney" target="_blank" rel="noopener"><i
+        class="bi bi-github"></i> GitHub</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+  
+  
+  
+
+<section class="row member-row" id="maryam_arab">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/maryam1_25a871e879.jpeg"
+      alt="Headshot of Maryam Arab">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Maryam Arab</h3>
+    
+
+    
+    <p>Dr. Maryam Arab is a Postdoctoral Scholar in the School of Information, working with <a href="https://from.so/Steve_Oney">Dr. Steve Oney</a>. Dr. Maryam Arab earned her Ph.D. in the Department of Computer Science at <a href="https://cs.gmu.edu/">George Mason University</a>, with <a href="https://cs.gmu.edu/~tlatoza/">Dr. Thomas D. LaToza</a> in the <a href="https://devx.cs.gmu.edu/">DevX lab</a>. She is passionate about Human-Computer Interaction (HCI) and specializes in designing programming tools that harmonize machine and human intelligence. Her research investigates how human-computer interaction would be effective in designing programming tools and how to blend machine and human intelligence.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+  
+  
+  
+
+<section class="row member-row" id="ashley_zhang">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/ashley_headshot_864ec07f24.jpg"
+      alt="Headshot of Ashley Zhang">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Ashley Zhang</h3>
+    
+
+    
+    <p>Ashley is a PhD student at <a href="https://www.si.umich.edu/">the University of Michigan School of Information</a>, advised by Steve Oney. She is generally interested in designing interactive systems to scale instruction and learning in programming education. Currently, she is working around tools to make students’ code understandable at scale for programming instructors. Ashley received her B.S. in Computer Science from <a href="http://english.pku.edu.cn/">Peking University</a> in July, 2021.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://gezhang.me" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://twitter.com/gezhang001" target="_blank" rel="noopener"><i
+        class="bi bi-twitter"></i> Twitter</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://github.com/AshleyZG" target="_blank" rel="noopener"><i
+        class="bi bi-github"></i> GitHub</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="jiacheng_zhang">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/jiacheng_8cc7e6f683.png"
+      alt="Headshot of Jiacheng Zhang">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Jiacheng Zhang</h3>
+    
+
+    
+    <p>Jiacheng Zhang is a first-year PhD student advised by <a href="https://from.so/Steve_Oney/">Professor Steve Oney</a>. Before that, she earned her Bachelor’s degree in Computer Science from <a href="https://umich.edu/">the University of Michigan</a> and a Bachelor’s in Electrical and Computer Engineering from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. Her research interest lies in Human-Centered Artificial Intelligence.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://susan-zjc.github.io/" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="xiangyu_zhou">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/xiangyu_7264f83ff0.JPG"
+      alt="Headshot of Xiangyu Zhou">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Xiangyu Zhou</h3>
+    
+
+    
+    <p>Xiangyu Zhou is a fourth-year Ph.D. candidate in <a href="https://cse.engin.umich.edu/">Computer Science and Engineering</a> at the University of Michigan, advised by Steve Oney. He received his B.S. in Computer Engineering from <a href="https://www.washington.edu/">the University of Washington</a>, where he worked with <a href="https://chenglongwang.org/">Chenglong Wang</a> and <a href="https://homes.cs.washington.edu/~bodik/">Rastislav Bodik</a>.
+His research lies at the intersection of Human-Computer Interaction (HCI), Programming Languages (PL), and Artificial Intelligence (AI). He focuses on empowering end users through two complementary directions:</p>
+<ol>
+  <li>Developing interactive programming and automation tools that make data extraction, analysis, and web interaction more efficient and accessible.</li>
+  <li>Studying how people move, decide, and adapt during interactive tasks, and creating simulation models that reproduce these behaviors to inform better interface and AI system design.</li>
+</ol>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://kevinxiangyuzhou.github.io" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+  
+  <h2 id="alumni">Ph.D. and Postdoc Alumni</h2>
+  
+  
+
+<section class="row member-row" id="yan_chen">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/IMG_0816_6ffff75971.JPG"
+      alt="Headshot of Yan Chen">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Yan Chen</h3>
+    
+
+    
+    <p>Dr. Yan Chen is an Assistant Professor of <a href="https://cs.vt.edu/">Computer Science</a> at <a href="https://www.vt.edu/">Virginia Tech</a>. Yan earned his PhD at <a href="https://umich.edu/">the University of Michigan</a>, advised by <a href="https://umich.edu/">Dr. Steve Oney</a>. After his Ph.D., he was a postdoctoral researcher at the <a href="https://www.utoronto.ca/">University of Toronto</a>, working with <a href="https://www.tovigrossman.com/">Tovi Grossman</a>.  His research aims to leverage human computation and machine intelligence to effectively solve complex tasks that require domain expertise, such as software development, video curation. He studies problems that users face with existing tools and methods, and builds computational systems to assist users via efficient collaboration and hybrid crowd-machine workflows.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://chensivan.github.io/" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=UOv-ce4AAAAJ&hl=en" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="rebecca_krosnick">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/rkros_907631941f.jpg"
+      alt="Headshot of Rebecca Krosnick">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Rebecca Krosnick</h3>
+    
+
+    
+    <p>Dr. Krosnick is a software engineer at <a href="https://www.postman.com/">Postman Labs</a>. She earned her PhD from <a href="https://eecs.engin.umich.edu/">the EECS department at the University of Michigan</a>, advised by <a href="https://from.so/Steve_Oney">Professor Steve Oney</a>. She is generally interested in designing end-user programming systems. She currently is exploring ways to make creating and editing web macros more intuitive and visual, and less script-heavy. She has also designed programming-by-demonstration systems for creating responsive and interactive user interfaces. Previously she worked as a software engineer at MathWorks. Rebecca received her SB and MEng in Computer Science from <a href="https://web.mit.edu/">MIT</a>, where she was advised by <a href="https://www.csail.mit.edu/person/rob-miller">Professor Rob Miller</a>.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://twitter.com/rkrosnick" target="_blank" rel="noopener"><i
+        class="bi bi-twitter"></i> Twitter</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/rebecca-krosnick-315b2180" target="_blank" rel="noopener"><i
+        class="bi bi-linkedin"></i> Linkedin</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="mauli_pandey">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/mauli_bc5a8b65bc.jpg"
+      alt="Headshot of Mauli Pandey">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Mauli Pandey</h3>
+    
+
+    
+    <p>Dr. Mauli Pandey is a UX Researcher at Google. She completed her PhD candidate at the <a href="https://www.si.umich.edu/">University of Michigan School of Information</a>, where she was advised by <a href="https://from.so/Steve_Oney">Steve Oney</a>. Her research interests lie at the intersection of Human-Computer Interaction, Accessibility, and Programming. She is interested in lowering the barriers to programming and education for people with visual impairments by understanding their experiences through qualitative research methods. Before starting her PhD, Mauli was in the MS program (2018) at the University of Michigan School of Information. During her MS, she also worked closely with <a href="http://www.mjskay.com/">Matthew Kay</a>, <a href="http://www.michael-nebeling.de/">Michael Nebeling</a>, and <a href="http://sunyoungpark.weebly.com/">Sun Young Park</a>. For her undergraduate studies, she attended the <a href="http://www.iitg.ac.in/">Indian Institute of Technology Guwahati</a> (Design and Electronics, 2014), and was advised by <a href="https://www.iitg.ac.in/design/portfolio/py/Prof.%20Pradeep%20Gururaj%20Yammiyavar%20_%20Department%20of%20Design.html">Pradeep Yammiyavar</a>.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://github.com/pandeymauli/" target="_blank" rel="noopener"><i
+        class="bi bi-github"></i> Github</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/mauli-pandey-16942146/" target="_blank" rel="noopener"><i
+        class="bi bi-linkedin"></i> LinkedIn</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="april_wang">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/april_wang_29a426371b.jpeg"
+      alt="Headshot of April Wang">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>April Wang</h3>
+    
+
+    
+    <p>Dr. April Wang is an Assistant Professor at <a href="https://ethz.ch/en.html">ETH Zürich</a> in the Department of Computer Science. She completed her Ph.D. at the <a href="https://www.si.umich.edu/">School of Information at the University of Michigan</a>, advised by <a href="https://from.so/Steve_Oney">Professor Steve Oney</a> and <a href="http://christopherbrooks.ca/">Professor Christopher Brooks</a>. Her work aims to understand different collaboration needs and challenges around data science, and design better programming tools to support collaborative data science. April received her B.Eng. in Computer Science from <a href="http://www.zju.edu.cn/english/">Zhejiang University</a> and M.Sc. degree in Computer Science from <a href="https://www.sfu.ca/">Simon Fraser University</a>, where her Masters thesis investigated non-programmers learning computational literacy.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://aprilwang.me/" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=yitS6coAAAAJ&hl=en" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://github.com/LittleAprilFool" target="_blank" rel="noopener"><i
+        class="bi bi-github"></i> Github</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://twitter.com/AprilWang95" target="_blank" rel="noopener"><i
+        class="bi bi-twitter"></i> Twitter</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+<section class="row member-row" id="lei_zhang">
+  <div class="col-sm-2">
+    
+    
+    <img class="member-headshot img-fluid rounded" src="/assets/images/people/lei_0a65b284f1.jpg"
+      alt="Headshot of Lei Zhang">
+    
+  </div>
+  <div class="col-sm-10">
+
+    <h3>Lei Zhang</h3>
+    
+
+    
+    <p>Dr. Lei Zhang is an Assistant Professor at <a href="https://informatics.njit.edu/">the New Jersey Institute of Technology</a>. Lei earned his Ph.D. at the <a href="https://www.si.umich.edu/">University of Michigan School of Information</a>, advised by <a href="https://from.so/Steve_Oney">Professor Steve Oney</a> and <a href="https://guoanhong.com/">Professor Anhong Guo</a>, and was a postdoctoral scholar at <a href="https://hci.princeton.edu/">Princeton University</a>. His research in human-computer interaction focuses on building authoring tools that enable end-users to craft immersive experiences, such as Augmented Reality (AR) and Virtual Reality (VR). By developing interactive systems, his work explores techniques that leverage computation and interaction to empower people’s creativity, collaboration, and communication in the context of content creation. He holds a BE in Software Engineering from Shanghai Jiao Tong University. In his leisure time, Lei is into music production, skateboards, and 35mm film photography.</p>
+
+    
+
+    
+<ul class="breadcrumb">
+  
+  <li class="breadcrumb-item"><a href="https://raynez.art/" target="_blank" rel="noopener"><i
+        class="bi bi-house"></i> Homepage</a></li>
+  
+  
+  <li class="breadcrumb-item"><a href="https://scholar.google.com/citations?user=jmobsnwAAAAJ&hl=en" target="_blank" rel="noopener"><i
+        class="bi bi-mortarboard"></i> Google Scholar</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://github.com/RayneZhang/" target="_blank" rel="noopener"><i
+        class="bi bi-github"></i> Github</a>
+  </li>
+  <li class="breadcrumb-item"><a href="https://twitter.com/itsraynez" target="_blank" rel="noopener"><i
+        class="bi bi-twitter"></i> Twitter</a>
+  </li>
+  
+  
+</ul>
+
+
+  </div>
+</section>
+
+  
+  
+
+  <h2 id="collaborators">Other Collaborators (Undergraduate and Master's Students)</h2>
+  <ul class="collaborator-list">
+    
+    
+    <li id="hussain_alafaireet">
+      <strong>
+        
+        Hussain Alafaireet
+        
+      </strong>
+      
+      <span class="text-muted">MSI Researcher</span>
+      
+    </li>
+    
+    <li id="rushal_butala">
+      <strong>
+        
+        Rushal Butala
+        
+      </strong>
+      
+    </li>
+    
+    <li id="niu_chang">
+      <strong>
+        
+        Niu Chang
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate Summer Intern</span>
+      
+    </li>
+    
+    <li id="erin_deutschman">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/erindeutschman" target="_blank" rel="noopener noreferrer">
+          Erin Deutschman
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Explore CS Research Mentee</span>
+      
+    </li>
+    
+    <li id="carl_fan">
+      <strong>
+        
+        Carl Fan
+        
+      </strong>
+      
+    </li>
+    
+    <li id="natalie_gross">
+      <strong>
+        
+        <a class="text-body" href="https://grosnata.wixsite.com/nataliegross" target="_blank" rel="noopener noreferrer">
+          Natalie Gross
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">UMSI, Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="yunjie_guo">
+      <strong>
+        
+        Yunjie Guo
+        
+      </strong>
+      
+      <span class="text-muted">Michigan CSE Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="jaylin_herskovitz">
+      <strong>
+        
+        <a class="text-body" href="https://jayl.in/" target="_blank" rel="noopener noreferrer">
+          Jaylin Herskovitz
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Former Undergraduate Researcher. Now Ph.D. student at Michigan (CSE)</span>
+      
+    </li>
+    
+    <li id="tisha_jain">
+      <strong>
+        
+        Tisha Jain
+        
+      </strong>
+      
+    </li>
+    
+    <li id="shweta_kumar">
+      <strong>
+        
+        Shweta Kumar
+        
+      </strong>
+      
+    </li>
+    
+    <li id="hanning_li">
+      <strong>
+        
+        Hanning Li
+        
+      </strong>
+      
+    </li>
+    
+    <li id="ruidong_liu">
+      <strong>
+        
+        Ruidong Liu
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate researcher. Now Ph.D. student at Cornell University</span>
+      
+    </li>
+    
+    <li id="gabriel_matute">
+      <strong>
+        
+        Gabriel Matute
+        
+      </strong>
+      
+      <span class="text-muted">Former Undergraduate Researcher. Now Ph.D. student at UC Berkeley</span>
+      
+    </li>
+    
+    <li id="jamie_neumann">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/jamie-neumann/" target="_blank" rel="noopener noreferrer">
+          Jamie Neumann
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">UMSI, Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="rebecca_parada">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/paradar6/" target="_blank" rel="noopener noreferrer">
+          Rebecca Parada
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">UMSI, Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="tami_van_omen">
+      <strong>
+        
+        Tami Van Omen
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate researcher</span>
+      
+    </li>
+    
+    <li id="yisen_wang">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/yisen-wang-7308751a0" target="_blank" rel="noopener noreferrer">
+          Yisen Wang
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Explore CS Research Mentee.</span>
+      
+    </li>
+    
+    <li id="ningqi_wang">
+      <strong>
+        
+        Ningqi Wang
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate Intern. MS Student at Carnegie Mellon</span>
+      
+    </li>
+    
+    <li id="zihan_wu">
+      <strong>
+        
+        <a class="text-body" href="https://www.zihanwu.com/" target="_blank" rel="noopener noreferrer">
+          Zihan Wu
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate Summer Intern. Currently: UMSI PhD Student</span>
+      
+    </li>
+    
+    <li id="jie_wei_wu">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/jie-wei-w-880a1552" target="_blank" rel="noopener noreferrer">
+          Jie Wei Wu
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">MSI Researcher. Now: Google Software Engineer</span>
+      
+    </li>
+    
+    <li id="jessica_wu">
+      <strong>
+        
+        Jessica Wu
+        
+      </strong>
+      
+      <span class="text-muted">Former Undergraduate Researcher. Now Software Engineer at Amazon</span>
+      
+    </li>
+    
+    <li id="yin_xie">
+      <strong>
+        
+        Yin Xie
+        
+      </strong>
+      
+      <span class="text-muted">Former MS researcher. Now interaction designer at Internet Brands</span>
+      
+    </li>
+    
+    <li id="johnathan_yan">
+      <strong>
+        
+        Johnathan Yan
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="yiwei_yang">
+      <strong>
+        
+        <a class="text-body" href="https://yanyiwei.github.io/" target="_blank" rel="noopener noreferrer">
+          YiWei Yang
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Former CSE Undergraduate Researcher. Now Ph.D. student at the University of Washington</span>
+      
+    </li>
+    
+    <li id="yinuo_yang">
+      <strong>
+        
+        Yinuo Yang
+        
+      </strong>
+      
+    </li>
+    
+    <li id="muhan_zhao">
+      <strong>
+        
+        Muhan Zhao
+        
+      </strong>
+      
+      <span class="text-muted">Michigan CSE Undergraduate Researcher</span>
+      
+    </li>
+    
+    <li id="yuan_zhou">
+      <strong>
+        
+        <a class="text-body" href="https://www.andyzhou.space/" target="_blank" rel="noopener noreferrer">
+          Yuan Zhou
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">Undergraduate Summer Intern. Georgia Tech M.S.</span>
+      
+    </li>
+    
+    <li id="licheng_zhu">
+      <strong>
+        
+        <a class="text-body" href="https://www.linkedin.com/in/lichengzhu" target="_blank" rel="noopener noreferrer">
+          Licheng Zhu
+        </a>
+        
+      </strong>
+      
+      <span class="text-muted">MSI Researcher. Now: Senior User Experience Researcher at Thompson Reuters</span>
+      
+    </li>
+    
+  </ul>
+
+  
+  <h2 id="join-us">Join Us</h2>
+  <p>We are always excited to work with motivated and talented students.</p>
+
+<p><strong>Ph.D.:</strong> Please read <a href="https://from.so/writing/SPOT_PhD_Application_Guide/">our group’s guide for Ph.D. applicants</a></p>
+
+<p><strong>Masters, Bachelors, and High School students:</strong> If you are interested in collaborating with our research group, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSczLxUU_KbmKnGcl1QsCeiDXaplQa5KWehoVl6P3s0EzmcQtA/viewform?usp=sf_link">fill out this form</a>. When you do, it will email the current members of the team so that we can see if there are any potentially matching projects. If you are unable to fill out that form for any reason, please reach out to <a href="mailto:soney@umich.edu">soney@umich.edu</a>.</p>
+
+  
+</div>
+    </main>
+
+    
+<footer class="site-footer">
+  <div class="container">
+    <p class="site-footer-line text-muted">
+      &copy; 2026 Steve Oney
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/soney/spot-web" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Source on GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+  </div>
+
+  <script defer src="/assets/js/webmcp.js"
+  data-mcp-index="/assets/mcp/index.json"
+  data-mcp-cv="/assets/mcp/cv.json"></script>
+
+  <script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-name-recording]');
+    if (!link) return;
+    event.preventDefault();
+    var audio = link.nameRecordingAudio;
+    if (!audio) {
+      audio = new Audio(link.href);
+      link.nameRecordingAudio = audio;
+      audio.addEventListener('ended', function () { link.classList.remove('playing'); });
+      audio.addEventListener('pause', function () { link.classList.remove('playing'); });
+      audio.addEventListener('play', function () { link.classList.add('playing'); });
+    }
+    if (audio.paused) {
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  html {
+    touch-action: pan-x pan-y;
+  }
+</style>
+<script>
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+</script>
+
+  <meta name="color-scheme" content="light dark"><script>
+  (function () {
+    var STORAGE_KEY = 'theme';
+    // Cycle order, and the set of values data-theme may hold. Auto first: it is
+    // where an untouched browser sits, so the cycle reads as "leave it alone,
+    // force light, force dark, leave it alone".
+    var CHOICES = ['auto', 'light', 'dark'];
+    var NEXT_LABEL = { auto: 'light', light: 'dark', dark: 'auto' };
+    var root = document.documentElement;
+
+    function stored() {
+      // localStorage throws, rather than returning null, in Safari's private
+      // mode and wherever site data is blocked. Treated as "no choice yet",
+      // which is auto.
+      try {
+        var choice = localStorage.getItem(STORAGE_KEY);
+        return CHOICES.indexOf(choice) === -1 ? 'auto' : choice;
+      } catch (e) {
+        return 'auto';
+      }
+    }
+
+    function apply(choice) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
+      root.dataset.theme = choice;
+
+      var button = document.querySelector('[data-theme-toggle]');
+      if (button) {
+        // Both halves: what is on now, which the icon also shows, and what the
+        // next click does, which with three states the icon cannot. Set here
+        // rather than in the markup because Liquid cannot know the choice at
+        // build time.
+        var label = 'Theme: ' + choice + '. Switch to ' + NEXT_LABEL[choice] + '.';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+      }
+    }
+
+    apply(stored());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('[data-theme-toggle]');
+      if (!button) return;
+
+      // The button did not exist during the first apply() above, so it is
+      // still carrying the placeholder label from the include.
+      apply(root.dataset.theme);
+
+      button.addEventListener('click', function () {
+        var next = CHOICES[(CHOICES.indexOf(root.dataset.theme) + 1) % CHOICES.length];
+        try {
+          localStorage.setItem(STORAGE_KEY, next);
+        } catch (e) {
+          // Choice will not survive the page, but the click still works.
+        }
+        apply(next);
+      });
+    });
+  })();
+</script>
+
+  <title>Home | SPOT Research Group</title>
+  <meta name="description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SPOT Research Group">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:url" content="https://from.so/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://from.so/#organization",
+      "name": "SPOT Research Group",
+      "url": "https://from.so/",
+      "email": "soney@umich.edu",
+      "description": "We are a research group at the University of Michigan, primarily in the School of Information and Computer Science. Our research focuses on understanding the factors that make programming tools usable and designing & building new tools for programmers and people learning to program.",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Michigan",
+        "url": "https://umich.edu/",
+        "subOrganization": [
+          {
+            "@type": "Organization",
+            "name": "Michigan School of Information",
+            "url": "https://www.si.umich.edu/"
+          },
+          {
+            "@type": "Organization",
+            "name": "MISC",
+            "url": "https://misc.si.umich.edu/"
+          },
+          {
+            "@type": "Organization",
+            "name": "Michigan CSE",
+            "url": "https://cse.engin.umich.edu/"
+          }
+        ]
+      },
+      "funder": [
+        {
+          "@type": "Organization",
+          "name": "National Science Foundation",
+          "url": "https://nsf.gov/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Google",
+          "url": "https://research.google/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Adobe",
+          "url": "https://research.adobe.com/"
+        }
+      ],
+      "member": [
+        {
+          "@type": "Person",
+          "@id": "https://from.so/people/steve_oney/",
+          "name": "Steve Oney",
+          "givenName": "Steve",
+          "familyName": "Oney",
+          "url": "https://from.so/people/steve_oney/",
+          "sameAs": [
+            "https://orcid.org/0000-0002-5823-1499",
+            "https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en",
+            "https://github.com/soney"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0000-0002-5823-1499"
+          },
+          "jobTitle": "Associate Professor"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://from.so/team/#maryam_arab",
+          "name": "Maryam Arab",
+          "givenName": "Maryam",
+          "familyName": "Arab",
+          "url": "https://from.so/team/#maryam_arab",
+          "sameAs": [
+            "https://sites.google.com/view/maryamarab/home",
+            "https://orcid.org/0000-0001-9040-4313"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0000-0001-9040-4313"
+          },
+          "jobTitle": "Postdoctoral Scholar"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://from.so/team/#ashley_zhang",
+          "name": "Ashley Zhang",
+          "givenName": "Ashley",
+          "familyName": "Zhang",
+          "url": "https://from.so/team/#ashley_zhang",
+          "sameAs": [
+            "https://gezhang.me",
+            "https://orcid.org/0000-0001-5978-3714",
+            "https://twitter.com/gezhang001",
+            "https://github.com/AshleyZG",
+            "https://scholar.google.com/citations?hl=en&user=ssJeW18AAAAJ"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0000-0001-5978-3714"
+          },
+          "jobTitle": "Ph.D. Student"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://from.so/team/#jiacheng_zhang",
+          "name": "Jiacheng Zhang",
+          "givenName": "Jiacheng",
+          "familyName": "Zhang",
+          "url": "https://from.so/team/#jiacheng_zhang",
+          "sameAs": [
+            "https://susan-zjc.github.io/",
+            "https://orcid.org/0009-0006-0513-7403"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0009-0006-0513-7403"
+          },
+          "jobTitle": "Ph.D. Student"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://from.so/team/#xiangyu_zhou",
+          "name": "Xiangyu Zhou",
+          "givenName": "Xiangyu",
+          "familyName": "Zhou",
+          "url": "https://from.so/team/#xiangyu_zhou",
+          "sameAs": [
+            "https://kevinxiangyuzhou.github.io",
+            "https://orcid.org/0009-0003-6404-1098"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0009-0003-6404-1098"
+          },
+          "jobTitle": "Ph.D. Student"
+        }
+      ],
+      "knowsAbout": [
+        "Programming Education at Scale",
+        "Web Automation and Programming by Demonstration",
+        "Building and Testing Interactive Interfaces",
+        "Explaining Code and Capturing Process",
+        "Accessibility of Programming and the Web",
+        "Immersive Authoring",
+        "On-Demand Help for Programmers"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://from.so/#website",
+      "url": "https://from.so/",
+      "name": "SPOT Research Group",
+      "description": "Human-centered research on programming tools and practices.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://from.so/#organization"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link type="application/atom+xml" rel="alternate" href="https://from.so/feed.xml" title="SPOT Research Group" />
+<meta http-equiv="origin-trial" content="AoHQkJuWU/5j3w9gOC+OueHq90hE2o0SgLgNTBx4G4prW+L8QnyU6tI+hYcnX1rcpWEItWab4XUVLv6eADmzzAUAAABHeyJvcmlnaW4iOiJodHRwczovL2Zyb20uc286NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0=">
+</head>
+
+<body>
+  <div class="application">
+    <div class="container">
+      <a class="d-block skip-to-content-link" href="#content">Skip to main content</a>
+    </div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        
+        <a class="navbar-brand active"
+          href="/"><img class="splatter" src="/assets/images/splatter.svg" alt="" width="340" height="240"><span class="brand-text">spot</span></a>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/">Team</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/news/">News</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/writing/">Writing</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+        <button type="button" class="theme-toggle nav-link" data-theme-toggle
+  aria-label="Switch theme">
+  <i class="bi bi-circle-half theme-toggle-icon theme-toggle-icon-auto" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-icon theme-toggle-icon-light" aria-hidden="true"></i>
+  <i class="bi bi-moon theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true"></i>
+</button>
+      </div>
+    </nav>
+
+    <main id="content" role="main" class="page-content">
+      
+
+
+
+<div class="container">
+  <h1 class="visually-hidden">SPOT Research Group</h1>
+
+  <div class="row">
+    
+    <section class="section-card group_description col-md-7">
+      <h2 class="invisible" aria-hidden="true">About</h2>
+      <p>We are a research group at the <a href="https://umich.edu/">University of Michigan</a>, primarily in the <a href="https://www.si.umich.edu/">School of Information</a> and <a href="https://cse.engin.umich.edu/">Computer Science</a>. Our research focuses on understanding the factors that make programming tools usable and designing &amp; building new tools for programmers and people learning to program.</p>
+
+      
+      <p class="group-areas"><strong>What we work on:</strong>
+        <a
+          href="/research/#cluster-programming_education">Programming Education at Scale</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-web_automation">Web Automation and Programming by Demonstration</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-building_testing_interactive_uis">Building and Testing Interactive Interfaces</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-communicating_about_code">Explaining Code and Capturing Process</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-accessibility">Accessibility of Programming and the Web</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-immersive_programming">Immersive Authoring</a> <span aria-hidden="true">&middot;</span> <a
+          href="/research/#cluster-on_demand_support_for_programmers">On-Demand Help for Programmers</a>
+      </p>
+    </section>
+    
+
+    <section class="col-md-5 news">
+      <h2><a href="/news/"><span class="text-body">News</span><span aria-hidden="true">
+            [+]</span></a></h2>
+      <ul class="news-list short list-unstyled">
+        
+        
+
+<li class="news-item">
+  
+  
+  <p class="news-item-date"><strong>Aug '26:</strong></p>
+  
+  <p><a href="/team#steve_oney">Steve Oney</a> is beginning his term as MSI Program Committee Chair at the <a href="https://www.si.umich.edu/">University of Michigan School of Information</a>.</p>
+
+
+  
+  <ul class="news-links">
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#steve_oney"
+        title="Steve Oney">
+        
+        <img src="/assets/images/people/UMSI_Oney_focused_f75e0919d9.JPG"
+          alt="Headshot of Steve Oney" style="border: 2px solid #FFC14A;" >
+        
+        <span class="member-name">Steve Oney</span>
+      </a>
+      
+    </li>
+    
+    
+    
+
+    
+  </ul>
+  
+</li>
+
+        
+        
+
+<li class="news-item">
+  
+  
+  <p class="news-item-date"><strong>Aug '26:</strong></p>
+  
+  <p><a href="/team#steve_oney">Steve Oney</a> just launched <a href="https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react">a new Coursera specialization: Practical JavaScript: From Scratch to React</a></p>
+
+
+  
+  <ul class="news-links">
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#steve_oney"
+        title="Steve Oney">
+        
+        <img src="/assets/images/people/UMSI_Oney_focused_f75e0919d9.JPG"
+          alt="Headshot of Steve Oney" style="border: 2px solid #FFC14A;" >
+        
+        <span class="member-name">Steve Oney</span>
+      </a>
+      
+    </li>
+    
+    
+    
+
+    
+  </ul>
+  
+</li>
+
+        
+        
+
+<li class="news-item">
+  
+  
+  <p class="news-item-date"><strong>Jul '26:</strong></p>
+  
+  <p><a href="/team#maryam_arab">Dr. Maryam Arab</a> will join <a href="https://www.albany.edu/computer-science">SUNY Albany</a> as a Visiting Assistant Professor in September. Congratulations, Professor Arab!</p>
+
+
+  
+  <ul class="news-links">
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#maryam_arab"
+        title="Maryam Arab">
+        
+        <img src="/assets/images/people/maryam1_87408f5974.jpeg"
+          alt="Headshot of Maryam Arab" style="border: 2px solid #79A4E5;" >
+        
+        <span class="member-name">Maryam Arab</span>
+      </a>
+      
+    </li>
+    
+    
+    
+
+    
+  </ul>
+  
+</li>
+
+        
+        
+
+<li class="news-item">
+  
+  
+  <p class="news-item-date"><strong>Jul '26:</strong></p>
+  
+  <p><a href="/team#ashley_zhang">Ashley</a>’s paper on visualizing student-AI interaction in code was accepted to UIST 2026!</p>
+
+
+  
+  <ul class="news-links">
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#ashley_zhang"
+        title="Ashley Zhang">
+        
+        <img src="/assets/images/people/ashley_focused_headshot_8e9682a021.jpg"
+          alt="Headshot of Ashley Zhang" style="border: 2px solid #a19cb9;" >
+        
+        <span class="member-name">Ashley Zhang</span>
+      </a>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <span class="chip" title="Yan-Ru Jhou">
+        
+        <span class="member-name">Yan-Ru Jhou</span>
+      </span>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#yinuo_yang"
+        title="Yinuo Yang">
+        
+        <span class="member-name">Yinuo Yang</span>
+      </a>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <span class="chip" title="Shamita Rao">
+        
+        <span class="member-name">Shamita Rao</span>
+      </span>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#maryam_arab"
+        title="Maryam Arab">
+        
+        <img src="/assets/images/people/maryam1_87408f5974.jpeg"
+          alt="Headshot of Maryam Arab" style="border: 2px solid #79A4E5;" >
+        
+        <span class="member-name">Maryam Arab</span>
+      </a>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      
+      
+      <a class="chip" href="/team#yan_chen"
+        title="Yan Chen">
+        
+        <img src="/assets/images/people/yan_focused_headshot_7dc466e28a.JPG"
+          alt="Headshot of Yan Chen" style="border: 2px solid #A5AFAD;" >
+        
+        <span class="member-name">Yan Chen</span>
+      </a>
+      
+    </li>
+    
+    
+    
+
+    
+    
+    
+    
+    <li>
+      <a class="chip" href="/research#pub-editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026" title="Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code">
+        
+        
+        <i class="bi bi-file-earmark-text"></i>
+        
+        <p class="publication-title">Editrail: Understanding AI Usage by Visualizing Student-AI In...</p>
+      </a>
+    </li>
+    
+    
+    
+  </ul>
+  
+</li>
+
+        
+      </ul>
+    </section>
+  </div>
+
+  
+
+  <section>
+    <h2><a href="/team/"><span class="text-body">People</span><span aria-hidden="true">
+          [+]</span></a></h2>
+    <ul class="flex-row d-flex list-unstyled row">
+      
+      
+      
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="/team#steve_oney">
+          
+          
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="/assets/images/people/UMSI_Steve_Oney_042024_05_8ed6a273af.JPG"
+              alt="Headshot of Steve Oney">
+          </div>
+          
+          <div class="card-body p-0">
+            <span class="member-name">Steve Oney</span>
+            
+            <div class="member-short-bio d-none d-sm-block">Associate Professor
+Michigan SI & CSE</div>
+            
+          </div>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="/team#maryam_arab">
+          
+          
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="/assets/images/people/maryam1_25a871e879.jpeg"
+              alt="Headshot of Maryam Arab">
+          </div>
+          
+          <div class="card-body p-0">
+            <span class="member-name">Maryam Arab</span>
+            
+            <div class="member-short-bio d-none d-sm-block">Postdoctoral Scholar
+Michigan SI</div>
+            
+          </div>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="/team#ashley_zhang">
+          
+          
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="/assets/images/people/ashley_headshot_864ec07f24.jpg"
+              alt="Headshot of Ashley Zhang">
+          </div>
+          
+          <div class="card-body p-0">
+            <span class="member-name">Ashley Zhang</span>
+            
+            <div class="member-short-bio d-none d-sm-block">Ph.D. Student
+Michigan SI</div>
+            
+          </div>
+        </a>
+      </li>
+      
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="/team#jiacheng_zhang">
+          
+          
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="/assets/images/people/jiacheng_8cc7e6f683.png"
+              alt="Headshot of Jiacheng Zhang">
+          </div>
+          
+          <div class="card-body p-0">
+            <span class="member-name">Jiacheng Zhang</span>
+            
+            <div class="member-short-bio d-none d-sm-block">Ph.D. Student
+Michigan SI</div>
+            
+          </div>
+        </a>
+      </li>
+      
+      <li class="member col d-flex p-1">
+        <a class="member-display card w-100 d-flex flex-column border-0"
+          href="/team#xiangyu_zhou">
+          
+          
+          <div class="ratio ratio-1x1">
+            <img class="rounded member-headshot object-fit-cover card-img-top"
+              src="/assets/images/people/xiangyu_7264f83ff0.JPG"
+              alt="Headshot of Xiangyu Zhou">
+          </div>
+          
+          <div class="card-body p-0">
+            <span class="member-name">Xiangyu Zhou</span>
+            
+            <div class="member-short-bio d-none d-sm-block">Ph.D. Student
+Michigan CSE</div>
+            
+          </div>
+        </a>
+      </li>
+      
+      
+    </ul>
+  </section>
+
+  <section>
+    <h2><a href="/research/#all-publications"><span class="text-body">Recent Publications</span><span
+          aria-hidden="true"> [+]</span></a></h2>
+    <ul class="publication-list">
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026" data-authors="ashley_zhang,yan_ru_jhou,yinuo_yang,shamita_rao,maryam_arab,yan_chen,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026/">Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_ru_jhou">Yan-Ru Jhou</span>, 
+  <span
+    class="paper-author"
+    data-author-id="yinuo_yang">Yinuo Yang</span>, 
+  <span
+    class="paper-author"
+    data-author-id="shamita_rao">Shamita Rao</span>, 
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Programming instructors have diverse philosophies about integrating generative AI into their classes. Some encourage students to use AI, while others restrict or forbid it. Regardless of their approach, all instructors benefit from understanding how their students actually use AI while writing code. Such insight hel...</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://uist.acm.org/2026/" target="_blank" rel="noopener">UIST 2026</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-editrail-uist2026.pdf"
+        download="Zhang-Editrail-UIST-2026.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026" data-authors="ashley_zhang,yan_ru_jhou,yinuo_yang,shamita_rao,maryam_arab,yan_chen,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026/">CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_ru_jhou">Yan-Ru Jhou</span>, 
+  <span
+    class="paper-author"
+    data-author-id="yinuo_yang">Yinuo Yang</span>, 
+  <span
+    class="paper-author"
+    data-author-id="shamita_rao">Shamita Rao</span>, 
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Introduces a visualization system that helps instructors interpret students’ keystroke-level coding histories. While traditional timelines show when and where edits occurred, they do not reveal what changed. CodeStream augments timelines with zoomable code annotations, multi-level structural summaries, and a cumulative effort heatmap, allowing instructors to see both the content and intensity of edits without constant context switching.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2026.acm.org" target="_blank" rel="noopener">CHI 2026</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-codestream-chi2026.pdf"
+        download="Zhang-CodeStream-CHI-2026.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026" data-authors="maryam_arab,jenny_liang,valentina_hong,steve_oney,thomas_latoza">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026/">Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jenny_liang"><a class="author-external-link" href="https://jennyliang.me" target="_blank" rel="noopener">Jenny Liang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="valentina_hong">Valentina Hong</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="thomas_latoza"><a class="author-external-link" href="https://people.cs.gmu.edu/~tlatoza/" target="_blank" rel="noopener">Thomas LaToza</a></span></span></div>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://www.computer.org/csdl/journal/ts" target="_blank" rel="noopener">TSE 2026</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-co_advisor_learning_programming_strategies_in_context_2025" data-authors="maryam_arab,hanning_li,rushal_butala,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/co_advisor_learning_programming_strategies_in_context_2025/">Co-Advisor: Learning Programming Strategies in Context</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="hanning_li">Hanning Li</span>, 
+  <span
+    class="paper-author"
+    data-author-id="rushal_butala">Rushal Butala</span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A context-aware learning tool that helps programmers develop strategic problem-solving skills like debugging and program design. Integrated with Visual Studio Code, it analyzes the learner's code, runtime state, and actions to recommend expert strategies tailored to a developer's context. As learners follow these strategies, Co-Advisor provides real-time feedback to make it easier for developers to understand strategic knowledge in context.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2025" target="_blank" rel="noopener">VL/HCC 2025</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/arab-co-advisor-vlhcc2025.pdf"
+        download="Arab-Co-Advisor-VLHCC-2025.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025" data-authors="ashley_zhang,victor_bursztyn,gromit_chan,shunan_guo,eunyee_koh,steve_oney,jane_hoffswell">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025/">ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="victor_bursztyn">Victor Bursztyn</span>, 
+  <span
+    class="paper-author"
+    data-author-id="gromit_chan">Gromit Chan</span>, 
+  <span
+    class="paper-author"
+    data-author-id="shunan_guo">Shunan Guo</span>, 
+  <span
+    class="paper-author"
+    data-author-id="eunyee_koh">Eunyee Koh</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="jane_hoffswell">Jane Hoffswell</span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A visualization system that helps developers understand and debug large collections of conversations between AI agents in Multi-Agent Systems (MASs). ConvoMap contains visualizations to show the flow of interactions between agents and the topics covered. ConvoMap allows MAS developers to spot behavioral patterns, trace errors, and compare outcomes at scale.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2025" target="_blank" rel="noopener">VL/HCC 2025</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-convomap-vlhcc2025.pdf"
+        download="Zhang-ConvoMap-VLHCC-2025.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025" data-authors="yinuo_yang,ashley_zhang,steve_oney,april_wang">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025/">SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yinuo_yang">Yinuo Yang</span>, 
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="april_wang"><a class="author-external-link" href="https://aprilwang.me/" target="_blank" rel="noopener">April Wang</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A dashboard for programming instructors that lets them monitor student progress on complex, multi-step programming exercises. SPARK lets instructors define checkpoints, automatically generates tests for each step, and visualizes progress across students. SPARK also enables inspection of intermediate outputs and runtime states to reveal common challenges and misconceptions.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2025" target="_blank" rel="noopener">VL/HCC 2025</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-award"></i>
+      Honorable mention
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/yang-spark-vlhcc2025.pdf"
+        download="Yang-SPARK-VLHCC-2025.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-multi_click_cross_tab_web_automation_via_action_generalization_2025" data-authors="jiacheng_zhang,jiawen_li,maryam_arab,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/multi_click_cross_tab_web_automation_via_action_generalization_2025/">Multi-Click: Cross-Tab Web Automation via Action Generalization</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="jiacheng_zhang"><a class="author-external-link" href="https://susan-zjc.github.io/" target="_blank" rel="noopener">Jiacheng Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jiawen_li">Jiawen Li</span>, 
+  <span
+    class="paper-author"
+    data-author-id="maryam_arab"><a class="author-external-link" href="https://sites.google.com/view/maryamarab/home" target="_blank" rel="noopener">Maryam Arab</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Proposes "action generalization"---a technique for applying the same action across multiple contexts automatically. Multi-click lets users select a "generalization strategy" to determine which elements a given action (e.g., click or text entry) will apply to within a given page or across multiple tabs. Unlike prior web automation tools, multi-click works at the *interaction* level, rather than requiring a separate script representation of automation macros, which can improve the directness and understandability of bulk actions.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://uist.acm.org/2025/" target="_blank" rel="noopener">UIST 2025</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-multi-click-uist2025.pdf"
+        download="Zhang-Multi-Click-UIST-2025.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024" data-authors="lei_zhang,jin_pan,jacob_gettig,steve_oney,anhong_guo">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024/">VRCopilot: Authoring 3D Layouts with Generative Models in VR</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="lei_zhang"><a class="author-external-link" href="https://raynez.art/" target="_blank" rel="noopener">Lei Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jin_pan">Jin Pan</span>, 
+  <span
+    class="paper-author"
+    data-author-id="jacob_gettig">Jacob Gettig</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="anhong_guo"><a class="author-external-link" href="https://guoanhong.com/" target="_blank" rel="noopener">Anhong Guo</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A mixed-initiative tool for immersive 3D layout design in VR. It integrates generative AI to assist users in co-creating room layouts using voice commands, multimodal interactions, and wireframe-based representations. VRCopilot supports three modes: manual creation, automatic AI generation, and scaffolded creation with wireframes, balancing user control and automation.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener">UIST 2024</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-vrcopilot-uist2024.pdf"
+        download="Zhang-VRCopilot-UIST-2024.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-scrapeviz_hierarchical_representations_for_web_scraping_macros_2024" data-authors="rebecca_krosnick,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/scrapeviz_hierarchical_representations_for_web_scraping_macros_2024/">ScrapeViz: Hierarchical Representations for Web Scraping Macros</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="rebecca_krosnick"><a class="author-external-link" href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en" target="_blank" rel="noopener">Rebecca Krosnick</a></span> and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A programming-by-demonstration tool that helps users create and visualize web scraping macros across multiple pages. ScrapeViz offers a visual storyboard of scraping behaviors, making it easier to understand, trace data sources, and identify errors. </p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2024" target="_blank" rel="noopener">VL/HCC 2024</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/krosnick-scrapeviz-vlhcc2024.pdf"
+        download="Krosnick-ScrapeViz-VLHCC-2024.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024" data-authors="ashley_zhang,xiaohang_tang,steve_oney,yan_chen">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024/">CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="xiaohang_tang"><a class="author-external-link" href="https://xiaohang-tang.github.io/" target="_blank" rel="noopener">Xiaohang Tang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Introduces CFlow, a system for visualizing and analyzing large numbers of student code submissions to help instructors understand common mistakes and patterns. CFlow uses semantic labeling and code structure analysis to cluster code lines across submissions and present them in a visualization that resembles a single code sample, allowing instructors to see the overall semantic flow while still being able to dive into individual submissions.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://learningatscale.hosting.acm.org/las2024/" target="_blank" rel="noopener">L@S 2024</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-trophy"></i>
+      Best paper
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-cflow-ls2024.pdf"
+        download="Zhang-CFlow-LS-2024.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024" data-authors="mauli_pandey,steve_oney,andrew_begel">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024/">Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="andrew_begel"><a class="author-external-link" href="https://andrewbegel.com/" target="_blank" rel="noopener">Andrew Begel</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Explores the code readability preferences of blind and visually impaired (BVI) developers and how they differ from sighted developers, through a qualitative study. Contributes an inclusive taxonomy for code readability and recommendations for programming tools, code standards, and languages to better support BVI developers.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2024.acm.org/" target="_blank" rel="noopener">CHI 2024</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/pandey-inclusive-source-code-chi2024.pdf"
+        download="Pandey-InclusiveSourceCode-CHI-2024.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-runex_augmenting_regular_expression_code_search_with_runtime_values_2023" data-authors="ashley_zhang,yan_chen,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/runex_augmenting_regular_expression_code_search_with_runtime_values_2023/">RunEx: Augmenting Regular-Expression Code Search with Runtime Values</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A system that improves code search by augmenting regular expressions with the ability to specify constraints on runtime values of specific expressions.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2023" target="_blank" rel="noopener">VL/HCC 2023</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-runex-vlhcc2023.pdf"
+        download="Zhang-RunEx-VLHCC-2023.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023" data-authors="april_wang,andrew_head,ashley_zhang,steve_oney,christopher_brooks">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023/">Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="april_wang"><a class="author-external-link" href="https://aprilwang.me/" target="_blank" rel="noopener">April Wang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="andrew_head"><a class="author-external-link" href="https://andrewhead.info/" target="_blank" rel="noopener">Andrew Head</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="christopher_brooks"><a class="author-external-link" href="http://christopherbrooks.ca/" target="_blank" rel="noopener">Christopher Brooks</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Colaroid is an extension to the Visual Studio Code IDE that makes it easier to create mutli-step tutorials about a large code sample. Developers can write their code in the IDE and as they are writing their code, Colaroid allows them to divide their work into steps. Colaroid tutorials are augmented computational notebooks, where snippets and outputs represent a snapshot of a project, with source code differences highlighted, complete source code context for each snippet, and the ability to load and tinker with any stage of the project in a linked IDE.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2023.acm.org/" target="_blank" rel="noopener">CHI 2023</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-award"></i>
+      Honorable mention
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/wang-colaroid-chi2023.pdf"
+        download="Wang-Colaroid-CHI-2023.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023" data-authors="ashley_zhang,yan_chen,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023/">VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="ashley_zhang"><a class="author-external-link" href="https://gezhang.me" target="_blank" rel="noopener">Ashley Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">VizProg is a tool that allows instructors of large programming classes to monitor students' progress at scale. It represents students' code in a 2D map where dots representing students move further to the right as they get closer to a correct solution. VizProg uses vertical space to represent different approaches to solving the problem (so students towards the bottom of the map are using a different approach than students at the top of the map).</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2023.acm.org/" target="_blank" rel="noopener">CHI 2023</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-award"></i>
+      Honorable mention
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-vizprog-chi2023.pdf"
+        download="Zhang-VizProg-CHI-2023.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023" data-authors="lei_zhang,ashutosh_agrawal,steve_oney,anhong_guo">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023/">VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="lei_zhang"><a class="author-external-link" href="https://raynez.art/" target="_blank" rel="noopener">Lei Zhang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="ashutosh_agrawal">Ashutosh Agrawal</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="anhong_guo"><a class="author-external-link" href="https://guoanhong.com/" target="_blank" rel="noopener">Anhong Guo</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A version control system designed especially for Virtual Reality (VR). VRGit allows users to view and navigate the version history of a 3-D scene while immersed in VR. It also allows users to share and discuss history graphs collaboratively.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2023.acm.org/" target="_blank" rel="noopener">CHI 2023</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-vrgit-chi2023.pdf"
+        download="Zhang-VRGit-CHI-2023.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022" data-authors="mauli_pandey,sharvari_bondre,sile_o_modhrain,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/">Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sharvari_bondre"><a class="author-external-link" href="https://shara.page/" target="_blank" rel="noopener">Sharvari Bondre</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sile_o_modhrain"><a class="author-external-link" href="http://www.somodhrain.com/" target="_blank" rel="noopener">Sile O'Modhrain</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Two studies into the accessibility and challenges of developing interfaces with UI frameworks and libraries. Accessibility barriers in programming tools and UI frameworks can complicate the processes of writing UI code, debugging, testing, and collaborating with sighted colleagues. This paper presents recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2022" target="_blank" rel="noopener">VL/HCC 2022</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf"
+        download="Pandey-AccessibilityUIFrameworks-VLHCC-2022.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022" data-authors="rebecca_krosnick,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022/">ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="rebecca_krosnick"><a class="author-external-link" href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en" target="_blank" rel="noopener">Rebecca Krosnick</a></span> and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">ParamMacros is a PBD system where users specify a natural language question about a website. ParamMacros then leverages the DOM structure to help generalize and parameterize to similar natural language questions.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2022" target="_blank" rel="noopener">VL/HCC 2022</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/krosnick-parammacros-vlhcc2022.pdf"
+        download="Krosnick-ParamMacros-VLHCC-2022.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021" data-authors="april_wang,yan_chen,john_chung,christopher_brooks,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021/">PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="april_wang"><a class="author-external-link" href="https://aprilwang.me/" target="_blank" rel="noopener">April Wang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="john_chung"><a class="author-external-link" href="https://johnr0.github.io/" target="_blank" rel="noopener">John Chung</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="christopher_brooks"><a class="author-external-link" href="http://christopherbrooks.ca/" target="_blank" rel="noopener">Christopher Brooks</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A tool that enhances in-class programming exercises by (1) enabling students to write unit tests that can be shared with the rest of the class (and used to test other students' code), (2) enables peer code reviews where students are intelligently grouped with other students to perform code reviews. PuzzleMe is intended for introductory classes and also includes a design to make testing more lightweight. </p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://cscw.acm.org/2021/" target="_blank" rel="noopener">CSCW 2021</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/wang-puzzleme-cscw2021.pdf"
+        download="Wang-PuzzleMe-CSCW-2021.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021" data-authors="mauli_pandey,vaishnav_kameswaran,hrishikesh_rao,sile_o_modhrain,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021/">Understanding Accessibility and Collaboration in Programming for People with Visual Impairments</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="vaishnav_kameswaran"><a class="author-external-link" href="http://vaikam.people.si.umich.edu/" target="_blank" rel="noopener">Vaishnav Kameswaran</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="hrishikesh_rao"><a class="author-external-link" href="https://hrishirao.com/" target="_blank" rel="noopener">Hrishikesh Rao</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sile_o_modhrain"><a class="author-external-link" href="http://www.somodhrain.com/" target="_blank" rel="noopener">Sile O'Modhrain</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A study into how programmers with visual impairments work in the context of programming teams. We describe how some collaborative practices can impede collaboration and required invisible work and articulation work on the part of the programmers with visual impairments.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://cscw.acm.org/2021/" target="_blank" rel="noopener">CSCW 2021</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-award"></i>
+       recognition for contribution to diversity and inclusion
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/pandey-understanding-accessibility-collaboration-cscw2021.pdf"
+        download="Pandey-UnderstandingAccessibilityCollaboration-CSCW-2021.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021" data-authors="rebecca_krosnick,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021/">Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="rebecca_krosnick"><a class="author-external-link" href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en" target="_blank" rel="noopener">Rebecca Krosnick</a></span> and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Two studies to better understand the challenges of writing web automation code (particularly the kinds of context and feedback that are helpful when writing web automation code).</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc-2021" target="_blank" rel="noopener">VL/HCC 2021</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/krosnick-understanding-challenges-needs-vlhcc2021.pdf"
+        download="Krosnick-UnderstandingChallengesNeeds-VLHCC-2021.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021" data-authors="yan_chen,sang_won_lee,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021/">CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sang_won_lee"><a class="author-external-link" href="https://people.cs.vt.edu/sangwonlee/" target="_blank" rel="noopener">Sang Won Lee</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">CoCapture is a tool for creating behavior mockups for websites in the later stage of UI development. Unlike most other prototyping tools, CoCapture assumes that a partially functional UI exists and allows designers to describe UI behaviors by creating mockups that modify the existing UI behaviors by demonstrating and remixing.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2021.acm.org/" target="_blank" rel="noopener">CHI 2021</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/chen-cocapture-chi2021.pdf"
+        download="Chen-CoCapture-CHI-2021.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021" data-authors="rebecca_krosnick,fraser_anderson,justin_matejka,steve_oney,walter_lasecki,tovi_grossman,george_fitzmaurice">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021/">Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="rebecca_krosnick"><a class="author-external-link" href="https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en" target="_blank" rel="noopener">Rebecca Krosnick</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="fraser_anderson"><a class="author-external-link" href="https://www.autodesk.com/research/people/fraser-anderson" target="_blank" rel="noopener">Fraser Anderson</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="justin_matejka"><a class="author-external-link" href="https://www.autodesk.com/research/people/justin-matejka" target="_blank" rel="noopener">Justin Matejka</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="walter_lasecki">Walter Lasecki</span>, 
+  <span
+    class="paper-author"
+    data-author-id="tovi_grossman"><a class="author-external-link" href="https://www.tovigrossman.com/" target="_blank" rel="noopener">Tovi Grossman</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="george_fitzmaurice"><a class="author-external-link" href="https://www.autodesk.com/research/people/george-fitzmaurice" target="_blank" rel="noopener">George Fitzmaurice</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Introduces "think-aloud computing", an application of think-alouds where users are encourage to speak in order to capture process-related as they work. For example, it might capture design intent, to-do items, problems encountered, and more. We present a formative study of think-aloud computing and a prototype of a tool to support think-aloud computing.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2021.acm.org/" target="_blank" rel="noopener">CHI 2021</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/krosnick-think-aloud-computing-chi2021.pdf"
+        download="Krosnick-Think-AloudComputing-CHI-2021.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020" data-authors="lei_zhang,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020/">FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="lei_zhang"><a class="author-external-link" href="https://raynez.art/" target="_blank" rel="noopener">Lei Zhang</a></span> and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">FlowMatic allows users to users to specify interactive behaviors (how to respond to users) while immersed in Virtual Reality (VR). It adapts dataflow programming to allow programming primitives to be modified through direct manipulation and provides immediate feedback.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://uist.acm.org/uist2020/" target="_blank" rel="noopener">UIST 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/zhang-flowmatic-uist2020.pdf"
+        download="Zhang-FlowMatic-UIST-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-a_hybrid_crowd_machine_workflow_for_program_synthesis_2020" data-authors="yan_chen,jaylin_herskovitz,walter_lasecki,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/a_hybrid_crowd_machine_workflow_for_program_synthesis_2020/">A Hybrid Crowd-Machine Workflow for Program Synthesis</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jaylin_herskovitz"><a class="author-external-link" href="https://jayl.in/" target="_blank" rel="noopener">Jaylin Herskovitz</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="walter_lasecki">Walter Lasecki</span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">BashOn introduces a crowdsourcing approach to help make program synthesis systems more robust, reliable, and trustworthy, and reduces the cost of downstream data collection for training a program synthesis system.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc2020" target="_blank" rel="noopener">VL/HCC 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf"
+        download="Chen-HybridCrowd-MachineWorkflow-VLHCC-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020" data-authors="yan_chen,gabriel_matute,april_wang,jaylin_herskovitz,sang_won_lee,walter_lasecki,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020/">EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="gabriel_matute">Gabriel Matute</span>, 
+  <span
+    class="paper-author"
+    data-author-id="april_wang"><a class="author-external-link" href="https://aprilwang.me/" target="_blank" rel="noopener">April Wang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jaylin_herskovitz"><a class="author-external-link" href="https://jayl.in/" target="_blank" rel="noopener">Jaylin Herskovitz</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sang_won_lee"><a class="author-external-link" href="https://people.cs.vt.edu/sangwonlee/" target="_blank" rel="noopener">Sang Won Lee</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="walter_lasecki">Walter Lasecki</span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">EdCode applies a semi-asychronous on-demand help seeking model in a learning setting, aiming towards provide more personalized support at scale.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://conf.researchr.org/home/vlhcc2020" target="_blank" rel="noopener">VL/HCC 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-trophy"></i>
+      Best short paper
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/chen-edcode-vlhcc2020.pdf"
+        download="Chen-EdCode-VLHCC-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020" data-authors="yan_chen,andr_s_monroy_hern_ndez,ian_wehrman,steve_oney,walter_lasecki,rajan_vaish">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020/">Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="andr_s_monroy_hern_ndez"><a class="author-external-link" href="http://www.andresmh.com/" target="_blank" rel="noopener">Andrés Monroy-Hernández</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="ian_wehrman">Ian Wehrman</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="walter_lasecki">Walter Lasecki</span>, and 
+  <span
+    class="paper-author"
+    data-author-id="rajan_vaish">Rajan Vaish</span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Sifter improves the video curation process by combining automated techniques with a human-powered two-stage pipeline that browses, selects, and reaches an agreement.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://imx.acm.org/2020/" target="_blank" rel="noopener">IMX 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/chen-sifter-imx2020.pdf"
+        download="Chen-Sifter-IMX-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020" data-authors="april_wang,zihan_wu,christopher_brooks,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020/">Callisto: Capturing the "Why" by Connecting Conversations with Computational Narratives</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="april_wang"><a class="author-external-link" href="https://aprilwang.me/" target="_blank" rel="noopener">April Wang</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="zihan_wu"><a class="author-external-link" href="https://www.zihanwu.com/" target="_blank" rel="noopener">Zihan Wu</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="christopher_brooks"><a class="author-external-link" href="http://christopherbrooks.ca/" target="_blank" rel="noopener">Christopher Brooks</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">We designed Callisto, a Jupyter Notebook extension for better explaining messy notebooks. Callisto captures and stores contextual links between discussion messages and notebook elements with minimal effort from users. Callisto allows notebook readers to better understand the current notebook content and the overall problem-solving process that led to it, by making it possible to browse the discussions and code history relevant to any part of the notebook.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2020.acm.org/" target="_blank" rel="noopener">CHI 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-award d-inline d-md-block">
+      <i class="bi bi-award"></i>
+      Honorable mention
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/wang-callisto-chi2020.pdf"
+        download="Wang-Callisto-CHI-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020" data-authors="mauli_pandey,hari_subramonyam,brooke_sasia,steve_oney,sile_o_modhrain">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020/">Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="hari_subramonyam"><a class="author-external-link" href="http://haridecoded.com/" target="_blank" rel="noopener">Hari Subramonyam</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="brooke_sasia">Brooke Sasia</span>, 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="sile_o_modhrain"><a class="author-external-link" href="http://www.somodhrain.com/" target="_blank" rel="noopener">Sile O'Modhrain</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">A study to better understand how visually impaired people explore and create labeled tactile graphics.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2020.acm.org/" target="_blank" rel="noopener">CHI 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/pandey-explore-create-annotate-chi2020.pdf"
+        download="Pandey-ExploreCreateAnnotate-CHI-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+<li>
+
+
+<article class="paper row" id="pub-improving_crowd_supported_gui_testing_with_structural_guidance_2020" data-authors="yan_chen,mauli_pandey,jean_song,walter_lasecki,steve_oney">
+  <div class="col-sm-10">
+    
+    <h3 class="paper-title"><a href="/papers/improving_crowd_supported_gui_testing_with_structural_guidance_2020/">Improving Crowd-Supported GUI Testing with Structural Guidance</a></h3>
+    <div class="paper-authors">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="yan_chen"><a class="author-external-link" href="https://chensivan.github.io/" target="_blank" rel="noopener">Yan Chen</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="jean_song"><a class="author-external-link" href="https://jyskwon.github.io/" target="_blank" rel="noopener">Jean Song</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="walter_lasecki">Walter Lasecki</span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+    
+    <p class="paper-description d-none d-md-block">Two techniques, interactive event-flow graphs and GUI-level guidance, that guide GUI testers to discover more test cases and avoid duplicate test cases.</p>
+    
+  </div>
+  <div class="col-sm-2 text-left">
+    
+    <div class="paper-venue d-inline d-md-block">
+      
+      <a href="https://chi2020.acm.org/" target="_blank" rel="noopener">CHI 2020</a>
+      
+      <span class="d-inline d-md-none">&nbsp;</span>
+    </div>
+    
+
+    
+
+    
+    <div class="paper-pdf d-inline d-md-block">
+      <a class="pdf-download" href="/assets/pdfs/chen-improving-crowd-supported-gui-chi2020.pdf"
+        download="Chen-ImprovingCrowd-SupportedGUI-CHI-2020.pdf" target="_blank" rel="noopener"><i
+          class="bi bi-file-earmark-pdf"></i>&nbsp;PDF</a>
+    </div>
+    
+  </div>
+</article></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+  </section>
+
+  
+<footer class="container">
+  <h2>Affiliations</h2>
+  <div class="affiliations row gy-4">
+    
+    <div class="col-md-4">
+      <a href="https://www.si.umich.edu/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/umsi_logo.svg" alt="Michigan School of Information"></a>
+    </div>
+    
+    <div class="col-md-4">
+      <a href="https://misc.si.umich.edu/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/misc_dark.svg" alt="MISC"></a>
+    </div>
+    
+    <div class="col-md-4">
+      <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/cse_logo.svg" alt="Michigan CSE"></a>
+    </div>
+    
+  </div>
+  <h2 class="d-md-flex justify-content-between align-items-end mt-5">
+    Support
+    <span class="d-block d-md-inline text-body fs-6 text-muted font-weight-normal pb-1 fw-normal">
+      (Any views presented are those of the authors and do not necessarily represent the views of any sponsors.)
+    </span>
+  </h2>
+  <div class="row gy-4">
+    
+    <div class="col col-md-3">
+      <a href="https://nsf.gov/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/nsf_logo.svg" alt="NSF"
+          class="sponsor-logo"></a>
+    </div>
+    
+    <div class="col col-md-4">
+      <a href="https://research.google/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/google_logo.svg" alt="Google"
+          class="sponsor-logo"></a>
+    </div>
+    
+    <div class="col col-md-3">
+      <a href="https://research.adobe.com/" target="_blank" rel="noopener"><img
+          src="/assets/images/logos/adobe_logo.svg" alt="Adobe"
+          class="sponsor-logo"></a>
+    </div>
+    
+  </div>
+</footer>
+
+</div>
+    </main>
+
+    
+<footer class="site-footer">
+  <div class="container">
+    <p class="site-footer-line text-muted">
+      &copy; 2026 Steve Oney
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/soney/spot-web" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Source on GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+  </div>
+
+  <script defer src="/assets/js/webmcp.js"
+  data-mcp-index="/assets/mcp/index.json"
+  data-mcp-cv="/assets/mcp/cv.json"></script>
+
+  <script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-name-recording]');
+    if (!link) return;
+    event.preventDefault();
+    var audio = link.nameRecordingAudio;
+    if (!audio) {
+      audio = new Audio(link.href);
+      link.nameRecordingAudio = audio;
+      audio.addEventListener('ended', function () { link.classList.remove('playing'); });
+      audio.addEventListener('pause', function () { link.classList.remove('playing'); });
+      audio.addEventListener('play', function () { link.classList.add('playing'); });
+    }
+    if (audio.paused) {
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+</script>
+
+</body>
+
+</html>

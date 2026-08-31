@@ -1,0 +1,1027 @@
+/* The palette, both themes at once. `light-dark(light, dark)` picks by the
+   used value of `color-scheme`, which is what makes one declaration serve two
+   themes and, more to the point, serve them from two different sources: the OS
+   preference when nothing has been chosen, and the reader's choice when it
+   has. The three rules under "Which theme is on" below are the whole of that
+   switch. Writing this as a prefers-color-scheme block plus an attribute block
+   would mean two copies of every value here, and Liquid-style silent drift
+   between them is the failure this repo is least able to catch.
+
+   Every ratio noted below was computed with the WCAG 2.1 relative-luminance
+   formula and floored to 2dp, so none is overstated. Body text needs 4.5:1;
+   borders, focus rings and other graphical boundaries need 3:1. */
+:root {
+    color-scheme: light dark;
+
+    --text-color: light-dark(#131516, #E6E9EB);
+    /* dark: 14.59:1 on the page, 12.66:1 on the announcement panel, 12.33:1 on code */
+    --background-color: light-dark(#FFF, #16181A);
+    /* dark: luminance 0.00898 -- 1.17:1 off pure black, so it reads as a surface */
+
+    --secondary-text-color: light-dark(#655A52, #9C9289);
+    /* dark: 5.83:1 on the page, 5.06:1 on the announcement panel, 4.93:1 on
+       code. Kept dim enough to still read as secondary: it is 40% of the body
+       text's ratio there, against 36% in light mode. */
+
+    --link-color: light-dark(#2F65A7, #84B0E6);
+    /* dark: 7.91:1. The light #2F65A7 is only 3.00:1 against the dark page --
+       it is a mid-tone blue built for white. #84B0E6 is the same hue (213.1 vs
+       213.0 degrees) lightened, so it still reads as the site's blue. */
+    --link-hover-color: light-dark(#2F65A7, #84B0E6);
+
+    --announcement-background-color: light-dark(#F5F5F5, #212528);
+    --announcement-foreground-color: light-dark(#424242, #C2C7CB);
+    /* dark: 9.06:1 on the panel above; the panel is 1.15:1 off the page */
+    --announcement-bullhorn-color: #FFCB05;
+    /* One value for both: as a border on the dark panel it is 10.14:1, where it
+       needs 3:1. It is the U-M maize and the one colour dark mode improves for
+       free. */
+
+    --code-background-color: light-dark(#F7F7F7, #23272B);
+    /* dark: 1.18:1 off the page, and body text on it is 12.33:1 */
+
+    --hover-surface-color: light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.1));
+    /* The disc behind an icon button on hover. Alpha rather than a pair of
+       opaque greys so it composites onto whatever is behind it and needs no
+       retuning if a surface colour moves. Purely decorative -- it carries no
+       information the icon and its label do not -- so no contrast floor
+       applies to the disc itself; what has to stay legible is the icon on top
+       of it, and that goes to full --text-color on hover. */
+
+    --footer-rule-color: light-dark(#DDD, #2E3236);
+    /* The hairline above the site footer. Decorative only -- it divides two
+       blocks that whitespace already divides -- so the 3:1 floor for a
+       meaningful boundary does not apply, and both halves are deliberately
+       under it: 1.35:1 on the light page, 1.37:1 on the dark one. Matched to
+       each other rather than to a ratio, so the rule reads as the same
+       hairline in both themes instead of thickening in one. */
+
+    /* Bootstrap's colour utilities read the five tokens below and ship
+       light-theme values for them. .text-body is on the three homepage section
+       headings and the sponsors note, .text-muted on the team bios,
+       .text-secondary on paper award labels, and --bs-secondary-color also
+       colours the " · " breadcrumb separators. All of them set color with
+       !important, so the variable is the only override point. Left alone they
+       land around 1.15:1 on the dark page, i.e. invisible.
+
+       The light halves are Bootstrap 5.3.8's own defaults, read back out of the
+       browser rather than typed from memory, so light mode resolves to exactly
+       what it did before these were declared here. This works because site.css
+       loads after Bootstrap (default.html line 9, then line 15) and :root ties
+       Bootstrap's `:root, [data-bs-theme=light]` on specificity, so source
+       order decides. Keep those two <link> tags in that order; reversing them
+       would silently restore Bootstrap's light values.
+
+       These are Bootstrap 5.3 names; a major version bump would need them
+       rechecked, and the failure mode is silent. */
+    --bs-body-color: light-dark(#212529, #E6E9EB);
+    /* .text-body -- dark 14.59:1, was 1.15:1 */
+    --bs-secondary-color: light-dark(rgba(33, 37, 41, 0.75), #9C9289);
+    /* .text-muted and the breadcrumb dividers -- dark 5.83:1, was 1.11:1 */
+    --bs-code-color: light-dark(#d63384, #E685B5);
+    /* dark 7.10:1. Bootstrap's light #d63384 is 3.95:1 there; #E685B5 is
+       Bootstrap 5.3's own dark-theme code colour. Reaches every `code` span in
+       a markdownified long_bio or group overview. */
+
+    --bs-breadcrumb-divider: " · ";
+}
+
+html {
+    /* Slightly larger than the 16px Bootstrap default. A percentage, not a px
+       value: a reader who has raised their browser's default font size keeps
+       that increase scaled, whereas `font-size: 17px` would override it.
+       Everything on the site is sized in rem or em, so proportions hold --
+       including .paper-title, which is in rem and would otherwise have stayed
+       behind if this were set on body. */
+    font-size: 106.25%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Alegreya', serif;
+    margin-bottom: 100px;
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+    }
+
+    h2,
+    .h2 {
+        margin-top: 1.5em;
+    }
+
+    .news,
+    .group_description {
+
+        h2,
+        .h2 {
+            margin-top: 0px;
+        }
+    }
+
+    .announcements {
+        background-color: var(--announcement-background-color);
+        color: var(--announcement-foreground-color);
+        border-radius: 3px;
+        position: relative;
+        border: 1px solid var(--announcement-bullhorn-color);
+
+        >p {
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+            text-wrap: wrap;
+        }
+    }
+
+    .news {
+        ul.news-list {
+            li.news-item {
+                .news-links {
+                    img {
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            &.short {
+                .news-links {
+                    display: inline;
+                    padding-left: 0px;
+
+                    li {
+                        display: inline;
+
+                        a {
+                            color: var(--secondary-text-color);
+                        }
+
+                        color: var(--secondary-text-color);
+                        padding-left: 1px;
+                        padding-right: 1px;
+
+                        .member-name,
+                        .publication-title {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    li.news-item {
+        p {
+            display: inline;
+        }
+    }
+
+    nav.navbar {
+        background: none;
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+        /* .navbar-expand pins this row to one line, and .nav-back below is
+           nowrap, so on a page with a back link under about 500px the row
+           already ran past the right edge and scrolled the whole document
+           sideways. The theme toggle sits at the end of that row, so it went
+           off-screen with it -- a control you have to scroll horizontally to
+           find is not one you can use. Bootstrap's .navbar > .container takes
+           `flex-wrap: inherit`, so setting it here is what reaches it.
+
+           This only engages once the row overflows: at every width where the
+           navbar already fitted on one line, wrap and nowrap lay out
+           identically. */
+        flex-wrap: wrap;
+
+        .navbar-brand {
+            color: var(--text-color);
+
+            /* The paint splatter behind the wordmark: one splat per alum in
+               their `color`, an <img> emitted by the {% splatter %} tag
+               (_plugins/splatter.rb builds the file). At rest the navbar
+               shows only the word; hovering or focusing the link fades the
+               paint in behind it. The cluster is a bit larger than the word,
+               so the letters sit on paint rather than beside it.
+
+               Absolutely positioned and centred on the word; `isolation`
+               opens a stacking context so the z-indexes below stay local.
+               pointer-events:none keeps the invisible image from widening
+               the link's hover and click area to the size of the spray. */
+            position: relative;
+            isolation: isolate;
+
+            .brand-text {
+                position: relative;
+                z-index: 1;
+            }
+
+            .splatter {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                /* The image is 340x240 units with the splat cluster filling
+                   the middle ~220 of its width, which makes the cluster a
+                   bit wider than the word. */
+                width: 340%;
+                height: auto;
+                /* Centred on the x-height rather than the line box: the
+                   letters sit below the box's middle (cap height above,
+                   descender below), so the cluster is pushed down a little. */
+                transform: translate(-50%, -44%);
+                z-index: 0;
+                opacity: 0;
+                transition: opacity 0.25s ease-in-out;
+                pointer-events: none;
+            }
+
+            /* Reveal is disabled for now, so the splatter stays at
+               opacity 0 and the navbar shows only the word. The markup and
+               the positioning above are left in place; uncomment this rule
+               to turn the effect back on.
+
+               :active covers touch, where there is no hover: pressing the
+               word shows the paint for the moment before the page changes. */
+            /*
+            &:hover .splatter,
+            &:focus-visible .splatter,
+            &:active .splatter {
+                opacity: 1;
+            }
+            */
+        }
+
+        .nav-back {
+            /* Sits on the navbar row, pushed right by .ms-auto, so a "back"
+               affordance reads as chrome rather than as page content. Same
+               muted colour as the tabs. */
+            color: var(--secondary-text-color);
+            white-space: nowrap;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: var(--secondary-text-color);
+            }
+
+            &.active {
+                .nav-link {
+                    text-decoration: underline;
+                    color: var(--text-color);
+                }
+            }
+
+            position: relative;
+        }
+    }
+
+    .member-row {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* The long-form `profile` on /people/<id>/, below the headshot row and
+       above Publications (_layouts/person.html). Its own headings are the
+       author's, so they are pulled down a size to sit under the page h1 and
+       to not compete with the "Publications" h2 that follows. */
+    .person-profile {
+        margin-top: 2rem;
+
+        h2 {
+            font-size: 1.35rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+        }
+
+        /* Undoes the global `h2 { margin-top: 1.5em }` for a profile that
+           opens on a heading, which would otherwise sit twice as far below
+           the bio as one that opens on a paragraph. */
+        > :first-child {
+            margin-top: 0;
+        }
+    }
+
+    /* "Full profile →" on a /team row, for the people whose long-form profile
+       lives on their own page (_includes/member_block.html). */
+    .person-profile-link {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* The "she/her" line below a name in a member-row or person-page
+       heading. Its own block now (not nested in the h1/h3), so it is sized
+       in rem rather than tracking the heading's em scale. */
+    .pronouns {
+        font-size: 0.9rem;
+        font-weight: normal;
+        color: var(--bs-secondary-color);
+        margin-top: -0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* The speaker icon that plays a name-pronunciation recording, inline
+       right after the name in a member-row or person-page heading
+       (_includes/name_recording_link.html). Sized in em so it tracks the
+       h3 on /team and the h1 on /people/<id>/, same as .pronouns used to. */
+    .name-recording-link {
+        font-size: 0.6em;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    /* The speaker icon while its recording plays
+       (_includes/name_recording_script.html toggles the class). Only the
+       icon pulses, so a second click reads as "stop" without anything else
+       shifting. The keyframes are at top level below body -- CSS nesting
+       does not allow @keyframes inside a style rule. */
+    a[data-name-recording].playing .bi {
+        animation: name-recording-pulse 1.2s ease-in-out infinite;
+    }
+
+    .member {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 350px;
+    }
+
+    .member-display.card {
+        text-align: center;
+        text-decoration: none;
+
+        background: none;
+
+        .member-name {
+            font-weight: bold;
+        }
+
+        color: var(--text-color);
+
+        &:hover {
+            color: var(--text-color);
+            text-decoration: none;
+
+            img.member-headshot {
+                filter: none;
+            }
+        }
+
+        img.member-headshot {
+            transition: 0.5s;
+            filter: grayscale(100%) brightness(110%) contrast(80%);
+        }
+
+        .member-short-bio {
+            font-size: 0.8em;
+            white-space: pre-line;
+        }
+    }
+
+    .group-areas {
+        font-size: 0.9em;
+        margin-top: 1rem;
+    }
+
+    .cluster-description {
+        color: var(--secondary-text-color);
+        font-size: 0.9em;
+    }
+
+    /* The "On this page" outline under the h1 on /research and /team. Each
+       page builds its list from the same data and the same conditionals as
+       the sections it links to, so an entry cannot outlive its section.
+       One line, top-level sections only, joined by the same " · " the
+       breadcrumb separators use. */
+    .page-outline {
+        font-size: 0.9em;
+
+        .page-outline-label {
+            color: var(--secondary-text-color);
+        }
+
+        ul {
+            display: inline;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li+li::before {
+            content: " · ";
+            color: var(--secondary-text-color);
+        }
+    }
+
+    .collaborator-list {
+        column-count: 1;
+
+        @media (min-width: 768px) {
+            column-count: 3;
+        }
+
+        li {
+            break-inside: avoid;
+            margin-bottom: 0.2rem;
+        }
+    }
+
+    ul.publication-list {
+        list-style: none;
+        padding: 0px;
+    }
+
+    li {
+        .paper {
+            .paper-award {
+                text-align: center;
+                color: var(--secondary-text-color);
+            }
+
+            .paper-title {
+                font-weight: bold;
+                font-size: 1rem;
+                margin-bottom: 0px;
+            }
+
+            .paper-venue {
+                text-align: center;
+
+                a {
+                    color: var(--secondary-text-color);
+                }
+            }
+
+            .paper-description {
+                color: var(--secondary-text-color);
+                font-size: 0.85em;
+                text-align: left;
+                margin-bottom: 0px;
+
+                &::before {
+                    content: "Description: ";
+                    font-weight: bold;
+                }
+            }
+
+            .paper-pdf {
+                text-align: center;
+            }
+
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .paper-authors {
+        .paper-author.highlight {
+            font-weight: bold;
+        }
+
+        .author-internal-link {
+            color: inherit;
+        }
+
+        .author-external-link {
+            color: inherit;
+        }
+    }
+
+    footer {
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        .sponsor-logo {
+            height: 100px;
+        }
+
+        h2 {
+            margin-top: 5px;
+            font-size: 1.5em;
+        }
+    }
+
+    .site-footer {
+        /* The rule above is the homepage logo row's; this is the copyright
+           line under every page, and it wants neither of those margins. The
+           100px bottom would double up with the one `body` already carries,
+           and on the homepage -- the one page that has both footers -- the
+           50px top is the wrong side of the gap: the logo row's own 100px
+           bottom margin collapses against it and wins, so this reads as a
+           closing line rather than a third section. .site-footer beats the
+           bare element selector on specificity, so source order does not
+           matter here. */
+        margin-top: 40px;
+        margin-bottom: 0;
+
+        .site-footer-line {
+            /* The hairline sits on the <p>, not on .site-footer, so it ends
+               where the text does. A border on the footer itself would run
+               the full window width, and one on the .container would still
+               overshoot by that container's horizontal padding. */
+            border-top: 1px solid var(--footer-rule-color);
+            padding-top: 12px;
+            margin-bottom: 0;
+            font-size: 0.85em;
+        }
+
+        .bi-github {
+            /* Optical, not structural: the glyph's box sits high against
+               Alegreya's baseline at this size. */
+            vertical-align: -0.08em;
+        }
+    }
+
+    .error-page {
+        margin: 10px auto;
+        max-width: 600px;
+        text-align: center;
+
+        h1 {
+            margin: 30px 0;
+            font-size: 4em;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+    }
+
+    .blogpost {
+        .title {
+            font-weight: bold;
+        }
+
+        .created {
+            color: var(--secondary-text-color);
+            font-style: italic;
+
+            &::before {
+                content: " (";
+            }
+
+            &::after {
+                content: ")";
+            }
+        }
+    }
+
+    /* /writing/<slug>/. The date is its own class rather than the .created
+       above, which wraps itself in parentheses for the inline listing on
+       /writing/ and reads as an aside when it is on its own line. */
+    .writing-page {
+        .writing-date {
+            color: var(--secondary-text-color);
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .writing-description {
+            margin-top: 1.5rem;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .writing-read {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .skip-to-content-link:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .skip-to-content-link:focus,
+    .skip-to-content-link:active {
+        clip: auto;
+        clip-path: none;
+        height: auto;
+        overflow: visible;
+        position: static;
+        white-space: normal;
+        width: auto;
+    }
+
+    /* /papers/<id>/. One text column on a single left edge, running the full
+       width of the .container like every other page -- this class scopes the
+       rules below rather than setting a measure of its own. The hierarchy is
+       carried by colour and spacing, not by per-element font sizes: title,
+       authors, then everything about the venue in one muted line, then the two
+       actions on one row. */
+    .paper-page {
+        .paper-meta {
+            color: var(--secondary-text-color);
+            margin: 0.25rem 0 0;
+
+            a {
+                color: var(--secondary-text-color);
+            }
+        }
+
+        .paper-actions {
+            align-items: center;
+            column-gap: 1.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+            row-gap: 0.5rem;
+        }
+
+        .section-card {
+            margin-top: 2.25rem;
+
+            /* The card's margin above owns the spacing, so the global
+               `h2 { margin-top: 1.5em }` must not add to it. */
+            h2 {
+                margin-top: 0;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        pre.bibtex {
+            background: var(--code-background-color);
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+            overflow-x: auto;
+            padding: 0.75rem;
+        }
+
+        .paper-cite-header {
+            align-items: baseline;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 0.75rem;
+            justify-content: space-between;
+
+            /* pre.bibtex's margin-top owns the gap below the row, as it did
+               when the heading stood alone; as a flex item the heading's own
+               margin no longer collapses with it and would double the space. */
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        /* Hidden until assets/js/paper.js adds `is-ready`: with JavaScript
+           off (or no Clipboard API) the button could only fail, so it is
+           simply not there -- the .theme-toggle reasoning below. */
+        .bibtex-copy {
+            display: none;
+        }
+
+        .bibtex-copy.is-ready {
+            align-items: center;
+            background: none;
+            /* --secondary-text-color clears the 3:1 boundary floor against
+               the page in both themes (5.83:1 dark, 6.70:1 light). */
+            border: 1px solid var(--secondary-text-color);
+            border-radius: 3px;
+            color: var(--secondary-text-color);
+            display: inline-flex;
+            font-size: 0.85rem;
+            gap: 0.35em;
+            line-height: 1;
+            padding: 0.3em 0.6em;
+            /* Colour only, no motion, so no prefers-reduced-motion guard is
+               needed (the .theme-toggle reasoning again). */
+            transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+        }
+
+        .bibtex-copy.is-ready:hover,
+        .bibtex-copy.is-ready:focus-visible {
+            background-color: var(--hover-surface-color);
+            color: var(--text-color);
+        }
+    }
+
+    /* The Teaching section on /people/<id>/. Each entry is a title and one
+       muted line, so a single column would run the page long for no gain --
+       these sit side by side across the full width of the .container instead,
+       under the publication list. auto-fill against a min track rather than a
+       fixed column count, so the same rule gives three columns on a desktop,
+       two on a tablet and one on a phone; 17rem is a little wider than the
+       longest course title ("Instructor (and creator) – SI 379 (Building
+       Interactive Applications)") wraps to comfortably. */
+    .person-teaching {
+        .teaching-list {
+            display: grid;
+            gap: 1.5rem 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .teaching-title {
+            font-weight: bold;
+        }
+
+        .teaching-meta {
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+        }
+
+        .teaching-description {
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            margin-top: 0.25rem;
+
+            /* Two of these descriptions are a bare Coursera URL, which has no
+               space in it to break at and would otherwise push its grid column
+               wider than its track. */
+            a {
+                overflow-wrap: anywhere;
+            }
+        }
+    }
+}
+
+@keyframes name-recording-pulse {
+    50% {
+        opacity: 0.35;
+    }
+}
+
+/* The navbar's light/dark toggle (_includes/theme_toggle.html). Top level
+   rather than nested inside `body nav.navbar` above because every rule here is
+   conditioned on <html>, and `:root[data-theme] &` reads worse than it looks.
+   It carries Bootstrap's .nav-link, which zeroes a button's background and
+   border for exactly this case; only the parts specific to an icon button are
+   below.
+
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
+
+:root[data-theme] .theme-toggle {
+    /* inline-flex, so the icon centres in the box rather than sitting on the
+       text baseline it does not have. */
+    align-items: center;
+    border-radius: 50%;
+    color: var(--secondary-text-color);
+    display: inline-flex;
+    font-size: 1.05rem;
+    justify-content: center;
+    line-height: 1;
+    padding: 0.5rem;
+    /* Colour only, no motion: a fade needs no prefers-reduced-motion guard,
+       where a scale or a spin would. It also softens the icon's colour change
+       when the theme itself flips. */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+:root[data-theme] .theme-toggle:hover,
+:root[data-theme] .theme-toggle:focus-visible {
+    /* Two things at once, because on an icon the colour shift alone is easy to
+       miss: the icon darkens to the body colour, matching what an active nav
+       tab does, and a disc appears behind it so the control reads as a button
+       rather than as decoration. Beats Bootstrap's .nav-link:hover on source
+       order at equal specificity.
+
+       :focus-visible gets the same treatment so a keyboard reader sees the
+       control light up the way a pointer does, not just the ring around it.
+
+       :root[data-theme] is on the front to win, not to select: the resting
+       colour is set by `:root[data-theme] .theme-toggle` at (0,3,0), which
+       outranks a bare `.theme-toggle:hover` at (0,2,0). Without the prefix the
+       icon keeps its muted colour through the hover and only the disc appears.
+       Anything that changes the resting rule's selector has to change this one
+       to match. */
+    background-color: var(--hover-surface-color);
+    color: var(--text-color);
+}
+
+/* Show the state the site is in: half-circle on auto, sun on light, moon on
+   dark. Keyed off the attribute rather than swapped by the script so the
+   correct icon is painted on the first frame -- the choice is settled in
+   <head>, but the script does not touch the DOM until DOMContentLoaded.
+
+   Hidden by default rather than each icon hiding the other two, so an
+   unrecognised data-theme shows nothing rather than all three stacked. */
+.theme-toggle-icon {
+    display: none;
+}
+
+:root[data-theme="auto"] .theme-toggle-icon-auto,
+:root[data-theme="light"] .theme-toggle-icon-light,
+:root[data-theme="dark"] .theme-toggle-icon-dark {
+    display: block;
+}
+
+/* --- Which theme is on -------------------------------------------------
+   Two rules, and the whole switch. `color-scheme: light dark` in :root above
+   means light-dark() follows the OS by default, which covers two cases at
+   once: a reader with JavaScript off, and a reader who chose auto. That is why
+   data-theme="auto" appears nowhere below -- it is the absence of an override,
+   so it needs no rule, and an OS that flips at dusk repaints without anything
+   here running. The two rules below are the overrides.
+
+   The script sets no inline color-scheme of its own: an inline style would
+   outrank the print rule below, which is the one place a chosen theme must not
+   win. */
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* Paper is always light, whatever the OS says and whatever the reader chose.
+   This replaces the `@media screen and (...)` scoping the dark block used to
+   carry: browsers drop background-color when printing but honour color, so a
+   dark palette reaching paper would print light text onto white.
+
+   `:root[data-theme]` is not redundant -- a bare `:root` is (0,1,0) and would
+   lose to `:root[data-theme="dark"]` at (0,2,0) above, media query or not.
+   This ties that at (0,2,0) and wins on source order, so it has to stay below
+   them. */
+@media print {
+
+    :root,
+    :root[data-theme] {
+        color-scheme: light;
+    }
+}
+
+/* --- Dark mode, the parts light-dark() cannot carry ---------------------
+   Everything else about dark mode is in the palette at the top of this file.
+   These five values are here because light-dark() takes two <color>s and
+   these are not colours: three are filter lists, and two are the bare comma
+   triples Bootstrap feeds to rgba().
+
+   So this is the one thing in the file that genuinely exists twice, and the
+   two copies must stay identical. The first covers everyone following the OS:
+   a reader who chose auto, and a reader with JavaScript off, for whom the
+   attribute was never set at all. The second covers a reader who chose dark.
+   Five declarations was the price of keeping the no-JS path; forty-five was
+   not.
+
+   Both are scoped to `screen` so none of it reaches paper, matching the print
+   rule above. */
+@media screen and (prefers-color-scheme: dark) {
+
+    :root:not([data-theme]),
+    :root[data-theme="auto"] {
+        --headshot-filter: grayscale(100%) brightness(85%) contrast(90%);
+        --footer-logo-filter: brightness(0) invert(1);
+        --footer-nsf-filter: grayscale(1) invert(1) brightness(2);
+        --image-edge-shadow: 0 0 0 1px #6B7278;
+        --focus-ring: 2px solid #FFCB05;
+        --focus-ring-offset: 2px;
+        --bs-body-color-rgb: 230, 233, 235;
+        --bs-secondary-rgb: 156, 146, 137;
+    }
+}
+
+@media screen {
+    :root[data-theme="dark"] {
+        --headshot-filter: grayscale(100%) brightness(85%) contrast(90%);
+        --footer-logo-filter: brightness(0) invert(1);
+        --footer-nsf-filter: grayscale(1) invert(1) brightness(2);
+        --image-edge-shadow: 0 0 0 1px #6B7278;
+        --focus-ring: 2px solid #FFCB05;
+        --focus-ring-offset: 2px;
+        --bs-body-color-rgb: 230, 233, 235;
+        --bs-secondary-rgb: 156, 146, 137;
+    }
+}
+
+/* The light halves of those five, and the rules that read them. Every rule
+   below is unconditional: the variable carries the theme, so there is no
+   second selector to keep in step. */
+:root {
+    --headshot-filter: grayscale(100%) brightness(110%) contrast(80%);
+    /* Dark drops brightness below 1 so the photo recedes toward the dark page,
+       mirroring what brightness(110%) does against white. */
+    --footer-logo-filter: none;
+    --footer-nsf-filter: none;
+    --image-edge-shadow: none;
+    /* Dark: #6B7278 is 3.64:1 against the page -- deliberately dim, because at
+       5.79:1 the ring read as a bright outline around every photo, and 3:1 is
+       the floor for the boundary job it does.
+
+       `none` rather than a transparent ring: a transparent one would paint
+       nothing either, but it would show up on every headshot in a computed-
+       style diff, and "diff the output and expect nothing" is how changes are
+       checked in this repo. */
+    --focus-ring: 0;
+    --focus-ring-offset: 0;
+    /* `0` is exactly what Bootstrap sets for .nav-link/.btn :focus-visible, so
+       light mode keeps the glow it shipped with, untouched. */
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-secondary-rgb: 108, 117, 125;
+}
+
+body {
+
+    .nav-link:focus-visible,
+    .btn:focus-visible {
+        /* Bootstrap sets outline:0 on both and leaves a 25%-alpha blue glow,
+           which composites to about 1.3:1 on the dark page -- and to #244E8C on
+           a focused .btn fill, 1.41:1. Maize at outline-offset 2px sits against
+           the page on both sides: 11.69:1.
+
+           --focus-ring is `0` in light mode, which is exactly what Bootstrap
+           sets, so light-mode readers keep the glow the site shipped with.
+
+           The glow is left in place in dark mode too, where the old rule used
+           to suppress it with box-shadow:none. It cannot be suppressed from
+           here: `box-shadow: var(--x)` with --x unset is invalid at
+           computed-value time and resolves to none, which would strip light
+           mode's only focus indicator. At 1.3:1 the glow is not visible under
+           the maize ring anyway, and a dark-only rule to remove it is the
+           duplication this arrangement exists to avoid. */
+        outline: var(--focus-ring);
+        outline-offset: var(--focus-ring-offset);
+    }
+
+    .member-display.card img.member-headshot {
+        filter: var(--headshot-filter);
+    }
+
+    .news-links img,
+    img.member-headshot {
+        /* A ring rather than a border: it costs no layout, and it sits outside
+           the inline border the chips carry, so it never has to beat an inline
+           style. `none` in light mode, so nothing is painted there. */
+        box-shadow: var(--image-edge-shadow);
+    }
+
+    footer img {
+        /* The institutional marks are dark on transparent -- umsi and cse
+           #002E5E, misc #294E91, nsf #005699, and adobe's wordmark carries no
+           fill at all so it renders #000. Against the dark page they run 1.31:1
+           to 2.4:1: gone. brightness(0) flattens each mark to black while
+           preserving its alpha, then invert(1) makes it white, so every logo
+           becomes a clean white knockout at 17.80:1 -- the standard reverse
+           treatment institutions publish for dark backgrounds.
+
+           Applied to all six rather than only the four dark ones: a row mixing
+           white knockouts with full-colour marks reads as an accident. The cost
+           is the brand colours -- Michigan maize, Google's four, Adobe's red --
+           which is a deliberate trade for a single coherent row. */
+        filter: var(--footer-logo-filter);
+    }
+
+    footer img[src*="nsf_logo"] {
+        /* NSF is the one mark brightness(0) invert(1) cannot carry. Its seal is
+           209 shapes over four fills plus a radial gradient, and its form lives
+           in the tonal differences between them -- flatten them all to one
+           white and it renders as a featureless blob.
+
+           So invert the tones instead of erasing them. grayscale collapses the
+           seal to luminance, invert turns the light paper dark and the dark ink
+           light, and brightness(2) lifts the result to match the pure-white
+           knockouts beside it. Black stays black under a multiply, so the paper
+           drops out to the page rather than becoming a grey panel. The globe
+           lands at white (17.80:1 on the page), the gear at ~#999 (about 6:1),
+           and the NSF letters knock out dark -- which is what a reverse version
+           of this seal looks like.
+
+           Checked by rendering: at brightness(1.35) the mark reads visibly
+           greyer than the CSE wordmark next to it; at 2 they match. */
+        filter: var(--footer-nsf-filter);
+    }
+}
+
+/* The toggle's focus ring. It carries .nav-link, so the rule above would hand
+   it --focus-ring -- which is `0` in light mode, leaving nothing but
+   Bootstrap's 1.4:1 glow on a control this site added. This is `body`-prefixed
+   and last in the file deliberately: it ties that rule at (0,2,1), so source
+   order is what decides, and moving either one above the other would silently
+   turn the ring off.
+
+   light-dark() rather than --focus-ring so each theme gets the right colour:
+   blue is a text colour in light (4.71:1 on white) where maize is 1.6:1 and
+   useless, and maize in dark is 11.69:1 and matches the ring on every other
+   navbar tab. */
+body .theme-toggle:focus-visible {
+    outline: 2px solid light-dark(#2F65A7, #FFCB05);
+    outline-offset: 2px;
+}

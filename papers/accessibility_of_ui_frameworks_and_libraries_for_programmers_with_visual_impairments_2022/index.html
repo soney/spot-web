@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>
+  html {
+    touch-action: pan-x pan-y;
+  }
+</style>
+<script>
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+</script>
+
+  <meta name="color-scheme" content="light dark"><script>
+  (function () {
+    var STORAGE_KEY = 'theme';
+    // Cycle order, and the set of values data-theme may hold. Auto first: it is
+    // where an untouched browser sits, so the cycle reads as "leave it alone,
+    // force light, force dark, leave it alone".
+    var CHOICES = ['auto', 'light', 'dark'];
+    var NEXT_LABEL = { auto: 'light', light: 'dark', dark: 'auto' };
+    var root = document.documentElement;
+
+    function stored() {
+      // localStorage throws, rather than returning null, in Safari's private
+      // mode and wherever site data is blocked. Treated as "no choice yet",
+      // which is auto.
+      try {
+        var choice = localStorage.getItem(STORAGE_KEY);
+        return CHOICES.indexOf(choice) === -1 ? 'auto' : choice;
+      } catch (e) {
+        return 'auto';
+      }
+    }
+
+    function apply(choice) {
+      // The attribute is the whole of it. The stylesheets turn it into a
+      // color-scheme, which is what light-dark() reads -- deliberately not set
+      // as an inline style here, because an inline style outranks every rule
+      // in a stylesheet including the @media print one that forces paper back
+      // to light, and a reader who chose dark must not print a dark CV.
+      root.dataset.theme = choice;
+
+      var button = document.querySelector('[data-theme-toggle]');
+      if (button) {
+        // Both halves: what is on now, which the icon also shows, and what the
+        // next click does, which with three states the icon cannot. Set here
+        // rather than in the markup because Liquid cannot know the choice at
+        // build time.
+        var label = 'Theme: ' + choice + '. Switch to ' + NEXT_LABEL[choice] + '.';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+      }
+    }
+
+    apply(stored());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('[data-theme-toggle]');
+      if (!button) return;
+
+      // The button did not exist during the first apply() above, so it is
+      // still carrying the placeholder label from the include.
+      apply(root.dataset.theme);
+
+      button.addEventListener('click', function () {
+        var next = CHOICES[(CHOICES.indexOf(root.dataset.theme) + 1) % CHOICES.length];
+        try {
+          localStorage.setItem(STORAGE_KEY, next);
+        } catch (e) {
+          // Choice will not survive the page, but the click still works.
+        }
+        apply(next);
+      });
+    });
+  })();
+</script>
+
+  <title>Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments | SPOT Research Group</title>
+  <meta name="description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SPOT Research Group">
+  <meta property="og:title" content="Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments">
+  <meta property="og:description" content="Human-centered research on programming tools and practices.">
+  <meta property="og:url" content="https://from.so/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/">
+  <meta name="twitter:card" content="summary">
+  <meta name="citation_title" content="Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments">
+  <meta name="citation_author" content="Mauli Pandey">
+  <meta name="citation_author" content="Sharvari Bondre">
+  <meta name="citation_author" content="Sile O'Modhrain">
+  <meta name="citation_author" content="Steve Oney">
+  <meta name="citation_publication_date" content="2022">
+  <meta name="citation_conference_title" content="IEEE Symposium on Visual Languages and Human-Centric Computing">
+  <meta name="citation_pdf_url" content="https://from.so/assets/pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf">
+  <meta name="citation_doi" content="10.1109/vl/hcc53370.2022.9833098">
+  <meta name="citation_abstract_html_url" content="https://from.so/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/">
+  <meta name="citation_language" content="en">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://from.so/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/",
+  "url": "https://from.so/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/",
+  "mainEntityOfPage": "https://from.so/papers/accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022/",
+  "headline": "Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments",
+  "name": "Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments",
+  "inLanguage": "en",
+  "datePublished": "2022-09-12T00:00:00Z",
+  "abstract": "The availability of numerous UI components, the promise of accessibility, and cross-platform support have made UI frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among software developers. However, their widespread use also highlights the need to understand the experiences of programmers with visual impairments with them. We adopted a mixed-methods design comprising two studies to understand the accessibility and challenges of developing interfaces with UI frameworks and libraries. In Study 1, we analyzed 96 randomly-sampled archived threads of Program-L, a mailing list primarily comprising programmers with visual impairments. In Study 2, we interviewed 18 programmers with visual impairments to confirm the findings from Study 1 and gain a deeper understanding of their motivations and experiences in using UI frameworks. Our participants considered UI development essential to their programming responsibilities and sought to acquire relevant skills and expertise. However, accessibility barriers in programming tools and UI frameworks complicated the processes of writing UI code, debugging, testing, and collaborating with sighted colleagues. Our paper concludes with recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries.",
+  "description": "Two studies into the accessibility and challenges of developing interfaces with UI frameworks and libraries. Accessibility barriers in programming tools and UI frameworks can complicate the processes of writing UI code, debugging, testing, and collaborating with sighted colleagues. This paper presents recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries.",
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://from.so/team/#mauli_pandey",
+      "name": "Mauli Pandey",
+      "givenName": "Mauli",
+      "familyName": "Pandey",
+      "url": "https://from.so/team/#mauli_pandey",
+      "sameAs": [
+        "https://pandeymauli.github.io/research/",
+        "https://orcid.org/0009-0005-0543-3088",
+        "https://scholar.google.com/citations?user=_kKaDRoAAAAJ&hl=en&oi=ao",
+        "https://github.com/pandeymauli/",
+        "https://www.linkedin.com/in/mauli-pandey-16942146/"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0005-0543-3088"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Sharvari Bondre",
+      "givenName": "Sharvari",
+      "familyName": "Bondre",
+      "url": "https://shara.page/",
+      "sameAs": [
+        "https://shara.page/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Sile O'Modhrain",
+      "givenName": "Sile",
+      "familyName": "O'Modhrain",
+      "url": "http://www.somodhrain.com/",
+      "sameAs": [
+        "http://www.somodhrain.com/",
+        "https://orcid.org/0000-0003-3804-5469"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0003-3804-5469"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://from.so/people/steve_oney/",
+      "name": "Steve Oney",
+      "givenName": "Steve",
+      "familyName": "Oney",
+      "url": "https://from.so/people/steve_oney/",
+      "sameAs": [
+        "https://orcid.org/0000-0002-5823-1499",
+        "https://scholar.google.com/citations?user=o75yGRIAAAAJ&hl=en",
+        "https://github.com/soney"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-5823-1499"
+      },
+      "jobTitle": "Associate Professor"
+    }
+  ],
+  "keywords": [
+    "Accessibility of Programming and the Web"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/vl/hcc53370.2022.9833098"
+  },
+  "sameAs": "https://doi.org/10.1109/vl/hcc53370.2022.9833098",
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://from.so/assets/pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf"
+  },
+  "isAccessibleForFree": true,
+  "publication": {
+    "@type": "PublicationEvent",
+    "name": "IEEE Symposium on Visual Languages and Human-Centric Computing",
+    "alternateName": "VL/HCC 2022",
+    "startDate": "2022-09-12T00:00:00Z",
+    "location": {
+      "@type": "Place",
+      "name": "Rome, Italy"
+    }
+  }
+}
+</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link type="application/atom+xml" rel="alternate" href="https://from.so/feed.xml" title="SPOT Research Group" />
+<meta http-equiv="origin-trial" content="AoHQkJuWU/5j3w9gOC+OueHq90hE2o0SgLgNTBx4G4prW+L8QnyU6tI+hYcnX1rcpWEItWab4XUVLv6eADmzzAUAAABHeyJvcmlnaW4iOiJodHRwczovL2Zyb20uc286NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0=">
+</head>
+
+<body>
+  <div class="application">
+    <div class="container">
+      <a class="d-block skip-to-content-link" href="#content">Skip to main content</a>
+    </div>
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        
+        <a class="navbar-brand"
+          href="/"><img class="splatter" src="/assets/images/splatter.svg" alt="" width="340" height="240"><span class="brand-text">spot</span></a>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/">Team</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/news/">News</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/writing/">Writing</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+        <a class="nav-link nav-back ms-auto" href="/research/#pub-accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022">&larr; Back to research</a>
+        
+        <button type="button" class="theme-toggle nav-link" data-theme-toggle
+  aria-label="Switch theme">
+  <i class="bi bi-circle-half theme-toggle-icon theme-toggle-icon-auto" aria-hidden="true"></i>
+  <i class="bi bi-sun theme-toggle-icon theme-toggle-icon-light" aria-hidden="true"></i>
+  <i class="bi bi-moon theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true"></i>
+</button>
+      </div>
+    </nav>
+
+    <main id="content" role="main" class="page-content">
+      
+
+<div class="container">
+  <div class="paper-page">
+  
+  <h1 class="h2">Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments</h1>
+  <div class="paper-authors fs-5">
+
+
+<span class="paper-author-list">
+  
+  <span
+    class="paper-author"
+    data-author-id="mauli_pandey"><a class="author-external-link" href="https://pandeymauli.github.io/research/" target="_blank" rel="noopener">Mauli Pandey</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sharvari_bondre"><a class="author-external-link" href="https://shara.page/" target="_blank" rel="noopener">Sharvari Bondre</a></span>, 
+  <span
+    class="paper-author"
+    data-author-id="sile_o_modhrain"><a class="author-external-link" href="http://www.somodhrain.com/" target="_blank" rel="noopener">Sile O'Modhrain</a></span>, and 
+  <span
+    class="paper-author"
+    data-author-id="steve_oney"><a class="author-internal-link" href="/people/steve_oney/">Steve Oney</a></span></span></div>
+
+  
+  
+  
+  
+  <p class="paper-meta"><span class="paper-venue"><a href="https://conf.researchr.org/home/vlhcc-2022" target="_blank" rel="noopener">VL/HCC 2022</a></span></p>
+  
+
+  <div class="paper-actions">
+    
+    <a class="btn btn-primary pdf-download" href="/assets/pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf"
+      download="Pandey-AccessibilityUIFrameworks-VLHCC-2022.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+    </a>
+    
+    
+    <a class="paper-doi" href="https://doi.org/10.1109/vl/hcc53370.2022.9833098" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> Publisher page
+    </a>
+    
+  </div>
+
+  
+  <section class="section-card paper-abstract">
+    <h2 class="h5">Abstract</h2>
+    <p>The availability of numerous UI components, the promise of accessibility, and cross-platform support have made UI frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among software developers. However, their widespread use also highlights the need to understand the experiences of programmers with visual impairments with them. We adopted a mixed-methods design comprising two studies to understand the accessibility and challenges of developing interfaces with UI frameworks and libraries. In Study 1, we analyzed 96 randomly-sampled archived threads of Program-L, a mailing list primarily comprising programmers with visual impairments. In Study 2, we interviewed 18 programmers with visual impairments to confirm the findings from Study 1 and gain a deeper understanding of their motivations and experiences in using UI frameworks. Our participants considered UI development essential to their programming responsibilities and sought to acquire relevant skills and expertise. However, accessibility barriers in programming tools and UI frameworks complicated the processes of writing UI code, debugging, testing, and collaborating with sighted colleagues. Our paper concludes with recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries.</p>
+
+  </section>
+  
+
+  <section class="section-card paper-cite">
+    <div class="paper-cite-header">
+      <h2 class="h5">Cite this paper (BibTeX)</h2><button type="button" class="bibtex-copy" aria-live="polite">
+        <i class="bi bi-clipboard" aria-hidden="true"></i> Copy
+      </button>
+    </div>
+    <pre class="bibtex"><code>@inproceedings{pandey2022accessibility,
+  author    = {Pandey, Mauli and Bondre, Sharvari and O&#39;Modhrain, Sile and Oney, Steve},
+  title     = {Accessibility of {UI} Frameworks and Libraries for Programmers with Visual Impairments},
+  booktitle = {IEEE Symposium on Visual Languages and Human-Centric Computing},
+  year      = {2022},
+  doi       = {10.1109/vl/hcc53370.2022.9833098},
+  url       = {https://doi.org/10.1109/vl/hcc53370.2022.9833098}
+}</code></pre>
+  </section>
+  <script src="/assets/js/paper.js"></script>
+  
+  </div>
+</div>
+
+    </main>
+
+    
+<footer class="site-footer">
+  <div class="container">
+    <p class="site-footer-line text-muted">
+      &copy; 2026 Steve Oney
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/soney/spot-web" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Source on GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+  </div>
+
+  <script defer src="/assets/js/webmcp.js"
+  data-mcp-index="/assets/mcp/index.json"
+  data-mcp-cv="/assets/mcp/cv.json"
+  data-mcp-paper-id="accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022"></script>
+
+  <script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-name-recording]');
+    if (!link) return;
+    event.preventDefault();
+    var audio = link.nameRecordingAudio;
+    if (!audio) {
+      audio = new Audio(link.href);
+      link.nameRecordingAudio = audio;
+      audio.addEventListener('ended', function () { link.classList.remove('playing'); });
+      audio.addEventListener('pause', function () { link.classList.remove('playing'); });
+      audio.addEventListener('play', function () { link.classList.add('playing'); });
+    }
+    if (audio.paused) {
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+</script>
+
+</body>
+
+</html>

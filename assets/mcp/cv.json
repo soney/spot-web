@@ -1,0 +1,997 @@
+{
+  "_about": "Steve Oney's academic CV, generated from SPOT Research Group's data at build time; the rendered CV is at https://from.so/people/steve_oney/cv/. publication_codes maps publication ids (see index.json) to the CV's numbering.",
+  "person_id": "steve_oney",
+  "name": "Steve Oney",
+  "path": "/people/steve_oney/cv/",
+  "affiliation": {
+    "department": "School of Information",
+    "university": "University of Michigan",
+    "office": "4552 Leinweber Building",
+    "street": "2200 Hayward Street",
+    "city": "Ann Arbor, MI 48109"
+  },
+  "contact": {
+    "homepage": "https://from.so/me",
+    "phone": "1 (734) 999–0246",
+    "email": "soney@umich.edu"
+  },
+  "education": [
+    {
+      "university": "Carnegie Mellon University",
+      "location": "Pittsburgh, PA",
+      "advisors": "Brad Myers and Joel Brandt",
+      "committee": "Scott Hudson and John Zimmerman",
+      "date_start": "09/2008",
+      "date_end": "04/2015",
+      "degrees": [
+        [
+          "PhD",
+          "Human-Computer Interaction"
+        ],
+        [
+          "MS",
+          "Human-Computer Interaction"
+        ]
+      ]
+    },
+    {
+      "university": "Massachusetts Institute of Technology",
+      "location": "Cambridge, MA",
+      "date_start": "09/2003",
+      "date_end": "08/2008",
+      "degrees": [
+        [
+          "MEng",
+          "Computer Science"
+        ],
+        [
+          "SB",
+          "Computer Science"
+        ],
+        [
+          "SB",
+          "Mathematics"
+        ]
+      ]
+    }
+  ],
+  "professional_experience": [
+    {
+      "location": "Ann Arbor, MI",
+      "institution": "School of Information, University of Michigan",
+      "title": "Associate Professor",
+      "date_start": "09/2022",
+      "date_end": "present"
+    },
+    {
+      "location": "Ann Arbor, MI",
+      "institution": "Computer Science and Engineering, University of Michigan",
+      "title": "Associate Professor (by courtesy)",
+      "date_start": "09/2022",
+      "date_end": "present"
+    },
+    {
+      "location": "Ann Arbor, MI",
+      "institution": "School of Information, University of Michigan",
+      "title": "Assistant Professor",
+      "date_start": "09/2016",
+      "date_end": "09/2022"
+    },
+    {
+      "location": "Ann Arbor, MI",
+      "institution": "Computer Science and Engineering, University of Michigan",
+      "title": "Assistant Professor (by courtesy)",
+      "date_start": "01/2017",
+      "date_end": "09/2022"
+    },
+    {
+      "location": "Ann Arbor, MI",
+      "institution": "School of Information, University of Michigan",
+      "title": "Presidents Post-Doctoral Fellow",
+      "date_start": "09/2015",
+      "date_end": "09/2016"
+    },
+    {
+      "location": "Pittsburgh, PA",
+      "institution": "Carnegie Mellon University (Human-Computer Interaction Institute)",
+      "title": "Graduate student and researcher",
+      "date_start": "09/2008",
+      "date_end": "04/2015"
+    },
+    {
+      "location": "San Francisco, CA",
+      "institution": "Advanced Technologies Labs, Adobe Systems",
+      "title": "Research Intern",
+      "date_start": "03/2013",
+      "date_end": "06/2013"
+    },
+    {
+      "location": "San Francisco, CA",
+      "institution": "Advanced Technologies Labs, Adobe Systems",
+      "title": "Research Intern",
+      "date_start": "06/2011",
+      "date_end": "09/2011"
+    },
+    {
+      "location": "San Jose, CA",
+      "institution": "IBM Research, Alamaden, Research Intern",
+      "title": "Research Intern",
+      "date_start": "05/2009",
+      "date_end": "08/2009"
+    },
+    {
+      "location": "Cambridge, MA",
+      "institution": "MIT Media Lab, Cognitive Machines Group",
+      "title": "Researcher (M.Eng)",
+      "date_start": "01/2007",
+      "date_end": "08/2008"
+    }
+  ],
+  "grants": [
+    {
+      "team": "**Steve Oney (PI)**",
+      "sponsor": "Adobe, Inc.",
+      "amount": "10,000",
+      "date": "11/2020"
+    },
+    {
+      "title": "Designing and Building Collaborative Tools for Mixed-Ability Programming Teams",
+      "team": "**Steve Oney (PI)** (and Mauli Pandey, unofficially)",
+      "sponsor": "Google Inc.",
+      "program": "Award for Inclusion Research",
+      "amount": "60,000",
+      "date": "10/2020"
+    },
+    {
+      "title": "Improving Web Accessibility Through Multi-Resolution Mixed-Initiative Interaction Tools",
+      "team": "**Steve Oney (PI)**",
+      "sponsor": "National Science Foundation (NSF)",
+      "program": "IIS: Cyber-Human Systems (CHS)",
+      "amount": "499,209",
+      "date": "09/2020"
+    },
+    {
+      "title": "Applying Literate Programming Approaches to Support Semantic Annotation",
+      "team": "Andrea Thomer (PI) and **Steve Oney (co-PI)**",
+      "sponsor": "The U-M Office of Research (UMOR)",
+      "amount": "10,875",
+      "date": "07/2019"
+    },
+    {
+      "title": "Scalable Remote Peer Help for Programming Education",
+      "team": "**Steve Oney (PI)**, Paul Resnick, and Christopher Brooks",
+      "sponsor": "National Science Foundation (NSF)",
+      "program": "Improving Undergraduate STEM Education: Education and Human Resources (IUSE: EHR)",
+      "amount": "598,926",
+      "date": "10/2019"
+    },
+    {
+      "title": "Designing Scalable Help Tools for Programming Courses",
+      "team": "**Steve Oney (PI)**",
+      "sponsor": "National Science Foundation (NSF)",
+      "program": "Cyber-Human Systems (CHS) CRII",
+      "amount": "174,981",
+      "date": "01/2018"
+    },
+    {
+      "title": "Prototyping Tools to Improve Crowd Based Training for IVA Development",
+      "team": "**Steve Oney (PI)** and Walter Lasecki",
+      "sponsor": "Clinc, Inc.",
+      "amount": "37,000",
+      "date": "11/2017"
+    },
+    {
+      "title": "End-User Techniques for Aggregating and Analyzing Exercise and Physical Data",
+      "team": "**Steve Oney (PI)**, Michael Nebeling, and Sun Young Park",
+      "sponsor": "Michigan Exercise Science & Sports Initiative",
+      "amount": "198,327",
+      "date": "04/2017"
+    }
+  ],
+  "awards": [
+    {
+      "title": "UMSI Excellence in Instruction Award",
+      "date_start": "09/2021"
+    },
+    {
+      "title": "University of Michigan President's Postdoctoral Fellowship",
+      "date_start": "09/2015"
+    },
+    {
+      "title": "UIST Student Innovation Contest, 1st place",
+      "description": "Part of winning team in most creative category",
+      "date_start": "10/2009"
+    },
+    {
+      "title": "Google/UNCF Scholarship",
+      "description": "One-year scholarship for $10,000",
+      "date_start": "09/2009"
+    },
+    {
+      "title": "Ford Foundation Predoctoral Fellowship",
+      "description": "Annual stipend of $20,000 for three years, awarded to 60 doctoral students nationwide across disciplines",
+      "date_start": "09/2009",
+      "date_end": "05/2012"
+    },
+    {
+      "title": "ARCS Foundation Scholarship (Pittsburgh Chapter)",
+      "description": "Annual stipend of $5,000 for three years. Awarded to 13 doctoral students in the Pittsburgh area (CMU & University of Pittsburgh)",
+      "date_start": "09/2008",
+      "date_end": "05/2011"
+    },
+    {
+      "title": "MIT Batttlecode Open Programming Competition Finalist",
+      "date_start": "09/2008"
+    },
+    {
+      "title": "NEWMAC Academic All-Conference",
+      "description": "Awarded for academic success while a member of MIT's varsity track team",
+      "date_start": "09/2008"
+    }
+  ],
+  "invited_presentations": [
+    {
+      "date": "11/2021",
+      "location": "(remote)",
+      "institution": "Stanford HCI Seminar",
+      "title": "Designing Tools for Remote Communication in Programming"
+    },
+    {
+      "date": "11/2021",
+      "location": "(remote)",
+      "institution": "Harvard Computer Science Colloquium",
+      "title": "Designing Tools for Remote Communication in Programming"
+    },
+    {
+      "date": "5/2021",
+      "location": "(remote)",
+      "institution": "Adobe Research HCI Seminar",
+      "title": "Designing Tools for Remote Communication in Programming"
+    },
+    {
+      "date": "12/2020",
+      "location": "(remote)",
+      "institution": "University of Washington DUB Seminar",
+      "title": "Designing Tools for Remote Communication in Programming"
+    },
+    {
+      "date": "10/2020",
+      "location": "(remote)",
+      "institution": "MIT CSAIL HCI Seminar",
+      "title": "Designing Tools for Remote Communication in Programming"
+    },
+    {
+      "date": "11/2019",
+      "location": "Bloomington, IN",
+      "institution": "Indiana University",
+      "title": "Designing Tools for Remote Communication and Collaboration"
+    },
+    {
+      "date": "11/2018",
+      "location": "Williamstown, MA",
+      "institution": "Williams College",
+      "title": "CS Colloquium—Designing Tools for More Effective Remote Communication"
+    },
+    {
+      "date": "11/2017",
+      "location": "Madison, WI",
+      "institution": "University of Wisconsin",
+      "title": "HCI Seminar: Designing Tools for Remote Communication Between Programmers"
+    },
+    {
+      "date": "03/2016",
+      "location": "Ann Arbor, MI",
+      "institution": "University of Michigan School of Information",
+      "title": "Programming Tools that Speak our Language"
+    },
+    {
+      "date": "10/2015",
+      "location": "South Bend, IN",
+      "institution": "University of Notre Dame Department of Computer Science and Engineering",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "04/2015",
+      "location": "Chicago, IL",
+      "institution": "University of Illinois at Chicago Department of Computer Science",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "03/2015",
+      "location": "Boston, MA",
+      "institution": "Boston University Department of Computer Science",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "03/2015",
+      "location": "Palo Alto, CA",
+      "institution": "FX Palo Alto Laboratory",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "03/2015",
+      "location": "Stony Brook, CA",
+      "institution": "Stony Brook Computer Science Department",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "02/2015",
+      "location": "Irvine, CA",
+      "institution": "University of California at Irvine",
+      "title": "Expressing Interactivity with States and Constraints"
+    },
+    {
+      "date": "03/2010",
+      "location": "Dagstuhl, Germany",
+      "institution": "Dagstuhl: Practical Software Testing: Tool Automation and Human Factors"
+    },
+    {
+      "date": "06/2009",
+      "location": "San Jose, CA",
+      "institution": "IBM Almaden Lunch Seminar",
+      "title": "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages"
+    }
+  ],
+  "service": [
+    {
+      "title": "Steering Committee (Vice-Chair 2024-2025, Chair 2025-present)",
+      "category": "organizing_committee",
+      "description": "IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+      "date_start": "2023",
+      "date_end": "2027"
+    },
+    {
+      "title": "General Chair (with Michael Nebeling)",
+      "category": "organizing_committee",
+      "description": "UIST",
+      "date_start": "2026"
+    },
+    {
+      "title": "Most Influential Paper Award Co-Chair",
+      "category": "organizing_committee",
+      "description": "VL/HCC",
+      "date_start": "2024",
+      "date_end": "2026"
+    },
+    {
+      "title": "Sponsorship Co-Chair",
+      "category": "organizing_committee",
+      "description": "UIST",
+      "date_start": "2022",
+      "date_end": "2023"
+    },
+    {
+      "title": "Program Co-Chair (with Jácome Miguel Costa Cunha)",
+      "category": "organizing_committee",
+      "description": "IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+      "date_start": "2021"
+    },
+    {
+      "title": "Graduate Consortium co-chair (with Michael Lee)",
+      "category": "organizing_committee",
+      "description": "IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+      "date_start": "2020"
+    },
+    {
+      "title": "ACM Symposium on User Interface Software and Technology (UIST)",
+      "category": "program_committee",
+      "date_start": "2017",
+      "date_end": "present"
+    },
+    {
+      "title": "ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW)",
+      "category": "program_committee",
+      "date_start": "2022"
+    },
+    {
+      "title": "ACM Conference on Human Factors in Computing Systems (CHI)",
+      "category": "program_committee",
+      "date_start": "2016",
+      "date_end": "present"
+    },
+    {
+      "title": "ACM International Conference on Supporting Group Work (GROUP)",
+      "category": "program_committee",
+      "date_start": "2018, 2020"
+    },
+    {
+      "title": "Programming Experience Workshop (PX)",
+      "category": "program_committee",
+      "date_start": "2017",
+      "date_end": "2020"
+    },
+    {
+      "title": "International Workshop on Eye Movements in Programming (EMIP)",
+      "category": "program_committee",
+      "date_start": "2019"
+    },
+    {
+      "title": "ACM Conference on Tangible, Embedded, and Embodied Interactions (TEI)",
+      "category": "program_committee",
+      "date_start": "2019"
+    },
+    {
+      "title": "Tech Notes for the ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS)",
+      "category": "program_committee",
+      "date_start": "2019"
+    },
+    {
+      "title": "IEEE Transactions of Software Engineering (TSE)",
+      "category": "peer_review",
+      "date_start": "2018"
+    },
+    {
+      "title": "ACM Transactions on Computer-Human Interaction (TOCHI)",
+      "category": "peer_review",
+      "date_start": "2018"
+    },
+    {
+      "title": "ACM Conference on Human Factors in Computing Systems (CHI)",
+      "category": "peer_review",
+      "date_start": "2010",
+      "date_end": "present"
+    },
+    {
+      "title": "ACM Symposium on User Interface Software & Technology (UIST)",
+      "category": "operations_committee",
+      "date_start": "2011",
+      "date_end": "2015"
+    },
+    {
+      "title": "Conference on Human-Computer Interaction with Mobile Devices (MobileHCI)",
+      "category": "peer_review",
+      "date_start": "2014"
+    },
+    {
+      "title": "ACM Conference on Designing Interactive Systems (DIS)",
+      "category": "peer_review",
+      "date_start": "2010, 2012"
+    },
+    {
+      "title": "Philippine Journal of Science (PJS)",
+      "category": "peer_review",
+      "date_start": "2008, 2009"
+    },
+    {
+      "title": "ACM CHI Operations Committee (mobile program guide)",
+      "category": "operations_committee",
+      "date_start": "2012",
+      "date_end": "2015"
+    },
+    {
+      "title": "ACM UIST Operations Committee (mobile program guide)",
+      "category": "peer_review",
+      "date_start": "2013",
+      "date_end": "2015"
+    },
+    {
+      "title": "ACM ITS Operations Committee (mobile program guide)",
+      "category": "operations_committee",
+      "date_start": "2013",
+      "date_end": "2015"
+    },
+    {
+      "title": "ACM UbiComp Committee (mobile program guide)",
+      "category": "operations_committee",
+      "date_start": "2012"
+    },
+    {
+      "title": "ACM CHI student volunteer (mobile guide development team)",
+      "category": "operations_committee",
+      "date_start": "2010, 2011"
+    },
+    {
+      "title": "MSI Program Committee Chair",
+      "category": "department",
+      "date_start": "2026",
+      "date_end": "present"
+    },
+    {
+      "title": "UMSI Culture and Community Committee Co-Chair",
+      "category": "department",
+      "date_start": "2023",
+      "date_end": "2026"
+    },
+    {
+      "title": "School of Information BSI Committee",
+      "category": "department",
+      "date_start": "2018 – 2020 & 2021 – 2022"
+    },
+    {
+      "title": "Faculty Advisor for UMSI chapter of Upsilon Pi Epsilon (International Honor Society for the Computing and Information Disciplines)",
+      "category": "department",
+      "date_start": "2021",
+      "date_end": "present"
+    },
+    {
+      "title": "School of Information Technical Curriculum Task Force",
+      "category": "department",
+      "date_start": "2019",
+      "date_end": "2020"
+    },
+    {
+      "title": "University of Michigan Interactive and Social Computing (MISC) Coordinator",
+      "category": "department",
+      "date_start": "2018",
+      "date_end": "2019"
+    },
+    {
+      "title": "CMU Computer Science outreach roadshow volunteer (with Women@SCS & SCS4All)",
+      "category": "other",
+      "date_start": "2009",
+      "date_end": "2015"
+    },
+    {
+      "title": "CMU Human-Computer Interaction Institute (HCII) ombudsperson",
+      "category": "other",
+      "date_start": "2011",
+      "date_end": "2014"
+    },
+    {
+      "title": "CMU Human-Computer Interaction Institute (HCII) visit weekend co-chair",
+      "category": "other",
+      "date_start": "2010"
+    },
+    {
+      "title": "CMU Human-Computer Interaction Institute (HCII) PhD lunch coordinator",
+      "category": "other",
+      "date_start": "2009, 2010"
+    },
+    {
+      "title": "CSE Promotion and Tenure Committee",
+      "category": "other",
+      "date_start": "2025"
+    }
+  ],
+  "teaching": [
+    {
+      "title": "Practical JavaScript: From Scratch to React (Coursera Specialization)",
+      "institution": "University of Michigan & Coursera",
+      "description": "[https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react](https://www.coursera.org/specializations/practical-javascript-from-scratch-to-react)",
+      "date_start": "2026"
+    },
+    {
+      "title": "Co-Instructor – SI 506 (Programming I)",
+      "institution": "University of Michigan",
+      "date_start": "Fall 2025, Fall 2026"
+    },
+    {
+      "title": "Co-Instructor – SI 347 (Human-Computer Interaction)",
+      "institution": "University of Michigan",
+      "date_start": "Winter 2026"
+    },
+    {
+      "title": "Instructor (and creator) – SI 379 (Building Interactive Applications)",
+      "institution": "University of Michigan",
+      "date_start": "2023",
+      "date_end": "present"
+    },
+    {
+      "title": "Instructor (and creator) – SI 579 (Building Interactive Applications)",
+      "institution": "University of Michigan",
+      "date_start": "2021",
+      "date_end": "2023"
+    },
+    {
+      "title": "Instructor – SI 106 (Programs, Information, & People)",
+      "institution": "University of Michigan",
+      "date_start": "2016",
+      "date_end": "present"
+    },
+    {
+      "title": "Python 3 Programming Specialization",
+      "institution": "University of Michigan & Coursera",
+      "description": "[https://www.coursera.org/specializations/python-3-programming](https://www.coursera.org/specializations/python-3-programming)",
+      "date_start": "2019"
+    },
+    {
+      "title": "Instructor – Web Lab, Programming User Interfaces",
+      "institution": "Carnegie Mellon",
+      "description": "Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.7/5.0",
+      "date_start": "Fall 2012"
+    },
+    {
+      "title": "Instructor – GUI Lab, Programming User Interfaces",
+      "institution": "Carnegie Mellon",
+      "description": "Developed syllabus, wrote lectures, created projects, presented, graded, and held office hours weekly. Instructor rating: 4.6/5.0",
+      "date_start": "Fall 2010"
+    },
+    {
+      "title": "Instructor – GUI Lab, Programming User Interfaces",
+      "institution": "MIT",
+      "description": "Taught three recitation sections per week, held weekly office hours, and graded students’ exams",
+      "date_start": "Fall 2007 & Spring 2008"
+    },
+    {
+      "title": "Teaching Assistant – Interphase Physics I",
+      "institution": "MIT",
+      "description": "Taught three classes per week, held weekly office hours, and mentored a group of incoming MIT freshmen",
+      "date_start": "Summer 2007"
+    },
+    {
+      "title": "Teaching Assistant – Technology Enabled Learning (TEAL) Physics II",
+      "institution": "MIT",
+      "date_start": "Spring 2005"
+    },
+    {
+      "title": "Laboratory Assistant – Circuits and Electronics",
+      "institution": "MIT",
+      "date_start": "Spring 2005",
+      "date_end": "Fall 2006"
+    },
+    {
+      "title": "Laboratory Assistant – Computational Structures",
+      "institution": "MIT",
+      "date_start": "Fall 2006"
+    }
+  ],
+  "supervised_students": [
+    {
+      "student_name": "Maryam Arab",
+      "student_department": "School of Information",
+      "institution": "University of Michigan",
+      "category": "postdoc",
+      "date_start": "Fall 2024",
+      "date_end": "present"
+    },
+    {
+      "student_name": "Yan Chen",
+      "student_department": "School of Information",
+      "thesis_title": "On-Demand Collaboration in Programming",
+      "current_position": "Assistant Professor at Virginia Tech",
+      "institution": "University of Michigan",
+      "category": "dissertation_chair",
+      "date_start": "Fall 2015",
+      "date_end": "Fall 2020"
+    },
+    {
+      "student_name": "Ashley Ge Zhang (张歌)",
+      "student_department": "School of Information",
+      "institution": "University of Michigan",
+      "category": "ongoing_advisee",
+      "date_start": "Fall 2021",
+      "date_end": "present"
+    },
+    {
+      "student_name": "Lei Zhang",
+      "student_department": "School of Information",
+      "thesis_title": "Designing End-user Creation Tools for Immersive Experiences",
+      "current_position": "Assistant Professor at NJIT",
+      "institution": "University of Michigan",
+      "category": "dissertation_chair",
+      "date_start": "Fall 2018",
+      "date_end": "Spring 2024",
+      "coadvisor": "Anhong Guo"
+    },
+    {
+      "student_name": "(Mauli) Maulishree Pandey",
+      "student_department": "School of Information",
+      "thesis_title": "Accessibility of Collaborative Programming for Blind and Visually Impaired Developers",
+      "current_position": "UX Researcher at Google",
+      "institution": "University of Michigan",
+      "category": "dissertation_chair",
+      "date_start": "Fall 2018",
+      "date_end": "Summer 2023"
+    },
+    {
+      "student_name": "April Yi Wang (王奕)",
+      "student_department": "School of Information",
+      "thesis_title": "Interactive Programming Interfaces for Data Science Collaboration and Learning",
+      "current_position": "Assistant Professor at ETH Zürich",
+      "institution": "University of Michigan",
+      "category": "dissertation_chair",
+      "date_start": "Fall 2018",
+      "date_end": "Spring 2023",
+      "coadvisor": "Christopher Brooks"
+    },
+    {
+      "student_name": "Rebecca Krosnick",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Improving Web Automation Tools through UI Context and Demonstration",
+      "current_position": "Software Engineer at Postman",
+      "institution": "University of Michigan",
+      "category": "dissertation_chair",
+      "date_start": "Fall 2017",
+      "date_end": "Summer 2023"
+    },
+    {
+      "student_name": "Xiangyu Zhou",
+      "student_department": "Computer Science and Engineering",
+      "institution": "University of Michigan",
+      "category": "ongoing_advisee",
+      "date_start": "Fall 2025",
+      "date_end": "present"
+    },
+    {
+      "student_name": "Jiacheng Zhang (张佳程)",
+      "student_department": "School of Information",
+      "institution": "University of Michigan",
+      "category": "ongoing_advisee",
+      "date_start": "Fall 2023",
+      "date_end": "present"
+    },
+    {
+      "student_name": "Kihoon Son (손기훈)",
+      "student_department": "School of Computing",
+      "institution": "KAIST",
+      "category": "phd_thesis_committee",
+      "date_start": "2026"
+    },
+    {
+      "student_name": "John Allen",
+      "student_department": "Computer Science Department",
+      "institution": "Washington University in St. Louis",
+      "thesis_title": "Code Stories for Software Repurposing",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    },
+    {
+      "student_name": "Xinying Hou",
+      "student_department": "School of Information",
+      "thesis_title": "Advancing Personalized, Engaging Learning and Assessment in the AI Era",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    },
+    {
+      "student_name": "Jingyuan Zhu",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Solutions for Link Rot on the Modern Web",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    },
+    {
+      "student_name": "David Moon",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Syntactic Completions with Material Obligations",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    },
+    {
+      "student_name": "Andrew Blinn",
+      "student_department": "Computer Science and Engineering",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    },
+    {
+      "student_name": "Hari Subramonyam",
+      "student_department": "School of Information",
+      "thesis_title": "Designing AI Experiences: Boundary Representations, Collaborative Processes, and Data Tools",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2021"
+    },
+    {
+      "student_name": "Vaspol Ruamviboonsuk",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Understanding and Improving the Performance of Web Page Loads",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2020"
+    },
+    {
+      "student_name": "Shih-Chieh Lin",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Cross-Layer System Design for Autonomous Driving",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2019"
+    },
+    {
+      "student_name": "Sang Won Lee",
+      "student_department": "Computer Science and Engineering",
+      "thesis_title": "Improving User Involvement Through Live, Collaborative Creation",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2017"
+    },
+    {
+      "student_name": "Xin Rong",
+      "student_department": "School of Information",
+      "thesis_title": "Neural Language Models for Data-Driven Programming Support",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2017"
+    },
+    {
+      "student_name": "Shalini Madan",
+      "student_department": "School of Information",
+      "thesis_title": "Accessibility Heuristics for Vibe Coding Interfaces",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_committee",
+      "date_start": "2026"
+    },
+    {
+      "student_name": "Xunan (Andy) Zhou",
+      "student_department": "School of Information",
+      "thesis_title": "Conversational Agent Experience: What makes a good skill?",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_committee",
+      "date_start": "2020"
+    },
+    {
+      "student_name": "Kangning Chen",
+      "student_department": "School of Information",
+      "thesis_title": "Providing Examples and Tool Support for Novice AR Creators",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_committee",
+      "date_start": "2020"
+    },
+    {
+      "student_name": "Katy Madier",
+      "student_department": "School of Information",
+      "thesis_title": "Enabling Low-cost Co-located Virtual Reality Experiences",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_committee",
+      "date_start": "2019"
+    },
+    {
+      "student_name": "(Mauli) Maulishree Pandey",
+      "student_department": "School of Information",
+      "thesis_title": "Exploring and Designing for the Self-Tracking Needs of Recreational Athletes",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_chair",
+      "date_start": "2018"
+    },
+    {
+      "student_name": "KJ Green",
+      "thesis_title": "AI-Driven Programming Education for Black, Latinx, and Afro-Caribbean Communities",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_chair",
+      "date_start": "2024"
+    },
+    {
+      "student_name": "Jiaqi Wu",
+      "thesis_title": "Exploring Bridges Between Creative Coding and Visual Generative AI",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_committee",
+      "date_start": "2024"
+    },
+    {
+      "student_name": "Yue Shen",
+      "thesis_title": "An LLM-based Method for Tailoring Coding Tutorials",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_chair",
+      "date_start": "2024"
+    },
+    {
+      "student_name": "Yinuo Yang",
+      "institution": "University of Michigan",
+      "category": "ugrad_thesis_chair",
+      "date_start": "2024"
+    },
+    {
+      "student_name": "Carl Fan",
+      "thesis_title": "Human-Centered Needs and Preferences for AI-Assisted Web Automation",
+      "institution": "University of Michigan",
+      "category": "ms_thesis_chair",
+      "date_start": "2024",
+      "date_end": "2026"
+    },
+    {
+      "student_name": "Zihan Wu",
+      "student_department": "School of Information",
+      "thesis_title": "Designing and Evaluating Fine-Grained Interactive Practice Tools for Novice Programming Learners",
+      "institution": "University of Michigan",
+      "category": "phd_thesis_committee",
+      "date_start": "2025"
+    }
+  ],
+  "press": [
+    {
+      "title": "Adobe and CMU researchers unveil a brilliant new JavaScript library: ConstraintJS",
+      "link": "http://venturebeat.com/2014/06/23/adobe-and-cmu-researchers-unveil-a-brilliant-new-javascript-library-constraintjs/",
+      "publication": "VentureBeat, 2014",
+      "description": "June 23"
+    },
+    {
+      "title": "Researchers Figure Out How You Can Type on a Smartwatch",
+      "link": "http://www.wired.com/gadgetlab/2013/05/zoomboard-smartwatch-typing/",
+      "publication": "Wired, 2013",
+      "description": "May 1"
+    },
+    {
+      "title": "CMU Offers Wee QWERTY Texting Tech for Impossibly Tiny Devices",
+      "link": "http://hardware.slashdot.org/story/13/05/01/1313206/carnegie-mellon-offers-wee-qwerty-texting-tech-for-impossibly-tiny-devices",
+      "publication": "Slashdot, 2013",
+      "description": "May 1"
+    },
+    {
+      "title": "How Typing on a Smart Watch Might Actually Make Sense",
+      "link": "http://gizmodo.com/how-typing-on-a-smart-watch-might-actually-make-sense-484116402",
+      "publication": "Gizmodo, 2013",
+      "description": "April 29"
+    },
+    {
+      "title": "A QWERTY Keyboard for your Wrist",
+      "link": "http://www.technologyreview.com/news/514096/a-qwerty-keyboard-for-your-wrist/",
+      "publication": "MIT Tech Review, 2013",
+      "description": "April 27"
+    }
+  ],
+  "patents": [
+    {
+      "title": "US Patent number 9,495,134. \"Methods and Apparatus for Code Segment Handling\" Brandt, J. & Oney, S.",
+      "date": "11/2016"
+    }
+  ],
+  "publication_codes": {
+    "editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026": "C.47",
+    "codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026": "C.46",
+    "simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026": "P.22",
+    "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026": "J.45",
+    "co_advisor_learning_programming_strategies_in_context_2025": "C.44",
+    "convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025": "C.43",
+    "spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025": "C.42",
+    "multi_click_cross_tab_web_automation_via_action_generalization_2025": "C.41",
+    "understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025": "W.21",
+    "understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025": "W.20",
+    "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024": "C.40",
+    "scrapeviz_hierarchical_representations_for_web_scraping_macros_2024": "C.39",
+    "cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024": "C.38",
+    "demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024": "E.19",
+    "vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024": "E.18",
+    "towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024": "C.37",
+    "improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024": "A.17",
+    "don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024": "W.16",
+    "edbooks_ai_enhanced_interactive_narratives_for_programming_education_2024": "R.1",
+    "ui_development_in_mixed_ability_software_engineering_teams_2023": "B.2",
+    "runex_augmenting_regular_expression_code_search_with_runtime_values_2023": "C.36",
+    "colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023": "C.35",
+    "vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023": "C.34",
+    "vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023": "C.33",
+    "how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023": "P.15",
+    "promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023": "W.14",
+    "accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022": "C.32",
+    "parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022": "C.31",
+    "puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021": "J.30",
+    "understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021": "J.29",
+    "understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021": "C.28",
+    "cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021": "C.27",
+    "think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021": "C.26",
+    "what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021": "P.13",
+    "flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020": "C.25",
+    "a_hybrid_crowd_machine_workflow_for_program_synthesis_2020": "C.24",
+    "edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020": "C.23",
+    "on_demand_collaboration_in_programming_2020": "W.12",
+    "sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020": "C.22",
+    "callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020": "C.21",
+    "explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020": "C.20",
+    "improving_crowd_supported_gui_testing_with_structural_guidance_2020": "C.19",
+    "toward_providing_live_feedback_in_web_automation_ides_2020": "W.11",
+    "how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019": "J.18",
+    "studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019": "C.17",
+    "exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019": "P.10",
+    "implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019": "C.16",
+    "redesigning_notebooks_for_data_science_education_2019": "W.9",
+    "creating_guided_code_explanations_with_chat_codes_2018": "J.15",
+    "adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018": "C.14",
+    "arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018": "C.13",
+    "expresso_building_responsive_interfaces_with_keyframes_2018": "C.12",
+    "attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018": "W.8",
+    "codeon_on_demand_software_development_assistance_2017": "C.11",
+    "making_end_user_development_more_natural_2016": "B.1",
+    "codemend_assisting_interactive_programming_with_bimodal_embedding_2016": "C.10",
+    "expert_crowd_support_systems_for_software_developers_2016": "W.7",
+    "towards_providing_on_demand_expert_support_for_software_developers_2016": "C.9",
+    "expressing_interactivity_with_states_and_constraints_2015": "T.2",
+    "interstate_a_language_and_environment_for_expressing_interface_behavior_2014": "C.8",
+    "euclase_a_live_development_environment_with_constraints_and_fsms_2013": "W.6",
+    "creativity_support_in_authoring_and_backtracking_2013": "W.5",
+    "zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013": "C.7",
+    "constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012": "C.6",
+    "inferring_method_specifications_from_natural_language_api_descriptions_2012": "C.5",
+    "codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012": "C.4",
+    "playbook_revision_control_comparison_for_interactive_mockups_2011": "C.3",
+    "development_tools_for_interactive_behaviors_2011": "D.4",
+    "democratizing_computational_tools_for_interaction_designers_2010": "D.3",
+    "how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010": "C.2",
+    "firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009": "C.1",
+    "empowering_designers_with_creativity_support_tools_2009": "D.2",
+    "visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009": "W.1",
+    "natural_language_search_of_structured_documents_2008": "T.1"
+  }
+}

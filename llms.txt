@@ -1,0 +1,49 @@
+# SPOT Research Group
+
+> Human-centered research on programming tools and practices. The SPOT group is a research group at the University of Michigan School of Information and Computer Science and Engineering, led by Steve Oney. This site lists the group's publications (with abstracts, PDFs and BibTeX), its members, its research focus areas, news, and guides it has written.
+
+The whole site is generated from YAML data, and that data is published in two JSON files meant for programs. Every publication, person and research area has a stable id that is also its URL slug; the JSON carries the same ids and the path each record is served at.
+
+## Machine-readable data
+
+- [index.json](https://from.so/assets/mcp/index.json): every publication (title, authors, venue, year, abstract, PDF and DOI links, BibTeX, research areas), every person (name, role, bio, links, their papers), the research areas, the news, and the group's overview and how-to-join text
+- [cv.json](https://from.so/assets/mcp/cv.json): Steve Oney's CV — education, positions, grants, awards, talks, service, teaching, students supervised, press, patents, and the CV's numbered publication list
+- [sitemap.xml](https://from.so/sitemap.xml): every page on the site
+- In Chrome, the same data is exposed as WebMCP tools (`document.modelContext`) on every page: search_publications, get_publication, get_bibtex, list_people, get_person, list_research_areas, list_news, get_group_info, get_cv, navigate_to_page, and set_cv_display_options on the CV page
+
+## Pages
+
+- [Home](https://from.so/): overview, recent publications and news
+- [Research](https://from.so/research/): the focus areas and the full publication list; each paper also has its own page at /papers/<id>/ with abstract, PDF, DOI and BibTeX, and Google Scholar citation metadata
+- [Team](https://from.so/team/): current members, alumni, and student collaborators
+- [News](https://from.so/news/): paper acceptances, awards and talks, newest first
+- [Writing](https://from.so/writing/): guides the group has published
+- [Steve Oney's CV](https://from.so/people/steve_oney/cv/): the full academic CV, also as a PDF at https://from.so/oney_cv.pdf
+
+## Research areas
+
+- [Programming Education at Scale](https://from.so/research/#cluster-programming_education): Instructors can see the code a class turns in, but not how any of it got written. We build tools that make a whole class's problem-solving process visible in time to act on it -- including how students use AI.
+- [Web Automation and Programming by Demonstration](https://from.so/research/#cluster-web_automation): People want to automate work on websites they do not control. We study what makes that hard, and build tools that let them demonstrate what they want and then see what was inferred from the demonstration.
+- [Building and Testing Interactive Interfaces](https://from.so/research/#cluster-building_testing_interactive_uis): Interactive behavior is scattered across event handlers, which makes it hard to write, hard to read, and hard to test. We design notations, editors, and prototyping tools for expressing behavior directly, and techniques for finding where an interface breaks.
+- [Explaining Code and Capturing Process](https://from.so/research/#cluster-communicating_about_code): Code records the result of a decision but not the reasoning behind it. We build editors, notebooks, and visualizations that capture the intent, discussion, and process behind an artifact, and keep them attached to it.
+- [Accessibility of Programming and the Web](https://from.so/research/#cluster-accessibility): Programming tools are visual by default, which shapes who can contribute to software and in what role. We study how blind and low-vision developers actually work, alone and on mixed-ability teams, and what their tools would have to change.
+- [Immersive Authoring](https://from.so/research/#cluster-immersive_programming): Building 3D content means describing spatial things through a 2D screen. We build tools for authoring, versioning, and co-creating scenes with generative models from inside VR.
+- [On-Demand Help for Programmers](https://from.so/research/#cluster-on_demand_support_for_programmers): A stuck programmer needs a helper who already has their context. We built systems that package that context, route it to an expert, a crowd, or a program synthesizer, and get the answer back into the editor -- mostly between 2016 and 2020.
+
+## Current members
+
+- [Steve Oney](https://from.so/people/steve_oney/): Associate Professor, Michigan SI & CSE
+- [Maryam Arab](https://from.so/team/#maryam_arab): Postdoctoral Scholar, Michigan SI
+- [Ashley Zhang](https://from.so/team/#ashley_zhang): Ph.D. Student, Michigan SI
+- [Jiacheng Zhang](https://from.so/team/#jiacheng_zhang): Ph.D. Student, Michigan SI
+- [Xiangyu Zhou](https://from.so/team/#xiangyu_zhou): Ph.D. Student, Michigan CSE
+
+## Writing
+
+- [SPOT PhD Application Guide](https://from.so/writing/SPOT_PhD_Application_Guide/): The SPOT group's guide for prospective Ph.D. applicants.
+- [SPOT Group Rebuttal Guide](https://from.so/writing/SPOT_Group_Rebuttal_Guide/): The SPOT group's guide to writing rebuttals to paper reviews.
+
+## Contact
+
+- Email: soney@umich.edu
+- How to join the group, for prospective PhD, master's, undergraduate and high-school students: https://from.so/team/#join-us

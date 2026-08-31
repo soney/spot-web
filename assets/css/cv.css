@@ -1,0 +1,1105 @@
+/* The palette, both themes at once, same mechanism as site.css:
+   `light-dark(light, dark)` picks by the used value of `color-scheme`, which
+   follows the OS until _includes/theme_script.html stamps data-theme on <html>
+   to carry the reader's choice. Every value the dark theme changes here is a
+   colour, so unlike site.css there is no residue -- this block is the whole of
+   dark mode for the CV.
+
+   Dark is warm dark paper, not a second copy of the site's palette. The light
+   rgb(243, 240, 235) is warm: its red channel sits 8 above its blue, and that
+   cast is what makes the page read as paper rather than as a screen. #1B1815
+   keeps the spread at 6 and the text is warm too, so the CV stays a visibly
+   warmer document than the main site's cool #16181A.
+
+   Ratios are WCAG 2.1, floored to 2dp. The two rule colours are the one place
+   where a contrast floor is the wrong target: #AAA on paper is a deliberately
+   faint 2.04:1 hairline, and carrying #AAA straight onto #1B1815 would give
+   7:1 -- a bright bar shouting across the page. They are decorative rules, not
+   UI boundaries, so the 3:1 bar does not apply; the dark halves match the
+   light-mode subtlety instead. */
+:root {
+    color-scheme: light dark;
+
+    --font-color: light-dark(#333, #E7E1D8);
+    /* dark: 13.60:1. Also drives --award-color and --link-color, which are both
+       already var(--font-color) -- custom-property substitution is lazy, so
+       redefining this one updates all three. */
+    --font-size: 14pt;
+    --line-height: calc(var(--font-size) + 2pt);
+    --award-color: var(--font-color);
+    --link-color: var(--font-color);
+    --link-hover-color: light-dark(#0056b3, #84B0E6);
+    /* dark: 7.85:1 -- the same blue the main site uses in dark mode */
+    --paper-color: light-dark(rgb(243, 240, 235), #1B1815);
+    /* dark: luminance 0.00940 */
+    --rule-strong-color: light-dark(#AAA, #514B44);
+    /* dark 2.05:1 -- the light #AAA is 2.04:1 */
+    --rule-subtle-color: light-dark(#DDD, #2A2724);
+    /* dark 1.19:1 -- the light #DDD is 1.19:1 */
+    --note-color: light-dark(#555, #B0A69B);
+    /* dark: 7.38:1 */
+
+    --hover-surface-color: light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.1));
+    /* The disc behind the theme toggle on hover, as in site.css. Alpha rather
+       than opaque, so it sits on the warm paper without needing a warm value
+       of its own. */
+
+    --bs-body-color: light-dark(#212529, #E7E1D8);
+    /* cv.css sets body's background but never its colour, so Bootstrap's light
+       #212529 leaked through at 1.14:1 on dark paper. The light half is
+       Bootstrap 5.3.8's own default, so light mode resolves exactly as it did
+       before this was declared here. */
+}
+
+/* --- Which theme is on -------------------------------------------------
+   As in site.css: light-dark() follows the OS until the script stamps an
+   override, which is what keeps the CV dark for a reader with JavaScript off
+   and a dark OS -- and for one who chose auto, which is why data-theme="auto"
+   needs no rule here. */
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* Paper is always light. This matters more here than in site.css: the @media
+   print block at the end of this file overrides `body { color }` at (0,0,1),
+   but the CV's text colour actually comes from the nested
+   `body .cv.container { color: var(--font-color) }` at (0,2,1), which outranks
+   it -- so a dark --font-color reaching paper would print #E7E1D8 on white,
+   1.29:1. Invisible. Forcing color-scheme here resolves --font-color to its
+   light half before that ever arises.
+
+   `:root[data-theme]` ties `:root[data-theme="dark"]` above at (0,2,0) and
+   wins on source order, so it has to stay below it. */
+@media print {
+
+    :root,
+    :root[data-theme] {
+        color-scheme: light;
+    }
+}
+
+body {
+    background-color: var(--paper-color);
+
+    .cv.container {
+        margin-top: 7em;
+        font-family: goudy-old-style, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: var(--font-size);
+        color: var(--font-color);
+
+        line-height: var(--line-height);
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--link-hover-color);
+            }
+        }
+
+        h1 {
+            font-size: 2.8em;
+            letter-spacing: -1pt;
+        }
+
+        h2 {
+            margin-top: 1.5em;
+            font-size: 1.5em;
+            border-bottom: 1px solid var(--rule-strong-color);
+        }
+
+        h3 {
+            font-size: 1.0em;
+            margin-top: 1em;
+            margin-bottom: 0.1em;
+            border-bottom: 1px solid var(--rule-subtle-color);
+        }
+
+        ul.cv-list {
+            padding-left: 0px;
+
+            li:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .affiliation {
+
+            .affiliation-department,
+            .affiliation-university {
+                font-weight: bold;
+            }
+        }
+
+        .contact {
+            text-align: right;
+        }
+
+        /* Per-section back-to-top: a small chrome-sans link that
+           cv_section_heading.html adds to every h2 row, parked at the
+           right end of the heading's rule. Absolute, and a sibling of the
+           heading rather than a child, so "top" never joins the section's
+           accessible name. The bottom offset parks it just above the rule,
+           which sits the h2's 0.5rem reboot margin above the row's edge;
+           hover picks up the shared a:hover blue on its own. */
+        .row:has(> .cv-top-link) {
+            position: relative;
+        }
+
+        .cv-top-link {
+            bottom: 0.75rem;
+            color: var(--note-color);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.06em;
+            /* Bootstrap's `.row > *` gives every row child width: 100% and
+               the gutter padding. Undone here, or the absolute box spans
+               the whole row and its text lands at the LEFT end of the
+               heading instead of the right. */
+            padding: 0;
+            position: absolute;
+            right: 5px;
+            width: auto;
+        }
+
+        /* The outline, in its three lives, all from this one block of
+           markup. On phones (below 768px) it is a static block at the
+           top of the flow, above the name -- a "Contents" label over a
+           few wrapping rows of links -- which scrolls away with the
+           page. From 768px up to the rail it keeps that shape but
+           leaves the flow, climbing into the container's 7em top margin
+           to share the line the theme toggle sits on, so the name keeps
+           the whitespace it was designed with. From 1400px up it is a
+           rail fixed in the margin beside the paper, top-aligned with
+           the name, persisting while the reader scrolls. In all three,
+           the header text is a link back to the top. Print sees none of
+           them (the nav carries d-print-none).
+
+           Set in a small system sans, unlike everything else on the page:
+           this is reader chrome around the document, like the theme toggle,
+           and Goudy at chrome sizes reads as document text gone wrong
+           rather than as a control. Everything is the note colour so eleven
+           links do not out-shout the page. assets/js/cv.js moves .active to
+           the link of the section being scrolled over, but only the rail
+           renders it -- the in-flow variant sits at the top of the page,
+           where the current section is always trivially the first one. */
+        .cv-outline {
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            /* The phone variant's gap to the name below it. Nothing
+               above needs one: the nav is the container's first child,
+               so it starts at the container's 3.5em top margin. The
+               other two variants are out of flow and never feel this. */
+            margin-bottom: 2.5em;
+
+            .cv-outline-header {
+                color: var(--note-color);
+                font-size: 0.68rem;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+            }
+
+            ul {
+                column-gap: 0.75em;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.75rem;
+                margin: 0.6em 0 0;
+                row-gap: 0.3em;
+            }
+
+            /* The dot rides the following entry, so a wrapped line opens
+               with a (quiet) dot rather than ending with a dangling one. */
+            li + li::before {
+                content: "\00B7";
+                color: var(--note-color);
+                margin-right: 0.75em;
+            }
+
+            /* Subsection lists exist for the rail alone, where they unfold
+               under the active section. Here in the flow variant they are
+               never shown -- and with JavaScript off nothing is ever
+               .active, so the rail, too, degrades to the flat list of
+               sections. */
+            li > ul {
+                display: none;
+            }
+
+            a {
+                color: var(--note-color);
+            }
+
+            a:hover,
+            a:focus-visible {
+                color: var(--link-hover-color);
+            }
+        }
+
+        /* The second life: up into the top margin. The container turns
+           positioning anchor (nothing else positions against it), and
+           -7em -- the same em basis the margin itself is declared in --
+           lifts the block out of the container exactly to the top of
+           the page, where 25px then sets the header's line so its
+           centre matches the theme toggle button's: the bar's 1.2rem
+           offset plus half the button's 2.1rem box is 36px, less half
+           this line's 16pt line-height. The name never moves, and even
+           a link list wrapped to three rows at 768px stays inside the
+           7em margin above it. left and right of 12px are .container's
+           own gutter, so the box spans exactly the width the flow
+           variant had. */
+        @media screen and (min-width: 768px) and (max-width: 1399.98px) {
+            position: relative;
+
+            .cv-outline {
+                left: 12px;
+                position: absolute;
+                right: 12px;
+                top: calc(25px - 7em);
+            }
+        }
+
+        /* The rail. Pinned to the paper's left edge rather than the
+           viewport's, so the 24px gap to the paper is constant and the
+           rail reads as belonging to it; the whole rail block is 184px
+           (160px of rail + the gap). The in-flow variant's row/col grid
+           is flattened away, and .active trades the colour-only accent
+           for a bar sitting on the list's hairline, where it reads as
+           the rule thickening.
+
+           Two geometries, split at 1720px. From 1720px up the container
+           is its full 1320px, centred as usual, and the rail sits in the
+           free margin beside it: 50vw - 660px is the paper's left edge,
+           184px more is the rail's. Between 1400px and 1720px that
+           margin is far too narrow -- a fullscreen MacBook window is
+           1440-1512px, leaving 60-96px beside a 1320px paper -- so the
+           container block below caps the paper at 1140px (the width
+           every 1200-1399px reader already gets) and centres rail and
+           paper together as one 1324px unit. The paper's left edge lands
+           at 50vw - 478px; the rail, 184px to its left, at 50vw - 662px.
+           1400px is Bootstrap's own xxl boundary: below it the container
+           is already 1140px and even the shifted unit needs ~1350px, so
+           there is nothing left to gain. */
+        @media screen and (min-width: 1400px) {
+            .cv-outline {
+                left: calc(50vw - 478px - 184px);
+                position: fixed;
+                /* Top-aligned with the name: 7em is the container's own
+                   top margin (same em basis), so this is the h1's box
+                   top; the pixel nudge closes the difference between the
+                   h1's leading above its cap line and this label's,
+                   measured on the rendered page, so CONTENTS and the
+                   name share a cap line. */
+                top: calc(7em + 2px);
+                width: 160px;
+
+                .row {
+                    display: block;
+                    margin: 0;
+                }
+
+                .col.side {
+                    display: none;
+                }
+
+                .col.main {
+                    flex: none;
+                    max-width: none;
+                    padding: 0;
+                }
+
+                .cv-outline-header {
+                    font-size: 0.62rem;
+                    margin-bottom: 0.6em;
+                    padding-left: 1.15em;
+                }
+
+                ul {
+                    border-left: 1px solid var(--rule-subtle-color);
+                    display: block;
+                    font-size: 0.72rem;
+                    line-height: 1.5;
+                    margin-top: 0;
+                }
+
+                li + li::before {
+                    content: none;
+                }
+
+                a {
+                    border-left: 2px solid transparent;
+                    display: block;
+                    margin-left: -1px;
+                    padding: 0.3em 0 0.3em 1em;
+                }
+
+                a.active {
+                    border-left-color: var(--font-color);
+                    color: var(--font-color);
+                }
+
+                /* The active section's subsections, unfolded. The nested
+                   list carries no rule of its own: its links share the
+                   outer hairline, sitting deeper on it, and the active
+                   subsection takes the same accent as the section. */
+                li > ul {
+                    border-left: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li:has(> a.active) > ul {
+                    display: block;
+                }
+
+                li > ul a {
+                    font-size: 0.94em;
+                    padding-left: 2em;
+                }
+            }
+        }
+
+        /* The narrow-viewport half of the rail geometry above: paper at
+           1140px, pushed right of centre so the rail-and-paper unit is
+           what centres. margin-right stays Bootstrap's auto, so only the
+           left edge is pinned. */
+        @media screen and (min-width: 1400px) and (max-width: 1719.98px) {
+            margin-left: calc(50vw - 478px);
+            max-width: 1140px;
+        }
+
+        @media screen and (min-width: 1720px) {
+            .cv-outline {
+                left: calc(50vw - 660px - 184px);
+            }
+        }
+
+        /* A short window cannot afford the rail's name alignment: the
+           rail is fixed, so whatever the ~134px offset pushes below the
+           fold can never be scrolled to. Fully unfolded the rail runs to
+           roughly 380px, so below ~540px of height it starts losing
+           entries; from there it gives up the name and sits on the
+           toggle's 25px line like every other variant. bottom caps the
+           box at the viewport and overflow lets the rail scroll within
+           itself, so even a truly tiny window can still reach Patent. */
+        @media screen and (min-width: 1400px) and (max-height: 540px) {
+            .cv-outline {
+                bottom: 12px;
+                overflow-y: auto;
+                top: 25px;
+            }
+        }
+
+        .side {
+            text-align: right;
+
+            .date-range,
+            .date {
+                font-style: italic;
+            }
+
+            .location {
+                font-style: italic;
+            }
+        }
+
+        .col.side {
+            order: 1;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+
+        .col.main {
+            order: 2;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+
+        .col.main,
+        .col.side {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .publications {
+            .paper-id {
+                font-style: italic;
+            }
+
+            .pdf-download {
+                font-style: italic;
+                font-size: 0.9em;
+            }
+
+            .paper {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                text-align: justify;
+
+                .paper-author.highlight {
+                    font-weight: bold;
+                }
+
+                cite {
+                    font-style: normal;
+                }
+            }
+
+            .paper-award-label {
+                color: var(--award-color);
+            }
+
+        }
+
+        .section {
+            .item {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                page-break-inside: avoid;
+            }
+        }
+
+        .education {
+            .education-school {
+                font-weight: bold;
+            }
+
+            table.education-degrees {
+                td {
+                    padding: 0px;
+                }
+            }
+        }
+
+        .experience {
+            .experience-organization {
+                font-weight: bold;
+            }
+        }
+
+        .grants {
+            .award-title {
+                font-weight: bold;
+            }
+
+            .award-team::before {
+                content: "Team: "
+            }
+
+            .award-sponsor::before {
+                content: "Sponsor: "
+            }
+
+            .award-program::before {
+                content: "Program: "
+            }
+
+            .award-team {
+                p {
+                    display: inline;
+                }
+            }
+        }
+
+        .awards {
+            .award-title {
+                font-weight: bold;
+            }
+        }
+
+        .presentations {
+            .talk-location {
+                font-weight: bold;
+            }
+        }
+
+        .supervisees {
+            .supervisee {
+                font-weight: bold;
+            }
+        }
+
+        .teaching {
+            .course-name {
+                font-weight: bold;
+            }
+        }
+
+        .press {
+            .outlet {
+                font-style: italic;
+            }
+        }
+    }
+
+    margin-bottom: 100px;
+}
+
+/* Interactive toggles: checkboxes in oney_cv.html wired up by
+   assets/js/cv.js, which mirrors each one to a body class and a URL
+   parameter. */
+/* margin-block, not the four-value shorthand: cv_toggle.html's `row` variant
+   puts .row on this same element, and a shorthand would reset Bootstrap's
+   negative inline row margins to 0 -- indenting that toggle's .col.main by
+   half a gutter while every other column in the section stays put. */
+.cv-toggle {
+    margin-block: 0.5rem 1rem;
+}
+
+/* A group of toggles that shares a line where the column is wide enough, and
+   breaks onto one line each where it is not. The children keep their own
+   margin-block, so a wrapped group spaces its lines and leaves the same gap
+   below it that a lone toggle does. */
+.cv-toggles {
+    column-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cv-toggle label {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+    /* The label is a control, not prose: clicking one repeatedly to compare
+       two states otherwise leaves its words selected and highlighted. The
+       prefix is for Safari before 17, which is the only engine still needing
+       one anywhere in this stylesheet. */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Light/dark toggle. The behavioural half of this -- hidden until the script
+   has run, and which of the two icons shows -- is deliberately restated here
+   rather than shared with site.css: this stylesheet is a standalone parallel of
+   that one, with its own palette, its own dark block and its own print block,
+   and the CV does not load site.css. Three rules is a smaller price than a
+   third stylesheet, and if they ever drift the symptom is loud (both icons, or
+   neither), not silent.
+
+   Hidden until data-theme exists. That attribute is the one signal that
+   _includes/theme_script.html ran, so with JavaScript off -- the case where
+   clicking this would do nothing at all -- the button is simply not there. */
+.theme-toggle {
+    display: none;
+}
+
+:root[data-theme] .theme-toggle {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Show the state the site is in: half-circle on auto, sun on light, moon on
+   dark. Keyed off the attribute rather than swapped by the script so the
+   correct icon is painted on the first frame. */
+.theme-toggle-icon {
+    display: none;
+}
+
+:root[data-theme="auto"] .theme-toggle-icon-auto,
+:root[data-theme="light"] .theme-toggle-icon-light,
+:root[data-theme="dark"] .theme-toggle-icon-dark {
+    display: block;
+}
+
+.cv-theme-toggle-bar {
+    /* Absolute, and outside <main>, so the toggle occupies no space in the
+       document: in flow it would push all 7em of deliberate whitespace above
+       the name further down. No positioned ancestor, so this resolves against
+       the initial containing block -- which also sidesteps the .cv.container
+       top margin collapsing through <main> and dragging a main-relative offset
+       down onto the name.
+
+       left and right both 0 with .container's own `width: 100%` and auto side
+       margins is what centres it: for an absolutely positioned box with left,
+       width and right all resolved, auto margins are required to take equal
+       values, so the bar lands exactly where .cv.container does and stays
+       there at every breakpoint without this file repeating a single
+       max-width.
+
+       padding-right overrides .container's 12px gutter to the 5px that
+       `.col.main` uses. The CV's rows carry Bootstrap's -12px gutter margin,
+       so the columns reach the container's border edge and their 5px padding
+       is what actually sets the right edge of the contact block, the section
+       rules and every date in the side column. Matching it puts the toggle on
+       that same line rather than 7px outside it. */
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+
+    /* The bar spans the full width of the CV, so without this it would be an
+       invisible sheet lying across the top of the page waiting to swallow a
+       click. Nothing sits under it today; this is so nothing has to remember
+       that later. */
+    pointer-events: none;
+}
+
+/* The bar borrows .container for its centring, so when the outline rail's
+   1400-1720px band narrows the paper and pushes it off-centre (see the rail
+   block above), the bar has to follow with the same numbers or the toggle
+   drifts 92px off the paper's right edge. margin-right stays .container's
+   auto and absorbs the slack on the right. */
+@media screen and (min-width: 1400px) and (max-width: 1719.98px) {
+    .cv-theme-toggle-bar.container {
+        margin-left: calc(50vw - 478px);
+        max-width: 1140px;
+    }
+}
+
+.cv-theme-toggle {
+    /* Sized in rem rather than the CV's --font-size, because it is chrome
+       around the document rather than part of it, and should not grow with the
+       document's type. */
+    background: none;
+    border: 0;
+    border-radius: 50%;
+    color: var(--note-color);
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0.5rem;
+    pointer-events: auto;
+    /* Colour only, no motion -- see the matching note in site.css. */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.cv-theme-toggle:hover,
+.cv-theme-toggle:focus-visible {
+    /* The CV's own hover convention is that links go to --link-hover-color.
+       This is a control rather than a link, so it settles on the body colour
+       instead -- the same "darken toward the text" move, without borrowing the
+       blue that marks something as followable -- and gains a disc behind it,
+       because on a single icon in a wide margin the colour shift alone is easy
+       to miss. */
+    background-color: var(--hover-surface-color);
+    color: var(--font-color);
+}
+
+.cv-theme-toggle:focus-visible {
+    /* --font-color is the CV's body text, so it clears the 3:1 a focus ring
+       needs in both themes by construction: 12.63:1 on paper, 13.60:1 on dark
+       paper. Nothing else on this page sets a focus style, so there is no
+       Bootstrap glow to suppress here. */
+    outline: 2px solid var(--font-color);
+    outline-offset: 2px;
+}
+
+.highlight-students-note {
+    display: none;
+    font-style: italic;
+    color: var(--note-color);
+    margin-bottom: 0.5rem;
+}
+
+body.highlight-student-authors .highlight-students-note {
+    display: block;
+}
+
+body.highlight-student-authors .paper-author.student-author {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+body:not(.show-other-mentees) .cv-other-mentees-list,
+body:not(.show-other-mentees) .cv-other-mentees-header {
+    display: none;
+}
+
+body:not(.show-paper-awards) .paper-award-item {
+    display: none;
+}
+
+/* The journal/conference split toggle. The page carries both groupings of the
+   same papers -- one section holding journal and conference papers together
+   (the default) and the two single-type sections -- and this picks which of
+   them the reader sees; _data/cv_publication_sections.yaml declares which
+   section belongs to which grouping. The outline's entries carry the same
+   classes as the sections they link to, so the rail can never offer a link to
+   a heading that is not on the page. */
+body:not(.split-journal-conference) .pub-variant-split,
+body.split-journal-conference .pub-variant-merged {
+    display: none;
+}
+
+/* Small screens: the label column stops being a column. Under 768px the
+   fixed 20% side column shreds its own content -- "09/2008 -- 04/2015"
+   becomes four lines with a date broken across them, and the address block
+   beside the contact block wraps once per word -- so each .col.side stacks
+   above its .col.main as a one-line kicker instead: display: flex lays its
+   inner divs (date range and location; paper code and PDF link) out inline,
+   and muted-and-smaller carries the hierarchy that right-alignment used to.
+   `screen` is belt and braces: a letter page is 816 CSS px wide, so print
+   could never match a 767.98px query anyway, but saying so costs a word. */
+@media screen and (max-width: 767.98px) {
+    body .cv.container {
+        /* 7em of whitespace above the name is a desktop luxury. 25px is
+           the same constant the tablet band uses for the outline's top:
+           the outline is the first thing in the flow here, so this puts
+           the Contents header's line on the theme toggle's, same as
+           every other width, and the name simply follows the outline
+           down the page. */
+        margin-top: 25px;
+
+        /* A CV field can carry an unbreakable token wider than a phone
+           column -- a Coursera URL under Teaching is 377px of it -- and
+           the page scrolled sideways by however much stuck out.
+           break-word rather than anywhere so min-content sizes (the
+           flexed .col.side among them) stay put; only lines that would
+           already overflow may break. */
+        overflow-wrap: break-word;
+
+        /* The affiliation/contact row nests inside .col.main, whose 5px
+           padding is where a Bootstrap row expects a 12px gutter, so its
+           -12px margins poked 7px past the viewport on each side -- the
+           page's other sideways scroll. A 10px gutter makes the row
+           flush, and its columns' 5px padding lands the text on exactly
+           the pixel the 12px default put it. */
+        .col.main > .row {
+            --bs-gutter-x: 10px;
+        }
+
+        .col.side,
+        .col.main {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col.side {
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 0.6em;
+            font-size: 0.9em;
+            color: var(--note-color);
+        }
+
+        /* The title block's pair stacks too -- address, then contact -- and
+           both read better left-aligned once nothing sits beside them. */
+        .row > .col.affiliation,
+        .row > .col.contact {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .contact {
+            text-align: left;
+            margin-top: 0.75em;
+        }
+
+        /* Desktop-only vertical-alignment shims; stacked, each is just a
+           blank line. :first-child spares the second spacer, which holds
+           the screen's "Download PDF" link. */
+        .contact > .contact-spacer:first-child {
+            display: none;
+        }
+
+        /* Justification at ~45 characters a line is rivers, not tidiness. */
+        .publications .paper {
+            text-align: left;
+        }
+    }
+}
+
+/* Print: reproduce the look of the old LaTeX CV (oneycv.cls, kept untracked
+   in the maintainer's checkout under old-cv/ alongside the reference PDF) --
+   12pt Goudy Old Style at 13pt leading on letter paper, a 1.5in right-aligned
+   italic label column, 16pt bold section heads ruled from the content column
+   to the right margin, and the gray "name -- curriculum vitae" footer. Every
+   size below is the class's own value converted 1:1, with the LaTeX source
+   noted -- or, where CSS boxes and TeX glue disagree, tuned until the ink
+   matches the old PDF's measured geometry, with the measurement noted. A
+   deliberate departure is always visible as a comment that says so. */
+@media print {
+    @page {
+        size: letter;
+        /* geometry: left=0.75in, right=0.75in, top=0.5in, bottom=1.7in. The
+           big bottom margin is where the footer lives. */
+        margin: 0.5in 0.75in 1.7in 0.75in;
+
+        /* The \cfoot footer ("<name> -- curriculum vitae, page N of M") is
+           NOT here: its string carries the CV subject's name, and an @page
+           margin box takes only a literal, so _layouts/cv.html generates the
+           @bottom-right rule per page with the name from the CV's data --
+           in an inline <style> after this stylesheet, so it wins the
+           cascade. The page geometry stays here because it is the same for
+           every CV. */
+    }
+
+    :root,
+    :root[data-theme] {
+        /* 12pt article with \linespread{0.9}: 14.5pt baselineskip * 0.9 =
+           13.05pt. 12.75pt rather than 13pt because Chrome snaps printed
+           line boxes to whole CSS pixels: 13pt is 17.33px and alternates
+           17px and 18px lines inside a paragraph, where 12.75pt is exactly
+           17px and reproduces the LaTeX PDF's perfectly uniform rhythm.
+           LaTeX ink is pure black, not the screen's #333. */
+        --font-size: 12pt;
+        --line-height: 12.75pt;
+        --font-color: #000;
+    }
+
+    body {
+        background-color: #fff;
+        margin-bottom: 0;
+
+        .cv.container {
+            /* @page owns the margins; \makecvtitle opens with \vspace*{36pt},
+               and only page 1 carries it, same as the LaTeX title. 31pt
+               rather than 36pt: the h1's line box carries half-leading that
+               \vspace* does not, and 31pt lands the name's ink at the old
+               PDF's measured 71.8pt from the page top. */
+            margin: 31pt 0 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+
+            .row {
+                /* Bootstrap's negative row margins would poke through the
+                   page box now that the container has no padding. */
+                --bs-gutter-x: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            ul.cv-list {
+                /* Bootstrap's 1rem ul margin would ride on top of every
+                   between-section gap; TeX has no such glue, and spacing
+                   here belongs to the headings and items alone. */
+                margin-bottom: 0;
+            }
+
+            /* \def\@colwidth1{1.5in}, \def\@separation{.25cm}: the label
+               column is 1.5in with the gap carved out of its right edge, so
+               content starts exactly 1.5in into the text block. */
+            .col.side {
+                flex: 0 0 1.5in;
+                max-width: 1.5in;
+                padding: 0 0.25cm 0 0;
+                /* \cvitem wraps the whole label in \textit, so the whole
+                   column leans -- except grant amounts, excepted below.
+                   Icon glyphs are immune: bootstrap-icons pins its ::before
+                   to font-style normal. */
+                font-style: italic;
+            }
+
+            .col.main {
+                flex: 0 0 calc(100% - 1.5in);
+                max-width: calc(100% - 1.5in);
+                padding: 0;
+                /* LaTeX justifies and hyphenates everything by default. */
+                text-align: justify;
+                hyphens: auto;
+            }
+
+            /* Both minipages in \makecvtitle are [b]: the address block and
+               the contact block share a bottom edge. On the row, not the
+               columns, so the shorter of the two is the one that moves. The
+               address margin is Bootstrap's 1rem on <address>; flex-end
+               aligns outer margin edges, so it has to go or the address text
+               floats 1rem above the contact's. */
+            .row:has(> .col.contact) {
+                align-items: flex-end;
+
+                > .col.affiliation {
+                    margin-bottom: 0;
+                }
+            }
+
+            /* The "Latest CV: ..." pointer ends in an italic v, and an
+               italic terminal overhangs its advance width. Right-aligned
+               flush to the text block, that overhang lands in the page
+               margin, where Chrome's print clip shaves it off the PDF. A
+               point of padding pulls the line inside the clip; nothing
+               else in the contact block ends in an italic overhang, so
+               only this div needs it, and 1pt is under half the width of
+               the terminal -- invisible as misalignment, visible as the
+               glyph coming back whole. */
+            .contact .d-print-block {
+                padding-right: 1pt;
+            }
+
+            h1 {
+                /* \fontsize{30}{36} with LetterSpace=-1, i.e. 1% of 30pt;
+                   \linespread{0.9} scales the 36pt to 32.4pt. The negative
+                   margin eats the line box's remaining bottom half-leading:
+                   name-to-address ink measures 13.2pt in the old PDF
+                   (\vspace*{12pt} plus the following line's ascent gap). */
+                font-size: 30pt;
+                line-height: 32.4pt;
+                letter-spacing: -0.3pt;
+                margin: 0 0 -3pt;
+            }
+
+            h2 {
+                /* \titleformat{\section}: \bf 16pt, baselineskip 16pt *
+                   \linespread 0.9 = 14.4pt. 12pt below the rule reproduces
+                   the old PDF's measured 13.3-13.9pt rule-to-first-entry
+                   ink gap once the first line's half-leading is added. */
+                font-size: 16pt;
+                line-height: 14.4pt;
+                font-weight: bold;
+                margin: 0 0 12pt;
+                /* The rule is the ::after below; the screen's 1px #AAA
+                   border would print as a second, heavier line under it. */
+                border-bottom: none;
+            }
+
+            h3 {
+                /* \titleformat{\subsection}: 12pt, baselineskip 12pt * 0.9
+                   = 10.8pt; 6pt below the rule for the old PDF's 7.6pt ink
+                   gap to the first entry. */
+                font-size: 12pt;
+                line-height: 10.8pt;
+                margin: 0 0 6pt;
+                border-bottom: none;
+            }
+
+            /* The rules are ::after boxes, scaled: the old CV's rules are
+               true hairlines -- \hrulefill at 0.01cm (0.28pt) black,
+               \thinhrulefill at 0.001cm in darkgray (gray 0.4, #666) -- and
+               Chrome's print paint snaps sub-pixel borders AND sub-pixel
+               box heights up to a full 1px (0.75pt), measured on the PDF
+               output either way. A transform happens after paint, so a 1px
+               box scaled by 0.375 lands in the PDF as a genuine 0.28pt
+               hairline. The h3's 0.001cm is the one size not taken 1:1: at
+               ~0.03pt it survives neither every printer nor every viewer,
+               so it is scaled to 0.1pt -- still visibly fainter than the
+               h2's. The margin-top holds the rule off the text (the old
+               PDF clears h3 descenders by ~2.9pt); padding-bottom would
+               not, since a ::after box comes before its host's padding.
+               Each heading is a .col.main, so its rule spans the content
+               column only, as in the PDF. */
+            h2::after,
+            h3::after {
+                content: "";
+                display: block;
+                height: 1px;
+                margin-top: 2pt;
+                background: #000;
+                transform: scaleY(0.375);
+                transform-origin: top;
+            }
+
+            h3::after {
+                margin-top: 3pt;
+                background: #666;
+                transform: scaleY(0.133);
+            }
+
+            /* Space above a heading sits on its row, not on the heading: a
+               flex item's margin is trapped inside the row box, where a
+               page break cannot truncate it -- and TeX drops this glue when
+               a section opens a page. 20pt rather than the class's
+               \vspace{24pt}: measured against the old PDF, whose sections
+               sit ~22pt of ink below the previous entry, less the line
+               boxes' own ~2pt of half-leading. The rows also refuse a break
+               right after themselves: a stranded heading is worse than the
+               uneven page ends LaTeX produces. :has() because the break and
+               the margin belong between sibling rows, not inside the
+               heading; :not(.visually-hidden) keeps this off the title
+               block's row, whose h2s are the hidden Affiliation/Contact
+               labels. */
+            .row:has(> h2:not(.visually-hidden)),
+            .row:has(> h3) {
+                break-after: avoid;
+                break-inside: avoid;
+                margin-top: 20pt;
+            }
+
+            .row:has(> h3) {
+                /* Mid-list h3s carry ~17pt of ink gap in the old PDF. */
+                margin-top: 16pt;
+            }
+
+            /* The class's \vspace{24pt} lands differently depending on the
+               glue above it: measured on the old PDF's page 1, the ink gap
+               above Education (following the title block) is 14.9pt and
+               above Professional Experience 28.1pt, against ~22pt for the
+               sections after them. Two scoped values reproduce the page
+               everyone actually sees. */
+            .education .row:has(> h2:not(.visually-hidden)) {
+                margin-top: 14pt;
+            }
+
+            .experience .row:has(> h2:not(.visually-hidden)) {
+                margin-top: 24pt;
+            }
+
+            /* Service and Students Supervised open with an h3 directly
+               under the h2's rule; the old PDF closes that gap to 8.3pt,
+               which the h2's own 12pt bottom margin alone already
+               overshoots. */
+            .row:has(> h2:not(.visually-hidden)) + .row:has(> h3) {
+                margin-top: -4pt;
+            }
+
+            /* \cvitem: \vspace{.08in} + .05in = 9.4pt between entries; two
+               CSS line boxes contribute ~1pt of half-leading TeX's baseline
+               grid does not, so 8.4pt of margin reproduces the old PDF's
+               measured 9.4pt ink gap. Sibling margins collapse, so the sum
+               rides on margin-top alone; the existing li:first-child
+               { margin-top: 0 } keeps the h2's own margin in charge of the
+               first gap. */
+            .section .item,
+            .publications .paper {
+                margin-top: 8.4pt;
+                margin-bottom: 0;
+            }
+
+            /* \pdflink: {\small ...} at 12pt is 10.9pt, in RGB(0,39,76) --
+               the one spot of colour. An absolute size because the class
+               sits on the wrapping div and the anchor both, and an em value
+               would compound; the margin sets the code-to-link pitch at the
+               old PDF's measured 13.9pt. */
+            .publications .pdf-download {
+                color: #00274C;
+                font-size: 10.9pt;
+                line-height: 11pt;
+                margin-top: 1.6pt;
+            }
+
+            /* The old CV's award dingbats are ~8pt of solid black ink; the
+               site's outline icons at the full 12pt read far bigger and
+               lighter beside the same codes. */
+            .publications .paper-award-label {
+                font-size: 8.5pt;
+            }
+
+            /* The old CV set grant amounts in math mode: upright digits
+               under the italic date. */
+            .grants .award-amount {
+                font-style: normal;
+            }
+
+            /* The UA stylesheet's 1px td padding shifts the Advisors and
+               Committee lines 0.7pt right of the column edge and opens
+               their line pitch ~1.5pt beyond the body's; the screen only
+               zeroes the degrees table. */
+            .education table td {
+                padding: 0;
+            }
+        }
+    }
+
+    /* The default print state hides the paper-award entries, so the Awards
+       list's real :first-child is display:none and the screen's first-child
+       margin reset lands on it -- leaving the first *visible* entry a full
+       inter-item margin below the h2 rule where every other section gets
+       none. This picks out the first li that no non-award li precedes,
+       which in the hidden state is the first visible one. Scoped to that
+       state: with the toggle on, the true first child is visible and the
+       existing reset already covers it. */
+    body:not(.show-paper-awards) .cv.container .awards ul.cv-list > li:not(.paper-award-item):not(li:not(.paper-award-item) ~ li) {
+        margin-top: 0;
+    }
+}
