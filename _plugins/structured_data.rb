@@ -29,7 +29,9 @@ require "json"
 # citation_conference_title or citation_journal_title, citation_pdf_url) --
 # Open Graph and JSON-LD are not read for this. The date is the venue year
 # alone: conference_start is the meeting's first day, not the publication
-# date, and a year Scholar can trust beats a day it cannot.
+# date, and a year Scholar can trust beats a day it cannot. JSON-LD is not
+# offered that choice -- see sd_iso_datetime -- so the two carry dates of
+# different precision on purpose.
 #
 # JSON-LD is for everyone else (Google's rich results, Bing, the LLM-backed
 # search engines, and any agent without WebMCP): one ScholarlyArticle per
@@ -97,6 +99,7 @@ module Jekyll
 
     def scholarly_article(record)
       url = sd_absolute(record["path"])
+      venue = sd_venue(record["venue_id"])
       node = {
         "@context" => "https://schema.org",
         "@type" => "ScholarlyArticle",
@@ -106,7 +109,7 @@ module Jekyll
         "headline" => record["title"],
         "name" => record["title"],
         "inLanguage" => "en",
-        "datePublished" => record["year"]&.to_s,
+        "datePublished" => sd_iso_datetime(sd_venue_date(venue)),
         "abstract" => record["abstract"],
         "description" => record["summary"],
         "author" => Array(record["author_ids"]).map { |id| author_node(id) },
@@ -121,14 +124,14 @@ module Jekyll
         },
         "isAccessibleForFree" => (true if record["pdf_path"])
       }
-      node.merge!(venue_nodes(record))
+      node.merge!(venue_nodes(record, venue))
       sd_prune(node)
     end
 
     # A journal paper is part of a periodical; a conference paper was
     # published at an event. schema.org has a property for each, and the
     # distinction is the same one the Scholar tags make.
-    def venue_nodes(record)
+    def venue_nodes(record, venue)
       return {} unless record["venue_full_name"]
 
       if CONFERENCE_TYPES.include?(record["type"])
@@ -136,7 +139,7 @@ module Jekyll
           "@type" => "PublicationEvent",
           "name" => record["venue_full_name"],
           "alternateName" => record["venue"],
-          "startDate" => record["year"]&.to_s,
+          "startDate" => sd_iso_datetime(sd_venue_date(venue)),
           "location" => record["venue_location"] && { "@type" => "Place", "name" => record["venue_location"] }
         } }
       else
@@ -156,13 +159,20 @@ module Jekyll
     def person_node(record, full:)
       page = record["path"] && sd_absolute(record["path"])
       person = sd_person_index[record["id"]] || {}
-      # Other identities of the same person elsewhere on the web: the homepage
-      # and the http links, minus anything on this site (a from.so homepage is
-      # an alias of the page itself, and /people/x/cv/ is a page, not a person).
+      # An ORCID identifies a researcher the way a DOI identifies a paper, so it
+      # is written the same way this file writes a DOI: the bare identifier as
+      # an `identifier` node, and its resolvable form as one more `sameAs`. It
+      # is the only id here that a crawler can follow across publishers, so
+      # author nodes on paper pages carry it too, not just full person pages.
+      orcid = person["orcid"] && "https://orcid.org/#{person["orcid"]}"
+      # Other identities of the same person elsewhere on the web: the homepage,
+      # the ORCID and the http links, minus anything on this site (a from.so
+      # homepage is an alias of the page itself, and /people/x/cv/ is a page,
+      # not a person).
       links = Array(record["links"]).map { |link| link["url"] }
-      same_as = ([record["homepage"]] + links).compact.uniq
-                                               .select { |url| url.start_with?("http") }
-                                               .reject { |url| url.start_with?(sd_site.config["url"]) }
+      same_as = ([record["homepage"], orcid] + links).compact.uniq
+                                                     .select { |url| url.start_with?("http") }
+                                                     .reject { |url| url.start_with?(sd_site.config["url"]) }
       node = {
         "@context" => ("https://schema.org" if full),
         "@type" => "Person",
@@ -172,6 +182,9 @@ module Jekyll
         "familyName" => person["family_name"],
         "url" => page || record["homepage"],
         "sameAs" => same_as,
+        "identifier" => person["orcid"] && {
+          "@type" => "PropertyValue", "propertyID" => "ORCID", "value" => person["orcid"]
+        },
         # short_bio is "role / department" for a current member and a sentence
         # of history for everyone else ("Former ... Now ..."), so only the
         # former is a job title.
@@ -197,7 +210,7 @@ module Jekyll
         "mainEntityOfPage" => url,
         "headline" => post["title"],
         "description" => sd_plain(post["description"]),
-        "datePublished" => post["created"]&.to_s,
+        "datePublished" => sd_iso_datetime(post["created"]),
         "inLanguage" => "en",
         "author" => Array(post["authors"]).map { |id| author_node(id) },
         # The document itself, published from Google Docs; this page is the
@@ -263,6 +276,46 @@ module Jekyll
 
       "#{sd_site.config["url"]}#{sd_site.config["baseurl"]}#{path}"
     end
+
+    # Google's rich results test rejects a bare year ("Invalid datetime for
+    # datePublished") and warns about a day with no zone ("Datetime property
+    # datePublished is missing a timezone"), so a date reaches JSON-LD only as
+    # a full ISO 8601 timestamp. Midnight UTC is a stated convention, not a
+    # claim about the paper: a paper is published on a day rather than at an
+    # instant, so the time of day and the offset are invented whatever we
+    # write, and one convention is easier to read than a different guess per
+    # venue location. The Scholar tags are unaffected -- they keep the year
+    # alone, which is the date that venues.yaml can actually vouch for.
+    def sd_iso_datetime(date)
+      return nil if date.nil? || date.to_s.empty?
+
+      "#{date}T00:00:00Z"
+    end
+
+    # The day a venue's papers were published, "YYYY-MM-DD", or nil when
+    # venues.yaml does not know it (a journal with no `published_date`, or a
+    # paper still in press). Nil is the right answer there: sd_prune drops the
+    # property, and no date at all beats a date the site made up.
+    #
+    # A meeting is dated from `conference_start` ("M/D", not zero-padded) plus
+    # the venue year. Everything else -- journals, book chapters, preprints --
+    # carries `published_date` as a full ISO date, deliberately a separate
+    # field: venue_order.rb and cv_award_entries.rb key on conference_start,
+    # so giving one of those venues a conference_start would silently reorder
+    # the publication lists and renumber the CV.
+    def sd_venue_date(venue)
+      return nil if venue.nil?
+      return venue["published_date"].to_s if venue["published_date"]
+
+      month, day = venue["conference_start"].to_s.split("/").map(&:to_i)
+      year = venue["year"].to_i
+      return nil unless year.positive? && (1..12).cover?(month) && (1..31).cover?(day)
+
+      format("%04d-%02d-%02d", year, month, day)
+    end
+
+    # Shares the venue index sd_publication_record memoizes below.
+    def sd_venue(id) = (@sd_venues ||= index_by_id(sd_site.data["venues"]))[id]
 
     # mcp_index.rb's builders, with the lookup tables they take built once
     # per page render (the strainer is per render, so a paper page with a

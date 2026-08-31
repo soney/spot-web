@@ -495,7 +495,8 @@
   venue: vl_hcc_2023
   pdf: pdfs/zhang-runex-vlhcc2023.pdf
 - id: ui_development_in_mixed_ability_software_engineering_teams_2023
-  title: UI Development in Mixed-Ability Software Engineering Teams
+  title: UI Development Experiences of Programmers with Visual Impairments in Product Teams
+  doi: 10.1007/978-1-4842-9651-6_8
   abstract: >-
     The tools and techniques that software engineers use to collaborate are critical in deciding who can contribute to
     software projects and the roles they can play within those teams. We conducted two qualitative studies to better
@@ -520,8 +521,8 @@
     - sharvari_bondre
     - vaishnav_kameswaran
     - hrishikesh_rao
-  venue: edi_2023
-  pdf: pdfs/pandey-ui-development-mixed-ability-edi2023.pdf
+  venue: edi_2024
+  pdf: pdfs/pandey-ui-development-experiences-edi2024.pdf
 - id: vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
   title: "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress"
   doi: 10.1145/3544548.3581516
@@ -1370,8 +1371,8 @@
   student_authors:
     - mary_beth_kery
     - toby_li
-  venue: eud_2016
-  pdf: pdfs/myers-making-end-user-eud2016.pdf
+  venue: eud_2017
+  pdf: pdfs/myers-making-end-user-eud2017.pdf
 - id: towards_providing_on_demand_expert_support_for_software_developers_2016
   title: Towards Providing On-Demand Expert Support for Software Developers
   doi: 10.1145/2858036.2858512

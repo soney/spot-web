@@ -1,6 +1,7 @@
 - id: steve_oney
   given_name: Steve
   family_name: Oney
+  orcid: 0000-0002-5823-1499
   membership: lead
   homepage: https://from.so/Steve_Oney
   name_recording: audio/steve_oney_name_pronunciation.mp3
@@ -33,6 +34,7 @@
 - id: maryam_arab
   given_name: Maryam
   family_name: Arab
+  orcid: 0000-0001-9040-4313
   membership: member-postdoc
   homepage: https://sites.google.com/view/maryamarab/home
   short_bio: |-
@@ -52,6 +54,7 @@
 - id: ashley_zhang
   given_name: Ashley
   family_name: Zhang
+  orcid: 0000-0001-5978-3714
   membership: member
   homepage: https://gezhang.me
   short_bio: |-
@@ -78,6 +81,7 @@
 - id: jiacheng_zhang
   given_name: Jiacheng
   family_name: Zhang
+  orcid: 0009-0006-0513-7403
   membership: member
   homepage: https://susan-zjc.github.io/
   short_bio: |-
@@ -94,6 +98,7 @@
 - id: xiangyu_zhou
   given_name: Xiangyu
   family_name: Zhou
+  orcid: 0009-0003-6404-1098
   membership: member
   homepage: https://kevinxiangyuzhou.github.io
   short_bio: |-
@@ -114,6 +119,7 @@
 - id: rebecca_krosnick
   given_name: Rebecca
   family_name: Krosnick
+  orcid: 0000-0002-8427-3895
   membership: alum
   homepage: https://scholar.google.com/citations?user=bw4sQA0AAAAJ&hl=en
   short_bio: |-
@@ -141,6 +147,7 @@
 - id: april_wang
   given_name: April
   family_name: Wang
+  orcid: 0000-0001-8724-4662
   membership: alum
   homepage: https://aprilwang.me/
   short_bio: |-
@@ -168,6 +175,7 @@
 - id: lei_zhang
   given_name: Lei
   family_name: Zhang
+  orcid: 0000-0003-3584-6754
   membership: alum
   homepage: https://raynez.art/
   short_bio: |-
@@ -197,6 +205,7 @@
 - id: mauli_pandey
   given_name: Mauli
   family_name: Pandey
+  orcid: 0009-0005-0543-3088
   membership: alum
   homepage: https://pandeymauli.github.io/research/
   short_bio: |-
@@ -226,6 +235,7 @@
 - id: yan_chen
   given_name: Yan
   family_name: Chen
+  orcid: 0000-0002-1646-6935
   membership: alum
   homepage: https://chensivan.github.io/
   short_bio: |-
@@ -249,6 +259,7 @@
 - id: zihan_wu
   given_name: Zihan
   family_name: Wu
+  orcid: 0000-0002-3161-2232
   membership: ugrad_ms_student
   homepage: https://www.zihanwu.com/
   short_bio: "Undergraduate Summer Intern. Currently: UMSI PhD Student"
@@ -349,6 +360,7 @@
 - id: jaylin_herskovitz
   given_name: Jaylin
   family_name: Herskovitz
+  orcid: 0000-0002-9049-5056
   membership: ugrad_ms_student
   homepage: https://jayl.in/
   short_bio: Former Undergraduate Researcher. Now Ph.D. student at Michigan (CSE)
@@ -370,6 +382,7 @@
 - id: yinuo_yang
   given_name: Yinuo
   family_name: Yang
+  orcid: 0009-0003-8184-719X
   membership: ugrad_ms_student
 - id: hanning_li
   given_name: Hanning
@@ -398,10 +411,12 @@
 - id: john_zimmerman
   given_name: John
   family_name: Zimmerman
+  orcid: 0000-0001-5299-8157
   homepage: http://www.cs.cmu.edu/~johnz/
 - id: kursat_ozenc
   given_name: Kursat
   family_name: Ozenc
+  orcid: 0009-0003-2595-3844
   homepage: http://kursatozenc.com/
 - id: miso_kim
   given_name: Miso
@@ -420,13 +435,16 @@
 - id: joel_brandt
   given_name: Joel
   family_name: Brandt
+  orcid: 0000-0002-1809-3992
   homepage: https://research.adobe.com/person/joel-brandt/
 - id: rahul_pandita
   given_name: Rahul
   family_name: Pandita
+  orcid: 0000-0002-7466-2985
 - id: xusheng_xiao
   given_name: Xusheng
   family_name: Xiao
+  orcid: 0000-0003-4797-4294
 - id: hao_zhong
   given_name: Hao
   family_name: Zhong
@@ -437,6 +455,7 @@
 - id: amit_paradkar
   given_name: Amit
   family_name: Paradkar
+  orcid: 0000-0003-3707-8939
 - id: chris_harrison
   given_name: Chris
   family_name: Harrison
@@ -444,14 +463,17 @@
 - id: amy_ogan
   given_name: Amy
   family_name: Ogan
+  orcid: 0000-0003-2671-6149
   homepage: http://amyogan.com/
 - id: jason_wiese
   given_name: Jason
   family_name: Wiese
+  orcid: 0000-0002-8766-3557
   homepage: http://jasonwiese.net/
 - id: youngseok_yoon
   given_name: YoungSeok
   family_name: Yoon
+  orcid: 0000-0001-5979-1829
   homepage: https://research.yyoon.net/
 - id: xin_rong
   given_name: Xin
@@ -462,10 +484,12 @@
 - id: mira_dontcheva
   given_name: Mira
   family_name: Dontcheva
+  orcid: 0009-0006-5394-2706
   homepage: https://research.adobe.com/person/mira-dontcheva/
 - id: eytan_adar
   given_name: Eytan
   family_name: Adar
+  orcid: 0000-0003-1911-836X
   homepage: http://www.cond.org/
 - id: sang_won_lee
   given_name: Sang Won
@@ -481,6 +505,7 @@
 - id: walter_talamonti
   given_name: Walter
   family_name: Talamonti
+  orcid: 0000-0002-7955-2419
   homepage: https://scholar.google.com/citations?user=34eyP4gAAAAJ&hl=en
 - id: yunqi_zhang
   given_name: Yunqi
@@ -489,6 +514,7 @@
 - id: jason_mars
   given_name: Jason
   family_name: Mars
+  orcid: 0000-0002-7029-5292
   homepage: http://jasonmars.org/
 - id: lingjia_tang
   given_name: Lingjia
@@ -497,6 +523,7 @@
 - id: alan_lundgard
   given_name: Alan
   family_name: Lundgard
+  orcid: 0000-0002-1352-3615
   homepage: https://www.alanlundgard.com/
 - id: michael_nebeling
   given_name: Michael
@@ -505,21 +532,26 @@
 - id: christopher_brooks
   given_name: Christopher
   family_name: Brooks
+  orcid: 0000-0003-0875-0204
   homepage: http://christopherbrooks.ca/
 - id: paul_resnick
   given_name: Paul
   family_name: Resnick
+  orcid: 0000-0001-8368-0600
   homepage: http://presnick.people.si.umich.edu/
 - id: anant_mittal
   given_name: Anant
   family_name: Mittal
+  orcid: 0009-0000-9085-8446
 - id: hari_subramonyam
   given_name: Hari
   family_name: Subramonyam
+  orcid: 0000-0002-3450-0447
   homepage: http://haridecoded.com/
 - id: sile_o_modhrain
   given_name: Sile
   family_name: O'Modhrain
+  orcid: 0000-0003-3804-5469
   homepage: http://www.somodhrain.com/
 - id: jean_song
   given_name: Jean
@@ -531,14 +563,17 @@
 - id: tovi_grossman
   given_name: Tovi
   family_name: Grossman
+  orcid: 0000-0002-0494-5373
   homepage: https://www.tovigrossman.com/
 - id: andr_s_monroy_hern_ndez
   given_name: Andrés
   family_name: Monroy-Hernández
+  orcid: 0000-0003-4889-9484
   homepage: http://www.andresmh.com/
 - id: rajan_vaish
   given_name: Rajan
   family_name: Vaish
+  orcid: 0000-0002-9780-1116
 - id: sun_young_park
   given_name: Sun Young
   family_name: Park
@@ -546,6 +581,7 @@
 - id: louis_spinelli
   given_name: Louis
   family_name: Spinelli
+  orcid: 0000-0002-0572-2534
 - id: amy_ko
   given_name: Amy
   family_name: Ko
@@ -561,6 +597,7 @@
 - id: mary_beth_kery
   given_name: Mary Beth
   family_name: Kery
+  orcid: 0000-0002-1771-0565
   homepage: https://marybethkery.com/
 - id: toby_li
   given_name: Toby
@@ -577,20 +614,25 @@
 - id: justin_matejka
   given_name: Justin
   family_name: Matejka
+  orcid: 0009-0002-2680-2645
   homepage: https://www.autodesk.com/research/people/justin-matejka
 - id: george_fitzmaurice
   given_name: George
   family_name: Fitzmaurice
+  orcid: 0000-0002-2834-7757
   homepage: https://www.autodesk.com/research/people/george-fitzmaurice
 - id: jacob_gettig
   given_name: Jacob
   family_name: Gettig
+  orcid: 0009-0004-2929-9373
 - id: walter_lasecki
   given_name: Walter
   family_name: Lasecki
+  orcid: 0000-0002-8204-1708
 - id: brooke_sasia
   given_name: Brooke
   family_name: Sasia
+  orcid: 0000-0002-1311-6606
 - id: john_chung
   given_name: John
   family_name: Chung
@@ -598,10 +640,12 @@
 - id: vaishnav_kameswaran
   given_name: Vaishnav
   family_name: Kameswaran
+  orcid: 0000-0003-1519-8956
   homepage: http://vaikam.people.si.umich.edu/
 - id: hrishikesh_rao
   given_name: Hrishikesh
   family_name: Rao
+  orcid: 0000-0003-0972-3806
   homepage: https://hrishirao.com/
 - id: sharvari_bondre
   given_name: Sharvari
@@ -610,55 +654,69 @@
 - id: jin_pan
   given_name: Jin
   family_name: Pan
+  orcid: 0000-0001-7398-6702
 - id: ashutosh_agrawal
   given_name: Ashutosh
   family_name: Agrawal
+  orcid: 0000-0002-1020-2824
 - id: anhong_guo
   given_name: Anhong
   family_name: Guo
+  orcid: 0000-0002-4447-7818
   homepage: https://guoanhong.com/
 - id: andrew_head
   given_name: Andrew
   family_name: Head
+  orcid: 0000-0002-1523-3347
   homepage: https://andrewhead.info/
 - id: jaimie_drozdal
   given_name: Jaimie
   family_name: Drozdal
+  orcid: 0000-0002-7153-9068
 - id: xuye_liu
   given_name: Xuye
   family_name: Liu
 - id: shiyu_xu
   given_name: Shiyu
   family_name: Xu
+  orcid: 0009-0009-6891-3555
 - id: dakuo_wang
   given_name: Dakuo
   family_name: Wang
+  orcid: 0000-0001-9371-9441
 - id: soya_park
   given_name: Soya
   family_name: Park
+  orcid: 0000-0002-2149-4420
 - id: andrew_begel
   given_name: Andrew
   family_name: Begel
+  orcid: 0000-0002-7425-4818
   homepage: https://andrewbegel.com/
 - id: xiaohang_tang
   given_name: Xiaohang
   family_name: Tang
+  orcid: 0000-0002-2691-9280
   homepage: https://xiaohang-tang.github.io/
 - id: jane_im
   given_name: Jane
   family_name: Im
+  orcid: 0000-0002-9614-6535
   homepage: https://imjane.net/
 - id: himanshu_zade
   given_name: Himanshu
   family_name: Zade
+  orcid: 0000-0003-1755-7780
   homepage: http://students.washington.edu/himanz/
 - id: pamela_wisniewski
   given_name: Pamela
   family_name: Wisniewski
+  orcid: 0000-0002-6223-1029
   homepage: https://stirlab.org/
 - id: kentaro_toyama
   given_name: Kentaro
   family_name: Toyama
+  orcid: 0000-0002-9128-2255
   homepage: http://www.kentarotoyama.org/
 - id: chen_yang
   given_name: Chen
@@ -666,27 +724,34 @@
 - id: victor_bursztyn
   given_name: Victor
   family_name: Bursztyn
+  orcid: 0000-0002-6187-6415
 - id: gromit_chan
   given_name: Gromit
   family_name: Chan
+  orcid: 0000-0003-1356-4406
 - id: shunan_guo
   given_name: Shunan
   family_name: Guo
 - id: eunyee_koh
   given_name: Eunyee
   family_name: Koh
+  orcid: 0000-0003-2091-5972
 - id: jane_hoffswell
   given_name: Jane
   family_name: Hoffswell
+  orcid: 0000-0002-9871-4575
 - id: jiawen_li
   given_name: Jiawen
   family_name: Li
+  orcid: 0009-0007-6906-225X
 - id: yan_ru_jhou
   given_name: Yan-Ru
   family_name: Jhou
+  orcid: 0009-0000-9987-0492
 - id: shamita_rao
   given_name: Shamita
   family_name: Rao
+  orcid: 0009-0001-7761-5615
 - id: jenny_liang
   given_name: Jenny
   family_name: Liang
@@ -694,7 +759,9 @@
 - id: valentina_hong
   given_name: Valentina
   family_name: Hong
+  orcid: 0009-0001-9040-058X
 - id: thomas_latoza
   given_name: Thomas
   family_name: LaToza
+  orcid: 0000-0002-9564-3337
   homepage: https://people.cs.gmu.edu/~tlatoza/
