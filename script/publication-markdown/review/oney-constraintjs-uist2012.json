@@ -1,0 +1,1941 @@
+{
+  "file": "oney-constraintjs-uist2012.pdf",
+  "title": "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States",
+  "publication_id": "constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012",
+  "pdf_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+  "markdown": "publications/oney-constraintjs-uist2012.md",
+  "markdown_sha256": "825952cd8825d1cebea7de3c6726bbecf52999d55349faf076e2d7fb2830c170",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "169:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 233
+    },
+    {
+      "node": "170:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 100
+    },
+    {
+      "node": "171:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 905
+    },
+    {
+      "node": "172:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "173:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 81
+    },
+    {
+      "node": "174:0",
+      "role": "Code",
+      "pages": [
+        1
+      ],
+      "characters": 747
+    },
+    {
+      "node": "175:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 843
+    },
+    {
+      "node": "181:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 113
+    },
+    {
+      "node": "187:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 412
+    },
+    {
+      "node": "176:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "177:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 932
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 104
+    },
+    {
+      "node": "179:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "180:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 88
+    },
+    {
+      "node": "182:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "183:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 652
+    },
+    {
+      "node": "184:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "185:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 724
+    },
+    {
+      "node": "joined-186:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 625
+    },
+    {
+      "node": "190:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "191:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 845
+    },
+    {
+      "node": "192:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "193:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 541
+    },
+    {
+      "node": "194:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 702
+    },
+    {
+      "node": "195:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "196:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 223
+    },
+    {
+      "node": "200:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 118
+    },
+    {
+      "node": "201:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 239
+    },
+    {
+      "node": "202:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 257
+    },
+    {
+      "node": "209:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "210:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 547
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 396
+    },
+    {
+      "node": "212:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1176
+    },
+    {
+      "node": "213:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "joined-214:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 719
+    },
+    {
+      "node": "217:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 940
+    },
+    {
+      "node": "218:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 651
+    },
+    {
+      "node": "219:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1267
+    },
+    {
+      "node": "joined-220:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1077
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 470
+    },
+    {
+      "node": "223:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "224:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 170
+    },
+    {
+      "node": "225:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "226:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 501
+    },
+    {
+      "node": "227:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 868
+    },
+    {
+      "node": "joined-228:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 426
+    },
+    {
+      "node": "231:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 34
+    },
+    {
+      "node": "232:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 377
+    },
+    {
+      "node": "233:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 715
+    },
+    {
+      "node": "234:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 476
+    },
+    {
+      "node": "235:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 23
+    },
+    {
+      "node": "236:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 890
+    },
+    {
+      "node": "237:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 23
+    },
+    {
+      "node": "238:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 305
+    },
+    {
+      "node": "239:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 387
+    },
+    {
+      "node": "240:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 26
+    },
+    {
+      "node": "241:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 239
+    },
+    {
+      "node": "242:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 44
+    },
+    {
+      "node": "243:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 231
+    },
+    {
+      "node": "244:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "245:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 97
+    },
+    {
+      "node": "246:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 61
+    },
+    {
+      "node": "247:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 85
+    },
+    {
+      "node": "248:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 147
+    },
+    {
+      "node": "249:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 194
+    },
+    {
+      "node": "250:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "251:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 182
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 87
+    },
+    {
+      "node": "337:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 195
+    },
+    {
+      "node": "338:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 228
+    },
+    {
+      "node": "340:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 148
+    },
+    {
+      "node": "344:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 189
+    },
+    {
+      "node": "345:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 127
+    },
+    {
+      "node": "346:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 131
+    },
+    {
+      "node": "347:0",
+      "role": "Code",
+      "pages": [
+        5
+      ],
+      "characters": 78
+    },
+    {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 709
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 40
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 262
+    },
+    {
+      "node": "351:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 49
+    },
+    {
+      "node": "352:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 353
+    },
+    {
+      "node": "371:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 41
+    },
+    {
+      "node": "372:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 273
+    },
+    {
+      "node": "joined-373:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 423
+    },
+    {
+      "node": "374:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 250
+    },
+    {
+      "node": "375:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 467
+    },
+    {
+      "node": "376:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 405
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 157
+    },
+    {
+      "node": "379:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 461
+    },
+    {
+      "node": "380:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 360
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 96
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 78
+    },
+    {
+      "node": "401:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 207
+    },
+    {
+      "node": "402:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 69
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 415
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 32
+    },
+    {
+      "node": "406:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 159
+    },
+    {
+      "node": "407:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 25
+    },
+    {
+      "node": "408:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 443
+    },
+    {
+      "node": "409:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 283
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 800
+    },
+    {
+      "node": "411:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 44
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 256
+    },
+    {
+      "node": "413:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 164
+    },
+    {
+      "node": "414:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 141
+    },
+    {
+      "node": "415:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 237
+    },
+    {
+      "node": "416:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 175
+    },
+    {
+      "node": "417:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 416
+    },
+    {
+      "node": "418:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 145
+    },
+    {
+      "node": "419:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 464
+    },
+    {
+      "node": "420:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 174
+    },
+    {
+      "node": "422:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-423:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 887
+    },
+    {
+      "node": "424:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 210
+    },
+    {
+      "node": "426:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 506
+    },
+    {
+      "node": "427:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 444
+    },
+    {
+      "node": "429:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 334
+    },
+    {
+      "node": "430:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 34
+    },
+    {
+      "node": "434:0",
+      "role": "Code",
+      "pages": [
+        7
+      ],
+      "characters": 59
+    },
+    {
+      "node": "435:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 32
+    },
+    {
+      "node": "439:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 523
+    },
+    {
+      "node": "440:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "441:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 624
+    },
+    {
+      "node": "442:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 126
+    },
+    {
+      "node": "443:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 101
+    },
+    {
+      "node": "444:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 104
+    },
+    {
+      "node": "445:0",
+      "role": "Code",
+      "pages": [
+        7
+      ],
+      "characters": 141
+    },
+    {
+      "node": "446:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 35
+    },
+    {
+      "node": "447:0",
+      "role": "Code",
+      "pages": [
+        7
+      ],
+      "characters": 173
+    },
+    {
+      "node": "448:0",
+      "role": "Code",
+      "pages": [
+        7
+      ],
+      "characters": 242
+    },
+    {
+      "node": "449:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 10
+    },
+    {
+      "node": "450:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 206
+    },
+    {
+      "node": "451:0",
+      "role": "Code",
+      "pages": [
+        7
+      ],
+      "characters": 131
+    },
+    {
+      "node": "452:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 516
+    },
+    {
+      "node": "453:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 14
+    },
+    {
+      "node": "454:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 405
+    },
+    {
+      "node": "455:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 151
+    },
+    {
+      "node": "456:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 117
+    },
+    {
+      "node": "457:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 23
+    },
+    {
+      "node": "458:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 178
+    },
+    {
+      "node": "460:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 117
+    },
+    {
+      "node": "461:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 140
+    },
+    {
+      "node": "462:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 299
+    },
+    {
+      "node": "463:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 38
+    },
+    {
+      "node": "464:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 746
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 27
+    },
+    {
+      "node": "466:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 84
+    },
+    {
+      "node": "467:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 51
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 48
+    },
+    {
+      "node": "joined-469:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 510
+    },
+    {
+      "node": "471:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 151
+    },
+    {
+      "node": "472:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 65
+    },
+    {
+      "node": "473:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 216
+    },
+    {
+      "node": "474:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 23
+    },
+    {
+      "node": "joined-475:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 290
+    },
+    {
+      "node": "476:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 501
+    },
+    {
+      "node": "477:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 439
+    },
+    {
+      "node": "479:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 35
+    },
+    {
+      "node": "480:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1131
+    },
+    {
+      "node": "481:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 501
+    },
+    {
+      "node": "482:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 4
+    },
+    {
+      "node": "joined-483:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 190
+    },
+    {
+      "node": "485:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 807
+    },
+    {
+      "node": "486:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 745
+    },
+    {
+      "node": "488:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 41
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 841
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 808
+    },
+    {
+      "node": "491:0",
+      "role": "Code",
+      "pages": [
+        9
+      ],
+      "characters": 112
+    },
+    {
+      "node": "492:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 444
+    },
+    {
+      "node": "493:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 382
+    },
+    {
+      "node": "494:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 607
+    },
+    {
+      "node": "495:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 50
+    },
+    {
+      "node": "496:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 817
+    },
+    {
+      "node": "497:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 349
+    },
+    {
+      "node": "498:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "499:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 303
+    },
+    {
+      "node": "501:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 174
+    },
+    {
+      "node": "502:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 701
+    },
+    {
+      "node": "503:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 416
+    },
+    {
+      "node": "504:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 26
+    },
+    {
+      "node": "505:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 640
+    },
+    {
+      "node": "506:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 30
+    },
+    {
+      "node": "253:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 851
+    },
+    {
+      "node": "254:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "joined-255:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 286
+    },
+    {
+      "node": "257:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "258:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 3017
+    }
+  ],
+  "tagged_content_items": 5409,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-001-p001.png",
+      "node": "171:0",
+      "page": 1,
+      "bbox": [
+        52.813819885253906,
+        165.6636962890625,
+        294.0638122558594,
+        333.4136962890625
+      ],
+      "sha256": "81fdd17efb8359f1edcb5662657803b27f2ea34cad726d5c82b5984daeb6d63d",
+      "kind": "figure",
+      "alt": "Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the fb_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends and pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading, friends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the picture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17)."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-002-p005.png",
+      "node": "344:0",
+      "page": 5,
+      "bbox": [
+        121.81999969482422,
+        59.939998626708984,
+        233.33999633789062,
+        90.33999633789062
+      ],
+      "sha256": "daf3d90148dfc73085bff134596dedb1784c0061218d4a3dbfb07a5ac2d6db41",
+      "kind": "figure",
+      "alt": "Figure 2: An illustration of a jQuery UI slider widget. Constraint variables can be attached to track the value of this widget."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-003-p005.png",
+      "node": "375:0",
+      "page": 5,
+      "bbox": [
+        332.260009765625,
+        59.939998626708984,
+        535.9400024414062,
+        211.5399932861328
+      ],
+      "sha256": "70d2f50ee0de0a66ea385f1c0e0188f0416cd278622accc2ca0ebde65a348685",
+      "kind": "figure",
+      "alt": "Figure 3: A color selector that uses constraint variables to automatically update the preview color and hex value text. A constraint variable tracks the values for each of the red, green, and blue sliders (r, g, and b respectively.) A fourth constraint variable (hex) computes a hex color value. Finally, constraints update the background color and text of the color selector to reflect the slider values."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-004-p006.png",
+      "node": "415:0",
+      "page": 6,
+      "bbox": [
+        354.8999938964844,
+        59.939998626708984,
+        515.1400146484375,
+        158.5
+      ],
+      "sha256": "0a1f370b312340292a767671d11a1af62c8ea2c347471da789d208463d33f270",
+      "kind": "figure",
+      "alt": "Figure 4: (Left) An illustration of an interactive behavior where hovering over one block highlights the other block. (Right) the FSM used by both blocks to track their state."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-005-p007.png",
+      "node": "426:0",
+      "page": 7,
+      "bbox": [
+        118.94000244140625,
+        60.439998626708984,
+        235.25999450683594,
+        145.8000030517578
+      ],
+      "sha256": "6ca0aaab227f1ffdaeaa46d3332ee8ce3ea8f468c9113d6e822ac408d86defe4",
+      "kind": "figure",
+      "alt": "Figure 5: The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-006-p008.png",
+      "node": "476:0",
+      "page": 8,
+      "bbox": [
+        384.5799865722656,
+        59.939998626708984,
+        482.6600036621094,
+        184.89999389648438
+      ],
+      "sha256": "4152f6752d3cb6ac47b7fffa17933b4ffc9dad0410b1809911a1e2e3f7f0c37d",
+      "kind": "figure",
+      "alt": "Figure 6: An illustration of Bubble Cursors [6]. Clickable “targets” are light grey-filled circles. When the cursor is too far from any of the targets, a grey dotted halo appears around the cursor (A). When a target is in range (B), the halo becomes red and shrinks enough that it intersects the target, which turns dark grey. The ConstraintJS implementation of this application allows all of this behavior to be expressed declaratively."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-007-p009.png",
+      "node": "485:0",
+      "page": 9,
+      "bbox": [
+        100.26000213623047,
+        59.939998626708984,
+        253.5399932861328,
+        200.25999450683594
+      ],
+      "sha256": "0f576d58af8044977c4cd86718630fd5787e5e7b66b2ca320c3820c0709fc863",
+      "kind": "figure",
+      "alt": "Figure 7: A scatterplot application implemented with ConstraintJS. By default, constraints set the position of every data point to reflect the values of an underlying data model (A). When a point is dragged (B), a constraint in the opposite direction updates the underlying data model based on the position of the point, which in turn, is constrained to the mouse’s position. The axes may also be dragged (C) and constraints automatically update the axis labels to reflect its position. Finally, axes’ scales may be changed (D) by dragging a point while holding SHIFT. This example illustrates how one-way constraints in ConstraintJS may be combined with FSMs to enable functionality that was previously only possible with multi-way constraints."
+    },
+    {
+      "path": "figures/oney-constraintjs-uist2012/figure-008-p009.png",
+      "node": "492:0",
+      "page": 9,
+      "bbox": [
+        356.82000732421875,
+        59.939998626708984,
+        513.219970703125,
+        206.97999572753906
+      ],
+      "sha256": "5b85e594ca932160d5c65672b38320fb99b8ce2cbebb134cd0f7b37fa4800520",
+      "kind": "figure",
+      "alt": "Figure 8: An illustration of a touchscreen-based application written with ConstraintJS. Constraints control the position, scale, and angle of photos, which users can manipulate with one or two fingers. When two fingers touch a photo, a red slider appears that controls the photo’s opacity and can be changed using a third finger. Constraints set the position and text of the slider."
+    }
+  ],
+  "tables": [],
+  "code_layout": [
+    {
+      "node": "174:0",
+      "pages": [
+        1
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 21,
+      "character_pitch": 3.7546,
+      "relative_median_deviation": 0.0067,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 206,
+      "inserted_leading_spaces": 9,
+      "large_gap_columns": [
+        15,
+        48,
+        11,
+        10,
+        13,
+        13,
+        13,
+        10,
+        10
+      ],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "244:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.9957,
+      "relative_median_deviation": 0.0005,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 2,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "246:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 3,
+      "character_pitch": 3.9925,
+      "relative_median_deviation": 0.0012,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 3,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "248:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 7,
+      "character_pitch": 3.9937,
+      "relative_median_deviation": 0.0013,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 9,
+      "inserted_leading_spaces": 3,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "250:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.9954,
+      "relative_median_deviation": 0.0008,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "337:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 4,
+      "character_pitch": 3.9973,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 5,
+      "inserted_leading_spaces": 45,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "347:0",
+      "pages": [
+        5
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 3,
+      "character_pitch": 3.9923,
+      "relative_median_deviation": 0.0013,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 5,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "409:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 9,
+      "character_pitch": 3.9903,
+      "relative_median_deviation": 0.0012,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 3,
+      "inserted_leading_spaces": 73,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "413:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 3.9979,
+      "relative_median_deviation": 0.0002,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 66,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "418:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 3.9945,
+      "relative_median_deviation": 0.0006,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 2,
+      "inserted_leading_spaces": 54,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "420:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 6,
+      "character_pitch": 3.997,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 5,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "434:0",
+      "pages": [
+        7
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 1,
+      "character_pitch": 3.9616,
+      "relative_median_deviation": 0.0186,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 5,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "445:0",
+      "pages": [
+        7
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 6,
+      "character_pitch": 3.9869,
+      "relative_median_deviation": 0.0017,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 2,
+      "inserted_leading_spaces": 26,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "447:0",
+      "pages": [
+        7
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 3.9983,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 53,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "448:0",
+      "pages": [
+        7
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 8,
+      "character_pitch": 3.9953,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 3,
+      "inserted_leading_spaces": 66,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "451:0",
+      "pages": [
+        7
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 3.9961,
+      "relative_median_deviation": 0.0006,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 30,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "491:0",
+      "pages": [
+        9
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 3,
+      "character_pitch": 3.9937,
+      "relative_median_deviation": 0.001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 3,
+      "inserted_leading_spaces": 14,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 299,
+    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_retained": 10,
+    "script_runs_positioned": 17,
+    "reviewed_wrap_repairs": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-constraintjs-uist2012.json.gz",
+  "source_tags_sha256": "205b4707041c145d3fb5f826c9e0b687ecd5c079a09086a16fa4103fe06eaf83"
+}

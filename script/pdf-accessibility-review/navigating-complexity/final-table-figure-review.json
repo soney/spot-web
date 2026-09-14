@@ -1,0 +1,60 @@
+{
+  "file": "/home/soney/nucode/spot-web/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+  "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "inspection_sha256": "71c3d96bb76037c5d3e994cf06e7dc6489a153f5c897c884f598a006608b8868",
+  "tables": [
+    {
+      "table": "I",
+      "page": 4,
+      "rows": 7,
+      "unique_cells_checked": 21
+    },
+    {
+      "table": "II",
+      "page": 6,
+      "rows": 17,
+      "unique_cells_checked": 102
+    },
+    {
+      "table": "III",
+      "page": 8,
+      "rows": 16,
+      "unique_cells_checked": 42
+    },
+    {
+      "table": "IV",
+      "page": 10,
+      "rows": 17,
+      "unique_cells_checked": 31
+    },
+    {
+      "table": "V",
+      "page": 10,
+      "rows": 14,
+      "unique_cells_checked": 24
+    },
+    {
+      "table": "VI",
+      "page": 10,
+      "rows": 13,
+      "unique_cells_checked": 22
+    },
+    {
+      "table": "VII",
+      "page": 13,
+      "rows": 7,
+      "unique_cells_checked": 28
+    }
+  ],
+  "unique_cells_checked": 270,
+  "figure_alternatives_checked": 2,
+  "header_associations_checked": 234,
+  "issues": [],
+  "status": "pass",
+  "additional_semantic_checks": {
+    "table_iii_underlined_anchor_names": true,
+    "native_rq_labels_1_to_4": true,
+    "dropcap_opening": true,
+    "evidence": "/tmp/spot-navigating-complexity/content-review/final-extra-semantics-review.json"
+  }
+}

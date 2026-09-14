@@ -13,7 +13,8 @@
 # when that happens.
 #
 # `pdf_url` and `short_url` are optional; a CV without them renders neither
-# line. `pdf_url` is the screen's "Download PDF" link -- the deploy workflow
+# line. `pdf_url` is the screen's "Download PDF" link. Use the full published
+# URL so the link also works during local development. The deploy workflow
 # writes the PDF itself (.github/workflows/deploy.yml runs
 # script/export_cv_pdf.sh), Jekyll never does. So a second CV that wants the
 # link needs two things that do not happen by themselves: its own export
@@ -25,7 +26,7 @@
 # from this person's `aliases:` in people.yaml (the older from.so/oney_cv
 # still redirects too).
 name: Steve Oney
-pdf_url: /oney_cv.pdf
+pdf_url: https://from.so/oney_cv.pdf
 short_url: https://from.so/me/cv
 affiliation:
   department: School of Information

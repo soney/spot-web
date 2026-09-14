@@ -1,0 +1,980 @@
+{
+  "file": "krosnick-parammacros-vlhcc2022.pdf",
+  "title": "ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization",
+  "publication_id": "parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022",
+  "pdf_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+  "markdown": "publications/krosnick-parammacros-vlhcc2022.md",
+  "markdown_sha256": "c4b40a654f3649cb29d15b335c86d8847b2c436875c23c0d828a73158ebb9fad",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "799:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 238
+    },
+    {
+      "node": "800:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 16
+    },
+    {
+      "node": "801:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "802:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 10
+    },
+    {
+      "node": "803:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "804:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 914
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 108
+    },
+    {
+      "node": "811:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 40
+    },
+    {
+      "node": "806:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1284
+    },
+    {
+      "node": "810:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 56
+    },
+    {
+      "node": "882:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 2234
+    },
+    {
+      "node": "809:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1114:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 371
+    },
+    {
+      "node": "1115:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1179:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1116:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 554
+    },
+    {
+      "node": "1180:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1117:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 895
+    },
+    {
+      "node": "1118:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1119:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 641
+    },
+    {
+      "node": "1120:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 396
+    },
+    {
+      "node": "1121:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 565
+    },
+    {
+      "node": "1122:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1698
+    },
+    {
+      "node": "1123:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 671
+    },
+    {
+      "node": "1189:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 337
+    },
+    {
+      "node": "1187:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 592
+    },
+    {
+      "node": "1273:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 40
+    },
+    {
+      "node": "1209:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 736
+    },
+    {
+      "node": "1274:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1210:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 496
+    },
+    {
+      "node": "1275:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1211:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1173
+    },
+    {
+      "node": "1214:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "1215:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 551
+    },
+    {
+      "node": "1216:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 458
+    },
+    {
+      "node": "1277:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1217:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 930
+    },
+    {
+      "node": "1218:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 506
+    },
+    {
+      "node": "1278:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1219:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 816
+    },
+    {
+      "node": "1289:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 252
+    },
+    {
+      "node": "1350:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 1223
+    },
+    {
+      "node": "1294:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1365:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 1040
+    },
+    {
+      "node": "1299:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 677
+    },
+    {
+      "node": "1295:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 177
+    },
+    {
+      "node": "1378:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1300:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 895
+    },
+    {
+      "node": "1382:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 504
+    },
+    {
+      "node": "1433:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 57
+    },
+    {
+      "node": "joined-1383:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 1506
+    },
+    {
+      "node": "1434:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 2081
+    },
+    {
+      "node": "1484:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1485:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 290
+    },
+    {
+      "node": "1550:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1538:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 419
+    },
+    {
+      "node": "1500:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 421
+    },
+    {
+      "node": "1551:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 1082
+    },
+    {
+      "node": "1501:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 644
+    },
+    {
+      "node": "1502:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 493
+    },
+    {
+      "node": "1563:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 1037
+    },
+    {
+      "node": "1503:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 177
+    },
+    {
+      "node": "1504:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 583
+    },
+    {
+      "node": "1505:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 958
+    },
+    {
+      "node": "1506:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 490
+    },
+    {
+      "node": "1575:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 42
+    },
+    {
+      "node": "1507:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 878
+    },
+    {
+      "node": "1590:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 619
+    },
+    {
+      "node": "1668:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1591:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 295
+    },
+    {
+      "node": "1597:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 766
+    },
+    {
+      "node": "1589:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 768
+    },
+    {
+      "node": "1610:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1135
+    },
+    {
+      "node": "1650:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 2246
+    },
+    {
+      "node": "1611:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 2248
+    },
+    {
+      "node": "1612:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 29
+    },
+    {
+      "node": "1669:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1643:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 2189
+    },
+    {
+      "node": "1613:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 2199
+    },
+    {
+      "node": "1614:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1670:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 162
+    },
+    {
+      "node": "1615:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1616:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 642
+    },
+    {
+      "node": "1617:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 274
+    },
+    {
+      "node": "1671:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1619:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 2618
+    },
+    {
+      "node": "1620:0",
+      "role": "L",
+      "pages": [],
+      "characters": 2
+    },
+    {
+      "node": "997:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "998:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 221
+    },
+    {
+      "node": "995:0",
+      "role": "Note",
+      "pages": [
+        8
+      ],
+      "characters": 143
+    },
+    {
+      "node": "999:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1059:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 3118
+    },
+    {
+      "node": "1057:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 122
+    },
+    {
+      "node": "1000:0",
+      "role": "L",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 3267
+    },
+    {
+      "node": "1001:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1002:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 627
+    },
+    {
+      "node": "1003:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 400
+    },
+    {
+      "node": "1078:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1004:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 891
+    },
+    {
+      "node": "1079:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1005:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 429
+    },
+    {
+      "node": "1006:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1007:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 2229
+    },
+    {
+      "node": "1010:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1011:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 994
+    },
+    {
+      "node": "1012:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1013:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 227
+    },
+    {
+      "node": "1014:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1015:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 8569
+    }
+  ],
+  "tagged_content_items": 587,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-parammacros-vlhcc2022/figure-001-p004.png",
+      "node": "1350:0",
+      "page": 4,
+      "bbox": [
+        46.9639892578125,
+        48.74100112915039,
+        567.0294189453125,
+        271.5831604003906
+      ],
+      "sha256": "c19a8bec38201fc67c0b772e6b5016ff3761a1bad601f6fc486249383223ca58",
+      "kind": "figure",
+      "alt": "An illustration of the ParamMacros UI for parameterizing natural language queries. The original query was \"How many home runs did Vladimir Guerrero Jr. have?\". \"Home runs\" is shown to be parameterized to \"statistic\", and \"Vladimir Guerrero Jr.\" is shown to be parameterized to \"player\". The resulting parameterization is then \"How many <statistic> did <player> have?\". ParamMacros then suggests possible alternative values for each parameter. For the \"player\" parameter, it suggests several options for the user to choose from: \"V Guerrero, S Perez, J Abreu, R Devers, ...\", \"Guerrero, Perez, Abreu, Devers, ...\", \"Vladimir, Salvador, Jose, Rafael, ...\", \"Vladimir, V Guerrero, Guerrero\", \"Vladimir\", and \"None of these\". Each option has a radio button next to it, and the user has selected the \"V Guerrero, S Perez, J Abreu, R Devers, ...\" option as the best option, and can next click the \"Select\" button to lock it in. For the \"statistic\" parameter, the parameter values after the user has selected the best suggestion are \"Home Runs\", \"Hits\", \"Doubles\", \"Triples\", \"Batting Average\", \"Walks\", \"Stolen Bases\", \"Caught Stealing\", \"Strikeouts\"."
+    },
+    {
+      "path": "figures/krosnick-parammacros-vlhcc2022/figure-002-p004.png",
+      "node": "1365:0",
+      "page": 4,
+      "bbox": [
+        46.9640007019043,
+        350.7850036621094,
+        304.011474609375,
+        574.5612182617188
+      ],
+      "sha256": "7ce3616ca02ac5644541876587e2250263cf12608e863bd3e088cd5087928408",
+      "kind": "figure",
+      "alt": "An illustration of ParamMacros’s execution interface and the Major League Baseball (MLB) statistics website. It shows an interactive interface for the question \"How many <statistic> did <player> have?\", with the parameter as dropdown menus -- the \"statistic\" dropdown with value set to \"Hits\" and the \"player\" dropdown with value set to \"R Devers\". The result of running the macro for these values is 165, which is highlighted in a simplified illustration of the Major League Baseball website that is shown (it's a table with first column Players plus playing position, second column Hits (\"H\" for short), third column doubles (\"2B\" for short), fourth column triples (\"3B\" for short), and fifth column home runs (\"HR\" for short)). Therefore each row is the data for a given player. The third row has data for Rafael Devers, and the \"Hits\" value for Rafael Devers's row is 165, so this is the answer to the parameterized question for the current parameter values."
+    },
+    {
+      "path": "figures/krosnick-parammacros-vlhcc2022/figure-003-p005.png",
+      "node": "1434:0",
+      "page": 5,
+      "bbox": [
+        46.963897705078125,
+        48.74100112915039,
+        571.8109741210938,
+        310.5339660644531
+      ],
+      "sha256": "5f12833132b49f086bb80e39f26e3bafb58d6ff7deb6a6a57ae6fdf47f1dbe09",
+      "kind": "figure",
+      "alt": "A program description we would present to a user who has created demonstrations for the question \"For the player who had the <most/least> <stat1>, what was their <stat2>?\". The first part of the description is the general logic stemming from the user's original demonstration; the first step is a \"click\" which is influenced by the \"stat1\" parameter. The second step is a \"print\" where the entry (e.g., row) is determined by looking for the superlative (most/least parameter) value over the stat1 parameter. The printed column is then determined by attribute stat2. This is the logic the inference algorithm has inferred based on the user's first demonstration, which it has greedily subbed in parameters as much as possible. If the user doesn't want the program logic to depend on parameters in some cases, and instead just on the concrete values from the demonstration, they can make these corrections through the interface, which offers these concrete values as alternatives (e.g., the user can switch the value of the suplerative from the radio button value \"stat1\" to the other value presented, \"Doubles\", which was the example value used in the demonstration for \"stat1\"; similarly they can switch the printed attribute from \"stat2\" to \"Batting Average\"). The user in this example has also provided a second demonstration (a \"refinement\" demonstration) to demonstrate behavior specific for when \"stat2\" has value \"Position\" (playing position), because the original automation logic does not work when \"stat2\" has value \"Position\" due to differences in the website DOM. The second part of the program description describes the behavior inferred from this second demonstration. Again the first step is a \"click\" which is influenced by the \"stat1\" parameter. The second step is a \"print\" where the entry (e.g., row) is determined by looking for the superlative (most/least parameter) value over the stat1 parameter. This is the logic that will be run specifically for \"stat2\" equals \"Position\"."
+    },
+    {
+      "path": "figures/krosnick-parammacros-vlhcc2022/figure-004-p005.png",
+      "node": "1551:0",
+      "page": 5,
+      "bbox": [
+        309.9779968261719,
+        328.638671875,
+        567.0255737304688,
+        505.1364440917969
+      ],
+      "sha256": "0396cfa72aebefc0fd2d7befe3a8bda11b3072b0f44e71dd086b1ca12e5b6d62",
+      "kind": "figure",
+      "alt": "An imaginary website titled \"The Food Store\" (for the purposes of explaining our inference algorithm). The left side of the page has the subheading \"FRUITS\", with 4 rows of fruits. Each row contains an illustration of the fruit, then to its right the name of the fruit, then to its right the price of the fruit. Specifically the fruits are: Apple (90 cents), Banana (25 cents), Pineapple (2 dollars), Fig (one dollar). The right side of the page has parallel information for veggies (e.g., Broccoli, Carrot). The illustration also highlights certain parts of the page and their XPaths. A red dotted rectangle around the 4 rows of fruits represents the common prefix XPath that each fruit text has: html > ... > .section > .fruit. Then each fruit row has a purple dotted rectangle around it, representing the next part of the XPath string, div[i], where \"i\" is the row index. Finally, each fruit text element has a blue dotted rectangle around it, each having the common suffix XPath > span.description."
+    },
+    {
+      "path": "figures/krosnick-parammacros-vlhcc2022/figure-005-p006.png",
+      "node": "1563:0",
+      "page": 6,
+      "bbox": [
+        46.9639892578125,
+        48.74100112915039,
+        571.8109741210938,
+        202.16946411132812
+      ],
+      "sha256": "7a792746cd5bf122937636e53197ba6a5b09127dee51b96e6f180351bdfbb6ab",
+      "kind": "figure",
+      "alt": "This figure illustrates the process of generalizing a parameter XPath from the unique XPath string for original value \"Apple\" to a generalized XPath formula to match all values for the \"fruit\" parameter. The first line of the figure is the unique XPath \"html > ... > .section[1] > .fruit[1] > div[1] > span[2]\", which matches the text \"Apple\" only. An arrow is then drawn to the next line, \"html > ... > .section[1] > .fruit[1] > div[index] > span[2]\", where \"div[1]\" is generalized to \"div[index]\", which results in this XPath now matching the text \"Apple\", \"Banana\", and \"Pineapple\". Finally, an arrow is drawn from this second line to the third/last line, \"html > ... > .section[1] > .fruit[1] > div[index] > span.description\", where \"span[2]\" is generalized to \"span.description\", resulting in the final generalized XPath formula which matches \"Apple\", \"Banana\", \"Pineapple\", and now \"Fig\" too."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 72,
+    "line_wrap_hyphens_retained": 23,
+    "paragraph_fragments_joined": 1,
+    "script_runs_positioned": 28,
+    "reviewed_wrap_repairs": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-parammacros-vlhcc2022.json.gz",
+  "source_tags_sha256": "ea29e2dc47e5a502ebf5ab593a40c4699213ba4e602aff5f47e1e164b0d99cd7"
+}

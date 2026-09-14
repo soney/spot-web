@@ -1,0 +1,826 @@
+{
+  "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+  "title": "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques",
+  "publication_id": "attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018",
+  "pdf_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+  "markdown": "publications/spinelli-attention-patterns-for-code-animations-px182018.md",
+  "markdown_sha256": "97a781adacd5eb1115b89f81ef7778ca608db9dc75d60c858d0f41ead8078a0d",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "229:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 273
+    },
+    {
+      "node": "230:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 216
+    },
+    {
+      "node": "231:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "244:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 159
+    },
+    {
+      "node": "250:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 587
+    },
+    {
+      "node": "232:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "233:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 790
+    },
+    {
+      "node": "234:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "235:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 145
+    },
+    {
+      "node": "236:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "237:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 54
+    },
+    {
+      "node": "238:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "239:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 431
+    },
+    {
+      "node": "240:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "241:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 296
+    },
+    {
+      "node": "242:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 76
+    },
+    {
+      "node": "joined-243:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 521
+    },
+    {
+      "node": "247:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 420
+    },
+    {
+      "node": "248:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1025
+    },
+    {
+      "node": "249:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 933
+    },
+    {
+      "node": "263:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 59
+    },
+    {
+      "node": "264:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "265:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 650
+    },
+    {
+      "node": "266:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 877
+    },
+    {
+      "node": "267:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "268:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "269:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 929
+    },
+    {
+      "node": "270:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 930
+    },
+    {
+      "node": "joined-271:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 146
+    },
+    {
+      "node": "272:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 302
+    },
+    {
+      "node": "273:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 210
+    },
+    {
+      "node": "274:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 241
+    },
+    {
+      "node": "275:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 149
+    },
+    {
+      "node": "406:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 42
+    },
+    {
+      "node": "407:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 738
+    },
+    {
+      "node": "408:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 33
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 93
+    },
+    {
+      "node": "412:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 59
+    },
+    {
+      "node": "413:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 2291
+    },
+    {
+      "node": "430:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 228
+    },
+    {
+      "node": "431:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 136
+    },
+    {
+      "node": "432:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 200
+    },
+    {
+      "node": "433:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 108
+    },
+    {
+      "node": "434:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 517
+    },
+    {
+      "node": "435:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 37
+    },
+    {
+      "node": "joined-436:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 574
+    },
+    {
+      "node": "438:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 459
+    },
+    {
+      "node": "439:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 442
+    },
+    {
+      "node": "440:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "441:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 53
+    },
+    {
+      "node": "442:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 233
+    },
+    {
+      "node": "445:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "446:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "447:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 564
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 383
+    },
+    {
+      "node": "joined-459:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 148
+    },
+    {
+      "node": "461:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 768
+    },
+    {
+      "node": "462:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "463:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 737
+    },
+    {
+      "node": "464:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 60
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1033
+    },
+    {
+      "node": "466:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "467:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 692
+    },
+    {
+      "node": "469:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 340
+    },
+    {
+      "node": "470:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 248
+    },
+    {
+      "node": "471:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 671
+    },
+    {
+      "node": "472:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 176
+    },
+    {
+      "node": "473:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 399
+    },
+    {
+      "node": "474:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 64
+    },
+    {
+      "node": "475:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 659
+    },
+    {
+      "node": "481:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 712
+    },
+    {
+      "node": "482:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 16
+    },
+    {
+      "node": "483:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 19
+    },
+    {
+      "node": "484:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 348
+    },
+    {
+      "node": "485:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 282
+    },
+    {
+      "node": "486:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 54
+    },
+    {
+      "node": "487:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 969
+    },
+    {
+      "node": "488:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 422
+    },
+    {
+      "node": "489:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 19
+    },
+    {
+      "node": "joined-490:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 495
+    },
+    {
+      "node": "317:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 565
+    },
+    {
+      "node": "318:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 18
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 215
+    },
+    {
+      "node": "320:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 13
+    },
+    {
+      "node": "321:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 3688
+    },
+    {
+      "node": "368:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 2260
+    }
+  ],
+  "tagged_content_items": 4319,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-001-p002.png",
+      "node": "272:0",
+      "page": 2,
+      "bbox": [
+        315.9549865722656,
+        81.68199920654297,
+        560.1950073242188,
+        235.83200073242188
+      ],
+      "sha256": "03f69c8bf94c6e7ab9a4369a59a41e5ac358bb3a30421b03f32cf1c022a6b53f",
+      "kind": "figure",
+      "alt": "Figure 1: The interface of the live writing intervention as the animation reveals code in linear order. Participants were asked not to begin writing their summaries until after each animation completed playing."
+    },
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-002-p002.png",
+      "node": "274:0",
+      "page": 2,
+      "bbox": [
+        315.9549865722656,
+        302.90301513671875,
+        560.1950073242188,
+        457.0530090332031
+      ],
+      "sha256": "6f63787bd9d22615a5bda72a7d3acf5644022579dc4a12d54e67e4010b6d5783",
+      "kind": "figure",
+      "alt": "Figure 2: The live writing intervention after an animation completed. The presented code remained visible and editable during the summarization task."
+    },
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-003-p003.png",
+      "node": "430:0",
+      "page": 3,
+      "bbox": [
+        51.79800033569336,
+        198.24600219726562,
+        296.0379943847656,
+        332.3760070800781
+      ],
+      "sha256": "386431ab03189da4b82500dcba87a3911757f4df6c71661438da594a9fb7b8ea",
+      "kind": "figure",
+      "alt": "Figure 3: After completing and submitting their summaries, participants could view their next tasks, edit code, and execute the program."
+    },
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-004-p003.png",
+      "node": "432:0",
+      "page": 3,
+      "bbox": [
+        51.79800033569336,
+        387.01300048828125,
+        296.0379943847656,
+        521.1430053710938
+      ],
+      "sha256": "bf597f9103c4083b8c99aebe8f15e95bd2d44cb6ef0c3b43b6d54449908fef57",
+      "kind": "figure",
+      "alt": "Figure 4: Participants could view execution errors in the intervention interface while completing each task."
+    },
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-005-p004.png",
+      "node": "469:0",
+      "page": 4,
+      "bbox": [
+        315.9549865722656,
+        81.68360900878906,
+        560.206298828125,
+        183.23899841308594
+      ],
+      "sha256": "6590fe46db28eb2dae7bf86e53a158fcb3cb99e8b3c86424e27d794e1a1af301",
+      "kind": "figure",
+      "alt": "Figure 5: Fixations of Participant 11 and 14. Participant 11 (left) tracked the animation at a high speed closely following the code as it became visible. Participant 14 (right) played the animation slowly, reading other parts of the computer code."
+    },
+    {
+      "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-006-p004.png",
+      "node": "471:0",
+      "page": 4,
+      "bbox": [
+        315.9549865722656,
+        265.33917236328125,
+        560.1983032226562,
+        445.22601318359375
+      ],
+      "sha256": "4842beb5f8df64933034cdad23f8f904426a5a15f5670f8d9f0fbbe918bf0f4e",
+      "kind": "figure",
+      "alt": "Figure 6. Box plots of mean K-coefficient values for four participants by activity and treatment: linear animation (blue), non-linear animation (green), and static code (orange). For summarization, linear and non-linear animation are higher than static. For syntax errors, animation values are mostly positive while static values are near or below zero. For logic errors, static has the highest central value, non-linear is near zero, and linear has the broadest spread extending well below zero. Higher K indicates more focal attention; lower K indicates more ambient attention."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "413:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 3,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "413:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 109,
+    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_retained": 4,
+    "script_runs_positioned": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/spinelli-attention-patterns-for-code-animations-px182018.json.gz",
+  "source_tags_sha256": "f0cec86652d50b5c4b0f789ec9208505cf04cf522e191afaabc4f3d95a93f024"
+}

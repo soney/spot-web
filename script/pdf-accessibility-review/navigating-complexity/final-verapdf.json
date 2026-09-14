@@ -1,0 +1,109 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/tmp/spot-navigating-complexity/arab-navigating-complexity-tse2026-final.pdf",
+          "size": 1275465
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 105,
+              "failedRules": 1,
+              "passedChecks": 540225,
+              "failedChecks": 1,
+              "tags": [
+                "metadata"
+              ],
+              "ruleSummaries": [
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "5",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "metadata"
+                  ],
+                  "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+                  "object": "MainXMPPackage",
+                  "test": "containsPDFUAIdentification == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/metadata[0](96 0 obj PDMetadata)/XMPPackage[0]",
+                      "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+                      "errorArguments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is not compliant with Validation Profile requirements.",
+            "compliant": false
+          }
+        ],
+        "processingTime": {
+          "start": 1789413492436,
+          "finish": 1789413493818,
+          "duration": "00:00:01.382",
+          "difference": 1382
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1789413492391,
+        "finish": 1789413493874,
+        "duration": "00:00:01.483",
+        "difference": 1483
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "multiJob": false,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "failedJobCount": 0,
+        "compliantPdfaCount": 0,
+        "nonCompliantPdfaCount": 1,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  }
+}

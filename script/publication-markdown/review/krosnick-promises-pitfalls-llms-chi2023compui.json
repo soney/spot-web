@@ -1,0 +1,414 @@
+{
+  "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+  "title": "Promises and Pitfalls of Using LLMs for Scraping Web UIs",
+  "publication_id": "promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023",
+  "pdf_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+  "markdown": "publications/krosnick-promises-pitfalls-llms-chi2023compui.md",
+  "markdown_sha256": "30dd349082d60f5897e4aecc1c3ea657c66f8b38b02e773720d33b5dd70394be",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "218:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 151
+    },
+    {
+      "node": "219:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "220:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 97
+    },
+    {
+      "node": "237:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 799
+    },
+    {
+      "node": "221:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 437
+    },
+    {
+      "node": "223:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "224:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 186
+    },
+    {
+      "node": "225:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "226:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 73
+    },
+    {
+      "node": "227:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "228:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 415
+    },
+    {
+      "node": "229:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-230:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1029
+    },
+    {
+      "node": "232:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 573
+    },
+    {
+      "node": "233:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "234:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1651
+    },
+    {
+      "node": "235:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 564
+    },
+    {
+      "node": "joined-236:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 741
+    },
+    {
+      "node": "263:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "264:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 545
+    },
+    {
+      "node": "265:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 623
+    },
+    {
+      "node": "266:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 95
+    },
+    {
+      "node": "381:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 22
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 773
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 324
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 374
+    },
+    {
+      "node": "385:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "386:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 53
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 625
+    },
+    {
+      "node": "388:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 499
+    },
+    {
+      "node": "389:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 751
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 449
+    },
+    {
+      "node": "391:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 743
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 176
+    },
+    {
+      "node": "404:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 7124
+    },
+    {
+      "node": "445:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 51
+    },
+    {
+      "node": "446:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 49
+    },
+    {
+      "node": "447:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 959
+    },
+    {
+      "node": "293:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 44
+    },
+    {
+      "node": "joined-294:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 590
+    },
+    {
+      "node": "296:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 20
+    },
+    {
+      "node": "297:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 44
+    },
+    {
+      "node": "298:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "299:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 2041
+    },
+    {
+      "node": "351:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 2542
+    }
+  ],
+  "tagged_content_items": 3028,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [
+    {
+      "source_table_id": "404:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 8,
+      "column_count": 4,
+      "cell_count": 32,
+      "header_count": 11,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "404:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 50,
+    "paragraph_fragments_joined": 3,
+    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_retained": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-promises-pitfalls-llms-chi2023compui.json.gz",
+  "source_tags_sha256": "0357e0894d4fadc66192baa0df40bfac82dbe5be2920cc5d05991907505174ec"
+}

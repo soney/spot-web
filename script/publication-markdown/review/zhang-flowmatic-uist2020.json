@@ -1,0 +1,1385 @@
+{
+  "file": "zhang-flowmatic-uist2020.pdf",
+  "title": "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality",
+  "publication_id": "flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020",
+  "pdf_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+  "markdown": "publications/zhang-flowmatic-uist2020.md",
+  "markdown_sha256": "3460a0bc4a4c0664ff0b89e9a27a49aa56b6ee6aeae8523336ff59517d46c3ac",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "439:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 223
+    },
+    {
+      "node": "440:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "441:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "442:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 531
+    },
+    {
+      "node": "443:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 471
+    },
+    {
+      "node": "446:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "451:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 587
+    },
+    {
+      "node": "444:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "445:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 761
+    },
+    {
+      "node": "joined-447:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 978
+    },
+    {
+      "node": "449:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-450:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 494
+    },
+    {
+      "node": "455:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 604
+    },
+    {
+      "node": "456:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1227
+    },
+    {
+      "node": "457:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 841
+    },
+    {
+      "node": "458:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 580
+    },
+    {
+      "node": "471:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "472:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 110
+    },
+    {
+      "node": "473:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "474:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 235
+    },
+    {
+      "node": "475:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "476:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1776
+    },
+    {
+      "node": "1058:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1059:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 749
+    },
+    {
+      "node": "joined-1060:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1119
+    },
+    {
+      "node": "1078:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1284
+    },
+    {
+      "node": "1079:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1080:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 802
+    },
+    {
+      "node": "joined-1081:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1906
+    },
+    {
+      "node": "1083:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1084:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 156
+    },
+    {
+      "node": "1085:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1086:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1103
+    },
+    {
+      "node": "1087:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 600
+    },
+    {
+      "node": "1088:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 36
+    },
+    {
+      "node": "joined-1089:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1344
+    },
+    {
+      "node": "1130:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1131:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1132:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 282
+    },
+    {
+      "node": "1142:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 300
+    },
+    {
+      "node": "1143:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 2246
+    },
+    {
+      "node": "1184:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 437
+    },
+    {
+      "node": "1185:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 538
+    },
+    {
+      "node": "1186:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1187:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 277
+    },
+    {
+      "node": "1188:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1189:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 574
+    },
+    {
+      "node": "1190:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 27
+    },
+    {
+      "node": "1191:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 185
+    },
+    {
+      "node": "1192:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 122
+    },
+    {
+      "node": "1193:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 64
+    },
+    {
+      "node": "1210:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 423
+    },
+    {
+      "node": "1211:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 363
+    },
+    {
+      "node": "1212:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 472
+    },
+    {
+      "node": "1213:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1214:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1134
+    },
+    {
+      "node": "1215:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1216:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 649
+    },
+    {
+      "node": "1217:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 322
+    },
+    {
+      "node": "1218:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 373
+    },
+    {
+      "node": "1219:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 223
+    },
+    {
+      "node": "1220:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1221:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 681
+    },
+    {
+      "node": "1222:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1223:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 590
+    },
+    {
+      "node": "1224:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 126
+    },
+    {
+      "node": "1234:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 475
+    },
+    {
+      "node": "1235:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 415
+    },
+    {
+      "node": "1236:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1091
+    },
+    {
+      "node": "joined-1237:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1077
+    },
+    {
+      "node": "1238:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 468
+    },
+    {
+      "node": "1239:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1241:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 744
+    },
+    {
+      "node": "1242:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 637
+    },
+    {
+      "node": "1243:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1244:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-1245:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 1082
+    },
+    {
+      "node": "1248:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 367
+    },
+    {
+      "node": "1249:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 307
+    },
+    {
+      "node": "1251:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1252:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 843
+    },
+    {
+      "node": "1253:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1256:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 132
+    },
+    {
+      "node": "1257:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 98
+    },
+    {
+      "node": "1258:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 158
+    },
+    {
+      "node": "1259:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1260:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 330
+    },
+    {
+      "node": "1261:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 761
+    },
+    {
+      "node": "1262:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1263:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 548
+    },
+    {
+      "node": "1264:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1265:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1179
+    },
+    {
+      "node": "1266:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 125
+    },
+    {
+      "node": "1276:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 62
+    },
+    {
+      "node": "1277:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 2921
+    },
+    {
+      "node": "1298:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 694
+    },
+    {
+      "node": "1299:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 504
+    },
+    {
+      "node": "1300:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 393
+    },
+    {
+      "node": "1301:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 10
+    },
+    {
+      "node": "1302:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 439
+    },
+    {
+      "node": "1303:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 28
+    },
+    {
+      "node": "1304:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 201
+    },
+    {
+      "node": "1305:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1306:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 241
+    },
+    {
+      "node": "1307:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 184
+    },
+    {
+      "node": "1308:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1309:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 669
+    },
+    {
+      "node": "1310:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 14
+    },
+    {
+      "node": "1311:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 318
+    },
+    {
+      "node": "1312:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1313:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 250
+    },
+    {
+      "node": "1314:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 175
+    },
+    {
+      "node": "1315:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 12
+    },
+    {
+      "node": "1316:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 138
+    },
+    {
+      "node": "joined-1317:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1321:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 164
+    },
+    {
+      "node": "1322:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1323:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 858
+    },
+    {
+      "node": "1324:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1325:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 842
+    },
+    {
+      "node": "1326:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 472
+    },
+    {
+      "node": "1327:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1328:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "joined-1329:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 645
+    },
+    {
+      "node": "1331:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 874
+    },
+    {
+      "node": "1332:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1333:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 605
+    },
+    {
+      "node": "1334:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 16
+    },
+    {
+      "node": "joined-1335:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 479
+    },
+    {
+      "node": "1336:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1337:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 182
+    },
+    {
+      "node": "1342:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1343:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 615
+    },
+    {
+      "node": "1344:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 198
+    },
+    {
+      "node": "1345:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 138
+    },
+    {
+      "node": "1346:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "1347:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 364
+    },
+    {
+      "node": "1348:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 32
+    },
+    {
+      "node": "joined-1349:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1083
+    },
+    {
+      "node": "1350:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 225
+    },
+    {
+      "node": "1351:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 165
+    },
+    {
+      "node": "1353:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 806
+    },
+    {
+      "node": "1355:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1356:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1038
+    },
+    {
+      "node": "1358:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1359:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1360:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1361:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 4910
+    },
+    {
+      "node": "973:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 5007
+    }
+  ],
+  "tagged_content_items": 9432,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-001-p001.png",
+      "node": "442:0",
+      "page": 1,
+      "bbox": [
+        51.92900085449219,
+        210.49940490722656,
+        566.1530151367188,
+        404.093994140625
+      ],
+      "sha256": "8ae88e6318dec2d7a30e63b7c4887c3cd6bc66dd6dc3e5496309db5a760b717e",
+      "kind": "figure",
+      "alt": "Figure 1: System preview of FlowMatic. (a) shows the edit mode. (i) is a palette menu attached to the left controller that allows users to browse, search, and import 3D models into the scene. (ii) is a toolbox for the user to add programming primitives such as operators and data sources into the Functional Reactive Programming (FRP) Diagram in (iii). (b) shows the run mode where users can evaluate the application in real time by hiding all the programming primitives."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-002-p005.png",
+      "node": "1210:0",
+      "page": 5,
+      "bbox": [
+        51.92900085449219,
+        60.35599899291992,
+        299.0010070800781,
+        307.4280090332031
+      ],
+      "sha256": "cfedf9b3755aaade72ac1ad54074a35185432beed494db2fe9456cb2ad8c65f0",
+      "kind": "figure",
+      "alt": "Figure 2: The palette menu of FlowMatic. (a)/(i) is the interface that allows users to import primitive models and select their colors using the color palette. (b)/(ii) is the interface that allows users to browse, search for, and import models from online. (iii) is a toggle for displaying the FRP diagram. (iv) allows users to create text elements in the scene."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-003-p005.png",
+      "node": "1218:0",
+      "page": 5,
+      "bbox": [
+        331.2489929199219,
+        275.45098876953125,
+        554.0009765625,
+        364.9010009765625
+      ],
+      "sha256": "696f5f26e2b2662b6699a45a4df345d954c60a2fe91b9965579d2b76369c1b2a",
+      "kind": "figure",
+      "alt": "Figure 3. Shape identifies the abstraction: a sphere is an event and a truncated cone is a signal. Color identifies data type: white means any, green boolean, pink object, gold class, purple string, cyan number and orange vector3. Combining a shape with one of these colors encodes both abstraction and data type."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-004-p006.png",
+      "node": "1234:0",
+      "page": 6,
+      "bbox": [
+        51.92900085449219,
+        60.35599899291992,
+        299.0010070800781,
+        307.4280090332031
+      ],
+      "sha256": "bad6b0bcdb6c527a11c5fa8871abe02a82b75ae2e48be5cd1dac10e44186a2d9",
+      "kind": "figure",
+      "alt": "Figure 4: The type constraints in FlowMatic. (a) shows the state before making a connection. (b) shows that when making a connection of type object, all ports of incompatible types will be transparent and unconnectable. (c) & (d) demonstrate polymorphic ports. The snapshot operator takes a snapshot of the input signal whenever the event is fired and outputs event streams of the same type as the input signal."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-005-p006.png",
+      "node": "1238:0",
+      "page": 6,
+      "bbox": [
+        319.093994140625,
+        60.362125396728516,
+        566.1637573242188,
+        224.6060028076172
+      ],
+      "sha256": "6e9be08748218c4e17a02d36407008898a724b84bd2bf77d1ba4e47a8d89e9b4",
+      "kind": "figure",
+      "alt": "Figure 5. An immersive dataflow graph for the shooting example overlays a gun and asteroid scene. Colored connections carry gun direction and position into operators that snapshot the trigger event, create a bullet sphere, translate it along the gun direction, detect collisions and destroy the bullet and hit obstacle. Operators are visible in edit mode so their data and event connections can be inspected."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-006-p007.png",
+      "node": "1248:0",
+      "page": 7,
+      "bbox": [
+        64.08300018310547,
+        60.36399841308594,
+        286.8429870605469,
+        283.1239929199219
+      ],
+      "sha256": "05a5f8d049009412f3ace9ba24db366e0efe69f677a42f0ead852c28c22891e3",
+      "kind": "figure",
+      "alt": "Figure 6: In FlowMatic, users can create and re-use new operators as abstractions. By ‘pulling’ an operator closer to the user using the thumbstick (a), they create a new abstraction (b). As they pull additional operators into the abstraction (c), FlowMatic automatically updates its inputs and outputs (d)."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-007-p009.png",
+      "node": "1326:0",
+      "page": 9,
+      "bbox": [
+        64.08300018310547,
+        496.2461853027344,
+        286.83392333984375,
+        652.3809814453125
+      ],
+      "sha256": "b4345db5f027777e4476c6069ff9c128d82ef596f31fe98483d09055735648ce",
+      "kind": "figure",
+      "alt": "Figure 7. Eight-participant questionnaire, counts ordered disagree, neutral, agree, strongly agree: A-FRAME easy to learn 2, 1, 4, 1; A-FRAME easy to use 1, 2, 4, 1; FlowMatic easy to learn 1, 1, 1, 5; FlowMatic easy to use 1, 1, 3, 3; good FlowMatic design 0, 0, 5, 3; helpful for VR programming 1, 1, 4, 2; easy to become skillful 1, 1, 3, 3; fun to play 1, 0, 1, 6. No strongly-disagree responses are plotted."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-008-p009.png",
+      "node": "1336:0",
+      "page": 9,
+      "bbox": [
+        319.093994140625,
+        532.7630004882812,
+        566.166015625,
+        673.4910278320312
+      ],
+      "sha256": "ba76e1abf703e0a3c240f591a2095c6858cae27677d173f11a98a6008543049e",
+      "kind": "figure",
+      "alt": "Figure 8: A Blaster Game created using FlowMatic, where the player presses the trigger button on the controller to shoot spheres out and earns scores by hitting the target asteroids."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-009-p010.png",
+      "node": "1344:0",
+      "page": 10,
+      "bbox": [
+        51.92900085449219,
+        268.1192932128906,
+        298.9918212890625,
+        404.6990051269531
+      ],
+      "sha256": "8ef6c1c516295c42511d68a02e2a9dc5ae33a65e49aba2e59e9c87bcbbe43b18",
+      "kind": "figure",
+      "alt": "Figure 9: A VR Whac-A-Mole game where the user holds a hammer and tries to hit the shark models randomly generated on the water’s surface."
+    },
+    {
+      "path": "figures/zhang-flowmatic-uist2020/figure-010-p010.png",
+      "node": "1350:0",
+      "page": 10,
+      "bbox": [
+        319.093994140625,
+        60.36077880859375,
+        566.155517578125,
+        198.0070037841797
+      ],
+      "sha256": "846a9199b655c1b583142630cf3d8bb9cadbbc85091f652abaeecebc252d3cbb",
+      "kind": "figure",
+      "alt": "Figure 10: A basic implementation of Beat Saber, where the blocks are created at certain intervals and the player swings the sword and hits the cubes to earn scores."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1277:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 3,
+      "cell_count": 15,
+      "header_count": 7,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1277:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 178,
+    "paragraph_fragments_joined": 11,
+    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_retained": 18,
+    "script_runs_positioned": 8
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-flowmatic-uist2020.json.gz",
+  "source_tags_sha256": "fad6e1c6281b11b68d3186b3d36a0e30e4eaf3caf61f9b7c701ec7a6a844f72a"
+}

@@ -1,0 +1,78 @@
+{
+  "reviewed_at_utc": "2026-09-14T19:20:59.004662+00:00",
+  "scope": "Added Navigating Complexity accepted author edition only; prior 73 editions remain unchanged.",
+  "file": "arab-navigating-complexity-tse2026.pdf",
+  "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "markdown_sha256": "fc05e5703e67f626af633ad016365338c25fdac4d43b34c25f2d65eedea5bcc6",
+  "rendered_html_sha256": "6857705dfcaf98c31de97396ff0e3a7764fa25d49082b78d73f6b71143c82606",
+  "source_tags_sha256": "bdb5490f8a61708cb9aa8809719d7ed03640a7bccc231107f5d12ddcb092c887",
+  "pages": 18,
+  "tables": [
+    {
+      "node": "388:0",
+      "rows": 7,
+      "cells": 21,
+      "headers": 9,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "447:0",
+      "rows": 17,
+      "cells": 102,
+      "headers": 22,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "619:0",
+      "rows": 16,
+      "cells": 42,
+      "headers": 18,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "720:0",
+      "rows": 17,
+      "cells": 31,
+      "headers": 18,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "777:0",
+      "rows": 14,
+      "cells": 24,
+      "headers": 15,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "818:0",
+      "rows": 13,
+      "cells": 22,
+      "headers": 14,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    },
+    {
+      "node": "891:0",
+      "rows": 7,
+      "cells": 28,
+      "headers": 10,
+      "exact_cell_roles_text_spans_and_explicit_headers": true
+    }
+  ],
+  "totals": {
+    "TH": 106,
+    "cells_with_explicit_headers": 234,
+    "TD": 164,
+    "category_bands": 14
+  },
+  "figures_with_alternatives": 2,
+  "all_source_caption_and_paragraph_ActualText_preserved": true,
+  "bibliography_items_in_native_order": 62,
+  "native_headings_retained": 65,
+  "all_page_anchors_and_local_links_valid": true,
+  "all_tagged_content_accounted_for_once": true,
+  "issues": [],
+  "notes": [
+    "The accepted author edition contains adjacent overlapping introductory statements and a Figure 2 legend/table-reference inconsistency; source wording remains, and the figure alternative identifies the latter.",
+    "Table and figure positions follow native source order, which can interrupt prose or lists."
+  ]
+}

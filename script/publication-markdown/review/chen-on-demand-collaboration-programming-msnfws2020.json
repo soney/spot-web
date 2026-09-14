@@ -1,0 +1,343 @@
+{
+  "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+  "title": "On-Demand Collaboration in Programming",
+  "publication_id": "on_demand_collaboration_in_programming_2020",
+  "pdf_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+  "markdown": "publications/chen-on-demand-collaboration-programming-msnfws2020.md",
+  "markdown_sha256": "d289d146b4505a199b9afdb746e0cf85a19e037bfe985cba0355508d7f60455c",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "157:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 139
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 43
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 35
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 45
+    },
+    {
+      "node": "161:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1021
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 71
+    },
+    {
+      "node": "170:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 577
+    },
+    {
+      "node": "164:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "165:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 317
+    },
+    {
+      "node": "166:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 919
+    },
+    {
+      "node": "168:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 570
+    },
+    {
+      "node": "174:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "175:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 20
+    },
+    {
+      "node": "176:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 315
+    },
+    {
+      "node": "177:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 38
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1203
+    },
+    {
+      "node": "179:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 28
+    },
+    {
+      "node": "180:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 933
+    },
+    {
+      "node": "181:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "182:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 841
+    },
+    {
+      "node": "183:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "184:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 646
+    },
+    {
+      "node": "220:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 323
+    },
+    {
+      "node": "227:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 38
+    },
+    {
+      "node": "228:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 61
+    },
+    {
+      "node": "229:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1014
+    },
+    {
+      "node": "230:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 828
+    },
+    {
+      "node": "231:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 35
+    },
+    {
+      "node": "232:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1272
+    },
+    {
+      "node": "233:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 933
+    },
+    {
+      "node": "238:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 57
+    },
+    {
+      "node": "239:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 12
+    },
+    {
+      "node": "240:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 181
+    },
+    {
+      "node": "241:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "242:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 54
+    },
+    {
+      "node": "243:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "244:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 4428
+    }
+  ],
+  "tagged_content_items": 2465,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 5
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-on-demand-collaboration-programming-msnfws2020.json.gz",
+  "source_tags_sha256": "0fe8cc3931e04dc20692d6eb021f9572a7c747bba8df1cdd3e38587954f10201"
+}

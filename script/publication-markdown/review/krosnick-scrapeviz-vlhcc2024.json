@@ -1,0 +1,771 @@
+{
+  "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+  "title": "ScrapeViz: Hierarchical Representations for Web Scraping Macros",
+  "publication_id": "scrapeviz_hierarchical_representations_for_web_scraping_macros_2024",
+  "pdf_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+  "markdown": "publications/krosnick-scrapeviz-vlhcc2024.md",
+  "markdown_sha256": "ec764ee593c7567360cf7df9f52562f0049ebb2f5b5a9143d18bc8e6fa27bf57",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "39:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 208
+    },
+    {
+      "node": "40:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 110
+    },
+    {
+      "node": "41:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1011
+    },
+    {
+      "node": "43:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 475
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 648
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 111
+    },
+    {
+      "node": "47:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "200:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 152
+    },
+    {
+      "node": "201:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 420
+    },
+    {
+      "node": "202:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1165
+    },
+    {
+      "node": "203:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "204:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 107
+    },
+    {
+      "node": "205:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "joined-206:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 731
+    },
+    {
+      "node": "208:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 1609
+    },
+    {
+      "node": "209:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 1545
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 410
+    },
+    {
+      "node": "212:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 35
+    },
+    {
+      "node": "213:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 355
+    },
+    {
+      "node": "214:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 356
+    },
+    {
+      "node": "215:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 108
+    },
+    {
+      "node": "216:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 27
+    },
+    {
+      "node": "217:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 719
+    },
+    {
+      "node": "joined-218:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 672
+    },
+    {
+      "node": "50:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 14
+    },
+    {
+      "node": "51:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 48
+    },
+    {
+      "node": "52:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 982
+    },
+    {
+      "node": "77:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "78:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "79:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 320
+    },
+    {
+      "node": "joined-80:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1139
+    },
+    {
+      "node": "81:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 179
+    },
+    {
+      "node": "82:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 54
+    },
+    {
+      "node": "84:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 582
+    },
+    {
+      "node": "85:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 722
+    },
+    {
+      "node": "86:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1569
+    },
+    {
+      "node": "joined-87:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 419
+    },
+    {
+      "node": "221:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 548
+    },
+    {
+      "node": "223:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 20
+    },
+    {
+      "node": "224:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "225:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 151
+    },
+    {
+      "node": "226:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 974
+    },
+    {
+      "node": "227:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 567
+    },
+    {
+      "node": "228:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "229:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 289
+    },
+    {
+      "node": "230:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "231:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 95
+    },
+    {
+      "node": "232:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "233:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 300
+    },
+    {
+      "node": "234:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "235:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 431
+    },
+    {
+      "node": "236:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 169
+    },
+    {
+      "node": "237:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 171
+    },
+    {
+      "node": "238:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 475
+    },
+    {
+      "node": "245:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 158
+    },
+    {
+      "node": "246:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 242
+    },
+    {
+      "node": "247:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 83
+    },
+    {
+      "node": "248:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 313
+    },
+    {
+      "node": "255:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 87
+    },
+    {
+      "node": "256:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 117
+    },
+    {
+      "node": "257:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 147
+    },
+    {
+      "node": "258:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 127
+    },
+    {
+      "node": "260:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "261:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 214
+    },
+    {
+      "node": "262:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 14
+    },
+    {
+      "node": "263:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 543
+    },
+    {
+      "node": "264:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 553
+    },
+    {
+      "node": "265:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 419
+    },
+    {
+      "node": "266:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 16
+    },
+    {
+      "node": "267:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 753
+    },
+    {
+      "node": "268:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 41
+    },
+    {
+      "node": "269:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 452
+    },
+    {
+      "node": "270:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 26
+    },
+    {
+      "node": "271:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 428
+    },
+    {
+      "node": "272:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 35
+    },
+    {
+      "node": "273:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 23
+    },
+    {
+      "node": "274:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 431
+    },
+    {
+      "node": "275:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 357
+    },
+    {
+      "node": "276:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 51
+    },
+    {
+      "node": "277:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 776
+    },
+    {
+      "node": "278:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 56
+    },
+    {
+      "node": "279:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 233
+    },
+    {
+      "node": "280:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 17
+    },
+    {
+      "node": "281:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 567
+    },
+    {
+      "node": "283:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 18
+    },
+    {
+      "node": "284:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 205
+    },
+    {
+      "node": "285:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "286:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 5314
+    }
+  ],
+  "tagged_content_items": 5023,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-scrapeviz-vlhcc2024/figure-001-p002.png",
+      "node": "208:0",
+      "page": 2,
+      "bbox": [
+        50.35100173950195,
+        51.93016052246094,
+        568.4271240234375,
+        322.6940002441406
+      ],
+      "sha256": "08f95f9f576fa6a950805ebe3ed59b4f3b0e8b8aa21b5f26c772fffb5e6de047",
+      "kind": "figure",
+      "alt": "Fig. 1. An illustration of ScrapeViz’s final state after the user has completed the IMDb scraping task in section IV. ScrapeViz gives users a programming by demonstration (PBD) authoring interface and interactive storyboard-like visual representations of their web scraping macro. A user begins with a single website viewport (D) and provides demonstrations (C and A for movie titles, K and M for actor names, S for birthdate) of the scraping and navigation actions they want to perform – ScrapeViz adds colored borders to indicate selected elements, opens new viewports for website pages navigated to, and generalizes these actions across UI elements and pages (using the PBD algorithm described below). During this process, ScrapeViz builds up a hierarchy of pages visited either manually or by PBD generalization – a top-level IMDb page containing a list of movies (D); in column L, a movie page for each of the movies in the top-level list; and in column R, an actor page for each actor in the first movie, “Everything Everywhere All at Once”. ScrapeViz uses color-coding to indicate scraping generalizations (e.g., orange for movie titles (B), purple for actor names (J)) and to indicate which UI elements when clicked lead to which website pages (e.g., orange-bordered movie titles (B) when clicked open the movie pages (L)). Users can navigate and inspect pages more closely by clicking directly on a small viewport, browsing sibling pages (P), or by clicking on a cell in the output table (H) to be taken to its source page and location."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 59,
+    "paragraph_fragments_joined": 4,
+    "script_runs_positioned": 13,
+    "line_wrap_hyphens_retained": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-scrapeviz-vlhcc2024.json.gz",
+  "source_tags_sha256": "e86113950085604df191aa75f64f25f49813bf566fc4acca166abf284b46dbe8"
+}

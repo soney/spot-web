@@ -1,0 +1,748 @@
+{
+  "file": "xu-how-pairing-code-chilbw2023.pdf",
+  "title": "How Pairing by Code Similarity Influences Discussions in Peer Learning",
+  "publication_id": "how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023",
+  "pdf_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+  "markdown": "publications/xu-how-pairing-code-chilbw2023.md",
+  "markdown_sha256": "3d9cb25c6c54f26ce5518b38792a2b57d8295dae4a7bfd7f2585e6666de33609",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "275:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 95
+    },
+    {
+      "node": "276:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 210
+    },
+    {
+      "node": "277:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "278:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 118
+    },
+    {
+      "node": "279:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "288:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 164
+    },
+    {
+      "node": "289:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 447
+    },
+    {
+      "node": "280:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "281:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 999
+    },
+    {
+      "node": "282:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "283:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "284:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "285:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 386
+    },
+    {
+      "node": "286:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-287:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1204
+    },
+    {
+      "node": "323:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1561
+    },
+    {
+      "node": "324:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "325:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 55
+    },
+    {
+      "node": "326:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 495
+    },
+    {
+      "node": "joined-327:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1117
+    },
+    {
+      "node": "336:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 75
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1455
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 417
+    },
+    {
+      "node": "339:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "340:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 328
+    },
+    {
+      "node": "joined-341:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1775
+    },
+    {
+      "node": "343:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 11
+    },
+    {
+      "node": "344:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 616
+    },
+    {
+      "node": "346:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 361
+    },
+    {
+      "node": "348:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 976
+    },
+    {
+      "node": "373:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "374:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 315
+    },
+    {
+      "node": "375:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1330
+    },
+    {
+      "node": "377:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 344
+    },
+    {
+      "node": "379:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 42
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 507
+    },
+    {
+      "node": "381:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "382:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "joined-383:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 569
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 190
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 294
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 409
+    },
+    {
+      "node": "388:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "389:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 567
+    },
+    {
+      "node": "390:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 571
+    },
+    {
+      "node": "391:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 235
+    },
+    {
+      "node": "392:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "393:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 126
+    },
+    {
+      "node": "joined-394:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 717
+    },
+    {
+      "node": "399:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 601
+    },
+    {
+      "node": "400:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 469
+    },
+    {
+      "node": "402:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 139
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1290
+    },
+    {
+      "node": "404:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 666
+    },
+    {
+      "node": "405:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 122
+    },
+    {
+      "node": "406:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 60
+    },
+    {
+      "node": "407:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 416
+    },
+    {
+      "node": "411:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 123
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 616
+    },
+    {
+      "node": "413:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 76
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1002
+    },
+    {
+      "node": "415:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 16
+    },
+    {
+      "node": "417:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 860
+    },
+    {
+      "node": "418:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 16
+    },
+    {
+      "node": "419:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 39
+    },
+    {
+      "node": "joined-420:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 775
+    },
+    {
+      "node": "422:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 23
+    },
+    {
+      "node": "423:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 860
+    },
+    {
+      "node": "424:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 29
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 877
+    },
+    {
+      "node": "426:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 24
+    },
+    {
+      "node": "427:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 960
+    },
+    {
+      "node": "429:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 15
+    },
+    {
+      "node": "430:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 750
+    },
+    {
+      "node": "431:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 18
+    },
+    {
+      "node": "432:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 96
+    },
+    {
+      "node": "433:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "434:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 6100
+    }
+  ],
+  "tagged_content_items": 5015,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/xu-how-pairing-code-chilbw2023/figure-001-p001.png",
+      "node": "275:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "Crossmark: Check for updates."
+    },
+    {
+      "path": "figures/xu-how-pairing-code-chilbw2023/figure-002-p003.png",
+      "node": "390:0",
+      "page": 3,
+      "bbox": [
+        315.9549865722656,
+        394.451904296875,
+        560.2024536132812,
+        554.4860229492188
+      ],
+      "sha256": "6f05e38e3f17fde530f4d881e6de4eb21147f1966b1dfbb06ef07dbf8b95deb9",
+      "kind": "figure",
+      "alt": "Figure 1. Index of methods used in participant code.1: create a new dictionary or array of letters/numbers; example initializes an empty list, loops over data, and appends even values.2: loop to find the maximum length using an accumulator.3: use min or max to find the word or number.4: sort, with a lambda function.5: loop with an accumulator and an if condition directly solving the question; example updates the smallest even value.6: use a filter function. These indices identify methods in Figure 2."
+    },
+    {
+      "path": "figures/xu-how-pairing-code-chilbw2023/figure-003-p004.png",
+      "node": "399:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        81.68621063232422,
+        296.0444641113281,
+        203.98300170898438
+      ],
+      "sha256": "79a5e0e2cb0d7c01b713d1302c9c9d9fe0e95b75784d6a209681c4b73267bc95",
+      "kind": "figure",
+      "alt": "Figure 2. Methods used for questions 1 and 2, using indices defined in Figure 1. D denotes different-solution groups, shaded gray; S denotes similar-solution groups, white. Each row below gives question 1, then question 2. D1a: 2, partially solved; 1, 2, 4, 5. D1b: 1, 2; data lost. D2a: 1, 3; 1, 2, 4, 5. D2b: 1, 2; 1, 2. D3a: 3, partially solved; 1, 3. D3b: 1, 4; 1, 4, 6. D4a and D4b: failed to solve both questions. S1a: 5; 2, 4, 5. S1b: 5; 5. S2a: 5; 1, 4. S2b: 3, partially solved; 3, 6. S3a and S3b: 5; 1, 4, 5. S3c: 5; 3, 4, 5."
+    },
+    {
+      "path": "figures/xu-how-pairing-code-chilbw2023/figure-004-p004.png",
+      "node": "404:0",
+      "page": 4,
+      "bbox": [
+        339.97900390625,
+        81.68405151367188,
+        536.1660766601562,
+        469.1180114746094
+      ],
+      "sha256": "1d6686831d6b0ff29e8486a345460b663dfbed7330777bcea9e7fb8e6469ce21",
+      "kind": "figure",
+      "alt": "Figure 3. Three examples show reasoning expressed in discussion but missing from submitted code; red text marks those additional thoughts. Example 1: a participant considered sorting, rejected alphabetical sorting, and used a loop that compares string lengths to find the longest word. Example 2: a participant wanted to collect strings ending in e before taking a maximum but could not implement the filtering; the submitted code only returns max(data). Example 3: a participant intended to use endswith and retrieve the corresponding value but ran out of time; the submitted code returns data[3]."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 79,
+    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_retained": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/xu-how-pairing-code-chilbw2023.json.gz",
+  "source_tags_sha256": "46d0110ea43bfb5c30dbb086d2fe45e79551f728d60f2b1c2673ca46d95e9f0e"
+}

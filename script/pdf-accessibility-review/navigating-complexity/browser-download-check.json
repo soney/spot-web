@@ -1,0 +1,318 @@
+{
+  "origin": "http://127.0.0.1:4093",
+  "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+  "path": "/papers/navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026/",
+  "downloads": "/tmp/spot-navigating-complexity/browser/downloads-hYQV0D",
+  "issues": [],
+  "layout": [
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "actions": {
+        "x": 72.75,
+        "y": 303.46875,
+        "width": 1294.5,
+        "height": 40.25,
+        "right": 1367.25,
+        "bottom": 343.71875
+      },
+      "links": [
+        {
+          "label": "PDF",
+          "rect": {
+            "x": 72.75,
+            "y": 303.46875,
+            "width": 77.890625,
+            "height": 40.25,
+            "right": 150.640625,
+            "bottom": 343.71875
+          }
+        },
+        {
+          "label": "Markdown",
+          "rect": {
+            "x": 171.890625,
+            "y": 303.46875,
+            "width": 123.265625,
+            "height": 40.25,
+            "right": 295.15625,
+            "bottom": 343.71875
+          }
+        },
+        {
+          "label": "Publisher page",
+          "rect": {
+            "x": 316.40625,
+            "y": 310.84375,
+            "width": 122.953125,
+            "height": 25.5,
+            "right": 439.359375,
+            "bottom": 336.34375
+          }
+        }
+      ],
+      "body_width": 1440,
+      "screenshot": "/tmp/spot-navigating-complexity/browser/new-paper-1440.png"
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "actions": {
+        "x": 12.75,
+        "y": 402.359375,
+        "width": 364.5,
+        "height": 74.25,
+        "right": 377.25,
+        "bottom": 476.609375
+      },
+      "links": [
+        {
+          "label": "PDF",
+          "rect": {
+            "x": 12.75,
+            "y": 402.359375,
+            "width": 77.890625,
+            "height": 40.25,
+            "right": 90.640625,
+            "bottom": 442.609375
+          }
+        },
+        {
+          "label": "Markdown",
+          "rect": {
+            "x": 111.890625,
+            "y": 402.359375,
+            "width": 123.265625,
+            "height": 40.25,
+            "right": 235.15625,
+            "bottom": 442.609375
+          }
+        },
+        {
+          "label": "Publisher page",
+          "rect": {
+            "x": 12.75,
+            "y": 451.109375,
+            "width": 122.953125,
+            "height": 25.5,
+            "right": 135.703125,
+            "bottom": 476.609375
+          }
+        }
+      ],
+      "body_width": 390,
+      "screenshot": "/tmp/spot-navigating-complexity/browser/new-paper-390.png"
+    }
+  ],
+  "clicked_downloads": [
+    {
+      "path": "/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+      "filename": "Arab-NavigatingComplexity-TSE-2026.pdf",
+      "bytes": 1275465,
+      "sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895"
+    },
+    {
+      "path": "/assets/markdown/arab-navigating-complexity-tse2026.md",
+      "filename": "arab-navigating-complexity-tse2026.md",
+      "bytes": 157574,
+      "sha256": "adf178d75eed63af72c91f7c0af20183e1f1993badaa29f3cb14bc0dd68e58bd"
+    }
+  ],
+  "mcp_index": {
+    "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+    "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+    "pdf_path": "/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+    "markdown_path": "/assets/markdown/arab-navigating-complexity-tse2026.md",
+    "doi": "10.1109/TSE.2026.3729587"
+  },
+  "http_files": [
+    {
+      "path": "/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 1275465,
+      "sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895"
+    },
+    {
+      "path": "/assets/markdown/arab-navigating-complexity-tse2026.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 157574,
+      "sha256": "adf178d75eed63af72c91f7c0af20183e1f1993badaa29f3cb14bc0dd68e58bd"
+    }
+  ],
+  "figures": [
+    {
+      "path": "/assets/markdown/figures/arab-navigating-complexity-tse2026/figure-001-p003.png",
+      "sha256": "0be5212f5eb28e88aac8ec4ebc5afb11707ae8cf327889e4f5a6dd960ea5cadf",
+      "status": 200
+    },
+    {
+      "path": "/assets/markdown/figures/arab-navigating-complexity-tse2026/figure-002-p012.png",
+      "sha256": "d8e1dd62b425cd2d26862da400b3702c5c004fa2685ab6d4aeb0c472766bbf19",
+      "status": 200
+    }
+  ],
+  "actions": {
+    "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+    "links": [
+      {
+        "label": "PDF",
+        "href": "/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+        "download": "Arab-NavigatingComplexity-TSE-2026.pdf",
+        "classes": "btn btn-primary pdf-download"
+      },
+      {
+        "label": "Markdown",
+        "href": "/assets/markdown/arab-navigating-complexity-tse2026.md",
+        "download": "arab-navigating-complexity-tse2026.md",
+        "classes": "btn btn-outline-primary markdown-download"
+      },
+      {
+        "label": "Publisher page",
+        "href": "https://doi.org/10.1109/TSE.2026.3729587",
+        "download": null,
+        "classes": "paper-doi"
+      }
+    ],
+    "citation_pdf": "https://from.so/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+    "citation_doi": "10.1109/TSE.2026.3729587"
+  },
+  "webmcp_details": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers\nAuthors: Maryam Arab, Jenny Liang (student at the time), Valentina Hong (student at the time), Steve Oney, Thomas LaToza\nVenue: IEEE Transactions on Software Engineering, 2026\nType: journal\nPage: https://from.so/papers/navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026/\nPDF: https://from.so/assets/pdfs/arab-navigating-complexity-tse2026.pdf\nMarkdown: https://from.so/assets/markdown/arab-navigating-complexity-tse2026.md\nDOI: https://doi.org/10.1109/TSE.2026.3729587\nNo abstract on file.\nBibTeX:\n@article{arab2026navigating,\n  author  = {Arab, Maryam and Liang, Jenny and Hong, Valentina and Oney, Steve and LaToza, Thomas},\n  title   = {Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers},\n  journal = {IEEE Transactions on Software Engineering},\n  year    = {2026},\n  doi     = {10.1109/TSE.2026.3729587},\n  url     = {https://doi.org/10.1109/TSE.2026.3729587}\n}",
+  "browser_errors": [],
+  "download_events": [
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "6FF6F4B6BAAEAA2FA997458C2F0F9AFA",
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "url": "http://127.0.0.1:4093/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+        "suggestedFilename": "Arab-NavigatingComplexity-TSE-2026.pdf"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 1275465,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 1275465,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 1275465,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "e30883bd-40c6-41c3-a09b-4946a57bc51d",
+        "totalBytes": 1275465,
+        "receivedBytes": 1275465,
+        "state": "completed",
+        "filePath": "/tmp/spot-navigating-complexity/browser/downloads-hYQV0D/Arab-NavigatingComplexity-TSE-2026.pdf"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "6FF6F4B6BAAEAA2FA997458C2F0F9AFA",
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "url": "http://127.0.0.1:4093/assets/markdown/arab-navigating-complexity-tse2026.md",
+        "suggestedFilename": "arab-navigating-complexity-tse2026.md"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 157574,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 157574,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 157574,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "bd25597d-34f0-4e84-b084-b8d599af316e",
+        "totalBytes": 157574,
+        "receivedBytes": 157574,
+        "state": "completed",
+        "filePath": "/tmp/spot-navigating-complexity/browser/downloads-hYQV0D/arab-navigating-complexity-tse2026.md"
+      }
+    }
+  ],
+  "status": "pass",
+  "visual_review": {
+    "desktop_1440": "Reviewed screenshot: title, authors, PDF/Markdown buttons, publisher link and citation are legible with no overlap.",
+    "narrow_390": "Reviewed screenshot: actions wrap cleanly, publisher link appears on its own line, and citation scrolls within its panel without page overflow."
+  }
+}

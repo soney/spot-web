@@ -1,0 +1,4004 @@
+{
+  "file": "oney-natural-language-search-mit2008.pdf",
+  "title": "Natural Language Search of Structured Documents",
+  "publication_id": "natural_language_search_of_structured_documents_2008",
+  "pdf_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+  "markdown": "publications/oney-natural-language-search-mit2008.md",
+  "markdown_sha256": "3f0ddaee9672e43528d67cdb2fcb19abb51edcdf57181806c75823fd96bee858",
+  "pages": 48,
+  "blocks": [
+    {
+      "node": "283:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 133
+    },
+    {
+      "node": "284:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 2
+    },
+    {
+      "node": "285:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "286:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 55
+    },
+    {
+      "node": "287:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 135
+    },
+    {
+      "node": "joined-288:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 75
+    },
+    {
+      "node": "290:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 37
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "292:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 63
+    },
+    {
+      "node": "293:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 204
+    },
+    {
+      "node": "294:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 138
+    },
+    {
+      "node": "295:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 57
+    },
+    {
+      "node": "296:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "297:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 136
+    },
+    {
+      "node": "298:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "299:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 51
+    },
+    {
+      "node": "300:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 81
+    },
+    {
+      "node": "301:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 101
+    },
+    {
+      "node": "304:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 66
+    },
+    {
+      "node": "305:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 74
+    },
+    {
+      "node": "306:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "307:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 60
+    },
+    {
+      "node": "308:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 68
+    },
+    {
+      "node": "309:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 11
+    },
+    {
+      "node": "310:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 387
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 457
+    },
+    {
+      "node": "312:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 530
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 443
+    },
+    {
+      "node": "314:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 68
+    },
+    {
+      "node": "317:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 18
+    },
+    {
+      "node": "318:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 555
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 459
+    },
+    {
+      "node": "320:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 196
+    },
+    {
+      "node": "322:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 11
+    },
+    {
+      "node": "324:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 125
+    },
+    {
+      "node": "325:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 132
+    },
+    {
+      "node": "326:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 134
+    },
+    {
+      "node": "327:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 131
+    },
+    {
+      "node": "328:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 133
+    },
+    {
+      "node": "329:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 125
+    },
+    {
+      "node": "330:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 132
+    },
+    {
+      "node": "331:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 124
+    },
+    {
+      "node": "332:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 127
+    },
+    {
+      "node": "333:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 134
+    },
+    {
+      "node": "334:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 117
+    },
+    {
+      "node": "335:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 129
+    },
+    {
+      "node": "336:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 128
+    },
+    {
+      "node": "337:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 116
+    },
+    {
+      "node": "338:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 122
+    },
+    {
+      "node": "339:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 131
+    },
+    {
+      "node": "340:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 125
+    },
+    {
+      "node": "341:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 113
+    },
+    {
+      "node": "342:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 128
+    },
+    {
+      "node": "343:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 131
+    },
+    {
+      "node": "344:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 122
+    },
+    {
+      "node": "345:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 130
+    },
+    {
+      "node": "346:0",
+      "role": "TOCI",
+      "pages": [
+        6
+      ],
+      "characters": 133
+    },
+    {
+      "node": "323:0",
+      "role": "TOC",
+      "pages": [
+        6
+      ],
+      "characters": 2966
+    },
+    {
+      "node": "349:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 128
+    },
+    {
+      "node": "350:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 129
+    },
+    {
+      "node": "351:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 126
+    },
+    {
+      "node": "352:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 124
+    },
+    {
+      "node": "353:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 130
+    },
+    {
+      "node": "354:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 125
+    },
+    {
+      "node": "355:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 122
+    },
+    {
+      "node": "356:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 130
+    },
+    {
+      "node": "357:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 126
+    },
+    {
+      "node": "358:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 124
+    },
+    {
+      "node": "359:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 126
+    },
+    {
+      "node": "360:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 123
+    },
+    {
+      "node": "361:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 125
+    },
+    {
+      "node": "362:0",
+      "role": "TOCI",
+      "pages": [
+        7
+      ],
+      "characters": 115
+    },
+    {
+      "node": "348:0",
+      "role": "TOC",
+      "pages": [
+        7
+      ],
+      "characters": 1800
+    },
+    {
+      "node": "364:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 18
+    },
+    {
+      "node": "366:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 122
+    },
+    {
+      "node": "367:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 122
+    },
+    {
+      "node": "368:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 110
+    },
+    {
+      "node": "369:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 109
+    },
+    {
+      "node": "370:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 125
+    },
+    {
+      "node": "371:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 123
+    },
+    {
+      "node": "372:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 119
+    },
+    {
+      "node": "373:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 124
+    },
+    {
+      "node": "374:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 123
+    },
+    {
+      "node": "375:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 114
+    },
+    {
+      "node": "376:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 119
+    },
+    {
+      "node": "377:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 127
+    },
+    {
+      "node": "378:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 100
+    },
+    {
+      "node": "379:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 105
+    },
+    {
+      "node": "380:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 125
+    },
+    {
+      "node": "992:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 114
+    },
+    {
+      "node": "993:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 80
+    },
+    {
+      "node": "994:0",
+      "role": "TOCI",
+      "pages": [
+        8
+      ],
+      "characters": 121
+    },
+    {
+      "node": "365:0",
+      "role": "TOC",
+      "pages": [
+        8
+      ],
+      "characters": 2116
+    },
+    {
+      "node": "996:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "998:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 112
+    },
+    {
+      "node": "999:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 115
+    },
+    {
+      "node": "1000:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 113
+    },
+    {
+      "node": "1001:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 120
+    },
+    {
+      "node": "1002:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 111
+    },
+    {
+      "node": "1003:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 82
+    },
+    {
+      "node": "1004:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 116
+    },
+    {
+      "node": "1005:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 115
+    },
+    {
+      "node": "1006:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 120
+    },
+    {
+      "node": "1007:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 130
+    },
+    {
+      "node": "1008:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 120
+    },
+    {
+      "node": "1009:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 110
+    },
+    {
+      "node": "1010:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 110
+    },
+    {
+      "node": "1011:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 110
+    },
+    {
+      "node": "1012:0",
+      "role": "TOCI",
+      "pages": [
+        9
+      ],
+      "characters": 117
+    },
+    {
+      "node": "997:0",
+      "role": "TOC",
+      "pages": [
+        9
+      ],
+      "characters": 1729
+    },
+    {
+      "node": "191:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 27
+    },
+    {
+      "node": "192:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "193:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 383
+    },
+    {
+      "node": "joined-200:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1027
+    },
+    {
+      "node": "joined-203:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 660
+    },
+    {
+      "node": "194:0",
+      "role": "Note",
+      "pages": [
+        10
+      ],
+      "characters": 132
+    },
+    {
+      "node": "1015:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 589
+    },
+    {
+      "node": "joined-1016:0",
+      "role": "P",
+      "pages": [
+        11,
+        12
+      ],
+      "characters": 1108
+    },
+    {
+      "node": "joined-1020:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 92
+    },
+    {
+      "node": "1022:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 56
+    },
+    {
+      "node": "1023:0",
+      "role": "Formula",
+      "pages": [
+        12
+      ],
+      "characters": 288
+    },
+    {
+      "node": "1024:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 89
+    },
+    {
+      "node": "1025:0",
+      "role": "Formula",
+      "pages": [
+        12
+      ],
+      "characters": 256
+    },
+    {
+      "node": "joined-1026:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 169
+    },
+    {
+      "node": "1028:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 105
+    },
+    {
+      "node": "joined-1029:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 207
+    },
+    {
+      "node": "1031:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1032:0",
+      "role": "Table",
+      "pages": [
+        12
+      ],
+      "characters": 3711
+    },
+    {
+      "node": "1063:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1064:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1065:0",
+      "role": "Table",
+      "pages": [
+        12,
+        13
+      ],
+      "characters": 2087
+    },
+    {
+      "node": "989:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 37
+    },
+    {
+      "node": "990:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 59
+    },
+    {
+      "node": "991:0",
+      "role": "Table",
+      "pages": [
+        13
+      ],
+      "characters": 1798
+    },
+    {
+      "node": "501:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 45
+    },
+    {
+      "node": "502:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 73
+    },
+    {
+      "node": "joined-503:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 122
+    },
+    {
+      "node": "505:0",
+      "role": "Figure",
+      "pages": [
+        13
+      ],
+      "characters": 236
+    },
+    {
+      "node": "506:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 35
+    },
+    {
+      "node": "507:0",
+      "role": "H3",
+      "pages": [
+        13
+      ],
+      "characters": 20
+    },
+    {
+      "node": "joined-508:0",
+      "role": "P",
+      "pages": [
+        13,
+        14
+      ],
+      "characters": 475
+    },
+    {
+      "node": "513:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 432
+    },
+    {
+      "node": "514:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 20
+    },
+    {
+      "node": "515:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 189
+    },
+    {
+      "node": "516:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 645
+    },
+    {
+      "node": "joined-517:0",
+      "role": "P",
+      "pages": [
+        14,
+        15
+      ],
+      "characters": 419
+    },
+    {
+      "node": "joined-521:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 334
+    },
+    {
+      "node": "523:0",
+      "role": "H3",
+      "pages": [
+        15
+      ],
+      "characters": 18
+    },
+    {
+      "node": "joined-524:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 456
+    },
+    {
+      "node": "527:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 27
+    },
+    {
+      "node": "528:0",
+      "role": "H3",
+      "pages": [
+        15
+      ],
+      "characters": 23
+    },
+    {
+      "node": "529:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 339
+    },
+    {
+      "node": "530:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 138
+    },
+    {
+      "node": "532:0",
+      "role": "H4",
+      "pages": [
+        16
+      ],
+      "characters": 37
+    },
+    {
+      "node": "joined-533:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 187
+    },
+    {
+      "node": "joined-535:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 336
+    },
+    {
+      "node": "537:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 15
+    },
+    {
+      "node": "538:0",
+      "role": "Figure",
+      "pages": [
+        16
+      ],
+      "characters": 471
+    },
+    {
+      "node": "539:0",
+      "role": "Caption",
+      "pages": [
+        16
+      ],
+      "characters": 29
+    },
+    {
+      "node": "joined-541:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 521
+    },
+    {
+      "node": "543:0",
+      "role": "Figure",
+      "pages": [
+        17
+      ],
+      "characters": 388
+    },
+    {
+      "node": "544:0",
+      "role": "Caption",
+      "pages": [
+        17
+      ],
+      "characters": 45
+    },
+    {
+      "node": "545:0",
+      "role": "Figure",
+      "pages": [
+        17
+      ],
+      "characters": 376
+    },
+    {
+      "node": "546:0",
+      "role": "Caption",
+      "pages": [
+        17
+      ],
+      "characters": 46
+    },
+    {
+      "node": "547:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 131
+    },
+    {
+      "node": "549:0",
+      "role": "H4",
+      "pages": [
+        18
+      ],
+      "characters": 25
+    },
+    {
+      "node": "550:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 603
+    },
+    {
+      "node": "551:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 24
+    },
+    {
+      "node": "552:0",
+      "role": "Figure",
+      "pages": [
+        18
+      ],
+      "characters": 311
+    },
+    {
+      "node": "553:0",
+      "role": "Caption",
+      "pages": [
+        18
+      ],
+      "characters": 25
+    },
+    {
+      "node": "554:0",
+      "role": "Figure",
+      "pages": [
+        18
+      ],
+      "characters": 273
+    },
+    {
+      "node": "555:0",
+      "role": "Caption",
+      "pages": [
+        18
+      ],
+      "characters": 28
+    },
+    {
+      "node": "556:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 378
+    },
+    {
+      "node": "558:0",
+      "role": "H3",
+      "pages": [
+        19
+      ],
+      "characters": 19
+    },
+    {
+      "node": "559:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 530
+    },
+    {
+      "node": "joined-560:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 589
+    },
+    {
+      "node": "562:0",
+      "role": "H2",
+      "pages": [
+        19
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-563:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 508
+    },
+    {
+      "node": "joined-566:0",
+      "role": "P",
+      "pages": [
+        20
+      ],
+      "characters": 750
+    },
+    {
+      "node": "569:0",
+      "role": "H3",
+      "pages": [
+        20
+      ],
+      "characters": 24
+    },
+    {
+      "node": "570:0",
+      "role": "P",
+      "pages": [
+        20
+      ],
+      "characters": 77
+    },
+    {
+      "node": "joined-571:0",
+      "role": "P",
+      "pages": [
+        20
+      ],
+      "characters": 902
+    },
+    {
+      "node": "575:0",
+      "role": "Table",
+      "pages": [
+        20,
+        21
+      ],
+      "characters": 5767
+    },
+    {
+      "node": "584:0",
+      "role": "Note",
+      "pages": [
+        20
+      ],
+      "characters": 140
+    },
+    {
+      "node": "626:0",
+      "role": "Caption",
+      "pages": [
+        21
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-627:0",
+      "role": "P",
+      "pages": [
+        21
+      ],
+      "characters": 111
+    },
+    {
+      "node": "629:0",
+      "role": "Table",
+      "pages": [
+        21
+      ],
+      "characters": 1626
+    },
+    {
+      "node": "642:0",
+      "role": "Caption",
+      "pages": [
+        21
+      ],
+      "characters": 47
+    },
+    {
+      "node": "joined-643:0",
+      "role": "P",
+      "pages": [
+        21,
+        22
+      ],
+      "characters": 343
+    },
+    {
+      "node": "649:0",
+      "role": "Table",
+      "pages": [
+        22
+      ],
+      "characters": 2473
+    },
+    {
+      "node": "670:0",
+      "role": "Caption",
+      "pages": [
+        22
+      ],
+      "characters": 89
+    },
+    {
+      "node": "671:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 29
+    },
+    {
+      "node": "672:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 257
+    },
+    {
+      "node": "673:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 13
+    },
+    {
+      "node": "674:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 656
+    },
+    {
+      "node": "676:0",
+      "role": "Figure",
+      "pages": [
+        23
+      ],
+      "characters": 461
+    },
+    {
+      "node": "677:0",
+      "role": "Caption",
+      "pages": [
+        23
+      ],
+      "characters": 38
+    },
+    {
+      "node": "685:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 51
+    },
+    {
+      "node": "686:0",
+      "role": "Figure",
+      "pages": [
+        24
+      ],
+      "characters": 398
+    },
+    {
+      "node": "687:0",
+      "role": "Caption",
+      "pages": [
+        24
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-688:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 479
+    },
+    {
+      "node": "690:0",
+      "role": "H3",
+      "pages": [
+        24
+      ],
+      "characters": 24
+    },
+    {
+      "node": "691:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 301
+    },
+    {
+      "node": "692:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 69
+    },
+    {
+      "node": "joined-693:0",
+      "role": "P",
+      "pages": [
+        24,
+        25
+      ],
+      "characters": 313
+    },
+    {
+      "node": "698:0",
+      "role": "Figure",
+      "pages": [
+        25
+      ],
+      "characters": 467
+    },
+    {
+      "node": "699:0",
+      "role": "Caption",
+      "pages": [
+        25
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-700:0",
+      "role": "P",
+      "pages": [
+        25
+      ],
+      "characters": 252
+    },
+    {
+      "node": "702:0",
+      "role": "H2",
+      "pages": [
+        25
+      ],
+      "characters": 37
+    },
+    {
+      "node": "703:0",
+      "role": "P",
+      "pages": [
+        25
+      ],
+      "characters": 347
+    },
+    {
+      "node": "704:0",
+      "role": "P",
+      "pages": [
+        25
+      ],
+      "characters": 81
+    },
+    {
+      "node": "joined-705:0",
+      "role": "P",
+      "pages": [
+        25
+      ],
+      "characters": 127
+    },
+    {
+      "node": "joined-708:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 563
+    },
+    {
+      "node": "712:0",
+      "role": "Formula",
+      "pages": [
+        26
+      ],
+      "characters": 352
+    },
+    {
+      "node": "713:0",
+      "role": "Caption",
+      "pages": [
+        26
+      ],
+      "characters": 34
+    },
+    {
+      "node": "joined-714:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 497
+    },
+    {
+      "node": "717:0",
+      "role": "Formula",
+      "pages": [
+        26
+      ],
+      "characters": 224
+    },
+    {
+      "node": "718:0",
+      "role": "Caption",
+      "pages": [
+        26
+      ],
+      "characters": 57
+    },
+    {
+      "node": "joined-719:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 220
+    },
+    {
+      "node": "721:0",
+      "role": "Note",
+      "pages": [
+        26
+      ],
+      "characters": 315
+    },
+    {
+      "node": "joined-723:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 181
+    },
+    {
+      "node": "726:0",
+      "role": "Figure",
+      "pages": [
+        27
+      ],
+      "characters": 445
+    },
+    {
+      "node": "727:0",
+      "role": "Caption",
+      "pages": [
+        27
+      ],
+      "characters": 42
+    },
+    {
+      "node": "joined-728:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 891
+    },
+    {
+      "node": "731:0",
+      "role": "H3",
+      "pages": [
+        28
+      ],
+      "characters": 33
+    },
+    {
+      "node": "732:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 384
+    },
+    {
+      "node": "733:0",
+      "role": "Formula",
+      "pages": [
+        28
+      ],
+      "characters": 424
+    },
+    {
+      "node": "734:0",
+      "role": "Caption",
+      "pages": [
+        28
+      ],
+      "characters": 48
+    },
+    {
+      "node": "735:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 343
+    },
+    {
+      "node": "736:0",
+      "role": "H4",
+      "pages": [
+        28
+      ],
+      "characters": 25
+    },
+    {
+      "node": "joined-737:0",
+      "role": "P",
+      "pages": [
+        28,
+        29
+      ],
+      "characters": 526
+    },
+    {
+      "node": "738:0",
+      "role": "Note",
+      "pages": [
+        28
+      ],
+      "characters": 695
+    },
+    {
+      "node": "741:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 106
+    },
+    {
+      "node": "742:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 123
+    },
+    {
+      "node": "joined-743:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 263
+    },
+    {
+      "node": "746:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 97
+    },
+    {
+      "node": "747:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 14
+    },
+    {
+      "node": "748:0",
+      "role": "Table",
+      "pages": [
+        29
+      ],
+      "characters": 2193
+    },
+    {
+      "node": "767:0",
+      "role": "Caption",
+      "pages": [
+        29
+      ],
+      "characters": 46
+    },
+    {
+      "node": "joined-768:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 374
+    },
+    {
+      "node": "771:0",
+      "role": "Note",
+      "pages": [
+        29
+      ],
+      "characters": 159
+    },
+    {
+      "node": "773:0",
+      "role": "H4",
+      "pages": [
+        30
+      ],
+      "characters": 28
+    },
+    {
+      "node": "774:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 387
+    },
+    {
+      "node": "775:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 409
+    },
+    {
+      "node": "776:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 387
+    },
+    {
+      "node": "777:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 448
+    },
+    {
+      "node": "778:0",
+      "role": "Note",
+      "pages": [
+        30
+      ],
+      "characters": 99
+    },
+    {
+      "node": "780:0",
+      "role": "Formula",
+      "pages": [
+        31
+      ],
+      "characters": 436
+    },
+    {
+      "node": "781:0",
+      "role": "Caption",
+      "pages": [
+        31
+      ],
+      "characters": 17
+    },
+    {
+      "node": "782:0",
+      "role": "P",
+      "pages": [
+        31
+      ],
+      "characters": 449
+    },
+    {
+      "node": "786:0",
+      "role": "H3",
+      "pages": [
+        31
+      ],
+      "characters": 46
+    },
+    {
+      "node": "joined-787:0",
+      "role": "P",
+      "pages": [
+        31
+      ],
+      "characters": 512
+    },
+    {
+      "node": "789:0",
+      "role": "H4",
+      "pages": [
+        31
+      ],
+      "characters": 24
+    },
+    {
+      "node": "joined-790:0",
+      "role": "P",
+      "pages": [
+        31
+      ],
+      "characters": 138
+    },
+    {
+      "node": "792:0",
+      "role": "Table",
+      "pages": [
+        31
+      ],
+      "characters": 260
+    },
+    {
+      "node": "800:0",
+      "role": "Caption",
+      "pages": [
+        32
+      ],
+      "characters": 38
+    },
+    {
+      "node": "801:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 413
+    },
+    {
+      "node": "802:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 465
+    },
+    {
+      "node": "803:0",
+      "role": "H4",
+      "pages": [
+        32
+      ],
+      "characters": 28
+    },
+    {
+      "node": "804:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 453
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 79
+    },
+    {
+      "node": "806:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 66
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        32
+      ],
+      "characters": 155
+    },
+    {
+      "node": "joined-809:0",
+      "role": "P",
+      "pages": [
+        33
+      ],
+      "characters": 446
+    },
+    {
+      "node": "812:0",
+      "role": "H4",
+      "pages": [
+        33
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-813:0",
+      "role": "P",
+      "pages": [
+        33
+      ],
+      "characters": 440
+    },
+    {
+      "node": "816:0",
+      "role": "P",
+      "pages": [
+        33
+      ],
+      "characters": 13
+    },
+    {
+      "node": "817:0",
+      "role": "Figure",
+      "pages": [
+        33
+      ],
+      "characters": 340
+    },
+    {
+      "node": "818:0",
+      "role": "Caption",
+      "pages": [
+        33
+      ],
+      "characters": 36
+    },
+    {
+      "node": "joined-819:0",
+      "role": "P",
+      "pages": [
+        33
+      ],
+      "characters": 335
+    },
+    {
+      "node": "joined-823:0",
+      "role": "P",
+      "pages": [
+        33,
+        34
+      ],
+      "characters": 327
+    },
+    {
+      "node": "824:0",
+      "role": "Note",
+      "pages": [
+        33
+      ],
+      "characters": 400
+    },
+    {
+      "node": "827:0",
+      "role": "P",
+      "pages": [
+        34
+      ],
+      "characters": 222
+    },
+    {
+      "node": "828:0",
+      "role": "H4",
+      "pages": [
+        34
+      ],
+      "characters": 25
+    },
+    {
+      "node": "829:0",
+      "role": "P",
+      "pages": [
+        34
+      ],
+      "characters": 470
+    },
+    {
+      "node": "830:0",
+      "role": "P",
+      "pages": [
+        34
+      ],
+      "characters": 494
+    },
+    {
+      "node": "831:0",
+      "role": "Figure",
+      "pages": [
+        34
+      ],
+      "characters": 359
+    },
+    {
+      "node": "832:0",
+      "role": "Caption",
+      "pages": [
+        34
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-834:0",
+      "role": "P",
+      "pages": [
+        35
+      ],
+      "characters": 430
+    },
+    {
+      "node": "837:0",
+      "role": "H4",
+      "pages": [
+        35
+      ],
+      "characters": 24
+    },
+    {
+      "node": "838:0",
+      "role": "P",
+      "pages": [
+        35
+      ],
+      "characters": 90
+    },
+    {
+      "node": "839:0",
+      "role": "P",
+      "pages": [
+        35
+      ],
+      "characters": 41
+    },
+    {
+      "node": "840:0",
+      "role": "Table",
+      "pages": [
+        35
+      ],
+      "characters": 2894
+    },
+    {
+      "node": "865:0",
+      "role": "Caption",
+      "pages": [
+        35
+      ],
+      "characters": 29
+    },
+    {
+      "node": "866:0",
+      "role": "P",
+      "pages": [
+        35
+      ],
+      "characters": 55
+    },
+    {
+      "node": "867:0",
+      "role": "Formula",
+      "pages": [
+        35
+      ],
+      "characters": 618
+    },
+    {
+      "node": "868:0",
+      "role": "Caption",
+      "pages": [
+        35
+      ],
+      "characters": 36
+    },
+    {
+      "node": "joined-869:0",
+      "role": "P",
+      "pages": [
+        35
+      ],
+      "characters": 375
+    },
+    {
+      "node": "873:0",
+      "role": "Formula",
+      "pages": [
+        36
+      ],
+      "characters": 286
+    },
+    {
+      "node": "874:0",
+      "role": "Caption",
+      "pages": [
+        36
+      ],
+      "characters": 20
+    },
+    {
+      "node": "875:0",
+      "role": "H3",
+      "pages": [
+        36
+      ],
+      "characters": 30
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        36
+      ],
+      "characters": 310
+    },
+    {
+      "node": "877:0",
+      "role": "H4",
+      "pages": [
+        36
+      ],
+      "characters": 28
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        36
+      ],
+      "characters": 407
+    },
+    {
+      "node": "joined-879:0",
+      "role": "P",
+      "pages": [
+        36
+      ],
+      "characters": 322
+    },
+    {
+      "node": "joined-881:0",
+      "role": "P",
+      "pages": [
+        36,
+        37
+      ],
+      "characters": 615
+    },
+    {
+      "node": "891:0",
+      "role": "P",
+      "pages": [
+        37
+      ],
+      "characters": 10
+    },
+    {
+      "node": "892:0",
+      "role": "Figure",
+      "pages": [
+        37
+      ],
+      "characters": 367
+    },
+    {
+      "node": "893:0",
+      "role": "Caption",
+      "pages": [
+        37
+      ],
+      "characters": 69
+    },
+    {
+      "node": "894:0",
+      "role": "P",
+      "pages": [
+        37
+      ],
+      "characters": 367
+    },
+    {
+      "node": "896:0",
+      "role": "Figure",
+      "pages": [
+        38
+      ],
+      "characters": 440
+    },
+    {
+      "node": "897:0",
+      "role": "Caption",
+      "pages": [
+        38
+      ],
+      "characters": 57
+    },
+    {
+      "node": "joined-898:0",
+      "role": "P",
+      "pages": [
+        38
+      ],
+      "characters": 195
+    },
+    {
+      "node": "900:0",
+      "role": "H4",
+      "pages": [
+        38
+      ],
+      "characters": 33
+    },
+    {
+      "node": "901:0",
+      "role": "P",
+      "pages": [
+        38
+      ],
+      "characters": 245
+    },
+    {
+      "node": "902:0",
+      "role": "P",
+      "pages": [
+        38
+      ],
+      "characters": 377
+    },
+    {
+      "node": "903:0",
+      "role": "Note",
+      "pages": [
+        38
+      ],
+      "characters": 239
+    },
+    {
+      "node": "905:0",
+      "role": "Figure",
+      "pages": [
+        39
+      ],
+      "characters": 454
+    },
+    {
+      "node": "906:0",
+      "role": "Caption",
+      "pages": [
+        39
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-907:0",
+      "role": "P",
+      "pages": [
+        39
+      ],
+      "characters": 197
+    },
+    {
+      "node": "909:0",
+      "role": "H4",
+      "pages": [
+        39
+      ],
+      "characters": 39
+    },
+    {
+      "node": "910:0",
+      "role": "P",
+      "pages": [
+        39
+      ],
+      "characters": 155
+    },
+    {
+      "node": "911:0",
+      "role": "P",
+      "pages": [
+        39
+      ],
+      "characters": 44
+    },
+    {
+      "node": "912:0",
+      "role": "Caption",
+      "pages": [
+        39
+      ],
+      "characters": 29
+    },
+    {
+      "node": "913:0",
+      "role": "P",
+      "pages": [
+        39
+      ],
+      "characters": 270
+    },
+    {
+      "node": "914:0",
+      "role": "H3",
+      "pages": [
+        39
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-915:0",
+      "role": "P",
+      "pages": [
+        39
+      ],
+      "characters": 464
+    },
+    {
+      "node": "918:0",
+      "role": "H4",
+      "pages": [
+        40
+      ],
+      "characters": 33
+    },
+    {
+      "node": "joined-919:0",
+      "role": "P",
+      "pages": [
+        40
+      ],
+      "characters": 192
+    },
+    {
+      "node": "joined-921:0",
+      "role": "P",
+      "pages": [
+        40
+      ],
+      "characters": 143
+    },
+    {
+      "node": "923:0",
+      "role": "Code",
+      "pages": [
+        40
+      ],
+      "characters": 263
+    },
+    {
+      "node": "joined-924:0",
+      "role": "P",
+      "pages": [
+        40
+      ],
+      "characters": 239
+    },
+    {
+      "node": "927:0",
+      "role": "H4",
+      "pages": [
+        40
+      ],
+      "characters": 36
+    },
+    {
+      "node": "joined-928:0",
+      "role": "P",
+      "pages": [
+        40
+      ],
+      "characters": 337
+    },
+    {
+      "node": "932:0",
+      "role": "H2",
+      "pages": [
+        40
+      ],
+      "characters": 22
+    },
+    {
+      "node": "joined-933:0",
+      "role": "P",
+      "pages": [
+        40,
+        41
+      ],
+      "characters": 721
+    },
+    {
+      "node": "937:0",
+      "role": "L",
+      "pages": [
+        41
+      ],
+      "characters": 49
+    },
+    {
+      "node": "940:0",
+      "role": "Caption",
+      "pages": [
+        41
+      ],
+      "characters": 20
+    },
+    {
+      "node": "joined-941:0",
+      "role": "P",
+      "pages": [
+        41
+      ],
+      "characters": 308
+    },
+    {
+      "node": "944:0",
+      "role": "H3",
+      "pages": [
+        41
+      ],
+      "characters": 28
+    },
+    {
+      "node": "945:0",
+      "role": "H4",
+      "pages": [
+        41
+      ],
+      "characters": 15
+    },
+    {
+      "node": "946:0",
+      "role": "P",
+      "pages": [
+        41
+      ],
+      "characters": 569
+    },
+    {
+      "node": "948:0",
+      "role": "Table",
+      "pages": [
+        42
+      ],
+      "characters": 2839
+    },
+    {
+      "node": "973:0",
+      "role": "Caption",
+      "pages": [
+        42
+      ],
+      "characters": 35
+    },
+    {
+      "node": "974:0",
+      "role": "H4",
+      "pages": [
+        42
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-975:0",
+      "role": "P",
+      "pages": [
+        42
+      ],
+      "characters": 239
+    },
+    {
+      "node": "978:0",
+      "role": "Table",
+      "pages": [
+        42
+      ],
+      "characters": 2836
+    },
+    {
+      "node": "1112:0",
+      "role": "Caption",
+      "pages": [
+        42
+      ],
+      "characters": 47
+    },
+    {
+      "node": "joined-1113:0",
+      "role": "P",
+      "pages": [
+        42
+      ],
+      "characters": 337
+    },
+    {
+      "node": "1117:0",
+      "role": "Table",
+      "pages": [
+        42
+      ],
+      "characters": 2917
+    },
+    {
+      "node": "1142:0",
+      "role": "Caption",
+      "pages": [
+        42
+      ],
+      "characters": 47
+    },
+    {
+      "node": "joined-1143:0",
+      "role": "P",
+      "pages": [
+        42
+      ],
+      "characters": 299
+    },
+    {
+      "node": "1147:0",
+      "role": "Table",
+      "pages": [
+        42
+      ],
+      "characters": 2917
+    },
+    {
+      "node": "1173:0",
+      "role": "Caption",
+      "pages": [
+        43
+      ],
+      "characters": 47
+    },
+    {
+      "node": "1174:0",
+      "role": "H3",
+      "pages": [
+        43
+      ],
+      "characters": 31
+    },
+    {
+      "node": "joined-1175:0",
+      "role": "P",
+      "pages": [
+        43
+      ],
+      "characters": 463
+    },
+    {
+      "node": "1178:0",
+      "role": "Table",
+      "pages": [
+        43
+      ],
+      "characters": 2584
+    },
+    {
+      "node": "395:0",
+      "role": "Caption",
+      "pages": [
+        43
+      ],
+      "characters": 42
+    },
+    {
+      "node": "joined-396:0",
+      "role": "P",
+      "pages": [
+        43
+      ],
+      "characters": 119
+    },
+    {
+      "node": "398:0",
+      "role": "Figure",
+      "pages": [
+        43
+      ],
+      "characters": 386
+    },
+    {
+      "node": "399:0",
+      "role": "Caption",
+      "pages": [
+        43
+      ],
+      "characters": 106
+    },
+    {
+      "node": "401:0",
+      "role": "P",
+      "pages": [
+        44
+      ],
+      "characters": 108
+    },
+    {
+      "node": "402:0",
+      "role": "H2",
+      "pages": [
+        44
+      ],
+      "characters": 26
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        44
+      ],
+      "characters": 551
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        44
+      ],
+      "characters": 405
+    },
+    {
+      "node": "405:0",
+      "role": "H2",
+      "pages": [
+        44
+      ],
+      "characters": 26
+    },
+    {
+      "node": "joined-406:0",
+      "role": "P",
+      "pages": [
+        44,
+        45
+      ],
+      "characters": 794
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        45
+      ],
+      "characters": 345
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        45
+      ],
+      "characters": 80
+    },
+    {
+      "node": "411:0",
+      "role": "P",
+      "pages": [
+        45
+      ],
+      "characters": 197
+    },
+    {
+      "node": "412:0",
+      "role": "H2",
+      "pages": [
+        45
+      ],
+      "characters": 27
+    },
+    {
+      "node": "413:0",
+      "role": "L",
+      "pages": [
+        45
+      ],
+      "characters": 370
+    },
+    {
+      "node": "421:0",
+      "role": "L",
+      "pages": [
+        46
+      ],
+      "characters": 1564
+    },
+    {
+      "node": "450:0",
+      "role": "P",
+      "pages": [
+        47
+      ],
+      "characters": 78
+    },
+    {
+      "node": "451:0",
+      "role": "P",
+      "pages": [
+        47
+      ],
+      "characters": 18
+    },
+    {
+      "node": "452:0",
+      "role": "H2",
+      "pages": [
+        47
+      ],
+      "characters": 36
+    },
+    {
+      "node": "453:0",
+      "role": "P",
+      "pages": [
+        47
+      ],
+      "characters": 74
+    },
+    {
+      "node": "454:0",
+      "role": "Code",
+      "pages": [
+        47
+      ],
+      "characters": 4922
+    },
+    {
+      "node": "456:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 4001
+    },
+    {
+      "node": "457:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 17
+    },
+    {
+      "node": "458:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 17
+    },
+    {
+      "node": "459:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 41
+    },
+    {
+      "node": "460:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 18
+    },
+    {
+      "node": "461:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 15
+    },
+    {
+      "node": "462:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 80
+    },
+    {
+      "node": "463:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 885
+    },
+    {
+      "node": "464:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 76
+    },
+    {
+      "node": "465:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 181
+    },
+    {
+      "node": "466:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 74
+    },
+    {
+      "node": "467:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 19
+    },
+    {
+      "node": "468:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 489
+    },
+    {
+      "node": "469:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 74
+    },
+    {
+      "node": "470:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 19
+    },
+    {
+      "node": "471:0",
+      "role": "Code",
+      "pages": [
+        48
+      ],
+      "characters": 20
+    }
+  ],
+  "tagged_content_items": 17973,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-001-p012.png",
+      "node": "1023:0",
+      "page": 12,
+      "bbox": [
+        126.03993225097656,
+        266.1366271972656,
+        201.9422149658203,
+        281.5450134277344
+      ],
+      "sha256": "9f5b6f1300d569c25d17115599288957162552727b822c64b845240f7741b293",
+      "kind": "formula",
+      "alt": "S equals the ordered sequence s sub 1, s sub 2, through s sub n. The summary S contains n sentences."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-002-p012.png",
+      "node": "1025:0",
+      "page": 12,
+      "bbox": [
+        126.51995086669922,
+        324.4565734863281,
+        208.0622100830078,
+        339.8649597167969
+      ],
+      "sha256": "637a1e7ae52753ddffa3adbccf9e2c6d9666d6eb251db750d8b7b72a15a0e468",
+      "kind": "formula",
+      "alt": "E equals the collection e sub 1, e sub 2, through e sub m. E contains m game events."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-001-p013.png",
+      "node": "505:0",
+      "page": 13,
+      "bbox": [
+        89.55951690673828,
+        402.2799987792969,
+        525.3195190429688,
+        486.9200134277344
+      ],
+      "sha256": "964b4d02f2e4e28a344e10f19c315fee4a728580f193cab503e91d519bb6f322",
+      "kind": "figure",
+      "alt": "Basic classifier pipeline. A sentence s and the set of game events E enter a classifier. Its output F is the subset of E described by that sentence; F may be empty."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-002-p016.png",
+      "node": "538:0",
+      "page": 16,
+      "bbox": [
+        89.67951965332031,
+        321.0400085449219,
+        524.7195434570312,
+        661.52001953125
+      ],
+      "sha256": "3f68475917cf47323603dd76e007b23f1d5b32a8347997f8e0f3567f9d287039",
+      "kind": "figure",
+      "alt": "MLB.com Gameday screenshot used as the source of game events. It shows Boston playing Cleveland, with a central batter-and-pitch display and pitch trajectories, the score and inning across the top, player and field information at left, a line score and batting statistics at right, and a play-by-play panel below. The application exposes pitch speed, movement and outcome along with game statistics."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-003-p017.png",
+      "node": "543:0",
+      "page": 17,
+      "bbox": [
+        89.79952239990234,
+        235.60000610351562,
+        524.7195434570312,
+        387.9200134277344
+      ],
+      "sha256": "45351a372df27c51374b489a7fa304c0cae1b2f508bbf7afa14bf1b846b818c6",
+      "kind": "figure",
+      "alt": "Screenshot of an unassembled inning XML file. Nested inning, top or bottom half, at-bat and pitch elements store the play-by-play data. Attributes identify the batter, pitcher, balls, strikes, outs and a natural-language play description. Appendix A supplies a native-text example of the combined XML representation."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-004-p017.png",
+      "node": "545:0",
+      "page": 17,
+      "bbox": [
+        89.79952239990234,
+        421.0,
+        525.7994995117188,
+        560.3599853515625
+      ],
+      "sha256": "40bb9457c18ac8da5d2fd6af27a8422a02baca34136d15507e3cff5adcac9bb2",
+      "kind": "figure",
+      "alt": "Screenshot of an unassembled players XML file. Player elements are grouped by away and home team; attributes provide identifiers and names plus game statistics. The system uses these player records to interpret names in summaries. Appendix A provides a native-text sample of the assembled player records."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-005-p018.png",
+      "node": "552:0",
+      "page": 18,
+      "bbox": [
+        89.67951965332031,
+        320.79998779296875,
+        291.43951416015625,
+        468.32000732421875
+      ],
+      "sha256": "8e8881905d0cff4c800542497eb70d8687b8f1a04e8ab516a2347b44b085b4da",
+      "kind": "figure",
+      "alt": "Boston-perspective newspaper-style game summary, shown as an example of natural-language training text. It describes the same Boston–Cleveland game as the adjacent Cleveland summary; the two summaries select and emphasize different events."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-006-p018.png",
+      "node": "554:0",
+      "page": 18,
+      "bbox": [
+        310.9599914550781,
+        320.79998779296875,
+        512.9600219726562,
+        467.8399963378906
+      ],
+      "sha256": "bafa9f216a9303611acae8fcb6d981dda1219ea1d86094f3a47be881c37af1da",
+      "kind": "figure",
+      "alt": "Cleveland-perspective game summary for the same game as the adjacent Boston summary. The differing narrative perspective illustrates why one game can supply several distinct natural-language summaries."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-007-p023.png",
+      "node": "676:0",
+      "page": 23,
+      "bbox": [
+        125.68000030517578,
+        70.0,
+        561.6799926757812,
+        672.5599975585938
+      ],
+      "sha256": "1a7adc489ea95c0121f234d1743d4a7b7408ddfec41eba53e9eb842fd8692a3a",
+      "kind": "figure",
+      "alt": "Weka Explorer classifier output. The Classify tab displays the learned J48 decision tree, with indented branches for feature tests and leaf predictions, followed by evaluation statistics and a confusion matrix. Controls at left select the classifier and testing method. This is an example of the tree learned from sentence–event feature pairs; it is not a separate algorithm specification."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-008-p024.png",
+      "node": "686:0",
+      "page": 24,
+      "bbox": [
+        89.55951690673828,
+        109.5999984741211,
+        523.99951171875,
+        209.0
+      ],
+      "sha256": "a36b932e38608caea874787200a561e9f21d87a1b8f2c2ea29f02d4ef22f3b18",
+      "kind": "figure",
+      "alt": "One-stage classification pipeline. The sentence and event set are expanded into sentence–event pairs. Simple and generated features are extracted for each pair, and a C4.5 classifier decides whether the event belongs in the set described by the sentence. All candidate pairs, including null events, go through this classifier."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-009-p025.png",
+      "node": "698:0",
+      "page": 25,
+      "bbox": [
+        89.55951690673828,
+        137.1999969482422,
+        525.0795288085938,
+        304.2799987792969
+      ],
+      "sha256": "f1e2cf20a7d78a0a7e85b524205afd3a43aeb9f442a86725064ed55743a97f89",
+      "kind": "figure",
+      "alt": "Two-stage classification pipeline. A first feature extractor and C4.5 classifier decide whether the sentence discusses any game event. If its discussed-event set is empty, the output is the empty set. Otherwise the sentence is paired with candidate events, a second feature extractor and classifier evaluate those pairs, and the accepted events form F, the subset of E described by the sentence."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-003-p026.png",
+      "node": "712:0",
+      "page": 26,
+      "bbox": [
+        126.03993225097656,
+        268.566650390625,
+        366.5694580078125,
+        302.96240234375
+      ],
+      "sha256": "c3696416ce487fef771643928fff7a7454e23d0cd356df310c4b26ea181f79f7",
+      "kind": "formula",
+      "alt": "P of w-e given w-f equals P of w-e times P of w-f given w-e, divided by P of w-f; proportional to P of w-e times P of w-f given w-e."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-004-p026.png",
+      "node": "717:0",
+      "page": 26,
+      "bbox": [
+        126.03993225097656,
+        506.12359619140625,
+        184.24961853027344,
+        520.5167236328125
+      ],
+      "sha256": "8554d9af5ed00f474d9589c5de61db9f2f75be5d6730c5e33240cd5e6e03db03",
+      "kind": "formula",
+      "alt": "Sentence–event score is proportional to P of e times P of s given e."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-010-p027.png",
+      "node": "726:0",
+      "page": 27,
+      "bbox": [
+        89.55951690673828,
+        152.8000030517578,
+        524.4794921875,
+        326.1199951171875
+      ],
+      "sha256": "dc5b5788fb77f6b4365f83c2d801eab456e1a957aae811105bc9fcb711e63fd6",
+      "kind": "figure",
+      "alt": "Translation-like classification pipeline. Each sentence is paired with candidate events. An element-probability model computes P(e), and a sentence-for-element model computes P(s given e). Their product ranks events. A separate result-size predictor, informed by sentence position and part-of-speech analysis, chooses how many highest-ranked events form the final subset F."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-005-p028.png",
+      "node": "733:0",
+      "page": 28,
+      "bbox": [
+        126.99993896484375,
+        243.535888671875,
+        315.0799865722656,
+        274.7126770019531
+      ],
+      "sha256": "93fc9ed982f91b80f90d9cb1f9746ec6f721f3e4cdbfc4b1ef2b54aafe4f8f11",
+      "kind": "formula",
+      "alt": "Approximate probability of event e: count of events with the same type as e that are discussed by some sentence, divided by count of all events with the same type as e."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-006-p031.png",
+      "node": "780:0",
+      "page": 31,
+      "bbox": [
+        123.99994659423828,
+        71.6959228515625,
+        371.7200012207031,
+        102.87269592285156
+      ],
+      "sha256": "82f1f4879996bce0f546df7270ebb05e9a36adb6aecc76d131ed8466ac6437ef",
+      "kind": "formula",
+      "alt": "Smoothed event probability: one plus the count of discussed events of the same type as e, divided by count of all events of that type plus the number of possible event types."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-011-p033.png",
+      "node": "817:0",
+      "page": 33,
+      "bbox": [
+        89.55951690673828,
+        428.0799865722656,
+        525.5595092773438,
+        481.0400085449219
+      ],
+      "sha256": "f3ebed68602ab1ef78ae41281a7e276c8c5e5112947c75aa54dea4257a200a7d",
+      "kind": "figure",
+      "alt": "Named-entity recognition examples. Player mentions such as Gary Sheffield, Chien-Ming Wang, Webb and Johnson are highlighted and labeled Player. New York is marked as a Location and Red Sox as a Team. The labels distinguish entities from the surrounding sentence text."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-012-p034.png",
+      "node": "831:0",
+      "page": 34,
+      "bbox": [
+        89.79952239990234,
+        608.7999877929688,
+        525.7994995117188,
+        678.8004760742188
+      ],
+      "sha256": "56f0235566ec49b367e34b4008da02b280fd1977250c1ade333e2edbf8301b43",
+      "kind": "figure",
+      "alt": "Game-summary excerpt illustrating inning inference. The first sentence says Johnson came out dealing in the first inning; the following sentence describes his first pitch, an ensuing strikeout and fly outs. The later events inherit the inning context established by the earlier sentence."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-007-p035.png",
+      "node": "867:0",
+      "page": 35,
+      "bbox": [
+        87.99945831298828,
+        485.4443359375,
+        519.0574951171875,
+        534.9124755859375
+      ],
+      "sha256": "bcad143f5422e8b6b6e4067c2d68ee78ced5bd7a09bea81559f76fabd98f860e",
+      "kind": "formula",
+      "alt": "Score sub s,e equals v-pitcher times rho-pitcher, plus v-batter times rho-batter, plus v-other-players times rho-other-players, plus v-stems times rho-stems, plus v-inning-match times rho-inning-match. Each rho is a learned multiplier for the corresponding feature."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/formula-008-p036.png",
+      "node": "873:0",
+      "page": 36,
+      "bbox": [
+        87.99945831298828,
+        71.619140625,
+        202.759521484375,
+        102.50849151611328
+      ],
+      "sha256": "5999ee454ff5f59191cbcdd6b17acda1e233749efb61299af18f0afda29bc7d5",
+      "kind": "formula",
+      "alt": "P of s given e equals score sub s,e divided by the sum, over all sentences s-i, of score sub s-i,e."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-013-p037.png",
+      "node": "892:0",
+      "page": 37,
+      "bbox": [
+        90.1595230102539,
+        197.44000244140625,
+        370.2795104980469,
+        361.6400146484375
+      ],
+      "sha256": "5067af78fb1d0549a29eaa7d49fa18baec3f1c487a6d78033d4779ff8f4ceca7",
+      "kind": "figure",
+      "alt": "Scatter plot of normalized sentence location from 0 to 1 against the number of game events discussed. Most points lie at zero or one event, fewer at two, and isolated points reach three to six. Sentences in the middle and later part of a summary more often discuss events than opening sentences."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-014-p038.png",
+      "node": "896:0",
+      "page": 38,
+      "bbox": [
+        90.1595230102539,
+        70.23999786376953,
+        370.1595153808594,
+        231.1999969482422
+      ],
+      "sha256": "2ca32e125343e03e0937f6e99c03bf0b009ca424bee4a79929a87c5a919eb508",
+      "kind": "figure",
+      "alt": "Stacked area chart of predicted sentence context across normalized summary position. The blue Game Events share rises from about one tenth near the beginning to a peak near two fifths around 65 percent of the way through, then declines toward the end. The red Other share fills the remainder. The shape is the fitted context estimate used by the result-size predictor."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-015-p039.png",
+      "node": "905:0",
+      "page": 39,
+      "bbox": [
+        89.55951690673828,
+        70.0,
+        400.759521484375,
+        120.91999816894531
+      ],
+      "sha256": "5ed408881b8701ea4adcb975ed9db0e994efdaeff5f226fa4ecfd337aeb26162",
+      "kind": "figure",
+      "alt": "Two baseball sentences annotated with part-of-speech and entity tags. Player names and Red Sox are assigned PLAYER and TEAM labels; other words retain grammatical tags such as IN, CD, NN, VBD, AT and TO. The first example begins With two outs, Jay Payton produced an RBI single. These annotations supply the verb-related features for estimating how many events a sentence describes."
+    },
+    {
+      "path": "figures/oney-natural-language-search-mit2008/figure-016-p043.png",
+      "node": "398:0",
+      "page": 43,
+      "bbox": [
+        89.79952239990234,
+        441.1600036621094,
+        390.7995300292969,
+        623.719970703125
+      ],
+      "sha256": "8df2ec602fc5803be63085033aef64ba695c0d46618540c0754b13bd62377f51",
+      "kind": "figure",
+      "alt": "Horizontal frequency chart of errors in estimating the number of discussed events. Zero error dominates at roughly 420 cases. Errors of plus or minus one occur much less often, and errors with larger magnitude are rare. The chart supports the surrounding statement that estimating result size remains a bottleneck."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1032:0",
+      "source_pages": [
+        12
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 5,
+      "cell_count": 25,
+      "header_count": 9,
+      "empty_cell_count": 2,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1032:0"
+    },
+    {
+      "source_table_id": "1065:0",
+      "source_pages": [
+        12,
+        13
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 2,
+      "cell_count": 12,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1065:0"
+    },
+    {
+      "source_table_id": "991:0",
+      "source_pages": [
+        13
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 2,
+      "cell_count": 12,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "991:0"
+    },
+    {
+      "source_table_id": "575:0",
+      "source_pages": [
+        20,
+        21
+      ],
+      "format": "html",
+      "row_count": 11,
+      "column_count": 3,
+      "cell_count": 33,
+      "header_count": 13,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "575:0"
+    },
+    {
+      "source_table_id": "629:0",
+      "source_pages": [
+        21
+      ],
+      "format": "html",
+      "row_count": 3,
+      "column_count": 3,
+      "cell_count": 9,
+      "header_count": 5,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "629:0"
+    },
+    {
+      "source_table_id": "649:0",
+      "source_pages": [
+        22
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 3,
+      "cell_count": 15,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "649:0"
+    },
+    {
+      "source_table_id": "748:0",
+      "source_pages": [
+        29
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 2,
+      "cell_count": 12,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "748:0"
+    },
+    {
+      "source_table_id": "792:0",
+      "source_pages": [
+        31
+      ],
+      "format": "markdown",
+      "row_count": 2,
+      "column_count": 2,
+      "cell_count": 4,
+      "header_count": 2,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "header_semantics": "GFM first-row THs serve as column headers; there are no row headers, spans or explicit header relationships",
+      "node": "792:0"
+    },
+    {
+      "source_table_id": "840:0",
+      "source_pages": [
+        35
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 3,
+      "cell_count": 18,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "840:0"
+    },
+    {
+      "source_table_id": "948:0",
+      "source_pages": [
+        42
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "948:0"
+    },
+    {
+      "source_table_id": "978:0",
+      "source_pages": [
+        42
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "978:0"
+    },
+    {
+      "source_table_id": "1117:0",
+      "source_pages": [
+        42
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1117:0"
+    },
+    {
+      "source_table_id": "1147:0",
+      "source_pages": [
+        42
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1147:0"
+    },
+    {
+      "source_table_id": "1178:0",
+      "source_pages": [
+        43
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1178:0"
+    }
+  ],
+  "code_layout": [
+    {
+      "node": "923:0",
+      "pages": [
+        40
+      ],
+      "method": "reviewed_pseudocode_transcription"
+    },
+    {
+      "node": "454:0",
+      "pages": [
+        47
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 72,
+      "character_pitch": 3.599,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 2341,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "456:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 54,
+      "character_pitch": 3.599,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 2262,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "457:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5977,
+      "relative_median_deviation": 0.0003,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "458:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5976,
+      "relative_median_deviation": 0.0003,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "459:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5988,
+      "relative_median_deviation": 0.0002,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "460:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5977,
+      "relative_median_deviation": 0.0003,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "461:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5974,
+      "relative_median_deviation": 0.0002,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "462:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 1,
+      "character_pitch": 3.5995,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "463:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 9,
+      "character_pitch": 3.5996,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 64,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "464:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5993,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "465:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 3.5997,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 16,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "466:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5994,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "467:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5978,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "468:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 6,
+      "character_pitch": 3.5996,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 71,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "469:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5994,
+      "relative_median_deviation": 0.0001,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "470:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5978,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "471:0",
+      "pages": [
+        48
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 3.5978,
+      "relative_median_deviation": 0.0004,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "paragraph_fragments_joined": 97,
+    "line_wrap_hyphens_retained": 6,
+    "script_runs_positioned": 43
+  },
+  "review_notes": [
+    {
+      "kind": "reviewed_pseudocode_transcription",
+      "node": "923:0",
+      "note": "Visually read the final PDF page at 144 DPI. Fraction linearized as 1 / (10^i), maintaining mathematical meaning; indentation reconstructed from printed indentation. No executable-language claim."
+    }
+  ],
+  "source_tags": "source-tags/oney-natural-language-search-mit2008.json.gz",
+  "source_tags_sha256": "588da8250720f645633d2a45640d49e0df52b3f8d13c4299eda6a4d1ee91bfe9"
+}

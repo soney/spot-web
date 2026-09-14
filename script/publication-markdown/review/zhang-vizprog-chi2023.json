@@ -1,0 +1,1876 @@
+{
+  "file": "zhang-vizprog-chi2023.pdf",
+  "title": "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress",
+  "publication_id": "vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023",
+  "pdf_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+  "markdown": "publications/zhang-vizprog-chi2023.md",
+  "markdown_sha256": "67f5503a91d6a41e25b37d8a005ccf44ee8112b5843a84bc56a982f37bd0456f",
+  "pages": 16,
+  "blocks": [
+    {
+      "node": "304:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 210
+    },
+    {
+      "node": "305:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 118
+    },
+    {
+      "node": "306:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 102
+    },
+    {
+      "node": "307:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "316:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 208
+    },
+    {
+      "node": "321:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 632
+    },
+    {
+      "node": "308:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "309:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1113
+    },
+    {
+      "node": "310:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 50
+    },
+    {
+      "node": "312:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 387
+    },
+    {
+      "node": "314:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-315:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1272
+    },
+    {
+      "node": "318:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 969
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1038
+    },
+    {
+      "node": "joined-320:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 874
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 705
+    },
+    {
+      "node": "337:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 600
+    },
+    {
+      "node": "350:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "351:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 135
+    },
+    {
+      "node": "352:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 38
+    },
+    {
+      "node": "353:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 44
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1164
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 962
+    },
+    {
+      "node": "356:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 39
+    },
+    {
+      "node": "357:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 532
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1586
+    },
+    {
+      "node": "joined-359:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1361
+    },
+    {
+      "node": "701:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 48
+    },
+    {
+      "node": "702:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1239
+    },
+    {
+      "node": "703:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "704:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 50
+    },
+    {
+      "node": "705:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 881
+    },
+    {
+      "node": "joined-706:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 878
+    },
+    {
+      "node": "708:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 34
+    },
+    {
+      "node": "709:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1849
+    },
+    {
+      "node": "710:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 742
+    },
+    {
+      "node": "711:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 34
+    },
+    {
+      "node": "712:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1035
+    },
+    {
+      "node": "737:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1308
+    },
+    {
+      "node": "738:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 54
+    },
+    {
+      "node": "739:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 951
+    },
+    {
+      "node": "740:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "741:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1038
+    },
+    {
+      "node": "742:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 83
+    },
+    {
+      "node": "743:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1312
+    },
+    {
+      "node": "744:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 75
+    },
+    {
+      "node": "745:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 646
+    },
+    {
+      "node": "746:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 76
+    },
+    {
+      "node": "747:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 688
+    },
+    {
+      "node": "748:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 12
+    },
+    {
+      "node": "749:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 27
+    },
+    {
+      "node": "750:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 127
+    },
+    {
+      "node": "joined-758:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 123
+    },
+    {
+      "node": "759:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 515
+    },
+    {
+      "node": "760:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 458
+    },
+    {
+      "node": "762:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 959
+    },
+    {
+      "node": "772:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 383
+    },
+    {
+      "node": "773:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 32
+    },
+    {
+      "node": "774:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 952
+    },
+    {
+      "node": "775:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 47
+    },
+    {
+      "node": "joined-776:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 874
+    },
+    {
+      "node": "784:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 848
+    },
+    {
+      "node": "785:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 791
+    },
+    {
+      "node": "787:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1113
+    },
+    {
+      "node": "joined-793:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 370
+    },
+    {
+      "node": "795:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 64
+    },
+    {
+      "node": "796:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 834
+    },
+    {
+      "node": "797:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 65
+    },
+    {
+      "node": "joined-798:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 1672
+    },
+    {
+      "node": "811:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 58
+    },
+    {
+      "node": "812:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1597
+    },
+    {
+      "node": "813:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 27
+    },
+    {
+      "node": "814:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 28
+    },
+    {
+      "node": "815:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 652
+    },
+    {
+      "node": "816:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 81
+    },
+    {
+      "node": "817:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 200
+    },
+    {
+      "node": "818:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 28
+    },
+    {
+      "node": "819:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 457
+    },
+    {
+      "node": "820:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 587
+    },
+    {
+      "node": "joined-821:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 143
+    },
+    {
+      "node": "825:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 56
+    },
+    {
+      "node": "joined-826:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 57
+    },
+    {
+      "node": "828:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 568
+    },
+    {
+      "node": "829:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 375
+    },
+    {
+      "node": "842:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 77
+    },
+    {
+      "node": "862:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 448
+    },
+    {
+      "node": "863:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 3771
+    },
+    {
+      "node": "joined-900:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 53
+    },
+    {
+      "node": "902:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1063
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 99
+    },
+    {
+      "node": "904:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 72
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 174
+    },
+    {
+      "node": "joined-906:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 663
+    },
+    {
+      "node": "908:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 321
+    },
+    {
+      "node": "909:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1020
+    },
+    {
+      "node": "910:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 134
+    },
+    {
+      "node": "911:0",
+      "role": "Formula",
+      "pages": [
+        8
+      ],
+      "characters": 363
+    },
+    {
+      "node": "joined-912:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 661
+    },
+    {
+      "node": "920:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 764
+    },
+    {
+      "node": "921:0",
+      "role": "Formula",
+      "pages": [
+        9
+      ],
+      "characters": 359
+    },
+    {
+      "node": "922:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 93
+    },
+    {
+      "node": "joined-923:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 133
+    },
+    {
+      "node": "925:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 476
+    },
+    {
+      "node": "926:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 91
+    },
+    {
+      "node": "927:0",
+      "role": "Formula",
+      "pages": [
+        9
+      ],
+      "characters": 379
+    },
+    {
+      "node": "928:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 237
+    },
+    {
+      "node": "929:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 54
+    },
+    {
+      "node": "930:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 396
+    },
+    {
+      "node": "931:0",
+      "role": "Formula",
+      "pages": [
+        9
+      ],
+      "characters": 435
+    },
+    {
+      "node": "932:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 397
+    },
+    {
+      "node": "933:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 109
+    },
+    {
+      "node": "934:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 321
+    },
+    {
+      "node": "935:0",
+      "role": "Formula",
+      "pages": [
+        9
+      ],
+      "characters": 365
+    },
+    {
+      "node": "936:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 93
+    },
+    {
+      "node": "joined-937:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 136
+    },
+    {
+      "node": "939:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 199
+    },
+    {
+      "node": "940:0",
+      "role": "Formula",
+      "pages": [
+        9
+      ],
+      "characters": 363
+    },
+    {
+      "node": "941:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 197
+    },
+    {
+      "node": "942:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 74
+    },
+    {
+      "node": "943:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 741
+    },
+    {
+      "node": "944:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 55
+    },
+    {
+      "node": "945:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 733
+    },
+    {
+      "node": "946:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 23
+    },
+    {
+      "node": "joined-947:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 1585
+    },
+    {
+      "node": "954:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 584
+    },
+    {
+      "node": "956:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "957:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 23
+    },
+    {
+      "node": "958:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 945
+    },
+    {
+      "node": "959:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 27
+    },
+    {
+      "node": "960:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 437
+    },
+    {
+      "node": "961:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 149
+    },
+    {
+      "node": "962:0",
+      "role": "Table",
+      "pages": [
+        10
+      ],
+      "characters": 9782
+    },
+    {
+      "node": "1053:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 637
+    },
+    {
+      "node": "1054:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 163
+    },
+    {
+      "node": "1055:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 190
+    },
+    {
+      "node": "1056:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 498
+    },
+    {
+      "node": "joined-1057:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 786
+    },
+    {
+      "node": "1058:0",
+      "role": "Note",
+      "pages": [
+        10
+      ],
+      "characters": 196
+    },
+    {
+      "node": "1062:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 388
+    },
+    {
+      "node": "1063:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1064:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 547
+    },
+    {
+      "node": "1065:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 672
+    },
+    {
+      "node": "1066:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 342
+    },
+    {
+      "node": "1067:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1068:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 699
+    },
+    {
+      "node": "1069:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-1070:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 741
+    },
+    {
+      "node": "1072:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1073:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 297
+    },
+    {
+      "node": "1078:0",
+      "role": "Formula",
+      "pages": [
+        11
+      ],
+      "characters": 381
+    },
+    {
+      "node": "1079:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 367
+    },
+    {
+      "node": "1080:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 102
+    },
+    {
+      "node": "1081:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 556
+    },
+    {
+      "node": "1082:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 965
+    },
+    {
+      "node": "1083:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1084:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 492
+    },
+    {
+      "node": "1088:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 257
+    },
+    {
+      "node": "1089:0",
+      "role": "Table",
+      "pages": [
+        12
+      ],
+      "characters": 10270
+    },
+    {
+      "node": "1170:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 586
+    },
+    {
+      "node": "1171:0",
+      "role": "H3",
+      "pages": [
+        12
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1173:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 193
+    },
+    {
+      "node": "1174:0",
+      "role": "H4",
+      "pages": [
+        12
+      ],
+      "characters": 94
+    },
+    {
+      "node": "joined-1175:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 1012
+    },
+    {
+      "node": "1177:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 673
+    },
+    {
+      "node": "1178:0",
+      "role": "H4",
+      "pages": [
+        12
+      ],
+      "characters": 106
+    },
+    {
+      "node": "joined-1179:0",
+      "role": "P",
+      "pages": [
+        12,
+        13
+      ],
+      "characters": 1040
+    },
+    {
+      "node": "1183:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 418
+    },
+    {
+      "node": "1184:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 94
+    },
+    {
+      "node": "1185:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 216
+    },
+    {
+      "node": "1186:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 476
+    },
+    {
+      "node": "1187:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 736
+    },
+    {
+      "node": "1188:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 447
+    },
+    {
+      "node": "1189:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 67
+    },
+    {
+      "node": "1190:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 149
+    },
+    {
+      "node": "1191:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 221
+    },
+    {
+      "node": "1192:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 202
+    },
+    {
+      "node": "1193:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 679
+    },
+    {
+      "node": "1194:0",
+      "role": "H2",
+      "pages": [
+        13
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1195:0",
+      "role": "H3",
+      "pages": [
+        13
+      ],
+      "characters": 61
+    },
+    {
+      "node": "1196:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 1219
+    },
+    {
+      "node": "1197:0",
+      "role": "H3",
+      "pages": [
+        13
+      ],
+      "characters": 59
+    },
+    {
+      "node": "joined-1198:0",
+      "role": "P",
+      "pages": [
+        13,
+        14
+      ],
+      "characters": 1193
+    },
+    {
+      "node": "1201:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1202:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1784
+    },
+    {
+      "node": "1203:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 51
+    },
+    {
+      "node": "joined-1204:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1232
+    },
+    {
+      "node": "1205:0",
+      "role": "Note",
+      "pages": [
+        14
+      ],
+      "characters": 213
+    },
+    {
+      "node": "1207:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1208:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1191
+    },
+    {
+      "node": "1209:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1210:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 798
+    },
+    {
+      "node": "joined-1211:0",
+      "role": "P",
+      "pages": [
+        14,
+        15
+      ],
+      "characters": 1206
+    },
+    {
+      "node": "1221:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1222:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 1052
+    },
+    {
+      "node": "1223:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1224:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 96
+    },
+    {
+      "node": "1225:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1226:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 7895
+    },
+    {
+      "node": "674:0",
+      "role": "L",
+      "pages": [
+        16
+      ],
+      "characters": 1614
+    }
+  ],
+  "tagged_content_items": 14877,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-vizprog-chi2023/figure-001-p005.png",
+      "node": "759:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        81.68659210205078,
+        560.193359375,
+        342.9119873046875
+      ],
+      "sha256": "cc269e0b5238ec5a1365b6320d84caead17e51908b9c8110472dcb7bb638fdc9",
+      "kind": "figure",
+      "alt": "Figure 1: VizProg’s User Interface. There are three main view panels: the overall class progress 2D map view (1), a solution-centered view (4), and a progress detailed view (5). On the 2D map view, each dot represents a student’s submission, each line between two dots indicates the edit movement. The x-axis encodes the size of a code edit to be proportional to the distance (2), and the y-axis represents different kinds of solutions for this exercise (3)."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/figure-002-p006.png",
+      "node": "784:0",
+      "page": 6,
+      "bbox": [
+        51.79800033569336,
+        81.68724060058594,
+        560.1703491210938,
+        306.3169860839844
+      ],
+      "sha256": "ccb7a4c81017a9336712d5544ba17477d992b1bceea08d9d618d7345d7a3fffd",
+      "kind": "figure",
+      "alt": "Figure 2: A detailed view of VizProg’s user interface. Instructors can crop a region on the 2-D map to view solutions in that area (a). Cropped regions appear as gray rectangles surrounded by dots (a), and the progress detailed view shows statistics for the region (i, j, k, n). Correct solutions are displayed on the right of the map as blue dots with gray labels (c). When the instructor clicks a student name (f), the 2-D map will highlight this student’s trajectory (b). The solution-centered view consists of statistics related to the solution (e), a list of students’ IDs (f), and correct (g) and incorrect submissions (h) made by these students. Instructors can search for a specific student (d). They can also send feedback to either an individual student or a group of students (d)."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/figure-003-p008.png",
+      "node": "882:0",
+      "page": 8,
+      "bbox": [
+        145.41900634765625,
+        156.19500732421875,
+        275.5150146484375,
+        254.76699829101562
+      ],
+      "sha256": "7930e21f74015e95e8f6cefa0fefb64eb224be6985d7a34d94bb4c39143e01b6",
+      "kind": "figure",
+      "alt": "VizProg interface sketch: a spatial plot distinguishes correct and incorrect code and earlier versions; adjacent student and submission lists provide code details and search."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/figure-004-p008.png",
+      "node": "883:0",
+      "page": 8,
+      "bbox": [
+        281.4830017089844,
+        156.19500732421875,
+        411.5790100097656,
+        254.76699829101562
+      ],
+      "sha256": "7c1c4933a9b042e915d9446b2e53bc51fb6162d3e23ec225c550036e254fe1ac",
+      "kind": "figure",
+      "alt": "OverCode interface sketch: a list of code clusters, the largest cluster, and filters for selected code lines organize students by representative code."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/figure-005-p008.png",
+      "node": "884:0",
+      "page": 8,
+      "bbox": [
+        417.5459899902344,
+        156.19500732421875,
+        547.6420288085938,
+        254.76699829101562
+      ],
+      "sha256": "3c3ef5036bc57315421448a8b902a0dc9ee89ef61603de8c7b4af54a71a49695",
+      "kind": "figure",
+      "alt": "Codeopticon interface sketch: a grid displays six separate learner code panels, each with an individual chat area."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-001-p008.png",
+      "node": "911:0",
+      "page": 8,
+      "bbox": [
+        315.8210754394531,
+        601.7891845703125,
+        563.0398559570312,
+        650.52294921875
+      ],
+      "sha256": "cedcc6dbbead52141b475770c00c93a01e869229178ca3ec7adf2341a5eda211",
+      "kind": "formula",
+      "alt": "P is the matrix of code vectors vec of norm of p sub 1 through vec of norm of p sub n past. P belongs to the real matrices of size n past by 768."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-002-p009.png",
+      "node": "921:0",
+      "page": 9,
+      "bbox": [
+        60.126976013183594,
+        264.80511474609375,
+        287.6068420410156,
+        314.031005859375
+      ],
+      "sha256": "15f964b6071f2385ca8e9a84d2d112fb16a019b392131eafbd4ce212d91b5bb1",
+      "kind": "formula",
+      "alt": "NEAR_APPROACH of c is the subset PC of correct past code, with n vec sim elements, that maximizes the sum over p in PC of vec_sim of c and p."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-003-p009.png",
+      "node": "927:0",
+      "page": 9,
+      "bbox": [
+        51.79800033569336,
+        461.9578857421875,
+        309.05084228515625,
+        488.31207275390625
+      ],
+      "sha256": "220d316d5689772e43f3b390b78d5730808b2d3e55a0533cf89e274bb1f69f23",
+      "kind": "formula",
+      "alt": "y_position of c equals the sum over p sub n in NEAR_APPROACH of c of y tilde sub n multiplied by the softmax weight of vec_sim of c and p sub n cubed."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-004-p009.png",
+      "node": "931:0",
+      "page": 9,
+      "bbox": [
+        61.302001953125,
+        618.8960571289062,
+        284.8981018066406,
+        643.3572387695312
+      ],
+      "sha256": "d22016c62dea9961268b76023e18571de94c5dd21d9624fc369560be03185f80",
+      "kind": "formula",
+      "alt": "edit_distance of c sub 1 and c sub 2 equals the Levenshtein distance between norm of c sub 1 and norm of c sub 2, divided by the larger length of those two normalized code strings."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-005-p009.png",
+      "node": "935:0",
+      "page": 9,
+      "bbox": [
+        315.84600830078125,
+        166.0620574951172,
+        564.450927734375,
+        215.2879638671875
+      ],
+      "sha256": "a650b5ea165f55d2e55a8a3059c94a7f8248fdb42843ab285219103f9cbb7d6e",
+      "kind": "formula",
+      "alt": "NEAR_EDIT of c is the subset PC of correct past code, with n edit sim elements, that minimizes the sum over p in PC of edit_distance of c and p."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-006-p009.png",
+      "node": "940:0",
+      "page": 9,
+      "bbox": [
+        318.20599365234375,
+        312.34210205078125,
+        556.4822998046875,
+        362.8408203125
+      ],
+      "sha256": "f5445ada1873651c46f81d434f28af0b28e121e526081b39e3046364adfdd200",
+      "kind": "formula",
+      "alt": "x_position of c equals zero if c is correct. Otherwise it is the arithmetic mean, over p in NEAR_EDIT of c, of minus edit_distance of c and p."
+    },
+    {
+      "path": "figures/zhang-vizprog-chi2023/formula-007-p011.png",
+      "node": "1078:0",
+      "page": 11,
+      "bbox": [
+        316.58599853515625,
+        244.54144287109375,
+        584.3546752929688,
+        268.8501281738281
+      ],
+      "sha256": "9801c1db9063bdca0741c01737ba31364da64bf95be09b629272cf21f1452c9d",
+      "kind": "formula",
+      "alt": "Quiz accuracy equals the number of matched answers divided by the maximum of the total number of correct answers and the total number of selected answers."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "863:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 4,
+      "cell_count": 24,
+      "header_count": 8,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "863:0"
+    },
+    {
+      "source_table_id": "962:0",
+      "source_pages": [
+        10
+      ],
+      "format": "html",
+      "row_count": 17,
+      "column_count": 4,
+      "cell_count": 68,
+      "header_count": 20,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "962:0"
+    },
+    {
+      "source_table_id": "1089:0",
+      "source_pages": [
+        12
+      ],
+      "format": "html",
+      "row_count": 16,
+      "column_count": 4,
+      "cell_count": 64,
+      "header_count": 19,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1089:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 313,
+    "line_wrap_hyphens_retained": 16,
+    "paragraph_fragments_joined": 25,
+    "script_runs_positioned": 55
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-vizprog-chi2023.json.gz",
+  "source_tags_sha256": "bc444a9d1fe94c7ee05ba773a70c2e72bceb0662765af343b3c07f7eba5cd238"
+}

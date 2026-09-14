@@ -1,0 +1,1554 @@
+{
+  "file": "oney-creating-guided-code-cscw2018.pdf",
+  "title": "Creating Guided Code Explanations with chat.codes",
+  "publication_id": "creating_guided_code_explanations_with_chat_codes_2018",
+  "pdf_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+  "markdown": "publications/oney-creating-guided-code-cscw2018.md",
+  "markdown_sha256": "f5349a1a3779124efba019639eb51dab3c9be7f67eeb6dcc42be3756c800a423",
+  "pages": 20,
+  "blocks": [
+    {
+      "node": "340:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 185
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 153
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1400
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 111
+    },
+    {
+      "node": "352:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 587
+    },
+    {
+      "node": "343:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "344:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 247
+    },
+    {
+      "node": "345:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "346:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 537
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 693
+    },
+    {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 335
+    },
+    {
+      "node": "joined-351:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 601
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1134
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 286
+    },
+    {
+      "node": "364:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 385
+    },
+    {
+      "node": "367:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 71
+    },
+    {
+      "node": "369:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 55
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 748
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 507
+    },
+    {
+      "node": "378:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 654
+    },
+    {
+      "node": "379:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 610
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 512
+    },
+    {
+      "node": "381:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1002
+    },
+    {
+      "node": "382:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 227
+    },
+    {
+      "node": "384:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "joined-385:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 703
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 776
+    },
+    {
+      "node": "401:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 41
+    },
+    {
+      "node": "402:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 713
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 653
+    },
+    {
+      "node": "751:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 885
+    },
+    {
+      "node": "752:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 57
+    },
+    {
+      "node": "753:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 720
+    },
+    {
+      "node": "754:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "755:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 428
+    },
+    {
+      "node": "756:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 74
+    },
+    {
+      "node": "777:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 435
+    },
+    {
+      "node": "778:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 365
+    },
+    {
+      "node": "779:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 511
+    },
+    {
+      "node": "780:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 59
+    },
+    {
+      "node": "781:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 718
+    },
+    {
+      "node": "782:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 22
+    },
+    {
+      "node": "783:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 49
+    },
+    {
+      "node": "784:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 281
+    },
+    {
+      "node": "791:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 506
+    },
+    {
+      "node": "joined-792:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 576
+    },
+    {
+      "node": "801:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 371
+    },
+    {
+      "node": "802:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 301
+    },
+    {
+      "node": "804:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 21
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 543
+    },
+    {
+      "node": "806:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 543
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 635
+    },
+    {
+      "node": "808:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 34
+    },
+    {
+      "node": "809:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 160
+    },
+    {
+      "node": "810:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 156
+    },
+    {
+      "node": "joined-820:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 642
+    },
+    {
+      "node": "827:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 650
+    },
+    {
+      "node": "828:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 239
+    },
+    {
+      "node": "830:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 1709
+    },
+    {
+      "node": "833:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 204
+    },
+    {
+      "node": "834:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 128
+    },
+    {
+      "node": "840:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 826
+    },
+    {
+      "node": "847:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 54
+    },
+    {
+      "node": "848:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 678
+    },
+    {
+      "node": "851:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 40
+    },
+    {
+      "node": "852:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 475
+    },
+    {
+      "node": "853:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 56
+    },
+    {
+      "node": "854:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 330
+    },
+    {
+      "node": "861:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1230
+    },
+    {
+      "node": "862:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-863:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 597
+    },
+    {
+      "node": "870:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 291
+    },
+    {
+      "node": "871:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 221
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 330
+    },
+    {
+      "node": "874:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 34
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 389
+    },
+    {
+      "node": "876:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 67
+    },
+    {
+      "node": "877:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 348
+    },
+    {
+      "node": "878:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 32
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 376
+    },
+    {
+      "node": "885:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 17
+    },
+    {
+      "node": "886:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 293
+    },
+    {
+      "node": "887:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 382
+    },
+    {
+      "node": "900:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 778
+    },
+    {
+      "node": "901:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "902:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 779
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 600
+    },
+    {
+      "node": "904:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 471
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 829
+    },
+    {
+      "node": "joined-906:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 700
+    },
+    {
+      "node": "917:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 331
+    },
+    {
+      "node": "918:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 435
+    },
+    {
+      "node": "919:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 37
+    },
+    {
+      "node": "920:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 126
+    },
+    {
+      "node": "921:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 44
+    },
+    {
+      "node": "922:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1088
+    },
+    {
+      "node": "923:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1502
+    },
+    {
+      "node": "925:0",
+      "role": "Table",
+      "pages": [
+        12
+      ],
+      "characters": 5737
+    },
+    {
+      "node": "965:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 261
+    },
+    {
+      "node": "966:0",
+      "role": "H4",
+      "pages": [
+        12
+      ],
+      "characters": 23
+    },
+    {
+      "node": "967:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 643
+    },
+    {
+      "node": "968:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 1138
+    },
+    {
+      "node": "969:0",
+      "role": "H4",
+      "pages": [
+        12
+      ],
+      "characters": 19
+    },
+    {
+      "node": "970:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 1378
+    },
+    {
+      "node": "971:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 182
+    },
+    {
+      "node": "973:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 326
+    },
+    {
+      "node": "974:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 568
+    },
+    {
+      "node": "975:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 32
+    },
+    {
+      "node": "976:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 285
+    },
+    {
+      "node": "977:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 218
+    },
+    {
+      "node": "978:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 154
+    },
+    {
+      "node": "979:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 472
+    },
+    {
+      "node": "980:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 57
+    },
+    {
+      "node": "981:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 118
+    },
+    {
+      "node": "982:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 133
+    },
+    {
+      "node": "983:0",
+      "role": "H3",
+      "pages": [
+        13
+      ],
+      "characters": 51
+    },
+    {
+      "node": "984:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 338
+    },
+    {
+      "node": "985:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 571
+    },
+    {
+      "node": "joined-986:0",
+      "role": "P",
+      "pages": [
+        13,
+        14
+      ],
+      "characters": 420
+    },
+    {
+      "node": "987:0",
+      "role": "Note",
+      "pages": [
+        13
+      ],
+      "characters": 148
+    },
+    {
+      "node": "991:0",
+      "role": "Figure",
+      "pages": [
+        14
+      ],
+      "characters": 498
+    },
+    {
+      "node": "992:0",
+      "role": "Caption",
+      "pages": [
+        14
+      ],
+      "characters": 266
+    },
+    {
+      "node": "994:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 19
+    },
+    {
+      "node": "995:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 660
+    },
+    {
+      "node": "996:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 35
+    },
+    {
+      "node": "997:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 55
+    },
+    {
+      "node": "998:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 1604
+    },
+    {
+      "node": "1010:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 433
+    },
+    {
+      "node": "1014:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1015:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 163
+    },
+    {
+      "node": "1016:0",
+      "role": "H3",
+      "pages": [
+        15
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1017:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 925
+    },
+    {
+      "node": "1018:0",
+      "role": "H3",
+      "pages": [
+        15
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1019:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 356
+    },
+    {
+      "node": "1020:0",
+      "role": "H4",
+      "pages": [
+        15
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1021:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 787
+    },
+    {
+      "node": "1022:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 554
+    },
+    {
+      "node": "joined-1023:0",
+      "role": "P",
+      "pages": [
+        15,
+        16
+      ],
+      "characters": 488
+    },
+    {
+      "node": "1024:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 114
+    },
+    {
+      "node": "1025:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1026:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 84
+    },
+    {
+      "node": "1027:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 68
+    },
+    {
+      "node": "1028:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 64
+    },
+    {
+      "node": "1029:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1047:0",
+      "role": "H4",
+      "pages": [
+        16
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1048:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 915
+    },
+    {
+      "node": "1049:0",
+      "role": "H2",
+      "pages": [
+        16
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1051:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 535
+    },
+    {
+      "node": "1052:0",
+      "role": "H3",
+      "pages": [
+        16
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1053:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 572
+    },
+    {
+      "node": "1054:0",
+      "role": "H3",
+      "pages": [
+        16
+      ],
+      "characters": 44
+    },
+    {
+      "node": "1055:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 508
+    },
+    {
+      "node": "1056:0",
+      "role": "H3",
+      "pages": [
+        16
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1057:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 477
+    },
+    {
+      "node": "1060:0",
+      "role": "H3",
+      "pages": [
+        17
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1061:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 835
+    },
+    {
+      "node": "1062:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 445
+    },
+    {
+      "node": "1063:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 400
+    },
+    {
+      "node": "1064:0",
+      "role": "H3",
+      "pages": [
+        17
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1065:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 774
+    },
+    {
+      "node": "1066:0",
+      "role": "H2",
+      "pages": [
+        17
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1067:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 823
+    },
+    {
+      "node": "1068:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 528
+    },
+    {
+      "node": "1075:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 502
+    },
+    {
+      "node": "1076:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 748
+    },
+    {
+      "node": "1077:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 557
+    },
+    {
+      "node": "1078:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 21
+    },
+    {
+      "node": "1079:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 210
+    },
+    {
+      "node": "1080:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1081:0",
+      "role": "L",
+      "pages": [
+        18
+      ],
+      "characters": 2581
+    },
+    {
+      "node": "1121:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 74
+    },
+    {
+      "node": "1126:0",
+      "role": "L",
+      "pages": [
+        19
+      ],
+      "characters": 5771
+    },
+    {
+      "node": "732:0",
+      "role": "L",
+      "pages": [
+        20
+      ],
+      "characters": 1238
+    },
+    {
+      "node": "748:0",
+      "role": "P",
+      "pages": [
+        20
+      ],
+      "characters": 62
+    }
+  ],
+  "tagged_content_items": 10985,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-001-p003.png",
+      "node": "378:0",
+      "page": 3,
+      "bbox": [
+        30.677000045776367,
+        82.67912292480469,
+        429.028564453125,
+        281.84698486328125
+      ],
+      "sha256": "0f62562042a10a973ecee8c1abce8636f8cdce87d3860bf947c4163aeec5676f",
+      "kind": "figure",
+      "alt": "Fig. 1. chat.codes is a communication tool for programmers that combines a shared editor (left) with synchronous text chat (right). Users can click on any given message to see the state of the code when that message was sent (A). chat.codes also allows programmers to see when code was edited by displaying edit messages in-line with chat messages (B). These messages can be expanded to reveal a full diff (Figure 5 shows what clicking the ‘(more)’ button displays). Users can also easily “point” to regions of code through a simple highlighting interaction (as Figure 3 illustrates)."
+    },
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-002-p005.png",
+      "node": "777:0",
+      "page": 5,
+      "bbox": [
+        162.1320037841797,
+        82.67749786376953,
+        323.8500061035156,
+        188.05999755859375
+      ],
+      "sha256": "0fe27e95c646b26228ce5218a7cc8a3ca859fe99c7720ed1d2acdb84fe4ebef0",
+      "kind": "figure",
+      "alt": "Fig. 2. chat.codes is implemented as a website and as a plugin for the Atom IDE. Atom users can use chat.codes in their IDE, which will automatically converts their editor into a shared editor. Programmers can click a button to create a unique shareable URL that helpers can then visit. Helpers can then access the requester’s IDE over the web by visiting that URL."
+    },
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-003-p006.png",
+      "node": "801:0",
+      "page": 6,
+      "bbox": [
+        31.92300033569336,
+        82.67949676513672,
+        430.26800537109375,
+        221.58700561523438
+      ],
+      "sha256": "d554c101b0489622a2ccf8ce4aa066e58eb16dacfb1d4092dfb701970b602648",
+      "kind": "figure",
+      "alt": "Fig. 3. chat.codes enables programmers to point to regions of code in their messages through a Markdown-based syntax. Users can also easily specify what region of code they want to refer to by simply highlighting that region in the code window, which automatically inserts an appropriate code pointer."
+    },
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-004-p007.png",
+      "node": "827:0",
+      "page": 7,
+      "bbox": [
+        31.92300033569336,
+        82.68057250976562,
+        430.2731018066406,
+        249.9010009765625
+      ],
+      "sha256": "37e128a3d38ae649d6a89f97eee10e8249ecde6fc06fe112c091ef77d7ef1061",
+      "kind": "figure",
+      "alt": "Figure 4. Four states for creating code pointers in chat. From state 1, with no chat text selected, selecting code inserts and selects a complete pointer (state 2); clearing the code selection removes it. While the full pointer is selected, changing the code selection updates its target. From state 3, with ordinary chat text selected, selecting code turns that text into a pointer (state 4). While pointer label text is selected, changing the code selection changes the target while preserving the label; clearing code selection removes the pointer and leaves the text selected."
+    },
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-005-p009.png",
+      "node": "870:0",
+      "page": 9,
+      "bbox": [
+        162.1320037841797,
+        82.68218231201172,
+        323.8673400878906,
+        290.468994140625
+      ],
+      "sha256": "5aeba58502222f35349b46b8084c37eb4c003a2990a068244411e7705462f446",
+      "kind": "figure",
+      "alt": "Fig. 5. In chat.codes, code edit summaries are displayed inline with chat messages. By default these summaries only indicate which user changed which files. They can also be expanded to reveal a full diff, as shown above."
+    },
+    {
+      "path": "figures/oney-creating-guided-code-cscw2018/figure-006-p014.png",
+      "node": "991:0",
+      "page": 14,
+      "bbox": [
+        142.41400146484375,
+        82.68270111083984,
+        343.58770751953125,
+        203.59100341796875
+      ],
+      "sha256": "019ce18f75c5fb666a796def82af70e96e6059c1120e5524494aa3e7af79ac5f",
+      "kind": "figure",
+      "alt": "Figure 6. Completion-time histogram for 20 video and 20 chat.codes participants who finished the task. Counts in time bins 0–2, 2–4, 4–6, 6–8, 8–10, 10–12, 12–20 and over 20 minutes are: video 0, 4, 6, 2, 1, 2, 3, 2; chat.codes 2, 7, 1, 3, 2, 2, 3, 0. Video is blue and chat.codes red. Chat.codes has more completions under four minutes, but the source reports the overall mean-time difference was not statistically significant."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "925:0",
+      "source_pages": [
+        12
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 9,
+      "cell_count": 33,
+      "header_count": 16,
+      "empty_cell_count": 1,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 2,
+      "node": "925:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 26,
+    "paragraph_fragments_joined": 8,
+    "script_runs_positioned": 28,
+    "line_wrap_hyphens_retained": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-creating-guided-code-cscw2018.json.gz",
+  "source_tags_sha256": "a5891d8a94413dd47a9d14f899ce5691c1d64232937657ca94441f3825e84fad"
+}

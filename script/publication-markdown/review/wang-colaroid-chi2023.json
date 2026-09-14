@@ -1,0 +1,2563 @@
+{
+  "file": "wang-colaroid-chi2023.pdf",
+  "title": "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials",
+  "publication_id": "colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023",
+  "pdf_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+  "markdown": "publications/wang-colaroid-chi2023.md",
+  "markdown_sha256": "44e5efc2ebcdf3481f1c391f3f51501a1543554d2566992e6ff7a4d1f0da2a15",
+  "pages": 22,
+  "blocks": [
+    {
+      "node": "385:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 219
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 122
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 133
+    },
+    {
+      "node": "726:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 118
+    },
+    {
+      "node": "727:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 111
+    },
+    {
+      "node": "728:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 122
+    },
+    {
+      "node": "737:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 208
+    },
+    {
+      "node": "388:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 632
+    },
+    {
+      "node": "729:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "730:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1013
+    },
+    {
+      "node": "731:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "732:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 59
+    },
+    {
+      "node": "733:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "734:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 60
+    },
+    {
+      "node": "735:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "736:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 481
+    },
+    {
+      "node": "738:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "739:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 903
+    },
+    {
+      "node": "740:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 435
+    },
+    {
+      "node": "741:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 845
+    },
+    {
+      "node": "joined-742:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 541
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 691
+    },
+    {
+      "node": "761:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 922
+    },
+    {
+      "node": "762:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1439
+    },
+    {
+      "node": "763:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 55
+    },
+    {
+      "node": "764:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 165
+    },
+    {
+      "node": "768:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 225
+    },
+    {
+      "node": "769:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 256
+    },
+    {
+      "node": "776:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "777:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 285
+    },
+    {
+      "node": "778:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 51
+    },
+    {
+      "node": "779:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "780:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 512
+    },
+    {
+      "node": "781:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 476
+    },
+    {
+      "node": "782:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 493
+    },
+    {
+      "node": "783:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 351
+    },
+    {
+      "node": "784:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 760
+    },
+    {
+      "node": "785:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 41
+    },
+    {
+      "node": "joined-786:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1012
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1510
+    },
+    {
+      "node": "806:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 725
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 832
+    },
+    {
+      "node": "1782:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1783:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 906
+    },
+    {
+      "node": "1784:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "1785:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 642
+    },
+    {
+      "node": "1786:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 878
+    },
+    {
+      "node": "1787:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 602
+    },
+    {
+      "node": "joined-1788:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 628
+    },
+    {
+      "node": "1814:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1815:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1059
+    },
+    {
+      "node": "1816:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 65
+    },
+    {
+      "node": "1817:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 784
+    },
+    {
+      "node": "1818:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 55
+    },
+    {
+      "node": "1819:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1820:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 95
+    },
+    {
+      "node": "1821:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 891
+    },
+    {
+      "node": "1831:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 204
+    },
+    {
+      "node": "1832:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1833:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 849
+    },
+    {
+      "node": "1834:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1835:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 481
+    },
+    {
+      "node": "1836:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1837:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 863
+    },
+    {
+      "node": "1838:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1839:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1840:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 171
+    },
+    {
+      "node": "1841:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 462
+    },
+    {
+      "node": "1842:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 257
+    },
+    {
+      "node": "1861:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 14321
+    },
+    {
+      "node": "1941:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1942:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 417
+    },
+    {
+      "node": "1943:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 223
+    },
+    {
+      "node": "1944:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 66
+    },
+    {
+      "node": "joined-1945:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 1202
+    },
+    {
+      "node": "1949:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 65
+    },
+    {
+      "node": "1950:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 968
+    },
+    {
+      "node": "1951:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 59
+    },
+    {
+      "node": "1952:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1140
+    },
+    {
+      "node": "1953:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 54
+    },
+    {
+      "node": "1954:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 736
+    },
+    {
+      "node": "1955:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 72
+    },
+    {
+      "node": "joined-1956:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 326
+    },
+    {
+      "node": "1958:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 107
+    },
+    {
+      "node": "1959:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 651
+    },
+    {
+      "node": "1960:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 82
+    },
+    {
+      "node": "1961:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1312
+    },
+    {
+      "node": "1962:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 73
+    },
+    {
+      "node": "1963:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 714
+    },
+    {
+      "node": "1964:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 74
+    },
+    {
+      "node": "joined-1965:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 642
+    },
+    {
+      "node": "1970:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1971:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1972:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 29
+    },
+    {
+      "node": "1973:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 444
+    },
+    {
+      "node": "909:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 38
+    },
+    {
+      "node": "910:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 588
+    },
+    {
+      "node": "911:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 553
+    },
+    {
+      "node": "912:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 34
+    },
+    {
+      "node": "913:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 806
+    },
+    {
+      "node": "914:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 103
+    },
+    {
+      "node": "915:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 345
+    },
+    {
+      "node": "916:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 495
+    },
+    {
+      "node": "917:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 343
+    },
+    {
+      "node": "918:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 668
+    },
+    {
+      "node": "919:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1080
+    },
+    {
+      "node": "920:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 62
+    },
+    {
+      "node": "921:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 532
+    },
+    {
+      "node": "joined-922:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 501
+    },
+    {
+      "node": "935:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 614
+    },
+    {
+      "node": "936:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 557
+    },
+    {
+      "node": "938:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 48
+    },
+    {
+      "node": "939:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 432
+    },
+    {
+      "node": "940:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 531
+    },
+    {
+      "node": "941:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 889
+    },
+    {
+      "node": "942:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 52
+    },
+    {
+      "node": "joined-943:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 841
+    },
+    {
+      "node": "946:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 544
+    },
+    {
+      "node": "947:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 42
+    },
+    {
+      "node": "948:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 328
+    },
+    {
+      "node": "949:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 21
+    },
+    {
+      "node": "950:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 561
+    },
+    {
+      "node": "951:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 43
+    },
+    {
+      "node": "952:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 594
+    },
+    {
+      "node": "953:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 331
+    },
+    {
+      "node": "954:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 25
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 235
+    },
+    {
+      "node": "956:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 34
+    },
+    {
+      "node": "957:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 697
+    },
+    {
+      "node": "958:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 53
+    },
+    {
+      "node": "959:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 467
+    },
+    {
+      "node": "960:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 341
+    },
+    {
+      "node": "961:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 564
+    },
+    {
+      "node": "962:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 22
+    },
+    {
+      "node": "963:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 213
+    },
+    {
+      "node": "964:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 29
+    },
+    {
+      "node": "965:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 169
+    },
+    {
+      "node": "966:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 50
+    },
+    {
+      "node": "967:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 429
+    },
+    {
+      "node": "joined-968:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 419
+    },
+    {
+      "node": "973:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 796
+    },
+    {
+      "node": "974:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 739
+    },
+    {
+      "node": "976:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 31
+    },
+    {
+      "node": "joined-977:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1348
+    },
+    {
+      "node": "979:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 53
+    },
+    {
+      "node": "980:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 390
+    },
+    {
+      "node": "981:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 31
+    },
+    {
+      "node": "982:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 458
+    },
+    {
+      "node": "986:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 430
+    },
+    {
+      "node": "987:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 49
+    },
+    {
+      "node": "988:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 552
+    },
+    {
+      "node": "989:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 14
+    },
+    {
+      "node": "990:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 23
+    },
+    {
+      "node": "991:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 707
+    },
+    {
+      "node": "992:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 22
+    },
+    {
+      "node": "993:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 887
+    },
+    {
+      "node": "994:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 572
+    },
+    {
+      "node": "995:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 546
+    },
+    {
+      "node": "996:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 298
+    },
+    {
+      "node": "997:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 203
+    },
+    {
+      "node": "998:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "999:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 44
+    },
+    {
+      "node": "1000:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 2029
+    },
+    {
+      "node": "1001:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1002:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 314
+    },
+    {
+      "node": "1007:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 117
+    },
+    {
+      "node": "1008:0",
+      "role": "Table",
+      "pages": [
+        12
+      ],
+      "characters": 10853
+    },
+    {
+      "node": "1097:0",
+      "role": "Figure",
+      "pages": [
+        12
+      ],
+      "characters": 965
+    },
+    {
+      "node": "1098:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1099:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 342
+    },
+    {
+      "node": "1100:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 211
+    },
+    {
+      "node": "1101:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 266
+    },
+    {
+      "node": "1103:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 388
+    },
+    {
+      "node": "1104:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 419
+    },
+    {
+      "node": "1106:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1107:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 1054
+    },
+    {
+      "node": "1108:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 395
+    },
+    {
+      "node": "1109:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1110:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 239
+    },
+    {
+      "node": "1111:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 648
+    },
+    {
+      "node": "1112:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 231
+    },
+    {
+      "node": "1113:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 536
+    },
+    {
+      "node": "1114:0",
+      "role": "H2",
+      "pages": [
+        13
+      ],
+      "characters": 47
+    },
+    {
+      "node": "1115:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 490
+    },
+    {
+      "node": "1116:0",
+      "role": "H3",
+      "pages": [
+        13
+      ],
+      "characters": 14
+    },
+    {
+      "node": "1117:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1118:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 534
+    },
+    {
+      "node": "1119:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1120:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 706
+    },
+    {
+      "node": "1121:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 986
+    },
+    {
+      "node": "1122:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 339
+    },
+    {
+      "node": "1123:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-1124:0",
+      "role": "P",
+      "pages": [
+        13,
+        14
+      ],
+      "characters": 1052
+    },
+    {
+      "node": "1126:0",
+      "role": "Figure",
+      "pages": [
+        14
+      ],
+      "characters": 217
+    },
+    {
+      "node": "1127:0",
+      "role": "Caption",
+      "pages": [
+        14
+      ],
+      "characters": 160
+    },
+    {
+      "node": "1129:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 32
+    },
+    {
+      "node": "joined-1130:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1423
+    },
+    {
+      "node": "1132:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 40
+    },
+    {
+      "node": "1133:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1927
+    },
+    {
+      "node": "1137:0",
+      "role": "H3",
+      "pages": [
+        15
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1138:0",
+      "role": "H4",
+      "pages": [
+        15
+      ],
+      "characters": 57
+    },
+    {
+      "node": "1139:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 357
+    },
+    {
+      "node": "1140:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 680
+    },
+    {
+      "node": "1141:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 245
+    },
+    {
+      "node": "1144:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 936
+    },
+    {
+      "node": "1145:0",
+      "role": "H4",
+      "pages": [
+        15
+      ],
+      "characters": 57
+    },
+    {
+      "node": "1146:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 362
+    },
+    {
+      "node": "1147:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 165
+    },
+    {
+      "node": "joined-1148:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 112
+    },
+    {
+      "node": "1150:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 154
+    },
+    {
+      "node": "joined-1151:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 212
+    },
+    {
+      "node": "1154:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 360
+    },
+    {
+      "node": "1157:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 108
+    },
+    {
+      "node": "1158:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1161:0",
+      "role": "H4",
+      "pages": [
+        15
+      ],
+      "characters": 70
+    },
+    {
+      "node": "1162:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 1000
+    },
+    {
+      "node": "1163:0",
+      "role": "L",
+      "pages": [
+        15
+      ],
+      "characters": 416
+    },
+    {
+      "node": "1166:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 474
+    },
+    {
+      "node": "1167:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 376
+    },
+    {
+      "node": "1171:0",
+      "role": "Caption",
+      "pages": [
+        16
+      ],
+      "characters": 227
+    },
+    {
+      "node": "1172:0",
+      "role": "Table",
+      "pages": [
+        16
+      ],
+      "characters": 54641
+    },
+    {
+      "node": "1481:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 198
+    },
+    {
+      "node": "1482:0",
+      "role": "H4",
+      "pages": [
+        16
+      ],
+      "characters": 58
+    },
+    {
+      "node": "joined-1483:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 414
+    },
+    {
+      "node": "joined-1485:0",
+      "role": "P",
+      "pages": [
+        16,
+        17
+      ],
+      "characters": 400
+    },
+    {
+      "node": "1488:0",
+      "role": "Figure",
+      "pages": [
+        17
+      ],
+      "characters": 481
+    },
+    {
+      "node": "1489:0",
+      "role": "Caption",
+      "pages": [
+        17
+      ],
+      "characters": 424
+    },
+    {
+      "node": "2029:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 393
+    },
+    {
+      "node": "2030:0",
+      "role": "H4",
+      "pages": [
+        17
+      ],
+      "characters": 34
+    },
+    {
+      "node": "2031:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 597
+    },
+    {
+      "node": "2032:0",
+      "role": "H2",
+      "pages": [
+        17
+      ],
+      "characters": 15
+    },
+    {
+      "node": "2033:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 631
+    },
+    {
+      "node": "joined-2034:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 453
+    },
+    {
+      "node": "2036:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 1209
+    },
+    {
+      "node": "2037:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 1099
+    },
+    {
+      "node": "2048:0",
+      "role": "H3",
+      "pages": [
+        18
+      ],
+      "characters": 15
+    },
+    {
+      "node": "2049:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 1283
+    },
+    {
+      "node": "2050:0",
+      "role": "H3",
+      "pages": [
+        18
+      ],
+      "characters": 19
+    },
+    {
+      "node": "2051:0",
+      "role": "H4",
+      "pages": [
+        18
+      ],
+      "characters": 35
+    },
+    {
+      "node": "2052:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 1229
+    },
+    {
+      "node": "2053:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 649
+    },
+    {
+      "node": "2054:0",
+      "role": "H4",
+      "pages": [
+        18
+      ],
+      "characters": 41
+    },
+    {
+      "node": "joined-2055:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 835
+    },
+    {
+      "node": "2057:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 954
+    },
+    {
+      "node": "2058:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 15
+    },
+    {
+      "node": "2059:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 619
+    },
+    {
+      "node": "2060:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 18
+    },
+    {
+      "node": "2061:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 412
+    },
+    {
+      "node": "2062:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 13
+    },
+    {
+      "node": "2063:0",
+      "role": "L",
+      "pages": [
+        18
+      ],
+      "characters": 702
+    },
+    {
+      "node": "2078:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 88
+    },
+    {
+      "node": "2079:0",
+      "role": "L",
+      "pages": [
+        19
+      ],
+      "characters": 10904
+    },
+    {
+      "node": "2119:0",
+      "role": "L",
+      "pages": [
+        20
+      ],
+      "characters": 181
+    },
+    {
+      "node": "1491:0",
+      "role": "H2",
+      "pages": [
+        21
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1492:0",
+      "role": "Table",
+      "pages": [
+        21
+      ],
+      "characters": 25290
+    },
+    {
+      "node": "1693:0",
+      "role": "Caption",
+      "pages": [
+        21
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1699:0",
+      "role": "Table",
+      "pages": [
+        22
+      ],
+      "characters": 21932
+    }
+  ],
+  "tagged_content_items": 17882,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-001-p008.png",
+      "node": "935:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        81.68644714355469,
+        560.1951904296875,
+        391.6520080566406
+      ],
+      "sha256": "116ff950df577f39c42d7dd11ce7f808e40bca21e45b031e2a1a439a443b15ea",
+      "kind": "figure",
+      "alt": "Figure 1: An overview of Colaroid. Colaroid is implemented as a VS Code extension. The user can open the Colaroid Notebook (B) side by side with their main code editor (A). A Colaroid notebook consists of cells. Each cell captures a history state of the codebase, which contains three components — a text annotation area explaining the rationale behind this state (C), a code editor area displaying the state of the code and highlighting the changes compared to the previous state (D), and an output area rendering the HTML display of the history state (E)."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-002-p010.png",
+      "node": "973:0",
+      "page": 10,
+      "bbox": [
+        51.79800033569336,
+        81.6902084350586,
+        560.1785278320312,
+        372.4779968261719
+      ],
+      "sha256": "8bc55b98dd4eaf84a40d47f44167ba76205b82b31de378db3869ffacb3989bf3",
+      "kind": "figure",
+      "alt": "Figure 2: Colaroid implements code versioning and change propagating through git. Suppose the author wants to edit the first step (e.g., changing HTML page title) and propagate the change to subsequent steps. Colaroid maps steps with the hash ID of the code commits in Git. As shown in phase 1 and phase 2, Colaroid will first check out the main branch into a new branch named “change” and reset the head to the code version that needs to be edited. By doing this, authors would see commit A loaded in their code editor. Next, tutorial authors can make changes directly in the code editor. Once they confirm finishing the edits, Colaroid will create a new commit for the changes and merge commits in the later steps into the change branch."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-003-p012.png",
+      "node": "1097:0",
+      "page": 12,
+      "bbox": [
+        51.79800033569336,
+        269.06378173828125,
+        560.193603515625,
+        498.77899169921875
+      ],
+      "sha256": "a3cfaf44f38c8fc5692bdaac8554939d43d96167e4204524ad31bc05da5b4973",
+      "kind": "figure",
+      "alt": "Figure 3. Post-task questionnaire, 10 participants. Counts are listed from Strongly Disagree, Disagree, Neutral, Agree, to Strongly Agree; omitted categories have zero responses. Most people would learn the system quickly: Agree 4, Strongly Agree 6. System difficult to use: Strongly Disagree 6, Disagree 3, Neutral 1. Satisfied with the created tutorial: Neutral 2, Agree 6, Strongly Agree 2. Students can follow the tutorial and replicate the project: Agree 5, Strongly Agree 5. Would use the tool for future teaching tutorials and demonstrations: Neutral 4, Agree 2, Strongly Agree 4. Useful for students creating project reports: Disagree 1, Neutral 1, Agree 2, Strongly Agree 6. Necessary to edit intermediate code after creating checkpoints: Strongly Disagree 1, Disagree 1, Agree 3, Strongly Agree 5. Useful to record and replay tutorial interactions: Disagree 2, Neutral 3, Agree 2, Strongly Agree 3."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-004-p014.png",
+      "node": "1126:0",
+      "page": 14,
+      "bbox": [
+        51.79800033569336,
+        81.68599700927734,
+        560.197998046875,
+        290.93798828125
+      ],
+      "sha256": "b4732d1521d213a7af9e68eb53416d5fc686163cc086bc8a931d0454c051e853",
+      "kind": "figure",
+      "alt": "Figure 4: We used GitHub Codespaces for participants to access tutorials. All the three types of tutorials are displayed side by side with the main code editor."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-005-p016.png",
+      "node": "1198:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        127.73566436767578,
+        514.9330444335938,
+        153.24600219726562
+      ],
+      "sha256": "fb48559a0267bc3e6fa9fdbcbaa3acc4e90cf1ef6a8c8d14873c95e8b448bd63",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for ease of following the tutorial. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.63 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-006-p016.png",
+      "node": "1289:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        149.0786590576172,
+        514.9330444335938,
+        174.58900451660156
+      ],
+      "sha256": "7226f59ca6a68059d64aaef33d3479e6557df4992fe1f239b311d35c1877c150",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for ease of following the tutorial. The corresponding mean values in Table 3 are 3.88 for Colaroid and 3.38 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-007-p016.png",
+      "node": "1290:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        170.8196563720703,
+        514.9330444335938,
+        196.3300018310547
+      ],
+      "sha256": "19392c51360923c8e58424c2a279ef3331b449d3cf689d64ef106ccec815c669",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for clarity of how the steps evolved. The corresponding mean values in Table 3 are 4.63 for Colaroid and 3.63 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-008-p016.png",
+      "node": "1291:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        192.16265869140625,
+        514.9330444335938,
+        217.67300415039062
+      ],
+      "sha256": "6675fef414c964ee118aac41c1fa8226a66d6872d020f91b110cfb59af121dd0",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for clarity of how the steps evolved. The corresponding mean values in Table 3 are 4.38 for Colaroid and 4.00 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-009-p016.png",
+      "node": "1292:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        213.90365600585938,
+        514.9330444335938,
+        239.41400146484375
+      ],
+      "sha256": "4ae4e4ce44ab5c4ef14d8f30753f800b705b6a38a42863d0597b41716cf2c21f",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for understanding how step changes affect the output. The corresponding mean values in Table 3 are 4.38 for Colaroid and 3.63 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-010-p016.png",
+      "node": "1293:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        235.2466583251953,
+        514.9330444335938,
+        260.7569885253906
+      ],
+      "sha256": "2d305f60f00a3471d2f8b63aa4b6d6638ffad459e0f6377a8008ab3d6a45a589",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for understanding how step changes affect the output. The corresponding mean values in Table 3 are 4.25 for Colaroid and 3.50 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-011-p016.png",
+      "node": "1294:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        256.9876708984375,
+        514.9330444335938,
+        282.49798583984375
+      ],
+      "sha256": "eb6e342cac612eb010a3d15d339ebb92647e7b5583cb099cdeabd9f09b26b958",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for help making progress on the dinosaur project. The corresponding mean values in Table 3 are 4.50 for Colaroid and 4.00 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-012-p016.png",
+      "node": "1295:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        278.3306579589844,
+        514.9330444335938,
+        303.84100341796875
+      ],
+      "sha256": "ab9cd2c94624663b342ac824b61cfe986d5e195da95d31b6b25190201131f5da",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for help making progress on the dinosaur project. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.63 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-013-p016.png",
+      "node": "1386:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        300.0716552734375,
+        514.9330444335938,
+        325.5820007324219
+      ],
+      "sha256": "6980d15297b67df9571d1a49dbc85977bf0ded5fac1ce39f8c7df048782ae17e",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for confidence reproducing the Flappy Bird project from scratch. The corresponding mean values in Table 3 are 4.25 for Colaroid and 2.88 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-014-p016.png",
+      "node": "1387:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        321.4146728515625,
+        514.9330444335938,
+        346.92498779296875
+      ],
+      "sha256": "aa65ba478e82d50fa2a9cd13bef3468e3cf5950bd11302c07756339634e413e2",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for confidence reproducing the Flappy Bird project from scratch. The corresponding mean values in Table 3 are 3.50 for Colaroid and 3.50 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-015-p016.png",
+      "node": "1388:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        343.1556701660156,
+        514.9330444335938,
+        368.6659851074219
+      ],
+      "sha256": "35a391d3377912633fd05e029db2ab8553680affe5a0deb966b11a3be9ad7e6a",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for confidence building similar HTML5 games. The corresponding mean values in Table 3 are 3.50 for Colaroid and 2.75 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-016-p016.png",
+      "node": "1389:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        364.4976501464844,
+        514.9330444335938,
+        390.00799560546875
+      ],
+      "sha256": "689569af2c7723073af56acd67fd299a3a0e6192202906126f2406d247729102",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for confidence building similar HTML5 games. The corresponding mean values in Table 3 are 3.88 for Colaroid and 2.88 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-017-p016.png",
+      "node": "1390:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        386.2396545410156,
+        514.9330444335938,
+        411.75
+      ],
+      "sha256": "05c3946cd9069daacc1489f9256fddf9c2ab89e8ef22ae577db9ab9cdb4e525a",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for the tutorial taking too much time to read. The corresponding mean values in Table 3 are 2.25 for Colaroid and 3.25 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-018-p016.png",
+      "node": "1391:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        407.5816650390625,
+        514.9330444335938,
+        433.0920104980469
+      ],
+      "sha256": "bd1f2accc8489d64375f00cb4aca666bc9de3e898d67162c49f2a2231bd5f02c",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for the tutorial taking too much time to read. The corresponding mean values in Table 3 are 2.38 for Colaroid and 3.88 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-019-p016.png",
+      "node": "1392:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        429.3226623535156,
+        514.9330444335938,
+        454.8330078125
+      ],
+      "sha256": "d9ddca41ff1d4ed9cd0dac39d4fb4b8dd5230856a3385384144124007e433f74",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for engagement while reading the tutorial. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.50 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-020-p016.png",
+      "node": "1474:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        450.6656494140625,
+        514.9330444335938,
+        476.1759948730469
+      ],
+      "sha256": "877d4df5e37eb34f841ab8737de546642b6b66f1ca508b1d2663075c1ea17763",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for engagement while reading the tutorial. The corresponding mean values in Table 3 are 3.88 for Colaroid and 3.38 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-021-p016.png",
+      "node": "1475:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        472.4066467285156,
+        514.9330444335938,
+        497.9169921875
+      ],
+      "sha256": "d5cde5d5fbd5ebdbbbe7ee48fee557e92d58731e45de61b8a76db42178aca973",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for satisfaction with progress on the dinosaur game. The corresponding mean values in Table 3 are 4.00 for Colaroid and 3.38 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-022-p016.png",
+      "node": "1476:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        493.7496643066406,
+        514.9330444335938,
+        519.260009765625
+      ],
+      "sha256": "2cf647b8c891e447781000f6d1e9928bcfad3787f617b4fd358bab46dc4e3491",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for satisfaction with progress on the dinosaur game. The corresponding mean values in Table 3 are 3.88 for Colaroid and 4.00 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-023-p016.png",
+      "node": "1477:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        515.4903564453125,
+        514.9390258789062,
+        540.8590087890625
+      ],
+      "sha256": "537f26945d10057451961a421e0e57cc33be3a2a7849700997d20c998715226a",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for expert evaluation of the resulting artifact. The corresponding mean values in Table 3 are 60.00 for Colaroid and 54.38 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-024-p016.png",
+      "node": "1478:0",
+      "page": 16,
+      "bbox": [
+        399.54400634765625,
+        536.8333740234375,
+        516.9309692382812,
+        562.2020263671875
+      ],
+      "sha256": "562a9da4fa59a63f1f546e5100d7ec7a7586216080386e487e2439b0377b03ff",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for expert evaluation of the resulting artifact. The corresponding mean values in Table 3 are 58.13 for Colaroid and 63.13 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-025-p016.png",
+      "node": "1479:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        558.5746459960938,
+        514.9330444335938,
+        584.0850219726562
+      ],
+      "sha256": "1b530c237bfc2e336b6ce52f3413acc17de142be58928c54008c238e86367f62",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Article for actual engagement time in minutes. The corresponding mean values in Table 3 are 14.68 for Colaroid and 8.76 for Article, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-026-p016.png",
+      "node": "1480:0",
+      "page": 16,
+      "bbox": [
+        397.552001953125,
+        579.9176635742188,
+        514.9330444335938,
+        605.427978515625
+      ],
+      "sha256": "183af92c7692b51a0dac913280506644d1ae917e3195a235308777691c05a8a1",
+      "kind": "figure",
+      "alt": "Box plots and individual points compare Colaroid with Video for actual engagement time in minutes. The corresponding mean values in Table 3 are 14.37 for Colaroid and 8.79 for Video, with eight participants in each condition."
+    },
+    {
+      "path": "figures/wang-colaroid-chi2023/figure-027-p017.png",
+      "node": "1488:0",
+      "page": 17,
+      "bbox": [
+        51.7979850769043,
+        81.68582153320312,
+        560.2094116210938,
+        201.86415100097656
+      ],
+      "sha256": "ec2dd6c7ff5e9f95b2ea1736ebf61be334fc8856a086f52ef5f18ff549e30488",
+      "kind": "figure",
+      "alt": "Figure 5: We manually coded the screen recording to understand how students interact with the tutorials. All participants used the full 40 mins on the task. Participants’ engagement time with Colaroid tutorials is significantly more than article tutorials (1) and video tutorials (2). In particular, we noticed that some participants (3) gave up on the video tutorials after watching a segment at the beginning of the study."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1861:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 18,
+      "column_count": 4,
+      "cell_count": 60,
+      "header_count": 26,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1861:0"
+    },
+    {
+      "source_table_id": "1008:0",
+      "source_pages": [
+        12
+      ],
+      "format": "html",
+      "row_count": 11,
+      "column_count": 7,
+      "cell_count": 77,
+      "header_count": 17,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1008:0"
+    },
+    {
+      "source_table_id": "1172:0",
+      "source_pages": [
+        16
+      ],
+      "format": "html",
+      "row_count": 45,
+      "column_count": 7,
+      "cell_count": 238,
+      "header_count": 62,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1172:0"
+    },
+    {
+      "source_table_id": "1492:0",
+      "source_pages": [
+        21
+      ],
+      "format": "html",
+      "row_count": 26,
+      "column_count": 5,
+      "cell_count": 130,
+      "header_count": 30,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1492:0"
+    },
+    {
+      "source_table_id": "1699:0",
+      "source_pages": [
+        22
+      ],
+      "format": "html",
+      "row_count": 20,
+      "column_count": 5,
+      "cell_count": 100,
+      "header_count": 24,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1699:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 336,
+    "line_wrap_hyphens_retained": 17,
+    "paragraph_fragments_joined": 20,
+    "reviewed_wrap_repairs": 3,
+    "script_runs_positioned": 7
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/wang-colaroid-chi2023.json.gz",
+  "source_tags_sha256": "10587f4b86b198341e24011b924bbaf5e08ec84032b424e122d5695a6a7102a8"
+}

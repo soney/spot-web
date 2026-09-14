@@ -1,0 +1,2056 @@
+{
+  "file": "wang-callisto-chi2020.pdf",
+  "title": "Callisto: Capturing the \"Why\" by Connecting Conversations with Computational Narratives",
+  "publication_id": "callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020",
+  "pdf_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+  "markdown": "publications/wang-callisto-chi2020.md",
+  "markdown_sha256": "6d6322fcfee07d2f4f08ff5756184a0d2382dc2596e34575a091daa84568dd10",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "742:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 218
+    },
+    {
+      "node": "743:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 103
+    },
+    {
+      "node": "748:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 149
+    },
+    {
+      "node": "1291:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 752
+    },
+    {
+      "node": "754:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "755:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1004
+    },
+    {
+      "node": "756:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "757:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 82
+    },
+    {
+      "node": "758:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "759:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 76
+    },
+    {
+      "node": "760:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "761:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 588
+    },
+    {
+      "node": "767:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 381
+    },
+    {
+      "node": "768:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 137
+    },
+    {
+      "node": "769:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 634
+    },
+    {
+      "node": "joined-773:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1221
+    },
+    {
+      "node": "777:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 119
+    },
+    {
+      "node": "778:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 825
+    },
+    {
+      "node": "780:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 600
+    },
+    {
+      "node": "781:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1214:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 507
+    },
+    {
+      "node": "794:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "795:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 27
+    },
+    {
+      "node": "796:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1140
+    },
+    {
+      "node": "809:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 646
+    },
+    {
+      "node": "814:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 999
+    },
+    {
+      "node": "818:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 31
+    },
+    {
+      "node": "819:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 975
+    },
+    {
+      "node": "824:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 793
+    },
+    {
+      "node": "831:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "832:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 829
+    },
+    {
+      "node": "839:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 843
+    },
+    {
+      "node": "841:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 18
+    },
+    {
+      "node": "842:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 402
+    },
+    {
+      "node": "843:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 10
+    },
+    {
+      "node": "844:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 819
+    },
+    {
+      "node": "846:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "847:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 436
+    },
+    {
+      "node": "joined-849:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 380
+    },
+    {
+      "node": "853:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 11
+    },
+    {
+      "node": "854:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 175
+    },
+    {
+      "node": "855:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "856:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 572
+    },
+    {
+      "node": "858:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 428
+    },
+    {
+      "node": "859:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 14
+    },
+    {
+      "node": "860:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 974
+    },
+    {
+      "node": "863:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "864:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 524
+    },
+    {
+      "node": "866:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "867:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 54
+    },
+    {
+      "node": "1366:0",
+      "role": "Table",
+      "pages": [
+        4
+      ],
+      "characters": 2437
+    },
+    {
+      "node": "1310:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 101
+    },
+    {
+      "node": "1367:0",
+      "role": "Table",
+      "pages": [
+        4
+      ],
+      "characters": 2401
+    },
+    {
+      "node": "1326:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 82
+    },
+    {
+      "node": "1368:0",
+      "role": "Table",
+      "pages": [
+        4
+      ],
+      "characters": 1733
+    },
+    {
+      "node": "1339:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 68
+    },
+    {
+      "node": "869:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 395
+    },
+    {
+      "node": "870:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 364
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 322
+    },
+    {
+      "node": "873:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 21
+    },
+    {
+      "node": "874:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 673
+    },
+    {
+      "node": "875:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 48
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 605
+    },
+    {
+      "node": "881:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "882:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 661
+    },
+    {
+      "node": "887:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "888:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 182
+    },
+    {
+      "node": "889:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 75
+    },
+    {
+      "node": "893:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 846
+    },
+    {
+      "node": "894:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 810
+    },
+    {
+      "node": "896:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 772
+    },
+    {
+      "node": "897:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "898:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 649
+    },
+    {
+      "node": "901:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 29
+    },
+    {
+      "node": "902:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1010
+    },
+    {
+      "node": "906:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 44
+    },
+    {
+      "node": "907:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 751
+    },
+    {
+      "node": "909:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 184
+    },
+    {
+      "node": "910:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 137
+    },
+    {
+      "node": "911:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 384
+    },
+    {
+      "node": "1215:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 458
+    },
+    {
+      "node": "927:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 311
+    },
+    {
+      "node": "929:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 52
+    },
+    {
+      "node": "930:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 758
+    },
+    {
+      "node": "932:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 546
+    },
+    {
+      "node": "933:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 44
+    },
+    {
+      "node": "934:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 616
+    },
+    {
+      "node": "936:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 38
+    },
+    {
+      "node": "937:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 905
+    },
+    {
+      "node": "1340:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 371
+    },
+    {
+      "node": "938:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 370
+    },
+    {
+      "node": "939:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 73
+    },
+    {
+      "node": "940:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 250
+    },
+    {
+      "node": "941:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 606
+    },
+    {
+      "node": "943:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 38
+    },
+    {
+      "node": "944:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 553
+    },
+    {
+      "node": "946:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "947:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 493
+    },
+    {
+      "node": "948:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 44
+    },
+    {
+      "node": "joined-949:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 588
+    },
+    {
+      "node": "950:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 336
+    },
+    {
+      "node": "953:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 34
+    },
+    {
+      "node": "954:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 414
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 386
+    },
+    {
+      "node": "956:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 393
+    },
+    {
+      "node": "963:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 36
+    },
+    {
+      "node": "964:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 123
+    },
+    {
+      "node": "965:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 137
+    },
+    {
+      "node": "969:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 185
+    },
+    {
+      "node": "972:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 6096
+    },
+    {
+      "node": "1021:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 208
+    },
+    {
+      "node": "1023:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 342
+    },
+    {
+      "node": "1024:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 348
+    },
+    {
+      "node": "1025:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1026:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 551
+    },
+    {
+      "node": "1028:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1029:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 559
+    },
+    {
+      "node": "joined-1030:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 154
+    },
+    {
+      "node": "1033:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 608
+    },
+    {
+      "node": "1034:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 61
+    },
+    {
+      "node": "1035:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 429
+    },
+    {
+      "node": "1037:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1038:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 197
+    },
+    {
+      "node": "joined-1039:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 160
+    },
+    {
+      "node": "joined-1042:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 160
+    },
+    {
+      "node": "1045:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 56
+    },
+    {
+      "node": "1046:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 292
+    },
+    {
+      "node": "1047:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1048:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 867
+    },
+    {
+      "node": "1049:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1050:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 302
+    },
+    {
+      "node": "1369:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 3330
+    },
+    {
+      "node": "1052:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 192
+    },
+    {
+      "node": "1055:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 805
+    },
+    {
+      "node": "1059:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 356
+    },
+    {
+      "node": "1060:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1061:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 373
+    },
+    {
+      "node": "1063:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1065:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1066:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 221
+    },
+    {
+      "node": "joined-1067:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 70
+    },
+    {
+      "node": "joined-1069:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 107
+    },
+    {
+      "node": "1071:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 84
+    },
+    {
+      "node": "1074:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 656
+    },
+    {
+      "node": "joined-1075:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 138
+    },
+    {
+      "node": "1078:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 301
+    },
+    {
+      "node": "1079:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 162
+    },
+    {
+      "node": "joined-1080:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 115
+    },
+    {
+      "node": "1082:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1083:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 484
+    },
+    {
+      "node": "1084:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 712
+    },
+    {
+      "node": "1085:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 747
+    },
+    {
+      "node": "1088:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1089:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 147
+    },
+    {
+      "node": "1090:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 40
+    },
+    {
+      "node": "1091:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 529
+    },
+    {
+      "node": "1094:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 517
+    },
+    {
+      "node": "1096:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 479
+    },
+    {
+      "node": "1097:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1098:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 851
+    },
+    {
+      "node": "1099:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1100:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 672
+    },
+    {
+      "node": "1101:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1102:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 737
+    },
+    {
+      "node": "1103:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1104:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 710
+    },
+    {
+      "node": "1108:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1109:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 668
+    },
+    {
+      "node": "1110:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1111:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1112:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1113:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 100
+    },
+    {
+      "node": "1115:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 133
+    },
+    {
+      "node": "1118:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 277
+    },
+    {
+      "node": "1121:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 85
+    },
+    {
+      "node": "1123:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 114
+    },
+    {
+      "node": "1125:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 77
+    },
+    {
+      "node": "1127:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 158
+    },
+    {
+      "node": "1128:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 164
+    },
+    {
+      "node": "1129:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 115
+    },
+    {
+      "node": "1130:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 144
+    },
+    {
+      "node": "1131:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 82
+    },
+    {
+      "node": "1132:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 293
+    },
+    {
+      "node": "1133:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 94
+    },
+    {
+      "node": "1135:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 360
+    },
+    {
+      "node": "1137:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 357
+    },
+    {
+      "node": "1139:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 220
+    },
+    {
+      "node": "1140:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 214
+    },
+    {
+      "node": "1141:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 243
+    },
+    {
+      "node": "1142:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 132
+    },
+    {
+      "node": "1143:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 358
+    },
+    {
+      "node": "1145:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 435
+    },
+    {
+      "node": "1148:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 365
+    },
+    {
+      "node": "1150:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 668
+    },
+    {
+      "node": "1154:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 344
+    },
+    {
+      "node": "1156:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 405
+    },
+    {
+      "node": "1158:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 279
+    },
+    {
+      "node": "1160:0",
+      "role": "P",
+      "pages": [
+        11,
+        12
+      ],
+      "characters": 324
+    },
+    {
+      "node": "1161:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1163:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 346
+    },
+    {
+      "node": "1165:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 295
+    },
+    {
+      "node": "1166:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 176
+    },
+    {
+      "node": "1168:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 391
+    },
+    {
+      "node": "1170:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 120
+    },
+    {
+      "node": "1171:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 320
+    },
+    {
+      "node": "1173:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 348
+    },
+    {
+      "node": "1175:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 213
+    },
+    {
+      "node": "1176:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 453
+    },
+    {
+      "node": "1178:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 56
+    },
+    {
+      "node": "1179:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 131
+    },
+    {
+      "node": "1180:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 295
+    },
+    {
+      "node": "1181:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1183:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 194
+    },
+    {
+      "node": "1184:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1186:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 116
+    },
+    {
+      "node": "1187:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 9
+    },
+    {
+      "node": "1188:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 94
+    },
+    {
+      "node": "1190:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 248
+    },
+    {
+      "node": "1191:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 92
+    },
+    {
+      "node": "1193:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 231
+    },
+    {
+      "node": "1194:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1196:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 260
+    },
+    {
+      "node": "1197:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1199:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 127
+    },
+    {
+      "node": "1200:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 191
+    },
+    {
+      "node": "1201:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 96
+    },
+    {
+      "node": "1203:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 193
+    },
+    {
+      "node": "1204:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1206:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 409
+    },
+    {
+      "node": "1208:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 204
+    },
+    {
+      "node": "1209:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1211:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 274
+    },
+    {
+      "node": "1212:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 88
+    }
+  ],
+  "tagged_content_items": 9737,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/wang-callisto-chi2020/figure-001-p001.png",
+      "node": "767:0",
+      "page": 1,
+      "bbox": [
+        360.1570129394531,
+        186.58599853515625,
+        525.106689453125,
+        317.20599365234375
+      ],
+      "sha256": "145aff1da1dd44ca2bda7dc7b963bfd86cbddda222098c8b12719bc1774f6e68",
+      "kind": "figure",
+      "alt": "Concept diagram of notebook and conversation history. Notebook versions progress from left to right across the top, while messages progress across the bottom. Colored curved connectors link individual messages to the cells, plots or annotations discussed at that version, preserving the context even as the notebook changes."
+    },
+    {
+      "path": "figures/wang-callisto-chi2020/figure-002-p005.png",
+      "node": "893:0",
+      "page": 5,
+      "bbox": [
+        54.06100082397461,
+        60.358001708984375,
+        564.041015625,
+        326.25799560546875
+      ],
+      "sha256": "e5f51026e1d5c6dae8b4b098289b5074793c97fdb8e1a541189ead9c4193cdf9",
+      "kind": "figure",
+      "alt": "Overview of Callisto: (A) The changelog panel shows users' edit histories; (B) The collaborative notebook editor synchronizes edits, runtime variables, outputs, annotations (see G, H), and cursors (see F) among collaborators; (C) The filter button enables the filtering mode (see Figure 3); (D) The user panel lists collaborators that are connected to the notebook. Users can navigate to others' cursor locations by clicking on their name; (E) The embedded synchronous chat pane creates connections between messages and notebook content. Messages mapped to the selected cell are highlighted in light green. Users can create explicit references by clicking the magic wand (see J) and then selecting the relevant part of the notebook---for example, to create an annotation reference (see I)."
+    },
+    {
+      "path": "figures/wang-callisto-chi2020/figure-003-p006.png",
+      "node": "909:0",
+      "page": 6,
+      "bbox": [
+        63.42599868774414,
+        60.362998962402344,
+        554.666015625,
+        284.8429870605469
+      ],
+      "sha256": "5dd2b627e9edff77c7cb24f3aa16153a2d4718eaacc00ddf1b00b07d8b8fcac4",
+      "kind": "figure",
+      "alt": "Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell."
+    },
+    {
+      "path": "figures/wang-callisto-chi2020/figure-004-p007.png",
+      "node": "1340:0",
+      "page": 7,
+      "bbox": [
+        52.08389663696289,
+        60.36194610595703,
+        298.8454284667969,
+        245.59005737304688
+      ],
+      "sha256": "9862cc9ce6c74cf977e3880a859084c32586c5d8d23519dc6fa264e9323309d0",
+      "kind": "figure",
+      "alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output."
+    },
+    {
+      "path": "figures/wang-callisto-chi2020/figure-005-p007.png",
+      "node": "938:0",
+      "page": 7,
+      "bbox": [
+        328.70599365234375,
+        60.36000061035156,
+        556.5560302734375,
+        249.49000549316406
+      ],
+      "sha256": "742b8daf5c8f3fa790dc1cf4b65d42ab61b8fb2e458be4f58ab5f71ad274b717",
+      "kind": "figure",
+      "alt": "Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook. When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure 4). Users can manually refine the links using the edit button (see B)."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1366:0",
+      "source_pages": [
+        4
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 3,
+      "cell_count": 18,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1366:0"
+    },
+    {
+      "source_table_id": "1367:0",
+      "source_pages": [
+        4
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 3,
+      "cell_count": 15,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1367:0"
+    },
+    {
+      "source_table_id": "1368:0",
+      "source_pages": [
+        4
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 3,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1368:0"
+    },
+    {
+      "source_table_id": "972:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 12,
+      "column_count": 3,
+      "cell_count": 36,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 2,
+      "node": "972:0"
+    },
+    {
+      "source_table_id": "1369:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 4,
+      "cell_count": 24,
+      "header_count": 11,
+      "empty_cell_count": 1,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1369:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 226,
+    "paragraph_fragments_joined": 14,
+    "line_wrap_hyphens_retained": 11,
+    "reviewed_wrap_repairs": 5,
+    "script_runs_positioned": 13
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/wang-callisto-chi2020.json.gz",
+  "source_tags_sha256": "1b467304adb09293ef596a268be4225744ae3dd783cac1d5f0ce6440cf675ca2"
+}

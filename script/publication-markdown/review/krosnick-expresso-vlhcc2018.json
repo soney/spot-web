@@ -1,0 +1,1108 @@
+{
+  "file": "krosnick-expresso-vlhcc2018.pdf",
+  "title": "Expresso: Building Responsive Interfaces with Keyframes",
+  "publication_id": "expresso_building_responsive_interfaces_with_keyframes_2018",
+  "pdf_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+  "markdown": "publications/krosnick-expresso-vlhcc2018.md",
+  "markdown_sha256": "bb9bc1a3cd91f3ffd6487eccf23ef996bee8ace8091c32faa4ba92cd2b24accc",
+  "pages": 9,
+  "blocks": [
+    {
+      "node": "388:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 195
+    },
+    {
+      "node": "389:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 94
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 70
+    },
+    {
+      "node": "391:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 43
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 40
+    },
+    {
+      "node": "393:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 6037
+    },
+    {
+      "node": "394:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 902
+    },
+    {
+      "node": "395:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1315
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 52
+    },
+    {
+      "node": "184:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 41
+    },
+    {
+      "node": "397:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "joined-398:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 479
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 606
+    },
+    {
+      "node": "401:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 755
+    },
+    {
+      "node": "402:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 282
+    },
+    {
+      "node": "480:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 301
+    },
+    {
+      "node": "487:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "488:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 799
+    },
+    {
+      "node": "490:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 31
+    },
+    {
+      "node": "491:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1049
+    },
+    {
+      "node": "492:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 33
+    },
+    {
+      "node": "joined-493:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 830
+    },
+    {
+      "node": "495:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 48
+    },
+    {
+      "node": "496:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1716
+    },
+    {
+      "node": "497:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 529
+    },
+    {
+      "node": "498:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 39
+    },
+    {
+      "node": "joined-499:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1078
+    },
+    {
+      "node": "502:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "503:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 352
+    },
+    {
+      "node": "504:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "505:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "506:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 598
+    },
+    {
+      "node": "569:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 506
+    },
+    {
+      "node": "570:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 581
+    },
+    {
+      "node": "571:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "572:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 465
+    },
+    {
+      "node": "573:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 203
+    },
+    {
+      "node": "574:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1472
+    },
+    {
+      "node": "575:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 607
+    },
+    {
+      "node": "576:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 288
+    },
+    {
+      "node": "577:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "joined-578:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1005
+    },
+    {
+      "node": "580:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 3460
+    },
+    {
+      "node": "581:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 644
+    },
+    {
+      "node": "583:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 52
+    },
+    {
+      "node": "584:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 980
+    },
+    {
+      "node": "585:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "joined-586:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 890
+    },
+    {
+      "node": "588:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1023
+    },
+    {
+      "node": "589:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 39
+    },
+    {
+      "node": "590:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 545
+    },
+    {
+      "node": "591:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 27
+    },
+    {
+      "node": "592:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 488
+    },
+    {
+      "node": "407:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 1064
+    },
+    {
+      "node": "408:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 270
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 420
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 604
+    },
+    {
+      "node": "411:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 271
+    },
+    {
+      "node": "412:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 530
+    },
+    {
+      "node": "422:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1087
+    },
+    {
+      "node": "423:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 356
+    },
+    {
+      "node": "424:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 26
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 458
+    },
+    {
+      "node": "426:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 35
+    },
+    {
+      "node": "427:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 35
+    },
+    {
+      "node": "432:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 732
+    },
+    {
+      "node": "433:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 29
+    },
+    {
+      "node": "435:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 455
+    },
+    {
+      "node": "436:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 28
+    },
+    {
+      "node": "439:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 535
+    },
+    {
+      "node": "440:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "joined-441:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 884
+    },
+    {
+      "node": "444:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 564
+    },
+    {
+      "node": "445:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 16
+    },
+    {
+      "node": "446:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 266
+    },
+    {
+      "node": "447:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 447
+    },
+    {
+      "node": "449:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "450:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 371
+    },
+    {
+      "node": "451:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 17
+    },
+    {
+      "node": "454:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 449
+    },
+    {
+      "node": "455:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-458:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 868
+    },
+    {
+      "node": "508:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 357
+    },
+    {
+      "node": "509:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 23
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 322
+    },
+    {
+      "node": "513:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 1481
+    },
+    {
+      "node": "459:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 79
+    },
+    {
+      "node": "520:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 90
+    },
+    {
+      "node": "521:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 118
+    },
+    {
+      "node": "522:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 14
+    },
+    {
+      "node": "523:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 187
+    },
+    {
+      "node": "594:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 5060
+    },
+    {
+      "node": "660:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 188
+    },
+    {
+      "node": "661:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 760
+    },
+    {
+      "node": "662:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 535
+    },
+    {
+      "node": "663:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 353
+    },
+    {
+      "node": "664:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 223
+    },
+    {
+      "node": "665:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 400
+    },
+    {
+      "node": "666:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 32
+    },
+    {
+      "node": "667:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 108
+    },
+    {
+      "node": "668:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 392
+    },
+    {
+      "node": "669:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 136
+    },
+    {
+      "node": "670:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 79
+    },
+    {
+      "node": "671:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 127
+    },
+    {
+      "node": "672:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 235
+    },
+    {
+      "node": "673:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 458
+    },
+    {
+      "node": "674:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 175
+    },
+    {
+      "node": "675:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 49
+    },
+    {
+      "node": "676:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 61
+    },
+    {
+      "node": "joined-677:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 824
+    },
+    {
+      "node": "680:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 70
+    },
+    {
+      "node": "684:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 772
+    },
+    {
+      "node": "685:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "686:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 321
+    },
+    {
+      "node": "687:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 788
+    },
+    {
+      "node": "joined-688:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 899
+    },
+    {
+      "node": "690:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 18
+    },
+    {
+      "node": "691:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 592
+    },
+    {
+      "node": "692:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 783
+    },
+    {
+      "node": "693:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 18
+    },
+    {
+      "node": "694:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 781
+    },
+    {
+      "node": "695:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "696:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 295
+    },
+    {
+      "node": "698:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "699:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 7302
+    }
+  ],
+  "tagged_content_items": 4699,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-expresso-vlhcc2018/figure-001-p001.png",
+      "node": "393:0",
+      "page": 1,
+      "bbox": [
+        46.9640007019043,
+        175.30987548828125,
+        564.9740600585938,
+        293.96099853515625
+      ],
+      "sha256": "b224cef10a876dedfd1924cf202fc7d8c151c67c3a53c90a4cede2ed15916e00",
+      "kind": "figure",
+      "alt": "Figure 1 presents an illustration of four different keyframes created in Expresso for a sample web page. Each keyframe is a rectangle of a different shape and size, representing different viewport sizes. The four keyframes appear as though on an x-axis, sorted by viewport width, with the narrowest keyframe on the left and the widest keyframe on the right. There is a bi-directional arrow above the set of keyframes with the label 'viewport width', providing a label for the axis. The sample web page shown in the keyframes is adapted from the Mozilla website that we used during one of our study tasks. Each keyframe has the following items: 1) a blue background, 2) the orange FireFox logo, 3) the text 'The new Firefox' in white font, 4) the text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in white font, 5) a green rectangle representing a button, with the text 'Download Firefox' on it in white font, and 6) an illustration of an open laptop with a Firefox browser shown. Note that the element and viewport widths mentioned below are not to scale; the keyframes are shrunk down for the figure. Moving from left to right, the keyframes can be described as follows: The leftmost keyframe is called k_0 and has a width of 722 pixels. The viewport width is narrow compared to its height, and represents the portrait-view viewport on a mobile device. In keyframe k_0, the whole web page has a blue background. The other elements on the page are all horizontally centered and stacked vertically. At the top is the Firefox logo which is medium-sized. Below that is the text 'The new Firefox' in a small font size. Below that is the text 'Fast for good.' in a large font size. Below that is the long line of text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in a very small font size. Below that is the green 'Download Firefox' button. Below that is the laptop illustration which is of medium size and which is at the bottom of the page. Note that the laptop's x-position is 148 pixels. The next keyframe is called k_1 and has a width of 990 pixels. The viewport width is approximately the same as the viewport height. In keyframe k_1, the UI elements have the same arrangement as in k_0, with all elements horizontally centered and stacked vertically. All elements are the same size as in k_0. Since k_1's viewport is wider, there is more margin to the left and right of elements. Note that the laptop's x-position is 203 pixels. The next keyframe is called k_2 and has a width of 1000 pixels. The viewport width is wider than the viewport height. In k_2, the page has the same elements as in k_0 and k_1, but a vastly different layout and some elements are different sizes. k_2 has more of a 2-column layout. In k_2, the blue background only takes up the top half of the page (the lower half of the page is a placeholder gray). The Firefox logo is smaller and is on the far-left edge of the page. The 'The new Firefox' text is of medium font size and appear directly to the right of the Firefox logo. Below the 'The new Firefox' text appears the 'Fast for good' text of large font size. Below that is the long line of text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in a very small font size. Below that is the green button with the text 'Download Firefox'. The text elements and the green button are left-aligned with each other. On the right side of the screen is the laptop, of large size, with equal margin on its left and right sides. Note that the laptop's x-position is 550 pixels. The next keyframe is called k_3 and has a width of 1200 pixels. The viewport width is much wider than the viewport height. In k_3, the UI elements have the same 2-column arrangement as in k_2. The only difference is that, with the wider page size, the laptop has more margin on its left and right sides. Note that the laptop's x-position is 650 pixels. As a summary of the layouts, keyframes k_0 and k_1 have all elements horizontally centered and stacked vertically. k_2 and k_3 have the Firefox logo and all text on the left side of the page, and the laptop on the right side of the page. Each keyframe has a colored-strip beneath it to help in explaining transitions between keyframes. k_0 has a light green strip, k_1 has a magenta strip, k_2 has a turquoise strip, and k_3 has a brown strip. Each strip also has a label of the laptop's x-position on it, as the transitions highlighted in this figure are those for the laptop x-position. There is a colored-strip between each pair of adjacent keyframes representing the transition type. The colored-strip between k_0 and k_1 is a left-to-right gradient of light green to magenta, indicating a smooth transition between k_0 and k_1. Similarly, the colored-strip between k_2 and k_3 is a left-to-right gradient, of turquoise to light brown, indicating a smooth transition between k_2 and k_3. The colored-strip between k_1 (magenta) and k_2 (turquoise) is a solid color of magent indicating a jump transition between k_1 and k_2. Specifically, the magenta color means that the range between k_1 and k_2, namely viewport sizes 991 to 999 pixels, should continue the behavior for the laptop x-position from the smaller viewports. This means that the laptop (and all UI elements) are shown horizontally centered and stacked vertically for the range of viewports 991 to 999 pixels wide. There are range arrows below the set of keyframes indicating the laptop x-position. For the range of viewports less than 1000 pixels wide, there is an arrow pointing left with the label 'laptop is centered in viewport' beneath it. For the range of viewports greater than or equal to 1000 pixels wide, there is an arrow pointing right with the label 'laptop is on the right side of the viewport'."
+    },
+    {
+      "path": "figures/krosnick-expresso-vlhcc2018/figure-002-p004.png",
+      "node": "580:0",
+      "page": 4,
+      "bbox": [
+        115.70600128173828,
+        48.54240036010742,
+        496.29168701171875,
+        181.26300048828125
+      ],
+      "sha256": "de7dfd96c441b2ac289e7c498ddbcbe3cac7af1ccae4507f40749317a358b2b1",
+      "kind": "figure",
+      "alt": "Figure 2 presents an illustration of the Expresso user interface. In this illustration, the sample web page used is meant to look like a shoe catalog on a shopping site, and is adapted from the Bass website. On the left side of the figure is part 'a', which is the web page viewing area. For this example, the viewing area contains the shoe catalog website, containing the following elements: 1) a brown rectangle at the top representing the page header, with the 'Bass' logo centered, 2) on the left side, a list of menu items with text 'WEEJUNS', 'WOMEN', 'MEN', 'KIDS', 3) a tall and thin brown rectangle representing the border of the left menu bar, 4) in the body of the web page, six Bass loafer shoes arranged in 2 rows of 3; from left to right, the top row contains light green, red, and yellow shoes; from left to right, the bottom row contains pink, lilac, and brown shoes, 5) the pink shoe is currently in 'selected' mode, where it has a black border around it. At the bottom of the figure is part 'b', which is the keyframe menu. It contains a list of keyframes for the current responsive web page, represented in a list from left to right with 'width' and 'height' viewport sizes. For this particular example, the keyframe sizes are, from left to right, 1) width 635 pixels and height 752 pixels, 2) width 769 pixels and height 752 pixels, 3) width 780 pixels and height 752 pixels, and 4) width 1200 pixels and height 752 pixels. Currently the keyframe of width 780 pixels is selected, which is indicated by its tab having a blue background; the web page shown in the viewing area in the illustration is this keyframe of width 780 pixels. To the right of the keyframe list, the bottom part of the figure also has a button with the label 'Result webpage (click to resize)' which users can click in order to enter 'resize' mode. To the right of this are 'Create new keyframe' and 'Delete current keyframe' buttons. On the right side of the figure is part 'c', which is the element property values menu. This menu appears in the format of a table and contains the current property and transition values for the currently selected UI element in the viewing area, in this case, the pink shoe. On the left side of the table are the property values, with the properties 'width', 'height', 'x', and 'y' in the first column, and the corresponding values '183px', '183px', '157px', and '378px' in the second column. On the right side of the table are the transition rules for each element property. For each element property, there are dropdown menus for setting transitions between keyframes. From left to right, the elements are: 1) the 'Left' label with a magenta background, 2) a dropdown widget with colors magenta, turquoise, and magenta-to-turquoise gradient, 3) the 'Current' label with a turquoise background, 4) a dropdown widget with colors turquoise, orange, and turquoise-to-orange, and 5) the 'Right' label with an orange background. For this example, all four properties for the currently selected item have the following transition settings: the dropdown widget between 'Left' and 'Current' is magenta, indicating a jump transition; and the dropdown widget between 'Current' and 'Right' is the turquoise-to-orange gradient, indication a smooth transition. To illustrate the different options in the dropdown widget, the second row dropdown between 'Left' and 'Current' is open."
+    },
+    {
+      "path": "figures/krosnick-expresso-vlhcc2018/figure-003-p005.png",
+      "node": "407:0",
+      "page": 5,
+      "bbox": [
+        46.9640007019043,
+        48.541561126708984,
+        302.0108947753906,
+        136.6529998779297
+      ],
+      "sha256": "1b091658f409fcb82a458e3493fe340c5c0a0602b73e8c2584807d56d9b3f891",
+      "kind": "figure",
+      "alt": "Three graphs compare transition rules between the Left keyframe (magenta) and Current keyframe (turquoise), with viewport width on the horizontal axis and property value on the vertical axis. The left graph has a magenta-to-turquoise gradient selector and a rising straight line connecting the two solid keyframe points: values interpolate smoothly. The middle graph has a solid magenta selector: a horizontal magenta line continues the value from the Left point up to an open circle at the Current viewport width, where the higher solid Current point causes a jump. The right graph has a solid turquoise selector: a horizontal turquoise line extends backward from the Current point to an open circle at the Left viewport width, immediately above the lower solid Left point. Dashed horizontal lines show the continued behavior outside the interval. Thus the gradient interpolates, solid magenta continues the behavior from smaller widths, and solid turquoise continues the behavior from larger widths."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "594:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 12,
+      "column_count": 3,
+      "cell_count": 36,
+      "header_count": 14,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "594:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 61,
+    "paragraph_fragments_joined": 9,
+    "line_wrap_hyphens_retained": 11,
+    "script_runs_positioned": 83
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-expresso-vlhcc2018.json.gz",
+  "source_tags_sha256": "ea82030fc5b19f32c989e426837cf972ffe6109bed87526d7206f342690b8bba"
+}

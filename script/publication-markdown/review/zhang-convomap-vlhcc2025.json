@@ -1,0 +1,1204 @@
+{
+  "file": "zhang-convomap-vlhcc2025.pdf",
+  "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+  "publication_id": "convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025",
+  "pdf_sha256": "f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2",
+  "markdown": "publications/zhang-convomap-vlhcc2025.md",
+  "markdown_sha256": "8b9e7bbbb02f0d9cd860b097fb531620a607ec9cf4ce8b246d3def67531f22ab",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "142:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 236
+    },
+    {
+      "node": "143:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "144:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "145:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "146:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 9
+    },
+    {
+      "node": "148:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1300
+    },
+    {
+      "node": "149:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 567
+    },
+    {
+      "node": "joined-151:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1284
+    },
+    {
+      "node": "153:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 767
+    },
+    {
+      "node": "154:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 709
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 529
+    },
+    {
+      "node": "joined-156:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 101
+    },
+    {
+      "node": "159:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 380
+    },
+    {
+      "node": "166:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 174
+    },
+    {
+      "node": "168:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 38
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1440
+    },
+    {
+      "node": "170:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 592
+    },
+    {
+      "node": "171:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "joined-172:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1608
+    },
+    {
+      "node": "174:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "175:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 862
+    },
+    {
+      "node": "176:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 61
+    },
+    {
+      "node": "joined-177:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1659
+    },
+    {
+      "node": "180:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 38
+    },
+    {
+      "node": "181:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1375
+    },
+    {
+      "node": "182:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 44
+    },
+    {
+      "node": "183:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 727
+    },
+    {
+      "node": "184:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 299
+    },
+    {
+      "node": "185:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 663
+    },
+    {
+      "node": "186:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 43
+    },
+    {
+      "node": "187:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 534
+    },
+    {
+      "node": "188:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 731
+    },
+    {
+      "node": "189:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 720
+    },
+    {
+      "node": "190:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 51
+    },
+    {
+      "node": "joined-191:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1082
+    },
+    {
+      "node": "194:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 38
+    },
+    {
+      "node": "195:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 735
+    },
+    {
+      "node": "196:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 802
+    },
+    {
+      "node": "197:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "198:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 175
+    },
+    {
+      "node": "199:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 781
+    },
+    {
+      "node": "200:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 786
+    },
+    {
+      "node": "201:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 639
+    },
+    {
+      "node": "202:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 426
+    },
+    {
+      "node": "204:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "205:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 340
+    },
+    {
+      "node": "206:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 780
+    },
+    {
+      "node": "joined-207:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 552
+    },
+    {
+      "node": "209:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 772
+    },
+    {
+      "node": "210:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 712
+    },
+    {
+      "node": "212:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 420
+    },
+    {
+      "node": "joined-332:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 778
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 472
+    },
+    {
+      "node": "335:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 594
+    },
+    {
+      "node": "joined-336:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 797
+    },
+    {
+      "node": "338:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 821
+    },
+    {
+      "node": "339:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 761
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 285
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 650
+    },
+    {
+      "node": "343:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-344:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 299
+    },
+    {
+      "node": "346:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 315
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 813
+    },
+    {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 336
+    },
+    {
+      "node": "349:0",
+      "role": "Formula",
+      "pages": [
+        6
+      ],
+      "characters": 460
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 56
+    },
+    {
+      "node": "82:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 202
+    },
+    {
+      "node": "83:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 443
+    },
+    {
+      "node": "84:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 426
+    },
+    {
+      "node": "85:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 429
+    },
+    {
+      "node": "86:0",
+      "role": "Formula",
+      "pages": [
+        7
+      ],
+      "characters": 496
+    },
+    {
+      "node": "213:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 656
+    },
+    {
+      "node": "214:0",
+      "role": "Formula",
+      "pages": [
+        7
+      ],
+      "characters": 314
+    },
+    {
+      "node": "215:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "216:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 702
+    },
+    {
+      "node": "217:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "218:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 463
+    },
+    {
+      "node": "219:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1067
+    },
+    {
+      "node": "220:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 769
+    },
+    {
+      "node": "221:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 256
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 276
+    },
+    {
+      "node": "joined-223:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 453
+    },
+    {
+      "node": "87:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 63
+    },
+    {
+      "node": "224:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 88
+    },
+    {
+      "node": "225:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 81
+    },
+    {
+      "node": "226:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 84
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 826
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 331
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 146
+    },
+    {
+      "node": "356:0",
+      "role": "Formula",
+      "pages": [
+        8
+      ],
+      "characters": 326
+    },
+    {
+      "node": "357:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 61
+    },
+    {
+      "node": "358:0",
+      "role": "Formula",
+      "pages": [
+        8
+      ],
+      "characters": 302
+    },
+    {
+      "node": "359:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 531
+    },
+    {
+      "node": "360:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-361:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1432
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 461
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 603
+    },
+    {
+      "node": "365:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 42
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 700
+    },
+    {
+      "node": "367:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 470
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 547
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 836
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 654
+    },
+    {
+      "node": "372:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 426
+    },
+    {
+      "node": "373:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 469
+    },
+    {
+      "node": "joined-376:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 470
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 654
+    },
+    {
+      "node": "379:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 410
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 435
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 179
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 433
+    },
+    {
+      "node": "385:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 241
+    },
+    {
+      "node": "388:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 415
+    },
+    {
+      "node": "joined-389:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 360
+    },
+    {
+      "node": "392:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 17
+    },
+    {
+      "node": "393:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 34
+    },
+    {
+      "node": "394:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 510
+    },
+    {
+      "node": "395:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 602
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 638
+    },
+    {
+      "node": "397:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 563
+    },
+    {
+      "node": "398:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 514
+    },
+    {
+      "node": "399:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 34
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1553
+    },
+    {
+      "node": "401:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "402:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1142
+    },
+    {
+      "node": "403:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 24
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 298
+    },
+    {
+      "node": "406:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "407:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 8872
+    },
+    {
+      "node": "254:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 2611
+    }
+  ],
+  "tagged_content_items": 10423,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/figure-001-p005.png",
+      "node": "209:0",
+      "page": 5,
+      "bbox": [
+        63.82421112060547,
+        67.68565368652344,
+        551.083984375,
+        362.38214111328125
+      ],
+      "sha256": "0e2c558662015428ec96d190eab39c5f7bf2474048ddad44d76d738ca6c9da8a",
+      "kind": "figure",
+      "alt": "Fig. 1. ConvoMap’s user interface displaying the conversation dataset used in our user study. The interface consists of three main views. The Topic Overview (1), which provides users with donut charts showing the distribution of common topics in the messages (a). The Semantic Map View (2), which displays agent legends at the top (h), a bar chart of conversations (b), groups of conversations (g), and a 2D map of conversation trajectories (f). The y-axis encodes messages’ semantic meanings (c). The x-axis encodes progression of conversations from start to end (e). The Conversation Detailed View (3), which display all message content in blocks, allowing users to either view by agent or by conversation (d)."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/figure-002-p006.png",
+      "node": "338:0",
+      "page": 6,
+      "bbox": [
+        63.1591796875,
+        69.38043975830078,
+        550.409423828125,
+        264.5214538574219
+      ],
+      "sha256": "e8f4525529e57581d7a5dea8ab5644822ab4692205dd1bd9718db97f3be11c05",
+      "kind": "figure",
+      "alt": "Fig. 2. A detailed view of ConvoMap’s user interface allows users to interact with various components. From the Semantic Map View, users can brush and select a region on the 2D map to view messages in that area (d). The selected region appears as a gray rectangle surrounded by dots (d), and the trajectories passing through the selected area are highlighted in red (c). Dots that may contain errors are marked with an “X” (b). Dots that are far apart on y-axis have different meanings (f, g). When a user clicks on a bar chart (a), the corresponding trajectory is highlighted. Additionally, clicking on a topic in the donut chart from the Topic Overview highlights relevant segments in the textual messages in yellow within the Conversation Detailed Views (e)."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/formula-001-p006.png",
+      "node": "349:0",
+      "page": 6,
+      "bbox": [
+        343.3428039550781,
+        633.0943603515625,
+        520.0972290039062,
+        682.0744018554688
+      ],
+      "sha256": "6d0f19962d551957ed9be9cbc01900d6601255dfb252f4b6a0bbf58a3489cb4f",
+      "kind": "formula",
+      "alt": "P equals the matrix shown as [vec(m_1), vec(m_2), ..., vec(m_n)], containing the vector embeddings of messages m_1 through m_n. The displayed dimension is P in R to the power n by 3072."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/formula-002-p007.png",
+      "node": "86:0",
+      "page": 7,
+      "bbox": [
+        76.13026428222656,
+        351.43963623046875,
+        281.2088317871094,
+        400.4196472167969
+      ],
+      "sha256": "5f0f16d87ec8a862f504fd6b1e177a30ff78a9ff60170c96d6115bc6a72a7ed4",
+      "kind": "formula",
+      "alt": "P_segment equals the matrix shown as [vec(s_1), vec(s_2), ..., vec(s_n)], containing the vector embeddings of segments s_1 through s_n. The displayed dimension is P_segment in R to the power n by 3072."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/formula-003-p007.png",
+      "node": "214:0",
+      "page": 7,
+      "bbox": [
+        117.79017639160156,
+        524.5719604492188,
+        238.42678833007812,
+        550.69580078125
+      ],
+      "sha256": "b0d864614f7f4ef8e281337e856c52862bafc1c6cd01dc729f9936389a68443f",
+      "kind": "formula",
+      "alt": "proportion(topic_i) equals len(s_i) divided by len(m): the length of segment s_i divided by the length of message m."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/formula-004-p008.png",
+      "node": "356:0",
+      "page": 8,
+      "bbox": [
+        64.14339447021484,
+        402.42401123046875,
+        292.5336608886719,
+        427.4998779296875
+      ],
+      "sha256": "286dfec765b611a3a30229a689df56be9d3705f88a43b5dcebc025255b807883",
+      "kind": "formula",
+      "alt": "F score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives."
+    },
+    {
+      "path": "figures/zhang-convomap-vlhcc2025/formula-005-p008.png",
+      "node": "358:0",
+      "page": 8,
+      "bbox": [
+        109.9505386352539,
+        446.34503173828125,
+        246.70071411132812,
+        471.9444274902344
+      ],
+      "sha256": "c97ac24df5ecdbcae40587715fd2b1618ffceaee12ccbbe09a06d66a8af6b843",
+      "kind": "formula",
+      "alt": "Overall quiz accuracy equals the sum of the accuracy scores for all questions divided by the number of questions."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 205,
+    "line_wrap_hyphens_retained": 33,
+    "paragraph_fragments_joined": 13,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 45
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-convomap-vlhcc2025.json.gz",
+  "source_tags_sha256": "b878454c995dd613c0b862783e110bdee42e8362a1a0dbf795a921eb8601836c"
+}

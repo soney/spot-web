@@ -1,0 +1,1250 @@
+{
+  "file": "lin-adasa-uist2018.pdf",
+  "title": "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features",
+  "publication_id": "adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018",
+  "pdf_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+  "markdown": "publications/lin-adasa-uist2018.md",
+  "markdown_sha256": "a214dfc622d96aa49bb5d86c585e1ae1f7a616f19a1d79deb7c1513b7abeadec",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "536:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 220
+    },
+    {
+      "node": "537:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 182
+    },
+    {
+      "node": "538:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 49
+    },
+    {
+      "node": "539:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "540:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 79
+    },
+    {
+      "node": "541:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 562
+    },
+    {
+      "node": "542:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 508
+    },
+    {
+      "node": "546:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 49
+    },
+    {
+      "node": "555:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 577
+    },
+    {
+      "node": "543:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "544:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1147
+    },
+    {
+      "node": "545:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "547:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "548:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "549:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 50
+    },
+    {
+      "node": "550:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "551:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "552:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "553:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 546
+    },
+    {
+      "node": "554:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 670
+    },
+    {
+      "node": "560:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 688
+    },
+    {
+      "node": "561:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 833
+    },
+    {
+      "node": "562:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 843
+    },
+    {
+      "node": "joined-563:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1183
+    },
+    {
+      "node": "565:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 750
+    },
+    {
+      "node": "578:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "579:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 387
+    },
+    {
+      "node": "580:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 28
+    },
+    {
+      "node": "581:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1537
+    },
+    {
+      "node": "582:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 31
+    },
+    {
+      "node": "joined-583:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 2410
+    },
+    {
+      "node": "745:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 43
+    },
+    {
+      "node": "746:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 629
+    },
+    {
+      "node": "747:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 1295
+    },
+    {
+      "node": "757:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 924
+    },
+    {
+      "node": "758:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "759:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 549
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 298
+    },
+    {
+      "node": "761:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "762:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 244
+    },
+    {
+      "node": "763:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 472
+    },
+    {
+      "node": "778:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 838
+    },
+    {
+      "node": "779:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 812
+    },
+    {
+      "node": "780:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 40
+    },
+    {
+      "node": "781:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1134
+    },
+    {
+      "node": "782:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 384
+    },
+    {
+      "node": "joined-783:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 2227
+    },
+    {
+      "node": "785:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 77
+    },
+    {
+      "node": "791:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 22
+    },
+    {
+      "node": "792:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 12
+    },
+    {
+      "node": "793:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 396
+    },
+    {
+      "node": "794:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 38
+    },
+    {
+      "node": "795:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1414
+    },
+    {
+      "node": "796:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 930
+    },
+    {
+      "node": "797:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 25
+    },
+    {
+      "node": "joined-798:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1039
+    },
+    {
+      "node": "800:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 25
+    },
+    {
+      "node": "801:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 446
+    },
+    {
+      "node": "802:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 26
+    },
+    {
+      "node": "803:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 818
+    },
+    {
+      "node": "804:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 232
+    },
+    {
+      "node": "806:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 703
+    },
+    {
+      "node": "816:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 190
+    },
+    {
+      "node": "826:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 683
+    },
+    {
+      "node": "827:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 2281
+    },
+    {
+      "node": "joined-828:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 702
+    },
+    {
+      "node": "829:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 395
+    },
+    {
+      "node": "830:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 341
+    },
+    {
+      "node": "832:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 20
+    },
+    {
+      "node": "833:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 469
+    },
+    {
+      "node": "834:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 750
+    },
+    {
+      "node": "835:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 542
+    },
+    {
+      "node": "840:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 26
+    },
+    {
+      "node": "841:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 412
+    },
+    {
+      "node": "844:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "845:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 617
+    },
+    {
+      "node": "846:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "847:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 569
+    },
+    {
+      "node": "848:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 9
+    },
+    {
+      "node": "849:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 866
+    },
+    {
+      "node": "850:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "851:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 533
+    },
+    {
+      "node": "852:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 9
+    },
+    {
+      "node": "853:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 321
+    },
+    {
+      "node": "854:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 196
+    },
+    {
+      "node": "855:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 142
+    },
+    {
+      "node": "856:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 60
+    },
+    {
+      "node": "857:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 3276
+    },
+    {
+      "node": "888:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1634
+    },
+    {
+      "node": "889:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "joined-890:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 1643
+    },
+    {
+      "node": "896:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 488
+    },
+    {
+      "node": "897:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-898:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1565
+    },
+    {
+      "node": "900:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 10
+    },
+    {
+      "node": "901:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 275
+    },
+    {
+      "node": "902:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 32
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 434
+    },
+    {
+      "node": "904:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 24
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1109
+    },
+    {
+      "node": "906:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "907:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1038
+    },
+    {
+      "node": "920:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 60
+    },
+    {
+      "node": "921:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 3214
+    },
+    {
+      "node": "950:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 23
+    },
+    {
+      "node": "951:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 802
+    },
+    {
+      "node": "952:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 28
+    },
+    {
+      "node": "953:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 879
+    },
+    {
+      "node": "954:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 19
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 872
+    },
+    {
+      "node": "956:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 501
+    },
+    {
+      "node": "957:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 353
+    },
+    {
+      "node": "958:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 24
+    },
+    {
+      "node": "959:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 689
+    },
+    {
+      "node": "960:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 22
+    },
+    {
+      "node": "joined-961:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 962
+    },
+    {
+      "node": "968:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "969:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 356
+    },
+    {
+      "node": "970:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "971:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1189
+    },
+    {
+      "node": "972:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 248
+    },
+    {
+      "node": "973:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 22
+    },
+    {
+      "node": "974:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1100
+    },
+    {
+      "node": "975:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 179
+    },
+    {
+      "node": "976:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 29
+    },
+    {
+      "node": "977:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 623
+    },
+    {
+      "node": "978:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 776
+    },
+    {
+      "node": "979:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 310
+    },
+    {
+      "node": "980:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "981:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 214
+    },
+    {
+      "node": "982:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "983:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 900
+    },
+    {
+      "node": "1003:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 2896
+    },
+    {
+      "node": "649:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 135
+    },
+    {
+      "node": "650:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 2410
+    },
+    {
+      "node": "685:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 1204
+    },
+    {
+      "node": "704:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 77
+    },
+    {
+      "node": "705:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 1092
+    }
+  ],
+  "tagged_content_items": 10216,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/lin-adasa-uist2018/figure-001-p001.png",
+      "node": "541:0",
+      "page": 1,
+      "bbox": [
+        51.92902755737305,
+        217.93460083007812,
+        566.1630859375,
+        330.8619384765625
+      ],
+      "sha256": "87cf953e2fbd42149b99f31f1d62553d4e0c5f52d45ec41755327119d69c6636",
+      "kind": "figure",
+      "alt": "Figure 1: (A) The proposed digital assistant, Adasa, identifies user’s questions or commands regarding ADAS features in human language and responds with answers or actions accordingly. (B) Adasa is integrated into a commercially available vehicle for evaluation and a real-world driving user study. (C) Adasa is able to access vehicle CAN signals via Bluetooth to conduct system diagnosis or system control. (D) Adasa setup, driver enables Adasa by pressing the button on the wheel to start the conversation."
+    },
+    {
+      "path": "figures/lin-adasa-uist2018/figure-002-p004.png",
+      "node": "778:0",
+      "page": 4,
+      "bbox": [
+        63.97593307495117,
+        60.35775375366211,
+        554.1131591796875,
+        253.262939453125
+      ],
+      "sha256": "a3a03cad4298a1eb7035cf10782348d48ddeb88eab467234e059f5e08f2f0918",
+      "kind": "figure",
+      "alt": "Figure 2: Overview of Adasa system, which is designed based on recent publications [20] and integrated with a commercially available vehicle [8]. Driver’s voice captured by the microphone is translated into its text equivalent ( 1 ) and is passed to Query Classifier to identify the type of query ( 2 ). Execution Logic operates the query ( 3 ) and retrieves the information needed from either Knowledge Base ( 4 ) or the vehicle ( 5 ) depends on the type of query. Vehicle-data Ingestor receives the CAN data through the vehicle interface and records the status of each signal in Vehicle State Repository ( 6 - 7 ). Once the result is passed back to Execution Logic ( 8 ), the response is converted to a WAV file and output to the speaker to answer driver’s questions ( 9 - 10 )."
+    },
+    {
+      "path": "figures/lin-adasa-uist2018/figure-003-p006.png",
+      "node": "829:0",
+      "page": 6,
+      "bbox": [
+        319.093994140625,
+        60.362178802490234,
+        566.1673583984375,
+        149.10800170898438
+      ],
+      "sha256": "4f9f411655dfc81eedb5c23f50b7307462824046c8b7ab5138b64a03202993df",
+      "kind": "figure",
+      "alt": "Figure 3: An Amazon MTurk task assignment example. We asked the MTurk workers to rephrase the statement, “what does it mean if I see a red line and a grey line on the dashboard?” with the picture of the entire dashboard and a red bounding box around the area of inquiry in order to help the workers understand the questions and task at hand."
+    },
+    {
+      "path": "figures/lin-adasa-uist2018/figure-004-p007.png",
+      "node": "854:0",
+      "page": 7,
+      "bbox": [
+        319.093994140625,
+        60.36186981201172,
+        566.14892578125,
+        195.0989990234375
+      ],
+      "sha256": "477a9a2fdcb4ea3a1b5f021783698af9e96c2d526e5c6973d069cb6ac34c7f57",
+      "kind": "figure",
+      "alt": "Figure 4: The map of the 11.7 miles route. It includes 7 miles highway and 4.7 miles suburban road to accommodate the use of both ACC and LKS."
+    },
+    {
+      "path": "figures/lin-adasa-uist2018/figure-005-p009.png",
+      "node": "956:0",
+      "page": 9,
+      "bbox": [
+        319.093994140625,
+        172.60748291015625,
+        566.1530151367188,
+        298.1369934082031
+      ],
+      "sha256": "c8ce022a0a79e8932b08abc96f4e6a9405043f621f59262b02397362c07b7fbe",
+      "kind": "figure",
+      "alt": "Figure 5. Mean questionnaire scores on a 0–10 scale, with error bars. System quality: Q1 acceptability 9.3, Q2 intelligence 8.0, Q3 understanding features 8.9. Information quality: Q4 usefulness 7.5, Q5 accurate diagnosis 7.4. User satisfaction: Q6 pleasantness 7.8, Q7 nervousness 3.4, Q8 responsiveness and reliability meeting expectations 7.1. The low Q7 value indicates participants generally did not feel nervous; the other means are above 7."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "857:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 10,
+      "column_count": 2,
+      "cell_count": 20,
+      "header_count": 11,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "857:0"
+    },
+    {
+      "source_table_id": "921:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 9,
+      "column_count": 2,
+      "cell_count": 18,
+      "header_count": 10,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "921:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 223,
+    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_retained": 11,
+    "reviewed_wrap_repairs": 7,
+    "script_runs_positioned": 11
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/lin-adasa-uist2018.json.gz",
+  "source_tags_sha256": "e0ab1a43edd4c03120101e9169f2ac576db14a6eaaceb66ed30372423ade73c1"
+}

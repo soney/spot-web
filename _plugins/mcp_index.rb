@@ -222,6 +222,7 @@ module Jekyll
         "abstract" => squish(pub["abstract"]),
         "pdf_path" => pub["pdf"] && "/assets/#{pub["pdf"]}",
         "pdf_filename" => pub["pdf"] && pdf_download_name(pub),
+        "markdown_path" => pub["markdown"] && "/assets/#{pub["markdown"]}",
         "links" => pub["links"] && Array(pub["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
         "doi" => pub["doi"],
         "award" => award_label(pub),

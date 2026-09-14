@@ -1,0 +1,368 @@
+[
+  [
+    2,
+    "p2-r15",
+    "H3",
+    "A. Debugging Activities and Challenges"
+  ],
+  [
+    2,
+    "p2-r19",
+    "H3",
+    "B. Debugging Strategies and Expert Debugging Practices"
+  ],
+  [
+    3,
+    "p3-r3",
+    "H3",
+    "C. Factors Influencing Strategy Choice"
+  ],
+  [
+    3,
+    "p3-r14",
+    "H3",
+    "A. Phase-0: Literature-Based Preliminary Process of Chal- lenges and Debugging Strategies"
+  ],
+  [
+    3,
+    "p3-r16",
+    "H4",
+    "1) Literature Search and Selection:"
+  ],
+  [
+    4,
+    "p4-r2",
+    "H4",
+    "2) Debugging Strategies Coding Process:"
+  ],
+  [
+    4,
+    "p4-r3",
+    "H5",
+    "a) Identifying Fine-Grained Activities:"
+  ],
+  [
+    4,
+    "p4-r9",
+    "H5",
+    "b) Synthesizing Macro-Strategies:"
+  ],
+  [
+    4,
+    "p4-r11",
+    "H4",
+    "3) Derivation of Challenges and Contextual Factors:"
+  ],
+  [
+    4,
+    "p4-r16",
+    "H4",
+    "4) Output:"
+  ],
+  [
+    4,
+    "p4-r17",
+    "H3",
+    "B. Phase-1: Scoping Survey of Challenging Defects"
+  ],
+  [
+    4,
+    "p4-r19",
+    "H4",
+    "1) Participants:"
+  ],
+  [
+    5,
+    "p5-r3",
+    "H4",
+    "2) Survey Design:"
+  ],
+  [
+    5,
+    "p5-r6",
+    "H4",
+    "3) Survey Analysis:"
+  ],
+  [
+    5,
+    "p5-r11",
+    "H3",
+    "C. Phase-2: Expert Interviews on Strategy Adaptation"
+  ],
+  [
+    5,
+    "p5-r14",
+    "H4",
+    "1) Recruitment:"
+  ],
+  [
+    6,
+    "p6-r5",
+    "H4",
+    "2) Participants:"
+  ],
+  [
+    6,
+    "p6-r6",
+    "H4",
+    "3) Piloting:"
+  ],
+  [
+    6,
+    "p6-r7",
+    "H4",
+    "4) Design:"
+  ],
+  [
+    6,
+    "p6-r9",
+    "H5",
+    "a) Session 1: Reasoning about common web defects:"
+  ],
+  [
+    6,
+    "p6-r11",
+    "H5",
+    "b) Session 2: Recent real-world debugging episodes:"
+  ],
+  [
+    7,
+    "p7-r3",
+    "H4",
+    "5) Data Analysis:"
+  ],
+  [
+    7,
+    "p7-r4",
+    "H5",
+    "a) Identifying Contextual Factors (RQ2):"
+  ],
+  [
+    7,
+    "p7-r5",
+    "H5",
+    "b) Linking factors to strategies (RQ3&4):"
+  ],
+  [
+    7,
+    "p7-r12",
+    "H5",
+    "c) Taxonomy construction and model synthesis:"
+  ],
+  [
+    7,
+    "p7-r13",
+    "H5",
+    "Assessing evidence strength."
+  ],
+  [
+    7,
+    "p7-r14",
+    "H5",
+    "Ensuring rigor and validity."
+  ],
+  [
+    8,
+    "p8-r6",
+    "H3",
+    "A. RQ1: What types of defects do developers find most chal- lenging to debug in web applications?"
+  ],
+  [
+    8,
+    "p8-r13",
+    "H3",
+    "B. RQ2: What context factors do expert developers consider while choosing a debugging strategy in challenging web application defects?"
+  ],
+  [
+    9,
+    "p9-r4",
+    "H4",
+    "1) Defect characteristics (dynamic):"
+  ],
+  [
+    9,
+    "p9-r11",
+    "H4",
+    "2) Codebase characteristics (dynamic):"
+  ],
+  [
+    9,
+    "p9-r17",
+    "H4",
+    "3) Organizational context (static):"
+  ],
+  [
+    9,
+    "p9-r19",
+    "H4",
+    "4) Tool availability and usability (static):"
+  ],
+  [
+    9,
+    "p9-r20",
+    "H4",
+    "5) Individual traits (static):"
+  ],
+  [
+    9,
+    "p9-r21",
+    "H4",
+    "6) Project expectations (static):"
+  ],
+  [
+    10,
+    "p10-r6",
+    "H3",
+    "C. RQ3: How do defect characteristics affect developers\u2019 choice of debugging strategies in challenging debugging sce- narios?"
+  ],
+  [
+    10,
+    "p10-r8",
+    "H4",
+    "1) Clarity:"
+  ],
+  [
+    10,
+    "p10-r9",
+    "H5",
+    "a) Observability:"
+  ],
+  [
+    11,
+    "p11-r3",
+    "H5",
+    "b) Complexity:"
+  ],
+  [
+    11,
+    "p11-r4",
+    "H5",
+    "c) Intended Feature:"
+  ],
+  [
+    11,
+    "p11-r5",
+    "H5",
+    "d) Environment (production vs. development):"
+  ],
+  [
+    11,
+    "p11-r7",
+    "H4",
+    "2) Root Cause:"
+  ],
+  [
+    11,
+    "p11-r13",
+    "H4",
+    "3) Reproducibility:"
+  ],
+  [
+    11,
+    "p11-r14",
+    "H5",
+    "a) Inconsistent defects.:"
+  ],
+  [
+    12,
+    "p12-r6",
+    "H5",
+    "b) User-specific defects.:"
+  ],
+  [
+    12,
+    "p12-r7",
+    "H3",
+    "D. RQ4: How do codebase characteristics affect developers\u2019 choice of debugging strategies in challenging debugging sce- narios?"
+  ],
+  [
+    12,
+    "p12-r9",
+    "H4",
+    "1) Familiarity:"
+  ],
+  [
+    13,
+    "p13-r7",
+    "H4",
+    "2) Accessibility:"
+  ],
+  [
+    13,
+    "p13-r10",
+    "H4",
+    "3) Complexity & Maintenance:"
+  ],
+  [
+    15,
+    "p15-r8",
+    "H3",
+    "Credibility."
+  ],
+  [
+    15,
+    "p15-r10",
+    "H3",
+    "Transferability ."
+  ],
+  [
+    15,
+    "p15-r11",
+    "H3",
+    "Rigor."
+  ],
+  [
+    15,
+    "p15-r12",
+    "H3",
+    "Transparency."
+  ],
+  [
+    15,
+    "p15-r13",
+    "H3",
+    "Scope."
+  ],
+  [
+    16,
+    "p16-r10",
+    "H3",
+    "The Evolving Role of AI in Strategy Selection."
+  ],
+  [
+    17,
+    "p17-r3",
+    "split-references",
+    [
+      "[1] D. Spinellis, Effective De",
+      "[2] \u2014\u2014, Code reading: the open"
+    ]
+  ],
+  [
+    17,
+    "p17-r11",
+    "split-references",
+    [
+      "[10] B. Lewis and M. Ducass\u00b4e,",
+      "[11] F. Lukey, \u201cUnderstanding "
+    ]
+  ],
+  [
+    17,
+    "p17-r20",
+    "split-references",
+    [
+      "[20] R. A. DeMillo, H. Pan, an",
+      "[21] M. A. Francel and S. Ruga"
+    ]
+  ],
+  [
+    17,
+    "p17-r28",
+    "split-references",
+    [
+      "[29] S. Hong, Y. Park, and M. ",
+      "[30] J. W. Mickens, J. Elson, "
+    ]
+  ]
+]

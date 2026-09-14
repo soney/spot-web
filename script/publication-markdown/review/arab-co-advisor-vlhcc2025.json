@@ -1,0 +1,2258 @@
+{
+  "file": "arab-co-advisor-vlhcc2025.pdf",
+  "title": "Co-Advisor: Learning Programming Strategies in Context",
+  "publication_id": "co_advisor_learning_programming_strategies_in_context_2025",
+  "pdf_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+  "markdown": "publications/arab-co-advisor-vlhcc2025.md",
+  "markdown_sha256": "8263ade1f2ca04817c15fa4e40c6506710a996c0a2583535f2df57c564e23e4b",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "165:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 196
+    },
+    {
+      "node": "166:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 105
+    },
+    {
+      "node": "168:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 94
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
+      "node": "170:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1642
+    },
+    {
+      "node": "171:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 96
+    },
+    {
+      "node": "172:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "173:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 557
+    },
+    {
+      "node": "joined-174:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 473
+    },
+    {
+      "node": "175:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 494
+    },
+    {
+      "node": "176:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 100
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 884
+    },
+    {
+      "node": "joined-179:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 702
+    },
+    {
+      "node": "182:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 706
+    },
+    {
+      "node": "183:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 709
+    },
+    {
+      "node": "184:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 218
+    },
+    {
+      "node": "187:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 692
+    },
+    {
+      "node": "188:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "189:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-190:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 679
+    },
+    {
+      "node": "192:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 473
+    },
+    {
+      "node": "193:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 779
+    },
+    {
+      "node": "194:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 511
+    },
+    {
+      "node": "195:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 405
+    },
+    {
+      "node": "196:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-197:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 565
+    },
+    {
+      "node": "199:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 638
+    },
+    {
+      "node": "200:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 577
+    },
+    {
+      "node": "202:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 467
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 319
+    },
+    {
+      "node": "204:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 568
+    },
+    {
+      "node": "205:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 49
+    },
+    {
+      "node": "206:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 472
+    },
+    {
+      "node": "207:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 59
+    },
+    {
+      "node": "208:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 483
+    },
+    {
+      "node": "209:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 507
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 460
+    },
+    {
+      "node": "212:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 29
+    },
+    {
+      "node": "213:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 237
+    },
+    {
+      "node": "214:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 321
+    },
+    {
+      "node": "215:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 346
+    },
+    {
+      "node": "216:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 286
+    },
+    {
+      "node": "217:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 25
+    },
+    {
+      "node": "joined-218:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1423
+    },
+    {
+      "node": "367:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 46
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 466
+    },
+    {
+      "node": "joined-369:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 387
+    },
+    {
+      "node": "370:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "372:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "374:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 409
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 411
+    },
+    {
+      "node": "377:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "378:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "379:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 193
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 110
+    },
+    {
+      "node": "381:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 383
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "385:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "386:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "387:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "388:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "389:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "390:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "391:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "392:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "393:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "394:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "395:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "396:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "397:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "398:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "399:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "400:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "402:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 7
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 349
+    },
+    {
+      "node": "404:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 4056
+    },
+    {
+      "node": "433:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 345
+    },
+    {
+      "node": "434:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 191
+    },
+    {
+      "node": "joined-435:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 836
+    },
+    {
+      "node": "436:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 71
+    },
+    {
+      "node": "437:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 71
+    },
+    {
+      "node": "439:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "440:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 32
+    },
+    {
+      "node": "441:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 205
+    },
+    {
+      "node": "442:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 272
+    },
+    {
+      "node": "443:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 208
+    },
+    {
+      "node": "444:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 147
+    },
+    {
+      "node": "445:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 691
+    },
+    {
+      "node": "446:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 159
+    },
+    {
+      "node": "453:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "454:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "455:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 71
+    },
+    {
+      "node": "456:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 71
+    },
+    {
+      "node": "457:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "458:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "459:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "461:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 170
+    },
+    {
+      "node": "469:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 294
+    },
+    {
+      "node": "470:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 215
+    },
+    {
+      "node": "477:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 71
+    },
+    {
+      "node": "478:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 98
+    },
+    {
+      "node": "482:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 372
+    },
+    {
+      "node": "483:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "484:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 351
+    },
+    {
+      "node": "485:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "486:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 693
+    },
+    {
+      "node": "487:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 12
+    },
+    {
+      "node": "488:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 424
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 354
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 323
+    },
+    {
+      "node": "491:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 36
+    },
+    {
+      "node": "492:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 433
+    },
+    {
+      "node": "493:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 449
+    },
+    {
+      "node": "494:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 793
+    },
+    {
+      "node": "495:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 412
+    },
+    {
+      "node": "496:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 367
+    },
+    {
+      "node": "498:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 213
+    },
+    {
+      "node": "499:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 338
+    },
+    {
+      "node": "500:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 306
+    },
+    {
+      "node": "501:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 231
+    },
+    {
+      "node": "502:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 281
+    },
+    {
+      "node": "503:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "504:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 467
+    },
+    {
+      "node": "505:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 508
+    },
+    {
+      "node": "506:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 378
+    },
+    {
+      "node": "joined-507:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 511
+    },
+    {
+      "node": "509:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 415
+    },
+    {
+      "node": "510:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 287
+    },
+    {
+      "node": "511:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 522
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 110
+    },
+    {
+      "node": "513:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "514:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 110
+    },
+    {
+      "node": "515:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 140
+    },
+    {
+      "node": "516:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 272
+    },
+    {
+      "node": "517:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 484
+    },
+    {
+      "node": "518:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 448
+    },
+    {
+      "node": "520:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 8
+    },
+    {
+      "node": "521:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 116
+    },
+    {
+      "node": "522:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 4678
+    },
+    {
+      "node": "551:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 9
+    },
+    {
+      "node": "552:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 118
+    },
+    {
+      "node": "553:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 2513
+    },
+    {
+      "node": "571:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 470
+    },
+    {
+      "node": "572:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 160
+    },
+    {
+      "node": "573:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 258
+    },
+    {
+      "node": "574:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 192
+    },
+    {
+      "node": "575:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 228
+    },
+    {
+      "node": "576:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 273
+    },
+    {
+      "node": "577:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 104
+    },
+    {
+      "node": "578:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 161
+    },
+    {
+      "node": "579:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 305
+    },
+    {
+      "node": "joined-580:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 369
+    },
+    {
+      "node": "583:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 353
+    },
+    {
+      "node": "584:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 87
+    },
+    {
+      "node": "585:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 388
+    },
+    {
+      "node": "586:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 8
+    },
+    {
+      "node": "587:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 88
+    },
+    {
+      "node": "588:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 2477
+    },
+    {
+      "node": "607:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 300
+    },
+    {
+      "node": "608:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 138
+    },
+    {
+      "node": "609:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 467
+    },
+    {
+      "node": "610:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 449
+    },
+    {
+      "node": "611:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 210
+    },
+    {
+      "node": "612:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 365
+    },
+    {
+      "node": "613:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 122
+    },
+    {
+      "node": "614:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 401
+    },
+    {
+      "node": "615:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 495
+    },
+    {
+      "node": "616:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 283
+    },
+    {
+      "node": "220:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 7
+    },
+    {
+      "node": "221:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 121
+    },
+    {
+      "node": "48:0",
+      "role": "Table",
+      "pages": [
+        10
+      ],
+      "characters": 14256
+    },
+    {
+      "node": "249:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 334
+    },
+    {
+      "node": "250:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 299
+    },
+    {
+      "node": "251:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 673
+    },
+    {
+      "node": "252:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 33
+    },
+    {
+      "node": "253:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 233
+    },
+    {
+      "node": "254:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 393
+    },
+    {
+      "node": "joined-255:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 333
+    },
+    {
+      "node": "257:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 414
+    },
+    {
+      "node": "258:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 332
+    },
+    {
+      "node": "259:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 291
+    },
+    {
+      "node": "260:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 380
+    },
+    {
+      "node": "261:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 416
+    },
+    {
+      "node": "262:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 167
+    },
+    {
+      "node": "618:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 18
+    },
+    {
+      "node": "619:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 350
+    },
+    {
+      "node": "620:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "621:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 8071
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 150
+    },
+    {
+      "node": "346:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 872
+    }
+  ],
+  "tagged_content_items": 8972,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-001-p001.png",
+      "node": "175:0",
+      "page": 1,
+      "bbox": [
+        312.28515625,
+        248.33961486816406,
+        552.276123046875,
+        434.8035888671875
+      ],
+      "sha256": "e3c5d8b04353d6f46676a0e1c38da65830c206e62cb5e469612c2576bbc2dc88",
+      "kind": "figure",
+      "alt": "Figure 1. DebugCode strategy, written as pseudocode. Identify the unwanted behavior and set possible causes to code lines that could cause it. For each cause, navigate to it and inspect the code to verify whether it causes the incorrect behavior. If it does, find a way to stop the cause, change the program, mark the task finished, and return. If no cause is found, ask for help identifying possible causes and restart the strategy."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-002-p003.png",
+      "node": "199:0",
+      "page": 3,
+      "bbox": [
+        89.0591812133789,
+        71.00069427490234,
+        527.9589233398438,
+        318.9801025390625
+      ],
+      "sha256": "3ec8b0a783e96f71b07cc579d770e617a3e4fb93ca67b11885492cdf9b98a8eb",
+      "kind": "figure",
+      "alt": "Fig. 2. Co-Advisor supports learners when they are working on a programming problem (A) and faced a runtime error (B) to request expert strategic advice (C) tailored for their personal problem. The LLM evaluates the problem context and detects the issues (D) description (E) and the potential resources links (F). The system then uses a matching protocol to match the best fit strategy (G) for their problem context (A, B). The user then can use the strategy (G2) and proceed step-by-step (G1) and perform actions and get feedback on the actions they perform on each step (G3)."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-003-p004.png",
+      "node": "370:0",
+      "page": 4,
+      "bbox": [
+        537.3472290039062,
+        252.19102478027344,
+        551.9658203125,
+        266.8763122558594
+      ],
+      "sha256": "5405969a16cca51b3ec440298a80ebfd49d4765fb6f12fa183244c38d72b5d67",
+      "kind": "figure",
+      "alt": "Callout A"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-004-p004.png",
+      "node": "372:0",
+      "page": 4,
+      "bbox": [
+        317.645751953125,
+        264.904541015625,
+        332.2643127441406,
+        279.5898132324219
+      ],
+      "sha256": "133d3e71577b59fd7638fcc8a42eb25d3c8c5f8652cdc0e2e619582c0968dd7e",
+      "kind": "figure",
+      "alt": "Callout B"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-005-p004.png",
+      "node": "377:0",
+      "page": 4,
+      "bbox": [
+        266.8597106933594,
+        458.56427001953125,
+        283.8201904296875,
+        474.5700378417969
+      ],
+      "sha256": "4fec340547814bc64e86a2da6eaf510d7b9e4d88f80f76378054b7485af8912b",
+      "kind": "figure",
+      "alt": "Callout A"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-006-p004.png",
+      "node": "378:0",
+      "page": 4,
+      "bbox": [
+        352.3336181640625,
+        473.341064453125,
+        366.95220947265625,
+        488.0263366699219
+      ],
+      "sha256": "e7dd9daa116c79a28c4a05c38a59a1364a0ad7f6864b33e5c2684a7517ae99c2",
+      "kind": "figure",
+      "alt": "Callout B"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-007-p004.png",
+      "node": "385:0",
+      "page": 4,
+      "bbox": [
+        102.37006378173828,
+        482.5154724121094,
+        119.33055114746094,
+        497.30377197265625
+      ],
+      "sha256": "cf12b94b41e95d74e57a1fcf303e649fe3df96247eae0561ee03419023f31e53",
+      "kind": "figure",
+      "alt": "Callout B"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-008-p004.png",
+      "node": "386:0",
+      "page": 4,
+      "bbox": [
+        128.4212188720703,
+        506.4666748046875,
+        143.039794921875,
+        521.1519775390625
+      ],
+      "sha256": "d450d3bd27697afa125c6f90198febc9d1ccfbefe5ede954731f00af0ca13412",
+      "kind": "figure",
+      "alt": "Callout C"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-009-p004.png",
+      "node": "387:0",
+      "page": 4,
+      "bbox": [
+        144.98025512695312,
+        552.8932495117188,
+        159.59884643554688,
+        567.5785522460938
+      ],
+      "sha256": "14d52022eb5e446b341c8f2b17458245869ef2c794ff4e1caf8e95fef2e8d26a",
+      "kind": "figure",
+      "alt": "Callout D"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-010-p004.png",
+      "node": "388:0",
+      "page": 4,
+      "bbox": [
+        178.42828369140625,
+        565.6067504882812,
+        193.04685974121094,
+        580.2920532226562
+      ],
+      "sha256": "9c388192506c72312c5ec0cca7ad36d307e547823abb0f6f0994661af9ad0df5",
+      "kind": "figure",
+      "alt": "Callout F"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-011-p004.png",
+      "node": "389:0",
+      "page": 4,
+      "bbox": [
+        58.511539459228516,
+        565.6067504882812,
+        73.13011932373047,
+        580.2920532226562
+      ],
+      "sha256": "04529a71abe5ff978ebf0d4a3c60f8c12b114211a1d1f60fa868530129ba3e9f",
+      "kind": "figure",
+      "alt": "Callout E"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-012-p004.png",
+      "node": "390:0",
+      "page": 4,
+      "bbox": [
+        133.81211853027344,
+        589.5908813476562,
+        148.43069458007812,
+        604.276123046875
+      ],
+      "sha256": "48c7a36d1722e42d74146da4051e3fd25a993e2ac369c3252bda569b1494c509",
+      "kind": "figure",
+      "alt": "Callout G"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-013-p004.png",
+      "node": "391:0",
+      "page": 4,
+      "bbox": [
+        159.2814178466797,
+        613.5415649414062,
+        176.24285888671875,
+        628.179931640625
+      ],
+      "sha256": "e1bf69c1921723788f2a59e754ac646a6cac3fb70d3251fecdd8c911a1d4672d",
+      "kind": "figure",
+      "alt": "Callout G1"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-014-p004.png",
+      "node": "392:0",
+      "page": 4,
+      "bbox": [
+        176.75978088378906,
+        637.3423461914062,
+        191.37738037109375,
+        651.8777465820312
+      ],
+      "sha256": "7c30740fce7d6925f84d8468a9cb2a1d79dbf82528d279f63d15c8984f6414fe",
+      "kind": "figure",
+      "alt": "Callout G2"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-015-p004.png",
+      "node": "393:0",
+      "page": 4,
+      "bbox": [
+        128.55093383789062,
+        672.380859375,
+        145.5114288330078,
+        688.2367553710938
+      ],
+      "sha256": "0a935863c7854cd192e9b07d8aa190ac767e455c337b1e38bdf6cc9535664e40",
+      "kind": "figure",
+      "alt": "Callout G3"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-016-p004.png",
+      "node": "394:0",
+      "page": 4,
+      "bbox": [
+        201.59552001953125,
+        684.9439086914062,
+        218.55599975585938,
+        700.7998657226562
+      ],
+      "sha256": "290f4748c8a0121b787e254010a405fe3339b182a46ec2e147f9296d98f21a2a",
+      "kind": "figure",
+      "alt": "Callout G4"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-017-p004.png",
+      "node": "395:0",
+      "page": 4,
+      "bbox": [
+        491.54669189453125,
+        264.904541015625,
+        506.1652526855469,
+        279.5898132324219
+      ],
+      "sha256": "391c802308b36ce8c1097a7dc07811751dfe6d025d27a859300a3df708d6cded",
+      "kind": "figure",
+      "alt": "Callout C"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-018-p004.png",
+      "node": "396:0",
+      "page": 4,
+      "bbox": [
+        511.9512634277344,
+        264.904541015625,
+        526.56982421875,
+        279.5898132324219
+      ],
+      "sha256": "4ac1589907d52bb0086342340e68b832fcf7f65a3881e4dd76613ebc649104bc",
+      "kind": "figure",
+      "alt": "Callout G"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-019-p004.png",
+      "node": "397:0",
+      "page": 4,
+      "bbox": [
+        520.3670654296875,
+        460.6275634765625,
+        534.9856567382812,
+        475.3128356933594
+      ],
+      "sha256": "05fd63da8f5fd0f3825331f9511b1c1f765eee154d46a29352824312396c38cd",
+      "kind": "figure",
+      "alt": "Callout A"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-020-p004.png",
+      "node": "398:0",
+      "page": 4,
+      "bbox": [
+        473.4808349609375,
+        486.4512634277344,
+        490.4413146972656,
+        502.4570007324219
+      ],
+      "sha256": "f1e8ab6e5cc52ca45abd8f388f5d27854fa1e950e138e11d894b98aef3f59077",
+      "kind": "figure",
+      "alt": "Callout C"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-021-p004.png",
+      "node": "399:0",
+      "page": 4,
+      "bbox": [
+        401.3800048828125,
+        662.3177490234375,
+        415.9985656738281,
+        677.0029907226562
+      ],
+      "sha256": "a71f6c921051855465a917dd27d235a730ba1ce83677342d8da88a838da3b651",
+      "kind": "figure",
+      "alt": "Callout D"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-022-p004.png",
+      "node": "400:0",
+      "page": 4,
+      "bbox": [
+        422.8881530761719,
+        662.3177490234375,
+        439.8495788574219,
+        677.1060180664062
+      ],
+      "sha256": "9e7ba2b81af80bdca770b84d0f08f88b65d5cdc73b8172d855100e985d545621",
+      "kind": "figure",
+      "alt": "Callout E"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-023-p005.png",
+      "node": "436:0",
+      "page": 5,
+      "bbox": [
+        58.1756706237793,
+        438.14892578125,
+        72.79326629638672,
+        452.6843566894531
+      ],
+      "sha256": "c927e46af5d0a7a8b2f37215efa4c5214c9c03141d172ebd097dfb92405f4694",
+      "kind": "figure",
+      "alt": "Callout G2"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-024-p005.png",
+      "node": "437:0",
+      "page": 5,
+      "bbox": [
+        71.7586669921875,
+        438.14892578125,
+        86.37626647949219,
+        452.6843566894531
+      ],
+      "sha256": "b3ca7c968cb16daddfe2ef750e21ca8ab8f224bd9b73e185d92f0a5ae8c055ec",
+      "kind": "figure",
+      "alt": "Callout G3"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-025-p005.png",
+      "node": "439:0",
+      "page": 5,
+      "bbox": [
+        94.73603057861328,
+        556.279296875,
+        111.69651794433594,
+        571.0675659179688
+      ],
+      "sha256": "f9930ea5f316fe2c8793c2fc761a93035269871fb1f4fe8ec1ac415d661798a3",
+      "kind": "figure",
+      "alt": "Callout D"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-026-p005.png",
+      "node": "443:0",
+      "page": 5,
+      "bbox": [
+        336.137939453125,
+        279.8975830078125,
+        528.9335327148438,
+        482.0
+      ],
+      "sha256": "b5b0022fcbe3497f9ca720cea237a8a54956bdc50092a6a0e76bc0e7af2b81da",
+      "kind": "figure",
+      "alt": "Fig. 3. Co-Advisor provides feedback (A, D) if the user performs the wrong action by making the wrong decision (B) or inserting the wrong value (C)"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-027-p005.png",
+      "node": "453:0",
+      "page": 5,
+      "bbox": [
+        108.68939208984375,
+        425.4369201660156,
+        123.30796813964844,
+        440.1221923828125
+      ],
+      "sha256": "3debe23aee8a4454b9cebe316f67a72fe4982f042a2f8b3abe02293c98af4d97",
+      "kind": "figure",
+      "alt": "Callout A"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-028-p005.png",
+      "node": "454:0",
+      "page": 5,
+      "bbox": [
+        122.85894775390625,
+        425.4369201660156,
+        137.47752380371094,
+        440.1221923828125
+      ],
+      "sha256": "16a4e57c93bc6028b554d9ea88e3e283ef0076af5b3b49469a62a0d3173322a6",
+      "kind": "figure",
+      "alt": "Callout B"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-029-p005.png",
+      "node": "455:0",
+      "page": 5,
+      "bbox": [
+        281.2104187011719,
+        390.39788818359375,
+        298.1708984375,
+        406.2537841796875
+      ],
+      "sha256": "4ab78b46c4a629f6333111e30ff382a11c45cf1ab483b3d58e6b63b4ebc3738d",
+      "kind": "figure",
+      "alt": "Callout G1"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-030-p005.png",
+      "node": "456:0",
+      "page": 5,
+      "bbox": [
+        283.5509948730469,
+        425.5867919921875,
+        298.1686096191406,
+        440.1221923828125
+      ],
+      "sha256": "dc9801e1e50d99ad27df7d4fa7c4c3d8e68d15c58d80856e384e8510fea0296c",
+      "kind": "figure",
+      "alt": "Callout G1"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-031-p005.png",
+      "node": "457:0",
+      "page": 5,
+      "bbox": [
+        234.06471252441406,
+        495.664306640625,
+        248.68328857421875,
+        510.3495788574219
+      ],
+      "sha256": "2fc6b3f7060ac7392ffc645902f314e09f4598d49044b280bf1b9907bd2bfd4f",
+      "kind": "figure",
+      "alt": "Callout A"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-032-p005.png",
+      "node": "458:0",
+      "page": 5,
+      "bbox": [
+        241.9193572998047,
+        508.3778076171875,
+        258.8807678222656,
+        523.1661376953125
+      ],
+      "sha256": "2c2686f26f920a3ab705ea8f4ba53e090d65c31951f1b54f4658d85630067870",
+      "kind": "figure",
+      "alt": "Callout B"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-033-p005.png",
+      "node": "459:0",
+      "page": 5,
+      "bbox": [
+        148.22955322265625,
+        532.3280639648438,
+        165.1909637451172,
+        548.3338623046875
+      ],
+      "sha256": "b9854a6c6c76cd09d6815a683d044f08725c8dca14c566e25dfc0d5597c08caf",
+      "kind": "figure",
+      "alt": "Callout C"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-034-p006.png",
+      "node": "477:0",
+      "page": 6,
+      "bbox": [
+        154.0042266845703,
+        218.98052978515625,
+        168.6642303466797,
+        233.55801391601562
+      ],
+      "sha256": "f6066a2cc634873a6999a68a58b10f509a8908dda220440a6630c86042f3c501",
+      "kind": "figure",
+      "alt": "Callout G3"
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-035-p009.png",
+      "node": "607:0",
+      "page": 9,
+      "bbox": [
+        58.39323043823242,
+        407.38702392578125,
+        298.38751220703125,
+        577.6672973632812
+      ],
+      "sha256": "324424a0f9a618a34b843e2d99769dba9c350710edb99205f338cb1f29ffd022",
+      "kind": "figure",
+      "alt": "Figure 4. Debugging outcomes for 14 participants in each condition. Co-Advisor: 0 failed, 0 guessed, 1 approached, 1 tried, 3 partially fixed, and 9 fixed. HowToo: 6 failed, 0 guessed, 5 approached, 3 tried, 0 partially fixed, and 0 fixed."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-036-p009.png",
+      "node": "610:0",
+      "page": 9,
+      "bbox": [
+        312.0,
+        61.74360656738281,
+        556.409912109375,
+        230.14170837402344
+      ],
+      "sha256": "d29641e7bab55af8a4d508bd5f5ddae0a226eda8c158cfcb383a1944e8262bc0",
+      "kind": "figure",
+      "alt": "Figure 5. Total debugging time for participants P1–P14. Every HowToo task reached the 15-minute limit, with no fixed or partially fixed outcomes. Co-Advisor times span approximately 2–15 minutes, with most below the limit; symbols show nine fixed, three partially fixed, one tried, and one approached. The accompanying text reports mean Co-Advisor time 10 minutes, standard deviation 3.6."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-037-p009.png",
+      "node": "612:0",
+      "page": 9,
+      "bbox": [
+        312.0,
+        279.16229248046875,
+        551.9947509765625,
+        421.8090515136719
+      ],
+      "sha256": "a693d4d2c713306e279852ca4a706b188d56b105b28617087a036a65076e1642",
+      "kind": "figure",
+      "alt": "Figure 6. Percentage of total task time spent learning or using the debugging strategy, by participant and condition. Co-Advisor is 100 percent for every participant except P8, approximately 47 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-038-p010.png",
+      "node": "97:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        106.48204803466797,
+        522.2964477539062,
+        127.17355346679688
+      ],
+      "sha256": "20959bd995f02fb96e510d600b06fc728c16c61ae187aad970d00348777dae9f",
+      "kind": "figure",
+      "alt": "Mental demand ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 7, standard deviation 2.4; Co-Advisor mean 6, standard deviation 3.1; p-value 0.18."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-039-p010.png",
+      "node": "98:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        126.8039321899414,
+        522.3065185546875,
+        147.66648864746094
+      ],
+      "sha256": "f0a4325ccb8a1681909973f98af30d637eb33e4a5cbba2ae75a27f7ac18ee796",
+      "kind": "figure",
+      "alt": "Physical demand ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. Both distributions lie toward the low end. The table reports HowToo mean 3, standard deviation 1.6; Co-Advisor mean 1.5, standard deviation 1.7; p-value 0.017."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-040-p010.png",
+      "node": "99:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        147.12661743164062,
+        522.3065185546875,
+        167.8633270263672
+      ],
+      "sha256": "4239463b1a7af24b85a8fce6cba15de27ac3d12eea949481a3e8fdce73d087d8",
+      "kind": "figure",
+      "alt": "Hurried or rushed ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 4, standard deviation 1.6; Co-Advisor mean 3, standard deviation 1.5; p-value 0.18."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-041-p010.png",
+      "node": "100:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        167.44924926757812,
+        522.309326171875,
+        188.6674041748047
+      ],
+      "sha256": "331bf67900ac3bc483806d2756f6518de11c31f10f658c9cd09658b7655508db",
+      "kind": "figure",
+      "alt": "Success in accomplishing the goal. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The Co-Advisor distribution lies much farther toward the high end. The table reports HowToo mean 2.5, standard deviation 2.0; Co-Advisor mean 8.5, standard deviation 2.6; p-value 0.0001, marked with an asterisk."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-042-p010.png",
+      "node": "247:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        187.7716827392578,
+        522.3115234375,
+        208.8275909423828
+      ],
+      "sha256": "ddfc590f6fdb8219f6af9cc91899af863bd59b8e6e48da517980fdf1e4b1ee2c",
+      "kind": "figure",
+      "alt": "Effort required to accomplish the reported performance. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 7.5, standard deviation 1.4; Co-Advisor mean 5, standard deviation 2.5; p-value 0.0024, marked with an asterisk."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-043-p010.png",
+      "node": "248:0",
+      "page": 10,
+      "bbox": [
+        421.66168212890625,
+        208.0950927734375,
+        522.2964477539062,
+        229.03758239746094
+      ],
+      "sha256": "8c069ba5e98f99591150cf9c08117f65ffbcb8b773ff4a8ff33b8cafdbc0bd57",
+      "kind": "figure",
+      "alt": "Insecurity and discouragement ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 6.5, standard deviation 2.6; Co-Advisor mean 3, standard deviation 2.8; p-value 0.0042, marked with an asterisk."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "404:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 3,
+      "cell_count": 21,
+      "header_count": 9,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "404:0"
+    },
+    {
+      "source_table_id": "522:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 3,
+      "cell_count": 21,
+      "header_count": 9,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "522:0"
+    },
+    {
+      "source_table_id": "553:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 3,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "553:0"
+    },
+    {
+      "source_table_id": "588:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 3,
+      "cell_count": 13,
+      "header_count": 9,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "588:0"
+    },
+    {
+      "source_table_id": "48:0",
+      "source_pages": [
+        10
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 6,
+      "cell_count": 60,
+      "header_count": 24,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "48:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 197,
+    "line_wrap_hyphens_retained": 46,
+    "paragraph_fragments_joined": 11,
+    "reviewed_wrap_repairs": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/arab-co-advisor-vlhcc2025.json.gz",
+  "source_tags_sha256": "453e1e68c7678f93015ad2e9042714769db7473668ab523e701ff7d6d4df9063"
+}

@@ -1,0 +1,183 @@
+{
+  "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+  "title": "Democratizing Computational Tools for Interaction Designers",
+  "publication_id": "democratizing_computational_tools_for_interaction_designers_2010",
+  "pdf_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+  "markdown": "publications/oney-democratizing-computational-tools-vlhccgc2010.md",
+  "markdown_sha256": "14f757b86b387da70a512b8161db59b6e399a636bae1f36b8a863fcc315ec396",
+  "pages": 2,
+  "blocks": [
+    {
+      "node": "26:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 217
+    },
+    {
+      "node": "27:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 12
+    },
+    {
+      "node": "28:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 132
+    },
+    {
+      "node": "29:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "30:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 296
+    },
+    {
+      "node": "31:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "32:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 728
+    },
+    {
+      "node": "joined-33:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 647
+    },
+    {
+      "node": "35:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 552
+    },
+    {
+      "node": "36:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 365
+    },
+    {
+      "node": "39:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 456
+    },
+    {
+      "node": "40:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "41:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 940
+    },
+    {
+      "node": "joined-42:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 731
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 409
+    },
+    {
+      "node": "45:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 176
+    },
+    {
+      "node": "47:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "48:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 697
+    }
+  ],
+  "tagged_content_items": 682,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 75,
+    "paragraph_fragments_joined": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-democratizing-computational-tools-vlhccgc2010.json.gz",
+  "source_tags_sha256": "718a65483e58db2424bb5b44b15d9d53e868a4f80c67fb9f4c2c24fe40a1dfde"
+}

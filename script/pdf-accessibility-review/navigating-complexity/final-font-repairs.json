@@ -1,0 +1,74 @@
+{
+  "source": "/tmp/spot-navigating-complexity/tagged-semantic-final.pdf",
+  "source_sha256": "4916df70a1b5823207e4d337ebda8de5c5b9a40c71a6f1b99aef0b1918238b94",
+  "final": "/tmp/spot-navigating-complexity/arab-navigating-complexity-tse2026-final.pdf",
+  "final_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "font_repairs": [
+    {
+      "original_font": "/Helvetica",
+      "embedded_substitute": "NimbusSans-Regular",
+      "font_object": [
+        36,
+        0
+      ],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "method": "compatible-embedded-substitute",
+      "source": "Installed PyMuPDF/MuPDF built-in URW Nimbus CFF font program",
+      "metric_edits": [],
+      "verification": "This is a documented compatible substitute, not the recovered original font. Existing PDF widths/encoding and existing ToUnicode retained; missing Base14 widths/Unicode supplied from the matching glyph names. Glyph advance corrections preserve source positioning and leave outlines/hints unchanged. Validate every page at144DPI and compare text."
+    },
+    {
+      "original_font": "/Helvetica",
+      "embedded_substitute": "NimbusSans-Regular",
+      "font_object": [
+        37,
+        0
+      ],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "method": "compatible-embedded-substitute",
+      "source": "Installed PyMuPDF/MuPDF built-in URW Nimbus CFF font program",
+      "metric_edits": [],
+      "verification": "This is a documented compatible substitute, not the recovered original font. Existing PDF widths/encoding and existing ToUnicode retained; missing Base14 widths/Unicode supplied from the matching glyph names. Glyph advance corrections preserve source positioning and leave outlines/hints unchanged. Validate every page at144DPI and compare text."
+    }
+  ],
+  "font_embedded_sha256_before_semantic_cleanup": "755e13cc5d21a644a9c7edba91ef7a71b3faa766ade32d9a77f3a5ab380ab087",
+  "subsequent_semantic_cleanup": "/tmp/spot-navigating-complexity/validation/final-semantic-cleanup.json"
+}

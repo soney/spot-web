@@ -1,0 +1,1688 @@
+{
+  "file": "krosnick-think-aloud-computing-chi2021.pdf",
+  "title": "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture",
+  "publication_id": "think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021",
+  "pdf_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+  "markdown": "publications/krosnick-think-aloud-computing-chi2021.md",
+  "markdown_sha256": "27ac5d051ba4838e98a80bfc0290976eb21d8560764409301323029cbcbf7306",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "460:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 219
+    },
+    {
+      "node": "461:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 640
+    },
+    {
+      "node": "467:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 875
+    },
+    {
+      "node": "462:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "463:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1044
+    },
+    {
+      "node": "464:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 57
+    },
+    {
+      "node": "466:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 54
+    },
+    {
+      "node": "469:0",
+      "role": "Reference",
+      "pages": [
+        1
+      ],
+      "characters": 398
+    },
+    {
+      "node": "470:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-471:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 3482
+    },
+    {
+      "node": "456:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "457:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 179
+    },
+    {
+      "node": "448:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "449:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 911
+    },
+    {
+      "node": "661:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 841
+    },
+    {
+      "node": "660:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 295
+    },
+    {
+      "node": "640:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 41
+    },
+    {
+      "node": "641:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 826
+    },
+    {
+      "node": "642:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1002
+    },
+    {
+      "node": "643:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 610
+    },
+    {
+      "node": "644:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 305
+    },
+    {
+      "node": "616:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 47
+    },
+    {
+      "node": "617:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 663
+    },
+    {
+      "node": "620:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1009
+    },
+    {
+      "node": "621:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 840
+    },
+    {
+      "node": "684:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 22
+    },
+    {
+      "node": "685:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1125
+    },
+    {
+      "node": "686:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 506
+    },
+    {
+      "node": "673:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 20
+    },
+    {
+      "node": "674:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 391
+    },
+    {
+      "node": "679:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "680:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 459
+    },
+    {
+      "node": "681:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 379
+    },
+    {
+      "node": "682:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 305
+    },
+    {
+      "node": "677:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "678:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 996
+    },
+    {
+      "node": "702:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-703:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 298
+    },
+    {
+      "node": "705:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 2063
+    },
+    {
+      "node": "784:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 1986
+    },
+    {
+      "node": "769:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1167
+    },
+    {
+      "node": "711:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 627
+    },
+    {
+      "node": "joined-712:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 580
+    },
+    {
+      "node": "789:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 2036
+    },
+    {
+      "node": "757:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 32
+    },
+    {
+      "node": "793:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 491
+    },
+    {
+      "node": "758:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 920
+    },
+    {
+      "node": "714:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1670
+    },
+    {
+      "node": "750:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 26
+    },
+    {
+      "node": "751:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 438
+    },
+    {
+      "node": "752:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1142
+    },
+    {
+      "node": "739:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 21
+    },
+    {
+      "node": "740:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 21
+    },
+    {
+      "node": "794:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1215
+    },
+    {
+      "node": "741:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 809
+    },
+    {
+      "node": "736:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 22
+    },
+    {
+      "node": "797:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 350
+    },
+    {
+      "node": "737:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 337
+    },
+    {
+      "node": "719:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 30
+    },
+    {
+      "node": "720:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 146
+    },
+    {
+      "node": "721:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 42
+    },
+    {
+      "node": "798:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 865
+    },
+    {
+      "node": "722:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 37
+    },
+    {
+      "node": "799:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 520
+    },
+    {
+      "node": "723:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 52
+    },
+    {
+      "node": "800:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 409
+    },
+    {
+      "node": "727:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 1009
+    },
+    {
+      "node": "816:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 46
+    },
+    {
+      "node": "881:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 354
+    },
+    {
+      "node": "817:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 47
+    },
+    {
+      "node": "882:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 315
+    },
+    {
+      "node": "852:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 35
+    },
+    {
+      "node": "853:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 523
+    },
+    {
+      "node": "854:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 537
+    },
+    {
+      "node": "joined-855:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 747
+    },
+    {
+      "node": "883:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 982
+    },
+    {
+      "node": "820:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 14
+    },
+    {
+      "node": "821:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 522
+    },
+    {
+      "node": "822:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 326
+    },
+    {
+      "node": "837:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 23
+    },
+    {
+      "node": "838:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 336
+    },
+    {
+      "node": "839:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 345
+    },
+    {
+      "node": "840:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 593
+    },
+    {
+      "node": "841:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 234
+    },
+    {
+      "node": "842:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 805
+    },
+    {
+      "node": "843:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 441
+    },
+    {
+      "node": "833:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-834:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 782
+    },
+    {
+      "node": "887:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 985
+    },
+    {
+      "node": "826:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 20
+    },
+    {
+      "node": "827:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 350
+    },
+    {
+      "node": "828:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 836
+    },
+    {
+      "node": "858:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 22
+    },
+    {
+      "node": "859:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 565
+    },
+    {
+      "node": "860:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-861:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 323
+    },
+    {
+      "node": "891:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 1088
+    },
+    {
+      "node": "871:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 30
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 388
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 648
+    },
+    {
+      "node": "874:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 276
+    },
+    {
+      "node": "866:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "867:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 26
+    },
+    {
+      "node": "895:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 999
+    },
+    {
+      "node": "906:0",
+      "role": "L",
+      "pages": [],
+      "characters": 2
+    },
+    {
+      "node": "907:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 213
+    },
+    {
+      "node": "903:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 22
+    },
+    {
+      "node": "975:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 137
+    },
+    {
+      "node": "904:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 24
+    },
+    {
+      "node": "976:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 318
+    },
+    {
+      "node": "912:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "913:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 26
+    },
+    {
+      "node": "977:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 422
+    },
+    {
+      "node": "979:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 64
+    },
+    {
+      "node": "joined-978:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 3075
+    },
+    {
+      "node": "949:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 46
+    },
+    {
+      "node": "980:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 217
+    },
+    {
+      "node": "joined-950:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1590
+    },
+    {
+      "node": "917:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1344
+    },
+    {
+      "node": "918:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 578
+    },
+    {
+      "node": "919:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 682
+    },
+    {
+      "node": "920:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 384
+    },
+    {
+      "node": "921:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 271
+    },
+    {
+      "node": "922:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 330
+    },
+    {
+      "node": "935:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 29
+    },
+    {
+      "node": "981:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 512
+    },
+    {
+      "node": "936:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 31
+    },
+    {
+      "node": "937:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 806
+    },
+    {
+      "node": "939:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 45
+    },
+    {
+      "node": "940:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 421
+    },
+    {
+      "node": "941:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 628
+    },
+    {
+      "node": "928:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 57
+    },
+    {
+      "node": "929:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 551
+    },
+    {
+      "node": "926:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 366
+    },
+    {
+      "node": "956:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 42
+    },
+    {
+      "node": "957:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 467
+    },
+    {
+      "node": "958:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 427
+    },
+    {
+      "node": "959:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 719
+    },
+    {
+      "node": "960:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "961:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 776
+    },
+    {
+      "node": "964:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 18
+    },
+    {
+      "node": "965:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 191
+    },
+    {
+      "node": "966:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 13
+    },
+    {
+      "node": "982:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 263
+    },
+    {
+      "node": "983:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 574
+    },
+    {
+      "node": "984:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 270
+    },
+    {
+      "node": "985:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 225
+    },
+    {
+      "node": "986:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 263
+    },
+    {
+      "node": "987:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 409
+    },
+    {
+      "node": "988:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 356
+    },
+    {
+      "node": "989:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 299
+    },
+    {
+      "node": "567:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 116
+    },
+    {
+      "node": "568:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 299
+    },
+    {
+      "node": "569:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 310
+    },
+    {
+      "node": "570:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 250
+    },
+    {
+      "node": "571:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 352
+    },
+    {
+      "node": "572:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 419
+    },
+    {
+      "node": "573:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 224
+    },
+    {
+      "node": "574:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 224
+    },
+    {
+      "node": "575:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 289
+    },
+    {
+      "node": "576:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 327
+    },
+    {
+      "node": "577:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 329
+    },
+    {
+      "node": "578:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 169
+    },
+    {
+      "node": "579:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 207
+    },
+    {
+      "node": "580:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 318
+    },
+    {
+      "node": "581:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 152
+    },
+    {
+      "node": "582:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 252
+    },
+    {
+      "node": "583:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 325
+    },
+    {
+      "node": "584:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 206
+    },
+    {
+      "node": "585:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 217
+    },
+    {
+      "node": "586:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 247
+    },
+    {
+      "node": "587:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 259
+    },
+    {
+      "node": "588:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 252
+    },
+    {
+      "node": "589:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 368
+    },
+    {
+      "node": "590:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 197
+    },
+    {
+      "node": "591:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 275
+    },
+    {
+      "node": "592:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 239
+    },
+    {
+      "node": "593:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 299
+    },
+    {
+      "node": "594:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 206
+    },
+    {
+      "node": "595:0",
+      "role": "Reference",
+      "pages": [
+        12
+      ],
+      "characters": 106
+    },
+    {
+      "node": "596:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 144
+    },
+    {
+      "node": "597:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 267
+    },
+    {
+      "node": "598:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 217
+    },
+    {
+      "node": "599:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 164
+    },
+    {
+      "node": "600:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 241
+    },
+    {
+      "node": "601:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 234
+    },
+    {
+      "node": "602:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 25
+    },
+    {
+      "node": "603:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 317
+    },
+    {
+      "node": "604:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 306
+    },
+    {
+      "node": "605:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 205
+    },
+    {
+      "node": "606:0",
+      "role": "Reference",
+      "pages": [
+        13
+      ],
+      "characters": 172
+    }
+  ],
+  "tagged_content_items": 431,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-001-p004.png",
+      "node": "705:0",
+      "page": 4,
+      "bbox": [
+        51.7979736328125,
+        81.68537139892578,
+        563.5382690429688,
+        289.9690856933594
+      ],
+      "sha256": "00f72e52d90ce0cdc5d7cb06b232867255c10f8388376e0822178a3f07f3aa20",
+      "kind": "figure",
+      "alt": "The chart has 6 mini bar charts. On left are 3 mini bar charts for the concurrent think-aloud condition, and on right are 3 mini bar charts for the retrospective think-aloud condition. For each condition there is a mini bar chart per domain (i.e., coding, models, and slides). First we describe the concurrent think-aloud ratings: For concurrent think-aloud for the coding domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 3 (i.e., 3 participants out of 4) for \"moderately useful\" and a blue bar of height 1 for \"very useful\". For concurrent think-aloud for the models domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 4 for \"moderately useful\" and a bar of height 0 for \"very useful\". For concurrent think-aloud for the slides domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 2 for \"moderately useful\" and a blue bar of height 2 for \"very useful\". Next we describe the retrospective think-aloud ratings: For retrospective think-aloud for the coding domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 3 for \"moderately useful\" and a blue bar of height 1 for \"very useful\". For retrospective think-aloud for the models domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 4 for \"moderately useful\" and a bar of height 0 for \"very useful\". For retrospective think-aloud for the slides domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 1 for \"moderately useful\" and a blue bar of height 3 for \"very useful\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Not Useful, and 7-Extremely Useful). Ratings (1, 2) have been aggregated into \"not useful\", ratings (3, 4, 5) have been aggregated into \"moderately useful\" and ratings (6, 7) have been aggregated into \"very useful\"."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-002-p004.png",
+      "node": "784:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        299.13568115234375,
+        563.59228515625,
+        509.6051025390625
+      ],
+      "sha256": "97d9248b8a87de0277a569ebcb54eb17d3e12d647817e8a65ae1949e650d3483",
+      "kind": "figure",
+      "alt": "The chart has 6 mini bar charts. On the left are 3 mini bar charts for the concurrent think-aloud condition, and on the right are 3 mini bar charts for the retrospective think-aloud condition. For each condition, there is a mini bar chart per domain (i.e., coding, models, and slides). First we describe the concurrent think-aloud ratings: For concurrent think-aloud for the coding domain, there are 3 bars, from left: an orange bar of height 1 (i.e., 1 participant out of 4) for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 3 for \"confident\". For concurrent think-aloud for the models domain, there are 3 bars, from left: an orange bar of height 2 for \"not confident\", a yellow bar of height 2 for \"neutral\", and a bar of height 0 for \"confident\". For concurrent think-aloud for the slides domain, there are 3 bars, from left: an orange bar of height 1 for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 3 for \"confident\". For retrospective think-aloud for the coding domain, there are 3 bars, from left: an orange bar of height 2 for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 2 for \"confident\". For retrospective think-aloud for the models domain, there are 3 bars, from left: a bar of height 0 for \"not confident\", a yellow bar of height 1 for \"neutral\", and a green bar of height 3 for \"confident\". For retrospective think-aloud for the slides domain, there are 3 bars, from left: a bar of height 0 for \"not confident\", a yellow bar of height 1 for \"neutral\", and a green bar of height 3 for \"confident\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Very Not Confident, and 7-Very Confident). Ratings (1, 2, 3) have been aggregated into \"Not Confident\", rating (4) is \"Neutral\", and ratings (5, 6, 7) have been aggregated into \"Confident\"."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-003-p005.png",
+      "node": "789:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        81.6854476928711,
+        562.4445190429688,
+        358.4090881347656
+      ],
+      "sha256": "d0302f2ff5f580ebebcfd8ee47ecb5e66ebeb7fe5ea8b0e78caaf980c4106d81",
+      "kind": "figure",
+      "alt": "Stacked bar chart illustrating the top 20 speech item categories (i.e., all categories with 5 or more speech items), ordered from top to bottom by concurrent to reflective occurrence ratio. Each category is a bar. For a given bar, it contains 2 colors - blue on the left side of the 0 line indicating what percentage of speech items in that category were spoken during concurrent speech, and red on the right side of the 0 line indicating percentage of speech items spoken during reflective speech. Ordered in descending order by concurrent to reflective occurrence ratio, these are the categories and their concurrent and reflective counts: frustrations, difficulties, confusion (16 concurrent, 0 reflective); indicating something is done (12 concurrent, 0 reflective); why they're doing something (10 concurrent, 0 reflective); says they'll get back to something later (10 concurrent, 0 reflective); testing something out (5 concurrent, 0 reflective); what they're currently doing/about to do (73 concurrent, 1 reflective); encountering something unexpected, making a fix (25 concurrent, 2 reflective); planning, decision making, thinking (22 concurrent, 2 reflective); speaking verbatim what they're typing/doing (20 concurrent, 2 reflective); commenting on state of something (5 concurrent, 1 reflective); sharing opinion about state of artifact (5 concurrent, 1 reflective); short utterances, talking to self (13 concurrent, 3 reflective); requirements, end-goals, intent for artifact (6 concurrent, 3 reflective); environment config or basic software interactions (4 concurrent, 3 reflective); process suggestions/opinions (7 concurrent, 7 reflective); todo items or delegating (3 concurrent, 3 reflective); sharing opinions/facts about content (6 concurrent, 11 reflective); limitations or unfinished work (5 concurrent, 13 reflective); talking about the software (3 concurrent, 10 reflective); references some documentation (4 concurrent, 14 reflective)."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-004-p007.png",
+      "node": "727:0",
+      "page": 7,
+      "bbox": [
+        51.79798889160156,
+        81.68474578857422,
+        298.2853088378906,
+        234.48397827148438
+      ],
+      "sha256": "472a99d192d6028e7f84615f45cbc2b610f67bbaae83f7de52442ba2660c25a5",
+      "kind": "figure",
+      "alt": "Figure 4: In the top left there are two versions of the visual widget presented in Figure 5. The one of the left is identical to the one in Figure 5, and the one on the right has 2 additional smaller wedges, one on the far left and one on the far right. Beneath these visual widgets are three yellow rubber ducks with varying fill-levels; the far-left one is at a low fill-level, with opaque yellow at the bottom but transparent above; the duck in the middle is half-filled; and the duck on the right is completely filled. In the top-right of the figure is the Apple menu bar, of notice on the left side are red, blue, and orange circles with different fill-levels (low fill level means mostly transparent except for the very bottom). In the bottom-right of the figure is a check-list kind of interface, where each item has icons representing the design intent (lightbulb), process (tools), important (star), and problem (alert) items."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-005-p007.png",
+      "node": "883:0",
+      "page": 7,
+      "bbox": [
+        315.95489501953125,
+        81.68544006347656,
+        563.5360717773438,
+        326.7787170410156
+      ],
+      "sha256": "e7e87ab1daa747d5608d3e37b4d187bb8170b816f29e975a3e096b883831b55e",
+      "kind": "figure",
+      "alt": "Figure 5: Visual widget with 3 wedges at the top, short yellow on the left (with a lightbulb icon) representing \"design intent\", tall blue in the middle (with a person speaking icon) representing \"all utterances\", and medium red on the right (with a tool icon) representing \"process\". Each wedge also has a dotted line representing the wedge fill-goal. Below the wedges is a circle with 3 parts representing buttons: the top half has a star in a center and represents \"important\", the bottom left quadrant has a checklist and represents \"to-do item\", and the bottom right quadrant has an alert icon and represents \"problem\". Each wedge or button has associated keywords: for design intent: \"this is meant to\", \"because\", \"goal\", for process: \"this tool is for\", \"this tool is useful for\", for to-do item: \"i still need to\", \"i still have to\", for problem: \"issue\", \"problem\", for important: \"it is important\""
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-006-p007.png",
+      "node": "822:0",
+      "page": 7,
+      "bbox": [
+        315.9549560546875,
+        510.7131042480469,
+        565.0280151367188,
+        708.154052734375
+      ],
+      "sha256": "1ce5640ca8653f1ed1ff6d9fa5e06b65fe9d2df514dd253a6e289a2dc5aef543",
+      "kind": "figure",
+      "alt": "Figure 6: A screenshot of a rectangular computer window. The window has 2 sections, each one having rows of speech utterances on the left, YouTube video clips in the center, and Fusion 360 command names on the right. Each section has a gray background."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-007-p008.png",
+      "node": "887:0",
+      "page": 8,
+      "bbox": [
+        315.9549865722656,
+        81.68916320800781,
+        562.4423828125,
+        248.32199096679688
+      ],
+      "sha256": "8f514051bd676b69b0d92d6ab15af1137481af3adeb8f9733df4f1ca95f2e881",
+      "kind": "figure",
+      "alt": "Figure 7: A system diagram, with arrows connecting components. On the left is a speaking head representing the user. To the right an arrow points to a computer monitor/webpage icon representing the think-aloud system. The think-aloud system component then has arrows pointing to the right, sending speech to the Azure cloud (cloud icon) and livestream to YouTube (play button icon). The Azure cloud has an arrow pointing to the left back to the think-aloud system sending transcript. The YouTube icon has an arrow pointing to the left back to the think-aloud system sending playback. In the far right column are the 3rd party applications section, specifically Fusion 360, which sends an arrow to the left to the think-aloud system with command metadata. Below Fusion 360 is the OSX operating system with a Mac smiley face icon, with an arrow to the left to think-aloud system sending accessibility information."
+    },
+    {
+      "path": "figures/krosnick-think-aloud-computing-chi2021/figure-008-p009.png",
+      "node": "891:0",
+      "page": 9,
+      "bbox": [
+        51.7979736328125,
+        81.68604278564453,
+        563.5382690429688,
+        194.16195678710938
+      ],
+      "sha256": "648cd6b2617cd7948470955621bc0da765e240fb39c6c68259a5ba234910d096",
+      "kind": "figure",
+      "alt": "Figure 8 is a chart illustrating participants' ratings of how much effort it took to document knowledge for think-aloud and traditional documentation techniques. The chart has 2 mini bar charts. On the left is the bar chart for the think-aloud condition. It has 3 bars, from left: a red bar of height 3 (i.e., 3 participants out of 12) for the category of \"high effort\", a yellow bar of height 3 for \"medium effort\", and a green bar of height 6 for \"low effort\". On the right is the bar chart for the traditional documentation condition. It has 3 bars, from left: a red bar of height 4 for the \"high effort\", a yellow bar of height 2 for \"medium effort\", and a green bar of height 6 for \"low effort\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Very Low Effort, and 7-Very High Effort). Ratings (1, 2, 3) have been aggregated into \"low effort\", rating (4) is \"medium effort\", and ratings (5, 6, 7) have been aggregated into \"high effort\"."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 138,
+    "line_wrap_hyphens_retained": 24,
+    "paragraph_fragments_joined": 8,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-think-aloud-computing-chi2021.json.gz",
+  "source_tags_sha256": "abbc9a69d0f9685102bd0947faf401237a443e176d500b1fb1cb65f7c62202fb"
+}

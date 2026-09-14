@@ -1,0 +1,595 @@
+{
+  "file": "im-improving-advising-relationships-chiea2024.pdf",
+  "title": "Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction",
+  "publication_id": "improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024",
+  "pdf_sha256": "f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b",
+  "markdown": "publications/im-improving-advising-relationships-chiea2024.md",
+  "markdown_sha256": "49d3bf3acf50902a93288866e17678ba8c5f0b0d6163815a9a1b4641c2d6e16b",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "153:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 250
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 295
+    },
+    {
+      "node": "165:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 397
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "157:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 816
+    },
+    {
+      "node": "159:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 62
+    },
+    {
+      "node": "161:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 21
+    },
+    {
+      "node": "164:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 486
+    },
+    {
+      "node": "joined-166:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 131
+    },
+    {
+      "node": "285:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "286:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 262
+    },
+    {
+      "node": "287:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1484
+    },
+    {
+      "node": "288:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 561
+    },
+    {
+      "node": "289:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 182
+    },
+    {
+      "node": "290:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 357
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 402
+    },
+    {
+      "node": "292:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 464
+    },
+    {
+      "node": "293:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 288
+    },
+    {
+      "node": "343:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 436
+    },
+    {
+      "node": "337:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 550
+    },
+    {
+      "node": "333:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 919
+    },
+    {
+      "node": "295:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 613
+    },
+    {
+      "node": "296:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "297:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 142
+    },
+    {
+      "node": "298:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 228
+    },
+    {
+      "node": "361:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 106
+    },
+    {
+      "node": "383:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 341
+    },
+    {
+      "node": "376:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 407
+    },
+    {
+      "node": "365:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 748
+    },
+    {
+      "node": "joined-373:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 832
+    },
+    {
+      "node": "413:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 358
+    },
+    {
+      "node": "415:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 236
+    },
+    {
+      "node": "416:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 632
+    },
+    {
+      "node": "417:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 299
+    },
+    {
+      "node": "430:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 1275
+    },
+    {
+      "node": "419:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 221
+    },
+    {
+      "node": "420:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 303
+    },
+    {
+      "node": "421:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "422:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 212
+    },
+    {
+      "node": "224:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 632
+    },
+    {
+      "node": "225:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 2062
+    },
+    {
+      "node": "202:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 50
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 253
+    },
+    {
+      "node": "258:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 402
+    },
+    {
+      "node": "joined-205:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 383
+    },
+    {
+      "node": "207:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "208:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 209
+    },
+    {
+      "node": "209:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 112
+    },
+    {
+      "node": "210:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 220
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 185
+    },
+    {
+      "node": "212:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 221
+    },
+    {
+      "node": "213:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 140
+    },
+    {
+      "node": "214:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 164
+    },
+    {
+      "node": "273:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 50
+    },
+    {
+      "node": "216:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 205
+    },
+    {
+      "node": "217:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 207
+    },
+    {
+      "node": "218:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 161
+    },
+    {
+      "node": "219:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 310
+    },
+    {
+      "node": "278:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "221:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 255
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 108
+    },
+    {
+      "node": "223:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 105
+    },
+    {
+      "node": "280:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 110
+    }
+  ],
+  "tagged_content_items": 269,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/im-improving-advising-relationships-chiea2024/figure-001-p001.png",
+      "node": "280:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "CrossMark: Check for updates."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_removed": 28,
+    "line_wrap_hyphens_retained": 5,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/im-improving-advising-relationships-chiea2024.json.gz",
+  "source_tags_sha256": "2ad803440e33a66552282d5cf33441c4218c506dd9b4b4fb6aa9184e1c1705ad"
+}

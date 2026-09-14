@@ -1,0 +1,610 @@
+{
+  "file": "pandey-ui-development-experiences-edi2024.pdf",
+  "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
+  "publication_id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+  "pdf_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+  "markdown": "publications/pandey-ui-development-experiences-edi2024.md",
+  "markdown_sha256": "b1755313fcb968994c8715aee9ee2f989f2e5a01905e25609aab2e2254efd803",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "164:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 9
+    },
+    {
+      "node": "165:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 237
+    },
+    {
+      "node": "166:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 49
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 45
+    },
+    {
+      "node": "168:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 49
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "170:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 45
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 40
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1392
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 256
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 85
+    },
+    {
+      "node": "386:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 13
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 2632
+    },
+    {
+      "node": "460:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 14
+    },
+    {
+      "node": "461:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 411
+    },
+    {
+      "node": "462:0",
+      "role": "BlockQuote",
+      "pages": [
+        3
+      ],
+      "characters": 397
+    },
+    {
+      "node": "463:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 993
+    },
+    {
+      "node": "464:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 790
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 417
+    },
+    {
+      "node": "466:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 28
+    },
+    {
+      "node": "467:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 343
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 784
+    },
+    {
+      "node": "469:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 11
+    },
+    {
+      "node": "470:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 207
+    },
+    {
+      "node": "471:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 40
+    },
+    {
+      "node": "472:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 775
+    },
+    {
+      "node": "473:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 729
+    },
+    {
+      "node": "474:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 491
+    },
+    {
+      "node": "475:0",
+      "role": "BlockQuote",
+      "pages": [
+        5
+      ],
+      "characters": 451
+    },
+    {
+      "node": "476:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 41
+    },
+    {
+      "node": "477:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 513
+    },
+    {
+      "node": "478:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 552
+    },
+    {
+      "node": "479:0",
+      "role": "BlockQuote",
+      "pages": [
+        6
+      ],
+      "characters": 236
+    },
+    {
+      "node": "480:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 42
+    },
+    {
+      "node": "481:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 41
+    },
+    {
+      "node": "482:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 805
+    },
+    {
+      "node": "483:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 613
+    },
+    {
+      "node": "484:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 218
+    },
+    {
+      "node": "485:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 41
+    },
+    {
+      "node": "486:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 264
+    },
+    {
+      "node": "487:0",
+      "role": "BlockQuote",
+      "pages": [
+        7
+      ],
+      "characters": 287
+    },
+    {
+      "node": "488:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 42
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 201
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 565
+    },
+    {
+      "node": "491:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 459
+    },
+    {
+      "node": "492:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 105
+    },
+    {
+      "node": "493:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 691
+    },
+    {
+      "node": "494:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 420
+    },
+    {
+      "node": "495:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 1092
+    },
+    {
+      "node": "171:0",
+      "role": "Note",
+      "pages": [
+        9
+      ],
+      "characters": 191
+    },
+    {
+      "node": "496:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 42
+    },
+    {
+      "node": "497:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 957
+    },
+    {
+      "node": "498:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 588
+    },
+    {
+      "node": "499:0",
+      "role": "BlockQuote",
+      "pages": [
+        9
+      ],
+      "characters": 221
+    },
+    {
+      "node": "500:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 6
+    },
+    {
+      "node": "501:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "502:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 572
+    },
+    {
+      "node": "503:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 858
+    },
+    {
+      "node": "504:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 645
+    },
+    {
+      "node": "289:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 1301
+    },
+    {
+      "node": "290:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 653
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 815
+    },
+    {
+      "node": "292:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "293:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 413
+    },
+    {
+      "node": "294:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 15
+    },
+    {
+      "node": "295:0",
+      "role": "L",
+      "pages": [
+        12,
+        13
+      ],
+      "characters": 2560
+    },
+    {
+      "node": "285:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 469
+    },
+    {
+      "node": "287:0",
+      "role": "Figure",
+      "pages": [
+        13
+      ],
+      "characters": 125
+    },
+    {
+      "node": "286:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 407
+    }
+  ],
+  "tagged_content_items": 510,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/pandey-ui-development-experiences-edi2024/figure-001-p008.png",
+      "node": "491:0",
+      "page": 8,
+      "bbox": [
+        73.9039077758789,
+        77.1840591430664,
+        412.1072998046875,
+        279.5299987792969
+      ],
+      "sha256": "c726b9838740376bddb33e16d37073350a2f2b0e243317be51ae1feafc1839b0",
+      "kind": "figure",
+      "alt": "Two visually identical forms demonstrate screen-reader focus order. Both show first name Jane, last name Doe, birthdate 01-01-2000, and a Submit button. In the accessible form, focus follows the visual top-to-bottom order: first name 1, last name 2, birthdate 3, Submit 4. In the inaccessible form, focus starts on Submit 1, then jumps to first name 2, last name 3, and birthdate 4."
+    },
+    {
+      "path": "figures/pandey-ui-development-experiences-edi2024/figure-002-p013.png",
+      "node": "287:0",
+      "page": 13,
+      "bbox": [
+        51.99989700317383,
+        474.4930114746094,
+        112.69390106201172,
+        498.3349914550781
+      ],
+      "sha256": "35cdb9bce96ad8b9a09849ab8c1d2eef63850e40bd91f008098f0d8c9ef9967b",
+      "kind": "figure",
+      "alt": "Creative Commons Attribution 4.0 license symbol."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/pandey-ui-development-experiences-edi2024.json.gz",
+  "source_tags_sha256": "b313feea54195db2117c483e8009734a60b22e3e42bf053bd46b7c5603b8ac57"
+}

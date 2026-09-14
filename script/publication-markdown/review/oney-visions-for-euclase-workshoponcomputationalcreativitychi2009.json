@@ -1,0 +1,540 @@
+{
+  "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+  "title": "Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors",
+  "publication_id": "visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009",
+  "pdf_sha256": "34507e475d1f10c3013b80540015baa31b8f825f80eb70de835f607c8666ef73",
+  "markdown": "publications/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.md",
+  "markdown_sha256": "61cda8cce2d3b2e7c3ff43b54d7815d1292d65792a87940108de7fced9cb02ce",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "32:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 207
+    },
+    {
+      "node": "33:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 80
+    },
+    {
+      "node": "34:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "35:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "36:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 26
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 20
+    },
+    {
+      "node": "38:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 60
+    },
+    {
+      "node": "39:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "40:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 701
+    },
+    {
+      "node": "41:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 594
+    },
+    {
+      "node": "43:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 371
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 332
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 408
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 293
+    },
+    {
+      "node": "47:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 199
+    },
+    {
+      "node": "48:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 20
+    },
+    {
+      "node": "49:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 202
+    },
+    {
+      "node": "50:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 239
+    },
+    {
+      "node": "51:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 303
+    },
+    {
+      "node": "52:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 22
+    },
+    {
+      "node": "joined-53:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 371
+    },
+    {
+      "node": "56:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 426
+    },
+    {
+      "node": "57:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 215
+    },
+    {
+      "node": "58:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 10
+    },
+    {
+      "node": "59:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 295
+    },
+    {
+      "node": "60:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 380
+    },
+    {
+      "node": "61:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 674
+    },
+    {
+      "node": "62:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 569
+    },
+    {
+      "node": "63:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 22
+    },
+    {
+      "node": "64:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 336
+    },
+    {
+      "node": "65:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 484
+    },
+    {
+      "node": "66:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 217
+    },
+    {
+      "node": "67:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 443
+    },
+    {
+      "node": "92:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 103
+    },
+    {
+      "node": "93:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 44
+    },
+    {
+      "node": "94:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 283
+    },
+    {
+      "node": "95:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 525
+    },
+    {
+      "node": "joined-96:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 511
+    },
+    {
+      "node": "99:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 244
+    },
+    {
+      "node": "100:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "101:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 352
+    },
+    {
+      "node": "102:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 645
+    },
+    {
+      "node": "103:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 498
+    },
+    {
+      "node": "104:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 507
+    },
+    {
+      "node": "105:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 400
+    },
+    {
+      "node": "106:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 918
+    },
+    {
+      "node": "107:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "108:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 437
+    },
+    {
+      "node": "109:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 298
+    },
+    {
+      "node": "110:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 431
+    },
+    {
+      "node": "111:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "112:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 527
+    },
+    {
+      "node": "joined-113:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 470
+    },
+    {
+      "node": "116:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 34
+    },
+    {
+      "node": "117:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 797
+    },
+    {
+      "node": "118:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 392
+    },
+    {
+      "node": "119:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "120:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 372
+    },
+    {
+      "node": "121:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 284
+    },
+    {
+      "node": "122:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "123:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 488
+    },
+    {
+      "node": "124:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "125:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 2017
+    }
+  ],
+  "tagged_content_items": 1924,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 155,
+    "line_wrap_hyphens_retained": 13,
+    "paragraph_fragments_joined": 3,
+    "reviewed_wrap_repairs": 5
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.json.gz",
+  "source_tags_sha256": "d708fe49420aa84ad1ab6fc601efca118aa197e888ee84d639bafe64e92f0315"
+}

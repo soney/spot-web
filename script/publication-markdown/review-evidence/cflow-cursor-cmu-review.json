@@ -1,0 +1,131 @@
+{
+  "scope": "Final independent bounded content recheck of CFlow, Simulating Human Cursor, and CMU thesis; no PDFs or Markdown drafts modified",
+  "documents": [
+    {
+      "pdf": "zhang-cflow-ls2024.pdf",
+      "source_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/zhang-cflow-ls2024.md",
+      "markdown_sha256": "69dd7fb6a41c8990ced81fe2ad5a719be57d15e66436aa888ac3a8dc84c45318",
+      "review_stage": "Final stable drafts after code-layout, list-anchor, and CFlow reference54 repairs",
+      "source_text_review": "Selected source PDF content and final actual-tag records compared to Markdown",
+      "checks": [
+        "Reviewed 487:0 paragraph retains n code features, m implementations each, and m^n clusters in correct linear order.",
+        "Exact reviewed reference54 is now one complete citation, occurring once, before references55–56.",
+        "Reference labels1–56 appear in consecutive order; the final reference56 ends with IEEE,425–436, matching the source.",
+        "No per-document content warning is emitted by the final converter."
+      ],
+      "warnings": [],
+      "previous_reviewed_markdown_sha256": "b235f07da6d24f682cf0996432af3936547234409a4dc6eb14a512deb8bcc451",
+      "review_status": "passed_bounded_content_review",
+      "manifest_content_warnings": [],
+      "open_substantive_findings": [],
+      "resolved_findings": [
+        "CFlow reference54 two-column continuation is joined and moved to numeric order."
+      ],
+      "limitations": [
+        "Some source list items contain multiple reference entries, so those references share a Markdown bullet. Content and order are retained."
+      ]
+    },
+    {
+      "pdf": "zhou-simulating-human-cursor-chiposters2026.pdf",
+      "source_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/zhou-simulating-human-cursor-chiposters2026.md",
+      "markdown_sha256": "e71005b7666cdf4a6654102cd972866d8cb279528ff7f05b94f0bbbfb9abe01d",
+      "review_stage": "Final stable drafts after code-layout, list-anchor, and CFlow reference54 repairs",
+      "source_text_review": "Selected source PDF content and final actual-tag records compared to Markdown",
+      "checks": [
+        "Reviewed 322:0 paragraph retains waypoint indices, reference-path equation, normal vector, and s∈[0,L] in correct linear order.",
+        "References1–20 appear in order; final reference20 includes its full title, pages232–243, and DOI.",
+        "No per-document content warning is emitted by the final converter."
+      ],
+      "warnings": [],
+      "previous_reviewed_markdown_sha256": "030d29da8dafaf7643eb3bb998249fd696071d12899d30b8d711b37b278f7932",
+      "review_status": "passed_bounded_content_review",
+      "manifest_content_warnings": [],
+      "open_substantive_findings": [],
+      "resolved_findings": [],
+      "limitations": [
+        "Reviewed inline formulas use readable plain notation rather than relying on a MathJax renderer."
+      ]
+    },
+    {
+      "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "source_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/oney-expressing-interactivity-states-cmu2015.md",
+      "markdown_sha256": "72f8cf54373f85d3fb3a82b78cd8938f29a9f8110ba82ed37570e66b2f443a4e",
+      "review_stage": "Final stable drafts after code-layout, list-anchor, and CFlow reference54 repairs",
+      "source_text_review": "Selected source PDF content and final actual-tag records compared to Markdown",
+      "checks": [
+        "Beginning: title, authorship, committee, funding, complete abstract, and acknowledgements remain present.",
+        "Middle: chapter6/p114 Touch Clusters and Greedy/Non-Greedy discussions remain present and source-matched.",
+        "All chapters1–9, AppendixA tutorial, and AppendixB API remain present.",
+        "References1–172 remain consecutive and complete; anchors136–146 now occur within the reference section in source-page order.",
+        "Physical p227 ends with both toObject() and values() examples, matching the source.",
+        "All450 native Code nodes appear as code blocks; nine previously reviewed code samples contain the exact recovered printed whitespace."
+      ],
+      "warnings": [
+        {
+          "kind": "code_whitespace_needs_review",
+          "node": "4241:0",
+          "pages": [
+            169
+          ],
+          "reason": "variable_or_uncertain_character_pitch"
+        },
+        {
+          "kind": "code_whitespace_needs_review",
+          "node": "6315:0",
+          "pages": [
+            216
+          ],
+          "reason": "variable_or_uncertain_character_pitch"
+        }
+      ],
+      "previous_reviewed_markdown_sha256": "867b161352b3185ef27abf9748fee656604ff78caa128ff5fd4d6ee4f1c69c21",
+      "review_status": "passed_bounded_content_review",
+      "manifest_content_warnings": [
+        {
+          "kind": "code_whitespace_needs_review",
+          "node": "4241:0",
+          "pages": [
+            169
+          ],
+          "reason": "variable_or_uncertain_character_pitch"
+        },
+        {
+          "kind": "code_whitespace_needs_review",
+          "node": "6315:0",
+          "pages": [
+            216
+          ],
+          "reason": "variable_or_uncertain_character_pitch"
+        }
+      ],
+      "open_substantive_findings": [],
+      "code_samples_rechecked": [
+        "2089:0",
+        "2090:0",
+        "2093:0",
+        "2116:0",
+        "2124:0",
+        "3699:0",
+        "3704:0",
+        "3705:0",
+        "1496:0"
+      ],
+      "resolved_findings": [
+        "CMU reference-page anchors136–146 are no longer appended after p227.",
+        "Printed indentation restored in the representative nested callback/constraint/liven code examples."
+      ],
+      "limitations": [
+        "Two uncertain code-pitch cases (4241:0/p169 and6315:0/p216) retain native text and are explicitly flagged; no glyph content was changed.",
+        "Some printed API headings retain source-wrap spacing, e.g. every(fil ter, thisArg); content is present.",
+        "The blank source page147 has no body text; its otherwise unused page anchor remains at document end."
+      ]
+    }
+  ],
+  "review_status": "passed_known_findings_recheck",
+  "manifest_sha256": "a6589acfa87f69e7921e91d300c4b10d093c5735c5ae942f4edc8019f44a7ed3",
+  "code_helper_sha256": "bc39234fd1e1cfc0692d7eb24882941d2f5d5c4ab60344d41119920a09f5c973",
+  "no_new_investigation": true
+}

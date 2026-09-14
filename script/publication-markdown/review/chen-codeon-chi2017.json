@@ -1,0 +1,1444 @@
+{
+  "file": "chen-codeon-chi2017.pdf",
+  "title": "Codeon: On-Demand Software Development Assistance",
+  "publication_id": "codeon_on_demand_software_development_assistance_2017",
+  "pdf_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+  "markdown": "publications/chen-codeon-chi2017.md",
+  "markdown_sha256": "0d0281e2549fb369b402cffae7bb9dcbea1a32af85af067058a6c5b6e9d8b7dc",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "441:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 178
+    },
+    {
+      "node": "442:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 374
+    },
+    {
+      "node": "455:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 621
+    },
+    {
+      "node": "456:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 105
+    },
+    {
+      "node": "443:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "444:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1512
+    },
+    {
+      "node": "445:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "446:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "447:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 148
+    },
+    {
+      "node": "449:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "450:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 167
+    },
+    {
+      "node": "451:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 614
+    },
+    {
+      "node": "452:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1082
+    },
+    {
+      "node": "453:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 48
+    },
+    {
+      "node": "joined-454:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1251
+    },
+    {
+      "node": "467:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 592
+    },
+    {
+      "node": "589:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 153
+    },
+    {
+      "node": "590:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "591:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 141
+    },
+    {
+      "node": "592:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 40
+    },
+    {
+      "node": "593:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 33
+    },
+    {
+      "node": "594:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1165
+    },
+    {
+      "node": "595:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 621
+    },
+    {
+      "node": "596:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "joined-597:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 727
+    },
+    {
+      "node": "599:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "600:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 608
+    },
+    {
+      "node": "601:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 502
+    },
+    {
+      "node": "602:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 30
+    },
+    {
+      "node": "603:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 838
+    },
+    {
+      "node": "604:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 739
+    },
+    {
+      "node": "627:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 37
+    },
+    {
+      "node": "628:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1160
+    },
+    {
+      "node": "629:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 678
+    },
+    {
+      "node": "630:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 28
+    },
+    {
+      "node": "631:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 407
+    },
+    {
+      "node": "632:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 635
+    },
+    {
+      "node": "633:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 9
+    },
+    {
+      "node": "joined-634:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 540
+    },
+    {
+      "node": "635:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 401
+    },
+    {
+      "node": "636:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 346
+    },
+    {
+      "node": "638:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 421
+    },
+    {
+      "node": "639:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 351
+    },
+    {
+      "node": "640:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "641:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "642:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 560
+    },
+    {
+      "node": "643:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 2345
+    },
+    {
+      "node": "680:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 192
+    },
+    {
+      "node": "682:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 294
+    },
+    {
+      "node": "683:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 239
+    },
+    {
+      "node": "684:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 574
+    },
+    {
+      "node": "685:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 669
+    },
+    {
+      "node": "686:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "joined-687:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1019
+    },
+    {
+      "node": "689:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "690:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "691:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 895
+    },
+    {
+      "node": "692:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 354
+    },
+    {
+      "node": "696:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 2707
+    },
+    {
+      "node": "717:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 127
+    },
+    {
+      "node": "718:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 161
+    },
+    {
+      "node": "719:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 40
+    },
+    {
+      "node": "720:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 859
+    },
+    {
+      "node": "721:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 560
+    },
+    {
+      "node": "722:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 35
+    },
+    {
+      "node": "723:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 47
+    },
+    {
+      "node": "724:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 631
+    },
+    {
+      "node": "725:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 454
+    },
+    {
+      "node": "726:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1058
+    },
+    {
+      "node": "727:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 759
+    },
+    {
+      "node": "728:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 51
+    },
+    {
+      "node": "joined-729:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 294
+    },
+    {
+      "node": "734:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 268
+    },
+    {
+      "node": "735:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 213
+    },
+    {
+      "node": "737:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 785
+    },
+    {
+      "node": "738:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 788
+    },
+    {
+      "node": "739:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 45
+    },
+    {
+      "node": "740:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 756
+    },
+    {
+      "node": "741:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 21
+    },
+    {
+      "node": "742:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 107
+    },
+    {
+      "node": "743:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 10
+    },
+    {
+      "node": "744:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1141
+    },
+    {
+      "node": "745:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 788
+    },
+    {
+      "node": "746:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 347
+    },
+    {
+      "node": "751:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 354
+    },
+    {
+      "node": "752:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 104
+    },
+    {
+      "node": "753:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 14
+    },
+    {
+      "node": "754:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 50
+    },
+    {
+      "node": "755:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 487
+    },
+    {
+      "node": "758:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 10
+    },
+    {
+      "node": "759:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 23
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 582
+    },
+    {
+      "node": "761:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 31
+    },
+    {
+      "node": "762:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 244
+    },
+    {
+      "node": "766:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 2379
+    },
+    {
+      "node": "787:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 331
+    },
+    {
+      "node": "788:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 1823
+    },
+    {
+      "node": "804:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 195
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1563
+    },
+    {
+      "node": "806:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1336
+    },
+    {
+      "node": "809:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 1793
+    },
+    {
+      "node": "826:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 104
+    },
+    {
+      "node": "827:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 584
+    },
+    {
+      "node": "828:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 37
+    },
+    {
+      "node": "829:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 2396
+    },
+    {
+      "node": "830:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 1853
+    },
+    {
+      "node": "847:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 95
+    },
+    {
+      "node": "848:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 653
+    },
+    {
+      "node": "849:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1518
+    },
+    {
+      "node": "850:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 41
+    },
+    {
+      "node": "851:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 20
+    },
+    {
+      "node": "joined-858:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 907
+    },
+    {
+      "node": "861:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 140
+    },
+    {
+      "node": "862:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 208
+    },
+    {
+      "node": "863:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "864:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 394
+    },
+    {
+      "node": "865:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 244
+    },
+    {
+      "node": "866:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 423
+    },
+    {
+      "node": "867:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 38
+    },
+    {
+      "node": "868:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 625
+    },
+    {
+      "node": "869:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 575
+    },
+    {
+      "node": "joined-870:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 546
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 229
+    },
+    {
+      "node": "873:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "874:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 25
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 180
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 396
+    },
+    {
+      "node": "877:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 183
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 371
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 181
+    },
+    {
+      "node": "880:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 27
+    },
+    {
+      "node": "881:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 865
+    },
+    {
+      "node": "882:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 245
+    },
+    {
+      "node": "885:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 23
+    },
+    {
+      "node": "886:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 593
+    },
+    {
+      "node": "887:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 694
+    },
+    {
+      "node": "888:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 34
+    },
+    {
+      "node": "889:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 941
+    },
+    {
+      "node": "890:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 30
+    },
+    {
+      "node": "891:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 292
+    },
+    {
+      "node": "892:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 20
+    },
+    {
+      "node": "893:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 543
+    },
+    {
+      "node": "894:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 39
+    },
+    {
+      "node": "895:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 470
+    },
+    {
+      "node": "896:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 34
+    },
+    {
+      "node": "897:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 753
+    },
+    {
+      "node": "898:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 35
+    },
+    {
+      "node": "899:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 701
+    },
+    {
+      "node": "900:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "901:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 745
+    },
+    {
+      "node": "902:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 175
+    },
+    {
+      "node": "908:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "909:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 5131
+    },
+    {
+      "node": "534:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 2914
+    }
+  ],
+  "tagged_content_items": 10204,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/chen-codeon-chi2017/figure-001-p003.png",
+      "node": "635:0",
+      "page": 3,
+      "bbox": [
+        338.51300048828125,
+        60.35955810546875,
+        546.5994262695312,
+        174.05599975585938
+      ],
+      "sha256": "68c5aa4978ff2d5d0ee665386245618065673180d2406f83fb3ccc0ec1d2af8f",
+      "kind": "figure",
+      "alt": "Figure 1: Asynchronous interactions between developers and helpers can occur in three stages: making a request (S1), writing a response (S2), and integrating the response (S3). In Codeon, developers use an IDE plug-in to make requests (S1) and integrate responses (S3), and helpers use a web-based IDE to view content and generate responses (S2)."
+    },
+    {
+      "path": "figures/chen-codeon-chi2017/figure-002-p004.png",
+      "node": "682:0",
+      "page": 4,
+      "bbox": [
+        64.61499786376953,
+        60.363121032714844,
+        553.341796875,
+        319.47900390625
+      ],
+      "sha256": "fc2cf8a1a79a2cd904fff196796eeca86949cfafc959874cf13f29f21d81f53b",
+      "kind": "figure",
+      "alt": "Figure 2: Codeon interface where the requests and responses are on the right panel(2). Developer’s code(1) and helper’s code(3) are side by side for better comparison. Other responses includes explanation(4), annotation(5), and comments(6)"
+    },
+    {
+      "path": "figures/chen-codeon-chi2017/figure-003-p006.png",
+      "node": "734:0",
+      "page": 6,
+      "bbox": [
+        51.858001708984375,
+        60.363441467285156,
+        275.2493896484375,
+        276.9599914550781
+      ],
+      "sha256": "54aa0e6ec3c8b66bf4751c0b8f13b9bdf29c857eaf707e1058cf3c56d5f07da9",
+      "kind": "figure",
+      "alt": "Figure 3: The helper side of Codeon is an interactive webpage that allows helpers to replay the request(0) and run the code(4). Helpers can respond to it with explanation(1), and inline code(2), and annotation(3)."
+    },
+    {
+      "path": "figures/chen-codeon-chi2017/figure-004-p007.png",
+      "node": "751:0",
+      "page": 7,
+      "bbox": [
+        52.242000579833984,
+        60.36130142211914,
+        296.05450439453125,
+        164.5070037841797
+      ],
+      "sha256": "c17db442f9bf3e61be6f645d8d9716099d7ebb9340fa058326e7177948d4c4d6",
+      "kind": "figure",
+      "alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. An arrow points from the Codeon result to the baseline comparison. The paired t-test reports p = 0.03."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "643:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "643:0"
+    },
+    {
+      "source_table_id": "696:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "696:0"
+    },
+    {
+      "source_table_id": "766:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "766:0"
+    },
+    {
+      "source_table_id": "788:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 3,
+      "column_count": 4,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "788:0"
+    },
+    {
+      "source_table_id": "809:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 3,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "809:0"
+    },
+    {
+      "source_table_id": "830:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 3,
+      "cell_count": 12,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "830:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 423,
+    "paragraph_fragments_joined": 7,
+    "line_wrap_hyphens_retained": 15,
+    "reviewed_wrap_repairs": 3,
+    "script_runs_positioned": 22
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-codeon-chi2017.json.gz",
+  "source_tags_sha256": "0c07a973aaa3ee01b6e9aa8f641fc578d122d9255e7557e2394bb1a6c4a7dd11"
+}

@@ -1,0 +1,595 @@
+{
+  "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+  "title": "Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation",
+  "publication_id": "simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026",
+  "pdf_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+  "markdown": "publications/zhou-simulating-human-cursor-chiposters2026.md",
+  "markdown_sha256": "e71005b7666cdf4a6654102cd972866d8cb279528ff7f05b94f0bbbfb9abe01d",
+  "pages": 5,
+  "blocks": [
+    {
+      "node": "145:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 223
+    },
+    {
+      "node": "146:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 139
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "148:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "149:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 988
+    },
+    {
+      "node": "150:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "151:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 82
+    },
+    {
+      "node": "155:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 102
+    },
+    {
+      "node": "157:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 421
+    },
+    {
+      "node": "159:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 721
+    },
+    {
+      "node": "161:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 129
+    },
+    {
+      "node": "297:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 565
+    },
+    {
+      "node": "298:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1335
+    },
+    {
+      "node": "299:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 496
+    },
+    {
+      "node": "309:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-310:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1304
+    },
+    {
+      "node": "165:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 165
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 945
+    },
+    {
+      "node": "320:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 11
+    },
+    {
+      "node": "321:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 755
+    },
+    {
+      "node": "322:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 861
+    },
+    {
+      "node": "323:0",
+      "role": "Formula",
+      "pages": [
+        2
+      ],
+      "characters": 551
+    },
+    {
+      "node": "324:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1063
+    },
+    {
+      "node": "325:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 641
+    },
+    {
+      "node": "326:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 417
+    },
+    {
+      "node": "327:0",
+      "role": "Formula",
+      "pages": [
+        2
+      ],
+      "characters": 1121
+    },
+    {
+      "node": "joined-328:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1072
+    },
+    {
+      "node": "341:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 550
+    },
+    {
+      "node": "342:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 104
+    },
+    {
+      "node": "joined-344:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 2429
+    },
+    {
+      "node": "348:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 154
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 128
+    },
+    {
+      "node": "351:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 660
+    },
+    {
+      "node": "352:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 52
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 653
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 333
+    },
+    {
+      "node": "joined-355:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1148
+    },
+    {
+      "node": "363:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 423
+    },
+    {
+      "node": "364:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 121
+    },
+    {
+      "node": "365:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 373
+    },
+    {
+      "node": "366:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 125
+    },
+    {
+      "node": "368:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 64
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 661
+    },
+    {
+      "node": "370:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 65
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "372:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 37
+    },
+    {
+      "node": "joined-373:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1220
+    },
+    {
+      "node": "375:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 26
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1350
+    },
+    {
+      "node": "379:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1026
+    },
+    {
+      "node": "381:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 13
+    },
+    {
+      "node": "382:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 4376
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 244
+    },
+    {
+      "node": "427:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 2374
+    }
+  ],
+  "tagged_content_items": 4492,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/figure-001-p001.png",
+      "node": "161:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        648.9442749023438,
+        98.53720092773438,
+        667.9030151367188
+      ],
+      "sha256": "3b3af46226a6010bf427859eda25ebd2b9223e6b593e5b1dbc2ebb1ac70c744b",
+      "kind": "figure",
+      "alt": "Creative Commons Attribution (CC BY) license logo."
+    },
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/formula-001-p002.png",
+      "node": "323:0",
+      "page": 2,
+      "bbox": [
+        352.58502197265625,
+        94.25086975097656,
+        560.7394409179688,
+        126.85723114013672
+      ],
+      "sha256": "07fa2ef4340c2c525b495b7198a272d88a2428f861b198806257cff4ef6ff2bd",
+      "kind": "formula",
+      "alt": "Equation 1. J star is the minimum over the lateral offset function d of s of J smooth of d plus J length of d plus lambda bias. Subject to d of zero equals zero, d of L equals zero, and the absolute value of d of s is at most W."
+    },
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/formula-002-p002.png",
+      "node": "327:0",
+      "page": 2,
+      "bbox": [
+        323.0909729003906,
+        504.822509765625,
+        560.7393798828125,
+        582.595703125
+      ],
+      "sha256": "e0c74eedbb7be9efce24f8eb9d78fada6c2c1c4da52bccb169147e5e30b21a92",
+      "kind": "formula",
+      "alt": "Equation 2. J star minimizes the sum, from k equals zero to N minus one, of smoothness, progress, tracking, and corridor costs. The smoothness cost takes control u sub k; the other costs take next state x sub k plus one. Optimization variables are controls u from zero to N minus one and states x from one to N. Constraints: x sub k plus one equals f of x sub k and u sub k; the initial state x sub zero is given; u sub k belongs to the admissible control set U, and x sub k belongs to the admissible state set X."
+    },
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/figure-002-p003.png",
+      "node": "341:0",
+      "page": 3,
+      "bbox": [
+        51.79800033569336,
+        81.68511962890625,
+        557.9577026367188,
+        184.4409942626953
+      ],
+      "sha256": "99f3662389477665e3c4fe0b4cfd3ba6772074b7006dab9b65895dc24d23fda6",
+      "kind": "figure",
+      "alt": "Figure 1. Four panels compare simulated and human cursor motion through sine-wave and square-wave tunnels. Orange simulated speed repeatedly rises and falls in the sine tunnel, broadly matching the blue human speed trend. In the square tunnel, the blue human speed has higher, sharper peaks while simulated speed is lower and smoother. Both simulated and human trajectories follow the tunnel shapes; the square-turn paths round the corners. Shaded bands show variability."
+    },
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/figure-003-p004.png",
+      "node": "363:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        81.68673706054688,
+        557.9605102539062,
+        193.76300048828125
+      ],
+      "sha256": "e6ed309f6ce160fdb26b98262869137af5bcfaacb233236cd48bde727049d54b",
+      "kind": "figure",
+      "alt": "Figure 2. Three cascading-menu examples compare human and simulated cursor trajectories from a green starting point to a red target in a submenu. The highlighted orange and blue paths bend diagonally between the menus; the submenu target height increases across the examples. Both path sets show similar curved routes through the menu corridor."
+    },
+    {
+      "path": "figures/zhou-simulating-human-cursor-chiposters2026/figure-004-p004.png",
+      "node": "365:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        225.627685546875,
+        557.9638061523438,
+        315.84698486328125
+      ],
+      "sha256": "a5e419b61d081e1eb30749bca2dfb32b8d69e0c3d1b0b95de18e132e70e2c767",
+      "kind": "figure",
+      "alt": "Figure 3. Three icon-grid examples show lasso selection of green target icons among gray distractors. Highlighted human and simulated paths loop around the target clusters while avoiding neighboring icons. The paths bend around different target shapes and remain close to the target boundaries."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 93,
+    "paragraph_fragments_joined": 9,
+    "line_wrap_hyphens_retained": 8,
+    "script_runs_positioned": 58,
+    "reviewed_wrap_repairs": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhou-simulating-human-cursor-chiposters2026.json.gz",
+  "source_tags_sha256": "e90a94da9c772effa1bbc8d2279ceac3de1acebb7b3f298bc7754bc1737cbdba"
+}

@@ -1,0 +1,14 @@
+{
+  "helper_sha256": "bc39234fd1e1cfc0692d7eb24882941d2f5d5c4ab60344d41119920a09f5c973",
+  "code_nodes_checked": 574,
+  "exact_actual_text_nodes": 71,
+  "actionable_issues": [],
+  "independent_checks": [
+    "Re-ran helper on all574 Code tags and compared non-whitespace glyph sequences to source native text.",
+    "Checked all71 native ActualText blocks for exact byte-for-byte text equality.",
+    "Inspected native ActualText leading-space additions at geometric gaps: no double-spacing candidates in this corpus.",
+    "Compared changed outputs for deletion of existing blank lines: none.",
+    "Visually checked Codelets page6 code block372:0 and CMU page46 code block2124:0 against output; indentation and inter-token spacing are consistent with printed placement."
+  ],
+  "limitation": "Geometry uses a single newline between successive printed baselines; it does not reconstruct blank vertical gaps absent from the native extraction. This is not a regression or a claim that code is executable."
+}

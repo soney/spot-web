@@ -1,0 +1,632 @@
+{
+  "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+  "title": "Studying the Benefits and Challenges of Immersive Dataflow Programming",
+  "publication_id": "studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019",
+  "pdf_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+  "markdown": "publications/zhang-studying-benefits-challenges-vlhcc2019.md",
+  "markdown_sha256": "f938f6b67fd73b7f510c07011300e1c9a1ec37216afdd0281d9422ac7250f110",
+  "pages": 5,
+  "blocks": [
+    {
+      "node": "192:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 227
+    },
+    {
+      "node": "193:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "305:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "306:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 916
+    },
+    {
+      "node": "307:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 39
+    },
+    {
+      "node": "308:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "309:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 713
+    },
+    {
+      "node": "310:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 866
+    },
+    {
+      "node": "312:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 626
+    },
+    {
+      "node": "313:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 546
+    },
+    {
+      "node": "314:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 307
+    },
+    {
+      "node": "315:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "316:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 115
+    },
+    {
+      "node": "317:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 32
+    },
+    {
+      "node": "318:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 605
+    },
+    {
+      "node": "joined-319:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 610
+    },
+    {
+      "node": "336:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 506
+    },
+    {
+      "node": "338:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 829
+    },
+    {
+      "node": "340:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 617
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 543
+    },
+    {
+      "node": "343:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 584
+    },
+    {
+      "node": "344:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 285
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 483
+    },
+    {
+      "node": "346:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 399
+    },
+    {
+      "node": "joined-348:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 495
+    },
+    {
+      "node": "369:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 329
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 48
+    },
+    {
+      "node": "372:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 370
+    },
+    {
+      "node": "379:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 236
+    },
+    {
+      "node": "380:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 14
+    },
+    {
+      "node": "381:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 69
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 99
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 185
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 91
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 248
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 99
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 308
+    },
+    {
+      "node": "joined-388:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 202
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 284
+    },
+    {
+      "node": "391:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 157
+    },
+    {
+      "node": "392:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "393:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 217
+    },
+    {
+      "node": "394:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "395:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1122
+    },
+    {
+      "node": "396:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "212:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 659
+    },
+    {
+      "node": "joined-213:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1633
+    },
+    {
+      "node": "219:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 566
+    },
+    {
+      "node": "220:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 486
+    },
+    {
+      "node": "222:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "223:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 738
+    },
+    {
+      "node": "224:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 41
+    },
+    {
+      "node": "joined-225:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 614
+    },
+    {
+      "node": "227:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 37
+    },
+    {
+      "node": "228:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 347
+    },
+    {
+      "node": "229:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 577
+    },
+    {
+      "node": "230:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 549
+    },
+    {
+      "node": "231:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 35
+    },
+    {
+      "node": "232:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 565
+    },
+    {
+      "node": "233:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 400
+    },
+    {
+      "node": "234:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 24
+    },
+    {
+      "node": "235:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 223
+    },
+    {
+      "node": "239:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 13
+    },
+    {
+      "node": "240:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 2886
+    }
+  ],
+  "tagged_content_items": 3643,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-studying-benefits-challenges-vlhcc2019/figure-001-p001.png",
+      "node": "312:0",
+      "page": 1,
+      "bbox": [
+        309.9779968261719,
+        203.95884704589844,
+        565.018310546875,
+        315.3219909667969
+      ],
+      "sha256": "632174e2454f9bfd48e64f064b1c5c1446f8a9e441650e4135faee003f1d2687",
+      "kind": "figure",
+      "alt": "Fig. 1: A screenshot of our immersive dataflow programming tool. The directed arrows specify edges that determine the direction of data propagation. Operators accept any nunber of inputs and produce one or more outputs. The operator shown subtracts the position of the light from the position of the sphere, producing a direction from the light to the sphere. The result of the operator goes to the direction attribute of the light. This program thus creates a scene where the light always shoots at the sphere, even as the sphere and light move."
+    },
+    {
+      "path": "figures/zhang-studying-benefits-challenges-vlhcc2019/figure-002-p002.png",
+      "node": "343:0",
+      "page": 2,
+      "bbox": [
+        320.7879943847656,
+        48.54003143310547,
+        554.2288208007812,
+        341.37371826171875
+      ],
+      "sha256": "4dc0793562e760eb606ee4aefb5108e9e3c3847ddba3629dcd9ae32850d6197d",
+      "kind": "figure",
+      "alt": "Figure 2. Six examples arranged in two columns: (a) spotlight object with Light On/Off, Position, Light Color and Light Direction properties; (b) cube object with Position and Color properties; (c) headset avatar representing tracked user position and orientation; (d) Subtract operator, (e) Vector2Number operator, and (f) Condition A > B operator. Property sockets connect objects and tracked inputs to translucent operator boxes, whose input sockets are on the left and output sockets on the right."
+    },
+    {
+      "path": "figures/zhang-studying-benefits-challenges-vlhcc2019/figure-003-p004.png",
+      "node": "219:0",
+      "page": 4,
+      "bbox": [
+        59.518001556396484,
+        48.54570007324219,
+        289.46478271484375,
+        244.57699584960938
+      ],
+      "sha256": "8d1b8c185ee98734faa727adc95e5c699436f7b8ffc53379c14104cc20772d06",
+      "kind": "figure",
+      "alt": "Fig. 3: An illustration of four alternative techniques for specifying edges between nodes in VR using a controller. Edges can either be drawn as custom shapes (A&B) or as a straight line between nodes (C&D). Users could draw edges directly with their controller (A); along two dimensions with a depth that the system computes (B); as straight edges between nodes while showing intermediate feedback (C); or by selecting source and target nodes with no intermediate feedback (D)."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 52,
+    "paragraph_fragments_joined": 5,
+    "line_wrap_hyphens_retained": 7,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-studying-benefits-challenges-vlhcc2019.json.gz",
+  "source_tags_sha256": "c40e900bd532179d046e57a480378eae71fa3d53f7205ba8123d11941f13112c"
+}

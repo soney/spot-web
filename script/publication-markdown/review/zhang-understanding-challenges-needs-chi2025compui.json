@@ -1,0 +1,1092 @@
+{
+  "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+  "title": "Understanding Challenges and Needs of Using AI in Web Automation Systems",
+  "publication_id": "understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025",
+  "pdf_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+  "markdown": "publications/zhang-understanding-challenges-needs-chi2025compui.md",
+  "markdown_sha256": "c0016706700996414a963eaa9a9c1184abaf9a00a7926147b6bf822746436f9c",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "511:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 172
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 79
+    },
+    {
+      "node": "513:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "514:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "515:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "516:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1100
+    },
+    {
+      "node": "517:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "518:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 920
+    },
+    {
+      "node": "joined-519:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1166
+    },
+    {
+      "node": "521:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 104
+    },
+    {
+      "node": "522:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 631
+    },
+    {
+      "node": "538:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 654
+    },
+    {
+      "node": "539:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 364
+    },
+    {
+      "node": "549:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "550:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 28
+    },
+    {
+      "node": "551:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 257
+    },
+    {
+      "node": "552:0",
+      "role": "H4",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "joined-694:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 531
+    },
+    {
+      "node": "701:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 679
+    },
+    {
+      "node": "702:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 33
+    },
+    {
+      "node": "703:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1373
+    },
+    {
+      "node": "704:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "705:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 279
+    },
+    {
+      "node": "706:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 40
+    },
+    {
+      "node": "707:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1094
+    },
+    {
+      "node": "708:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 43
+    },
+    {
+      "node": "709:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 611
+    },
+    {
+      "node": "710:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 671
+    },
+    {
+      "node": "711:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 705
+    },
+    {
+      "node": "712:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "713:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 754
+    },
+    {
+      "node": "714:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "715:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 884
+    },
+    {
+      "node": "763:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "764:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 457
+    },
+    {
+      "node": "765:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 36
+    },
+    {
+      "node": "766:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 649
+    },
+    {
+      "node": "767:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 7116
+    },
+    {
+      "node": "842:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 7161
+    },
+    {
+      "node": "909:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 170
+    },
+    {
+      "node": "910:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 22
+    },
+    {
+      "node": "911:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 110
+    },
+    {
+      "node": "912:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "913:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 233
+    },
+    {
+      "node": "914:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 34
+    },
+    {
+      "node": "915:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 211
+    },
+    {
+      "node": "916:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "917:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 238
+    },
+    {
+      "node": "918:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 1486
+    },
+    {
+      "node": "931:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 40
+    },
+    {
+      "node": "932:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 393
+    },
+    {
+      "node": "933:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "934:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 917
+    },
+    {
+      "node": "935:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "936:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "937:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 199
+    },
+    {
+      "node": "959:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 860
+    },
+    {
+      "node": "960:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 774
+    },
+    {
+      "node": "961:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 190
+    },
+    {
+      "node": "962:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 636
+    },
+    {
+      "node": "963:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 125
+    },
+    {
+      "node": "964:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 178
+    },
+    {
+      "node": "965:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 845
+    },
+    {
+      "node": "966:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 63
+    },
+    {
+      "node": "joined-967:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 766
+    },
+    {
+      "node": "969:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1078
+    },
+    {
+      "node": "970:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 38
+    },
+    {
+      "node": "joined-971:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 1112
+    },
+    {
+      "node": "1072:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 691
+    },
+    {
+      "node": "1073:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 343
+    },
+    {
+      "node": "1074:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 794
+    },
+    {
+      "node": "1075:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 221
+    },
+    {
+      "node": "1077:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 94
+    },
+    {
+      "node": "joined-1078:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 853
+    },
+    {
+      "node": "1080:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1081:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 130
+    },
+    {
+      "node": "1085:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 671
+    },
+    {
+      "node": "1086:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 722
+    },
+    {
+      "node": "1087:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1088:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 257
+    },
+    {
+      "node": "1089:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1090:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 694
+    },
+    {
+      "node": "1091:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 52
+    },
+    {
+      "node": "1092:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 528
+    },
+    {
+      "node": "1093:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 95
+    },
+    {
+      "node": "joined-1094:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 635
+    },
+    {
+      "node": "1096:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1097:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 346
+    },
+    {
+      "node": "1098:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 65
+    },
+    {
+      "node": "1099:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 533
+    },
+    {
+      "node": "1100:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 318
+    },
+    {
+      "node": "1101:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1102:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 427
+    },
+    {
+      "node": "1103:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 50
+    },
+    {
+      "node": "1104:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 522
+    },
+    {
+      "node": "1105:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1106:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 326
+    },
+    {
+      "node": "1117:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1118:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 11525
+    },
+    {
+      "node": "1253:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 4714
+    },
+    {
+      "node": "1031:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 21
+    },
+    {
+      "node": "1032:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 226
+    },
+    {
+      "node": "1033:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 42
+    },
+    {
+      "node": "1034:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 100
+    },
+    {
+      "node": "1035:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 56
+    },
+    {
+      "node": "1036:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 95
+    },
+    {
+      "node": "1044:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 2627
+    },
+    {
+      "node": "1066:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1067:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 5895
+    },
+    {
+      "node": "651:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 63
+    },
+    {
+      "node": "652:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 4684
+    },
+    {
+      "node": "688:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 86
+    },
+    {
+      "node": "433:0",
+      "role": "Table",
+      "pages": [
+        10
+      ],
+      "characters": 10371
+    },
+    {
+      "node": "601:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 60
+    }
+  ],
+  "tagged_content_items": 7731,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-understanding-challenges-needs-chi2025compui/figure-001-p004.png",
+      "node": "959:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        81.68566131591797,
+        560.186279296875,
+        172.11399841308594
+      ],
+      "sha256": "93f6e326b59cc6700d512b91b7bb39b8b36ef7eef7ab4b9bd579125798cbda59",
+      "kind": "figure",
+      "alt": "Figure 1: Users first went through a screening survey (A) to collect demographic and technical background information. During the interview, participants were introduced to the web automation concepts and demonstrations through an overview session (B). Users were asked to propose 5–10 examples of web tasks they commonly perform (C). Then they evaluated each of these tasks and six predefined tasks through discussions of interaction, preferred automation levels, concerns, and usage frequency (D). This evaluation process was repeated for all scenarios (E). Participants then answered follow-up questions to explore additional use cases or concerns (F). After the interview, they completed a continuous survey over the next month to log additional tasks incrementally (G)."
+    },
+    {
+      "path": "figures/zhang-understanding-challenges-needs-chi2025compui/figure-002-p005.png",
+      "node": "1072:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        81.68468475341797,
+        560.2103881835938,
+        356.3089904785156
+      ],
+      "sha256": "1c4b2d73c32e5086a1658f6d4f1025820dd3a8c7368259e5e89cd455df519757",
+      "kind": "figure",
+      "alt": "Figure 2. Distribution of 150 user-defined tasks. Subjectivity: 56.2 percent partially subjective, 26.6 percent not subjective, 17.2 percent completely subjective. Initiative: 76.6 percent reactive, 13.8 percent proactive, 9.7 percent mixed. Repetition: 84.0 percent unpredictable, 15.4 percent predictable, 0.6 percent one-time. Information sensitivity: 59.8 percent low, 18.9 percent moderate, 8.9 percent high, 12.4 percent none. Communication: 76.3 percent none, 12.4 percent with known people, 11.2 percent with strangers. Context: 69.2 percent personal, 27.8 percent professional, 3.0 percent mixed."
+    },
+    {
+      "path": "figures/zhang-understanding-challenges-needs-chi2025compui/figure-003-p005.png",
+      "node": "1074:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        409.0960388183594,
+        560.2083129882812,
+        539.0399780273438
+      ],
+      "sha256": "44329cfdb36f716d25e955c637964c82423006cb8600246ec066d7d05590ec09",
+      "kind": "figure",
+      "alt": "Figure 3. Stacked bars compare six predefined tasks and user-defined tasks. Automation runs from 1, full automation, to 6, none; concern runs from 1, no concern, to 5, extreme concern. Full automation is most common for news summaries (59.1 percent) and market reports (50.0 percent); price comparison has 34.8 percent at automation level 5. Privacy has the clearest high-concern shares: rent payment has 42.1 percent extreme concern and 15.8 percent level 4; appointments have 30.0 percent extreme concern. For user-defined tasks, 34.8 percent favor full automation, while no-concern shares are 48.6 percent for errors, 64.5 percent for privacy, 52.9 percent for efficiency, and 66.7 percent for usefulness."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "767:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 4,
+      "cell_count": 52,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "767:0"
+    },
+    {
+      "source_table_id": "842:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 4,
+      "cell_count": 52,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "842:0"
+    },
+    {
+      "source_table_id": "1044:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 2,
+      "cell_count": 14,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1044:0"
+    },
+    {
+      "source_table_id": "1067:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 6,
+      "cell_count": 42,
+      "header_count": 12,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1067:0"
+    },
+    {
+      "source_table_id": "652:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 4,
+      "cell_count": 28,
+      "header_count": 10,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "652:0"
+    },
+    {
+      "source_table_id": "433:0",
+      "source_pages": [
+        10
+      ],
+      "format": "html",
+      "row_count": 20,
+      "column_count": 3,
+      "cell_count": 47,
+      "header_count": 28,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "433:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 142,
+    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_retained": 18,
+    "script_runs_positioned": 1,
+    "reviewed_wrap_repairs": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-understanding-challenges-needs-chi2025compui.json.gz",
+  "source_tags_sha256": "2559901268b83a5d1515ab0e7f2edc41031e0d31ca5f620cbaaf9646ace6129e"
+}

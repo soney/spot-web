@@ -1,0 +1,37 @@
+{
+  "input_sha256": "755e13cc5d21a644a9c7edba91ef7a71b3faa766ade32d9a77f3a5ab380ab087",
+  "form_cleanup": {
+    "page": 12,
+    "input_form_object": [
+      228,
+      0
+    ],
+    "removed_obsolete_marked_content_operators": {
+      "BMC": 1,
+      "EMC": 152,
+      "BDC": 151
+    },
+    "remaining_operator_count": 3883,
+    "retained_operator_sha256": "50d7490b10d08725ca5c8548d25e35d67f82b3e22080aea117b8dc7c50a7cace",
+    "original_form_sha256": "c33e3493aa747ad6d5bdbea1bab392ac8e6d958b4a8cf49375785e1e32ae6456",
+    "rewritten_form_sha256": "50d7490b10d08725ca5c8548d25e35d67f82b3e22080aea117b8dc7c50a7cace",
+    "reason": "The source Form contains orphan MCIDs and an Artifact wrapper. Its entire painted diagram is now represented by the reviewed outer Figure tag and alternative; the obsolete inner tags have no ParentTree relationships.",
+    "non_marking_operators_unchanged": true,
+    "no_optional_content_or_actualtext_removed": true
+  },
+  "table_iii_caption": {
+    "page": 8,
+    "input_caption_object": [
+      618,
+      0
+    ],
+    "source_caption_text": "TABLE III\nINTEGRATED LANDSCAPE OF CHALLENGING WEB DEBUGGING PROBLEMS, SYNTHESIZING LITERATURE-DERIVED CONTEXTS AND SURVEY-DERIVED\nSCENARIOS. WE ORGANIZE CHALLENGES INTO THREE DIMENSIONS: behaviors, domains, AND contexts. THE TWO MOST FREQUENTLY REPORTED\nSURVEY CHALLENGES ARE UNDERLINED AND WERE USED AS ANCHOR SCENARIOS IN THE FIRST INTERVIEW SESSION.",
+    "actual_text": "TABLE III\nINTEGRATED LANDSCAPE OF CHALLENGING WEB DEBUGGING PROBLEMS, SYNTHESIZING LITERATURE-DERIVED CONTEXTS AND SURVEY-DERIVED\nSCENARIOS. WE ORGANIZE CHALLENGES INTO THREE DIMENSIONS: behaviors, domains, AND contexts. THE TWO MOST FREQUENTLY REPORTED\nSURVEY CHALLENGES ARE UNDERLINED AND WERE USED AS ANCHOR SCENARIOS IN THE FIRST INTERVIEW SESSION.\nThe two underlined anchor scenarios are Non-replicable failures and Concurrency-related.",
+    "added_meaning": "The two underlined anchor scenarios are Non-replicable failures and Concurrency-related.",
+    "review": "Independent content review visually verified the underlined scenarios. Naming them preserves meaning otherwise conveyed only by underlining.",
+    "visible_content_changed": false
+  },
+  "conformance_declaration_added": false,
+  "final_path": "/tmp/spot-navigating-complexity/arab-navigating-complexity-tse2026-final.pdf",
+  "final_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895"
+}

@@ -1,0 +1,1063 @@
+{
+  "file": "wang-what-makes-well-documented-chiea2021.pdf",
+  "title": "What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle",
+  "publication_id": "what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021",
+  "pdf_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+  "markdown": "publications/wang-what-makes-well-documented-chiea2021.md",
+  "markdown_sha256": "762474ec57337c0123131146f7740c26cd67f820d0b672ddefcb12bd9b58fa8a",
+  "pages": 7,
+  "blocks": [
+    {
+      "node": "367:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 256
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 67
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 60
+    },
+    {
+      "node": "372:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "373:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 53
+    },
+    {
+      "node": "374:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 64
+    },
+    {
+      "node": "388:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 763
+    },
+    {
+      "node": "375:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1121
+    },
+    {
+      "node": "377:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 190
+    },
+    {
+      "node": "379:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 83
+    },
+    {
+      "node": "381:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 21
+    },
+    {
+      "node": "382:0",
+      "role": "Reference",
+      "pages": [
+        1
+      ],
+      "characters": 423
+    },
+    {
+      "node": "383:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 774
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 336
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 317
+    },
+    {
+      "node": "joined-387:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 707
+    },
+    {
+      "node": "389:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1019
+    },
+    {
+      "node": "416:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 201
+    },
+    {
+      "node": "418:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 53
+    },
+    {
+      "node": "419:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 184
+    },
+    {
+      "node": "421:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 50
+    },
+    {
+      "node": "422:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 202
+    },
+    {
+      "node": "423:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "424:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 62
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 421
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 321
+    },
+    {
+      "node": "430:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 11
+    },
+    {
+      "node": "431:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 543
+    },
+    {
+      "node": "436:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 424
+    },
+    {
+      "node": "438:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 777
+    },
+    {
+      "node": "443:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 461
+    },
+    {
+      "node": "447:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 59
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 128
+    },
+    {
+      "node": "449:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 711
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1025
+    },
+    {
+      "node": "458:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 182
+    },
+    {
+      "node": "459:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 59
+    },
+    {
+      "node": "460:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 666
+    },
+    {
+      "node": "503:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 555
+    },
+    {
+      "node": "505:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 390
+    },
+    {
+      "node": "508:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 11
+    },
+    {
+      "node": "509:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 390
+    },
+    {
+      "node": "511:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "joined-512:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 128
+    },
+    {
+      "node": "514:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 59
+    },
+    {
+      "node": "515:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 821
+    },
+    {
+      "node": "516:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "517:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 705
+    },
+    {
+      "node": "520:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "521:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 413
+    },
+    {
+      "node": "524:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 68
+    },
+    {
+      "node": "525:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1053
+    },
+    {
+      "node": "528:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 613
+    },
+    {
+      "node": "529:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 494
+    },
+    {
+      "node": "530:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 79
+    },
+    {
+      "node": "531:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 395
+    },
+    {
+      "node": "532:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 416
+    },
+    {
+      "node": "533:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 631
+    },
+    {
+      "node": "535:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 88
+    },
+    {
+      "node": "571:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1011
+    },
+    {
+      "node": "541:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "542:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 77
+    },
+    {
+      "node": "543:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 643
+    },
+    {
+      "node": "547:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 259
+    },
+    {
+      "node": "550:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 174
+    },
+    {
+      "node": "573:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 30113
+    },
+    {
+      "node": "626:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 204
+    },
+    {
+      "node": "627:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 4967
+    },
+    {
+      "node": "697:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 592
+    },
+    {
+      "node": "699:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 990
+    },
+    {
+      "node": "702:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 34
+    },
+    {
+      "node": "703:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1143
+    },
+    {
+      "node": "708:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 501
+    },
+    {
+      "node": "711:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 71
+    },
+    {
+      "node": "712:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 11
+    },
+    {
+      "node": "713:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 15
+    },
+    {
+      "node": "714:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 562
+    },
+    {
+      "node": "716:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 18
+    },
+    {
+      "node": "717:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 118
+    },
+    {
+      "node": "718:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "719:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 187
+    },
+    {
+      "node": "721:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 270
+    },
+    {
+      "node": "722:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 208
+    },
+    {
+      "node": "723:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 296
+    },
+    {
+      "node": "724:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 206
+    },
+    {
+      "node": "329:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 257
+    },
+    {
+      "node": "330:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 199
+    },
+    {
+      "node": "331:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 265
+    },
+    {
+      "node": "332:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 221
+    },
+    {
+      "node": "333:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 184
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 151
+    },
+    {
+      "node": "335:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 166
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 266
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 426
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 292
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 241
+    },
+    {
+      "node": "340:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 205
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 171
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 263
+    },
+    {
+      "node": "343:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 513
+    },
+    {
+      "node": "344:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 236
+    },
+    {
+      "node": "346:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 212
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 199
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 214
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 203
+    },
+    {
+      "node": "352:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 209
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 59
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 231
+    },
+    {
+      "node": "356:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 248
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 172
+    },
+    {
+      "node": "359:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 192
+    },
+    {
+      "node": "360:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 321
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 167
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 220
+    }
+  ],
+  "tagged_content_items": 1131,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/wang-what-makes-well-documented-chiea2021/figure-001-p001.png",
+      "node": "389:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "CrossMark: Check for updates."
+    },
+    {
+      "path": "figures/wang-what-makes-well-documented-chiea2021/figure-002-p004.png",
+      "node": "528:0",
+      "page": 4,
+      "bbox": [
+        91.4739990234375,
+        81.677001953125,
+        520.5440063476562,
+        290.6969909667969
+      ],
+      "sha256": "c66610cfc21bddcc323bc001408cfe28ced11887c02fee4b4420600c15e1fbf2",
+      "kind": "figure",
+      "alt": "Figure 1. Five pairs of distributions compare 80 highly voted Kaggle notebooks in red with roughly one million GitHub notebooks in blue. Rows show Markdown cells per notebook, code cells per notebook, total cells, lines of code, and words of Markdown. Kaggle notebooks have a more balanced mix of Markdown and code and substantially more explanatory text: the reported medians are 95 versus 18 total cells, and 1,728 versus 218 Markdown words. The figure supports the conclusion that highly voted Kaggle notebooks are better documented."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "573:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 28,
+      "column_count": 1,
+      "cell_count": 28,
+      "header_count": 28,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "573:0"
+    },
+    {
+      "source_table_id": "627:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 14,
+      "column_count": 4,
+      "cell_count": 38,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "627:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 97,
+    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_retained": 6,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/wang-what-makes-well-documented-chiea2021.json.gz",
+  "source_tags_sha256": "b2d2e79e963b54fe522403c00bfbbccfe41e44af205c16560672a46ac634e41b"
+}

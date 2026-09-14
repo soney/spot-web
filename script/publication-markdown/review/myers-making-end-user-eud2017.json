@@ -1,0 +1,932 @@
+{
+  "file": "myers-making-end-user-eud2017.pdf",
+  "title": "Making End User Development More Natural",
+  "publication_id": "making_end_user_development_more_natural_2016",
+  "pdf_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+  "markdown": "publications/myers-making-end-user-eud2017.md",
+  "markdown_sha256": "168b469108b9554492d2cf4471e2d769377d39e94a25899c5f65bb01f558cf94",
+  "pages": 22,
+  "blocks": [
+    {
+      "node": "346:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 183
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 804
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 37
+    },
+    {
+      "node": "351:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "352:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 80
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 91
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 84
+    },
+    {
+      "node": "356:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 81
+    },
+    {
+      "node": "joined-357:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 956
+    },
+    {
+      "node": "361:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 95
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 146
+    },
+    {
+      "node": "362:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1304
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 399
+    },
+    {
+      "node": "365:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 611
+    },
+    {
+      "node": "380:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 2969
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 61
+    },
+    {
+      "node": "397:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 12
+    },
+    {
+      "node": "398:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 303
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1229
+    },
+    {
+      "node": "413:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 587
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 383
+    },
+    {
+      "node": "415:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 976
+    },
+    {
+      "node": "joined-416:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 1043
+    },
+    {
+      "node": "425:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 277
+    },
+    {
+      "node": "426:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 212
+    },
+    {
+      "node": "428:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 10
+    },
+    {
+      "node": "joined-429:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 1672
+    },
+    {
+      "node": "528:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 964
+    },
+    {
+      "node": "529:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 745
+    },
+    {
+      "node": "530:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-531:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 812
+    },
+    {
+      "node": "535:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 515
+    },
+    {
+      "node": "536:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 450
+    },
+    {
+      "node": "joined-538:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 1107
+    },
+    {
+      "node": "547:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 853
+    },
+    {
+      "node": "548:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 788
+    },
+    {
+      "node": "550:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 616
+    },
+    {
+      "node": "551:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 702
+    },
+    {
+      "node": "552:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 633
+    },
+    {
+      "node": "237:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 11
+    },
+    {
+      "node": "238:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 526
+    },
+    {
+      "node": "239:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 706
+    },
+    {
+      "node": "240:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1303
+    },
+    {
+      "node": "joined-431:0",
+      "role": "P",
+      "pages": [
+        9,
+        11
+      ],
+      "characters": 1241
+    },
+    {
+      "node": "241:0",
+      "role": "Note",
+      "pages": [
+        9
+      ],
+      "characters": 145
+    },
+    {
+      "node": "557:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 482
+    },
+    {
+      "node": "558:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 1430
+    },
+    {
+      "node": "560:0",
+      "role": "Figure",
+      "pages": [
+        11
+      ],
+      "characters": 497
+    },
+    {
+      "node": "561:0",
+      "role": "Caption",
+      "pages": [
+        11
+      ],
+      "characters": 432
+    },
+    {
+      "node": "563:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1184
+    },
+    {
+      "node": "569:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 12
+    },
+    {
+      "node": "570:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 1092
+    },
+    {
+      "node": "571:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 691
+    },
+    {
+      "node": "572:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 886
+    },
+    {
+      "node": "573:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 524
+    },
+    {
+      "node": "574:0",
+      "role": "Note",
+      "pages": [
+        12
+      ],
+      "characters": 127
+    },
+    {
+      "node": "585:0",
+      "role": "Figure",
+      "pages": [
+        13
+      ],
+      "characters": 351
+    },
+    {
+      "node": "586:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 286
+    },
+    {
+      "node": "587:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 296
+    },
+    {
+      "node": "588:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 607
+    },
+    {
+      "node": "joined-589:0",
+      "role": "P",
+      "pages": [
+        13,
+        14
+      ],
+      "characters": 1153
+    },
+    {
+      "node": "597:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 14
+    },
+    {
+      "node": "598:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 522
+    },
+    {
+      "node": "599:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 780
+    },
+    {
+      "node": "600:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1285
+    },
+    {
+      "node": "612:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 374
+    },
+    {
+      "node": "613:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 1040
+    },
+    {
+      "node": "614:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 670
+    },
+    {
+      "node": "436:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 893
+    },
+    {
+      "node": "437:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 159
+    },
+    {
+      "node": "442:0",
+      "role": "Figure",
+      "pages": [
+        16
+      ],
+      "characters": 455
+    },
+    {
+      "node": "443:0",
+      "role": "Caption",
+      "pages": [
+        16
+      ],
+      "characters": 390
+    },
+    {
+      "node": "444:0",
+      "role": "H2",
+      "pages": [
+        16
+      ],
+      "characters": 13
+    },
+    {
+      "node": "445:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 813
+    },
+    {
+      "node": "446:0",
+      "role": "Note",
+      "pages": [
+        16
+      ],
+      "characters": 153
+    },
+    {
+      "node": "452:0",
+      "role": "Figure",
+      "pages": [
+        17
+      ],
+      "characters": 480
+    },
+    {
+      "node": "453:0",
+      "role": "Caption",
+      "pages": [
+        17
+      ],
+      "characters": 203
+    },
+    {
+      "node": "454:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 124
+    },
+    {
+      "node": "455:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 1346
+    },
+    {
+      "node": "joined-456:0",
+      "role": "P",
+      "pages": [
+        17,
+        18
+      ],
+      "characters": 927
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 401
+    },
+    {
+      "node": "466:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 667
+    },
+    {
+      "node": "467:0",
+      "role": "H2",
+      "pages": [
+        18
+      ],
+      "characters": 52
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 93
+    },
+    {
+      "node": "469:0",
+      "role": "L",
+      "pages": [
+        18
+      ],
+      "characters": 1598
+    },
+    {
+      "node": "487:0",
+      "role": "L",
+      "pages": [
+        19
+      ],
+      "characters": 668
+    },
+    {
+      "node": "494:0",
+      "role": "H2",
+      "pages": [
+        19
+      ],
+      "characters": 33
+    },
+    {
+      "node": "495:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 613
+    },
+    {
+      "node": "496:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 1128
+    },
+    {
+      "node": "497:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 606
+    },
+    {
+      "node": "503:0",
+      "role": "H2",
+      "pages": [
+        20
+      ],
+      "characters": 13
+    },
+    {
+      "node": "504:0",
+      "role": "L",
+      "pages": [
+        20
+      ],
+      "characters": 4089
+    },
+    {
+      "node": "512:0",
+      "role": "L",
+      "pages": [
+        21
+      ],
+      "characters": 4258
+    },
+    {
+      "node": "518:0",
+      "role": "L",
+      "pages": [
+        22
+      ],
+      "characters": 2582
+    }
+  ],
+  "tagged_content_items": 9865,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-001-p005.png",
+      "node": "425:0",
+      "page": 5,
+      "bbox": [
+        52.084999084472656,
+        58.15098571777344,
+        387.2850036621094,
+        299.07098388671875
+      ],
+      "sha256": "0feca3647248a1a28fd31693800e614d3f445f61d688ac2a15a171a2d76c13af",
+      "kind": "figure",
+      "alt": "Fig. 1 The Whyline for Alice, showing an EUD asking why a Pac Man character did not resize, as expected. The Whyline explains that that it would have resized, but the condition that guarded the behavior was false"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-002-p007.png",
+      "node": "535:0",
+      "page": 7,
+      "bbox": [
+        52.084999084472656,
+        58.1510009765625,
+        387.2850036621094,
+        283.0270080566406
+      ],
+      "sha256": "92207d402e0c028d22ad6bfd45fb24d06f87b5a1a957db01e0ad126244a6c09f",
+      "kind": "figure",
+      "alt": "Fig. 2 Dragging and dropping a prototype’s icon from the Toolbox creates a new part, and the editor also supports drag/drop rearrangement of parts as well as copy/paste. Users can click the example in a part’s icon to edit it, while clicking other parts of the icon displays widgets for editing its constraints, which are shared by every instance of the part. Clicking the “+” icon adds a constraint while clicking the “x” icon deletes the constraint"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-003-p008.png",
+      "node": "547:0",
+      "page": 8,
+      "bbox": [
+        52.084999084472656,
+        58.152000427246094,
+        387.2850036621094,
+        158.98300170898438
+      ],
+      "sha256": "c48a131c0580d2832f0569a77511e04f1ac66a6261f151cb663ac26956c9e399",
+      "kind": "figure",
+      "alt": "Fig. 3 An illustration of a basic InterState object, named drag_lock. Properties, which control drag_lock’s display, are represented as rows (e.g. x, and y). States and transitions are represented as columns (e.g. no_drag, drag, and drag_lock). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state; while drag_lock is in the drag state, x and y will be constrained to mouse.x and mouse.y respectively, meaning drag_lock will follow the mouse while dragging. Note that in this example, when the user performs a double click to initiate drag lock, the drag_lock object does enter and then leave the drag state intermittently as a result of the mouse.down and mouse.up events that are fired during a double click"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-004-p010.png",
+      "node": "557:0",
+      "page": 10,
+      "bbox": [
+        51.63200378417969,
+        85.3070068359375,
+        256.21099853515625,
+        569.3829956054688
+      ],
+      "sha256": "2d1c346d9003798e4e141370547a878ba6b4d69052d66988b03b04456fc36c17",
+      "kind": "figure",
+      "alt": "Figure 4: Gneiss visual web-application builder. The numbered areas show a web API's JSON source, a spreadsheet populated from that source, a drag-and-drop web interface preview, the widget toolbox, and widget properties. The example builds a map and list of New York City jazz venues. The API query refers to TextBox1.Value in the spreadsheet, so changing the search text updates the returned data and the interface."
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-005-p011.png",
+      "node": "560:0",
+      "page": 11,
+      "bbox": [
+        52.084999084472656,
+        58.152008056640625,
+        387.2850036621094,
+        205.13101196289062
+      ],
+      "sha256": "084d62ea8152d3b6a74c2d63f2330a8a46db2012132c40cee60e6a94f73a35f3",
+      "kind": "figure",
+      "alt": "Fig. 5 Gneiss visualizes hierarchies in data using nested spreadsheet cells, and lets users restructure the data by any field by drag-and-dropping a column to a different location. Here, (1) shows a structured document of restaurant data grouped by restaurant names. The user can restructure this document to instead view the data by restaurant categories by dragging the categories column to the front of the names column (2 and 3)"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-006-p013.png",
+      "node": "585:0",
+      "page": 13,
+      "bbox": [
+        52.084999084472656,
+        58.15199279785156,
+        387.2850036621094,
+        301.3389892578125
+      ],
+      "sha256": "6ac892294b6c6357b96214228502e10a43e4edc31a2f8a41c41f0c750bf77f99",
+      "kind": "figure",
+      "alt": "Fig. 6 An example screenshot of Azurite running in the Eclipse IDE. At the bottom, a timeline visualization of recent code changes is provided. The user is currently using the “Interactive Selective Undo” dialog, which is one of the more sophisticated selective undo features of Azurite"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-007-p016.png",
+      "node": "442:0",
+      "page": 16,
+      "bbox": [
+        67.61900329589844,
+        58.1510009765625,
+        371.69500732421875,
+        321.010986328125
+      ],
+      "sha256": "e0a2b4b1aeb7a6f01c103115c9ecb0fd1f3bba27dfe4d99b56eed165b542a5dc",
+      "kind": "figure",
+      "alt": "Fig. 7 A screenshot of Variolite. Here are two variant boxes. An outer box wraps the distance and computeAngle functions, and has three versions “Distance1,” “Distance2,” “Distance3” that the user can flip among with tabs. The inner variant box has two versions “dot,” and “dot with norm.” Versioning that is visible within the text editor is meant to be more accessible to novices and EUDs"
+    },
+    {
+      "path": "figures/myers-making-end-user-eud2017/figure-008-p017.png",
+      "node": "452:0",
+      "page": 17,
+      "bbox": [
+        52.56700134277344,
+        59.04750442504883,
+        386.8429870605469,
+        216.43499755859375
+      ],
+      "sha256": "5852c32954d7b76d3bff51c2d80b48547ba0850b4c5554fb2c2c9e576a86489c",
+      "kind": "figure",
+      "alt": "Figure 8. Four SUGILITE phone screenshots, labeled a–d. Panel a shows the conversational interface for giving spoken commands; b shows a confirmation popup while recording a demonstration; c shows an operation-editing panel for disambiguating the recorded action; d shows the resulting script as an editable sequence of operations. These are stages of creating and refining a smartphone automation by demonstration."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 199,
+    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_retained": 16,
+    "reviewed_wrap_repairs": 3,
+    "script_runs_positioned": 8
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/myers-making-end-user-eud2017.json.gz",
+  "source_tags_sha256": "fa1b92ea191a8ad538974f1b0f38f93f89c5c73faed3eaea1901a14c44e6f66a"
+}

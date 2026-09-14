@@ -1,0 +1,1389 @@
+{
+  "file": "oney-interstate-uist2014.pdf",
+  "title": "InterState: A Language and Environment for Expressing Interface Behavior",
+  "publication_id": "interstate_a_language_and_environment_for_expressing_interface_behavior_2014",
+  "pdf_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+  "markdown": "publications/oney-interstate-uist2014.md",
+  "markdown_sha256": "2b3c5abe3835c6b5b0a3292bf50631f9a35bcc96298fb34e985396143f48d22c",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "113:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 206
+    },
+    {
+      "node": "114:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 135
+    },
+    {
+      "node": "115:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 13
+    },
+    {
+      "node": "joined-116:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 38
+    },
+    {
+      "node": "124:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 142
+    },
+    {
+      "node": "131:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 577
+    },
+    {
+      "node": "118:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "119:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1373
+    },
+    {
+      "node": "120:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "121:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 30
+    },
+    {
+      "node": "122:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-123:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1094
+    },
+    {
+      "node": "125:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 608
+    },
+    {
+      "node": "126:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 548
+    },
+    {
+      "node": "128:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 41
+    },
+    {
+      "node": "129:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 548
+    },
+    {
+      "node": "joined-130:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 786
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 797
+    },
+    {
+      "node": "135:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1052
+    },
+    {
+      "node": "136:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 579
+    },
+    {
+      "node": "137:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 478
+    },
+    {
+      "node": "138:0",
+      "role": "Code",
+      "pages": [
+        2
+      ],
+      "characters": 694
+    },
+    {
+      "node": "139:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 116
+    },
+    {
+      "node": "140:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "141:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1027
+    },
+    {
+      "node": "142:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 573
+    },
+    {
+      "node": "joined-143:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1394
+    },
+    {
+      "node": "146:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 682
+    },
+    {
+      "node": "147:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "148:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 256
+    },
+    {
+      "node": "149:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 228
+    },
+    {
+      "node": "151:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "152:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "153:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 174
+    },
+    {
+      "node": "154:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 208
+    },
+    {
+      "node": "157:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-158:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 577
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 811
+    },
+    {
+      "node": "161:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 774
+    },
+    {
+      "node": "163:0",
+      "role": "Code",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "164:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 388
+    },
+    {
+      "node": "295:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 43
+    },
+    {
+      "node": "joined-296:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 921
+    },
+    {
+      "node": "299:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "300:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 506
+    },
+    {
+      "node": "301:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 446
+    },
+    {
+      "node": "302:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "303:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 430
+    },
+    {
+      "node": "304:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 411
+    },
+    {
+      "node": "305:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 466
+    },
+    {
+      "node": "306:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 29
+    },
+    {
+      "node": "joined-307:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 690
+    },
+    {
+      "node": "309:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "310:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 272
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 705
+    },
+    {
+      "node": "312:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 947
+    },
+    {
+      "node": "314:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "315:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 389
+    },
+    {
+      "node": "joined-316:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 370
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 890
+    },
+    {
+      "node": "320:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 31
+    },
+    {
+      "node": "321:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 218
+    },
+    {
+      "node": "322:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "323:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 411
+    },
+    {
+      "node": "324:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1043
+    },
+    {
+      "node": "joined-325:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 732
+    },
+    {
+      "node": "326:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 576
+    },
+    {
+      "node": "327:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 516
+    },
+    {
+      "node": "329:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1080
+    },
+    {
+      "node": "330:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 502
+    },
+    {
+      "node": "332:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 528
+    },
+    {
+      "node": "333:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 190
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 525
+    },
+    {
+      "node": "335:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 24
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 736
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 756
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 329
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 148
+    },
+    {
+      "node": "340:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 453
+    },
+    {
+      "node": "341:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 40
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 550
+    },
+    {
+      "node": "343:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 354
+    },
+    {
+      "node": "344:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 26
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 286
+    },
+    {
+      "node": "joined-346:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 500
+    },
+    {
+      "node": "347:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 279
+    },
+    {
+      "node": "348:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 272
+    },
+    {
+      "node": "351:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 36
+    },
+    {
+      "node": "352:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 647
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 626
+    },
+    {
+      "node": "354:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 36
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 294
+    },
+    {
+      "node": "356:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 457
+    },
+    {
+      "node": "joined-357:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 714
+    },
+    {
+      "node": "358:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 254
+    },
+    {
+      "node": "359:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 110
+    },
+    {
+      "node": "361:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 28
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 371
+    },
+    {
+      "node": "363:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 32
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 175
+    },
+    {
+      "node": "365:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 11
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 569
+    },
+    {
+      "node": "367:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 575
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 485
+    },
+    {
+      "node": "369:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 12
+    },
+    {
+      "node": "joined-370:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 467
+    },
+    {
+      "node": "373:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 737
+    },
+    {
+      "node": "374:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 350
+    },
+    {
+      "node": "377:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 474
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 776
+    },
+    {
+      "node": "379:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-380:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 428
+    },
+    {
+      "node": "382:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 27
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 206
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 284
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 391
+    },
+    {
+      "node": "386:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 16
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 392
+    },
+    {
+      "node": "388:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 97
+    },
+    {
+      "node": "389:0",
+      "role": "Code",
+      "pages": [
+        8
+      ],
+      "characters": 95
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 382
+    },
+    {
+      "node": "joined-391:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 1278
+    },
+    {
+      "node": "394:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 23
+    },
+    {
+      "node": "395:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 282
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 666
+    },
+    {
+      "node": "397:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "398:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 107
+    },
+    {
+      "node": "399:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 38
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 663
+    },
+    {
+      "node": "401:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 49
+    },
+    {
+      "node": "joined-402:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 882
+    },
+    {
+      "node": "404:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 34
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 539
+    },
+    {
+      "node": "406:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 30
+    },
+    {
+      "node": "407:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 645
+    },
+    {
+      "node": "408:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 48
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 759
+    },
+    {
+      "node": "410:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 31
+    },
+    {
+      "node": "411:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 626
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 122
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 286
+    },
+    {
+      "node": "415:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 512
+    },
+    {
+      "node": "416:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "417:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 219
+    },
+    {
+      "node": "418:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "419:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 1982
+    },
+    {
+      "node": "219:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 30
+    },
+    {
+      "node": "220:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 3141
+    }
+  ],
+  "tagged_content_items": 7295,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-interstate-uist2014/figure-001-p001.png",
+      "node": "125:0",
+      "page": 1,
+      "bbox": [
+        316.9739990234375,
+        156.11111450195312,
+        558.1993408203125,
+        234.80340576171875
+      ],
+      "sha256": "bb0ada3818b8169b7118cf04335f438d4f22a53a2d8d979c90123724ca1a3acc",
+      "kind": "figure",
+      "alt": "Figure 1: A basic InterState object, named draggable, which implements draggable and drag lock behaviors. Properties that control draggable’s display are represented as rows (e.g. x, y, and fill). States and transitions are represented as columns (e.g. no_drag and drag). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state. Here, while draggable is in the drag state, x and y will be constrained to mouse.x and mouse.y respectively, meaning draggable will follow the mouse."
+    },
+    {
+      "path": "figures/oney-interstate-uist2014/figure-002-p005.png",
+      "node": "326:0",
+      "page": 5,
+      "bbox": [
+        356.8943786621094,
+        60.544097900390625,
+        532.6716918945312,
+        245.56985473632812
+      ],
+      "sha256": "ecdac96a77275cc76a3d946b9eec04bd4a3a6a62e0158eea695535aa8d806175",
+      "kind": "figure",
+      "alt": "Figure 3: InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my_square inherits from square. Because my_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my_square inherits the definition of height, not the value. Thus, its width property evaluates to a different value (20) than it does in square (15)."
+    },
+    {
+      "path": "figures/oney-interstate-uist2014/figure-003-p006.png",
+      "node": "332:0",
+      "page": 6,
+      "bbox": [
+        158.96119689941406,
+        0.0,
+        612.0,
+        383.836669921875
+      ],
+      "sha256": "728200a9785e4f4e1835266b6b3a96da29466808cd5782a954eb17e2cab34984",
+      "kind": "figure",
+      "alt": "Figure 4. InterState multiple inheritance combines selectable and draggable objects. Selectable has not_selected and selected states and supplies a blue fill when selected. Draggable has not_dragging and dragging states, supplies a red fill while dragging, and constrains x and y to mouse.x and mouse.y. The combined my_selectable_draggable object inherits both state machines and their property definitions; its prototypes field lists selectable before draggable."
+    },
+    {
+      "path": "figures/oney-interstate-uist2014/figure-004-p006.png",
+      "node": "347:0",
+      "page": 6,
+      "bbox": [
+        314.2373962402344,
+        643.517578125,
+        411.5625915527344,
+        722.7681884765625
+      ],
+      "sha256": "bf6404f8e4e58ffc665152e38c50619a472c55dcdbc22c1ac07ca0cda6903a06",
+      "kind": "figure",
+      "alt": "Figure 5. InterState person_display object has copies ['Jane', 'Sue']. The selected first copy has my_copy 'Jane' and copy_num 0; the second has my_copy 'Sue' and copy_num 1. The copies control shows copy 1 of 2."
+    },
+    {
+      "path": "figures/oney-interstate-uist2014/figure-005-p007.png",
+      "node": "358:0",
+      "page": 7,
+      "bbox": [
+        77.63253021240234,
+        666.5963745117188,
+        273.5958557128906,
+        695.9649047851562
+      ],
+      "sha256": "3f143f2a7c51952934410f0dc78118852fc91113a23d69a39019d774e8afd3ac",
+      "kind": "figure",
+      "alt": "Figure 6. The editor highlights the x constraint other_shape.x+5 in red and displays: Error: Could not find field 'other_shape'. The program continues running despite this missing-field error."
+    }
+  ],
+  "tables": [],
+  "code_layout": [
+    {
+      "node": "138:0",
+      "pages": [
+        2
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 20,
+      "character_pitch": 3.6,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 6,
+      "inserted_leading_spaces": 84,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "163:0",
+      "pages": [
+        3
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 5.3855,
+      "relative_median_deviation": 0.0012,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "389:0",
+      "pages": [
+        8
+      ],
+      "method": "native_text_preserved",
+      "changed": false,
+      "reason": "nonmonotonic_horizontal_order"
+    }
+  ],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "paragraph_fragments_joined": 15,
+    "line_wrap_hyphens_retained": 19,
+    "line_wrap_hyphens_removed": 427,
+    "script_runs_positioned": 6
+  },
+  "review_notes": [
+    {
+      "kind": "code_whitespace_needs_review",
+      "node": "389:0",
+      "pages": [
+        8
+      ],
+      "reason": "nonmonotonic_horizontal_order"
+    }
+  ],
+  "source_tags": "source-tags/oney-interstate-uist2014.json.gz",
+  "source_tags_sha256": "37062da1c2e6addf69d6b1a8bd248d816cd30a94d79f9916028223ae3a262639"
+}

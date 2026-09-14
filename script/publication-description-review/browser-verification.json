@@ -1,0 +1,144 @@
+{
+  "started": "2026-09-14T19:43:33.361Z",
+  "completed": "2026-09-14T19:44:02.784Z",
+  "source_yaml_sha256": "5a37195ab9c99ae3b5d49a7cb6dea26e1606210e4fbe4cacaf583cfd7e196ba5",
+  "all_publications_checked": 74,
+  "mcp_source_agreement": true,
+  "status": "pass",
+  "issues": [],
+  "runtime_errors": [],
+  "viewports": [
+    1440,
+    390
+  ],
+  "layout_checks": [
+    {
+      "page": "research",
+      "width": 1440,
+      "viewport": 1440,
+      "body_width": 1425,
+      "description_count": 47,
+      "screenshot": "/tmp/spot-publication-descriptions/browser/research-publications-1440.png"
+    },
+    {
+      "page": "navigating-complexity",
+      "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+      "width": 1440,
+      "viewport": 1440,
+      "body_width": 1425,
+      "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+      "heading": "Abstract",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/navigating-complexity-1440.png"
+    },
+    {
+      "page": "ui-development-overview",
+      "id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+      "width": 1440,
+      "viewport": 1440,
+      "body_width": 1440,
+      "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
+      "heading": "Overview",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/ui-development-overview-1440.png"
+    },
+    {
+      "page": "vrcopilot",
+      "id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+      "width": 1440,
+      "viewport": 1440,
+      "body_width": 1440,
+      "title": "VRCopilot: Authoring 3D Layouts with Generative Models in VR",
+      "heading": "Abstract",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/vrcopilot-1440.png"
+    },
+    {
+      "page": "research",
+      "width": 390,
+      "viewport": 390,
+      "body_width": 375,
+      "description_count": 47,
+      "screenshot": "/tmp/spot-publication-descriptions/browser/research-publications-390.png"
+    },
+    {
+      "page": "navigating-complexity",
+      "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+      "width": 390,
+      "viewport": 390,
+      "body_width": 375,
+      "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+      "heading": "Abstract",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/navigating-complexity-390.png"
+    },
+    {
+      "page": "ui-development-overview",
+      "id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+      "width": 390,
+      "viewport": 390,
+      "body_width": 375,
+      "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
+      "heading": "Overview",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/ui-development-overview-390.png"
+    },
+    {
+      "page": "vrcopilot",
+      "id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+      "width": 390,
+      "viewport": 390,
+      "body_width": 375,
+      "title": "VRCopilot: Authoring 3D Layouts with Generative Models in VR",
+      "heading": "Abstract",
+      "screenshot": "/tmp/spot-publication-descriptions/browser/vrcopilot-390.png"
+    }
+  ],
+  "downloads": [
+    {
+      "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+      "path": "/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+      "filename": "Arab-NavigatingComplexity-TSE-2026.pdf",
+      "sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+      "bytes": 1275465
+    },
+    {
+      "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+      "path": "/assets/markdown/arab-navigating-complexity-tse2026.md",
+      "filename": "arab-navigating-complexity-tse2026.md",
+      "sha256": "adf178d75eed63af72c91f7c0af20183e1f1993badaa29f3cb14bc0dd68e58bd",
+      "bytes": 157574
+    },
+    {
+      "id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+      "path": "/assets/pdfs/pandey-ui-development-experiences-edi2024.pdf",
+      "filename": "Pandey-UIDevelopmentExperiences-EDI-2024.pdf",
+      "sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+      "bytes": 124096
+    },
+    {
+      "id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+      "path": "/assets/markdown/pandey-ui-development-experiences-edi2024.md",
+      "filename": "pandey-ui-development-experiences-edi2024.md",
+      "sha256": "fcefd826f49578f93329243e9db4c3b8aafe5e28d238c3aa78a4468472630f95",
+      "bytes": 30544
+    },
+    {
+      "id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+      "path": "/assets/pdfs/zhang-vrcopilot-uist2024.pdf",
+      "filename": "Zhang-VRCopilot-UIST-2024.pdf",
+      "sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+      "bytes": 18109580
+    },
+    {
+      "id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+      "path": "/assets/markdown/zhang-vrcopilot-uist2024.md",
+      "filename": "zhang-vrcopilot-uist2024.md",
+      "sha256": "a8f24fb280b9730829cffbbeacb9bee9e45d5c387810b95078c83a59dd6bbcac",
+      "bytes": 86273
+    }
+  ],
+  "downloads_match_source_files": true,
+  "visual_review": {
+    "screenshots_reviewed": 8,
+    "result": "pass",
+    "desktop_research_summaries": 47,
+    "desktop_summary_lines": "2\u20133; median 2",
+    "clipping_or_overlap_found": false
+  }
+}

@@ -1,0 +1,1138 @@
+{
+  "file": "ozenc-how-support-designers-chi2010.pdf",
+  "title": "How to Support Designers in Getting Hold of the Immaterial Material of Software",
+  "publication_id": "how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010",
+  "pdf_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+  "markdown": "publications/ozenc-how-support-designers-chi2010.md",
+  "markdown_sha256": "ecb5b50b29ef092b5f8d22edc3ab6bb5206f6316d73f0f10e365b67f30a4cd61",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "63:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 224
+    },
+    {
+      "node": "joined-64:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 232
+    },
+    {
+      "node": "66:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 79
+    },
+    {
+      "node": "67:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 47
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "81:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 414
+    },
+    {
+      "node": "68:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "69:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1099
+    },
+    {
+      "node": "70:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "71:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "72:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "73:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 105
+    },
+    {
+      "node": "74:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-75:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1188
+    },
+    {
+      "node": "78:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 328
+    },
+    {
+      "node": "79:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 345
+    },
+    {
+      "node": "joined-123:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1112
+    },
+    {
+      "node": "126:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 659
+    },
+    {
+      "node": "127:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1136
+    },
+    {
+      "node": "128:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 380
+    },
+    {
+      "node": "129:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "130:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 182
+    },
+    {
+      "node": "131:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-132:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1469
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 507
+    },
+    {
+      "node": "135:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 20
+    },
+    {
+      "node": "136:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1166
+    },
+    {
+      "node": "joined-137:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 626
+    },
+    {
+      "node": "140:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 549
+    },
+    {
+      "node": "141:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "142:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1189
+    },
+    {
+      "node": "143:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "144:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 336
+    },
+    {
+      "node": "145:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "146:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 258
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 227
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 353
+    },
+    {
+      "node": "164:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1061
+    },
+    {
+      "node": "165:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 232
+    },
+    {
+      "node": "166:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 512
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 248
+    },
+    {
+      "node": "168:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 162
+    },
+    {
+      "node": "170:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 420
+    },
+    {
+      "node": "184:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 46
+    },
+    {
+      "node": "185:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 745
+    },
+    {
+      "node": "186:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 753
+    },
+    {
+      "node": "187:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 267
+    },
+    {
+      "node": "188:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 196
+    },
+    {
+      "node": "189:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 47
+    },
+    {
+      "node": "190:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 444
+    },
+    {
+      "node": "191:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 685
+    },
+    {
+      "node": "273:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 444
+    },
+    {
+      "node": "274:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 649
+    },
+    {
+      "node": "275:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 222
+    },
+    {
+      "node": "276:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "277:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 366
+    },
+    {
+      "node": "278:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 612
+    },
+    {
+      "node": "280:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 580
+    },
+    {
+      "node": "281:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 317
+    },
+    {
+      "node": "282:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 27
+    },
+    {
+      "node": "283:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 801
+    },
+    {
+      "node": "284:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 451
+    },
+    {
+      "node": "285:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 27
+    },
+    {
+      "node": "286:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 366
+    },
+    {
+      "node": "287:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 246
+    },
+    {
+      "node": "288:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 70
+    },
+    {
+      "node": "289:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 316
+    },
+    {
+      "node": "299:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 175
+    },
+    {
+      "node": "300:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 462
+    },
+    {
+      "node": "301:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1088
+    },
+    {
+      "node": "302:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 23
+    },
+    {
+      "node": "303:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 918
+    },
+    {
+      "node": "320:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 72
+    },
+    {
+      "node": "321:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 466
+    },
+    {
+      "node": "331:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 768
+    },
+    {
+      "node": "332:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 372
+    },
+    {
+      "node": "333:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 60
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 530
+    },
+    {
+      "node": "joined-335:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 458
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 220
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 323
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 570
+    },
+    {
+      "node": "340:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 317
+    },
+    {
+      "node": "341:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 59
+    },
+    {
+      "node": "342:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 25
+    },
+    {
+      "node": "343:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 213
+    },
+    {
+      "node": "344:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 360
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 57
+    },
+    {
+      "node": "356:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 242
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 148
+    },
+    {
+      "node": "365:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 192
+    },
+    {
+      "node": "369:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 15
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 813
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 793
+    },
+    {
+      "node": "372:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1001
+    },
+    {
+      "node": "373:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 818
+    },
+    {
+      "node": "374:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 18
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 454
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 339
+    },
+    {
+      "node": "377:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 511
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 643
+    },
+    {
+      "node": "joined-379:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 564
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 683
+    },
+    {
+      "node": "383:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 492
+    },
+    {
+      "node": "384:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 37
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 399
+    },
+    {
+      "node": "386:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 40
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 734
+    },
+    {
+      "node": "388:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-389:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1171
+    },
+    {
+      "node": "391:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 26
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 741
+    },
+    {
+      "node": "393:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 747
+    },
+    {
+      "node": "394:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 568
+    },
+    {
+      "node": "joined-395:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 532
+    },
+    {
+      "node": "398:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 17
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 726
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 951
+    },
+    {
+      "node": "401:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1256
+    },
+    {
+      "node": "402:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 763
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 620
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 277
+    },
+    {
+      "node": "406:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 18
+    },
+    {
+      "node": "407:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 319
+    },
+    {
+      "node": "408:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "409:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 749
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 50
+    },
+    {
+      "node": "427:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 16
+    },
+    {
+      "node": "428:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 566
+    },
+    {
+      "node": "200:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 53
+    },
+    {
+      "node": "201:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 4150
+    }
+  ],
+  "tagged_content_items": 5746,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/ozenc-how-support-designers-chi2010/figure-001-p004.png",
+      "node": "187:0",
+      "page": 4,
+      "bbox": [
+        52.239990234375,
+        369.70001220703125,
+        296.239990234375,
+        558.739990234375
+      ],
+      "sha256": "202ba0cedc06171a719f6aa48c81d1fa5d8cd8d334d7333082d0885edbc88375",
+      "kind": "figure",
+      "alt": "Figure 1. Drawings of Team Radio: Notice this exploratory sketch shows the context of use and not simply the systems interface. Note that most tools force designers to focus exclusively on the GUI"
+    },
+    {
+      "path": "figures/ozenc-how-support-designers-chi2010/figure-002-p006.png",
+      "node": "332:0",
+      "page": 6,
+      "bbox": [
+        52.239990234375,
+        347.3800048828125,
+        296.0,
+        527.0599975585938
+      ],
+      "sha256": "2ec1e69f2b19027429f6a442a14c79e0f4dab6a4c980f7a23f2286868d6f0340",
+      "kind": "figure",
+      "alt": "Figure 2: wireframe used-car shopping interface. A large car preview sits above a horizontal timeline of earlier and later models; sliding along the timeline changes the car year. Controls beside the car select additional attributes. The design was used as a novel control for the refinement workshop."
+    },
+    {
+      "path": "figures/ozenc-how-support-designers-chi2010/figure-003-p006.png",
+      "node": "340:0",
+      "page": 6,
+      "bbox": [
+        316.0,
+        321.2200012207031,
+        560.0,
+        485.5400085449219
+      ],
+      "sha256": "a374ae324ce0bbcb73d9ebe1f90f979677ed02dc8d32ea8ad3a7305bde6d69ec",
+      "kind": "figure",
+      "alt": "Figure 3: wireframe flight-reservation interface. Selection controls occupy the left, plane-shaped result markers show how well flights match the criteria, and a dressing-room area on the right holds flights the user wants to keep for comparison."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "paragraph_fragments_joined": 9,
+    "line_wrap_hyphens_removed": 429,
+    "reviewed_wrap_repairs": 4,
+    "line_wrap_hyphens_retained": 7,
+    "script_runs_positioned": 8
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/ozenc-how-support-designers-chi2010.json.gz",
+  "source_tags_sha256": "cde2631da18cc65764a785e72aabc7c0a383e2823c1a326c8c515889604b5a46"
+}

@@ -1,0 +1,47 @@
+{
+  "pdf": "zhang-cflow-ls2024.pdf",
+  "source_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+  "kind": "reviewed_bibliography_continuation_repair",
+  "parent_list": "682:0",
+  "beginning_node": "694:0",
+  "beginning_body_node": "696:0",
+  "continuation_node": "689:0",
+  "continuation_body_node": "690:0",
+  "complete_text": "[54] Ashley Ge Zhang, Yan Chen, and Steve Oney. 2023. RunEx: Augmenting Regular-Expression Code Search with Runtime Values. In 2023 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). IEEE, 139–147.",
+  "complete_markdown": "- \\[54\\] Ashley Ge Zhang, Yan Chen, and Steve Oney. 2023. RunEx: Augmenting Regular-Expression Code Search with Runtime Values. In 2023 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). IEEE, 139–147.",
+  "review": "The reference starts in the left column of source p12 and continues at the top of the right column. Native logical order placed its start after refs55–56; all reference54 glyphs were present. This repair only moves and joins existing reference content.",
+  "source_nodes": [
+    {
+      "node": "694:0",
+      "text": "[54] Ashley Ge Zhang, Yan Chen, and Steve Oney. 2023. RunEx: Augmenting Regular-\nExpression Code Search with Runtime Values. In 2023 IEEE Symposium on Visual",
+      "text_sha256": "3ba72af3f850184ab3ed6e668038ec2193d662b574cea8af29789765bed666d3"
+    },
+    {
+      "node": "689:0",
+      "text": "Languages and Human-Centric Computing (VL/HCC). IEEE, 139–147.",
+      "text_sha256": "89cd068f2f0be1e93b4c40e1ce937520f633dd1351eb85dd0dc8837324ca6929"
+    }
+  ],
+  "original_child_order": [
+    "683:0",
+    "686:0",
+    "689:0",
+    "691:0",
+    "694:0"
+  ],
+  "recommended_child_order_before_join": [
+    "683:0",
+    "686:0",
+    "694:0",
+    "689:0",
+    "691:0"
+  ],
+  "recommended_join": {
+    "keep": "694:0",
+    "append": "689:0",
+    "separator": " ",
+    "after": "686:0",
+    "before": "691:0"
+  },
+  "warning": "Retain all tagged content accounting for both joined nodes. LI691:0 contains both refs55 and56, which can remain together for this bounded repair."
+}

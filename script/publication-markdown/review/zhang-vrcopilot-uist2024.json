@@ -1,0 +1,1643 @@
+{
+  "file": "zhang-vrcopilot-uist2024.pdf",
+  "title": "VRCopilot: Authoring 3D Layouts with Generative Models in VR",
+  "publication_id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+  "pdf_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+  "markdown": "publications/zhang-vrcopilot-uist2024.md",
+  "markdown_sha256": "ffab4db351c9391e2cf9d2c2baf8912c1da56e9d3bab818086ecefd51e9d6160",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "121:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 197
+    },
+    {
+      "node": "122:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
+      "node": "125:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 7
+    },
+    {
+      "node": "126:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 22
+    },
+    {
+      "node": "129:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "131:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 26
+    },
+    {
+      "node": "133:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 8
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 36
+    },
+    {
+      "node": "136:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 10
+    },
+    {
+      "node": "137:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 22
+    },
+    {
+      "node": "138:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 34
+    },
+    {
+      "node": "140:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 69
+    },
+    {
+      "node": "143:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 453
+    },
+    {
+      "node": "144:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 601
+    },
+    {
+      "node": "joined-944:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 841
+    },
+    {
+      "node": "146:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 465
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 648
+    },
+    {
+      "node": "151:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "318:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 76
+    },
+    {
+      "node": "158:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 52
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "161:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 396
+    },
+    {
+      "node": "165:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "166:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 791
+    },
+    {
+      "node": "180:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 994
+    },
+    {
+      "node": "189:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 912
+    },
+    {
+      "node": "197:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1654
+    },
+    {
+      "node": "206:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 492
+    },
+    {
+      "node": "207:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 750
+    },
+    {
+      "node": "210:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1129
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 433
+    },
+    {
+      "node": "212:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "213:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 193
+    },
+    {
+      "node": "214:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "215:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 2353
+    },
+    {
+      "node": "235:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 362
+    },
+    {
+      "node": "236:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 57
+    },
+    {
+      "node": "joined-237:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 936
+    },
+    {
+      "node": "246:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 932
+    },
+    {
+      "node": "253:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 56
+    },
+    {
+      "node": "254:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1257
+    },
+    {
+      "node": "257:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 14
+    },
+    {
+      "node": "258:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 616
+    },
+    {
+      "node": "260:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "261:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 197
+    },
+    {
+      "node": "262:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 295
+    },
+    {
+      "node": "263:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 17
+    },
+    {
+      "node": "264:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 20
+    },
+    {
+      "node": "265:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 226
+    },
+    {
+      "node": "266:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 606
+    },
+    {
+      "node": "275:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 395
+    },
+    {
+      "node": "276:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "277:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 125
+    },
+    {
+      "node": "280:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 28
+    },
+    {
+      "node": "279:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 524
+    },
+    {
+      "node": "283:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "282:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 555
+    },
+    {
+      "node": "287:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 492
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 469
+    },
+    {
+      "node": "294:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 37
+    },
+    {
+      "node": "295:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 742
+    },
+    {
+      "node": "300:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 699
+    },
+    {
+      "node": "302:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "303:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1007
+    },
+    {
+      "node": "306:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 410
+    },
+    {
+      "node": "407:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 106
+    },
+    {
+      "node": "436:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 406
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1332
+    },
+    {
+      "node": "349:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-350:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1912
+    },
+    {
+      "node": "360:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 953
+    },
+    {
+      "node": "365:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 42
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 122
+    },
+    {
+      "node": "1290:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 27
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 522
+    },
+    {
+      "node": "1291:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 30
+    },
+    {
+      "node": "438:0",
+      "role": "Span",
+      "pages": [
+        5
+      ],
+      "characters": 306
+    },
+    {
+      "node": "377:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 657
+    },
+    {
+      "node": "1292:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 31
+    },
+    {
+      "node": "385:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 595
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 181
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 363
+    },
+    {
+      "node": "388:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 601
+    },
+    {
+      "node": "390:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 22
+    },
+    {
+      "node": "391:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 543
+    },
+    {
+      "node": "1293:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 43
+    },
+    {
+      "node": "482:0",
+      "role": "Span",
+      "pages": [
+        6
+      ],
+      "characters": 221
+    },
+    {
+      "node": "582:0",
+      "role": "Span",
+      "pages": [
+        6
+      ],
+      "characters": 579
+    },
+    {
+      "node": "1294:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1295:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 38
+    },
+    {
+      "node": "405:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 17
+    },
+    {
+      "node": "406:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 258
+    },
+    {
+      "node": "408:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 637
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 47
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 608
+    },
+    {
+      "node": "413:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 20
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 242
+    },
+    {
+      "node": "415:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 17
+    },
+    {
+      "node": "416:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1126
+    },
+    {
+      "node": "417:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "418:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 959
+    },
+    {
+      "node": "420:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 28
+    },
+    {
+      "node": "421:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 88
+    },
+    {
+      "node": "422:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1153
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 587
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 954
+    },
+    {
+      "node": "434:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 264
+    },
+    {
+      "node": "440:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 337
+    },
+    {
+      "node": "441:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 48
+    },
+    {
+      "node": "442:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 331
+    },
+    {
+      "node": "443:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 49
+    },
+    {
+      "node": "444:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 308
+    },
+    {
+      "node": "445:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 126
+    },
+    {
+      "node": "446:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 334
+    },
+    {
+      "node": "447:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 88
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 139
+    },
+    {
+      "node": "449:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1077
+    },
+    {
+      "node": "453:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 517
+    },
+    {
+      "node": "455:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "456:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 130
+    },
+    {
+      "node": "457:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 246
+    },
+    {
+      "node": "458:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 20
+    },
+    {
+      "node": "459:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 354
+    },
+    {
+      "node": "461:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "462:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 763
+    },
+    {
+      "node": "463:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 436
+    },
+    {
+      "node": "619:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 339
+    },
+    {
+      "node": "479:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 737
+    },
+    {
+      "node": "481:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 261
+    },
+    {
+      "node": "484:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 704
+    },
+    {
+      "node": "485:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 78
+    },
+    {
+      "node": "486:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 29
+    },
+    {
+      "node": "487:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 587
+    },
+    {
+      "node": "495:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 303
+    },
+    {
+      "node": "497:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 28
+    },
+    {
+      "node": "498:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 130
+    },
+    {
+      "node": "500:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 904
+    },
+    {
+      "node": "529:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 651
+    },
+    {
+      "node": "554:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 238
+    },
+    {
+      "node": "572:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 27
+    },
+    {
+      "node": "573:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 793
+    },
+    {
+      "node": "575:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 84
+    },
+    {
+      "node": "574:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 262
+    },
+    {
+      "node": "576:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 406
+    },
+    {
+      "node": "577:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 136
+    },
+    {
+      "node": "578:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 191
+    },
+    {
+      "node": "579:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 261
+    },
+    {
+      "node": "580:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 291
+    },
+    {
+      "node": "1296:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 79
+    },
+    {
+      "node": "836:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 328
+    },
+    {
+      "node": "587:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 496
+    },
+    {
+      "node": "1297:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 132
+    },
+    {
+      "node": "838:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 374
+    },
+    {
+      "node": "592:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 221
+    },
+    {
+      "node": "1298:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 79
+    },
+    {
+      "node": "839:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 200
+    },
+    {
+      "node": "597:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 272
+    },
+    {
+      "node": "598:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 659
+    },
+    {
+      "node": "1299:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 91
+    },
+    {
+      "node": "840:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 237
+    },
+    {
+      "node": "603:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 281
+    },
+    {
+      "node": "1300:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 78
+    },
+    {
+      "node": "841:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 503
+    },
+    {
+      "node": "608:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 323
+    },
+    {
+      "node": "609:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "610:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 568
+    },
+    {
+      "node": "611:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 742
+    },
+    {
+      "node": "612:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 27
+    },
+    {
+      "node": "613:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 206
+    },
+    {
+      "node": "1301:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 78
+    },
+    {
+      "node": "622:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1631
+    },
+    {
+      "node": "1302:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 68
+    },
+    {
+      "node": "1303:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 75
+    },
+    {
+      "node": "637:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 375
+    },
+    {
+      "node": "638:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 19
+    },
+    {
+      "node": "639:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1927
+    },
+    {
+      "node": "640:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "641:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 996
+    },
+    {
+      "node": "642:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 18
+    },
+    {
+      "node": "643:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 199
+    },
+    {
+      "node": "644:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 13
+    },
+    {
+      "node": "941:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 44
+    },
+    {
+      "node": "896:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 97
+    },
+    {
+      "node": "940:0",
+      "role": "L",
+      "pages": [
+        12,
+        13
+      ],
+      "characters": 15397
+    }
+  ],
+  "tagged_content_items": 12151,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-001-p001.png",
+      "node": "143:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        198.90609741210938,
+        560.2037353515625,
+        445.9079895019531
+      ],
+      "sha256": "e5ec150848986411f371d0cc0c24b0b32e5c3af6a177cf42bf4e78be26533ac4",
+      "kind": "figure",
+      "alt": "Figure 1. VRCopilot offers three creation modes. Automatic creation generates an entire furnished room from a voice request. Manual creation combines pointing and speech to request a chair at a location, then offers three candidate chairs for selection. Scaffolded creation lets the user draw or generate labeled floor-plan wireframes, such as a bed footprint, and convert them into furniture."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-002-p004.png",
+      "node": "262:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        85.67007446289062,
+        296.0416259765625,
+        200.9980010986328
+      ],
+      "sha256": "e61a57ab6d940f21e95a71440e7804b7a45c3b3ff61a461f717a18f27ce39385",
+      "kind": "figure",
+      "alt": "Figure 2 shows the user interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-003-p006.png",
+      "node": "385:0",
+      "page": 6,
+      "bbox": [
+        51.79800033569336,
+        81.68632507324219,
+        560.191162109375,
+        318.18701171875
+      ],
+      "sha256": "901d26694d400867760519a51ec56becdde1a68ef391830895ff59a90d67ef53",
+      "kind": "figure",
+      "alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, and retain the completed room."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-004-p007.png",
+      "node": "408:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        81.6866683959961,
+        296.0404357910156,
+        191.83299255371094
+      ],
+      "sha256": "c3a8aa5b5a74095fc50fa7549915e5cd8c734646d615c493e0f2b5b41e3b87aa",
+      "kind": "figure",
+      "alt": "Figure 4. System architecture. A Unity client coordinates direct manipulation, voice requests and intents, intermediate wireframe representations, and the 3D scene. Audio is sent to OpenAI whisper-1, whose transcript is processed by gpt-4-turbo to return intents and parameters to Unity. The client requests layouts from the ATISS generative model server, receives generated wireframe layouts, and instantiates furniture in the scene. AWS Polly provides text-to-speech audio output. Users can also directly manipulate the scene and draw wireframes through the client interface."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-005-p008.png",
+      "node": "440:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        91.64759063720703,
+        171.10116577148438,
+        190.75100708007812
+      ],
+      "sha256": "e7a84d648fcc5d97a434af15da0b5e78e6f9b44cc7a9bbc8a5a062bda76e2afb",
+      "kind": "figure",
+      "alt": "Figure 5a. Top-down apartment layout created by P7 without generative AI. Two furnished bedrooms sit above an open living and kitchen area. The lower area has seating along the bottom edge and a broad open center; bedroom furniture includes additional storage or work surfaces."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-006-p008.png",
+      "node": "442:0",
+      "page": 8,
+      "bbox": [
+        176.72799682617188,
+        91.94964599609375,
+        296.0369567871094,
+        190.75100708007812
+      ],
+      "sha256": "a89fe618fc2a96829bea9472b6a254769b419e87cb228a970f55263483737bba",
+      "kind": "figure",
+      "alt": "Figure 5b. Top-down apartment layout created by P10 without generative AI. Two bedrooms appear above a living and dining area with an L-shaped sofa on the left and a rectangular dining table and chairs in the center. The bedrooms use a coordinated pale furniture palette."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-007-p008.png",
+      "node": "444:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        217.80722045898438,
+        171.10267639160156,
+        316.0880126953125
+      ],
+      "sha256": "1ef2aeb79ece45912f84c560b5e0c779140b38757de10be75c33fde8d6e4dbf7",
+      "kind": "figure",
+      "alt": "Figure 5c. P6 used generative AI for the two bedrooms and created the remainder of the apartment without AI. Both upper bedrooms are densely furnished. The lower living area contains a sofa and two round tables with a broad open space to the right."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-008-p008.png",
+      "node": "446:0",
+      "page": 8,
+      "bbox": [
+        176.72799682617188,
+        217.63233947753906,
+        296.0375671386719,
+        316.0880126953125
+      ],
+      "sha256": "10c0c6ac2b5c7309b285313630184d0d4fc6b605e6e339002a97f6341fbfcda4",
+      "kind": "figure",
+      "alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a desk sits diagonally near the bottom-left corner."
+    },
+    {
+      "path": "figures/zhang-vrcopilot-uist2024/figure-009-p009.png",
+      "node": "484:0",
+      "page": 9,
+      "bbox": [
+        51.79800033569336,
+        81.685302734375,
+        296.0380554199219,
+        255.6529998779297
+      ],
+      "sha256": "dea4bdad8b9f7c80f7d025924efaf009a300f2f548a9572b81b5963b5890dc89",
+      "kind": "figure",
+      "alt": "Figure 6. Box plots of agency, creativity, and effort on a seven-point Likert scale, comparing manual creation in red, scaffolded creation in green, and automatic creation in blue. Manual creation has the highest agency ratings, scaffolded creation is intermediate, and automatic creation is lowest; all pairwise agency differences are significant. Manual creation also has higher creativity ratings than the other two conditions, which do not significantly differ. Effort ratings cluster near the lower-middle of the scale and do not significantly differ. Boxes show the middle half of responses with median lines, whiskers, and plotted means."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_removed": 279,
+    "reviewed_wrap_repairs": 5,
+    "line_wrap_hyphens_retained": 11,
+    "script_runs_positioned": 5
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-vrcopilot-uist2024.json.gz",
+  "source_tags_sha256": "8cc238f99f083de130cb980f8dee76b080c1c49433c07eeaea81ad7f99993aa4"
+}

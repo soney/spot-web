@@ -1,0 +1,1291 @@
+{
+  "file": "yang-spark-vlhcc2025.pdf",
+  "title": "SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises",
+  "publication_id": "spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025",
+  "pdf_sha256": "6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc",
+  "markdown": "publications/yang-spark-vlhcc2025.md",
+  "markdown_sha256": "1c831fbc62c842b5e4b702f3878cb8d322ce21e3dba367b799d05839385488cd",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "319:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 203
+    },
+    {
+      "node": "320:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 96
+    },
+    {
+      "node": "321:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "322:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "323:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 98
+    },
+    {
+      "node": "324:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1167
+    },
+    {
+      "node": "325:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 33
+    },
+    {
+      "node": "326:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "327:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 941
+    },
+    {
+      "node": "joined-328:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 751
+    },
+    {
+      "node": "329:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 82
+    },
+    {
+      "node": "331:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1017
+    },
+    {
+      "node": "332:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 752
+    },
+    {
+      "node": "joined-333:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 574
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 887
+    },
+    {
+      "node": "337:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 458
+    },
+    {
+      "node": "347:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "348:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 51
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 777
+    },
+    {
+      "node": "joined-350:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 658
+    },
+    {
+      "node": "352:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 599
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 732
+    },
+    {
+      "node": "354:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1165
+    },
+    {
+      "node": "356:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 604
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 148
+    },
+    {
+      "node": "359:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "360:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "361:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 287
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1086
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 172
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 544
+    },
+    {
+      "node": "365:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 710
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 145
+    },
+    {
+      "node": "367:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 558
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 315
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 269
+    },
+    {
+      "node": "370:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 24
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 266
+    },
+    {
+      "node": "372:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 696
+    },
+    {
+      "node": "joined-388:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 735
+    },
+    {
+      "node": "390:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 691
+    },
+    {
+      "node": "391:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 635
+    },
+    {
+      "node": "393:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 45
+    },
+    {
+      "node": "joined-394:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1308
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 429
+    },
+    {
+      "node": "397:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 294
+    },
+    {
+      "node": "398:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 49
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 333
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 76
+    },
+    {
+      "node": "402:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 522
+    },
+    {
+      "node": "403:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 466
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 445
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 384
+    },
+    {
+      "node": "406:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 273
+    },
+    {
+      "node": "407:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 34
+    },
+    {
+      "node": "506:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 357
+    },
+    {
+      "node": "joined-507:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 311
+    },
+    {
+      "node": "509:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 272
+    },
+    {
+      "node": "510:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 162
+    },
+    {
+      "node": "511:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 31
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 301
+    },
+    {
+      "node": "513:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 490
+    },
+    {
+      "node": "514:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 240
+    },
+    {
+      "node": "516:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 865
+    },
+    {
+      "node": "517:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 809
+    },
+    {
+      "node": "518:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 670
+    },
+    {
+      "node": "519:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 614
+    },
+    {
+      "node": "520:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 203
+    },
+    {
+      "node": "521:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 30
+    },
+    {
+      "node": "joined-522:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 575
+    },
+    {
+      "node": "524:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 168
+    },
+    {
+      "node": "525:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 29
+    },
+    {
+      "node": "joined-526:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 353
+    },
+    {
+      "node": "528:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 765
+    },
+    {
+      "node": "529:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 709
+    },
+    {
+      "node": "531:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 344
+    },
+    {
+      "node": "532:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 17
+    },
+    {
+      "node": "533:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 44
+    },
+    {
+      "node": "534:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 277
+    },
+    {
+      "node": "535:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 337
+    },
+    {
+      "node": "536:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 444
+    },
+    {
+      "node": "537:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 17
+    },
+    {
+      "node": "538:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 317
+    },
+    {
+      "node": "539:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 350
+    },
+    {
+      "node": "540:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 283
+    },
+    {
+      "node": "541:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 208
+    },
+    {
+      "node": "548:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 224
+    },
+    {
+      "node": "joined-549:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 531
+    },
+    {
+      "node": "552:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 419
+    },
+    {
+      "node": "553:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 471
+    },
+    {
+      "node": "554:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 157
+    },
+    {
+      "node": "555:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 14
+    },
+    {
+      "node": "556:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 405
+    },
+    {
+      "node": "557:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 694
+    },
+    {
+      "node": "558:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 710
+    },
+    {
+      "node": "joined-559:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 331
+    },
+    {
+      "node": "561:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 389
+    },
+    {
+      "node": "562:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 42
+    },
+    {
+      "node": "563:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 403
+    },
+    {
+      "node": "564:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 229
+    },
+    {
+      "node": "565:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 225
+    },
+    {
+      "node": "566:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 364
+    },
+    {
+      "node": "567:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 478
+    },
+    {
+      "node": "568:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 357
+    },
+    {
+      "node": "569:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 471
+    },
+    {
+      "node": "571:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 7
+    },
+    {
+      "node": "572:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 82
+    },
+    {
+      "node": "573:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 8808
+    },
+    {
+      "node": "647:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 896
+    },
+    {
+      "node": "648:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 126
+    },
+    {
+      "node": "649:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 672
+    },
+    {
+      "node": "650:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 140
+    },
+    {
+      "node": "651:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 239
+    },
+    {
+      "node": "652:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 442
+    },
+    {
+      "node": "653:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 310
+    },
+    {
+      "node": "joined-654:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 618
+    },
+    {
+      "node": "656:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 329
+    },
+    {
+      "node": "657:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 105
+    },
+    {
+      "node": "659:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 16
+    },
+    {
+      "node": "660:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 51
+    },
+    {
+      "node": "661:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 581
+    },
+    {
+      "node": "662:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 474
+    },
+    {
+      "node": "663:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 296
+    },
+    {
+      "node": "664:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 53
+    },
+    {
+      "node": "665:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 651
+    },
+    {
+      "node": "joined-666:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 509
+    },
+    {
+      "node": "668:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 32
+    },
+    {
+      "node": "669:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 444
+    },
+    {
+      "node": "670:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 414
+    },
+    {
+      "node": "671:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 186
+    },
+    {
+      "node": "672:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "673:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 286
+    },
+    {
+      "node": "674:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 660
+    },
+    {
+      "node": "675:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 17
+    },
+    {
+      "node": "676:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 715
+    },
+    {
+      "node": "678:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 17
+    },
+    {
+      "node": "679:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 166
+    },
+    {
+      "node": "680:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "681:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 8420
+    },
+    {
+      "node": "789:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 7381
+    }
+  ],
+  "tagged_content_items": 11261,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-001-p004.png",
+      "node": "390:0",
+      "page": 4,
+      "bbox": [
+        72.1240005493164,
+        48.06399917602539,
+        565.5260009765625,
+        349.07598876953125
+      ],
+      "sha256": "86897b74302aa19bdca328bd68a06ee6bbad93d1dd55265ec63e06a6407c0c1d",
+      "kind": "figure",
+      "alt": "Fig. 1. SPARK consists of five panels. Here’s an overview of the SPARK dashboard: the Reference Panel (a), which provides instructors with the expected code answer, the webpage, and a DOM tree preview for the programming exercise; the Checkpoints Panel (b), which allows for the creation and display of nested-task checkpoints; the Progress Visualization (c), which presents a visualization of students’ programming progress; the Component Inspector (d), which enables instructors to customize inspections of students’ output variations; and the My Classroom (e), which contains student code and statistics on overall task performance."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-002-p005.png",
+      "node": "402:0",
+      "page": 5,
+      "bbox": [
+        46.9640007019043,
+        48.54100036621094,
+        565.06298828125,
+        302.593994140625
+      ],
+      "sha256": "bfe88611aa46a782630a4dd8ce3a797c4e98026da3646a1d47be43822f2474de",
+      "kind": "figure",
+      "alt": "Fig. 2. Checkpoints panel. In the Checkpoints panel, instructors can freely create nested-task checkpoints. Each checkpoint consists of multiple tasks, and each task (a) is made up of two parts: Task Description and Testing Code. Instructors can click the Generate Tests (b) button to view AI-suggested testing code, which can be manually modified. They can then click the Verify Checkpoint (c) button to test the reference code to see if it passes (e) or fails (d)."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-003-p006.png",
+      "node": "516:0",
+      "page": 6,
+      "bbox": [
+        46.9640007019043,
+        48.54199981689453,
+        565.052978515625,
+        214.13600158691406
+      ],
+      "sha256": "9e506800e9d2609f6bf7fdce9bd0eeee55cdf3f2b73a9489ed322e6e8f4cb890",
+      "kind": "figure",
+      "alt": "Fig. 3. My Classroom panel. Each student working on the programming problem has a Student Code Box (e), which includes the student’s code and task completion status (a) indicating whether they have passed the task. There is also a Classroom Statistics board (b) showing the class’s performance across different tasks. The My Classroom panel can switch between two modes (c): Real-Time Mode, where instructors can view students’ code in real-time, and Timestamp Mode, which records students’ code history every minute. In Timestamp Mode, Instructors can use the slider to review the students’ code history. If instructors change the order of the student code boxes in the Progress Viz panel or Components Inspector panel, they can use the Reset Order button (d) to revert the Code Boxes to their default order."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-004-p006.png",
+      "node": "518:0",
+      "page": 6,
+      "bbox": [
+        46.9640007019043,
+        286.3890075683594,
+        565.0380249023438,
+        496.2850036621094
+      ],
+      "sha256": "08ace9e155f08f59933dd1820891564afa907ab98a76cee9203772e9557ec937",
+      "kind": "figure",
+      "alt": "Fig. 4. Progress Visualization panel. The Progress Visualization panel includes a diagram (a) that displays students’ progress across checkpoints. Each dot along the checkpoint line represents a student’s task completion rate for that checkpoint at a particular timestamp (b). Instructors can hover over a dot to highlight a student (c), use the brush tool to select multiple students within that area (d), and click to select an individual student (e), with the selected student remaining highlighted. Additionally, instructors can adjust the slider to view the visualization diagrams at different timestamps (f)."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-005-p007.png",
+      "node": "528:0",
+      "page": 7,
+      "bbox": [
+        72.66899871826172,
+        48.30400085449219,
+        539.3250122070312,
+        247.7550048828125
+      ],
+      "sha256": "931ed3c94099014501ad75ea9782c11e0364591e8a2cff454885c3a50685dce3",
+      "kind": "figure",
+      "alt": "Fig. 5. Components Inspector Panel. The Components Inspector (a) is structured according to checkpoints. Each task is linked to a corresponding inspector board (b) that includes two key features: the Element Inspector (c) and the Element Previewer (e). Instructors can view the inspection results in (d) (a full view of the results is shown in (g)) and preview the element in (f). The inspector automatically simulates interactions before performing the inspection. For example, (h) displays clustered screenshots of the newly added .todoitem following the interaction ”Add new item after clicking the add button (Task 4)”. Screenshots of identical elements are grouped together to facilitate easier analysis."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-006-p009.png",
+      "node": "647:0",
+      "page": 9,
+      "bbox": [
+        72.63400268554688,
+        173.28399658203125,
+        539.3289794921875,
+        383.7560119628906
+      ],
+      "sha256": "d3458bab206b3101c2f007f75306d34de90ea06e56213a6fa9245535ce879c86",
+      "kind": "figure",
+      "alt": "Figure 6. Sixteen participants compare Baseline and SPARK. Each following pair gives mean and standard deviation for Baseline, then SPARK: comprehensive progress monitoring, 2.19 (1.28) and 4.63 (0.62); detailed trajectory insights, 2.63 (1.15) and 4.63 (0.62); identifying students falling behind, 2.81 (1.42) and 4.88 (0.34); identifying student challenges, 2.06 (1.06) and 4.13 (1.09); assessing element functionality, 1.69 (0.79) and 4.44 (0.96); inspecting element behavior variations, 1.69 (1.01) and 4.69 (0.48). Quiz correct answers out of five: 2.50 (0.97) and 4.69 (0.70). Unsure answers out of five: 2.56 (1.46) and 0.31 (0.79). The first six rows include stacked response distributions; the last two include boxplots. The source legend labels its darkest category “Not Used”, although those bars coincide with high mean ratings."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-007-p009.png",
+      "node": "649:0",
+      "page": 9,
+      "bbox": [
+        98.37000274658203,
+        412.83099365234375,
+        513.6300048828125,
+        526.7360229492188
+      ],
+      "sha256": "49bc036d9ac2d9aef65e628302c173038deb6a737697ce0086256491c422c9a1",
+      "kind": "figure",
+      "alt": "Figure 7. Sixteen participants rate usefulness, ease of use, and ease of learning for nine SPARK features: progress visualization, element inspector, element previewer, simulated interactions, real-time code boxes, timestamp code boxes, AI-generated tests, checkpoint verification, and the reference panel. Agree and strongly agree dominate every bar. All sixteen strongly agree that checkpoint verification is easy to use and easy to learn. Fifteen strongly agree that AI-generated tests are easy to use and learn. The few other responses are neutral, disagree, or not used; no strongly-disagree segment is visible."
+    },
+    {
+      "path": "figures/yang-spark-vlhcc2025/figure-008-p010.png",
+      "node": "656:0",
+      "page": 10,
+      "bbox": [
+        46.9640007019043,
+        48.54100036621094,
+        302.0249938964844,
+        115.91400146484375
+      ],
+      "sha256": "761eda645c99bb6212380c697e621d80ffc373c3db43c709e9f17eb09786c2e2",
+      "kind": "figure",
+      "alt": "Figure 8. Three progress snapshots at timestamps 2, 8, and 19 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. The views retain separate rows for different checkpoints, showing uneven progress among task components."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "573:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 9,
+      "column_count": 7,
+      "cell_count": 63,
+      "header_count": 15,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "573:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 240,
+    "paragraph_fragments_joined": 12,
+    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_retained": 23,
+    "script_runs_positioned": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/yang-spark-vlhcc2025.json.gz",
+  "source_tags_sha256": "6615be2f00f509dba83bc195e909816b778e3e25a8c314f859d36017d0fcd000"
+}

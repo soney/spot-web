@@ -175,9 +175,8 @@
               web CV (`short_url`), screen points them at the PDF (`pdf_url`).
               Both come from the CV's data file and either line simply drops
               out when its field is absent. The PDF is written into _site by
-              the deploy workflow (which runs script/export_cv_pdf.sh), not by
-              Jekyll, so under `npm run develop` that link 404s until you
-              export one yourself: script/export_cv_pdf.sh _site/oney_cv.pdf.
+              the deploy workflow (which runs script/export_cv_pdf.sh).
+              Use the published PDF URL so the link also works in development.
               Print keeps hiding the link so the PDF never links to itself.
             {% endcomment %}
             {% if cv.pdf_url %}

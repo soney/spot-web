@@ -1,0 +1,524 @@
+{
+  "file": "oney-zoomboard-chi2013.pdf",
+  "title": "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices",
+  "publication_id": "zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013",
+  "pdf_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+  "markdown": "publications/oney-zoomboard-chi2013.md",
+  "markdown_sha256": "c4121956f74e3bfaf22365b5f9969cc3f65ab951cf3b8e1faa0e86810fb52ea4",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "35:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 224
+    },
+    {
+      "node": "36:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 101
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "38:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 48
+    },
+    {
+      "node": "47:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 101
+    },
+    {
+      "node": "55:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 412
+    },
+    {
+      "node": "39:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "40:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 940
+    },
+    {
+      "node": "41:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 145
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 37
+    },
+    {
+      "node": "43:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 112
+    },
+    {
+      "node": "44:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 588
+    },
+    {
+      "node": "joined-46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 760
+    },
+    {
+      "node": "49:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 615
+    },
+    {
+      "node": "50:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "51:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 583
+    },
+    {
+      "node": "joined-52:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 868
+    },
+    {
+      "node": "53:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 461
+    },
+    {
+      "node": "54:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 403
+    },
+    {
+      "node": "57:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 297
+    },
+    {
+      "node": "58:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 239
+    },
+    {
+      "node": "60:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1173
+    },
+    {
+      "node": "joined-61:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 561
+    },
+    {
+      "node": "63:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 12
+    },
+    {
+      "node": "64:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 850
+    },
+    {
+      "node": "65:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 473
+    },
+    {
+      "node": "66:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 389
+    },
+    {
+      "node": "67:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 379
+    },
+    {
+      "node": "68:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 464
+    },
+    {
+      "node": "69:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 294
+    },
+    {
+      "node": "71:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 274
+    },
+    {
+      "node": "72:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 216
+    },
+    {
+      "node": "73:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 97
+    },
+    {
+      "node": "74:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 267
+    },
+    {
+      "node": "75:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 425
+    },
+    {
+      "node": "77:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 745
+    },
+    {
+      "node": "78:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 576
+    },
+    {
+      "node": "79:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 323
+    },
+    {
+      "node": "80:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 120
+    },
+    {
+      "node": "81:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 293
+    },
+    {
+      "node": "82:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "83:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 401
+    },
+    {
+      "node": "84:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 689
+    },
+    {
+      "node": "85:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 519
+    },
+    {
+      "node": "86:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 398
+    },
+    {
+      "node": "88:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 567
+    },
+    {
+      "node": "89:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 579
+    },
+    {
+      "node": "90:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "91:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 378
+    },
+    {
+      "node": "92:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 336
+    },
+    {
+      "node": "93:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 575
+    },
+    {
+      "node": "121:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "122:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 4108
+    }
+  ],
+  "tagged_content_items": 2162,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-zoomboard-chi2013/figure-001-p001.png",
+      "node": "53:0",
+      "page": 1,
+      "bbox": [
+        312.239990234375,
+        594.239990234375,
+        559.1199951171875,
+        652.9600219726562
+      ],
+      "sha256": "e79b84442a051431e7c4fef5e24c4c4a4e4fa4677430e4af339deb1542432c83",
+      "kind": "figure",
+      "alt": "Figure 1: ZoomBoard on a watch-sized device. The keyboard is fully zoomed out by default (A). When users press a key, the keyboard iteratively zooms in (B & C), until the keys are a size that is comfortable and accurate (C). After the desired character is entered, the keyboard resets (D). Users may also swipe to the left to delete, to the right for a space, and up to switch to a symbols keyboard."
+    },
+    {
+      "path": "figures/oney-zoomboard-chi2013/figure-002-p002.png",
+      "node": "57:0",
+      "page": 2,
+      "bbox": [
+        52.2400016784668,
+        52.2400016784668,
+        298.8800048828125,
+        193.75999450683594
+      ],
+      "sha256": "2f74619d881e99740ff7af82f3e0fc83ea1d69a7ef33546fbfffd8ecddbf7689",
+      "kind": "figure",
+      "alt": "Figure 2: ZoomBoard could be used on a variety of device sizes, for example a smartphone (top left), watch (top right; simulated on a iPad), or coin-sized (bottom left). For size comparison, a typical physical number keypad (bottom right)."
+    },
+    {
+      "path": "figures/oney-zoomboard-chi2013/figure-003-p003.png",
+      "node": "71:0",
+      "page": 3,
+      "bbox": [
+        52.959999084472656,
+        52.2400016784668,
+        285.44000244140625,
+        209.83999633789062
+      ],
+      "sha256": "b92c396a79fc481d7db6d6342fbdbf9e207a8be2b3538a55d55acfdca878c6c4",
+      "kind": "figure",
+      "alt": "Figure 3: Three applicable zooming approaches. When the user zooms in on a key (A), the area of the keyboard pressed could stay under the finger (B) or move to the center (C). We use a linear combination of both (D)."
+    },
+    {
+      "path": "figures/oney-zoomboard-chi2013/figure-004-p003.png",
+      "node": "79:0",
+      "page": 3,
+      "bbox": [
+        312.239990234375,
+        54.15999984741211,
+        551.6799926757812,
+        190.8800048828125
+      ],
+      "sha256": "6455b705dc2b48d067b0c758d4aa815cea90be8cfbf6019a19c8ece87fd3f4a8",
+      "kind": "figure",
+      "alt": "Figure 4: typing performance over eight trials, with a separate line for each participant and a thick blue mean. Mean performance rises from 7.6 words per minute on the first trial to 9.3 on the eighth. Individual trajectories vary and sometimes dip between trials."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 140,
+    "reviewed_wrap_repairs": 8,
+    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_retained": 10
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-zoomboard-chi2013.json.gz",
+  "source_tags_sha256": "6f033093fccdaf8327cf881dd97778dd97aa770a606837f91a6e35fc367536f3"
+}

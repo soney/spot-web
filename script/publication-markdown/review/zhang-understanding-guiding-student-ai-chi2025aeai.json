@@ -1,0 +1,500 @@
+{
+  "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+  "title": "Understanding And Guiding Student-AI Interaction In Future Programming Education",
+  "publication_id": "understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025",
+  "pdf_sha256": "6c16f896b866c678cc7dbba0de40dbdf88a2369faa2c47f10970e1e7853d4d3e",
+  "markdown": "publications/zhang-understanding-guiding-student-ai-chi2025aeai.md",
+  "markdown_sha256": "9860f45f07ede49b4e8537b417a20a0c2cb5db31240a7183b7b5a6f2625cc847",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "196:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 180
+    },
+    {
+      "node": "197:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "198:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 73
+    },
+    {
+      "node": "199:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "200:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 59
+    },
+    {
+      "node": "437:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "449:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 114
+    },
+    {
+      "node": "201:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 643
+    },
+    {
+      "node": "438:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "439:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1127
+    },
+    {
+      "node": "440:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "441:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 196
+    },
+    {
+      "node": "445:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "446:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 67
+    },
+    {
+      "node": "447:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "joined-448:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 466
+    },
+    {
+      "node": "452:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "453:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 671
+    },
+    {
+      "node": "454:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1210
+    },
+    {
+      "node": "joined-455:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1067
+    },
+    {
+      "node": "476:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 741
+    },
+    {
+      "node": "477:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "478:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 35
+    },
+    {
+      "node": "479:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1183
+    },
+    {
+      "node": "480:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 44
+    },
+    {
+      "node": "joined-481:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1941
+    },
+    {
+      "node": "483:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "484:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 611
+    },
+    {
+      "node": "485:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 20
+    },
+    {
+      "node": "486:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 736
+    },
+    {
+      "node": "487:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "488:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 365
+    },
+    {
+      "node": "489:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 694
+    },
+    {
+      "node": "496:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 118
+    },
+    {
+      "node": "497:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "498:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 47
+    },
+    {
+      "node": "523:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 565
+    },
+    {
+      "node": "524:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "525:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 356
+    },
+    {
+      "node": "526:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 287
+    },
+    {
+      "node": "530:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 140
+    },
+    {
+      "node": "531:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 32
+    },
+    {
+      "node": "532:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 454
+    },
+    {
+      "node": "533:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "535:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 486
+    },
+    {
+      "node": "536:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 18
+    },
+    {
+      "node": "537:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 138
+    },
+    {
+      "node": "538:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 199
+    },
+    {
+      "node": "539:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 680
+    },
+    {
+      "node": "540:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 712
+    },
+    {
+      "node": "541:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 67
+    },
+    {
+      "node": "542:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 1065
+    },
+    {
+      "node": "552:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-553:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 873
+    },
+    {
+      "node": "560:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "561:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 5897
+    },
+    {
+      "node": "628:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    }
+  ],
+  "tagged_content_items": 3447,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-understanding-guiding-student-ai-chi2025aeai/figure-001-p003.png",
+      "node": "523:0",
+      "page": 3,
+      "bbox": [
+        51.79800033569336,
+        81.68460083007812,
+        459.33172607421875,
+        249.68600463867188
+      ],
+      "sha256": "b71c02d8667e162ae7a18dcb222f7286b1c9da0639eb36c489d7d2cc4970001e",
+      "kind": "figure",
+      "alt": "Figure 1. Proposed instructor dashboard. The class overview has an AI-use frequency bar chart; topic badges for debugging, conceptual explanation, and syntax help; and red alerts for potential plagiarism, suspicious patterns, and under-utilization. The individual-student view groups students into clusters and shows a timeline of AI queries above plus and minus symbols for code edits. A syntax-help query and a potential-plagiarism alert are attached to one student’s timeline."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 78,
+    "paragraph_fragments_joined": 5,
+    "script_runs_positioned": 3,
+    "reviewed_wrap_repairs": 2,
+    "line_wrap_hyphens_retained": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-understanding-guiding-student-ai-chi2025aeai.json.gz",
+  "source_tags_sha256": "48a561a9c076d67abfed92e51001e13bfad03d57cd5f00df5fe271142b42e6c1"
+}

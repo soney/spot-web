@@ -1,0 +1,1283 @@
+{
+  "file": "chen-sifter-imx2020.pdf",
+  "title": "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale",
+  "publication_id": "sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020",
+  "pdf_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+  "markdown": "publications/chen-sifter-imx2020.md",
+  "markdown_sha256": "49652c4e78ff320aae290f216dcde9c8e0731a1d1c3701c422a0c1787627544b",
+  "pages": 9,
+  "blocks": [
+    {
+      "node": "408:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 194
+    },
+    {
+      "node": "409:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 282
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 61
+    },
+    {
+      "node": "411:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 59
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 123
+    },
+    {
+      "node": "430:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 641
+    },
+    {
+      "node": "412:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "413:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 916
+    },
+    {
+      "node": "414:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "415:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 109
+    },
+    {
+      "node": "419:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "420:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
+      "node": "421:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "422:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 421
+    },
+    {
+      "node": "423:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-424:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 211
+    },
+    {
+      "node": "427:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1522
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 743
+    },
+    {
+      "node": "joined-429:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1453
+    },
+    {
+      "node": "446:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 284
+    },
+    {
+      "node": "447:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 229
+    },
+    {
+      "node": "449:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 711
+    },
+    {
+      "node": "450:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 350
+    },
+    {
+      "node": "453:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 308
+    },
+    {
+      "node": "454:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 87
+    },
+    {
+      "node": "455:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 987
+    },
+    {
+      "node": "456:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 54
+    },
+    {
+      "node": "621:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 476
+    },
+    {
+      "node": "634:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "635:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 218
+    },
+    {
+      "node": "636:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "637:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 513
+    },
+    {
+      "node": "joined-638:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 717
+    },
+    {
+      "node": "647:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 210
+    },
+    {
+      "node": "648:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 36
+    },
+    {
+      "node": "649:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 503
+    },
+    {
+      "node": "650:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 767
+    },
+    {
+      "node": "651:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 310
+    },
+    {
+      "node": "652:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 254
+    },
+    {
+      "node": "653:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 11
+    },
+    {
+      "node": "654:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 260
+    },
+    {
+      "node": "655:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 422
+    },
+    {
+      "node": "656:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 60
+    },
+    {
+      "node": "657:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 136
+    },
+    {
+      "node": "660:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 477
+    },
+    {
+      "node": "661:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "662:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 611
+    },
+    {
+      "node": "667:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 183
+    },
+    {
+      "node": "668:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 24
+    },
+    {
+      "node": "669:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 70
+    },
+    {
+      "node": "670:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 292
+    },
+    {
+      "node": "joined-673:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 917
+    },
+    {
+      "node": "687:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 698
+    },
+    {
+      "node": "688:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "689:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 425
+    },
+    {
+      "node": "690:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "691:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 696
+    },
+    {
+      "node": "692:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "693:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 224
+    },
+    {
+      "node": "694:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 269
+    },
+    {
+      "node": "695:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 765
+    },
+    {
+      "node": "696:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "697:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1205
+    },
+    {
+      "node": "698:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 505
+    },
+    {
+      "node": "699:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 56
+    },
+    {
+      "node": "700:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 733
+    },
+    {
+      "node": "701:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 21
+    },
+    {
+      "node": "702:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1026
+    },
+    {
+      "node": "710:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 3381
+    },
+    {
+      "node": "732:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 107
+    },
+    {
+      "node": "733:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 562
+    },
+    {
+      "node": "734:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 282
+    },
+    {
+      "node": "735:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 579
+    },
+    {
+      "node": "736:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 288
+    },
+    {
+      "node": "737:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "738:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 301
+    },
+    {
+      "node": "739:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "740:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 222
+    },
+    {
+      "node": "741:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 461
+    },
+    {
+      "node": "744:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 408
+    },
+    {
+      "node": "745:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 30
+    },
+    {
+      "node": "746:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 233
+    },
+    {
+      "node": "754:0",
+      "role": "Table",
+      "pages": [
+        6
+      ],
+      "characters": 12974
+    },
+    {
+      "node": "862:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 496
+    },
+    {
+      "node": "863:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 699
+    },
+    {
+      "node": "870:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 17
+    },
+    {
+      "node": "871:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 460
+    },
+    {
+      "node": "872:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 27
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 229
+    },
+    {
+      "node": "874:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 51
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 617
+    },
+    {
+      "node": "876:0",
+      "role": "Formula",
+      "pages": [
+        6
+      ],
+      "characters": 641
+    },
+    {
+      "node": "877:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 605
+    },
+    {
+      "node": "884:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 2271
+    },
+    {
+      "node": "904:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 304
+    },
+    {
+      "node": "905:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 60
+    },
+    {
+      "node": "906:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 623
+    },
+    {
+      "node": "907:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 334
+    },
+    {
+      "node": "908:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 462
+    },
+    {
+      "node": "909:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 881
+    },
+    {
+      "node": "910:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 533
+    },
+    {
+      "node": "911:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 183
+    },
+    {
+      "node": "912:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 104
+    },
+    {
+      "node": "913:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 41
+    },
+    {
+      "node": "914:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 508
+    },
+    {
+      "node": "915:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 229
+    },
+    {
+      "node": "916:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 874
+    },
+    {
+      "node": "917:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 32
+    },
+    {
+      "node": "918:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 40
+    },
+    {
+      "node": "919:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 137
+    },
+    {
+      "node": "920:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 264
+    },
+    {
+      "node": "921:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 82
+    },
+    {
+      "node": "joined-926:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 334
+    },
+    {
+      "node": "928:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 35
+    },
+    {
+      "node": "929:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 257
+    },
+    {
+      "node": "930:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 21
+    },
+    {
+      "node": "931:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 786
+    },
+    {
+      "node": "932:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 104
+    },
+    {
+      "node": "933:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 514
+    },
+    {
+      "node": "934:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 35
+    },
+    {
+      "node": "935:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 397
+    },
+    {
+      "node": "936:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "937:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 648
+    },
+    {
+      "node": "938:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 28
+    },
+    {
+      "node": "939:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 530
+    },
+    {
+      "node": "940:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 775
+    },
+    {
+      "node": "953:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "954:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 430
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 318
+    },
+    {
+      "node": "956:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 21
+    },
+    {
+      "node": "957:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 97
+    },
+    {
+      "node": "958:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 13
+    },
+    {
+      "node": "959:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 1016
+    },
+    {
+      "node": "978:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 7788
+    }
+  ],
+  "tagged_content_items": 7992,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/chen-sifter-imx2020/figure-001-p002.png",
+      "node": "446:0",
+      "page": 2,
+      "bbox": [
+        51.79800033569336,
+        84.59876251220703,
+        308.0018310546875,
+        318.89300537109375
+      ],
+      "sha256": "54b8051dff8124b4ff304afa06fa5a67f30213c9d695a2f0c2eaf68750181ce0",
+      "kind": "figure",
+      "alt": "Figure 1: Screenshot from 2018 of some curated content from users’ posts in Snapchat, e.g., “So Satisfying: The oddly statisfying cut of this balloon...” (left), and Twitter, e.g., “The best pictures from Coachella 2018” (right)."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-002-p002.png",
+      "node": "453:0",
+      "page": 2,
+      "bbox": [
+        315.9549865722656,
+        81.68685150146484,
+        572.1492309570312,
+        151.96600341796875
+      ],
+      "sha256": "7b14757d4789b3b64ab6913217402e573c9003ed0aeab2c44fcd40e2ffab2d94",
+      "kind": "figure",
+      "alt": "Figure 2. Common curation pipeline: Research → Select and collect → Interpret individual content → Organize content and annotation → Interpret across content → Narrate. Sifter focuses on the Select and collect stage, shaded darker than the other stages."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-003-p003.png",
+      "node": "660:0",
+      "page": 3,
+      "bbox": [
+        315.9549865722656,
+        81.68588256835938,
+        572.1618041992188,
+        261.54901123046875
+      ],
+      "sha256": "2289cdf49101627d7d42f815c6aeb709d5c5f29db36793a958d32c10470e1418",
+      "kind": "figure",
+      "alt": "Figure 3. An expert curator supplies a query to a video set; the input contains tens of thousands of videos. Machine automated filters reduce the set, then a non-expert crowd selects videos and a separate crowd agreement stage refines the selection. A decision asks Enough videos? No loops back to the selecting stage; yes produces dozens of high-quality, thematically relevant videos for evaluation by the expert curator."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-004-p005.png",
+      "node": "733:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        268.3149108886719,
+        308.0038146972656,
+        524.031005859375
+      ],
+      "sha256": "00320b083834a200548e4d1afb9673cb4f993c3fcf5cc484df8c296a1c99cc2c",
+      "kind": "figure",
+      "alt": "Figure 4. Sifter’s task page shows a grid of eight video previews in a browser. Callout 1 marks the task instructions and theme keywords at the top. Callout 2 marks progress indicators showing how many videos have been viewed and selected. Callout 3 marks the video grid; callout 4 marks the pointer over a video, where workers can enable audio and click to select. Callout 5 marks the page timer. A green Next button spans the bottom. Videos autoplay silently until a worker hovers over them to hear audio."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-005-p006.png",
+      "node": "860:0",
+      "page": 6,
+      "bbox": [
+        193.78672790527344,
+        232.9555206298828,
+        205.2291717529297,
+        244.39797973632812
+      ],
+      "sha256": "94ae565268d066926dfd34b209b292d921d771ba73a63430518ea8354d8430d3",
+      "kind": "figure",
+      "alt": "Face with rolling eyes emoji."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-006-p006.png",
+      "node": "861:0",
+      "page": 6,
+      "bbox": [
+        132.67062377929688,
+        289.8239440917969,
+        173.90261840820312,
+        301.2703857421875
+      ],
+      "sha256": "b415d07c2579402930030730cabfb3c4da205598d4b28481a656e8ae70a88238",
+      "kind": "figure",
+      "alt": "Five fire emojis."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/formula-001-p006.png",
+      "node": "876:0",
+      "page": 6,
+      "bbox": [
+        344.96600341796875,
+        552.549072265625,
+        560.2012939453125,
+        580.5538940429688
+      ],
+      "sha256": "8adcc4bcafef6ec925c8ed3a3a04bdd510d0adc30eb9da1be91f24608d2e5a01",
+      "kind": "formula",
+      "alt": "Equation 1. Sifter subscript T equals max(t subscript worker 1, selection; t subscript worker 2, selection) plus max(t subscript worker 1, agreement; t subscript worker 2, agreement). That is, the larger of the two workers’ selection times plus the larger of their two agreement times."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-007-p007.png",
+      "node": "910:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        604.8868408203125,
+        308.0025329589844,
+        664.302001953125
+      ],
+      "sha256": "bc76cbaa8953565c55c2c9d72284d2ac2fbecf36af913c40891e74d43c64611b",
+      "kind": "figure",
+      "alt": "Figure 5. Paired box plots of relative relevance ratings for compilations C1–C12, Sifter in blue and staff curators in cyan. Ratings are relative to a baseline random sample. Most medians are near 0–2, with substantial overlapping spreads. For C3, the staff-curator median is about 1 while Sifter is near 0; this is the only compilation reported as significantly different after the source’s correction (p<.0042). C12 has among the highest median ratings for both approaches."
+    },
+    {
+      "path": "figures/chen-sifter-imx2020/figure-008-p007.png",
+      "node": "920:0",
+      "page": 7,
+      "bbox": [
+        315.9549865722656,
+        589.81396484375,
+        572.1537475585938,
+        693.0260009765625
+      ],
+      "sha256": "b8979b730932f617a5ed4d86a387ec2cd76d53288377c1dc0418b8f1e30a8f07",
+      "kind": "figure",
+      "alt": "Figure 6. Strategy occurrences reported by workers: relevance 19; quality 9; quality first then relevance 7; both quality and relevance 7; relevance first then quality 1. Relevance is the most common strategy."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "710:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 3,
+      "cell_count": 15,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "710:0"
+    },
+    {
+      "source_table_id": "754:0",
+      "source_pages": [
+        6
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 7,
+      "cell_count": 91,
+      "header_count": 19,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "754:0"
+    },
+    {
+      "source_table_id": "884:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 3,
+      "column_count": 5,
+      "cell_count": 15,
+      "header_count": 7,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "884:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 114,
+    "paragraph_fragments_joined": 5,
+    "line_wrap_hyphens_retained": 11,
+    "reviewed_wrap_repairs": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-sifter-imx2020.json.gz",
+  "source_tags_sha256": "68e75c9fbad0a018f67294d71668f57f3e5c451426cdf911d9c87053052fd6f2"
+}

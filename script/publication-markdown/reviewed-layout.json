@@ -1,0 +1,24 @@
+[
+  {
+    "pdf": "zhang-cflow-ls2024.pdf",
+    "source_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "nodes": [
+      "694:0",
+      "689:0"
+    ],
+    "replace_at": "689:0",
+    "text": "[54] Ashley Ge Zhang, Yan Chen, and Steve Oney. 2023. RunEx: Augmenting Regular-Expression Code Search with Runtime Values. In 2023 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). IEEE, 139–147.",
+    "review": "The reference starts in the left column of source p12 and continues at the top of the right column. Native logical order placed its start after refs55–56; all reference54 glyphs were present. This repair only moves and joins existing reference content."
+  },
+  {
+    "pdf": "krosnick-expresso-vlhcc2018.pdf",
+    "source_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+    "nodes": [
+      "403:0",
+      "479:0"
+    ],
+    "replace_at": "403:0",
+    "text": "The idea of defining responsive UI behavior by specifying the UI appearance at specific viewport sizes (keyframes), interpolating (smooth) transitions between them, and supporting discontinuous (jump) transitions between significantly different layout states.",
+    "review": "Final hash-matched native tree contains list item403/LBody405 ending and sup- at page1, followed by P479 beginning porting discontinuous at page2. Joined sup-/porting boundary as supporting and printed signifi-cantly line wrap as significantly; all wording retained. Emit continuation only once as part of the existing bullet."
+  }
+]

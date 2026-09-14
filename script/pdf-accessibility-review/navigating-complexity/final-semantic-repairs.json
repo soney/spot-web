@@ -1,0 +1,9 @@
+{
+  "source_sha256": "10abda35b90b01dcb4919e0826aa9081e48fbed4ab76b2bdc40e177253856fa2",
+  "output_sha256": "4916df70a1b5823207e4d337ebda8de5c5b9a40c71a6f1b99aef0b1918238b94",
+  "repairs": [
+    "Restored opening drop cap to DEBUGGING in native order and ActualText.",
+    "Moved RQ4 to its list label and updated ParentTree/marked-content role."
+  ],
+  "drop_cap_actual_text": "DEBUGGING is a central yet cognitively demanding part..."
+}

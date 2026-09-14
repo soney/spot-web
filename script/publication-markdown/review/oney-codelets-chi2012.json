@@ -1,0 +1,1306 @@
+{
+  "file": "oney-codelets-chi2012.pdf",
+  "title": "Codelets: Linking Interactive Documentation and Example Code in the Editor",
+  "publication_id": "codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012",
+  "pdf_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+  "markdown": "publications/oney-codelets-chi2012.md",
+  "markdown_sha256": "16bf384fb1c27985cf8130f876560b45c1f1b9a4245365909430fab546161c77",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "68:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 205
+    },
+    {
+      "node": "69:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 12
+    },
+    {
+      "node": "70:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
+      "node": "71:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "72:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 13
+    },
+    {
+      "node": "73:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 49
+    },
+    {
+      "node": "82:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 96
+    },
+    {
+      "node": "161:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 412
+    },
+    {
+      "node": "74:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "75:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1341
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "77:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 31
+    },
+    {
+      "node": "78:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 104
+    },
+    {
+      "node": "79:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 37
+    },
+    {
+      "node": "80:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "joined-81:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 798
+    },
+    {
+      "node": "83:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 490
+    },
+    {
+      "node": "84:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 433
+    },
+    {
+      "node": "86:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 682
+    },
+    {
+      "node": "87:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 164
+    },
+    {
+      "node": "160:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 60
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 628
+    },
+    {
+      "node": "164:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 34
+    },
+    {
+      "node": "165:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 836
+    },
+    {
+      "node": "166:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 501
+    },
+    {
+      "node": "182:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 756
+    },
+    {
+      "node": "joined-183:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1140
+    },
+    {
+      "node": "185:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "186:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 518
+    },
+    {
+      "node": "187:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 38
+    },
+    {
+      "node": "188:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 649
+    },
+    {
+      "node": "189:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 947
+    },
+    {
+      "node": "191:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 351
+    },
+    {
+      "node": "192:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 294
+    },
+    {
+      "node": "193:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 895
+    },
+    {
+      "node": "194:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1084
+    },
+    {
+      "node": "joined-195:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 916
+    },
+    {
+      "node": "196:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 232
+    },
+    {
+      "node": "197:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 175
+    },
+    {
+      "node": "198:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 294
+    },
+    {
+      "node": "199:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 237
+    },
+    {
+      "node": "202:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 859
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 376
+    },
+    {
+      "node": "204:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "205:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 511
+    },
+    {
+      "node": "206:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 10
+    },
+    {
+      "node": "207:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 429
+    },
+    {
+      "node": "joined-208:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 622
+    },
+    {
+      "node": "210:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 535
+    },
+    {
+      "node": "211:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 261
+    },
+    {
+      "node": "212:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 11
+    },
+    {
+      "node": "213:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "214:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 498
+    },
+    {
+      "node": "joined-215:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 519
+    },
+    {
+      "node": "216:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 336
+    },
+    {
+      "node": "217:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 208
+    },
+    {
+      "node": "219:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 1180
+    },
+    {
+      "node": "220:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 307
+    },
+    {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 327
+    },
+    {
+      "node": "223:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1210
+    },
+    {
+      "node": "224:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 591
+    },
+    {
+      "node": "joined-225:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 856
+    },
+    {
+      "node": "227:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 22
+    },
+    {
+      "node": "228:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 557
+    },
+    {
+      "node": "229:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 11
+    },
+    {
+      "node": "230:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 357
+    },
+    {
+      "node": "231:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 313
+    },
+    {
+      "node": "232:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-233:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 920
+    },
+    {
+      "node": "236:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 688
+    },
+    {
+      "node": "237:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 521
+    },
+    {
+      "node": "238:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 589
+    },
+    {
+      "node": "239:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 14
+    },
+    {
+      "node": "240:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 399
+    },
+    {
+      "node": "241:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 396
+    },
+    {
+      "node": "242:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 285
+    },
+    {
+      "node": "243:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 194
+    },
+    {
+      "node": "244:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 12
+    },
+    {
+      "node": "245:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 146
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 732
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 371
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 279
+    },
+    {
+      "node": "372:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 696
+    },
+    {
+      "node": "373:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 163
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 368
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 633
+    },
+    {
+      "node": "377:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 323
+    },
+    {
+      "node": "378:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 33
+    },
+    {
+      "node": "379:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 166
+    },
+    {
+      "node": "380:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 31
+    },
+    {
+      "node": "381:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 287
+    },
+    {
+      "node": "382:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 566
+    },
+    {
+      "node": "joined-383:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 535
+    },
+    {
+      "node": "384:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 256
+    },
+    {
+      "node": "385:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 199
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 300
+    },
+    {
+      "node": "388:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 41
+    },
+    {
+      "node": "389:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 365
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 886
+    },
+    {
+      "node": "391:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 382
+    },
+    {
+      "node": "393:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 468
+    },
+    {
+      "node": "394:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 411
+    },
+    {
+      "node": "396:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 95
+    },
+    {
+      "node": "397:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 13
+    },
+    {
+      "node": "398:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 549
+    },
+    {
+      "node": "399:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 372
+    },
+    {
+      "node": "401:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 952
+    },
+    {
+      "node": "402:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 36
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 420
+    },
+    {
+      "node": "404:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 36
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 95
+    },
+    {
+      "node": "406:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 22
+    },
+    {
+      "node": "joined-407:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 770
+    },
+    {
+      "node": "409:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 26
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 655
+    },
+    {
+      "node": "411:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 42
+    },
+    {
+      "node": "412:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 305
+    },
+    {
+      "node": "413:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 625
+    },
+    {
+      "node": "414:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 26
+    },
+    {
+      "node": "415:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 381
+    },
+    {
+      "node": "joined-416:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 557
+    },
+    {
+      "node": "419:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 27
+    },
+    {
+      "node": "420:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 405
+    },
+    {
+      "node": "421:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 194
+    },
+    {
+      "node": "422:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 41
+    },
+    {
+      "node": "423:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 439
+    },
+    {
+      "node": "424:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 947
+    },
+    {
+      "node": "425:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 46
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 367
+    },
+    {
+      "node": "427:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 29
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 353
+    },
+    {
+      "node": "429:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 534
+    },
+    {
+      "node": "430:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 553
+    },
+    {
+      "node": "431:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 439
+    },
+    {
+      "node": "432:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 453
+    },
+    {
+      "node": "433:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 19
+    },
+    {
+      "node": "434:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 139
+    },
+    {
+      "node": "435:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "436:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 275
+    },
+    {
+      "node": "444:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 79
+    },
+    {
+      "node": "445:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 4626
+    }
+  ],
+  "tagged_content_items": 5002,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-codelets-chi2012/figure-001-p001.png",
+      "node": "83:0",
+      "page": 1,
+      "bbox": [
+        316.1499938964844,
+        186.3000030517578,
+        560.6300048828125,
+        379.4200134277344
+      ],
+      "sha256": "3ec3db703f2faf130498c66a5faa82b2fef5b24d4c7b520d54023ccfdd3285e4",
+      "kind": "figure",
+      "alt": "Figure 1. Codelets attach helpers to regions of code. Helpers are displayed inline with the rest of the code without obscuring it. This Codelet creates a jQuery Mobile button. Its helper is interactive and allows its user to customize the button by interacting with a form, drawing a line to illustrate which region of code each form element is changing. The user may also edit the code and the form will automatically update itself."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-002-p003.png",
+      "node": "191:0",
+      "page": 3,
+      "bbox": [
+        52.0,
+        59.439998626708984,
+        558.5499877929688,
+        187.75999450683594
+      ],
+      "sha256": "61eceeb408c184954eb8f5870691a9df812b188533a240f6996ed3eb97abb520",
+      "kind": "figure",
+      "alt": "Figure 2. Our augmented editor allows Codelets to be searched for and inserted in the editor, searching for stored Codelets based on their keywords and descriptions. The search box (A) is invoked using a keyboard shortcut. If a result is selected, a Codelet (B) is inserted following the caret."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-003-p003.png",
+      "node": "196:0",
+      "page": 3,
+      "bbox": [
+        315.8399963378906,
+        221.44000244140625,
+        528.4000244140625,
+        405.44000244140625
+      ],
+      "sha256": "dc86f954f8780e0390a0e691ff64e2c1352fa917cd10e55e2fc9e0540c899e03",
+      "kind": "figure",
+      "alt": "Figure 3. A Codelet inspired by CSSPortal’s Rounded Corner Generator. As the developer moves the slider, it modifies the code and illustrates which parts of code are changing."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-004-p003.png",
+      "node": "198:0",
+      "page": 3,
+      "bbox": [
+        315.8399963378906,
+        437.9200134277344,
+        555.280029296875,
+        660.7999877929688
+      ],
+      "sha256": "cd25b2fbcca6c2cd122057d2f87908d2b89c3caf760dd63bb3c0afe67837fb3d",
+      "kind": "figure",
+      "alt": "Figure 4. This Codelet displays a warning (D) after it detects the absence of a required library. On its right side (E) is a link to a Codelet for including the library. The link can be dragged into place and its Codelet (F) is inserted."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-005-p004.png",
+      "node": "216:0",
+      "page": 4,
+      "bbox": [
+        313.67999267578125,
+        564.8099975585938,
+        557.6799926757812,
+        681.1300048828125
+      ],
+      "sha256": "549c21503aaec356f23560af9e17b9cdcf5725df155cc45ee9ed0dc4d9e322d7",
+      "kind": "figure",
+      "alt": "Figure 5: grouped bar charts compare the control group in blue with Codelets in red. Mean completion time falls from about 22.2 minutes to 12.7 minutes; mean browser refresh count falls from about 19 to 9. Error bars show variation. Both reductions are statistically significant."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-006-p005.png",
+      "node": "219:0",
+      "page": 5,
+      "bbox": [
+        52.2400016784668,
+        59.439998626708984,
+        559.52001953125,
+        125.83999633789062
+      ],
+      "sha256": "fcfe8a4278677bd5ba543ba0ecd16d6a2627fccbbb1834aec9ce939d2dc748f1",
+      "kind": "figure",
+      "alt": "Table 1. Task completion time and number of refreshes used for testing during part A. Each value is a mean followed by its standard deviation in parentheses. Time is measured in minutes; refreshes are counts. Step 1: Codelets time 2.09 (0.78), control time 4.04 (1.84); the time difference is significant at p < 0.01. Codelets refreshes 1.70 (0.67), control refreshes 2.90 (1.66). Step 2: Codelets time 1.75 (1.22), control time 2.54 (1.04). Codelets refreshes 1.0 (0.00), control refreshes 2.44 (0.88); the refresh-count difference is significant at p < 0.01. Step 3: Codelets time 5.57 (2.72), control time 10.40 (3.91); the time difference is significant at p < 0.01. Codelets refreshes 4.30 (3.59), control refreshes 8.78 (4.55); the refresh-count difference is significant at p < 0.05. Step 4: Codelets time 3.26 (1.73), control time 5.26 (3.46). Codelets refreshes 2.3 (2.11), control refreshes 4.78 (3.63). The source marks the p < 0.01 comparisons with two asterisks and green shading, and the p < 0.05 comparison with one asterisk and blue shading. Other comparisons have no significance marking."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-007-p007.png",
+      "node": "384:0",
+      "page": 7,
+      "bbox": [
+        54.400001525878906,
+        649.8400268554688,
+        292.3999938964844,
+        686.47998046875
+      ],
+      "sha256": "d11710daf5f636fb741126c64ebda62b19eb5509131188347119a71f295e1898",
+      "kind": "figure",
+      "alt": "Figure 7. If the user edits the region of code attached to a Codelet so that the helper becomes out of sync with the attached code, the Codelet asks the user before the helper makes any code changes."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-008-p007.png",
+      "node": "393:0",
+      "page": 7,
+      "bbox": [
+        320.0,
+        619.6900024414062,
+        551.760009765625,
+        662.8099975585938
+      ],
+      "sha256": "01fbc3f80ee608943239c9031c93a2972c9e6350e8b88ba3b8b246655fdf8394",
+      "kind": "figure",
+      "alt": "Figure 8. For consistency, Codelets have a standard mechanism for displaying warnings with text and any number of buttons. Helpers can take advantage of their semantic understanding of what their attached example code is supposed to do to display warnings even if the code is syntactically correct. This Codelet, for reading a file in Java, displays an error because the programmer has not specified a filename."
+    }
+  ],
+  "tables": [],
+  "code_layout": [
+    {
+      "node": "372:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 23,
+      "character_pitch": 4.2232,
+      "relative_median_deviation": 0.0059,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 148,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 355,
+    "paragraph_fragments_joined": 10,
+    "reviewed_wrap_repairs": 9,
+    "line_wrap_hyphens_retained": 29,
+    "script_runs_positioned": 6
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-codelets-chi2012.json.gz",
+  "source_tags_sha256": "5d17454793123461ace0b63b6dc60398e046f8ebbe7ee66bf5bed17c86fb3943"
+}

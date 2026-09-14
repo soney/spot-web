@@ -1,9 +1,11 @@
 # Publication PDF accessibility and appearance review
 
-The September 14, 2026 review covers all 73 publication PDFs (1,010 pages).
+The September 14, 2026 review covers all 74 publication PDFs (1,028 pages).
 The PDFs in `assets/pdfs/` retain their original filenames and publication URLs.
-Every page matches the original repository version at Git revision `8bbeb3a`
-pixel for pixel in both MuPDF 1.28.2 and Poppler 26.01.0 at 144 DPI. Page counts, MediaBox and
+The original 73 PDFs use Git revision `8bbeb3a` as their appearance baseline;
+Navigating Complexity uses the original attachment supplied by the user, identified
+by its hash in the manifest. Every page matches its baseline pixel for pixel in
+both MuPDF 1.28.2 and Poppler 26.01.0 at 144 DPI. Page counts, MediaBox and
 CropBox geometry, and rotations also match. `appearance-comparison.json` records
 the original and final hashes and per-file comparison results.
 
@@ -16,8 +18,8 @@ Recovered content is retained as invisible tagged text where described below.
 
 ## Verification
 
-All 73 copies pass the custom structural checks. veraPDF 1.30.2's PDF/UA-1
-profile reports two complete passes, 70 files whose only failure is a missing
+All 74 copies pass the custom structural checks. veraPDF 1.30.2's PDF/UA-1
+profile reports two complete passes, 71 files whose only failure is a missing
 PDF/UA identification declaration, and one file with original unembedded fonts
 plus the missing declaration. No other profile-rule failures remain. A
 PDF/UA declaration was not added merely to pass the validator.
@@ -85,6 +87,27 @@ The readable Expresso table and MIT XML companions remain linked from their
 publication pages and exposed through the site's WebMCP publication tool.
 
 ## Remaining findings
+
+Navigating Complexity arrived untagged. Its 18-page copy now has reviewed
+heading levels, column order, four research-question labels, 62 bibliography
+entries, two figure descriptions, and seven tables with 270 cells, 14 spanning
+category headers and 234 explicit header associations. The opening drop cap
+reads as part of “DEBUGGING.” Table III's accessible caption names the two
+anchor scenarios that the original identifies only by underlining. Repeated
+IEEE notices are artifacts after an accessible first occurrence. Obsolete tag
+markers inside the flowchart were removed, and its reviewed Figure description
+provides the diagram's meaning.
+
+Two unembedded Helvetica resources use compatible embedded URW NimbusSans
+substitutes; both renderers confirm unchanged appearance on all 18 pages. All
+font resources are now embedded. The sole remaining veraPDF finding is the
+omitted PDF/UA declaration; the file has not been certified. The original
+figure/table-number inconsistencies, caption typo and missing parenthesis remain
+visually unchanged and are listed in the manifest. The
+[Navigating Complexity review](navigating-complexity/final-summary.json) and its
+neighboring reports record the exact file hashes, structural checks, table and
+figure review, and page comparisons. Its new Markdown download uses this final
+tagged PDF; the original 73 PDFs and Markdown documents remain unchanged.
 
 Preserving original appearance leaves the visual limitations listed above.
 Two Table 14 category labels in the MIT thesis are absent in both source

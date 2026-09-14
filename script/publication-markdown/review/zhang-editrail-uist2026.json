@@ -1,0 +1,1867 @@
+{
+  "file": "zhang-editrail-uist2026.pdf",
+  "title": "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code",
+  "publication_id": "editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026",
+  "pdf_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+  "markdown": "publications/zhang-editrail-uist2026.md",
+  "markdown_sha256": "cf562092cff41091e9ce4daa0f226d7976c73719671d1db53fcc8cff4a26e857",
+  "pages": 19,
+  "blocks": [
+    {
+      "node": "308:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 151
+    },
+    {
+      "node": "309:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "310:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 119
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "312:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "314:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 102
+    },
+    {
+      "node": "315:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "328:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 426
+    },
+    {
+      "node": "316:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "317:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1155
+    },
+    {
+      "node": "318:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 63
+    },
+    {
+      "node": "320:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "321:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 440
+    },
+    {
+      "node": "322:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "323:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 359
+    },
+    {
+      "node": "324:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 627
+    },
+    {
+      "node": "325:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 617
+    },
+    {
+      "node": "joined-326:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 846
+    },
+    {
+      "node": "327:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 109
+    },
+    {
+      "node": "890:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 764
+    },
+    {
+      "node": "893:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "894:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 35
+    },
+    {
+      "node": "895:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 655
+    },
+    {
+      "node": "896:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 860
+    },
+    {
+      "node": "897:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 985
+    },
+    {
+      "node": "898:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 45
+    },
+    {
+      "node": "joined-899:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 750
+    },
+    {
+      "node": "901:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 630
+    },
+    {
+      "node": "902:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 529
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 617
+    },
+    {
+      "node": "904:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 48
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 351
+    },
+    {
+      "node": "906:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 944
+    },
+    {
+      "node": "959:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 78
+    },
+    {
+      "node": "960:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 507
+    },
+    {
+      "node": "961:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "962:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 556
+    },
+    {
+      "node": "963:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 20
+    },
+    {
+      "node": "964:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 230
+    },
+    {
+      "node": "965:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 24
+    },
+    {
+      "node": "966:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 724
+    },
+    {
+      "node": "967:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 15
+    },
+    {
+      "node": "968:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 939
+    },
+    {
+      "node": "969:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 50
+    },
+    {
+      "node": "970:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 262
+    },
+    {
+      "node": "971:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1481
+    },
+    {
+      "node": "983:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 93
+    },
+    {
+      "node": "984:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1130
+    },
+    {
+      "node": "985:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 88
+    },
+    {
+      "node": "986:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 737
+    },
+    {
+      "node": "990:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 1304
+    },
+    {
+      "node": "991:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 1245
+    },
+    {
+      "node": "992:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1012
+    },
+    {
+      "node": "993:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 20
+    },
+    {
+      "node": "994:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 62
+    },
+    {
+      "node": "995:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 320
+    },
+    {
+      "node": "999:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 84
+    },
+    {
+      "node": "1000:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 523
+    },
+    {
+      "node": "1004:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1005:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 541
+    },
+    {
+      "node": "1009:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1010:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1411
+    },
+    {
+      "node": "1011:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1012:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 252
+    },
+    {
+      "node": "1013:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 53
+    },
+    {
+      "node": "1014:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 710
+    },
+    {
+      "node": "1015:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 42
+    },
+    {
+      "node": "1016:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 706
+    },
+    {
+      "node": "1017:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 50
+    },
+    {
+      "node": "joined-1018:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1358
+    },
+    {
+      "node": "1019:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 383
+    },
+    {
+      "node": "1020:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 324
+    },
+    {
+      "node": "1022:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 64
+    },
+    {
+      "node": "1023:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 700
+    },
+    {
+      "node": "352:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 415
+    },
+    {
+      "node": "353:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 356
+    },
+    {
+      "node": "354:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 50
+    },
+    {
+      "node": "joined-355:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1183
+    },
+    {
+      "node": "357:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 30
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 186
+    },
+    {
+      "node": "359:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 41
+    },
+    {
+      "node": "360:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 683
+    },
+    {
+      "node": "361:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 40
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 547
+    },
+    {
+      "node": "363:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 29
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 276
+    },
+    {
+      "node": "365:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 635
+    },
+    {
+      "node": "367:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-368:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 632
+    },
+    {
+      "node": "369:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 92
+    },
+    {
+      "node": "370:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 158
+    },
+    {
+      "node": "371:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 102
+    },
+    {
+      "node": "1050:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 544
+    },
+    {
+      "node": "1051:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 485
+    },
+    {
+      "node": "1052:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 555
+    },
+    {
+      "node": "1053:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 496
+    },
+    {
+      "node": "1055:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 28
+    },
+    {
+      "node": "joined-1056:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 780
+    },
+    {
+      "node": "1057:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 78
+    },
+    {
+      "node": "1058:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 156
+    },
+    {
+      "node": "1059:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 96
+    },
+    {
+      "node": "1061:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1062:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 774
+    },
+    {
+      "node": "1071:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 177
+    },
+    {
+      "node": "1072:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 190
+    },
+    {
+      "node": "1073:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1074:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 995
+    },
+    {
+      "node": "1075:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1076:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 980
+    },
+    {
+      "node": "1079:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 14
+    },
+    {
+      "node": "1080:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1081:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 597
+    },
+    {
+      "node": "1082:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-1083:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1421
+    },
+    {
+      "node": "1085:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1086:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 972
+    },
+    {
+      "node": "1087:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1088:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 351
+    },
+    {
+      "node": "1089:0",
+      "role": "Formula",
+      "pages": [
+        8
+      ],
+      "characters": 325
+    },
+    {
+      "node": "1090:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 641
+    },
+    {
+      "node": "1097:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 184
+    },
+    {
+      "node": "1098:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 125
+    },
+    {
+      "node": "1099:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1100:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 137
+    },
+    {
+      "node": "1101:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1129
+    },
+    {
+      "node": "1102:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 613
+    },
+    {
+      "node": "1103:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1104:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 131
+    },
+    {
+      "node": "joined-1105:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 757
+    },
+    {
+      "node": "1107:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1075
+    },
+    {
+      "node": "1108:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 91
+    },
+    {
+      "node": "joined-1109:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 1424
+    },
+    {
+      "node": "1118:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 102
+    },
+    {
+      "node": "1119:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 734
+    },
+    {
+      "node": "1120:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1121:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1183
+    },
+    {
+      "node": "1122:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1123:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1124:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 39
+    },
+    {
+      "node": "joined-1125:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 743
+    },
+    {
+      "node": "1127:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 29
+    },
+    {
+      "node": "1128:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 891
+    },
+    {
+      "node": "1129:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1130:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 767
+    },
+    {
+      "node": "1131:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 231
+    },
+    {
+      "node": "1132:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 39
+    },
+    {
+      "node": "joined-1133:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 1292
+    },
+    {
+      "node": "1138:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1139:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 443
+    },
+    {
+      "node": "1140:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 578
+    },
+    {
+      "node": "1141:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 796
+    },
+    {
+      "node": "1142:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 490
+    },
+    {
+      "node": "1143:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 52
+    },
+    {
+      "node": "joined-1144:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 970
+    },
+    {
+      "node": "1146:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1147:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 793
+    },
+    {
+      "node": "1148:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 315
+    },
+    {
+      "node": "1149:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1150:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 706
+    },
+    {
+      "node": "1151:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1152:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1085
+    },
+    {
+      "node": "1159:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1160:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 10872
+    },
+    {
+      "node": "1182:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 78
+    },
+    {
+      "node": "1183:0",
+      "role": "L",
+      "pages": [
+        13
+      ],
+      "characters": 3951
+    },
+    {
+      "node": "1236:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 41
+    },
+    {
+      "node": "1237:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 350
+    },
+    {
+      "node": "1238:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 567
+    },
+    {
+      "node": "1239:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 2149
+    },
+    {
+      "node": "joined-1249:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1180
+    },
+    {
+      "node": "1251:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1252:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 224
+    },
+    {
+      "node": "1253:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1254:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 185
+    },
+    {
+      "node": "1260:0",
+      "role": "Caption",
+      "pages": [
+        15
+      ],
+      "characters": 257
+    },
+    {
+      "node": "1261:0",
+      "role": "Table",
+      "pages": [
+        15
+      ],
+      "characters": 6757
+    },
+    {
+      "node": "1308:0",
+      "role": "Caption",
+      "pages": [
+        16
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1309:0",
+      "role": "Table",
+      "pages": [
+        16
+      ],
+      "characters": 11999
+    },
+    {
+      "node": "1417:0",
+      "role": "H2",
+      "pages": [
+        17
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1418:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 345
+    },
+    {
+      "node": "1419:0",
+      "role": "Code",
+      "pages": [
+        17
+      ],
+      "characters": 923
+    },
+    {
+      "node": "1420:0",
+      "role": "H2",
+      "pages": [
+        17
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1421:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 68
+    },
+    {
+      "node": "1422:0",
+      "role": "H3",
+      "pages": [
+        17
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1423:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 138
+    },
+    {
+      "node": "1424:0",
+      "role": "H3",
+      "pages": [
+        17
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1425:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 138
+    },
+    {
+      "node": "1426:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 240
+    },
+    {
+      "node": "1431:0",
+      "role": "Caption",
+      "pages": [
+        18
+      ],
+      "characters": 139
+    },
+    {
+      "node": "1432:0",
+      "role": "Table",
+      "pages": [
+        18
+      ],
+      "characters": 7811
+    },
+    {
+      "node": "841:0",
+      "role": "Caption",
+      "pages": [
+        18
+      ],
+      "characters": 260
+    },
+    {
+      "node": "842:0",
+      "role": "Table",
+      "pages": [
+        18
+      ],
+      "characters": 5072
+    },
+    {
+      "node": "882:0",
+      "role": "Figure",
+      "pages": [
+        18
+      ],
+      "characters": 647
+    },
+    {
+      "node": "883:0",
+      "role": "Caption",
+      "pages": [
+        18
+      ],
+      "characters": 181
+    }
+  ],
+  "tagged_content_items": 12628,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-001-p001.png",
+      "node": "327:0",
+      "page": 1,
+      "bbox": [
+        249.22500610351562,
+        648.9442749023438,
+        295.9642028808594,
+        667.9030151367188
+      ],
+      "sha256": "968c412afb77c1718ab4a98a3d01cf470b3dc32b4c23c380563767e8769f9991",
+      "kind": "figure",
+      "alt": "Creative Commons Attribution (CC BY) license logo."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-002-p004.png",
+      "node": "990:0",
+      "page": 4,
+      "bbox": [
+        77.0199966430664,
+        81.68572235107422,
+        534.9790649414062,
+        302.5849914550781
+      ],
+      "sha256": "485607af4f3ae05d5a4bb6642124734e09f38a9eba1e9f874993fc8fa28c7b13",
+      "kind": "figure",
+      "alt": "Figure 1: User interface of Editrail. (1) Timeline View: rows represent code lines (b) and time flows horizontally (a). Edits are shown as colored overlays indicating different types of AI involvement (d): red for copy–paste, green for autocomplete, and pink for student-typed code that closely resembles AI-generated output. Indicators also show coding progress from start to finish. (2) Code Content View: aligned program text showing the full source code at the selected point in time (c), enabling instructors to connect timeline annotations with specific code states. When using Editrail, users can follow three steps: (1) get an overview of AI use distribution, (2) identify code regions with potential AI-related concerns, and (3) inspect detailed edits and AI use. The code view shows the content in the student’s editor at the selected time, while the timeline view provides a cumulative visualization of the student’s progress and AI use. When users zoom in and select an area in the timeline, the code view focuses on the corresponding code region at that time. The code view only shows code content without additional AI color coding beyond syntax highlighting. The AI usage color encoding only appears in the timeline visualization."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-003-p005.png",
+      "node": "1019:0",
+      "page": 5,
+      "bbox": [
+        322.5880126953125,
+        81.68467712402344,
+        553.5775756835938,
+        282.40899658203125
+      ],
+      "sha256": "8ebd1cf9f3e1438e2f22859bf6da89561b0fb5dafbf83723c8eaaec7f4226a1c",
+      "kind": "figure",
+      "alt": "Figure 2: Details of Editrail’s timeline interaction. (a) Keystroke-level edit indicators shown along the timeline, where blue ones represent insertion and orange ones represent deletion edits. (b) Zoomed-in timeline view revealing the exact code content associated with individual change indicators for detailed inspection."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-004-p006.png",
+      "node": "352:0",
+      "page": 6,
+      "bbox": [
+        58.43199920654297,
+        81.68647766113281,
+        289.4236145019531,
+        430.3009948730469
+      ],
+      "sha256": "03951dddd22fe677f3ff5fa756ce488c20a320dab4f889516f133af2d177f76b",
+      "kind": "figure",
+      "alt": "Figure 3: Details of Editrail’s interaction of monitoring AI usage. (a) AI–student dialogue shown at the exact point of interaction. (b) Timeline-to-code projection aligning edits with program text. (c) Precise timing of AI code usage. (d) Code pasted from AI without further edits and code pasted from AI with frequent back-and-forth edits by the student."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-005-p007.png",
+      "node": "1050:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        81.68498992919922,
+        560.206787109375,
+        209.0850067138672
+      ],
+      "sha256": "b8b1811c24f790dc7e001c27aa5099f84d9010730b3eb4946dbdbe6864c995e6",
+      "kind": "figure",
+      "alt": "Figure 4: Three cases of code that originates from AI. (a) The user copies and pastes code directly from an AI agent (e.g., ChatGPT or Copilot chat). (b) The user accepts an autocomplete suggestion (e.g., from Copilot’s in-editor hints). (c) The user types code that is very similar to something that was part of their conversation with an AI agent. The AI usage color encoding appears only in the timeline visualization. The code view shows code content with syntax highlighting only."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-006-p007.png",
+      "node": "1052:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        272.8309020996094,
+        560.2039184570312,
+        429.9620056152344
+      ],
+      "sha256": "14c43a45657841397054a5edfb25b80a4e043dcf1189a262b7ad62fc162406e6",
+      "kind": "figure",
+      "alt": "Figure 5: User interface of Editrail’s question creation. (a) Instructors select a point on the coding timeline to create questions. (b) Question type options (multiple choice or open-ended). (c) Code area highlighting AI-contributed lines in student’s code. (d) Input field for customizing the question. (e) Button to generate the question. (f) Example of a system-generated question based on the selected code. (g) Generated answer for the question. (h) Button to send the question to students."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/formula-001-p008.png",
+      "node": "1089:0",
+      "page": 8,
+      "bbox": [
+        341.6910095214844,
+        562.7070922851562,
+        533.8347778320312,
+        586.9351196289062
+      ],
+      "sha256": "abe27262dbe604b9a58414141aca75a9ad14a9146b0bb0f76eddeacfa55cf75c",
+      "kind": "formula",
+      "alt": "F score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-007-p009.png",
+      "node": "1097:0",
+      "page": 9,
+      "bbox": [
+        51.79800033569336,
+        81.6852035522461,
+        560.1964111328125,
+        267.79901123046875
+      ],
+      "sha256": "a144d48df25450fff721deb39dd80f4a3c44950a6700774fae4887ca4066dce8",
+      "kind": "figure",
+      "alt": "Figure 6: Baseline system for the user study. It represents conversation turns with AI agents (left) and code states (right)."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-008-p018.png",
+      "node": "879:0",
+      "page": 18,
+      "bbox": [
+        356.8609924316406,
+        379.7394104003906,
+        508.2593994140625,
+        420.5889892578125
+      ],
+      "sha256": "701f486ff3c06a53191df97a13da8d78f714b9a69d73a29ec123fc4de6547360",
+      "kind": "figure",
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for understanding students’ AI-usage patterns. Mean scores are 5.92 versus 4.50, respectively; Editrail is higher."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-009-p018.png",
+      "node": "880:0",
+      "page": 18,
+      "bbox": [
+        356.8609924316406,
+        414.21038818359375,
+        508.2593994140625,
+        455.05999755859375
+      ],
+      "sha256": "ccdf51ab9578012f5947fb66d0bac6c1f325c6b83edcffddd84d56c9b122e6a2",
+      "kind": "figure",
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for providing targeted learning-oriented guidance on AI usage. Mean scores are 5.67 versus 4.67, respectively; Editrail is higher."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-010-p018.png",
+      "node": "881:0",
+      "page": 18,
+      "bbox": [
+        356.8609924316406,
+        448.6803894042969,
+        508.2593994140625,
+        489.5299987792969
+      ],
+      "sha256": "250805ca90b678fcfaef6c18bc8003287a69d6b8a7df76e22db0c3f87c613d9b",
+      "kind": "figure",
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for identifying students who might need intervention. Mean scores are 6.33 versus 5.25, respectively; Editrail is higher."
+    },
+    {
+      "path": "figures/zhang-editrail-uist2026/figure-011-p018.png",
+      "node": "882:0",
+      "page": 18,
+      "bbox": [
+        51.79800033569336,
+        497.3870544433594,
+        560.201171875,
+        652.7080078125
+      ],
+      "sha256": "2d91be3281e7dc40f72d5fb3b56265d3b976f9efe0f85163574eea2c6516c7ff",
+      "kind": "figure",
+      "alt": "Figure 7. Five questions compare Editrail with Baseline on a seven-point preference scale: 1 means prefer Editrail, 4 is neutral, and 7 means prefer Baseline. Twelve participants answered each question. Counts in order from 1 through 7: less extra workflow effort, 4, 4, 1, 1, 0, 0, 2; helpful guidance on AI usage, 4, 4, 2, 0, 0, 0, 2; identifying when and which students need intervention, 6, 3, 0, 1, 0, 1, 1; identifying unproductive AI usage patterns, 5, 2, 0, 1, 1, 0, 3; less effort understanding students’ AI usage, 5, 4, 0, 0, 1, 0, 2. Responses favor Editrail on every question."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1261:0",
+      "source_pages": [
+        15
+      ],
+      "format": "html",
+      "row_count": 11,
+      "column_count": 3,
+      "cell_count": 33,
+      "header_count": 13,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1261:0"
+    },
+    {
+      "source_table_id": "1309:0",
+      "source_pages": [
+        16
+      ],
+      "format": "html",
+      "row_count": 21,
+      "column_count": 4,
+      "cell_count": 84,
+      "header_count": 24,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1309:0"
+    },
+    {
+      "source_table_id": "1432:0",
+      "source_pages": [
+        18
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 4,
+      "cell_count": 52,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "1432:0"
+    },
+    {
+      "source_table_id": "842:0",
+      "source_pages": [
+        18
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 5,
+      "cell_count": 29,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "842:0"
+    }
+  ],
+  "code_layout": [
+    {
+      "node": "1419:0",
+      "pages": [
+        17
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 31,
+      "character_pitch": 3.985,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 6,
+      "inserted_leading_spaces": 208,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 235,
+    "paragraph_fragments_joined": 13,
+    "line_wrap_hyphens_retained": 25,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 13
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-editrail-uist2026.json.gz",
+  "source_tags_sha256": "15abb8d0ac2010c05f583d23e8608f8627b06fb3c79667e1863ea0621159212b"
+}

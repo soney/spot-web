@@ -1,0 +1,1551 @@
+{
+  "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+  "title": "Implementing Multi-Touch Gestures with Touch Groups and Cross Events",
+  "publication_id": "implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019",
+  "pdf_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+  "markdown": "publications/oney-implementing-multi-touch-gestures-chi2019.md",
+  "markdown_sha256": "9cf156828b787de26c0307a13688d434fa0680bc10b134bdf38f0fbd022e463b",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "145:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 224
+    },
+    {
+      "node": "146:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 118
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 129
+    },
+    {
+      "node": "148:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 110
+    },
+    {
+      "node": "149:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 113
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 127
+    },
+    {
+      "node": "167:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 627
+    },
+    {
+      "node": "150:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "151:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1175
+    },
+    {
+      "node": "152:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "153:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 55
+    },
+    {
+      "node": "154:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "156:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 25
+    },
+    {
+      "node": "157:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 366
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "160:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 482
+    },
+    {
+      "node": "161:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 400
+    },
+    {
+      "node": "162:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 281
+    },
+    {
+      "node": "164:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 450
+    },
+    {
+      "node": "165:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-166:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 841
+    },
+    {
+      "node": "176:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 38
+    },
+    {
+      "node": "177:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 392
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1013
+    },
+    {
+      "node": "331:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 222
+    },
+    {
+      "node": "332:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "333:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 45
+    },
+    {
+      "node": "334:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 285
+    },
+    {
+      "node": "joined-341:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 140
+    },
+    {
+      "node": "343:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 271
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 623
+    },
+    {
+      "node": "351:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "352:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 364
+    },
+    {
+      "node": "353:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 49
+    },
+    {
+      "node": "354:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 239
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 512
+    },
+    {
+      "node": "joined-356:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 565
+    },
+    {
+      "node": "359:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 48
+    },
+    {
+      "node": "360:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 633
+    },
+    {
+      "node": "361:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 40
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 689
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 690
+    },
+    {
+      "node": "364:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-365:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 582
+    },
+    {
+      "node": "367:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 592
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 493
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 855
+    },
+    {
+      "node": "371:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-372:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 635
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 480
+    },
+    {
+      "node": "377:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 619
+    },
+    {
+      "node": "378:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 163
+    },
+    {
+      "node": "379:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 39
+    },
+    {
+      "node": "380:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 400
+    },
+    {
+      "node": "381:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 24
+    },
+    {
+      "node": "joined-382:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 842
+    },
+    {
+      "node": "384:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 675
+    },
+    {
+      "node": "385:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 705
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 470
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 400
+    },
+    {
+      "node": "388:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 46
+    },
+    {
+      "node": "joined-389:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 840
+    },
+    {
+      "node": "395:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 985
+    },
+    {
+      "node": "396:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 903
+    },
+    {
+      "node": "398:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 426
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 269
+    },
+    {
+      "node": "400:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 773
+    },
+    {
+      "node": "401:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 704
+    },
+    {
+      "node": "402:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 17
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 635
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 261
+    },
+    {
+      "node": "405:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-406:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 508
+    },
+    {
+      "node": "412:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 464
+    },
+    {
+      "node": "413:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 382
+    },
+    {
+      "node": "415:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 21
+    },
+    {
+      "node": "416:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1109
+    },
+    {
+      "node": "417:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 35
+    },
+    {
+      "node": "joined-418:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 381
+    },
+    {
+      "node": "419:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 469
+    },
+    {
+      "node": "420:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 400
+    },
+    {
+      "node": "424:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 29
+    },
+    {
+      "node": "425:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 543
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 485
+    },
+    {
+      "node": "427:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 44
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 180
+    },
+    {
+      "node": "429:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 438
+    },
+    {
+      "node": "439:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 596
+    },
+    {
+      "node": "440:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 514
+    },
+    {
+      "node": "441:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 639
+    },
+    {
+      "node": "joined-450:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 821
+    },
+    {
+      "node": "451:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 818
+    },
+    {
+      "node": "452:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 749
+    },
+    {
+      "node": "joined-454:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 410
+    },
+    {
+      "node": "459:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 381
+    },
+    {
+      "node": "460:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "461:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 856
+    },
+    {
+      "node": "462:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 443
+    },
+    {
+      "node": "joined-463:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 373
+    },
+    {
+      "node": "465:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 311
+    },
+    {
+      "node": "466:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 425
+    },
+    {
+      "node": "467:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 52
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 171
+    },
+    {
+      "node": "469:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 160
+    },
+    {
+      "node": "470:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 148
+    },
+    {
+      "node": "471:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 214
+    },
+    {
+      "node": "472:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 46
+    },
+    {
+      "node": "473:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 18950
+    },
+    {
+      "node": "602:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 988
+    },
+    {
+      "node": "604:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 2337
+    },
+    {
+      "node": "626:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 208
+    },
+    {
+      "node": "627:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 18
+    },
+    {
+      "node": "628:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 337
+    },
+    {
+      "node": "629:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 521
+    },
+    {
+      "node": "630:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 404
+    },
+    {
+      "node": "631:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 35
+    },
+    {
+      "node": "632:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 283
+    },
+    {
+      "node": "633:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 29
+    },
+    {
+      "node": "634:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 491
+    },
+    {
+      "node": "635:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 379
+    },
+    {
+      "node": "636:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 297
+    },
+    {
+      "node": "637:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 310
+    },
+    {
+      "node": "647:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 336
+    },
+    {
+      "node": "648:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "649:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 822
+    },
+    {
+      "node": "650:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 287
+    },
+    {
+      "node": "654:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 542
+    },
+    {
+      "node": "655:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 460
+    },
+    {
+      "node": "656:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 157
+    },
+    {
+      "node": "657:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 426
+    },
+    {
+      "node": "658:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "659:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 252
+    },
+    {
+      "node": "660:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 292
+    },
+    {
+      "node": "661:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 27
+    },
+    {
+      "node": "joined-662:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 461
+    },
+    {
+      "node": "663:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 680
+    },
+    {
+      "node": "664:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 598
+    },
+    {
+      "node": "666:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 35
+    },
+    {
+      "node": "667:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 659
+    },
+    {
+      "node": "668:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 692
+    },
+    {
+      "node": "672:0",
+      "role": "Figure",
+      "pages": [
+        11
+      ],
+      "characters": 706
+    },
+    {
+      "node": "673:0",
+      "role": "Caption",
+      "pages": [
+        11
+      ],
+      "characters": 624
+    },
+    {
+      "node": "674:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 22
+    },
+    {
+      "node": "675:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 299
+    },
+    {
+      "node": "676:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 508
+    },
+    {
+      "node": "677:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 17
+    },
+    {
+      "node": "678:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 445
+    },
+    {
+      "node": "679:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 26
+    },
+    {
+      "node": "joined-680:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 380
+    },
+    {
+      "node": "681:0",
+      "role": "Figure",
+      "pages": [
+        11
+      ],
+      "characters": 431
+    },
+    {
+      "node": "682:0",
+      "role": "Caption",
+      "pages": [
+        11
+      ],
+      "characters": 349
+    },
+    {
+      "node": "684:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 735
+    },
+    {
+      "node": "685:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 15
+    },
+    {
+      "node": "686:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 440
+    },
+    {
+      "node": "687:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 18
+    },
+    {
+      "node": "688:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 380
+    },
+    {
+      "node": "692:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 13
+    },
+    {
+      "node": "693:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 2828
+    },
+    {
+      "node": "285:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 15
+    },
+    {
+      "node": "286:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 2753
+    }
+  ],
+  "tagged_content_items": 3810,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-001-p001.png",
+      "node": "160:0",
+      "page": 1,
+      "bbox": [
+        328.5999755859375,
+        189.59877014160156,
+        543.2998046875,
+        368.3700256347656
+      ],
+      "sha256": "6ca8a3c33e610de553322dfc4aad7e6f6155ec7e50d1e2cf2006eac069f3874e",
+      "kind": "figure",
+      "alt": "Figure 1: An illustration of a two-finger swipe-right gesture implemented with touch groups and cross events. Touch groups summarize properties of groups of touch events that move in synchrony. Cross events fire when a touch group crosses a given path. In this gesture, a 'twoFin-gerRightSwipe' event fires after a two-finger touch group crosses a path 10 pixels to the right of where the touch group"
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-002-p005.png",
+      "node": "395:0",
+      "page": 5,
+      "bbox": [
+        60.22499465942383,
+        74.55406951904297,
+        289.65948486328125,
+        268.75
+      ],
+      "sha256": "4603fc650d5002443fc33c047290e372161ec69a82d87ef87fde632a05ba628c",
+      "kind": "figure",
+      "alt": "Figure 2: A state machine showing the various states of a touch event with priority p. An event can be in three states: idle, pending fire, or pending block. By default, every event is in the idle state. When the event fires (a), it enters the pending state. After enough time (as defined by the timeout parameter, default:0), the event’s firing is confirmed (b). If the event firing is cancelled before the timeout interval passes, then the event is cancelled (c). If a higher priority event is requested before the timeout interval passes, then the event moves to the pending block stage (f). If any other event with a higher priority is confirmed, then the event is blocked (d). If all the events with a higher priority are cancelled, then the event will return to the pending fire state (g). If the event times out while in the “pending block” state, then the event is blocked (e) and does not fire."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-003-p005.png",
+      "node": "400:0",
+      "page": 5,
+      "bbox": [
+        325.9499816894531,
+        74.54592895507812,
+        545.5428466796875,
+        269.070068359375
+      ],
+      "sha256": "a4bf05f82ff6dbbf2e6d92e751a48a56aa694d89375bd9f5e7daf0499d39f016",
+      "kind": "figure",
+      "alt": "Figure 3: The sequence of states for single-tap and double-tap gestures as a user performs a single-tap then a double-tap. The states and events that are shown here reference those that are defined in Figure 2. In this example, there are two instantiations of the state machine: one for single-tap and one for double-tap. The single-tap gesture uses timeout=dbl_interval and the double-tap gesture uses timeout=0. User actions are shown on the left. After the user performs a single tap, the single-tap event is requested and confirmed after dbl_interval milliseconds. When the user performs a double tap, the double-tap event blocks the single-tap event, because it has a higher priority."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-004-p006.png",
+      "node": "412:0",
+      "page": 6,
+      "bbox": [
+        51.999996185302734,
+        74.54505920410156,
+        291.97650146484375,
+        197.65005493164062
+      ],
+      "sha256": "221806ad503d81de54400f9974d931ccf28683b2a03c16002573e2d58a92f691",
+      "kind": "figure",
+      "alt": "Figure 4: The default, “non-greedy” behavior for touch groups is that every touch group can claim the same fingers. For instance, suppose a developer defines one three-finger touch group and three one-finger touch groups across different elements in an interface. With non-greedy behavior, when the user presses three fingers down, all four touch group activation events would fire."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-005-p006.png",
+      "node": "419:0",
+      "page": 6,
+      "bbox": [
+        312.9999694824219,
+        74.55107879638672,
+        557.0950927734375,
+        199.75006103515625
+      ],
+      "sha256": "11791fee5018a8087285b7538db156cc8d400c208541a55fa9cd448a138966ed",
+      "kind": "figure",
+      "alt": "Figure 5: Like in Figure 4, here the developer has defined one three-finger touch group and three one-finger touch groups. However, the developer has specified that the three-finger touch group should be “greedy”, so that other touch groups should not fire with any of the touches used. In this case, when the user presses three fingers down, only the three-finger touch group will fire."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-006-p007.png",
+      "node": "439:0",
+      "page": 7,
+      "bbox": [
+        64.94999694824219,
+        74.5460205078125,
+        284.93463134765625,
+        421.6500244140625
+      ],
+      "sha256": "6379df1209757ae759ecbc7d9081e331dfa3dd2cf999a43250299c073e4da5f4",
+      "kind": "figure",
+      "alt": "Figure 6: Participants were given the code for a multi-touch behavior. In this example, the code implements a “tap” gesture. To gauge their understanding of the code, they were asked to select which behavior that code implemented, from the four choices at the bottom. Participants were given ten behaviors in one implementation (either touch* or touch groups/cross events) and then ten using the other implementation. We randomized the implemented behaviors, multiple choice options, and multiple-choice ordering."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-007-p007.png",
+      "node": "451:0",
+      "page": 7,
+      "bbox": [
+        326.16998291015625,
+        74.55742645263672,
+        546.423828125,
+        340.030029296875
+      ],
+      "sha256": "63e6057f862009bc521f0fc6f5a1b4e776d79625d405f41b2ce2497fcd062d00",
+      "kind": "figure",
+      "alt": "Figure 7: The same (“tap”) behavior as Figure 6, implemented with cross events touch groups. In addition to being more concise than the touch* implementation of the same gesture, many modifications to this gesture that would require significant changes to the touch* implementation are straightforward. For example, changing this gesture from a one-finger tap to a two-finger tap requires significant changes to the touch* implementation but is a one-line change in the touch group/cross event implementation (updating the second line to numFingers: 2). Using correctness in this task as a measure of understanding, participants were better able to understand code written with touch groups and cross events than with touch* events."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-008-p009.png",
+      "node": "635:0",
+      "page": 9,
+      "bbox": [
+        363.04998779296875,
+        74.55000305175781,
+        508.95001220703125,
+        232.5
+      ],
+      "sha256": "73e81fbd3363affce612af7feddb912c99c99dd90c10d08408ce290c19530cc5",
+      "kind": "figure",
+      "alt": "Figure 8: An example of the UI for defining behaviors in the GUI / touch group + cross event condition via a state machine. The black dot symbolizes the start state. Small light squares symbolize states. The larger grey squares specify transition events (e.g., cross events or touch group events)."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-009-p010.png",
+      "node": "654:0",
+      "page": 10,
+      "bbox": [
+        96.44999694824219,
+        74.5443115234375,
+        253.0950927734375,
+        237.2401123046875
+      ],
+      "sha256": "9532ed6e4d98a4697eab2e8223da7d8ee56d34593fd2e48e7e17d5f4ca00ee12",
+      "kind": "figure",
+      "alt": "Figure 9: An illustration of a set of pressure-sensitive trackpad gestures. When the user presses three fingers on the trackpad, the selected window resizes in response (yellow, top right). When the user presses with two fingers, the viewport scrolls (blue, bottom left) or the window moves (red, bottom right) depending on the finger pressure. Our implementation manages conflicts between these three gestures and standard one-finger touches (grey, top left)."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-010-p010.png",
+      "node": "663:0",
+      "page": 10,
+      "bbox": [
+        344.39996337890625,
+        74.54364776611328,
+        527.5036010742188,
+        237.2300567626953
+      ],
+      "sha256": "f417a1cf62df41b1c625de24d0618aa6d859ae55da12bc7b6ab5688e1a28bfd8",
+      "kind": "figure",
+      "alt": "Figure 10: An illustration of three gestures for pressure-sensitive trackpads that manipulate text. Here, the user initiates “command mode” with a heavy (high pressure) one-finger press in the top left quadrant of the trackpad. As the user holds that finger down, they can perform a light (low pressure) one-finger vertical scroll gesture to select text (top), a heavy two-finger gesture to enumerate the selected text (middle), or a light two-finger scroll gesture to specify the selected text’s indentation (bottom). The paths that specify cross events that initiate the gesture are shown in red."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-011-p011.png",
+      "node": "672:0",
+      "page": 11,
+      "bbox": [
+        83.27499389648438,
+        74.55406188964844,
+        268.3252868652344,
+        166.1000518798828
+      ],
+      "sha256": "1507e7b86bfa9a25f59a832ebeca8abe9aefd31fca4dd1844a07e9c0148a11fe",
+      "kind": "figure",
+      "alt": "Figure 11: An illustration of HandMark menus. HandMark menus are contextual menus that a user invokes with a multi-finger gesture. We implemented two different version of hand-mark menus. In the two-finger version (left) the user invokes a context menu by pressing with two fingers. As the user moves their two fingers, the menu follows. The user can then use a third finger to select a single item. In the five-finger version (right), users invoke the context menu by pressing the touchscreen with five fingers. Menu items then follow the individual fingers as they move. Users can use a sixth finger to select a menu item."
+    },
+    {
+      "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-012-p011.png",
+      "node": "681:0",
+      "page": 11,
+      "bbox": [
+        402.29998779296875,
+        74.54569244384766,
+        469.8434753417969,
+        162.50006103515625
+      ],
+      "sha256": "082ee10bd38c0a8b99d2377fb72b655bc52ca5afda30c2f90f05727391e583b6",
+      "kind": "figure",
+      "alt": "Figure 12: An illustration of a custom contextual pie menu for touchscreen devices. We created three implementations with minimal changes to the gesture’s implementation: 1) the user holds their finger then selects a menu item, 2) the user taps their finger then selects a menu item, or 3) the user double taps their finger then selects a menu item."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "473:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 11,
+      "column_count": 11,
+      "cell_count": 113,
+      "header_count": 22,
+      "empty_cell_count": 1,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "473:0"
+    },
+    {
+      "source_table_id": "604:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "604:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 339,
+    "line_wrap_hyphens_retained": 49,
+    "paragraph_fragments_joined": 14,
+    "reviewed_wrap_repairs": 6,
+    "script_runs_positioned": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-implementing-multi-touch-gestures-chi2019.json.gz",
+  "source_tags_sha256": "56c0c66929fd653a61c221f883c77e4787e4e2c7713e3c1941304933a0d74ec5"
+}

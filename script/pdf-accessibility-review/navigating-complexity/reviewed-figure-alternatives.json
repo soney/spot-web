@@ -1,0 +1,26 @@
+{
+  "arab-navigating-complexity-tse2026.pdf": [
+    {
+      "page": 3,
+      "bbox": [
+        337.0830078125,
+        56.06929016113281,
+        537.9383544921875,
+        218.18402099609375
+      ],
+      "alt": "Figure 1. Three-phase study workflow, shown as three banners stacked from top to bottom. Phase 0, literature synthesis: derive candidate debugging contexts and strategies. Phase 1, survey: collect a sample of currently challenging debugging scenarios and their frequencies. Phase 2, expert interviews: obtain detailed accounts of strategy choice and adaptation grounded in those scenario types. The adjacent text specifies 35 survey respondents and 16 expert interviewees.",
+      "verification": "Read every banner and checked caption and adjacent methodology text in source page 3 rendered at108 dpi."
+    },
+    {
+      "page": 12,
+      "bbox": [
+        74.0,
+        56.0,
+        538.0,
+        372.0
+      ],
+      "alt": "Figure 2. Network summarizing commonly reported debugging strategy transitions from 16 expert web developers. It is a descriptive model, not a decision tree: context questions do not uniquely determine the next strategy, and a missing edge does not rule out a transition. Six green ellipses are numbered: 1, Forward-reasoning; 2, Error-message; 3, Hypothesis-test; 4, Backward-reasoning; 5, Simplification; and 6, External Strategy. Starting from whether a defect is observable, the diagram connects a non-observable defect through codebase complexity (l) to forward reasoning. For an observable defect, clear messages (a) lead toward error-message debugging, vague messages (b) toward hypothesis testing, and client-side versus other failures (c) toward simplification or hypothesis testing. Error-message debugging connects through access to the codebase (d) to backward reasoning. Hypothesis testing connects through debugger availability (e) to backward reasoning, or through reproducibility (f), familiarity (g), and search-space size (h) to simplification. Constrained production, compiled-binary, or ownership contexts (i) distinguish external strategies from simplification. User-specific failures (j) also connect hypothesis testing to external strategies. Sporadic behavior or infeasible traces (k) connect backward reasoning back to hypothesis testing; legacy or unmaintained code (n) connects to backward reasoning. Forward reasoning connects through familiarity (m) toward hypothesis testing when familiar or external strategies when unfamiliar, and through reproducibility and a narrowed search space (o) toward simplification. Simplification connects through unsafe or limited opportunities to simplify (q) toward external strategies. Context boxes are blue for codebase characteristics, tan for defect characteristics, and pale yellow for environmental, tooling, and organizational constraints. The printed legend labels both codebase and defect characteristics as Table IV; the body text identifies codebase characteristics in Table V. Arrow weight encodes breadth of participant support: thick solid lines, at least 7 participants; thin solid lines, 4 to 6; dashed lines, 3 or fewer. Thick routes emphasize complexity to forward reasoning, clear errors to error-message debugging, debugger availability to backward reasoning, familiarity to hypothesis testing, and a large search space to simplification. Dashed routes include reproducible, narrowed problems from forward reasoning to simplification, sporadic or infeasible traces from backward reasoning to hypothesis testing, and unsafe simplification to external strategies. Table VII gives the associated conditions, participant evidence, and quotations.",
+      "verification": "Read six nodes, all lettered context conditions, legend, and directed routes in source page12 rendered at144 dpi. Source codebase-table-number mismatch described explicitly."
+    }
+  ]
+}

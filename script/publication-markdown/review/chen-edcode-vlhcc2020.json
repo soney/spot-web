@@ -1,0 +1,560 @@
+{
+  "file": "chen-edcode-vlhcc2020.pdf",
+  "title": "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education",
+  "publication_id": "edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020",
+  "pdf_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+  "markdown": "publications/chen-edcode-vlhcc2020.md",
+  "markdown_sha256": "1753bf0dbe698ea4608984e5d981028981254f32dc13cd6611700059539676e3",
+  "pages": 5,
+  "blocks": [
+    {
+      "node": "153:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 223
+    },
+    {
+      "node": "154:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 184
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 232
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 898
+    },
+    {
+      "node": "157:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 70
+    },
+    {
+      "node": "161:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 38
+    },
+    {
+      "node": "158:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 674
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 850
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1394
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 462
+    },
+    {
+      "node": "164:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 305
+    },
+    {
+      "node": "291:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "joined-292:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 961
+    },
+    {
+      "node": "298:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 543
+    },
+    {
+      "node": "299:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 25
+    },
+    {
+      "node": "300:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 583
+    },
+    {
+      "node": "301:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 13
+    },
+    {
+      "node": "302:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 866
+    },
+    {
+      "node": "303:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-304:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1639
+    },
+    {
+      "node": "305:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 654
+    },
+    {
+      "node": "306:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 597
+    },
+    {
+      "node": "308:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "309:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 68
+    },
+    {
+      "node": "joined-310:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1028
+    },
+    {
+      "node": "325:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 474
+    },
+    {
+      "node": "326:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 417
+    },
+    {
+      "node": "328:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 47
+    },
+    {
+      "node": "329:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 990
+    },
+    {
+      "node": "330:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 660
+    },
+    {
+      "node": "331:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 47
+    },
+    {
+      "node": "332:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 898
+    },
+    {
+      "node": "333:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 197
+    },
+    {
+      "node": "335:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 36
+    },
+    {
+      "node": "336:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 20
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 727
+    },
+    {
+      "node": "338:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 31
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 100
+    },
+    {
+      "node": "340:0",
+      "role": "H5",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "joined-341:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 466
+    },
+    {
+      "node": "342:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 363
+    },
+    {
+      "node": "343:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 306
+    },
+    {
+      "node": "352:0",
+      "role": "H5",
+      "pages": [
+        4
+      ],
+      "characters": 21
+    },
+    {
+      "node": "353:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1026
+    },
+    {
+      "node": "354:0",
+      "role": "H5",
+      "pages": [
+        4
+      ],
+      "characters": 48
+    },
+    {
+      "node": "355:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1058
+    },
+    {
+      "node": "356:0",
+      "role": "H5",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "357:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 899
+    },
+    {
+      "node": "358:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 58
+    },
+    {
+      "node": "359:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 667
+    },
+    {
+      "node": "360:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 28
+    },
+    {
+      "node": "361:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 923
+    },
+    {
+      "node": "362:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 17
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 978
+    },
+    {
+      "node": "364:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 24
+    },
+    {
+      "node": "365:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 109
+    },
+    {
+      "node": "366:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "202:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 430
+    },
+    {
+      "node": "206:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 5165
+    }
+  ],
+  "tagged_content_items": 4238,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/chen-edcode-vlhcc2020/figure-001-p002.png",
+      "node": "305:0",
+      "page": 2,
+      "bbox": [
+        309.9779968261719,
+        48.544464111328125,
+        571.004638671875,
+        165.1999969482422
+      ],
+      "sha256": "a446c383317a037241360b0ff8c5ddb8581cf5c8a72838eb1d7c50b32d057972",
+      "kind": "figure",
+      "alt": "Fig. 1. A diagram shows the process of using EdCode to make a request, write a response, and integrate a response. (1) Students select a portion of their code and click the ‘Help’ button next to the selection to initialize a request. (2) Students attach a title, description, and tags to the request and send it to instructors. (3) Instructors can see the code base and other relevant information in their interface where they could write a contextualized response to the request. (4) Students can review the response in their code editor, and (5) check response context by clicking the hypertext."
+    },
+    {
+      "path": "figures/chen-edcode-vlhcc2020/figure-002-p003.png",
+      "node": "325:0",
+      "page": 3,
+      "bbox": [
+        46.9640007019043,
+        48.540321350097656,
+        307.9867248535156,
+        196.12399291992188
+      ],
+      "sha256": "cf8d6354de94ead1c42988cdf5b08dbc69d00ea212d29ee4e512ee3de85f57f4",
+      "kind": "figure",
+      "alt": "Fig. 2. The contextualized explanation feature and the chat tool. To make their answers more contextualized, instructors can (1) select a portion of the text in their natural language answer and the relevant code context; (2) click the ‘link’ button to create the references, which will highlight the relevant code (hypertext) when clicking the references in the text. Instructors can also chat with students via (3)."
+    },
+    {
+      "path": "figures/chen-edcode-vlhcc2020/figure-003-p003.png",
+      "node": "342:0",
+      "page": 3,
+      "bbox": [
+        309.9779968261719,
+        566.5927124023438,
+        571.0181884765625,
+        671.8870239257812
+      ],
+      "sha256": "ed54ec1247b4a5f19cc349927d89992218feb0355eb6abe6f2982e6124fdb4de",
+      "kind": "figure",
+      "alt": "Fig. 3. The code publicity feature. Instructors first click the ‘Show this code’ button to select a portion of the code in original request that is necessary to understand the question for other students. Then they click ‘Send Your Answer‘ button to publish the question and the answer to the entire class."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 17,
+    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_retained": 3,
+    "script_runs_positioned": 9
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-edcode-vlhcc2020.json.gz",
+  "source_tags_sha256": "600f1bd8687f85a4644e4b864af4fdce8581b012198cb9cb784cab9729b469c3"
+}

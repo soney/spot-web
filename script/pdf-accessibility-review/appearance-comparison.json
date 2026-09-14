@@ -1,7 +1,7 @@
 {
   "baseline_revision": "8bbeb3a",
-  "files": 73,
-  "pages": 1010,
+  "files": 74,
+  "pages": 1028,
   "dpi": 144,
   "renderers": [
     {
@@ -672,6 +672,19 @@
       "mupdf_144dpi_pixel_identical": true,
       "poppler_144dpi_pixel_identical": true,
       "page_geometry_identical": true
+    },
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "pages": 18,
+      "original_sha256": "23754de4b48c172321608471affde3e26326a413655362397a02ae89007f9cd5",
+      "final_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true,
+      "baseline_revision": null,
+      "baseline_kind": "user-supplied attachment",
+      "baseline_filename": "Navigating_Complexity_How_Context_Shapes_Debugging_Strategy_Choices_Among_Expert_Developers.pdf"
     }
-  ]
+  ],
+  "baseline_note": "Original 73 PDFs use Git revision 8bbeb3a. Navigating Complexity uses the hash-identified user attachment specified in its document record."
 }

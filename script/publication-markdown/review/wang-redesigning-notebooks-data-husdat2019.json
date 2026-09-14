@@ -1,0 +1,250 @@
+{
+  "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+  "title": "Redesigning Notebooks for Data Science Education",
+  "publication_id": "redesigning_notebooks_for_data_science_education_2019",
+  "pdf_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+  "markdown": "publications/wang-redesigning-notebooks-data-husdat2019.md",
+  "markdown_sha256": "317962edfa53ad00b04a4307669b1b70b18eb92e7f5a4036d60a2982d260afa4",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "115:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 140
+    },
+    {
+      "node": "116:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 95
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 101
+    },
+    {
+      "node": "157:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 563
+    },
+    {
+      "node": "159:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 94
+    },
+    {
+      "node": "161:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "162:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 332
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 50
+    },
+    {
+      "node": "118:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1115
+    },
+    {
+      "node": "119:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 239
+    },
+    {
+      "node": "120:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 160
+    },
+    {
+      "node": "130:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "131:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1097
+    },
+    {
+      "node": "joined-132:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 879
+    },
+    {
+      "node": "133:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 161
+    },
+    {
+      "node": "134:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 47
+    },
+    {
+      "node": "135:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 82
+    },
+    {
+      "node": "167:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "168:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1509
+    },
+    {
+      "node": "169:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "joined-170:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1600
+    },
+    {
+      "node": "178:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "179:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 698
+    },
+    {
+      "node": "180:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "181:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 3058
+    }
+  ],
+  "tagged_content_items": 1631,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 9,
+    "paragraph_fragments_joined": 2,
+    "script_runs_positioned": 6
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/wang-redesigning-notebooks-data-husdat2019.json.gz",
+  "source_tags_sha256": "b3acf33b1728a336fc1c0c321db9093e31d57873e3dc2c8ebf97f979e5957cb0"
+}

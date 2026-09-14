@@ -1,0 +1,439 @@
+{
+  "file": "chen-expert-crowd-support-ci2016.pdf",
+  "title": "Expert Crowd Support Systems for Software Developers",
+  "publication_id": "expert_crowd_support_systems_for_software_developers_2016",
+  "pdf_sha256": "5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a",
+  "markdown": "publications/chen-expert-crowd-support-ci2016.md",
+  "markdown_sha256": "da12d77b12d7ef3b8d6f2d05f01aba5b760be6f2c0e33f621cf0c58a05bc00e6",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "41:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 134
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "43:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 560
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 897
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 677
+    },
+    {
+      "node": "47:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 25
+    },
+    {
+      "node": "48:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 390
+    },
+    {
+      "node": "49:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 42
+    },
+    {
+      "node": "50:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 663
+    },
+    {
+      "node": "52:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 50
+    },
+    {
+      "node": "53:0",
+      "role": "Table",
+      "pages": [
+        2
+      ],
+      "characters": 2328
+    },
+    {
+      "node": "74:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 86
+    },
+    {
+      "node": "75:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 491
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 538
+    },
+    {
+      "node": "77:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1108
+    },
+    {
+      "node": "78:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 41
+    },
+    {
+      "node": "79:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 458
+    },
+    {
+      "node": "80:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 350
+    },
+    {
+      "node": "81:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 838
+    },
+    {
+      "node": "98:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 66
+    },
+    {
+      "node": "99:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 26
+    },
+    {
+      "node": "100:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 3109
+    },
+    {
+      "node": "125:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 23
+    },
+    {
+      "node": "126:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 3786
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 119
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 130
+    },
+    {
+      "node": "157:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 47
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 356
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 594
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 725
+    },
+    {
+      "node": "161:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 348
+    },
+    {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 50
+    },
+    {
+      "node": "164:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "165:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1516
+    },
+    {
+      "node": "166:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "167:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 335
+    },
+    {
+      "node": "168:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 250
+    },
+    {
+      "node": "170:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 199
+    },
+    {
+      "node": "171:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 202
+    },
+    {
+      "node": "172:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 244
+    },
+    {
+      "node": "173:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 284
+    },
+    {
+      "node": "174:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 263
+    },
+    {
+      "node": "175:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 239
+    }
+  ],
+  "tagged_content_items": 2290,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [
+    {
+      "source_table_id": "53:0",
+      "source_pages": [
+        2
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "53:0"
+    },
+    {
+      "source_table_id": "100:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 5,
+      "cell_count": 20,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "100:0"
+    },
+    {
+      "source_table_id": "126:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 6,
+      "cell_count": 24,
+      "header_count": 9,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "126:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 33,
+    "line_wrap_hyphens_retained": 9,
+    "script_runs_positioned": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-expert-crowd-support-ci2016.json.gz",
+  "source_tags_sha256": "ec10eb7fc5fbe764a2e5ec10f65fe7a499adcdc8445418b9b8ba3bd9baec84b2"
+}

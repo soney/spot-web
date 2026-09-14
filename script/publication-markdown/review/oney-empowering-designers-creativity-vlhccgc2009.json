@@ -1,0 +1,231 @@
+{
+  "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+  "title": "Empowering Designers with Creativity Support Tools",
+  "publication_id": "empowering_designers_with_creativity_support_tools_2009",
+  "pdf_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+  "markdown": "publications/oney-empowering-designers-creativity-vlhccgc2009.md",
+  "markdown_sha256": "0094bdc884260b612221786f5f146e9dc36e4ced6310e2a5a3c12e32a6a1301b",
+  "pages": 2,
+  "blocks": [
+    {
+      "node": "22:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 211
+    },
+    {
+      "node": "23:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 12
+    },
+    {
+      "node": "24:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 132
+    },
+    {
+      "node": "25:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "26:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 745
+    },
+    {
+      "node": "27:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "28:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1030
+    },
+    {
+      "node": "29:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "30:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 189
+    },
+    {
+      "node": "31:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 808
+    },
+    {
+      "node": "32:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 514
+    },
+    {
+      "node": "33:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-34:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 395
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1258
+    },
+    {
+      "node": "38:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "39:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 420
+    },
+    {
+      "node": "40:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 477
+    },
+    {
+      "node": "joined-41:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 524
+    },
+    {
+      "node": "43:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 526
+    },
+    {
+      "node": "44:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 648
+    },
+    {
+      "node": "46:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "47:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 190
+    },
+    {
+      "node": "48:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 242
+    },
+    {
+      "node": "49:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 182
+    },
+    {
+      "node": "50:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 165
+    }
+  ],
+  "tagged_content_items": 954,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "paragraph_fragments_joined": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-empowering-designers-creativity-vlhccgc2009.json.gz",
+  "source_tags_sha256": "7be4d104478af427709be53251d3eef33088e02ad2ca33d3d0b1f262c06fb7e3"
+}

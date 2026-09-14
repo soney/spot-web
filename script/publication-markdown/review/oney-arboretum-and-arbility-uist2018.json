@@ -1,0 +1,2050 @@
+{
+  "file": "oney-arboretum-and-arbility-uist2018.pdf",
+  "title": "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture",
+  "publication_id": "arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018",
+  "pdf_sha256": "e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1",
+  "markdown": "publications/oney-arboretum-and-arbility-uist2018.md",
+  "markdown_sha256": "708c9f680ecac1561a77e55abdc2fa8ff55fa99e2ad5f984c26a0578c4960e16",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "945:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 236
+    },
+    {
+      "node": "946:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 326
+    },
+    {
+      "node": "962:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 575
+    },
+    {
+      "node": "964:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 50
+    },
+    {
+      "node": "958:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "959:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1800
+    },
+    {
+      "node": "960:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "961:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 111
+    },
+    {
+      "node": "963:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 47
+    },
+    {
+      "node": "965:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "966:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 752
+    },
+    {
+      "node": "967:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 885
+    },
+    {
+      "node": "953:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "954:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 835
+    },
+    {
+      "node": "956:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 122
+    },
+    {
+      "node": "1170:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 672
+    },
+    {
+      "node": "1172:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 689
+    },
+    {
+      "node": "1174:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 570
+    },
+    {
+      "node": "1175:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 901
+    },
+    {
+      "node": "joined-929:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1150
+    },
+    {
+      "node": "922:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 351
+    },
+    {
+      "node": "917:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "918:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 257
+    },
+    {
+      "node": "898:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 40
+    },
+    {
+      "node": "899:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1661
+    },
+    {
+      "node": "joined-900:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 474
+    },
+    {
+      "node": "1340:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 915
+    },
+    {
+      "node": "1318:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1319:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 834
+    },
+    {
+      "node": "1321:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 810
+    },
+    {
+      "node": "1323:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1381
+    },
+    {
+      "node": "1307:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1308:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 471
+    },
+    {
+      "node": "1309:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 959
+    },
+    {
+      "node": "1310:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 482
+    },
+    {
+      "node": "1293:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1294:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 946
+    },
+    {
+      "node": "1263:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1264:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 98
+    },
+    {
+      "node": "1266:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1267:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 203
+    },
+    {
+      "node": "1268:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1269:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 247
+    },
+    {
+      "node": "1281:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 481
+    },
+    {
+      "node": "1282:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 406
+    },
+    {
+      "node": "1283:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 756
+    },
+    {
+      "node": "1271:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1661
+    },
+    {
+      "node": "1272:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1273:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1274:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 481
+    },
+    {
+      "node": "1434:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 541
+    },
+    {
+      "node": "1436:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 293
+    },
+    {
+      "node": "1437:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1438:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "1429:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1430:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 571
+    },
+    {
+      "node": "1431:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 455
+    },
+    {
+      "node": "1419:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1420:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 648
+    },
+    {
+      "node": "1421:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 629
+    },
+    {
+      "node": "1423:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 508
+    },
+    {
+      "node": "1424:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 547
+    },
+    {
+      "node": "1425:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 370
+    },
+    {
+      "node": "1411:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1412:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 644
+    },
+    {
+      "node": "1413:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 240
+    },
+    {
+      "node": "1414:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 492
+    },
+    {
+      "node": "1415:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 449
+    },
+    {
+      "node": "1399:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1400:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 633
+    },
+    {
+      "node": "1401:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1402:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 405
+    },
+    {
+      "node": "1404:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 814
+    },
+    {
+      "node": "1405:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 52
+    },
+    {
+      "node": "1406:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 352
+    },
+    {
+      "node": "1407:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 1052
+    },
+    {
+      "node": "1395:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 42
+    },
+    {
+      "node": "1396:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 414
+    },
+    {
+      "node": "1352:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1353:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 271
+    },
+    {
+      "node": "1354:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 53
+    },
+    {
+      "node": "1382:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 57
+    },
+    {
+      "node": "1379:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 96
+    },
+    {
+      "node": "1355:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 159
+    },
+    {
+      "node": "1356:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 77
+    },
+    {
+      "node": "1373:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 157
+    },
+    {
+      "node": "1370:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 394
+    },
+    {
+      "node": "1357:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 557
+    },
+    {
+      "node": "1362:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1363:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 368
+    },
+    {
+      "node": "1365:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 444
+    },
+    {
+      "node": "1360:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 37
+    },
+    {
+      "node": "1361:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1527:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 50
+    },
+    {
+      "node": "1528:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 365
+    },
+    {
+      "node": "1529:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 139
+    },
+    {
+      "node": "1530:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 718
+    },
+    {
+      "node": "1531:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 170
+    },
+    {
+      "node": "1532:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 1012
+    },
+    {
+      "node": "1533:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 299
+    },
+    {
+      "node": "1534:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 586
+    },
+    {
+      "node": "1517:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 1135
+    },
+    {
+      "node": "1518:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 440
+    },
+    {
+      "node": "1521:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 282
+    },
+    {
+      "node": "1522:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 939
+    },
+    {
+      "node": "1523:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 168
+    },
+    {
+      "node": "1505:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1506:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 346
+    },
+    {
+      "node": "1508:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1509:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 571
+    },
+    {
+      "node": "1510:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 954
+    },
+    {
+      "node": "1502:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 9
+    },
+    {
+      "node": "joined-1503:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 1196
+    },
+    {
+      "node": "1495:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 828
+    },
+    {
+      "node": "1496:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 563
+    },
+    {
+      "node": "1469:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 9
+    },
+    {
+      "node": "1470:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1371
+    },
+    {
+      "node": "1472:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 82
+    },
+    {
+      "node": "1483:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 170
+    },
+    {
+      "node": "1482:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 113
+    },
+    {
+      "node": "1479:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 155
+    },
+    {
+      "node": "1474:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 448
+    },
+    {
+      "node": "1461:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-1462:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 1221
+    },
+    {
+      "node": "1463:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 1183
+    },
+    {
+      "node": "1464:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 314
+    },
+    {
+      "node": "1454:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 11
+    },
+    {
+      "node": "1455:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1773
+    },
+    {
+      "node": "1572:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1573:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 744
+    },
+    {
+      "node": "1587:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 42
+    },
+    {
+      "node": "1588:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 437
+    },
+    {
+      "node": "1590:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 113
+    },
+    {
+      "node": "1591:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 251
+    },
+    {
+      "node": "1592:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 173
+    },
+    {
+      "node": "1593:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 484
+    },
+    {
+      "node": "1594:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 436
+    },
+    {
+      "node": "1595:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 154
+    },
+    {
+      "node": "1583:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1584:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 851
+    },
+    {
+      "node": "1585:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 180
+    },
+    {
+      "node": "1586:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 290
+    },
+    {
+      "node": "1578:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1579:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 666
+    },
+    {
+      "node": "1580:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 121
+    },
+    {
+      "node": "1581:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 304
+    },
+    {
+      "node": "1582:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 450
+    },
+    {
+      "node": "1562:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "1563:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 379
+    },
+    {
+      "node": "1569:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1570:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1021
+    },
+    {
+      "node": "1566:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 45
+    },
+    {
+      "node": "1567:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 350
+    },
+    {
+      "node": "1560:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1561:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 587
+    },
+    {
+      "node": "1558:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1559:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 589
+    },
+    {
+      "node": "1599:0",
+      "role": "H2",
+      "pages": [
+        11
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1630:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 228
+    },
+    {
+      "node": "1629:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 237
+    },
+    {
+      "node": "1628:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 317
+    },
+    {
+      "node": "1627:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 207
+    },
+    {
+      "node": "1600:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 1003
+    },
+    {
+      "node": "1601:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 156
+    },
+    {
+      "node": "1602:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 217
+    },
+    {
+      "node": "1621:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 234
+    },
+    {
+      "node": "1620:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 172
+    },
+    {
+      "node": "1619:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 249
+    },
+    {
+      "node": "1604:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 665
+    },
+    {
+      "node": "1614:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 276
+    },
+    {
+      "node": "1605:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 278
+    },
+    {
+      "node": "1606:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 102
+    },
+    {
+      "node": "1607:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 182
+    },
+    {
+      "node": "1608:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 414
+    },
+    {
+      "node": "1610:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 263
+    },
+    {
+      "node": "1658:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 166
+    },
+    {
+      "node": "1659:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 339
+    },
+    {
+      "node": "1722:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 219
+    },
+    {
+      "node": "1720:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1661:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 467
+    },
+    {
+      "node": "1662:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 258
+    },
+    {
+      "node": "1663:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 281
+    },
+    {
+      "node": "1665:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 77
+    },
+    {
+      "node": "1716:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 147
+    },
+    {
+      "node": "1714:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 78
+    },
+    {
+      "node": "1667:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 253
+    },
+    {
+      "node": "1668:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 132
+    },
+    {
+      "node": "1670:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 222
+    },
+    {
+      "node": "1710:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1709:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1708:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 101
+    },
+    {
+      "node": "1707:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 261
+    },
+    {
+      "node": "1672:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 921
+    },
+    {
+      "node": "1673:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1701:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 237
+    },
+    {
+      "node": "1699:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 90
+    },
+    {
+      "node": "1675:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 333
+    },
+    {
+      "node": "1676:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 244
+    },
+    {
+      "node": "1677:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 196
+    },
+    {
+      "node": "1678:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 191
+    },
+    {
+      "node": "1694:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 372
+    },
+    {
+      "node": "1693:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 245
+    },
+    {
+      "node": "1679:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 623
+    },
+    {
+      "node": "1680:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 163
+    },
+    {
+      "node": "1681:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1682:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 235
+    },
+    {
+      "node": "1683:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1684:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 302
+    },
+    {
+      "node": "1686:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 268
+    },
+    {
+      "node": "1687:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 262
+    },
+    {
+      "node": "1689:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 225
+    },
+    {
+      "node": "1233:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 234
+    },
+    {
+      "node": "1234:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 240
+    },
+    {
+      "node": "1231:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 225
+    },
+    {
+      "node": "1229:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 288
+    },
+    {
+      "node": "1228:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 211
+    },
+    {
+      "node": "1656:0",
+      "role": "L",
+      "pages": [
+        13
+      ],
+      "characters": 1216
+    },
+    {
+      "node": "1186:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 182
+    },
+    {
+      "node": "1224:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 236
+    },
+    {
+      "node": "1223:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 142
+    },
+    {
+      "node": "1221:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 273
+    },
+    {
+      "node": "1188:0",
+      "role": "L",
+      "pages": [
+        13
+      ],
+      "characters": 661
+    },
+    {
+      "node": "1189:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 199
+    },
+    {
+      "node": "1191:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 161
+    },
+    {
+      "node": "1192:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1193:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 197
+    },
+    {
+      "node": "1194:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1195:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 160
+    },
+    {
+      "node": "1215:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 208
+    },
+    {
+      "node": "1214:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1196:0",
+      "role": "L",
+      "pages": [
+        13
+      ],
+      "characters": 517
+    },
+    {
+      "node": "1197:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 322
+    },
+    {
+      "node": "1209:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 94
+    },
+    {
+      "node": "1207:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 76
+    },
+    {
+      "node": "1206:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 364
+    },
+    {
+      "node": "1205:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 183
+    },
+    {
+      "node": "1198:0",
+      "role": "L",
+      "pages": [
+        13
+      ],
+      "characters": 731
+    },
+    {
+      "node": "1199:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 264
+    }
+  ],
+  "tagged_content_items": 232,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-001-p001.png",
+      "node": "966:0",
+      "page": 1,
+      "bbox": [
+        321.5260009765625,
+        212.4851837158203,
+        563.7395629882812,
+        379.5069885253906
+      ],
+      "sha256": "2bd29f4f16dc8f48c33b24eda2cd3e9c71a0aea579e7906afff46fa80c8ec593",
+      "kind": "figure",
+      "alt": "Figure 1 depicts a blind end user using Arbility to interact with a browser-based calendar for placing an online order. The blind end user communicates with a sighted crowd worker via the Arbility chat panel, while the crowd worker's interface shows a mirrored version of the blind end user's calendar. A large computer mouse cursor indicates the crowd worker's click event on a specific calendar date. This click event is sent back to the blind end user, visualized as an arrow extending from the cursor back to the Arbility interface. The blind end user accepts the proposed click event, visualized by an arrow from their current calendar view to an updated calendar page state."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-002-p005.png",
+      "node": "1414:0",
+      "page": 5,
+      "bbox": [
+        378.61700439453125,
+        60.3621711730957,
+        504.149658203125,
+        121.20500183105469
+      ],
+      "sha256": "a79f872c6f96f968917354b334a7534c167921d8e01ab70c4a5381bb94a5cccf",
+      "kind": "figure",
+      "alt": "Figure 2 shows an excerpt from a chat log between the end user and remote crowd worker. The crowd worker says, \"Want me to select a time too?\" and the end user replies with \"3pm.\" The crowd worker then proposes the click action on 3pm, which appears in the chat log as \"CrowdWorker wants to click 3:00 PM.\" Beneath this message, there are four options available to the end user: Accept, Reject, Focus, and Request Label."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-003-p006.png",
+      "node": "1530:0",
+      "page": 6,
+      "bbox": [
+        416.322998046875,
+        363.52490234375,
+        468.93743896484375,
+        424.8320007324219
+      ],
+      "sha256": "4459c44970cef0d7121f7111d10b7ecaa3bc850ccaa7a651bd5d7b38d75fd4da",
+      "kind": "figure",
+      "alt": "This illustration shows a simple node and edge tree representing a part of a website's DOM. Each node is a turquoise circle with a letter in it. The root of the tree is at the top of the illustration. Child nodes appear below parent nodes. The root node is A and has 2 children: node B, on the left, and node C, on the right. Node B has child node D. Node C has child node E. Parent-child relationships are shown by black single-direction arrows, drawn from the parent node to the child node. This particular tree represents the initial state of the DOM for the example in this paper section. The next illustration shows a later state of the DOM."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-004-p006.png",
+      "node": "1532:0",
+      "page": 6,
+      "bbox": [
+        404.16900634765625,
+        468.81787109375,
+        481.0906677246094,
+        539.9920043945312
+      ],
+      "sha256": "7b67f57fc0451ce632673bb111c1a0613d968b6e470f22b6eaf32a39f74bcab5",
+      "kind": "figure",
+      "alt": "This illustration shows a simple node and edge tree representing a part of a website's DOM. Each node is a yellow circle with a letter in it. The root of the tree is at the top of the illustration. Child nodes appear below parent nodes. This particular tree represents the same part of the website as in the previous illustration, but instead at a later point in time when the user visits the website. The website DOM has changed. Now root node A has 3 children: node Y on the left, node B in the middle, and node C on the right. Node B has child node X below it. Nodes Y and C have no children. In summary, compared to the previous illustration, the changes are: 1) Node A has a new child (node Y), 2) node B's child changed from node D to node X, and 3) node C no longer has any children (previously it had child node E). Parent-child relationships are shown by black single-direction arrows, drawn from the parent node to the child node."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-005-p007.png",
+      "node": "1517:0",
+      "page": 7,
+      "bbox": [
+        136.8979949951172,
+        60.36431884765625,
+        481.17706298828125,
+        342.1289978027344
+      ],
+      "sha256": "b01d09d5baf449eb7080ae0fd65a9fd12a5e0c6149995a5ead0f41eca523f7b5",
+      "kind": "figure",
+      "alt": "Figure 3 is a complex system diagram depicting the interface between the Arbility tool and the Arboretum architecture. The Arbility tool consists of a chat interface (A) and a Chromium web browser (B). The Arboretum architecture consists of a web server (C) and a mirroring module (D). The blind end user interacts with the Arbility chat interface by inputting messages, which are sent to the Arboretum web server and forwarded to sighted crowd workers. These crowd workers then send proposed actions and events back to the Arboretum server, which forwards them to the end user for acceptance or rejection. If the end user accepts the events, the corresponding page updates are executed in the Arbility Chromium browser, which then sends these changes to the Arboretum mirroring module. The mirroring module then syncs these changes with the Arboretum web server so that the updates due to the accepted action are also visible to remote crowd workers. The diagram depicts these components and their interactions as labeled boxes with directed arrows between them."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-006-p007.png",
+      "node": "1522:0",
+      "page": 7,
+      "bbox": [
+        124.85099792480469,
+        440.9079895019531,
+        226.0780029296875,
+        490.8890075683594
+      ],
+      "sha256": "457b2687a1a0c799c07d36400ca10d729cd7dd3c356d196773976da15193f42b",
+      "kind": "figure",
+      "alt": "This illustration shows the Needleman-Wunsch sequence alignment Arbility computes between the two versions of the DOM tree, seen in the previous illustrations in this paper section. In this illustration, there is a top row of turquoise circles corresponding to the tree from the first illustration. From left to right, the nodes are: A, B, D, C, E. There is a bottom row of yellow circles corresponding to the tree from the second illustration. From left to right, the nodes are: A, Y, B, X, C. Note that the order of nodes presented here is the depth-first search pre-order traversal. For nodes that appear in both rows, a black line connects them to indicate they are matched in the sequence alignment algorithm. Here, the connected nodes are: row 1's A and row 2's A; row 1's B and row 2's B; and row 1's C and row 2's C. Nodes that were not matched are faded out."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-007-p008.png",
+      "node": "1495:0",
+      "page": 8,
+      "bbox": [
+        51.92900085449219,
+        60.361019134521484,
+        566.3888549804688,
+        303.25
+      ],
+      "sha256": "9ec46d9c2484b8f0d0ec49819aa841239d962038b45808dcbf4154fbb111fbf9",
+      "kind": "figure",
+      "alt": "Figure 4 depicts each of the three task pages and their corresponding task question and reason for inaccessible content. The task question for the Calorie Counter page is \"How many calories are needed to lose 1 pound?\" and this content is inaccessible because it encodes this information in a visual canvas element. The task question for the Gary Turk Video page is \"Name the person who did sound engineering for the video\" and this content is inaccessible because it requires a mousedown event to reveal, whereas screen reader interactions typically simulate click events. The task question for the Noodlehead Menu page is \"Name one $8 noodle dis that is indicated as spicy\" and is inaccessible because spiciness is indicated only by red text CSS styling."
+    },
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-008-p009.png",
+      "node": "1463:0",
+      "page": 9,
+      "bbox": [
+        51.92900085449219,
+        60.361881256103516,
+        299.010986328125,
+        172.70700073242188
+      ],
+      "sha256": "643286be6e27426253070515b610063c2b5c16a47581f8e5f4f47e606d9901ed",
+      "kind": "figure",
+      "alt": "Figure 5 is a two-part table with quantitative results for each of the three tasks. The first part of the table shows the accuracy by study participant group. Blind (solo) participants achieved accuracies of 0, 63, and 14 on the Counter, Video and Menu tasks respectively. Sighted (solo) participants achieved accuracies of 100, 90, and 86 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participants achieved accuracies of 100, 89, and 89 on the Counter, Video, and Menu tasks respectively. The second part of the table shows the time to successful completion of a task in seconds by study participant group. Blind (solo) participant times were n/a, 108, and 133 on the Counter, Video, and Menu tasks respectively. (Note: the time for completion on the Counter task was not applicable because no blind participant successfully completed this task.) Sighted (solo) participant times were 62, 93, and 82 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participant times were 418, 240, and 304 on the Counter, Video, and Menu tasks respectively."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 419,
+    "line_wrap_hyphens_retained": 28,
+    "paragraph_fragments_joined": 4,
+    "reviewed_wrap_repairs": 4,
+    "script_runs_positioned": 11
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-arboretum-and-arbility-uist2018.json.gz",
+  "source_tags_sha256": "f11c35b9c5e24bde4af853d6b3e5a88f1b4df15d8e15c7ad5134fd5969861a3b"
+}

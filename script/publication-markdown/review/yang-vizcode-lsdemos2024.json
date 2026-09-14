@@ -1,0 +1,462 @@
+{
+  "file": "yang-vizcode-lsdemos2024.pdf",
+  "title": "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring",
+  "publication_id": "vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024",
+  "pdf_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+  "markdown": "publications/yang-vizcode-lsdemos2024.md",
+  "markdown_sha256": "cb5b41c41623c9a26dc38a301c35f07638e5d885011a6c49d66bc137ec7497e2",
+  "pages": 3,
+  "blocks": [
+    {
+      "node": "256:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "257:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 212
+    },
+    {
+      "node": "258:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 73
+    },
+    {
+      "node": "259:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 74
+    },
+    {
+      "node": "260:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 430
+    },
+    {
+      "node": "261:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 370
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 114
+    },
+    {
+      "node": "266:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 632
+    },
+    {
+      "node": "262:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "263:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 852
+    },
+    {
+      "node": "264:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "265:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 92
+    },
+    {
+      "node": "292:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 84
+    },
+    {
+      "node": "293:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "294:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "295:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "296:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 357
+    },
+    {
+      "node": "297:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "298:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 492
+    },
+    {
+      "node": "299:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 370
+    },
+    {
+      "node": "300:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 16
+    },
+    {
+      "node": "joined-301:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 411
+    },
+    {
+      "node": "310:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 479
+    },
+    {
+      "node": "311:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 104
+    },
+    {
+      "node": "312:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 252
+    },
+    {
+      "node": "314:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 740
+    },
+    {
+      "node": "315:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "316:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 553
+    },
+    {
+      "node": "317:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "318:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 254
+    },
+    {
+      "node": "319:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 83
+    },
+    {
+      "node": "323:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 312
+    },
+    {
+      "node": "324:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 283
+    },
+    {
+      "node": "334:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "335:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 379
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 545
+    },
+    {
+      "node": "337:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 493
+    },
+    {
+      "node": "339:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "340:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 361
+    },
+    {
+      "node": "341:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 443
+    },
+    {
+      "node": "343:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "344:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 245
+    },
+    {
+      "node": "355:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "356:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 660
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "364:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 620
+    }
+  ],
+  "tagged_content_items": 1531,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/yang-vizcode-lsdemos2024/figure-001-p001.png",
+      "node": "256:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "Crossmark: Check for updates."
+    },
+    {
+      "path": "figures/yang-vizcode-lsdemos2024/figure-002-p001.png",
+      "node": "260:0",
+      "page": 1,
+      "bbox": [
+        97.19300079345703,
+        190.49996948242188,
+        514.8236694335938,
+        356.9729919433594
+      ],
+      "sha256": "1add89aa65bc4844e9c2afe638f76b060940c950ef58ccdcc5a141c1c3731d06",
+      "kind": "figure",
+      "alt": "Figure 1: The VizCode Web Page interface consists of student boxes (a), code boxes (b), and document tags (c). This screenshot shows two code boxes with several code boxes in them, each displaying one student’s code in real-time from the student’s VSCode. Documents under editing are displayed in blue (d), indicating that the student is currently editing this document."
+    },
+    {
+      "path": "figures/yang-vizcode-lsdemos2024/figure-003-p002.png",
+      "node": "310:0",
+      "page": 2,
+      "bbox": [
+        51.79800033569336,
+        137.77029418945312,
+        296.035888671875,
+        234.96200561523438
+      ],
+      "sha256": "0832bdbde308ad6310e009cfeb0ac6609685cfeebeac81214c23c000a4f042e9",
+      "kind": "figure",
+      "alt": "Figure 2. VizCode workflow. Several students edit code in VS Code. Their editing data flows to a central data server, illustrated with a JSON example containing a value, an add operation, and a position. Connections between students and server are labeled Websocket and HTTP. A bidirectional Websocket connection links the server to an instructor dashboard, allowing the instructor to monitor the students in real time."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 10,
+    "paragraph_fragments_joined": 1,
+    "line_wrap_hyphens_retained": 2,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/yang-vizcode-lsdemos2024.json.gz",
+  "source_tags_sha256": "fef7f609e9661d3e11a9bfc3be5e9837c1fcdf2b8175f703e0c653a2a66c9abf"
+}

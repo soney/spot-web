@@ -1,0 +1,110 @@
+{
+  "scope": "Final sample re-review after conversion fixes; four documents, targeted prose/code/formula/figure checks. Codelets text reviewed on pages1–2; Inclusive, MIT, VRCopilot targeted content follows earlier source/PDF visual review. No new broad investigation or certification.",
+  "documents": [
+    {
+      "pdf": "oney-natural-language-search-mit2008.pdf",
+      "pdf_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/oney-natural-language-search-mit2008.md",
+      "markdown_sha256": "3f0ddaee9672e43528d67cdb2fcb19abb51edcdf57181806c75823fd96bee858",
+      "checks": {
+        "source_hash_matches_tags": true,
+        "review_hash_matches_markdown": true,
+        "review_hash_matches_pdf": true,
+        "all_actual_code_preserved": true,
+        "all_figure_alternatives_preserved": true,
+        "all_local_images_exist": true,
+        "all_reviewed_overrides_present": true,
+        "equation8_fraction_present": true,
+        "recovered_inline_formulas_present": true
+      },
+      "details": {
+        "actual_code_blocks": 0,
+        "figure_alternatives": 16,
+        "reviewed_override_nodes": [
+          "923:0",
+          "738:0",
+          "741:0",
+          "746:0",
+          "776:0",
+          "782:0",
+          "806:0",
+          "807:0",
+          "911:0",
+          "938:0"
+        ],
+        "missing_override_nodes": []
+      },
+      "substantive_issues": []
+    },
+    {
+      "pdf": "pandey-inclusive-source-code-chi2024.pdf",
+      "pdf_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/pandey-inclusive-source-code-chi2024.md",
+      "markdown_sha256": "e5ac67bcc1264fb1d895d2716830ba1664404f0adb5bf410e88dfb06760d9852",
+      "checks": {
+        "source_hash_matches_tags": true,
+        "review_hash_matches_markdown": true,
+        "review_hash_matches_pdf": true,
+        "all_actual_code_preserved": true,
+        "all_figure_alternatives_preserved": true,
+        "all_local_images_exist": true,
+        "first_intro_paragraph_joined": true,
+        "author_and_permission_notes_before_intro": true,
+        "page1_to_page2_continuation_joined": true,
+        "reference_labels_complete_once": true
+      },
+      "details": {
+        "actual_code_blocks": 71,
+        "figure_alternatives": 0,
+        "rq_items_split": true
+      },
+      "substantive_issues": []
+    },
+    {
+      "pdf": "zhang-vrcopilot-uist2024.pdf",
+      "pdf_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/zhang-vrcopilot-uist2024.md",
+      "markdown_sha256": "ffab4db351c9391e2cf9d2c2baf8912c1da56e9d3bab818086ecefd51e9d6160",
+      "checks": {
+        "source_hash_matches_tags": true,
+        "review_hash_matches_markdown": true,
+        "review_hash_matches_pdf": true,
+        "all_actual_code_preserved": true,
+        "all_figure_alternatives_preserved": true,
+        "all_local_images_exist": true,
+        "original_arxiv_notice_retained": true,
+        "figures_1_and_6_captions_retained": true,
+        "reference_labels_complete_once": true
+      },
+      "details": {
+        "actual_code_blocks": 0,
+        "figure_alternatives": 9
+      },
+      "substantive_issues": []
+    },
+    {
+      "pdf": "oney-codelets-chi2012.pdf",
+      "pdf_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+      "markdown": "/home/soney/nucode/spot-web/script/publication-markdown/publications/oney-codelets-chi2012.md",
+      "markdown_sha256": "16bf384fb1c27985cf8130f876560b45c1f1b9a4245365909430fab546161c77",
+      "checks": {
+        "source_hash_matches_tags": true,
+        "review_hash_matches_markdown": true,
+        "review_hash_matches_pdf": true,
+        "all_actual_code_preserved": true,
+        "all_figure_alternatives_preserved": true,
+        "all_local_images_exist": true,
+        "documentation_footnote_order": true,
+        "second_footnote_order": true,
+        "study_statistics_subscripts": true,
+        "page2_first_paragraph_and_contributions_present": true
+      },
+      "details": {
+        "actual_code_blocks": 0,
+        "figure_alternatives": 8
+      },
+      "substantive_issues": []
+    }
+  ],
+  "substantive_issues": 0
+}

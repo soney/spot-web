@@ -1,0 +1,720 @@
+{
+  "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+  "title": "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks",
+  "publication_id": "don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024",
+  "pdf_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+  "markdown": "publications/wang-dont-step-on-my-toes-ideworkshop2024.md",
+  "markdown_sha256": "52da61de5952b2161cfab92c31239cba049afd16a14db1e2e9556aed52c390f2",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "136:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "137:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 257
+    },
+    {
+      "node": "138:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "139:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "140:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 103
+    },
+    {
+      "node": "141:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 92
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 123
+    },
+    {
+      "node": "167:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 629
+    },
+    {
+      "node": "142:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "143:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 719
+    },
+    {
+      "node": "144:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "145:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "146:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 410
+    },
+    {
+      "node": "148:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-149:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1091
+    },
+    {
+      "node": "153:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 570
+    },
+    {
+      "node": "154:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 970
+    },
+    {
+      "node": "155:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 400
+    },
+    {
+      "node": "156:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 427
+    },
+    {
+      "node": "166:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 83
+    },
+    {
+      "node": "189:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 432
+    },
+    {
+      "node": "190:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 355
+    },
+    {
+      "node": "310:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "311:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 956
+    },
+    {
+      "node": "312:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 913
+    },
+    {
+      "node": "313:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 492
+    },
+    {
+      "node": "314:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 703
+    },
+    {
+      "node": "315:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 23
+    },
+    {
+      "node": "316:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 147
+    },
+    {
+      "node": "joined-317:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 398
+    },
+    {
+      "node": "335:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 1067
+    },
+    {
+      "node": "336:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 990
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 511
+    },
+    {
+      "node": "339:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 711
+    },
+    {
+      "node": "340:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 20
+    },
+    {
+      "node": "341:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 160
+    },
+    {
+      "node": "342:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "343:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 718
+    },
+    {
+      "node": "344:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 980
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 461
+    },
+    {
+      "node": "346:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 37
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 496
+    },
+    {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 788
+    },
+    {
+      "node": "359:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 303
+    },
+    {
+      "node": "360:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 28
+    },
+    {
+      "node": "361:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 361
+    },
+    {
+      "node": "362:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1284
+    },
+    {
+      "node": "363:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 828
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 719
+    },
+    {
+      "node": "365:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 119
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "367:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 304
+    },
+    {
+      "node": "369:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 23
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 971
+    },
+    {
+      "node": "371:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 459
+    },
+    {
+      "node": "372:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 346
+    },
+    {
+      "node": "373:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 254
+    },
+    {
+      "node": "374:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "375:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 58
+    },
+    {
+      "node": "joined-376:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 771
+    },
+    {
+      "node": "386:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 361
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 178
+    },
+    {
+      "node": "388:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 66
+    },
+    {
+      "node": "389:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 490
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1180
+    },
+    {
+      "node": "391:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 44
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 217
+    },
+    {
+      "node": "393:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 340
+    },
+    {
+      "node": "394:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 94
+    },
+    {
+      "node": "395:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 171
+    },
+    {
+      "node": "396:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 42
+    },
+    {
+      "node": "397:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 613
+    },
+    {
+      "node": "398:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 31
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 951
+    },
+    {
+      "node": "221:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 591
+    },
+    {
+      "node": "222:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 15
+    },
+    {
+      "node": "223:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 689
+    },
+    {
+      "node": "228:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "229:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 4964
+    }
+  ],
+  "tagged_content_items": 5124,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-001-p001.png",
+      "node": "136:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "Crossmark: Check for updates."
+    },
+    {
+      "path": "figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-002-p002.png",
+      "node": "189:0",
+      "page": 2,
+      "bbox": [
+        51.798526763916016,
+        81.68610382080078,
+        560.2179565429688,
+        316.42236328125
+      ],
+      "sha256": "1359e228555d601c060037aadac6803fa4cbbcc06c9bfd300c5914b60b88148d",
+      "kind": "figure",
+      "alt": "Figure 1: Editing conflicts in real-time collaborative notebooks can be implicit. As shown on the left, one can get an unexpected execution result because the collaborator accidentally changed the shared variable. As shown on the right, PADLOCK helps data scientists resolve editing conflicts in real-time collaborative editing in computational notebooks."
+    },
+    {
+      "path": "figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-003-p003.png",
+      "node": "335:0",
+      "page": 3,
+      "bbox": [
+        51.79800033569336,
+        83.60826873779297,
+        296.0177917480469,
+        214.85400390625
+      ],
+      "sha256": "d5397003fd7ac79ba81d6be38afca5d5056ac5729e454025a45a808ada67e5d7",
+      "kind": "figure",
+      "alt": "Figure 2: Overview of the three conflict-free mechanisms in PADLOCK. (A) Cell-level access control allows collaborators to claim ownership of the code cells and restrict others from editing or viewing them: (A1) Unchecking edit access for a user will change the cell background and disable editing; (A2) Unchecking read access for a user will blur the cell. (B) Variable-level access control extends the idea of access control from cells to shared variables: (B1) Unchecking a user’s variable access; (B2) After losing access, they will not be able to edit the variable and will receive warning when attempting to do so. (C) Parallel cell groups define a designated area where changes of the code and runtime state stay inside its own scope: (C1) One parallel cell group can contain multiple tabs; (C2) Each tab can contain multiple cells; (C3) Sync the variables from the global scope to the current active tab; (C4) Add a new tab; (C5) Click the radio button to mark it as the “main” tab."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 116,
+    "paragraph_fragments_joined": 4,
+    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_retained": 5,
+    "script_runs_positioned": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/wang-dont-step-on-my-toes-ideworkshop2024.json.gz",
+  "source_tags_sha256": "036732c6abee7e5944d2feddcc9385e14d3e81dff0bf8e4fe42db53a341930ed"
+}

@@ -1,0 +1,1852 @@
+{
+  "file": "zhang-multi-click-uist2025.pdf",
+  "title": "Multi-Click: Cross-Tab Web Automation via Action Generalization",
+  "publication_id": "multi_click_cross_tab_web_automation_via_action_generalization_2025",
+  "pdf_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+  "markdown": "publications/zhang-multi-click-uist2025.md",
+  "markdown_sha256": "7189ecd0a1cca795c5290a8d72ea056fef03f954eafe4491bf5a23396cd1a620",
+  "pages": 10,
+  "blocks": [
+    {
+      "node": "596:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 199
+    },
+    {
+      "node": "642:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 112
+    },
+    {
+      "node": "598:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 142
+    },
+    {
+      "node": "643:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 100
+    },
+    {
+      "node": "644:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 96
+    },
+    {
+      "node": "600:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 638
+    },
+    {
+      "node": "601:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 659
+    },
+    {
+      "node": "647:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 163
+    },
+    {
+      "node": "661:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "662:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 993
+    },
+    {
+      "node": "652:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "603:0",
+      "role": "Link",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "605:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
+      "node": "606:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "607:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 345
+    },
+    {
+      "node": "608:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "609:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 474
+    },
+    {
+      "node": "610:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 485
+    },
+    {
+      "node": "611:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "646:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 134
+    },
+    {
+      "node": "joined-650:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 425
+    },
+    {
+      "node": "687:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 91
+    },
+    {
+      "node": "1008:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 800
+    },
+    {
+      "node": "1006:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 868
+    },
+    {
+      "node": "1009:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 725
+    },
+    {
+      "node": "1010:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1011:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 110
+    },
+    {
+      "node": "996:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 22
+    },
+    {
+      "node": "988:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 711
+    },
+    {
+      "node": "1012:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1014:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 462
+    },
+    {
+      "node": "992:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 544
+    },
+    {
+      "node": "1015:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 44
+    },
+    {
+      "node": "1017:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 529
+    },
+    {
+      "node": "993:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 810
+    },
+    {
+      "node": "1018:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "1020:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 396
+    },
+    {
+      "node": "983:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 51
+    },
+    {
+      "node": "984:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 675
+    },
+    {
+      "node": "982:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 834
+    },
+    {
+      "node": "1113:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 216
+    },
+    {
+      "node": "1114:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 188
+    },
+    {
+      "node": "1058:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1059:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 983
+    },
+    {
+      "node": "1060:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 16
+    },
+    {
+      "node": "1061:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 386
+    },
+    {
+      "node": "1071:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1063:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 75
+    },
+    {
+      "node": "1073:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 340
+    },
+    {
+      "node": "1074:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 210
+    },
+    {
+      "node": "1075:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 80
+    },
+    {
+      "node": "1065:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 260
+    },
+    {
+      "node": "1066:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 223
+    },
+    {
+      "node": "1115:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 53
+    },
+    {
+      "node": "1117:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 193
+    },
+    {
+      "node": "1080:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 231
+    },
+    {
+      "node": "1069:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 769
+    },
+    {
+      "node": "1132:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 392
+    },
+    {
+      "node": "1209:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 37
+    },
+    {
+      "node": "1211:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 101
+    },
+    {
+      "node": "1134:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 519
+    },
+    {
+      "node": "1135:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 550
+    },
+    {
+      "node": "1176:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 231
+    },
+    {
+      "node": "1177:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1031
+    },
+    {
+      "node": "1212:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 40
+    },
+    {
+      "node": "1214:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 305
+    },
+    {
+      "node": "1179:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 919
+    },
+    {
+      "node": "1137:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 445
+    },
+    {
+      "node": "1138:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1139:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 950
+    },
+    {
+      "node": "1144:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 121
+    },
+    {
+      "node": "1160:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 140
+    },
+    {
+      "node": "1151:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 194
+    },
+    {
+      "node": "1145:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 400
+    },
+    {
+      "node": "1146:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 857
+    },
+    {
+      "node": "1204:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1205:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 552
+    },
+    {
+      "node": "1206:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1207:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1155
+    },
+    {
+      "node": "1237:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1238:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 479
+    },
+    {
+      "node": "1239:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 630
+    },
+    {
+      "node": "1240:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 144
+    },
+    {
+      "node": "1241:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1242:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 306
+    },
+    {
+      "node": "1243:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 649
+    },
+    {
+      "node": "1244:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 305
+    },
+    {
+      "node": "1245:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 678
+    },
+    {
+      "node": "1255:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 498
+    },
+    {
+      "node": "1256:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 72
+    },
+    {
+      "node": "1257:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 123
+    },
+    {
+      "node": "1258:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 393
+    },
+    {
+      "node": "1278:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1279:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 101
+    },
+    {
+      "node": "1307:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1309:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 526
+    },
+    {
+      "node": "1281:0",
+      "role": "Table",
+      "pages": [
+        6
+      ],
+      "characters": 1705
+    },
+    {
+      "node": "1282:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 48
+    },
+    {
+      "node": "1310:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1396:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1007
+    },
+    {
+      "node": "1331:0",
+      "role": "Table",
+      "pages": [
+        6
+      ],
+      "characters": 2019
+    },
+    {
+      "node": "1332:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1397:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 43
+    },
+    {
+      "node": "1399:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 230
+    },
+    {
+      "node": "1322:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 740
+    },
+    {
+      "node": "1400:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 27
+    },
+    {
+      "node": "1402:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 738
+    },
+    {
+      "node": "1403:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 52
+    },
+    {
+      "node": "1405:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 577
+    },
+    {
+      "node": "1325:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 773
+    },
+    {
+      "node": "1326:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 189
+    },
+    {
+      "node": "1406:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1408:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 868
+    },
+    {
+      "node": "1336:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1337:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 532
+    },
+    {
+      "node": "1338:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 281
+    },
+    {
+      "node": "1339:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 814
+    },
+    {
+      "node": "1340:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 185
+    },
+    {
+      "node": "1341:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 703
+    },
+    {
+      "node": "1328:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 293
+    },
+    {
+      "node": "1329:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 384
+    },
+    {
+      "node": "1461:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 434
+    },
+    {
+      "node": "1462:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 286
+    },
+    {
+      "node": "1463:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1464:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1465:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 124
+    },
+    {
+      "node": "1480:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1436:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 650
+    },
+    {
+      "node": "1437:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 533
+    },
+    {
+      "node": "1469:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 32
+    },
+    {
+      "node": "1470:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 784
+    },
+    {
+      "node": "1438:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1215
+    },
+    {
+      "node": "1454:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1440:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 438
+    },
+    {
+      "node": "1455:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1456:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 500
+    },
+    {
+      "node": "1492:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1442:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 391
+    },
+    {
+      "node": "1443:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 158
+    },
+    {
+      "node": "1445:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 106
+    },
+    {
+      "node": "1446:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 342
+    },
+    {
+      "node": "1447:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 174
+    },
+    {
+      "node": "1448:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 92
+    },
+    {
+      "node": "1449:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 107
+    },
+    {
+      "node": "1493:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 180
+    },
+    {
+      "node": "1450:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 139
+    },
+    {
+      "node": "1451:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 332
+    },
+    {
+      "node": "1452:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 425
+    },
+    {
+      "node": "1494:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 240
+    },
+    {
+      "node": "1495:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 220
+    },
+    {
+      "node": "1496:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 298
+    },
+    {
+      "node": "1497:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 215
+    },
+    {
+      "node": "1498:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 241
+    },
+    {
+      "node": "1499:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 226
+    },
+    {
+      "node": "1500:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 236
+    },
+    {
+      "node": "895:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 290
+    },
+    {
+      "node": "896:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 287
+    },
+    {
+      "node": "897:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 228
+    },
+    {
+      "node": "898:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 208
+    },
+    {
+      "node": "899:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 210
+    },
+    {
+      "node": "854:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 389
+    },
+    {
+      "node": "855:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 400
+    },
+    {
+      "node": "900:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 195
+    },
+    {
+      "node": "868:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 208
+    },
+    {
+      "node": "869:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 247
+    },
+    {
+      "node": "870:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 194
+    },
+    {
+      "node": "871:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 241
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 223
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 229
+    },
+    {
+      "node": "874:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 206
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 291
+    },
+    {
+      "node": "856:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 228
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 134
+    },
+    {
+      "node": "877:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 329
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 167
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 233
+    },
+    {
+      "node": "880:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 222
+    },
+    {
+      "node": "881:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 159
+    },
+    {
+      "node": "882:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 224
+    },
+    {
+      "node": "883:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 311
+    },
+    {
+      "node": "884:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 205
+    },
+    {
+      "node": "885:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 149
+    },
+    {
+      "node": "857:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 698
+    },
+    {
+      "node": "859:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 323
+    },
+    {
+      "node": "886:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 219
+    },
+    {
+      "node": "860:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 336
+    },
+    {
+      "node": "887:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 172
+    },
+    {
+      "node": "908:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 8
+    },
+    {
+      "node": "861:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 194
+    },
+    {
+      "node": "862:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 181
+    },
+    {
+      "node": "863:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 355
+    },
+    {
+      "node": "909:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 296
+    },
+    {
+      "node": "910:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 136
+    },
+    {
+      "node": "911:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 139
+    },
+    {
+      "node": "912:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 248
+    },
+    {
+      "node": "864:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 121
+    },
+    {
+      "node": "913:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 243
+    },
+    {
+      "node": "865:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 430
+    },
+    {
+      "node": "889:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 270
+    },
+    {
+      "node": "890:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 204
+    },
+    {
+      "node": "891:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 250
+    },
+    {
+      "node": "892:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 232
+    },
+    {
+      "node": "893:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 309
+    },
+    {
+      "node": "894:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 165
+    }
+  ],
+  "tagged_content_items": 1910,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-001-p001.png",
+      "node": "600:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        249.1342010498047,
+        560.2073364257812,
+        369.04998779296875
+      ],
+      "sha256": "451541e2a05a3c1c6d01618892fd6bacadd65d7c01d1872654d666cfe4390b72",
+      "kind": "figure",
+      "alt": "Multi-Click is a technique for simultaneously performing the same action (e.g., clicking or typing) across multiple targets. In the illustration above, a user opens many related items on a single page using a simultaneous click ( A○). Each of these items opens in a separate tab. The user then clicks common elements across these tabs (in this case, an ‘Edit’ button B○), which performs the same action simultaneously across each tab. They then select text input elements across these tabs ( C○) and use an interactive data grid/spreadsheet as the values for each input ( D○)."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-002-p001.png",
+      "node": "652:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        648.9442749023438,
+        98.53720092773438,
+        667.9030151367188
+      ],
+      "sha256": "2d413e6a6dd3f67d017aa744c3df261d7c0ec4c2da402d9c46e44e97394d80d2",
+      "kind": "figure",
+      "alt": "CC-BY Logo"
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-003-p001.png",
+      "node": "687:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "Crossmark: Check for updates."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-004-p003.png",
+      "node": "1065:0",
+      "page": 3,
+      "bbox": [
+        315.9549865722656,
+        81.68795776367188,
+        560.1963500976562,
+        303.70599365234375
+      ],
+      "sha256": "492051f0b3b594dd5db0170ae8a0738d67a56d5d61159d92bd4977fecb41fbbe",
+      "kind": "figure",
+      "alt": "Screenshots from the IMDb website. After Multi-Click is activated with double-tapping Shift , users can hover over an initial element and scroll the mouse wheel to generalize to equivalent elements."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-005-p004.png",
+      "node": "1134:0",
+      "page": 4,
+      "bbox": [
+        51.79800033569336,
+        81.68592071533203,
+        560.2100219726562,
+        297.00799560546875
+      ],
+      "sha256": "cf9f6050daec4af4b6680b6e9ace27bff075779811182f76e0831e32d0411a09",
+      "kind": "figure",
+      "alt": "Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll to select the input elements to enter values. The generalized elements are highlighted in purple (a). The user can see selected elements in other tabs in the preview cards, where the selected elements are highlighted in blue (c). Then the user can enter values in the interactive data table (d) and calculate results for each term simultaneously."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-006-p006.png",
+      "node": "1255:0",
+      "page": 6,
+      "bbox": [
+        51.79800033569336,
+        81.68751525878906,
+        296.0375671386719,
+        226.44900512695312
+      ],
+      "sha256": "6d5bb26843012064e7a3e3c289b2e74b9e90f66e2be6a29a5e15257f626a678f",
+      "kind": "figure",
+      "alt": "Three grouped bar charts compare average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-007-p007.png",
+      "node": "1325:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        81.6852798461914,
+        560.2044067382812,
+        179.58799743652344
+      ],
+      "sha256": "0de9251e3ea87ca5a0c4911bec87de54603a6818b4d2b0b08d90799b9cc8f0e3",
+      "kind": "figure",
+      "alt": "Two horizontal stacked-bar panels show NASA-TLX response distributions for Multi-Click and Operator across mental demand, physical demand, hurriedness, perceived success, effort required, and stress/discouragement. Ratings run from 1 in dark red to 7 in dark blue; 1 indicates higher load, hurry, effort or stress and lower success. Multi-Click responses lean toward the favorable higher ratings across all six questions. Operator has more low ratings for hurriedness and more middle ratings for perceived success and effort. The clearest contrast is hurriedness: Operator has responses across ratings 1 through 7, including a large rating-1 segment, while Multi-Click responses are concentrated at 4 through 7."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-008-p007.png",
+      "node": "1328:0",
+      "page": 7,
+      "bbox": [
+        315.9549865722656,
+        402.0710144042969,
+        560.188720703125,
+        542.8890380859375
+      ],
+      "sha256": "d3b6ea939d1f19aa33fd5f2dce99f76abd71d05ffa69d2cf8145284a35c9e616",
+      "kind": "figure",
+      "alt": "Four ACM paper tabs supply abstracts to a spreadsheet. The abstract element is selected in the first tab and generalized across the other tabs; the resulting grid has one column per paper and its abstract in the corresponding cell."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-009-p007.png",
+      "node": "1329:0",
+      "page": 7,
+      "bbox": [
+        315.9549865722656,
+        560.5317993164062,
+        560.197265625,
+        697.9500122070312
+      ],
+      "sha256": "5d49a8366c34b33f672dee7b7cc3ad6dc1dfaed85a492acc85f3f429fd438300",
+      "kind": "figure",
+      "alt": "A spreadsheet supplies different values to job application forms in three tabs: J&J, Slack and NVIDIA. The grid pairs job titles Data Scientist, Manager and Engineer with prior companies Meta, Amazon and Google. Generalized Job Title and Company fields on each form receive values from the matching spreadsheet column."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-010-p008.png",
+      "node": "1461:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        81.68531799316406,
+        296.0382995605469,
+        215.02798461914062
+      ],
+      "sha256": "1b414cf02c4e020e040800215620684a8be4dee60250309947f0c9358b2bafcf",
+      "kind": "figure",
+      "alt": "Stock quote elements from separate tabs are collected into a spreadsheet with columns for NYSE Composite, NYSE US 100, Dow Jones Industrial Average and S&P 500. Each column holds the quoted index value and its daily numeric and percentage change; the displayed changes are all negative. Purple highlights identify the corresponding quote elements selected across tabs."
+    },
+    {
+      "path": "figures/zhang-multi-click-uist2025/figure-011-p008.png",
+      "node": "1462:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        225.31307983398438,
+        296.0435791015625,
+        345.6050109863281
+      ],
+      "sha256": "bed1592e6e8ab79494edccd78eef22bdff8db75fc43a6e55a03b08d83d20abd0",
+      "kind": "figure",
+      "alt": "Three Reddit post tabs contain highlighted comments. Multi-Click collects corresponding comments into a grid with one column per post and successive comments in rows, demonstrating extraction of multiple items from each tab."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1281:0",
+      "source_pages": [
+        6
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 6,
+      "empty_cell_count": 1,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1281:0"
+    },
+    {
+      "source_table_id": "1331:0",
+      "source_pages": [
+        6
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1331:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 97,
+    "paragraph_fragments_joined": 1,
+    "line_wrap_hyphens_retained": 14,
+    "script_runs_positioned": 6
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-multi-click-uist2025.json.gz",
+  "source_tags_sha256": "12c71bb57f07a63a43c7a132a05a4c0b2b5779474286d4957ede572f40e4243c"
+}

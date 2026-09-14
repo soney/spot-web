@@ -1,0 +1,35 @@
+{
+  "pdf": "pandey-inclusive-source-code-chi2024.pdf",
+  "source_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+  "review": "Visually inspected final PDF page1 at 144 DPI; the first Introduction paragraph continues from the left-column bottom into the right-column top, above the note/copyright region. The printed RQ1 and RQ2 are separate numbered items.",
+  "operations": [
+    {
+      "kind": "move_before",
+      "nodes": [
+        "450:0",
+        "459:0",
+        "451:0"
+      ],
+      "before": "448:0",
+      "reason": "Present author note, permission statement and copyright alongside frontmatter before Introduction instead of inside two body paragraph continuations. All wording and links retained."
+    },
+    {
+      "kind": "join_paragraphs",
+      "nodes": [
+        "449:0",
+        "452:0"
+      ],
+      "join": " ",
+      "reason": "One printed paragraph; boundary is exactly More readable + code is easier. Keep inline child Links from both halves."
+    },
+    {
+      "kind": "separate_numbered_items",
+      "source_text_prefix": "(1) RQ1. How and why",
+      "labels": [
+        "(1)",
+        "(2)"
+      ],
+      "reason": "Two printed numbered questions are distinct list items, although the native tag list combines them."
+    }
+  ]
+}

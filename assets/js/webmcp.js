@@ -396,7 +396,7 @@
       name: 'get_publication',
       description:
         'Get everything about one publication: full abstract, complete author list, venue, awards, DOI, ' +
-        'PDF and companion links, and a ready-to-paste BibTeX entry. Identify the paper by its id (from search_publications) ' +
+        'PDF, Markdown and companion links, and a ready-to-paste BibTeX entry. Identify the paper by its id (from search_publications) ' +
         'or its exact title. On a /papers/ page, omit the identifier to get the paper being viewed. For ' +
         'several papers\' citations at once, use get_bibtex instead.',
       annotations: { readOnlyHint: true },
@@ -437,6 +437,7 @@
           areas.length ? `Research area: ${areas.join('; ')}` : null,
           `Page: ${url(data, pub.path)}`,
           pub.pdf_path ? `PDF: ${url(data, pub.pdf_path)}` : null,
+          pub.markdown_path ? `Markdown: ${url(data, pub.markdown_path)}` : null,
           pub.doi ? `DOI: https://doi.org/${pub.doi}` : null,
           ...(pub.links || []).map((link) =>
             `${link.description}: ${/^https?:\/\//i.test(link.url) ? link.url : url(data, link.url)}`),

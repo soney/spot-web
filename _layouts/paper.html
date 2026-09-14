@@ -42,6 +42,12 @@ nav: research
       <i class="bi bi-file-earmark-pdf"></i> PDF
     </a>
     {% endif %}
+    {% if pub.markdown %}
+    <a class="btn btn-outline-primary markdown-download" href="{{ '/assets/' | append: pub.markdown | relative_url | escape }}"
+      download="{{ pub.markdown | split: '/' | last | escape }}">
+      <i class="bi bi-markdown" aria-hidden="true"></i> Markdown
+    </a>
+    {% endif %}
     {% if pub.doi %}
     <a class="paper-doi" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
       <i class="bi bi-link-45deg"></i> Publisher page
@@ -56,6 +62,11 @@ nav: research
   <section class="section-card paper-abstract">
     <h2 class="h5">Abstract</h2>
     {{ pub.abstract | markdownify }}
+  </section>
+  {% elsif pub.short_description %}
+  <section class="section-card paper-abstract">
+    <h2 class="h5">Overview</h2>
+    <p>{{ pub.short_description | escape }}</p>
   </section>
   {% endif %}
 

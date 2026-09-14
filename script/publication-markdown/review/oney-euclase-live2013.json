@@ -1,0 +1,596 @@
+{
+  "file": "oney-euclase-live2013.pdf",
+  "title": "Euclase: A Live Development Environment with Constraints and FSMs",
+  "publication_id": "euclase_a_live_development_environment_with_constraints_and_fsms_2013",
+  "pdf_sha256": "da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4",
+  "markdown": "publications/oney-euclase-live2013.md",
+  "markdown_sha256": "5701427e330affaefc11722c2ae47dfe376a2df3ea10aac9d82650c2b26ed545",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "99:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 198
+    },
+    {
+      "node": "100:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 105
+    },
+    {
+      "node": "101:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "102:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 64
+    },
+    {
+      "node": "103:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 800
+    },
+    {
+      "node": "104:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 110
+    },
+    {
+      "node": "105:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 16
+    },
+    {
+      "node": "106:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 855
+    },
+    {
+      "node": "joined-107:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1000
+    },
+    {
+      "node": "108:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 348
+    },
+    {
+      "node": "109:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 291
+    },
+    {
+      "node": "111:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 535
+    },
+    {
+      "node": "112:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 23
+    },
+    {
+      "node": "113:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 278
+    },
+    {
+      "node": "114:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 29
+    },
+    {
+      "node": "115:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 338
+    },
+    {
+      "node": "116:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 611
+    },
+    {
+      "node": "117:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-118:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 149
+    },
+    {
+      "node": "62:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 458
+    },
+    {
+      "node": "63:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "64:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 771
+    },
+    {
+      "node": "65:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "66:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 684
+    },
+    {
+      "node": "67:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 294
+    },
+    {
+      "node": "119:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 22
+    },
+    {
+      "node": "120:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 54
+    },
+    {
+      "node": "121:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 483
+    },
+    {
+      "node": "68:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 175
+    },
+    {
+      "node": "128:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 214
+    },
+    {
+      "node": "129:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 326
+    },
+    {
+      "node": "133:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 690
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 539
+    },
+    {
+      "node": "135:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 461
+    },
+    {
+      "node": "136:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 504
+    },
+    {
+      "node": "137:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "138:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 284
+    },
+    {
+      "node": "140:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 40
+    },
+    {
+      "node": "141:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 716
+    },
+    {
+      "node": "142:0",
+      "role": "Code",
+      "pages": [
+        3
+      ],
+      "characters": 106
+    },
+    {
+      "node": "143:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 522
+    },
+    {
+      "node": "144:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1024
+    },
+    {
+      "node": "145:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "146:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 201
+    },
+    {
+      "node": "joined-147:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 762
+    },
+    {
+      "node": "148:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 190
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 626
+    },
+    {
+      "node": "151:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 222
+    },
+    {
+      "node": "152:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 701
+    },
+    {
+      "node": "153:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 45
+    },
+    {
+      "node": "154:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 624
+    },
+    {
+      "node": "155:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 147
+    },
+    {
+      "node": "163:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 167
+    },
+    {
+      "node": "168:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 176
+    },
+    {
+      "node": "169:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 673
+    },
+    {
+      "node": "170:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 311
+    },
+    {
+      "node": "177:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 272
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 711
+    },
+    {
+      "node": "179:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 706
+    },
+    {
+      "node": "joined-180:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 423
+    },
+    {
+      "node": "182:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "183:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 234
+    },
+    {
+      "node": "184:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 584
+    },
+    {
+      "node": "185:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 19
+    },
+    {
+      "node": "186:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 233
+    },
+    {
+      "node": "187:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "188:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1963
+    }
+  ],
+  "tagged_content_items": 2057,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-euclase-live2013/figure-001-p001.png",
+      "node": "108:0",
+      "page": 1,
+      "bbox": [
+        318.39959716796875,
+        187.7375946044922,
+        561.1995849609375,
+        256.777587890625
+      ],
+      "sha256": "c83981f7debc700c939016fa7c6885467c96c606d63cc7388af88d500db6e4ff",
+      "kind": "figure",
+      "alt": "Fig. 1. A mockup for the display of the properties of an object in Euclase. Properties are represented in rows while different states are represented in each column. An entry for a particular property in a particular state represents a constraint that applies to that property in that state."
+    }
+  ],
+  "tables": [],
+  "code_layout": [
+    {
+      "node": "142:0",
+      "pages": [
+        3
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 4.7505,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 10,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "line_wrap_hyphens_retained": 9,
+    "line_wrap_hyphens_removed": 153,
+    "paragraph_fragments_joined": 4,
+    "reviewed_wrap_repairs": 2,
+    "script_runs_positioned": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-euclase-live2013.json.gz",
+  "source_tags_sha256": "d1aa9272b9e4abac16d2801f938e3545b8205a850851c194b35558a306a1eccc"
+}

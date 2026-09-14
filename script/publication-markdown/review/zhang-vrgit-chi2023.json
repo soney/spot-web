@@ -1,0 +1,2131 @@
+{
+  "file": "zhang-vrgit-chi2023.pdf",
+  "title": "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality",
+  "publication_id": "vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023",
+  "pdf_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+  "markdown": "publications/zhang-vrgit-chi2023.md",
+  "markdown_sha256": "17826d3e72a9ebdfb52f2368e1664e1341be4705841184687eb876c5dd93ec6e",
+  "pages": 14,
+  "blocks": [
+    {
+      "node": "396:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 214
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
+      "node": "404:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 77
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
+      "node": "406:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 69
+    },
+    {
+      "node": "397:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 867
+    },
+    {
+      "node": "398:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 625
+    },
+    {
+      "node": "393:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 617
+    },
+    {
+      "node": "820:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 208
+    },
+    {
+      "node": "391:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 659
+    },
+    {
+      "node": "joined-822:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 770
+    },
+    {
+      "node": "824:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "825:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 113
+    },
+    {
+      "node": "826:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "827:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 54
+    },
+    {
+      "node": "792:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 24
+    },
+    {
+      "node": "793:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 351
+    },
+    {
+      "node": "794:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "795:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1014
+    },
+    {
+      "node": "796:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1571
+    },
+    {
+      "node": "789:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1603
+    },
+    {
+      "node": "797:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1070
+    },
+    {
+      "node": "798:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 278
+    },
+    {
+      "node": "799:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "800:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 192
+    },
+    {
+      "node": "752:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 45
+    },
+    {
+      "node": "753:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1219
+    },
+    {
+      "node": "749:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 114
+    },
+    {
+      "node": "829:0",
+      "role": "Table",
+      "pages": [
+        3
+      ],
+      "characters": 14794
+    },
+    {
+      "node": "940:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 63
+    },
+    {
+      "node": "941:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 100
+    },
+    {
+      "node": "942:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 105
+    },
+    {
+      "node": "923:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1639
+    },
+    {
+      "node": "919:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 442
+    },
+    {
+      "node": "882:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 39
+    },
+    {
+      "node": "883:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1346
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1004
+    },
+    {
+      "node": "871:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 42
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1184
+    },
+    {
+      "node": "865:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 878
+    },
+    {
+      "node": "1093:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1094:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1609
+    },
+    {
+      "node": "1095:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 439
+    },
+    {
+      "node": "1096:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 10
+    },
+    {
+      "node": "joined-1097:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1254
+    },
+    {
+      "node": "1098:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 421
+    },
+    {
+      "node": "1099:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 194
+    },
+    {
+      "node": "1102:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 39
+    },
+    {
+      "node": "1103:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 260
+    },
+    {
+      "node": "1104:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 322
+    },
+    {
+      "node": "1085:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "joined-1086:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 952
+    },
+    {
+      "node": "1054:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 579
+    },
+    {
+      "node": "1055:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 375
+    },
+    {
+      "node": "1136:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 48
+    },
+    {
+      "node": "1138:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 2001
+    },
+    {
+      "node": "1139:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 33
+    },
+    {
+      "node": "1141:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 99
+    },
+    {
+      "node": "1059:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 322
+    },
+    {
+      "node": "1060:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1061:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 189
+    },
+    {
+      "node": "1062:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 53
+    },
+    {
+      "node": "1063:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 381
+    },
+    {
+      "node": "1064:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 401
+    },
+    {
+      "node": "1065:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1141
+    },
+    {
+      "node": "1142:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1144:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 489
+    },
+    {
+      "node": "1051:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 626
+    },
+    {
+      "node": "1188:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1189:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 410
+    },
+    {
+      "node": "1190:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 271
+    },
+    {
+      "node": "1191:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1759
+    },
+    {
+      "node": "1176:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1177:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1283
+    },
+    {
+      "node": "1178:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1182
+    },
+    {
+      "node": "1240:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1242:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1227
+    },
+    {
+      "node": "1243:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 40
+    },
+    {
+      "node": "joined-1245:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 1916
+    },
+    {
+      "node": "1166:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 597
+    },
+    {
+      "node": "1167:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 539
+    },
+    {
+      "node": "1215:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 29
+    },
+    {
+      "node": "1216:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1546
+    },
+    {
+      "node": "1217:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 65
+    },
+    {
+      "node": "joined-1218:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 116
+    },
+    {
+      "node": "1220:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 147
+    },
+    {
+      "node": "1211:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 764
+    },
+    {
+      "node": "1212:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 715
+    },
+    {
+      "node": "1250:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1251:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 286
+    },
+    {
+      "node": "1263:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 20
+    },
+    {
+      "node": "1264:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 443
+    },
+    {
+      "node": "1254:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1255:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1631
+    },
+    {
+      "node": "1256:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 745
+    },
+    {
+      "node": "1257:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 475
+    },
+    {
+      "node": "1306:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 12
+    },
+    {
+      "node": "1307:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 285
+    },
+    {
+      "node": "1308:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1166
+    },
+    {
+      "node": "1296:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1744
+    },
+    {
+      "node": "1297:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 12
+    },
+    {
+      "node": "1298:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 690
+    },
+    {
+      "node": "1290:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1333:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 69
+    },
+    {
+      "node": "joined-1335:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1144
+    },
+    {
+      "node": "1293:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1022
+    },
+    {
+      "node": "1286:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 74
+    },
+    {
+      "node": "1287:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 748
+    },
+    {
+      "node": "1275:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1336:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 76
+    },
+    {
+      "node": "1339:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 458
+    },
+    {
+      "node": "1277:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 982
+    },
+    {
+      "node": "joined-1278:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 212
+    },
+    {
+      "node": "1328:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1329:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 306
+    },
+    {
+      "node": "1340:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 55
+    },
+    {
+      "node": "1342:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1103
+    },
+    {
+      "node": "joined-1312:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 200
+    },
+    {
+      "node": "1343:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 78
+    },
+    {
+      "node": "1346:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1261
+    },
+    {
+      "node": "1318:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 31
+    },
+    {
+      "node": "1319:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 911
+    },
+    {
+      "node": "1413:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 47
+    },
+    {
+      "node": "1414:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1903
+    },
+    {
+      "node": "1403:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 68
+    },
+    {
+      "node": "1404:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 1317
+    },
+    {
+      "node": "1398:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 50
+    },
+    {
+      "node": "1399:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1453
+    },
+    {
+      "node": "1387:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 64
+    },
+    {
+      "node": "1388:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 891
+    },
+    {
+      "node": "1389:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 651
+    },
+    {
+      "node": "1378:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 70
+    },
+    {
+      "node": "1379:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 1790
+    },
+    {
+      "node": "1440:0",
+      "role": "H3",
+      "pages": [
+        11
+      ],
+      "characters": 19
+    },
+    {
+      "node": "1441:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 870
+    },
+    {
+      "node": "1442:0",
+      "role": "P",
+      "pages": [
+        11,
+        12
+      ],
+      "characters": 698
+    },
+    {
+      "node": "1426:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 653
+    },
+    {
+      "node": "1427:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1428:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 885
+    },
+    {
+      "node": "1429:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1430:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 367
+    },
+    {
+      "node": "1431:0",
+      "role": "H2",
+      "pages": [
+        12
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1432:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 123
+    },
+    {
+      "node": "1433:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 265
+    },
+    {
+      "node": "1457:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 105
+    },
+    {
+      "node": "1458:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1459:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 288
+    },
+    {
+      "node": "1460:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 166
+    },
+    {
+      "node": "1461:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 162
+    },
+    {
+      "node": "1462:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 233
+    },
+    {
+      "node": "1463:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 184
+    },
+    {
+      "node": "1464:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 172
+    },
+    {
+      "node": "1465:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 185
+    },
+    {
+      "node": "1466:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 156
+    },
+    {
+      "node": "1467:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 154
+    },
+    {
+      "node": "1468:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 85
+    },
+    {
+      "node": "1469:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 95
+    },
+    {
+      "node": "1470:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 239
+    },
+    {
+      "node": "1471:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 171
+    },
+    {
+      "node": "1472:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 167
+    },
+    {
+      "node": "1473:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 186
+    },
+    {
+      "node": "1474:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 167
+    },
+    {
+      "node": "1475:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 157
+    },
+    {
+      "node": "1476:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 220
+    },
+    {
+      "node": "1477:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 289
+    },
+    {
+      "node": "1478:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 356
+    },
+    {
+      "node": "1479:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 291
+    },
+    {
+      "node": "1480:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 253
+    },
+    {
+      "node": "1481:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 249
+    },
+    {
+      "node": "1482:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 233
+    },
+    {
+      "node": "1483:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 69
+    },
+    {
+      "node": "1484:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 98
+    },
+    {
+      "node": "1485:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 245
+    },
+    {
+      "node": "1486:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 182
+    },
+    {
+      "node": "1487:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 288
+    },
+    {
+      "node": "1488:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 291
+    },
+    {
+      "node": "1494:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 227
+    },
+    {
+      "node": "1495:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1496:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 269
+    },
+    {
+      "node": "1497:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 261
+    },
+    {
+      "node": "1498:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 261
+    },
+    {
+      "node": "1499:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 270
+    },
+    {
+      "node": "1500:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 302
+    },
+    {
+      "node": "1501:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1502:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 104
+    },
+    {
+      "node": "1503:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 222
+    },
+    {
+      "node": "1504:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 234
+    },
+    {
+      "node": "1505:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 230
+    },
+    {
+      "node": "1506:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 117
+    },
+    {
+      "node": "1507:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 224
+    },
+    {
+      "node": "1508:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 250
+    },
+    {
+      "node": "1509:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 220
+    },
+    {
+      "node": "1510:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 229
+    },
+    {
+      "node": "1511:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 263
+    },
+    {
+      "node": "1512:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 327
+    },
+    {
+      "node": "1513:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 229
+    },
+    {
+      "node": "1514:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 251
+    },
+    {
+      "node": "1515:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 292
+    },
+    {
+      "node": "1516:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 218
+    },
+    {
+      "node": "1517:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 290
+    },
+    {
+      "node": "1518:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 217
+    },
+    {
+      "node": "1519:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 244
+    },
+    {
+      "node": "1520:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 264
+    },
+    {
+      "node": "1521:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 205
+    },
+    {
+      "node": "1522:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 224
+    },
+    {
+      "node": "1523:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 128
+    },
+    {
+      "node": "1524:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 289
+    },
+    {
+      "node": "1525:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 177
+    },
+    {
+      "node": "1526:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 213
+    },
+    {
+      "node": "1527:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 242
+    },
+    {
+      "node": "1528:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 219
+    },
+    {
+      "node": "1529:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 257
+    },
+    {
+      "node": "1530:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 208
+    },
+    {
+      "node": "1531:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 178
+    },
+    {
+      "node": "1532:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 323
+    },
+    {
+      "node": "1533:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 119
+    },
+    {
+      "node": "1454:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 251
+    },
+    {
+      "node": "1534:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 197
+    },
+    {
+      "node": "1535:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 189
+    },
+    {
+      "node": "1536:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 258
+    },
+    {
+      "node": "1537:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 261
+    },
+    {
+      "node": "1538:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 229
+    },
+    {
+      "node": "946:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 18
+    },
+    {
+      "node": "947:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1038:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1014:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 151
+    },
+    {
+      "node": "1026:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 183
+    },
+    {
+      "node": "1015:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 251
+    },
+    {
+      "node": "1018:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 153
+    },
+    {
+      "node": "1016:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 273
+    },
+    {
+      "node": "1013:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 679
+    },
+    {
+      "node": "990:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 21
+    },
+    {
+      "node": "991:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 138
+    },
+    {
+      "node": "992:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1007:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 584
+    },
+    {
+      "node": "649:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 23
+    },
+    {
+      "node": "711:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 321
+    },
+    {
+      "node": "657:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 22
+    },
+    {
+      "node": "658:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 138
+    },
+    {
+      "node": "659:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 74
+    },
+    {
+      "node": "718:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 714
+    },
+    {
+      "node": "677:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 81
+    },
+    {
+      "node": "719:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 931
+    },
+    {
+      "node": "697:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 23
+    },
+    {
+      "node": "709:0",
+      "role": "L",
+      "pages": [
+        14
+      ],
+      "characters": 426
+    }
+  ],
+  "tagged_content_items": 2514,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-001-p001.png",
+      "node": "397:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        190.86587524414062,
+        560.2101440429688,
+        409.82000732421875
+      ],
+      "sha256": "5818d465b8a1d260d3a8372c1e1f6361959f1005f82a3996b6a98906ceb04938",
+      "kind": "figure",
+      "alt": "Figure 1: An illustration of VRGit. The user is in an empty apartment. A History Graph that represents non-linear version history is anchored on the user’s left arm, where each node is a 3D miniature of that version. Inside each miniature, furniture objects are highlighted using color coding (green represents addition, yellow represents transformation, red represents deletion) if they are changed compared to the previous version. Mini avatars are anchored in the history graph that represents which version users are in. Users can also create a portal to monitor another user’s first-person view. A shared history visualization facilitates group discussion by anchoring the HG to a shared location in the virtual scene and allowing users to discuss and to preview a version and reuse objects collaboratively."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-002-p004.png",
+      "node": "1098:0",
+      "page": 4,
+      "bbox": [
+        315.9549865722656,
+        81.68814086914062,
+        560.1936645507812,
+        227.85000610351562
+      ],
+      "sha256": "5d176a61a65f9aab82bac3e19b40b2d4971f2ccba5aaa21041f332838456a4e5",
+      "kind": "figure",
+      "alt": "Figure 2: A screenshot of the furniture menu that is always attached to the left controller. Inside the menu, there are six sub-menus of pre-made furniture models: sofas, tables, chairs, desks, storage, and lights. Users can populate a model from a sub-menu by aiming and selecting it using the raycast shooting from the controller and place it in the virtual scene."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-003-p005.png",
+      "node": "1054:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        81.69722747802734,
+        295.947998046875,
+        203.80299377441406
+      ],
+      "sha256": "a0b1c4ca34d683ae5385bf0f2852d98f86017d647a662e5d6635732a02f3e233",
+      "kind": "figure",
+      "alt": "Figure 3: An illustration of the summarized version history. In the middle it shows part of the summarized history graph including V2, V4, V8, V10, V11, and V15 (the version that the user is currently in), where a set of dots indicating an ellipsis is shown before V2 and between V11 and V15. On top of the history graph it shows how V4 to V8 expand as part of the DAG, where each operation will generate a new node in the DAG. At the bottom it shows a new branch that only shows the version that another collaborator is in."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-004-p005.png",
+      "node": "1059:0",
+      "page": 5,
+      "bbox": [
+        315.9549865722656,
+        91.64950561523438,
+        560.1942138671875,
+        161.30799865722656
+      ],
+      "sha256": "22e0078849407555809fe65f839e5a1c05ecd6a48fe1eeb01e9cf7d1f50cf48a",
+      "kind": "figure",
+      "alt": "Figure 4.a: A screenshot of the history graph that contains three branches in the system. Each branch is represented by different colors of edges between the nodes including light green, red, and dark green. The user is currently on the branch colored in light green."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-005-p005.png",
+      "node": "1061:0",
+      "page": 5,
+      "bbox": [
+        315.9549865722656,
+        180.22161865234375,
+        560.202880859375,
+        251.43299865722656
+      ],
+      "sha256": "dd1d501cebb2529b7175106023e09c0c48d494818d1e1417d98c7e70339104ce",
+      "kind": "figure",
+      "alt": "Figure 4.b: A screenshot of the history graph after the user switches the branch and now they are selecting the branch colored in red."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-006-p006.png",
+      "node": "1051:0",
+      "page": 6,
+      "bbox": [
+        51.79800033569336,
+        91.65151977539062,
+        296.04046630859375,
+        215.77000427246094
+      ],
+      "sha256": "ad8e4a9c9bb7e62f9b342b2fa16b992c0f1f3beb8ba048159a1ed73ab8154cf4",
+      "kind": "figure",
+      "alt": "Figure 5.a: A screenshot of previewing a version in the system, where a larger 3D miniature is shown on top of the history graph on the user’s non-dominant arm. The preview is labeled as “V5.11_preview”. Figure 5.b: A screenshot of reusing objects in the preview. The user is in V14 and they are viewing a preview of V5.11. The user selects the chair in the preview and after selecting it, the chair appears in the virtual scene with the same transformation as in the preview. The system then automatically creates a commit due to the addition and moves the user to V15."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-007-p007.png",
+      "node": "1166:0",
+      "page": 7,
+      "bbox": [
+        51.79800033569336,
+        81.6755599975586,
+        560.197998046875,
+        326.5769958496094
+      ],
+      "sha256": "a696900c407574b8557632d69b18a67508d30433befec2ac29e7cfdfa4cdf2c9",
+      "kind": "figure",
+      "alt": "Figure 6: An illustration of shared history visualization. Firstly, two users are working in the same version and one user creates a shared visualization by clicking on the history graph. Second, the history visualization moved to a shared location in the virtual scene and the sharer can select a version for all users. Third, when the sharer enters a different version, they can bring all users together. Finally, the sharer creates a shared preview of another version and reuses objects in the preview based on discussion with other users."
+    },
+    {
+      "path": "figures/zhang-vrgit-chi2023/figure-008-p008.png",
+      "node": "1211:0",
+      "page": 8,
+      "bbox": [
+        51.79800033569336,
+        81.68489837646484,
+        296.04364013671875,
+        198.9250030517578
+      ],
+      "sha256": "86efe8c4c8dc464721da4883a44d539f6c7688885a694cefcc0a684f8b5b4945",
+      "kind": "figure",
+      "alt": "Figure 7: A flow chart of the system architecture of VRGit. The chart contains four components: Application 1, Application 2, Firebase, and Photon Voice. Application 1 and Application 2 are connected via Photon Voice for in-app voice communication. Application 1 and Application 2 are also connected via Firebase, where each sub-component in the Applications is connected to a document on Firebase. A sub-component from the application named Oculus Headsets & Controllers is connected to a document named Avatars. Similarly, History Graph is connected to Operations; First-person View Encoded with WebRTC is connected to Portals; and Shared History Visualization is connected to Shared History Operations."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "829:0",
+      "source_pages": [
+        3
+      ],
+      "format": "html",
+      "row_count": 12,
+      "column_count": 10,
+      "cell_count": 111,
+      "header_count": 21,
+      "empty_cell_count": 33,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "829:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 137,
+    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_retained": 18,
+    "script_runs_positioned": 7
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-vrgit-chi2023.json.gz",
+  "source_tags_sha256": "e1ec8d4b5d25951729ca2a4eba95424609c5c1e584b3c14367f72d26e460a1cf"
+}

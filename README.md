@@ -76,6 +76,7 @@ _plugins/
   structured_data.rb          # the JSON-LD and Google Scholar tags in each page's <head>, from the same records
   splatter.rb                 # builds /assets/images/splatter.svg (one paint splat per alum) and the {% splatter %} tag that shows it
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
+  markdown/                  # raw Markdown downloads and their figure images
   js/webmcp.js                # the imperative WebMCP tools for AI agents (the declarative one is in the CV markup)
   mcp/                        # one line of Liquid each; generates the tools' JSON
 robots.txt, llms.txt          # crawler policy and the agent-facing site index, both rendered from the data
@@ -304,7 +305,7 @@ You will touch, in this order:
 
 **The PDF.** Drop the file in `assets/pdfs/` and rename it to
 `<surname>-<short-title>-<venue><year>.pdf`. Nothing enforces the convention,
-but every one of the 73 PDFs follows it, so the name is derived rather than
+but every one of the 74 PDFs follows it, so the name is derived rather than
 invented — once the record exists, ask for it:
 
 ```bash
@@ -405,13 +406,22 @@ record of a venue gets the higher CV number):
 | `authors` | yes | Ordered list of `people.yaml` ids; drives author lists, person pages, and whether the CV claims the paper (it must contain `steve_oney`) |
 | `venue` | yes | Must equal a `venues.yaml` `id` |
 | `pdf` | optional | PDF link on the paper page, list rows, and CV. Name the file `<surname>-<short-title>-<venue><year>.pdf`; the link's download name is generated separately |
+| `markdown` | optional | Markdown download on the individual paper page only, plus `markdown_path` in WebMCP's `get_publication`. Relative to `assets/`, for example `markdown/zhang-codestream-chi2026.md` |
 | `links` | optional | Companion links on the paper page and in WebMCP's `get_publication`: a list of `{url, description}`. Use a root-relative site URL such as `/assets/supplements/expresso-table-i.html`, or a full `https://` URL. The description is plain link text. These links do not change the PDF, DOI, BibTeX, or citation metadata |
 | `doi` | optional | Adds a "Publisher page" link on the paper page, and `doi`/`url` lines to the BibTeX entry. Bare identifier — `10.1145/3411763.3451617`, not the full URL |
 | `student_authors` | optional | Subset of `authors`. **CV only** — underlines those names when the CV's student toggle is on |
-| `abstract` | optional | Markdown body of the paper page; also the fallback list blurb, truncated to 320 chars |
-| `short_description` | optional | One-paragraph blurb in list rows, overriding the truncated abstract. Not shown on the paper page |
+| `abstract` | optional | The paper's abstract, shown under Abstract on its page; also the fallback list blurb, truncated to 320 chars. Omit when the PDF has no abstract |
+| `short_description` | optional | Plain-text summary in list rows, overriding the truncated abstract. Also shown under Overview on the paper page when there is no abstract |
 | `award` | optional | `best_paper` (trophy icon), `honorable_mention` or `other` (ribbon). The literal string `none` means "no award" |
 | `award_description` | optional | Replaces the generic award text |
+
+Write short descriptions as two complete sentences: the contribution or study
+method, followed by a key capability or finding. Check both descriptions and
+abstracts against the linked PDF. Distinguish proposed work from implemented or
+evaluated systems, and keep study findings within their reported setting.
+Abstracts should follow the PDF wording, with line-wrap artifacts and obvious
+typos corrected. The review in `script/publication-description-review/` records
+the source pages and corrections for the current collection.
 
 The `id` convention is the lowercase title with punctuation stripped and spaces
 as underscores, suffixed with the venue year. Nothing enforces it; it only has
@@ -438,7 +448,7 @@ nothing to write or keep in sync. The entry type follows the venue's `type`
 would collide.
 
 Adding a `doi` is the one thing that improves a citation by hand: it adds the
-publisher link on the page and `doi`/`url` lines to the BibTeX. 56 of 74 papers
+publisher link on the page and `doi`/`url` lines to the BibTeX. 58 of 74 papers
 have one. The rest are workshop papers, theses, and work that is not published
 yet — leave `doi` off entirely rather than guessing, because a wrong DOI on a
 CV is worse than a missing one. To find one, search
@@ -457,6 +467,28 @@ For an accessible table, code appendix, or other companion, put static files in
 Unlike `pdf`, each link's `url` includes `/assets/`. Copy any files the companion
 links to as well, and make its PDF links point to `../pdfs/<file>.pdf` when the
 companion is in `assets/supplements/`. No separate paper page is needed.
+
+**Markdown downloads.** Put a raw `.md` file in `assets/markdown/` and add
+`markdown: markdown/<file>.md` to the publication record. It must have no YAML
+front matter, so Jekyll copies it as a download instead of rendering an HTML
+page. The Markdown button appears beside the PDF on `/papers/<id>/`; it is not
+part of publication lists or the CV. Image URLs must be absolute so they still
+work when someone saves the Markdown outside the site. Those images require
+an internet connection when reading the downloaded file.
+
+The current downloads come from the reviewed conversions in
+`script/publication-markdown/`, which remains excluded from the site. After
+regenerating a conversion and its manifest, refresh the downloadable copies:
+
+```bash
+python script/publication-markdown/export_downloads.py
+```
+
+The exporter checks source Markdown, PDF and image hashes, copies the referenced
+images, and changes image destinations to use `_config.yml`'s `url` and
+`baseurl`. It leaves the source text and local drafts unchanged. Run it again
+if the site's canonical URL changes. This is a maintenance command, not an
+extra build step; Jekyll serves the files already in `assets/markdown/`.
 
 A full example:
 
@@ -1043,9 +1075,9 @@ You rarely need to run this by hand: the deploy workflow runs it on every
 push to `main`, writing `_site/oney_cv.pdf`, so the live site always serves a
 fresh PDF at <https://from.so/oney_cv.pdf> and the web CV's "Download PDF"
 link (screen-only; print hides it so the PDF never links to itself) always
-resolves. Locally that link 404s under `npm run develop` until you export
-one yourself with `script/export_cv_pdf.sh _site/oney_cv.pdf` — and the next
-build wipes it again.
+resolves. The CV data uses the full published PDF URL, so the same link also
+works during local development. Local serving does not generate a PDF; use the
+export script or the browser's Print command to preview unpublished CV changes.
 
 The script builds the site, serves `_site` on a free port, and prints
 `/people/steve_oney/cv/` with headless Chrome. There is no second layout to
@@ -1100,7 +1132,9 @@ message saying so is easy to miss.
 Depending on what you changed, check:
 
 - `http://127.0.0.1:4000/papers/<id>/` — title, authors (all linked or plainly
-  named, **never a raw id**), abstract, venue label, award, PDF button
+  named, **never a raw id**), abstract, venue label, award, PDF button, and
+  Markdown download when present. Check that a downloaded `.md` stays raw
+  Markdown and that its figure URLs point to files in the build
 - `http://127.0.0.1:4000/research#pub-<id>` — the row is in the right position
   with the right venue label, and the anchor actually scrolls to it
 - `http://127.0.0.1:4000/` — "Recent Publications" (venues from

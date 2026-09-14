@@ -1,0 +1,295 @@
+{
+  "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+  "title": "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+  "publication_id": "demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024",
+  "pdf_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+  "markdown": "publications/zhang-demonstration-of-cflow-lsdemos2024.md",
+  "markdown_sha256": "b26696d2c4acf8d9d65bf1f533f681f194cb97a1e5e2118f7d4e6a0b1b36bc93",
+  "pages": 2,
+  "blocks": [
+    {
+      "node": "137:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 105
+    },
+    {
+      "node": "138:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 258
+    },
+    {
+      "node": "139:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "140:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "172:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "173:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 102
+    },
+    {
+      "node": "174:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 800
+    },
+    {
+      "node": "175:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 724
+    },
+    {
+      "node": "178:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
+      "node": "141:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 443
+    },
+    {
+      "node": "176:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "joined-177:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1486
+    },
+    {
+      "node": "181:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "182:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "189:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "190:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "191:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "192:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 417
+    },
+    {
+      "node": "199:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "200:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1174
+    },
+    {
+      "node": "201:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 992
+    },
+    {
+      "node": "202:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1365
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1211
+    },
+    {
+      "node": "204:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "205:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 300
+    },
+    {
+      "node": "206:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 800
+    },
+    {
+      "node": "207:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "208:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 96
+    },
+    {
+      "node": "209:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 13
+    },
+    {
+      "node": "210:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 1052
+    }
+  ],
+  "tagged_content_items": 1612,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-demonstration-of-cflow-lsdemos2024/figure-001-p001.png",
+      "node": "137:0",
+      "page": 1,
+      "bbox": [
+        0.0,
+        70.0,
+        28.0,
+        100.0
+      ],
+      "sha256": "84e162d6c137e96424592256e62f91616740bc2a19b290454a123498cdbcc17a",
+      "kind": "figure",
+      "alt": "Crossmark: Check for updates."
+    },
+    {
+      "path": "figures/zhang-demonstration-of-cflow-lsdemos2024/figure-002-p001.png",
+      "node": "174:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        190.92593383789062,
+        560.2056274414062,
+        367.5539855957031
+      ],
+      "sha256": "0ed8aaafc35259ab19117a20d29a0906ae93cd5b01ca369e521015a6c0e055e3",
+      "kind": "figure",
+      "alt": "Figure 1: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h)."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 49,
+    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_retained": 2,
+    "script_runs_positioned": 1
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-demonstration-of-cflow-lsdemos2024.json.gz",
+  "source_tags_sha256": "d6317701f65ea325272dd2a59c09fc63e16c6d8530f937d816dd8de3026276e4"
+}

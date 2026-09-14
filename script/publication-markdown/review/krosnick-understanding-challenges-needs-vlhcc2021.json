@@ -1,0 +1,1480 @@
+{
+  "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+  "title": "Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts",
+  "publication_id": "understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021",
+  "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+  "markdown": "publications/krosnick-understanding-challenges-needs-vlhcc2021.md",
+  "markdown_sha256": "14c3327488a98a7141c399b4924caf67847023dd933a8d66df73ad64c1b3b4ab",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "411:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 252
+    },
+    {
+      "node": "632:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 225
+    },
+    {
+      "node": "623:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1112
+    },
+    {
+      "node": "624:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "618:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 77
+    },
+    {
+      "node": "625:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "620:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 784
+    },
+    {
+      "node": "joined-626:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1073
+    },
+    {
+      "node": "627:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "546:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 471
+    },
+    {
+      "node": "547:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 481
+    },
+    {
+      "node": "548:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 34
+    },
+    {
+      "node": "549:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 35
+    },
+    {
+      "node": "550:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 982
+    },
+    {
+      "node": "551:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 27
+    },
+    {
+      "node": "552:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 724
+    },
+    {
+      "node": "553:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 866
+    },
+    {
+      "node": "554:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 806
+    },
+    {
+      "node": "555:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 30
+    },
+    {
+      "node": "556:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 361
+    },
+    {
+      "node": "557:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 307
+    },
+    {
+      "node": "558:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 523
+    },
+    {
+      "node": "559:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 47
+    },
+    {
+      "node": "642:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 177
+    },
+    {
+      "node": "560:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "644:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 528
+    },
+    {
+      "node": "645:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 659
+    },
+    {
+      "node": "646:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 410
+    },
+    {
+      "node": "647:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 527
+    },
+    {
+      "node": "648:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 226
+    },
+    {
+      "node": "649:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "721:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 30
+    },
+    {
+      "node": "650:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 705
+    },
+    {
+      "node": "728:0",
+      "role": "H5",
+      "pages": [
+        3
+      ],
+      "characters": 66
+    },
+    {
+      "node": "731:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1077
+    },
+    {
+      "node": "716:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 1542
+    },
+    {
+      "node": "732:0",
+      "role": "H5",
+      "pages": [
+        3
+      ],
+      "characters": 51
+    },
+    {
+      "node": "739:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 193
+    },
+    {
+      "node": "653:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 627
+    },
+    {
+      "node": "654:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 779
+    },
+    {
+      "node": "722:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 35
+    },
+    {
+      "node": "655:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 547
+    },
+    {
+      "node": "723:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 30
+    },
+    {
+      "node": "656:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 606
+    },
+    {
+      "node": "724:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "657:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1893
+    },
+    {
+      "node": "725:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 42
+    },
+    {
+      "node": "658:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1040
+    },
+    {
+      "node": "726:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "659:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1199
+    },
+    {
+      "node": "660:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 832
+    },
+    {
+      "node": "727:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 51
+    },
+    {
+      "node": "661:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 195
+    },
+    {
+      "node": "662:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 269
+    },
+    {
+      "node": "663:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1471
+    },
+    {
+      "node": "664:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 70
+    },
+    {
+      "node": "665:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 390
+    },
+    {
+      "node": "666:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 16
+    },
+    {
+      "node": "667:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 720
+    },
+    {
+      "node": "720:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 1282
+    },
+    {
+      "node": "807:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 37
+    },
+    {
+      "node": "745:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 393
+    },
+    {
+      "node": "808:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "746:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 322
+    },
+    {
+      "node": "809:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 39
+    },
+    {
+      "node": "747:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 587
+    },
+    {
+      "node": "799:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 1819
+    },
+    {
+      "node": "810:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 51
+    },
+    {
+      "node": "748:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 493
+    },
+    {
+      "node": "811:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 23
+    },
+    {
+      "node": "749:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 216
+    },
+    {
+      "node": "750:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 14
+    },
+    {
+      "node": "803:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 785
+    },
+    {
+      "node": "751:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 929
+    },
+    {
+      "node": "752:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "753:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 933
+    },
+    {
+      "node": "754:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 471
+    },
+    {
+      "node": "756:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 286
+    },
+    {
+      "node": "joined-757:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 713
+    },
+    {
+      "node": "758:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 253
+    },
+    {
+      "node": "760:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 14
+    },
+    {
+      "node": "761:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 404
+    },
+    {
+      "node": "812:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 19
+    },
+    {
+      "node": "762:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 145
+    },
+    {
+      "node": "819:0",
+      "role": "H5",
+      "pages": [
+        6
+      ],
+      "characters": 123
+    },
+    {
+      "node": "829:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1196
+    },
+    {
+      "node": "830:0",
+      "role": "H5",
+      "pages": [
+        6
+      ],
+      "characters": 98
+    },
+    {
+      "node": "934:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 931
+    },
+    {
+      "node": "935:0",
+      "role": "H5",
+      "pages": [
+        7
+      ],
+      "characters": 46
+    },
+    {
+      "node": "937:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 807
+    },
+    {
+      "node": "849:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 171
+    },
+    {
+      "node": "938:0",
+      "role": "H5",
+      "pages": [
+        7
+      ],
+      "characters": 92
+    },
+    {
+      "node": "941:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1073
+    },
+    {
+      "node": "928:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 47
+    },
+    {
+      "node": "851:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 882
+    },
+    {
+      "node": "852:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1181
+    },
+    {
+      "node": "853:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 459
+    },
+    {
+      "node": "929:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 34
+    },
+    {
+      "node": "854:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 917
+    },
+    {
+      "node": "855:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 780
+    },
+    {
+      "node": "930:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 41
+    },
+    {
+      "node": "856:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 346
+    },
+    {
+      "node": "857:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "926:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 380
+    },
+    {
+      "node": "858:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 29
+    },
+    {
+      "node": "859:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 263
+    },
+    {
+      "node": "860:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 616
+    },
+    {
+      "node": "907:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 25
+    },
+    {
+      "node": "861:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 510
+    },
+    {
+      "node": "862:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 1282
+    },
+    {
+      "node": "863:0",
+      "role": "L",
+      "pages": [
+        8
+      ],
+      "characters": 992
+    },
+    {
+      "node": "864:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 33
+    },
+    {
+      "node": "865:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 451
+    },
+    {
+      "node": "866:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 371
+    },
+    {
+      "node": "867:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 18
+    },
+    {
+      "node": "868:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 533
+    },
+    {
+      "node": "869:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 18
+    },
+    {
+      "node": "927:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 338
+    },
+    {
+      "node": "870:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "871:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 183
+    },
+    {
+      "node": "872:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 221
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 252
+    },
+    {
+      "node": "874:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 229
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 276
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 215
+    },
+    {
+      "node": "877:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 138
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 113
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 234
+    },
+    {
+      "node": "880:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 146
+    },
+    {
+      "node": "486:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 288
+    },
+    {
+      "node": "487:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 287
+    },
+    {
+      "node": "488:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 233
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 264
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 98
+    },
+    {
+      "node": "491:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 83
+    },
+    {
+      "node": "492:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 93
+    },
+    {
+      "node": "493:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 188
+    },
+    {
+      "node": "494:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 144
+    },
+    {
+      "node": "495:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 135
+    },
+    {
+      "node": "496:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 194
+    },
+    {
+      "node": "497:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 207
+    },
+    {
+      "node": "498:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 127
+    },
+    {
+      "node": "499:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 128
+    },
+    {
+      "node": "500:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 87
+    },
+    {
+      "node": "501:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 238
+    },
+    {
+      "node": "502:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 215
+    },
+    {
+      "node": "503:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 215
+    },
+    {
+      "node": "504:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 186
+    },
+    {
+      "node": "505:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 258
+    },
+    {
+      "node": "506:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 201
+    },
+    {
+      "node": "507:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 223
+    },
+    {
+      "node": "508:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 226
+    },
+    {
+      "node": "509:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 211
+    },
+    {
+      "node": "510:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 241
+    },
+    {
+      "node": "511:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 254
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 270
+    },
+    {
+      "node": "513:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 352
+    },
+    {
+      "node": "514:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 120
+    },
+    {
+      "node": "515:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 102
+    },
+    {
+      "node": "516:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 136
+    },
+    {
+      "node": "485:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 138
+    },
+    {
+      "node": "517:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 74
+    },
+    {
+      "node": "518:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 38
+    },
+    {
+      "node": "525:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 1542
+    },
+    {
+      "node": "529:0",
+      "role": "Figure",
+      "pages": [
+        11
+      ],
+      "characters": 1282
+    },
+    {
+      "node": "533:0",
+      "role": "Figure",
+      "pages": [
+        12
+      ],
+      "characters": 1819
+    },
+    {
+      "node": "537:0",
+      "role": "Figure",
+      "pages": [
+        12
+      ],
+      "characters": 785
+    }
+  ],
+  "tagged_content_items": 1133,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-001-p003.png",
+      "node": "716:0",
+      "page": 3,
+      "bbox": [
+        46.9640007019043,
+        416.8305969238281,
+        304.0146179199219,
+        629.4481811523438
+      ],
+      "sha256": "5de80d2f36558c2b12350d2504b36089383ed78d15d66ea9c13cc441fb98605b",
+      "kind": "figure",
+      "alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\"."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-002-p005.png",
+      "node": "720:0",
+      "page": 5,
+      "bbox": [
+        46.9640007019043,
+        248.36419677734375,
+        304.0146789550781,
+        460.808349609375
+      ],
+      "sha256": "75b9df231cc65b65abe93a394d1051ab94edff097b59ae58e02664acfca6c85b",
+      "kind": "figure",
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-003-p005.png",
+      "node": "799:0",
+      "page": 5,
+      "bbox": [
+        309.9779968261719,
+        95.4913330078125,
+        567.0369262695312,
+        308.79034423828125
+      ],
+      "sha256": "0fed455e50e846fdd1f31f7e9765526adac5dd65b8a91c282d6895d22fd310c0",
+      "kind": "figure",
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-004-p005.png",
+      "node": "803:0",
+      "page": 5,
+      "bbox": [
+        309.9779968261719,
+        501.27392578125,
+        567.0289916992188,
+        687.6759643554688
+      ],
+      "sha256": "8b01f6ff129a8c7daed8cfb2f6ae13a183409cc3cdb3af603442c2837825175e",
+      "kind": "figure",
+      "alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\"."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-005-p010.png",
+      "node": "525:0",
+      "page": 10,
+      "bbox": [
+        46.9640007019043,
+        102.2427978515625,
+        567.5249633789062,
+        482.50396728515625
+      ],
+      "sha256": "71ba5b8d9be4a9d646f20ec76d65458488700d87eecba3c673d6e7f14f310c65",
+      "kind": "figure",
+      "alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\"."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-006-p011.png",
+      "node": "529:0",
+      "page": 11,
+      "bbox": [
+        46.96398162841797,
+        209.12977600097656,
+        567.5249633789062,
+        557.8712158203125
+      ],
+      "sha256": "013ea3c55d7aa539a6ad095649bd3a03be8d66aee6b69b68bc39884d37cdd2ee",
+      "kind": "figure",
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-007-p012.png",
+      "node": "533:0",
+      "page": 12,
+      "bbox": [
+        46.95404052734375,
+        50.801998138427734,
+        567.52490234375,
+        401.30816650390625
+      ],
+      "sha256": "61280f7de742f72cdb618d1cba9c4ef337ad86a173ece9c3ace00a17057398e3",
+      "kind": "figure",
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems."
+    },
+    {
+      "path": "figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-008-p012.png",
+      "node": "537:0",
+      "page": 12,
+      "bbox": [
+        46.9639892578125,
+        414.36700439453125,
+        567.5349731445312,
+        716.1981201171875
+      ],
+      "sha256": "7a8c1086b36d39216b7d49e880d044bbaf184ef20be68db9ed24eaa2af0370b1",
+      "kind": "figure",
+      "alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\"."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 37,
+    "line_wrap_hyphens_retained": 10,
+    "paragraph_fragments_joined": 2,
+    "script_runs_positioned": 7
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-understanding-challenges-needs-vlhcc2021.json.gz",
+  "source_tags_sha256": "a81b824a1d0493c4e57914dc1ec976f67b884e730789fcc7d14eb77938d3c8f3"
+}

@@ -1,0 +1,1776 @@
+{
+  "file": "zhang-codestream-chi2026.pdf",
+  "title": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
+  "publication_id": "codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026",
+  "pdf_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+  "markdown": "publications/zhang-codestream-chi2026.md",
+  "markdown_sha256": "58cdbfa76d99a12488a4af076c51b5c2363c010321b349a18498b9c089e1b864",
+  "pages": 16,
+  "blocks": [
+    {
+      "node": "815:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 165
+    },
+    {
+      "node": "810:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 132
+    },
+    {
+      "node": "801:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 124
+    },
+    {
+      "node": "795:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "1556:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 142
+    },
+    {
+      "node": "1547:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 143
+    },
+    {
+      "node": "1535:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 133
+    },
+    {
+      "node": "1539:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 139
+    },
+    {
+      "node": "1585:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 607
+    },
+    {
+      "node": "1586:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 685
+    },
+    {
+      "node": "1576:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 11
+    },
+    {
+      "node": "1563:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1105
+    },
+    {
+      "node": "1577:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1583:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 119
+    },
+    {
+      "node": "1578:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 11
+    },
+    {
+      "node": "1575:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 55
+    },
+    {
+      "node": "1525:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 475
+    },
+    {
+      "node": "1579:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1489:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1129
+    },
+    {
+      "node": "1656:0",
+      "role": "Reference",
+      "pages": [
+        2
+      ],
+      "characters": 123
+    },
+    {
+      "node": "1650:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 160
+    },
+    {
+      "node": "1646:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 163
+    },
+    {
+      "node": "1641:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 363
+    },
+    {
+      "node": "1630:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1137
+    },
+    {
+      "node": "1678:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1112
+    },
+    {
+      "node": "1682:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 522
+    },
+    {
+      "node": "joined-1685:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 732
+    },
+    {
+      "node": "1660:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 25
+    },
+    {
+      "node": "1673:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 331
+    },
+    {
+      "node": "1668:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1665:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 167
+    },
+    {
+      "node": "1669:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 34
+    },
+    {
+      "node": "1590:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 996
+    },
+    {
+      "node": "1760:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 504
+    },
+    {
+      "node": "1753:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 575
+    },
+    {
+      "node": "1746:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 550
+    },
+    {
+      "node": "1786:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 278
+    },
+    {
+      "node": "1789:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 60
+    },
+    {
+      "node": "1691:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1142
+    },
+    {
+      "node": "1879:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 666
+    },
+    {
+      "node": "1864:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 693
+    },
+    {
+      "node": "1853:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1185
+    },
+    {
+      "node": "joined-1845:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 619
+    },
+    {
+      "node": "1889:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 668
+    },
+    {
+      "node": "1890:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1794:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1373
+    },
+    {
+      "node": "1985:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 23
+    },
+    {
+      "node": "1945:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1194
+    },
+    {
+      "node": "joined-1941:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 637
+    },
+    {
+      "node": "1975:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 283
+    },
+    {
+      "node": "1976:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 267
+    },
+    {
+      "node": "1978:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 384
+    },
+    {
+      "node": "1984:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1979:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 523
+    },
+    {
+      "node": "1986:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 62
+    },
+    {
+      "node": "1981:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 248
+    },
+    {
+      "node": "1983:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 130
+    },
+    {
+      "node": "1966:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 259
+    },
+    {
+      "node": "1967:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 176
+    },
+    {
+      "node": "1969:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 223
+    },
+    {
+      "node": "1920:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 1103
+    },
+    {
+      "node": "2089:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 27
+    },
+    {
+      "node": "2083:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 487
+    },
+    {
+      "node": "2090:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 36
+    },
+    {
+      "node": "2056:0",
+      "role": "Span",
+      "pages": [
+        5
+      ],
+      "characters": 152
+    },
+    {
+      "node": "joined-2057:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 891
+    },
+    {
+      "node": "2059:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 300
+    },
+    {
+      "node": "2091:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 76
+    },
+    {
+      "node": "2036:0",
+      "role": "Span",
+      "pages": [
+        5
+      ],
+      "characters": 118
+    },
+    {
+      "node": "2037:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1014
+    },
+    {
+      "node": "2092:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 78
+    },
+    {
+      "node": "2093:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 73
+    },
+    {
+      "node": "2194:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 59
+    },
+    {
+      "node": "2143:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 506
+    },
+    {
+      "node": "2144:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 598
+    },
+    {
+      "node": "2145:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 293
+    },
+    {
+      "node": "2184:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 38
+    },
+    {
+      "node": "2147:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 503
+    },
+    {
+      "node": "2152:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 40
+    },
+    {
+      "node": "2153:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 299
+    },
+    {
+      "node": "2108:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1247
+    },
+    {
+      "node": "2154:0",
+      "role": "Formula",
+      "pages": [
+        6
+      ],
+      "characters": 200
+    },
+    {
+      "node": "joined-2155:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 244
+    },
+    {
+      "node": "2102:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 398
+    },
+    {
+      "node": "2161:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 685
+    },
+    {
+      "node": "2127:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 470
+    },
+    {
+      "node": "2128:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 410
+    },
+    {
+      "node": "2295:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 50
+    },
+    {
+      "node": "2140:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 715
+    },
+    {
+      "node": "2290:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 133
+    },
+    {
+      "node": "2221:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 145
+    },
+    {
+      "node": "2215:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 421
+    },
+    {
+      "node": "2251:0",
+      "role": "Figure",
+      "pages": [
+        8
+      ],
+      "characters": 442
+    },
+    {
+      "node": "2252:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 382
+    },
+    {
+      "node": "2253:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 97
+    },
+    {
+      "node": "2207:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 550
+    },
+    {
+      "node": "2256:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 253
+    },
+    {
+      "node": "2258:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 248
+    },
+    {
+      "node": "2272:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 54
+    },
+    {
+      "node": "joined-2203:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 2114
+    },
+    {
+      "node": "2225:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 540
+    },
+    {
+      "node": "2226:0",
+      "role": "Caption",
+      "pages": [
+        9
+      ],
+      "characters": 480
+    },
+    {
+      "node": "2228:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 325
+    },
+    {
+      "node": "2242:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 39
+    },
+    {
+      "node": "2245:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 889
+    },
+    {
+      "node": "2243:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 34
+    },
+    {
+      "node": "joined-2240:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 466
+    },
+    {
+      "node": "2224:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 424
+    },
+    {
+      "node": "2383:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 504
+    },
+    {
+      "node": "2388:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 30
+    },
+    {
+      "node": "2384:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 52
+    },
+    {
+      "node": "2328:0",
+      "role": "L",
+      "pages": [
+        10
+      ],
+      "characters": 752
+    },
+    {
+      "node": "2390:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "2391:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 724
+    },
+    {
+      "node": "2321:0",
+      "role": "Note",
+      "pages": [
+        10
+      ],
+      "characters": 167
+    },
+    {
+      "node": "2389:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "2396:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 47
+    },
+    {
+      "node": "2311:0",
+      "role": "Span",
+      "pages": [
+        10
+      ],
+      "characters": 461
+    },
+    {
+      "node": "2304:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 602
+    },
+    {
+      "node": "2340:0",
+      "role": "Caption",
+      "pages": [
+        11
+      ],
+      "characters": 51
+    },
+    {
+      "node": "2347:0",
+      "role": "Table",
+      "pages": [
+        11
+      ],
+      "characters": 10870
+    },
+    {
+      "node": "2421:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 476
+    },
+    {
+      "node": "2404:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 251
+    },
+    {
+      "node": "2497:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 23
+    },
+    {
+      "node": "2597:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 27
+    },
+    {
+      "node": "2510:0",
+      "role": "Span",
+      "pages": [
+        11
+      ],
+      "characters": 869
+    },
+    {
+      "node": "2518:0",
+      "role": "Caption",
+      "pages": [
+        11
+      ],
+      "characters": 94
+    },
+    {
+      "node": "2519:0",
+      "role": "Table",
+      "pages": [
+        11
+      ],
+      "characters": 2667
+    },
+    {
+      "node": "2595:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 371
+    },
+    {
+      "node": "2598:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 23
+    },
+    {
+      "node": "2699:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 39
+    },
+    {
+      "node": "2655:0",
+      "role": "Figure",
+      "pages": [
+        12
+      ],
+      "characters": 266
+    },
+    {
+      "node": "2656:0",
+      "role": "Caption",
+      "pages": [
+        12
+      ],
+      "characters": 47
+    },
+    {
+      "node": "2657:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 151
+    },
+    {
+      "node": "2659:0",
+      "role": "Formula",
+      "pages": [
+        12
+      ],
+      "characters": 326
+    },
+    {
+      "node": "2660:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 105
+    },
+    {
+      "node": "2641:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 585
+    },
+    {
+      "node": "2690:0",
+      "role": "H3",
+      "pages": [
+        12
+      ],
+      "characters": 27
+    },
+    {
+      "node": "2612:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 792
+    },
+    {
+      "node": "2607:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 473
+    },
+    {
+      "node": "2661:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 901
+    },
+    {
+      "node": "2691:0",
+      "role": "H3",
+      "pages": [
+        12
+      ],
+      "characters": 43
+    },
+    {
+      "node": "2738:0",
+      "role": "H4",
+      "pages": [
+        12
+      ],
+      "characters": 77
+    },
+    {
+      "node": "2707:0",
+      "role": "Figure",
+      "pages": [
+        13
+      ],
+      "characters": 587
+    },
+    {
+      "node": "2708:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 311
+    },
+    {
+      "node": "2709:0",
+      "role": "Caption",
+      "pages": [
+        13
+      ],
+      "characters": 431
+    },
+    {
+      "node": "2739:0",
+      "role": "Table",
+      "pages": [
+        13
+      ],
+      "characters": 7663
+    },
+    {
+      "node": "2717:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 397
+    },
+    {
+      "node": "2718:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 422
+    },
+    {
+      "node": "2720:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 245
+    },
+    {
+      "node": "2721:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 281
+    },
+    {
+      "node": "2701:0",
+      "role": "Caption",
+      "pages": [
+        14
+      ],
+      "characters": 170
+    },
+    {
+      "node": "2823:0",
+      "role": "Table",
+      "pages": [
+        14
+      ],
+      "characters": 6390
+    },
+    {
+      "node": "2937:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 76
+    },
+    {
+      "node": "2938:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 65
+    },
+    {
+      "node": "2939:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 220
+    },
+    {
+      "node": "2906:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 605
+    },
+    {
+      "node": "2941:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 387
+    },
+    {
+      "node": "2942:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 327
+    },
+    {
+      "node": "2943:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 88
+    },
+    {
+      "node": "2944:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 470
+    },
+    {
+      "node": "2965:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 28
+    },
+    {
+      "node": "2966:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 683
+    },
+    {
+      "node": "813:0",
+      "role": "H2",
+      "pages": [
+        14
+      ],
+      "characters": 15
+    },
+    {
+      "node": "2970:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 458
+    },
+    {
+      "node": "2971:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 262
+    },
+    {
+      "node": "2978:0",
+      "role": "H3",
+      "pages": [
+        14
+      ],
+      "characters": 35
+    },
+    {
+      "node": "2973:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 255
+    },
+    {
+      "node": "2976:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1012
+    },
+    {
+      "node": "3093:0",
+      "role": "P",
+      "pages": [
+        14,
+        15
+      ],
+      "characters": 820
+    },
+    {
+      "node": "3079:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 463
+    },
+    {
+      "node": "3082:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 955
+    },
+    {
+      "node": "3088:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 15
+    },
+    {
+      "node": "3086:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 617
+    },
+    {
+      "node": "3089:0",
+      "role": "H2",
+      "pages": [
+        15
+      ],
+      "characters": 13
+    },
+    {
+      "node": "3578:0",
+      "role": "L",
+      "pages": [
+        16
+      ],
+      "characters": 120
+    },
+    {
+      "node": "949:0",
+      "role": "L",
+      "pages": [
+        16
+      ],
+      "characters": 62
+    },
+    {
+      "node": "3429:0",
+      "role": "L",
+      "pages": [
+        16
+      ],
+      "characters": 5230
+    },
+    {
+      "node": "3009:0",
+      "role": "L",
+      "pages": [
+        15,
+        16
+      ],
+      "characters": 14100
+    }
+  ],
+  "tagged_content_items": 1845,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-001-p001.png",
+      "node": "1585:0",
+      "page": 1,
+      "bbox": [
+        89.62699890136719,
+        340.41375732421875,
+        536.7034912109375,
+        570.4888305664062
+      ],
+      "sha256": "b5fdc328de8c0fd456c4ee2481021dec1eb83d5cec1b0bb7ce3fc7c2f5cbb7c3",
+      "kind": "figure",
+      "alt": "Figure 1. A student's attempts to double every element of L = [1, 2, 3, 4] in place. Version 1 doubles only loop variable x, leaving L unchanged. Version 2 builds new_L and assigns it to L, replacing rather than modifying the original list. Version 3 loops to len(L) minus 1 and misses the last element. The final version loops over range(len(L)) and assigns L[idx] = L[idx] * 2. An edit-only timeline below shows colored rectangles; CodeStream adds the relevant code beside each edit, exposing these successive approaches and corrections."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-002-p004.png",
+      "node": "1975:0",
+      "page": 4,
+      "bbox": [
+        319.7333068847656,
+        85.46427917480469,
+        557.6853637695312,
+        266.9668273925781
+      ],
+      "sha256": "52c0d5455f1cc1150ed9b4564ec9f8240cf39634aaaac33c8c5469a9e2906c26",
+      "kind": "figure",
+      "alt": "Figure 2: This figure shows examples of vertical clutter. On the left, a long code sample is zoomed out, making the code unreadable. On the right, the same long code sample is zoomed in, causing severe crowding and overlap."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-003-p005.png",
+      "node": "1966:0",
+      "page": 5,
+      "bbox": [
+        51.798004150390625,
+        81.685546875,
+        294.98614501953125,
+        161.75120544433594
+      ],
+      "sha256": "ee4935508df6923394b43d726c5fe3045480fc13acad651deb12cf993dd61569",
+      "kind": "figure",
+      "alt": "Figure 3: It shows an example of horizontal clutter. When many edits occur within a short time span, long code snippets overlap along the timeline, making individual changes difficult to distinguish."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-004-p006.png",
+      "node": "2143:0",
+      "page": 6,
+      "bbox": [
+        51.798004150390625,
+        81.68537902832031,
+        558.1367797851562,
+        282.7834777832031
+      ],
+      "sha256": "1588149a4e4524f6222461b5069fafbfe5610e90b4b89e2d170b66913fac64bb",
+      "kind": "figure",
+      "alt": "Figure 4. CodeStream links a timeline on the left to the student's full code on the right. Time runs left to right from start to finish; code lines run top to bottom from first to last. Blue blocks denote additions, orange blocks deletions. Gray row shading represents cumulative editing effort: darker means more time. Clicking a block locates its code; a scrubber selects a code snapshot. The editor displays the corresponding complete program."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/formula-001-p006.png",
+      "node": "2154:0",
+      "page": 6,
+      "bbox": [
+        384.875,
+        474.2607421875,
+        492.32470703125,
+        499.25177001953125
+      ],
+      "sha256": "159f84b78ce03d9edbba709aa6acb271d8cc0ccbd1738c8c31e0211fecf4f8e5",
+      "kind": "formula",
+      "alt": "Threshold equals base threshold divided by zoom level squared."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-005-p007.png",
+      "node": "2127:0",
+      "page": 7,
+      "bbox": [
+        62.451473236083984,
+        85.30221557617188,
+        609.8699951171875,
+        541.1737060546875
+      ],
+      "sha256": "74e1a6283a3b79b17d55104ec0607448b497397ee4136b1803d4da5bc08017e3",
+      "kind": "figure",
+      "alt": "Figure 5: Details of CodeStream’s user interface that address vertical clutter. (a) Code annotations embedded directly into the timeline. (b) Context summary view that abstracts dense code regions into labeled structures (e.g., functions, statements). (c) Hover interaction showing original code lines from summary labels. (d) Level-of-detail rendering, where zooming reveals progressively more detailed edits."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-006-p008.png",
+      "node": "2251:0",
+      "page": 8,
+      "bbox": [
+        58.69766616821289,
+        85.15213775634766,
+        612.0,
+        352.9218444824219
+      ],
+      "sha256": "707c034b14574e9abb59e68b19a27639d5bbd754805d1075a2648d83586b608a",
+      "kind": "figure",
+      "alt": "Figure 6: Details of CodeStream’s user interface that address horizontal clutter. (a) Timeline view with code annotations aligned when clicking edits. (b) Dragging the timeline scrubber to inspect snapshots of code history. (c) Projection linking the timeline and editor to show which portion is currently in view. (d) Minimap navigation for global positioning and viewport control."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-007-p009.png",
+      "node": "2225:0",
+      "page": 9,
+      "bbox": [
+        56.49541473388672,
+        83.6187515258789,
+        555.1104125976562,
+        463.4525451660156
+      ],
+      "sha256": "30198e308d75fb1d6619050da41f45debdfaa74bbdb480a3bf59aab69e409ca4",
+      "kind": "figure",
+      "alt": "Figure 7: Layout algorithm for resolving overlaps between code snippets. Step 1: Sort all intervals by start time. Step 2: Compare each interval with later ones until a non-overlapping start is found. Step 3a: If two boxes overlap by more than 50%, merge them and retain the first. Step 3b: If the overlap is less than 50%, shrink the box and truncate long content. Step 4: The final layout ensures no overlaps remain, with orange showing overlap and dark blue showing resolution."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-008-p010.png",
+      "node": "2224:0",
+      "page": 10,
+      "bbox": [
+        102.23800659179688,
+        81.685546875,
+        512.3667602539062,
+        352.3446960449219
+      ],
+      "sha256": "d73313ac6440be233e28b62ffc37d8ebe33c58a90d4f38491f34d0c2f3910caa",
+      "kind": "figure",
+      "alt": "Figure 8. Four outlined groups in a timeline cluster edits by both time distance horizontally and code-line distance vertically. Group 1 contains a long descending run of edits; groups 2–4 contain shorter nearby clusters. The lower panel aligns code annotations horizontally within a group, preserving indentation and helping reveal the code's structure and scope."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-009-p012.png",
+      "node": "2655:0",
+      "page": 12,
+      "bbox": [
+        51.798004150390625,
+        81.68608093261719,
+        558.4249877929688,
+        322.98699951171875
+      ],
+      "sha256": "d03fd4f3e378ab1de2a51fed93949e447645e28fd41cdd5a747eda8a89eb22d4",
+      "kind": "figure",
+      "alt": "Figure 9: Baseline's user interface. On the left, it is a timeline visualization that shows colored indicators of edits, without code annotation. On the right, it is a code editor of student's code content."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/formula-002-p012.png",
+      "node": "2659:0",
+      "page": 12,
+      "bbox": [
+        78.27300262451172,
+        401.5487365722656,
+        271.16864013671875,
+        425.77301025390625
+      ],
+      "sha256": "018506ee59c3c03efd0c191304c06112c88985e497fb3bc1576ddfadc26eba8c",
+      "kind": "formula",
+      "alt": "F-score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-010-p013.png",
+      "node": "2707:0",
+      "page": 13,
+      "bbox": [
+        59.17580032348633,
+        89.25177764892578,
+        554.399169921875,
+        228.87384033203125
+      ],
+      "sha256": "3915858aea734b1b7aeb46b51121f29f6067feba8bcd67a5fc656bfaf18772db",
+      "kind": "figure",
+      "alt": "Figure 10. Survey comparison of CodeStream and the baseline. The seven ratings run from 1 (strongly prefer CodeStream) through 4 (neutral) to 7 (strongly prefer baseline). Counts for ratings 1–7 are: identifying students who might need help, 2, 2, 4, 3, 1, 0, 0; interpreting students' intentions behind code changes, 3, 3, 1, 5, 0, 0, 0; navigating and exploring coding histories, 4, 4, 1, 1, 1, 0, 1; less effort to understand coding history, 5, 2, 2, 1, 1, 0, 1. Each question has 12 responses and favors CodeStream overall."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-011-p013.png",
+      "node": "2752:0",
+      "page": 13,
+      "bbox": [
+        361.02301025390625,
+        375.2641906738281,
+        512.4221801757812,
+        416.1139831542969
+      ],
+      "sha256": "945a496da894a1485cc2b02aeb5abdace2ab863f04806e2e7cfec1294194271e",
+      "kind": "figure",
+      "alt": "Paired boxplots for Students’ coding history. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 2–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-012-p013.png",
+      "node": "2763:0",
+      "page": 13,
+      "bbox": [
+        361.02301025390625,
+        409.7351989746094,
+        512.4221801757812,
+        450.5849914550781
+      ],
+      "sha256": "f71f87c337b448a8b4397894fa1ca3876778eda95c6abe6197dadb7e5bb5bd37",
+      "kind": "figure",
+      "alt": "Paired boxplots for Problem solving patterns. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 3–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-013-p013.png",
+      "node": "2774:0",
+      "page": 13,
+      "bbox": [
+        361.02301025390625,
+        444.2062072753906,
+        512.4221801757812,
+        485.0559997558594
+      ],
+      "sha256": "00ada2b3602f044d1a85e28e3b22a0a6a25d5662bc3c5a22116f10609b5144eb",
+      "kind": "figure",
+      "alt": "Paired boxplots for Students’ intention of their edits. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 3–7 for CodeStream and 2–6 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-014-p013.png",
+      "node": "2785:0",
+      "page": 13,
+      "bbox": [
+        361.02301025390625,
+        478.67620849609375,
+        512.4221801757812,
+        519.5260009765625
+      ],
+      "sha256": "3f3317ce3bc25116ec40431d19445f937e276f3d9abc57008067354041246992",
+      "kind": "figure",
+      "alt": "Paired boxplots for Students that might need intervention. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 4–7 for CodeStream and 1–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean."
+    },
+    {
+      "path": "figures/zhang-codestream-chi2026/figure-015-p013.png",
+      "node": "2796:0",
+      "page": 13,
+      "bbox": [
+        361.02301025390625,
+        513.147216796875,
+        512.4221801757812,
+        553.9970092773438
+      ],
+      "sha256": "7734ba134f29322ae489cf590479111330b225caaf3a6b8c85ca239a625142df",
+      "kind": "figure",
+      "alt": "Paired boxplots for How students invest their effort. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 4–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "2347:0",
+      "source_pages": [
+        11
+      ],
+      "format": "html",
+      "row_count": 13,
+      "column_count": 4,
+      "cell_count": 52,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "2347:0"
+    },
+    {
+      "source_table_id": "2519:0",
+      "source_pages": [
+        11
+      ],
+      "format": "html",
+      "row_count": 5,
+      "column_count": 2,
+      "cell_count": 10,
+      "header_count": 6,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "2519:0"
+    },
+    {
+      "source_table_id": "2739:0",
+      "source_pages": [
+        13
+      ],
+      "format": "html",
+      "row_count": 11,
+      "column_count": 5,
+      "cell_count": 45,
+      "header_count": 10,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "2739:0"
+    },
+    {
+      "source_table_id": "2823:0",
+      "source_pages": [
+        14
+      ],
+      "format": "html",
+      "row_count": 9,
+      "column_count": 4,
+      "cell_count": 32,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "2823:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 131,
+    "line_wrap_hyphens_retained": 31,
+    "paragraph_fragments_joined": 8,
+    "reviewed_wrap_repairs": 1,
+    "script_runs_positioned": 20
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-codestream-chi2026.json.gz",
+  "source_tags_sha256": "66812ffa6b9dbfd0aa1c510b801997781ec3f46a35cf3bd9ddada3e32f33b539"
+}

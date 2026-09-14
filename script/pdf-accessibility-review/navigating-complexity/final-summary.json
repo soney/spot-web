@@ -1,0 +1,61 @@
+{
+  "original_sha256": "23754de4b48c172321608471affde3e26326a413655362397a02ae89007f9cd5",
+  "candidate_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "original_pages": 18,
+  "candidate_pages": 18,
+  "dpi": 144,
+  "mupdf_version": "1.28.2",
+  "poppler_version": "pdftoppm version 26.01.0",
+  "mupdf_all_identical": true,
+  "poppler_all_identical": true,
+  "custom_structure_passed": true,
+  "custom_structure_issue_counts": {},
+  "custom_preservation": {
+    "page_count_unchanged": true,
+    "page_geometry_unchanged": true,
+    "text_sha256": {
+      "original": "f30111bb37210337b6d4b1cd81fe71c9c43ce46cfa6014da8384f27f9b5d07e3",
+      "tagged": "cd505a4a7829b4103321ce89a0ebb138123c89e37e4b3d73b2790c9b6b9d0e11"
+    },
+    "extracted_text_identical": false,
+    "extracted_text_identical_ignoring_whitespace": true,
+    "text_changed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "verapdf_conformant": false,
+  "verapdf_failed_rules": [
+    {
+      "clause": "5",
+      "testNumber": 1,
+      "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+      "failedChecks": 1,
+      "checks": [
+        {
+          "status": "failed",
+          "context": "root/document[0]/metadata[0](96 0 obj PDMetadata)/XMPPackage[0]",
+          "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+          "errorArguments": []
+        }
+      ]
+    }
+  ],
+  "accessibility_conformance": "Not certified; semantic review and assistive-technology testing remain distinct from automated checks."
+}

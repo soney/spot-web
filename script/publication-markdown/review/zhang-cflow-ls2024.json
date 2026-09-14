@@ -1,0 +1,1376 @@
+{
+  "file": "zhang-cflow-ls2024.pdf",
+  "title": "CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+  "publication_id": "cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024",
+  "pdf_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+  "markdown": "publications/zhang-cflow-ls2024.md",
+  "markdown_sha256": "69dd7fb6a41c8990ced81fe2ad5a719be57d15e66436aa888ac3a8dc84c45318",
+  "pages": 12,
+  "blocks": [
+    {
+      "node": "477:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 219
+    },
+    {
+      "node": "478:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 121
+    },
+    {
+      "node": "479:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "480:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 117
+    },
+    {
+      "node": "481:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 102
+    },
+    {
+      "node": "482:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 607
+    },
+    {
+      "node": "483:0",
+      "role": "Caption",
+      "pages": [
+        1
+      ],
+      "characters": 553
+    },
+    {
+      "node": "486:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 199
+    },
+    {
+      "node": "497:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 631
+    },
+    {
+      "node": "484:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "485:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1128
+    },
+    {
+      "node": "487:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 477
+    },
+    {
+      "node": "488:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 55
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 64
+    },
+    {
+      "node": "491:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "492:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 58
+    },
+    {
+      "node": "493:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 24
+    },
+    {
+      "node": "494:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 402
+    },
+    {
+      "node": "495:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-496:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1308
+    },
+    {
+      "node": "507:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1265
+    },
+    {
+      "node": "508:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 676
+    },
+    {
+      "node": "joined-509:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 961
+    },
+    {
+      "node": "511:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1102
+    },
+    {
+      "node": "512:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 902
+    },
+    {
+      "node": "513:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 160
+    },
+    {
+      "node": "514:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 346
+    },
+    {
+      "node": "521:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "522:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 119
+    },
+    {
+      "node": "523:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 44
+    },
+    {
+      "node": "joined-524:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1435
+    },
+    {
+      "node": "534:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 38
+    },
+    {
+      "node": "535:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 572
+    },
+    {
+      "node": "536:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1342
+    },
+    {
+      "node": "699:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 42
+    },
+    {
+      "node": "700:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 511
+    },
+    {
+      "node": "701:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 350
+    },
+    {
+      "node": "702:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 928
+    },
+    {
+      "node": "703:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 38
+    },
+    {
+      "node": "704:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1541
+    },
+    {
+      "node": "705:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 10
+    },
+    {
+      "node": "706:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 27
+    },
+    {
+      "node": "707:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 198
+    },
+    {
+      "node": "708:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 696
+    },
+    {
+      "node": "749:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 286
+    },
+    {
+      "node": "750:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 850
+    },
+    {
+      "node": "751:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "752:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1149
+    },
+    {
+      "node": "753:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 44
+    },
+    {
+      "node": "754:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 649
+    },
+    {
+      "node": "755:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 464
+    },
+    {
+      "node": "756:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 801
+    },
+    {
+      "node": "757:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 67
+    },
+    {
+      "node": "758:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1354
+    },
+    {
+      "node": "759:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 73
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 797
+    },
+    {
+      "node": "761:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 665
+    },
+    {
+      "node": "782:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 778
+    },
+    {
+      "node": "783:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 724
+    },
+    {
+      "node": "784:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 25
+    },
+    {
+      "node": "785:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 393
+    },
+    {
+      "node": "786:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 244
+    },
+    {
+      "node": "800:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 57
+    },
+    {
+      "node": "801:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 73
+    },
+    {
+      "node": "802:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 443
+    },
+    {
+      "node": "803:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 896
+    },
+    {
+      "node": "804:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 243
+    },
+    {
+      "node": "805:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 655
+    },
+    {
+      "node": "806:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 73
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 437
+    },
+    {
+      "node": "joined-808:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 1053
+    },
+    {
+      "node": "809:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 309
+    },
+    {
+      "node": "818:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 414
+    },
+    {
+      "node": "819:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 360
+    },
+    {
+      "node": "821:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 387
+    },
+    {
+      "node": "822:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 72
+    },
+    {
+      "node": "823:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 567
+    },
+    {
+      "node": "824:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 489
+    },
+    {
+      "node": "825:0",
+      "role": "H4",
+      "pages": [
+        6
+      ],
+      "characters": 51
+    },
+    {
+      "node": "joined-826:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 806
+    },
+    {
+      "node": "828:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 39
+    },
+    {
+      "node": "829:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 804
+    },
+    {
+      "node": "830:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 858
+    },
+    {
+      "node": "831:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 542
+    },
+    {
+      "node": "joined-832:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 379
+    },
+    {
+      "node": "844:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1333
+    },
+    {
+      "node": "845:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 15
+    },
+    {
+      "node": "846:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 610
+    },
+    {
+      "node": "847:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 14
+    },
+    {
+      "node": "848:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 24
+    },
+    {
+      "node": "849:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 898
+    },
+    {
+      "node": "850:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 25
+    },
+    {
+      "node": "joined-851:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1555
+    },
+    {
+      "node": "853:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 525
+    },
+    {
+      "node": "854:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 56
+    },
+    {
+      "node": "855:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 820
+    },
+    {
+      "node": "856:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 206
+    },
+    {
+      "node": "857:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 165
+    },
+    {
+      "node": "858:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 260
+    },
+    {
+      "node": "859:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 23
+    },
+    {
+      "node": "joined-860:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 906
+    },
+    {
+      "node": "872:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 27
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1014
+    },
+    {
+      "node": "874:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 39
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 296
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 125
+    },
+    {
+      "node": "877:0",
+      "role": "Formula",
+      "pages": [
+        8
+      ],
+      "characters": 368
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 377
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 572
+    },
+    {
+      "node": "880:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 15
+    },
+    {
+      "node": "881:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 113
+    },
+    {
+      "node": "882:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 61
+    },
+    {
+      "node": "883:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 319
+    },
+    {
+      "node": "614:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 58
+    },
+    {
+      "node": "615:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 517
+    },
+    {
+      "node": "616:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 36
+    },
+    {
+      "node": "617:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 833
+    },
+    {
+      "node": "618:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 16
+    },
+    {
+      "node": "619:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 222
+    },
+    {
+      "node": "620:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 76
+    },
+    {
+      "node": "621:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 639
+    },
+    {
+      "node": "622:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 646
+    },
+    {
+      "node": "627:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 201
+    },
+    {
+      "node": "628:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 175
+    },
+    {
+      "node": "629:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 97
+    },
+    {
+      "node": "630:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 235
+    },
+    {
+      "node": "631:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 909
+    },
+    {
+      "node": "632:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 324
+    },
+    {
+      "node": "633:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 705
+    },
+    {
+      "node": "634:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 714
+    },
+    {
+      "node": "635:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 92
+    },
+    {
+      "node": "joined-636:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 511
+    },
+    {
+      "node": "638:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 646
+    },
+    {
+      "node": "639:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 385
+    },
+    {
+      "node": "640:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "641:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 187
+    },
+    {
+      "node": "642:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 88
+    },
+    {
+      "node": "643:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 580
+    },
+    {
+      "node": "644:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 554
+    },
+    {
+      "node": "645:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 45
+    },
+    {
+      "node": "joined-646:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 919
+    },
+    {
+      "node": "648:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 448
+    },
+    {
+      "node": "649:0",
+      "role": "Caption",
+      "pages": [
+        10
+      ],
+      "characters": 394
+    },
+    {
+      "node": "651:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 672
+    },
+    {
+      "node": "652:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 27
+    },
+    {
+      "node": "653:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 180
+    },
+    {
+      "node": "joined-654:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1349
+    },
+    {
+      "node": "656:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 591
+    },
+    {
+      "node": "657:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 35
+    },
+    {
+      "node": "658:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 542
+    },
+    {
+      "node": "659:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 15
+    },
+    {
+      "node": "660:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 817
+    },
+    {
+      "node": "661:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "662:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 96
+    },
+    {
+      "node": "663:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "664:0",
+      "role": "Note",
+      "pages": [
+        10
+      ],
+      "characters": 92
+    },
+    {
+      "node": "674:0",
+      "role": "L",
+      "pages": [
+        11
+      ],
+      "characters": 10301
+    },
+    {
+      "node": "682:0",
+      "role": "L",
+      "pages": [
+        12
+      ],
+      "characters": 1097
+    }
+  ],
+  "tagged_content_items": 11199,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-cflow-ls2024/figure-001-p001.png",
+      "node": "482:0",
+      "page": 1,
+      "bbox": [
+        51.79800033569336,
+        191.4763641357422,
+        560.2142333984375,
+        338.6440124511719
+      ],
+      "sha256": "20cf6cf38802287fa680fb5c4fe21dc0f9efa31d5cb4e364483c69101b5b7dd3",
+      "kind": "figure",
+      "alt": "Figure 1: A system overview of CFlow. (a) Upon collecting student code submissions, (b) CFlow extracts and semantically labels the code statements. (c left) These labels are then clustered and represented in a Semantic Aggregation View (SAV). (c right) Statement correctness is color coded and visualized using a stacked bar histogram, forming the Semantic Histogram View (SHV). (d) Users can filter the views by clicking on labels in the SAV or bars in the SHV. The Code Detailed View (CDV) enables for an in-depth inspection of specific code branches."
+    },
+    {
+      "path": "figures/zhang-cflow-ls2024/figure-002-p005.png",
+      "node": "782:0",
+      "page": 5,
+      "bbox": [
+        51.79800033569336,
+        81.68594360351562,
+        560.2056274414062,
+        258.3139953613281
+      ],
+      "sha256": "a4874a5618393f7822080aaccc96d5152269145f24542f379fb4b188026747cc",
+      "kind": "figure",
+      "alt": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h)."
+    },
+    {
+      "path": "figures/zhang-cflow-ls2024/figure-003-p006.png",
+      "node": "818:0",
+      "page": 6,
+      "bbox": [
+        51.79800033569336,
+        81.6863784790039,
+        560.2006225585938,
+        239.31700134277344
+      ],
+      "sha256": "8cb26b412197bcc9e9d9f92575f89570230bd0987bd29728e4153803301a97dc",
+      "kind": "figure",
+      "alt": "Figure 3: CFlow’s algorithm. To generate the results required in CFlow’s user interface, CFlow’s algorithm include four primary stages: (1) identifying and tagging the steps required to solve a problem, (2) grouping and aligning lines of code across code samples, (3) identifying semantic, syntactic, and runtime errors, and (4) clustering the grouped results."
+    },
+    {
+      "path": "figures/zhang-cflow-ls2024/formula-001-p008.png",
+      "node": "877:0",
+      "page": 8,
+      "bbox": [
+        73.68399810791016,
+        468.5474548339844,
+        296.5823669433594,
+        492.85614013671875
+      ],
+      "sha256": "b8781eaa6303e52ab48b8bccd596ff0225884b34c86c2058608284985378aef5",
+      "kind": "formula",
+      "alt": "Equation 1. Accuracy equals the number of matched answers divided by the greater of the number of correct answers and the number of selected answers."
+    },
+    {
+      "path": "figures/zhang-cflow-ls2024/figure-004-p010.png",
+      "node": "648:0",
+      "page": 10,
+      "bbox": [
+        51.79800033569336,
+        81.68499755859375,
+        308.0101013183594,
+        281.9590148925781
+      ],
+      "sha256": "0bdd199c52907ae9d8c8cf559f4486cc96b6c6d1bbb4d9782bfc7c90bfe3dfd8",
+      "kind": "figure",
+      "alt": "Figure 4: An example of how CFlow looks like without LLM determining line correctness. (a) is a collection of code lines that check the end of a word, and (b) is the correctness histogram. Upon selecting the prominent red block (c), users can view an example that incorrectly check the end of a word (d). By clicking on “LogicalError” (e), users are then able to explore detailed solutions (f)."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 2,
+    "line_wrap_hyphens_removed": 264,
+    "line_wrap_hyphens_retained": 17,
+    "reviewed_wrap_repairs": 4,
+    "paragraph_fragments_joined": 11,
+    "script_runs_positioned": 50
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-cflow-ls2024.json.gz",
+  "source_tags_sha256": "fe0cda3c91f0c181d942576ad293873c58fa250eeceb2a0d45a0e1a23d15e7b4"
+}

@@ -1,0 +1,702 @@
+{
+  "file": "krosnick-providing-live-feedback-live2020.pdf",
+  "title": "Toward Providing Live Feedback in Web Automation IDEs",
+  "publication_id": "toward_providing_live_feedback_in_web_automation_ides_2020",
+  "pdf_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+  "markdown": "publications/krosnick-providing-live-feedback-live2020.md",
+  "markdown_sha256": "3c4d2fc097e0fafca92b849c5a9521c5d25866db1158e48916fa35969bcf4489",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "244:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 144
+    },
+    {
+      "node": "245:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 16
+    },
+    {
+      "node": "246:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 90
+    },
+    {
+      "node": "247:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 10
+    },
+    {
+      "node": "248:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 79
+    },
+    {
+      "node": "249:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "250:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 603
+    },
+    {
+      "node": "251:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1297
+    },
+    {
+      "node": "357:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 514
+    },
+    {
+      "node": "358:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 600
+    },
+    {
+      "node": "359:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 155
+    },
+    {
+      "node": "360:0",
+      "role": "L",
+      "pages": [
+        1
+      ],
+      "characters": 226
+    },
+    {
+      "node": "373:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 14
+    },
+    {
+      "node": "374:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 865
+    },
+    {
+      "node": "375:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 19
+    },
+    {
+      "node": "joined-376:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 905
+    },
+    {
+      "node": "383:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 724
+    },
+    {
+      "node": "384:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 647
+    },
+    {
+      "node": "386:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 22
+    },
+    {
+      "node": "387:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 613
+    },
+    {
+      "node": "388:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 30
+    },
+    {
+      "node": "joined-389:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 414
+    },
+    {
+      "node": "391:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 27
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 547
+    },
+    {
+      "node": "393:0",
+      "role": "H4",
+      "pages": [
+        2
+      ],
+      "characters": 29
+    },
+    {
+      "node": "394:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 301
+    },
+    {
+      "node": "396:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 46
+    },
+    {
+      "node": "397:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1137
+    },
+    {
+      "node": "398:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 63
+    },
+    {
+      "node": "399:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 847
+    },
+    {
+      "node": "400:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 40
+    },
+    {
+      "node": "401:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 822
+    },
+    {
+      "node": "402:0",
+      "role": "H4",
+      "pages": [
+        3
+      ],
+      "characters": 65
+    },
+    {
+      "node": "joined-403:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 762
+    },
+    {
+      "node": "404:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 282
+    },
+    {
+      "node": "405:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 205
+    },
+    {
+      "node": "406:0",
+      "role": "Figure",
+      "pages": [
+        3
+      ],
+      "characters": 430
+    },
+    {
+      "node": "407:0",
+      "role": "Caption",
+      "pages": [
+        3
+      ],
+      "characters": 86
+    },
+    {
+      "node": "409:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 18
+    },
+    {
+      "node": "410:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 590
+    },
+    {
+      "node": "joined-411:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 506
+    },
+    {
+      "node": "417:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 360
+    },
+    {
+      "node": "418:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 107
+    },
+    {
+      "node": "419:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 537
+    },
+    {
+      "node": "420:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 13
+    },
+    {
+      "node": "421:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 413
+    },
+    {
+      "node": "422:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "423:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 605
+    },
+    {
+      "node": "424:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 11
+    },
+    {
+      "node": "425:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 32
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 257
+    },
+    {
+      "node": "427:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 428
+    },
+    {
+      "node": "428:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 542
+    },
+    {
+      "node": "429:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 502
+    },
+    {
+      "node": "430:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 191
+    },
+    {
+      "node": "431:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 15
+    },
+    {
+      "node": "432:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 92
+    },
+    {
+      "node": "433:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1667
+    },
+    {
+      "node": "279:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 843
+    },
+    {
+      "node": "283:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 965
+    },
+    {
+      "node": "284:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 44
+    },
+    {
+      "node": "285:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 155
+    },
+    {
+      "node": "286:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 37
+    },
+    {
+      "node": "287:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 778
+    },
+    {
+      "node": "288:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 50
+    },
+    {
+      "node": "joined-289:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 616
+    },
+    {
+      "node": "291:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 965
+    },
+    {
+      "node": "292:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 49
+    },
+    {
+      "node": "293:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 507
+    },
+    {
+      "node": "294:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 39
+    },
+    {
+      "node": "295:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 918
+    },
+    {
+      "node": "296:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 20
+    },
+    {
+      "node": "297:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 459
+    },
+    {
+      "node": "joined-298:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 320
+    },
+    {
+      "node": "301:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 181
+    },
+    {
+      "node": "302:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "303:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 693
+    },
+    {
+      "node": "304:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "305:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 1810
+    }
+  ],
+  "tagged_content_items": 4528,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/krosnick-providing-live-feedback-live2020/figure-001-p002.png",
+      "node": "383:0",
+      "page": 2,
+      "bbox": [
+        51.92900085449219,
+        60.36098861694336,
+        566.1669921875,
+        360.8399963378906
+      ],
+      "sha256": "1f0e869b9c4daf431a41713b44c72ce68ff8e65076cd49ab1f487f2e9e2a4248",
+      "kind": "figure",
+      "alt": "Figure 1. The VizMac user interface. VizMac enables users to record their actions on a website (A) and generate a corresponding macro script (C, D). An animation of the recording is also presented (E). To understand what code does, the user can click on a line in either code editor to see the CSS selector (H) and its corresponding UI element in the animation (K) highlighted in orange. Clicking on a line in the static code editor (D) will specifically highlight and loop through the UI snapshots in the animation corresponding to this action. To make any edits to the generated script, the user can make changes in the editable code editor (C)."
+    },
+    {
+      "path": "figures/krosnick-providing-live-feedback-live2020/figure-002-p003.png",
+      "node": "404:0",
+      "page": 3,
+      "bbox": [
+        319.093994140625,
+        60.36228561401367,
+        566.1554565429688,
+        168.81399536132812
+      ],
+      "sha256": "ef299f873e4cdfda1c003a37a8e52e51284bf59d2280ad0f682f03b6db1ffc24",
+      "kind": "figure",
+      "alt": "Figure 2. The user can create input fields for their macro parameters, e.g., a date (A). VizMac then automatically adds corresponding variables to the script providing access to the input field values (B)."
+    },
+    {
+      "path": "figures/krosnick-providing-live-feedback-live2020/figure-003-p003.png",
+      "node": "406:0",
+      "page": 3,
+      "bbox": [
+        319.093994140625,
+        212.6622314453125,
+        566.1588134765625,
+        335.85400390625
+      ],
+      "sha256": "57e6543c266cf77c60d37c99937a46f411837201c41a3a4e8995e988cb1d1815",
+      "kind": "figure",
+      "alt": "Figure 3. VizMac highlights a failing click command in the editable macro and shows a timeout waiting for selector #date-picker-23-09-2020. The code editor and page snapshot help locate the missing date element. The surrounding example explains that the site uses non-padded day and month numbers, so a script generating leading zeros must be corrected."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_retained": 12,
+    "line_wrap_hyphens_removed": 46,
+    "paragraph_fragments_joined": 6
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/krosnick-providing-live-feedback-live2020.json.gz",
+  "source_tags_sha256": "37596309c3900c6502ff57325a6a7a8ed5b086c481cb757a14b1e4f107dd6b05"
+}

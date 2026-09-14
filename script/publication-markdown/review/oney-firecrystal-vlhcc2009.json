@@ -1,0 +1,401 @@
+{
+  "file": "oney-firecrystal-vlhcc2009.pdf",
+  "title": "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages",
+  "publication_id": "firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009",
+  "pdf_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+  "markdown": "publications/oney-firecrystal-vlhcc2009.md",
+  "markdown_sha256": "2ab5e8fd061c1ef1cf3f2d25dd315fc302cf995866e0dd3f21d0b17f889ec22a",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "33:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 208
+    },
+    {
+      "node": "34:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "35:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 22
+    },
+    {
+      "node": "36:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 772
+    },
+    {
+      "node": "38:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "39:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 447
+    },
+    {
+      "node": "40:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 30
+    },
+    {
+      "node": "41:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 512
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 471
+    },
+    {
+      "node": "43:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 43
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 605
+    },
+    {
+      "node": "45:0",
+      "role": "H3",
+      "pages": [
+        1
+      ],
+      "characters": 20
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 695
+    },
+    {
+      "node": "joined-47:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 277
+    },
+    {
+      "node": "49:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 776
+    },
+    {
+      "node": "50:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 714
+    },
+    {
+      "node": "52:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "53:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 626
+    },
+    {
+      "node": "joined-54:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 454
+    },
+    {
+      "node": "56:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 543
+    },
+    {
+      "node": "joined-57:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 387
+    },
+    {
+      "node": "75:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 18
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 323
+    },
+    {
+      "node": "77:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 367
+    },
+    {
+      "node": "78:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 666
+    },
+    {
+      "node": "79:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 171
+    },
+    {
+      "node": "80:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 17
+    },
+    {
+      "node": "81:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 414
+    },
+    {
+      "node": "82:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 199
+    },
+    {
+      "node": "joined-83:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 961
+    },
+    {
+      "node": "85:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 346
+    },
+    {
+      "node": "86:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 423
+    },
+    {
+      "node": "joined-87:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 1499
+    },
+    {
+      "node": "90:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 203
+    },
+    {
+      "node": "91:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 33
+    },
+    {
+      "node": "92:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 848
+    },
+    {
+      "node": "93:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 489
+    },
+    {
+      "node": "94:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 483
+    },
+    {
+      "node": "95:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "joined-96:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 469
+    },
+    {
+      "node": "98:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 22
+    },
+    {
+      "node": "99:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 549
+    },
+    {
+      "node": "100:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 16
+    },
+    {
+      "node": "101:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1558
+    }
+  ],
+  "tagged_content_items": 1828,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-firecrystal-vlhcc2009/figure-001-p002.png",
+      "node": "49:0",
+      "page": 2,
+      "bbox": [
+        67.95999908447266,
+        70.18009948730469,
+        540.2000122070312,
+        452.18011474609375
+      ],
+      "sha256": "741a8b6cb48c78f8684f95d24c12190010d6622635ec0551f0599bc76a7e5fb7",
+      "kind": "figure",
+      "alt": "Figure 1 - FireCrystal replaying an interaction with an article on the New York Times website (http://www.nytimes.com/). In this interaction, the question mark box (outlined in red) appears after the user has highlighted a phrase (“great alumni” in this case). The timeline on the bottom of the screen shows user input events (in blue, from left: mouse down and up events, keyboard keys down and up, and window resizing, etc.) and DOM changes (as yellow bars). As the user drags the timeline handle (in red) to different times, a callout box gives more details on the event, the interaction is shown on a clone of the web page (left panel), and relevant code (Javascript, HTML, or CSS) is highlighted (right panel)"
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_retained": 2
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-firecrystal-vlhcc2009.json.gz",
+  "source_tags_sha256": "e47996c9a9d15b3fa392cfe8a9b9131e8e2ff56954e7dfd2f71c1bb68015ca79"
+}

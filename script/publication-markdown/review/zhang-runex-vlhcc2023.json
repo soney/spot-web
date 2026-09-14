@@ -1,0 +1,1254 @@
+{
+  "file": "zhang-runex-vlhcc2023.pdf",
+  "title": "RunEx: Augmenting Regular-Expression Code Search with Runtime Values",
+  "publication_id": "runex_augmenting_regular_expression_code_search_with_runtime_values_2023",
+  "pdf_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+  "markdown": "publications/zhang-runex-vlhcc2023.md",
+  "markdown_sha256": "b3ee236a7da0af93432a5cb9823cd08002d368030a4ed8d4ac7cc2a09cc33e32",
+  "pages": 9,
+  "blocks": [
+    {
+      "node": "131:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 206
+    },
+    {
+      "node": "132:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 93
+    },
+    {
+      "node": "133:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 80
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
+    },
+    {
+      "node": "135:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1409
+    },
+    {
+      "node": "136:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "315:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "316:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 938
+    },
+    {
+      "node": "317:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 120
+    },
+    {
+      "node": "318:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 96
+    },
+    {
+      "node": "319:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1043
+    },
+    {
+      "node": "joined-320:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1813
+    },
+    {
+      "node": "323:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 396
+    },
+    {
+      "node": "333:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 19
+    },
+    {
+      "node": "334:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 105
+    },
+    {
+      "node": "335:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 18
+    },
+    {
+      "node": "336:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 297
+    },
+    {
+      "node": "337:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 542
+    },
+    {
+      "node": "338:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 961
+    },
+    {
+      "node": "joined-339:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 636
+    },
+    {
+      "node": "341:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 37
+    },
+    {
+      "node": "342:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1209
+    },
+    {
+      "node": "343:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1150
+    },
+    {
+      "node": "344:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 41
+    },
+    {
+      "node": "joined-345:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1154
+    },
+    {
+      "node": "348:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 35
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 423
+    },
+    {
+      "node": "350:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 112
+    },
+    {
+      "node": "351:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 912
+    },
+    {
+      "node": "364:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 348
+    },
+    {
+      "node": "365:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 48
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 98
+    },
+    {
+      "node": "376:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 342
+    },
+    {
+      "node": "377:0",
+      "role": "L",
+      "pages": [
+        3
+      ],
+      "characters": 353
+    },
+    {
+      "node": "387:0",
+      "role": "Code",
+      "pages": [
+        3
+      ],
+      "characters": 52
+    },
+    {
+      "node": "388:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 115
+    },
+    {
+      "node": "389:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "390:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1108
+    },
+    {
+      "node": "391:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 666
+    },
+    {
+      "node": "392:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 182
+    },
+    {
+      "node": "393:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 57
+    },
+    {
+      "node": "394:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 459
+    },
+    {
+      "node": "joined-395:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 858
+    },
+    {
+      "node": "398:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "399:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 45
+    },
+    {
+      "node": "400:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 349
+    },
+    {
+      "node": "401:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 48
+    },
+    {
+      "node": "402:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 603
+    },
+    {
+      "node": "403:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 165
+    },
+    {
+      "node": "404:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 54
+    },
+    {
+      "node": "405:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 117
+    },
+    {
+      "node": "407:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 59
+    },
+    {
+      "node": "joined-408:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1131
+    },
+    {
+      "node": "410:0",
+      "role": "Code",
+      "pages": [
+        4
+      ],
+      "characters": 75
+    },
+    {
+      "node": "411:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 299
+    },
+    {
+      "node": "412:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 20
+    },
+    {
+      "node": "413:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 26
+    },
+    {
+      "node": "414:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 112
+    },
+    {
+      "node": "415:0",
+      "role": "L",
+      "pages": [
+        4
+      ],
+      "characters": 1097
+    },
+    {
+      "node": "425:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 29
+    },
+    {
+      "node": "426:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 601
+    },
+    {
+      "node": "joined-427:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 1288
+    },
+    {
+      "node": "429:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 348
+    },
+    {
+      "node": "430:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 291
+    },
+    {
+      "node": "432:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 691
+    },
+    {
+      "node": "433:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 236
+    },
+    {
+      "node": "434:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 183
+    },
+    {
+      "node": "447:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 113
+    },
+    {
+      "node": "448:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 220
+    },
+    {
+      "node": "joined-449:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 579
+    },
+    {
+      "node": "451:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "452:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 708
+    },
+    {
+      "node": "453:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 556
+    },
+    {
+      "node": "454:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 218
+    },
+    {
+      "node": "455:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 98
+    },
+    {
+      "node": "456:0",
+      "role": "Code",
+      "pages": [
+        5
+      ],
+      "characters": 72
+    },
+    {
+      "node": "458:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 283
+    },
+    {
+      "node": "459:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 121
+    },
+    {
+      "node": "460:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 51
+    },
+    {
+      "node": "461:0",
+      "role": "Code",
+      "pages": [
+        6
+      ],
+      "characters": 131
+    },
+    {
+      "node": "462:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 791
+    },
+    {
+      "node": "463:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 18
+    },
+    {
+      "node": "464:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 594
+    },
+    {
+      "node": "465:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "466:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 353
+    },
+    {
+      "node": "467:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 143
+    },
+    {
+      "node": "468:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 525
+    },
+    {
+      "node": "469:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 701
+    },
+    {
+      "node": "470:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 165
+    },
+    {
+      "node": "471:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 216
+    },
+    {
+      "node": "472:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 219
+    },
+    {
+      "node": "473:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 336
+    },
+    {
+      "node": "474:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 501
+    },
+    {
+      "node": "475:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 353
+    },
+    {
+      "node": "joined-476:0",
+      "role": "P",
+      "pages": [
+        6,
+        7
+      ],
+      "characters": 436
+    },
+    {
+      "node": "139:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 394
+    },
+    {
+      "node": "140:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 225
+    },
+    {
+      "node": "141:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 600
+    },
+    {
+      "node": "142:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 407
+    },
+    {
+      "node": "143:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 591
+    },
+    {
+      "node": "144:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 14
+    },
+    {
+      "node": "145:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 719
+    },
+    {
+      "node": "146:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 7
+    },
+    {
+      "node": "147:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 163
+    },
+    {
+      "node": "64:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 8989
+    },
+    {
+      "node": "179:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 8
+    },
+    {
+      "node": "180:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 152
+    },
+    {
+      "node": "181:0",
+      "role": "Table",
+      "pages": [
+        7
+      ],
+      "characters": 3725
+    },
+    {
+      "node": "214:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 183
+    },
+    {
+      "node": "215:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 659
+    },
+    {
+      "node": "216:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 608
+    },
+    {
+      "node": "217:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 362
+    },
+    {
+      "node": "478:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 599
+    },
+    {
+      "node": "479:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 283
+    },
+    {
+      "node": "480:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 205
+    },
+    {
+      "node": "481:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 109
+    },
+    {
+      "node": "482:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 42
+    },
+    {
+      "node": "483:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 494
+    },
+    {
+      "node": "484:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 847
+    },
+    {
+      "node": "joined-485:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 784
+    },
+    {
+      "node": "487:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 528
+    },
+    {
+      "node": "488:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 20
+    },
+    {
+      "node": "489:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 594
+    },
+    {
+      "node": "490:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 306
+    },
+    {
+      "node": "491:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 470
+    },
+    {
+      "node": "492:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 17
+    },
+    {
+      "node": "493:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 735
+    },
+    {
+      "node": "495:0",
+      "role": "H2",
+      "pages": [
+        9
+      ],
+      "characters": 13
+    },
+    {
+      "node": "496:0",
+      "role": "L",
+      "pages": [
+        9
+      ],
+      "characters": 6123
+    }
+  ],
+  "tagged_content_items": 8367,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/zhang-runex-vlhcc2023/figure-001-p005.png",
+      "node": "429:0",
+      "page": 5,
+      "bbox": [
+        46.9640007019043,
+        48.538841247558594,
+        565.018310546875,
+        162.61700439453125
+      ],
+      "sha256": "35c96d283483e9c75f289f5f125cd4429bd3628dcf92ac1f2f30b7a7a3f2e222",
+      "kind": "figure",
+      "alt": "Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2) Chaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "64:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 10,
+      "column_count": 6,
+      "cell_count": 48,
+      "header_count": 18,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "64:0"
+    },
+    {
+      "source_table_id": "181:0",
+      "source_pages": [
+        7
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 4,
+      "cell_count": 25,
+      "header_count": 10,
+      "empty_cell_count": 0,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": "explicit headers for both axes; data-pdf-scope retains native Both value",
+      "column_header_band_count": 1,
+      "node": "181:0"
+    }
+  ],
+  "code_layout": [
+    {
+      "node": "387:0",
+      "pages": [
+        3
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 12,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "398:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 5,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "399:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 2,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "404:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 1,
+      "inserted_leading_spaces": 12,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "410:0",
+      "pages": [
+        4
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 2,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 22,
+      "inserted_leading_spaces": 2,
+      "large_gap_columns": [
+        20
+      ],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "456:0",
+      "pages": [
+        5
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 5,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 8,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "459:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 6,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 30,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
+      "node": "461:0",
+      "pages": [
+        6
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": true,
+      "source_line_count": 6,
+      "character_pitch": 5.9776,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 20,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
+  "normalization": {
+    "line_wrap_hyphens_removed": 112,
+    "paragraph_fragments_joined": 9,
+    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_retained": 11,
+    "script_runs_positioned": 19
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/zhang-runex-vlhcc2023.json.gz",
+  "source_tags_sha256": "3d1ca0c4d3968ef83ca5b4eab790168d09676d93977d94ad9065fe1067dbcef6"
+}

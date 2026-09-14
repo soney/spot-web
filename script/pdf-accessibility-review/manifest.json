@@ -1,10 +1,10 @@
 {
   "review_date": "2026-09-14",
-  "scope": "73 publication PDFs; source pages and native tag trees reviewed, repaired, and validated.",
-  "files": 73,
-  "custom_structure_passes": 73,
+  "scope": "74 publication PDFs; source pages and native tag trees reviewed, repaired, and validated.",
+  "files": 74,
+  "custom_structure_passes": 74,
   "verapdf_ua1_profile_passes": 2,
-  "missing_pdfua_identification_only": 70,
+  "missing_pdfua_identification_only": 71,
   "screen_reader_testing": "Automated real Orca 50.2 / Firefox 155.0.1 integration on exact final Codelets, Expresso and Codeon samples; HTML companions tested, including XML reflow at500% zoom. Not an all-page screen-reader user test or certification.",
   "companions": [
     {
@@ -26,10 +26,10 @@
       "integration_change": "Unchanged."
     }
   ],
-  "pages": 1010,
+  "pages": 1028,
   "appearance_baseline_revision": "8bbeb3a",
   "appearance_requirement": "Original appearance takes priority throughout.",
-  "pixels_identical_in_both_renderers": 73,
+  "pixels_identical_in_both_renderers": 74,
   "render_dpi": 144,
   "files_with_other_verapdf_ua1_rule_failures": 1,
   "documents": [
@@ -1835,6 +1835,47 @@
       "page_geometry_identical": true,
       "non_identification_failed_rules": [],
       "accessible_content_source_url": "https://hdl.handle.net/1721.1/46009"
+    },
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+      "pages": 18,
+      "original_sha256": "23754de4b48c172321608471affde3e26326a413655362397a02ae89007f9cd5",
+      "source_sha256": "23754de4b48c172321608471affde3e26326a413655362397a02ae89007f9cd5",
+      "selected_source_kind": "user-supplied untagged IEEE author-version PDF",
+      "selected_source_url": "https://www.computer.org/csdl/journal/ts/5555/01/11674167/2jqKRHVC2Qw",
+      "final_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "reviewed_native_tags_and_reading_order",
+        "two_figure_alternatives",
+        "seven_tables_with_explicit_headers_and_category_spans",
+        "run_in_heading_hierarchy",
+        "four_research_question_labels",
+        "62_separate_reference_entries",
+        "opening_drop_cap_actualtext",
+        "table_iii_underlined_anchor_actualtext",
+        "obsolete_flowchart_tag_wrappers_removed",
+        "two_appearance_preserving_embedded_font_substitutes"
+      ],
+      "remaining_findings": [
+        "Page 12, Figure 2 legend: Codebase characteristics is labeled Table IV, while body and actual table use Table V. Original printing retained; figure alternative makes mismatch explicit.",
+        "Page 12, Figure 2 caption: Printed \"Arrows wight\" appears to mean arrow weight. Preserve visible source; alternative uses the clear semantic meaning.",
+        "Page 13, Table VII, Simplification / binary search, Less effective when: Printed participant list ends P15 without a closing parenthesis. Retain exact source text.",
+        "Page 13, First left-column continuation paragraph below Table VII: Body cites forward reasoning as (l, 5), although Figure2 labels forward reasoning1 and simplification5. Preserve source, document mismatch."
+      ],
+      "path": "assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+      "appearance_baseline_revision": null,
+      "appearance_baseline_kind": "user-supplied attachment",
+      "appearance_baseline_filename": "Navigating_Complexity_How_Context_Shapes_Debugging_Strategy_Choices_Among_Expert_Developers.pdf",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true,
+      "non_identification_failed_rules": [],
+      "review_evidence": "script/pdf-accessibility-review/navigating-complexity/"
     }
-  ]
+  ],
+  "appearance_baseline_note": "Original 73 PDFs use Git revision 8bbeb3a. Navigating Complexity uses the hash-identified user attachment specified in its document record."
 }

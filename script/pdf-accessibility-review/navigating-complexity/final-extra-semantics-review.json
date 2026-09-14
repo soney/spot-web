@@ -1,0 +1,30 @@
+{
+  "pdf": "/home/soney/nucode/spot-web/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+  "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "rq_labels": [
+    {
+      "label": "RQ1:",
+      "parent_role": "LI",
+      "body": " What types of defects do developers find most\nchallenging to debug in web applications?"
+    },
+    {
+      "label": "RQ2:",
+      "parent_role": "LI",
+      "body": " What context factors do expert developers con-\nsider while choosing a debugging strategy in challenging\nweb application defects?"
+    },
+    {
+      "label": "RQ3:",
+      "parent_role": "LI",
+      "body": " How do defect characteristics affect developers’\nchoice of debugging strategies in challenging debugging\nscenarios?"
+    },
+    {
+      "label": "RQ4:",
+      "parent_role": "LI",
+      "body": " How do codebase characteristics affect devel-\nopers’ choice of debugging strategies in challenging\ndebugging scenarios?"
+    }
+  ],
+  "table_iii_caption_actualtext": "TABLE III\nINTEGRATED LANDSCAPE OF CHALLENGING WEB DEBUGGING PROBLEMS, SYNTHESIZING LITERATURE-DERIVED CONTEXTS AND SURVEY-DERIVED\nSCENARIOS. WE ORGANIZE CHALLENGES INTO THREE DIMENSIONS: behaviors, domains, AND contexts. THE TWO MOST FREQUENTLY REPORTED\nSURVEY CHALLENGES ARE UNDERLINED AND WERE USED AS ANCHOR SCENARIOS IN THE FIRST INTERVIEW SESSION.\nThe two underlined anchor scenarios are Non-replicable failures and Concurrency-related.",
+  "dropcap_opening_actualtext": "DEBUGGING is a central yet cognitively demanding part\nof software development. Beyond locating and fixing\nfaults, successful debugging requires developers to interpret\nsymptoms, reason about possible causes, choose appropri-\nate strategies, and adapt their approach as new informa-\ntion emerges [1], [2]. Developers use a range of debugging\nstrategies to structure this reasoning, including hypothesis\ntesting [3], [4], tracing dependencies and execution paths [1],\n[3], [5], [6], reasoning backward from symptoms to possible\ncauses [3], [4], [7]–[15], and simplifying complex problem\nspaces [15]–[17].",
+  "issues": [],
+  "status": "pass"
+}

@@ -1,0 +1,323 @@
+{
+  "file": "oney-playbook-iseud2011.pdf",
+  "title": "Playbook: Revision Control & Comparison for Interactive Mockups",
+  "publication_id": "playbook_revision_control_comparison_for_interactive_mockups_2011",
+  "pdf_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+  "markdown": "publications/oney-playbook-iseud2011.md",
+  "markdown_sha256": "447bc878ffc720474dc8c57ad9431e7e54c30fffff5b2c8e2d2bc78c47ccf43b",
+  "pages": 6,
+  "blocks": [
+    {
+      "node": "32:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 138
+    },
+    {
+      "node": "33:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 125
+    },
+    {
+      "node": "34:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 101
+    },
+    {
+      "node": "35:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "36:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 860
+    },
+    {
+      "node": "37:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 60
+    },
+    {
+      "node": "38:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "39:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 905
+    },
+    {
+      "node": "joined-40:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 864
+    },
+    {
+      "node": "43:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 483
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1717
+    },
+    {
+      "node": "45:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "46:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 589
+    },
+    {
+      "node": "joined-47:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 893
+    },
+    {
+      "node": "50:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 11
+    },
+    {
+      "node": "51:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 613
+    },
+    {
+      "node": "52:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1317
+    },
+    {
+      "node": "67:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 740
+    },
+    {
+      "node": "69:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 601
+    },
+    {
+      "node": "70:0",
+      "role": "Caption",
+      "pages": [
+        4
+      ],
+      "characters": 542
+    },
+    {
+      "node": "71:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1081
+    },
+    {
+      "node": "72:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1050
+    },
+    {
+      "node": "73:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 274
+    },
+    {
+      "node": "75:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 480
+    },
+    {
+      "node": "76:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 736
+    },
+    {
+      "node": "77:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 609
+    },
+    {
+      "node": "78:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 19
+    },
+    {
+      "node": "79:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 489
+    },
+    {
+      "node": "80:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 494
+    },
+    {
+      "node": "81:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 33
+    },
+    {
+      "node": "joined-82:0",
+      "role": "P",
+      "pages": [
+        5,
+        6
+      ],
+      "characters": 912
+    },
+    {
+      "node": "85:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 468
+    },
+    {
+      "node": "86:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 320
+    },
+    {
+      "node": "87:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 13
+    },
+    {
+      "node": "88:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 1775
+    }
+  ],
+  "tagged_content_items": 1285,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/oney-playbook-iseud2011/figure-001-p004.png",
+      "node": "69:0",
+      "page": 4,
+      "bbox": [
+        119.44000244140625,
+        140.3199005126953,
+        476.4800109863281,
+        253.99989318847656
+      ],
+      "sha256": "5d9ef662ad98c8d0dbcc3fa94b574b26a5473e91f3fb30640721b96696db1d8c",
+      "kind": "figure",
+      "alt": "Fig. 1. The user is mapping stimuli and responses from the script on the left to the script on the right. Equivalent objects have a line between them. For example, a click on the “MENS” layer in the left mockup is equivalent to a mouseover of the “MENS” layer in the right mockup. When whole behaviors are equivalent, Playbook uses curly braces and a single line between the behaviors to reduce clutter. The mappings between mockup stimuli and responses are used to allow the user to interact with multiple interactive mockups simultaneously."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "line_wrap_hyphens_removed": 123,
+    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_retained": 2,
+    "script_runs_positioned": 7
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/oney-playbook-iseud2011.json.gz",
+  "source_tags_sha256": "8b60b08ad0ea10de97d9b360fbf3e00d0402df818ca021d2e5769c32ab38fb47"
+}

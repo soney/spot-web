@@ -1,0 +1,1357 @@
+{
+  "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+  "title": "Improving Crowd-Supported GUI Testing with Structural Guidance",
+  "publication_id": "improving_crowd_supported_gui_testing_with_structural_guidance_2020",
+  "pdf_sha256": "27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1",
+  "markdown": "publications/chen-improving-crowd-supported-gui-chi2020.md",
+  "markdown_sha256": "44e026a97500e4735e180684c6d0a3b1eb4df7f170953f8cd20ef402f1793da9",
+  "pages": 13,
+  "blocks": [
+    {
+      "node": "699:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 214
+    },
+    {
+      "node": "700:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "701:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 98
+    },
+    {
+      "node": "709:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 786
+    },
+    {
+      "node": "703:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "704:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1562
+    },
+    {
+      "node": "705:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "706:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "707:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "708:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
+      "node": "710:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "711:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 880
+    },
+    {
+      "node": "714:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1211
+    },
+    {
+      "node": "joined-719:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 847
+    },
+    {
+      "node": "722:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 589
+    },
+    {
+      "node": "723:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 532
+    },
+    {
+      "node": "725:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 798
+    },
+    {
+      "node": "727:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 50
+    },
+    {
+      "node": "1289:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 341
+    },
+    {
+      "node": "732:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 32
+    },
+    {
+      "node": "733:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 302
+    },
+    {
+      "node": "735:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 21
+    },
+    {
+      "node": "1212:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1238
+    },
+    {
+      "node": "744:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "745:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 572
+    },
+    {
+      "node": "751:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 844
+    },
+    {
+      "node": "1214:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1223
+    },
+    {
+      "node": "759:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 49
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 890
+    },
+    {
+      "node": "765:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 567
+    },
+    {
+      "node": "770:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "772:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 731
+    },
+    {
+      "node": "776:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 29
+    },
+    {
+      "node": "777:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 478
+    },
+    {
+      "node": "778:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 41
+    },
+    {
+      "node": "joined-779:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 936
+    },
+    {
+      "node": "782:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 460
+    },
+    {
+      "node": "783:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 489
+    },
+    {
+      "node": "786:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 754
+    },
+    {
+      "node": "787:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 28
+    },
+    {
+      "node": "1220:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 729
+    },
+    {
+      "node": "797:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 86
+    },
+    {
+      "node": "799:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 86
+    },
+    {
+      "node": "794:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1087
+    },
+    {
+      "node": "800:0",
+      "role": "H2",
+      "pages": [
+        4
+      ],
+      "characters": 30
+    },
+    {
+      "node": "801:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 171
+    },
+    {
+      "node": "802:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 26
+    },
+    {
+      "node": "805:0",
+      "role": "Figure",
+      "pages": [
+        4
+      ],
+      "characters": 86
+    },
+    {
+      "node": "803:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 560
+    },
+    {
+      "node": "806:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 37
+    },
+    {
+      "node": "807:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1078
+    },
+    {
+      "node": "811:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 158
+    },
+    {
+      "node": "813:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 590
+    },
+    {
+      "node": "817:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 86
+    },
+    {
+      "node": "814:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 731
+    },
+    {
+      "node": "818:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 747
+    },
+    {
+      "node": "821:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 18
+    },
+    {
+      "node": "822:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 376
+    },
+    {
+      "node": "825:0",
+      "role": "H2",
+      "pages": [
+        5
+      ],
+      "characters": 36
+    },
+    {
+      "node": "826:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 846
+    },
+    {
+      "node": "joined-1227:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 388
+    },
+    {
+      "node": "829:0",
+      "role": "Figure",
+      "pages": [
+        5
+      ],
+      "characters": 530
+    },
+    {
+      "node": "830:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 89
+    },
+    {
+      "node": "833:0",
+      "role": "H3",
+      "pages": [
+        5
+      ],
+      "characters": 21
+    },
+    {
+      "node": "834:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 544
+    },
+    {
+      "node": "joined-836:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 725
+    },
+    {
+      "node": "1292:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 165
+    },
+    {
+      "node": "1291:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 181
+    },
+    {
+      "node": "1294:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 187
+    },
+    {
+      "node": "1293:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 195
+    },
+    {
+      "node": "1290:0",
+      "role": "L",
+      "pages": [
+        5
+      ],
+      "characters": 392
+    },
+    {
+      "node": "860:0",
+      "role": "Figure",
+      "pages": [
+        6
+      ],
+      "characters": 542
+    },
+    {
+      "node": "861:0",
+      "role": "Caption",
+      "pages": [
+        6
+      ],
+      "characters": 111
+    },
+    {
+      "node": "1295:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 230
+    },
+    {
+      "node": "870:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 266
+    },
+    {
+      "node": "872:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "873:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 689
+    },
+    {
+      "node": "874:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 23
+    },
+    {
+      "node": "875:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 178
+    },
+    {
+      "node": "876:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 65
+    },
+    {
+      "node": "1296:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 408
+    },
+    {
+      "node": "889:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 86
+    },
+    {
+      "node": "887:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1119
+    },
+    {
+      "node": "891:0",
+      "role": "Figure",
+      "pages": [
+        7
+      ],
+      "characters": 324
+    },
+    {
+      "node": "892:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 246
+    },
+    {
+      "node": "893:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 20
+    },
+    {
+      "node": "894:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 891
+    },
+    {
+      "node": "897:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 508
+    },
+    {
+      "node": "899:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 23
+    },
+    {
+      "node": "900:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 124
+    },
+    {
+      "node": "1297:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 225
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 110
+    },
+    {
+      "node": "906:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 558
+    },
+    {
+      "node": "907:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 11
+    },
+    {
+      "node": "908:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 286
+    },
+    {
+      "node": "910:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 50
+    },
+    {
+      "node": "joined-911:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1196
+    },
+    {
+      "node": "914:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 68
+    },
+    {
+      "node": "915:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 814
+    },
+    {
+      "node": "1260:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 99
+    },
+    {
+      "node": "joined-921:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 386
+    },
+    {
+      "node": "1298:0",
+      "role": "Table",
+      "pages": [
+        8
+      ],
+      "characters": 2303
+    },
+    {
+      "node": "939:0",
+      "role": "Caption",
+      "pages": [
+        8
+      ],
+      "characters": 115
+    },
+    {
+      "node": "942:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 59
+    },
+    {
+      "node": "943:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 1008
+    },
+    {
+      "node": "945:0",
+      "role": "H4",
+      "pages": [
+        8
+      ],
+      "characters": 43
+    },
+    {
+      "node": "946:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 562
+    },
+    {
+      "node": "949:0",
+      "role": "H2",
+      "pages": [
+        8
+      ],
+      "characters": 13
+    },
+    {
+      "node": "950:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 419
+    },
+    {
+      "node": "952:0",
+      "role": "H3",
+      "pages": [
+        8
+      ],
+      "characters": 43
+    },
+    {
+      "node": "joined-953:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 1082
+    },
+    {
+      "node": "954:0",
+      "role": "Figure",
+      "pages": [
+        9
+      ],
+      "characters": 608
+    },
+    {
+      "node": "955:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 486
+    },
+    {
+      "node": "958:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 49
+    },
+    {
+      "node": "joined-959:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 588
+    },
+    {
+      "node": "961:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 59
+    },
+    {
+      "node": "962:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1321
+    },
+    {
+      "node": "967:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 46
+    },
+    {
+      "node": "968:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 433
+    },
+    {
+      "node": "970:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 172
+    },
+    {
+      "node": "971:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 765
+    },
+    {
+      "node": "973:0",
+      "role": "H3",
+      "pages": [
+        9
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1276:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 1180
+    },
+    {
+      "node": "978:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 12
+    },
+    {
+      "node": "979:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 350
+    },
+    {
+      "node": "983:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 943
+    },
+    {
+      "node": "985:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 986
+    },
+    {
+      "node": "988:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "989:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 514
+    },
+    {
+      "node": "990:0",
+      "role": "Figure",
+      "pages": [
+        10
+      ],
+      "characters": 276
+    },
+    {
+      "node": "991:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 163
+    },
+    {
+      "node": "992:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 14
+    },
+    {
+      "node": "993:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 996
+    },
+    {
+      "node": "997:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "998:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 652
+    },
+    {
+      "node": "999:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1000:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 237
+    },
+    {
+      "node": "1001:0",
+      "role": "H2",
+      "pages": [
+        10
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1002:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 130
+    },
+    {
+      "node": "1004:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1006:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 73
+    },
+    {
+      "node": "698:0",
+      "role": "L",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "characters": 11410
+    }
+  ],
+  "tagged_content_items": 9341,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-001-p002.png",
+      "node": "722:0",
+      "page": 2,
+      "bbox": [
+        51.92900085449219,
+        60.35968017578125,
+        566.1865844726562,
+        425.76800537109375
+      ],
+      "sha256": "5a7d084c32f53625cb854c48e9373ecca5038861af619e7e0ba2ed668951f50e",
+      "kind": "figure",
+      "alt": "Figure 1. Instrumented e-commerce testing interface. The left pane shows instructions and an interactive event-flow graph labeled 1; the active filtering state is highlighted red. The main pane shows a toy catalog. Red arrows connect outgoing graph transitions to previously explored controls, including the filter and the bottom result-navigation control, marked by gray non-clickable overlays and label 2. Testers can click a graph node to revisit an explored state; the overlays discourage repeating actions."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-002-p004.png",
+      "node": "782:0",
+      "page": 4,
+      "bbox": [
+        51.92900085449219,
+        60.36003112792969,
+        311.0482177734375,
+        287.65301513671875
+      ],
+      "sha256": "b676b921c6a595d2c4fd649f331b0b9de9fbb4e7b0f410a5aad7a31ef354701d",
+      "kind": "figure",
+      "alt": "Figure 2. Three views of an e-commerce delivery form are connected to its event-flow graph. The form has Pick Up, Delivery, and Contact Info tabs. The graph represents selecting pickup or delivery options and entering input, phone, email, or other contact details, with arrows showing transitions among these states. Pink summary nodes group transitions back to the three main tabs."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-003-p004.png",
+      "node": "797:0",
+      "page": 4,
+      "bbox": [
+        368.3807373046875,
+        178.28472900390625,
+        383.26727294921875,
+        193.1712646484375
+      ],
+      "sha256": "4f3e08ebbe429e8dadf1199b679dc4d1728f12f90d7c49768b53d4833a63c069",
+      "kind": "figure",
+      "alt": "circle 1"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-004-p004.png",
+      "node": "799:0",
+      "page": 4,
+      "bbox": [
+        344.2127380371094,
+        212.375732421875,
+        359.0992736816406,
+        227.26226806640625
+      ],
+      "sha256": "dc7de27390d0284711368c34e5a9f66d9ad4bde948845f940aa567835966e19a",
+      "kind": "figure",
+      "alt": "circle 2"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-005-p004.png",
+      "node": "805:0",
+      "page": 4,
+      "bbox": [
+        450.6137390136719,
+        401.3907165527344,
+        465.5002746582031,
+        416.27728271484375
+      ],
+      "sha256": "482b84233f5c0a7f71fa440bd7defaac407785dbac41f800a8ad8d4f3518790b",
+      "kind": "figure",
+      "alt": "circle 2"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-006-p005.png",
+      "node": "817:0",
+      "page": 5,
+      "bbox": [
+        140.9087371826172,
+        222.1207275390625,
+        155.79527282714844,
+        237.00726318359375
+      ],
+      "sha256": "23d605764a006dafe44c6e0ccf12d3bd1c9f4f3ea1fae77fd6c2a610acbc9268",
+      "kind": "figure",
+      "alt": "circle 2"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-007-p005.png",
+      "node": "829:0",
+      "page": 5,
+      "bbox": [
+        319.093994140625,
+        60.36204147338867,
+        578.212158203125,
+        207.3990020751953
+      ],
+      "sha256": "68f6b39cdc390d54310f2be77d533c3a2741fdcaab900986ad2d12288254343f",
+      "kind": "figure",
+      "alt": "Figure 3. JavaScript example. Get the DIV for the trace-tracking tool: const displayDiv = document.getElementById(\"displayDiv\"); Initialize the trace tracker JSON variable: let currentActiveFSM = t2sm.FSM.fromJSON(JSON.parse(str0)); Initialize the display: const display = new t2sm.StateMachineDisplay(currentActiveFSM, displayDiv, myDisplaySetting); Define function myDisplaySetting(fod) with placeholders for state-box style and transition-box style."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-008-p006.png",
+      "node": "860:0",
+      "page": 6,
+      "bbox": [
+        120.81199645996094,
+        60.354698181152344,
+        497.28155517578125,
+        704.6630249023438
+      ],
+      "sha256": "d359c1d94017cdfdf4da2f509ec4ee09cc58c3f32fe16b188a36b25e78d77c16",
+      "kind": "figure",
+      "alt": "Figure 4. Eleven screenshots of the three study prototypes arranged in columns. The left column shows three travel-agent screens for searching restaurants, viewing a result, and reviewing a restaurant. The middle column shows four blog screens for browsing articles, search/results, article content, and discussion. The right column shows four e-commerce screens for product browsing, a shopping cart, product details/reviews, and checkout or delivery preferences."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-009-p007.png",
+      "node": "889:0",
+      "page": 7,
+      "bbox": [
+        283.9137268066406,
+        582.9617309570312,
+        298.8002624511719,
+        597.8482666015625
+      ],
+      "sha256": "31887235ade3cc69d065f810c61a18e4eb9314c4230ba24984af0f03cf223c4a",
+      "kind": "figure",
+      "alt": "circle 1"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-010-p007.png",
+      "node": "891:0",
+      "page": 7,
+      "bbox": [
+        319.093994140625,
+        60.363258361816406,
+        578.2265625,
+        267.7019958496094
+      ],
+      "sha256": "abe072e308676a612480230f0a1855b2482dadf454558044fd0cc9ba6501f5c1",
+      "kind": "figure",
+      "alt": "A bar chart that shows the average transition coverage for four single worker conditions. From left to the right, we have trained baseline (62.23%), trained with guidance (78.90%), untrained baseline (34.79%), and untrained with guidance (53.83%)"
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-011-p009.png",
+      "node": "954:0",
+      "page": 9,
+      "bbox": [
+        51.92900085449219,
+        60.35527420043945,
+        280.435791015625,
+        331.82501220703125
+      ],
+      "sha256": "4997568352e4d2c4ebd776e2647f813ffb112731d50b4d83a1a5b41d8d1720fc",
+      "kind": "figure",
+      "alt": "Figure 6. Two grouped bar charts show how testing changes over task progress at 0–25%, 25–50%, 50–75%, and 75–100% of elapsed time. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. In the upper chart, use of the guidance graph increases across time, especially for trained users; in the lower chart, newly discovered transitions generally decline. Together they show growing reliance on guidance as undiscovered transitions become harder to find."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-012-p010.png",
+      "node": "990:0",
+      "page": 10,
+      "bbox": [
+        338.5840148925781,
+        60.362701416015625,
+        546.6727294921875,
+        160.5679931640625
+      ],
+      "sha256": "5e60029cd4f39f0d1cb045744d6189e5f5b23b6ad53f3b5270ebe4dc86ae2439",
+      "kind": "figure",
+      "alt": "This is a conceptual figure. It shows a small unit event-flow graph can be integrated into larger application-level graph on the right to test the entire graph without recruiting additional testers."
+    }
+  ],
+  "tables": [
+    {
+      "source_table_id": "1298:0",
+      "source_pages": [
+        8
+      ],
+      "format": "html",
+      "row_count": 6,
+      "column_count": 3,
+      "cell_count": 18,
+      "header_count": 8,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1298:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 158,
+    "line_wrap_hyphens_retained": 13,
+    "paragraph_fragments_joined": 8,
+    "script_runs_positioned": 40
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/chen-improving-crowd-supported-gui-chi2020.json.gz",
+  "source_tags_sha256": "692ec514b7f4696fbe760453f6d44819dcd33aa2c24d13563b68a916755d9aff"
+}

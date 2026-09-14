@@ -1,0 +1,682 @@
+{
+  "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+  "title": "Creativity Support in Authoring and Backtracking",
+  "publication_id": "creativity_support_in_authoring_and_backtracking_2013",
+  "pdf_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+  "markdown": "publications/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.md",
+  "markdown_sha256": "79d3c0b68300485e62f7c00dce7ddf04ebd0193a8d2043e6e6858b97932984ee",
+  "pages": 4,
+  "blocks": [
+    {
+      "node": "37:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 199
+    },
+    {
+      "node": "38:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 28
+    },
+    {
+      "node": "39:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
+      "node": "40:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 20
+    },
+    {
+      "node": "41:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 23
+    },
+    {
+      "node": "42:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "43:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 27
+    },
+    {
+      "node": "44:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 26
+    },
+    {
+      "node": "45:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 26
+    },
+    {
+      "node": "joined-46:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 41
+    },
+    {
+      "node": "48:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "145:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 14
+    },
+    {
+      "node": "joined-146:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 45
+    },
+    {
+      "node": "49:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 178
+    },
+    {
+      "node": "149:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 11
+    },
+    {
+      "node": "150:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 758
+    },
+    {
+      "node": "151:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 18
+    },
+    {
+      "node": "152:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 116
+    },
+    {
+      "node": "153:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 30
+    },
+    {
+      "node": "154:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 201
+    },
+    {
+      "node": "155:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 16
+    },
+    {
+      "node": "156:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 35
+    },
+    {
+      "node": "157:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 15
+    },
+    {
+      "node": "158:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1879
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 775
+    },
+    {
+      "node": "160:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 515
+    },
+    {
+      "node": "144:0",
+      "role": "Figure",
+      "pages": [
+        2
+      ],
+      "characters": 598
+    },
+    {
+      "node": "141:0",
+      "role": "Caption",
+      "pages": [
+        2
+      ],
+      "characters": 596
+    },
+    {
+      "node": "134:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 716
+    },
+    {
+      "node": "135:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 43
+    },
+    {
+      "node": "136:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 13
+    },
+    {
+      "node": "137:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 697
+    },
+    {
+      "node": "138:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 737
+    },
+    {
+      "node": "139:0",
+      "role": "H3",
+      "pages": [
+        2
+      ],
+      "characters": 16
+    },
+    {
+      "node": "joined-140:0",
+      "role": "P",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1734
+    },
+    {
+      "node": "119:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 918
+    },
+    {
+      "node": "120:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1268
+    },
+    {
+      "node": "121:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 381
+    },
+    {
+      "node": "122:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 21
+    },
+    {
+      "node": "123:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 503
+    },
+    {
+      "node": "124:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 470
+    },
+    {
+      "node": "125:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 18
+    },
+    {
+      "node": "126:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 328
+    },
+    {
+      "node": "127:0",
+      "role": "H2",
+      "pages": [
+        3
+      ],
+      "characters": 13
+    },
+    {
+      "node": "128:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 173
+    },
+    {
+      "node": "129:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 216
+    },
+    {
+      "node": "130:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 132
+    },
+    {
+      "node": "131:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 131
+    },
+    {
+      "node": "132:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 186
+    },
+    {
+      "node": "133:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 111
+    },
+    {
+      "node": "117:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 164
+    },
+    {
+      "node": "87:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 181
+    },
+    {
+      "node": "88:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 201
+    },
+    {
+      "node": "89:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 202
+    },
+    {
+      "node": "90:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 210
+    },
+    {
+      "node": "91:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 166
+    },
+    {
+      "node": "92:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 103
+    },
+    {
+      "node": "93:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 185
+    },
+    {
+      "node": "94:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 140
+    },
+    {
+      "node": "95:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 216
+    },
+    {
+      "node": "96:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 180
+    },
+    {
+      "node": "97:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 180
+    },
+    {
+      "node": "98:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 203
+    },
+    {
+      "node": "99:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 188
+    },
+    {
+      "node": "100:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 180
+    },
+    {
+      "node": "101:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 167
+    },
+    {
+      "node": "102:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 174
+    },
+    {
+      "node": "103:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 141
+    },
+    {
+      "node": "104:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 229
+    },
+    {
+      "node": "105:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "106:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 262
+    },
+    {
+      "node": "107:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 201
+    },
+    {
+      "node": "108:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 252
+    },
+    {
+      "node": "109:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 231
+    },
+    {
+      "node": "110:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 154
+    },
+    {
+      "node": "111:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 71
+    },
+    {
+      "node": "112:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 185
+    },
+    {
+      "node": "113:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 218
+    },
+    {
+      "node": "114:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 210
+    },
+    {
+      "node": "115:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 242
+    }
+  ],
+  "tagged_content_items": 96,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [
+    {
+      "path": "figures/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments/figure-001-p002.png",
+      "node": "144:0",
+      "page": 2,
+      "bbox": [
+        131.23597717285156,
+        54.5692138671875,
+        478.08013916015625,
+        296.9928283691406
+      ],
+      "sha256": "f160f42b0afe72d0d68f4e7298ae0094218faa823fcd2a8eae7899d2004b657c",
+      "kind": "figure",
+      "alt": "Screenshot of the AZURITE plug-in in Eclipse. A source-code editor appears above a timeline of editing operations grouped into labeled file rows. Green rectangles represent insertions, red rectangles deletions, and blue rectangles replacements. A gray vertical separator divides editing sessions and a yellow vertical line marks the current time. Yellow outlines indicate selected operations; the interface supports selecting edits and selectively undoing them."
+    }
+  ],
+  "tables": [],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_removed": 108,
+    "line_wrap_hyphens_retained": 3
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.json.gz",
+  "source_tags_sha256": "023e3ad1c25ceba6b48e921750436205cf397f4f94a2a5c6c63a0895e5f1803b"
+}

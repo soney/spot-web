@@ -1,0 +1,380 @@
+{
+  "file": "arab-navigating-complexity-tse2026.pdf",
+  "pages": 18,
+  "figures": [
+    {
+      "page": 3,
+      "bbox": [
+        337.0830078125,
+        56.06929016113281,
+        537.9383544921875,
+        218.18402099609375
+      ],
+      "alt": "Figure 1. Three-phase study workflow, shown as three banners stacked from top to bottom. Phase 0, literature synthesis: derive candidate debugging contexts and strategies. Phase 1, survey: collect a sample of currently challenging debugging scenarios and their frequencies. Phase 2, expert interviews: obtain detailed accounts of strategy choice and adaptation grounded in those scenario types. The adjacent text specifies 35 survey respondents and 16 expert interviewees.",
+      "verification": "Read every banner and checked caption and adjacent methodology text in source page 3 rendered at108 dpi."
+    },
+    {
+      "page": 12,
+      "bbox": [
+        74.0,
+        56.0,
+        538.0,
+        372.0
+      ],
+      "alt": "Figure 2. Network summarizing commonly reported debugging strategy transitions from 16 expert web developers. It is a descriptive model, not a decision tree: context questions do not uniquely determine the next strategy, and a missing edge does not rule out a transition. Six green ellipses are numbered: 1, Forward-reasoning; 2, Error-message; 3, Hypothesis-test; 4, Backward-reasoning; 5, Simplification; and 6, External Strategy. Starting from whether a defect is observable, the diagram connects a non-observable defect through codebase complexity (l) to forward reasoning. For an observable defect, clear messages (a) lead toward error-message debugging, vague messages (b) toward hypothesis testing, and client-side versus other failures (c) toward simplification or hypothesis testing. Error-message debugging connects through access to the codebase (d) to backward reasoning. Hypothesis testing connects through debugger availability (e) to backward reasoning, or through reproducibility (f), familiarity (g), and search-space size (h) to simplification. Constrained production, compiled-binary, or ownership contexts (i) distinguish external strategies from simplification. User-specific failures (j) also connect hypothesis testing to external strategies. Sporadic behavior or infeasible traces (k) connect backward reasoning back to hypothesis testing; legacy or unmaintained code (n) connects to backward reasoning. Forward reasoning connects through familiarity (m) toward hypothesis testing when familiar or external strategies when unfamiliar, and through reproducibility and a narrowed search space (o) toward simplification. Simplification connects through unsafe or limited opportunities to simplify (q) toward external strategies. Context boxes are blue for codebase characteristics, tan for defect characteristics, and pale yellow for environmental, tooling, and organizational constraints. The printed legend labels both codebase and defect characteristics as Table IV; the body text identifies codebase characteristics in Table V. Arrow weight encodes breadth of participant support: thick solid lines, at least 7 participants; thin solid lines, 4 to 6; dashed lines, 3 or fewer. Thick routes emphasize complexity to forward reasoning, clear errors to error-message debugging, debugger availability to backward reasoning, familiarity to hypothesis testing, and a large search space to simplification. Dashed routes include reproducible, narrowed problems from forward reasoning to simplification, sporadic or infeasible traces from backward reasoning to hypothesis testing, and unsafe simplification to external strategies. Table VII gives the associated conditions, participant evidence, and quotations.",
+      "verification": "Read six nodes, all lettered context conditions, legend, and directed routes in source page12 rendered at144 dpi. Source codebase-table-number mismatch described explicitly."
+    }
+  ],
+  "tables": [
+    {
+      "number": "I",
+      "page": 4,
+      "region_id": "p4-r14",
+      "row_count": 7,
+      "col_count": 3,
+      "data_rows": 6,
+      "group_headers": {},
+      "bbox": [
+        311.978,
+        111.26,
+        563.758,
+        229.4
+      ],
+      "x_boundaries": [
+        311.978,
+        363.4137659072876,
+        527.6173429489136,
+        563.758
+      ],
+      "y_boundaries": [
+        111.26,
+        122.94,
+        141.92,
+        160.74,
+        179.57,
+        192.74,
+        211.57,
+        229.4
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "II",
+      "page": 6,
+      "region_id": "p6-r4",
+      "row_count": 17,
+      "col_count": 6,
+      "data_rows": 16,
+      "group_headers": {},
+      "bbox": [
+        77.35,
+        85.39,
+        534.65,
+        230.1
+      ],
+      "x_boundaries": [
+        77.35,
+        99.23233675584197,
+        163.37955367565155,
+        207.92469397187233,
+        272.6879234611988,
+        339.8958140015602,
+        534.65
+      ],
+      "y_boundaries": [
+        85.39,
+        97.07,
+        108.337,
+        116.307,
+        124.277,
+        132.247,
+        140.217,
+        148.187,
+        156.157,
+        164.127,
+        172.097,
+        180.067,
+        188.037,
+        196.007,
+        203.977,
+        211.947,
+        219.917,
+        230.1
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "III",
+      "page": 8,
+      "region_id": "p8-r4",
+      "row_count": 16,
+      "col_count": 3,
+      "data_rows": 12,
+      "group_headers": {
+        "1": "BEHAVIORS",
+        "5": "DOMAIN",
+        "10": "CONTEXT"
+      },
+      "bbox": [
+        50.31,
+        104.09,
+        561.69,
+        332.61
+      ],
+      "x_boundaries": [
+        50.31,
+        158.16163352131844,
+        512.7755953669548,
+        561.69
+      ],
+      "y_boundaries": [
+        104.09,
+        117.41,
+        128.95,
+        147.9,
+        163.9,
+        172.51,
+        184.19,
+        203.2,
+        219.1,
+        235.0,
+        251.66,
+        263.34,
+        282.3,
+        290.3,
+        298.2,
+        314.2,
+        332.61
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "IV",
+      "page": 10,
+      "region_id": "p10-r4",
+      "row_count": 17,
+      "col_count": 2,
+      "data_rows": 13,
+      "group_headers": {
+        "1": "Clarity",
+        "6": "Reproducibility",
+        "11": "Root Cause"
+      },
+      "bbox": [
+        48.96,
+        103.61,
+        300.08,
+        350.81
+      ],
+      "x_boundaries": [
+        48.96,
+        105.94693636894226,
+        300.08
+      ],
+      "y_boundaries": [
+        103.61,
+        115.29,
+        126.97,
+        148.27,
+        161.44,
+        174.62,
+        186.15,
+        197.83,
+        211.16,
+        224.33,
+        237.51,
+        257.01,
+        268.69,
+        282.02,
+        295.19,
+        316.34,
+        329.51,
+        350.81
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "V",
+      "page": 10,
+      "region_id": "p10-r12",
+      "row_count": 14,
+      "col_count": 2,
+      "data_rows": 9,
+      "group_headers": {
+        "1": "Familiarity",
+        "4": "Accessibility",
+        "7": "Testability",
+        "10": "Complexity & Maintenance"
+      },
+      "bbox": [
+        311.98,
+        103.61,
+        564.35,
+        324.23
+      ],
+      "x_boundaries": [
+        311.98,
+        365.8542870283127,
+        564.35
+      ],
+      "y_boundaries": [
+        103.61,
+        115.29,
+        126.97,
+        148.27,
+        167.77,
+        179.45,
+        192.78,
+        220.25,
+        231.93,
+        245.26,
+        264.76,
+        276.44,
+        289.76,
+        302.94,
+        324.23
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "VI",
+      "page": 10,
+      "region_id": "p10-r15",
+      "row_count": 13,
+      "col_count": 2,
+      "data_rows": 8,
+      "group_headers": {
+        "1": "Organizational Context",
+        "4": "Tool availability and usability",
+        "8": "Individual developer traits",
+        "10": "Project expectations"
+      },
+      "bbox": [
+        311.98,
+        390.95,
+        569.37,
+        638.24
+      ],
+      "x_boundaries": [
+        311.98,
+        367.75019934773445,
+        569.37
+      ],
+      "y_boundaries": [
+        390.95,
+        402.63,
+        414.31,
+        435.6,
+        463.08,
+        474.76,
+        496.05,
+        517.2,
+        536.7,
+        548.38,
+        568.03,
+        579.71,
+        608.98,
+        638.24
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    },
+    {
+      "number": "VII",
+      "page": 13,
+      "region_id": "p13-r4",
+      "row_count": 7,
+      "col_count": 4,
+      "data_rows": 6,
+      "group_headers": {},
+      "bbox": [
+        48.96,
+        102.3,
+        564.58,
+        455.84
+      ],
+      "x_boundaries": [
+        48.96,
+        96.8,
+        278.81834721565247,
+        449.61160039901733,
+        564.58
+      ],
+      "y_boundaries": [
+        102.3,
+        113.98,
+        165.73,
+        233.31,
+        277.04,
+        344.53,
+        396.17,
+        455.84
+      ],
+      "header_rows": [
+        0
+      ],
+      "row_header_columns": [
+        0
+      ]
+    }
+  ],
+  "source_editorial_notes": [
+    {
+      "page": 12,
+      "location": "Figure 2 legend",
+      "issue": "Codebase characteristics is labeled Table IV, while body and actual table use Table V. Original printing retained; figure alternative makes mismatch explicit."
+    },
+    {
+      "page": 12,
+      "location": "Figure 2 caption",
+      "issue": "Printed \"Arrows wight\" appears to mean arrow weight. Preserve visible source; alternative uses the clear semantic meaning."
+    },
+    {
+      "page": 13,
+      "location": "Table VII, Simplification / binary search, Less effective when",
+      "issue": "Printed participant list ends P15 without a closing parenthesis. Retain exact source text."
+    },
+    {
+      "page": 13,
+      "location": "First left-column continuation paragraph below Table VII",
+      "issue": "Body cites forward reasoning as (l, 5), although Figure2 labels forward reasoning1 and simplification5. Preserve source, document mismatch."
+    }
+  ],
+  "reading_order_notes": [
+    "Two-column body should read left column then right, with full-width tables/figures before both columns.",
+    "Page3 list of three phases begins bottom left and continues after floating Figure1 at top right.",
+    "Page4 left-column final sentence continues under floating TableI at top right.",
+    "Page10 three tables are distinct: TableIV left; TableV upper right; TableVI lower right, with continuing body text below floats.",
+    "Page12 full-width diagram/caption precedes two-column continued results; page13 full-width TableVII/caption precedes two-column continued body.",
+    "Running publication status, page numerals, and repeated licensed-download footers should be artifacts."
+  ]
+}

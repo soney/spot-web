@@ -1,0 +1,2173 @@
+{
+  "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+  "title": "Understanding Accessibility and Collaboration in Programming for People with Visual Impairments",
+  "publication_id": "understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021",
+  "pdf_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+  "markdown": "publications/pandey-understanding-accessibility-collaboration-cscw2021.md",
+  "markdown_sha256": "48d7e0e1c9c2f42130e1c7c222b692ce48bc5a078934a270acdc74a6e06ea552",
+  "pages": 30,
+  "blocks": [
+    {
+      "node": "364:0",
+      "role": "H1",
+      "pages": [
+        1
+      ],
+      "characters": 254
+    },
+    {
+      "node": "365:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 336
+    },
+    {
+      "node": "366:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 1057
+    },
+    {
+      "node": "367:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 135
+    },
+    {
+      "node": "368:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 188
+    },
+    {
+      "node": "369:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 21
+    },
+    {
+      "node": "370:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 355
+    },
+    {
+      "node": "404:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 684
+    },
+    {
+      "node": "371:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "joined-372:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1083
+    },
+    {
+      "node": "374:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1199
+    },
+    {
+      "node": "375:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 929
+    },
+    {
+      "node": "376:0",
+      "role": "L",
+      "pages": [
+        2
+      ],
+      "characters": 804
+    },
+    {
+      "node": "405:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 704
+    },
+    {
+      "node": "836:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "837:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 225
+    },
+    {
+      "node": "902:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 37
+    },
+    {
+      "node": "903:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 595
+    },
+    {
+      "node": "904:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 1940
+    },
+    {
+      "node": "905:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 910
+    },
+    {
+      "node": "877:0",
+      "role": "H3",
+      "pages": [
+        3
+      ],
+      "characters": 33
+    },
+    {
+      "node": "878:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 707
+    },
+    {
+      "node": "879:0",
+      "role": "P",
+      "pages": [
+        3,
+        4
+      ],
+      "characters": 528
+    },
+    {
+      "node": "880:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 679
+    },
+    {
+      "node": "881:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 382
+    },
+    {
+      "node": "841:0",
+      "role": "H3",
+      "pages": [
+        4
+      ],
+      "characters": 36
+    },
+    {
+      "node": "931:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 55
+    },
+    {
+      "node": "932:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1075
+    },
+    {
+      "node": "843:0",
+      "role": "P",
+      "pages": [
+        4
+      ],
+      "characters": 1133
+    },
+    {
+      "node": "933:0",
+      "role": "H4",
+      "pages": [
+        4
+      ],
+      "characters": 40
+    },
+    {
+      "node": "934:0",
+      "role": "P",
+      "pages": [
+        4,
+        5
+      ],
+      "characters": 1479
+    },
+    {
+      "node": "845:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 415
+    },
+    {
+      "node": "846:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 1278
+    },
+    {
+      "node": "1032:0",
+      "role": "H4",
+      "pages": [
+        5
+      ],
+      "characters": 51
+    },
+    {
+      "node": "1033:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 563
+    },
+    {
+      "node": "1000:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 864
+    },
+    {
+      "node": "1001:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 770
+    },
+    {
+      "node": "1002:0",
+      "role": "P",
+      "pages": [
+        5
+      ],
+      "characters": 298
+    },
+    {
+      "node": "960:0",
+      "role": "H2",
+      "pages": [
+        6
+      ],
+      "characters": 12
+    },
+    {
+      "node": "961:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 20
+    },
+    {
+      "node": "962:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 729
+    },
+    {
+      "node": "963:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 504
+    },
+    {
+      "node": "964:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 793
+    },
+    {
+      "node": "965:0",
+      "role": "H3",
+      "pages": [
+        6
+      ],
+      "characters": 17
+    },
+    {
+      "node": "966:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 738
+    },
+    {
+      "node": "967:0",
+      "role": "P",
+      "pages": [
+        6
+      ],
+      "characters": 1255
+    },
+    {
+      "node": "969:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 140
+    },
+    {
+      "node": "970:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 16
+    },
+    {
+      "node": "971:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 1106
+    },
+    {
+      "node": "938:0",
+      "role": "H2",
+      "pages": [
+        7
+      ],
+      "characters": 13
+    },
+    {
+      "node": "939:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 591
+    },
+    {
+      "node": "941:0",
+      "role": "H3",
+      "pages": [
+        7
+      ],
+      "characters": 35
+    },
+    {
+      "node": "942:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 605
+    },
+    {
+      "node": "1034:0",
+      "role": "H4",
+      "pages": [
+        7
+      ],
+      "characters": 30
+    },
+    {
+      "node": "1035:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 865
+    },
+    {
+      "node": "joined-1275:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 1226
+    },
+    {
+      "node": "1277:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 764
+    },
+    {
+      "node": "1278:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 873
+    },
+    {
+      "node": "1279:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 431
+    },
+    {
+      "node": "1280:0",
+      "role": "P",
+      "pages": [
+        8
+      ],
+      "characters": 913
+    },
+    {
+      "node": "1281:0",
+      "role": "P",
+      "pages": [
+        8,
+        9
+      ],
+      "characters": 815
+    },
+    {
+      "node": "1282:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 879
+    },
+    {
+      "node": "1321:0",
+      "role": "H4",
+      "pages": [
+        9
+      ],
+      "characters": 46
+    },
+    {
+      "node": "1322:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 1089
+    },
+    {
+      "node": "1284:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 326
+    },
+    {
+      "node": "1285:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 510
+    },
+    {
+      "node": "1286:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 682
+    },
+    {
+      "node": "1287:0",
+      "role": "P",
+      "pages": [
+        9,
+        10
+      ],
+      "characters": 1167
+    },
+    {
+      "node": "1240:0",
+      "role": "H3",
+      "pages": [
+        10
+      ],
+      "characters": 66
+    },
+    {
+      "node": "1241:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 401
+    },
+    {
+      "node": "1324:0",
+      "role": "H4",
+      "pages": [
+        10
+      ],
+      "characters": 36
+    },
+    {
+      "node": "1325:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 430
+    },
+    {
+      "node": "1326:0",
+      "role": "Note",
+      "pages": [
+        10
+      ],
+      "characters": 62
+    },
+    {
+      "node": "1243:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 766
+    },
+    {
+      "node": "1244:0",
+      "role": "P",
+      "pages": [
+        10
+      ],
+      "characters": 1219
+    },
+    {
+      "node": "1245:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 1109
+    },
+    {
+      "node": "1246:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 577
+    },
+    {
+      "node": "1327:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 24
+    },
+    {
+      "node": "1328:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 679
+    },
+    {
+      "node": "1248:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 680
+    },
+    {
+      "node": "1249:0",
+      "role": "P",
+      "pages": [
+        11
+      ],
+      "characters": 969
+    },
+    {
+      "node": "1329:0",
+      "role": "H4",
+      "pages": [
+        11
+      ],
+      "characters": 49
+    },
+    {
+      "node": "1330:0",
+      "role": "P",
+      "pages": [
+        11,
+        12
+      ],
+      "characters": 673
+    },
+    {
+      "node": "1251:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 425
+    },
+    {
+      "node": "1252:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 959
+    },
+    {
+      "node": "1253:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 450
+    },
+    {
+      "node": "1254:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 473
+    },
+    {
+      "node": "1255:0",
+      "role": "P",
+      "pages": [
+        12
+      ],
+      "characters": 1083
+    },
+    {
+      "node": "1256:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 271
+    },
+    {
+      "node": "1257:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 657
+    },
+    {
+      "node": "1350:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 445
+    },
+    {
+      "node": "1351:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 866
+    },
+    {
+      "node": "1352:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 476
+    },
+    {
+      "node": "1436:0",
+      "role": "H4",
+      "pages": [
+        13
+      ],
+      "characters": 27
+    },
+    {
+      "node": "1437:0",
+      "role": "P",
+      "pages": [
+        13
+      ],
+      "characters": 1360
+    },
+    {
+      "node": "1354:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 896
+    },
+    {
+      "node": "1355:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 1138
+    },
+    {
+      "node": "1356:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 655
+    },
+    {
+      "node": "1438:0",
+      "role": "H4",
+      "pages": [
+        14
+      ],
+      "characters": 26
+    },
+    {
+      "node": "1439:0",
+      "role": "P",
+      "pages": [
+        14
+      ],
+      "characters": 558
+    },
+    {
+      "node": "1358:0",
+      "role": "P",
+      "pages": [
+        14,
+        15
+      ],
+      "characters": 1425
+    },
+    {
+      "node": "1359:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 659
+    },
+    {
+      "node": "1360:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 1603
+    },
+    {
+      "node": "1361:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 626
+    },
+    {
+      "node": "1362:0",
+      "role": "P",
+      "pages": [
+        15
+      ],
+      "characters": 593
+    },
+    {
+      "node": "1363:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 585
+    },
+    {
+      "node": "1364:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 897
+    },
+    {
+      "node": "1365:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 173
+    },
+    {
+      "node": "1366:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 683
+    },
+    {
+      "node": "1367:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 764
+    },
+    {
+      "node": "1368:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 318
+    },
+    {
+      "node": "1370:0",
+      "role": "P",
+      "pages": [
+        16
+      ],
+      "characters": 595
+    },
+    {
+      "node": "1341:0",
+      "role": "H3",
+      "pages": [
+        17
+      ],
+      "characters": 40
+    },
+    {
+      "node": "1342:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 237
+    },
+    {
+      "node": "1343:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 768
+    },
+    {
+      "node": "1344:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 763
+    },
+    {
+      "node": "1345:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 717
+    },
+    {
+      "node": "1346:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 557
+    },
+    {
+      "node": "1106:0",
+      "role": "P",
+      "pages": [
+        17
+      ],
+      "characters": 690
+    },
+    {
+      "node": "1107:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 796
+    },
+    {
+      "node": "1108:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 829
+    },
+    {
+      "node": "1130:0",
+      "role": "Note",
+      "pages": [
+        18
+      ],
+      "characters": 132
+    },
+    {
+      "node": "1109:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 869
+    },
+    {
+      "node": "1110:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 936
+    },
+    {
+      "node": "1111:0",
+      "role": "P",
+      "pages": [
+        18
+      ],
+      "characters": 373
+    },
+    {
+      "node": "1112:0",
+      "role": "P",
+      "pages": [
+        18,
+        19
+      ],
+      "characters": 1402
+    },
+    {
+      "node": "1055:0",
+      "role": "H2",
+      "pages": [
+        19
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1056:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 1010
+    },
+    {
+      "node": "1057:0",
+      "role": "H3",
+      "pages": [
+        19
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1131:0",
+      "role": "H4",
+      "pages": [
+        19
+      ],
+      "characters": 41
+    },
+    {
+      "node": "1132:0",
+      "role": "P",
+      "pages": [
+        19
+      ],
+      "characters": 1361
+    },
+    {
+      "node": "joined-1059:0",
+      "role": "P",
+      "pages": [
+        19,
+        20
+      ],
+      "characters": 1727
+    },
+    {
+      "node": "1133:0",
+      "role": "H4",
+      "pages": [
+        20
+      ],
+      "characters": 77
+    },
+    {
+      "node": "1134:0",
+      "role": "P",
+      "pages": [
+        20
+      ],
+      "characters": 2122
+    },
+    {
+      "node": "joined-1062:0",
+      "role": "P",
+      "pages": [
+        20,
+        21
+      ],
+      "characters": 2196
+    },
+    {
+      "node": "1064:0",
+      "role": "P",
+      "pages": [
+        21
+      ],
+      "characters": 1255
+    },
+    {
+      "node": "1065:0",
+      "role": "H3",
+      "pages": [
+        21
+      ],
+      "characters": 50
+    },
+    {
+      "node": "1066:0",
+      "role": "P",
+      "pages": [
+        21
+      ],
+      "characters": 564
+    },
+    {
+      "node": "1067:0",
+      "role": "P",
+      "pages": [
+        21
+      ],
+      "characters": 997
+    },
+    {
+      "node": "1068:0",
+      "role": "P",
+      "pages": [
+        21
+      ],
+      "characters": 684
+    },
+    {
+      "node": "1069:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 1076
+    },
+    {
+      "node": "1070:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 1762
+    },
+    {
+      "node": "1071:0",
+      "role": "P",
+      "pages": [
+        22
+      ],
+      "characters": 1325
+    },
+    {
+      "node": "1154:0",
+      "role": "H3",
+      "pages": [
+        23
+      ],
+      "characters": 35
+    },
+    {
+      "node": "1155:0",
+      "role": "P",
+      "pages": [
+        23
+      ],
+      "characters": 802
+    },
+    {
+      "node": "1156:0",
+      "role": "P",
+      "pages": [
+        23
+      ],
+      "characters": 480
+    },
+    {
+      "node": "1157:0",
+      "role": "P",
+      "pages": [
+        23
+      ],
+      "characters": 466
+    },
+    {
+      "node": "1149:0",
+      "role": "H2",
+      "pages": [
+        23
+      ],
+      "characters": 15
+    },
+    {
+      "node": "1150:0",
+      "role": "P",
+      "pages": [
+        23
+      ],
+      "characters": 1089
+    },
+    {
+      "node": "1151:0",
+      "role": "H2",
+      "pages": [
+        23
+      ],
+      "characters": 18
+    },
+    {
+      "node": "1152:0",
+      "role": "P",
+      "pages": [
+        23
+      ],
+      "characters": 303
+    },
+    {
+      "node": "1162:0",
+      "role": "H2",
+      "pages": [
+        24
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1163:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 239
+    },
+    {
+      "node": "1165:0",
+      "role": "Table",
+      "pages": [
+        24
+      ],
+      "characters": 8914
+    },
+    {
+      "node": "1455:0",
+      "role": "P",
+      "pages": [
+        24
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1456:0",
+      "role": "Caption",
+      "pages": [
+        25
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1457:0",
+      "role": "Table",
+      "pages": [
+        25
+      ],
+      "characters": 9926
+    },
+    {
+      "node": "1576:0",
+      "role": "P",
+      "pages": [
+        25
+      ],
+      "characters": 22
+    },
+    {
+      "node": "1577:0",
+      "role": "Caption",
+      "pages": [
+        26
+      ],
+      "characters": 38
+    },
+    {
+      "node": "1578:0",
+      "role": "Table",
+      "pages": [
+        26
+      ],
+      "characters": 6955
+    },
+    {
+      "node": "1548:0",
+      "role": "H2",
+      "pages": [
+        26
+      ],
+      "characters": 13
+    },
+    {
+      "node": "1549:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 28
+    },
+    {
+      "node": "1550:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 140
+    },
+    {
+      "node": "1551:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 156
+    },
+    {
+      "node": "1552:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 471
+    },
+    {
+      "node": "1553:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 237
+    },
+    {
+      "node": "1554:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 265
+    },
+    {
+      "node": "1555:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 108
+    },
+    {
+      "node": "1556:0",
+      "role": "P",
+      "pages": [
+        26
+      ],
+      "characters": 58
+    },
+    {
+      "node": "1653:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 140
+    },
+    {
+      "node": "1654:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 196
+    },
+    {
+      "node": "1655:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 211
+    },
+    {
+      "node": "1656:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 256
+    },
+    {
+      "node": "1657:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 266
+    },
+    {
+      "node": "1658:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 190
+    },
+    {
+      "node": "1659:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 209
+    },
+    {
+      "node": "1660:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 114
+    },
+    {
+      "node": "1661:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 380
+    },
+    {
+      "node": "1662:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 208
+    },
+    {
+      "node": "1663:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 180
+    },
+    {
+      "node": "1664:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 327
+    },
+    {
+      "node": "1665:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 337
+    },
+    {
+      "node": "1666:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 399
+    },
+    {
+      "node": "1667:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 436
+    },
+    {
+      "node": "1668:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 328
+    },
+    {
+      "node": "1669:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1670:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 215
+    },
+    {
+      "node": "1671:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 197
+    },
+    {
+      "node": "1672:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 159
+    },
+    {
+      "node": "1673:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 144
+    },
+    {
+      "node": "1674:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 161
+    },
+    {
+      "node": "1675:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 88
+    },
+    {
+      "node": "1676:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 256
+    },
+    {
+      "node": "1677:0",
+      "role": "P",
+      "pages": [
+        27
+      ],
+      "characters": 95
+    },
+    {
+      "node": "1678:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 178
+    },
+    {
+      "node": "1679:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 234
+    },
+    {
+      "node": "1680:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 296
+    },
+    {
+      "node": "1681:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 208
+    },
+    {
+      "node": "1682:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 183
+    },
+    {
+      "node": "1683:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 162
+    },
+    {
+      "node": "1684:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 169
+    },
+    {
+      "node": "1685:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 99
+    },
+    {
+      "node": "1753:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 126
+    },
+    {
+      "node": "1754:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 128
+    },
+    {
+      "node": "1755:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 209
+    },
+    {
+      "node": "1756:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 163
+    },
+    {
+      "node": "1757:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 379
+    },
+    {
+      "node": "1758:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 138
+    },
+    {
+      "node": "1759:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 372
+    },
+    {
+      "node": "1760:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 279
+    },
+    {
+      "node": "1761:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 238
+    },
+    {
+      "node": "1762:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 251
+    },
+    {
+      "node": "1763:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 206
+    },
+    {
+      "node": "1764:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 337
+    },
+    {
+      "node": "1765:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 286
+    },
+    {
+      "node": "1766:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 247
+    },
+    {
+      "node": "1767:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 213
+    },
+    {
+      "node": "1768:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 305
+    },
+    {
+      "node": "1769:0",
+      "role": "P",
+      "pages": [
+        28
+      ],
+      "characters": 95
+    },
+    {
+      "node": "1770:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 323
+    },
+    {
+      "node": "1771:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 247
+    },
+    {
+      "node": "1772:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 155
+    },
+    {
+      "node": "1773:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 101
+    },
+    {
+      "node": "1774:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 246
+    },
+    {
+      "node": "1775:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 289
+    },
+    {
+      "node": "1776:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 157
+    },
+    {
+      "node": "1777:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 232
+    },
+    {
+      "node": "1778:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 298
+    },
+    {
+      "node": "1779:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 260
+    },
+    {
+      "node": "1780:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 81
+    },
+    {
+      "node": "1781:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 363
+    },
+    {
+      "node": "1782:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 378
+    },
+    {
+      "node": "1783:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 234
+    },
+    {
+      "node": "750:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 68
+    },
+    {
+      "node": "751:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 222
+    },
+    {
+      "node": "752:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 233
+    },
+    {
+      "node": "753:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 68
+    },
+    {
+      "node": "754:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 228
+    },
+    {
+      "node": "755:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 230
+    },
+    {
+      "node": "756:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 273
+    },
+    {
+      "node": "757:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 188
+    },
+    {
+      "node": "758:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 345
+    },
+    {
+      "node": "759:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 84
+    },
+    {
+      "node": "760:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 275
+    },
+    {
+      "node": "761:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 347
+    },
+    {
+      "node": "762:0",
+      "role": "P",
+      "pages": [
+        29
+      ],
+      "characters": 95
+    },
+    {
+      "node": "763:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 253
+    },
+    {
+      "node": "764:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 195
+    },
+    {
+      "node": "765:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 344
+    },
+    {
+      "node": "766:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 84
+    },
+    {
+      "node": "767:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 229
+    },
+    {
+      "node": "768:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 328
+    },
+    {
+      "node": "769:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 271
+    },
+    {
+      "node": "770:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 160
+    },
+    {
+      "node": "771:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 223
+    },
+    {
+      "node": "772:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 306
+    },
+    {
+      "node": "773:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 259
+    },
+    {
+      "node": "749:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 448
+    },
+    {
+      "node": "774:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 64
+    },
+    {
+      "node": "775:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 95
+    }
+  ],
+  "tagged_content_items": 2029,
+  "all_tagged_content_accounted_for_once": true,
+  "assets": [],
+  "tables": [
+    {
+      "source_table_id": "1165:0",
+      "source_pages": [
+        24
+      ],
+      "format": "html",
+      "row_count": 9,
+      "column_count": 8,
+      "cell_count": 72,
+      "header_count": 16,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1165:0"
+    },
+    {
+      "source_table_id": "1457:0",
+      "source_pages": [
+        25
+      ],
+      "format": "html",
+      "row_count": 10,
+      "column_count": 8,
+      "cell_count": 80,
+      "header_count": 17,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1457:0"
+    },
+    {
+      "source_table_id": "1578:0",
+      "source_pages": [
+        26
+      ],
+      "format": "html",
+      "row_count": 7,
+      "column_count": 8,
+      "cell_count": 56,
+      "header_count": 14,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1578:0"
+    }
+  ],
+  "code_layout": [],
+  "normalization": {
+    "frontmatter_notices_grouped": 1,
+    "line_wrap_hyphens_removed": 82,
+    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_retained": 10,
+    "script_runs_positioned": 38
+  },
+  "review_notes": [],
+  "source_tags": "source-tags/pandey-understanding-accessibility-collaboration-cscw2021.json.gz",
+  "source_tags_sha256": "048a47dc2db8aec65e41e794ee4d7be41556592cccd95c33b03a131a458bf2f0"
+}

@@ -1,0 +1,26 @@
+{
+  "pdf": "krosnick-expresso-vlhcc2018.pdf",
+  "source_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+  "kind": "reviewed_list_item_continuation",
+  "list_node": "402:0",
+  "list_item_node": "403:0",
+  "list_body_node": "405:0",
+  "continuation_node": "479:0",
+  "source_pages": [
+    1,
+    2
+  ],
+  "text": "The idea of defining responsive UI behavior by specifying the UI appearance at specific viewport sizes (keyframes), interpolating (smooth) transitions between them, and supporting discontinuous (jump) transitions between significantly different layout states.",
+  "operations": [
+    {
+      "kind": "replace_list_body_text",
+      "node": "405:0",
+      "consume_continuation_node": "479:0"
+    },
+    {
+      "kind": "retain_list_item_label",
+      "node": "403:0"
+    }
+  ],
+  "review": "Final hash-matched native tree contains list item403/LBody405 ending and sup- at page1, followed by P479 beginning porting discontinuous at page2. Joined sup-/porting boundary as supporting and printed signifi-cantly line wrap as significantly; all wording retained. Emit continuation only once as part of the existing bullet."
+}
