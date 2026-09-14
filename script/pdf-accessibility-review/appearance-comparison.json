@@ -1,0 +1,677 @@
+{
+  "baseline_revision": "8bbeb3a",
+  "files": 73,
+  "pages": 1010,
+  "dpi": 144,
+  "renderers": [
+    {
+      "name": "MuPDF via PyMuPDF",
+      "version": "1.28.2"
+    },
+    {
+      "name": "Poppler pdftoppm",
+      "version": "26.01.0"
+    }
+  ],
+  "all_pages_pixel_identical": true,
+  "all_page_geometry_identical": true,
+  "documents": [
+    {
+      "file": "im-improving-advising-relationships-chiea2024.pdf",
+      "pages": 4,
+      "original_sha256": "ca6e3340fe25411dcbd8ed2bc272b6e0c70996093c4ca02d5190a8a6e7d9c3dc",
+      "final_sha256": "f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-ui-development-experiences-edi2024.pdf",
+      "pages": 13,
+      "original_sha256": "ba5920c5daa315c9969666d005257039a5bdfae2768b1cf004639522b2bc307a",
+      "final_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "pages": 13,
+      "original_sha256": "6c9209104bddb9be986c3d94386247b74d81e371809a666a098b4891b4f6116e",
+      "final_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-arboretum-and-arbility-uist2018.pdf",
+      "pages": 13,
+      "original_sha256": "27a0940b4f20ce1d1c072b533639ec695687583f933f9a6c63675d45e1d6acfa",
+      "final_sha256": "e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "pages": 16,
+      "original_sha256": "1912c34aaa9b2e364f7128c308a127f67db2002ed137319b0b2b674806bae43e",
+      "final_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "pages": 10,
+      "original_sha256": "a24ab304666787b418cf94e2035f056da508b63700e1ac57acb78499cc6cebea",
+      "final_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-vrgit-chi2023.pdf",
+      "pages": 14,
+      "original_sha256": "af586c49d702c31946e6bbc456784a2cd2b8439b3ef8ac34b5f41be8d9424dbc",
+      "final_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pages": 10,
+      "original_sha256": "b4291b5545e933cbb41a8553950832cbb4d100158d40564ca5aecd4794e452c7",
+      "final_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+      "pages": 12,
+      "original_sha256": "3ba409a4890fc6b6748d9a7c89a600e1bfad20381bbd3e2c9b7ebb0bdddc2527",
+      "final_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+      "pages": 30,
+      "original_sha256": "1a5381f60750a8fdb8e514998d599af4ec7cd1683f4eab00eb2f6c63833bc256",
+      "final_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pages": 7,
+      "original_sha256": "d63d599a4e916a34e9c2331fca8e6839b867b3276a870d467b3cf3839125bf2f",
+      "final_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-expresso-vlhcc2018.pdf",
+      "pages": 9,
+      "original_sha256": "ace86fe78ffdd580a38c3d6ca95ad57255beb42f3d541242733576a6508c4f68",
+      "final_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+      "pages": 4,
+      "original_sha256": "c3d46cba95b1c9f0da9c4d15cdc09b28c2389f62ba86b5cfa80018b5bd814af5",
+      "final_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-editrail-uist2026.pdf",
+      "pages": 19,
+      "original_sha256": "0a7bf1d04f03cf2c3b8f20cee173da24cdaefa3a44709dc66346c58fbe864dcf",
+      "final_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+      "pages": 5,
+      "original_sha256": "6d957f422a499c339715feb3c93d6bada50b98ba344467c9d53e166415c28832",
+      "final_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "pages": 12,
+      "original_sha256": "5d27080f3c4f2d354555d7bf48a4d9c7615cbec2f3426c9b022c9d9ac61d5c97",
+      "final_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "pages": 12,
+      "original_sha256": "440bed0cb2e20bbbb7605f270d3f6b91328e1c5ed5f89a049e7fc1f6bc78ed56",
+      "final_sha256": "6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-convomap-vlhcc2025.pdf",
+      "pages": 12,
+      "original_sha256": "1eef33edb045e5bbe887532ea44935491808fcd8011718470289327e5028ccbe",
+      "final_sha256": "f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "pages": 10,
+      "original_sha256": "e27c6e1ab0657c756df8f7e9a71f47ef8b56b27bfdb2f8b94737fd01ed024dab",
+      "final_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "pages": 4,
+      "original_sha256": "9eb24b856024b5ef00aad01c58c58623e3ecd3391dbd967b985ab9487edf0c49",
+      "final_sha256": "6c16f896b866c678cc7dbba0de40dbdf88a2369faa2c47f10970e1e7853d4d3e",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "pages": 6,
+      "original_sha256": "097168405e0bef82deaefe3190b19844f06ea566450aaabdcc2068ecda4943ae",
+      "final_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-edbooks-preprint2024.pdf",
+      "pages": 23,
+      "original_sha256": "ed364499b19b728078899ab9a2d91e38dde3965b736c1c9598aaf435c758bada",
+      "final_sha256": "47d108a17d438a47343048fe1fccce347dcd1595862ba259f1827433ef269b31",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "pages": 17,
+      "original_sha256": "5d8d0fddc0cd189e9b7076b0918eacfdadb3242956d395f50dc79229c4074d67",
+      "final_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pages": 6,
+      "original_sha256": "ce01f6a87ec7ebb6a5c5942313bf4ec15f573453e435891020baca64e2d1b588",
+      "final_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "pages": 3,
+      "original_sha256": "1e3f6e5672cd6bbac33f086d20328dd7c52c1169684f977b2d275393b2b646e4",
+      "final_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-cflow-ls2024.pdf",
+      "pages": 12,
+      "original_sha256": "f2e87de3903477fd09d25c35a9f902232d448bbb4322452bdd0dd6c6c7da885e",
+      "final_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+      "pages": 2,
+      "original_sha256": "fd4ca5dfa9ca3cdc34a00f39ab239596e53a422e9f05f4e0bfdca751817798f0",
+      "final_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-vrcopilot-uist2024.pdf",
+      "pages": 13,
+      "original_sha256": "e58a6696841754fb6af9459ce894fe63fd6032a3a95b5216569c22aca3251cf4",
+      "final_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pages": 4,
+      "original_sha256": "f05367f2fc82bd8a9cb713b4c324eb22418a93bf7a7bb322a07723808ffd841a",
+      "final_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-colaroid-chi2023.pdf",
+      "pages": 22,
+      "original_sha256": "999e2933b52a8ba2707f51a6f98d1ee990d30404f113c7265fa20cad0eae37a2",
+      "final_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "xu-how-pairing-code-chilbw2023.pdf",
+      "pages": 6,
+      "original_sha256": "50068bd75856ea4804a2868dc7ba0f1f9f661472b157a48d12a4d5905b9e6c57",
+      "final_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-runex-vlhcc2023.pdf",
+      "pages": 9,
+      "original_sha256": "c07c1e823637eb338a394861c414ab8fd2e7a0b2624619b4b81037688b3dde7f",
+      "final_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-vizprog-chi2023.pdf",
+      "pages": 16,
+      "original_sha256": "11ff50280068f1d8381ab81d4777028a34cd7bc67c1bbdb08656dae1ff843850",
+      "final_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+      "pages": 10,
+      "original_sha256": "0e51196a3c19caec08116593e052cde3c1adeda80154e5aa7f5a883449e42d56",
+      "final_sha256": "8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "pages": 14,
+      "original_sha256": "5550dce474761f69fa4496db2d3fcbfa0a46f99bbd7d9f4f1475c67fd62c3d15",
+      "final_sha256": "935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "pages": 24,
+      "original_sha256": "e9dec89cdf12cbd8c25c0e49e19754180c34dfe89fa4245a12ba162ae3ee9cb3",
+      "final_sha256": "aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-edcode-vlhcc2020.pdf",
+      "pages": 5,
+      "original_sha256": "5949c3471f28d1b02872f3d68df1817c3bfc29578db33bbfbcce12a17e1e69fd",
+      "final_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+      "pages": 8,
+      "original_sha256": "9e04b19529d1fdeaaafb2417d25780629a93063bc2ecac987b47da00230e5908",
+      "final_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+      "pages": 13,
+      "original_sha256": "4688fcf63a0265f4a7434e8d80f8b216a9fdda4f377454b42341f3abaa62bb54",
+      "final_sha256": "27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+      "pages": 4,
+      "original_sha256": "ece673aa8cc941ac315e0285741188d06bc629d73372790a476bf72a4d7a2910",
+      "final_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-sifter-imx2020.pdf",
+      "pages": 9,
+      "original_sha256": "7cbe822b6e41e56b9fc5bd3db62ce7161b65149fdbb884a7f01372666d8160b8",
+      "final_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "pages": 6,
+      "original_sha256": "d284442778f2e9dceb0cc11ea3c45afd75660db912e151f1af1681684998e675",
+      "final_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-explore-create-annotate-chi2020.pdf",
+      "pages": 12,
+      "original_sha256": "704c244fcd87f491db17c075d72a6e54bff32aba3e0fb582f9b992e69a6ec306",
+      "final_sha256": "5805ca7d1c5e6da765a55aac0038695291837f7c2b70740699a7a36033e7cb14",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "pages": 13,
+      "original_sha256": "fd63245ee228024e77c9be44b8f00eb6971f03898b5e6a3068c3918add0b8751",
+      "final_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "pages": 12,
+      "original_sha256": "89af5ef8abd9821fbddf64e5b37ee69793e0af7a26851f67540495fe77bc25ff",
+      "final_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "pages": 12,
+      "original_sha256": "d064579ee4dfd91d7a70d73bdffe5ad879e9dcf8404440df0cf1d5e592b8b270",
+      "final_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+      "pages": 4,
+      "original_sha256": "f6ff55c5976d8f9d849c51f2a9f3238da74bf73de9f4d8f1c70c26fae867185f",
+      "final_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "pages": 30,
+      "original_sha256": "35a2f8cf5729b2fe2135701a1ab3c2a285ab150bb6555a3e980430cd2131609c",
+      "final_sha256": "a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pages": 4,
+      "original_sha256": "aefd4495867623a19a399c032656083166896b2b6464279454465086686b1280",
+      "final_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+      "pages": 5,
+      "original_sha256": "fbd63f54d49a6b2168d6ce219f64072060689324f03e50b7dd05456fcedd63ff",
+      "final_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "lin-adasa-uist2018.pdf",
+      "pages": 12,
+      "original_sha256": "3c507e37dac41daede36911169197f6a50401f38746390e3512e6a71e11e1e78",
+      "final_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "pages": 20,
+      "original_sha256": "5e3e2af519e35491cedc8c95afe74690f55a9747a760a629c7bd54683a5c39cb",
+      "final_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+      "pages": 6,
+      "original_sha256": "6309f2136a77786b95a045642628aaf7bac0b13035ed263b6bbebd7a311ce573",
+      "final_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "pages": 12,
+      "original_sha256": "89426f68d93c7d2a937abce1c7f083b193fce4e42f67124fe7974d669ff1a075",
+      "final_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "myers-making-end-user-eud2017.pdf",
+      "pages": 22,
+      "original_sha256": "61e1aceac38b4915c76787a41e1d32883a8c26710d6ed807bc66df6138001203",
+      "final_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-expert-crowd-support-ci2016.pdf",
+      "pages": 4,
+      "original_sha256": "01c4105cac3175e7a51542442c7e13347d14ec26e707acba77057381ae3e425b",
+      "final_sha256": "5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "chen-providing-on-demand-expert-chi2016.pdf",
+      "pages": 13,
+      "original_sha256": "477fa1a89695bc2e29b36a2827cdb8f8e3c6069cd3f952e13d78f3b625a1cd2d",
+      "final_sha256": "01eb3cb3ea1465dd599b16245ac52cf2b1556c2ff3c979c88c9f1e6e299fb9cc",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "pages": 12,
+      "original_sha256": "2525736873c6c25140238d7b7ee79e8cc9921d2ae55d6ddf5df7ab346895fc46",
+      "final_sha256": "2bb575031bcb0950bfded6230a989fb817fc57e635de35c4b1dbaff6049d6937",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pages": 227,
+      "original_sha256": "b435bbcadf06800eab9f7f8bdb13a1ffacda3e51e956be4f52ef89bea38cbfd6",
+      "final_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "pages": 10,
+      "original_sha256": "6657e948a8f109c919945fdbbf969df94ea2fe38f56f3f0c1f2454323d5a1c42",
+      "final_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-euclase-live2013.pdf",
+      "pages": 4,
+      "original_sha256": "d49185a0ebea337111125d7130e87192799b20bd9d08bf5d84999266e8d6ed95",
+      "final_sha256": "da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-zoomboard-chi2013.pdf",
+      "pages": 4,
+      "original_sha256": "8c76d892016036cbb00f8f77ea066ac62041c19f8cd0a85429548c9425c2f0b1",
+      "final_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-codelets-chi2012.pdf",
+      "pages": 10,
+      "original_sha256": "008a065cf2b2cd8f50c641bb5e6e679d10254a0161cd4569b46338ac2007e9d9",
+      "final_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-constraintjs-uist2012.pdf",
+      "pages": 10,
+      "original_sha256": "f8183468716fffb5410d98de53b0b984d13e503730b85a25a2d8187557643f92",
+      "final_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "pages": 11,
+      "original_sha256": "f7b56b449a70df1b57127b7bc5af51d7b61fb85ba2c7db7ea6ba41528bf54afa",
+      "final_sha256": "8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+      "pages": 4,
+      "original_sha256": "89e436cb24bd4ab62b361a57ccdc09b2af978e3debabd27f603b74604d7d93f8",
+      "final_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-playbook-iseud2011.pdf",
+      "pages": 6,
+      "original_sha256": "558abf2319641d2434e231eaecfc3c05e2b27572ed3f65fa67ff975122c14988",
+      "final_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+      "pages": 2,
+      "original_sha256": "dce35b198e6c9aafe9a6b4124783fedb57434795c5f9663e57460df5358f7635",
+      "final_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "ozenc-how-support-designers-chi2010.pdf",
+      "pages": 10,
+      "original_sha256": "1bfa1067ca15653d45a7c5c85f36d721e2b2b061857bdaa20a036a7d43a05a0d",
+      "final_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+      "pages": 2,
+      "original_sha256": "d024ab68440c985d3a124ff279c4527792a6b31fbe80141529825ed0ccb4d15c",
+      "final_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pages": 4,
+      "original_sha256": "046e6c03ac9f8177d5a6763851503bf7defdcd4ff7b4ed9da39923ed5a9e7e0f",
+      "final_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+      "pages": 4,
+      "original_sha256": "be71ecc1b8a9816cfffef896d325c7e9585216a520b60b7f390521bc8da8629f",
+      "final_sha256": "34507e475d1f10c3013b80540015baa31b8f825f80eb70de835f607c8666ef73",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    },
+    {
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "pages": 48,
+      "original_sha256": "954e0997eb6c6aaa5606c5413c0d6ee379ec9c039c4cf3093c833bb4f1320b2b",
+      "final_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+      "mupdf_144dpi_pixel_identical": true,
+      "poppler_144dpi_pixel_identical": true,
+      "page_geometry_identical": true
+    }
+  ]
+}
