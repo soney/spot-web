@@ -1284,6 +1284,9 @@
     - rebecca_krosnick
   venue: vl_hcc_2018
   pdf: pdfs/krosnick-expresso-vlhcc2018.pdf
+  links:
+    - url: /assets/supplements/expresso-table-i.html
+      description: Table I (HTML)
 - id: codeon_on_demand_software_development_assistance_2017
   title: "Codeon: On-Demand Software Development Assistance"
   doi: 10.1145/3025453.3025972
@@ -1666,3 +1669,6 @@
     - steve_oney
   venue: mit_2008
   pdf: pdfs/oney-natural-language-search-mit2008.pdf
+  links:
+    - url: /assets/supplements/mit-thesis-xml-example.html
+      description: XML appendix (HTML)

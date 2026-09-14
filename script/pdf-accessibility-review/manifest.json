@@ -1,0 +1,1332 @@
+{
+  "review_date": "2026-09-14",
+  "scope": "73 publication PDFs; source pages and native tag trees reviewed, repaired, and validated.",
+  "files": 73,
+  "pages": 1011,
+  "custom_structure_passes": 73,
+  "verapdf_ua1_profile_passes": 2,
+  "missing_pdfua_identification_only": 71,
+  "other_verapdf_ua1_rule_failures": 0,
+  "table_groups_added": 105,
+  "screen_reader_testing": "Automated real Orca 50.2 / Firefox 155.0.1 integration on exact final Codelets, Expresso and Codeon samples; HTML companions tested, including XML reflow at500% zoom. Not an all-page screen-reader user test or certification.",
+  "documents": [
+    {
+      "file": "im-improving-advising-relationships-chiea2024.pdf",
+      "title": "Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction",
+      "pages": 4,
+      "original_sha256": "ca6e3340fe25411dcbd8ed2bc272b6e0c70996093c4ca02d5190a8a6e7d9c3dc",
+      "source_sha256": "ca6e3340fe25411dcbd8ed2bc272b6e0c70996093c4ca02d5190a8a6e7d9c3dc",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/im-improving-advising-relationships-chiea2024.pdf"
+    },
+    {
+      "file": "pandey-ui-development-experiences-edi2024.pdf",
+      "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
+      "pages": 13,
+      "original_sha256": "ba5920c5daa315c9969666d005257039a5bdfae2768b1cf004639522b2bc307a",
+      "source_sha256": "ba5920c5daa315c9969666d005257039a5bdfae2768b1cf004639522b2bc307a",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": true,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandey-ui-development-experiences-edi2024.pdf"
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "title": "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture",
+      "pages": 13,
+      "original_sha256": "6c9209104bddb9be986c3d94386247b74d81e371809a666a098b4891b4f6116e",
+      "source_sha256": "6c9209104bddb9be986c3d94386247b74d81e371809a666a098b4891b4f6116e",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-think-aloud-computing-chi2021.pdf"
+    },
+    {
+      "file": "oney-arboretum-and-arbility-uist2018.pdf",
+      "title": "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture",
+      "pages": 13,
+      "original_sha256": "27a0940b4f20ce1d1c072b533639ec695687583f933f9a6c63675d45e1d6acfa",
+      "source_sha256": "27a0940b4f20ce1d1c072b533639ec695687583f933f9a6c63675d45e1d6acfa",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-arboretum-and-arbility-uist2018.pdf"
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "title": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
+      "pages": 16,
+      "original_sha256": "1912c34aaa9b2e364f7128c308a127f67db2002ed137319b0b2b674806bae43e",
+      "source_sha256": "1912c34aaa9b2e364f7128c308a127f67db2002ed137319b0b2b674806bae43e",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": true,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-codestream-chi2026.pdf"
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "title": "Multi-Click: Cross-Tab Web Automation via Action Generalization",
+      "pages": 10,
+      "original_sha256": "a24ab304666787b418cf94e2035f056da508b63700e1ac57acb78499cc6cebea",
+      "source_sha256": "a24ab304666787b418cf94e2035f056da508b63700e1ac57acb78499cc6cebea",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-multi-click-uist2025.pdf"
+    },
+    {
+      "file": "zhang-vrgit-chi2023.pdf",
+      "title": "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality",
+      "pages": 14,
+      "original_sha256": "af586c49d702c31946e6bbc456784a2cd2b8439b3ef8ac34b5f41be8d9424dbc",
+      "source_sha256": "af586c49d702c31946e6bbc456784a2cd2b8439b3ef8ac34b5f41be8d9424dbc",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-vrgit-chi2023.pdf"
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "title": "ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization",
+      "pages": 10,
+      "original_sha256": "b4291b5545e933cbb41a8553950832cbb4d100158d40564ca5aecd4794e452c7",
+      "source_sha256": "b4291b5545e933cbb41a8553950832cbb4d100158d40564ca5aecd4794e452c7",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-parammacros-vlhcc2022.pdf"
+    },
+    {
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+      "title": "Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts",
+      "pages": 12,
+      "original_sha256": "3ba409a4890fc6b6748d9a7c89a600e1bfad20381bbd3e2c9b7ebb0bdddc2527",
+      "source_sha256": "3ba409a4890fc6b6748d9a7c89a600e1bfad20381bbd3e2c9b7ebb0bdddc2527",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-understanding-challenges-needs-vlhcc2021.pdf"
+    },
+    {
+      "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+      "title": "Understanding Accessibility and Collaboration in Programming for People with Visual Impairments",
+      "pages": 30,
+      "original_sha256": "1a5381f60750a8fdb8e514998d599af4ec7cd1683f4eab00eb2f6c63833bc256",
+      "source_sha256": "1a5381f60750a8fdb8e514998d599af4ec7cd1683f4eab00eb2f6c63833bc256",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandey-understanding-accessibility-collaboration-cscw2021.pdf"
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "title": "What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle",
+      "pages": 7,
+      "original_sha256": "d63d599a4e916a34e9c2331fca8e6839b867b3276a870d467b3cf3839125bf2f",
+      "source_sha256": "d63d599a4e916a34e9c2331fca8e6839b867b3276a870d467b3cf3839125bf2f",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/wang-what-makes-well-documented-chiea2021.pdf"
+    },
+    {
+      "file": "krosnick-expresso-vlhcc2018.pdf",
+      "title": "Expresso: Building Responsive Interfaces with Keyframes",
+      "pages": 9,
+      "original_sha256": "ace86fe78ffdd580a38c3d6ca95ad57255beb42f3d541242733576a6508c4f68",
+      "source_sha256": "ace86fe78ffdd580a38c3d6ca95ad57255beb42f3d541242733576a6508c4f68",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-expresso-vlhcc2018.pdf"
+    },
+    {
+      "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+      "title": "Creativity Support in Authoring and Backtracking",
+      "pages": 4,
+      "original_sha256": "c3d46cba95b1c9f0da9c4d15cdc09b28c2389f62ba86b5cfa80018b5bd814af5",
+      "source_sha256": "c3d46cba95b1c9f0da9c4d15cdc09b28c2389f62ba86b5cfa80018b5bd814af5",
+      "selected_source_kind": "local-tagged",
+      "selected_source_url": null,
+      "final_sha256": "1da17e8c5711eee21f3b7df2dec23dd801bca8cad9a3bca9772ffa1c1511a426",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf"
+    },
+    {
+      "file": "zhang-editrail-uist2026.pdf",
+      "title": "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code",
+      "pages": 19,
+      "original_sha256": "0a7bf1d04f03cf2c3b8f20cee173da24cdaefa3a44709dc66346c58fbe864dcf",
+      "source_sha256": "0a7bf1d04f03cf2c3b8f20cee173da24cdaefa3a44709dc66346c58fbe864dcf",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "malformed_graphics_numbers_normalized",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-editrail-uist2026.pdf"
+    },
+    {
+      "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+      "title": "Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation",
+      "pages": 5,
+      "original_sha256": "6d957f422a499c339715feb3c93d6bada50b98ba344467c9d53e166415c28832",
+      "source_sha256": "6d957f422a499c339715feb3c93d6bada50b98ba344467c9d53e166415c28832",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhou-simulating-human-cursor-chiposters2026.pdf"
+    },
+    {
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "title": "Co-Advisor: Learning Programming Strategies in Context",
+      "pages": 12,
+      "original_sha256": "5d27080f3c4f2d354555d7bf48a4d9c7615cbec2f3426c9b022c9d9ac61d5c97",
+      "source_sha256": "5d27080f3c4f2d354555d7bf48a4d9c7615cbec2f3426c9b022c9d9ac61d5c97",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/arab-co-advisor-vlhcc2025.pdf"
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "title": "SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises",
+      "pages": 12,
+      "original_sha256": "440bed0cb2e20bbbb7605f270d3f6b91328e1c5ed5f89a049e7fc1f6bc78ed56",
+      "source_sha256": "440bed0cb2e20bbbb7605f270d3f6b91328e1c5ed5f89a049e7fc1f6bc78ed56",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page(s) 9: Figure6 labels its darkest legend category NotUsed despite high corresponding mean ratings. Alternative preserves numeric values and explicitly notes this source ambiguity."
+      ],
+      "path": "assets/pdfs/yang-spark-vlhcc2025.pdf"
+    },
+    {
+      "file": "zhang-convomap-vlhcc2025.pdf",
+      "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+      "pages": 12,
+      "original_sha256": "1eef33edb045e5bbe887532ea44935491808fcd8011718470289327e5028ccbe",
+      "source_sha256": "1eef33edb045e5bbe887532ea44935491808fcd8011718470289327e5028ccbe",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-convomap-vlhcc2025.pdf"
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "title": "Understanding Challenges and Needs of Using AI in Web Automation Systems",
+      "pages": 10,
+      "original_sha256": "e27c6e1ab0657c756df8f7e9a71f47ef8b56b27bfdb2f8b94737fd01ed024dab",
+      "source_sha256": "e27c6e1ab0657c756df8f7e9a71f47ef8b56b27bfdb2f8b94737fd01ed024dab",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-understanding-challenges-needs-chi2025compui.pdf"
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "title": "Understanding And Guiding Student-AI Interaction In Future Programming Education",
+      "pages": 4,
+      "original_sha256": "9eb24b856024b5ef00aad01c58c58623e3ecd3391dbd967b985ab9487edf0c49",
+      "source_sha256": "9eb24b856024b5ef00aad01c58c58623e3ecd3391dbd967b985ab9487edf0c49",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "01b7e57a169f23798406610e81b56bb9dc7bdc4bb5365e40cc520543a98b4993",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "reviewed_visual_repair"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-understanding-guiding-student-ai-chi2025aeai.pdf"
+    },
+    {
+      "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "title": "ScrapeViz: Hierarchical Representations for Web Scraping Macros",
+      "pages": 6,
+      "original_sha256": "097168405e0bef82deaefe3190b19844f06ea566450aaabdcc2068ecda4943ae",
+      "source_sha256": "097168405e0bef82deaefe3190b19844f06ea566450aaabdcc2068ecda4943ae",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-scrapeviz-vlhcc2024.pdf"
+    },
+    {
+      "file": "oney-edbooks-preprint2024.pdf",
+      "title": "EDBooks: AI-Enhanced Interactive Narratives for Programming Education",
+      "pages": 23,
+      "original_sha256": "ed364499b19b728078899ab9a2d91e38dde3965b736c1c9598aaf435c758bada",
+      "source_sha256": "ed364499b19b728078899ab9a2d91e38dde3965b736c1c9598aaf435c758bada",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "47d108a17d438a47343048fe1fccce347dcd1595862ba259f1827433ef269b31",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-edbooks-preprint2024.pdf"
+    },
+    {
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "title": "Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments",
+      "pages": 18,
+      "original_sha256": "5d8d0fddc0cd189e9b7076b0918eacfdadb3242956d395f50dc79229c4074d67",
+      "source_sha256": "1ea2301d236268724a6f85226eed27931e4422739158d77612ab0949e12ef182",
+      "selected_source_kind": "freshly tagged intact author version",
+      "selected_source_url": "https://andrewbegel.com/papers/pandey-chi24.pdf",
+      "final_sha256": "630acebab6b70f376082f2074fe17032effa86d8eeff43dced04ec2bc1df6320",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "intact_18_page_author_version_freshly_tagged",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandey-inclusive-source-code-chi2024.pdf"
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "title": "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks",
+      "pages": 6,
+      "original_sha256": "ce01f6a87ec7ebb6a5c5942313bf4ec15f573453e435891020baca64e2d1b588",
+      "source_sha256": "ce01f6a87ec7ebb6a5c5942313bf4ec15f573453e435891020baca64e2d1b588",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/wang-dont-step-on-my-toes-ideworkshop2024.pdf"
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "title": "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring",
+      "pages": 3,
+      "original_sha256": "1e3f6e5672cd6bbac33f086d20328dd7c52c1169684f977b2d275393b2b646e4",
+      "source_sha256": "1e3f6e5672cd6bbac33f086d20328dd7c52c1169684f977b2d275393b2b646e4",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/yang-vizcode-lsdemos2024.pdf"
+    },
+    {
+      "file": "zhang-cflow-ls2024.pdf",
+      "title": "CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+      "pages": 12,
+      "original_sha256": "f2e87de3903477fd09d25c35a9f902232d448bbb4322452bdd0dd6c6c7da885e",
+      "source_sha256": "f2e87de3903477fd09d25c35a9f902232d448bbb4322452bdd0dd6c6c7da885e",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-cflow-ls2024.pdf"
+    },
+    {
+      "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+      "title": "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+      "pages": 2,
+      "original_sha256": "fd4ca5dfa9ca3cdc34a00f39ab239596e53a422e9f05f4e0bfdca751817798f0",
+      "source_sha256": "fd4ca5dfa9ca3cdc34a00f39ab239596e53a422e9f05f4e0bfdca751817798f0",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-demonstration-of-cflow-lsdemos2024.pdf"
+    },
+    {
+      "file": "zhang-vrcopilot-uist2024.pdf",
+      "title": "VRCopilot: Authoring 3D Layouts with Generative Models in VR",
+      "pages": 13,
+      "original_sha256": "e58a6696841754fb6af9459ce894fe63fd6032a3a95b5216569c22aca3251cf4",
+      "source_sha256": "1b43de154a1a04622fe43dc9763e3fd35c5132d395fefdc62f79a0bec73e0c78",
+      "selected_source_kind": "web-alternative",
+      "selected_source_url": "https://guoanhong.com/papers/UIST24-VRCopilot.pdf",
+      "final_sha256": "7954ac8e019ee9fd05df4e84cc97375ba08db7c1a6050f52b806a69ec9e8b83d",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-vrcopilot-uist2024.pdf"
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "title": "Promises and Pitfalls of Using LLMs for Scraping Web UIs",
+      "pages": 4,
+      "original_sha256": "f05367f2fc82bd8a9cb713b4c324eb22418a93bf7a7bb322a07723808ffd841a",
+      "source_sha256": "f05367f2fc82bd8a9cb713b4c324eb22418a93bf7a7bb322a07723808ffd841a",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-promises-pitfalls-llms-chi2023compui.pdf"
+    },
+    {
+      "file": "wang-colaroid-chi2023.pdf",
+      "title": "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials",
+      "pages": 22,
+      "original_sha256": "999e2933b52a8ba2707f51a6f98d1ee990d30404f113c7265fa20cad0eae37a2",
+      "source_sha256": "999e2933b52a8ba2707f51a6f98d1ee990d30404f113c7265fa20cad0eae37a2",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/wang-colaroid-chi2023.pdf"
+    },
+    {
+      "file": "xu-how-pairing-code-chilbw2023.pdf",
+      "title": "How Pairing by Code Similarity Influences Discussions in Peer Learning",
+      "pages": 6,
+      "original_sha256": "50068bd75856ea4804a2868dc7ba0f1f9f661472b157a48d12a4d5905b9e6c57",
+      "source_sha256": "50068bd75856ea4804a2868dc7ba0f1f9f661472b157a48d12a4d5905b9e6c57",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/xu-how-pairing-code-chilbw2023.pdf"
+    },
+    {
+      "file": "zhang-runex-vlhcc2023.pdf",
+      "title": "RunEx: Augmenting Regular-Expression Code Search with Runtime Values",
+      "pages": 9,
+      "original_sha256": "c07c1e823637eb338a394861c414ab8fd2e7a0b2624619b4b81037688b3dde7f",
+      "source_sha256": "c07c1e823637eb338a394861c414ab8fd2e7a0b2624619b4b81037688b3dde7f",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-runex-vlhcc2023.pdf"
+    },
+    {
+      "file": "zhang-vizprog-chi2023.pdf",
+      "title": "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress",
+      "pages": 16,
+      "original_sha256": "11ff50280068f1d8381ab81d4777028a34cd7bc67c1bbdb08656dae1ff843850",
+      "source_sha256": "11ff50280068f1d8381ab81d4777028a34cd7bc67c1bbdb08656dae1ff843850",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-vizprog-chi2023.pdf"
+    },
+    {
+      "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+      "title": "Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments",
+      "pages": 10,
+      "original_sha256": "0e51196a3c19caec08116593e052cde3c1adeda80154e5aa7f5a883449e42d56",
+      "source_sha256": "1dbfb194dce06e47416c1a6dab253a28fa85cfd5d223315861752ffd53653e48",
+      "selected_source_kind": "web-alternative",
+      "selected_source_url": "https://pandeymauli.github.io/research/documents/pandey_vlhcc_fullpaper_2022.pdf",
+      "final_sha256": "0c0930f0adb61d4a542dd4f759ac36969cb0c0bee68e1584e81816cc6526913d",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf"
+    },
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "title": "CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing",
+      "pages": 14,
+      "original_sha256": "5550dce474761f69fa4496db2d3fcbfa0a46f99bbd7d9f4f1475c67fd62c3d15",
+      "source_sha256": "5550dce474761f69fa4496db2d3fcbfa0a46f99bbd7d9f4f1475c67fd62c3d15",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-cocapture-chi2021.pdf"
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "title": "PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises",
+      "pages": 24,
+      "original_sha256": "e9dec89cdf12cbd8c25c0e49e19754180c34dfe89fa4245a12ba162ae3ee9cb3",
+      "source_sha256": "e9dec89cdf12cbd8c25c0e49e19754180c34dfe89fa4245a12ba162ae3ee9cb3",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "371c95fbb4d36fa98ed025cac8ca98e644e96df92f70b7a8ac0d7177b25e5cca",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "reviewed_visual_repair",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/wang-puzzleme-cscw2021.pdf"
+    },
+    {
+      "file": "chen-edcode-vlhcc2020.pdf",
+      "title": "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education",
+      "pages": 5,
+      "original_sha256": "5949c3471f28d1b02872f3d68df1817c3bfc29578db33bbfbcce12a17e1e69fd",
+      "source_sha256": "5949c3471f28d1b02872f3d68df1817c3bfc29578db33bbfbcce12a17e1e69fd",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-edcode-vlhcc2020.pdf"
+    },
+    {
+      "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+      "title": "A Hybrid Crowd-Machine Workflow for Program Synthesis",
+      "pages": 8,
+      "original_sha256": "9e04b19529d1fdeaaafb2417d25780629a93063bc2ecac987b47da00230e5908",
+      "source_sha256": "9e04b19529d1fdeaaafb2417d25780629a93063bc2ecac987b47da00230e5908",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf"
+    },
+    {
+      "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+      "title": "Improving Crowd-Supported GUI Testing with Structural Guidance",
+      "pages": 13,
+      "original_sha256": "4688fcf63a0265f4a7434e8d80f8b216a9fdda4f377454b42341f3abaa62bb54",
+      "source_sha256": "573644636377440ae4ea9041d7975272dbbb2955bd81c48e94658d4a9b5e0ce5",
+      "selected_source_kind": "web-alternative",
+      "selected_source_url": "https://chensivan.github.io/papers/CHI2020.pdf",
+      "final_sha256": "aa68699807900cb60639b3a28c13d5099bd2ba5215cebb57210af3fa7fabef11",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-improving-crowd-supported-gui-chi2020.pdf"
+    },
+    {
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+      "title": "On-Demand Collaboration in Programming",
+      "pages": 4,
+      "original_sha256": "ece673aa8cc941ac315e0285741188d06bc629d73372790a476bf72a4d7a2910",
+      "source_sha256": "ece673aa8cc941ac315e0285741188d06bc629d73372790a476bf72a4d7a2910",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [
+        "Page(s) 1: Source/editorial issue: The first-page ACM reference and copyright block retains 2018 template metadata, including “ACM Symposium on Neural Gaze Detection” and a Woodstock venue/date, despite the New Future of Work ’20 event title. A corrected author or publisher export is needed."
+      ],
+      "path": "assets/pdfs/chen-on-demand-collaboration-programming-msnfws2020.pdf"
+    },
+    {
+      "file": "chen-sifter-imx2020.pdf",
+      "title": "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale",
+      "pages": 9,
+      "original_sha256": "7cbe822b6e41e56b9fc5bd3db62ce7161b65149fdbb884a7f01372666d8160b8",
+      "source_sha256": "7cbe822b6e41e56b9fc5bd3db62ce7161b65149fdbb884a7f01372666d8160b8",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-sifter-imx2020.pdf"
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "title": "Toward Providing Live Feedback in Web Automation IDEs",
+      "pages": 6,
+      "original_sha256": "d284442778f2e9dceb0cc11ea3c45afd75660db912e151f1af1681684998e675",
+      "source_sha256": "d284442778f2e9dceb0cc11ea3c45afd75660db912e151f1af1681684998e675",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/krosnick-providing-live-feedback-live2020.pdf"
+    },
+    {
+      "file": "pandey-explore-create-annotate-chi2020.pdf",
+      "title": "Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People",
+      "pages": 12,
+      "original_sha256": "704c244fcd87f491db17c075d72a6e54bff32aba3e0fb582f9b992e69a6ec306",
+      "source_sha256": "4d8ac8a1ac7d99a8885035017f46116e90bf90771ac1f6a3fb9883e5b11707ca",
+      "selected_source_kind": "web-alternative",
+      "selected_source_url": "https://pandeymauli.github.io/research/documents/pandey_chi_fullpaper_2020.pdf",
+      "final_sha256": "381d5601ca9efaa96046b045f8bc7ee5bfa03b5a4183963b8ed6dc7e16991dfd",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandey-explore-create-annotate-chi2020.pdf"
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "title": "Callisto: Capturing the \"Why\" by Connecting Conversations with Computational Narratives",
+      "pages": 13,
+      "original_sha256": "fd63245ee228024e77c9be44b8f00eb6971f03898b5e6a3068c3918add0b8751",
+      "source_sha256": "3da8ff50506645c0e31d5d627f885cc8b98ac1a900823cdbc37c479c884ef3e7",
+      "selected_source_kind": "web-alternative",
+      "selected_source_url": "https://www.zihanwu.com/files/callisto.pdf",
+      "final_sha256": "55ce6e7695d39c1a1df85634d62945585cb1981be9c060deb5c6670b141662c3",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/wang-callisto-chi2020.pdf"
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "title": "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality",
+      "pages": 12,
+      "original_sha256": "89af5ef8abd9821fbddf64e5b37ee69793e0af7a26851f67540495fe77bc25ff",
+      "source_sha256": "89af5ef8abd9821fbddf64e5b37ee69793e0af7a26851f67540495fe77bc25ff",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-flowmatic-uist2020.pdf"
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "title": "Implementing Multi-Touch Gestures with Touch Groups and Cross Events",
+      "pages": 12,
+      "original_sha256": "d064579ee4dfd91d7a70d73bdffe5ad879e9dcf8404440df0cf1d5e592b8b270",
+      "source_sha256": "d064579ee4dfd91d7a70d73bdffe5ad879e9dcf8404440df0cf1d5e592b8b270",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "missing_fonts_embedded",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page(s) 4,6: Source/editorial issue: Subsection number 3.2.2 is used for “Greedy and Non-Greedy Touch Groups” on page 4 and again for “Controlling for External Factors” on page 6. The duplicated source numbering is preserved and needs author correction."
+      ],
+      "path": "assets/pdfs/oney-implementing-multi-touch-gestures-chi2019.pdf"
+    },
+    {
+      "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+      "title": "Exploring the Tracking Needs and Practices of  Recreational Athletes.",
+      "pages": 4,
+      "original_sha256": "f6ff55c5976d8f9d849c51f2a9f3238da74bf73de9f4d8f1c70c26fae867185f",
+      "source_sha256": "f6ff55c5976d8f9d849c51f2a9f3238da74bf73de9f4d8f1c70c26fae867185f",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page(s) 1,2,3,4: Source/editorial issue: The document retains the draft venue/date line “Woodstock ’18, June 03–05, 2018, Woodstock, NY” on all four pages, despite the 2019 publication record. A corrected author or publisher export is needed."
+      ],
+      "path": "assets/pdfs/pandey-exploring-tracking-needs-pervasivehealth2019.pdf"
+    },
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "title": "How Data Scientists Use Computational Notebooks for Real-Time Collaboration",
+      "pages": 30,
+      "original_sha256": "35a2f8cf5729b2fe2135701a1ab3c2a285ab150bb6555a3e980430cd2131609c",
+      "source_sha256": "35a2f8cf5729b2fe2135701a1ab3c2a285ab150bb6555a3e980430cd2131609c",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page(s) 21: Source/editorial issue: Table 5’s final Non-shared standard-deviation value is printed as “0.l3” with a lowercase letter l. The source value is preserved; the author should confirm and correct the intended number."
+      ],
+      "path": "assets/pdfs/wang-how-data-scientists-cscw2019.pdf"
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "title": "Redesigning Notebooks for Data Science Education",
+      "pages": 4,
+      "original_sha256": "aefd4495867623a19a399c032656083166896b2b6464279454465086686b1280",
+      "source_sha256": "aefd4495867623a19a399c032656083166896b2b6464279454465086686b1280",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [
+        "Page(s) 4: Source/editorial issue: Reference 6 visibly prints the malformed author name “AndrÃľs Monroy-HernÃąndez” in place of Andrés Monroy-Hernández. This character-encoding defect is in the source’s printed text and needs source correction."
+      ],
+      "path": "assets/pdfs/wang-redesigning-notebooks-data-husdat2019.pdf"
+    },
+    {
+      "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+      "title": "Studying the Benefits and Challenges of Immersive Dataflow Programming",
+      "pages": 5,
+      "original_sha256": "fbd63f54d49a6b2168d6ce219f64072060689324f03e50b7dd05456fcedd63ff",
+      "source_sha256": "fbd63f54d49a6b2168d6ce219f64072060689324f03e50b7dd05456fcedd63ff",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/zhang-studying-benefits-challenges-vlhcc2019.pdf"
+    },
+    {
+      "file": "lin-adasa-uist2018.pdf",
+      "title": "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features",
+      "pages": 12,
+      "original_sha256": "3c507e37dac41daede36911169197f6a50401f38746390e3512e6a71e11e1e78",
+      "source_sha256": "3c507e37dac41daede36911169197f6a50401f38746390e3512e6a71e11e1e78",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/lin-adasa-uist2018.pdf"
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "title": "Creating Guided Code Explanations with chat.codes",
+      "pages": 20,
+      "original_sha256": "5e3e2af519e35491cedc8c95afe74690f55a9747a760a629c7bd54683a5c39cb",
+      "source_sha256": "5e3e2af519e35491cedc8c95afe74690f55a9747a760a629c7bd54683a5c39cb",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [
+        "Page(s) 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20: Source/editorial issue: The chat.codes draft retains placeholder ACM publication metadata: page 1 gives January 2010 and DOI 0000001.0000001, and the January 2010 publication footer repeats throughout the 20 pages. This conflicts with the 2018 publication record; a corrected author or publisher export is needed."
+      ],
+      "path": "assets/pdfs/oney-creating-guided-code-cscw2018.pdf"
+    },
+    {
+      "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+      "title": "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques",
+      "pages": 6,
+      "original_sha256": "6309f2136a77786b95a045642628aaf7bac0b13035ed263b6bbebd7a311ce573",
+      "source_sha256": "6309f2136a77786b95a045642628aaf7bac0b13035ed263b6bbebd7a311ce573",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/spinelli-attention-patterns-for-code-animations-px182018.pdf"
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "title": "Codeon: On-Demand Software Development Assistance",
+      "pages": 12,
+      "original_sha256": "89426f68d93c7d2a937abce1c7f083b193fce4e42f67124fe7974d669ff1a075",
+      "source_sha256": "89426f68d93c7d2a937abce1c7f083b193fce4e42f67124fe7974d669ff1a075",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page(s) 7: Source/editorial issue: Table 4’s caption says Codeon system-active time is longer, while the table reports 165.8 seconds for Codeon versus 344.4 for the control. The author should reconcile the caption with the values; both source wording and values are preserved."
+      ],
+      "path": "assets/pdfs/chen-codeon-chi2017.pdf"
+    },
+    {
+      "file": "myers-making-end-user-eud2017.pdf",
+      "title": "Making End User Development More Natural",
+      "pages": 22,
+      "original_sha256": "61e1aceac38b4915c76787a41e1d32883a8c26710d6ed807bc66df6138001203",
+      "source_sha256": "61e1aceac38b4915c76787a41e1d32883a8c26710d6ed807bc66df6138001203",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/myers-making-end-user-eud2017.pdf"
+    },
+    {
+      "file": "chen-expert-crowd-support-ci2016.pdf",
+      "title": "Expert Crowd Support Systems for Software Developers",
+      "pages": 4,
+      "original_sha256": "01c4105cac3175e7a51542442c7e13347d14ec26e707acba77057381ae3e425b",
+      "source_sha256": "01c4105cac3175e7a51542442c7e13347d14ec26e707acba77057381ae3e425b",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-expert-crowd-support-ci2016.pdf"
+    },
+    {
+      "file": "chen-providing-on-demand-expert-chi2016.pdf",
+      "title": "Towards Providing On-Demand Expert Support for Software Developers",
+      "pages": 13,
+      "original_sha256": "477fa1a89695bc2e29b36a2827cdb8f8e3c6069cd3f952e13d78f3b625a1cd2d",
+      "source_sha256": "477fa1a89695bc2e29b36a2827cdb8f8e3c6069cd3f952e13d78f3b625a1cd2d",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "01eb3cb3ea1465dd599b16245ac52cf2b1556c2ff3c979c88c9f1e6e299fb9cc",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/chen-providing-on-demand-expert-chi2016.pdf"
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "title": "CodeMend: Assisting Interactive Programming with Bimodal Embedding",
+      "pages": 12,
+      "original_sha256": "2525736873c6c25140238d7b7ee79e8cc9921d2ae55d6ddf5df7ab346895fc46",
+      "source_sha256": "2525736873c6c25140238d7b7ee79e8cc9921d2ae55d6ddf5df7ab346895fc46",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "2bb575031bcb0950bfded6230a989fb817fc57e635de35c4b1dbaff6049d6937",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/rong-codemend-uist2016.pdf"
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "title": "Expressing Interactivity with States and Constraints",
+      "pages": 227,
+      "original_sha256": "b435bbcadf06800eab9f7f8bdb13a1ffacda3e51e956be4f52ef89bea38cbfd6",
+      "source_sha256": "b435bbcadf06800eab9f7f8bdb13a1ffacda3e51e956be4f52ef89bea38cbfd6",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "6020b45fa24b16503ea0abf0d2c9bfdf40cb367d0dd3afba0e9bc747a994156d",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "reviewed_visual_repair",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page29 has a broken source cross-reference: “Error! Reference source not found.” The intended target requires a source correction."
+      ],
+      "path": "assets/pdfs/oney-expressing-interactivity-states-cmu2015.pdf"
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "title": "InterState: A Language and Environment for Expressing Interface Behavior",
+      "pages": 10,
+      "original_sha256": "6657e948a8f109c919945fdbbf969df94ea2fe38f56f3f0c1f2454323d5a1c42",
+      "source_sha256": "6657e948a8f109c919945fdbbf969df94ea2fe38f56f3f0c1f2454323d5a1c42",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-interstate-uist2014.pdf"
+    },
+    {
+      "file": "oney-euclase-live2013.pdf",
+      "title": "Euclase: A Live Development Environment with Constraints and FSMs",
+      "pages": 4,
+      "original_sha256": "d49185a0ebea337111125d7130e87192799b20bd9d08bf5d84999266e8d6ed95",
+      "source_sha256": "d49185a0ebea337111125d7130e87192799b20bd9d08bf5d84999266e8d6ed95",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-euclase-live2013.pdf"
+    },
+    {
+      "file": "oney-zoomboard-chi2013.pdf",
+      "title": "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices",
+      "pages": 4,
+      "original_sha256": "8c76d892016036cbb00f8f77ea066ac62041c19f8cd0a85429548c9425c2f0b1",
+      "source_sha256": "8c76d892016036cbb00f8f77ea066ac62041c19f8cd0a85429548c9425c2f0b1",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-zoomboard-chi2013.pdf"
+    },
+    {
+      "file": "oney-codelets-chi2012.pdf",
+      "title": "Codelets: Linking Interactive Documentation and Example Code in the Editor",
+      "pages": 10,
+      "original_sha256": "008a065cf2b2cd8f50c641bb5e6e679d10254a0161cd4569b46338ac2007e9d9",
+      "source_sha256": "008a065cf2b2cd8f50c641bb5e6e679d10254a0161cd4569b46338ac2007e9d9",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-codelets-chi2012.pdf"
+    },
+    {
+      "file": "oney-constraintjs-uist2012.pdf",
+      "title": "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States",
+      "pages": 10,
+      "original_sha256": "f8183468716fffb5410d98de53b0b984d13e503730b85a25a2d8187557643f92",
+      "source_sha256": "f8183468716fffb5410d98de53b0b984d13e503730b85a25a2d8187557643f92",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-constraintjs-uist2012.pdf"
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "title": "Inferring Method Specifications from Natural Language API Descriptions",
+      "pages": 11,
+      "original_sha256": "f7b56b449a70df1b57127b7bc5af51d7b61fb85ba2c7db7ea6ba41528bf54afa",
+      "source_sha256": "f7b56b449a70df1b57127b7bc5af51d7b61fb85ba2c7db7ea6ba41528bf54afa",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/pandita-inferring-method-specifications-icse2012.pdf"
+    },
+    {
+      "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+      "title": "Development Tools for Interactive Behaviors",
+      "pages": 4,
+      "original_sha256": "89e436cb24bd4ab62b361a57ccdc09b2af978e3debabd27f603b74604d7d93f8",
+      "source_sha256": "89e436cb24bd4ab62b361a57ccdc09b2af978e3debabd27f603b74604d7d93f8",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-development-tools-interactive-iseuddc2011.pdf"
+    },
+    {
+      "file": "oney-playbook-iseud2011.pdf",
+      "title": "Playbook: Revision Control & Comparison for Interactive Mockups",
+      "pages": 6,
+      "original_sha256": "558abf2319641d2434e231eaecfc3c05e2b27572ed3f65fa67ff975122c14988",
+      "source_sha256": "558abf2319641d2434e231eaecfc3c05e2b27572ed3f65fa67ff975122c14988",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-playbook-iseud2011.pdf"
+    },
+    {
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+      "title": "Democratizing Computational Tools for Interaction Designers",
+      "pages": 2,
+      "original_sha256": "dce35b198e6c9aafe9a6b4124783fedb57434795c5f9663e57460df5358f7635",
+      "source_sha256": "dce35b198e6c9aafe9a6b4124783fedb57434795c5f9663e57460df5358f7635",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-democratizing-computational-tools-vlhccgc2010.pdf"
+    },
+    {
+      "file": "ozenc-how-support-designers-chi2010.pdf",
+      "title": "How to Support Designers in Getting Hold of the Immaterial Material of Software",
+      "pages": 10,
+      "original_sha256": "1bfa1067ca15653d45a7c5c85f36d721e2b2b061857bdaa20a036a7d43a05a0d",
+      "source_sha256": "1bfa1067ca15653d45a7c5c85f36d721e2b2b061857bdaa20a036a7d43a05a0d",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/ozenc-how-support-designers-chi2010.pdf"
+    },
+    {
+      "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+      "title": "Empowering Designers with Creativity Support Tools",
+      "pages": 2,
+      "original_sha256": "d024ab68440c985d3a124ff279c4527792a6b31fbe80141529825ed0ccb4d15c",
+      "source_sha256": "d024ab68440c985d3a124ff279c4527792a6b31fbe80141529825ed0ccb4d15c",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-empowering-designers-creativity-vlhccgc2009.pdf"
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "title": "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages",
+      "pages": 4,
+      "original_sha256": "046e6c03ac9f8177d5a6763851503bf7defdcd4ff7b4ed9da39923ed5a9e7e0f",
+      "source_sha256": "046e6c03ac9f8177d5a6763851503bf7defdcd4ff7b4ed9da39923ed5a9e7e0f",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-firecrystal-vlhcc2009.pdf"
+    },
+    {
+      "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+      "title": "Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors",
+      "pages": 4,
+      "original_sha256": "be71ecc1b8a9816cfffef896d325c7e9585216a520b60b7f390521bc8da8629f",
+      "source_sha256": "be71ecc1b8a9816cfffef896d325c7e9585216a520b60b7f390521bc8da8629f",
+      "selected_source_kind": "freshly tagged repository original",
+      "selected_source_url": null,
+      "final_sha256": "34507e475d1f10c3013b80540015baa31b8f825f80eb70de835f607c8666ef73",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "repository_original_freshly_tagged"
+      ],
+      "remaining_findings": [],
+      "path": "assets/pdfs/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf"
+    },
+    {
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "title": "Natural Language Search of Structured Documents",
+      "pages": 48,
+      "original_sha256": "954e0997eb6c6aaa5606c5413c0d6ee379ec9c039c4cf3093c833bb4f1320b2b",
+      "source_sha256": "954e0997eb6c6aaa5606c5413c0d6ee379ec9c039c4cf3093c833bb4f1320b2b",
+      "selected_source_kind": "newly tagged repository copy",
+      "selected_source_url": null,
+      "final_sha256": "4a8e7549ac56c26cbdab4c0c8488e1f3b275454a12e5b83f6c6283218d7a7058",
+      "custom_structure_passed": true,
+      "vera_pdf_ua1_passed": false,
+      "non_identification_failed_rule_count": 0,
+      "changes": [
+        "verified_missing_formulas_restored",
+        "table_header_groups_for_screen_reader_navigation"
+      ],
+      "remaining_findings": [
+        "Page43, Table14: two category labels are absent in both the author PDF and MIT deposited scan. Accessible row labels explicitly identify them as unlabeled and distinguish the 8,783- and 118-example rows; their intended categories remain unconfirmed.",
+        "Pages47–48 retain the original small printed XML. The complete native Code text is also supplied as a reflowable, zoomable HTML companion and plain text."
+      ],
+      "path": "assets/pdfs/oney-natural-language-search-mit2008.pdf"
+    }
+  ],
+  "companions": [
+    {
+      "path": "assets/supplements/expresso-table-i.html",
+      "sha256": "5ddfe119c2814c10ab3adac2ec589bfb2935ac3e23416e6622027388bd7b3f5f",
+      "reviewed_artifact_sha256": "b27ff452169e948da91dbc3b46a0afc4f24e075a972d98b7536f162dd5ad386f",
+      "integration_change": "Only the source PDF href changed from the download-package folder to ../pdfs/."
+    },
+    {
+      "path": "assets/supplements/mit-thesis-xml-example.html",
+      "sha256": "3f7def01ce15779498500177bb2c57136d06433d0fc8d348e9e2796db32c1ce9",
+      "reviewed_artifact_sha256": "b7dc534c236b0643d1f4d7006f925091905496c0d3f3c129c18024b665ca6f9a",
+      "integration_change": "Only the source PDF href changed from the download-package folder to ../pdfs/."
+    },
+    {
+      "path": "assets/supplements/mit-thesis-xml-example.txt",
+      "sha256": "7ab716e10dfae872f108e3968203eedf2361fc08eae7a25440b0862038bae26f",
+      "reviewed_artifact_sha256": "7ab716e10dfae872f108e3968203eedf2361fc08eae7a25440b0862038bae26f",
+      "integration_change": "Unchanged."
+    }
+  ]
+}

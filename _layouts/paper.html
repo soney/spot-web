@@ -47,6 +47,9 @@ nav: research
       <i class="bi bi-link-45deg"></i> Publisher page
     </a>
     {% endif %}
+    {% for link in pub.links %}
+    <a href="{{ link.url | relative_url | escape }}">{{ link.description | escape }}</a>
+    {% endfor %}
   </div>
 
   {% if pub.abstract %}

@@ -405,6 +405,7 @@ record of a venue gets the higher CV number):
 | `authors` | yes | Ordered list of `people.yaml` ids; drives author lists, person pages, and whether the CV claims the paper (it must contain `steve_oney`) |
 | `venue` | yes | Must equal a `venues.yaml` `id` |
 | `pdf` | optional | PDF link on the paper page, list rows, and CV. Name the file `<surname>-<short-title>-<venue><year>.pdf`; the link's download name is generated separately |
+| `links` | optional | Companion links on the paper page and in WebMCP's `get_publication`: a list of `{url, description}`. Use a root-relative site URL such as `/assets/supplements/expresso-table-i.html`, or a full `https://` URL. The description is plain link text. These links do not change the PDF, DOI, BibTeX, or citation metadata |
 | `doi` | optional | Adds a "Publisher page" link on the paper page, and `doi`/`url` lines to the BibTeX entry. Bare identifier — `10.1145/3411763.3451617`, not the full URL |
 | `student_authors` | optional | Subset of `authors`. **CV only** — underlines those names when the CV's student toggle is on |
 | `abstract` | optional | Markdown body of the paper page; also the fallback list blurb, truncated to 320 chars |
@@ -443,6 +444,19 @@ yet — leave `doi` off entirely rather than guessing, because a wrong DOI on a
 CV is worse than a missing one. To find one, search
 [Crossref](https://search.crossref.org/) for the title and confirm the first
 author and year match before pasting it in.
+
+For an accessible table, code appendix, or other companion, put static files in
+`assets/supplements/` and add a link to the existing paper record:
+
+```yaml
+  links:
+    - url: /assets/supplements/expresso-table-i.html
+      description: Table I (HTML)
+```
+
+Unlike `pdf`, each link's `url` includes `/assets/`. Copy any files the companion
+links to as well, and make its PDF links point to `../pdfs/<file>.pdf` when the
+companion is in `assets/supplements/`. No separate paper page is needed.
 
 A full example:
 

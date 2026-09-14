@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MIT thesis — readable XML example</title><style>body{font:1.1rem/1.6 system-ui,sans-serif;color:#151515;background:white;max-width:72rem;margin:2rem auto;padding:0 1.2rem}h1,h2{line-height:1.25}a{color:#0645ad}pre{font:1rem/1.6 ui-monospace,monospace;background:#f5f5f5;padding:1rem;border:1px solid #888;white-space:pre-wrap;overflow-wrap:anywhere}code{font:inherit}@media print{body{margin:0;max-width:none}pre{background:white;border:0;padding:0}}</style><main><h1>Natural Language Search of Structured Documents: XML example</h1><p>This is the printed XML example from Appendix A, pages 47–48 of Stephen Oney’s 2008 MIT thesis. Text is reproduced from the reviewed PDF’s Code tags, including its line breaks, cut sections, and printed notation. It is an illustration, not a validated XML data file.</p><p>The text wraps to your screen and remains readable when you increase browser zoom.</p><p><a href="../pdfs/oney-natural-language-search-mit2008.pdf#page=47">Open the source pages in the reviewed PDF</a> · <a href="mit-thesis-xml-example.txt">Plain text copy</a></p><section aria-labelledby="page-47"><h2 id="page-47">Source page 47</h2><pre><code>&lt;test_data&gt;
+&lt;teams&gt;
+&lt;away abbrev=&quot;BOS&quot; code=&quot;bos&quot; losses=&quot;1&quot; name=&quot;Boston&quot; wins=&quot;0&quot;/&gt;
+&lt;home abbrev=&quot;NYY&quot; code=&quot;nya&quot; losses=&quot;0&quot; name=&quot;NY Yankees&quot; wins=&quot;1&quot;/&gt;
+&lt;/teams&gt;
+&lt;players&gt;
+&lt;away&gt;
+&lt;player box_name=&quot;Machado&quot; first_name=&quot;Alejandro&quot; id=&quot;425472&quot; last_name=&quot;Machado&quot;/&gt;
+&lt;player box_name=&quot;Nixon&quot; first_name=&quot;Trot&quot; id=&quot;119811&quot; last_name=&quot;Nixon&quot;/&gt;
+&lt;player box_name=&quot;Damon&quot; first_name=&quot;Johnny&quot; id=&quot;113028&quot; last_name=&quot;Damon&quot;/&gt;
+&lt;!—Other Players cut to save space--&gt; 
+&lt;/away&gt;
+&lt;home&gt;
+&lt;player box_name=&quot;Williams&quot; first_name=&quot;Bernie&quot; id=&quot;124288&quot; last_name=&quot;Williams&quot;/&gt;
+&lt;player box_name=&quot;Rodriguez, A&quot; first_name=&quot;Alex&quot; id=&quot;121347&quot; last_name=&quot;Rodriguez&quot;/&gt; 
+&lt;!—Other Players cut to save space--&gt; 
+&lt;/home&gt;
+&lt;/players&gt;
+&lt;game day=&quot;3&quot; location_city=&quot;New York&quot; location_state=&quot;NY&quot; month=&quot;4&quot; stadium=&quot;Yankee Stadium&quot; time=&quot;08:05 PM&quot;
+year=&quot;2005&quot;&gt;
+&lt;stats&gt;
+&lt;away errors=&quot;2&quot; hits=&quot;6&quot; runs=&quot;2&quot;/&gt;
+&lt;home errors=&quot;1&quot; hits=&quot;15&quot; runs=&quot;9&quot;/&gt;
+&lt;/stats&gt;
+&lt;innings count=&quot;9&quot;&gt;
+&lt;inning num=&quot;1&quot; /&gt; &lt;!-- (CUT) --&gt;
+&lt;inning num=&quot;2&quot;&gt;
+&lt;top runs=&quot;1&quot;&gt; &lt;!—Most Plays cut to save space--&gt; 
+&lt;at_bat balls=&quot;1&quot; batter=&quot;120074&quot; des=&quot;David Ortiz doubles (1) on a line drive to 
+right fielder Gary Sheffield.&quot; outs=&quot;0&quot; pitcher=&quot;116615&quot; strikes=&quot;0&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;In play, no out recorded &quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Double&quot; type=&quot;H&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;1&quot; batter=&quot;132788&quot; des=&quot;Kevin Millar flies out to left fielder 
+Hideki Matsui.&quot; outs=&quot;1&quot; pitcher=&quot;116615&quot; strikes=&quot;1&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Foul&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;In play, out(s) recorded&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Fly Out&quot; type=&quot;O&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;1&quot; batter=&quot;123660&quot; des=&quot;Jason Varitek grounds out, shortstop Derek 
+Jeter to first baseman Jason Giambi. David Ortiz to 3rd.&quot; outs=&quot;2&quot; pitcher=&quot;116615&quot; strikes=&quot;1&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;Blocked Ball in Dirt&quot;/&gt;
+&lt;pitch des=&quot;In play, out(s) recorded&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Ground Out&quot; type=&quot;O&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;1&quot; batter=&quot;134341&quot; des=&quot;Jay Payton singles on a line drive to left 
+fielder Hideki Matsui. David Ortiz scores.&quot; outs=&quot;2&quot; pitcher=&quot;116615&quot; strikes=&quot;2&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Foul&quot;/&gt;
+&lt;pitch des=&quot;Foul&quot;/&gt;
+&lt;pitch des=&quot;In play, run-scoring play&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Single&quot; type=&quot;H&quot;/&gt;
+&lt;score away_score=&quot;1&quot; home_score=&quot;0&quot; points=&quot;1&quot;/&gt;
+&lt;/at_bat&gt; &lt;!—Most Plays cut to save space--&gt; 
+&lt;at_bat balls=&quot;1&quot; batter=&quot;110840&quot; des=&quot;Mark Bellhorn called out on strikes.&quot;
+outs=&quot;3&quot; pitcher=&quot;116615&quot; strikes=&quot;3&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Swinging Strike&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;</code></pre></section><section aria-labelledby="page-48"><h2 id="page-48">Source page 48</h2><pre><code>&lt;/pitches&gt;
+&lt;/at_bat&gt;
+&lt;/top&gt;
+&lt;bottom runs=&quot;1&quot;&gt;
+&lt;at_bat balls=&quot;3&quot; batter=&quot;425686&quot; des=&quot;Hideki Matsui singles on a fly ball to 
+left fielder Manny Ramirez.&quot; outs=&quot;0&quot; pitcher=&quot;124071&quot; strikes=&quot;2&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Swinging Strike&quot;/&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Foul&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;In play, no out recorded &quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Single&quot; type=&quot;H&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;0&quot; batter=&quot;120691&quot; des=&quot;Jorge Posada flies out to right fielder 
+Jay Payton.&quot; outs=&quot;1&quot; pitcher=&quot;124071&quot; strikes=&quot;1&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;In play, out(s) recorded&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Fly Out&quot; type=&quot;O&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;1&quot; batter=&quot;114739&quot; des=&quot;Jason Giambi singles on a ground ball to 
+right fielder Jay Payton. Hideki Matsui to 3rd.&quot; outs=&quot;1&quot; pitcher=&quot;124071&quot; strikes=&quot;1&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Foul&quot;/&gt;
+&lt;pitch des=&quot;In play, no out recorded &quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Single&quot; type=&quot;H&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;1&quot; batter=&quot;124288&quot; des=&quot;Bernie Williams out on a sacrifice fly to 
+left fielder Manny Ramirez. Hideki Matsui scores.&quot; outs=&quot;2&quot; pitcher=&quot;124071&quot; strikes=&quot;2&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;Ball&quot;/&gt;
+&lt;pitch des=&quot;Foul Tip&quot;/&gt;
+&lt;pitch des=&quot;In play, run-scoring play&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Fly Out&quot; type=&quot;O&quot;/&gt;
+&lt;score away_score=&quot;1&quot; home_score=&quot;1&quot; points=&quot;1&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;at_bat balls=&quot;0&quot; batter=&quot;124523&quot; des=&quot;Tony Womack grounds into a force out, 
+shortstop Edgar Renteria to second baseman Mark Bellhorn. Jason Giambi out at 2nd.&quot; outs=&quot;3&quot; pitcher=&quot;124071&quot;
+strikes=&quot;1&quot;&gt;
+&lt;pitches&gt;
+&lt;pitch des=&quot;Called Strike&quot;/&gt;
+&lt;pitch des=&quot;In play, out(s) recorded&quot;/&gt;
+&lt;/pitches&gt;
+&lt;hit des=&quot;Ground Out&quot; type=&quot;O&quot;/&gt;
+&lt;/at_bat&gt;
+&lt;/bottom&gt;
+&lt;/inning&gt;
+&lt;inning num=&quot;9&quot; /&gt; &lt;!-- (CUT) --&gt;
+&lt;/innings&gt;
+&lt;/game&gt;
+&lt;sentences summary_name=&quot;MLB_BOS&quot;&gt;&lt;!—Most Sentences cut to save space--&gt; 
+&lt;sentence contents=&quot;For weeks, perhaps months, Red Sox manager Terry Francona had been telling anyone 
+who would listen that the historic magic of last year won&#x27;t win a single game for the 2005 Red Sox.&quot; state=&quot;complete&quot;/&gt;
+&lt;sentence contents=&quot;He now has a perfect case in point, as the defending World Series champions opened 
+their title defense by being soundly beaten, 9-2, by the Yankees in Sunday&#x27;s Opening Night game at Yankee Stadium.&quot;
+state=&quot;complete&quot;/&gt;
+&lt;sentence contents=&quot;The Yankees had no trouble shaking away the bad memories from last October, when the 
+Red Sox became the first team in baseball history to overcome a 3-0 deficit in a postseason series.&quot; state=&quot;complete&quot;/&gt;
+&lt;sentence contents=&quot;Both of the rivals have added new faces that will give this year an identity of its 
+own.&quot; state=&quot;complete&quot;/&gt;
+&lt;sentence contents=&quot;By no means are we deflated.&quot; state=&quot;complete&quot;/&gt;
+&lt;sentence contents=&quot;&amp;quot; The Sox temporarily derailed the momentum of Johnson&#x27;s Big Apple unveiling by 
+rallying for a run in the second.&quot; state=&quot;complete&quot;&gt;
+&lt;match xpath=&quot;/test_data/game/innings/inning[@num=&#x27;2&#x27;]/top/*[4]&quot;/&gt;
+&lt;/sentence&gt;
+&lt;sentence contents=&quot;It was no surprise that it was David Ortiz -- the certified Yankee destroyer -- who 
+got things rolling with a leadoff double to right.&quot; state=&quot;complete&quot;&gt;
+&lt;match xpath=&quot;/test_data/game/innings/inning[@num=&#x27;2&#x27;]/top/*[1]&quot;/&gt;
+&lt;/sentence&gt;
+&lt;sentence contents=&quot;It looked as if the Sox were about to take a 2-0 lead when the next batter, Kevin 
+Millar, ripped a deep drive to left.&quot; state=&quot;complete&quot;&gt;
+&lt;match xpath=&quot;/test_data/game/innings/inning[@num=&#x27;2&#x27;]/top/*[2]&quot;/&gt;
+&lt;/sentence&gt;
+&lt;/test_data&gt;</code></pre></section></main></html>
