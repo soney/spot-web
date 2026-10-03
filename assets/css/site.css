@@ -348,10 +348,12 @@ body {
         animation: name-recording-pulse 1.2s ease-in-out infinite;
     }
 
+    /* Members share the row equally, but the cap keeps a small group from
+       stretching each headshot across a quarter of the page. */
     .member {
         flex-basis: 0;
         flex-grow: 1;
-        max-width: 350px;
+        max-width: 200px;
     }
 
     .member-display.card {
