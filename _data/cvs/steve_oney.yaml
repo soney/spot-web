@@ -396,7 +396,8 @@ supervised_students:
     institution: University of Michigan
     category: postdoc
     date_start: Fall 2024
-    date_end: present
+    date_end: Summer 2026
+    current_position: Visiting Assistant Professor at SUNY Albany
   - student_name: Yan Chen
     student_department: School of Information
     thesis_title: On-Demand Collaboration in Programming
@@ -459,6 +460,7 @@ supervised_students:
     date_end: present
   - student_name: Kihoon Son (손기훈)
     student_department: School of Computing
+    thesis_title: "Surfacing Tacit Knowledge through Human–AI Interaction for Personalized Agents"
     institution: KAIST
     category: phd_thesis_committee
     date_start: "2026"
