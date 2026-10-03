@@ -13,7 +13,7 @@
 # and assets/css/cv.css hides one of them, so together they must cover exactly
 # the same venue types -- a type listed in one variant but not the other
 # vanishes from the CV in the state it is missing from, with no build warning.
-- title: Heavily-reviewed Journal Manuscripts (J) and Conference Papers (C)
+- title: Heavily-reviewed Conference Papers (C) and Journal Manuscripts (J)
   types: [journal, conference]
   variant: merged
 - title: Heavily-reviewed Journal Manuscripts (J)
