@@ -388,6 +388,61 @@ body {
         }
     }
 
+    /* The compact alumni list beside the current members on the homepage.
+       It flows into as many columns as fit, so beside the cards it runs two
+       wide and stays about as tall as they are, and below them (under xl) it
+       spreads across the row instead of leaving a tall single column. */
+    .alumni {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+            gap: 0.5rem 1rem;
+
+            /* Bootstrap's xl breakpoint, where the list moves beside the cards. */
+            @media (min-width: 1200px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .alum-display {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--text-color);
+
+                .member-name {
+                    text-decoration: underline;
+                }
+
+                img.alum-headshot {
+                    filter: none;
+                }
+            }
+        }
+
+        img.alum-headshot {
+            width: 2.25rem;
+            height: 2.25rem;
+            flex-shrink: 0;
+            filter: var(--headshot-filter);
+            transition: 0.5s;
+        }
+
+        .member-name {
+            font-weight: bold;
+        }
+
+        .alum-position {
+            display: block;
+            font-size: 0.8em;
+            color: var(--secondary-text-color);
+        }
+    }
+
     .group-areas {
         font-size: 0.9em;
         margin-top: 1rem;

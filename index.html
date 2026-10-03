@@ -46,36 +46,70 @@ nav: home
   </section>
   {% endif %}
 
-  <section>
-    <h2><a href="{{ '/team/' | relative_url }}"><span class="text-body">People</span><span aria-hidden="true">
-          [+]</span></a></h2>
-    <ul class="flex-row d-flex list-unstyled row">
-      {% for membership in group.member_order %}
-      {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
-      {% for person in current_members %}
-      <li class="member col d-flex p-1">
-        <a class="member-display card w-100 d-flex flex-column border-0"
-          href="{{ '/team#' | append: person.id | relative_url }}">
-          {% assign photo = person.headshot %}
-          {% if photo %}
-          <div class="ratio ratio-1x1">
-            <img class="rounded member-headshot object-fit-cover card-img-top"
-              src="{{ '/assets/' | append: photo | relative_url }}"
-              alt="Headshot of {{ person.given_name }} {{ person.family_name }}">
-          </div>
-          {% endif %}
-          <div class="card-body p-0">
-            <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
-            {% if person.short_bio %}
-            <div class="member-short-bio d-none d-sm-block">{{ person.short_bio }}</div>
+  {% assign alumni = site.data.people | where: "membership", "alum" | sort: "family_name" %}
+  <div class="row">
+    <section class="{% if alumni.size > 0 %}col-xl-7{% else %}col-12{% endif %}">
+      <h2><a href="{{ '/team/' | relative_url }}"><span class="text-body">Team</span><span aria-hidden="true">
+            [+]</span></a></h2>
+      <ul class="flex-row d-flex list-unstyled row" role="list">
+        {% for membership in group.member_order %}
+        {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
+        {% for person in current_members %}
+        <li class="member col d-flex p-1">
+          <a class="member-display card w-100 d-flex flex-column border-0"
+            href="{{ '/team#' | append: person.id | relative_url }}">
+            {% assign photo = person.headshot %}
+            {% if photo %}
+            <div class="ratio ratio-1x1">
+              <img class="rounded member-headshot object-fit-cover card-img-top"
+                src="{{ '/assets/' | append: photo | relative_url }}" alt="">
+            </div>
             {% endif %}
-          </div>
-        </a>
-      </li>
-      {% endfor %}
-      {% endfor %}
-    </ul>
-  </section>
+            <div class="card-body p-0">
+              <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
+              {% if person.short_bio %}
+              <div class="member-short-bio d-none d-sm-block">{{ person.short_bio }}</div>
+              {% endif %}
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+        {% endfor %}
+      </ul>
+    </section>
+    {% if alumni.size > 0 %}
+    {% comment %}
+      Alumni get a compact list beside the current members: a small focused
+      headshot, the name, and where they are now (their short_bio, whose two
+      lines are joined with a comma here). Headshots in both lists have empty
+      alt text because the name is already the link's text, and a screen reader
+      would otherwise read it twice. role="list" on both lists because
+      Safari stops exposing a list-style:none <ul> as a list to VoiceOver.
+    {% endcomment %}
+    <section class="col-xl-5 alumni">
+      <h2>Alumni</h2>
+      <ul class="list-unstyled" role="list">
+        {% for person in alumni %}
+        <li>
+          <a class="alum-display" href="{{ '/team#' | append: person.id | relative_url }}">
+            {% assign photo = person.focused_headshot | default: person.headshot %}
+            {% if photo %}
+            <img class="member-headshot alum-headshot rounded object-fit-cover"
+              src="{{ '/assets/' | append: photo | relative_url }}" alt="">
+            {% endif %}
+            <span>
+              <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
+              {% if person.short_bio %}
+              <span class="alum-position">{{ person.short_bio | strip | newline_to_br | replace: "<br />", "," }}</span>
+              {% endif %}
+            </span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </div>
 
   <section>
     <h2><a href="{{ '/research/#all-publications' | relative_url }}"><span class="text-body">Recent Publications</span><span

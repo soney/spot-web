@@ -647,7 +647,7 @@ the build only warns if *both* copies set `use_local_homepage: true`.
 | `orcid` | no | Bare ORCID iD — `0000-0002-5823-1499`, not the full URL. Read only by the JSON-LD in `_plugins/structured_data.rb`, which emits it as an `identifier` and as an `https://orcid.org/…` `sameAs` on every node for that person, author nodes on paper pages included. Nothing renders on the page. A wrong iD is worse than a missing one, so confirm the person before pasting: best is a publisher record (Crossref returns the iDs authors asserted at submission), then an ORCID profile that lists one of their papers here or links the same `homepage`. A plain name search is the weakest evidence — an ORCID search returning exactly one person of that name is usually right, but check the affiliation on the record |
 | `pronouns` | no | e.g. `she/her`. Shown in parentheses after the name on their `/team` member row and `/people/<id>/` page. Nowhere else — not on the homepage grid, author lists, news chips, or the `/team` collaborator list |
 | `name_recording` | no | Name-pronunciation audio: a path relative to `assets/`, e.g. `audio/steve_oney_name_pronunciation.mp3`. Renders a "Hear my name" breadcrumb link right after "Homepage" that plays the recording in place (no-JS fallback: the link opens the file), in the same places `pronouns` shows |
-| `short_bio` | no | Two-line card caption on the homepage grid; the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
+| `short_bio` | no | Two-line card caption on the homepage grid (for an alum, their current position in the homepage's alumni list, joined into one line with a comma); the trailing sentence in the `/team` collaborator list and in the CV's "Other Mentees". Plain text, never Markdown |
 | `long_bio` | no | The full paragraph on `/team` and `/people/<id>/`. Markdown |
 | `profile` | no | A long-form profile — several paragraphs, with headings if you want them — shown only on `/people/<id>/`, below the headshot row and above their publications. Markdown. Needs `use_local_homepage: true`, or there is no page to put it on |
 | `links` | no | Extra breadcrumb links after "Homepage": a list of `{url, description}`. Links to services listed in `_data/link_icons.yaml` (Google Scholar, GitHub, Twitter, LinkedIn, a `CV`, ...) get that service's icon automatically; add a rule there to cover a new service |
@@ -767,9 +767,11 @@ you turn it on for someone new, give them a `membership` too, or the page's
 `member-postdoc`) → `membership: alum`, plus two things that do not happen
 automatically:
 
-- Their `short_bio` stops rendering anywhere (alums are not in `member_order`,
-  and `member_block.html` never prints it). **Move their new title and employer
-  into the first sentence of `long_bio`** or the site will keep describing them
+- **Rewrite both bios for their new position.** The `short_bio` becomes their
+  line in the homepage's alumni list (`Assistant Professor` / `ETH Zürich`
+  renders as "Assistant Professor, ETH Zürich"), and `member_block.html` on
+  `/team` prints only the `long_bio`, so **move their new title and employer
+  into its first sentence** too. Miss either and the site keeps describing them
   as a current student. This is the silent-wrong-output failure in this task.
 - **Update `_data/cvs/steve_oney.yaml` by hand.** `supervised_students:` is a separate
   list matched by free-text `student_name`, with no link to the `people.yaml`
