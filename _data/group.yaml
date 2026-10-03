@@ -15,7 +15,19 @@ joining: >-
   When you do, it will email the current members of the team so that we can see if there are any potentially matching
   projects. If you are unable to fill out that form for any reason, please reach out to
   [soney@umich.edu](mailto:soney@umich.edu).
-recent_pub_cutoff_year: 2020
+# The homepage's Publications section is split into year ranges, with a row
+# of buttons to pick one. Each entry is the first year of a range, newest
+# first: the first range runs to the present, each later one to the year
+# before the previous start, and one more range, "Before <last start>",
+# collects everything older. The first range is the one shown on load.
+#
+# Five-year spans on round years, so the buttons read as plain dates rather
+# than as cutoffs someone has to explain. Add 2030 to the top once there is a
+# 2030 paper; until then the first range would be empty.
+publication_range_starts:
+  - 2025
+  - 2020
+  - 2015
 announcement: ""
 
 # Order in which current-member tiers are listed on the homepage and /team.

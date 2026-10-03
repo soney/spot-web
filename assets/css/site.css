@@ -443,6 +443,53 @@ body {
         }
     }
 
+    /* The year-range buttons above the homepage's publication list, and the
+       newer/older buttons below it: plain link-coloured text, filled only for
+       the chosen range. They take the site's link colours rather than
+       Bootstrap's primary blue, which is 3.96:1 against the dark page;
+       --link-color is 5.9:1 on the light page and 7.9:1 on the dark one, with
+       the page colour as text when filled. */
+    .pub-range-picker,
+    .pub-range-pager {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        &[hidden] {
+            display: none;
+        }
+
+        .btn {
+            --bs-btn-color: var(--link-color);
+            --bs-btn-border-color: transparent;
+            --bs-btn-hover-color: var(--link-color);
+            --bs-btn-hover-bg: var(--hover-surface-color);
+            --bs-btn-hover-border-color: transparent;
+            --bs-btn-active-color: var(--background-color);
+            --bs-btn-active-bg: var(--link-color);
+            --bs-btn-active-border-color: var(--link-color);
+            /* Bare .btn leaves this unset, which voids Bootstrap's focus glow
+               and with it light mode's only focus indicator. --link-color's
+               light value, as RGB. */
+            --bs-btn-focus-shadow-rgb: 47, 101, 167;
+        }
+    }
+
+    .pub-range-picker {
+        margin-bottom: 1rem;
+    }
+
+    /* "Older" stays on the right when "Newer" is hidden on the first range. */
+    .pub-range-older {
+        margin-left: auto;
+    }
+
+    /* A .btn-check radio is visually hidden, so focus shows on its label. */
+    .btn-check:focus-visible + .btn {
+        outline: var(--focus-ring);
+        outline-offset: var(--focus-ring-offset);
+    }
+
     .group-areas {
         font-size: 0.9em;
         margin-top: 1rem;

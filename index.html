@@ -111,13 +111,98 @@ nav: home
     {% endif %}
   </div>
 
-  <section>
-    <h2><a href="{{ '/research/#all-publications' | relative_url }}"><span class="text-body">Recent Publications</span><span
+  {% comment %}
+    One list per year range from group.publication_range_starts, plus a final
+    "Before <last start>" range. Every range is in the page; the inline script
+    below shows the picker and hides all but the chosen range, so without
+    JavaScript the picker stays hidden and the whole list shows, newest first.
+    Hiding uses the `hidden` attribute, which also takes the other ranges out
+    of the accessibility tree, so a screen reader hears only what is shown.
+  {% endcomment %}
+  {% assign range_starts = group.publication_range_starts %}
+  {% assign last_range = range_starts.size %}
+  <section class="pub-ranges">
+    <h2><a href="{{ '/research/#all-publications' | relative_url }}"><span class="text-body">Publications</span><span
           aria-hidden="true"> [+]</span></a></h2>
-    <ul class="publication-list">
-      {% assign cutoff = group.recent_pub_cutoff_year | default: 2000 %}
-      {% include publication_list_items.html min_year=cutoff %}
+    <fieldset class="pub-range-picker" hidden>
+      <legend class="visually-hidden">Show publications from</legend>
+      {% for i in (0..last_range) %}
+      {% if i == last_range %}
+      {% assign range_label = "Before " | append: range_starts.last %}
+      {% elsif i == 0 %}
+      {% assign range_label = range_starts[i] | append: "–present" %}
+      {% else %}
+      {% assign prev = i | minus: 1 %}
+      {% assign range_end = range_starts[prev] | minus: 1 %}
+      {% assign range_label = range_starts[i] | append: "–" | append: range_end %}
+      {% endif %}
+      <input type="radio" class="btn-check" name="pub-range" id="pub-range-{{ i }}" value="{{ i }}"
+        autocomplete="off" {% if i == 0 %}checked{% endif %}>
+      <label class="btn btn-sm" for="pub-range-{{ i }}">{{ range_label }}</label>
+      {% endfor %}
+    </fieldset>
+    {% for i in (0..last_range) %}
+    {% if i == last_range %}
+    {% assign range_min = nil %}
+    {% assign range_max = range_starts.last | minus: 1 %}
+    {% elsif i == 0 %}
+    {% assign range_min = range_starts[i] %}
+    {% assign range_max = nil %}
+    {% else %}
+    {% assign prev = i | minus: 1 %}
+    {% assign range_min = range_starts[i] %}
+    {% assign range_max = range_starts[prev] | minus: 1 %}
+    {% endif %}
+    <ul class="publication-list pub-range" data-range="{{ i }}">
+      {% include publication_list_items.html min_year=range_min max_year=range_max %}
     </ul>
+    {% endfor %}
+    <div class="pub-range-pager" hidden>
+      <button type="button" class="btn btn-sm pub-range-newer" data-step="-1"><i class="bi bi-arrow-left"
+          aria-hidden="true"></i> Newer: <span class="pub-range-target"></span></button>
+      <button type="button" class="btn btn-sm pub-range-older" data-step="1">Older: <span
+          class="pub-range-target"></span> <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+    </div>
+    <script>
+      document.querySelectorAll('.pub-ranges').forEach(function (section) {
+        var picker = section.querySelector('.pub-range-picker');
+        var pager = section.querySelector('.pub-range-pager');
+        var radios = Array.prototype.slice.call(picker.querySelectorAll('input[type="radio"]'));
+        var ranges = section.querySelectorAll('.pub-range');
+        function current() {
+          return radios.findIndex(function (radio) { return radio.checked; });
+        }
+        // Shows the chosen range, and points each pager button at the range
+        // one step away from it, hiding the button at either end.
+        function show() {
+          var index = current();
+          ranges.forEach(function (range) { range.hidden = range.dataset.range !== radios[index].value; });
+          pager.querySelectorAll('button').forEach(function (button) {
+            var target = radios[index + Number(button.dataset.step)];
+            button.hidden = !target;
+            if (target) button.querySelector('.pub-range-target').textContent = target.labels[0].textContent;
+          });
+        }
+        picker.addEventListener('change', show);
+        // The pager sits below a list that is about to be replaced, so it
+        // returns to the top of the section and focuses the newly chosen
+        // range's radio: a screen reader announces the range, and reading
+        // picks up at the start of the new list.
+        pager.addEventListener('click', function (event) {
+          var button = event.target.closest('button');
+          if (!button) return;
+          var radio = radios[current() + Number(button.dataset.step)];
+          if (!radio) return;
+          radio.checked = true;
+          show();
+          section.scrollIntoView({ block: 'start' });
+          radio.focus({ preventScroll: true });
+        });
+        picker.hidden = false;
+        pager.hidden = false;
+        show();
+      });
+    </script>
   </section>
 
   {% include affiliations_footer.html %}

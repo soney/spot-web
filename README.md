@@ -1139,9 +1139,9 @@ Depending on what you changed, check:
   Markdown and that its figure URLs point to files in the build
 - `http://127.0.0.1:4000/research#pub-<id>` — the row is in the right position
   with the right venue label, and the anchor actually scrolls to it
-- `http://127.0.0.1:4000/` — "Recent Publications" (venues from
-  `group.recent_pub_cutoff_year`, currently 2019, onward), the People grid, and
-  the newest four news items
+- `http://127.0.0.1:4000/` — "Publications", split into year ranges by
+  `group.publication_range_starts` (click through every range button), the
+  Team and Alumni lists, and the newest four news items
 - `http://127.0.0.1:4000/news` — full news list, in the right order, with the
   right number of chips
 - `http://127.0.0.1:4000/team` and any `#<id>` anchor you linked
