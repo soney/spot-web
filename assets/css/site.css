@@ -354,6 +354,61 @@ body {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 200px;
+        padding: 0.25rem;
+    }
+
+    .member-display picture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .member-position {
+        display: none;
+    }
+
+    /* On a phone the cards become rows in the alumni list's format
+       (.alumni below): small square headshot, bold name, and the short_bio
+       on one line in secondary text. */
+    @media (max-width: 575.98px) {
+        .member-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+            gap: 0.5rem 1rem;
+            margin: 0 0 1rem;
+        }
+
+        .member {
+            max-width: none;
+            padding: 0;
+        }
+
+        /* .member-list in front so this outranks the base card rule below,
+           which would otherwise win on source order. */
+        .member-list .member-display.card {
+            flex-direction: row;
+            align-items: center;
+            gap: 0.6rem;
+            text-align: left;
+
+            .ratio {
+                width: 2.25rem;
+                flex-shrink: 0;
+            }
+
+            &:hover .member-name {
+                text-decoration: underline;
+            }
+
+            .member-short-bio {
+                display: none;
+            }
+
+            .member-position {
+                display: block;
+                font-size: 0.8em;
+                color: var(--secondary-text-color);
+            }
+        }
     }
 
     .member-display.card {

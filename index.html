@@ -51,24 +51,41 @@ nav: home
     <section class="{% if alumni.size > 0 %}col-xl-7{% else %}col-12{% endif %}">
       <h2><a href="{{ '/team/' | relative_url }}"><span class="text-body">Team</span><span aria-hidden="true">
             [+]</span></a></h2>
-      <ul class="flex-row d-flex list-unstyled row" role="list">
+      {% comment %}
+        On a phone (under sm) site.css turns these cards into rows in the
+        alumni list's format: a small square headshot, the name, and the
+        short_bio on one line. Each card therefore carries the short_bio twice,
+        as two lines for the card and comma-joined for the row, and the
+        <picture> swaps in the tighter focused_headshot crop at that width.
+        Layout that changes between the two lives in site.css rather than in
+        Bootstrap utility classes, which are !important and cannot be undone
+        at one breakpoint.
+      {% endcomment %}
+      <ul class="list-unstyled row member-list" role="list">
         {% for membership in group.member_order %}
         {% assign current_members = site.data.people | where: "membership", membership | sort: "family_name" %}
         {% for person in current_members %}
-        <li class="member col d-flex p-1">
-          <a class="member-display card w-100 d-flex flex-column border-0"
+        <li class="member col d-flex">
+          <a class="member-display card w-100 border-0"
             href="{{ '/team#' | append: person.id | relative_url }}">
             {% assign photo = person.headshot %}
             {% if photo %}
             <div class="ratio ratio-1x1">
-              <img class="rounded member-headshot object-fit-cover card-img-top"
-                src="{{ '/assets/' | append: photo | relative_url }}" alt="">
+              <picture>
+                {% if person.focused_headshot %}
+                <source media="(max-width: 575.98px)"
+                  srcset="{{ '/assets/' | append: person.focused_headshot | relative_url }}">
+                {% endif %}
+                <img class="rounded member-headshot object-fit-cover card-img-top"
+                  src="{{ '/assets/' | append: photo | relative_url }}" alt="">
+              </picture>
             </div>
             {% endif %}
             <div class="card-body p-0">
               <span class="member-name">{{ person.given_name }} {{ person.family_name }}</span>
               {% if person.short_bio %}
-              <div class="member-short-bio d-none d-sm-block">{{ person.short_bio }}</div>
+              <div class="member-short-bio">{{ person.short_bio }}</div>
+              <span class="member-position">{{ person.short_bio | strip | newline_to_br | replace: "<br />", "," }}</span>
               {% endif %}
             </div>
           </a>
