@@ -1,0 +1,287 @@
+{
+  "file": "xu-how-pairing-code-chilbw2023.pdf",
+  "pdf_sha256": "585c150a7fb9c178854d6192123b97b0da52ce25e3680ff38701bfc43df2dc91",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "How Pairing by Code Similarity Influences Discussions in Peer Learning",
+  "structure_elements": 204,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "Figure": 4,
+    "Link": 60,
+    "H1": 1,
+    "P": 38,
+    "H2": 13,
+    "Note": 2,
+    "H3": 17,
+    "H4": 4,
+    "Caption": 3,
+    "L": 1,
+    "LI": 18,
+    "Lbl": 18,
+    "LBody": 18
+  },
+  "structure_content_references": 5015,
+  "parent_tree_entries": 66,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 865,
+      "vector_operations_artifact": 1,
+      "image_operations_tagged": 1,
+      "link_annotations": 13
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1056,
+      "link_annotations": 22
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 819,
+      "image_operations_tagged": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 15,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 476,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 979
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 816,
+      "link_annotations": 20
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "276:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "280:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "282:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "284:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "286:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "324:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "325:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "336:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "339:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "343:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "344:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "346:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "348:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "373:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "375:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "377:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "379:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "381:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "382:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "388:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "392:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "393:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "402:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "406:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "411:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "413:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "415:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "418:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "419:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "422:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "426:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "429:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "431:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "433:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "275:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Crossmark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "390:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1. Index of methods used in participant code.1: create a new dictionary or array of letters/numbers; example initializes an empty list, loops over data, and appends even values.2: loop to find the maximum length using an accumulator.3: use min or max to find the word or number.4: sort, with a lambda function.5: loop with an accumulator and an if condition directly solving the question; example updates the smallest even value.6: use a filter function. These indices identify methods in Figure 2.",
+      "actual_text": ""
+    },
+    {
+      "element": "399:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2. Methods used for questions 1 and 2, using indices defined in Figure 1. D denotes different-solution groups, shaded gray; S denotes similar-solution groups, white. Each row below gives question 1, then question 2. D1a: 2, partially solved; 1, 2, 4, 5. D1b: 1, 2; data lost. D2a: 1, 3; 1, 2, 4, 5. D2b: 1, 2; 1, 2. D3a: 3, partially solved; 1, 3. D3b: 1, 4; 1, 4, 6. D4a and D4b: failed to solve both questions. S1a: 5; 2, 4, 5. S1b: 5; 5. S2a: 5; 1, 4. S2b: 3, partially solved; 3, 6. S3a and S3b: 5; 1, 4, 5. S3c: 5; 3, 4, 5.",
+      "actual_text": ""
+    },
+    {
+      "element": "404:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 3. Three examples show reasoning expressed in discussion but missing from submitted code; red text marks those additional thoughts. Example 1: a participant considered sorting, rejected alphabetical sorting, and used a loop that compares string lengths to find the longest word. Example 2: a participant wanted to collect strings ending in e before taking a maximum but could not implement the filtering; the submitted code only returns max(data). Example 3: a participant intended to use endswith and retrieve the corresponding value but ran out of time; the submitted code returns data[3].",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

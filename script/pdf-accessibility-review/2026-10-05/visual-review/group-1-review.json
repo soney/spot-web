@@ -1,0 +1,2718 @@
+[
+  {
+    "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "pdf_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        19,
+        21,
+        42,
+        48,
+        50,
+        53,
+        54,
+        59,
+        60,
+        61,
+        67,
+        69,
+        72,
+        75,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        89,
+        90,
+        91,
+        93,
+        96,
+        97,
+        98,
+        100,
+        101,
+        107,
+        115,
+        119,
+        120,
+        121,
+        122,
+        151
+      ],
+      "close_figure_review": [
+        19,
+        21,
+        42,
+        48,
+        50,
+        53,
+        54,
+        59,
+        60,
+        61,
+        67,
+        69,
+        72,
+        75,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        89,
+        91,
+        93,
+        98,
+        107,
+        115,
+        119,
+        120,
+        121,
+        122,
+        151
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology.",
+      "additional_close_pages": [
+        75,
+        79,
+        81,
+        83,
+        84,
+        93,
+        120,
+        147,
+        161,
+        162,
+        163,
+        227
+      ]
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 4 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "Page147 is blank except its printed page number; the no-semantic-text warning is appropriate for this separator page.",
+      "Appendix B visual API parameter blocks (pp161–227) are semantically represented by definition lists. Verified examples: p161 Code3856 is the signature; LI3858 contains Lbl3859 value and LBody3860 with P3861 type object and P3862 description. Options and Returns repeat this pattern. Examples also verified pp162,163,227. The function/name/type/description associations are preserved; retain these lists."
+    ],
+    "remaining_visual_concerns": [
+      "Many syntax-colored code listings, deprecated subsection headings, inactive editor fields, and Appendix B type/return labels are very pale against white. Preserve these original colors; the semantic text provides another reading route.",
+      "Figure4.6 p75 radio-icon table appears to reverse the selected/not-selected labels relative to its filled/empty circles.",
+      "Figure4.19 p93 caption exchanges children/prototypes for the middle/right charts; current alt correctly follows the plotted legends."
+    ],
+    "figures": [
+      {
+        "node": "1869:0",
+        "page": 19,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-001-p019.png",
+        "current_alt": "Figure 1.1 An example ConstraintJS application that uses the Facebook API to retrieve a list of a user’s friends and subsequently a picture for every friend. While the list of friends is loading, the message “Loading friends…” is shown. After the list of friends has loaded, this interface displays the name of every friend next to their picture. While any user’s picture is loading, a spinning loading icon is displayed next to their name.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Friends loading interface shows list after loading, loading message, and error message as described.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1881:0",
+        "page": 21,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-002-p021.png",
+        "current_alt": "Figure 1.3 An illustration of a basic InterState object, named draggable. Properties, which control draggable’s display, are represented as rows (e.g. x, y, and fill). States and transitions are represented as columns (e.g. no_drag, drag, and drag_lock). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state. Chapter 4 further describes this example.",
+        "status": "improve",
+        "reason": "Caption-style description omits the concrete state transitions and feedback shown.",
+        "visual_evidence": "Drag-lock editor shows no_drag, drag, drag_lock and mouse transitions, x/y expressions, and distinct fill values.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "InterState drag-lock editor. The no_drag state enters drag on mouse down and drag returns on mouse up. A double-click enters drag_lock; a single click exits it. In drag and drag_lock, x and y follow mouse coordinates. Fill changes from black in no_drag to blue in drag and navy in drag_lock. Rows are properties and columns give values for each state or transition."
+      },
+      {
+        "node": "2086:0",
+        "page": 42,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-003-p042.png",
+        "current_alt": "Figure 3.1 The target application for the motivating example. An asynchronous Facebook API call returns a list of friends. While the list of friends is loading, “Loading Friends…” appears on screen. After the list of friends has loaded, the profile picture of each friend is then independently requested. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image is displayed.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three friends-list states and connecting loading/outcome arrows correspond to the described display behavior.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2136:0",
+        "page": 48,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-004-p048.png",
+        "current_alt": "Three interaction states for two blocks A and B. With no hover, both blocks are black. Hovering over B makes A yellow; hovering over A makes B yellow. A two-state finite-state machine at right begins in idle, enters myhover on mouseover, and returns to idle on mouseout.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "The black A/B panels exchange the yellow hover state; idle and myhover are connected by mouseover and mouseout.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2157:0",
+        "page": 50,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-005-p050.png",
+        "current_alt": "Figure 3.5 The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.",
+        "status": "improve",
+        "reason": "The existing description omits the refresh paths that make the asynchronous state machine reusable.",
+        "visual_evidence": "Pending resolves or rejects; refresh arrows return from both outcome states to Pending.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "State machine for an asynchronous value: Pending transitions to Resolved when loading succeeds and Rejected on error. A refresh event from either Resolved or Rejected returns to Pending to begin another request."
+      },
+      {
+        "node": "2195:0",
+        "page": 53,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-006-p053.png",
+        "current_alt": "jQuery UI horizontal slider displaying the current value 59, with a draggable thumb on its track. A constraint variable reads the widget value and is invalidated when the slider changes.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Horizontal slider has a displayed value of 59 and matching handle position.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2207:0",
+        "page": 54,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-007-p054.png",
+        "current_alt": "Figure 3.7 A color selector that uses constraint variables to automatically update the preview color and hex value text. A constraint variable tracks the values for each of the red, green, and blue sliders (r, g, and b respectively). A fourth constraint variable (hex) computes a hex color value. Finally, constraints update the background color and text of the color selector to reflect the slider values.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Red, green, blue sliders feed a hexadecimal color and swatch; shown values include red153 and #990000.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2279:0",
+        "page": 59,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-008-p059.png",
+        "current_alt": "Bubble cursor demonstration in two panels. Several light-gray circular targets surround a dotted circular cursor area. In panel A the cursor is away from every target, so its dotted halo is gray. In panel B the cursor intersects a target: the target becomes dark gray and the halo turns red. Constraints implement the cursor radius and target highlighting.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four bubble-cursor views show a variable halo and target highlighting as the pointer moves.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2290:0",
+        "page": 60,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-009-p060.png",
+        "current_alt": "Figure 3.9 A scatterplot application implemented with ConstraintJS. By default, constraints set the position of every data point to reflect the values of an underlying data model (A). When a point is dragged (B), a constraint in the opposite direction updates the underlying data model based on the position of the point, which in turn, is constrained to the mouse’s position. The axes may also be dragged (C) and constraints automatically update the axis labels to reflect its position. Finally, axes’ scales may be changed (D) by dragging a point while holding SHIFT. This example illustrates how one-way constraints in ConstraintJS may be combined with FSMs to enable functionality that was previously only possible with multi-way constraints.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four scatterplot panels show axes, plotted points, highlighting/selection, and changed ranges.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2298:0",
+        "page": 61,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-010-p061.png",
+        "current_alt": "Figure 3.10 An illustration of a touchscreen-based application written with ConstraintJS. Constraints control the position, scale, and angle of photos, which users can manipulate with one or two fingers. When two fingers touch a photo, a red slider appears that controls the photo’s opacity and can be changed using a third finger. Constraints set the position and text of the slider.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Photographs can be moved, resized, and rotated; lower slider controls the image opacity.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2342:0",
+        "page": 67,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-011-p067.png",
+        "current_alt": "InterState draggable object. Its state columns are no_drag, drag and drag_lock. Pressing the mouse on the object enters drag; releasing returns to no_drag. Double-clicking toggles drag_lock, where the object follows the mouse without holding the button. The x and y property rows are constrained to mouse coordinates during dragging and drag lock, while no_drag preserves their position.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "InterState editor displays x/y constrained to mouse position in drag/drag_lock state columns.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2354:0",
+        "page": 69,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-012-p069.png",
+        "current_alt": "Revised InterState drag-lock object. An Escape-key transition and a single-click transition leave drag_lock; mouse-down and mouse-up retain ordinary dragging. The added fill property is black in no_drag, blue in drag and navy in drag_lock, providing visible state feedback.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Revised drag-lock editor includes Escape/single-click exit and black/blue/navy fill feedback.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2380:0",
+        "page": 72,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-013-p072.png",
+        "current_alt": "Two InterState objects each change from noclick to clicked on the same mouse click. In obj1, x changes from 1 to 3. In obj2, a transition expression reads obj1.x before the state change takes effect, obtaining 1, while its clicked-state value is 2. The example illustrates simultaneous event semantics instead of order-dependent callbacks.",
+        "status": "incorrect",
+        "reason": "Current alt says the dependent object reads1 during the transition, but the visible transition value and prose establish2.",
+        "visual_evidence": "obj1.x has values1,2,3 across state/transition/state; obj2 takes obj1.x during the transition, which is2.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Two InterState objects transition from noclick to clicked on mouse.click(). In obj1, x is 1 in noclick,2 during the transition, and 3 in clicked. obj2 sets x from obj1.x during the same transition, obtaining 2; that value remains 2 after obj1 reaches 3. The example illustrates simultaneous transition evaluation."
+      },
+      {
+        "node": "2408:0",
+        "page": 75,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-014-p075.png",
+        "current_alt": "Radio-button state-space example. At left, Cats is selected and outlined for keyboard focus; Dogs, Squirrels and Llamas are unselected. At right, an illustrated table separates three independent dimensions: selection (not selected or selected), keyboard focus (not focused or focused), and mouse state (idle, hover, pressed or pressed out). Their combinations yield 2 times 2 times 4, or 16 possible states.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Cats radio example and16-combination state table illustrate selected/focus/mouse/button combinations; table radio icons conflict with its selected labels.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2434:0",
+        "page": 78,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-015-p078.png",
+        "current_alt": "Figure 4.7 A preliminary version of InterState (then called Euclase). This version contains the basic object layout (states as columns and properties as rows). However, this version of Euclase does not differentiate between states and events. The state of an object is the last event that occurred on that object. Every object also has a draw field that specifies, in JavaScript canvas code, how it should be drawn (typically referencing other fields), as described in section 4.4.5. This example also utilizes the defunct KEEPVALUE primitive, described in section 4.4.1. Empty cell values are KEEP by default (greyed out in the figure); an idea that was maintained through the current version of InterState by replacing the “KEEP” keyword with a circle.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Euclase-style event/property matrix uses KEEP entries to retain earlier values.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2439:0",
+        "page": 79,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-016-p079.png",
+        "current_alt": "Early InterState state-machine design with trapezoidal state boxes. Transitions are drawn between points along the sloped lower edges, and event conditions are written on the connecting arrows. Adjacent state boxes consume substantial horizontal space.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Older state-machine layout uses wide trapezoidal state columns.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2444:0",
+        "page": 79,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-017-p079.png",
+        "current_alt": "Revised InterState state-machine layout. Compact rectangular state boxes sit above property columns. Transition arrows share the space above the states, reducing their horizontal footprint. The current state and active values are highlighted in green.",
+        "status": "improve",
+        "reason": "Description focuses on box shape, missing the nested state relationships and reason columns differ in width.",
+        "visual_evidence": "Nested active state contains out and hover; compact columns allocate defined values and transition starts.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Optimized InterState state-machine layout for my_behavior. Top-level states are inactive and active; active contains out and hover, connected by mouse.over and mouse.out transitions. active.out is narrower because it defines no property value; active.hover has x=true while inactive has x=false. Columns are reserved for transition starting points and defined values to save horizontal space. The current inactive state and value are outlined green."
+      },
+      {
+        "node": "2452:0",
+        "page": 80,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-018-p080.png",
+        "current_alt": "Breakout ball state machine with two main states, in_play and dead. Several collision events loop within in_play for the paddle, walls and blocks. A bottom collision ends play, and gameReset starts a new run. The many events around few states make this diagram wide, illustrating a layout limitation.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Breakout editor places collision handlers above the brick/ball/paddle property definitions.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2459:0",
+        "page": 81,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-019-p081.png",
+        "current_alt": "Figure 4.11 The InterState editor shows one object at a time (in this case, myShape) and the fields and current values of every parent object in the containment hierarchy (in this case, sketch and paper). The editor also allows developers to pin objects to the screen by dragging them to the bottom of the window.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three editor panes show sketch, paper, and myShape with inherited fields and selected cx expression.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2465:0",
+        "page": 82,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-020-p082.png",
+        "current_alt": "Early Euclase editor using a tree of objects. Multiple expanded object tables and state machines are linked diagonally across the page, with highlighted property cells. The simultaneous display of parent and child objects creates the clutter that motivated the later one-object-at-a-time view.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Early editor displays expandable tree branches for many objects and their fields.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2474:0",
+        "page": 83,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-021-p083.png",
+        "current_alt": "InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my_square inherits from square. Because my_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my_square inherits the definition of height, not the value. Thus, the width property of my_square evaluates to a different value (20) than the width of square (15).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "square width is10+5=15 and height follows width; my_square width20 makes inherited height evaluate20.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2483:0",
+        "page": 84,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-022-p084.png",
+        "current_alt": "An object that inherits from both draggable and selectable behaviors. Note that the definitions for the color property are inherited from draggable ('red') and selectable ('blue').",
+        "status": "improve",
+        "reason": "The screenshot property is named fill, and the two inherited state machines and competing values are the important information.",
+        "visual_evidence": "selectable and draggable machines are combined in my_selectable_draggable; shown property is fill, with blue/black/red definitions.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "my_selectable_draggable combines the selectable and draggable state machines. The fill property inherits blue for selection and black/red for the dragging states. The combined object retains both sets of states and inherits x/y values that follow the mouse while dragging. When definitions conflict, the leftmost prototype takes precedence, as explained in the surrounding text."
+      },
+      {
+        "node": "2491:0",
+        "page": 85,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-023-p085.png",
+        "current_alt": "Figure 4.15 An object with multiple copies; copies is set to ['Jane', 'Sue']. Every copy has two properties: my_copy, which is set to that copy's item (here, either 'Jane' or 'Sue') and copy_num, which is set to that copy's index. Here, we are looking at the first copy (index 0).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Jane and Sue copies appear from an array; current copy index is0.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2495:0",
+        "page": 86,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-024-p086.png",
+        "current_alt": "Figure 4.16 Two InterState objects (favs_panel and color_disp) that create a dynamically changing display for a dynamic list of favorite colors. Annotations are in gold boxes. This code stores a list of favorites under favs_panel.favorites. When a user clicks on any color (represented favs_panel’s transition diagram as mouse.click(color), that color is added to the list of favorites (by setting favorites to favorites.push(color) in the color click transition). Because color_disp’s copies field is set to favorites, new copies of color_disp are added and removed as favorites changes, automatically adding and removing visual elements from the screen.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Changing an array of favorite colors produces the corresponding object copies.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2531:0",
+        "page": 89,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-025-p089.png",
+        "current_alt": "Figure 4.17 Syntax and runtime errors are highlighted in the editor but do not prevent the program from running. Fields with errors and other fields that depend on them are given the value undefined.",
+        "status": "improve",
+        "reason": "Generic error-handling caption omits the concrete error and resulting value shown.",
+        "visual_evidence": "Red error row uses other_shape.x+5, tooltip says Could not find field other_shape, evaluated result is undefined.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "InterState displays a red error for x=other_shape.x+5. The tooltip reads Could not find field other_shape, and the evaluated value is undefined. Dependent values also become undefined while the rest of the program continues running."
+      },
+      {
+        "node": "2583:0",
+        "page": 91,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-026-p091.png",
+        "current_alt": "Task completion time, with means and standard-deviation error bars for 20 participants. Drag lock: JavaScript 19.3 minutes, SD 13.6; InterState 8.0 minutes, SD 6.8. Image carousel: JavaScript 28.3 minutes, SD 7.6; InterState 14.7 minutes, SD 5.5. InterState takes about half the time on both tasks; the surrounding text reports p less than .05 and p less than .01, respectively.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two grouped task comparisons show JavaScript bars higher than InterState bars, with means and variability stated in the alt.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2615:0",
+        "page": 93,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-027-p093.png",
+        "current_alt": "Three benchmark plots of update delay in milliseconds as object complexity grows. A gray band marks delays above 100 milliseconds as non-instantaneous. The yellow prototype-chain curve reaches this threshold at N equals 58; the blue number-of-prototypes curve at about 2,400; and the green number-of-children curve at about 1,200. Delay generally rises with complexity.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three benchmark curves differ strongly in horizontal ranges; middle legend says prototypes, right says children, opposite the caption ordering.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2707:0",
+        "page": 98,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-028-p098.png",
+        "current_alt": "Figure 4.20 A representation of the basic object structure for the objects shown in Figure 4.13. The basic object tree is a mutable tree that gets modified when the developer performs an edit on their program. This model contains three objects (sketch, square, and my_square) and five cells (sq_protos, sq_width, sq_height, mysq_protos, and mysq_width). Note there is no field for my_square.height, the inherited field that only exists in the contextual object tree shown in Figure 4.21. There is also no slot for values, which are computed in the contextual object tree because the value of a given variable depends on its computation context. This model makes two simplifying assumptions. First, it omits the state machines of square and my_square (which would each have one start state). Second, it gives human-readable names to objects (sq_protos, sq_width, etc.) whereas in the InterState runtime, objects’ names only exist in their container object’s field name.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Basic object tree repeats shared objects using paths/relationships described in the long caption.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2711:0",
+        "page": 98,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-029-p098.png",
+        "current_alt": "Contextual object tree corresponding to the basic tree above. The root contextual dictionary c_sketch has square and my_square children. Every contextual dictionary and cell references its underlying basic object and a context path, and cells additionally contain computed values. The inherited my_square.height exists here even though the basic my_square object defines no height cell. Changing a basic definition updates the contextual values that depend on it.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Contextual object tree preserves distinct instances of inherited/contextual objects as described.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2788:0",
+        "page": 107,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-030-p107.png",
+        "current_alt": "Figure 5.1 A state machine showing the various states of an event with priority p. Every event can be in three states: idle, pending fire, and pending block. By default, every event is in the idle state. When the event requests to fire (a), through the fire method, it enters the pending fire state. After enough time (specified by the timeout parameter) or if the event has no timeout parameter, then the event’s firing is confirmed (b). If the event firing is cancelled (through the cancel method) before the timeout interval passes, then the event is cancelled (c). If another event in the same group with higher priority is requested before the timeout interval passes, then the event moves to the pending block stage (g). If all of the events with a higher priority are cancelled, then the event will return to the pending fire state (f). If any other event with a higher priority fires, then the event is blocked (d). If another event is still pending fire when the event’s timeout interval passes, then the event is also blocked (e).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three event-state examples show interrupt/priority outcomes and connected state paths.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2843:0",
+        "page": 115,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-031-p115.png",
+        "current_alt": "Figure 6.1 The default, “non-greedy” behavior for touch clusters is that every touch cluster can claim the same fingers. For instance, suppose a developer defines one three-finger touch cluster and three one-finger touch clusters across different elements in an interface. With non-greedy behavior, when the user presses three fingers down, all four touch cluster activation events would fire.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Non-greedy touch clusters show four recognized events from overlapping finger groups.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2846:0",
+        "page": 115,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-032-p115.png",
+        "current_alt": "Figure 6.2 Like in Figure 6.1, here the developer has defined one three-finger touch cluster and three one-finger touch clusters. However, the developer has specified that the three-finger touch cluster should be “greedy”, so that other touch clusters should not fire with any of the touches used. In this case, when the user presses three fingers down, only the three-finger touch cluster will fire.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Greedy touch cluster retains only the three-finger event.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2908:0",
+        "page": 119,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-033-p119.png",
+        "current_alt": "Figure 6.3 In most multi-touch devices, when a user taps a numeric input field, a numeric keypad is invoked. In this example, I augment that interaction to allow a user’s finger to also “nudge” the numeric slider left or right to select a number slightly lower or higher than the current value. Implemented with InterState’s touch extensions, this example uses path crossing events to determine if the user’s finger is moving horizontally or tapping the widget.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Slider illustration contrasts continuous horizontal dragging with tapping to open a numeric keypad.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2913:0",
+        "page": 120,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-034-p120.png",
+        "current_alt": "InterState numerical-slider definition with init, fingerDown, and slidingMode states. A touch starts tracking; crossEvent enters slidingMode. A timeout(100) self-transition repeatedly updates the numerical value during a sustained slide, and releasing the touch returns to init. Rows define the slider's position, offset, crossing event, value, and displayed value text.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Slider state editor contains init, fingerDown, slidingMode, crossing transition, and timeout100 self-transition.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2917:0",
+        "page": 120,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-035-p120.png",
+        "current_alt": "Figure 6.4, initial drawing canvas: overlapping multicolored brush strokes appear on a white canvas, with the controls hidden below the screen.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Initial canvas contains multicolored intersecting brush strokes and no open menu.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2918:0",
+        "page": 120,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-036-p120.png",
+        "current_alt": "Figure 6.4, one-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of brush and pen choices.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "One upward finger gesture opens a row of brush tools; label explicitly says one-finger swipe.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2919:0",
+        "page": 120,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-037-p120.png",
+        "current_alt": "Figure 6.4, two-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of colored swatches for selecting the drawing color.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two upward fingers open circular color choices; label explicitly says two-finger swipe.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2924:0",
+        "page": 121,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-038-p121.png",
+        "current_alt": "InterState oneFinger touch-event definition. numFingers is 1, downInside restricts the gesture's starting area, and delay is 100 milliseconds so a second finger can be detected before the one-finger event fires.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "oneFinger recognizer includes a100ms delay before its selected behavior.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2925:0",
+        "page": 121,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-039-p121.png",
+        "current_alt": "InterState twoFingers touch-event definition. numFingers is 2, greedy is true, and downInside restricts the gesture's starting area. The greedy two-finger event prevents both the one-finger and two-finger actions from firing together.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two-finger recognizer is greedy and thus excludes a competing one-finger action.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2927:0",
+        "page": 121,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-040-p121.png",
+        "current_alt": "InterState brushesPanel definition. Its state machine contains hidden, dragging, and showing states, with tHide and tShow substates inside dragging. The oneFinger event controls dragging and release transitions. The x, y, width, and height constraint rows position the panel, make it follow the finger, and determine whether it remains docked or hides.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "brushesPanel editor nests finger/visibility behavior with values in corresponding state columns.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2932:0",
+        "page": 122,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-041-p122.png",
+        "current_alt": "Figure 6.5 This example represents an undo/redo (or more generally, back/forward) mechanism for tablet applications. The user first presses down two fingers (in the diagram shown, the index and ring fingers) and presses a third to the left to undo or a third finger to the right to redo. To prevent conflicts with panning and scrolling gestures, this undo/redo gesture also cancels if the two finger centroid moves or scales past a low threshold.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Touch illustration assigns opposite crossing directions to undo and redo, with dashed crossing boundaries.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "2935:0",
+        "page": 122,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-042-p122.png",
+        "current_alt": "Touch regions for the undo/redo gesture. Two central fingers establish an anchor. A dashed red rectangle extends to the left of that anchor and a dashed blue rectangle to the right. Pressing a third finger inside the left region requests undo; pressing inside the right region requests redo. The regions move relative to the two-finger touch cluster.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Shaded touch regions and directional crossings match the gesture regions described.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "3638:0",
+        "page": 151,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-043-p151.png",
+        "current_alt": "Dependency diagram with an arrow from x on the right to y on the left. The definition y equals x plus 1 makes y depend on x.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Dependency arrow runs from x to y, matching y depending on x.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "3643:0",
+        "page": 151,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-044-p151.png",
+        "current_alt": "After x changes, the same dependency arrow points from x to y. The y node is colored red and explicitly labeled invalid, indicating that its cached value must be recomputed when requested.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Changed x invalidates y in the illustrated dependency pair.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc00-evidence.json and rendered contact sheets."
+    ],
+    "markdown_crop_recommendations": [
+      {
+        "node": "2459:0",
+        "page": 81,
+        "old_bbox": [
+          145.23800659179688,
+          151.07020568847656,
+          612.0,
+          542.8367919921875
+        ],
+        "proposed_mupdf_rect": [
+          148,
+          182,
+          520,
+          434
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop0.png"
+      },
+      {
+        "node": "2474:0",
+        "page": 83,
+        "old_bbox": [
+          147.11607360839844,
+          71.51809692382812,
+          541.3106689453125,
+          223.9904022216797
+        ],
+        "proposed_mupdf_rect": [
+          147,
+          72,
+          522,
+          160
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop1.png"
+      },
+      {
+        "node": "2483:0",
+        "page": 84,
+        "old_bbox": [
+          139.77647399902344,
+          225.28579711914062,
+          578.8973388671875,
+          608.4364013671875
+        ],
+        "proposed_mupdf_rect": [
+          147,
+          305,
+          523,
+          433
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop2.png"
+      },
+      {
+        "node": "2917:0",
+        "page": 120,
+        "old_bbox": [
+          138.57119750976562,
+          426.98419189453125,
+          260.4068603515625,
+          640.1915283203125
+        ],
+        "proposed_mupdf_rect": [
+          147,
+          460,
+          260,
+          609
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop3.png"
+      },
+      {
+        "node": "2918:0",
+        "page": 120,
+        "old_bbox": [
+          217.135498046875,
+          426.98419189453125,
+          480.514892578125,
+          792.0
+        ],
+        "proposed_mupdf_rect": [
+          267,
+          460,
+          393,
+          717
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop4.png"
+      },
+      {
+        "node": "2919:0",
+        "page": 120,
+        "old_bbox": [
+          393.8763732910156,
+          425.67730712890625,
+          522.480224609375,
+          657.6998291015625
+        ],
+        "proposed_mupdf_rect": [
+          396,
+          460,
+          522,
+          717
+        ],
+        "coordinate_system": "points, top-left origin",
+        "reason": "Current crop includes adjacent prose, caption, another panel, or excess transparent bounds. Tighter source-page crop retains complete intended visual.",
+        "verified_preview": "/tmp/spot-pdf-oct-review/g1/crop5.png"
+      }
+    ]
+  },
+  {
+    "file": "zhang-multi-click-uist2025.pdf",
+    "pdf_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "close_figure_review": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 2 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "600:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-001-p001.png",
+        "current_alt": "Multi-Click is a technique for simultaneously performing the same action (e.g., clicking or typing) across multiple targets. In the illustration above, a user opens many related items on a single page using a simultaneous click ( A○). Each of these items opens in a separate tab. The user then clicks common elements across these tabs (in this case, an ‘Edit’ button B○), which performs the same action simultaneously across each tab. They then select text input elements across these tabs ( C○) and use an interactive data grid/spreadsheet as the values for each input ( D○).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four lettered stages connect multi-tab opening, editing, selecting inputs, and spreadsheet values.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "652:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-002-p001.png",
+        "current_alt": "CC-BY Logo",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Small Creative Commons BY logo is visible.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "687:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-003-p001.png",
+        "current_alt": "Crossmark: Check for updates.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Crossmark icon says Check for updates.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1065:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-004-p003.png",
+        "current_alt": "Screenshots from the IMDb website. After Multi-Click is activated with double-tapping Shift , users can hover over an initial element and scroll the mouse wheel to generalize to equivalent elements.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "IMDb search results show progressively generalized title selection.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1134:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-005-p004.png",
+        "current_alt": "Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll to select the input elements to enter values. The generalized elements are highlighted in purple (a). The user can see selected elements in other tabs in the preview cards, where the selected elements are highlighted in blue (c). Then the user can enter values in the interactive data table (d) and calculate results for each term simultaneously.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Purple selected inputs, blue preview selections, tab cards, and spreadsheet input are visible.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1255:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-006-p006.png",
+        "current_alt": "Three grouped bar charts compare average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test.",
+        "status": "improve",
+        "reason": "The numbers/trends are correct, but this is one grouped chart, not three separate charts.",
+        "visual_evidence": "One grouped chart contains three task groups and the stated relative times and significance marks.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "A grouped bar chart compares average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test."
+      },
+      {
+        "node": "1325:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-007-p007.png",
+        "current_alt": "Two horizontal stacked-bar panels show NASA-TLX response distributions for Multi-Click and Operator across mental demand, physical demand, hurriedness, perceived success, effort required, and stress/discouragement. Ratings run from 1 in dark red to 7 in dark blue; 1 indicates higher load, hurry, effort or stress and lower success. Multi-Click responses lean toward the favorable higher ratings across all six questions. Operator has more low ratings for hurriedness and more middle ratings for perceived success and effort. The clearest contrast is hurriedness: Operator has responses across ratings 1 through 7, including a large rating-1 segment, while Multi-Click responses are concentrated at 4 through 7.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two sets of six stacked NASA-TLX response bars use the described red-to-blue scale and show lower load for Multi-Click.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1328:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-008-p007.png",
+        "current_alt": "Four ACM paper tabs supply abstracts to a spreadsheet. The abstract element is selected in the first tab and generalized across the other tabs; the resulting grid has one column per paper and its abstract in the corresponding cell.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four ACM tabs and a grid of abstracts are linked by selected text elements.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1329:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-009-p007.png",
+        "current_alt": "A spreadsheet supplies different values to job application forms in three tabs: J&J, Slack and NVIDIA. The grid pairs job titles Data Scientist, Manager and Engineer with prior companies Meta, Amazon and Google. Generalized Job Title and Company fields on each form receive values from the matching spreadsheet column.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three application tabs receive job titles and companies from matching spreadsheet columns.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1461:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-010-p008.png",
+        "current_alt": "Stock quote elements from separate tabs are collected into a spreadsheet with columns for NYSE Composite, NYSE US 100, Dow Jones Industrial Average and S&P 500. Each column holds the quoted index value and its daily numeric and percentage change; the displayed changes are all negative. Purple highlights identify the corresponding quote elements selected across tabs.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Stock panels have negative changes and corresponding highlighted values in the extracted grid.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1462:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-multi-click-uist2025/figure-011-p008.png",
+        "current_alt": "Three Reddit post tabs contain highlighted comments. Multi-Click collects corresponding comments into a grid with one column per post and successive comments in rows, demonstrating extraction of multiple items from each tab.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Reddit comments from three tabs are collected into multiple grid rows.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc01-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "chen-cocapture-chi2021.pdf",
+    "pdf_sha256": "935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "close_figure_review": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 1 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout.",
+      "Red/green frames distinguish existing/desired interfaces; the alternative description names both conditions."
+    ],
+    "figures": [
+      {
+        "node": "761:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-001-p001.png",
+        "current_alt": "Figure 1: The workflow of CoCapture. There are four steps of using CoCapture to communicate new UI behavior mockups on an existing website. (Step 1) Users first capture existing interface behaviors (base scene) by interacting with the website (scrolling), and CoCapture will automatically capture the Document Object Model (DOM) changes. (Step 2) In CoCapture’s main panel, users can add new behaviors on top of the base scene by demonstration; that is, by directly manipulating any elements (e.g., drag and drop the red element in the replay and see immediate changes). (Step 3) Users can remix (post-edit, e.g., change duration) added behaviors to finalize the mockup. (Step 4) Users can refer to the DOM elements or added behaviors in the textual description using hypertext.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four numbered workflow panels show capture, demonstrated movement, timeline editing, and linked textual description.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1023:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-002-p005.png",
+        "current_alt": "Figure 2: CoCapture’s main panel (after Step 1 in Fig. 1). To create an animation, a user first clicks on an existing DOM element (b1) (can select multiple by holding Shift key down) from the base scene (B). Once recording starts (A), the user can demonstrate the desired behaviors by changing the elements’ properties (C) or directly dragging them in the base scene. Once the recording is finished, the demonstration will be appended to the Animation List (D) with a set of meta operations, such as adjust start/end time, replay, and preview. The user can write their question (E) and refer to the animations or DOM elements in the scene by selecting portions of text and clicking the ‘Link to a Reference’ button. Text with references, or hypertext, is in blue with a click affordance displaying the relevant context (i.e., highlight elements (b1), replay animations (D)). The process of the animation (inbetweening) will also be displayed (F). The user can also filter the Animation List (D) to only display the animations related to the selected elements.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Lettered panels show scene selection, properties, animation list, question field, and linked highlights.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1084:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-003-p007.png",
+        "current_alt": "Figure 3: For each created animation, CoCapture provides information that prompts users about the actions they can take, including creating visual tags and replaying or previewing the animation. It also supports a set of operations to make the creation process easier and more accurate, including a range slider for time adjustment, as well as options for cloning, changing, or deleting an element.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Animation row contains timing slider, visual tag and preview/replay/edit controls.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1095:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-004-p007.png",
+        "current_alt": "Figure 4: There are three steps to create hypertext: (1) select portions of the text in the question description, (2) click “Link to a Reference,” and either (3.1) select an element in the scene or (3.2) check an animation. The hypertext will be highlighted afterwards.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three numbered selection/link steps branch to selecting an element or checking an animation.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1112:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-005-p007.png",
+        "current_alt": "Position and rotation icon: overlapping circles ending in a filled circle.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Motion/rotation icon uses a series of overlapping circles.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1113:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-006-p007.png",
+        "current_alt": "Font-size icon: small and large capital A letters.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Small and large A identify font-size change.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1114:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-007-p007.png",
+        "current_alt": "Visibility icon: an open eye.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Open eye identifies visibility.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1129:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-008-p008.png",
+        "current_alt": "Figure 5: Screenshots of two of the user study tasks: the Reddit website (left column), and an SVG game (right column). The screenshots with a red border (a, c) are the existing UIs, whereas the green ones (b, d) are the desired UIs that the participants were asked to create and describe during the study. The tasks were designed with three goals: realistic, common, and complex. For the Reddit website task, the issue with the existing UI is that some of the DOM elements are not responsive to window resizing user input. For the SVG game task, participants need to add new game behaviors such that when the game character hits the block and the star shape element, the game scene will change dynamically and a new element (the cyan shield shown in the last image) will be added to the scene.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Red-bordered existing and green-bordered desired website/game examples show resize failure and added cyan shield.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1208:0",
+        "page": 10,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-cocapture-chi2021/figure-009-p010.png",
+        "current_alt": "Figure 6. Box plots of time in seconds, control in coral and CoCapture treatment in cyan. For visual-reference creation, control median is about 110 seconds, with middle half roughly 65–200, while CoCapture median is about 325, with middle half roughly 280–475 and a long upper whisker near 760. For writing text, control median is about 350 seconds, with middle half roughly 315–380, versus CoCapture median about 95, with middle half roughly 60–145. Control has high outliers near 490 seconds for visual references and near 560 and 800 for text. Participants spent more time creating visual references and less time writing with CoCapture; the source reports both differences p<.0001.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Boxplots show longer visual-reference creation but shorter writing with CoCapture, with plotted medians/whiskers/outliers corresponding to the description.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc02-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "zhang-vrcopilot-uist2024.pdf",
+    "pdf_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "close_figure_review": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "143:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-001-p001.png",
+        "current_alt": "Figure 1. VRCopilot offers three creation modes. Automatic creation generates an entire furnished room from a voice request. Manual creation combines pointing and speech to request a chair at a location, then offers three candidate chairs for selection. Scaffolded creation lets the user draw or generate labeled floor-plan wireframes, such as a bed footprint, and convert them into furniture.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Creation-mode examples show room generation, pointing plus speech for chair selection, and wireframe-to-furniture conversion.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "262:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-002-p004.png",
+        "current_alt": "Figure 2 shows the user interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions.",
+        "status": "improve",
+        "reason": "Alt has an incomplete phrase and can state what the two interfaces show.",
+        "visual_evidence": "Left palette contains furniture categories/catalog; right miniature room versions support switching workspaces.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions."
+      },
+      {
+        "node": "385:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-003-p006.png",
+        "current_alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, and retain the completed room.",
+        "status": "incorrect",
+        "reason": "Last scaffolded panel returns to wireframes to support another layout, rather than retaining the finished room.",
+        "visual_evidence": "Last scaffolded panel shows floor wireframes again, rather than retention of a completed furnished room.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, then switch back to wireframes to explore another layout."
+      },
+      {
+        "node": "408:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-004-p007.png",
+        "current_alt": "Figure 4. System architecture. A Unity client coordinates direct manipulation, voice requests and intents, intermediate wireframe representations, and the 3D scene. Audio is sent to OpenAI whisper-1, whose transcript is processed by gpt-4-turbo to return intents and parameters to Unity. The client requests layouts from the ATISS generative model server, receives generated wireframe layouts, and instantiates furniture in the scene. AWS Polly provides text-to-speech audio output. Users can also directly manipulate the scene and draw wireframes through the client interface.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Arrows connect Unity, speech models, ATISS layout server and audio output in the described directions.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "440:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-005-p008.png",
+        "current_alt": "Figure 5a. Top-down apartment layout created by P7 without generative AI. Two furnished bedrooms sit above an open living and kitchen area. The lower area has seating along the bottom edge and a broad open center; bedroom furniture includes additional storage or work surfaces.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two top bedrooms sit above an open lower living/kitchen zone.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "442:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-006-p008.png",
+        "current_alt": "Figure 5b. Top-down apartment layout created by P10 without generative AI. Two bedrooms appear above a living and dining area with an L-shaped sofa on the left and a rectangular dining table and chairs in the center. The bedrooms use a coordinated pale furniture palette.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "L-shaped sofa is left of central rectangular table and chairs.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "444:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-007-p008.png",
+        "current_alt": "Figure 5c. P6 used generative AI for the two bedrooms and created the remainder of the apartment without AI. Both upper bedrooms are densely furnished. The lower living area contains a sofa and two round tables with a broad open space to the right.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Upper bedrooms are dense; lower sofa and round tables leave open floor to the right.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "446:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-008-p008.png",
+        "current_alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a desk sits diagonally near the bottom-left corner.",
+        "status": "improve",
+        "reason": "The diagonal lower-left furnishing is not clearly a desk; remove the unsupported specific identification.",
+        "visual_evidence": "Lower-left diagonally oriented object appears to be an armchair, not clearly a desk; top-down render limits certainty.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a separate furnishing is placed diagonally near the bottom-left corner."
+      },
+      {
+        "node": "484:0",
+        "page": 9,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-vrcopilot-uist2024/figure-009-p009.png",
+        "current_alt": "Figure 6. Box plots of agency, creativity, and effort on a seven-point Likert scale, comparing manual creation in red, scaffolded creation in green, and automatic creation in blue. Manual creation has the highest agency ratings, scaffolded creation is intermediate, and automatic creation is lowest; all pairwise agency differences are significant. Manual creation also has higher creativity ratings than the other two conditions, which do not significantly differ. Effort ratings cluster near the lower-middle of the scale and do not significantly differ. Boxes show the middle half of responses with median lines, whiskers, and plotted means.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Agency distributions descend manual/scaffolded/automatic; creativity manual is highest, effort distributions overlap and significance marks agree.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc03-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+    "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3,
+        5,
+        10,
+        11,
+        12
+      ],
+      "close_figure_review": [
+        3,
+        5,
+        10,
+        11,
+        12
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "716:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-001-p003.png",
+        "current_alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\".",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Pink Best Seller, green enclosing result, blue product-name highlights match the three-step DOM selector.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "720:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-002-p005.png",
+        "current_alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Medium article author/publication fields are outlined beside the active selector line.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "799:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-003-p005.png",
+        "current_alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Stella has five selected categories and Molly only one, explaining why index1 is undefined for Molly.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "803:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-004-p005.png",
+        "current_alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\".",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Pinned purple Cypress command40 highlights Pit Bull Terrier Mix in the dog page.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "525:0",
+        "page": 10,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-005-p010.png",
+        "current_alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\".",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Larger appendix copy of the three-stage Amazon selector reproduces the same numbered highlights.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "529:0",
+        "page": 11,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-006-p011.png",
+        "current_alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Larger appendix copy exposes Medium author/publication highlights and active selector line.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "533:0",
+        "page": 12,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-007-p012.png",
+        "current_alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Larger appendix copy shows distinct Stella/Molly iteration snapshots and category mismatch.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "537:0",
+        "page": 12,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/krosnick-understanding-challenges-needs-vlhcc2021/figure-008-p012.png",
+        "current_alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\".",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Larger appendix copy shows pinned Cypress command and corresponding breed text.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc04-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "wang-puzzleme-cscw2021.pdf",
+    "pdf_sha256": "aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        6,
+        8,
+        9,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18
+      ],
+      "close_figure_review": [
+        8,
+        9,
+        13,
+        15,
+        16
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 5 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout.",
+      "Timeline uses red and green alone for failed/successful execution markers; source colors are unchanged.",
+      "Figure3 Score2 expected order conflicts with the caption about alphabetical sorting; retain the shown data and describe the discrepancy."
+    ],
+    "figures": [
+      {
+        "node": "950:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-puzzleme-cscw2021/figure-001-p008.png",
+        "current_alt": "PuzzleMe student interface for an alphabetic name-sorting exercise. The problem appears above a Python editor and paired setup/assertion test. A test-library panel lists shared tests with pass/fail feedback, beside the execution output. Tabs open instructor live coding and peer review; class completion and a leaderboard show progress. The labeled A–I controls are explained individually in the adjacent caption.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Labeled editor/test/library/output/progress areas match the caption and alt.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "967:0",
+        "page": 9,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-puzzleme-cscw2021/figure-002-p009.png",
+        "current_alt": "Two PuzzleMe views. The instructor live-code tab shows Python code with a freehand red diagram drawn over the editor to explain it. The peer-review view presents group members as selectable tabs, displays the selected member’s solution, and places the group text conversation to its right, so code and discussion can be inspected together.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Two views place annotated live code and peer solution tabs beside a group conversation.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1110:0",
+        "page": 13,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-puzzleme-cscw2021/figure-003-p013.png",
+        "current_alt": "Three test cases for alphabetically sorting names. Score0 reuses Alice, Bob, Charlie but asserts an incorrect order, Charlie, Alice, Bob. Score1 keeps those input names and checks that the output length matches the input length. Score2 supplies new names Alice, Bob, Mark and checks the correctly sorted output Alice, Bob, Mark. The caption defines the three scoring levels.",
+        "status": "incorrect",
+        "reason": "Score1 and Score2 were described incorrectly; the replacement preserves the visible source inconsistency instead of silently correcting it.",
+        "visual_evidence": "Score1 compares lengths of the first two sorted strings, while Score2 visibly expects Alice, Mark, Bob.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Three test cases illustrate quality scores 0, 1, 2. Score 0 uses names Alice, Bob, Charlie and asserts the order Charlie, Alice, Bob. Score 1 uses the same input and checks len(names_sorted[0]) > len(names_sorted[1]), comparing the lengths of the first two output strings. Score 2 changes the input to Alice, Bob, Mark and asserts Alice, Mark, Bob. The caption describes alphabetical sorting, but the displayed Score 2 expected order is Alice, Mark, Bob; this source inconsistency is retained."
+      },
+      {
+        "node": "1128:0",
+        "page": 15,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-puzzleme-cscw2021/figure-004-p015.png",
+        "current_alt": "Timeline of student activity over0–1000seconds, with one horizontal row per student. Red dots mark failed executions and green dots successful executions. Discussion starts near490seconds, editing is allowed near610seconds and the answer is revealed near695seconds. Peer-code checks and sent/received messages cluster between discussion and answer release. Green horizontal highlights identify ten students whose failures became successes after discussion; many of these first successes occur before the answer is shown.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Red/green execution events occupy student rows; messages/code checks cluster between discussion start and answer release.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "1141:0",
+        "page": 16,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-puzzleme-cscw2021/figure-005-p016.png",
+        "current_alt": "Three Python acronymBuilder implementations use common_words equal to of, a, the, an. SolutionA accepts a to_ignore argument but mistakenly filters using common_words directly, so a nondefault argument is ignored. SolutionB correctly filters using to_ignore and joins the initial letters in one comprehension. SolutionC also respects to_ignore, but uses a loop to collect allowed words and a second loop to collect their first letters before joining them. All three pass the default test.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three acronymBuilder implementations distinguish direct common_words use from argument-respecting comprehension and loop approaches.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc05-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "oney-constraintjs-uist2012.pdf",
+    "pdf_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "close_figure_review": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Native p1 reading order interrupts the author/affiliation group with Figure171 before Joel Brandt and Adobe affiliation. Safe sibling reorder required."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "171:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-001-p001.png",
+        "current_alt": "Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the fb_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends and pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading, friends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the picture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Friends/loading/error interface is paired on the PDF page with a separately tagged code listing; the image asset contains the interface portion.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "344:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-002-p005.png",
+        "current_alt": "Figure 2: An illustration of a jQuery UI slider widget. Constraint variables can be attached to track the value of this widget.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Slider handle is near the center with visible value59.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "375:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-003-p005.png",
+        "current_alt": "Figure 3: A color selector that uses constraint variables to automatically update the preview color and hex value text. A constraint variable tracks the values for each of the red, green, and blue sliders (r, g, and b respectively.) A fourth constraint variable (hex) computes a hex color value. Finally, constraints update the background color and text of the color selector to reflect the slider values.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three RGB controls feed hex color and a shared swatch.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "415:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-004-p006.png",
+        "current_alt": "Figure 4: (Left) An illustration of an interactive behavior where hovering over one block highlights the other block. (Right) the FSM used by both blocks to track their state.",
+        "status": "improve",
+        "reason": "The caption alone omits directional transition labels.",
+        "visual_evidence": "Mouseover moves idle to myhover and mouseout returns it; yellow hover feedback alternates with black.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Two views of a black block show yellow hover feedback. The state machine starts in idle, changes to myhover on mouseover, and returns to idle on mouseout. The block is black in idle and yellow in myhover."
+      },
+      {
+        "node": "426:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-005-p007.png",
+        "current_alt": "Figure 5: The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.",
+        "status": "improve",
+        "reason": "State overview omits the visible retry path; unlike the later thesis version this image shows refresh from Rejected only.",
+        "visual_evidence": "Pending moves to Resolved or Rejected; refresh returns from Rejected to Pending.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Asynchronous-value state machine: Pending transitions to Resolved on success and Rejected on error. A refresh event returns Rejected to Pending for another request."
+      },
+      {
+        "node": "476:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-006-p008.png",
+        "current_alt": "Figure 6: An illustration of Bubble Cursors [6]. Clickable “targets” are light grey-filled circles. When the cursor is too far from any of the targets, a grey dotted halo appears around the cursor (A). When a target is in range (B), the halo becomes red and shrinks enough that it intersects the target, which turns dark grey. The ConstraintJS implementation of this application allows all of this behavior to be expressed declaratively.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Four cursor/target snapshots show halo adaptation and selected-target feedback.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "485:0",
+        "page": 9,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-007-p009.png",
+        "current_alt": "Figure 7: A scatterplot application implemented with ConstraintJS. By default, constraints set the position of every data point to reflect the values of an underlying data model (A). When a point is dragged (B), a constraint in the opposite direction updates the underlying data model based on the position of the point, which in turn, is constrained to the mouse’s position. The axes may also be dragged (C) and constraints automatically update the axis labels to reflect its position. Finally, axes’ scales may be changed (D) by dragging a point while holding SHIFT. This example illustrates how one-way constraints in ConstraintJS may be combined with FSMs to enable functionality that was previously only possible with multi-way constraints.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Scatterplot panels demonstrate axis choices, marks, drag selection and changed plotted ranges.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "492:0",
+        "page": 9,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-constraintjs-uist2012/figure-008-p009.png",
+        "current_alt": "Figure 8: An illustration of a touchscreen-based application written with ConstraintJS. Constraints control the position, scale, and angle of photos, which users can manipulate with one or two fingers. When two fingers touch a photo, a red slider appears that controls the photo’s opacity and can be changed using a third finger. Constraints set the position and text of the slider.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Photographs and opacity slider illustrate direct multitouch transformations and fading.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc06-evidence.json and rendered contact sheets."
+    ],
+    "native_order_recommendation": {
+      "page": 1,
+      "parent": "168:0",
+      "parent_role": "Sect",
+      "original_K": [
+        "169:0",
+        "170:0",
+        "171:0",
+        "172:0",
+        "173:0",
+        "174:0",
+        "175:0",
+        "176:0",
+        "177:0",
+        "178:0",
+        "179:0",
+        "180:0",
+        "181:0",
+        "182:0",
+        "183:0",
+        "184:0",
+        "185:0",
+        "186:0",
+        "187:0"
+      ],
+      "proposed_K": [
+        "169:0",
+        "170:0",
+        "172:0",
+        "173:0",
+        "171:0",
+        "174:0",
+        "175:0",
+        "176:0",
+        "177:0",
+        "178:0",
+        "179:0",
+        "180:0",
+        "181:0",
+        "182:0",
+        "183:0",
+        "184:0",
+        "185:0",
+        "186:0",
+        "187:0"
+      ],
+      "roles": "169 H1;170 author P;171 Figure;172 author P;173 affiliation P;174 Code;175 Caption;remainder unchanged."
+    }
+  },
+  {
+    "file": "wang-callisto-chi2020.pdf",
+    "pdf_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "close_figure_review": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 5 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "767:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-callisto-chi2020/figure-001-p001.png",
+        "current_alt": "Concept diagram of notebook and conversation history. Notebook versions progress from left to right across the top, while messages progress across the bottom. Colored curved connectors link individual messages to the cells, plots or annotations discussed at that version, preserving the context even as the notebook changes.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Versioned notebook cells across the top and message history below are linked by colored curves.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "893:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-callisto-chi2020/figure-002-p005.png",
+        "current_alt": "Overview of Callisto: (A) The changelog panel shows users' edit histories; (B) The collaborative notebook editor synchronizes edits, runtime variables, outputs, annotations (see G, H), and cursors (see F) among collaborators; (C) The filter button enables the filtering mode (see Figure 3); (D) The user panel lists collaborators that are connected to the notebook. Users can navigate to others' cursor locations by clicking on their name; (E) The embedded synchronous chat pane creates connections between messages and notebook content. Messages mapped to the selected cell are highlighted in light green. Users can create explicit references by clicking the magic wand (see J) and then selecting the relevant part of the notebook---for example, to create an annotation reference (see I).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Changelog left, notebook center, chat right, collaborator markers and referenced cell highlights match lettered controls.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "909:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-callisto-chi2020/figure-003-p006.png",
+        "current_alt": "Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell.",
+        "status": "improve",
+        "reason": "Caption-only alt does not explain the highlighted relationship across panes.",
+        "visual_evidence": "Selected scatterplot cell, relevant changelog entries, and associated messages are highlighted pale yellow across panes.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Callisto filter mode highlights the selected notebook cell, associated edits in the left changelog, and related messages in the right chat in pale yellow. The example selects a GrLivArea-versus-SalePrice scatterplot and conversation about outliers, connecting the relevant context across the panes."
+      },
+      {
+        "node": "1340:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-callisto-chi2020/figure-004-p007.png",
+        "current_alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output.",
+        "status": "improve",
+        "reason": "Controls are described, but the concrete before/after visual change is omitted.",
+        "visual_evidence": "Code/output comparison shows SalePrice distribution before and after a log transform, with an output blending slider.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output. The example changes a SalePrice distribution plot to a log-transformed distribution: the original is strongly right-skewed and the transformed output is more nearly bell-shaped."
+      },
+      {
+        "node": "938:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/wang-callisto-chi2020/figure-005-p007.png",
+        "current_alt": "Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook. When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure 4). Users can manually refine the links using the edit button (see B).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "One-message and two-message selections expose snapshot, edit-link and diff controls.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc07-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "zhang-cflow-ls2024.pdf",
+    "pdf_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        5,
+        6,
+        8,
+        10
+      ],
+      "close_figure_review": [
+        1,
+        5,
+        6,
+        8,
+        10
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "482:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-cflow-ls2024/figure-001-p001.png",
+        "current_alt": "Figure 1: A system overview of CFlow. (a) Upon collecting student code submissions, (b) CFlow extracts and semantically labels the code statements. (c left) These labels are then clustered and represented in a Semantic Aggregation View (SAV). (c right) Statement correctness is color coded and visualized using a stacked bar histogram, forming the Semantic Histogram View (SHV). (d) Users can filter the views by clicking on labels in the SAV or bars in the SHV. The Code Detailed View (CDV) enables for an in-depth inspection of specific code branches.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Code submissions feed semantic labels, aggregated flows, correctness histograms and filtered detail.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "782:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-cflow-ls2024/figure-002-p005.png",
+        "current_alt": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h).",
+        "status": "improve",
+        "reason": "The existing walkthrough omits the visual correctness scale needed to interpret the histogram.",
+        "visual_evidence": "Green/red correctness scale and narrowing from whole class to selected solutions accompany the described panels.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h). The correctness scale runs from green for all correct to red for none correct, so selecting a flow group also reveals the distribution of correctness within that group."
+      },
+      {
+        "node": "818:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-cflow-ls2024/figure-003-p006.png",
+        "current_alt": "Figure 3: CFlow’s algorithm. To generate the results required in CFlow’s user interface, CFlow’s algorithm include four primary stages: (1) identifying and tagging the steps required to solve a problem, (2) grouping and aligning lines of code across code samples, (3) identifying semantic, syntactic, and runtime errors, and (4) clustering the grouped results.",
+        "status": "improve",
+        "reason": "Generic stage names omit the algorithmic relationships and intermediate representations visible in the diagram.",
+        "visual_evidence": "Four-stage diagram names CodeBERT, common ordering/LCS, LLM error labels and a final within-group clustering pass.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "CFlow algorithm pipeline. Code lines are normalized and represented with CodeBERT vectors to identify semantic groups and tags. Common tag order in correct solutions forms a canonical progression; lines are aligned to it using longest common subsequences. An LLM labels lines as correct or as semantic, syntax, or runtime errors. Finer CodeBERT clustering within semantic groups combines with correctness labels to populate the aggregated flow and histogram views."
+      },
+      {
+        "node": "877:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-cflow-ls2024/formula-001-p008.png",
+        "current_alt": "Equation 1. Accuracy equals the number of matched answers divided by the greater of the number of correct answers and the number of selected answers.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Displayed fraction divides matched answers by max(correct answers, selected answers).",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "648:0",
+        "page": 10,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-cflow-ls2024/figure-004-p010.png",
+        "current_alt": "Figure 4: An example of how CFlow looks like without LLM determining line correctness. (a) is a collection of code lines that check the end of a word, and (b) is the correctness histogram. Upon selecting the prominent red block (c), users can view an example that incorrectly check the end of a word (d). By clicking on “LogicalError” (e), users are then able to explore detailed solutions (f).",
+        "status": "improve",
+        "reason": "Caption identifies an error but omits the highlighted faulty condition that explains it.",
+        "visual_evidence": "Highlighted wrong condition tests whether e is anywhere in the word instead of comparing its last character with e.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "CFlow example without LLM line-correctness classification. Selecting the prominent red histogram group reveals a condition that tests whether e occurs anywhere in a word, using e in word, instead of whether its last character is e, using word[-1] == e. Choosing LogicalError opens the full solution and highlights the faulty condition in the code that appends d or ed to words."
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc08-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+    "pdf_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        24,
+        25,
+        26
+      ],
+      "close_figure_review": [],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 3 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "No extracted figure/formula assets; overview found no overlooked substantive illustration beyond noted source code-panel defects where applicable."
+    ],
+    "remaining_visual_concerns": [
+      "Some prose is colored magenta in the original; lower-contrast coloring remains unchanged. Multi-page participant table is densely typeset but has scoped native headers."
+    ],
+    "figures": [],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc09-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "chen-codeon-chi2017.pdf",
+    "pdf_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "close_figure_review": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 6 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "635:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-codeon-chi2017/figure-001-p003.png",
+        "current_alt": "Figure 1: Asynchronous interactions between developers and helpers can occur in three stages: making a request (S1), writing a response (S2), and integrating the response (S3). In Codeon, developers use an IDE plug-in to make requests (S1) and integrate responses (S3), and helpers use a web-based IDE to view content and generate responses (S2).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Developer and helper stages connect request, response construction, and integration with directional arrows.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "682:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-codeon-chi2017/figure-002-p004.png",
+        "current_alt": "Figure 2: Codeon interface where the requests and responses are on the right panel(2). Developer’s code(1) and helper’s code(3) are side by side for better comparison. Other responses includes explanation(4), annotation(5), and comments(6)",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Developer/helper code is side by side, with numbered explanation/annotation/comment regions.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "734:0",
+        "page": 6,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-codeon-chi2017/figure-003-p006.png",
+        "current_alt": "Figure 3: The helper side of Codeon is an interactive webpage that allows helpers to replay the request(0) and run the code(4). Helpers can respond to it with explanation(1), and inline code(2), and annotation(3).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Helper webpage numbers replay, explanation, inline code, annotation and execution.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "751:0",
+        "page": 7,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-codeon-chi2017/figure-004-p007.png",
+        "current_alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. An arrow points from the Codeon result to the baseline comparison. The paired t-test reports p = 0.03.",
+        "status": "incorrect",
+        "reason": "Comparison uses a greater-than symbol, not the arrow described.",
+        "visual_evidence": "Large2.2 and1.3 task counts are separated by greater-than sign, not an arrow; SD1.0 and0.9 and p=.03 are printed.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. A greater-than sign emphasizes that more tasks were completed with Codeon. The paired t-test reports p = 0.03."
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc10-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+    "pdf_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        2,
+        4
+      ],
+      "close_figure_review": [
+        1,
+        2,
+        4
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 1 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "Bashon Markdown incorrectly moves body paragraph373 before Introduction370 because the paragraph also contains a trailing copyright notice. Native body order is correct, but notice should be split from body semantics."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "374:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-hybrid-crowd-machine-workflow-vlhcc2020/figure-001-p001.png",
+        "current_alt": "Fig. 1. Bashon allows users to create Bash commands from natural language. It uses a hybrid workflow that integrates crowd workers and an AI for program synthesis. In this example, the user types a command in natural language: “List files that are modified more than 30 days ago under the css directory” and Bashon proposes three Bash commands. The user can press ‘Run’ to execute any of the proposed commands",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Natural-language request produces three command candidates each with a Run control.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "390:0",
+        "page": 2,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-hybrid-crowd-machine-workflow-vlhcc2020/figure-002-p002.png",
+        "current_alt": "Fig. 2. System diagram: This diagram plots both the original Tellina (blue) and Bashon’s (green) workflow. In Tellina’s workflow, first, a natural language query (1) is sent to an automated entity extraction process (2) which outputs a list of entities, their associated types, and the entity extracted query template (3). Then, the neural network (4) translates the query and the extracted entities into a list of commands (5) that is sent back to the user (6). In Bashon’s workflow, the natural language queries first go through the original Tellina system, with automated entity extraction (1-5). The results from this are then evaluated by crowd workers (7). If they are incorrect (8), they then go to crowd workers for entity extraction (9). Commands resulting from this re-extraction process go back to crowd workers for a final validation step (7), and the results of this are sent back to the end users (10).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Blue automated Tellina flow and green crowd validation/re-extraction branches have numbered arrows matching the alt.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "430:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-hybrid-crowd-machine-workflow-vlhcc2020/figure-003-p004.png",
+        "current_alt": "Figure 3. Pipeline compares automated Tellina and crowd components. For 50 queries, Tellina entity extraction has 29.00% precision and 22.64% accuracy; crowd extraction has 85.99% precision and 91.99% accuracy (both marked with three asterisks in the source). Extracted entities and templates feed translation, producing candidate commands. Tellina execution filters invalid results, with 60.3% accuracy. A query such as show only .pdf files and the divided file-system outputs then go to crowd validation, which has 77.04% accuracy and returns valid commands.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Precision/accuracy labels, two extraction branches, execution filtering and validation output agree with the stated values.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "438:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-hybrid-crowd-machine-workflow-vlhcc2020/figure-004-p004.png",
+        "current_alt": "Fig. 4. User interface of entity extraction task. Crowd workers can add one entity at a time by typing the entity they recognize in the query to the text box (1), and then select the type from a drop down list (2).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Entity textbox and type dropdown are marked1 and2.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc11-evidence.json and rendered contact sheets."
+    ],
+    "native_notice_recommendation": {
+      "page": 1,
+      "page_object": "6:0",
+      "paragraph": "373:0",
+      "parent": "142:0",
+      "original_parent_K": [
+        "143:0",
+        "144:0",
+        "145:0",
+        "369:0",
+        "370:0",
+        "371:0",
+        "372:0",
+        "373:0",
+        "374:0",
+        "375:0",
+        "376:0",
+        "377:0"
+      ],
+      "move_to_new_Note_MCID": [
+        632,
+        633,
+        634
+      ],
+      "text": [
+        "978-1-7281-6901-9/20/31.00",
+        " ©2020",
+        " IEEE"
+      ],
+      "instruction": "Move only these trailing content references from373 to a new Note under142 and update ParentTree ownership. Keep body373 after372. Narrow exporter notice classification so mixed body paragraphs cannot move as frontmatter."
+    }
+  },
+  {
+    "file": "xu-how-pairing-code-chilbw2023.pdf",
+    "pdf_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3,
+        4
+      ],
+      "close_figure_review": [
+        1,
+        3,
+        4
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "275:0",
+        "page": 1,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/xu-how-pairing-code-chilbw2023/figure-001-p001.png",
+        "current_alt": "Crossmark: Check for updates.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Crossmark mark says Check for updates.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "390:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/xu-how-pairing-code-chilbw2023/figure-002-p003.png",
+        "current_alt": "Figure 1. Index of methods used in participant code.1: create a new dictionary or array of letters/numbers; example initializes an empty list, loops over data, and appends even values.2: loop to find the maximum length using an accumulator.3: use min or max to find the word or number.4: sort, with a lambda function.5: loop with an accumulator and an if condition directly solving the question; example updates the smallest even value.6: use a filter function. These indices identify methods in Figure 2.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Six methods are indexed with code examples, matching the complete descriptions.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "399:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/xu-how-pairing-code-chilbw2023/figure-003-p004.png",
+        "current_alt": "Figure 2. Methods used for questions 1 and 2, using indices defined in Figure 1. D denotes different-solution groups, shaded gray; S denotes similar-solution groups, white. Each row below gives question 1, then question 2. D1a: 2, partially solved; 1, 2, 4, 5. D1b: 1, 2; data lost. D2a: 1, 3; 1, 2, 4, 5. D2b: 1, 2; 1, 2. D3a: 3, partially solved; 1, 3. D3b: 1, 4; 1, 4, 6. D4a and D4b: failed to solve both questions. S1a: 5; 2, 4, 5. S1b: 5; 5. S2a: 5; 1, 4. S2b: 3, partially solved; 3, 6. S3a and S3b: 5; 1, 4, 5. S3c: 5; 3, 4, 5.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "D/S participant rows, partial failures and data-lost cell match the full row transcription in the alt.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "404:0",
+        "page": 4,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/xu-how-pairing-code-chilbw2023/figure-004-p004.png",
+        "current_alt": "Figure 3. Three examples show reasoning expressed in discussion but missing from submitted code; red text marks those additional thoughts. Example 1: a participant considered sorting, rejected alphabetical sorting, and used a loop that compares string lengths to find the longest word. Example 2: a participant wanted to collect strings ending in e before taking a maximum but could not implement the filtering; the submitted code only returns max(data). Example 3: a participant intended to use endswith and retrieve the corresponding value but ran out of time; the submitted code returns data[3].",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Three discussion/code comparisons use red text for planned ideas absent from submitted solutions.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc12-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "pandey-ui-development-experiences-edi2024.pdf",
+    "pdf_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        8,
+        13
+      ],
+      "close_figure_review": [
+        8,
+        13
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Custom chapter/heading roles map through native RoleMap to standard H1/H2 etc; raw custom names do not indicate missing headings."
+    ],
+    "remaining_visual_concerns": [],
+    "figures": [
+      {
+        "node": "491:0",
+        "page": 8,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/pandey-ui-development-experiences-edi2024/figure-001-p008.png",
+        "current_alt": "Two visually identical forms demonstrate screen-reader focus order. Both show first name Jane, last name Doe, birthdate 01-01-2000, and a Submit button. In the accessible form, focus follows the visual top-to-bottom order: first name 1, last name 2, birthdate 3, Submit 4. In the inaccessible form, focus starts on Submit 1, then jumps to first name 2, last name 3, and birthdate 4.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Form diagrams show the described mismatched field placement and keyboard focus order.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "287:0",
+        "page": 13,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/pandey-ui-development-experiences-edi2024/figure-002-p013.png",
+        "current_alt": "Creative Commons Attribution 4.0 license symbol.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Creative Commons Attribution symbol is visible.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc13-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "chen-edcode-vlhcc2020.pdf",
+    "pdf_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        2,
+        3
+      ],
+      "close_figure_review": [
+        2,
+        3
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "305:0",
+        "page": 2,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-edcode-vlhcc2020/figure-001-p002.png",
+        "current_alt": "Fig. 1. A diagram shows the process of using EdCode to make a request, write a response, and integrate a response. (1) Students select a portion of their code and click the ‘Help’ button next to the selection to initialize a request. (2) Students attach a title, description, and tags to the request and send it to instructors. (3) Instructors can see the code base and other relevant information in their interface where they could write a contextualized response to the request. (4) Students can review the response in their code editor, and (5) check response context by clicking the hypertext.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Student/instructor workflow relates request posting, response and follow-up in the shown example.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "325:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-edcode-vlhcc2020/figure-002-p003.png",
+        "current_alt": "Fig. 2. The contextualized explanation feature and the chat tool. To make their answers more contextualized, instructors can (1) select a portion of the text in their natural language answer and the relevant code context; (2) click the ‘link’ button to create the references, which will highlight the relevant code (hypertext) when clicking the references in the text. Instructors can also chat with students via (3).",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Interface shows instructor/student code and question context in numbered regions.",
+        "native_alt_matches_archive": true
+      },
+      {
+        "node": "342:0",
+        "page": 3,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/chen-edcode-vlhcc2020/figure-003-p003.png",
+        "current_alt": "Fig. 3. The code publicity feature. Instructors first click the ‘Show this code’ button to select a portion of the code in original request that is necessary to understand the question for other students. Then they click ‘Send Your Answer‘ button to publish the question and the answer to the entire class.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "Question/answer comparison shows textual explanation and code context as described.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc14-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "pandey-inclusive-source-code-chi2024.pdf",
+    "pdf_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        4,
+        6,
+        10
+      ],
+      "close_figure_review": [],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 3 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "No extracted figure/formula assets; overview found no overlooked substantive illustration beyond noted source code-panel defects where applicable.",
+      "Code semantics are present (71 native Code tags); the five original blank visual example panels are not missing figure-alt records. Source code listings are carried as Code rather than inventing visual content."
+    ],
+    "remaining_visual_concerns": [
+      "Original main-text code example panels on pp5,7,8 remain visually blank between gray bands. Recovered semantic code exists without repainting the page; visible appendix listings pp13–17 provide additional code context. Do not reconstruct or darken the source without permission to alter appearance."
+    ],
+    "figures": [],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc15-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "zhang-runex-vlhcc2023.pdf",
+    "pdf_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        5,
+        7
+      ],
+      "close_figure_review": [
+        5
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 2 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "429:0",
+        "page": 5,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/zhang-runex-vlhcc2023/figure-001-p005.png",
+        "current_alt": "Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2) Chaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted.",
+        "status": "improve",
+        "reason": "Generic three-step caption does not convey the concrete query refinements demonstrated.",
+        "visual_evidence": "Selected variable tokens generalize into patterns; runtime/type and name filters, complemented/chained queries, and highlighted match results are visible.",
+        "native_alt_matches_archive": true,
+        "proposed_alt": "RunEx query interface. Selecting code tokens creates generalized patterns. Filters can constrain runtime values, such as type(v) is str, and variable names, such as len(n)>2. Queries can be combined using set operations, including complementing a selected loop pattern, and nested to find constructs such as iteration over set(v0). The two result panels show matching code with the corresponding expressions highlighted."
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc16-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+    "pdf_sha256": "8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3
+      ],
+      "close_figure_review": [],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 1 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "No extracted figure/formula assets; overview found no overlooked substantive illustration beyond noted source code-panel defects where applicable."
+    ],
+    "remaining_visual_concerns": [],
+    "figures": [],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc17-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+    "pdf_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        2
+      ],
+      "close_figure_review": [
+        2
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout.",
+      "Original source has unembedded fonts (documented in the repository review); preserve appearance and record this remaining dependency."
+    ],
+    "figures": [
+      {
+        "node": "144:0",
+        "page": 2,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments/figure-001-p002.png",
+        "current_alt": "Screenshot of the AZURITE plug-in in Eclipse. A source-code editor appears above a timeline of editing operations grouped into labeled file rows. Green rectangles represent insertions, red rectangles deletions, and blue rectangles replacements. A gray vertical separator divides editing sessions and a yellow vertical line marks the current time. Yellow outlines indicate selected operations; the interface supports selecting edits and selectively undoing them.",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "AZURITE editor includes colored change history and a timeline of insertions/deletions with selection of earlier edits.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc18-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "oney-firecrystal-vlhcc2009.pdf",
+    "pdf_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        2
+      ],
+      "close_figure_review": [
+        2
+      ],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ."
+    ],
+    "remaining_visual_concerns": [
+      "Some original figure labels, code, or screenshot text are small at normal page scale. Reviewed meaningful highlights/relationships through larger crops; preserve source layout."
+    ],
+    "figures": [
+      {
+        "node": "49:0",
+        "page": 2,
+        "image_path": "/home/soney/nucode/spot-web/script/publication-markdown/figures/oney-firecrystal-vlhcc2009/figure-001-p002.png",
+        "current_alt": "Figure 1 - FireCrystal replaying an interaction with an article on the New York Times website (http://www.nytimes.com/). In this interaction, the question mark box (outlined in red) appears after the user has highlighted a phrase (“great alumni” in this case). The timeline on the bottom of the screen shows user input events (in blue, from left: mouse down and up events, keyboard keys down and up, and window resizing, etc.) and DOM changes (as yellow bars). As the user drags the timeline handle (in red) to different times, a callout box gives more details on the event, the interaction is shown on a clone of the web page (left panel), and relevant code (Javascript, HTML, or CSS) is highlighted (right panel)",
+        "status": "adequate",
+        "reason": "Current description conveys the visible purpose, relationships or values in the source context.",
+        "visual_evidence": "FireCrystal view shows browser UI, recorded event timeline, DOM changes and corresponding JavaScript with selected event context.",
+        "native_alt_matches_archive": true
+      }
+    ],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc19-evidence.json and rendered contact sheets."
+    ]
+  },
+  {
+    "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+    "pdf_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "opening_and_figure_table_context": [
+        1
+      ],
+      "close_figure_review": [],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "No extracted figure/formula assets; overview found no overlooked substantive illustration beyond noted source code-panel defects where applicable."
+    ],
+    "remaining_visual_concerns": [],
+    "figures": [],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc20-evidence.json and rendered contact sheets.",
+      "Original manuscript has placeholder/older publication metadata in visible footer/header; retain source content rather than silently rewriting it."
+    ]
+  },
+  {
+    "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+    "pdf_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+    "pages_reviewed": {
+      "layout_overview": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "opening_and_figure_table_context": [
+        1,
+        3
+      ],
+      "close_figure_review": [],
+      "method": "All pages scanned as rendered layout contact sheets. Every extracted figure/formula visually compared with its current alt and source caption/context, enlarging ambiguous crops/pages. This is not a claim of reading every prose line or testing every page with assistive technology."
+    },
+    "structure_observations": [
+      "Checked opening reading order, heading roles (including RoleMap), figure/formula roles and actual native Alt strings, and existing tables/header scopes against hash-bound archived tags.",
+      "All assigned image nodes have native Alt exactly matching the raw archived tag tree; whitespace-normalized manifest wording may differ.",
+      "Reviewed 1 existing table entries and their native TH scope attributes; text order is row-oriented in inspected tables.",
+      "No extracted figure/formula assets; overview found no overlooked substantive illustration beyond noted source code-panel defects where applicable."
+    ],
+    "remaining_visual_concerns": [],
+    "figures": [],
+    "notes": [
+      "No repository or PDF edits made by reviewer. Source appearance is to remain unchanged. Detailed evidence is in /tmp/spot-pdf-oct-review/g1/doc21-evidence.json and rendered contact sheets.",
+      "Original manuscript has placeholder/older publication metadata in visible footer/header; retain source content rather than silently rewriting it."
+    ]
+  }
+]

@@ -48,6 +48,12 @@ nav: research
       <i class="bi bi-markdown" aria-hidden="true"></i> Markdown
     </a>
     {% endif %}
+    {% if pub.markdown_bundle %}
+    <a class="btn btn-outline-primary markdown-bundle-download" href="{{ '/assets/' | append: pub.markdown_bundle | relative_url | escape }}"
+      download="{{ pub.markdown_bundle | split: '/' | last | escape }}">
+      <i class="bi bi-file-earmark-zip" aria-hidden="true"></i> Markdown + figures (ZIP)
+    </a>
+    {% endif %}
     {% if pub.doi %}
     <a class="paper-doi" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
       <i class="bi bi-link-45deg"></i> Publisher page

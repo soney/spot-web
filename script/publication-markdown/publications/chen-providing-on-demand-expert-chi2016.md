@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 01eb3cb3ea1465dd599b16245ac52cf2b1556c2ff3c979c88c9f1e6e299fb9cc -->
+<!-- Source PDF SHA-256: 663aa661768a6bd8b4af745ff8388f9d62e477b1c67fc5ad06db380740d1e5e8 -->
 
 <a id="page-1"></a>
 
@@ -160,7 +160,7 @@ To understand how developers would use on-demand expert support, we observed how
 
 <a id="page-5"></a>
 
-![Figure 1. Setup for our hypothetical assistant study. Developer participants were asked to bring their own task to complete, and ask questions from our hypothetical assistant as if it could answer any support question needed. Participants were still allowed to use traditional online resources and augment them with the assistant as they saw fit. Context related to their programming task was collected at the beginning of each study, and audio of their questions was recorded during the session.](../figures/chen-providing-on-demand-expert-chi2016/figure-001-p005.png)
+![Hypothetical-assistant study diagram. A developer works in their own IDE on the left and sends a query to a proposed intelligent assistant in the center; the query is recorded in a log on the right. A curved green arrow carries code context and task information from the developer to the assistant. In this study the assistant is hypothetical, so the interaction captures when developers would ask for help.](../figures/chen-providing-on-demand-expert-chi2016/figure-001-p005.png)
 
 Figure 1. Setup for our hypothetical assistant study. Developer participants were asked to bring their own task to complete, and ask questions from our hypothetical assistant as if it could answer any support question needed. Participants were still allowed to use traditional online resources and augment them with the assistant as they saw fit. Context related to their programming task was collected at the beginning of each study, and audio of their questions was recorded during the session.
 
@@ -313,7 +313,7 @@ During each session, requesters and helpers were physically separated, and reque
 
 <a id="page-7"></a>
 
-![Figure 2. Setup for our human expert assistant study. In each trial, one “requester” participant (developer) was paired with one “helper” (expert, based on a pre-study skill assessment). Participants could chat via either text or voice, and requesters were able to share their screen with helpers as needed using Skype. The helper was tasked with assisting the requester reactively, meaning that they only responded to queries, and did not proactively propose solutions or approaches. This simulates a “best case” (repeated, non-multiplexed helper) on-demand model where human experts are not expected to be continuously available between end-user queries.](../figures/chen-providing-on-demand-expert-chi2016/figure-002-p007.png)
+![Expert-help study diagram. A developer and IDE are on the left and a remote expert is on the right. Query and code travel from developer to expert. Voice or chat allows two-way communication, and a curved Answer/Code arrow returns guidance from the expert to the developer. The expert responds when the developer requests help.](../figures/chen-providing-on-demand-expert-chi2016/figure-002-p007.png)
 
 Figure 2. Setup for our human expert assistant study. In each trial, one “requester” participant (developer) was paired with one “helper” (expert, based on a pre-study skill assessment). Participants could chat via either text or voice, and requesters were able to share their screen with helpers as needed using Skype. The helper was tasked with assisting the requester reactively, meaning that they only responded to queries, and did not proactively propose solutions or approaches. This simulates a “best case” (repeated, non-multiplexed helper) on-demand model where human experts are not expected to be continuously available between end-user queries.
 
@@ -345,9 +345,9 @@ Even though we designed the study such that the helpers do not know what the req
 
 H1: “She had it working correctly in terms of event title coming out on the web in the output, then later on when she was coding, and she was doing some quick copy and paste and stuff like that and some quick kinda changes and tiny bit of JavaScript, and I think she resize the, like different sizes in JSBin, or whatever it’s called, so I couldn’t see all JavaScript anymore, she’d changed something . . . , I couldn’t see what she did. . . I couldn’t see what she did later, it’s literally not like visible to my screen”
 
-R11: “How can I make to fetch information line?” H11: “so what exactly are you requesting. . . what kind of information are you fetching?” R11: “it’s kind of like JSON file, I need to
-
 <a id="page-8"></a>
+
+R11: “How can I make to fetch information line?” H11: “so what exactly are you requesting. . . what kind of information are you fetching?” R11: “it’s kind of like JSON file, I need to extract several information from the JSON file.” H11: “Right, do you have an URL or something?” R11: “Yeah”
 
 <table>
   <thead>
@@ -413,8 +413,6 @@ R11: “How can I make to fetch information line?” H11: “so what exactly are
 </table>
 
 Table 2. Common participant information needs that we observed during our human expert assistant study, with corresponding frequencies. Each of these needs would limit the success of a naive approach to providing remote assistance for software developers. “Number of Sessions” indicates the number of different trial sessions that each information need occurred in, while “Number of Conversations per Session” indicates the average number of times each need arose in a conversation (stemming from requester queries). “Number of Interviews” indicates the number of unique interviews in which the need was mentioned at least once. “Number of Mentions per Interview” is the average number of times that a participant mentioned the need in the post-trial interviews.
-
-extract several information from the JSON file.” H11: “Right, do you have an URL or something?” R11: “Yeah”
 
 H5: “If I could know what the problem is, the problem statement that he was solving for, so I probably would be able to help better.”
 

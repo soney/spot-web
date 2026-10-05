@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b -->
+<!-- Source PDF SHA-256: 52d09ce89c98ca28f776ed58d7fec7cbc89fd23da48915bb73b03ca0074598f4 -->
 
 <a id="page-1"></a>
 
@@ -22,21 +22,19 @@ Additional Key Words and Phrases: computational notebooks, collaborative systems
 
 April Yi Wang, Anant Mittal, Christopher Brooks, and Steve Oney. 2019. How Data Scientists Use Computational Notebooks for Real-Time Collaboration. Proc. ACM Hum.-Comput. Interact. 3, CSCW, Article 39 (November 2019), [30](<#page-30>) pages. [https://doi.org/10.1145/3359141](<https://doi.org/10.1145/3359141>)
 
-## 1 INTRODUCTION
-
-The complexity of data science work and the demand to adopt data science practices in various domains has grown rapidly in the last decade. With this increase in adoption, there is a need to facilitate collaboration among data science workers, domain experts, and consumers. Data scientists
-
 <sup>∗</sup>This is the corresponding author
 
 Authors’ addresses: April Yi Wang, The University of Michigan, 105 S State St, Ann Arbor, MI, 48103, USA, aprilww@ umich.edu; Anant Mittal, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, anmittal@umich.edu; Christopher Brooks, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, brooksch@umich.edu; Steve Oney, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, soney@umich.edu.
 
+## 1 INTRODUCTION
+
 <a id="page-2"></a>
 
-![Fig. 1. An example of a Jupyter notebook. (1) A custom collaborative extension for users to share their notebook. (2) A notebook cell that contains code to import libraries and load dataset. (3) An output of a shared data frame. (4) A markdown cell that contains narrative text. (5) An output of a visualization](../figures/wang-how-data-scientists-cscw2019/figure-001-p002.png)
+The complexity of data science work and the demand to adopt data science practices in various domains has grown rapidly in the last decade. With this increase in adoption, there is a need to facilitate collaboration among data science workers, domain experts, and consumers. Data scientists often create computational narratives, which combine data, code to process those data, and natural language explanations to form a narrative. Some even consider computational narratives to be the engine of collaborative data science \[[32](<#page-28>)\]. Computational notebooks allow data scientists to create and share computational narratives. Jupyter Notebook[1](<#page-2>), a computational notebook platform that supports more than 40 programming languages, has been widely used for writing and sharing computational narratives in various contexts \[[59](<#page-29>)\]. For example, data science instructors use Jupyter notebooks to create interactive lecture notes or textbooks. Data science learners can experiment with these interactive lecture notes to deepen their understanding or explore alternative solutions \[[45](<#page-29>)\]. Researchers use Jupyter notebooks to demonstrate their computational work and share their data analysis process for open science, which makes it easy for others to reproduce the results \[[61](<#page-29>)\]. As Figure [1](<#page-2>) shows, Jupyter notebooks allow users to weave together source code, narrative text, visualization, computational outputs, and other rich media using structured cells.
+
+![Figure 1. A Jupyter notebook contains a code cell importing libraries and loading house-price data, a dataframe summary, a Markdown heading, and a histogram. A Share control enables a collaborative extension. The right panel illustrates the workflow: Bob enables sharing and sends a generated code; Alice joins with that code; both edit the notebook while it synchronizes changes and displays collaborators’ cursor positions and selections.](../figures/wang-how-data-scientists-cscw2019/figure-001-p002.png)
 
 Fig. 1. An example of a Jupyter notebook. (1) A custom collaborative extension for users to share their notebook. (2) A notebook cell that contains code to import libraries and load dataset. (3) An output of a shared data frame. (4) A markdown cell that contains narrative text. (5) An output of a visualization
-
-often create computational narratives, which combine data, code to process those data, and natural language explanations to form a narrative. Some even consider computational narratives to be the engine of collaborative data science \[[32](<#page-28>)\]. Computational notebooks allow data scientists to create and share computational narratives. Jupyter Notebook[1](<#page-2>), a computational notebook platform that supports more than 40 programming languages, has been widely used for writing and sharing computational narratives in various contexts \[[59](<#page-29>)\]. For example, data science instructors use Jupyter notebooks to create interactive lecture notes or textbooks. Data science learners can experiment with these interactive lecture notes to deepen their understanding or explore alternative solutions \[[45](<#page-29>)\]. Researchers use Jupyter notebooks to demonstrate their computational work and share their data analysis process for open science, which makes it easy for others to reproduce the results \[[61](<#page-29>)\]. As Figure [1](<#page-2>) shows, Jupyter notebooks allow users to weave together source code, narrative text, visualization, computational outputs, and other rich media using structured cells.
 
 Prior studies have revealed the challenges in constructing and sharing computational narratives through notebooks. For example, data scientists are reluctant to keep up-to-date explanatory notes, which impedes sharing and collaboration \[[63](<#page-30>)\]. Studies have also explored ways to lower the barriers for writing and sharing computational narratives: folding content selectively \[[62](<#page-30>)\]; local version control mechanisms \[[36](<#page-28>)\]; and managing and reorganizing content \[[28](<#page-28>)\]. Most of these innovations are designed and evaluated for sharing the computational narrative after it is finished, leaving data scientists to work on individual notebooks. Recently, tools like Google Colab[2](<#page-2>) have demonstrated the possibility for synchronous editing — multiple users are able to edit the same notebook and changes are updated in real-time, which may revolutionize the ways data scientists collaborate.
 
@@ -78,13 +76,9 @@ Prior research has found that data scientists in software companies often work c
 
 ### 2.3 Computational Narratives, Computational Notebooks, and Innovations
 
-Data science involves a large amount of experimentation and subjective decision making. Thus, it is important for data scientists to document the story behind the computation of results (e.g.,
-
-Proc. ACM Hum.-Comput. Interact., Vol. 3, No. CSCW, Article 39. Publication date: November 2019.
-
 <a id="page-5"></a>
 
-reporting alternative solutions and explaining the limitations for them). A variety of media such as textual explanations, graphs, forms, interactive visualizations, code segments, and output are used for narrative and storytelling to document the data analysis process. Extending Knuth’s idea of literate programming, wherein he argues that making programming sources more understandable to human beings can be achieved by combining a programming language with a documentation language \[[41](<#page-29>)\], computational narratives serve as literature for data scientists and data science consumers to present work and exchange ideas.
+Data science involves a large amount of experimentation and subjective decision making. Thus, it is important for data scientists to document the story behind the computation of results (e.g., reporting alternative solutions and explaining the limitations for them). A variety of media such as textual explanations, graphs, forms, interactive visualizations, code segments, and output are used for narrative and storytelling to document the data analysis process. Extending Knuth’s idea of literate programming, wherein he argues that making programming sources more understandable to human beings can be achieved by combining a programming language with a documentation language \[[41](<#page-29>)\], computational narratives serve as literature for data scientists and data science consumers to present work and exchange ideas.
 
 #### 2.3.1 Computational Notebooks.
 
@@ -210,9 +204,9 @@ The survey received 195 valid responses in total (23.08% female and 76.92% male)
 
 The respondents were generally well trained in data science. The majority of them (94.36%) held or were pursuing a bachelor or higher degree. Most of these degrees are in technical fields (e.g., computer science, information science, electrical engineering, applied science, or data science). When asked about their previous experience in applying common techniques in data sciences, the respondents indicated they were skilled in linear regression (96.92%), decision trees (92.31%), SVMs (85.64%), neural networks (82.05%), non-linear regression (70.26%), deep learning (65.13%), Bayesian modeling (62.56%), and other advanced techniques (e.g., XGBoost, reinforcement learning).
 
-The respondents also reported engaging in a variety of data science activities: data cleaning (67.69%), applying machine learning algorithms (57.95%), data visualization (52.82%), exploratory data analysis (49.74%), collecting raw data (44.10%), writing a report (38.97%), feature selection
-
 <a id="page-11"></a>
+
+The respondents also reported engaging in a variety of data science activities: data cleaning (67.69%), applying machine learning algorithms (57.95%), data visualization (52.82%), exploratory data analysis (49.74%), collecting raw data (44.10%), writing a report (38.97%), feature selection (38.46%), applying statistical models (31.28%), doing an oral presentation (31.28%), data sampling (28.20%), hypothesis testing (22.56%), and building data products (21.03%).
 
 <table>
   <thead>
@@ -279,8 +273,6 @@ The respondents also reported engaging in a variety of data science activities: 
 
 Table 1. The tools that respondents have used for programming, communication and project management during collaboration.
 
-(38.46%), applying statistical models (31.28%), doing an oral presentation (31.28%), data sampling (28.20%), hypothesis testing (22.56%), and building data products (21.03%).
-
 ### 5.2 Experience with Collaborative Data Science
 
 When asked about their previous experience in collaborative data science, most respondents (73.3%) reported that they had prior experience collaborating with other people on a data science project. Of the respondents who had previous collaboration experience, most (72.72%) collaborated on a data science project for work, while the others mentioned other purposes such as course projects (30.07%), competitions or hackathons (18.89%), or personal side projects (13.20%).
@@ -291,9 +283,9 @@ We asked respondents to list the tools they have used for programming, communica
 
 #### 5.2.2 Strategies for Keeping a Shared Understanding.
 
-When asked about their strategies for keeping a shared understanding across team members, most respondents mentioned regular discussions
-
 <a id="page-12"></a>
+
+When asked about their strategies for keeping a shared understanding across team members, most respondents mentioned regular discussions and project meetings (54.36%). For example, respondents mentioned “weekly meetings with the team to follow up the stages of deployment”, and also frequently reported that they used check-ups (51.79%) such as keeping the other team members informed of any changes made to the code. Some of these respondents reported that they would work closely in a physical space to reduce the communication cost by talking face-to-face. Documenting (48.20%) is another common strategy used for collaboration. For example, respondents mentioned that they would keep all the intermediate findings in shared Google Docs. Some respondents also mentioned coordination strategies such as planning ahead and being clear about everyone’s responsibility (28.72%). In addition, respondents mentioned that they would share any intermediate results and code using version control tools or shared folders (25.13%). The others mentioned strategies such as code reviews to help them maintain a shared understanding. The results are summarized in Table [2](<#page-12>).
 
 <table>
   <thead>
@@ -339,19 +331,15 @@ When asked about their strategies for keeping a shared understanding across team
 
 Table 2. Strategies for keeping a shared understanding
 
-and project meetings (54.36%). For example, respondents mentioned “weekly meetings with the team to follow up the stages of deployment”, and also frequently reported that they used check-ups (51.79%) such as keeping the other team members informed of any changes made to the code. Some of these respondents reported that they would work closely in a physical space to reduce the communication cost by talking face-to-face. Documenting (48.20%) is another common strategy used for collaboration. For example, respondents mentioned that they would keep all the intermediate findings in shared Google Docs. Some respondents also mentioned coordination strategies such as planning ahead and being clear about everyone’s responsibility (28.72%). In addition, respondents mentioned that they would share any intermediate results and code using version control tools or shared folders (25.13%). The others mentioned strategies such as code reviews to help them maintain a shared understanding. The results are summarized in Table [2](<#page-12>).
-
 ### 5.3 High-Level Summary of Findings
 
 In summary, respondents to our survey were made up of a variety of practitioners and students who are well trained in data science and are familiar with Python and Jupyter notebooks. Most respondents had previous experience in collaborating with others on a data science project, and working in individual Jupyter notebooks with version control tools was the most popular setting for collaboration. Team members constantly discuss and keep everyone informed about the progress of the project, as well as maintain shared notes. Although Google Colab was relatively new and was not be used by many respondents, several respondents mentioned Google Colab as an option for collaborative editing. With this more holistic understanding of collaboration among data scientists, we decided to narrow our focus and probe into the differences afforded by traditional collaboration settings, where team members work on individual Jupyter notebooks and update each others’ work asynchronously, and the emerging real-time synchronized editing collaboration setting, where team members work closely together on a single Jupyter notebook with shared edits.
 
 ## 6 STUDY 2: OBSERVATIONAL STUDY ON REAL-TIME COLLABORATIVE DATA SCIENCE
 
-We conducted an observational study with 24 data scientists working remotely in pairs to solve a predictive modeling problem. We tested two conditions, with users working on either individual
-
-Proc. ACM Hum.-Comput. Interact., Vol. 3, No. CSCW, Article 39. Publication date: November 2019.
-
 <a id="page-13"></a>
+
+We conducted an observational study with 24 data scientists working remotely in pairs to solve a predictive modeling problem. We tested two conditions, with users working on either individual notebooks or notebooks that enable synchronous editing in a collaborative setting. Our goal was to examine how collaboration styles varied between the two conditions, and to gain empirical insights on the benefits and trade-offs for each setting.
 
 <table>
   <thead>
@@ -536,8 +524,6 @@ Proc. ACM Hum.-Comput. Interact., Vol. 3, No. CSCW, Article 39. Publication date
 </table>
 
 Table 3. Demographics of Participants in Study 2
-
-notebooks or notebooks that enable synchronous editing in a collaborative setting. Our goal was to examine how collaboration styles varied between the two conditions, and to gain empirical insights on the benefits and trade-offs for each setting.
 
 Groups chose from two communication mechanisms that were commonly used for collaboration: Slack for text-based messaging and Google Hangouts for video-based communication. In pilot studies, we found it difficult to control the communication mechanism due to technical limitations (e.g. participant microphone or network issues). Thus at the beginning of the study, we asked individual groups to decide which communication mechanisms they wanted to use throughout the study.
 
@@ -757,9 +743,7 @@ Web conferencing is perceived to have high communication bandwidth with synchron
 
 <a id="page-19"></a>
 
-How Data Scientists Use Computational Notebooks for Real-Time Collaboration
-
-![Fig. 2. Overview of how participants iteratively explore the house price prediction task in 15-minute intervals. Participants in the shared condition tended to switch between phases more frequently. The initial attempts at modeling occurred earlier in the shared condition.](../figures/wang-how-data-scientists-cscw2019/figure-002-p019.png)
+![Figure 2. Paired participant timelines for six shared-notebook groups S1–S6 and six non-shared groups N1–N6 across four 15-minute sessions. Colored segments mark preparing, cleaning, modeling, feature engineering, and submission. Shared groups switch between phases more frequently and begin modeling earlier. Non-shared groups spend longer continuous stretches in cleaning or feature engineering before modeling. Brown submission segments appear mainly at the end.](../figures/wang-how-data-scientists-cscw2019/figure-002-p019.png)
 
 Fig. 2. Overview of how participants iteratively explore the house price prediction task in 15-minute intervals. Participants in the shared condition tended to switch between phases more frequently. The initial attempts at modeling occurred earlier in the shared condition.
 
@@ -795,13 +779,11 @@ We found an improvement in the exploration process across two conditions. As sho
 
 ... Overall, I think the tool is amazing! This tech can really increase productivity in data science teams!... (P2 from S1)
 
-When we compared the ratio of annotation cells and total cells from the final submission, we did not see differences across two conditions. Moreover, the average ratio of annotation cells to total cells was lower in the shared condition (avg=0.19) compared to the non-shared condition
-
-> <sup>17</sup>The error score is calculated using Root Mean Square Error (RMSE)
-
 <a id="page-21"></a>
 
-How Data Scientists Use Computational Notebooks for Real-Time Collaboration
+When we compared the ratio of annotation cells and total cells from the final submission, we did not see differences across two conditions. Moreover, the average ratio of annotation cells to total cells was lower in the shared condition (avg=0.19) compared to the non-shared condition (avg=0.20). This result indicates that when working in groups, participants would not pay extra attention to add annotations into the notebook compared to working in a private notebook.
+
+> <sup>17</sup>The error score is calculated using Root Mean Square Error (RMSE)
 
 <table>
   <tbody>
@@ -858,8 +840,6 @@ How Data Scientists Use Computational Notebooks for Real-Time Collaboration
 </table>
 
 Table 5. Comparing the outcomes from prediction results and final notebooks (mean: x, standard deviation: σ). Working in the same notebook encourages groups to explore more solutions and leads to a better result.
-
-(avg=0.20). This result indicates that when working in groups, participants would not pay extra attention to add annotations into the notebook compared to working in a private notebook.
 
 ### 7.5 Challenges in Using the Collaborative Notebooks
 
@@ -937,8 +917,6 @@ Some of the challenges we identified with real-time notebook editing are related
 
 In addition to findings consistent with other studies of collaborative editing, collaborative editing in computational notebooks has its unique aspects. The mixed form of code and other types of media has distinguished computational notebooks from textual documents and pure code scripts. For instance, collaborative writing systems usually share static text synchronously whereas programming typically share their codebase through asynchronous Version Control Systems
 
-Proc. ACM Hum.-Comput. Interact., Vol. 3, No. CSCW, Article 39. Publication date: November 2019.
-
 <a id="page-25"></a>
 
 (VCSs)[18](<#page-25>). In shared notebooks, however, it remains unknown what the level of synchronicity should be (e.g., sharing static text and code, sharing the output, sharing the code interpreter), in part because of the emphasis on the sensemaking and experimentation processes.
@@ -979,13 +957,9 @@ Since we only looked at one specific scenario of collaboration, our results and 
 
 ## 9 CONCLUSION
 
-We probed into how synchronous editing in computational notebooks might change the way data scientists collaborate on a predictive modeling task. Our [survey](<#page-9>) findings highlight the tools and strategies that data scientists currently used in collaboration practice. Based on the design of current synchronous editing features in computational notebooks, our empirical [observation](<#page-12>) reveals that working on the same notebook results in different collaboration styles compared to working on individual notebooks. The key findings suggest that synchronous editing tools improve collaboration by helping data scientists maintain a shared context and improve work efficiency. However, the current real-time collaborative editing features may lead to several problems (e.g., interference with each others’ work, unbalanced contributions). The challenges in using the current real-time collaboration features suggest that we need better collaborative editing features for computational notebooks. We discuss how our results extend prior work on collaborative editing and how the HCI community can play a vital role in broadening the understanding of collaborative data science with a human-centered approach. Finally, we propose design implications to enhance
-
-Proc. ACM Hum.-Comput. Interact., Vol. 3, No. CSCW, Article 39. Publication date: November 2019.
-
 <a id="page-27"></a>
 
-How Data Scientists Use Computational Notebooks for Real-Time Collaboration synchronous editing in computational notebooks and to improve collaboration among data science workers.
+We probed into how synchronous editing in computational notebooks might change the way data scientists collaborate on a predictive modeling task. Our [survey](<#page-9>) findings highlight the tools and strategies that data scientists currently used in collaboration practice. Based on the design of current synchronous editing features in computational notebooks, our empirical [observation](<#page-12>) reveals that working on the same notebook results in different collaboration styles compared to working on individual notebooks. The key findings suggest that synchronous editing tools improve collaboration by helping data scientists maintain a shared context and improve work efficiency. However, the current real-time collaborative editing features may lead to several problems (e.g., interference with each others’ work, unbalanced contributions). The challenges in using the current real-time collaboration features suggest that we need better collaborative editing features for computational notebooks. We discuss how our results extend prior work on collaborative editing and how the HCI community can play a vital role in broadening the understanding of collaborative data science with a human-centered approach. Finally, we propose design implications to enhance synchronous editing in computational notebooks and to improve collaboration among data science workers.
 
 ## 10 ACKNOWLEDGEMENTS
 

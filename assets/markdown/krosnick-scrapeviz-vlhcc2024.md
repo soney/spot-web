@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a -->
+<!-- Source PDF SHA-256: 6e3f3370a49e6463f8d8c3fc88cce8363cd9a31fea710f9d7c6e8545dd84f00e -->
 
 <a id="page-1"></a>
 
@@ -12,19 +12,17 @@ Steve Oney School of Information University of Michigan Ann Arbor, MI, USA soney
 
 Abstract—Programming-by-demonstration (PBD) makes it possible to create web scraping macros without writing code. However, it can still be challenging for users to understand the exact scraping behavior that is inferred and to verify that the scraped data is correct, especially when scraping occurs across multiple pages. We present ScrapeViz, a new PBD tool for authoring and visualizing hierarchical web scraping macros. ScrapeViz’s key novelty is in providing a visual representation of web scraping macros—the sequences of pages visited, generalized scraping behavior across similar pages, and data provenance. We conducted a lab study with 12 participants comparing ScrapeViz to the existing web scraping tool Rousillon and saw that participants found ScrapeViz helpful for understanding high-level scraping behavior, tracing the source of scraped data, identifying anomalies, and validating macros while authoring. Index Terms—web scraping, visual representation, automation, programming-by-demonstration
 
+> This work is supported by NSF Award 2007857.
+
+> <sup>\*</sup>The author is currently affiliated with Postman, Inc. This research was done when she was a doctoral student at the University of Michigan.
+
 ## I. INTRODUCTION
 
 User interface (UI) automation macros can save users time and effort by automatically performing digital tasks. Some automation is readily available through virtual assistants or pre-programmed macros (e.g., in iOS Shortcuts \[1\]). However, for long-tail needs, users need to create custom macros, traditionally by writing code that mimics a user’s mouse and keyboard actions. Writing this macro code can be prohibitively challenging, even for experienced programmers \[2\].
 
 Prior work has leveraged programming-by-demonstration (PBD) \[3\], \[4\] to allow users (including non-programmers) to create macros without writing code. With PBD, users provide a few concrete demonstrations of the desired program behavior, and then the system infers a generalized program. Although PBD has made it easier for people to create automation and scraping macros \[5\]–\[16\], it comes with several challenges \[17\], many the consequence of users not understanding how PBD-generated programs work. More modern web automation tools driven by Large Language Models (LLMs) can similarly be inscrutable and difficult to understand \[18\].
 
-We present ScrapeViz, a new PBD tool for creating web scraping macros, with a focus on helping users understand
-
-This work is supported by NSF Award 2007857.
-
-<sup>\*</sup>The author is currently affiliated with Postman, Inc. This research was done when she was a doctoral student at the University of Michigan.
-
-macros’ behavior. ScrapeViz is designed for scraping distributed hierarchical data \[5\], which involves parent-child relationships (hierarchical) across multiple pages (distributed). Users navigate the web as they normally would, using familiar actions such as clicks to locate and select the data they want to extract, and ScrapeViz generalizes such actions across similar UI elements and across similar website pages.
+We present ScrapeViz, a new PBD tool for creating web scraping macros, with a focus on helping users understand macros’ behavior. ScrapeViz is designed for scraping distributed hierarchical data \[5\], which involves parent-child relationships (hierarchical) across multiple pages (distributed). Users navigate the web as they normally would, using familiar actions such as clicks to locate and select the data they want to extract, and ScrapeViz generalizes such actions across similar UI elements and across similar website pages.
 
 The novelty of ScrapeViz is in the tools it offers for understanding web scraping behavior across multiple website pages. Prior systems also allow users to create nested-loop \[5\]–\[8\] or parameter-based \[9\], \[12\], \[13\], \[16\] automation macros. However, there are key limitations to how these systems represent macro behavior to users—either they provide no representation (requiring users to run the macro to understand its behavior), a limited preview of behavior on the next input, or a natural language description of macro steps that is separated from the execution context. ScrapeViz aims to address these limitations through a novel storyboard-like visualization, as Figure 1 shows. This visualization provides a high-level overview of the macro that represents key information for understanding its behavior: the pages visited, how actions generalize across semantically similar pages, relationships between pages, and the data scraped from each page (highlighted in context). As we found in a within-subjects lab study comparing ScrapeViz and Rousillon \[5\], ScrapeViz’s visualization can make web scraping macros easier to understand and debug.
 
@@ -48,9 +46,7 @@ Large Language Models (LLMs) can also assist with web scraping tasks by either w
 
 Programming by demonstration (PBD) enables users to create computer programs without writing code. Users instead demonstrate how the program should behave in a small set of scenarios, and the system then infers a generalized program. Prior work has explored PBD for creating programs for personal task automation \[9\]–\[16\] and web scraping \[5\]–\[8\].
 
-ScrapeViz leverages PBD approaches similar to prior PBD web scraping systems \[5\]–\[8\] which also enable distributed hierarchical scraping. In Rousillon \[5\], users provide one example for each kind of data they want to scrape for the system to generalize from; in WebRobot \[6\] and ScrapeViz, users provide two examples. However, unlike these systems,
-
-ScrapeViz also provides a visual representation that gives a complete overview of macro behavior in context.
+ScrapeViz leverages PBD approaches similar to prior PBD web scraping systems \[5\]–\[8\] which also enable distributed hierarchical scraping. In Rousillon \[5\], users provide one example for each kind of data they want to scrape for the system to generalize from; in WebRobot \[6\] and ScrapeViz, users provide two examples. However, unlike these systems, ScrapeViz also provides a visual representation that gives a complete overview of macro behavior in context.
 
 ### C. Understanding macros
 
@@ -150,13 +146,13 @@ Task websites and instructions: We asked participants to scrape the following da
 
 - Yelp<sup>6</sup>: restaurant names, their hours for today, a list of their most popular dishes. This data was spread across two levels of pages.
 
-<sup>3</sup>https://web.archive.org/web/20231012210012/https://www.wtatennis.com/ stats
+> <sup>3</sup>https://web.archive.org/web/20231012210012/https://www.wtatennis.com/ stats
 
-<sup>4</sup>https://web.archive.org/web/20220324013917/https://www.wayfair.com/ furniture/sb0/sectionals-c413893.html
+> <sup>4</sup>https://web.archive.org/web/20220324013917/https://www.wayfair.com/ furniture/sb0/sectionals-c413893.html
 
-<sup>5</sup>https://web.archive.org/web/20230324030019/https://scholar.google.com/ citations?view op=view org&amp;hl=en&amp;org=8515235176732148308
+> <sup>5</sup>https://web.archive.org/web/20230324030019/https://scholar.google.com/ citations?view op=view org&amp;hl=en&amp;org=8515235176732148308
 
-<sup>6</sup>https://web.archive.org/web/20230429225251/https://www.yelp.com/ search?find desc=Pizza&amp;find loc=New+York%2C+NY
+> <sup>6</sup>https://web.archive.org/web/20230429225251/https://www.yelp.com/ search?find desc=Pizza&amp;find loc=New+York%2C+NY
 
 <a id="page-5"></a>
 

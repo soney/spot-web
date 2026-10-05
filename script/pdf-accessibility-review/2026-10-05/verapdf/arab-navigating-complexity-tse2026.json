@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/arab-navigating-complexity-tse2026.pdf",
+          "size": 1787164
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 543673,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231479728,
+          "finish": 1791231484382,
+          "duration": "00:00:04.654",
+          "difference": 4654
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231479656,
+        "finish": 1791231484457,
+        "duration": "00:00:04.801",
+        "difference": 4801
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "totalJobCount": 1,
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "totalJobCount": 0,
+        "failedJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "totalJobCount": 0,
+        "failedJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "arab-navigating-complexity-tse2026.pdf",
+  "pdf_sha256": "b619fd8e204e7e6ee2f4ac6721190759314f06bb72ff18970af6274c91b6656d",
+  "stderr": ""
+}

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca -->
+<!-- Source PDF SHA-256: 06528e3eff09a79b3b1d5cf0becadd29c76a0f50c26a02b33dc087ca6d72e90f -->
 
 <a id="page-1"></a>
 
@@ -18,17 +18,13 @@ Shih-Chieh Lin<sup>1</sup>, Chang-Hong Hsu<sup>1</sup>, Walter Talamonti<sup>2</
 
 Figure 1: (A) The proposed digital assistant, Adasa, identifies user’s questions or commands regarding ADAS features in human language and responds with answers or actions accordingly. (B) Adasa is integrated into a commercially available vehicle for evaluation and a real-world driving user study. (C) Adasa is able to access vehicle CAN signals via Bluetooth to conduct system diagnosis or system control. (D) Adasa setup, driver enables Adasa by pressing the button on the wheel to start the conversation.
 
-© 2018 ACM. ISBN 978-1-4503-5948-1/18/10...$15.00
+> © 2018 ACM. ISBN 978-1-4503-5948-1/18/10...$15.00
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
 
 ## ABSTRACT
 
 Advanced Driver Assistance Systems (ADAS) come equipped on most modern vehicles and are intended to assist the driver and enhance the driving experience through features such as lane keeping system and adaptive cruise control. However, recent studies show that few people utilize these features for several reasons. First, ADAS features were not common until recently. Second, most users are unfamiliar with these features and do not know what to expect. Finally, the interface for operating these features is not intuitive. To help drivers understand ADAS features, we present a conversational in-vehicle digital assistant that responds to drivers’ questions and commands in natural language. With the system prototyped herein, drivers can ask questions or command using unconstrained natural language in the vehicle, and the assistant trained by using advanced machine learning techniques, coupled with access to vehicle signals, responds in real-time based on conversational context. Results of our system prototyped on a production vehicle are presented, demonstrating its effectiveness in improving driver understanding and usability of ADAS.
-
-UIST ’18, October 14–17, 2018, Berlin, Germany
-
-DOI: [https://doi.org/10.1145/3242587.3242593](<https://doi.org/10.1145/3242587.3242593>)
 
 ### ACM Classification Keywords
 
@@ -37,6 +33,10 @@ H.1.2 User/Machine Systems; H.5.2 User Interfaces;
 ### Author Keywords
 
 Advanced Driver Assistance System; Automobile Interface; Voice Interface; Machine Learning
+
+> UIST ’18, October 14–17, 2018, Berlin, Germany
+
+> DOI: [https://doi.org/10.1145/3242587.3242593](<https://doi.org/10.1145/3242587.3242593>)
 
 ## INTRODUCTION
 
@@ -202,9 +202,9 @@ Participants drove on a predefined 11.7 mile (18.8 km) route, which consisted of
 
 ### Tasks
 
-The detailed tasks are shown in the Table [1](<#page-7>). The first segment (segment 0) is designed for the participants to become familiar with operating the vehicle and asking Adasa questions. Segment 1 consists of another portion of the local road including several stop signs where the participants were asked to turn
+The detailed tasks are shown in the Table [1](<#page-7>). The first segment (segment 0) is designed for the participants to become familiar with operating the vehicle and asking Adasa questions. Segment 1 consists of another portion of the local road including several stop signs where the participants were asked to turn on LKS. In this segment, participants continued driving while LKS is enabled on the local road. The participants are then asked to get on the highway after finishing segment 1 and stay in the rightmost lane while keeping the vehicle speed at 60 miles per hour for safety. After entering the highway, the participants were asked to turn ACC to standby mode and active mode in segment 3 and segment 4 respectively. These two segments were designed for the participants to experience the ACC feature and ask Adasa questions if they chose to do so. In the segment 5, the participants were asked to drift out of lane slightly at the right-most lane to experience the LKS feature while ensuring that the vehicle is under control and the speed limit is followed. In segment 6, the participants were asked to get off the highway, turn off the ACC, and drive back to the starting location. Segment 7 was designed to let the participants experience LKS in the local area. This segment is a straight urban road with only one traffic light. During this segment, the participants were asked to test LKS again by drifting out slightly to step on the lane line. Finally, participants were asked to turn off LKS and drive to the end location. We expected drivers would encounter most of the driving scenarios when executing tasks during the drive, although this is not always possible. For example, even when ACC is set to active, it can still be hard to expect the driver to experience the Stop-and-Go function (i.e., detect when the vehicle ahead has stopped, and resume after the vehicle ahead moves) since the traffic conditions on road may vary.
 
-![Figure 4: The map of the 11.7 miles route. It includes 7 miles highway and 4.7 miles suburban road to accommodate the use of both ACC and LKS.](https://from.so/assets/markdown/figures/lin-adasa-uist2018/figure-004-p007.png)
+![Figure 4. The driving-study route is shown as a blue loop around northeastern Ann Arbor, starting and ending near the University of Michigan North Campus. Numbered red markers 1–8 identify route segments around the loop. The 11.7-mile route combines 7 miles of highway and 4.7 miles of suburban roads to support testing adaptive cruise control and lane keeping.](https://from.so/assets/markdown/figures/lin-adasa-uist2018/figure-004-p007.png)
 
 Figure 4: The map of the 11.7 miles route. It includes 7 miles highway and 4.7 miles suburban road to accommodate the use of both ACC and LKS.
 
@@ -256,8 +256,6 @@ Table 1: Summary of tasks assigned during the driving study.
     </tr>
   </tbody>
 </table>
-
-on LKS. In this segment, participants continued driving while LKS is enabled on the local road. The participants are then asked to get on the highway after finishing segment 1 and stay in the rightmost lane while keeping the vehicle speed at 60 miles per hour for safety. After entering the highway, the participants were asked to turn ACC to standby mode and active mode in segment 3 and segment 4 respectively. These two segments were designed for the participants to experience the ACC feature and ask Adasa questions if they chose to do so. In the segment 5, the participants were asked to drift out of lane slightly at the right-most lane to experience the LKS feature while ensuring that the vehicle is under control and the speed limit is followed. In segment 6, the participants were asked to get off the highway, turn off the ACC, and drive back to the starting location. Segment 7 was designed to let the participants experience LKS in the local area. This segment is a straight urban road with only one traffic light. During this segment, the participants were asked to test LKS again by drifting out slightly to step on the lane line. Finally, participants were asked to turn off LKS and drive to the end location. We expected drivers would encounter most of the driving scenarios when executing tasks during the drive, although this is not always possible. For example, even when ACC is set to active, it can still be hard to expect the driver to experience the Stop-and-Go function (i.e., detect when the vehicle ahead has stopped, and resume after the vehicle ahead moves) since the traffic conditions on road may vary.
 
 ### Procedure
 

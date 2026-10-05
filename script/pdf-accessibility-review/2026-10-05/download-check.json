@@ -1,0 +1,525 @@
+{
+  "files": 74,
+  "images": 420,
+  "all_checks_passed": true,
+  "documents": [
+    {
+      "id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
+      "file": "arab-navigating-complexity-tse2026.zip",
+      "sha256": "f1ae5867a8d5603215286ee14a855349fd771c5cf7222cfb49f8f15179944c00",
+      "images": 2,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026",
+      "file": "zhang-editrail-uist2026.zip",
+      "sha256": "236c190f85e4dcfe9681f669c17c81422ce9c3b0971e01e8a13cb96842b6b864",
+      "images": 12,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026",
+      "file": "zhang-codestream-chi2026.zip",
+      "sha256": "17e1f3006cfe0c4ed7addc24c7f3d12f34766d25f64fee17373b5f6a737f471f",
+      "images": 17,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026",
+      "file": "zhou-simulating-human-cursor-chiposters2026.zip",
+      "sha256": "661c0ee0245798104596233c16f92fce97c091d447ce620818af03bb3fdc77a3",
+      "images": 6,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "co_advisor_learning_programming_strategies_in_context_2025",
+      "file": "arab-co-advisor-vlhcc2025.zip",
+      "sha256": "d0effb4294e865d835f692a516fa753daeaf9e22d4144760a55020ca99ac6133",
+      "images": 12,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025",
+      "file": "zhang-convomap-vlhcc2025.zip",
+      "sha256": "64124d666e77f2cdf7ac8198f29d43ffad0fe061d815c2aaa6de69f3a73a4d68",
+      "images": 7,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "multi_click_cross_tab_web_automation_via_action_generalization_2025",
+      "file": "zhang-multi-click-uist2025.zip",
+      "sha256": "c38cff80a3c4fdbae2ee2db089997edcaf82c7c723e48600e26b24b090bb58f8",
+      "images": 11,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025",
+      "file": "yang-spark-vlhcc2025.zip",
+      "sha256": "97030356bb6b4da60b61fc70d907fb1646a92d8cfc052fbe76618aa1b58a4550",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025",
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.zip",
+      "sha256": "59c87e6a3f1b107b1ec334d6b9bee4d51062ed378f489c196cf46f0a8f706616",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025",
+      "file": "zhang-understanding-challenges-needs-chi2025compui.zip",
+      "sha256": "923ea53ed9bd0ccb86ae692f748aaf3255add4d98440a8381eed79e81b6581ab",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024",
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.zip",
+      "sha256": "9a256f9ddd258fd77f6769d50c8f96b38b77f342effd03878951ca81eeaa2a00",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024",
+      "file": "zhang-cflow-ls2024.zip",
+      "sha256": "4e6533c3e8c2aff2684a1a32fbe3a38442d874ca6d799dfb1c06b0698fa43362",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024",
+      "file": "zhang-demonstration-of-cflow-lsdemos2024.zip",
+      "sha256": "713af08345e4c03667ac5752295a2131afcfd4b1ed827421f632ebfa1c189a11",
+      "images": 2,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "edbooks_ai_enhanced_interactive_narratives_for_programming_education_2024",
+      "file": "oney-edbooks-preprint2024.zip",
+      "sha256": "d2bf49b249bcb79a88f25c9c1ae1b28eaa2b89617250f802c482d4889bd3480a",
+      "images": 11,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024",
+      "file": "im-improving-advising-relationships-chiea2024.zip",
+      "sha256": "fa628eb193984e8c4857671881b03ba70b6cd98b9b944650331c5c8b6ad3f682",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "scrapeviz_hierarchical_representations_for_web_scraping_macros_2024",
+      "file": "krosnick-scrapeviz-vlhcc2024.zip",
+      "sha256": "69751f40f49e815c164b88de4ffcddf27ac05f0328d195c15fb439975f2c7d88",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024",
+      "file": "pandey-inclusive-source-code-chi2024.zip",
+      "sha256": "18d80f43e72c38741cfbdb8907c44f3324b3fe994b04aa58d89835c23c3f0d18",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024",
+      "file": "yang-vizcode-lsdemos2024.zip",
+      "sha256": "bd1c6d96ecfd7b5f4fcd63f55e6f55a77355ca900415677df01b505b5e3f6a3a",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
+      "file": "zhang-vrcopilot-uist2024.zip",
+      "sha256": "27941ee29cc65d8b5586fa1d1f1a7147e08f9bbd8fbc6cd8dec85b32f9c14f18",
+      "images": 9,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023",
+      "file": "wang-colaroid-chi2023.zip",
+      "sha256": "215153dd2ac54337c647a03ebed847eab37324b8c7daaeebec374defb644caf9",
+      "images": 27,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023",
+      "file": "xu-how-pairing-code-chilbw2023.zip",
+      "sha256": "79bd92656210cfbfb32a4316b5af570900e27651210542bb8ab33bb50f3e0445",
+      "images": 4,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023",
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.zip",
+      "sha256": "22c268878fb5896b6dc2de1287ac3a0473cf30688c6ed36147e4af53428b5948",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "runex_augmenting_regular_expression_code_search_with_runtime_values_2023",
+      "file": "zhang-runex-vlhcc2023.zip",
+      "sha256": "d12ae94453ec9c04917c29cd26159bf91f8480113410bfde26f5ab912502939c",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
+      "file": "pandey-ui-development-experiences-edi2024.zip",
+      "sha256": "e7c5adba7e7b82c196d1fe579a709fa34439a14997d6de59a7191949b5c055fc",
+      "images": 2,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023",
+      "file": "zhang-vizprog-chi2023.zip",
+      "sha256": "4055c550a7b0d3799403dbb9fd29d63df82167084f6528f9e8d008f022a7fde3",
+      "images": 12,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023",
+      "file": "zhang-vrgit-chi2023.zip",
+      "sha256": "5fbe2a59ead70cbf0d4fc4f6ba5a56f7f43c97d4964ca97bf737a0fe5ec67ec0",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022",
+      "file": "pandey-accessibility-ui-frameworks-vlhcc2022.zip",
+      "sha256": "046e17a61aa0282a472033c36f359620f1fda4e50f80d0cdd0f5f86b0386927f",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022",
+      "file": "krosnick-parammacros-vlhcc2022.zip",
+      "sha256": "bfcc7a260723f50c9ff9de8001cde6ff6323ca66dfd6ea1a7acfe1aede40b727",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021",
+      "file": "chen-cocapture-chi2021.zip",
+      "sha256": "f55b579ec1e1db553f32c76510b3099d6e8851132216e74fd1dcae28e44bd2b5",
+      "images": 6,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021",
+      "file": "wang-puzzleme-cscw2021.zip",
+      "sha256": "ed90622c7f5c170f4ed8c9cb55d1c1214e97d259287e9c4b3f4fe63f48d2a631",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021",
+      "file": "krosnick-think-aloud-computing-chi2021.zip",
+      "sha256": "41011fafc22c4e4b4edb0bca6ce2492db6051cd5555c3c441c97661afe65c0c7",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021",
+      "file": "pandey-understanding-accessibility-collaboration-cscw2021.zip",
+      "sha256": "83df676dda09b5cfd0da0e1591222496bca583879e3cffd92b5561789334f414",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021",
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.zip",
+      "sha256": "96a76389f38fc611eaaf8e77d5669d150067fbf56c27b5d81836a88d6817416a",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021",
+      "file": "wang-what-makes-well-documented-chiea2021.zip",
+      "sha256": "11b71a190a725443f69469adfaad2d0b72517c64b0192adf7cc1af24e4775c8a",
+      "images": 2,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "a_hybrid_crowd_machine_workflow_for_program_synthesis_2020",
+      "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.zip",
+      "sha256": "0fcdb4b65d8d860476d7c24342a17d7368a0067e8f848169d4e232a7fe82d0f2",
+      "images": 4,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020",
+      "file": "wang-callisto-chi2020.zip",
+      "sha256": "bc0991a2847e66e2cebd4ee223ac5ce6294c3ae09d2c4440bc538139509c9272",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020",
+      "file": "chen-edcode-vlhcc2020.zip",
+      "sha256": "9ee3f1f7b9e09986979f4513312b1309b779bd45b027c5b1448ff1a0b170caa0",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020",
+      "file": "pandey-explore-create-annotate-chi2020.zip",
+      "sha256": "7265092a05d5725128bc4067c9f2e14d34989e51fedc69fdddb1f677dc6d2871",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020",
+      "file": "zhang-flowmatic-uist2020.zip",
+      "sha256": "7a30bb4dbeb63c5ca4c55bff1f5461b95b71530798baa64999b591171c9b4492",
+      "images": 10,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "improving_crowd_supported_gui_testing_with_structural_guidance_2020",
+      "file": "chen-improving-crowd-supported-gui-chi2020.zip",
+      "sha256": "25c9092d1fc7b1e4fc580085b11b92ff13f4b27a28da4bc9c7439b3fee2d8120",
+      "images": 7,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "on_demand_collaboration_in_programming_2020",
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.zip",
+      "sha256": "4a7177117f9ed1c33d1703829598d405a5da092b3a500ffe2353a3f20fb6a924",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020",
+      "file": "chen-sifter-imx2020.zip",
+      "sha256": "7862b938d6d56f4e0ede8fcbddf13011e3a9e1df9d7cb94b526e5430360bd64e",
+      "images": 9,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "toward_providing_live_feedback_in_web_automation_ides_2020",
+      "file": "krosnick-providing-live-feedback-live2020.zip",
+      "sha256": "f85c065e1b4a7368c29c20c0cfe6821185104ba3c48ed90ed1d373548a09329a",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019",
+      "file": "pandey-exploring-tracking-needs-pervasivehealth2019.zip",
+      "sha256": "8d5b533cd906ed1e4bfba596ff9d9c7d450eb30eb9ac2b12c034630103332f07",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019",
+      "file": "wang-how-data-scientists-cscw2019.zip",
+      "sha256": "641696ecb3e32206ed03592a1f0f80fe1edef13e04708114146371744d2eb65b",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019",
+      "file": "oney-implementing-multi-touch-gestures-chi2019.zip",
+      "sha256": "f11fe11e41bc7de477a8274274fb8da3355a4f50c61321ca6aa7215912c836bb",
+      "images": 12,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "redesigning_notebooks_for_data_science_education_2019",
+      "file": "wang-redesigning-notebooks-data-husdat2019.zip",
+      "sha256": "1a60307791bdfadcaa53042d34415624af5573fb9a18a46ff73ddf9076c97df1",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019",
+      "file": "zhang-studying-benefits-challenges-vlhcc2019.zip",
+      "sha256": "48c441b365536363a362996be7870b5504392310e83d87d5ced5f59d9a8e8328",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018",
+      "file": "lin-adasa-uist2018.zip",
+      "sha256": "98c28651df41ebd495f79ef400f9940afb1562425781898a3ed0432ef0a57f2d",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018",
+      "file": "oney-arboretum-and-arbility-uist2018.zip",
+      "sha256": "06d2ad2f77e8134a05c4b474b49550e8d4f593e92b5a7bcd8e4fdc39136afbd1",
+      "images": 7,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018",
+      "file": "spinelli-attention-patterns-for-code-animations-px182018.zip",
+      "sha256": "cd58c3d098f4f9fb31242b4a10c87b7f6c38cc9523fb7ba474de197816a8bf8f",
+      "images": 6,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "creating_guided_code_explanations_with_chat_codes_2018",
+      "file": "oney-creating-guided-code-cscw2018.zip",
+      "sha256": "8267a9842ebc0a8f1c853bc0e474f0c502f9316fec39bc89bcd37d9fa14c559d",
+      "images": 6,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "expresso_building_responsive_interfaces_with_keyframes_2018",
+      "file": "krosnick-expresso-vlhcc2018.zip",
+      "sha256": "2b62757a03ad0a9612338915eadf58a460216a2a07ad4b8e2fe02f0fa0725100",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "codeon_on_demand_software_development_assistance_2017",
+      "file": "chen-codeon-chi2017.zip",
+      "sha256": "f47eff606996e3aad5d1691f7270ae9e615af4f297ce4564466e6c56ad52b4a6",
+      "images": 4,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "codemend_assisting_interactive_programming_with_bimodal_embedding_2016",
+      "file": "rong-codemend-uist2016.zip",
+      "sha256": "4a1ab86151ab4f15723b5c2f39e0207dccb5c7806cdd422a6c0810fa6399e91c",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "expert_crowd_support_systems_for_software_developers_2016",
+      "file": "chen-expert-crowd-support-ci2016.zip",
+      "sha256": "b17667a9101ddae333446ae54694db013d2f4cc0f4c4801e6c560e1f6bf16f5c",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "making_end_user_development_more_natural_2016",
+      "file": "myers-making-end-user-eud2017.zip",
+      "sha256": "4ac9cf9605935c896ba39553984c311f4b340baed49b4c5ec9272860aacf50c9",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "towards_providing_on_demand_expert_support_for_software_developers_2016",
+      "file": "chen-providing-on-demand-expert-chi2016.zip",
+      "sha256": "4f111e27d670e8977143685d73ffc065f2a4ce586663a1c1eb2d083c50f123e3",
+      "images": 2,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "expressing_interactivity_with_states_and_constraints_2015",
+      "file": "oney-expressing-interactivity-states-cmu2015.zip",
+      "sha256": "26beeac3d7258a54fb2d828989a7bfd96c8b6df630bd3d609f5e3c8764b0bd21",
+      "images": 44,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "interstate_a_language_and_environment_for_expressing_interface_behavior_2014",
+      "file": "oney-interstate-uist2014.zip",
+      "sha256": "f553ff85ec15cd9a0c3ae647370332b539f2e1d971f65bf2573b567173285b89",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "creativity_support_in_authoring_and_backtracking_2013",
+      "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.zip",
+      "sha256": "6d4a8428a02707f4979db4ac69ccc2a9265fc1758617213a55c044b0b38dd515",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "euclase_a_live_development_environment_with_constraints_and_fsms_2013",
+      "file": "oney-euclase-live2013.zip",
+      "sha256": "2584c3f1e952c8d98ee15ae5e4c5b34807f75b7e4de6b81f8e55386172bc3ea0",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013",
+      "file": "oney-zoomboard-chi2013.zip",
+      "sha256": "deb6e5c5eb3ac763996df4ab263e9f2baa50bfd695eac43dd7c70493268a1b4d",
+      "images": 4,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012",
+      "file": "oney-codelets-chi2012.zip",
+      "sha256": "287221fddeea1a32ecfc3571200b77cf10831ccc3ca3efe99a5d0bfba3e11a5f",
+      "images": 7,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012",
+      "file": "oney-constraintjs-uist2012.zip",
+      "sha256": "2b63c02e8175801f16d6019a10b965da4d0a92fadd51927adacc150becaf362b",
+      "images": 8,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "inferring_method_specifications_from_natural_language_api_descriptions_2012",
+      "file": "pandita-inferring-method-specifications-icse2012.zip",
+      "sha256": "9850900377e0519f0a0314ec9bb291512dd4e89eee0e4e33cd6196dfbd25c303",
+      "images": 5,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "development_tools_for_interactive_behaviors_2011",
+      "file": "oney-development-tools-interactive-iseuddc2011.zip",
+      "sha256": "dc34b7374aa30d50d4da594bec91569d272eb16a1432fe7020a206066e85166c",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "playbook_revision_control_comparison_for_interactive_mockups_2011",
+      "file": "oney-playbook-iseud2011.zip",
+      "sha256": "b87eb9ad5093a5f27bd9b537876f4b21fca77a3ade0ea37ac9024f8c32721450",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "democratizing_computational_tools_for_interaction_designers_2010",
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.zip",
+      "sha256": "7a8e127aa3f8a44b010554f30a0e10295dc5e5d6778a165ce4c0a4d7dcc06552",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010",
+      "file": "ozenc-how-support-designers-chi2010.zip",
+      "sha256": "6c304bb1447d8e04f4fa65cfbf237c3101588940c2324a22f2ae82fb0e14ddf8",
+      "images": 3,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "empowering_designers_with_creativity_support_tools_2009",
+      "file": "oney-empowering-designers-creativity-vlhccgc2009.zip",
+      "sha256": "59e6d2df902b4d47059e21aeeb94889c46d393cf0af267eac917b64d596ae35b",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009",
+      "file": "oney-firecrystal-vlhcc2009.zip",
+      "sha256": "90d580381479f4583de737e63ca21732a870691dec0f4910e7c8f7ce3348846b",
+      "images": 1,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009",
+      "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.zip",
+      "sha256": "143d7a133a7cb0c76ce03ae76c1690814632f53a0c56abdd30d711c6c9ba8333",
+      "images": 0,
+      "offline_image_paths_valid": true
+    },
+    {
+      "id": "natural_language_search_of_structured_documents_2008",
+      "file": "oney-natural-language-search-mit2008.zip",
+      "sha256": "95ce24020b2dce0e7356ae3c05a7ce3fdefa2f636f66c5ccbda81ff5a9b90ad9",
+      "images": 24,
+      "offline_image_paths_valid": true
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "file": "zhang-flowmatic-uist2020.pdf",
+  "pdf_sha256": "dcc5808b4db8bb629538edcd7be02c2e52bf729fc9ef9e38fa6b2cb43a8b60cb",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality",
+  "structure_elements": 530,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 74,
+    "Figure": 10,
+    "Caption": 11,
+    "H2": 13,
+    "Note": 6,
+    "Link": 131,
+    "L": 5,
+    "LI": 71,
+    "Lbl": 71,
+    "LBody": 71,
+    "H3": 14,
+    "H4": 16,
+    "Table": 1,
+    "THead": 1,
+    "TR": 5,
+    "TH": 7,
+    "TBody": 1,
+    "TD": 8
+  },
+  "structure_content_references": 9432,
+  "parent_tree_entries": 143,
+  "form_xobjects_visited": 1455,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 535,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 8,
+      "text_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 1027,
+      "text_operations_artifact": 1,
+      "link_annotations": 36
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1066,
+      "text_operations_artifact": 1,
+      "link_annotations": 38
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 938,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 18
+    },
+    {
+      "page": 5,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 2646,
+      "text_operations_tagged": 742,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 10703,
+      "text_operations_tagged": 769,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 8093,
+      "text_operations_tagged": 816,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 9
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 893,
+      "vector_operations_artifact": 5,
+      "text_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 788,
+      "vector_operations_tagged": 43,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 709,
+      "image_operations_tagged": 2,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 674,
+      "text_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 574,
+      "text_operations_artifact": 1,
+      "link_annotations": 10
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "439:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "444:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "449:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "471:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "473:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "475:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "1058:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "1079:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1083:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "1085:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "1088:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "1130:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1186:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1188:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1190:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1213:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1215:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1220:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1222:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1243:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1244:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1251:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1253:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1259:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1262:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1264:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1301:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1303:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1305:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1308:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1310:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1312:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1315:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1322:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1324:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1328:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1332:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1334:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1342:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1346:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1348:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1355:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1358:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1360:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "442:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: System preview of FlowMatic. (a) shows the edit mode. (i) is a palette menu attached to the left controller that allows\nusers to browse, search, and import 3D models into the scene. (ii) is a toolbox for the user to add programming primitives such as\noperators and data sources into the Functional Reactive Programming (FRP) Diagram in (iii). (b) shows the run mode where users\ncan evaluate the application in real time by hiding all the programming primitives.",
+      "actual_text": ""
+    },
+    {
+      "element": "1210:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: The palette menu of FlowMatic. (a)/(i) is the inter-\nface that allows users to import primitive models and select\ntheir colors using the color palette. (b)/(ii) is the interface that\nallows users to browse, search for, and import models from\nonline. (iii) is a toggle for displaying the FRP diagram. (iv)\nallows users to create text elements in the scene.",
+      "actual_text": ""
+    },
+    {
+      "element": "1218:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3. Shape identifies the abstraction: a sphere is an event and a truncated cone is a signal. Color identifies data type: white means any, green boolean, pink object, gold class, purple string, cyan number and orange vector3. Combining a shape with one of these colors encodes both abstraction and data type.",
+      "actual_text": ""
+    },
+    {
+      "element": "1234:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 4: The type constraints in FlowMatic. (a) shows the\nstate before making a connection. (b) shows that when making\na connection of type object, all ports of incompatible types\nwill be transparent and unconnectable. (c) & (d) demonstrate\npolymorphic ports. The snapshot operator takes a snapshot of\nthe input signal whenever the event is fired and outputs event\nstreams of the same type as the input signal.",
+      "actual_text": ""
+    },
+    {
+      "element": "1238:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5. An immersive dataflow graph for the shooting example overlays a gun and asteroid scene. Colored connections carry gun direction and position into operators that snapshot the trigger event, create a bullet sphere, translate it along the gun direction, detect collisions and destroy the bullet and hit obstacle. Operators are visible in edit mode so their data and event connections can be inspected.",
+      "actual_text": ""
+    },
+    {
+      "element": "1248:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6: In FlowMatic, users can create and re-use new\noperators as abstractions. By ‘pulling’ an operator closer to\nthe user using the thumbstick (a), they create a new abstraction\n(b). As they pull additional operators into the abstraction (c),\nFlowMatic automatically updates its inputs and outputs (d).",
+      "actual_text": ""
+    },
+    {
+      "element": "1326:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 7. Eight-participant questionnaire, counts ordered disagree, neutral, agree, strongly agree: A-FRAME easy to learn 2, 1, 4, 1; A-FRAME easy to use 1, 2, 4, 1; FlowMatic easy to learn 1, 1, 1, 5; FlowMatic easy to use 1, 1, 3, 3; good FlowMatic design 0, 0, 5, 3; helpful for VR programming 1, 1, 4, 2; easy to become skillful 1, 1, 3, 3; fun to play 1, 0, 1, 6. No strongly-disagree responses are plotted.",
+      "actual_text": ""
+    },
+    {
+      "element": "1336:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 8: A Blaster Game created using FlowMatic, where\nthe player presses the trigger button on the controller to shoot\nspheres out and earns scores by hitting the target asteroids.",
+      "actual_text": ""
+    },
+    {
+      "element": "1344:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 9: A VR Whac-A-Mole game where the user holds a\nhammer and tries to hit the shark models randomly generated\non the water’s surface.",
+      "actual_text": ""
+    },
+    {
+      "element": "1350:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 10: A basic implementation of Beat Saber, where the\nblocks are created at certain intervals and the player swings\nthe sword and hits the cubes to earn scores.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

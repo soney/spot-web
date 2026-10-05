@@ -2,9 +2,9 @@
   "file": "krosnick-think-aloud-computing-chi2021.pdf",
   "title": "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture",
   "publication_id": "think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021",
-  "pdf_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+  "pdf_sha256": "1d5755f2c17b14707564e8ada0be5ce1b3a5924221d9578d434875631df44fe6",
   "markdown": "publications/krosnick-think-aloud-computing-chi2021.md",
-  "markdown_sha256": "27ac5d051ba4838e98a80bfc0290976eb21d8560764409301323029cbcbf7306",
+  "markdown_sha256": "53f5c2b67e68cad572b4c822e391c50e48d6831649e58c46c20fb2010f9c54ea",
   "pages": 13,
   "blocks": [
     {
@@ -322,7 +322,7 @@
       "characters": 15
     },
     {
-      "node": "joined-703:0",
+      "node": "703:0",
       "role": "P",
       "pages": [
         3,
@@ -363,7 +363,7 @@
       "characters": 627
     },
     {
-      "node": "joined-712:0",
+      "node": "712:0",
       "role": "P",
       "pages": [
         4,
@@ -620,7 +620,7 @@
       "characters": 537
     },
     {
-      "node": "joined-855:0",
+      "node": "855:0",
       "role": "P",
       "pages": [
         7
@@ -724,7 +724,7 @@
       "characters": 17
     },
     {
-      "node": "joined-834:0",
+      "node": "834:0",
       "role": "P",
       "pages": [
         8
@@ -788,7 +788,7 @@
       "characters": 15
     },
     {
-      "node": "joined-861:0",
+      "node": "861:0",
       "role": "P",
       "pages": [
         8,
@@ -858,21 +858,13 @@
       "pages": [
         9
       ],
-      "characters": 999
+      "characters": 1213
     },
     {
       "node": "906:0",
       "role": "L",
       "pages": [],
       "characters": 2
-    },
-    {
-      "node": "907:0",
-      "role": "P",
-      "pages": [
-        9
-      ],
-      "characters": 213
     },
     {
       "node": "903:0",
@@ -1676,13 +1668,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 138,
+    "line_wrap_hyphens_removed": 130,
     "line_wrap_hyphens_retained": 24,
-    "paragraph_fragments_joined": 8,
+    "paragraph_fragments_joined": 3,
     "reviewed_wrap_repairs": 2,
     "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-think-aloud-computing-chi2021.json.gz",
-  "source_tags_sha256": "abbc9a69d0f9685102bd0947faf401237a443e176d500b1fb1cb65f7c62202fb"
+  "source_tags_sha256": "848d9d912712dda33e28c1faf62feeaf2f00ef4726a8adc1bfcc28817923ccd9"
 }

@@ -1,0 +1,380 @@
+{
+  "file": "oney-arboretum-and-arbility-uist2018.pdf",
+  "pdf_sha256": "cb9eb25030c707edcaecfb2a5e066c557f884de7eba9a26a1bc55a4b0ef8575d",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture",
+  "structure_elements": 634,
+  "roles": {
+    "Document": 1,
+    "Part": 8,
+    "H1": 1,
+    "P": 228,
+    "Link": 126,
+    "Sect": 52,
+    "H2": 12,
+    "Note": 5,
+    "Figure": 7,
+    "H3": 23,
+    "Span": 6,
+    "H4": 5,
+    "L": 16,
+    "LI": 43,
+    "LBody": 59,
+    "Table": 2,
+    "TR": 8,
+    "TH": 14,
+    "TD": 18
+  },
+  "structure_content_references": 263,
+  "parent_tree_entries": 154,
+  "form_xobjects_visited": 7,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 147,
+      "vector_operations_tagged": 40,
+      "image_operations_tagged": 5,
+      "link_annotations": 8
+    },
+    {
+      "page": 2,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 157,
+      "link_annotations": 26
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 148,
+      "link_annotations": 26
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 222,
+      "link_annotations": 16
+    },
+    {
+      "page": 5,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 220,
+      "image_operations_tagged": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 168,
+      "vector_operations_tagged": 44,
+      "link_annotations": 10
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 195,
+      "text_operations_tagged": 164,
+      "image_operations_tagged": 3,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "vector_operations_tagged": 42,
+      "text_operations_tagged": 113,
+      "image_operations_tagged": 6,
+      "link_annotations": 7
+    },
+    {
+      "page": 9,
+      "vector_operations_artifact": 82,
+      "text_operations_tagged": 199,
+      "link_annotations": 8
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 167,
+      "link_annotations": 4
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 158,
+      "link_annotations": 12
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 168,
+      "link_annotations": 9
+    },
+    {
+      "page": 13,
+      "text_operations_tagged": 321,
+      "link_annotations": 9
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "945:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "958:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "960:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "953:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "917:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "898:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "1318:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1307:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1293:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "1263:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1266:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1268:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1273:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1437:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1429:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1419:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1411:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1399:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1401:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1405:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1395:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1352:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1362:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1360:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1527:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1505:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1508:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1502:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1469:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1461:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1454:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1572:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1587:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1583:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1578:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1562:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1569:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1566:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1560:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1558:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1599:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "966:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1 depicts a blind end user using Arbility to interact with a browser-based calendar for placing an online order. The blind end user communicates with a sighted crowd worker via the Arbility chat panel, while the crowd worker's interface shows a mirrored version of the blind end user's calendar. A large computer mouse cursor indicates the crowd worker's click event on a specific calendar date. This click event is sent back to the blind end user, visualized as an arrow extending from the cursor back to the Arbility interface. The blind end user accepts the proposed click event, visualized by an arrow from their current calendar view to an updated calendar page state.",
+      "actual_text": ""
+    },
+    {
+      "element": "1414:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2 shows an excerpt from a chat log between the end user and remote crowd worker. The crowd worker says, \"Want me to select a time too?\" and the end user replies with \"3pm.\" The crowd worker then proposes the click action on 3pm, which appears in the chat log as \"CrowdWorker wants to click 3:00 PM.\" Beneath this message, there are four options available to the end user: Accept, Reject, Focus, and Request Label.",
+      "actual_text": ""
+    },
+    {
+      "element": "1530:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "This illustration shows a simple node and edge tree representing a part of a website's DOM.\r\nEach node is a turquoise circle with a letter in it.\r\nThe root of the tree is at the top of the illustration. Child nodes appear below parent nodes.\r\nThe root node is A and has 2 children: node B, on the left, and node C, on the right.\r\nNode B has child node D.\r\nNode C has child node E.\r\nParent-child relationships are shown by black single-direction arrows, drawn from the parent node to the child node.\r\nThis particular tree represents the initial state of the DOM for the example in this paper section. The next illustration shows a later state of the DOM.",
+      "actual_text": ""
+    },
+    {
+      "element": "1532:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "This illustration shows a simple node and edge tree representing a part of a website's DOM.\r\nEach node is a yellow circle with a letter in it.\r\nThe root of the tree is at the top of the illustration. Child nodes appear below parent nodes.\r\nThis particular tree represents the same part of the website as in the previous illustration, but instead at a later point in time when the user visits the website.\r\nThe website DOM has changed.\r\nNow root node A has 3 children: node Y on the left, node B in the middle, and node C on the right.\r\nNode B has child node X below it.\r\nNodes Y and C have no children.\r\nIn summary, compared to the previous illustration, the changes are: 1) Node A has a new child (node Y), 2) node B's child changed from node D to node X, and 3) node C no longer has any children (previously it had child node E).\r\nParent-child relationships are shown by black single-direction arrows, drawn from the parent node to the child node.",
+      "actual_text": ""
+    },
+    {
+      "element": "1517:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 3 is a complex system diagram depicting the interface between the Arbility tool and the Arboretum architecture. The Arbility tool consists of a chat interface (A) and a Chromium web browser (B). The Arboretum architecture consists of a web server (C) and a mirroring module (D). The blind end user interacts with the Arbility chat interface by inputting messages, which are sent to the Arboretum web server and forwarded to sighted crowd workers. These crowd workers then send proposed actions and events back to the Arboretum server, which forwards them to the end user for acceptance or rejection. If the end user accepts the events, the corresponding page updates are executed in the Arbility Chromium browser, which then sends these changes to the Arboretum mirroring module. The mirroring module then syncs these changes with the Arboretum web server so that the updates due to the accepted action are also visible to remote crowd workers. The diagram depicts these components and their interactions as labeled boxes with directed arrows between them.",
+      "actual_text": ""
+    },
+    {
+      "element": "1522:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "This illustration shows the Needleman-Wunsch sequence alignment Arbility computes between the two versions of the DOM tree, seen in the previous illustrations in this paper section.\r\nIn this illustration, there is a top row of turquoise circles corresponding to the tree from the first illustration.\r\nFrom left to right, the nodes are: A, B, D, C, E.\r\nThere is a bottom row of yellow circles corresponding to the tree from the second illustration.\r\nFrom left to right, the nodes are: A, Y, B, X, C.\r\nNote that the order of nodes presented here is the depth-first search pre-order traversal.\r\nFor nodes that appear in both rows, a black line connects them to indicate they are matched in the sequence alignment algorithm.\r\nHere, the connected nodes are: row 1's A and row 2's A; row 1's B and row 2's B; and row 1's C and row 2's C.\r\nNodes that were not matched are faded out.",
+      "actual_text": ""
+    },
+    {
+      "element": "1495:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 4 depicts each of the three task pages and their corresponding task question and reason for inaccessible content. The task question for the Calorie Counter page is \"How many calories are needed to lose 1 pound?\" and this content is inaccessible because it encodes this information in a visual canvas element. The task question for the Gary Turk Video page is \"Name the person who did sound engineering for the video\" and this content is inaccessible because it requires a mousedown event to reveal, whereas screen reader interactions typically simulate click events. The task question for the Noodlehead Menu page is \"Name one $8 noodle dis that is indicated as spicy\" and is inaccessible because spiciness is indicated only by red text CSS styling.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

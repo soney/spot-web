@@ -2,9 +2,9 @@
   "file": "krosnick-expresso-vlhcc2018.pdf",
   "title": "Expresso: Building Responsive Interfaces with Keyframes",
   "publication_id": "expresso_building_responsive_interfaces_with_keyframes_2018",
-  "pdf_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+  "pdf_sha256": "634251978705db5718dceb4e26d5234760d2b5d3bb7af31eb1462ef1cd20c75d",
   "markdown": "publications/krosnick-expresso-vlhcc2018.md",
-  "markdown_sha256": "bb9bc1a3cd91f3ffd6487eccf23ef996bee8ace8091c32faa4ba92cd2b24accc",
+  "markdown_sha256": "62140747b8718c4604dffb27c24b63392da324496bb2fc0fa6d34574962c7c7b",
   "pages": 9,
   "blocks": [
     {
@@ -96,7 +96,7 @@
       "characters": 18
     },
     {
-      "node": "joined-398:0",
+      "node": "398:0",
       "role": "P",
       "pages": [
         1
@@ -123,7 +123,8 @@
       "node": "402:0",
       "role": "L",
       "pages": [
-        1
+        1,
+        2
       ],
       "characters": 282
     },
@@ -345,7 +346,7 @@
       "characters": 26
     },
     {
-      "node": "joined-578:0",
+      "node": "578:0",
       "role": "P",
       "pages": [
         3,
@@ -437,9 +438,10 @@
       "node": "592:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 488
+      "characters": 909
     },
     {
       "node": "407:0",
@@ -456,14 +458,6 @@
         5
       ],
       "characters": 270
-    },
-    {
-      "node": "409:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 420
     },
     {
       "node": "410:0",
@@ -750,9 +744,10 @@
       "node": "523:0",
       "role": "P",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 187
+      "characters": 948
     },
     {
       "node": "594:0",
@@ -769,14 +764,6 @@
         7
       ],
       "characters": 188
-    },
-    {
-      "node": "661:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 760
     },
     {
       "node": "662:0",
@@ -1097,12 +1084,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 61,
-    "paragraph_fragments_joined": 9,
+    "line_wrap_hyphens_removed": 57,
+    "paragraph_fragments_joined": 7,
     "line_wrap_hyphens_retained": 11,
     "script_runs_positioned": 83
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-expresso-vlhcc2018.json.gz",
-  "source_tags_sha256": "ea82030fc5b19f32c989e426837cf972ffe6109bed87526d7206f342690b8bba"
+  "source_tags_sha256": "5bf9fc2f769de0c3c9c476120c46544b0468fbe328e1b20d917f4b76f748080b"
 }

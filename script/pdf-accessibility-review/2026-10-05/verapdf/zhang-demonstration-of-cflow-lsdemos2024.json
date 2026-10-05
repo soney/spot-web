@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/zhang-demonstration-of-cflow-lsdemos2024.pdf",
+          "size": 1762910
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 52251,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231583577,
+          "finish": 1791231585764,
+          "duration": "00:00:02.187",
+          "difference": 2187
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231583334,
+        "finish": 1791231585806,
+        "duration": "00:00:02.472",
+        "difference": 2472
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+  "pdf_sha256": "656bfc4f7f3c4f357b4505f5ee2c1c176dc1b77ff0e84678a6241062bc26dafc",
+  "stderr": ""
+}

@@ -1,0 +1,301 @@
+{
+  "file": "zhang-convomap-vlhcc2025.pdf",
+  "pdf_sha256": "1c9651307834c5ab0cd26351f0f70f1f4fb313d4deca2408c6b7e8f0c123ba48",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+  "structure_elements": 352,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 98,
+    "H2": 9,
+    "Span": 4,
+    "L": 6,
+    "LI": 65,
+    "Lbl": 62,
+    "LBody": 65,
+    "H3": 16,
+    "Figure": 2,
+    "Caption": 2,
+    "Formula": 5,
+    "Note": 4
+  },
+  "structure_content_references": 10423,
+  "parent_tree_entries": 12,
+  "form_xobjects_visited": 2,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 783,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 4
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 880,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 934,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 932,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 63,
+      "image_operations_tagged": 8,
+      "text_operations_tagged": 565,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 60,
+      "image_operations_tagged": 17,
+      "text_operations_tagged": 767,
+      "vector_operations_artifact": 10,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 1002,
+      "vector_operations_artifact": 13,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 995,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 1033,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 865,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 1380,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 315,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "142:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "149:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "166:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "168:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "171:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "174:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "176:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "180:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "182:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "186:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "190:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "194:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "197:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "202:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "204:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "343:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "215:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "217:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "360:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "365:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "392:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "393:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "399:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "401:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "403:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "406:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "209:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Fig. 1. ConvoMap’s user interface displaying the conversation dataset used in our user study. The interface consists of three main views. The Topic Overview (1),\nwhich provides users with donut charts showing the distribution of common topics in the messages (a). The Semantic Map View (2), which displays agent\nlegends at the top (h), a bar chart of conversations (b), groups of conversations (g), and a 2D map of conversation trajectories (f). The y-axis encodes messages’\nsemantic meanings (c). The x-axis encodes progression of conversations from start to end (e). The Conversation Detailed View (3), which display all message\ncontent in blocks, allowing users to either view by agent or by conversation (d).",
+      "actual_text": ""
+    },
+    {
+      "element": "338:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Fig. 2. A detailed view of ConvoMap’s user interface allows users to interact with various components. From the Semantic Map View, users can brush and\nselect a region on the 2D map to view messages in that area (d). The selected region appears as a gray rectangle surrounded by dots (d), and the trajectories\npassing through the selected area are highlighted in red (c). Dots that may contain errors are marked with an “X” (b). Dots that are far apart on y-axis have\ndifferent meanings (f, g). When a user clicks on a bar chart (a), the corresponding trajectory is highlighted. Additionally, clicking on a topic in the donut\nchart from the Topic Overview highlights relevant segments in the textual messages in yellow within the Conversation Detailed Views (e).",
+      "actual_text": ""
+    },
+    {
+      "element": "349:0",
+      "role": "Formula",
+      "page": 6,
+      "alt": "P equals the matrix shown as [vec(m_1), vec(m_2), ..., vec(m_n)], containing the vector embeddings of messages m_1 through m_n. The displayed dimension is P in R to the power n by 3072.",
+      "actual_text": ""
+    },
+    {
+      "element": "86:0",
+      "role": "Formula",
+      "page": 7,
+      "alt": "P_segment equals the matrix shown as [vec(s_1), vec(s_2), ..., vec(s_n)], containing the vector embeddings of segments s_1 through s_n. The displayed dimension is P_segment in R to the power n by 3072.",
+      "actual_text": ""
+    },
+    {
+      "element": "214:0",
+      "role": "Formula",
+      "page": 7,
+      "alt": "proportion(topic_i) equals len(s_i) divided by len(m): the length of segment s_i divided by the length of message m.",
+      "actual_text": ""
+    },
+    {
+      "element": "356:0",
+      "role": "Formula",
+      "page": 8,
+      "alt": "F score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives.",
+      "actual_text": ""
+    },
+    {
+      "element": "358:0",
+      "role": "Formula",
+      "page": 8,
+      "alt": "Overall quiz accuracy equals the sum of the accuracy scores for all questions divided by the number of questions.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

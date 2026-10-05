@@ -2,9 +2,9 @@
   "file": "krosnick-providing-live-feedback-live2020.pdf",
   "title": "Toward Providing Live Feedback in Web Automation IDEs",
   "publication_id": "toward_providing_live_feedback_in_web_automation_ides_2020",
-  "pdf_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+  "pdf_sha256": "4cb16e3a27cd8652f8d51e126940cecb0e524cf36a4e710d3fb92c7e9667fd3a",
   "markdown": "publications/krosnick-providing-live-feedback-live2020.md",
-  "markdown_sha256": "3c4d2fc097e0fafca92b849c5a9521c5d25866db1158e48916fa35969bcf4489",
+  "markdown_sha256": "12cd274f5422418353f3187fd0ec9ee357f4444abce0efd4603d7f9bfa5a0e26",
   "pages": 6,
   "blocks": [
     {
@@ -128,7 +128,7 @@
       "characters": 19
     },
     {
-      "node": "joined-376:0",
+      "node": "376:0",
       "role": "P",
       "pages": [
         1,
@@ -273,7 +273,7 @@
       "characters": 65
     },
     {
-      "node": "joined-403:0",
+      "node": "403:0",
       "role": "P",
       "pages": [
         3
@@ -302,7 +302,7 @@
       "pages": [
         3
       ],
-      "characters": 430
+      "characters": 527
     },
     {
       "node": "407:0",
@@ -686,17 +686,17 @@
       ],
       "sha256": "57e6543c266cf77c60d37c99937a46f411837201c41a3a4e8995e988cb1d1815",
       "kind": "figure",
-      "alt": "Figure 3. VizMac highlights a failing click command in the editable macro and shows a timeout waiting for selector #date-picker-23-09-2020. The code editor and page snapshot help locate the missing date element. The surrounding example explains that the site uses non-padded day and month numbers, so a script generating leading zeros must be corrected."
+      "alt": "Figure 3. VizMac displays a red timeout error above the macro editor: waiting for selector #datepicker-21-09-2020 > .text-muted failed. The form at left supplies delivery date 09/21/2020. Callout A marks the click command that constructs the date selector from input variables; B marks a separate time-selection command. The surrounding text explains that leading zeros in single-digit days or months must be removed to match the site’s selectors."
     }
   ],
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_retained": 12,
+    "line_wrap_hyphens_retained": 11,
     "line_wrap_hyphens_removed": 46,
-    "paragraph_fragments_joined": 6
+    "paragraph_fragments_joined": 4
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-providing-live-feedback-live2020.json.gz",
-  "source_tags_sha256": "37596309c3900c6502ff57325a6a7a8ed5b086c481cb757a14b1e4f107dd6b05"
+  "source_tags_sha256": "6a5dda46d557bdd96fc0df9342b78ff82e1ec96b2b43a5f5b4775a761d271f2e"
 }

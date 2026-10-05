@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-05",
+  "files": [
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "before_sha256": "c2789d2e0dd7d42ec100f6c669164756077485cb5699ac59f7f49f7afbefd76a",
+      "after_sha256": "099f1fc40e94fc6c8a3ed70912af469b61f155128d9c729f92a4a783ea2c298a",
+      "changes": [
+        {
+          "kind": "list_role_constraint",
+          "note": "184:0",
+          "before_parent": "174:0",
+          "after_parent": "167:0",
+          "reason": "End-of-list note moved immediately after list; flattened reading order unchanged."
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 497,
+      "content_references": 9304,
+      "pages": 11,
+      "pixel_identical_144dpi": true,
+      "content_ops_and_order_identical": true,
+      "flattened_reading_text_identical": true,
+      "list_children_valid": true
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "before_sha256": "cd85532bbe0ad559b431cffb0f2ed3bde07b55a555c82fdd2ae0d971f3de3623",
+      "after_sha256": "196dd477126bd94d66867e757c82e5268d94276c80a5f56d2aafb0f3139d8683",
+      "changes": [
+        {
+          "kind": "list_role_constraint",
+          "note": "496:0",
+          "before_parent": "489:0",
+          "after_parent": "492:0",
+          "reason": "Note nested after associated list item body text; flattened reading order unchanged."
+        },
+        {
+          "kind": "list_role_constraint",
+          "note": "497:0",
+          "before_parent": "489:0",
+          "after_parent": "495:0",
+          "reason": "Note nested after associated list item body text; flattened reading order unchanged."
+        },
+        {
+          "kind": "list_role_constraint",
+          "note": "498:0",
+          "before_parent": "489:0",
+          "after_parent": "495:0",
+          "reason": "Note nested after associated list item body text; flattened reading order unchanged."
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 201,
+      "content_references": 3447,
+      "pages": 4,
+      "pixel_identical_144dpi": true,
+      "content_ops_and_order_identical": true,
+      "flattened_reading_text_identical": true,
+      "list_children_valid": true
+    }
+  ]
+}

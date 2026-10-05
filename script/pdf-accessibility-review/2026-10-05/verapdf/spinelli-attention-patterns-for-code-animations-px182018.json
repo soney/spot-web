@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/spinelli-attention-patterns-for-code-animations-px182018.pdf",
+          "size": 3897977
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 139469,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231560824,
+          "finish": 1791231563062,
+          "duration": "00:00:02.238",
+          "difference": 2238
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231560699,
+        "finish": 1791231563114,
+        "duration": "00:00:02.415",
+        "difference": 2415
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+  "pdf_sha256": "a1989ff5f5f2eaa13bbf5c75a8c93a9467a815727bf570d756a85bd78d7a5ae7",
+  "stderr": ""
+}

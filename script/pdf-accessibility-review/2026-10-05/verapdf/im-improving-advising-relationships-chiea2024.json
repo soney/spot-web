@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/im-improving-advising-relationships-chiea2024.pdf",
+          "size": 530718
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 40239,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231494891,
+          "finish": 1791231497999,
+          "duration": "00:00:03.108",
+          "difference": 3108
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231494818,
+        "finish": 1791231498084,
+        "duration": "00:00:03.266",
+        "difference": 3266
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "multiJob": false
+    }
+  },
+  "file": "im-improving-advising-relationships-chiea2024.pdf",
+  "pdf_sha256": "a6418fdb68574726d8f88b19580d0c016a5e5134e25a2ff411cc41107b16cf13",
+  "stderr": ""
+}

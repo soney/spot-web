@@ -2,9 +2,9 @@
   "file": "zhang-multi-click-uist2025.pdf",
   "title": "Multi-Click: Cross-Tab Web Automation via Action Generalization",
   "publication_id": "multi_click_cross_tab_web_automation_via_action_generalization_2025",
-  "pdf_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+  "pdf_sha256": "ab78321bd90658f95c7ab42e3cc38f69a10156eb41b699d656b2cbe18dd13ee6",
   "markdown": "publications/zhang-multi-click-uist2025.md",
-  "markdown_sha256": "7189ecd0a1cca795c5290a8d72ea056fef03f954eafe4491bf5a23396cd1a620",
+  "markdown_sha256": "a839f5f8005a906978e6304cc95beda402f6cf11d5c9745fba537a6805956268",
   "pages": 10,
   "blocks": [
     {
@@ -85,31 +85,7 @@
       "pages": [
         1
       ],
-      "characters": 993
-    },
-    {
-      "node": "652:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 72
-    },
-    {
-      "node": "603:0",
-      "role": "Link",
-      "pages": [
-        1
-      ],
-      "characters": 72
-    },
-    {
-      "node": "605:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 86
+      "characters": 1080
     },
     {
       "node": "606:0",
@@ -126,6 +102,46 @@
         1
       ],
       "characters": 345
+    },
+    {
+      "node": "611:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "652:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 72
+    },
+    {
+      "node": "646:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 134
+    },
+    {
+      "node": "650:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 34
+    },
+    {
+      "node": "687:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 91
     },
     {
       "node": "608:0",
@@ -147,42 +163,10 @@
       "node": "610:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 485
-    },
-    {
-      "node": "611:0",
-      "role": "Note",
-      "pages": [
-        1
-      ],
-      "characters": 46
-    },
-    {
-      "node": "646:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 134
-    },
-    {
-      "node": "joined-650:0",
-      "role": "P",
-      "pages": [
         1,
         2
       ],
-      "characters": 425
-    },
-    {
-      "node": "687:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 91
+      "characters": 876
     },
     {
       "node": "1008:0",
@@ -484,9 +468,10 @@
       "node": "1211:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 101
+      "characters": 333
     },
     {
       "node": "1134:0",
@@ -503,14 +488,6 @@
         4
       ],
       "characters": 550
-    },
-    {
-      "node": "1176:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 231
     },
     {
       "node": "1177:0",
@@ -674,6 +651,14 @@
       "characters": 144
     },
     {
+      "node": "1245:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 680
+    },
+    {
       "node": "1241:0",
       "role": "H3",
       "pages": [
@@ -701,17 +686,10 @@
       "node": "1244:0",
       "role": "P",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 305
-    },
-    {
-      "node": "1245:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 678
+      "characters": 429
     },
     {
       "node": "1255:0",
@@ -719,7 +697,7 @@
       "pages": [
         6
       ],
-      "characters": 498
+      "characters": 494
     },
     {
       "node": "1256:0",
@@ -728,14 +706,6 @@
         6
       ],
       "characters": 72
-    },
-    {
-      "node": "1257:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 123
     },
     {
       "node": "1258:0",
@@ -943,15 +913,7 @@
       "pages": [
         7
       ],
-      "characters": 814
-    },
-    {
-      "node": "1340:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 185
+      "characters": 1000
     },
     {
       "node": "1341:0",
@@ -1727,7 +1689,7 @@
       ],
       "sha256": "6d5bb26843012064e7a3e3c289b2e74b9e90f66e2be6a29a5e15257f626a678f",
       "kind": "figure",
-      "alt": "Three grouped bar charts compare average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test."
+      "alt": "A grouped bar chart compares average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test."
     },
     {
       "path": "figures/zhang-multi-click-uist2025/figure-007-p007.png",
@@ -1841,12 +1803,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 97,
-    "paragraph_fragments_joined": 1,
-    "line_wrap_hyphens_retained": 14,
+    "line_wrap_hyphens_removed": 92,
+    "line_wrap_hyphens_retained": 12,
     "script_runs_positioned": 6
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-multi-click-uist2025.json.gz",
-  "source_tags_sha256": "12c71bb57f07a63a43c7a132a05a4c0b2b5779474286d4957ede572f40e4243c"
+  "source_tags_sha256": "5058827a86f0af9d5f47602e7f3d7ee18619ab6799d1d9f612d718f2592485f6"
 }

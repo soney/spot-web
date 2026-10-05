@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 5805ca7d1c5e6da765a55aac0038695291837f7c2b70740699a7a36033e7cb14 -->
+<!-- Source PDF SHA-256: b18316dcd1297682e5fc7820b3ff900a17449848ae9662bc89853b10aa67cad2 -->
 
 <a id="page-1"></a>
 
@@ -10,7 +10,9 @@ Maulishree Pandey<sup>1</sup>, Hariharan Subramonyam<sup>1</sup>, Brooke Sasia<s
 
 <sup>1</sup>University of Michigan, Ann Arbor, MI {maupande, harihars, soney, sileo}@umich.edu
 
-Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’20, April 25–30, 2020, Honolulu, HI, USA. © 2020 Copyright is held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-6708-0/20/04 ...$15.00. http://dx.doi.org/10.1145/3313831.3376349
+<sup>2</sup>California Polytechnic State University San Luis Obispo, CA asasia@calpoly.edu
+
+> Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’20, April 25–30, 2020, Honolulu, HI, USA. © 2020 Copyright is held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-6708-0/20/04 ...$15.00. http://dx.doi.org/10.1145/3313831.3376349
 
 ## ABSTRACT
 
@@ -26,21 +28,19 @@ Tactile graphics; Drawing Applications; Accessibility; Blind
 
 ## INTRODUCTION
 
-Graphics such as diagrams, visualizations, and charts combine visual and textual information. These can represent ideas that are hard to explain with text alone and are particularly useful in educational and professional contexts. For people with visual impairments, these graphics are rendered in a tactile format with the text usually represented in braille. Students with visual impairments have indicated that they find tactile graphics to be useful in coursework and access to graphics [makes them feel more included in classrooms \[42\]. Interviews](<#page-12>) with students and instructors inform us that students like making their own tactile graphics and feel more motivated when they are involved in the creation process \[38, 5\]. However, labeling the graphics is a challenge for people with visual
+Graphics such as diagrams, visualizations, and charts combine visual and textual information. These can represent ideas that are hard to explain with text alone and are particularly useful in educational and professional contexts. For people with visual impairments, these graphics are rendered in a tactile format with the text usually represented in braille. Students with visual impairments have indicated that they find tactile graphics to be useful in coursework and access to graphics [makes them feel more included in classrooms \[42\]. Interviews](<#page-12>) with students and instructors inform us that students like making their own tactile graphics and feel more motivated when they are involved in the creation process \[38, 5\]. However, labeling the graphics is a challenge for people with visual impairments. Adding metadata such as labels, titles, and descriptions in braille is a lengthy process. The text has to be prepared separately using analog tools such as a stylus[1](<#page-1>) or embossed on braillable sheets and pasted on graphics for labeling. Too many braille labels clutter the graphic and make it difficult to discriminate between tactile elements. The National Federation of the Blind (NFB) noted in 2013 that unavailability of simple devices for creating and editing tactile drawings has [prevented students from creating their own graphics \[2\].](<#page-11>)
 
-<sup>2</sup>California Polytechnic State University San Luis Obispo, CA asasia@calpoly.edu impairments. Adding metadata such as labels, titles, and descriptions in braille is a lengthy process. The text has to be prepared separately using analog tools such as a stylus[1](<#page-1>) or embossed on braillable sheets and pasted on graphics for labeling. Too many braille labels clutter the graphic and make it difficult to discriminate between tactile elements. The National Federation of the Blind (NFB) noted in 2013 that unavailability of simple devices for creating and editing tactile drawings has [prevented students from creating their own graphics \[2\].](<#page-11>)
+> [<sup>1</sup>http://accessiblegraphics.org/formats/tactile/](<http://accessiblegraphics.org/formats/tactile/braille-labels/>) [braille-labels/](<http://accessiblegraphics.org/formats/tactile/braille-labels/>)
 
-![Tactile graphic created by a participant in the study. He labeled the graphic using both braille and audio labels. Audio label represented in different texture using paper tape](../figures/pandey-explore-create-annotate-chi2020/figure-001-p001.png)
+![Figure 1. A participant’s tactile map of a park, drawn as raised outlines on transparent film. Several locations are marked with braille label strips and pieces of textured paper tape for audio labels, so the participant can distinguish the two label types by touch.](../figures/pandey-explore-create-annotate-chi2020/figure-001-p001.png)
 
 Figure 1. A tactile map of a park created by participant P6 in our study. He preferred using both braille and audio labels, and chose a differently textured tactile marker (paper tape) to represent audio information.
 
 Audio is a potential solution for annotating tactile graphics. Many digital drawing tools already use audio as an ‘output [modality’ \[10\]. Companies like](<#page-11>) [TouchGraphics \[3\] and View-](<#page-11>) [Plus \[4\] have designed interactive](<#page-11>) tactile graphics with audio labels that are accessible by touch gestures or digital pens. However, they do not allow audio input for labeling. End-users cannot create labels in real-time when exploring a graphic or create freehand drawings and label them. So far no one has studied the needs and interaction preferences of visually impaired people to extend the functionality of digital drawing tools in this regard. We wanted to investigate this in our work. We therefore conducted a study with 11 visually impaired adults with the goal of answering two research questions: (1) What strategies are used by people with visual impairments as they explore, draw, and label tactile graphics? (2) What interaction commands do people with visual impairments prefer to create and annotate tactile graphics for digital use?
 
-Answering the first question requires understanding how braille labels are used during the creation and exploration of tactile graphics. The salient behaviors possible with braille
-
 <a id="page-2"></a>
 
-[<sup>1</sup>http://accessiblegraphics.org/formats/tactile/](<http://accessiblegraphics.org/formats/tactile/braille-labels/>) [braille-labels/](<http://accessiblegraphics.org/formats/tactile/braille-labels/>) should be supported by audio. Also, observing people’s finger movements during creation and exploration is critical to designing recognizable interactions. The second research question can help identify users’ preferences for interactivity with audio labels as visually impaired people have markedly differ- [ent interaction preferences from sighted people \[20\].](<#page-11>)
+Answering the first question requires understanding how braille labels are used during the creation and exploration of tactile graphics. The salient behaviors possible with braille should be supported by audio. Also, observing people’s finger movements during creation and exploration is critical to designing recognizable interactions. The second research question can help identify users’ preferences for interactivity with audio labels as visually impaired people have markedly differ- [ent interaction preferences from sighted people \[20\].](<#page-11>)
 
 Tasks in our study focused on observing participants’ exploration and creation of labeled tactile graphics and eliciting preferred interaction commands. We found that audio labels were significantly quicker for finding information on graphics. However, braille labels afforded different strategies to access the information. This provides opportunities to think about organizing and presenting information with the audio modality. Our study also revealed that participants preferred a combination of screen reader gestures and short voice commands to interact with audio information. They wanted the audio labels to be easily discoverable and represented in a way that was easy to identify. Finally, we noted specific hand postures and finger movements that should be considered in designing recognizable interactions for digital drawing tools.
 
@@ -82,7 +82,7 @@ For the purposes of the study, ‘visual impairment’ was defined as severe red
 
 All the tasks in the study were based on tactile maps from the [Tactile Map Open Stimulus Set (TMOSS) \[27\]. TMOSS is](<#page-12>) a set of 56 maps, broken into 7 groups of 8 maps. Each map measures 12×12 inches and represents a fictional park. Each map contains a pond and at least one walking path. Other tactile symbols on the map represent features such as restrooms, water fountains, playgrounds, picnic tables, and trashcans [(Table 1). The maps](<#page-3>) are designed to facilitate rigorous experimentation related to tactile perception, and have been used in [prior research with visually impaired people \[28\]. Parameters](<#page-12>) like distances, angles, symbol types, and configurations are highly controlled across maps. This makes the maps similar in difficulty for exploration related tasks. [Table 2 lists the](<#page-3>) different maps used in the study. Maps in Task 1 and Task 3 were modified to fit the goals of the task, as discussed below.
 
-In Task 1, we gave fictional names to the park features. In two of the maps, we presented these names using braille. We placed the abbreviations on the map and the abbreviations
+In Task 1, we gave fictional names to the park features. In two of the maps, we presented these names using braille. We placed the abbreviations on the map and the abbreviations along with their expanded names were listed alphabetically on a braille key, in accordance with [convention \[1\].](<#page-11>) All of the abbreviations on the map were two characters long. In the paper, ‘braille labels’ is used to refer to the abbreviations on the map. The label’s expanded name is referred to as ‘item in the key’. For the other two maps, we presented the names using audio labels. The audio label was denoted by a textured square, approximately the same size as the braille label. When participants placed their forefingers on the audio label and said ‘Label’, the label at the location was read out by the computer using synthetic speech. All fictional names on the maps were five letters long and selected through randomization from an online list of most popular names[2](<#page-3>).
 
 <table>
   <thead>
@@ -126,10 +126,6 @@ Table 1. TMOSS Symbol Summary Table
 
 Table 2. TMOSS Maps used in the study. Maps are numbered Gi-j, where i is group number and j is map number. For instance, G3-8 means eighth map from group three.
 
-along with their expanded names were listed alphabetically on a braille key, in accordance with [convention \[1\].](<#page-11>) All of the abbreviations on the map were two characters long. In the paper, ‘braille labels’ is used to refer to the abbreviations on the map. The label’s expanded name is referred to as ‘item in the key’. For the other two maps, we presented the names using audio labels. The audio label was denoted by a textured square, approximately the same size as the braille label. When participants placed their forefingers on the audio label and said
-
-‘Label’, the label at the location was read out by the computer using synthetic speech. All fictional names on the maps were five letters long and selected through randomization from an online list of most popular names[2](<#page-3>).
-
 In Task 3, we covered the map partially to expose the top 8.5 inches of the map. This made the map’s size equal to the area of a standard 8.5×11 inch drawing sheet. This enabled the participants to copy the tactile map to scale.
 
 ### Apparatus
@@ -140,21 +136,17 @@ All tasks were conducted on a light box constructed with transparent acrylic she
 
 Participants performed all the tasks on the light box while seated. After explaining the study, we gave participants time to explore and familiarize themselves with the setup.
 
-[<sup>2</sup>http://www.babynames1000.com/five-letter/](<http://www.babynames1000.com/five-letter/>) <sup>3</sup>The analysis of data from ArUco markers was not used to report the findings in this work
+> [<sup>2</sup>http://www.babynames1000.com/five-letter/](<http://www.babynames1000.com/five-letter/>) <sup>3</sup>The analysis of data from ArUco markers was not used to report the findings in this work
 
 <a id="page-4"></a>
 
 ![This is a set of four images. Image 1 shows a map with braille labels and the associated key used in Task 1. Image 2 shows a map with audio labels used in Task 1. Image 3 shows the map used in Task 2. Image 4 shows tactile film and stylus used in Task 3. Collectively, the four images show the lightbox (apparatus) on which maps were placed and participants performing each of the three tasks.](../figures/pandey-explore-create-annotate-chi2020/figure-002-p004.png)
 
-Figure 2. Apparatus and stimuli used in the study. From left to right: (1) Map with braille labels and associated key used in Task 1 (2) Map with audio labels used in Task 1 (2) Map used for gesture elicitation in Task 2 (3) Tactile film and stylus used in Task 3
-
-.
+Figure 2. Apparatus and stimuli used in the study. From left to right: (1) Map with braille labels and associated key used in Task 1 (2) Map with audio labels used in Task 1 (2) Map used for gesture elicitation in Task 2 (3) Tactile film and stylus used in Task 3 .
 
 #### Pre-Tasks: Gaining Familiarity with Stimuli
 
-Before the main tasks, participants explored the practice map (G3-8) to familiarize themselves with the stimuli. Next we presented the five [tactile symbols (Table 1) in randomized order.](<#page-3>) Participants were informed about the features these symbols represented. They were given ten seconds to explore and memorize each symbol. The tactile symbols were again presented in a randomized order to confirm participants’ knowledge. Each participant successfully and accurately named the symbols on their first try. To confirm that participants’ knowledge translated to the stimuli, map G7-6 was presented. Participants had to answer six questions about the map. These included locating the pond, two walking pathways, the cluster of water fountains, the cluster of restrooms, both picnic areas, and the trashcan. Participants were asked not to start exploring until the first question was read. This was done to prime them for future tasks. Participants were also asked to explicitly say
-
-‘here’ upon locating the answer, thereby priming them to say the answer out loud during main tasks.
+Before the main tasks, participants explored the practice map (G3-8) to familiarize themselves with the stimuli. Next we presented the five [tactile symbols (Table 1) in randomized order.](<#page-3>) Participants were informed about the features these symbols represented. They were given ten seconds to explore and memorize each symbol. The tactile symbols were again presented in a randomized order to confirm participants’ knowledge. Each participant successfully and accurately named the symbols on their first try. To confirm that participants’ knowledge translated to the stimuli, map G7-6 was presented. Participants had to answer six questions about the map. These included locating the pond, two walking pathways, the cluster of water fountains, the cluster of restrooms, both picnic areas, and the trashcan. Participants were asked not to start exploring until the first question was read. This was done to prime them for future tasks. Participants were also asked to explicitly say ‘here’ upon locating the answer, thereby priming them to say the answer out loud during main tasks.
 
 Participants were then presented with examples of the braille and audio labels they would encounter in Task 1. For braille, we presented the tactile symbol for playgrounds (squares). The playground had been given the fictional name ‘Betty Playground’. It was setup as described in the Stimuli section. For the audio label, we presented participants with the tactile symbol for water fountains (ovals). These had been named ‘Henry Water Fountains’. As described earlier, audio feedback was providing using a Wizard of Oz approach. When participants touched and said ‘Label’, the experimenter interacted with a Python script that then announced the stored label.
 
@@ -341,9 +333,9 @@ We also noted a three-way tension between participants’ desires to (1) standar
 
 ### Commonly Proposed Interactions
 
-We calculated the max-consensus (MC) and consensus-distinct [ratio (CDR) \[29\]. MC is the percent of participants who sug-](<#page-12>) gested the most popular input technique for a referent or referent/input modality combination. A higher MC value would mean that more users agreed on a given user-defined input technique. CDR is the percent of the distinct techniques that achieved a given consensus threshold among participants. The default threshold is two, meaning at least two participants invented the same interaction command. Interaction commands with high max-consensus scores and consensus-distinct ratio can be considered highly suitable, as such scores would be indicative of strong agreement on a primary interaction with few other contender interactions. [Table 4 lists the distinct input](<#page-8>) techniques with max consensus and CDR above two for each referent. It shows that multimodal commands were highly
-
 <a id="page-8"></a>
+
+We calculated the max-consensus (MC) and consensus-distinct [ratio (CDR) \[29\]. MC is the percent of participants who sug-](<#page-12>) gested the most popular input technique for a referent or referent/input modality combination. A higher MC value would mean that more users agreed on a given user-defined input technique. CDR is the percent of the distinct techniques that achieved a given consensus threshold among participants. The default threshold is two, meaning at least two participants invented the same interaction command. Interaction commands with high max-consensus scores and consensus-distinct ratio can be considered highly suitable, as such scores would be indicative of strong agreement on a primary interaction with few other contender interactions. [Table 4 lists the distinct input](<#page-8>) techniques with max consensus and CDR above two for each referent. It shows that multimodal commands were highly agreed upon by users across all referents. The last column in Table 4 shows that the multimodal commands followed a pattern of pointing the index finger at location, and speaking the voice command to trigger the referent.
 
 <table>
   <thead>
@@ -443,8 +435,6 @@ We calculated the max-consensus (MC) and consensus-distinct [ratio (CDR) \[29\].
 
 Table 4. The four referents used for elicitation of user-defined input in Task 2. The overall max-consensus and consensus-distinct ratio are shown for each referent (using a consensus-threshold of 2). The last column shows the most commonly proposed interaction command for the referent, number in parentheses indicates how many different participants proposed the interaction.
 
-agreed upon by users across all referents. The last column in Table 4 shows that the multimodal commands followed a pattern of pointing the index finger at location, and speaking the voice command to trigger the referent.
-
 ## FINDINGS: CREATION OF TACTILE GRAPHICS
 
 In Task 3, participants frequently performed five static hand postures and three finger movements during creation of tactile graphics (Figure 3). Table 5 lists the fingers used for performing them. This knowledge can be useful in designing recognizable interaction commands.
@@ -532,9 +522,7 @@ Four participants used braille to label their drawings. One participant (P9) sai
 
 Five participants used both audio and braille labels. Besides no additional effort required for audio labeling, participants felt this approach made their graphics universally accessible:
 
-“I would, like I said earlier, like something that could give information to as many users as possible. There is nothing saying that I wouldn’t also include some kind of print label with those pieces as well. So yeah...that way everybody can read it.” (P1). Some of the findings were consistent with Task
-
-2. For instance, participants talked about how they would use braille to represent general information and record specific details using audio. They also elaborated upon how use of audio was going to be inaccessible to people who were deaf-blind, or that audio would not be usable in public settings. To tackle these issues, some participants wanted the audio labels to be accessible with braille displays too.
+“I would, like I said earlier, like something that could give information to as many users as possible. There is nothing saying that I wouldn’t also include some kind of print label with those pieces as well. So yeah...that way everybody can read it.” (P1). Some of the findings were consistent with Task 2. For instance, participants talked about how they would use braille to represent general information and record specific details using audio. They also elaborated upon how use of audio was going to be inaccessible to people who were deaf-blind, or that audio would not be usable in public settings. To tackle these issues, some participants wanted the audio labels to be accessible with braille displays too.
 
 Only P7 chose to label in audio exclusively. She felt audio was the simplest approach for labeling tactile graphics. Another participant (P3) commented on how audio could be used even by people who weren’t comfortable with braille or couldn’t read braille. For instance, even sighted people could collaborate in graphics creation with audio labeling.
 

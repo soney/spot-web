@@ -2,9 +2,9 @@
   "file": "wang-colaroid-chi2023.pdf",
   "title": "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials",
   "publication_id": "colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023",
-  "pdf_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+  "pdf_sha256": "c9b8c52104df34856548c4d661c5236631a03ccac303b1536f3bd6652fc4cd9b",
   "markdown": "publications/wang-colaroid-chi2023.md",
-  "markdown_sha256": "44e5efc2ebcdf3481f1c391f3f51501a1543554d2566992e6ff7a4d1f0da2a15",
+  "markdown_sha256": "3cb5b02213b8ab27785b2b75430a9da14512bcb711fcf68c027c0f850e174d56",
   "pages": 22,
   "blocks": [
     {
@@ -168,7 +168,7 @@
       "characters": 845
     },
     {
-      "node": "joined-742:0",
+      "node": "742:0",
       "role": "P",
       "pages": [
         1,
@@ -193,6 +193,14 @@
       "characters": 922
     },
     {
+      "node": "768:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 225
+    },
+    {
       "node": "762:0",
       "role": "P",
       "pages": [
@@ -215,14 +223,6 @@
         2
       ],
       "characters": 165
-    },
-    {
-      "node": "768:0",
-      "role": "Note",
-      "pages": [
-        2
-      ],
-      "characters": 225
     },
     {
       "node": "769:0",
@@ -464,15 +464,7 @@
       "pages": [
         4
       ],
-      "characters": 891
-    },
-    {
-      "node": "1831:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 204
+      "characters": 1096
     },
     {
       "node": "1832:0",
@@ -558,9 +550,10 @@
       "node": "1842:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 257
+      "characters": 675
     },
     {
       "node": "1861:0",
@@ -577,14 +570,6 @@
         5
       ],
       "characters": 38
-    },
-    {
-      "node": "1942:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 417
     },
     {
       "node": "1943:0",
@@ -773,6 +758,14 @@
       "characters": 444
     },
     {
+      "node": "914:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 103
+    },
+    {
       "node": "909:0",
       "role": "H3",
       "pages": [
@@ -787,6 +780,14 @@
         7
       ],
       "characters": 588
+    },
+    {
+      "node": "915:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 345
     },
     {
       "node": "911:0",
@@ -810,31 +811,7 @@
       "pages": [
         7
       ],
-      "characters": 806
-    },
-    {
-      "node": "914:0",
-      "role": "Note",
-      "pages": [
-        7
-      ],
-      "characters": 103
-    },
-    {
-      "node": "915:0",
-      "role": "Note",
-      "pages": [
-        7
-      ],
-      "characters": 345
-    },
-    {
-      "node": "916:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 495
+      "characters": 1302
     },
     {
       "node": "917:0",
@@ -877,7 +854,7 @@
       "characters": 532
     },
     {
-      "node": "joined-922:0",
+      "node": "922:0",
       "role": "P",
       "pages": [
         7,
@@ -980,7 +957,7 @@
       "pages": [
         9
       ],
-      "characters": 21
+      "characters": 46
     },
     {
       "node": "950:0",
@@ -988,7 +965,7 @@
       "pages": [
         9
       ],
-      "characters": 561
+      "characters": 536
     },
     {
       "node": "951:0",
@@ -1127,7 +1104,7 @@
       "characters": 429
     },
     {
-      "node": "joined-968:0",
+      "node": "968:0",
       "role": "P",
       "pages": [
         9,
@@ -1141,7 +1118,7 @@
       "pages": [
         10
       ],
-      "characters": 796
+      "characters": 483
     },
     {
       "node": "974:0",
@@ -1331,9 +1308,10 @@
       "node": "1002:0",
       "role": "P",
       "pages": [
-        11
+        11,
+        12
       ],
-      "characters": 314
+      "characters": 657
     },
     {
       "node": "1007:0",
@@ -1368,14 +1346,6 @@
       "characters": 60
     },
     {
-      "node": "1099:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 342
-    },
-    {
       "node": "1100:0",
       "role": "P",
       "pages": [
@@ -1408,14 +1378,6 @@
       "characters": 419
     },
     {
-      "node": "1106:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 88
-    },
-    {
       "node": "1107:0",
       "role": "P",
       "pages": [
@@ -1437,7 +1399,7 @@
       "pages": [
         13
       ],
-      "characters": 20
+      "characters": 43
     },
     {
       "node": "1110:0",
@@ -1445,7 +1407,7 @@
       "pages": [
         13
       ],
-      "characters": 239
+      "characters": 216
     },
     {
       "node": "1111:0",
@@ -1517,7 +1479,7 @@
       "pages": [
         13
       ],
-      "characters": 16
+      "characters": 23
     },
     {
       "node": "1120:0",
@@ -1525,7 +1487,7 @@
       "pages": [
         13
       ],
-      "characters": 706
+      "characters": 699
     },
     {
       "node": "1121:0",
@@ -1552,7 +1514,7 @@
       "characters": 27
     },
     {
-      "node": "joined-1124:0",
+      "node": "1124:0",
       "role": "P",
       "pages": [
         13,
@@ -1566,7 +1528,7 @@
       "pages": [
         14
       ],
-      "characters": 217
+      "characters": 399
     },
     {
       "node": "1127:0",
@@ -1764,9 +1726,10 @@
       "node": "1167:0",
       "role": "P",
       "pages": [
-        15
+        15,
+        16
       ],
-      "characters": 376
+      "characters": 575
     },
     {
       "node": "1171:0",
@@ -1785,14 +1748,6 @@
       "characters": 54641
     },
     {
-      "node": "1481:0",
-      "role": "P",
-      "pages": [
-        16
-      ],
-      "characters": 198
-    },
-    {
       "node": "1482:0",
       "role": "H4",
       "pages": [
@@ -1809,7 +1764,7 @@
       "characters": 414
     },
     {
-      "node": "joined-1485:0",
+      "node": "1485:0",
       "role": "P",
       "pages": [
         16,
@@ -1823,7 +1778,7 @@
       "pages": [
         17
       ],
-      "characters": 481
+      "characters": 546
     },
     {
       "node": "1489:0",
@@ -2018,20 +1973,12 @@
       "characters": 702
     },
     {
-      "node": "2078:0",
-      "role": "P",
-      "pages": [
-        19
-      ],
-      "characters": 88
-    },
-    {
       "node": "2079:0",
       "role": "L",
       "pages": [
         19
       ],
-      "characters": 10904
+      "characters": 10926
     },
     {
       "node": "2119:0",
@@ -2074,7 +2021,7 @@
       "characters": 21932
     }
   ],
-  "tagged_content_items": 17882,
+  "tagged_content_items": 17862,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -2103,7 +2050,7 @@
       ],
       "sha256": "8bc55b98dd4eaf84a40d47f44167ba76205b82b31de378db3869ffacb3989bf3",
       "kind": "figure",
-      "alt": "Figure 2: Colaroid implements code versioning and change propagating through git. Suppose the author wants to edit the first step (e.g., changing HTML page title) and propagate the change to subsequent steps. Colaroid maps steps with the hash ID of the code commits in Git. As shown in phase 1 and phase 2, Colaroid will first check out the main branch into a new branch named “change” and reset the head to the code version that needs to be edited. By doing this, authors would see commit A loaded in their code editor. Next, tutorial authors can make changes directly in the code editor. Once they confirm finishing the edits, Colaroid will create a new commit for the changes and merge commits in the later steps into the change branch."
+      "alt": "Five-phase diagram of propagating a tutorial edit through Git. Initially the main branch contains commits A and B. Colaroid creates a change branch at A, the author edits A to make A-prime, and later changes are reapplied to produce B-prime. The final phase removes the original main branch and renames change to main. Tutorial step entries are updated to the new commit IDs so the edited page title propagates to later steps."
     },
     {
       "path": "figures/wang-colaroid-chi2023/figure-003-p012.png",
@@ -2131,7 +2078,7 @@
       ],
       "sha256": "b4732d1521d213a7af9e68eb53416d5fc686163cc086bc8a931d0454c051e853",
       "kind": "figure",
-      "alt": "Figure 4: We used GitHub Codespaces for participants to access tutorials. All the three types of tutorials are displayed side by side with the main code editor."
+      "alt": "GitHub Codespaces study setup. A repository page on the left has the Codespaces launch control highlighted; an arrow leads to three browser-based editors on the right. Each places source code beside one tutorial format: an article with step text, a video player, or the Colaroid notebook with editable code and a rendered Flappy Bird preview."
     },
     {
       "path": "figures/wang-colaroid-chi2023/figure-005-p016.png",
@@ -2453,7 +2400,7 @@
       ],
       "sha256": "ec2dd6c7ff5e9f95b2ea1736ebf61be334fc8856a086f52ef5f18ff549e30488",
       "kind": "figure",
-      "alt": "Figure 5: We manually coded the screen recording to understand how students interact with the tutorials. All participants used the full 40 mins on the task. Participants’ engagement time with Colaroid tutorials is significantly more than article tutorials (1) and video tutorials (2). In particular, we noticed that some participants (3) gave up on the video tutorials after watching a segment at the beginning of the study."
+      "alt": "Participant activity timelines during the 40-minute task. Rows labeled by participant compare Colaroid with an article or video tutorial. Blue segments mark Colaroid use, orange article use, green video use and gray dashed segments work on the dinosaur game. Colaroid use recurs throughout many sessions; article or video use is often more concentrated early. Highlighted groups 1 and 2 compare conditions; callout 3 marks a participant who stops using the video after the opening segment."
     }
   ],
   "tables": [
@@ -2551,13 +2498,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 336,
-    "line_wrap_hyphens_retained": 17,
-    "paragraph_fragments_joined": 20,
+    "line_wrap_hyphens_removed": 313,
+    "line_wrap_hyphens_retained": 16,
+    "paragraph_fragments_joined": 15,
     "reviewed_wrap_repairs": 3,
     "script_runs_positioned": 7
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-colaroid-chi2023.json.gz",
-  "source_tags_sha256": "10587f4b86b198341e24011b924bbaf5e08ec84032b424e122d5695a6a7102a8"
+  "source_tags_sha256": "5702392fe410d2c6d5481cb9f8a9e46a08e6f6a11abf8390b130ee01ffaa952e"
 }

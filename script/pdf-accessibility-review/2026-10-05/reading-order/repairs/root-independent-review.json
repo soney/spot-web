@@ -1,0 +1,618 @@
+{
+  "date": "2026-10-05",
+  "documents": 8,
+  "pages": 258,
+  "original_examples_resolved": 17,
+  "documents_reviewed": [
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pdf_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+      "pages": 227,
+      "native_archive_sync": {
+        "pdf_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+        "archive_sha256": "533fb1e5ce4bc3ebddc92e524ce8cefe9c304b7267074aed8ddd96ade5ebc2be",
+        "counts": {
+          "native_content_references": 40879,
+          "archive_content_references": 40879,
+          "native_elements": 5285,
+          "archive_elements": 5285,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 4,
+      "original_examples": [
+        {
+          "kind": "running_header_inside_sentence",
+          "node": "1853:0",
+          "pages": [
+            17,
+            18
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "1856:0",
+          "accepted_text": "Also, widget creators cannot anticipate all of the widgets that developers will want or all of the ways they will want to customize a widget. When a designer or developer has an idea for a new interaction technique to help users accomplish a task in their interface, to implement or explore their idea, developer must write it from scratch. Thus it is important that the underlying frameworks and tools they use address the difficulties of creating interactive behaviors. Because designing, implementing, and evaluating new interactive behaviors are common in the Human-Computer Interaction (HCI) community, making interactive behaviorseasier to implement is a fundamental problem in HCI[98]."
+        },
+        {
+          "kind": "footnote_and_header_inside_sentence",
+          "node": "2053:0",
+          "pages": [
+            38,
+            39
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "2057:0",
+          "accepted_text": "In theory, the Web’s three languages have complimentary, pre-defined roles. HTML, a declarative markup language, defines a page’s content. CSSdefines the appearance of that content with a declarative language that allows developers to specify stylistic properties of particular DOMnodes. CSSuses a “selector” language to allow developers to specify the DOMnodes they are controlling. JavaScript defines a page’s interactivity by modifying the DOMtree."
+        },
+        {
+          "kind": "footnote_inside_code",
+          "node": "2090:0",
+          "pages": [
+            42,
+            43
+          ],
+          "resolved": true,
+          "assertion": "Code line 3 is followed directly by line 4; note 3 now follows its referencing paragraph 2085 before the code.",
+          "next_node": "2093:0"
+        },
+        {
+          "kind": "superscript_marker_before_heading_number",
+          "node": "2047:0",
+          "pages": [
+            38
+          ],
+          "resolved": true,
+          "assertion": "Chapter number 3 and heading ConstraintJS precede footnote marker 2.",
+          "accepted_text": "3ConstraintJS2"
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked.",
+      "independent_residual_repairs": {
+        "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+        "before_sha256": "1f89d283ffe80e2eec3384cefe19e06503e0a940e9f789f84dbe5a8be9c15aef",
+        "after_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+        "changes": [
+          {
+            "kind": "inline_footnote_order",
+            "node": "644:0",
+            "before": "ConstraintJS and InterState extend the constraint model by integrating finite state machines (FSMs) or state machinesfor short. FSMs are formalisms in which the state 1machine has oneactive state, or status. Researchers have used state machines across many domains, including text parsing, input handling, and modeling embedded systems. However, this section will focus on previous research that uses state machines in the context of user interface development tools.",
+            "after": "ConstraintJS and InterState extend the constraint model by integrating finite state machines (FSMs) or state machinesfor short. FSMs are formalisms in which the state machine has one1active state, or status. Researchers have used state machines across many domains, including text parsing, input handling, and modeling embedded systems. However, this section will focus on previous research that uses state machines in the context of user interface development tools.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2085:0",
+            "before": "To help concretely illustrate ConstraintJS’s features, consider the example shown in3Figure 3.1, whichuses the Facebook APIto pull in a list of Facebook friends and display their names alongside their pictures. The Facebook APImakes this a three-stepprocess (not counting the required initial authentication): first, the code mustretrieve alist of friend IDs. This is done using one Facebook APIcall, which returns a list of friend IDsand names.  After the list of friends has been retrieved, the second step is to take this list of friend IDsand retrieve a URLpointing to apicture for each friend. This means that the codemust make anotherFacebook APIcall for eachfriend the user has. Finally, once these data are retrieved, they must all be correctly displayed.",
+            "after": "To help concretely illustrate ConstraintJS’s features, consider the example shown inFigure 3.1, whichuses the Facebook API3to pull in a list of Facebook friends and display their names alongside their pictures. The Facebook APImakes this a three-stepprocess (not counting the required initial authentication): first, the code mustretrieve alist of friend IDs. This is done using one Facebook APIcall, which returns a list of friend IDsand names.  After the list of friends has been retrieved, the second step is to take this list of friend IDsand retrieve a URLpointing to apicture for each friend. This means that the codemust make anotherFacebook APIcall for eachfriend the user has. Finally, once these data are retrieved, they must all be correctly displayed.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2107:0",
+            "before": "The following sections describethe ConstraintJS application programming interface (API).All of ConstraintJS’s functionality is accessed via a globalcjs()JavaScript 4functionto avoid potential conflicts with other libraries.",
+            "after": "The following sections describethe ConstraintJS application programming interface (API).All of ConstraintJS’s functionality is accessed via a globalcjs()JavaScript function4to avoid potential conflicts with other libraries.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2131:0",
+            "before": "Because many pages have properties and graphics that depend on the current state, ConstraintJS integrates its FSMs with constraints and thepage’sHTMLand CSS. To illustrate, suppose a developer wantsto implement the behaviorshowninFigure 3.4. Here, there are two DOMelements and hovering over one has the effect of highlighting the otherelement. The code to create the FSMshown in the right side of 5Figure 3.4is shown below:",
+            "after": "Because many pages have properties and graphics that depend on the current state, ConstraintJS integrates its FSMs with constraints and thepage’sHTMLand CSS. To illustrate, suppose a developer wantsto implement the behaviorshowninFigure 3.4. Here, there are two DOMelements and hovering over one has the effect of highlighting the otherelement. The code to create the FSMshown in the right side of Figure 3.4is shown below5:",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2141:0",
+            "before": "The second parameter passed into block_a.cssis an FSM. The third parameter is an object where the keys (\"idle\"and \"myhover\") represent states in the FSM6passed in. The values (\"black\"and \"yellow\"respectively) represent the value for the constraint in the different states. Alternatively, we could create a constraint for the hover color to be whatever color is shown in the hexvariable inFigure 3.4:",
+            "after": "The second parameter passed into block_a.cssis an FSM. The third parameter is an object where the keys (\"idle\"and \"myhover\") represent states in the FSMpassed in6. The values (\"black\"and \"yellow\"respectively) represent the value for the constraint in the different states. Alternatively, we could create a constraint for the hover color to be whatever color is shown in the hexvariable inFigure 3.4:",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2497:0",
+            "before": "They can set copies(displayed under color_disp[0]in Figure 4.16) as a constraint to favoritesand the InterState runtime environment creates an instance of color_dispfor every element in the favoritesarray (updated automatically). color_dispcan then constrain its fillproperty to be my_copy, so that every instance has the appropriate color. This functionality is analogous to 9list viewsin data-binding libraries and maps in Amulet [99]that allow programmers to specify a template display and to specify the number of instances they want. This example is illustrated in Figure 4.16.",
+            "after": "They can set copies(displayed under color_disp[0]in Figure 4.16) as a constraint to favoritesand the InterState runtime environment creates an instance of color_dispfor every element in the favoritesarray (updated automatically). color_dispcan then constrain its fillproperty to be my_copy, so that every instance has the appropriate color. This functionality is analogous to list views9in data-binding libraries and maps in Amulet [99]that allow programmers to specify a template display and to specify the number of instances they want. This example is illustrated in Figure 4.16.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2505:0",
+            "before": "First, by making the result of changes immediately visible, livedevelopment environments help bridge thegulf of evaluation [119]—a significant barrier for new developers [79]. Another important aspect of most live development environments is 10that the developer always has a runningprogram. One great aspect of spreadsheet programming, for instance, is that when the user makes a mistake in a particular cell’s formula, the entire spreadsheet does not stop working[20,98]. Similarly, InterStateallows errors to be “localized”: cells with errors only prevent the parts of the program from running that depend on those cells.",
+            "after": "First, by making the result of changes immediately visible, livedevelopment environments help bridge thegulf of evaluation [119]—a significant barrier for new developers [79]. Another important aspect of most live development environments is that the developer always has a runningprogram10. One great aspect of spreadsheet programming, for instance, is that when the user makes a mistake in a particular cell’s formula, the entire spreadsheet does not stop working[20,98]. Similarly, InterStateallows errors to be “localized”: cells with errors only prevent the parts of the program from running that depend on those cells.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "2649:0",
+            "before": "The fact that ConstraintJS usespulledconstraints (which evaluate only when the constraint’s value is requested) instead of pushed constraints (which evaluateas soon 11as a constraint’s value may have changed) has important performance implications.For instance, when a cell that is not currently being used changes its value, no resources are dedicated to re-evaluating the constraint (also known as lazy evaluation). This can be helpful in situations where large or computationally expensive portions are disabled.",
+            "after": "The fact that ConstraintJS usespulledconstraints (which evaluate only when the constraint’s value is requested) instead of pushed constraints (which evaluateas soon as a constraint’s value may have changed) has important performance implications11.For instance, when a cell that is not currently being used changes its value, no resources are dedicated to re-evaluating the constraint (also known as lazy evaluation). This can be helpful in situations where large or computationally expensive portions are disabled.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "footnote_role",
+            "node": "2499:0",
+            "before": "P",
+            "after": "Note"
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "648:0",
+            "after": "644:0",
+            "text": "1InterState’s state machines, like Harel’s Statecharts [44], allow multiple states to be active simultaneously to reduce the verbosity of expressing certain state machines [45]. However, state machines that enable multiple simultaneous states are functionally equivalent to state machines in which only one state may be active at a time [62,148]."
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2054:0",
+            "after": "2048:0",
+            "text": "2Portions of this chapter were adapted from [126]"
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2091:0",
+            "after": "2085:0",
+            "text": "3This example code is based on version 1 of the Facebook API"
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2113:0",
+            "after": "2107:0",
+            "text": "4In JavaScript, functionobjects may have properties, so although cjsis a callable function, it also has subfields (for example, cjs.mouse)."
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2318:0",
+            "after": "2311:0",
+            "text": "7Portions of this chapter were adapted from [127,128]"
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2472:0",
+            "after": "2468:0",
+            "text": "8In this context, an “instance” of the state machine means a new state machine that has the same structure but may have a different active state. "
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2499:0",
+            "after": "2497:0",
+            "text": "9http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.listview.aspx"
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2509:0",
+            "after": "2505:0",
+            "text": "10This isnot necessarily inherent to live development environments butbecause of the implementation requirements of live development environments, it is common. "
+          },
+          {
+            "kind": "footnote_after_reference_paragraph",
+            "node": "2654:0",
+            "after": "2649:0",
+            "text": "11Previous literature often refers to pushed constraints as eager constraints and pulled constraints as demand constraints."
+          }
+        ],
+        "artifact_content_keys": [],
+        "elements": 5285,
+        "content_references": 40879
+      },
+      "residual_validation": {
+        "passed": true,
+        "appearance": {
+          "pages": 227,
+          "dpi": 144,
+          "mismatch_pages": []
+        },
+        "structure": {
+          "checks_passed": true,
+          "issue_counts": {
+            "warning:page_has_no_semantic_text": 1
+          }
+        },
+        "native_archive_sync_passed": true
+      }
+    },
+    {
+      "file": "xu-how-pairing-code-chilbw2023.pdf",
+      "pdf_sha256": "1f86d939cd21ff54c2b815ae501e38a309b6e4fb395d0396a26566e70b6a4707",
+      "pages": 6,
+      "native_archive_sync": {
+        "pdf_sha256": "1f86d939cd21ff54c2b815ae501e38a309b6e4fb395d0396a26566e70b6a4707",
+        "archive_sha256": "9c22053a9cf961c5abf72f186de5eda6afaddbee2ef2d1be51a1b6aedcf695d2",
+        "counts": {
+          "native_annotations": 60,
+          "native_content_references": 5015,
+          "archive_annotations": 60,
+          "archive_content_references": 5015,
+          "native_elements": 204,
+          "archive_elements": 204,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 3,
+      "original_examples": [
+        {
+          "kind": "copyright_inside_sentence",
+          "node": "287:0",
+          "pages": [
+            1
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "322:0",
+          "accepted_text": "The number of students who chose to take a computer science classor major in computer science has been dramatically increasingthroughout the years, which has led to a growth in enrollmentfor introductory programming classes. However, programmingskills can be difficult to learn, especially for novice programmers.Getting familiar with different kinds of IDEs and environments,writing syntactically correctly code, understanding the logic ofcode, and debugging code are all essential skills for a developer,but all these can be quite challenging for beginners. What makesit more challenging is that teachers and tutors sometime struggleto help individual students due to large enrollments. Therefore,instructors often use peer learning, a form of collaborative learningwhere students provide mutual support and feedback by workingtogether or discussing code in groups. Studies have shown thatpeer programming can be beneficial for students by improving theirability to read and write code [17]. By discussing different methodsof solving the problem and reading other’s solutions, students canexpose themselves to different thought processes and enhance theircoding skills."
+        },
+        {
+          "kind": "permission_notice_inside_sentence",
+          "node": "327:0",
+          "pages": [
+            1,
+            2
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "335:0",
+          "accepted_text": "Due to large enrollments in introductory programming courses [15],there are limited interactions between the lecturer and the studentswhile novice programmers need more support. Instructors take avariety of approaches such as using a flipped classroom to encour-age interactive activities and collaboration inside the classroom [1].Peer learning is a widely used learning technique happening in labsor discussions for effective programming learning, and previousresearch has shown that peer learning, as a form of collaborativestudy, enhanced students’ abilities to learn computer science [9].Sitthiworachart et al. designed a peer coding assessment by di-viding students into small groups where they review each other’scode [16]. This study indicated that by reading and understandingother’s codes, students improved their proficiency in understand-ing the code’s syntax and problem-solving skills [16]. Our researchfurther explores how group work and viewing other’s solutionsaffect learning efficiency in introductory programmers."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "394:0",
+          "pages": [
+            3,
+            4
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "401:0",
+          "accepted_text": "When we are reviewing the recorded video discussion and thequestionnaires where participants were explaining their thoughtprocesses, we found that students have a deeper understanding ofthe problem than what was been reflected by their code. For exam-ple, during the discussion, the participant explained her thoughtprocess in solving the problem to her partner (Figure 3, Example 2),which demonstrated her understanding of for loop, append func-tion, and max function. While on her answer sheet there was onlyone line of code using the max function. We think that withoutcollaborative learning and discussion among peers or tutors, it’svery hard for students to accurately express their knowledge."
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    },
+    {
+      "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "pdf_sha256": "b22b2cc1a703acb51528a36bd562a750979b2edc1a87a01074ae78492d95a6d7",
+      "pages": 6,
+      "native_archive_sync": {
+        "pdf_sha256": "b22b2cc1a703acb51528a36bd562a750979b2edc1a87a01074ae78492d95a6d7",
+        "archive_sha256": "b4fc5d492e30cc759f42e1f4ac752a18b334cb5a2fbd2579e702ea04c1f719f0",
+        "counts": {
+          "native_content_references": 5023,
+          "archive_content_references": 5023,
+          "native_elements": 216,
+          "archive_elements": 216,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 2,
+      "original_examples": [
+        {
+          "kind": "figure_inside_sentence",
+          "node": "206:0",
+          "pages": [
+            1,
+            2
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "210:0",
+          "accepted_text": "Web scraping is the process of extracting data fromwebsites. Traditional web scraping tools such as BeautifulSoup [19] and Selenium [20] require users to write code. Sev-eral tools have sought to make web scraping more accessibleto a wider audience through no-code or low-code approaches.Marmite [21] offers users a visual data flow interface forscraping and a spreadsheet interface for viewing scrapedresults, but does not support tasks that involve hierarchical dataor multiple pages. Sifter [22] can extract data across multiplepages but is limited to pagination-based navigation and doesnot support hierarchical data. In contrast, ScrapeViz supportsweb scraping for hierarchical data and across multiple pages."
+        },
+        {
+          "kind": "footnotes_inside_sentence",
+          "node": "80:0",
+          "pages": [
+            3
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "83:0",
+          "accepted_text": "ScrapeViz starts by showing just a top-level IMDb page(Fig 1-D) which includes a list of movie titles, each alink leading to the individual movie’s page. Susan starts bydemonstrating collecting data for one movie and one ofits actors. She does this by clicking the first movie title onthe page, “Everything Everywhere All at Once” (EEAAO)(Fig 1-C), which scrapes the movie’s title and navigates to themovie’s page. Instead of opening the movie page in the currentviewport, ScrapeViz leaves the current viewport intact at thetop-level page (Fig 1-D) and creates a new smaller viewport(Fig 1-N) next to it to load the movie page in. This allowsSusan to keep track of the pages she has visited and revisitthem later to make edits or additions. Susan clicks on thesmaller viewport to expand it and see the movie page moreclearly; this then shrinks the original viewport containing thelist of movies. She then clicks the first actor name link on theEEAAO movie page, Michelle Yeoh (Fig 1-K), which scrapesher name and navigates to her page. Finally, she scrapes thebirthdate “August 6, 1962” (Fig 1-S) on Michelle Yeoh’s page."
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked.",
+      "independent_residual_repairs": {
+        "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+        "before_sha256": "1c4167ffd9528077adb95a1e45f406d28c1df9f183181a33b12a8b5e45d924c0",
+        "after_sha256": "b22b2cc1a703acb51528a36bd562a750979b2edc1a87a01074ae78492d95a6d7",
+        "changes": [
+          {
+            "kind": "inline_footnote_order",
+            "node": "239:0",
+            "before": "•3 WTA tennis: A macro that scrapes players’ last namesfrom a top-level page containing a table of player data.The macro also visits each individual player’s page andscrapes their age and their coach’s last name.",
+            "after": "• WTA tennis3: A macro that scrapes players’ last namesfrom a top-level page containing a table of player data.The macro also visits each individual player’s page andscrapes their age and their coach’s last name.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "242:0",
+            "before": "•4 Wayfair furniture: A macro that scrapes furniture prod-ucts’ names from a top-level catalog page. The macro alsovisits each individual furniture product’s page and scrapesa list of “variations” (e.g., fabrics, colors, orientations).",
+            "after": "• Wayfair furniture4: A macro that scrapes furniture prod-ucts’ names from a top-level catalog page. The macro alsovisits each individual furniture product’s page and scrapesa list of “variations” (e.g., fabrics, colors, orientations).",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "249:0",
+            "before": "•5 Google Scholar: researcher names, the titles of theirpapers, the text of the paper’s PDF/HTML link. This datawas spread across three levels of pages.",
+            "after": "• Google Scholar5: researcher names, the titles of theirpapers, the text of the paper’s PDF/HTML link. This datawas spread across three levels of pages.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          },
+          {
+            "kind": "inline_footnote_order",
+            "node": "252:0",
+            "before": "•6 Yelp: restaurant names, their hours for today, a list oftheir most popular dishes. This data was spread acrosstwo levels of pages.",
+            "after": "• Yelp6: restaurant names, their hours for today, a list oftheir most popular dishes. This data was spread acrosstwo levels of pages.",
+            "evidence": "Read raised footnote marker against the rendered source paragraph; only same-line native children reordered."
+          }
+        ],
+        "artifact_content_keys": [],
+        "elements": 216,
+        "content_references": 5023
+      },
+      "residual_validation": {
+        "passed": true,
+        "appearance": {
+          "pages": 6,
+          "dpi": 144,
+          "mismatch_pages": []
+        },
+        "structure": {
+          "checks_passed": true,
+          "issue_counts": {}
+        },
+        "native_archive_sync_passed": true
+      }
+    },
+    {
+      "file": "chen-edcode-vlhcc2020.pdf",
+      "pdf_sha256": "b80f3a3c53c66187e300d7d5c39db09468933bafb8b49f03ae534616149ec935",
+      "pages": 5,
+      "native_archive_sync": {
+        "pdf_sha256": "b80f3a3c53c66187e300d7d5c39db09468933bafb8b49f03ae534616149ec935",
+        "archive_sha256": "929f9a265b4ed0dcb9b2b6c66b3e7104bbc9f8ae9aef7435938414ae43757717",
+        "counts": {
+          "native_content_references": 4238,
+          "native_annotations": 31,
+          "archive_content_references": 4238,
+          "archive_annotations": 31,
+          "native_elements": 182,
+          "archive_elements": 182,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 3,
+      "original_examples": [
+        {
+          "kind": "figure_inside_sentence",
+          "node": "304:0",
+          "pages": [
+            2
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "307:0",
+          "accepted_text": "We observed three common problems across these studies.First, the responses that our researcher instructor gave throughCodeon were difficult for students to interpret as studentslacked the ability to efficiently switch between decipheringa textual explanation and parsing references to code, whichwere often included in responses. This is because Codeonwas designed to help programmers complete tasks ratherthan guiding students to learn, and thus prioritizes allowingusers to quickly integrate code snippets over explaining orannotating lines of code. Second, both the instructor and studentparticipants mentioned that they sometimes misunderstood astudent’s question or the instructor’s response respectively. Partof this miscommunication resulted from the instructor assumingprerequisite knowledge in their answer that the student actuallylacked. Neither existing support tools nor Codeon are able tohandle follow up questions that have code context within anexisting request. Lastly, to scale their support, the instructorparticipants often wanted to publish previous responses for theentire classes to avoid redundant effort. Meanwhile, we foundstudents would often include code context (e.g., screenshots)along with their questions on the course’s Facebook group. Thiscould encourage other students to plagiarize their code, whichinstructors prevented by removing their request. Students, inturn, were uncertain about what code they can and should sharein their questions. Based on these findings, we designed threefeatures in EdCode that can support efficient communicationbetween instructors and students."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "310:0",
+          "pages": [
+            2,
+            3
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "327:0",
+          "accepted_text": "As we found in our formative studies, there is a high levelof interdependency between natural language explanations andthe referenced code. This can make it difficult for noviceprogrammers to follow the text responses, as their mental modelfor programming is not robust enough to make connectionsbetween the different pieces of information they receive.Borrowing from the idea of hyperlinks, which are pervasive inweb documents, we created a contextualized explanation featurethat allows instructors to link a selection of code to textualexplanations (Fig. 2). In students’ code editor, they can clickhighlighted text in an answer to see the code associated with it(4, 5 in Fig. 1). This feature helps to lower the cognitive costfor novices by dereferencing and removing navigation effort offinding the relevant code [24]. It also helps instructors avoid theeffort of clarifying each piece of code context in composing ananswer (e.g., providing the line number or copying segmentsof code into the explanation)."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "341:0",
+          "pages": [
+            3,
+            4
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "351:0",
+          "accepted_text": " All seven students reported an overall preference forEdCode, as it was “convenient” (S1, S3–S6), “effortless” (S2),or “localized to my text editor” (S7). The flexibility betweensynchronous and asynchronous communication in EdCodeallows students to “easily follow up with the chat” (S2) and“ask questions wherever” (S1). EdCode also encouraged onestudent to ask more questions: “I felt better asking questions[using EdCode] than I would at office hour” (S2)."
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    },
+    {
+      "file": "oney-zoomboard-chi2013.pdf",
+      "pdf_sha256": "7aed5f355a67a0710784799bc5566e2c4f4781a7b0941ab361fc700cbbd4c5d7",
+      "pages": 4,
+      "native_archive_sync": {
+        "pdf_sha256": "7aed5f355a67a0710784799bc5566e2c4f4781a7b0941ab361fc700cbbd4c5d7",
+        "archive_sha256": "77090563e41c9d0884d5eba9916e2e3f3407583ca8972d103e2ee24403829bd1",
+        "counts": {
+          "native_content_references": 2162,
+          "archive_content_references": 2162,
+          "native_elements": 149,
+          "archive_elements": 149,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 3,
+      "original_examples": [
+        {
+          "kind": "copyright_inside_sentence",
+          "node": "46:0",
+          "pages": [
+            1
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "48:0",
+          "accepted_text": "We present our work on ZoomBoard, a novel text entry technique for inch-scale[25] and smaller devices, such as a wristwatchcomputersor digital jewelry[20].These devicesarecomputationally capable, but suffer from a paucity of inputarea, whichgenerally precludes the use of conven-tional soft keyboards(andin turn limits therange of possi-bleapplications). At present, text entry methods for such small devices areabsent(e.g., iPod Nano, Sony Smart-Watch), unwieldy(e.g., calculator watch), or exotic(see e.g., [16,17,24]), whichnecessitatestraining.When such devices are worn on the body, social acceptabilityand com-fort is directly proportional to device size [14], further prompting our research into ultra-small device text entry."
+        },
+        {
+          "kind": "figures_and_permission_notice_inside_sentence",
+          "node": "52:0",
+          "pages": [
+            1,
+            2
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "59:0",
+          "accepted_text": "The most direct approach to support text entry on mobile devices has beento find clever ways to shrink QWERTYkeyboards, such that they can be accommodated on mobile deviceenclosures and touchscreens[14]. However, fitting 27+ keys onto a small device is neither straightforward, nor particularlyaccurate. It is now standard for touchscreen keyboards to feature real-time spelling correction, simply because it is assumed that users are unable to accurately hit such small keys. However, this approach carries the signifi-cant benefit of being instantly familiar to users. Indeed, the latter propertyhas been a driving factor in the consumer space, and most text produced today on smart devices is by miniatureQWERTYkeyboards.Further, given the number of keys required and our “fat fingers”, it seems unlikelya full keyboard layout can be shrunk much further."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "69:0",
+          "pages": [
+            2,
+            3
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "73:0",
+          "accepted_text": "Of note, ZoomBoard has aninnateKSPCof 2.0-that is, all keys can be typed with 2 presses. Spaces can be typed with one swipe, bringing the KSPC-mindown to 1.84on typical phrase sets. This compares favorably to other small-deviceinput methods, for example,2.1, 3.3, and 4.3 for H4-Writer [17],LURDWriter[7], and EdgeWrite[27,28]respectively(see [17]for more discussion)."
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    },
+    {
+      "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+      "pdf_sha256": "97abd0c7d6b9e91f0c76ea093673d8d3415c5f7abb1164b80ac3bc5ac9e168b8",
+      "pages": 4,
+      "native_archive_sync": {
+        "pdf_sha256": "97abd0c7d6b9e91f0c76ea093673d8d3415c5f7abb1164b80ac3bc5ac9e168b8",
+        "archive_sha256": "ba69788882d3a99affeb24f43023776f26005c87f595e1cf5a6d4c508af7ca8e",
+        "counts": {
+          "native_content_references": 870,
+          "archive_content_references": 870,
+          "native_elements": 50,
+          "archive_elements": 50,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 1,
+      "original_examples": [
+        {
+          "kind": "footnote_inside_bibliography_item",
+          "node": "76:0",
+          "pages": [
+            4
+          ],
+          "resolved": true,
+          "assertion": "Reference 6 remains intact; its former URL footnote is Note immediately after referring Impact paragraph 57.",
+          "note": "94:0",
+          "accepted_reference": "6.Ozenc, F.K., Kim, M., Zimmerman, J., Oney, S., Myers, B.: How tosupport designers in getting hold of the immaterial material of software.CHI,pp. 2513-2522, (2010).",
+          "accepted_note": "1http://processing.org/& http://www.openframeworks.cc/"
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    },
+    {
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+      "pdf_sha256": "bc5294ee26d6a8bf4f0dd99b17caa755b5916b2a3516836fdbc57f442689af0c",
+      "pages": 4,
+      "native_archive_sync": {
+        "pdf_sha256": "bc5294ee26d6a8bf4f0dd99b17caa755b5916b2a3516836fdbc57f442689af0c",
+        "archive_sha256": "a1e28fc4ca7c8d557dd6500b8d5fe414ab1d6374eb3fae89d91f5f08f4d91ed5",
+        "counts": {
+          "native_content_references": 2445,
+          "native_annotations": 30,
+          "archive_content_references": 2445,
+          "archive_annotations": 30,
+          "native_elements": 139,
+          "archive_elements": 139,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 1,
+      "original_examples": [
+        {
+          "kind": "running_headers_inside_sentence",
+          "node": "233:0",
+          "pages": [
+            3,
+            4
+          ],
+          "resolved": true,
+          "assertion": "One native paragraph owns original first-fragment content followed exactly by continuation; original float/header/note cannot interrupt its sentence.",
+          "continuation": "240:0",
+          "accepted_text": "More broadly, the produced tools and techniques will make developers more efficient and thus more productiveoverall. The resulting techniques can also help expand participation in physical computing design and development ineducational and collaborative work as well as DIY settings. Since shifting to an online setting, for example, programmingcourses across the country have had to adjust the difficulty level of the coursework or even reduce the number ofcollaborative projects to allow for remote study. Our work envisions a future in which students could more easilycollaborate and instructors could more easily track and facilitate their progress through resulting tools. With moreefficient remote support, instructors can host virtual office hours instead of in-person hours and more easily understandcomprehension gaps by viewing learners’ past attempts, thus reducing the interaction delay. Additionally, the producedtools could enable more collaboration, from peer feedback to team projects, than digital-only communication techniquesbetween learners, thus helping to increase learner engagement."
+        }
+      ],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    },
+    {
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+      "pdf_sha256": "c14b12120a1c9e3c2fca3380a1d0a9f624cead02ec3d5222097577793e69f096",
+      "pages": 2,
+      "native_archive_sync": {
+        "pdf_sha256": "c14b12120a1c9e3c2fca3380a1d0a9f624cead02ec3d5222097577793e69f096",
+        "archive_sha256": "fe2f6727efa7d827d816cc77219ede1dd4fd17cb47417e6a9abdac25687cd488",
+        "counts": {
+          "native_content_references": 682,
+          "archive_content_references": 682,
+          "native_elements": 34,
+          "archive_elements": 34,
+          "proposals_checked": 0
+        },
+        "passed": true,
+        "issues": []
+      },
+      "original_examples_resolved": 0,
+      "original_examples": [],
+      "review": "Read native block summaries across all seven short documents, plus all original issue contexts; CMU chapter/appendix heading flow, all running headers, selected prose/code/caption/footnote transitions and inline note references checked."
+    }
+  ],
+  "residual_status": "All 17 originally documented Group0 examples have native-order assertions. Independent review found and repaired 12 more inline footnote positions (8 CMU, 4 ScrapeViz), corrected the missing CMU Note role, and moved 9 notes to relevant paragraph boundaries. No remaining disruptive native block-order candidate in the focused scan.",
+  "rendered_evidence": [
+    {
+      "document": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "page": 4,
+      "path": "/tmp/spot-order-fixes/group1/root-review-scrapeviz-p4.png",
+      "confirmed": "Footnote markers3,4,5,6 follow WTA tennis, Wayfair furniture, Google Scholar, Yelp respectively."
+    },
+    {
+      "document": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pages": [
+        30,
+        42,
+        45,
+        47,
+        48,
+        82,
+        86,
+        87,
+        95
+      ],
+      "paths": [
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node644.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2085.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2107.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2131.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2141.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2468.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-node2649.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-p86.png",
+        "/tmp/spot-order-fixes/group1/root-review-cmu-p87.png"
+      ],
+      "confirmed": "Reviewed every affected superscript in the rendered paragraph; marker 8 already correctly followed instance and was preserved."
+    }
+  ],
+  "limitations": [
+    "Not an end-to-end screen-reader test or a conformance certification.",
+    "CMU thesis received targeted semantic review, not a line-by-line proofreading of all 227 pages or every API table row.",
+    "Original visual source typography and wording preserved; no source errors silently corrected."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "download_checks": [
+    {
+      "filename": "zhang-codestream-chi2026.md",
+      "sha256": "bfca84dd9509a22df8871ffef7af0b728fda23891ad9a56b02178b2207a1585e"
+    },
+    {
+      "filename": "zhang-codestream-chi2026.zip",
+      "sha256": "17e1f3006cfe0c4ed7addc24c7f3d12f34766d25f64fee17373b5f6a737f471f"
+    }
+  ],
+  "offline_documents": 74,
+  "offline_images": 420,
+  "button_colors": [
+    {
+      "theme": "light",
+      "state": "rest",
+      "contrast": 5.932
+    },
+    {
+      "theme": "light",
+      "state": "hover",
+      "contrast": 5.932
+    },
+    {
+      "theme": "light",
+      "state": "focus",
+      "contrast": 5.932
+    },
+    {
+      "theme": "dark",
+      "state": "rest",
+      "contrast": 7.912
+    },
+    {
+      "theme": "dark",
+      "state": "hover",
+      "contrast": 7.912
+    },
+    {
+      "theme": "dark",
+      "state": "focus",
+      "contrast": 7.912
+    }
+  ],
+  "browser_version": "154.0.8037.97"
+}

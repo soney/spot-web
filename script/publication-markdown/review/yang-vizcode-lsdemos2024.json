@@ -2,9 +2,9 @@
   "file": "yang-vizcode-lsdemos2024.pdf",
   "title": "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring",
   "publication_id": "vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024",
-  "pdf_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+  "pdf_sha256": "f4d043eb0719f578b2d343ee7f75e18cb299193e576ed472678a836faecdb291",
   "markdown": "publications/yang-vizcode-lsdemos2024.md",
-  "markdown_sha256": "cb5b41c41623c9a26dc38a301c35f07638e5d885011a6c49d66bc137ec7497e2",
+  "markdown_sha256": "6b41ae108fda4fc476aee56eb6d6dd5b59c36bb88f6152fe447e18e6c709dd3e",
   "pages": 3,
   "blocks": [
     {
@@ -45,7 +45,7 @@
       "pages": [
         1
       ],
-      "characters": 430
+      "characters": 415
     },
     {
       "node": "261:0",
@@ -104,14 +104,6 @@
       "characters": 92
     },
     {
-      "node": "292:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 84
-    },
-    {
       "node": "293:0",
       "role": "H2",
       "pages": [
@@ -136,12 +128,12 @@
       "characters": 24
     },
     {
-      "node": "296:0",
+      "node": "joined-296:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 357
+      "characters": 442
     },
     {
       "node": "297:0",
@@ -176,7 +168,7 @@
       "characters": 16
     },
     {
-      "node": "joined-301:0",
+      "node": "301:0",
       "role": "P",
       "pages": [
         1,
@@ -215,6 +207,14 @@
         2
       ],
       "characters": 252
+    },
+    {
+      "node": "323:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 312
     },
     {
       "node": "314:0",
@@ -263,14 +263,6 @@
         2
       ],
       "characters": 83
-    },
-    {
-      "node": "323:0",
-      "role": "Note",
-      "pages": [
-        2
-      ],
-      "characters": 312
     },
     {
       "node": "324:0",
@@ -430,7 +422,7 @@
       ],
       "sha256": "1add89aa65bc4844e9c2afe638f76b060940c950ef58ccdcc5a141c1c3731d06",
       "kind": "figure",
-      "alt": "Figure 1: The VizCode Web Page interface consists of student boxes (a), code boxes (b), and document tags (c). This screenshot shows two code boxes with several code boxes in them, each displaying one student’s code in real-time from the student’s VSCode. Documents under editing are displayed in blue (d), indicating that the student is currently editing this document."
+      "alt": "VizCode comparison view with two student panels side by side. Each panel has document tabs above a syntax-highlighted source editor, allowing the instructor to compare students’ work. Blue document names indicate the file each student is currently editing: style.css for Student 1 and index.html for Student 2. The displayed source in both panels is HTML."
     },
     {
       "path": "figures/yang-vizcode-lsdemos2024/figure-003-p002.png",
@@ -451,12 +443,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 10,
     "paragraph_fragments_joined": 1,
+    "line_wrap_hyphens_removed": 8,
     "line_wrap_hyphens_retained": 2,
     "script_runs_positioned": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/yang-vizcode-lsdemos2024.json.gz",
-  "source_tags_sha256": "fef7f609e9661d3e11a9bfc3be5e9837c1fcdf2b8175f703e0c653a2a66c9abf"
+  "source_tags_sha256": "0ef46a97099260d9140f33154dca91b6bbb76ed2ceef1b2204a91957715060d3"
 }

@@ -1,0 +1,2 @@
+# PDFs can begin with long ASCII sections; never treat them as mergeable text.
+*.pdf binary

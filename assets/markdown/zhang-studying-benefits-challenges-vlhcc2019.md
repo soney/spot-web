@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1 -->
+<!-- Source PDF SHA-256: a3d62e8b920dfd30b89f7a48ea852e01f41f2aaf01d72cd799e48b3abdeeba2b -->
 
 <a id="page-1"></a>
 
@@ -14,7 +14,7 @@ Abstract—Creating Virtual Reality (VR) applications normally requires advanced
 
 Index Terms—dataflow, immersive authoring, virtual reality
 
-978-1-7281-0810-0/19/$31.00 © 2019 IEEE
+> 978-1-7281-0810-0/19/$31.00 © 2019 IEEE
 
 ## I. INTRODUCTION
 
@@ -28,17 +28,17 @@ Fig. 1: A screenshot of our immersive dataflow programming tool. The directed ar
 
 In this paper, we evaluate the challenges and benefits of immersive dataflow programming tools. Specifically, we created and evaluated an immersive dataflow programming language[1](<#page-1>). The results of our evaluation provide design insights that have implications for future immersive authoring tools.
 
+> <sup>1</sup>Our immersive authoring tool is open source and publicly available: [http://raynezhang.me/files/ImmersiveAuthoring.zip](<http://raynezhang.me/files/ImmersiveAuthoring.zip>)
+
 ## II. RELATED WORK
 
 Our study builds on prior work in immersive authoring tools, 3D programming environments, and dataflow programming.
 
 ### A. Immersive Authoring Tools
 
-Immersive authoring allows users to create dynamic virtual scenes while immersed in a virtual environment. One of the earliest attempts to achieve this was Steed et al.’s dataflow representation for customizing behaviors \[6\]. Researchers have since built several immersive authoring systems, including iaTAR for creating AR scenes \[3\], \[7\], Ivy \[8\] for programming IoT devices, and Soundstage for creating music \[9\]. Each of these systems uses dataflow to represent behaviors. However, none of this prior work has studied the usability of dataflow in their immersive authoring tool, which is the
-
 <a id="page-2"></a>
 
-<sup>1</sup>Our immersive authoring tool is open source and publicly available: [http://raynezhang.me/files/ImmersiveAuthoring.zip](<http://raynezhang.me/files/ImmersiveAuthoring.zip>) focus of this paper. Of prior immersive authoring systems, only two (Ivy and Soundstage) run on modern VR hardware and only one (Soundstage) is publicly available. However, Soundstage was designed for authoring music. Thus, we built a new VR immersive authoring tool to use in our evaluation. However, our findings are generalizable to other immersive dataflow authoring systems, which use similar paradigms and interactions.
+Immersive authoring allows users to create dynamic virtual scenes while immersed in a virtual environment. One of the earliest attempts to achieve this was Steed et al.’s dataflow representation for customizing behaviors \[6\]. Researchers have since built several immersive authoring systems, including iaTAR for creating AR scenes \[3\], \[7\], Ivy \[8\] for programming IoT devices, and Soundstage for creating music \[9\]. Each of these systems uses dataflow to represent behaviors. However, none of this prior work has studied the usability of dataflow in their immersive authoring tool, which is the focus of this paper. Of prior immersive authoring systems, only two (Ivy and Soundstage) run on modern VR hardware and only one (Soundstage) is publicly available. However, Soundstage was designed for authoring music. Thus, we built a new VR immersive authoring tool to use in our evaluation. However, our findings are generalizable to other immersive dataflow authoring systems, which use similar paradigms and interactions.
 
 ### B. 3D Programming Environments
 

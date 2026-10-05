@@ -1,0 +1,615 @@
+{
+  "file": "arab-co-advisor-vlhcc2025.pdf",
+  "pdf_sha256": "1a28606998b0d723230e699c3539f81d630646be90e720648dc08648c6c908a3",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "Co-Advisor: Learning Programming Strategies in Context",
+  "structure_elements": 561,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 113,
+    "H2": 11,
+    "Span": 6,
+    "Figure": 43,
+    "Caption": 11,
+    "L": 8,
+    "LI": 56,
+    "LBody": 56,
+    "H3": 11,
+    "Table": 5,
+    "THead": 5,
+    "TR": 36,
+    "TH": 57,
+    "TBody": 5,
+    "TD": 70,
+    "Lbl": 54
+  },
+  "structure_content_references": 8972,
+  "parent_tree_entries": 12,
+  "form_xobjects_visited": 29,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 613,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 4
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 864,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 536,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 878,
+      "image_operations_tagged": 20,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 664,
+      "vector_operations_artifact": 9,
+      "image_operations_tagged": 11,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 880,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 910,
+      "vector_operations_artifact": 4,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 803,
+      "vector_operations_artifact": 23,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 526,
+      "vector_operations_artifact": 6,
+      "image_operations_tagged": 3,
+      "image_operations_artifact": 5,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 753,
+      "vector_operations_artifact": 9,
+      "image_operations_tagged": 6,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 1335,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 167,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "165:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "172:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "188:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "189:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "196:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "205:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "207:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "212:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "217:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "367:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "374:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "440:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "483:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "485:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "487:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "491:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "503:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "513:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "515:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "584:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "252:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "618:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "620:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "175:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. DebugCode strategy, written as pseudocode. Identify the unwanted behavior and set possible causes to code lines that could cause it. For each cause, navigate to it and inspect the code to verify whether it causes the incorrect behavior. If it does, find a way to stop the cause, change the program, mark the task finished, and return. If no cause is found, ask for help identifying possible causes and restart the strategy.",
+      "actual_text": ""
+    },
+    {
+      "element": "199:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Fig. 2. Co-Advisor supports learners when they are working on a programming problem (A) and faced a runtime error (B) to request expert strategic advice\n(C) tailored for their personal problem. The LLM evaluates the problem context and detects the issues (D) description (E) and the potential resources links\n(F). The system then uses a matching protocol to match the best fit strategy (G) for their problem context (A, B). The user then can use the strategy (G2)\nand proceed step-by-step (G1) and perform actions and get feedback on the actions they perform on each step (G3).",
+      "actual_text": ""
+    },
+    {
+      "element": "377:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout A),",
+      "actual_text": ""
+    },
+    {
+      "element": "385:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout B).",
+      "actual_text": ""
+    },
+    {
+      "element": "386:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout C)",
+      "actual_text": ""
+    },
+    {
+      "element": "387:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout D)",
+      "actual_text": ""
+    },
+    {
+      "element": "389:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout E)",
+      "actual_text": ""
+    },
+    {
+      "element": "388:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout F)",
+      "actual_text": ""
+    },
+    {
+      "element": "390:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G)",
+      "actual_text": ""
+    },
+    {
+      "element": "391:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G1).",
+      "actual_text": ""
+    },
+    {
+      "element": "392:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G2)",
+      "actual_text": ""
+    },
+    {
+      "element": "393:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G3),",
+      "actual_text": ""
+    },
+    {
+      "element": "394:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G4),",
+      "actual_text": ""
+    },
+    {
+      "element": "370:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout A)",
+      "actual_text": ""
+    },
+    {
+      "element": "372:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout B)",
+      "actual_text": ""
+    },
+    {
+      "element": "395:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout C)",
+      "actual_text": ""
+    },
+    {
+      "element": "396:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout G)",
+      "actual_text": ""
+    },
+    {
+      "element": "397:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout A)",
+      "actual_text": ""
+    },
+    {
+      "element": "378:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout B)",
+      "actual_text": ""
+    },
+    {
+      "element": "398:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout C),",
+      "actual_text": ""
+    },
+    {
+      "element": "399:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout D)",
+      "actual_text": ""
+    },
+    {
+      "element": "400:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "(Callout E).",
+      "actual_text": ""
+    },
+    {
+      "element": "455:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout G1),",
+      "actual_text": ""
+    },
+    {
+      "element": "453:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout A)",
+      "actual_text": ""
+    },
+    {
+      "element": "454:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout B)",
+      "actual_text": ""
+    },
+    {
+      "element": "456:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout G1)",
+      "actual_text": ""
+    },
+    {
+      "element": "436:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout G2)",
+      "actual_text": ""
+    },
+    {
+      "element": "437:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout G3)",
+      "actual_text": ""
+    },
+    {
+      "element": "457:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout A)",
+      "actual_text": ""
+    },
+    {
+      "element": "458:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout B).",
+      "actual_text": ""
+    },
+    {
+      "element": "459:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout C),",
+      "actual_text": ""
+    },
+    {
+      "element": "439:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "(Callout D).",
+      "actual_text": ""
+    },
+    {
+      "element": "443:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3. Co-Advisor flags two incorrect actions while following the ErrorMessage strategy. At the decision about more than one error message, choosing True triggers a warning that the traceback describes one ValueError, so False is appropriate. Entering line 55 triggers a second warning identifying line 45 as the failing randrange call and explaining that the start value exceeds the stop value. Callouts A and D mark the warnings, B the True/False choice, and C the entered line number.",
+      "actual_text": ""
+    },
+    {
+      "element": "477:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "(Callout G3)",
+      "actual_text": ""
+    },
+    {
+      "element": "607:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 4. Debugging outcomes for 14 participants in each condition. Co-Advisor: 0 failed, 0 guessed, 1 approached, 1 tried, 3 partially fixed, and 9 fixed. HowToo: 6 failed, 0 guessed, 5 approached, 3 tried, 0 partially fixed, and 0 fixed.",
+      "actual_text": ""
+    },
+    {
+      "element": "610:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 5. Total debugging time for participants P1–P14. Every HowToo task reached the 15-minute limit, with no fixed or partially fixed outcomes. Co-Advisor times span approximately 2–15 minutes, with most below the limit; symbols show nine fixed, three partially fixed, one tried, and one approached. The accompanying text reports mean Co-Advisor time 10 minutes, standard deviation 3.6.",
+      "actual_text": ""
+    },
+    {
+      "element": "612:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 6. Grouped bars plot percentage of total task time spent learning or using the debugging strategy for participants P1–P14. Co-Advisor is 100 percent except P8, approximately 47 percent, and P10, approximately 87 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant.",
+      "actual_text": ""
+    },
+    {
+      "element": "97:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Mental demand ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 7, standard deviation 2.4; Co-Advisor mean 6, standard deviation 3.1; p-value 0.18.",
+      "actual_text": ""
+    },
+    {
+      "element": "98:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Physical demand ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. Both distributions lie toward the low end. The table reports HowToo mean 3, standard deviation 1.6; Co-Advisor mean 1.5, standard deviation 1.7; p-value 0.017.",
+      "actual_text": ""
+    },
+    {
+      "element": "99:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Hurried or rushed ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 4, standard deviation 1.6; Co-Advisor mean 3, standard deviation 1.5; p-value 0.18.",
+      "actual_text": ""
+    },
+    {
+      "element": "100:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Success in accomplishing the goal. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The Co-Advisor distribution lies much farther toward the high end. The table reports HowToo mean 2.5, standard deviation 2.0; Co-Advisor mean 8.5, standard deviation 2.6; p-value 0.0001, marked with an asterisk.",
+      "actual_text": ""
+    },
+    {
+      "element": "247:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Effort required to accomplish the reported performance. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 7.5, standard deviation 1.4; Co-Advisor mean 5, standard deviation 2.5; p-value 0.0024, marked with an asterisk.",
+      "actual_text": ""
+    },
+    {
+      "element": "248:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Insecurity and discouragement ratings. Horizontal box-and-whisker plots compare HowToo, green and above, with Co-Advisor, purple and below, on the table’s 1-to-10 rating scale. The table reports HowToo mean 6.5, standard deviation 2.6; Co-Advisor mean 3, standard deviation 2.8; p-value 0.0042, marked with an asterisk.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {
+    "warning:repeated_figure_alternative": 6
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "386:0",
+        "395:0"
+      ],
+      "alt": "(Callout C)"
+    },
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "390:0",
+        "396:0"
+      ],
+      "alt": "(Callout G)"
+    },
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "370:0",
+        "397:0"
+      ],
+      "alt": "(Callout A)"
+    },
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "372:0",
+        "378:0"
+      ],
+      "alt": "(Callout B)"
+    },
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "387:0",
+        "399:0"
+      ],
+      "alt": "(Callout D)"
+    },
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 5,
+      "elements": [
+        "453:0",
+        "457:0"
+      ],
+      "alt": "(Callout A)"
+    }
+  ],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

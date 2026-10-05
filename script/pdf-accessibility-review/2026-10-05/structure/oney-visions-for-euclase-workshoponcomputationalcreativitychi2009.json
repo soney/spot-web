@@ -1,0 +1,134 @@
+{
+  "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+  "pdf_sha256": "3d21e5c704c98eda54a94e4625da3b946f0ab6a15458b49e088812eee8851729",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors",
+  "structure_elements": 120,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 50,
+    "H2": 14,
+    "L": 2,
+    "LI": 16,
+    "Lbl": 16,
+    "LBody": 16
+  },
+  "structure_content_references": 1924,
+  "parent_tree_entries": 4,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 44,
+      "text_operations_tagged": 426
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 39,
+      "text_operations_tagged": 489
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 470
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 47,
+      "text_operations_tagged": 539
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "32:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "39:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "41:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "48:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "52:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "58:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "63:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "93:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "100:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "107:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "111:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "116:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "119:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "122:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "124:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

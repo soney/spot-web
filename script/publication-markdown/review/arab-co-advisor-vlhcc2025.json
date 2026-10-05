@@ -2,9 +2,9 @@
   "file": "arab-co-advisor-vlhcc2025.pdf",
   "title": "Co-Advisor: Learning Programming Strategies in Context",
   "publication_id": "co_advisor_learning_programming_strategies_in_context_2025",
-  "pdf_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+  "pdf_sha256": "1a28606998b0d723230e699c3539f81d630646be90e720648dc08648c6c908a3",
   "markdown": "publications/arab-co-advisor-vlhcc2025.md",
-  "markdown_sha256": "8263ade1f2ca04817c15fa4e40c6506710a996c0a2583535f2df57c564e23e4b",
+  "markdown_sha256": "b212f4d7e673d810e5e5fa2ec5d62150654fa90a0359bcd7517eb6cceaab5390",
   "pages": 12,
   "blocks": [
     {
@@ -80,7 +80,7 @@
       "characters": 557
     },
     {
-      "node": "joined-174:0",
+      "node": "174:0",
       "role": "P",
       "pages": [
         1
@@ -217,7 +217,7 @@
       "characters": 40
     },
     {
-      "node": "joined-197:0",
+      "node": "197:0",
       "role": "P",
       "pages": [
         2,
@@ -367,7 +367,7 @@
       "pages": [
         4
       ],
-      "characters": 1423
+      "characters": 1565
     },
     {
       "node": "367:0",
@@ -386,28 +386,12 @@
       "characters": 466
     },
     {
-      "node": "joined-369:0",
+      "node": "369:0",
       "role": "P",
       "pages": [
         4
       ],
-      "characters": 387
-    },
-    {
-      "node": "370:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "372:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
+      "characters": 435
     },
     {
       "node": "374:0",
@@ -431,23 +415,7 @@
       "pages": [
         4
       ],
-      "characters": 411
-    },
-    {
-      "node": "377:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "378:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
+      "characters": 435
     },
     {
       "node": "379:0",
@@ -455,7 +423,7 @@
       "pages": [
         4
       ],
-      "characters": 193
+      "characters": 206
     },
     {
       "node": "380:0",
@@ -479,135 +447,7 @@
       "pages": [
         4
       ],
-      "characters": 218
-    },
-    {
-      "node": "385:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "386:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "387:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "388:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "389:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "390:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "391:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 71
-    },
-    {
-      "node": "392:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 71
-    },
-    {
-      "node": "393:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 71
-    },
-    {
-      "node": "394:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 71
-    },
-    {
-      "node": "395:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "396:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "397:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "398:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "399:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
-    },
-    {
-      "node": "400:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 70
+      "characters": 243
     },
     {
       "node": "402:0",
@@ -650,36 +490,12 @@
       "characters": 191
     },
     {
-      "node": "joined-435:0",
+      "node": "435:0",
       "role": "P",
       "pages": [
         5
       ],
-      "characters": 836
-    },
-    {
-      "node": "436:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 71
-    },
-    {
-      "node": "437:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 71
-    },
-    {
-      "node": "439:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
+      "characters": 964
     },
     {
       "node": "440:0",
@@ -711,7 +527,7 @@
       "pages": [
         5
       ],
-      "characters": 208
+      "characters": 551
     },
     {
       "node": "444:0",
@@ -738,62 +554,6 @@
       "characters": 159
     },
     {
-      "node": "453:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
-    },
-    {
-      "node": "454:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
-    },
-    {
-      "node": "455:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 71
-    },
-    {
-      "node": "456:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 71
-    },
-    {
-      "node": "457:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
-    },
-    {
-      "node": "458:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
-    },
-    {
-      "node": "459:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 70
-    },
-    {
       "node": "461:0",
       "role": "L",
       "pages": [
@@ -815,15 +575,7 @@
       "pages": [
         6
       ],
-      "characters": 215
-    },
-    {
-      "node": "477:0",
-      "role": "Figure",
-      "pages": [
-        6
-      ],
-      "characters": 71
+      "characters": 228
     },
     {
       "node": "478:0",
@@ -1083,11 +835,11 @@
     },
     {
       "node": "515:0",
-      "role": "P",
+      "role": "H3",
       "pages": [
         7
       ],
-      "characters": 140
+      "characters": 144
     },
     {
       "node": "516:0",
@@ -1336,7 +1088,7 @@
       "pages": [
         9
       ],
-      "characters": 365
+      "characters": 390
     },
     {
       "node": "613:0",
@@ -1366,9 +1118,10 @@
       "node": "616:0",
       "role": "P",
       "pages": [
-        9
+        9,
+        10
       ],
-      "characters": 283
+      "characters": 618
     },
     {
       "node": "220:0",
@@ -1393,14 +1146,6 @@
         10
       ],
       "characters": 14256
-    },
-    {
-      "node": "249:0",
-      "role": "P",
-      "pages": [
-        10
-      ],
-      "characters": 334
     },
     {
       "node": "250:0",
@@ -1579,328 +1324,6 @@
       "alt": "Fig. 2. Co-Advisor supports learners when they are working on a programming problem (A) and faced a runtime error (B) to request expert strategic advice (C) tailored for their personal problem. The LLM evaluates the problem context and detects the issues (D) description (E) and the potential resources links (F). The system then uses a matching protocol to match the best fit strategy (G) for their problem context (A, B). The user then can use the strategy (G2) and proceed step-by-step (G1) and perform actions and get feedback on the actions they perform on each step (G3)."
     },
     {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-003-p004.png",
-      "node": "370:0",
-      "page": 4,
-      "bbox": [
-        537.3472290039062,
-        252.19102478027344,
-        551.9658203125,
-        266.8763122558594
-      ],
-      "sha256": "5405969a16cca51b3ec440298a80ebfd49d4765fb6f12fa183244c38d72b5d67",
-      "kind": "figure",
-      "alt": "Callout A"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-004-p004.png",
-      "node": "372:0",
-      "page": 4,
-      "bbox": [
-        317.645751953125,
-        264.904541015625,
-        332.2643127441406,
-        279.5898132324219
-      ],
-      "sha256": "133d3e71577b59fd7638fcc8a42eb25d3c8c5f8652cdc0e2e619582c0968dd7e",
-      "kind": "figure",
-      "alt": "Callout B"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-005-p004.png",
-      "node": "377:0",
-      "page": 4,
-      "bbox": [
-        266.8597106933594,
-        458.56427001953125,
-        283.8201904296875,
-        474.5700378417969
-      ],
-      "sha256": "4fec340547814bc64e86a2da6eaf510d7b9e4d88f80f76378054b7485af8912b",
-      "kind": "figure",
-      "alt": "Callout A"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-006-p004.png",
-      "node": "378:0",
-      "page": 4,
-      "bbox": [
-        352.3336181640625,
-        473.341064453125,
-        366.95220947265625,
-        488.0263366699219
-      ],
-      "sha256": "e7dd9daa116c79a28c4a05c38a59a1364a0ad7f6864b33e5c2684a7517ae99c2",
-      "kind": "figure",
-      "alt": "Callout B"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-007-p004.png",
-      "node": "385:0",
-      "page": 4,
-      "bbox": [
-        102.37006378173828,
-        482.5154724121094,
-        119.33055114746094,
-        497.30377197265625
-      ],
-      "sha256": "cf12b94b41e95d74e57a1fcf303e649fe3df96247eae0561ee03419023f31e53",
-      "kind": "figure",
-      "alt": "Callout B"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-008-p004.png",
-      "node": "386:0",
-      "page": 4,
-      "bbox": [
-        128.4212188720703,
-        506.4666748046875,
-        143.039794921875,
-        521.1519775390625
-      ],
-      "sha256": "d450d3bd27697afa125c6f90198febc9d1ccfbefe5ede954731f00af0ca13412",
-      "kind": "figure",
-      "alt": "Callout C"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-009-p004.png",
-      "node": "387:0",
-      "page": 4,
-      "bbox": [
-        144.98025512695312,
-        552.8932495117188,
-        159.59884643554688,
-        567.5785522460938
-      ],
-      "sha256": "14d52022eb5e446b341c8f2b17458245869ef2c794ff4e1caf8e95fef2e8d26a",
-      "kind": "figure",
-      "alt": "Callout D"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-010-p004.png",
-      "node": "388:0",
-      "page": 4,
-      "bbox": [
-        178.42828369140625,
-        565.6067504882812,
-        193.04685974121094,
-        580.2920532226562
-      ],
-      "sha256": "9c388192506c72312c5ec0cca7ad36d307e547823abb0f6f0994661af9ad0df5",
-      "kind": "figure",
-      "alt": "Callout F"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-011-p004.png",
-      "node": "389:0",
-      "page": 4,
-      "bbox": [
-        58.511539459228516,
-        565.6067504882812,
-        73.13011932373047,
-        580.2920532226562
-      ],
-      "sha256": "04529a71abe5ff978ebf0d4a3c60f8c12b114211a1d1f60fa868530129ba3e9f",
-      "kind": "figure",
-      "alt": "Callout E"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-012-p004.png",
-      "node": "390:0",
-      "page": 4,
-      "bbox": [
-        133.81211853027344,
-        589.5908813476562,
-        148.43069458007812,
-        604.276123046875
-      ],
-      "sha256": "48c7a36d1722e42d74146da4051e3fd25a993e2ac369c3252bda569b1494c509",
-      "kind": "figure",
-      "alt": "Callout G"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-013-p004.png",
-      "node": "391:0",
-      "page": 4,
-      "bbox": [
-        159.2814178466797,
-        613.5415649414062,
-        176.24285888671875,
-        628.179931640625
-      ],
-      "sha256": "e1bf69c1921723788f2a59e754ac646a6cac3fb70d3251fecdd8c911a1d4672d",
-      "kind": "figure",
-      "alt": "Callout G1"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-014-p004.png",
-      "node": "392:0",
-      "page": 4,
-      "bbox": [
-        176.75978088378906,
-        637.3423461914062,
-        191.37738037109375,
-        651.8777465820312
-      ],
-      "sha256": "7c30740fce7d6925f84d8468a9cb2a1d79dbf82528d279f63d15c8984f6414fe",
-      "kind": "figure",
-      "alt": "Callout G2"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-015-p004.png",
-      "node": "393:0",
-      "page": 4,
-      "bbox": [
-        128.55093383789062,
-        672.380859375,
-        145.5114288330078,
-        688.2367553710938
-      ],
-      "sha256": "0a935863c7854cd192e9b07d8aa190ac767e455c337b1e38bdf6cc9535664e40",
-      "kind": "figure",
-      "alt": "Callout G3"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-016-p004.png",
-      "node": "394:0",
-      "page": 4,
-      "bbox": [
-        201.59552001953125,
-        684.9439086914062,
-        218.55599975585938,
-        700.7998657226562
-      ],
-      "sha256": "290f4748c8a0121b787e254010a405fe3339b182a46ec2e147f9296d98f21a2a",
-      "kind": "figure",
-      "alt": "Callout G4"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-017-p004.png",
-      "node": "395:0",
-      "page": 4,
-      "bbox": [
-        491.54669189453125,
-        264.904541015625,
-        506.1652526855469,
-        279.5898132324219
-      ],
-      "sha256": "391c802308b36ce8c1097a7dc07811751dfe6d025d27a859300a3df708d6cded",
-      "kind": "figure",
-      "alt": "Callout C"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-018-p004.png",
-      "node": "396:0",
-      "page": 4,
-      "bbox": [
-        511.9512634277344,
-        264.904541015625,
-        526.56982421875,
-        279.5898132324219
-      ],
-      "sha256": "4ac1589907d52bb0086342340e68b832fcf7f65a3881e4dd76613ebc649104bc",
-      "kind": "figure",
-      "alt": "Callout G"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-019-p004.png",
-      "node": "397:0",
-      "page": 4,
-      "bbox": [
-        520.3670654296875,
-        460.6275634765625,
-        534.9856567382812,
-        475.3128356933594
-      ],
-      "sha256": "05fd63da8f5fd0f3825331f9511b1c1f765eee154d46a29352824312396c38cd",
-      "kind": "figure",
-      "alt": "Callout A"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-020-p004.png",
-      "node": "398:0",
-      "page": 4,
-      "bbox": [
-        473.4808349609375,
-        486.4512634277344,
-        490.4413146972656,
-        502.4570007324219
-      ],
-      "sha256": "f1e8ab6e5cc52ca45abd8f388f5d27854fa1e950e138e11d894b98aef3f59077",
-      "kind": "figure",
-      "alt": "Callout C"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-021-p004.png",
-      "node": "399:0",
-      "page": 4,
-      "bbox": [
-        401.3800048828125,
-        662.3177490234375,
-        415.9985656738281,
-        677.0029907226562
-      ],
-      "sha256": "a71f6c921051855465a917dd27d235a730ba1ce83677342d8da88a838da3b651",
-      "kind": "figure",
-      "alt": "Callout D"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-022-p004.png",
-      "node": "400:0",
-      "page": 4,
-      "bbox": [
-        422.8881530761719,
-        662.3177490234375,
-        439.8495788574219,
-        677.1060180664062
-      ],
-      "sha256": "9e7ba2b81af80bdca770b84d0f08f88b65d5cdc73b8172d855100e985d545621",
-      "kind": "figure",
-      "alt": "Callout E"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-023-p005.png",
-      "node": "436:0",
-      "page": 5,
-      "bbox": [
-        58.1756706237793,
-        438.14892578125,
-        72.79326629638672,
-        452.6843566894531
-      ],
-      "sha256": "c927e46af5d0a7a8b2f37215efa4c5214c9c03141d172ebd097dfb92405f4694",
-      "kind": "figure",
-      "alt": "Callout G2"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-024-p005.png",
-      "node": "437:0",
-      "page": 5,
-      "bbox": [
-        71.7586669921875,
-        438.14892578125,
-        86.37626647949219,
-        452.6843566894531
-      ],
-      "sha256": "b3ca7c968cb16daddfe2ef750e21ca8ab8f224bd9b73e185d92f0a5ae8c055ec",
-      "kind": "figure",
-      "alt": "Callout G3"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-025-p005.png",
-      "node": "439:0",
-      "page": 5,
-      "bbox": [
-        94.73603057861328,
-        556.279296875,
-        111.69651794433594,
-        571.0675659179688
-      ],
-      "sha256": "f9930ea5f316fe2c8793c2fc761a93035269871fb1f4fe8ec1ac415d661798a3",
-      "kind": "figure",
-      "alt": "Callout D"
-    },
-    {
       "path": "figures/arab-co-advisor-vlhcc2025/figure-026-p005.png",
       "node": "443:0",
       "page": 5,
@@ -1912,119 +1335,7 @@
       ],
       "sha256": "b5b0022fcbe3497f9ca720cea237a8a54956bdc50092a6a0e76bc0e7af2b81da",
       "kind": "figure",
-      "alt": "Fig. 3. Co-Advisor provides feedback (A, D) if the user performs the wrong action by making the wrong decision (B) or inserting the wrong value (C)"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-027-p005.png",
-      "node": "453:0",
-      "page": 5,
-      "bbox": [
-        108.68939208984375,
-        425.4369201660156,
-        123.30796813964844,
-        440.1221923828125
-      ],
-      "sha256": "3debe23aee8a4454b9cebe316f67a72fe4982f042a2f8b3abe02293c98af4d97",
-      "kind": "figure",
-      "alt": "Callout A"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-028-p005.png",
-      "node": "454:0",
-      "page": 5,
-      "bbox": [
-        122.85894775390625,
-        425.4369201660156,
-        137.47752380371094,
-        440.1221923828125
-      ],
-      "sha256": "16a4e57c93bc6028b554d9ea88e3e283ef0076af5b3b49469a62a0d3173322a6",
-      "kind": "figure",
-      "alt": "Callout B"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-029-p005.png",
-      "node": "455:0",
-      "page": 5,
-      "bbox": [
-        281.2104187011719,
-        390.39788818359375,
-        298.1708984375,
-        406.2537841796875
-      ],
-      "sha256": "4ab78b46c4a629f6333111e30ff382a11c45cf1ab483b3d58e6b63b4ebc3738d",
-      "kind": "figure",
-      "alt": "Callout G1"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-030-p005.png",
-      "node": "456:0",
-      "page": 5,
-      "bbox": [
-        283.5509948730469,
-        425.5867919921875,
-        298.1686096191406,
-        440.1221923828125
-      ],
-      "sha256": "dc9801e1e50d99ad27df7d4fa7c4c3d8e68d15c58d80856e384e8510fea0296c",
-      "kind": "figure",
-      "alt": "Callout G1"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-031-p005.png",
-      "node": "457:0",
-      "page": 5,
-      "bbox": [
-        234.06471252441406,
-        495.664306640625,
-        248.68328857421875,
-        510.3495788574219
-      ],
-      "sha256": "2fc6b3f7060ac7392ffc645902f314e09f4598d49044b280bf1b9907bd2bfd4f",
-      "kind": "figure",
-      "alt": "Callout A"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-032-p005.png",
-      "node": "458:0",
-      "page": 5,
-      "bbox": [
-        241.9193572998047,
-        508.3778076171875,
-        258.8807678222656,
-        523.1661376953125
-      ],
-      "sha256": "2c2686f26f920a3ab705ea8f4ba53e090d65c31951f1b54f4658d85630067870",
-      "kind": "figure",
-      "alt": "Callout B"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-033-p005.png",
-      "node": "459:0",
-      "page": 5,
-      "bbox": [
-        148.22955322265625,
-        532.3280639648438,
-        165.1909637451172,
-        548.3338623046875
-      ],
-      "sha256": "b9854a6c6c76cd09d6815a683d044f08725c8dca14c566e25dfc0d5597c08caf",
-      "kind": "figure",
-      "alt": "Callout C"
-    },
-    {
-      "path": "figures/arab-co-advisor-vlhcc2025/figure-034-p006.png",
-      "node": "477:0",
-      "page": 6,
-      "bbox": [
-        154.0042266845703,
-        218.98052978515625,
-        168.6642303466797,
-        233.55801391601562
-      ],
-      "sha256": "f6066a2cc634873a6999a68a58b10f509a8908dda220440a6630c86042f3c501",
-      "kind": "figure",
-      "alt": "Callout G3"
+      "alt": "Figure 3. Co-Advisor flags two incorrect actions while following the ErrorMessage strategy. At the decision about more than one error message, choosing True triggers a warning that the traceback describes one ValueError, so False is appropriate. Entering line 55 triggers a second warning identifying line 45 as the failing randrange call and explaining that the start value exceeds the stop value. Callouts A and D mark the warnings, B the True/False choice, and C the entered line number."
     },
     {
       "path": "figures/arab-co-advisor-vlhcc2025/figure-035-p009.png",
@@ -2066,7 +1377,7 @@
       ],
       "sha256": "a693d4d2c713306e279852ca4a706b188d56b105b28617087a036a65076e1642",
       "kind": "figure",
-      "alt": "Figure 6. Percentage of total task time spent learning or using the debugging strategy, by participant and condition. Co-Advisor is 100 percent for every participant except P8, approximately 47 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant."
+      "alt": "Figure 6. Grouped bars plot percentage of total task time spent learning or using the debugging strategy for participants P1–P14. Co-Advisor is 100 percent except P8, approximately 47 percent, and P10, approximately 87 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant."
     },
     {
       "path": "figures/arab-co-advisor-vlhcc2025/figure-038-p010.png",
@@ -2247,12 +1558,12 @@
   ],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 197,
-    "line_wrap_hyphens_retained": 46,
-    "paragraph_fragments_joined": 11,
+    "line_wrap_hyphens_removed": 186,
+    "line_wrap_hyphens_retained": 43,
+    "paragraph_fragments_joined": 6,
     "reviewed_wrap_repairs": 3
   },
   "review_notes": [],
   "source_tags": "source-tags/arab-co-advisor-vlhcc2025.json.gz",
-  "source_tags_sha256": "453e1e68c7678f93015ad2e9042714769db7473668ab523e701ff7d6d4df9063"
+  "source_tags_sha256": "34db2c7131576e865aa1fcc070cf51605b518a24d44ba6119f105bcf94b027e0"
 }

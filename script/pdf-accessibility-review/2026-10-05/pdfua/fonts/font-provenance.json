@@ -1,0 +1,19 @@
+{
+  "nimbus": {
+    "local_package_license": "/usr/share/doc/fonts-urw-base35/copyright",
+    "license_file_sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458",
+    "license": "AGPL-3 with explicit permission to embed font programs in PDF documents regardless of document license",
+    "upstream_license": "https://github.com/ArtifexSoftware/urw-base35-fonts/blob/master/LICENSE",
+    "program_source": "MuPDF 1.28.2 built-in Nimbus font programs obtained unchanged through PyMuPDF Font.buffer",
+    "upstream_program_use": "https://github.com/pymupdf/PyMuPDF/discussions/1599",
+    "copyright_notice_in_programs": "(URW)++,Copyright 2014 by (URW)++ Design & Development"
+  },
+  "croscore": {
+    "local_package_license": "/usr/share/doc/fonts-croscore/copyright",
+    "license_file_sha256": "075f91382875da1c4b491f1facf2586f55448705133264d98ce15cab6211b125",
+    "license": "SIL Open Font License 1.1, confirmed in every installed font name table (name ID 13)",
+    "source_directory": "/usr/share/fonts/truetype/croscore",
+    "embedded_permissions_fsType": 0,
+    "copyright_notice_in_programs": "Copyright 2010 Google Inc. All Rights Reserved."
+  }
+}

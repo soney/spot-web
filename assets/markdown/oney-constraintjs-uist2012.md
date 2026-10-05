@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25 -->
+<!-- Source PDF SHA-256: dd37ec57b8ed50e6bfcaaa96059f3b1319756e207955a7f75bf60d963f6bc9aa -->
 
 <a id="page-1"></a>
 
@@ -8,11 +8,11 @@
 
 Stephen Oney, Brad Myers Carnegie Mellon University Pittsburgh, PA 15213 USA {soney, bam}@cs.cmu.edu
 
-![Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the fb\_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends and pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading, friends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the picture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17).](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-001-p001.png)
-
 Joel Brandt
 
 Advanced Technology Labs, Adobe San Francisco, CA 94103 USA joel.brandt@adobe.com
+
+![Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the fb\_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends and pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading, friends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the picture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17).](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-001-p001.png)
 
 ```
  1 friends = cjs.async(fb_request("/me/friends"));
@@ -40,9 +40,9 @@ Advanced Technology Labs, Adobe San Francisco, CA 94103 USA joel.brandt@adobe.co
 
 Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the fb\_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends and pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading, friends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the picture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17).
 
-UIST ’12, October 7–10, 2012, Cambridge, Massachusetts, USA. Copyright 2012 ACM 978-1-4503-1580-7/12/10...$15.00.
-
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.
+
+UIST ’12, October 7–10, 2012, Cambridge, Massachusetts, USA. Copyright 2012 ACM 978-1-4503-1580-7/12/10...$15.00.
 
 ## ABSTRACT
 
@@ -78,11 +78,9 @@ In addition, we go beyond the existing constraint literature by integrating the 
 
 ### Contributions
 
-- We provide a new constraint model by integrating FSMs with constraints, allowing programmers to easily enable and disable constraints depending on the application state. This model further enables 1) support for the asyn-
+- We provide a new constraint model by integrating FSMs with constraints, allowing programmers to easily enable and disable constraints depending on the application state. This model further enables 1) support for the asynchronous behaviors which are inherent in Web programming, and 2) the full control provided by one-way constraints that programmers desire \[11\], but with much of the expressiveness provided by multi-way dataflow(constraint solvers \[16\].
 
 > <sup>1</sup> We invite our readers to read the full documentation and download ConstraintJS at www.constraintjs.com.
-
-chronous behaviors which are inherent in Web programming, and 2) the full control provided by one-way constraints that programmers desire \[11\], but with much of the expressiveness provided by multi-way dataflow(constraint solvers \[16\].
 
 - We show in our ConstraintJS system that constraints and FSMs can be effectively integrated with three Web languages – JavaScript, CSS, and HTML.
 
@@ -140,13 +138,13 @@ ConstraintJS utilizes events to trigger the transitions between states of an FSM
 
 ### Visualization Tools
 
-Several libraries for producing HTML-based visualizations \[4,7\] include a limited form of constraints for specifying dependencies between underlying data and graphical visualizations of those data. For example, D<sup>3</sup> \[4\] is a library for creating visualizations in JavaScript, manipulating DOM
-
-properties based on data. D<sup>3</sup> allows designers to create visualizations of data by creating data bindings from the data to DOM properties. ConstraintJS borrows some of the ideas from the ways these systems deal with collections of data. The focus of these libraries is on producing visualizations, whereas CJS is focused on using constraint to help write interactive behaviors.
+Several libraries for producing HTML-based visualizations \[4,7\] include a limited form of constraints for specifying dependencies between underlying data and graphical visualizations of those data. For example, D<sup>3</sup> \[4\] is a library for creating visualizations in JavaScript, manipulating DOM properties based on data. D<sup>3</sup> allows designers to create visualizations of data by creating data bindings from the data to DOM properties. ConstraintJS borrows some of the ideas from the ways these systems deal with collections of data. The focus of these libraries is on producing visualizations, whereas CJS is focused on using constraint to help write interactive behaviors.
 
 ## THE API OF CONSTRAINTJS
 
 The following sections describe the ConstraintJS application programming interface (API). All of ConstraintJS’s functionality is accessed via a global cjs() JavaScript function<sup>2</sup> to avoid potential conflicts with other libraries.
+
+> <sup>2</sup> In JavaScript, function objects may have properties, so although cjs is a callable function, it also has subfields (e.g., cjs.mouse).
 
 ### Basics: Creating Constrainable Variables
 
@@ -195,17 +193,15 @@ var z = cjs({ condition: x.gt(0)  // if x > 0
 
 ### Constraints from UI Widgets
 
-Developers can also create constrainable variables tied to user widgets. For example, suppose a developer wants to create a constrainable variable whose value is always the value of the jQuery UI slider widget shown in Figure 2,
-
-- <sup>2</sup> In JavaScript, function objects may have properties, so although cjs is a callable function, it also has subfields (e.g., cjs.mouse).
-
 <a id="page-5"></a>
+
+Developers can also create constrainable variables tied to user widgets. For example, suppose a developer wants to create a constrainable variable whose value is always the value of the jQuery UI slider widget shown in Figure 2, called jq\_ui. The constrainable variable s will have a getter function that returns the slider’s value using the jQuery UI syntax:
+
+
 
 ![Figure 2: An illustration of a jQuery UI slider widget. Constraint variables can be attached to track the value of this widget.](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-002-p005.png)
 
 Figure 2: An illustration of a jQuery UI slider widget. Constraint variables can be attached to track the value of this widget.
-
-called jq\_ui. The constrainable variable s will have a getter function that returns the slider’s value using the jQuery UI syntax:
 
 ```
 var s = cjs(function() {
@@ -309,7 +305,7 @@ block_a.css("background-color",
 
 > <sup>6</sup> The state name myhover is used in this example instead of hover to emphasize that this is not the standard CSS built-in hover.
 
-![Figure 4: (Left) An illustration of an interactive behavior where hovering over one block highlights the other block. (Right) the FSM used by both blocks to track their state.](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-004-p006.png)
+![Two views of a black block show yellow hover feedback. The state machine starts in idle, changes to myhover on mouseover, and returns to idle on mouseout. The block is black in idle and yellow in myhover.](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-004-p006.png)
 
 Figure 4: (Left) An illustration of an interactive behavior where hovering over one block highlights the other block. (Right) the FSM used by both blocks to track their state.
 
@@ -342,7 +338,7 @@ In JavaScript, developers often have to deal with asynchronous calls: requests t
 
 > <sup>7</sup> Multiple states may be selected by joining them with a comma: "idle, myhover" or with wildcards: "\*". Transitions may also be used to instantaneously set constraint values: "idle -&gt; myhover".
 
-![Figure 5: The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-005-p007.png)
+![Asynchronous-value state machine: Pending transitions to Resolved on success and Rejected on error. A refresh event returns Rejected to Pending for another request.](https://from.so/assets/markdown/figures/oney-constraintjs-uist2012/figure-005-p007.png)
 
 Figure 5: The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.
 
@@ -502,11 +498,9 @@ The layout of every component in this application is controlled by constraints �
 
 ## IMPLEMENTATION
 
-The constraints in ConstraintJS are “pull” constraints, meaning that a constraint’s value is never computed until it is asked for. We based our algorithm on the pointer-constraints algorithm outlined by Vander Zanden et. al \[17\], modifying it to enable more control over when constraints are evaluated
-
 <a id="page-10"></a>
 
-(e.g., immediately after FSM state changes). Using this algorithm, dependencies between variables are automatically computed and values are cached until they are invalidated.
+The constraints in ConstraintJS are “pull” constraints, meaning that a constraint’s value is never computed until it is asked for. We based our algorithm on the pointer-constraints algorithm outlined by Vander Zanden et. al \[17\], modifying it to enable more control over when constraints are evaluated (e.g., immediately after FSM state changes). Using this algorithm, dependencies between variables are automatically computed and values are cached until they are invalidated.
 
 Most data-binding libraries have opted for the “push” model, where whenever a constraint’s value changes, updates are “pushed” to any constraint that depends upon it. However, in ConstraintJS, constraints may be turned on and off depending on application state, meaning that the “push” implementation for constraints might do unnecessary work if values are pushed to constraint variables that are turned off and do not currently affect the DOM. With the pull model for constraints, we can create any number of constraints, but if they do not affect any DOM objects on screen and are not specifically requested, they will not be updated and therefore will not hinder the performance of the application.
 

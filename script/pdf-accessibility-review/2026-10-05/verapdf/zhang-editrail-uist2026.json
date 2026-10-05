@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/zhang-editrail-uist2026.pdf",
+          "size": 2893694
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 420934,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231586175,
+          "finish": 1791231590662,
+          "duration": "00:00:04.487",
+          "difference": 4487
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231586075,
+        "finish": 1791231590697,
+        "duration": "00:00:04.622",
+        "difference": 4622
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "multiJob": false,
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      }
+    }
+  },
+  "file": "zhang-editrail-uist2026.pdf",
+  "pdf_sha256": "702709ec397f3899fecac393fa6c4a43f0ebd40a8fed997e19879853a8ce2e5e",
+  "stderr": ""
+}

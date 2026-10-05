@@ -2,9 +2,9 @@
   "file": "zhang-flowmatic-uist2020.pdf",
   "title": "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality",
   "publication_id": "flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020",
-  "pdf_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+  "pdf_sha256": "dcc5808b4db8bb629538edcd7be02c2e52bf729fc9ef9e38fa6b2cb43a8b60cb",
   "markdown": "publications/zhang-flowmatic-uist2020.md",
-  "markdown_sha256": "3460a0bc4a4c0664ff0b89e9a27a49aa56b6ee6aeae8523336ff59517d46c3ac",
+  "markdown_sha256": "ff5140de1227eddfd3fba96fbd9b92931ad283e562cd143509cd75c180461b0b",
   "pages": 12,
   "blocks": [
     {
@@ -77,15 +77,15 @@
       "pages": [
         1
       ],
-      "characters": 761
+      "characters": 1650
     },
     {
-      "node": "joined-447:0",
+      "node": "447:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 978
+      "characters": 89
     },
     {
       "node": "449:0",
@@ -96,7 +96,7 @@
       "characters": 15
     },
     {
-      "node": "joined-450:0",
+      "node": "450:0",
       "role": "P",
       "pages": [
         1,
@@ -398,17 +398,18 @@
       "node": "1191:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 185
+      "characters": 658
     },
     {
       "node": "1192:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 122
+      "characters": 124
     },
     {
       "node": "1193:0",
@@ -433,14 +434,6 @@
         5
       ],
       "characters": 363
-    },
-    {
-      "node": "1212:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 472
     },
     {
       "node": "1213:0",
@@ -563,7 +556,7 @@
       "characters": 1091
     },
     {
-      "node": "joined-1237:0",
+      "node": "1237:0",
       "role": "P",
       "pages": [
         6
@@ -619,7 +612,7 @@
       "characters": 35
     },
     {
-      "node": "joined-1245:0",
+      "node": "1245:0",
       "role": "P",
       "pages": [
         6,
@@ -673,7 +666,7 @@
       "pages": [
         7
       ],
-      "characters": 132
+      "characters": 291
     },
     {
       "node": "1257:0",
@@ -682,14 +675,6 @@
         7
       ],
       "characters": 98
-    },
-    {
-      "node": "1258:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 158
     },
     {
       "node": "1259:0",
@@ -751,9 +736,10 @@
       "node": "1266:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 125
+      "characters": 820
     },
     {
       "node": "1276:0",
@@ -770,14 +756,6 @@
         8
       ],
       "characters": 2921
-    },
-    {
-      "node": "1298:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 694
     },
     {
       "node": "1299:0",
@@ -1037,7 +1015,7 @@
       "characters": 16
     },
     {
-      "node": "joined-1335:0",
+      "node": "1335:0",
       "role": "P",
       "pages": [
         9,
@@ -1118,7 +1096,7 @@
       "characters": 32
     },
     {
-      "node": "joined-1349:0",
+      "node": "1349:0",
       "role": "P",
       "pages": [
         10
@@ -1373,13 +1351,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 178,
-    "paragraph_fragments_joined": 11,
-    "reviewed_wrap_repairs": 3,
+    "line_wrap_hyphens_removed": 164,
     "line_wrap_hyphens_retained": 18,
+    "paragraph_fragments_joined": 5,
+    "reviewed_wrap_repairs": 2,
     "script_runs_positioned": 8
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-flowmatic-uist2020.json.gz",
-  "source_tags_sha256": "fad6e1c6281b11b68d3186b3d36a0e30e4eaf3caf61f9b7c701ec7a6a844f72a"
+  "source_tags_sha256": "aa2bb12087508ecf11d04417aa57b3eae0851a34928923de386f627ded9b0ff6"
 }

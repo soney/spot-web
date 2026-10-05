@@ -1,0 +1,383 @@
+{
+  "file": "lin-adasa-uist2018.pdf",
+  "pdf_sha256": "06528e3eff09a79b3b1d5cf0becadd29c76a0f50c26a02b33dc087ca6d72e90f",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features",
+  "structure_elements": 471,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 75,
+    "Figure": 5,
+    "Caption": 7,
+    "H2": 11,
+    "H3": 19,
+    "Note": 4,
+    "Link": 85,
+    "L": 9,
+    "LI": 55,
+    "Lbl": 55,
+    "LBody": 55,
+    "H4": 12,
+    "Span": 2,
+    "Table": 2,
+    "THead": 2,
+    "TR": 19,
+    "TH": 21,
+    "TBody": 2,
+    "TD": 17
+  },
+  "structure_content_references": 10216,
+  "parent_tree_entries": 97,
+  "form_xobjects_visited": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 649,
+      "vector_operations_tagged": 42,
+      "image_operations_tagged": 8,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 1032,
+      "text_operations_artifact": 1,
+      "link_annotations": 34
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 980,
+      "text_operations_artifact": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 4,
+      "vector_operations_tagged": 87,
+      "text_operations_tagged": 836,
+      "image_operations_tagged": 20,
+      "vector_operations_artifact": 20,
+      "text_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 1016,
+      "text_operations_artifact": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 1017,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 912,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 13,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 997,
+      "text_operations_artifact": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 864,
+      "vector_operations_artifact": 12,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 912,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 718,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 331,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "536:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "543:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "548:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "550:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "552:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "578:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "580:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "582:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "745:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "758:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "761:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "780:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "791:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "792:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "794:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "797:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "800:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "802:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "804:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "832:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "840:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "844:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "846:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "848:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "850:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "852:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "889:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "897:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "900:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "902:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "904:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "906:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "950:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "952:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "954:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "958:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "960:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "968:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "970:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "973:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "976:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "980:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "982:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "541:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: (A) The proposed digital assistant, Adasa, identifies user’s questions or commands regarding ADAS features in human\nlanguage and responds with answers or actions accordingly. (B) Adasa is integrated into a commercially available vehicle for\nevaluation and a real-world driving user study. (C) Adasa is able to access vehicle CAN signals via Bluetooth to conduct system\ndiagnosis or system control. (D) Adasa setup, driver enables Adasa by pressing the button on the wheel to start the conversation.",
+      "actual_text": ""
+    },
+    {
+      "element": "778:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2: Overview of Adasa system, which is designed based on recent publications [20] and integrated with a commercially\navailable vehicle [8]. Driver’s voice captured by the microphone is translated into its text equivalent ( 1 ) and is passed to Query\nClassifier to identify the type of query ( 2 ). Execution Logic operates the query ( 3 ) and retrieves the information needed from\neither Knowledge Base ( 4 ) or the vehicle ( 5 ) depends on the type of query. Vehicle-data Ingestor receives the CAN data through\nthe vehicle interface and records the status of each signal in Vehicle State Repository ( 6 - 7 ). Once the result is passed back to\nExecution Logic ( 8 ), the response is converted to a WAV file and output to the speaker to answer driver’s questions ( 9 - 10 ).",
+      "actual_text": ""
+    },
+    {
+      "element": "829:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 3: An Amazon MTurk task assignment example. We\nasked the MTurk workers to rephrase the statement, “what\ndoes it mean if I see a red line and a grey line on the dash-\nboard?” with the picture of the entire dashboard and a red\nbounding box around the area of inquiry in order to help the\nworkers understand the questions and task at hand.",
+      "actual_text": ""
+    },
+    {
+      "element": "854:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4. The driving-study route is shown as a blue loop around northeastern Ann Arbor, starting and ending near the University of Michigan North Campus. Numbered red markers 1–8 identify route segments around the loop. The 11.7-mile route combines 7 miles of highway and 4.7 miles of suburban roads to support testing adaptive cruise control and lane keeping.",
+      "actual_text": ""
+    },
+    {
+      "element": "956:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 5. Mean questionnaire scores on a 0–10 scale, with error bars. System quality: Q1 acceptability 9.3, Q2 intelligence 8.0, Q3 understanding features 8.9. Information quality: Q4 usefulness 7.5, Q5 accurate diagnosis 7.4. User satisfaction: Q6 pleasantness 7.8, Q7 nervousness 3.4, Q8 responsiveness and reliability meeting expectations 7.1. The low Q7 value indicates participants generally did not feel nervous; the other means are above 7.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

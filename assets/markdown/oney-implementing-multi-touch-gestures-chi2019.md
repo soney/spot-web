@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b -->
+<!-- Source PDF SHA-256: 6b9444548830a34e98df1b764480f1ecf01dd4e0f166bbb49d3645ead6e185a4 -->
 
 <a id="page-1"></a>
 
@@ -34,11 +34,11 @@ multi-touch; programming; software development; frameworks
 
 Steve Oney, Rebecca Krosnick, Joel Brandt, Brad Myers. 2019. Implementing Multi-Touch Gestures with Touch Groups and Cross Events. In 2019 CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4–9, 2019, Glagsow, Scotland, UK. ACM, NY, NY, USA. 13 pages. [https://doi.org/10.1145/3290605.3300585](<https://doi.org/10.1145/3290605.3300585>)
 
-DOI: [https://doi.org/10.1145/3290605.3300585](<https://doi.org/10.1145/3290605.3300585>)
-
-![Figure 1: An illustration of a two-finger swipe-right gesture implemented with touch groups and cross events. Touch groups summarize properties of groups of touch events that move in synchrony. Cross events fire when a touch group crosses a given path. In this gesture, a 'twoFin-gerRightSwipe' event fires after a two-finger touch group crosses a path 10 pixels to the right of where the touch group](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-001-p001.png)
+![Figure 1. A two-finger touch group moves right from its starting position. Its center crosses a vertical dashed path at touchGroup.startX + 10 pixels, triggering a cross event that emits twoFingerRightSwipe. The diagram contrasts the dashed starting hand with the solid current hand and marks the crossing point.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-001-p001.png)
 
 Figure 1: An illustration of a two-finger swipe-right gesture implemented with touch groups and cross events. Touch groups summarize properties of groups of touch events that move in synchrony. Cross events fire when a touch group crosses a given path. In this gesture, a 'twoFin-gerRightSwipe' event fires after a two-finger touch group crosses a path 10 pixels to the right of where the touch group
+
+DOI: [https://doi.org/10.1145/3290605.3300585](<https://doi.org/10.1145/3290605.3300585>)
 
 ## 1 Introduction
 
@@ -68,7 +68,7 @@ This paper makes the following contributions:
 
 - Introducing “cross events” as a primitive component of multi-touch gestures that help developers by summarizing the movement of a touch group and by allowing
 
-Steve Oney, Rebecca Krosnick, Joel Brandt, Brad Myers developers to define custom shapes and produce an event if a touch group crosses them.
+developers to define custom shapes and produce an event if a touch group crosses them.
 
 - Introducing primitives to help developers manage conflicts between multi-touch gestures implemented with touch groups and cross events.
 
@@ -200,15 +200,13 @@ To ensure that the multi-touch behaviors we used were representative, we chose f
 
 - Standard vs. custom: “standard” gestures to be multi-touch gestures that are currently widespread, as opposed to “custom” gestures. We define “widespread” to mean that they are implemented as built-ins in either the iOS or Android gesture recognizers. For example, standard gestures include pinch to zoom and press+hold.
 
-- Discrete vs. continuous: “discrete” gestures have a single output whereas “continuous” gestures have a start and
-
 <a id="page-7"></a>
 
-![Figure 6: Participants were given the code for a multi-touch behavior. In this example, the code implements a “tap” gesture. To gauge their understanding of the code, they were asked to select which behavior that code implemented, from the four choices at the bottom. Participants were given ten behaviors in one implementation (either touch\* or touch groups/cross events) and then ten using the other implementation. We randomized the implemented behaviors, multiple choice options, and multiple-choice ordering.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-006-p007.png)
+- Discrete vs. continuous: “discrete” gestures have a single output whereas “continuous” gestures have a start and end. For example, a tap is a discrete gesture and a scroll is a continuous gesture.
+
+![Figure 6. A tap recognizer written with low-level touch events. touchstart stores the first changed touch, its identifier and starting coordinates, marks it valid, and starts a 500-millisecond timeout that invalidates it. touchmove invalidates the tap if movement exceeds 40 pixels. touchend fires only if the touch is still valid and has the stored identifier, clearing the timeout. The four answer choices below are two-finger swipe up, tap, two-finger tap, and three-finger swipe down.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-006-p007.png)
 
 Figure 6: Participants were given the code for a multi-touch behavior. In this example, the code implements a “tap” gesture. To gauge their understanding of the code, they were asked to select which behavior that code implemented, from the four choices at the bottom. Participants were given ten behaviors in one implementation (either touch\* or touch groups/cross events) and then ten using the other implementation. We randomized the implemented behaviors, multiple choice options, and multiple-choice ordering.
-
-- end. For example, a tap is a discrete gesture and a scroll is a continuous gesture.
 
 - Static vs. dynamic: “static” gestures do not involve finger movement along x or y coordinates or in the “third-dimension” (such as pressure), whereas “dynamic” gestures rely on the path fingers take. Thus, press+hold gesture is static whereas a right-swipe is dynamic.
 
@@ -216,7 +214,7 @@ Figure 6: Participants were given the code for a multi-touch behavior. In this e
 
 We implemented at least one instance of every permutation of these four dimensions (for example, tap and press+hold are standard/discrete/static/one-finger). In total, we implemented 20 behaviors. For each behavior, we implemented a touch\* version and a group/cross version for a total of 40 implementations. Although gestures that are both static and continuous are relatively uncommon, we used pressure-sensitive gestures (also known as “force touch”) in our user study. Our gesture implementations had an average length of 54 lines for touch\* implementations and 47.5 lines for touch group/cross event implementations. The relatively small difference (6 lines) in length illustrates that touch\* code is difficult to understand because users find it hard to follow the control flow, not because it is overly verbose.
 
-![Figure 7: The same (“tap”) behavior as Figure 6, implemented with cross events touch groups. In addition to being more concise than the touch\* implementation of the same gesture, many modifications to this gesture that would require significant changes to the touch\* implementation are straightforward. For example, changing this gesture from a one-finger tap to a two-finger tap requires significant changes to the touch\* implementation but is a one-line change in the touch group/cross event implementation (updating the second line to numFingers: 2). Using correctness in this task as a measure of understanding, participants were better able to understand code written with touch groups and cross events than with touch\* events.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-007-p007.png)
+![Figure 7. The same tap recognizer expressed with a greedy one-finger TouchGroup and a circular cross-event path of radius 40 around its starting location. When the group is satisfied, it becomes valid and a 500-millisecond timeout begins; crossing the circle invalidates it; when the group is unsatisfied, it fires only if still valid. Changing numFingers from 1 to 2 changes the recognizer to a two-finger tap. Four gesture choices appear below the code.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-007-p007.png)
 
 Figure 7: The same (“tap”) behavior as [Figure 6](<#page-7>), implemented with cross events touch groups. In addition to being more concise than the touch\* implementation of the same gesture, many modifications to this gesture that would require significant changes to the touch\* implementation are straightforward. For example, changing this gesture from a one-finger tap to a two-finger tap requires significant changes to the touch\* implementation but is a one-line change in the touch group/cross event implementation (updating the second line to numFingers: 2). Using correctness in this task as a measure of understanding, participants were better able to understand code written with touch groups and cross events than with touch\* events.
 
@@ -441,11 +439,11 @@ Our second user study evaluates how easily programmers can write custom gestures
 
 ### 6.1 User Evaluation Setup
 
-We recruited an additional 10 participants who all had UI programming experience. We used a within-subjects design. Every participant was asked to implement three behaviors: a three-finger press+hold gesture, a one-finger “L”-shaped swipe (down then to the right) gesture, and a multi-part gesture where the user places down two fingers and taps a third finger (similar to how custom menus are invoked in some touchscreen applications). Every participant implemented each behavior in either:
-
-![Figure 8: An example of the UI for defining behaviors in the GUI / touch group + cross event condition via a state machine. The black dot symbolizes the start state. Small light squares symbolize states. The larger grey squares specify transition events (e.g., cross events or touch group events).](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-008-p009.png)
+![Figure 8. A graphical state-machine editor. A black starting dot leads to the initial state. Transition boxes connect small state squares and select touch-group Start or End events or a Cross event using path\_1. One branch continues through a timeout event set to 2000 to a checked final state. The boxes expose event choices within the diagram.](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-008-p009.png)
 
 Figure 8: An example of the UI for defining behaviors in the GUI / touch group + cross event condition via a state machine. The black dot symbolizes the start state. Small light squares symbolize states. The larger grey squares specify transition events (e.g., cross events or touch group events).
+
+We recruited an additional 10 participants who all had UI programming experience. We used a within-subjects design. Every participant was asked to implement three behaviors: a three-finger press+hold gesture, a one-finger “L”-shaped swipe (down then to the right) gesture, and a multi-part gesture where the user places down two fingers and taps a third finger (similar to how custom menus are invoked in some touchscreen applications). Every participant implemented each behavior in either:
 
 - JavaScript code with touch\* events
 
@@ -459,15 +457,13 @@ We randomized which behavior was paired with which implementation and the order.
 
 In order to analyze our results, we used not only participants’ completion times but we also developed a rubric to measure participants’ accuracy. The rubric includes items corresponding to the gesture behavior requirements we described to participants, and all items contribute equally to the accuracy percentages reported below. We applied the same rubric across all implementation conditions to ensure consistency. As [Table 2](<#page-9>) shows, participants in both Group + Cross conditions outperformed participants in the Touch-\* control condition—both in time taken and in accuracy. However, although the averages show promise, our results were not statistically significant in a two-tailed t-test. We believe this is largely because of high variance across participants in how long a given programming task takes.
 
-In a post-test survey, we found that participants felt that the touch group + cross event mechanism was easy to learn: participants agreed 6.3/7 (Agree) that learning to use the touch group + cross event GUI was easy and 5.4/7 (Mildly agree) that it was easy to learn to use touch groups
-
 <a id="page-10"></a>
+
+In a post-test survey, we found that participants felt that the touch group + cross event mechanism was easy to learn: participants agreed 6.3/7 (Agree) that learning to use the touch group + cross event GUI was easy and 5.4/7 (Mildly agree) that it was easy to learn to use touch groups + cross events in JavaScript code. We also interviewed participants after the study. According to participants, touch groups and cross events were intuitive:
 
 ![Figure 9: An illustration of a set of pressure-sensitive trackpad gestures. When the user presses three fingers on the trackpad, the selected window resizes in response (yellow, top right). When the user presses with two fingers, the viewport scrolls (blue, bottom left) or the window moves (red, bottom right) depending on the finger pressure. Our implementation manages conflicts between these three gestures and standard one-finger touches (grey, top left).](https://from.so/assets/markdown/figures/oney-implementing-multi-touch-gestures-chi2019/figure-009-p010.png)
 
 Figure 9: An illustration of a set of pressure-sensitive trackpad gestures. When the user presses three fingers on the trackpad, the selected window resizes in response (yellow, top right). When the user presses with two fingers, the viewport scrolls (blue, bottom left) or the window moves (red, bottom right) depending on the finger pressure. Our implementation manages conflicts between these three gestures and standard one-finger touches (grey, top left).
-
-+ cross events in JavaScript code. We also interviewed participants after the study. According to participants, touch groups and cross events were intuitive:
 
 “The ability to specify the path to say exactly where you want the event to actually cross was helpful, instead of trying to calculate it yourself. Just be able to make a circle, to make an event handler for crossing that line, instead of trying to calculate where those points were and where they are now. And it’s nice that the circle can update its position based on the object.” (P19, UI programming experience: 2–3 years)
 

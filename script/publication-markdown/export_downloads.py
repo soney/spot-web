@@ -3,14 +3,18 @@
 Run with the existing publication-markdown Python environment. Source drafts
 stay unchanged; only image destinations change in the downloadable copies so
 figures also load when a reader opens a downloaded file outside this website.
+Each ZIP contains the same Markdown and its figures with local image paths,
+so it can be read offline after extraction. ZIP output is reproducible.
 Jekyll copies these files unchanged because they have no YAML front matter.
 """
 from collections import Counter
 import hashlib
+from io import BytesIO
 import json
 from pathlib import Path, PurePosixPath
 import re
 from urllib.parse import urlsplit
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 import yaml
 
@@ -75,6 +79,18 @@ def canonical_base():
     return url.rstrip('/') + baseurl.rstrip('/')
 
 
+def figure_bundle(markdown_name, markdown, assets):
+    buffer = BytesIO()
+    with ZipFile(buffer, 'w') as archive:
+        for name, data in sorted({markdown_name: markdown, **assets}.items()):
+            info = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = ZIP_DEFLATED
+            info.create_system = 3
+            info.external_attr = 0o100644 << 16
+            archive.writestr(info, data, compresslevel=9)
+    return buffer.getvalue()
+
+
 def build_exports():
     manifest = json.loads((HERE / 'manifest.json').read_text())
     documents = manifest['documents']
@@ -122,11 +138,24 @@ def build_exports():
         if exported.replace(base + 'figures/', '../figures/').encode('utf-8') != original:
             raise ValueError(f'Export changed content beyond image destinations: {source}')
         outputs[source.name] = exported.encode('utf-8')
+        offline = IMAGE.sub(lambda match: (match['markdown'] or match['html'])
+                            + (match['markdown_path'] or match['html_path'])[3:], text)
+        outputs[source.with_suffix('.zip').name] = figure_bundle(
+            source.name, offline.encode('utf-8'), assets)
         outputs.update(assets)
         image_count += len(referenced)
     actual_sources = {p.relative_to(HERE).as_posix() for p in (HERE / 'publications').glob('*.md')}
     if actual_sources != markdown_sources:
         raise ValueError('The Markdown source folder and reviewed manifest differ')
+    # Previously downloaded Markdown may still link to an image that has since
+    # become a semantic table or inline callout. Keep only reviewed legacy images.
+    paths_file = HERE / 'image-paths.json'
+    retained = json.loads(paths_file.read_text())['retained'] if paths_file.exists() else []
+    for asset in retained:
+        path = relative_path(asset['path'], 'figures', '.png')
+        if str(path) in outputs:
+            raise ValueError(f'Legacy image conflicts with a current asset: {path}')
+        outputs[str(path)] = read_source(path, asset['sha256'])
     return outputs, len(documents), image_count
 
 
@@ -153,7 +182,8 @@ def main():
     for relative, data in outputs.items():
         if (DESTINATION / relative).read_bytes() != data:
             raise ValueError(f'Export verification failed: {relative}')
-    print(f'Exported and verified {document_count} Markdown downloads and '
+    print(f'Exported and verified {document_count} Markdown downloads, '
+          f'{document_count} Markdown + figures ZIPs, and '
           f'{image_count} referenced images in {DESTINATION}')
 
 

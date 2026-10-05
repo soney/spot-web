@@ -1,0 +1,142 @@
+{
+  "file": "oney-zoomboard-chi2013.pdf",
+  "pdf_sha256": "d2ceadaeedce901bb513624f344439478e86cd36cc4820e7df0b4e0610c0edfe",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices",
+  "structure_elements": 149,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 34,
+    "H2": 8,
+    "Note": 2,
+    "Figure": 4,
+    "Caption": 4,
+    "L": 1,
+    "LI": 30,
+    "Lbl": 30,
+    "LBody": 30
+  },
+  "structure_content_references": 2162,
+  "parent_tree_entries": 4,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 109,
+      "text_operations_tagged": 552,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 79,
+      "text_operations_tagged": 605,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 97,
+      "text_operations_tagged": 521,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 108,
+      "text_operations_tagged": 480
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "35:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "39:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "44:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "50:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "63:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "75:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "82:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "90:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "121:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "53:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: ZoomBoard on a watch-sized device. The keyboard is\nfully zoomed out by default (A). When users press a key, the key-\nboard iteratively zooms in (B & C), until the keys are a size that is \ncomfortable and accurate (C). After the desired character is entered, \nthe keyboard resets (D). Users may also swipe to the left to delete,\nto the right for a space, and up to switch to a symbols keyboard.",
+      "actual_text": ""
+    },
+    {
+      "element": "57:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 2: ZoomBoard could be used on a variety of device sizes, for\nexample a smartphone (top left), watch (top right; simulated on a\niPad), or coin-sized (bottom left). For size comparison, a typical \nphysical number keypad (bottom right).",
+      "actual_text": ""
+    },
+    {
+      "element": "71:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 3: Three applicable zooming approaches. When the user \nzooms in on a key (A), the area of the keyboard pressed could \nstay under the finger (B) or move to the center (C). We use a \nlinear combination of both (D).",
+      "actual_text": ""
+    },
+    {
+      "element": "79:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 4: typing performance over eight trials, with a separate line for each participant and a thick blue mean. Mean performance rises from 7.6 words per minute on the first trial to 9.3 on the eighth. Individual trajectories vary and sometimes dip between trials.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

@@ -2,9 +2,9 @@
   "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
   "title": "On-Demand Collaboration in Programming",
   "publication_id": "on_demand_collaboration_in_programming_2020",
-  "pdf_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+  "pdf_sha256": "5317c913b5f74c0682dcebe303efe9c262f4b6653f724035c8e6e0717b97ae13",
   "markdown": "publications/chen-on-demand-collaboration-programming-msnfws2020.md",
-  "markdown_sha256": "d289d146b4505a199b9afdb746e0cf85a19e037bfe985cba0355508d7f60455c",
+  "markdown_sha256": "1e1c9aac9d88c0d879647338ea1fc027905e3768baadd77bae9c69ab20878594",
   "pages": 4,
   "blocks": [
     {
@@ -65,11 +65,11 @@
     },
     {
       "node": "169:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 71
+      "characters": 73
     },
     {
       "node": "170:0",
@@ -118,14 +118,6 @@
         1
       ],
       "characters": 570
-    },
-    {
-      "node": "174:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 12
     },
     {
       "node": "175:0",
@@ -216,14 +208,6 @@
       "characters": 323
     },
     {
-      "node": "227:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 38
-    },
-    {
       "node": "228:0",
       "role": "H3",
       "pages": [
@@ -267,33 +251,10 @@
       "node": "233:0",
       "role": "P",
       "pages": [
-        3
-      ],
-      "characters": 933
-    },
-    {
-      "node": "238:0",
-      "role": "P",
-      "pages": [
+        3,
         4
       ],
-      "characters": 57
-    },
-    {
-      "node": "239:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 12
-    },
-    {
-      "node": "240:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 181
+      "characters": 1115
     },
     {
       "node": "241:0",
@@ -328,7 +289,7 @@
       "characters": 4428
     }
   ],
-  "tagged_content_items": 2465,
+  "tagged_content_items": 2445,
   "all_tagged_content_accounted_for_once": true,
   "assets": [],
   "tables": [],
@@ -339,5 +300,5 @@
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-on-demand-collaboration-programming-msnfws2020.json.gz",
-  "source_tags_sha256": "0fe8cc3931e04dc20692d6eb021f9572a7c747bba8df1cdd3e38587954f10201"
+  "source_tags_sha256": "6d53c7a55f0ee18a0d3824e90b471e87dc7cb47b2001ff9f1abc815aa3a5e37b"
 }

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b -->
+<!-- Source PDF SHA-256: a6418fdb68574726d8f88b19580d0c016a5e5134e25a2ff411cc41107b16cf13 -->
 
 <a id="page-1"></a>
 
@@ -6,13 +6,13 @@
 
 [Source PDF](https://from.so/assets/pdfs/im-improving-advising-relationships-chiea2024.pdf) · [Publisher page](https://doi.org/10.1145/3613905.3643971)
 
-Jane Im Himanshu Zade Steve Oney imjane@umich.edu himanz@uw.edu soney@umich.edu University of Michigan University of Washington University of Michigan USA USA USA Pamela Wisniewski Kentaro Toyama Pam.Wisniewski@Vanderbilt.edu toyama@umich.edu Vanderbilt University University of Michigan USA USA
+Jane Im, imjane@umich.edu, University of Michigan, USA. Himanshu Zade, himanz@uw.edu, University of Washington, USA. Steve Oney, soney@umich.edu, University of Michigan, USA. Pamela Wisniewski, Pam.Wisniewski@Vanderbilt.edu, Vanderbilt University, USA. Kentaro Toyama, toyama@umich.edu, University of Michigan, USA.
 
 
 
-Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s).
+> Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s).
 
-© 2024 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-0331-7/24/05
+> © 2024 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-0331-7/24/05
 
 ## ABSTRACT
 
@@ -30,23 +30,23 @@ ACM Reference Format:
 
 Jane Im, Himanshu Zade, Steve Oney, Pamela Wisniewski, and Kentaro Toyama. 2024. Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction. In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, [4](<#page-4>) pages. [https:](<https://doi.org/10.1145/3613905.3643971>) [//doi.org/10.1145/3613905.3643971](<https://doi.org/10.1145/3613905.3643971>)
 
-CHI EA ’24, May 11–16, 2024, Honolulu, HI, USA [https://doi.org/10.1145/3613905.3643971](<https://doi.org/10.1145/3613905.3643971>)
+> CHI EA ’24, May 11–16, 2024, Honolulu, HI, USA
+
+> [https://doi.org/10.1145/3613905.3643971](<https://doi.org/10.1145/3613905.3643971>)
 
 ## 1 INTRODUCTION
 
 This panel aims to spark a discussion within the human-computer interaction (HCI) community about relationships between PhD students and their advisors.[1](<#page-1>) Our hope is to surface common challenges and to begin a conversation about how to address them.
 
+> <sup>1</sup>Our topic may also be relevant to other mentoring relationships such as between interns and their manager-mentors, or between junior and senior researchers. This panel’s focus, however, is on PhD advising, where the unique context of the university, of funding arrangements, of tenure, and so on, often gives rise to genuinely unique situations.
+
 Research suggests that across fields, advisor-advisee dynamics [can present challenges for PhD students \[1,](<#page-4>) [5\]. One survey study](<#page-4>) conducted by Nature with 5,700 doctoral students worldwide, concluded that “Mentorship contributed more to respondents’ overall satisfaction with their PhD programme than did any other fac[tor” \[14\]. Almost a quarter (23%) of the participants replied that](<#page-4>) they would switch advisors if they could. In another study, 24% of PhD students at a Swiss university reported experiencing some [kind of abuse by faculty \[6\]. Abuse by advisors is sometimes called](<#page-4>) [“academic bullying” \[9,](<#page-4>) [10\], and it includes a range of behaviors](<#page-4>) such as sexual harassment, racial microaggressions, coercion of non-academic tasks, pressure to meet unreasonable expectations, [etc. \[3\]. And, even short of abuse, faculty may cause problems for](<#page-4>) their advisees by showing subtler behaviors, such as not providing enough time to their advisees; being inconsistent with guidance; neglecting poor lab dynamics; or failing to keep commitments. Indeed, studies show strong relationships between advising and PhD [students’ mental health \[3,](<#page-4>) [8,](<#page-4>) [11\] and success in the program \[](<#page-4>)[4](<#page-4>)\]. One recent qualitative study within HCI also confirmed that graduate students perceive issues in advising relationships as a key [stressor \[12\].](<#page-4>)
 
 Meanwhile, advisors also experience problems. One study within the field of counseling psychology finds that advisor satisfaction [depends greatly on their perception of the advisee \[7\]. While ad](<#page-4>) visors are full of praise for advisees they are happy with, they describe others with words such as “anxious, presumptuous, rigid, lazy, self-centered, irresponsible, avoidant, dependent, \[having\] poor work habits, and \[lacking\] clear boundaries.” One participant described the extensive revising required of their advisee’s writing as “tortuous.”
 
-However, while the problems may go both ways, the ground is not level. There is a fundamental power imbalance between advisor and advisee that makes problems more challenging for PhD
-
-<sup>1</sup>Our topic may also be relevant to other mentoring relationships such as between interns and their manager-mentors, or between junior and senior researchers. This panel’s focus, however, is on PhD advising, where the unique context of the university, of funding arrangements, of tenure, and so on, often gives rise to genuinely unique situations.
-
 <a id="page-2"></a>
 
-[students \[2\]. While many advisors appear comfortable expressing](<#page-4>) [issues they face in their advising relationships \[7\], PhD students](<#page-4>) often do not due to fears of faculty’s power over them. They may [face significant consequences \[4\] ranging from advisor resentment](<#page-4>) to retaliation: dismissal as advisees, loss of funding, blocking of career progress, and so on.
+However, while the problems may go both ways, the ground is not level. There is a fundamental power imbalance between advisor and advisee that makes problems more challenging for PhD [students \[2\]. While many advisors appear comfortable expressing](<#page-4>) [issues they face in their advising relationships \[7\], PhD students](<#page-4>) often do not due to fears of faculty’s power over them. They may [face significant consequences \[4\] ranging from advisor resentment](<#page-4>) to retaliation: dismissal as advisees, loss of funding, blocking of career progress, and so on.
 
 Surprisingly for a topic that is so central to research as a profession, there is very little research about PhD advising. When we conducted full-text searches of the ACM Digital Library for phrases such as “PhD advising,” “PhD student advising,” “doctoral advising,” “PhD student mentorship,” “advising relationship,” and so on (with PhD spelled as “PhD,” “Ph.D.,”, and “phd”), they either returned 0 results, or the few results were not primarily about advising.
 

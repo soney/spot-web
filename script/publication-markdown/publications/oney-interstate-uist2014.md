@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68 -->
+<!-- Source PDF SHA-256: 87a2858b850eb9be342920a1ab4a68ade782d40427925139b45a759c0f4f875b -->
 
 <a id="page-1"></a>
 
@@ -6,11 +6,13 @@
 
 [Source PDF](https://from.so/assets/pdfs/oney-interstate-uist2014.pdf) · [Publisher page](https://doi.org/10.1145/2642918.2647358)
 
-Stephen Oney<sup>1</sup><sup>,</sup><sup>2</sup>, Brad Myers<sup>1</sup> <sup>1</sup>Carnegie Mellon University {soney, bam}@cs.cmu.edu
+Stephen Oney (1, 2), Brad Myers (1). 1: Carnegie Mellon University. {soney, bam}@cs.cmu.edu
 
-2 Joel Brandt
+Joel Brandt (2).
 
-2 Adobe Research joel.brandt@adobe.com
+2: Adobe Research.
+
+joel.brandt@adobe.com
 
 UIST '14, October 05 - 08 2014, Honolulu, HI, USA Copyright 2014 ACM 978-1-4503-3069-5/14/10…$15.00. http://dx.doi.org/10.1145/2642918.2647358
 
@@ -93,9 +95,9 @@ To illustrate InterState’s expressiveness, we implemented a number of example 
 
 http://istate.co/music This music player includes a playlist manager that allows users to create and edit playlists. It takes advantage of InterState’s ability to call JavaScript functions to play music with the HTML5 audio API.
 
-http://istate.co/breakout
-
 #### Breakout
+
+http://istate.co/breakout
 
 Our version of the classic game “breakout” includes bonuses and power-ups. It also interfaces with Box2D, a third-party physics engine, for collision detection and reactions.
 
@@ -121,7 +123,9 @@ this.currentlyPlayingSong.title
 
 It is also often useful to express operations on groups of objects \[31\]. InterState includes a function called find for making such queries with a chaining syntax inspired by other query languages, including EET \[8\] and HANDS \[31\]. For example, in Breakout, players reach the next level by destroying all of the blocks in the current level. This can be expressed in a transition as:
 
-find(blocks).in\_state('alive').is\_empty()
+```
+find(blocks).in_state('alive').is_empty()
+```
 
 <a id="page-4"></a>
 
@@ -177,7 +181,7 @@ First, when one InterState object inherits from another, it also inherits an ins
 
 Second, rather than inheriting a property’s value, InterState inherits the property’s constraint. Further, the values of the of references in the constraint expression are computed based on the context of the instance, not the prototype. By inheriting the constraint’s definition and redetermining referents, InterState allows prototypes to define behaviors that reference the state and property values of the objects that inherit from them. This is illustrated in Figure 3, where my\_square inherits the definition of height, rather than its value, and the value computed for my\_square.height depends on my\_square.width, not square.width. Amulet and Garnet included a similar mechanism \[23,24\], but using a more verbose syntax.
 
-![Figure 3: InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my\_square inherits from square. Because my\_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my\_square inherits the definition of height, not the value. Thus, its width property evaluates to a different value (20) than it does in square (15).](../figures/oney-interstate-uist2014/figure-002-p005.png)
+![Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instance my\_square lists square as its prototype and overrides width with 20. It inherits the expression height = width rather than the fixed value 15, so its height evaluates to its own width, 20. Inherited expressions are displayed in gray.](../figures/oney-interstate-uist2014/figure-002-p005.png)
 
 Figure 3: InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my\_square inherits from square. Because my\_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my\_square inherits the definition of height, not the value. Thus, its width property evaluates to a different value (20) than it does in square (15).
 
@@ -292,10 +296,10 @@ We conducted a series of performance tests to evaluate InterState’s ability to
 In the first test, we created an object named obj whose prototype chain is N objects long, as in:
 
 ```
-obj.prototypes = proto1
-proto .prototypes = proto1 2
+obj.prototypes = proto_1
+proto_1.prototypes = proto_2
 …
-proto .prototypes = proto(N-1) N
+proto_(N-1).prototypes = proto_N
 ```
 
 We then measured the latency between changing protoN and the runtime updating its DOM output for obj. In the second test, we measured the same latency for an object with N prototypes, as in: obj.prototypes = \[proto , 1 …, proto \]. In the third test, we created an object with N N copies and measured the time it took for a change to affect the runtime’s DOM output for every copy.

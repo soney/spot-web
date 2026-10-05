@@ -2,9 +2,9 @@
   "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
   "title": "Democratizing Computational Tools for Interaction Designers",
   "publication_id": "democratizing_computational_tools_for_interaction_designers_2010",
-  "pdf_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+  "pdf_sha256": "70f6a8009fbddc161a3fafd46f2611dd3a4d5de87e6ec342ba75f3bdfc810c49",
   "markdown": "publications/oney-democratizing-computational-tools-vlhccgc2010.md",
-  "markdown_sha256": "14f757b86b387da70a512b8161db59b6e399a636bae1f36b8a863fcc315ec396",
+  "markdown_sha256": "db4aa6ae66a2e4ada17e7b6a008fe84f72e82d809a2d16af946da5d7f65b315f",
   "pages": 2,
   "blocks": [
     {
@@ -64,7 +64,7 @@
       "characters": 728
     },
     {
-      "node": "joined-33:0",
+      "node": "33:0",
       "role": "P",
       "pages": [
         1
@@ -120,7 +120,7 @@
       "characters": 940
     },
     {
-      "node": "joined-42:0",
+      "node": "42:0",
       "role": "P",
       "pages": [
         2
@@ -174,10 +174,9 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 75,
-    "paragraph_fragments_joined": 2
+    "line_wrap_hyphens_removed": 65
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-democratizing-computational-tools-vlhccgc2010.json.gz",
-  "source_tags_sha256": "718a65483e58db2424bb5b44b15d9d53e868a4f80c67fb9f4c2c24fe40a1dfde"
+  "source_tags_sha256": "cc1e76f1ff2e94cec9cbfccab76e3f9d6d0a045ce4c1340f26788c4d2e8e9f71"
 }

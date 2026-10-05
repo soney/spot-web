@@ -1,0 +1,2406 @@
+{
+  "date": "2026-10-05",
+  "reviewer": "reading_order_3",
+  "scope": "23 publication PDFs, current native structure trees; no PDF or site edits. Archives were hash-bound to current PDFs. Markdown was not used to establish native order.",
+  "totals": {
+    "pdfs": 23,
+    "pages": 257,
+    "native_blocks": 5736,
+    "pdfs_with_confirmed_order_concerns": 21,
+    "pdfs_with_major_or_moderate_concerns": 20,
+    "examples": 41
+  },
+  "interpretation": "Many paragraph sequences and ordinary column transitions are coherent. Merely having structurally valid tags does not establish a sensible logical reading order. Most failures are floats, notes, or running furniture inserted inside sentences; there are also confirmed within-paragraph and section-order mistakes.",
+  "files": [
+    {
+      "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+      "pdf_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+      "pages": 30,
+      "native_blocks": 472,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "843:0"
+          ],
+          "pages": [
+            4
+          ],
+          "kind": "within-paragraph reorder",
+          "severity": "major",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "843:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "(2) considering both functional and social scenarios of AT use, and (3) using design methods that foreground social contexts of use [69]. There are also misconceptions among people … ith disabilities and enable them to participate in social settings [58]. Shinohara et al. suggest three AT design tenets for fostering social access: (1) involving users with and without disabilities in the design process to ground AT design in the mainstream,"
+            }
+          ],
+          "before_text": "(2) considering both functional and social scenarios of AT use, and (3) using design methods that foreground social contexts of use [69]. There are also misconceptions …",
+          "after_text": "There are also misconceptions … (1) involving users with and without disabilities … (2) considering both functional and social scenarios … (3) using design methods …",
+          "impact": "Tenets (2) and (3) precede the paragraph that introduces them and tenet (1).",
+          "proposed_order": "Move the first three /K children (content [104:0,58], content [104:0,57], Link863:0) after the remaining paragraph children, preserving their internal order. Result begins There are also misconceptions and ends with tenets1,2,3.",
+          "visual_confirmation": "g3/pandey-understanding-accessibility-collaboration-cscw2021-4.png"
+        },
+        {
+          "nodes": [
+            "967:0",
+            "969:0"
+          ],
+          "pages": [
+            6,
+            7
+          ],
+          "kind": "embedded footnote interrupts continuation",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "967:0",
+              "role": "P",
+              "pages": [
+                6
+              ],
+              "text": "The questions in the interview protocol were organized across three sections. The first section focused on the participants’ background3, programming education, and experiences. Th … ut the existing 3We made a conscious decision not to ask the participants about their visual impairment. We instead asked them about their AT usage in the context of programming. When answering these questions, most participants described their visual ability."
+            },
+            {
+              "node": "969:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "practices around these activities and the processes through which participants adopted or modified these practices to achieve collaboration."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Footnote3 is included inside paragraph967 before its continuation on p7.",
+          "proposed_order": "Separate footnote3 as a Note and position after the completed paragraph, joining existing … practices around these activities.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-edbooks-preprint2024.pdf",
+      "pdf_sha256": "23f8ff42416fa98e0daae3b87bcfa1edbc36842e1a934058f8bafe2680f79932",
+      "pages": 23,
+      "native_blocks": 455,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "877:0",
+            "878:0",
+            "888:0",
+            "889:0",
+            "890:0"
+          ],
+          "pages": [
+            6,
+            7
+          ],
+          "kind": "float/footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "877:0",
+              "role": "P",
+              "pages": [
+                6
+              ],
+              "text": "Colaroid [60], another extension for Visual Studio Code, also combines narrative text with iterative code changesfor authoring coding tutorials. Like EDBook, Colaroid enables autho … Colaroid does not containany dialogic features—readers cannot interrupt the narrative to query an LLM and authors cannot build assessments(e.g., multiple-choice or coding questions) into their narratives. Second, Colaroid does not include deictic references to"
+            },
+            {
+              "node": "878:0",
+              "role": "Note",
+              "pages": [
+                6
+              ],
+              "text": "3chat.codes includes User Interface (UI) functionality for adding deictic references without typing out the syntax manually. Users can highlight a sectionof an un-sent message and then highlight a region of code to add a reference to the highlighted part of the message. However, we found that thisinteraction was not discoverable and could be difficult for authors, particularly when they made subsequent modifications.Manuscript submitted to ACM"
+            },
+            {
+              "node": "888:0",
+              "role": "Figure",
+              "pages": [
+                7
+              ],
+              "text": "[Figure: A continuum runs from less constrained to more constrained dialog. From left to right: open-ended LLMs such as ChatGPT; topic-shifting agents; pre-written tree- or state-based dialogs; and pre-written linear dialogs. EDBooks is positioned above the tree- or state-based category.]"
+            },
+            {
+              "node": "889:0",
+              "role": "Caption",
+              "pages": [
+                7
+              ],
+              "text": "Fig. 2. An illustration of different dialog system types along a continuum from less constrained input (left) to more (right)."
+            },
+            {
+              "node": "890:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "better tie the narrative text with content. Finally, EDBook gives users more agency in choosing how to follow a giventutorial. Readers can select which response they want to give and can write their own parts of narratives. However,Colaroid also has several features that EDBook would benefit from—most notably, the ability to integrate with git andversion control tools and the ability to re-play user interactions on a UI."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Related-work sentence breaks between deictic references to and better tie the narrative text.",
+          "proposed_order": "Keep877 and890consecutive; position Note878 and Figure888/Caption889 at paragraph boundaries.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "719:0",
+            "751:0"
+          ],
+          "pages": [
+            4,
+            5
+          ],
+          "kind": "embedded running footer",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "719:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "The incorporation of LLMs into programming education also raises certain concerns. Code generated by LLMs canexhibit biased structures and comments [47] and may also contain insecure vulnerabilities [6]. Furthermore, Becker etal. suggest that the coding style and approaches adopted by LLMs might prove too advanced for novice programmersto readily adopt [2]. In this case, EDBook aims to create a semi-structured learning environment, enabling learnersManuscript submitted to ACM"
+            },
+            {
+              "node": "751:0",
+              "role": "P",
+              "pages": [
+                5
+              ],
+              "text": "to engage with LLMs under appropriate, dialogue-style guidance. This approach is designed to mitigate the potentialnegative impacts that could be transferred to learners."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Manuscript submitted to ACM is embedded in the sentence enabling learners … to engage with LLMs. Similar footers occur elsewhere.",
+          "proposed_order": "Mark running footer as artifact and keep the sentence continuous.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "1330:0",
+            "1331:0"
+          ],
+          "pages": [
+            14
+          ],
+          "kind": "heading/body text misordered",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "1330:0",
+              "role": "H4",
+              "pages": [
+                14
+              ],
+              "text": "4.5.1Participants used more time for learning the materials in CEDBook CWeb+GPT."
+            },
+            {
+              "node": "1331:0",
+              "role": "P",
+              "pages": [
+                14
+              ],
+              "text": "than As our results show, participantsspent more time in C than C on average (𝑝< 0.01). Based on our observations and intuition, we believe thereEDBookWeb+GPTare several reasons fo … and more time spent on coding quizzes. Third, as section 4.5.6 describes, participants expressed that they felt moreengaged in C than in C. This increased engagement might have led to more time spent in C. Finally,EDBookWeb+GPTEDBookManuscript submitted to ACM"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "The comparison word than belongs inside the heading but begins following body, while condition suffixes are also displaced.",
+          "proposed_order": "Reorder heading content to C_EDBook than C_Web+GPT and start body As our results show; inspect all similarly styled condition labels.",
+          "visual_confirmation": ""
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "myers-making-end-user-eud2017.pdf",
+      "pdf_sha256": "3882923ec22759e544bc7e992ce21339e8685e3e76965fa6b5fe9693f06c21f2",
+      "pages": 22,
+      "native_blocks": 114,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "436:0"
+          ],
+          "pages": [
+            15
+          ],
+          "kind": "within-paragraph reorder",
+          "severity": "major",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "436:0",
+              "role": "P",
+              "pages": [
+                15
+              ],
+              "text": "3 an extension to the Atom editor, to investigate newWe created Variolite,kinds of support for data science versioning (Kery et al., 2017). In Variolite(Fig. 7), a developer can se …  Variolite with 10 parti-cipants, who were a mix of novice and advanced developers, the majorityfound this interaction usable and desirable. We are continuing work onVariolite, and are investigating new ways to support data scientists in theirexploratory code."
+            }
+          ],
+          "before_text": "3 an extension to the Atom editor, to investigate new We created Variolite,kinds of support",
+          "after_text": "We created Variolite,3 an extension to the Atom editor, to investigate new kinds of support",
+          "impact": "Opening sentence is scrambled around the footnote marker; We created Variolite comes after an extension to the Atom editor, to investigate new.",
+          "proposed_order": "Order first line as We created Variolite, footnote3, an extension to the Atom editor, to investigate new, then continue kinds of support.",
+          "visual_confirmation": "g3/myers-making-end-user-eud2017-15.png"
+        },
+        {
+          "nodes": [
+            "431:0",
+            "241:0",
+            "557:0",
+            "558:0",
+            "560:0",
+            "561:0",
+            "562:0"
+          ],
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "kind": "multi-page figure/footnote interruption",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "431:0",
+              "role": "P",
+              "pages": [
+                9
+              ],
+              "text": "Gneiss further enables spreadsheet users to create interactive web applicationsthat can use and modify spreadsheet data (Chang & Myers, 2014a). Gneiss’s rightpane (Fig. 4 at 3) is a web interface builder where the user can create web pagesby dragging-and-dropping GUI elements from the right bar and editing the proper-ties of an element in a table (Fig. 4 at 4 and 5). In Gneiss, each GUI element prop-erty in the web application is treated as a spreadsheet cell, so it can reference other"
+            },
+            {
+              "node": "241:0",
+              "role": "Note",
+              "pages": [
+                9
+              ],
+              "text": "1Gneiss is a type of rock, pronounced like “nice.” Here it stands for Gathering Novel End-userInternet Services using Spreadsheets."
+            },
+            {
+              "node": "557:0",
+              "role": "Figure",
+              "pages": [
+                10
+              ],
+              "text": "[Figure: Figure 4: Gneiss visual web-application builder. The numbered areas show a web API's JSON source, a spreadsheet populated from that source, a drag-and-drop web interface preview, the widget toolbox, and widget properties. The example builds a map and list of New York City jazz venues. The API query refers to TextBox1.Value in the spreadsheet, so changing the search text updates the returned data and the interface.]"
+            },
+            {
+              "node": "558:0",
+              "role": "Caption",
+              "pages": [
+                10
+              ],
+              "text": "Fig. 4 Gneiss’s user interface. (1) is the source pane where the user can load a web API in the URL box and view the returned JSON document. The usercan send spreadsheet data to a  … e web service in (1) as the query term to retrieve new data. GUI elementproperties in (3) can also use spreadsheet data as their values. For example, here the bold text in the grid list is set to show the data in spreadsheet column Busing a spreadsheet formula"
+            },
+            {
+              "node": "560:0",
+              "role": "Figure",
+              "pages": [
+                11
+              ],
+              "text": "[Figure: Fig. 5 Gneiss visualizes hierarchies in data using nested spreadsheet cells, and lets users restructure the data by any field by drag-and-dropping a column to a different location. Here, (1) shows a structured document of restaurant data grouped by restaurant names. The user can restructure this document to instead view the data by restaurant categories by dragging the cate- gories column to the front of the names column (2 and 3)]"
+            },
+            {
+              "node": "561:0",
+              "role": "Caption",
+              "pages": [
+                11
+              ],
+              "text": "Fig. 5 Gneiss visualizes hierarchies in data using nested spreadsheet cells, and lets usersrestructure the data by any field by drag-and-dropping a column to a different location. Here, (1)shows a structured document of restaurant data grouped by restaurant names. The user canrestructure this document to instead view the data by restaurant categories by dragging the cate-gories column to the front of the names column (2 and 3)"
+            },
+            {
+              "node": "562:0",
+              "role": "P",
+              "pages": [
+                11
+              ],
+              "text": "spreadsheet cells and use functions to compute its value, and also be referencedin spreadsheet cells and functions to compute new values. This allows the use ofspreadsheet language … ables the user to programmany kinds of interactive behaviors in a web application, such as to search, sort,filter and visualize data using GUI controls, using spreadsheet languages withoutneeding to write conventional event handler code (Chang & Myers, 2014a)."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Sentence so it can reference other … spreadsheet cells is separated by footnote and two full figure/caption blocks across pp9–11.",
+          "proposed_order": "Make431→562consecutive; place Note241 and Figures4/5 at completed paragraph boundaries.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "pdf_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+      "pages": 17,
+      "native_blocks": 814,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "449:0",
+            "450:0",
+            "451:0",
+            "452:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "author note/copyright interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "449:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Reading code is one of the most fundamental and important activi-ties in software development. Readability is a subjective measure-ment of how easy it is to go through any given code. More readable"
+            },
+            {
+              "node": "450:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "∗The author is currently a UX researcher at Google. The research was done when shewas an a doctoral student at the University of Michigan."
+            },
+            {
+              "node": "451:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "© 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.ACM ISBN 979-8-4007-0330-0/24/05...$15.00https://doi.org/10.1145/3613904.3642512"
+            },
+            {
+              "node": "452:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "code is easier to comprehend and maintain in the long term. Typ-ically, software maintenance comprises 70% of any project’s lifecycle [15], making it the most intensive aspect of s … amming community [3, 27]. Others haverecommended ensuring the readability of documentation to aiddevelopers in making readable edits to codebases [1, 29]. Some alsopropose teaching students to write readable code as part of standardprogramming coursework [19]."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "First introduction paragraph reads More readable then author/copyright notices then code is easier.",
+          "proposed_order": "Keep449→452consecutive, relocate450/451tofrontmatterNoteat paragraph boundary.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "1130:0",
+            "1132:0",
+            "1133:0"
+          ],
+          "pages": [
+            6,
+            7
+          ],
+          "kind": "running header interrupts quotation",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "1130:0",
+              "role": "P",
+              "pages": [
+                6
+              ],
+              "text": "“It’s [comments] not that much sensitive that I needto read character by character. Whereas, if it is a code,"
+            },
+            {
+              "node": "1132:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments"
+            },
+            {
+              "node": "1133:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "syntax, right? That I need to read character by character.So that makes sense to logically break.” — P11"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "The running paper title interrupts a participant quotation between code and syntax.",
+          "proposed_order": "Artifact running-title1132andjoin1130→1133.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "699:0",
+            "635:0",
+            "700:0"
+          ],
+          "pages": [
+            16,
+            17
+          ],
+          "kind": "running header interrupts code",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "699:0",
+              "role": "Code",
+              "pages": [
+                16
+              ],
+              "text": "``` ImportantClass.important_method( exc, limit, lookup_lines,"
+            },
+            {
+              "node": "635:0",
+              "role": "P",
+              "pages": [
+                17
+              ],
+              "text": "Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments"
+            },
+            {
+              "node": "700:0",
+              "role": "Code",
+              "pages": [
+                17
+              ],
+              "text": "capture_locals, extra_argument ) ```"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "A function call in appendix B is split by the running paper title.",
+          "proposed_order": "Artifact635and preserve699→700as one coherent Code block.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-vrgit-chi2023.pdf",
+      "pdf_sha256": "e62f1166a43a0c2884c6eedef380712fdcc851b89b13aa0052b231d0a4ccd704",
+      "pages": 14,
+      "native_blocks": 408,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "1170:0",
+            "1215:0",
+            "1216:0",
+            "1217:0",
+            "1218:0",
+            "1219:0"
+          ],
+          "pages": [
+            7
+          ],
+          "kind": "section inserted before paragraph ends",
+          "severity": "major",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "1170:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "to maintain awareness of version history and version control oper­ations from collaborators. As each user keeps a local HG on their left arm, similar to a local copy of the entire  … nce, when the sharer navigates and enter an older version, all sharees are able to see the navigation in the shared history visu­alization and enter the version with the sharer. When the sharer creates a preview and reuses objects from the preview, all sharees"
+            },
+            {
+              "node": "1215:0",
+              "role": "H3",
+              "pages": [
+                7
+              ],
+              "text": "3.4 System Implementation"
+            },
+            {
+              "node": "1216:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "VRGit is implemented using Unity 2020.2.7 and runs on Oculus Quest or Rift headsets. The overall architecture of our system is shown in Fig. 7. We use the Photon Voice1 plugin in U …  the operations from the sharer such as navigating history, switching branches, and pre­viewing and reusing are sent to the server. All the sharees then pull those shared history operations and update their shared history visualization based on the operations."
+            },
+            {
+              "node": "1217:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "can see the preview being created and the objects being reused in"
+            },
+            {
+              "node": "1218:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "1https://www.photonengine.com/voice"
+            },
+            {
+              "node": "1219:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "the current version."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Entire section3.4 separates all sharees from can see the preview … the current version; footnote1 also splits the latter fragment.",
+          "proposed_order": "Order1170→1217→1219before1215heading+1216implementation; put footnotes1218/1220afterimplementation.",
+          "visual_confirmation": "g3/zhang-vrgit-chi2023-7.png"
+        },
+        {
+          "nodes": [
+            "392:0",
+            "393:0",
+            "822:0",
+            "820:0",
+            "823:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "copyright interrupts abstract",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "392:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Immersive authoring tools allow users to intuitively create and ma­nipulate 3D scenes while immersed in Virtual Reality (VR). Collab­oratively designing these scenes is a creative  … creating a shared hub for communication. However, most VCSs are unsuitable for managing the version history of VR content because their underlying line differencing mechanism is designed for text and lacks the semantic information of 3D content; and the widely"
+            },
+            {
+              "node": "393:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for prof …  by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org."
+            },
+            {
+              "node": "822:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "CHI ’23, April 23–28, 2023, Hamburg, Germany"
+            },
+            {
+              "node": "820:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "© 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9421-5/23/04...$15.00 https://doi.org/10.1145/3544548.3581136"
+            },
+            {
+              "node": "823:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "adopted commit model is designed for asynchronous collaboration rather than real-time awareness and communication in VR. We introduce VRGit, a new collaborative VCS that visualizes … f users’ activities and version history through portals and shared history visualizations. In a lab study with 14 participants (seven groups), we demonstrate that VRGit enables users to easily manage version history both individually and collaboratively in VR."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "The abstract is split at the widely … adopted commit model by permissions/conference/copyright.",
+          "proposed_order": "Keep392→823consecutive, relocate publisher notices as frontmatterNote.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-vrcopilot-uist2024.pdf",
+      "pdf_sha256": "c655678821de5bf7040d2f55b98289e216575030ef254d4865d88602cfa02d7b",
+      "pages": 13,
+      "native_blocks": 270,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "261:0",
+            "262:0",
+            "263:0",
+            "264:0",
+            "265:0",
+            "266:0"
+          ],
+          "pages": [
+            3,
+            4
+          ],
+          "kind": "float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "261:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "We situate our design of VRCopilot in the context of interior designtasks, where users can place pre-made 3D furniture models in avirtual apartment. Interior design requires balancing constraints"
+            },
+            {
+              "node": "262:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions.]"
+            },
+            {
+              "node": "263:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "(a) Palette Menu."
+            },
+            {
+              "node": "264:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "(b) Multi-workspace."
+            },
+            {
+              "node": "265:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "Figure 2: User interfaces in VRCopilot including (a) a palettemenu where users can select and furniture from the catalog,and (b) a multi-workspace visualization that allows users towork and switch between multiple versions."
+            },
+            {
+              "node": "266:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "(e.g., functional requirements and space limitations) with aestheticpreferences. It has been the application domain of many prior im-mersive authoring tools [10, 29, 63] and is a c …  IKEA1, integrate features that allow customers to virtuallypreview furniture arrangements in their own homes before mak-ing a purchase. VRCopilot includes 7, 302 furniture models from3D-FRONT [21], a large open-source dataset of furniture objectsand textures."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure2 and component labels/caption interrupt Interior design requires balancing constraints … (e.g., functional requirements...).",
+          "proposed_order": "Keep261→266consecutive; move Figure2group to completed paragraph boundary.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "282:0",
+            "287:0",
+            "291:0"
+          ],
+          "pages": [
+            4
+          ],
+          "kind": "footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "282:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "The ability to explore multiple alterna-tives is crucial to supporting creativity in design tasks [27, 49]. Forexample, in the realm of interior design, designers typically develop … litate the exploration of multiple design variations, VRCopilotoffers multiple empty workspaces or templates for users to workon (as seen in Fig. 2b). Users can easily switch between workspacesto work on different versions by navigating a list of miniatures in"
+            },
+            {
+              "node": "287:0",
+              "role": "Note",
+              "pages": [
+                4
+              ],
+              "text": "1https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/"
+            },
+            {
+              "node": "291:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "VR. This creativity support is inspired by the concept of “Worldin Miniature” (WIM) [52] and recent work on version control inVR [63]. To help users reuse partial layouts across different ver-sions of the designs, VRCopilot also includes a copy & paste feature,shown as additional buttons bound to the handheld menu. Thisfeature allow users to copy multiple objects and paste them eitherin the same workspace or other workspaces."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "IKEA URL footnote interrupts navigating a list of miniatures in … VR.",
+          "proposed_order": "Keep282→291consecutive; position287aftercompleted sourceparagraph.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-arboretum-and-arbility-uist2018.pdf",
+      "pdf_sha256": "abc716ae595cba8552c614c2d4da447cd590f1651d24716bc5ab310683d5ae9a",
+      "pages": 13,
+      "native_blocks": 298,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "1503:0",
+            "1495:0",
+            "1496:0",
+            "1499:0"
+          ],
+          "pages": [
+            7,
+            8
+          ],
+          "kind": "float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "1503:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "Every instance of the study was conducted with remote par-ticipants, each of whom interacted with a version of Arbility that was slightly modified to work within the browser. Using a browser-based version of Arbility allowed our participants to use the tool without needing to install it. All of the in-teractions with this browser-based were the same as those in the desktop version. The study asked the blind participants to"
+            },
+            {
+              "node": "1495:0",
+              "role": "Figure",
+              "pages": [
+                8
+              ],
+              "text": "[Figure: Figure 4 depicts each of the three task pages and their corresponding task question and reason for inaccessible content. The task question for the Calorie Counter page is  …  reveal, whereas screen reader interactions typically simulate click events. The task question for the Noodlehead Menu page is \"Name one $8 noodle dis that is indicated as spicy\" and is inaccessible because spiciness is indicated only by red text CSS styling.]"
+            },
+            {
+              "node": "1496:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "Figure 4. The web pages (1) Calorie Counter, (2) Gary Turk Video, and (3) Noodlehead Menu were selected from Bigham, et al. to provide a represen-tative sample of inaccessible web  …  replay-able from the Arbility chat panel upon visiting the same page later on. This allows blind end users to overcome the same obstacles in the future without having to call on crowd workers again, reducing cost and increasing indepdendence in the long term."
+            },
+            {
+              "node": "1499:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "complete three information finding tasks. Each task consisted of a page with task instructions, a link to the Arbility shared browser page, and a task question whose answer was loc …  a chat panel for communicating with remote workers and a content panel containing the original content of the in-the-wild web page. From the task instruc-tions page, participants were asked to click a link to launch the shared web page in another browser tab."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure4/caption separates asked the blind participants to … complete three information finding tasks.",
+          "proposed_order": "Keep1503→1499consecutive; put Figure4group at paragraph boundary.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "1462:0",
+            "1957:0",
+            "1464:0",
+            "1465:0"
+          ],
+          "pages": [
+            8,
+            9
+          ],
+          "kind": "table float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "1462:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "In order to retrieve the inaccessible information, blind end users collaborated with sighted remote workers, primarily through two interaction types: natural language text-based ch … d by end users. For ex-ample, in the Gary Turk Video task, the requested information could only be retrieved by clicking an incorrectly specified DOM element that was listening for the mousedown event— specifically, a “Show More” <div/> element that was styled"
+            },
+            {
+              "node": "1957:0",
+              "role": "TH",
+              "pages": [
+                9
+              ],
+              "text": "Accuracy (%)"
+            },
+            {
+              "node": "1464:0",
+              "role": "P",
+              "pages": [
+                9
+              ],
+              "text": "Figure 5. When blind users collaborate with sighted workers via Ar-bility, their information finding accuracy becomes comparable with that of solo sighted workers (Upper Table). However, these accuracy gains come at a cost in speed, taking on average 3–4 times as long as sighted workers acting alone (Lower Table)."
+            },
+            {
+              "node": "1465:0",
+              "role": "P",
+              "pages": [
+                9
+              ],
+              "text": "as if it were a <button/> element (Figure 4). Activating this element would not usually require a click interaction via the keyboard (but merely a keypress), and so execut-ing a cl … a button, clicking would have been an intuitive interac-tion when navigating via visual-motor skills and the mouse. Hence, crowd workers were able to propose the mousedown event for blind end users to accept and retrieve the requested piece of the information."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure5 semantic tables/caption occur between a div element that was styled … as if it were a button element.",
+          "proposed_order": "Keep1462→1465consecutive; move whole Figure5tablegroup+caption, not merely first header1957, to paragraph boundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+      "pdf_sha256": "dc7389986e527437c6d201c1bb04ebfa2e87ee9f8eb7ad591658652cfe815a0d",
+      "pages": 13,
+      "native_blocks": 227,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "779:0",
+            "782:0",
+            "783:0",
+            "784:0"
+          ],
+          "pages": [
+            3,
+            4
+          ],
+          "kind": "float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "779:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "To reduce overlapping and redundant sub-paths in testing, weimplemented GUI-level guidance that presents previous work-ers’ navigation paths to new workers by augmenting the UIswith non-clickable CSS overlays (Fig. 1[Figure: circle 2] 2 ). We designed thisGUI-level guidance by conducting a series of small studies,comparing two different approaches of presenting GUI navi-gation paths: (1) UI overlays that block out regions in the UI"
+            },
+            {
+              "node": "782:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: Figure 2. Three views of an e-commerce delivery form are connected to its event-flow graph. The form has Pick Up, Delivery, and Contact Info tabs. The graph represents selecting pickup or delivery options and entering input, phone, email, or other contact details, with arrows showing transitions among these states. Pink summary nodes group transitions back to the three main tabs.]"
+            },
+            {
+              "node": "783:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "Figure 2.An Event-Flow Graph (EFG) for the “delivery preference”page of an e-commerce website. The left column shows three differentstates of the GUI, differing based on which tab on the top of the page isclicked. The right column shows the event-flow graph of the GUI wherethe top three nodes of the graph each represent different tabs on theleft column. With the event-flow graph, testers can easily navigate anddiscover feasible paths, eventually increasing the testing coverage."
+            },
+            {
+              "node": "784:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "that have previously been explored, and (2) textual logs thatshow past user events. We chose to compare these presen-tations because prior work showed that presenting previouspeople’s responses can effectively improve others’ task per-formance [19, 29, 46]. However, unlike their approaches, wefocused on guiding testers to avoid explored GUI regions, thusincluding information about how often users use particular UIfeatures (such as a heatmap) was unnecessary and potentiallymisleading."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure2 and its caption separate regions in the UI … that have previously been explored.",
+          "proposed_order": "Keep779→784consecutive; place782/783aftercompleted paragraph.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-cflow-ls2024.pdf",
+      "pdf_sha256": "e0137a7e201072ab754b1ada25b6ed6b87d5fc8ab5e1081f74a9b5bb5700928f",
+      "pages": 12,
+      "native_blocks": 180,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "485:0",
+            "486:0",
+            "487:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "copyright interrupts abstract",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "485:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Introductory programming courses have been growing rapidly, nowenrolling hundreds or thousands of students. In such large courses,it can be overwhelmingly difficult for instructors … m, and (4) allowing users to navigate through solutionsinteractively using semantic filters. With a multi-level view design,users can navigate high-level patterns, and low-level implementa-tions. This is in contrast to prior tools that either limit their focus"
+            },
+            {
+              "node": "486:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "© 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.ACM ISBN 979-8-4007-0633-2/24/07https://doi.org/10.1145/3657604.3662025"
+            },
+            {
+              "node": "487:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "on isolated statements (and thus discard the surrounding contextof those statements) or cluster entire code samples (which can leadto large numbers of clusters—for example, if there are 𝑛code fea-𝑛tures and 𝑚implementations of each, there can be 𝑚clusters).We evaluated the effectiveness of CFlow with a comparison study,found participants using CFlow spent only half the time identifyingmistakes and recalled twice as many desired patterns from over6,000 submissions."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Copyright/DOI splits tools that either limit their focus … on isolated statements.",
+          "proposed_order": "Keep485→487consecutive, place486in frontmatterNote.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "808:0",
+            "809:0",
+            "818:0",
+            "819:0",
+            "820:0"
+          ],
+          "pages": [
+            5,
+            6
+          ],
+          "kind": "float/footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "808:0",
+              "role": "P",
+              "pages": [
+                5
+              ],
+              "text": "As a first step for alignment, CFlow identifies a “canonical pro-gression” —a set of steps that represents the “average” correct so-lution. To identify these steps, CFlow first ide … sT = (T, T, ...). This means, T is the most common value of the1211tag for the first line (𝜏) among correct solutions, T is the most2𝑖2common value for 𝜏, etc. The length of the canonical progression𝑖T depends on a pre-set parameter that determines the minimum"
+            },
+            {
+              "node": "809:0",
+              "role": "Note",
+              "pages": [
+                5
+              ],
+              "text": "1https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html"
+            },
+            {
+              "node": "818:0",
+              "role": "Figure",
+              "pages": [
+                6
+              ],
+              "text": "[Figure: CFlow algorithm pipeline. Code lines are normalized and represented with CodeBERT vectors to identify semantic groups and tags. Common tag order in correct solutions forms a canonical progression; lines are aligned to it using longest common subsequences. An LLM labels lines as correct or as semantic, syntax, or runtime errors. Finer CodeBERT clustering within semantic groups combines with correctness labels to populate the aggregated flow and histogram views.]"
+            },
+            {
+              "node": "819:0",
+              "role": "Caption",
+              "pages": [
+                6
+              ],
+              "text": "Figure 3: CFlow’s algorithm. To generate the results required in CFlow’s user interface, CFlow’s algorithm include four primarystages: (1) identifying and tagging the steps required to solve a problem, (2) grouping and aligning lines of code across codesamples, (3) identifying semantic, syntactic, and runtime errors, and (4) clustering the grouped results."
+            },
+            {
+              "node": "820:0",
+              "role": "P",
+              "pages": [
+                6
+              ],
+              "text": "agreement across solutions, stopping once it reaches a line numberwhere tags are not sufficiently consistent. Finally, CFlow computesthe longest common subsequence (LCS) between each code sam-12ple’s tags (𝜏,𝜏, ...) and (T, T, ...).12𝑖𝑖"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "URL and Figure3 separate determines the minimum … agreement across solutions.",
+          "proposed_order": "Keep808→820consecutive; moveNote809andFigure3group to appropriate completed paragraph boundaries.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "pandey-explore-create-annotate-chi2020.pdf",
+      "pdf_sha256": "5331c323fed73944794b465857d17faad215296e1b88916b5fb2f30a92cf14db",
+      "pages": 12,
+      "native_blocks": 363,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "499:0",
+            "505:0",
+            "506:0",
+            "507:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "499:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Graphics such as diagrams, visualizations, and charts combinevisual and textual information. These can represent ideas thatare hard to explain with text alone and are particularly  … oms [42]. Interviewswith students and instructors inform us that students like mak-ing their own tactile graphics and feel more motivated whenthey are involved in the creation process [38, 5]. However,labeling the graphics is a challenge for people with visual"
+            },
+            {
+              "node": "505:0",
+              "role": "Figure",
+              "pages": [
+                1
+              ],
+              "text": "[Figure: Figure 1. A participant’s tactile map of a park, drawn as raised outlines on transparent film. Several locations are marked with braille label strips and pieces of textured paper tape for audio labels, so the participant can distinguish the two label types by touch.]"
+            },
+            {
+              "node": "506:0",
+              "role": "Caption",
+              "pages": [
+                1
+              ],
+              "text": "Figure 1. A tactile map of a park created by participant P6 in our study.He preferred using both braille and audio labels, and chose a differentlytextured tactile marker (paper tape) to represent audio information."
+            },
+            {
+              "node": "507:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "impairments. Adding metadata such as labels, titles, and de-scriptions in braille is a lengthy process. The text has to beprepared separately using analog tools such as a stylus1 o …  and make it difficultto discriminate between tactile elements. The National Fed-eration of the Blind (NFB) noted in 2013 that unavailabilityof simple devices for creating and editing tactile drawings hasprevented students from creating their own graphics [2]."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure1/caption separates people with visual … impairments.",
+          "proposed_order": "Keep499→507consecutive, moveFigure1group to completed paragraph boundary.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "665:0",
+            "977:0",
+            "978:0"
+          ],
+          "pages": [
+            7,
+            8
+          ],
+          "kind": "table interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "665:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "We calculated the max-consensus (MC) and consensus-distinctratio (CDR) [29]. MC is the percent of participants who sug-gested the most popular input technique for a referent or ref …  such scores would be in-dicative of strong agreement on a primary interaction with fewother contender interactions. Table 4 lists the distinct inputtechniques with max consensus and CDR above two for eachreferent. It shows that multimodal commands were highly"
+            },
+            {
+              "node": "977:0",
+              "role": "Caption",
+              "pages": [
+                8
+              ],
+              "text": "Table 4. The four referents used for elicitation of user-defined input in Task 2. The overall max-consensus and consensus-distinct ratio are shown foreach referent (using a consensus-threshold of 2). The last column shows the most commonly proposed interaction command for the referent, number inparentheses indicates how many different participants proposed the interaction."
+            },
+            {
+              "node": "978:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "agreed upon by users across all referents. The last columnin Table 4 shows that the multimodal commands followed apattern of pointing the index finger at location, and speakingthe voice command to trigger the referent."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Table4 and caption precede continuation highly … agreed upon.",
+          "proposed_order": "Keep665→978consecutive; relocate whole Table4 with Caption977 to paragraph boundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+      "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+      "pages": 12,
+      "native_blocks": 182,
+      "status": "no_major_order_issue_identified_in_review",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "pdf_sha256": "8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8",
+      "pages": 11,
+      "native_blocks": 356,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "158:0",
+            "159:0",
+            "160:0",
+            "161:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "footnotes interrupt phrase",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "158:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Despite being highly desirable, code contracts do not existin a formalized form in most existing software systemsin practice [24]. In contrast, library developers commonlydescribe legal usage in natural language text in Application"
+            },
+            {
+              "node": "159:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "1∼http://www.eecs.ucf.edu/leavens/JML/"
+            },
+            {
+              "node": "160:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "2http://research.microsoft.com/en-us/projects/contracts/"
+            },
+            {
+              "node": "161:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Programming Interface (API) documents. Typically, suchdocuments are provided to client-code developers throughonline access, or are shipped with the API code. For exam-3ple, J2EE’s API documentation is one of the most popularAPI documents."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Two URL footnotes separate Application … Programming Interface.",
+          "proposed_order": "Keep158→161consecutive; placeNotes159/160afterrelevant complete paragraphs.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "181:0",
+            "184:0",
+            "185:0"
+          ],
+          "pages": [
+            2
+          ],
+          "kind": "footnote interrupts word/list item",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "181:0",
+              "role": "LI",
+              "pages": [
+                2
+              ],
+              "text": "• An evaluation of our approach on 2717 sentences (for333 methods) in five different classes from the .NETFramework and Facebook API for C#. Our evaluationresults show that our approach effectively identifiescontract sentences with an average of 92% precisionand 93% recall. Additionally, our approach infers spec-"
+            },
+            {
+              "node": "184:0",
+              "role": "Note",
+              "pages": [
+                2
+              ],
+              "text": "4http://research.csc.ncsu.edu/ase/projects/pint/"
+            },
+            {
+              "node": "185:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "ifications from around 1700 contract sentences with anaverage accuracy of 83%."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Footnote4 splits spec- … ifications and continuation is outside its list item.",
+          "proposed_order": "MoveNote184outside the item, join181→185with both under the sameLI.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+      "pdf_sha256": "8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b",
+      "pages": 10,
+      "native_blocks": 317,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "115:0",
+            "116:0",
+            "834:0",
+            "403:0"
+          ],
+          "pages": [
+            2,
+            3
+          ],
+          "kind": "table interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "115:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "The first author went through the subject lines to identifythreads most likely related to UI development. We identified atotal of 726 threads on the topic. Next, we randomly sample … coding, if the content ofthe thread seemed unrelated to GUI development, we removedit from our analysis. In total, we analyzed 96 threads; thebreakdown after eliminating unrelated threads was 33, 31, 32threads in round 1, round 2, and round 3 respectively. The"
+            },
+            {
+              "node": "116:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "TABLE IDEMOGRAPHIC CHARACTERISTICS OF THE PARTICIPANTS."
+            },
+            {
+              "node": "834:0",
+              "role": "TH",
+              "pages": [
+                3
+              ],
+              "text": "ID"
+            },
+            {
+              "node": "403:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "final list of threads was organized alphabetically and indexedto quote from in the present paper. We describe our analysisof the email threads in section III-C."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "The complete demographic Table1 is inserted between The … final list of threads.",
+          "proposed_order": "Keep115→403consecutive; movewholeTable1withcaption116aftercompleted paragraph.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-constraintjs-uist2012.pdf",
+      "pdf_sha256": "2c4d3fea0b59e917ce3be821409a177f588211b867c0620a3fe0c9595bd55a27",
+      "pages": 10,
+      "native_blocks": 232,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "186:0",
+            "187:0",
+            "189:0"
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "kind": "copyright interrupts word",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "186:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Similarly, for Web programming, CSSoffers alimited con-straint languagefor specifying graphical layout, and sepa-rately, there are several JavaScript-based data-binding librar-"
+            },
+            {
+              "node": "187:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Permission to make digital or hard copies of all or part of this work forpersonal or classroom use is granted without fee provided that copies arenot made or distributed for profit or commercial advantage and that copiesbear this notice and the full citation on the first page. To copy otherwise, orrepublish, to post on servers or to redistribute to lists, requires prior specificpermission and/or a fee."
+            },
+            {
+              "node": "189:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "ies [20,21,22]. While both of these types of constraints are useful to programmers, they are often limited in expressive-ness, and further arealmostentirelydistinct and unaware of each other, despite their conceptual similarities.For instance, while current JavaScript data binding libraries allow devel-opers to create constraints to set the content of DOMnodes, they do not allow them to create constraints that controlCSSor DOMattributes."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Permission note splits librar- … ies across the page boundary.",
+          "proposed_order": "Keep186→189consecutive; moveNote187into frontmatter.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "483:0",
+            "485:0",
+            "486:0",
+            "487:0"
+          ],
+          "pages": [
+            8,
+            9
+          ],
+          "kind": "figure interrupts word",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "483:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "In contrast, in a conventional implementation, this function-ality would necessarily be spread across callbacks that lis-"
+            },
+            {
+              "node": "485:0",
+              "role": "Figure",
+              "pages": [
+                9
+              ],
+              "text": "[Figure: Figure 7: A scatterplot application implemented with ConstraintJS. By default, constraints set the position of every data point to reflect the values of an underlying data … lly, axes’ scales may be changed (D) by dragging a point while holding SHIFT. This example illustrates how one-way con- straints in ConstraintJS may be combined with FSMs to enable func- tionality that was previously only possible with multi-way constraints. ]"
+            },
+            {
+              "node": "486:0",
+              "role": "Caption",
+              "pages": [
+                9
+              ],
+              "text": "Figure7:A scatterplot application implemented with ConstraintJS.By default, constraints set the position of every data point to reflectthe values of an underlying data model (A). W …  Finally, axes’ scales may be changed (D) by dragging apoint while holding SHIFT. This example illustrates how one-way con-straints in ConstraintJS may be combined with FSMs to enable func-tionality that was previously only possible with multi-way constraints."
+            },
+            {
+              "node": "487:0",
+              "role": "P",
+              "pages": [
+                9
+              ],
+              "text": "tened for changes to the closest target and maximum selec-tion distance."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure7/caption splits lis- … tened.",
+          "proposed_order": "Keep483→487consecutive; placeFigure7at completed paragraph boundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-runex-vlhcc2023.pdf",
+      "pdf_sha256": "ad0e68b8dacbebc6180bef7caf4fc37edd04eb7b7f4cb508a9515dd40ac52651",
+      "pages": 9,
+      "native_blocks": 252,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "317:0",
+            "318:0",
+            "319:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "funding note interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "317:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "In the context of programming education, there are uniquedesign challenges and opportunities for code search tools. For"
+            },
+            {
+              "node": "318:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "This material is based upon work supported by the National ScienceFoundation under DUE 1915515."
+            },
+            {
+              "node": "319:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "instance, in programming classes—particularly introductoryones—an instructor might conduct a search across code sam-ples that are relatively small and self-contained, rather thanin … rs might want to find code samplesthat are similar to an existing piece of code [7]. For example,they might observe an anti-pattern—code that works but goesagainst the principles being taught—in one student’s code andwant to assess its prevalence in the class."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Funding note separates For … instance in introduction.",
+          "proposed_order": "Keep317→319consecutive; turnfunding318intoNote at paragraph boundary.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "145:0",
+            "146:0",
+            "147:0",
+            "179:0",
+            "180:0",
+            "214:0"
+          ],
+          "pages": [
+            7
+          ],
+          "kind": "two tables interrupt sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "145:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "The quiz questions were designed as tasks for participantsto find how many students have a pattern or a mistake intheir code. One member of the research team created a list ofcorre … significance forour statistical analysis on accuracy in all three conditions(Table II). We also coded the screen recordings to analyzeparticipants’ interactions with the tool during the tasks. In thepost-study survey, we analyzed participants’ responses to the"
+            },
+            {
+              "node": "146:0",
+              "role": "Caption",
+              "pages": [
+                7
+              ],
+              "text": "TABLE I"
+            },
+            {
+              "node": "147:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "ONE-WAY ANOVA TEST ON ACCURACY OF PARTICIPANTS’ RESPONSESTO THE QUIZ QUESTIONS IN THREE PROGRAMMING EXERCISES (E1-3).(N: NUMBER, M: MEAN, SD: STANDARD DEVIATION)"
+            },
+            {
+              "node": "179:0",
+              "role": "Caption",
+              "pages": [
+                7
+              ],
+              "text": "TABLE II"
+            },
+            {
+              "node": "180:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "TWO-TAILED T-TEST ON ACCURACY OF PARTICIPANTS’ RESPONSES TOTHE QUIZ QUESTIONS IN ALL PROGRAMMING EXERCISES (N: NUMBER,M: MEAN, SD: STANDARD DEVIATION)"
+            },
+            {
+              "node": "214:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "Likert scale questions and coded their answers to the interviewquestions. We assessed if the Likert scale responses deviatedsignificantly from a reference value of 4 using a t-test."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "TablesI/II interrupt responses to the … Likert scale questions.",
+          "proposed_order": "Keep145→214consecutive; move wholeTableI+TableII at paragraph boundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "chen-sifter-imx2020.pdf",
+      "pdf_sha256": "ca6c383914590a70e722e863eec4d180c982f726602953c566bb76bf7c132881",
+      "pages": 9,
+      "native_blocks": 305,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "424:0",
+            "425:0",
+            "426:0",
+            "427:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "copyright interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "424:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Every day, millions of people around the world create, share, andconsume short videos on platforms like Snapchat, TikTok, and"
+            },
+            {
+              "node": "425:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "© 2020 Copyright held by the owner/author(s). Publication rights licensed to ACM.ACM ISBN 978-1-4503-7976-2/20/06...$15.00"
+            },
+            {
+              "node": "426:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "https://doi.org/10.1145/3391614.3393657"
+            },
+            {
+              "node": "427:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Douyin. These platforms use a variety of curation approaches tohelp their users discover high-quality and recent (“fresh”) content.These approaches leverage artificial intelligence … ction, but are limited by scale [12]. Specifically, it isdifficult to scale curators’ ability to find appropriate content from acorpus of videos that is large and rapidly growing—on Youtube, forexample, over 500 hours of video content is uploaded every minute."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Copyright+DOI separate platforms like Snapchat, TikTok, and … Douyin.",
+          "proposed_order": "Keep424→427consecutive; put425/426infrontmatterNote.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "919:0",
+            "920:0",
+            "921:0",
+            "926:0",
+            "927:0"
+          ],
+          "pages": [
+            7,
+            8
+          ],
+          "kind": "figure and running header interrupt sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "919:0",
+              "role": "P",
+              "pages": [
+                7
+              ],
+              "text": "One of our contributions is the design of Sifter’s pipeline. However,the parameter values we derived for the final evaluation were based"
+            },
+            {
+              "node": "920:0",
+              "role": "Figure",
+              "pages": [
+                7
+              ],
+              "text": "[Figure: Figure 6. Strategy occurrences reported by workers: relevance 19; quality 9; quality first then relevance 7; both quality and relevance 7; relevance first then quality 1. Relevance is the most common strategy.]"
+            },
+            {
+              "node": "921:0",
+              "role": "Caption",
+              "pages": [
+                7
+              ],
+              "text": "Figure 6: Histogram of the popularity of different strategiesamong human workers."
+            },
+            {
+              "node": "926:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "IMX ’20, June 17–19, 2020, Cornella, Barcelona, Spain"
+            },
+            {
+              "node": "927:0",
+              "role": "P",
+              "pages": [
+                8
+              ],
+              "text": "on our need to form compilations with 10 to 20 videos. Future usersof Sifter’s pipeline would need to find their own optimal valuesparameter for their data and scenarios. Future work should alsoexplore the dynamics of the parameter values through additionalcontrolled studies."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure6 and a running conference header interrupt were based … on our need.",
+          "proposed_order": "Keep919→927consecutive; artifact926andmoveFigure6grouptoparagraphboundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-playbook-iseud2011.pdf",
+      "pdf_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+      "pages": 6,
+      "native_blocks": 46,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "33:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "affiliation markers precede all names",
+          "severity": "minor",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "33:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "21212Stephen Oney, John Barton,Brad Myers, Tessa Lau, JeffreyNichols"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Native author paragraph starts21212, followed by all names. Association of affiliation markers to individual authors is lost in linear order. Body flow otherwise coherent in inspected sequences.",
+          "proposed_order": "Keep each superscript affiliation marker immediately after its corresponding author, according to visible page1.",
+          "visual_confirmation": ""
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+      "pdf_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+      "pages": 5,
+      "native_blocks": 93,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "318:0",
+            "319:0",
+            "335:0"
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "kind": "footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "318:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Immersive authoring allows users to create dynamic virtualscenes while immersed in a virtual environment. One of theearliest attempts to achieve this was Steed et al.’s dataflowrep … ], [7], Ivy [8] for program-ming IoT devices, and Soundstage for creating music [9].Each of these systems uses dataflow to represent behaviors.However, none of this prior work has studied the usabilityof dataflow in their immersive authoring tool, which is the"
+            },
+            {
+              "node": "319:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "1Our immersive authoring tool is open source and publicly available:http://raynezhang.me/files/ImmersiveAuthoring.zip"
+            },
+            {
+              "node": "335:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "focus of this paper. Of prior immersive authoring systems,only two (Ivy and Soundstage) run on modern VR hardwareand only one (Soundstage) is publicly available. However,Soundstage was designed for authoring music. Thus, we builta new VR immersive authoring tool to use in our evaluation.However, our findings are generalizable to other immersivedataflow authoring systems, which use similar paradigms andinteractions."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Open-source URL footnote interrupts which is the … focus of this paper.",
+          "proposed_order": "Keep318→335consecutive; place319afterparagraph containingitsreference.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "213:0",
+            "219:0",
+            "220:0",
+            "221:0"
+          ],
+          "pages": [
+            3,
+            4
+          ],
+          "kind": "float interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "213:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "We therefore propose four mechanisms for drawing edges,as shown in Fig. 3. Each mechanism has its own tradeoffs.Users can draw edges through direct manipulation as if theyare holdi …  far away from each other withoutmoving in the virtual world. The second method (Fig. 3B) allows users to draw edges using a proxy at the fixeddistance to the controller. This method offers custom edgesbut also requires them to move around the scene to connect"
+            },
+            {
+              "node": "219:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: Fig. 3: An illustration of four alternative techniques for speci- fying edges between nodes in VR using a controller. Edges can either be drawn as custom shapes (A&B) or as a straight line between nodes (C&D). Users could draw edges directly with their controller (A); along two dimensions with a depth that the system computes (B); as straight edges between nodes while showing intermediate feedback (C); or by selecting source and target nodes with no intermediate feedback (D).]"
+            },
+            {
+              "node": "220:0",
+              "role": "Caption",
+              "pages": [
+                4
+              ],
+              "text": "Fig. 3: An illustration of four alternative techniques for speci-fying edges between nodes in VR using a controller. Edges caneither be drawn as custom shapes (A&B) or as a straight linebetween nodes (C&D). Users could draw edges directly withtheir controller (A); along two dimensions with a depth that thesystem computes (B); as straight edges between nodes whileshowing intermediate feedback (C); or by selecting source andtarget nodes with no intermediate feedback (D)."
+            },
+            {
+              "node": "221:0",
+              "role": "P",
+              "pages": [
+                4
+              ],
+              "text": "distant nodes. The third method (Fig. 3 C) allows users todraw straight edges using the raycast and shows the straightedge as intermediate feedback. The benefit of this approachis  … here users will click at the first connector and thenthe second connector in order to draw an edge. This methodproduces no intermediate feedback and avoids the drag-and-drop interaction. However, the drawback of this approach isthe lack of direct manipulation."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure3/caption separate connect … distant nodes.",
+          "proposed_order": "Keep213→221consecutive; moveFigure3group to paragraph boundary.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+      "pdf_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+      "pages": 4,
+      "native_blocks": 102,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "211:0",
+            "187:0",
+            "232:0"
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "kind": "copyright interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "211:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "The HCI community has proposed solutions to increase the visibil-ity of physical activity [7, 8], and encouraged users to be more activethrough positive social reinforcement [8, 19]. Researchers have alsoevaluated tracking systems specific to sports [3, 14, 20, 21, 25]. Thesestudies are useful in providing an understanding of how specificmetrics matter in individual sports. More recently, researchers have"
+            },
+            {
+              "node": "187:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Permission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fee provided that copies are not made or distributedfor profit … d. Abstracting with credit is permitted. To copy otherwise, orrepublish, to post on servers or to redistribute to lists, requires prior specific permissionand/or a fee. Request permissions from permissions@acm.org.Woodstock ’18, June 03–05, 2018, Woodstock, NY"
+            },
+            {
+              "node": "232:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "conducted qualitative studies with recreational and professionalathletes. Interviews with professional tennis players have revealedthat they desire more ‘specialized’ information [ … luate their performance, andwanted tracking tools to reflect this internal assessment. However,none of the studies inform us of general usage, needs and challengesof recreational athletes with activity tracking tools. We wish to fillthis gap through our study."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Permissions note separates researchers have … conducted qualitative studies.",
+          "proposed_order": "Keep211→232consecutive; moveNote187intofrontmatter.",
+          "visual_confirmation": null
+        },
+        {
+          "nodes": [
+            "248:0",
+            "253:0",
+            "254:0"
+          ],
+          "pages": [
+            2,
+            3
+          ],
+          "kind": "running header interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "248:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "We inquired about measures participants wanted better trackingsupport for. This revealed a variety of unmet tracking desires. We"
+            },
+            {
+              "node": "253:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "Exploring Tracking Needs and Practices of Recreational Athletes"
+            },
+            {
+              "node": "254:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "refer to this as a ‘long tail’ of desired metrics because of the indi-vidual differences in tracking desires of participants, within a sportas well as across sports. We recorded 70 unique measures (table 1),categorized into four groups."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Paper title running header splits We … refer to this as a long tail.",
+          "proposed_order": "Artifact253andkeep248→254consecutive.",
+          "visual_confirmation": null
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-euclase-live2013.pdf",
+      "pdf_sha256": "503917db80dbdb12570302733dbc43d42c6376d7bd544a3bc7f7f7910f3e76b4",
+      "pages": 4,
+      "native_blocks": 88,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "107:0",
+            "108:0",
+            "109:0",
+            "110:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "figure interrupts word",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "107:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "We consider designers to be a form of end-user program-mers (EUPs) because they create these prototypes not as a pri-mary goal, but as a step in designing a user interface [8].To s …  of backend applications[4], we decided to start from scratch and develop new programming primitives especially for interactive applica-tions.In this paper, we will refer to both the interactive editor and our underlying programming primitives as the “develop-"
+            },
+            {
+              "node": "108:0",
+              "role": "Figure",
+              "pages": [
+                1
+              ],
+              "text": "[Figure: Figure 1. Euclase displays object properties x, y, and z as rows and state-specific constraints as columns. The base definitions are x = [y, z], y = “hello world”, and z = 1 + 2. In state1, y is overridden by z + 1. The live values at left are consequently x = [4, 3], y = 4, and z = 3. A starting dot points to state1 above the constraint column.]"
+            },
+            {
+              "node": "109:0",
+              "role": "Caption",
+              "pages": [
+                1
+              ],
+              "text": "Fig. 1. A mockup for the display of the properties of an object in Euclase. Properties are represented in rows while different states are represented in each column. An entry for a particular property in a particular state represents a constraintthat applies to that property in that state."
+            },
+            {
+              "node": "110:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "ment environment”, as the two are often inseparablefrom the users’ perspective."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Figure1 and caption split develop- … ment environment.",
+          "proposed_order": "Keep107→110consecutive; moveFigure1group to paragraph boundary.",
+          "visual_confirmation": "g3/oney-euclase-live2013-1.png"
+        },
+        {
+          "nodes": [
+            "125:0",
+            "68:0",
+            "128:0"
+          ],
+          "pages": [
+            2
+          ],
+          "kind": "footnote interrupts list item",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "125:0",
+              "role": "LI",
+              "pages": [
+                2
+              ],
+              "text": "•Beginner friendly and approachable.As previously mentioned, many interaction designers are not familiar with traditional programming languages [8]. This means that our programming primitives should be easy to un-derstand and not too numerous, a common tension in new development tools [14]. Additionally, Euclase"
+            },
+            {
+              "node": "68:0",
+              "role": "Note",
+              "pages": [
+                2
+              ],
+              "text": "1This isnot necessarily inherent to live development environments butbecause of the implementation requirements of live development environments, it is common."
+            },
+            {
+              "node": "128:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "should be a “gentle slope” system; simple things should be simple and difficult things should scale linearly [7]. We also made our development environment live to help achieve this goal, as we will discuss later."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Footnote1 splits Additionally, Euclase … should be a gentle slope system inside seconddesigngoal.",
+          "proposed_order": "Join125→128under sameLI; placeNote68afterparagraph that citesit.",
+          "visual_confirmation": "g3/oney-euclase-live2013-2.png"
+        },
+        {
+          "nodes": [
+            "147:0",
+            "148:0",
+            "149:0"
+          ],
+          "pages": [
+            3
+          ],
+          "kind": "footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "147:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "One implementationchallengeof Euclase was dealing with changing variable references. In Euclase,not only may variable"
+            },
+            {
+              "node": "148:0",
+              "role": "Note",
+              "pages": [
+                3
+              ],
+              "text": "2Some constraint evaluators allow constraints to have side effects [15].However, constraints in the Euclase environment are more like spreadsheet formulasand cannot have side effects."
+            },
+            {
+              "node": "149:0",
+              "role": "P",
+              "pages": [
+                3
+              ],
+              "text": "valueschange as the program is executing, but variable refer-encesmay change as the user is editing the program source code. For example, if we have a cellfor a variable ywhose val …  live response to the edit.Also, if the user addsa vari-able named xcloser in scope, then we need to use that xinstead of theoriginalx.Further, if the user deletes the property x, Eu-clase shouldhandle that error without crashing the entire exe-cuting program."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Footnote2 separates not only may variable … values change.",
+          "proposed_order": "Keep147→149consecutive; moveNote148aftercomplete referring paragraph144.",
+          "visual_confirmation": "g3/oney-euclase-live2013-3.png"
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "im-improving-advising-relationships-chiea2024.pdf",
+      "pdf_sha256": "f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b",
+      "pages": 4,
+      "native_blocks": 97,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "155:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "row-major author metadata",
+          "severity": "minor",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "155:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Jane Im Himanshu Zade Steve Oney imjane@umich.edu himanz@uw.edu soney@umich.edu University of Michigan University of Washington University of Michigan USA USA USA Pamela Wisniewski Kentaro Toyama Pam.Wisniewski@Vanderbilt.edu toyama@umich.edu Vanderbilt University University of Michigan USA USA"
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Names fromthree authorcolumns are readfirst, thenallthreeemails, thenaffiliations, makingindividual associationsharder to follow.",
+          "proposed_order": "Read each author block name→email→affiliation→country before proceeding to next author.",
+          "visual_confirmation": "g3/im-improving-advising-relationships-chiea2024-1.png"
+        },
+        {
+          "nodes": [
+            "289:0",
+            "290:0",
+            "291:0"
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "kind": "footnote interrupts sentence",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "289:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "However, while the problems may go both ways, the ground is not level. There is a fundamental power imbalance between advisor and advisee that makes problems more challenging for PhD"
+            },
+            {
+              "node": "290:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "1Our topic may also be relevant to other mentoring relationships such as between interns and their manager-mentors, or between junior and senior researchers. This panel’s focus, however, is on PhD advising, where the unique context of the university, of funding arrangements, of tenure, and so on, often gives rise to genuinely unique situations."
+            },
+            {
+              "node": "291:0",
+              "role": "P",
+              "pages": [
+                2
+              ],
+              "text": "students [2]. While many advisors appear comfortable expressing issues they face in their advising relationships [7], PhD students often do not due to fears of faculty’s power over them. They may face significant consequences [4] ranging from advisor resentment to retaliation: dismissal as advisees, loss of funding, blocking of career progress, and so on."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Footnote1 separates PhD … students.",
+          "proposed_order": "Keep289→291consecutive; mark290asNote and place aftercomplete referenced paragraph286.",
+          "visual_confirmation": "g3/im-improving-advising-relationships-chiea2024-1.png"
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+      "pdf_sha256": "ebd0d81a40052b199cd0fabfbe5deee920332ef8058bd5c7870276e202ad9961",
+      "pages": 2,
+      "native_blocks": 37,
+      "status": "needs_reading_order_work",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [
+        {
+          "nodes": [
+            "177:0",
+            "178:0",
+            "179:0",
+            "180:0"
+          ],
+          "pages": [
+            1
+          ],
+          "kind": "copyright interrupts abstract",
+          "severity": "moderate",
+          "confidence": "high",
+          "native_sequence": [
+            {
+              "node": "177:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "Introductory programming courses have been growing rapidly, nowenrolling hundreds or thousands of students. In such large courses,it can be overwhelmingly difficult for instructors …  in a way that maintains semantic relationships betweenstatements, (3) representing the correctness of different variationsas a histogram, and (4) allowing users to navigate through solutionsinteractively using semantic filters. With a multi-level view design,"
+            },
+            {
+              "node": "178:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "© 2024 Copyright held by the owner/author(s).ACM ISBN 979-8-4007-0633-2/24/07"
+            },
+            {
+              "node": "179:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "https://doi.org/10.1145/3657604.3664717"
+            },
+            {
+              "node": "180:0",
+              "role": "P",
+              "pages": [
+                1
+              ],
+              "text": "users can navigate high-level patterns, and low-level implementa-tions. This is in contrast to prior tools that either limit their focuson isolated statements (and thus discard the surrounding context ofthose statements) or cluster entire code samples (which can lead tolarge numbers of clusters—for example, if there are 𝑛code features𝑛and 𝑚implementations of each, there can be 𝑚clusters)."
+            }
+          ],
+          "before_text": null,
+          "after_text": null,
+          "impact": "Copyright/DOI separates With a multi-level view design, … users can navigate.",
+          "proposed_order": "Keep177→180consecutive; group178/179withpermissionsNote141.",
+          "visual_confirmation": "g3/zhang-demonstration-of-cflow-lsdemos2024-1.png"
+        }
+      ],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    },
+    {
+      "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+      "pdf_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+      "pages": 2,
+      "native_blocks": 28,
+      "status": "no_major_order_issue_identified_in_review",
+      "block_checks": [
+        "Native tree/K-order block and page-boundary summaries",
+        "Heading/body, paragraph continuation, float and note placement",
+        "Within-block geometric backtracking scan with native fulltext investigation of candidates",
+        "Targeted fulltext/manual visual confirmation, not every sentence read aloud"
+      ],
+      "issues": [],
+      "limits": "No fresh screen-reader playback. This is a focused sequence review, not a complete prose proofread or certification. Listed examples are not an exhaustive repair list."
+    }
+  ]
+}

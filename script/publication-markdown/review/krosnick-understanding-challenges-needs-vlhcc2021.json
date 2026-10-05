@@ -2,9 +2,9 @@
   "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
   "title": "Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts",
   "publication_id": "understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021",
-  "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+  "pdf_sha256": "3eb44ddab765986a1db3e5dc81410ea0e7160c39877daf65f736efeb492ad0dd",
   "markdown": "publications/krosnick-understanding-challenges-needs-vlhcc2021.md",
-  "markdown_sha256": "14c3327488a98a7141c399b4924caf67847023dd933a8d66df73ad64c1b3b4ab",
+  "markdown_sha256": "49adab7689526fd8e4a419abe76c047198bbbd7776753c16a85ed276a8918471",
   "pages": 12,
   "blocks": [
     {
@@ -1476,5 +1476,5 @@
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-understanding-challenges-needs-vlhcc2021.json.gz",
-  "source_tags_sha256": "a81b824a1d0493c4e57914dc1ec976f67b884e730789fcc7d14eb77938d3c8f3"
+  "source_tags_sha256": "f38f4278611eb6ea7e881929858e1ac05f71387cc86905a0ced3742b9f641d71"
 }

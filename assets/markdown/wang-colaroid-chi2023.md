@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7 -->
+<!-- Source PDF SHA-256: c9b8c52104df34856548c4d661c5236631a03ccac303b1536f3bd6652fc4cd9b -->
 
 <a id="page-1"></a>
 
@@ -52,13 +52,13 @@ In many domains of programming, code is developed through a cyclical process of 
 
 In this paper, we introduce Colaroid,[1](<#page-2>)<sup>a</sup> temporal-based notebook that enables authors to flexibly track and document multi-stage code construction, and creates tutorials that are interactive, explorable, and IDE-integrated. Colaroid stands out from traditional computational notebook tools in several ways. First, it is embedded within the context of the authentic practice environment — the IDE where programmers can work on any programming activities in their familiar programming environments. Second, each code cell is made up of code changes, allowing programmers to organize the steps based upon pedagogical considerations rather than syntactic constraints. Meanwhile, Colaroid organizes the explanations and code snippets into the computational narrative structure for storytelling, providing output previews of each cell, and allowing users to easily tinker and explore an intermediate step.
 
+> <sup>1</sup>A portmanteau of the words “code,” referring to coding tutorials, and “Polaroid” \[[51](<#page-19>)\], a series of cameras that allowed photographers to easily and rapidly take and print a series of photographs.
+
 We conducted two studies to evaluate the usefulness of Colaroid in the context of web programming tutorials. The first study focuses on the authoring experience where we asked instructors to create web programming tutorials on given topics using Colaroid. The second study explores the reading experience where we compared how readers interact and perceive differently among Colaroid, video, and article tutorials. The results show that the instructors find the process of creating web programming tutorials in Colaroid integrates well into their programming workflow. They found it easy to scaffold the programming process, annotate their thoughts while working on the programming, and post-edit the tutorials after they are done. In particular, they found it useful to not only explain the final solution, but also teach how to think like a programmer, demonstrate authentic practices of decomposing features, and show the hurdles of where things could go wrong. On the readers’ side, Colaroid ensures that the narratives are easy to follow and reproduce. They found it better explains the construction of the program and the impact of code changes between steps. In addition, readers are more willing to explore and tinker with intermediate steps in Colaroid, and thus more engaged with the tutorials. Moreover, readers perceive that the Colaroid tutorials allow both quick skimming and deep dive, and take less time to read in general.
 
 In summary, our work makes the following contributions:
 
 - We contribute an alternative design of temporal computational notebooks that allow programmers to author computational narratives on incremental code construction;
-
-> <sup>1</sup>A portmanteau of the words “code,” referring to coding tutorials, and “Polaroid” \[[51](<#page-19>)\], a series of cameras that allowed photographers to easily and rapidly take and print a series of photographs.
 
 - We implement Colaroid, a system that integrates the idea of temporal computational notebooks and tailors for the context of web programming;
 
@@ -128,9 +128,7 @@ To better collect representative multi-stage tutorials, we came up with the foll
 
 - The tutorial must focus on achieving a specific programming project outcome. Thus we would exclude tutorials that teach configuration processes, such as how to configure a cloud service through GUI or using a given command line tool.
 
-- The tutorial must contain at least two stages that involve coding. As we are interested in the mixture of technical and pedagogical support, we consider a stage to be a piece of
-
-the writing which has both English text which scaffolds the learning and code demonstrating how to achieve an outcome. Stages could also contain other forms of media support (e.g., images, animated GIFs).
+- The tutorial must contain at least two stages that involve coding. As we are interested in the mixture of technical and pedagogical support, we consider a stage to be a piece of the writing which has both English text which scaffolds the learning and code demonstrating how to achieve an outcome. Stages could also contain other forms of media support (e.g., images, animated GIFs).
 
 #### 3.1.2 Multi-Stage Tutorials Linked from Stack Overflow.
 
@@ -152,9 +150,9 @@ As shown in Table [1,](<#page-5>) we identified three different strategies for s
 
 Some tutorials use an iterative build-up strategy, where the current stage iteratively builds upon previous stages. In iterative build-up tutorials, authors may make changes at any line of the codebase. For example, T1 contains a stage where the authors declare a function definition. It then wrapped the function into a class definition. This scaffolding approach is used more in web programming or mobile development tutorials because of spaghetti code \[32\].
 
-In contrast, module-based build-up and aggregated build-up have a complete block of changes that are self-contained. For module-based build-up, the module code blocks are independent of each other. They may be positioned in separate files and do not need to
-
 <a id="page-5"></a>
+
+In contrast, module-based build-up and aggregated build-up have a complete block of changes that are self-contained. For module-based build-up, the module code blocks are independent of each other. They may be positioned in separate files and do not need to be combined in a certain order. We observed module-based build-up for both web programming and data science programming tutorials. For example, T13 is a data science tutorial on fine-tuning models. T13 is implemented with the functional programming paradigm where each stage declares a pure function. This tutorial focuses on how each function is implemented, rather than how functions are combined and used together.
 
 <table>
   <thead>
@@ -261,8 +259,6 @@ In contrast, module-based build-up and aggregated build-up have a complete block
 
 Table 1: Exploratory Analysis Results.
 
-be combined in a certain order. We observed module-based build-up for both web programming and data science programming tutorials. For example, T13 is a data science tutorial on fine-tuning models. T13 is implemented with the functional programming paradigm where each stage declares a pure function. This tutorial focuses on how each function is implemented, rather than how functions are combined and used together.
-
 For aggregated build-up, the new code block can be linearly appended to the end of the previous code base. This scaffolding approach is used more often for data science programming or machine learning programming tutorials.
 
 #### 3.2.2 How do authors structure the code snippets for a stage?
@@ -313,21 +309,19 @@ As our formative studies show, tutorial readers benefit from tutorials that are 
 
 To illustrate the design of Colaroid for documenting incremental code construction and sharing tutorials, we will use a hypothetical scenario. Alice is a tutorial author who wants to create and distribute a tutorial that describes how to build an HTML-based “Flappy Bird”[2](<#page-7>) clone. We will also follow Bob, one reader of Alice’s tutorial. We will use Alice and Bob to illustrate the features of Colaroid in the following subsections.
 
+> <sup>2</sup>[https://en.wikipedia.org/wiki/Flappy\_Bird](<https://en.wikipedia.org/wiki/Flappy_Bird>)
+
 ### 4.2 Overview of Colaroid Notebooks
 
 As shown in Figure [1,](<#page-8>) every Colaroid notebook exists as part of a larger codebase. Specifically, we implemented Colaroid as an extension for Visual Studio Code (VS Code), which is currently the most widely used IDE according to a recent survey[3](<#page-7>). This helps optimize Alice’s authoring experience by allowing her to write a tutorial while staying within her authentic development context. We implemented and tested Colaroid in the context of web programming (due to its ubiquity) but its design could be easily adapted and expanded to more languages and paradigms.
+
+> <sup>3</sup>[https://survey.stackoverflow.co/2022/#section-most-popular-technologies-](<https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment>) [integrated-development-environment](<https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment>)
 
 To start writing her tutorial, Alice first opens her VS Code editor and creates a new directory containing a HTML file with several starter lines, as she would do if she were writing this code outside the context of a tutorial. To create a tutorial, Alice opens the Colaroid tutorial authoring side-panel (shown in Figure 1.B) from the VS Code menu bar. The Colaroid panel is adjacent to Alice’s regular code editor (Figure 1.A). In this panel, Alice sets the tutorial title and adds a short description of the tutorial in natural language and Markdown.
 
 ### 4.3 Cells as Steps in Colaroid
 
-In Jupyter (and most other computational notebooks), code is divided into “cells” where each cell usually represents a single conceptual block. For example, a cell might contain all the code responsible for compressing all of the data that another cell produced. However, this conceptualization of cells is a poor fit for interactive web applications, like the “Flappy Bird” game that Alice is building. This is because web applications rely on event listeners and callbacks, which often results highly inter-dependent “spaghetti code” \[[32](<#page-19>)\]. As a result, the implementation of a single behavior might be split across many places in the code and difficult to isolate into a single cell. This can be particularly challenging in web programming, which relies on three separate languages (HTML,
-
-> <sup>2</sup>[https://en.wikipedia.org/wiki/Flappy\_Bird](<https://en.wikipedia.org/wiki/Flappy_Bird>)
-
-> <sup>3</sup>[https://survey.stackoverflow.co/2022/#section-most-popular-technologies-](<https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment>) [integrated-development-environment](<https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment>)
-
-CSS, and JavaScript) to perform different functions on the same UI elements. For example, the code responsible for properly displaying an element might consist of HTML to define the content of that element (which needs to be placed in the appropriate part of the larger document), CSS to specify its appearance (which is typically in a different file), and multiple distributed segments of JavaScript (which is subject to the aforementioned spaghetti code phenomenon) that describe its dynamics.
+In Jupyter (and most other computational notebooks), code is divided into “cells” where each cell usually represents a single conceptual block. For example, a cell might contain all the code responsible for compressing all of the data that another cell produced. However, this conceptualization of cells is a poor fit for interactive web applications, like the “Flappy Bird” game that Alice is building. This is because web applications rely on event listeners and callbacks, which often results highly inter-dependent “spaghetti code” \[[32](<#page-19>)\]. As a result, the implementation of a single behavior might be split across many places in the code and difficult to isolate into a single cell. This can be particularly challenging in web programming, which relies on three separate languages (HTML, CSS, and JavaScript) to perform different functions on the same UI elements. For example, the code responsible for properly displaying an element might consist of HTML to define the content of that element (which needs to be placed in the appropriate part of the larger document), CSS to specify its appearance (which is typically in a different file), and multiple distributed segments of JavaScript (which is subject to the aforementioned spaghetti code phenomenon) that describe its dynamics.
 
 Further, the order in which tutorial authors may want to explain their code often does not match the order of the code itself. It can me more intuitive to explain a code base through a description of components that are connected either conceptually or by their runtime behavior instead of through a line-by-line discussion from top to bottom.
 
@@ -367,9 +361,9 @@ Thusfar, Alice has created three cells in Colaroid. However, she realizes that s
 
 After creating the tutorial, authors can share the entire project folder with learners so that they can open the tutorial in their own code editors. Authors can also export the tutorial into hosted webpages and static PDFs. Below, we explain how tutorials are stored, and describe several ways to share and distribute tutorials.
 
-#### 4.7.1 Leveraging
+#### 4.7.1 Leveraging Git for Code Versioning.
 
-Git for Code Versioning. Colaroid stores code changes by leveraging the git version control system. Additionally, Colaroid creates a JSON dictionary for storing the tutorial information, including the mapping between the code commit identification, the text annotations and the output interaction recordings. Thus, authors can directly pass the project folder to learners in order for them to open the Colaroid notebook in their own editor. Future front-ends for Git repositories (e.g., GitHub and GitLab) could easily add native support for Colaroid tutorials.
+Colaroid stores code changes by leveraging the git version control system. Additionally, Colaroid creates a JSON dictionary for storing the tutorial information, including the mapping between the code commit identification, the text annotations and the output interaction recordings. Thus, authors can directly pass the project folder to learners in order for them to open the Colaroid notebook in their own editor. Future front-ends for Git repositories (e.g., GitHub and GitLab) could easily add native support for Colaroid tutorials.
 
 #### 4.7.2 Sharing through Cloud Platforms.
 
@@ -409,7 +403,7 @@ Colaroid uses git to manage code versioning and editing and a separate JSON file
 
 We chose to augment git with a separate data file (.colaroid.json) for several reasons. First, this structure allows us to easily remove a step without having to remove the commit. Second, we did not directly store the explanation as the commit messages for easy modification and unlimited word length. Lastly, this approach also allows us to store additional annotations like interactive recording data with each step.
 
-![Figure 2: Colaroid implements code versioning and change propagating through git. Suppose the author wants to edit the first step (e.g., changing HTML page title) and propagate the change to subsequent steps. Colaroid maps steps with the hash ID of the code commits in Git. As shown in phase 1 and phase 2, Colaroid will first check out the main branch into a new branch named “change” and reset the head to the code version that needs to be edited. By doing this, authors would see commit A loaded in their code editor. Next, tutorial authors can make changes directly in the code editor. Once they confirm finishing the edits, Colaroid will create a new commit for the changes and merge commits in the later steps into the change branch.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-002-p010.png)
+![Five-phase diagram of propagating a tutorial edit through Git. Initially the main branch contains commits A and B. Colaroid creates a change branch at A, the author edits A to make A-prime, and later changes are reapplied to produce B-prime. The final phase removes the original main branch and renames change to main. Tutorial step entries are updated to the new commit IDs so the edited page title propagates to later steps.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-002-p010.png)
 
 Figure 2: Colaroid implements code versioning and change propagating through git. Suppose the author wants to edit the first step (e.g., changing HTML page title) and propagate the change to subsequent steps. Colaroid maps steps with the hash ID of the code commits in Git. As shown in phase 1 and phase 2, Colaroid will first check out the main branch into a new branch named “change” and reset the head to the code version that needs to be edited. By doing this, authors would see commit A loaded in their code editor. Next, tutorial authors can make changes directly in the code editor. Once they confirm finishing the edits, Colaroid will create a new commit for the changes and merge commits in the later steps into the change branch.
 
@@ -459,9 +453,9 @@ As shown in Table [2,](<#page-12>) all the participants were able to create a co
 
 #### 6.2.2 Easy to Author.
 
-Next, we examined how participants perceived the authoring experience in Colaroid. In the post-task questionnaire, most participants found the system not difficult to use (9 out of 10) and easy to learn (10 out of 10). Participants commented that the interface is “intuitive” (I1, I6, I7). Participants highlighted
-
 <a id="page-12"></a>
+
+Next, we examined how participants perceived the authoring experience in Colaroid. In the post-task questionnaire, most participants found the system not difficult to use (9 out of 10) and easy to learn (10 out of 10). Participants commented that the interface is “intuitive” (I1, I6, I7). Participants highlighted two features that improve the authoring experience — propagating changes from editing previous steps (I1, I4, I6, I9), and recording interactions on the output (I3, I4, I5, I9). For example, I1 and I6 mentioned that they may want to later polish the code or fix mistakes in previous steps; I3 mentioned the benefits of recording interactions:
 
 Table 2: For study 1, we recruited 10 teaching assistants and senior students who are experienced in web programming.
 
@@ -575,8 +569,6 @@ Table 2: For study 1, we recruited 10 teaching assistants and senior students wh
 
 Figure 3: Results of the post-task questionnaire in study 1.
 
-two features that improve the authoring experience — propagating changes from editing previous steps (I1, I4, I6, I9), and recording interactions on the output (I3, I4, I5, I9). For example, I1 and I6 mentioned that they may want to later polish the code or fix mistakes in previous steps; I3 mentioned the benefits of recording interactions:
-
 I really like how the recorded interaction would track your mouse. I have worked on similar tutorials before for react components. It is not always super apparent to learners on what happened to the output. (I3)
 
 Several participants (I1-3, I6-8, I10) who have used Jupyter notebooks mentioned that the Colaroid notebook reminds them of Jupyter notebook and it is easy to understand the idea behind Colaroid. Participants also mentioned the differences between the two notebooks:
@@ -587,15 +579,13 @@ In the post-task questionnaire, we probed into participants’ prior experience 
 
 <a id="page-13"></a>
 
-Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials
-
 Other participants mentioned their prior experience of authoring article tutorials and video tutorials and compared it with Colaroid tutorials. Participants reported several challenges of authoring article tutorials. For example, I2 reported the challenges of switching context and interleaving the development context when creating article tutorials — “I prefer creating tutorials directly inside the VS Code editor because I don’t have to go back and forth between different authoring tools.” (I2); I6 mentioned that it is a tedious process to supplement all the details in an article tutorial — “I really like to attach screenshots. But in a Medium post, I am not going to screenshot everything.” (I6); I7 said that making an engaging web article is technically hard — “With web articles, I think the biggest problem is that it is hard to create interactive elements in it. Some people are able to make very fancy web articles. But it takes efforts you know” (I7). For authoring video tutorials, participants reported the difficulties in post-editing:
 
 In the past I have had to author documentation videos where I am recording myself going through things step by step for future programmers. But the problem with the video is the editing process. If I made a mistake, if it is just a word cut or something, I will start over and continue on. If it is something I realized later on, I will probably have to go through the entire process again. (I9)
 
-#### 6.2.3 Perceived
+#### 6.2.3 Perceived Benefits for Learners.
 
-Benefits for Learners. Lastly, participants made several comments on how they think the Colaroid tutorials will benefit learners. We categorized the feedbacks into two aspects: potential usage scenarios and advantages over other tutorials.
+Lastly, participants made several comments on how they think the Colaroid tutorials will benefit learners. We categorized the feedbacks into two aspects: potential usage scenarios and advantages over other tutorials.
 
 For potential usage scenarios, most participants mentioned the Colaroid can be useful for instructors to deliver demonstrations to students. For example, I5 mentioned creating lecture notes in Colaroid to make students “easier to follow along in the class.”; I2 and I10 mentioned that students would “get a better sense of the flow by seeing the intermediate process”. Participants also mentioned that Colaroid can be useful for students to handle their assignments, which helps instructors understand “how they scaffold the project and why they do certain things” (I4). In addition, several participants mentioned using Colaroid for collaboration:
 
@@ -613,9 +603,9 @@ Colaroid introduces not only a novel way of authoring tutorials, but also a new 
 
 The study takes place as part of an advanced web programming workshop. The topic of the workshop is building HTML5 games, where the target audience are students who have basic knowledge of HTML5, but have never programmed HTML5 games before. We reached out to students who are currently taking or previously took the web programming class from our institution. In total, we recruited 16 participants for the study. All the participants had formally taken classes on web programming, and none of them had programmed HTML5 games before.
 
-#### 7.1.2 Study
+#### 7.1.2 Study Setup.
 
-Setup. The study consisted of two sessions over a span of two weeks. The final project of the workshop is to build a dinosaur adventure game in HTML5. We provided participants with a set of tutorials on building a Flappy Bird game in HTML5. The dinasaur adventure game in the final project and the Flappy Bird game in the tutorial use similar APIs but are different in several mechanisms. We purposely made the final project challenging so that participants can maximally utilize the tutorials to help them accomplish the goal. We later validated the task difficulty with experts evaluating the project submissions and found that half of the participants were able to satisfy 60% of the final requirements.
+The study consisted of two sessions over a span of two weeks. The final project of the workshop is to build a dinosaur adventure game in HTML5. We provided participants with a set of tutorials on building a Flappy Bird game in HTML5. The dinasaur adventure game in the final project and the Flappy Bird game in the tutorial use similar APIs but are different in several mechanisms. We purposely made the final project challenging so that participants can maximally utilize the tutorials to help them accomplish the goal. We later validated the task difficulty with experts evaluating the project submissions and found that half of the participants were able to satisfy 60% of the final requirements.
 
 The final project is scaffolded into two subgoals. In week one, students were asked to implement the layout and basic animation of the game. In week two, they finished the rest of the game by making the game interactive with users’ input. We scheduled a 60-minute individual session each week with each participant to observe how they interact with the tutorials. In the first session, we provided 10 minutes of training on how to use the tutorial environment. Participants then spent 40 minutes exploring the session goal. After each session, participants were asked to complete a questionnaire asking them to assess their experience of following along with the tutorial. Lastly, after the second session where participants have experienced both conditions, we conducted a reflective interview for comparing the tutorials. All the sessions were conducted virtually using a video conferencing tool. Participants were explicitly told not to work on the game outside of the study session.
 
@@ -627,7 +617,7 @@ Our study used a within-subjects design where participants were given the Colaro
 
 We used GitHub Codespaces for participants to access the tutorials. GitHub Codespaces allows participants to view the Colaroid tutorials in an online VS Code editor which has Colaroid installed. The online VS Code editor is connected to a virtual machine, thus, participants could edit, run, and test the code as if they are doing it locally. We hosted the tutorial projects on GitHub, and created the codespace instance ahead of time. We chose to use GitHub Codespaces because it simplifies the process of sharing the project, installing the Colaroid extension, and setting up the study environment on participants’ local editors. It also avoids inconsistent versions or any incompatibility issues on users’ local editors. To ensure participants have a similar experience in viewing tutorials and project code, we embedded the article tutorial and video tutorial inside the code editor. As shown in Figure [4,](<#page-14>) all three types of tutorials are shown side by side with the main code editor. Participants can open them in new tabs if needed.
 
-![Figure 4: We used GitHub Codespaces for participants to access tutorials. All the three types of tutorials are displayed side by side with the main code editor.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-004-p014.png)
+![GitHub Codespaces study setup. A repository page on the left has the Codespaces launch control highlighted; an arrow leads to three browser-based editors on the right. Each places source code beside one tutorial format: an article with step text, a video player, or the Colaroid notebook with editable code and a rendered Flappy Bird preview.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-004-p014.png)
 
 Figure 4: We used GitHub Codespaces for participants to access tutorials. All the three types of tutorials are displayed side by side with the main code editor.
 
@@ -679,9 +669,9 @@ Next, we investigated how different tutorial modalities communicate the process.
 
 Colaroid tutorials also provide better translation of the process by showing how the step changes affect the output in the tutorial. We observed that when skimming the tutorial, many participants would try the intermediate output in the Colaroid tutorial to understand the outcome of the step and then decide whether they are interested to look into more details. One participant compared the fidelity across three modalities and rated Colaroid as between video and article:
 
-I think it really helps to see someone do it and be able to understand how each step they are doing and make sure I understand how to replicate it. The only issue with video tutorials is sometimes that I don’t have patience to watch them because I read much faster than I can. So sometimes I prefer to skim an article. I think Colaroid is like between the video and article. I
-
 <a id="page-16"></a>
+
+I think it really helps to see someone do it and be able to understand how each step they are doing and make sure I understand how to replicate it. The only issue with video tutorials is sometimes that I don’t have patience to watch them because I read much faster than I can. So sometimes I prefer to skim an article. I think Colaroid is like between the video and article. I could skim through it, but I can understand the materials much more thoroughly and comprehensively like actually being able to watch someone go through every step of the process and explain it. (P2)
 
 Table 3: Perceptions of the three tutorials. Participants rated their agreement with nine questions on a scale from 1 (strongly disagree) to 5 (strongly agree). (M: mean, SD: standard deviation). \*p &lt; 0.05; \*\* p &lt; 0.01
 
@@ -1020,8 +1010,6 @@ Table 3: Perceptions of the three tutorials. Participants rated their agreement 
   </tbody>
 </table>
 
-could skim through it, but I can understand the materials much more thoroughly and comprehensively like actually being able to watch someone go through every step of the process and explain it. (P2)
-
 #### 7.2.4 Does Colaroid lead to better learning outcomes?
 
 In the post-task questionnaire, we asked participants to rate a few statements regarding to the task performance. As shown in Table [3,](<#page-16>) there is no significant differences in terms of participants’ satisfaction to the final artifacts they built. In addition, we did not see a significant differences in terms of how experts’ evaluation of the artifacts regarding to different formats of the tutorials.
@@ -1030,7 +1018,7 @@ In the post-task questionnaire, we asked participants to rate a few statements r
 
 Despite that there no evidence showing that Colaroid tutorials can significantly improve participants’ learning outcome, several participants mentioned Colaroid encourage active learning: “I think I learned by doing. And having an interactive notebook is more suitable for that.” (P20). One participant provided an interesting analogy of the learning experience provided by three tutorial modalities:
 
-![Figure 5: We manually coded the screen recording to understand how students interact with the tutorials. All participants used the full 40 mins on the task. Participants’ engagement time with Colaroid tutorials is significantly more than article tutorials (1) and video tutorials (2). In particular, we noticed that some participants (3) gave up on the video tutorials after watching a segment at the beginning of the study.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-027-p017.png)
+![Participant activity timelines during the 40-minute task. Rows labeled by participant compare Colaroid with an article or video tutorial. Blue segments mark Colaroid use, orange article use, green video use and gray dashed segments work on the dinosaur game. Colaroid use recurs throughout many sessions; article or video use is often more concentrated early. Highlighted groups 1 and 2 compare conditions; callout 3 marks a participant who stops using the video after the opening segment.](https://from.so/assets/markdown/figures/wang-colaroid-chi2023/figure-027-p017.png)
 
 Figure 5: We manually coded the screen recording to understand how students interact with the tutorials. All participants used the full 40 mins on the task. Participants’ engagement time with Colaroid tutorials is significantly more than article tutorials (1) and video tutorials (2). In particular, we noticed that some participants (3) gave up on the video tutorials after watching a segment at the beginning of the study.
 
@@ -1087,8 +1075,6 @@ This material is based upon work supported by the National Science Foundation un
 - \[3\] Raymond PL Buse and Westley R Weimer. 2010. Automatically documenting program changes. In Proceedings of the IEEE/ACM international conference on Automated software engineering. 33–42.
 
 <a id="page-19"></a>
-
-Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials
 
 - \[4\] Paul Cairns and Jeremy Gow. 2005. Literate proving: presenting and documenting formal proofs. In International Conference on Mathematical Knowledge Management. Springer, 159–173. \[5\] Souti Chattopadhyay, Ishita Prasad, Austin Z Henley, Anita Sarma, and Titus Barik. 2020. What’s wrong with computational notebooks? Pain points, needs, and design opportunities. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems. 1–12. \[6\] Charles H Chen and Philip J Guo. 2019. Improv: Teaching programming at scale via live coding. In Proceedings of the Sixth (2019) ACM Conference on Learning@ Scale. 1–10. \[7\] Pei-Yu Chi, Sally Ahn, Amanda Ren, Mira Dontcheva, Wilmot Li, and Björn Hartmann. 2012. MixT: automatic generation of step-by-step mixed media tutorials. In Proceedings of the 25th annual ACM symposium on User interface software and technology. 93–102. \[8\] Fulvio Corno, Luigi De Russis, and Juan Pablo Sáenz. 2019. Towards computational notebooks for IoT development. In Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems. 1–6. \[9\] Barthélémy Dagenais and Martin P Robillard. 2010. Creating and evolving developer documentation: understanding the decisions of open source contributors. In Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering. 127–136. \[10\] Alan Davies, Frances Hooley, Peter Causey-Freeman, Iliada Eleftheriou, and Georgina Moulton. 2020. Using interactive digital notebooks for bioscience and informatics education. PLoS computational biology 16, 11 (2020), e1008326. \[11\] Eve 2020. Eve: Programming designed for humans. [http://witheve.com/](<http://witheve.com/>)
 

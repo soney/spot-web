@@ -2,9 +2,9 @@
   "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
   "title": "Studying the Benefits and Challenges of Immersive Dataflow Programming",
   "publication_id": "studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019",
-  "pdf_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+  "pdf_sha256": "a3d62e8b920dfd30b89f7a48ea852e01f41f2aaf01d72cd799e48b3abdeeba2b",
   "markdown": "publications/zhang-studying-benefits-challenges-vlhcc2019.md",
-  "markdown_sha256": "f938f6b67fd73b7f510c07011300e1c9a1ec37216afdd0281d9422ac7250f110",
+  "markdown_sha256": "9ef9cd94bebe31a148ab80c78d87be8d09749664c5bfbd4862846be4a00d3eb5",
   "pages": 5,
   "blocks": [
     {
@@ -49,11 +49,11 @@
     },
     {
       "node": "311:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 39
+      "characters": 41
     },
     {
       "node": "308:0",
@@ -104,6 +104,14 @@
       "characters": 307
     },
     {
+      "node": "319:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 186
+    },
+    {
       "node": "315:0",
       "role": "H2",
       "pages": [
@@ -131,18 +139,10 @@
       "node": "318:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 605
-    },
-    {
-      "node": "joined-319:0",
-      "role": "P",
-      "pages": [
         1,
         2
       ],
-      "characters": 610
+      "characters": 1031
     },
     {
       "node": "336:0",
@@ -241,7 +241,7 @@
       "characters": 399
     },
     {
-      "node": "joined-348:0",
+      "node": "348:0",
       "role": "P",
       "pages": [
         2,
@@ -354,7 +354,7 @@
       "characters": 308
     },
     {
-      "node": "joined-388:0",
+      "node": "388:0",
       "role": "P",
       "pages": [
         3
@@ -426,7 +426,7 @@
       "characters": 659
     },
     {
-      "node": "joined-213:0",
+      "node": "213:0",
       "role": "P",
       "pages": [
         3,
@@ -475,7 +475,7 @@
       "characters": 41
     },
     {
-      "node": "joined-225:0",
+      "node": "225:0",
       "role": "P",
       "pages": [
         4
@@ -621,12 +621,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 52,
-    "paragraph_fragments_joined": 5,
-    "line_wrap_hyphens_retained": 7,
+    "line_wrap_hyphens_removed": 51,
+    "line_wrap_hyphens_retained": 5,
     "script_runs_positioned": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-studying-benefits-challenges-vlhcc2019.json.gz",
-  "source_tags_sha256": "c40e900bd532179d046e57a480378eae71fa3d53f7205ba8123d11941f13112c"
+  "source_tags_sha256": "c5cd19572bec23bd286f86f978c91a7507f840ab3c97fd125b283b26b969150c"
 }

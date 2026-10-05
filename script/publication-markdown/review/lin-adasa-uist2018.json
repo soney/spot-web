@@ -2,9 +2,9 @@
   "file": "lin-adasa-uist2018.pdf",
   "title": "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features",
   "publication_id": "adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018",
-  "pdf_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+  "pdf_sha256": "06528e3eff09a79b3b1d5cf0becadd29c76a0f50c26a02b33dc087ca6d72e90f",
   "markdown": "publications/lin-adasa-uist2018.md",
-  "markdown_sha256": "a214dfc622d96aa49bb5d86c585e1ae1f7a616f19a1d79deb7c1513b7abeadec",
+  "markdown_sha256": "b15b9b3cff81d13a5b6957dddfdc7ea65e3f5788f9008216f61910fae5b3cfa2",
   "pages": 12,
   "blocks": [
     {
@@ -65,11 +65,11 @@
     },
     {
       "node": "546:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 49
+      "characters": 51
     },
     {
       "node": "555:0",
@@ -94,22 +94,6 @@
         1
       ],
       "characters": 1147
-    },
-    {
-      "node": "545:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 46
-    },
-    {
-      "node": "547:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 89
     },
     {
       "node": "548:0",
@@ -142,6 +126,22 @@
         1
       ],
       "characters": 90
+    },
+    {
+      "node": "545:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 48
+    },
+    {
+      "node": "547:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 91
     },
     {
       "node": "552:0",
@@ -537,7 +537,7 @@
       "characters": 2281
     },
     {
-      "node": "joined-828:0",
+      "node": "828:0",
       "role": "P",
       "pages": [
         6
@@ -686,7 +686,7 @@
       "pages": [
         7
       ],
-      "characters": 321
+      "characters": 1956
     },
     {
       "node": "854:0",
@@ -694,7 +694,7 @@
       "pages": [
         7
       ],
-      "characters": 196
+      "characters": 415
     },
     {
       "node": "855:0",
@@ -719,14 +719,6 @@
         7
       ],
       "characters": 3276
-    },
-    {
-      "node": "888:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 1634
     },
     {
       "node": "889:0",
@@ -1180,7 +1172,7 @@
       ],
       "sha256": "477a9a2fdcb4ea3a1b5f021783698af9e96c2d526e5c6973d069cb6ac34c7f57",
       "kind": "figure",
-      "alt": "Figure 4: The map of the 11.7 miles route. It includes 7 miles highway and 4.7 miles suburban road to accommodate the use of both ACC and LKS."
+      "alt": "Figure 4. The driving-study route is shown as a blue loop around northeastern Ann Arbor, starting and ending near the University of Michigan North Campus. Numbered red markers 1–8 identify route segments around the loop. The 11.7-mile route combines 7 miles of highway and 4.7 miles of suburban roads to support testing adaptive cruise control and lane keeping."
     },
     {
       "path": "figures/lin-adasa-uist2018/figure-005-p009.png",
@@ -1238,13 +1230,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 223,
-    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_removed": 217,
+    "paragraph_fragments_joined": 7,
     "line_wrap_hyphens_retained": 11,
     "reviewed_wrap_repairs": 7,
     "script_runs_positioned": 11
   },
   "review_notes": [],
   "source_tags": "source-tags/lin-adasa-uist2018.json.gz",
-  "source_tags_sha256": "e0ab1a43edd4c03120101e9169f2ac576db14a6eaaceb66ed30372423ade73c1"
+  "source_tags_sha256": "1409597cbeddd675645b131f34c3c89ee6b93d1464324598d11fb80984c0dbff"
 }

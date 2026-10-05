@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b -->
+<!-- Source PDF SHA-256: b741a025116ccdf25d639eb23e3f56538fc0f3608d43e030013cc2b262416e9f -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,9 @@ School of Information University of Michigan Ann Arbor, MI USA {maupande,sbondre
 
 Abstract—The availability of numerous UI components, the promise of accessibility, and cross-platform support have made UI frameworks (e.g., Flutter, Xamarin, React Native) and libraries (e.g., wxPython) quite popular among software developers. However, their widespread use also highlights the need to understand the experiences of programmers with visual impairments with them. We adopted a mixed-methods design comprising two studies to understand the accessibility and challenges of developing interfaces with UI frameworks and libraries. In Study 1, we analyzed 96 randomly-sampled archived threads of Program- L, a mailing list primarily comprising programmers with visual impairments. In Study 2, we interviewed 18 programmers with visual impairments to confirm the findings from Study 1 and gain a deeper understanding of their motivations and experiences in using UI frameworks. Our participants considered UI development essential to their programming responsibilities and sought to acquire relevant skills and expertise. However, accessibility barriers in programming tools and UI frameworks complicated the processes of writing UI code, debugging, testing, and collaborating with sighted colleagues. Our paper concludes with recommendations grounded in empirical findings to improve the accessibility of frameworks and libraries. Index Terms—accessibility, programming, user-interface development, programming tools, UI frameworks
 
-978-1-6654-4214-5/22/$31.00 ©2022 IEEE
+> This work is supported by a gift from Google.
+
+> 978-1-6654-4214-5/22/$31.00 ©2022 IEEE
 
 ## I. INTRODUCTION
 
@@ -40,8 +42,6 @@ Initial research with programmers with visual impairments provided a high-level 
 
 IDEs and text editors rely heavily on visual aids such as syntax highlighting and indentation to assist in source code navigation, organization, and visual search \[13\]–\[15\]. IDEs also organize information visually into panels and windows, which are difficult for programmers with visual impairments to locate quickly relative to sighted programmers. These challenges are amplified by IDE documentation that rely on screenshots and do not list relevant keyboard shortcuts \[16\], \[17\]. For programmers with visual impairments, a common workaround is switching to plaintext editors \[9\], \[10\], \[12\] in conjunction with command-line interfaces (CLIs) for installation, debugging, and version control \[18\]. However, the latter present text in unstructured form without any markup, which poses navigation challenges for screen reader users \[18\].
 
-This work is supported by a gift from Google.
-
 Researchers and practitioners have created audio-based tools to address the challenges with navigation \[14\], \[19\]–\[22\], code comprehension \[19\], editing \[23\], and debugging \[14\], \[24\], \[25\]. Besides programming tools, empirical studies have also investigated collaborative programming activities. In prior work, we reported on how the practices associated with activities like pair-programming and code reviews have evolved to support sighted programmers \[9\]. Thus, programmers with visual impairments often have to drive the collaboration session when working with sighted teammates \[9\]. These accessibility challenges are further complicated by the programmers’ social environment such as project management practices \[9\], \[26\], (un)availability of accommodations \[17\], and interpersonal relations with sighted colleagues \[9\], \[27\].
 
 ### B. Accessibility of UI Development
@@ -62,9 +62,9 @@ We scraped the archived posts dated from January 2018 to December 2021 from the 
 
 The posts and replies are archived as separate web pages in chronological order. We scraped a total of 11,915 web pages (average 248.23 emails per month). We combined the original posts and their replies into threads and saved them as text files for analysis, resulting in 2,607 files.
 
-The first author went through the subject lines to identify threads most likely related to UI development. We identified a total of 726 threads on the topic. Next, we randomly sampled 150 threads over three rounds (50 per round). The approach allowed us to perform qualitative analysis in intervals and reach thematic saturation \[43\]. When coding, if the content of the thread seemed unrelated to GUI development, we removed it from our analysis. In total, we analyzed 96 threads; the breakdown after eliminating unrelated threads was 33, 31, 32 threads in round 1, round 2, and round 3 respectively. The
-
 <a id="page-3"></a>
+
+The first author went through the subject lines to identify threads most likely related to UI development. We identified a total of 726 threads on the topic. Next, we randomly sampled 150 threads over three rounds (50 per round). The approach allowed us to perform qualitative analysis in intervals and reach thematic saturation \[43\]. When coding, if the content of the thread seemed unrelated to GUI development, we removed it from our analysis. In total, we analyzed 96 threads; the breakdown after eliminating unrelated threads was 33, 31, 32 threads in round 1, round 2, and round 3 respectively. The final list of threads was organized alphabetically and indexed to quote from in the present paper. We describe our analysis of the email threads in section III-C.
 
 TABLE I DEMOGRAPHIC CHARACTERISTICS OF THE PARTICIPANTS.
 
@@ -245,8 +245,6 @@ TABLE I DEMOGRAPHIC CHARACTERISTICS OF THE PARTICIPANTS.
     </tr>
   </tbody>
 </table>
-
-final list of threads was organized alphabetically and indexed to quote from in the present paper. We describe our analysis of the email threads in section III-C.
 
 ### B. Study 2: Semi-Structured Interviews
 

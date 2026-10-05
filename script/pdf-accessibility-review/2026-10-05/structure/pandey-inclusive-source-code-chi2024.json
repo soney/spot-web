@@ -1,0 +1,555 @@
+{
+  "file": "pandey-inclusive-source-code-chi2024.pdf",
+  "pdf_sha256": "28fa051edc3f27f558ecde7fda2766cd4787abeabaf36421b556fd5540e4c1a8",
+  "normalization_warnings": "",
+  "page_count": 17,
+  "language": "en-US",
+  "title": "Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments",
+  "structure_elements": 1229,
+  "roles": {
+    "Document": 1,
+    "Sect": 17,
+    "H1": 1,
+    "P": 167,
+    "Link": 206,
+    "H2": 14,
+    "L": 5,
+    "LI": 67,
+    "Lbl": 66,
+    "LBody": 67,
+    "Note": 3,
+    "H3": 13,
+    "H4": 33,
+    "Caption": 8,
+    "Table": 3,
+    "THead": 3,
+    "TR": 48,
+    "TH": 85,
+    "TBody": 3,
+    "TD": 314,
+    "Code": 68,
+    "BlockQuote": 9,
+    "Span": 10,
+    "H5": 13,
+    "H6": 5
+  },
+  "structure_content_references": 14322,
+  "parent_tree_entries": 223,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 915,
+      "vector_operations_artifact": 2,
+      "link_annotations": 23
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1076,
+      "link_annotations": 39
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1132,
+      "link_annotations": 41
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 656,
+      "vector_operations_artifact": 17,
+      "link_annotations": 8
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1051,
+      "vector_operations_artifact": 1,
+      "link_annotations": 15
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 761,
+      "vector_operations_artifact": 18,
+      "link_annotations": 1
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 986,
+      "vector_operations_artifact": 4,
+      "link_annotations": 4
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 977,
+      "vector_operations_artifact": 4,
+      "link_annotations": 7
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1066,
+      "vector_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 15,
+      "vector_operations_artifact": 18,
+      "text_operations_tagged": 792,
+      "link_annotations": 4
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1045,
+      "link_annotations": 15
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1367,
+      "link_annotations": 32
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 941,
+      "link_annotations": 12
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 352
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 449
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 425
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 366
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "433:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "437:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "439:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "444:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "446:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "448:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "498:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "728:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "730:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "735:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "738:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "740:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "781:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "784:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "817:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "829:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "831:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "993:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1005:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1007:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "1015:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1017:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1020:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1225:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1229:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1260:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1262:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1278:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1288:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1296:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1360:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1361:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1364:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1374:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1380:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1385:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1404:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1406:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1543:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1550:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1551:0",
+      "page": 13
+    },
+    {
+      "level": 5,
+      "element": "1552:0",
+      "page": 13
+    },
+    {
+      "level": 6,
+      "element": "1553:0",
+      "page": 13
+    },
+    {
+      "level": 6,
+      "element": "1558:0",
+      "page": 13
+    },
+    {
+      "level": 5,
+      "element": "1564:0",
+      "page": 14
+    },
+    {
+      "level": 6,
+      "element": "1565:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1570:0",
+      "page": 14
+    },
+    {
+      "level": 6,
+      "element": "1571:0",
+      "page": 14
+    },
+    {
+      "level": 6,
+      "element": "1576:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1581:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1582:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1587:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1592:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1597:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1598:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1603:0",
+      "page": 14
+    },
+    {
+      "level": 5,
+      "element": "1609:0",
+      "page": 15
+    },
+    {
+      "level": 5,
+      "element": "1614:0",
+      "page": 15
+    },
+    {
+      "level": 5,
+      "element": "1619:0",
+      "page": 15
+    },
+    {
+      "level": 5,
+      "element": "1624:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "639:0",
+      "page": 15
+    },
+    {
+      "level": 5,
+      "element": "640:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "645:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "647:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "648:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "653:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "659:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "664:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "669:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "674:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "679:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "685:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "690:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "695:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "701:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "706:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "712:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "717:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "722:0",
+      "page": 17
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

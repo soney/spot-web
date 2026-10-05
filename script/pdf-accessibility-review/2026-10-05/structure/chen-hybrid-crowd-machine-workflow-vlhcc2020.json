@@ -1,0 +1,245 @@
+{
+  "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+  "pdf_sha256": "2314b323f248936c1e2d6fe7db9ff69e50d2203a679749b737a9098f83a6b0db",
+  "normalization_warnings": "",
+  "page_count": 8,
+  "language": "en-US",
+  "title": "A Hybrid Crowd-Machine Workflow for Program Synthesis",
+  "structure_elements": 296,
+  "roles": {
+    "Document": 1,
+    "Sect": 8,
+    "H1": 1,
+    "P": 56,
+    "Note": 2,
+    "H2": 8,
+    "Link": 54,
+    "Span": 3,
+    "Figure": 4,
+    "Caption": 5,
+    "L": 4,
+    "LI": 32,
+    "Lbl": 32,
+    "LBody": 32,
+    "H3": 15,
+    "Table": 1,
+    "THead": 1,
+    "TR": 6,
+    "TH": 10,
+    "TBody": 1,
+    "TD": 20
+  },
+  "structure_content_references": 6574,
+  "parent_tree_entries": 62,
+  "form_xobjects_visited": 2,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 644,
+      "image_operations_tagged": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 2,
+      "vector_operations_tagged": 244,
+      "text_operations_tagged": 751,
+      "link_annotations": 16
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 946,
+      "link_annotations": 8
+    },
+    {
+      "page": 4,
+      "vector_operations_tagged": 742,
+      "text_operations_tagged": 731,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 31,
+      "link_annotations": 7
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 1026,
+      "link_annotations": 6
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 1058,
+      "link_annotations": 1
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 1071,
+      "link_annotations": 4
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 414,
+      "link_annotations": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "143:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "370:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "405:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "407:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "410:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "148:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "164:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "166:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "168:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "432:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "434:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "436:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "481:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "492:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "498:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "502:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "504:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "515:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "519:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "529:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "531:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "534:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "536:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "538:0",
+      "page": 7
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "374:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Fig. 1. Bashon allows users to create Bash commands from natural language.\nIt uses a hybrid workflow that integrates crowd workers and an AI for program\nsynthesis. In this example, the user types a command in natural language:\n“List files that are modified more than 30 days ago under the css directory” and\nBashon proposes three Bash commands. The user can press ‘Run’ to execute\nany of the proposed commands",
+      "actual_text": ""
+    },
+    {
+      "element": "390:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Fig. 2. System diagram: This diagram plots both the original Tellina (blue) and Bashon’s (green) workflow. In Tellina’s workflow, first, a natural language\nquery (1) is sent to an automated entity extraction process (2) which outputs a list of entities, their associated types, and the entity extracted query template (3).\nThen, the neural network (4) translates the query and the extracted entities into a list of commands (5) that is sent back to the user (6). In Bashon’s workflow,\nthe natural language queries first go through the original Tellina system, with automated entity extraction (1-5). The results from this are then evaluated by\ncrowd workers (7). If they are incorrect (8), they then go to crowd workers for entity extraction (9). Commands resulting from this re-extraction process go\nback to crowd workers for a final validation step (7), and the results of this are sent back to the end users (10).",
+      "actual_text": ""
+    },
+    {
+      "element": "430:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 3. Pipeline compares automated Tellina and crowd components. For 50 queries, Tellina entity extraction has 29.00% precision and 22.64% accuracy; crowd extraction has 85.99% precision and 91.99% accuracy (both marked with three asterisks in the source). Extracted entities and templates feed translation, producing candidate commands. Tellina execution filters invalid results, with 60.3% accuracy. A query such as show only .pdf files and the divided file-system outputs then go to crowd validation, which has 77.04% accuracy and returns valid commands.",
+      "actual_text": ""
+    },
+    {
+      "element": "438:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Fig. 4. User interface of entity extraction task. Crowd workers can add one\nentity at a time by typing the entity they recognize in the query to the text\nbox (1), and then select the type from a drop down list (2).",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

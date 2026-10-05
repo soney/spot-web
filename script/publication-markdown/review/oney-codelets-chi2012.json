@@ -2,9 +2,9 @@
   "file": "oney-codelets-chi2012.pdf",
   "title": "Codelets: Linking Interactive Documentation and Example Code in the Editor",
   "publication_id": "codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012",
-  "pdf_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+  "pdf_sha256": "d5e42aca50103365ff5742f7bff7609cc53cc78f098b9e32acb89d0281c2ae21",
   "markdown": "publications/oney-codelets-chi2012.md",
-  "markdown_sha256": "16bf384fb1c27985cf8130f876560b45c1f1b9a4245365909430fab546161c77",
+  "markdown_sha256": "c3306321c24ae604361fd910c11a26e02a989d62033bd1376a0eae7ac39b77ae",
   "pages": 10,
   "blocks": [
     {
@@ -57,11 +57,11 @@
     },
     {
       "node": "82:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 96
+      "characters": 98
     },
     {
       "node": "161:0",
@@ -128,7 +128,7 @@
       "characters": 15
     },
     {
-      "node": "joined-81:0",
+      "node": "81:0",
       "role": "P",
       "pages": [
         1
@@ -296,7 +296,7 @@
       "characters": 1084
     },
     {
-      "node": "joined-195:0",
+      "node": "195:0",
       "role": "P",
       "pages": [
         3,
@@ -310,7 +310,7 @@
       "pages": [
         3
       ],
-      "characters": 232
+      "characters": 351
     },
     {
       "node": "197:0",
@@ -433,7 +433,7 @@
       "characters": 498
     },
     {
-      "node": "joined-215:0",
+      "node": "215:0",
       "role": "P",
       "pages": [
         4,
@@ -459,19 +459,11 @@
     },
     {
       "node": "219:0",
-      "role": "Figure",
+      "role": "Table",
       "pages": [
         5
       ],
-      "characters": 1180
-    },
-    {
-      "node": "220:0",
-      "role": "Caption",
-      "pages": [
-        5
-      ],
-      "characters": 307
+      "characters": 6084
     },
     {
       "node": "222:0",
@@ -662,9 +654,10 @@
       "node": "371:0",
       "role": "P",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 279
+      "characters": 648
     },
     {
       "node": "372:0",
@@ -681,14 +674,6 @@
         6
       ],
       "characters": 163
-    },
-    {
-      "node": "375:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 368
     },
     {
       "node": "376:0",
@@ -747,7 +732,7 @@
       "characters": 566
     },
     {
-      "node": "joined-383:0",
+      "node": "383:0",
       "role": "P",
       "pages": [
         7
@@ -760,7 +745,7 @@
       "pages": [
         7
       ],
-      "characters": 256
+      "characters": 375
     },
     {
       "node": "385:0",
@@ -814,9 +799,10 @@
       "node": "392:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 382
+      "characters": 478
     },
     {
       "node": "393:0",
@@ -833,14 +819,6 @@
         7
       ],
       "characters": 411
-    },
-    {
-      "node": "396:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 95
     },
     {
       "node": "397:0",
@@ -1156,7 +1134,7 @@
       "characters": 4626
     }
   ],
-  "tagged_content_items": 5002,
+  "tagged_content_items": 5031,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1199,7 +1177,7 @@
       ],
       "sha256": "dc86f954f8780e0390a0e691ff64e2c1352fa917cd10e55e2fc9e0540c899e03",
       "kind": "figure",
-      "alt": "Figure 3. A Codelet inspired by CSSPortal’s Rounded Corner Generator. As the developer moves the slider, it modifies the code and illustrates which parts of code are changing."
+      "alt": "CSS Rounded Corners Codelet beside a CSS editor. The helper offers an all-corners radius slider and separate controls for the four corners; links connect those controls to highlighted border-radius declarations in the source. Adjusting the helper therefore changes the corresponding CSS values."
     },
     {
       "path": "figures/oney-codelets-chi2012/figure-004-p003.png",
@@ -1230,20 +1208,6 @@
       "alt": "Figure 5: grouped bar charts compare the control group in blue with Codelets in red. Mean completion time falls from about 22.2 minutes to 12.7 minutes; mean browser refresh count falls from about 19 to 9. Error bars show variation. Both reductions are statistically significant."
     },
     {
-      "path": "figures/oney-codelets-chi2012/figure-006-p005.png",
-      "node": "219:0",
-      "page": 5,
-      "bbox": [
-        52.2400016784668,
-        59.439998626708984,
-        559.52001953125,
-        125.83999633789062
-      ],
-      "sha256": "fcfe8a4278677bd5ba543ba0ecd16d6a2627fccbbb1834aec9ce939d2dc748f1",
-      "kind": "figure",
-      "alt": "Table 1. Task completion time and number of refreshes used for testing during part A. Each value is a mean followed by its standard deviation in parentheses. Time is measured in minutes; refreshes are counts. Step 1: Codelets time 2.09 (0.78), control time 4.04 (1.84); the time difference is significant at p < 0.01. Codelets refreshes 1.70 (0.67), control refreshes 2.90 (1.66). Step 2: Codelets time 1.75 (1.22), control time 2.54 (1.04). Codelets refreshes 1.0 (0.00), control refreshes 2.44 (0.88); the refresh-count difference is significant at p < 0.01. Step 3: Codelets time 5.57 (2.72), control time 10.40 (3.91); the time difference is significant at p < 0.01. Codelets refreshes 4.30 (3.59), control refreshes 8.78 (4.55); the refresh-count difference is significant at p < 0.05. Step 4: Codelets time 3.26 (1.73), control time 5.26 (3.46). Codelets refreshes 2.3 (2.11), control refreshes 4.78 (3.63). The source marks the p < 0.01 comparisons with two asterisks and green shading, and the p < 0.05 comparison with one asterisk and blue shading. Other comparisons have no significance marking."
-    },
-    {
       "path": "figures/oney-codelets-chi2012/figure-007-p007.png",
       "node": "384:0",
       "page": 7,
@@ -1255,7 +1219,7 @@
       ],
       "sha256": "d11710daf5f636fb741126c64ebda62b19eb5509131188347119a71f295e1898",
       "kind": "figure",
-      "alt": "Figure 7. If the user edits the region of code attached to a Codelet so that the helper becomes out of sync with the attached code, the Codelet asks the user before the helper makes any code changes."
+      "alt": "A Codelet displays the warning 'I don’t understand the attached code. May I overwrite it?' above the example-code area. Buttons labeled Overwrite, Don’t and Never let the programmer permit this overwrite, decline it, or disable future overwrites. This appears when the attached code cannot be understood by the helper."
     },
     {
       "path": "figures/oney-codelets-chi2012/figure-008-p007.png",
@@ -1272,7 +1236,26 @@
       "alt": "Figure 8. For consistency, Codelets have a standard mechanism for displaying warnings with text and any number of buttons. Helpers can take advantage of their semantic understanding of what their attached example code is supposed to do to display warnings even if the code is syntactically correct. This Codelet, for reading a file in Java, displays an error because the programmer has not specified a filename."
     }
   ],
-  "tables": [],
+  "tables": [
+    {
+      "source_table_id": "219:0",
+      "source_pages": [
+        5
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 9,
+      "cell_count": 31,
+      "header_count": 15,
+      "empty_cell_count": 1,
+      "has_spans": true,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "219:0"
+    }
+  ],
   "code_layout": [
     {
       "node": "372:0",
@@ -1294,13 +1277,13 @@
   ],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 355,
-    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_removed": 318,
+    "paragraph_fragments_joined": 6,
     "reviewed_wrap_repairs": 9,
     "line_wrap_hyphens_retained": 29,
     "script_runs_positioned": 6
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-codelets-chi2012.json.gz",
-  "source_tags_sha256": "5d17454793123461ace0b63b6dc60398e046f8ebbe7ee66bf5bed17c86fb3943"
+  "source_tags_sha256": "8fbdaa450ee3041c4fe9e5d57c3c542d6918d4180fad7134b67668c55e18803a"
 }

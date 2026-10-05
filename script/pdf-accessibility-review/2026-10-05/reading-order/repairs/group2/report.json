@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-05",
+  "files": 22,
+  "pages": 256,
+  "changes": {
+    "frontmatter": 18,
+    "join_continuation": 111,
+    "author_affiliation_reading_order": 4,
+    "footnote_after_callout_paragraph": 2,
+    "code_example_after_setup": 1,
+    "artifact_running_header": 16,
+    "note_before_list_setup": 1,
+    "figure_before_list_setup": 1,
+    "example_link_after_heading": 1,
+    "associate_footnotes_and_tables": 1,
+    "pair_figures_and_captions": 1,
+    "reconstruct_table": 1,
+    "place_tables_at_relevant_sections": 1,
+    "table_cell_actual_text_spacing": 40,
+    "repair_formula_paragraph_and_heading_hierarchy": 1,
+    "move_experimental_design_note": 1,
+    "list_role_constraint": 4,
+    "inline_footnote_marker": 1,
+    "note_after_callout_paragraph": 1
+  },
+  "scope": "22 assigned PDFs, plus supplemental list-role corrections in Sifter and ConstraintJS (originally group3). Group3 supplied a final PuzzleMe footnote-marker correction.",
+  "verification": {
+    "all_256_pages_pixel_identical_at_144dpi": true,
+    "all_original_content_operators_accounted_for": true,
+    "native_structure_and_parent_tree_checks_passed": true,
+    "role_fix_validation": "Fresh veraPDF confirms all introduced list-role failures resolved in Sifter, ConstraintJS and Multi-touch; only pre-existing missing PDF/UA identification remains in those three.",
+    "actual_reader_scope": "Three sampled final PDFs through Firefox156.0.1 AT-SPI; see at/results.json. Orca speech attempt partial. No full-corpus screen-reader claim."
+  },
+  "results": [
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "pages": 18,
+      "before_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+      "after_sha256": "d80e08b25eef20eb62e1440b2fab669a0285a237ebf61a34a75f6fe7c7ed5e01",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 6
+      }
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "pages": 12,
+      "before_sha256": "87f3b95a64e8967938baeda7608cff0f1903f92715f828681253f58f943c2b02",
+      "after_sha256": "9e128450c8a3d8f22ab779e5678dea39e2fbeae8da09d6abd5a09823f810e175",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 7,
+        "author_affiliation_reading_order": 1
+      }
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pages": 10,
+      "before_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+      "after_sha256": "335ce666bf4da31eccb70b5cb29ddc6b6be954743d6c5066a30265603689b8fd",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "footnote_after_callout_paragraph": 1,
+        "join_continuation": 7
+      },
+      "installed_pdf_sha256": "f51e2f0f9f341fc8d8f9935071908af18109bc93f9047c6bd8d23b6d93be63dc",
+      "subsequent_reading_order_repair": {
+        "report": "../parammacros-followup.json",
+        "description": "Two list continuation fragments placed inside their preceding P; adjacent superscripts 4/5 clarified by native text equivalent XPath (notes 4 and 5). Earlier validation remains bound to after_sha256; follow-up proves final native/archive synchronization, structure and 10-page pixel equality."
+      }
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pages": 4,
+      "before_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+      "after_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "code_example_after_setup": 1,
+        "join_continuation": 1
+      }
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "pages": 6,
+      "before_sha256": "217d7b531ab88f72dc2114a88745c088df77e7c1f08f91be3da3db1768f21cd5",
+      "after_sha256": "f7ea16b1aaaf6f1d4c7da3de9068a3f8aa5ec47dfd8efa3b5024ea80d001cdc7",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "join_continuation": 2
+      }
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "pages": 13,
+      "before_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+      "after_sha256": "bd388581e41482e0741c3412b8e1c6eb4e109d817c044a1cf45b9757a452b7ed",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "join_continuation": 6
+      }
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "pages": 20,
+      "before_sha256": "a56d43b25b521a8421d400bfbed323b2dfa0ac9a2fd84350eba3cbb6dcc20157",
+      "after_sha256": "ef7b39901a6158b68160ab892a4f2a0a77f7f57017e70059f261982b14698d9b",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "artifact_running_header": 2,
+        "frontmatter": 1,
+        "join_continuation": 6,
+        "note_before_list_setup": 1
+      }
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pages": 4,
+      "before_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+      "after_sha256": "32567037858f95110c873353f068d865b87e090019cce2925682d28bac7a849f",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "join_continuation": 1
+      }
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "pages": 12,
+      "before_sha256": "3782daf68a2bc19df120fbdf893581f09aa5dd725517a76f90c05f7d70629dc0",
+      "after_sha256": "50343ad631528e897587c563f1734ec02db0331f87028131a478bce73869b881",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "artifact_running_header": 1,
+        "frontmatter": 1,
+        "join_continuation": 9,
+        "figure_before_list_setup": 1,
+        "list_role_constraint": 1
+      }
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "pages": 10,
+      "before_sha256": "7acf76c528b3775ea3dcd0e44a2f4e894d2042d6ddea8a4398baf80697f4d87b",
+      "after_sha256": "e08984d3401f93bc7cc65593e50363d3558456bd25f81560d34f8df97aa1922a",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "example_link_after_heading": 1,
+        "join_continuation": 5,
+        "author_affiliation_reading_order": 3
+      }
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "pages": 13,
+      "before_sha256": "387a8b6bba4ebb551e488b4e3049a50865b8e5580fb79e7a4aebc67eac5f448a",
+      "after_sha256": "c46262ed04415d851b24bccde1d2047339222571c75b74aea2e896395831e4a8",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "associate_footnotes_and_tables": 1,
+        "join_continuation": 4,
+        "pair_figures_and_captions": 1
+      }
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pages": 6,
+      "before_sha256": "29628a27ce2f63add0df7c87581bdc3f3bb1244040350b11ee28f457505eb172",
+      "after_sha256": "92a3f43a4f5872ec900aa2250773273ad6550acd1ac74347b21926ececaf32aa",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 2
+      }
+    },
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "pages": 30,
+      "before_sha256": "2e5cfb67711765554e3a16fecc8e1d12360281478b81e707f2c1e7f3073486da",
+      "after_sha256": "117ffda39327166d86c0f04b9ebf2305b2f8edeb00c659e0319441365d1d0a57",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "artifact_running_header": 7,
+        "frontmatter": 1,
+        "join_continuation": 11
+      }
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "pages": 24,
+      "before_sha256": "5ce3dcd475786865461a38b193ef5bd6bd97a256c29aa1ab092b34c700b7a5de",
+      "after_sha256": "691ed5b7a7babcc16b46ad2e995be62729db7fb1159081e7b1af5c8b94164277",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "artifact_running_header": 2,
+        "frontmatter": 1,
+        "join_continuation": 7,
+        "inline_footnote_marker": 1,
+        "note_after_callout_paragraph": 1
+      }
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pages": 4,
+      "before_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+      "after_sha256": "e8a7e36c69a9e45fe27a0ba97beaa386809d514d25efbed83ba98718680a3291",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 2
+      }
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pages": 7,
+      "before_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+      "after_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "artifact_running_header": 4,
+        "frontmatter": 1,
+        "reconstruct_table": 1,
+        "place_tables_at_relevant_sections": 1,
+        "join_continuation": 3,
+        "table_cell_actual_text_spacing": 40
+      }
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "pages": 12,
+      "before_sha256": "76f72aa40b425550eafbc00daa824bac79b3a548d863f9e556bbdd1d23f4ac94",
+      "after_sha256": "7f9990643ee0fd17af9444791d1d470fe0dd186dbec3f17995134a800b5989bc",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 6
+      }
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "pages": 3,
+      "before_sha256": "3672105391da493920c8132646fcf179cfe7ea6163ba54c9e7d0493ba7b8415c",
+      "after_sha256": "206a1c3d5feb53c09168d80a11df851ef339add86d223e879327ab8db4e17af9",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "footnote_after_callout_paragraph": 1,
+        "join_continuation": 1
+      }
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "pages": 16,
+      "before_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+      "after_sha256": "985f2cb7f3a3cb0131b4714a9b64675f6f4026321244fd64e9f777c4261425e6",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "repair_formula_paragraph_and_heading_hierarchy": 1,
+        "join_continuation": 9
+      }
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "pages": 12,
+      "before_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+      "after_sha256": "720c78ddcbb102753c45c1b8e85ee85d8c484734667a43e67dfb782e0f71ad02",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "join_continuation": 9
+      }
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "pages": 10,
+      "before_sha256": "3bb8524367198b6b862d91ff8375d7eb32b1be4126841173d3c6a67daec01002",
+      "after_sha256": "4bae50530f0352e6e484f7fe9bee64d02461a09f363bfb784f4f19ceb603388d",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "frontmatter": 1,
+        "move_experimental_design_note": 1,
+        "join_continuation": 5
+      }
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "pages": 10,
+      "before_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+      "after_sha256": "c3aa023cf89f1ef6d0bb3705587400d08d2d34be0dc02175d6cfee55719550a7",
+      "pixel_identical_144dpi": true,
+      "all_content_ops_accounted_for": true,
+      "structure_checks_passed": true,
+      "change_counts": {
+        "join_continuation": 2
+      }
+    }
+  ],
+  "supplemental_role_constraint_repairs": "role-fixes/report.json",
+  "details": "detailed-changes.json.gz"
+}

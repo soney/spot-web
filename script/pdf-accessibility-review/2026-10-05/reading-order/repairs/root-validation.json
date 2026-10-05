@@ -1,0 +1,68 @@
+[
+  {
+    "file": "xu-how-pairing-code-chilbw2023.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "chen-edcode-vlhcc2020.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "oney-zoomboard-chi2013.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+    "structure": true,
+    "issues": {},
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  },
+  {
+    "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "structure": true,
+    "issues": {
+      "warning:page_has_no_semantic_text": 1
+    },
+    "archive_sync": true,
+    "sync_issues": [],
+    "appearance_changed_pages": []
+  }
+]

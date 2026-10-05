@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/zhang-flowmatic-uist2020.pdf",
+          "size": 23375537
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 314278,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231586739,
+          "finish": 1791231595644,
+          "duration": "00:00:08.905",
+          "difference": 8905
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231586576,
+        "finish": 1791231595695,
+        "duration": "00:00:09.119",
+        "difference": 9119
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "nonCompliantPdfaCount": 0,
+        "successfulJobCount": 1
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "zhang-flowmatic-uist2020.pdf",
+  "pdf_sha256": "dcc5808b4db8bb629538edcd7be02c2e52bf729fc9ef9e38fa6b2cb43a8b60cb",
+  "stderr": ""
+}

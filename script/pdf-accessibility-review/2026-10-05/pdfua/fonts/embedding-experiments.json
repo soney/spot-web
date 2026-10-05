@@ -1,0 +1,77 @@
+{
+  "source": "assets/pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+  "source_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+  "dpi": 144,
+  "candidates": [
+    {
+      "method": "croscore",
+      "file": "/tmp/spot-ua-final/fonts/croscore.pdf",
+      "sha256": "d2c518eb7ad0ad9de5df1d56a00b294e7bd667b64c52ece79c63b4c8ac48ca22",
+      "pages": [
+        {
+          "page": 1,
+          "mupdf_identical": false,
+          "mupdf_changed_pixels": 249935,
+          "poppler_identical": true,
+          "poppler_changed_pixels": 0
+        },
+        {
+          "page": 2,
+          "mupdf_identical": false,
+          "mupdf_changed_pixels": 184312,
+          "poppler_identical": true,
+          "poppler_changed_pixels": 0
+        },
+        {
+          "page": 3,
+          "mupdf_identical": false,
+          "mupdf_changed_pixels": 285328,
+          "poppler_identical": true,
+          "poppler_changed_pixels": 0
+        },
+        {
+          "page": 4,
+          "mupdf_identical": false,
+          "mupdf_changed_pixels": 279059,
+          "poppler_identical": true,
+          "poppler_changed_pixels": 0
+        }
+      ]
+    },
+    {
+      "method": "mupdf-builtin",
+      "file": "/tmp/spot-ua-final/fonts/mupdf-builtin.pdf",
+      "sha256": "abb6bd551b03abb2249ea00f511d0ac1ca1edd4f7b553ee38d581d2de2c7d450",
+      "pages": [
+        {
+          "page": 1,
+          "mupdf_identical": true,
+          "mupdf_changed_pixels": 0,
+          "poppler_identical": false,
+          "poppler_changed_pixels": 251172
+        },
+        {
+          "page": 2,
+          "mupdf_identical": true,
+          "mupdf_changed_pixels": 0,
+          "poppler_identical": false,
+          "poppler_changed_pixels": 185299
+        },
+        {
+          "page": 3,
+          "mupdf_identical": true,
+          "mupdf_changed_pixels": 0,
+          "poppler_identical": false,
+          "poppler_changed_pixels": 287144
+        },
+        {
+          "page": 4,
+          "mupdf_identical": true,
+          "mupdf_changed_pixels": 0,
+          "poppler_identical": false,
+          "poppler_changed_pixels": 280199
+        }
+      ]
+    }
+  ]
+}

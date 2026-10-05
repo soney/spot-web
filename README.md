@@ -76,7 +76,7 @@ _plugins/
   structured_data.rb          # the JSON-LD and Google Scholar tags in each page's <head>, from the same records
   splatter.rb                 # builds /assets/images/splatter.svg (one paint splat per alum) and the {% splatter %} tag that shows it
 assets/                       # hand-written CSS (no preprocessor), cv.js, images, paper PDFs
-  markdown/                  # raw Markdown downloads and their figure images
+  markdown/                  # raw Markdown downloads, figure images, and offline ZIPs
   js/webmcp.js                # the imperative WebMCP tools for AI agents (the declarative one is in the CV markup)
   mcp/                        # one line of Liquid each; generates the tools' JSON
 robots.txt, llms.txt          # crawler policy and the agent-facing site index, both rendered from the data
@@ -407,6 +407,7 @@ record of a venue gets the higher CV number):
 | `venue` | yes | Must equal a `venues.yaml` `id` |
 | `pdf` | optional | PDF link on the paper page, list rows, and CV. Name the file `<surname>-<short-title>-<venue><year>.pdf`; the link's download name is generated separately |
 | `markdown` | optional | Markdown download on the individual paper page only, plus `markdown_path` in WebMCP's `get_publication`. Relative to `assets/`, for example `markdown/zhang-codestream-chi2026.md` |
+| `markdown_bundle` | optional | ZIP containing Markdown and local figure images for offline reading, on the individual paper page only, plus `markdown_bundle_path` in WebMCP. Relative to `assets/`, for example `markdown/zhang-codestream-chi2026.zip` |
 | `links` | optional | Companion links on the paper page and in WebMCP's `get_publication`: a list of `{url, description}`. Use a root-relative site URL such as `/assets/supplements/expresso-table-i.html`, or a full `https://` URL. The description is plain link text. These links do not change the PDF, DOI, BibTeX, or citation metadata |
 | `doi` | optional | Adds a "Publisher page" link on the paper page, and `doi`/`url` lines to the BibTeX entry. Bare identifier — `10.1145/3411763.3451617`, not the full URL |
 | `student_authors` | optional | Subset of `authors`. **CV only** — underlines those names when the CV's student toggle is on |
@@ -476,6 +477,13 @@ part of publication lists or the CV. Image URLs must be absolute so they still
 work when someone saves the Markdown outside the site. Those images require
 an internet connection when reading the downloaded file.
 
+For offline figures, also add `markdown_bundle: markdown/<file>.zip`. The
+"Markdown + figures (ZIP)" download contains the Markdown document at its root
+and images in `figures/<file>/`. Extract the whole ZIP before opening the
+Markdown; keep that folder structure so the images resolve. Both downloads
+include the same figure descriptions. Their source-PDF and publisher links
+still require an internet connection.
+
 The current downloads come from the reviewed conversions in
 `script/publication-markdown/`, which remains excluded from the site. After
 regenerating a conversion and its manifest, refresh the downloadable copies:
@@ -485,10 +493,19 @@ python script/publication-markdown/export_downloads.py
 ```
 
 The exporter checks source Markdown, PDF and image hashes, copies the referenced
-images, and changes image destinations to use `_config.yml`'s `url` and
-`baseurl`. It leaves the source text and local drafts unchanged. Run it again
+images, changes single-file image destinations to use `_config.yml`'s `url`
+and `baseurl`, and creates reproducible ZIPs with local image paths. It leaves
+the source text and local drafts unchanged. Run it again
 if the site's canonical URL changes. This is a maintenance command, not an
 extra build step; Jekyll serves the files already in `assets/markdown/`.
+
+Keep published image URLs stable when changing a conversion. `image-paths.json`
+binds existing figure names to their source nodes and records older table and
+callout images retained for previously downloaded Markdown. Current ZIPs use
+semantic tables and inline callout text in the corresponding places. Rebind
+source hashes only after checking that each reviewed crop or transcription
+still matches the PDF; a reading-order change alone does not justify renaming
+the images that follow it.
 
 A full example:
 

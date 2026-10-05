@@ -1,0 +1,111 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/chen-sifter-imx2020.pdf",
+          "size": 2872579
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 105,
+              "failedRules": 1,
+              "passedChecks": 250514,
+              "failedChecks": 1,
+              "tags": [
+                "metadata"
+              ],
+              "ruleSummaries": [
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "5",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "metadata"
+                  ],
+                  "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+                  "object": "MainXMPPackage",
+                  "test": "containsPDFUAIdentification == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/metadata[0](284 0 obj PDMetadata)/XMPPackage[0]",
+                      "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+                      "errorArguments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is not compliant with Validation Profile requirements.",
+            "compliant": false
+          }
+        ],
+        "processingTime": {
+          "start": 1791228339912,
+          "finish": 1791228342442,
+          "duration": "00:00:02.530",
+          "difference": 2530
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791228339839,
+        "finish": 1791228342468,
+        "duration": "00:00:02.629",
+        "difference": 2629
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 1,
+        "compliantPdfaCount": 0,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "chen-sifter-imx2020.pdf",
+  "pdf_sha256": "bc19fca4193013d013a2d8e5c94b6b99e23a9dee0be91b71768d61df74aa87a8"
+}

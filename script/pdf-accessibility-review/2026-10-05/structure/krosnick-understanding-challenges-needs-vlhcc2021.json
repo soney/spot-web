@@ -1,0 +1,394 @@
+{
+  "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+  "pdf_sha256": "3eb44ddab765986a1db3e5dc81410ea0e7160c39877daf65f736efeb492ad0dd",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts",
+  "structure_elements": 454,
+  "roles": {
+    "Part": 1,
+    "H1": 1,
+    "P": 113,
+    "Span": 119,
+    "Link": 102,
+    "Sect": 2,
+    "H2": 10,
+    "Note": 3,
+    "L": 6,
+    "LI": 14,
+    "Lbl": 14,
+    "LBody": 14,
+    "H3": 11,
+    "H4": 16,
+    "Div": 6,
+    "H5": 6,
+    "Figure": 8,
+    "Caption": 8
+  },
+  "structure_content_references": 1133,
+  "parent_tree_entries": 120,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 149,
+      "link_annotations": 12
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 168,
+      "link_annotations": 23
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 577,
+      "text_operations_artifact": 14,
+      "image_operations_tagged": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 172,
+      "link_annotations": 4
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 130,
+      "image_operations_tagged": 3,
+      "link_annotations": 11
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 539,
+      "text_operations_artifact": 3,
+      "link_annotations": 8
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 655,
+      "text_operations_artifact": 9,
+      "link_annotations": 5
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 152,
+      "link_annotations": 4
+    },
+    {
+      "page": 9,
+      "vector_operations_artifact": 8,
+      "text_operations_tagged": 233,
+      "link_annotations": 29
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 12,
+      "image_operations_tagged": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 11,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 20,
+      "link_annotations": 1
+    },
+    {
+      "page": 12,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 26,
+      "link_annotations": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "411:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "625:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "548:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "549:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "551:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "555:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "559:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "560:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "649:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "721:0",
+      "page": 2
+    },
+    {
+      "level": 5,
+      "element": "728:0",
+      "page": 3
+    },
+    {
+      "level": 5,
+      "element": "732:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "722:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "723:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "724:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "725:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "726:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "727:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "664:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "666:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "807:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "808:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "809:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "810:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "811:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "750:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "752:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "760:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "812:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "819:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "830:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "935:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "938:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "928:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "929:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "930:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "857:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "858:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "907:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "864:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "867:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "869:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "870:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "518:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "716:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\".",
+      "actual_text": ""
+    },
+    {
+      "element": "720:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted.",
+      "actual_text": ""
+    },
+    {
+      "element": "799:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems.",
+      "actual_text": ""
+    },
+    {
+      "element": "803:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\".",
+      "actual_text": ""
+    },
+    {
+      "element": "525:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "On the left side of the figure is a portion of an Amazon search results page for \"toothpaste\", and on the right side is the Chrome dev tools showing the DOM. The figure illustrates the steps one might take to query the page to find the first search result with an orange \"Best Seller\" label, and then get the name of the element. The full jQuery selector is $('.a-badge-text:contains(\"Best Seller\")')[0].closest('div[data-component-type=\"s-search-result\"]').find('h2 span.a-text-normal'), as indicated at the top of the figure. The first step is to query for the first \"Best Seller\" elements on the page, which can be done with the query $('.a-badge-text:contains(\"Best Seller\")')[0]; the corresponding UI element on the page and node in the DOM are highlighted with a pink border and labeled with the number \"1\". The next step is to query for the ancestor of this \"Best Seller\" label that represents the full search result item, which can be done by appending to the chain the query .closest('div[data-component-type=\"s-search-result\"]'); the corresponding portion of the page and node in the DOM are highlighted with a green border and labeled with the number \"2\". Finally, we query this full search result item for its descendant that represents the item name, which can be done by appending to the chain the query .find('h2 span.a-text-normal'); the item name on the page and the DOM node are highlighted with a blue border and labeled with \"3\".",
+      "actual_text": ""
+    },
+    {
+      "element": "529:0",
+      "role": "Figure",
+      "page": 11,
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. The right side shows the current webpage (the \"Programming\" topic page of the Medium website) with Chromium dev tools at the bottom showing the DOM tree. The web page shows a list of Medium article items, each containing information like the article title, a short summary, the article author, the publication the article is published in, the date, and the estimated time to read. The user's cursor is currently on line 5 of the code, which includes the command page.$$(\".bh.b.bj.aq a\") to select elements on the page. The page then highlights with a blue border elements matching this selector -- namely, the article author and what publication it's included in (if any); for the first article, the author \"Owen Williams\" and the publication \"in Debugger\" are highlighted; for the second article, the author \"Soner Yildirim\" is highlighted (there is no publication for this article); for the third article, the author \"Mike Diaz\" is highlighted (there is no publication for this article); for the fourth article, the author \"Faheem un nisa\" and the publication \"in gradeup\" are highlighted.",
+      "actual_text": ""
+    },
+    {
+      "element": "533:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "The figure shows the interface for our prototype web automation IDE. The left side shows the code editor. In the background in the middle is the current webpage (a pet profile page on the Petfinder website) with Chromium dev tools at the bottom showing the DOM tree. Popping out from the right is the UI snapshots view with Chromium dev tools at the bottom showing the DOM tree. The UI snapshots view is currently showing snapshots for line 14, which has the command page.$$(\"dd.txt\") for selecting bits of information from the pet's profile (e.g., whether the dog is house-trained, the dog's health condition, adoption fee, etc). Line 14 is contained within a for-loop that is looping through different dog profiles on the Petfinder website. Therefore, the snapshots for line 14 are profile pages for the different dogs, shown side-by-side horizontally -- here, iteration i=0 of the loop is showing snapshots for the dog named \"Stella\", and iteration i=1 is showing snapshots for the dog named \"Molly\". Both snapshots have highlighted with a green border the UI elements corresponding to CSS selector \"dd.txt\". For \"Stella\" these are the text content for the categories \"House-trained\", \"Health\", \"Good in a home with\", \"Prefers a home without\", and \"Adoption fee\". For \"Molly\", only one element has a green-border -- the text content for \"Health\"; this is because Molly has only one category, while Stella has 5. This explains the error that is shown in the code editor -- on line 15 the programmer evaluates infoItems[1] to try to select the Health category's content, which is the second category for the first dog they saw (Stella). However, infoItems[1] returns undefined for Molly because there is only 1 item in infoItems.",
+      "actual_text": ""
+    },
+    {
+      "element": "537:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "The figure shows the interface for the Cypress UI automation environment. The left shows a vertical list of automation commands for selecting and operating on UI elements, as well as HTTP requests and responses. The right side of the figure shows a dog profile page on the Petfinder website. Currently the user has selected command 40 (get UI element with CSS selector [data-test=\"Pet_Breeds\"]) from the list of automation commands, which has visibly pinned this command, giving it a purple background and a pin icon. This then shows the website's UI state at this point in the script execution and highlights the corresponding UI element on the website -- the breed text - \"Pit Bull Terrier Mix\".",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

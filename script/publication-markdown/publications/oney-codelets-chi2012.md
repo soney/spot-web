@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec -->
+<!-- Source PDF SHA-256: d5e42aca50103365ff5742f7bff7609cc53cc78f098b9e32acb89d0281c2ae21 -->
 
 <a id="page-1"></a>
 
@@ -16,7 +16,7 @@ Adobe Systems
 
 San Francisco, CA 94103 USA joel.brandt@adobe.com
 
-CHI’12, May 5–10, 2012, Austin, Texas, USA. Copyright 2012 ACM 978-1-4503-1015-4/12/05...$10.00.
+> CHI’12, May 5–10, 2012, Austin, Texas, USA. Copyright 2012 ACM 978-1-4503-1015-4/12/05...$10.00.
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.
 
@@ -92,7 +92,7 @@ Warnings and related Codelets — After Jane finds a border radius and color she
 
 Tweaking parameters — Jane then goes back to the $fx animation Codelet and tunes the parameters of her animation, again using the helper interface to modify code. As with the Codelet for generating rounded CSS corners, she finds that experimenting is an effective way to learn how the code works \[29\]. After she tunes her animation, she realizes that although she animates the sidebar, the reading pane isn’t re-claiming its space. In fact, she needs to animate both the sidebar and the reading pane. To animate the reading pane, she copies the code that animated the sidebar and pastes it immediately below. The attached Codelet is copied and pasted as well but Jane now feels comfortable with the $fx library, so she decides to edit her code manually rather than through the helper’s interface. As she edits her code, the helper’s interface updates itself automatically to reflect the parameters she has entered.
 
-![Figure 3. A Codelet inspired by CSSPortal’s Rounded Corner Generator. As the developer moves the slider, it modifies the code and illustrates which parts of code are changing.](../figures/oney-codelets-chi2012/figure-003-p003.png)
+![CSS Rounded Corners Codelet beside a CSS editor. The helper offers an all-corners radius slider and separate controls for the four corners; links connect those controls to highlighted border-radius declarations in the source. Adjusting the helper therefore changes the corresponding CSS values.](../figures/oney-codelets-chi2012/figure-003-p003.png)
 
 Figure 3. A Codelet inspired by CSSPortal’s Rounded Corner Generator. As the developer moves the slider, it modifies the code and illustrates which parts of code are changing.
 
@@ -132,9 +132,52 @@ Step 1 asked participants to create a basic jQM page. The example used by the Co
 
 Figure 5. The overall time spent and number of refreshes in part A. Participants with Codelets completed tasks significantly faster and with significantly fewer refreshes than participants using Web examples.
 
-![Table 1. Task completion time and number of refreshes used for testing during part A. Each value is a mean followed by its standard deviation in parentheses. Time is measured in minutes; refreshes are counts. Step 1: Codelets time 2.09 (0.78), control time 4.04 (1.84); the time difference is significant at p &lt; 0.01. Codelets refreshes 1.70 (0.67), control refreshes 2.90 (1.66). Step 2: Codelets time 1.75 (1.22), control time 2.54 (1.04). Codelets refreshes 1.0 (0.00), control refreshes 2.44 (0.88); the refresh-count difference is significant at p &lt; 0.01. Step 3: Codelets time 5.57 (2.72), control time 10.40 (3.91); the time difference is significant at p &lt; 0.01. Codelets refreshes 4.30 (3.59), control refreshes 8.78 (4.55); the refresh-count difference is significant at p &lt; 0.05. Step 4: Codelets time 3.26 (1.73), control time 5.26 (3.46). Codelets refreshes 2.3 (2.11), control refreshes 4.78 (3.63). The source marks the p &lt; 0.01 comparisons with two asterisks and green shading, and the p &lt; 0.05 comparison with one asterisk and blue shading. Other comparisons have no significance marking.](../figures/oney-codelets-chi2012/figure-006-p005.png)
-
-Table 1. Task completion time and number of refreshes used for testing during part A. Time is given in minutes, Refreshes is given as a count. Standard deviation is shown in parentheses. Columns are highlighted in green\*\* if the difference in means is significant at p &lt; 0.01, in blue\* at p &lt; 0.05.
+<table>
+  <caption>Table 1. Task completion time and number of refreshes used for testing during part A. Time is given in minutes, Refreshes is given as a count. Standard deviation is shown in parentheses. Columns are highlighted in green** if the difference in means is significant at p &lt; 0.01, in blue* at p &lt; 0.05.</caption>
+  <thead>
+    <tr>
+      <th id="pdf-table-219:0-64aff34a-461:0-02e100ad" scope="col" rowspan="2"></th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe" scope="col" colspan="2">Step 1</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641" scope="col" colspan="2">Step 2</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038" scope="col" colspan="2">Step 3</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564" scope="col" colspan="2">Step 4</th>
+    </tr>
+    <tr>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step1-time-21f5768d" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe">Time</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step1-refreshes-0692ea2b" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe"># Refreshes</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step2-time-421b55c2" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641">Time</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step2-refreshes-46a39f4a" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641"># Refreshes</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step3-time-a5b90178" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038">Time</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step3-refreshes-36bfea13" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038"># Refreshes</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step4-time-01614dd5" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564">Time</th>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-step4-refreshes-8bad3e76" scope="col" headers="pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564"># Refreshes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc" scope="row" headers="pdf-table-219:0-64aff34a-461:0-02e100ad">Codelets</th>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe pdf-table-219:0-64aff34a-codelets-table1-step1-time-21f5768d">2.09 (0.78)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe pdf-table-219:0-64aff34a-codelets-table1-step1-refreshes-0692ea2b">1.70 (0.67)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641 pdf-table-219:0-64aff34a-codelets-table1-step2-time-421b55c2">1.75 (1.22)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641 pdf-table-219:0-64aff34a-codelets-table1-step2-refreshes-46a39f4a">1.0 (0.00)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038 pdf-table-219:0-64aff34a-codelets-table1-step3-time-a5b90178">5.57 (2.72)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038 pdf-table-219:0-64aff34a-codelets-table1-step3-refreshes-36bfea13">4.30 (3.59)*</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564 pdf-table-219:0-64aff34a-codelets-table1-step4-time-01614dd5">3.26 (1.73)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-codelets-46dce0dc pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564 pdf-table-219:0-64aff34a-codelets-table1-step4-refreshes-8bad3e76">2.3 (2.11)</td>
+    </tr>
+    <tr>
+      <th id="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360" scope="row" headers="pdf-table-219:0-64aff34a-461:0-02e100ad">Control</th>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe pdf-table-219:0-64aff34a-codelets-table1-step1-time-21f5768d">4.04 (1.84)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step1-50f415fe pdf-table-219:0-64aff34a-codelets-table1-step1-refreshes-0692ea2b">2.90 (1.66)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641 pdf-table-219:0-64aff34a-codelets-table1-step2-time-421b55c2">2.54 (1.04)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step2-78d46641 pdf-table-219:0-64aff34a-codelets-table1-step2-refreshes-46a39f4a">2.44 (0.88)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038 pdf-table-219:0-64aff34a-codelets-table1-step3-time-a5b90178">10.40 (3.91)**</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step3-6e2bf038 pdf-table-219:0-64aff34a-codelets-table1-step3-refreshes-36bfea13">8.78 (4.55)*</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564 pdf-table-219:0-64aff34a-codelets-table1-step4-time-01614dd5">5.26 (3.46)</td>
+      <td headers="pdf-table-219:0-64aff34a-codelets-table1-control-5c92e360 pdf-table-219:0-64aff34a-codelets-table1-step4-2e3ea564 pdf-table-219:0-64aff34a-codelets-table1-step4-refreshes-8bad3e76">4.78 (3.63)</td>
+    </tr>
+  </tbody>
+</table>
 
 In step 2, the Codelet used by the Codelet group was static and contained the same example code as the official documentation used by the control group. One might expect the times for both groups to be nearly identical. However, users in the Codelet group finished this task an average of 47s faster, with fewer page refreshes.
 
@@ -184,7 +227,9 @@ A Codelet’s header (lines 2–7 in Figure 6) contains meta-information about t
 
 The majority of a Codelet’s content is in its body (lines 8– 22 in Figure 6.) The body contains examples, pages, and links to related Codelets. An example, in the context of the Codelet API, is a snippet of code. A Codelet may have any number of examples, but only one example at a time will be shown in the editor. The Codelet in Figure 6 has one example, in lines 9–11.
 
-An example may also contain any number of mark elements. Marks are sections of examples that are intended to be changeable (the entire example can be edited manually by the user; in addition mark regions are easy to change and track programmatically). Marks may be nested and can
+<a id="page-7"></a>
+
+An example may also contain any number of mark elements. Marks are sections of examples that are intended to be changeable (the entire example can be edited manually by the user; in addition mark regions are easy to change and track programmatically). Marks may be nested and can specify what values they expect. For example, a mark for a variable may specify that it will only accept characters and digits. If two marks have the same id, those marks will have the same value as long as the example code is in sync with its helper. The Codelet in Figure 6 has two marks: name and value. If name is x and value is 1, the example code is ‘var x = 1;’
 
 ```
 01   <codelet>
@@ -214,10 +259,6 @@ An example may also contain any number of mark elements. Marks are sections of e
 
 Figure 6. An implementation of a short Codelet. Implementation-wise, Codelets are similar to webpages, but also have a special API for interacting with the editor.
 
-<a id="page-7"></a>
-
-specify what values they expect. For example, a mark for a variable may specify that it will only accept characters and digits. If two marks have the same id, those marks will have the same value as long as the example code is in sync with its helper. The Codelet in Figure 6 has two marks: name and value. If name is x and value is 1, the example code is ‘var x = 1;’
-
 In addition to example elements, a Codelet may contain any number of page elements. Pages make up the content of the Codelet’s helper. They are written in standard HTML and may be stylized and made interactive with CSS and JavaScript. Only one page is shown at a time but the name of every page is shown in the leftmost column of the Codelet. By splitting content into separate pages, Codelets may reduce the space taken up by their helpers. The Codelet in Figure 6 has one page, on lines 12–15. It also imports two external JavaScript files (lines 16 &amp; 17) and includes JavaScript on lines 18–21 to make the Codelet interactive.
 
 One feature not shown in Figure 4 is the ability to link to other relevant Codelets by adding a link element to the body of the Codelet with a URL (or local file path) and title for the linked Codelet. The list of related Codelets is shown in a collapsible panel on the right hand side of the Codelet, as seen in Figure 4e.
@@ -234,7 +275,7 @@ Codelets may then use provided parsers to gain semantic information about the co
 
 Codelets may also add event listeners – functions that are called when code is edited. Event listeners may be called when user’s code has changed, when a mark value has changed, or when the user’s code has moved to a new place. These event listeners allow Codelet helpers to update as the user modifies example code. For example, the attach\_input\_to\_mark function used in Figure 6 (lines 19 &amp; 20) automatically adds event listeners to update HTML input elements’ values (lines 13 &amp; 14) if the programmer edits code manually.
 
-![Figure 7. If the user edits the region of code attached to a Codelet so that the helper becomes out of sync with the attached code, the Codelet asks the user before the helper makes any code changes.](../figures/oney-codelets-chi2012/figure-007-p007.png)
+![A Codelet displays the warning 'I don’t understand the attached code. May I overwrite it?' above the example-code area. Buttons labeled Overwrite, Don’t and Never let the programmer permit this overwrite, decline it, or disable future overwrites. This appears when the attached code cannot be understood by the helper.](../figures/oney-codelets-chi2012/figure-007-p007.png)
 
 Figure 7. If the user edits the region of code attached to a Codelet so that the helper becomes out of sync with the attached code, the Codelet asks the user before the helper makes any code changes.
 
@@ -248,15 +289,13 @@ To illustrate, again, consider the example in Figure 6. If the user edits the co
 
 #### Annotations
 
-Annotations are augmentations of the coding environment. Codelets provide annotations for highlighting code fragments and for drawing arrows between helpers and code fragments. To specify what should be highlighted or pointed at, annotations use mark IDs. The attach\_input\_to\_mark function used in Figure 6 (lines 19 &amp; 20) automatically adds annotations to draw lines between
+<a id="page-8"></a>
+
+Annotations are augmentations of the coding environment. Codelets provide annotations for highlighting code fragments and for drawing arrows between helpers and code fragments. To specify what should be highlighted or pointed at, annotations use mark IDs. The attach\_input\_to\_mark function used in Figure 6 (lines 19 &amp; 20) automatically adds annotations to draw lines between HTML input elements and the regions of code they manipulate, as illustrated in Figures 1 and 3.
 
 ![Figure 8. For consistency, Codelets have a standard mechanism for displaying warnings with text and any number of buttons. Helpers can take advantage of their semantic understanding of what their attached example code is supposed to do to display warnings even if the code is syntactically correct. This Codelet, for reading a file in Java, displays an error because the programmer has not specified a filename.](../figures/oney-codelets-chi2012/figure-008-p007.png)
 
 Figure 8. For consistency, Codelets have a standard mechanism for displaying warnings with text and any number of buttons. Helpers can take advantage of their semantic understanding of what their attached example code is supposed to do to display warnings even if the code is syntactically correct. This Codelet, for reading a file in Java, displays an error because the programmer has not specified a filename.
-
-<a id="page-8"></a>
-
-HTML input elements and the regions of code they manipulate, as illustrated in Figures 1 and 3.
 
 #### Warnings
 

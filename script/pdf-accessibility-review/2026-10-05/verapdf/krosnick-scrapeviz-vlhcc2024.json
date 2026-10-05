@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/krosnick-scrapeviz-vlhcc2024.pdf",
+          "size": 651002
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 157045,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231507071,
+          "finish": 1791231509733,
+          "duration": "00:00:02.662",
+          "difference": 2662
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231506914,
+        "finish": 1791231509766,
+        "duration": "00:00:02.852",
+        "difference": 2852
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+  "pdf_sha256": "6e3f3370a49e6463f8d8c3fc88cce8363cd9a31fea710f9d7c6e8545dd84f00e",
+  "stderr": "Oct 05, 2026 4:18:27 PM org.verapdf.pd.font.cff.CFFFontProgram containsROS\nWARNING: The Top DICT does not begin with ROS operator\nOct 05, 2026 4:18:28 PM org.verapdf.pd.font.cff.CFFCIDFontProgram readCharSet\nWARNING: Invalid embedded cff font. Charset range exceeds number of glyphs\n"
+}

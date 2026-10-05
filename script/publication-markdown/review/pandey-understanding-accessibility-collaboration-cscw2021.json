@@ -2,9 +2,9 @@
   "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
   "title": "Understanding Accessibility and Collaboration in Programming for People with Visual Impairments",
   "publication_id": "understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021",
-  "pdf_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+  "pdf_sha256": "7765e40de31c1cb9ece60bd768413ed08cd73dc3a7e5a342effa738a73907bb8",
   "markdown": "publications/pandey-understanding-accessibility-collaboration-cscw2021.md",
-  "markdown_sha256": "48d7e0e1c9c2f42130e1c7c222b692ce48bc5a078934a270acdc74a6e06ea552",
+  "markdown_sha256": "15e6ed8dac841a3590a655b24d750c008e7b03e1ac1f9005cdc19a6e8cbcad43",
   "pages": 30,
   "blocks": [
     {
@@ -80,7 +80,7 @@
       "characters": 17
     },
     {
-      "node": "joined-372:0",
+      "node": "372:0",
       "role": "P",
       "pages": [
         1,
@@ -304,15 +304,7 @@
       "pages": [
         5
       ],
-      "characters": 770
-    },
-    {
-      "node": "1002:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 298
+      "characters": 1069
     },
     {
       "node": "960:0",
@@ -336,7 +328,15 @@
       "pages": [
         6
       ],
-      "characters": 729
+      "characters": 549
+    },
+    {
+      "node": "1031:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 181
     },
     {
       "node": "963:0",
@@ -374,17 +374,18 @@
       "node": "967:0",
       "role": "P",
       "pages": [
-        6
-      ],
-      "characters": 1255
-    },
-    {
-      "node": "969:0",
-      "role": "P",
-      "pages": [
+        6,
         7
       ],
-      "characters": 140
+      "characters": 1140
+    },
+    {
+      "node": "968:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 257
     },
     {
       "node": "970:0",
@@ -448,10 +449,18 @@
       "pages": [
         7
       ],
-      "characters": 865
+      "characters": 585
     },
     {
-      "node": "joined-1275:0",
+      "node": "1314:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 281
+    },
+    {
+      "node": "1275:0",
       "role": "P",
       "pages": [
         7,
@@ -465,7 +474,15 @@
       "pages": [
         8
       ],
-      "characters": 764
+      "characters": 650
+    },
+    {
+      "node": "1301:0",
+      "role": "Note",
+      "pages": [
+        8
+      ],
+      "characters": 115
     },
     {
       "node": "1278:0",
@@ -773,7 +790,15 @@
       "pages": [
         13
       ],
-      "characters": 1360
+      "characters": 1111
+    },
+    {
+      "node": "1413:0",
+      "role": "Note",
+      "pages": [
+        13
+      ],
+      "characters": 250
     },
     {
       "node": "1354:0",
@@ -846,7 +871,15 @@
       "pages": [
         15
       ],
-      "characters": 626
+      "characters": 480
+    },
+    {
+      "node": "1394:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 147
     },
     {
       "node": "1362:0",
@@ -862,15 +895,15 @@
       "pages": [
         16
       ],
-      "characters": 585
+      "characters": 1131
     },
     {
-      "node": "1364:0",
-      "role": "P",
+      "node": "1377:0",
+      "role": "Note",
       "pages": [
         16
       ],
-      "characters": 897
+      "characters": 353
     },
     {
       "node": "1365:0",
@@ -1066,7 +1099,7 @@
       "characters": 1361
     },
     {
-      "node": "joined-1059:0",
+      "node": "1059:0",
       "role": "P",
       "pages": [
         19,
@@ -1091,7 +1124,7 @@
       "characters": 2122
     },
     {
-      "node": "joined-1062:0",
+      "node": "1062:0",
       "role": "P",
       "pages": [
         20,
@@ -1135,17 +1168,18 @@
       "node": "1068:0",
       "role": "P",
       "pages": [
-        21
+        21,
+        22
       ],
-      "characters": 684
+      "characters": 1671
     },
     {
-      "node": "1069:0",
-      "role": "P",
+      "node": "1072:0",
+      "role": "Note",
       "pages": [
         22
       ],
-      "characters": 1076
+      "characters": 91
     },
     {
       "node": "1070:0",
@@ -1161,7 +1195,15 @@
       "pages": [
         22
       ],
-      "characters": 1325
+      "characters": 1213
+    },
+    {
+      "node": "1128:0",
+      "role": "Note",
+      "pages": [
+        22
+      ],
+      "characters": 113
     },
     {
       "node": "1154:0",
@@ -1252,14 +1294,6 @@
       "characters": 8914
     },
     {
-      "node": "1455:0",
-      "role": "P",
-      "pages": [
-        24
-      ],
-      "characters": 22
-    },
-    {
       "node": "1456:0",
       "role": "Caption",
       "pages": [
@@ -1274,14 +1308,6 @@
         25
       ],
       "characters": 9926
-    },
-    {
-      "node": "1576:0",
-      "role": "P",
-      "pages": [
-        25
-      ],
-      "characters": 22
     },
     {
       "node": "1577:0",
@@ -1365,11 +1391,11 @@
     },
     {
       "node": "1556:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         26
       ],
-      "characters": 58
+      "characters": 60
     },
     {
       "node": "1653:0",
@@ -2100,7 +2126,7 @@
       "characters": 95
     }
   ],
-  "tagged_content_items": 2029,
+  "tagged_content_items": 2021,
   "all_tagged_content_accounted_for_once": true,
   "assets": [],
   "tables": [
@@ -2162,12 +2188,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 82,
-    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_removed": 69,
     "line_wrap_hyphens_retained": 10,
     "script_runs_positioned": 38
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-understanding-accessibility-collaboration-cscw2021.json.gz",
-  "source_tags_sha256": "048a47dc2db8aec65e41e794ee4d7be41556592cccd95c33b03a131a458bf2f0"
+  "source_tags_sha256": "4cbfe6ff6ae5d27a0f96d340f45861daf12de3feed95bfe379ad5ccdbdea8708"
 }

@@ -1,0 +1,112 @@
+{
+  "file": "chen-expert-crowd-support-ci2016.pdf",
+  "pdf_sha256": "ccb706263b3430d2c5a6dedaa8e00744e3761731640a82bf40e93ae39ef7a0b9",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Expert Crowd Support Systems for Software Developers",
+  "structure_elements": 125,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 26,
+    "H2": 5,
+    "H3": 3,
+    "Table": 3,
+    "THead": 3,
+    "TR": 12,
+    "TH": 24,
+    "TBody": 3,
+    "TD": 36,
+    "Caption": 3,
+    "Span": 1
+  },
+  "structure_content_references": 2261,
+  "parent_tree_entries": 4,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 2,
+      "text_operations_artifact": 4,
+      "text_operations_tagged": 509
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 12,
+      "vector_operations_artifact": 15,
+      "text_operations_tagged": 679
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 11,
+      "vector_operations_artifact": 68,
+      "text_operations_tagged": 532
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 541
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "41:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "43:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "47:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "49:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "78:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "157:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "164:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "166:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "168:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

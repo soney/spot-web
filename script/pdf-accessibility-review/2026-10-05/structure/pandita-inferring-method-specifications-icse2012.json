@@ -1,0 +1,246 @@
+{
+  "file": "pandita-inferring-method-specifications-icse2012.pdf",
+  "pdf_sha256": "84df8e846d00d424509370c166ada7244ee7c6eb63516a0b8c08226ef69e725b",
+  "normalization_warnings": "",
+  "page_count": 11,
+  "language": "en-US",
+  "title": "Inferring Method Specifications from Natural Language API Descriptions",
+  "structure_elements": 497,
+  "roles": {
+    "Document": 1,
+    "Sect": 11,
+    "H1": 1,
+    "P": 97,
+    "L": 7,
+    "LI": 55,
+    "LBody": 55,
+    "H2": 10,
+    "Note": 7,
+    "Lbl": 52,
+    "H3": 10,
+    "Figure": 4,
+    "Caption": 8,
+    "Table": 2,
+    "THead": 2,
+    "TR": 14,
+    "TH": 31,
+    "TBody": 2,
+    "TD": 124,
+    "Code": 3,
+    "Formula": 1
+  },
+  "structure_content_references": 9304,
+  "parent_tree_entries": 11,
+  "form_xobjects_visited": 4,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 832
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 847
+    },
+    {
+      "page": 3,
+      "image_operations_tagged": 1,
+      "vector_operations_tagged": 658,
+      "text_operations_tagged": 666,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 910,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 757,
+      "vector_operations_artifact": 97,
+      "vector_operations_tagged": 630
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 531,
+      "text_operations_tagged": 802,
+      "vector_operations_artifact": 5
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 911,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 891,
+      "vector_operations_artifact": 156
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 912
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 855
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 917
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "144:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "155:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "186:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "187:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "189:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "193:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "206:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "208:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "210:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "223:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "229:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "391:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "397:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "409:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "414:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "495:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "498:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "509:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "516:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "518:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "521:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "198:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1. Java forum question titled Download A File NullPointerException. The poster reports java.lang.NullPointerException in a servlet download method. The code sets text/plain and Content-Disposition headers, obtains ServletContext ctx, then calls InputStream is = ctx.getResourceAsStream(\"sample.txt\"). This line is underlined in red. The subsequent while loop calls is.read(bytes) and writes bytes to the response output stream. The poster asks for help fixing the exception. The example illustrates that a missing resource can make getResourceAsStream return null before read is called.",
+      "actual_text": ""
+    },
+    {
+      "element": "204:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 2. Code-contract inference pipeline. API documents pass through Parser, Pre-processor and Text Analysis Engine to produce Specifications in first-order-logic expressions. A Post-processor uses Domain Dictionaries to produce Refined Specifications. A Code Contract Generator uses Mappings to turn these refined expressions into Code Contracts. Arrows connect these stages in this order.",
+      "actual_text": ""
+    },
+    {
+      "element": "364:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3: an AND tree combines four requirements for a property name. The name must be a valid identifier; the identifier must be no longer than 32 characters, start with a lowercase letter a through z, and consist only of lowercase letters, digits zero through nine, or an underscore. The final character-category condition uses an OR node.",
+      "actual_text": ""
+    },
+    {
+      "element": "375:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5. Compacted constraint tree for the property name. An AND root joins three requirements: Name is not greater than 32 characters; Name begins with a letter a–z; and Name consists of an OR choice of letters a–z, numbers 0–9, and underscore. The first branch shows negation above greater.",
+      "actual_text": ""
+    },
+    {
+      "element": "430:0",
+      "role": "Formula",
+      "page": 7,
+      "alt": "Precision equals TP divided by the sum of TP and FP. Recall equals TP divided by the sum of TP and FN. F-score equals two times Precision times Recall, divided by the sum of Precision and Recall. TP, FP, and FN denote true positives, false positives, and false negatives.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

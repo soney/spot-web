@@ -1,0 +1,204 @@
+{
+  "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+  "pdf_sha256": "99e52d8a11ca858f98ec00f3eee19340ccf632463579eaa456f95bc3ee685b8b",
+  "normalization_warnings": "",
+  "page_count": 5,
+  "language": "en-US",
+  "title": "Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation",
+  "structure_elements": 209,
+  "roles": {
+    "Document": 1,
+    "Sect": 5,
+    "H1": 1,
+    "P": 33,
+    "Link": 60,
+    "H2": 10,
+    "L": 4,
+    "LI": 24,
+    "Lbl": 24,
+    "LBody": 24,
+    "Figure": 4,
+    "Note": 3,
+    "Span": 6,
+    "Formula": 2,
+    "Caption": 3,
+    "H3": 2,
+    "H4": 3
+  },
+  "structure_content_references": 4492,
+  "parent_tree_entries": 65,
+  "form_xobjects_visited": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 743,
+      "vector_operations_artifact": 1,
+      "vector_operations_tagged": 10,
+      "link_annotations": 18
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 13,
+      "text_operations_tagged": 1236,
+      "link_annotations": 11
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 16,
+      "image_operations_tagged": 4,
+      "text_operations_tagged": 916,
+      "vector_operations_artifact": 2,
+      "link_annotations": 6
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 13,
+      "image_operations_tagged": 6,
+      "text_operations_tagged": 649,
+      "link_annotations": 1
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 16,
+      "text_operations_tagged": 937,
+      "link_annotations": 24
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "145:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "148:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "150:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "155:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "157:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "159:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "309:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "320:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "348:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "352:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "368:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "370:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "372:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "375:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "379:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "381:0",
+      "page": 5
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "161:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Creative Commons Attribution (CC BY) license logo.",
+      "actual_text": ""
+    },
+    {
+      "element": "323:0",
+      "role": "Formula",
+      "page": 2,
+      "alt": "Equation 1. J star is the minimum over the lateral offset function d of s of J smooth of d plus J length of d plus lambda bias. Subject to d of zero equals zero, d of L equals zero, and the absolute value of d of s is at most W.",
+      "actual_text": ""
+    },
+    {
+      "element": "327:0",
+      "role": "Formula",
+      "page": 2,
+      "alt": "Equation 2. J star minimizes the sum, from k equals zero to N minus one, of smoothness, progress, tracking, and corridor costs. The smoothness cost takes control u sub k; the other costs take next state x sub k plus one. Optimization variables are controls u from zero to N minus one and states x from one to N. Constraints: x sub k plus one equals f of x sub k and u sub k; the initial state x sub zero is given; u sub k belongs to the admissible control set U, and x sub k belongs to the admissible state set X.",
+      "actual_text": ""
+    },
+    {
+      "element": "341:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1. Four panels compare simulated and human cursor motion through sine-wave and square-wave tunnels. Orange simulated speed repeatedly rises and falls in the sine tunnel, broadly matching the blue human speed trend. In the square tunnel, the blue human speed has higher, sharper peaks while simulated speed is lower and smoother. Both simulated and human trajectories follow the tunnel shapes; the square-turn paths round the corners. Shaded bands show variability.",
+      "actual_text": ""
+    },
+    {
+      "element": "363:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2. Three cascading-menu examples compare human and simulated cursor trajectories from a green starting point to a red target in a submenu. The highlighted orange and blue paths bend diagonally between the menus; the submenu target height increases across the examples. Both path sets show similar curved routes through the menu corridor.",
+      "actual_text": ""
+    },
+    {
+      "element": "365:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 3. Three icon-grid examples show lasso selection of green target icons among gray distractors. Highlighted human and simulated paths loop around the target clusters while avoiding neighboring icons. The paths bend around different target shapes and remain close to the target boundaries.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

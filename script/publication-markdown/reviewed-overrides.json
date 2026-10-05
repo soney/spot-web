@@ -1,13 +1,16 @@
 [
   {
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
     "node": "923:0",
     "page": 40,
     "kind": "reviewed_pseudocode_transcription",
     "review": "Visually read the final PDF page at 144 DPI. Fraction linearized as 1 / (10^i), maintaining mathematical meaning; indentation reconstructed from printed indentation. No executable-language claim.",
     "text": "for i=0,1,2,3:\n    inc = 1 / (10^i)\n    best_offset = 0\n    for offset = -10*inc,-9*inc,…,9*inc,10*inc:\n        if score(ρ+offset) > score(ρ+best_offset):\n            best_offset = offset\n    ρ = ρ+best_offset",
-    "caption": "Figure 16 - Parameter Optimization Algorithm"
+    "caption": "Figure 16 - Parameter Optimization Algorithm",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "738:0",
@@ -15,8 +18,11 @@
     "role": "Note",
     "text": "5 An alternative (and problematic) way to define P(e) is as (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(e where (∃s s.t. e ∈ DISCUSSED(s)))). That is, by dividing by the total number of discussed events of any type, rather than the total number of that type. The problem with this definition is that there are some events which are rare, but always discussed when they happen – for instance, a grand slam (when 4 runs are scored at the same time). If a grand slam, which happens very infrequently, is discussed every time one happens, we want P(e) to be near 1 if e is a grand slam. This is why we set P(e) = (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(type(e))).",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "741:0",
@@ -24,8 +30,11 @@
     "role": "P",
     "text": "P(e) = (count(e where ∃s s.t. e ∈ DISUSSED(s))) / (count(e)) for every e, giving a uniform distribution of",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "746:0",
@@ -33,8 +42,11 @@
     "role": "P",
     "text": "types is 2^(|f|). 6 I chose to have five features to describe each event. They are described in",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "776:0",
@@ -42,8 +54,11 @@
     "role": "P",
     "text": "Add-One smoothing is common in NLP, due to the “sparse data” problem. 7 One example of the sparse data problem in NLP is as follows. Suppose you are searching for the probability of a word, w_b, following another word, w_a. If you have a corpus, or a set of texts, the simplest way to do this is by setting the probability to (# of times w_b follows w_a) / (# of times w_a appears).",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "782:0",
@@ -51,8 +66,11 @@
     "role": "P",
     "text": "Where count(type) is the number of theoretically possible event types, 2^5. Thus, add-one smoothing is a simple way to smooth out the probabilities and be prepared for new event types outside of the training data. It should be noted, however, that for the particular example in NLP used above, better alternatives exist [9]. However, the sparse data problem is much less of an issue in our system than it is in NLP, so add-one smoothing is enough.",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "806:0",
@@ -60,8 +78,11 @@
     "role": "P",
     "text": "each common stem, c_s, we assign a “co-occurrence probability” of",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "807:0",
@@ -69,8 +90,11 @@
     "role": "P",
     "text": "(count(c_s in e and c_s in s and e ∈ DISCUSSED(s))) / (count(c_s in e where ∃s s.t. e ∈ DISCUSSED(s))). Now, given any potential (s, e) pair, the sum of",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
-    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI."
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "911:0",
@@ -80,7 +104,10 @@
     "display": "formula",
     "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3"
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "node": "938:0",
@@ -93,11 +120,14 @@
     ],
     "review": "Visually transcribed final PDF pages 28, 29, 30, 31 and 32 at 144 DPI. Surrounding prose and source wording retained; fractions linearized with parentheses and slash, subscripts with underscore, powers with caret. DISUSSED in node741 is the printed source misspelling and remains unchanged. Numerals6/7 are original footnote callouts. Equation7 on page39 and Equation8 on page41 were also visually transcribed from the final PDF at 144 DPI.",
     "pdf": "oney-natural-language-search-mit2008.pdf",
-    "source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3"
+    "source_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+    "reviewed_source_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "pdf": "zhang-cflow-ls2024.pdf",
-    "source_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "source_sha256": "ceb91610961aa1cfb075cf582f3fc2cffb50cf475c2eca198f9b87bb19f8b05a",
     "node": "487:0",
     "page": 1,
     "kind": "reviewed_inline_notation_transcription",
@@ -105,11 +135,14 @@
     "original_extracted_text_sha256": "9f9c65fc2f634535a7630d8be0dd525c1c31efe4f314572ffe6c274953e0b124",
     "review": "Visually read the final PDF page 1 paragraph at 216 DPI. The superscript n belongs to m^n, not inside the wrapped word features. Rejoined features and restored n, m, m^n in their printed positions. Prose is otherwise transcribed unchanged.",
     "text": "on isolated statements (and thus discard the surrounding context of those statements) or cluster entire code samples (which can lead to large numbers of clusters—for example, if there are n code features and m implementations of each, there can be m^n clusters). We evaluated the effectiveness of CFlow with a comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled twice as many desired patterns from over 6,000 submissions.",
-    "markdown": "on isolated statements (and thus discard the surrounding context of those statements) or cluster entire code samples (which can lead to large numbers of clusters—for example, if there are $n$ code features and $m$ implementations of each, there can be $m^n$ clusters). We evaluated the effectiveness of CFlow with a comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled twice as many desired patterns from over 6,000 submissions."
+    "markdown": "on isolated statements (and thus discard the surrounding context of those statements) or cluster entire code samples (which can lead to large numbers of clusters—for example, if there are $n$ code features and $m$ implementations of each, there can be $m^n$ clusters). We evaluated the effectiveness of CFlow with a comparison study, found participants using CFlow spent only half the time identifying mistakes and recalled twice as many desired patterns from over 6,000 submissions.",
+    "reviewed_source_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   },
   {
     "pdf": "zhou-simulating-human-cursor-chiposters2026.pdf",
-    "source_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+    "source_sha256": "99e52d8a11ca858f98ec00f3eee19340ccf632463579eaa456f95bc3ee685b8b",
     "node": "322:0",
     "page": 2,
     "kind": "reviewed_inline_notation_transcription",
@@ -117,6 +150,8 @@
     "original_extracted_text_sha256": "fa9efbd15f2381e2f504bcf72b5568dbbf155f08e810bdcd9669d85b6b83d74a",
     "review": "Visually read the final PDF page 2 paragraph at 216 DPI. Restored the waypoint set upper/lower indices and vector/subscript placement for p_ref(s) and n_R(s). The superscript M belongs to the waypoint set, not inside problem. Rejoined problem and nominal. Bold vector symbols and the source’s introductory bold/italic emphasis are represented in the Markdown alternative; research wording is unchanged.",
     "text": "(1) Optimal Reference Path Generation: We first generate a reference path that represents a foundation for the user’s interaction intent. We capture users’ tendencies to minimize distance and effort by formulating reference path generation as an optimization problem. Starting from a set of waypoints {w_i}_{i=1}^M that define the nominal path geometry—such as the centerline in tunnel steering tasks or the selection boundary in lasso operations—we seek a smooth, length-efficient path p_ref(s) defined as p_ref(s) = C(s) + d(s)n_R(s) for s ∈ [0, L]. Here, C(s) represents a base curve (e.g., a cubic spline) connecting the waypoints, d(s) is the lateral offset (the decision variable), and n_R(s) is the unit right-pointing normal vector. The variable s denotes the arclength along the base curve of total length L. The problem is formally defined as:",
-    "markdown": "**(1) Optimal Reference Path Generation:** We first generate a *reference path* that represents a foundation for the user’s interaction intent. We capture users’ tendencies to minimize distance and effort by formulating reference path generation as an optimization problem. Starting from a set of waypoints $\\{w_i\\}_{i=1}^{M}$ that define the nominal path geometry—such as the centerline in tunnel steering tasks or the selection boundary in lasso operations—we seek a smooth, length-efficient path $\\mathbf{p}_{\\mathrm{ref}}(s)$ defined as $\\mathbf{p}_{\\mathrm{ref}}(s) = C(s) + d(s)\\mathbf{n}_{R}(s)$ for $s \\in [0, L]$. Here, $C(s)$ represents a base curve (e.g., a cubic spline) connecting the waypoints, $d(s)$ is the lateral offset (the decision variable), and $\\mathbf{n}_{R}(s)$ is the unit right-pointing normal vector. The variable $s$ denotes the arclength along the base curve of total length $L$. The problem is formally defined as:"
+    "markdown": "**(1) Optimal Reference Path Generation:** We first generate a *reference path* that represents a foundation for the user’s interaction intent. We capture users’ tendencies to minimize distance and effort by formulating reference path generation as an optimization problem. Starting from a set of waypoints $\\{w_i\\}_{i=1}^{M}$ that define the nominal path geometry—such as the centerline in tunnel steering tasks or the selection boundary in lasso operations—we seek a smooth, length-efficient path $\\mathbf{p}_{\\mathrm{ref}}(s)$ defined as $\\mathbf{p}_{\\mathrm{ref}}(s) = C(s) + d(s)\\mathbf{n}_{R}(s)$ for $s \\in [0, L]$. Here, $C(s)$ represents a base curve (e.g., a cubic spline) connecting the waypoints, $d(s)$ is the lateral offset (the decision variable), and $\\mathbf{n}_{R}(s)$ is the unit right-pointing normal vector. The variable $s$ denotes the arclength along the base curve of total length $L$. The problem is formally defined as:",
+    "revalidation": "2026-10-05 reading-order repair: exact reviewed transcription verified in the current native ActualText and synchronized source archive; source appearance preserved.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
   }
 ]

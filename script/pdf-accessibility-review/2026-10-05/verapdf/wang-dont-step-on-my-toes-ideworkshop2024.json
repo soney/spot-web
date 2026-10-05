@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+          "size": 1652932
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 161296,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231565696,
+          "finish": 1791231568334,
+          "duration": "00:00:02.638",
+          "difference": 2638
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231565583,
+        "finish": 1791231568413,
+        "duration": "00:00:02.830",
+        "difference": 2830
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "multiJob": false
+    }
+  },
+  "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+  "pdf_sha256": "eea22c064db1848288bb5e67aa8a3024ea916eafde4927aa22dccda42c4aaaea",
+  "stderr": "Oct 05, 2026 4:19:26 PM org.verapdf.pd.font.cff.CFFFontProgram containsROS\nWARNING: The Top DICT does not begin with ROS operator\nOct 05, 2026 4:19:26 PM org.verapdf.pd.font.cff.CFFCIDFontProgram readCharSet\nWARNING: Invalid embedded cff font. Charset range exceeds number of glyphs\n"
+}

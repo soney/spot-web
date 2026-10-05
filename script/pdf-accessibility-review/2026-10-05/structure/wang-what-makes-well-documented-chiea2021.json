@@ -1,0 +1,219 @@
+{
+  "file": "wang-what-makes-well-documented-chiea2021.pdf",
+  "pdf_sha256": "ea606635142e427d0663e8b6f9bc1067ae8c79e56d27d914a967ba35fca2a1cc",
+  "normalization_warnings": "",
+  "page_count": 7,
+  "language": "en-US",
+  "title": "What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle",
+  "structure_elements": 387,
+  "roles": {
+    "Sect": 19,
+    "H1": 1,
+    "P": 85,
+    "H2": 11,
+    "Reference": 1,
+    "Note": 1,
+    "Link": 72,
+    "Figure": 2,
+    "Span": 75,
+    "Part": 1,
+    "H3": 10,
+    "Caption": 3,
+    "Table": 2,
+    "TR": 24,
+    "TH": 21,
+    "TD": 57,
+    "THead": 1,
+    "TBody": 1
+  },
+  "structure_content_references": 1178,
+  "parent_tree_entries": 79,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 827,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 711,
+      "image_operations_tagged": 1,
+      "link_annotations": 16
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 189,
+      "text_operations_tagged": 1954,
+      "link_annotations": 17
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 203,
+      "text_operations_tagged": 1891,
+      "link_annotations": 20
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 132,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1246,
+      "link_annotations": 3
+    },
+    {
+      "page": 5,
+      "vector_operations_artifact": 17,
+      "text_operations_artifact": 235,
+      "text_operations_tagged": 875
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 235,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 2206,
+      "link_annotations": 13
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 136,
+      "text_operations_tagged": 1041,
+      "link_annotations": 3
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "367:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "375:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "377:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "379:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "383:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "423:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "447:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "459:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "508:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "511:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "516:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "520:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "524:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "530:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "535:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "541:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "542:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "702:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "713:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "716:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "718:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "389:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "CrossMark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "528:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 1. Five pairs of distributions compare 80 highly voted Kaggle notebooks in red with roughly one million GitHub notebooks in blue. Rows show Markdown cells per notebook, code cells per notebook, total cells, lines of code, and words of Markdown. Kaggle notebooks have a more balanced mix of Markdown and code and substantially more explanatory text: the reported medians are 95 versus 18 total cells, and 1,728 versus 218 Markdown words. The figure supports the conclusion that highly voted Kaggle notebooks are better documented.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

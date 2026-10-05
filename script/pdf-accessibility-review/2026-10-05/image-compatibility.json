@@ -1,0 +1,231 @@
+{
+  "published_image_urls_preserved": 461,
+  "current_images": 420,
+  "legacy_table_images_retained": 2,
+  "same_node_paths_preserved": true,
+  "only_changed_pixels_are_reviewed_crops": [
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-019-p081.png",
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-021-p083.png",
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-022-p084.png",
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-035-p120.png",
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-036-p120.png",
+    "figures/oney-expressing-interactivity-states-cmu2015/figure-037-p120.png",
+    "figures/oney-interstate-uist2014/figure-003-p006.png",
+    "figures/rong-codemend-uist2016/figure-003-p004.png",
+    "figures/rong-codemend-uist2016/figure-004-p005.png",
+    "figures/rong-codemend-uist2016/figure-005-p006.png"
+  ],
+  "legacy_images": [
+    {
+      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-008-p009.png",
+      "sha256": "643286be6e27426253070515b610063c2b5c16a47581f8e5f4f47e606d9901ed",
+      "reason": "Keep the old table image available to previously downloaded Markdown; current exports use a semantic table."
+    },
+    {
+      "path": "figures/oney-codelets-chi2012/figure-006-p005.png",
+      "sha256": "fcfe8a4278677bd5ba543ba0ecd16d6a2627fccbbb1834aec9ce939d2dc748f1",
+      "reason": "Keep the old table image available to previously downloaded Markdown; current exports use a semantic table."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-003-p004.png",
+      "sha256": "5405969a16cca51b3ec440298a80ebfd49d4765fb6f12fa183244c38d72b5d67",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-004-p004.png",
+      "sha256": "133d3e71577b59fd7638fcc8a42eb25d3c8c5f8652cdc0e2e619582c0968dd7e",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-005-p004.png",
+      "sha256": "4fec340547814bc64e86a2da6eaf510d7b9e4d88f80f76378054b7485af8912b",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-006-p004.png",
+      "sha256": "e7dd9daa116c79a28c4a05c38a59a1364a0ad7f6864b33e5c2684a7517ae99c2",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-007-p004.png",
+      "sha256": "cf12b94b41e95d74e57a1fcf303e649fe3df96247eae0561ee03419023f31e53",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-008-p004.png",
+      "sha256": "d450d3bd27697afa125c6f90198febc9d1ccfbefe5ede954731f00af0ca13412",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-009-p004.png",
+      "sha256": "14d52022eb5e446b341c8f2b17458245869ef2c794ff4e1caf8e95fef2e8d26a",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-010-p004.png",
+      "sha256": "9c388192506c72312c5ec0cca7ad36d307e547823abb0f6f0994661af9ad0df5",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-011-p004.png",
+      "sha256": "04529a71abe5ff978ebf0d4a3c60f8c12b114211a1d1f60fa868530129ba3e9f",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-012-p004.png",
+      "sha256": "48c7a36d1722e42d74146da4051e3fd25a993e2ac369c3252bda569b1494c509",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-013-p004.png",
+      "sha256": "e1bf69c1921723788f2a59e754ac646a6cac3fb70d3251fecdd8c911a1d4672d",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-014-p004.png",
+      "sha256": "7c30740fce7d6925f84d8468a9cb2a1d79dbf82528d279f63d15c8984f6414fe",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-015-p004.png",
+      "sha256": "0a935863c7854cd192e9b07d8aa190ac767e455c337b1e38bdf6cc9535664e40",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-016-p004.png",
+      "sha256": "290f4748c8a0121b787e254010a405fe3339b182a46ec2e147f9296d98f21a2a",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-017-p004.png",
+      "sha256": "391c802308b36ce8c1097a7dc07811751dfe6d025d27a859300a3df708d6cded",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-018-p004.png",
+      "sha256": "4ac1589907d52bb0086342340e68b832fcf7f65a3881e4dd76613ebc649104bc",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-019-p004.png",
+      "sha256": "05fd63da8f5fd0f3825331f9511b1c1f765eee154d46a29352824312396c38cd",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-020-p004.png",
+      "sha256": "f1e8ab6e5cc52ca45abd8f388f5d27854fa1e950e138e11d894b98aef3f59077",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-021-p004.png",
+      "sha256": "a71f6c921051855465a917dd27d235a730ba1ce83677342d8da88a838da3b651",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-022-p004.png",
+      "sha256": "9e7ba2b81af80bdca770b84d0f08f88b65d5cdc73b8172d855100e985d545621",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-023-p005.png",
+      "sha256": "c927e46af5d0a7a8b2f37215efa4c5214c9c03141d172ebd097dfb92405f4694",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-024-p005.png",
+      "sha256": "b3ca7c968cb16daddfe2ef750e21ca8ab8f224bd9b73e185d92f0a5ae8c055ec",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-025-p005.png",
+      "sha256": "f9930ea5f316fe2c8793c2fc761a93035269871fb1f4fe8ec1ac415d661798a3",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-027-p005.png",
+      "sha256": "3debe23aee8a4454b9cebe316f67a72fe4982f042a2f8b3abe02293c98af4d97",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-028-p005.png",
+      "sha256": "16a4e57c93bc6028b554d9ea88e3e283ef0076af5b3b49469a62a0d3173322a6",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-029-p005.png",
+      "sha256": "4ab78b46c4a629f6333111e30ff382a11c45cf1ab483b3d58e6b63b4ebc3738d",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-030-p005.png",
+      "sha256": "dc9801e1e50d99ad27df7d4fa7c4c3d8e68d15c58d80856e384e8510fea0296c",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-031-p005.png",
+      "sha256": "2fc6b3f7060ac7392ffc645902f314e09f4598d49044b280bf1b9907bd2bfd4f",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-032-p005.png",
+      "sha256": "2c2686f26f920a3ab705ea8f4ba53e090d65c31951f1b54f4658d85630067870",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-033-p005.png",
+      "sha256": "b9854a6c6c76cd09d6815a683d044f08725c8dca14c566e25dfc0d5597c08caf",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/arab-co-advisor-vlhcc2025/figure-034-p006.png",
+      "sha256": "f6066a2cc634873a6999a68a58b10f509a8908dda220440a6630c86042f3c501",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-cocapture-chi2021/figure-005-p007.png",
+      "sha256": "91b59130dbfe3c83c9e282c461482071bc105c4711639b9844001512e2b3edb7",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-cocapture-chi2021/figure-006-p007.png",
+      "sha256": "579d535bfd072853d21ad28bab695d0b0a7af052ad0f35dcf1712331846d4978",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-cocapture-chi2021/figure-007-p007.png",
+      "sha256": "d4045a21ea31b5a29d99ecd1ab606ff8bbce029a51ac21324fdbd0a9267fc472",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-003-p004.png",
+      "sha256": "4f3e08ebbe429e8dadf1199b679dc4d1728f12f90d7c49768b53d4833a63c069",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-004-p004.png",
+      "sha256": "dc7de27390d0284711368c34e5a9f66d9ad4bde948845f940aa567835966e19a",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-005-p004.png",
+      "sha256": "482b84233f5c0a7f71fa440bd7defaac407785dbac41f800a8ad8d4f3518790b",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-006-p005.png",
+      "sha256": "23d605764a006dafe44c6e0ccf12d3bd1c9f4f3ea1fae77fd6c2a610acbc9268",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    },
+    {
+      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-009-p007.png",
+      "sha256": "31887235ade3cc69d065f810c61a18e4eb9314c4230ba24984af0f03cf223c4a",
+      "reason": "Preserve the image URL used by earlier Markdown downloads; current downloads read this callout inline in the relevant sentence."
+    }
+  ],
+  "unpublished_temporary_name_removed": "figures/oney-codelets-chi2012/figure-006-p007.png",
+  "all_checks_passed": true,
+  "legacy_images_retained": 41,
+  "legacy_callout_images_retained": 39,
+  "reading_order_round_all_image_bytes_unchanged": true,
+  "reading_order_round_report": "reading-order/repairs/markdown-image-compatibility.json"
+}

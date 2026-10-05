@@ -802,6 +802,19 @@ body {
             flex-wrap: wrap;
             margin-top: 1.25rem;
             row-gap: 0.5rem;
+
+            /* Download labels use the site's readable link palette in both
+               themes, including when an outlined button is filled. */
+            .btn-outline-primary {
+                --bs-btn-color: var(--link-color);
+                --bs-btn-border-color: var(--link-color);
+                --bs-btn-hover-color: var(--background-color);
+                --bs-btn-hover-bg: var(--link-color);
+                --bs-btn-hover-border-color: var(--link-color);
+                --bs-btn-active-color: var(--background-color);
+                --bs-btn-active-bg: var(--link-color);
+                --bs-btn-active-border-color: var(--link-color);
+            }
         }
 
         .section-card {

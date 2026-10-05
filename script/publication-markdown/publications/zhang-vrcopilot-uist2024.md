@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8 -->
+<!-- Source PDF SHA-256: 1dae0fb483e47a7a2d1a4e9d291b3dd1e361d5cb6e7f857908a3f4ccdb51422b -->
 
 <a id="page-1"></a>
 
@@ -32,15 +32,15 @@ Anhong Guo University of Michigan Ann Arbor, MI, USA anhong@umich.edu
 
 Figure 1: System Overview of VRCopilot. 1) Automatic Creation: Users can use voice commands to ask the generative model to generate a full-room layout based on an empty room. 2) Manual Creation: Users can use multimodal specification by speaking with simultaneous pointing to ask the system to suggest a chair (a); they can select from one of the three suggestions offered by the system (b). 3) Scaffolded Creation: Users can create wireframes by drawing on the floor while speaking, in addition to automatically generated wireframes (a); They can then turn the wireframes into specific furniture (b).
 
-Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. UIST ’24, October 13–16, 2024, Pittsburgh, PA, USA © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0628-8/24/10...$15.00 https://doi.org/10.1145/3654777.3676451 arXiv:2408.09382v1 \[cs.HC\] 18 Aug 2024
+> Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. UIST ’24, October 13–16, 2024, Pittsburgh, PA, USA © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0628-8/24/10...$15.00 https://doi.org/10.1145/3654777.3676451
+
+> arXiv:2408.09382v1 \[cs.HC\] 18 Aug 2024
 
 ## ABSTRACT
 
-Immersive authoring provides an intuitive medium for users to create 3D scenes via direct manipulation in Virtual Reality (VR). Recent advances in generative AI have enabled the automatic creation of realistic 3D layouts. However, it is unclear how capabilities of generative AI can be used in immersive authoring to support fluid interactions, user agency, and creativity. We introduce VRCopilot, a mixed-initiative system that integrates pre-trained generative AI
+Immersive authoring provides an intuitive medium for users to create 3D scenes via direct manipulation in Virtual Reality (VR). Recent advances in generative AI have enabled the automatic creation of realistic 3D layouts. However, it is unclear how capabilities of generative AI can be used in immersive authoring to support fluid interactions, user agency, and creativity. We introduce VRCopilot, a mixed-initiative system that integrates pre-trained generative AI models into immersive authoring to facilitate human-AI co-creation in VR. VRCopilot presents multimodal interactions to support rapid prototyping and iterations with AI, and intermediate representations such as wireframes to augment user controllability over the created content. Through a series of user studies, we evaluated the potential and challenges in manual, scaffolded, and automatic creation in immersive authoring. We found that scaffolded creation using wireframes enhanced the user agency compared to automatic creation. We also found that manual creation via multimodal specification offers the highest sense of creativity and agency.
 
 
-
-models into immersive authoring to facilitate human-AI co-creation in VR. VRCopilot presents multimodal interactions to support rapid prototyping and iterations with AI, and intermediate representations such as wireframes to augment user controllability over the created content. Through a series of user studies, we evaluated the potential and challenges in manual, scaffolded, and automatic creation in immersive authoring. We found that scaffolded creation using wireframes enhanced the user agency compared to automatic creation. We also found that manual creation via multimodal specification offers the highest sense of creativity and agency.
 
 ## CCS CONCEPTS
 
@@ -102,19 +102,19 @@ VRCopilot is a mixed-initiative immersive authoring system that enables users to
 
 ### 3.1 Scope
 
-We situate our design of VRCopilot in the context of interior design tasks, where users can place pre-made 3D furniture models in a virtual apartment. Interior design requires balancing constraints
-
 <a id="page-4"></a>
 
-![Figure 2 shows the user interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions.](../figures/zhang-vrcopilot-uist2024/figure-002-p004.png)
+We situate our design of VRCopilot in the context of interior design tasks, where users can place pre-made 3D furniture models in a virtual apartment. Interior design requires balancing constraints (e.g., functional requirements and space limitations) with aesthetic preferences. It has been the application domain of many prior immersive authoring tools \[[10,](<#page-12>) [29,](<#page-12>) [63](<#page-13>)\] and is a common use case for Mixed Reality. For example, several popular home goods stores, including IKEA[1](<#page-4>), integrate features that allow customers to virtually preview furniture arrangements in their own homes before making a purchase. VRCopilot includes 7, 302 furniture models from 3D-FRONT \[[21](<#page-12>)\], a large open-source dataset of furniture objects and textures.
+
+> <sup>1</sup>[https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-](<https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/>) [a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/](<https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/>)
+
+![VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions.](../figures/zhang-vrcopilot-uist2024/figure-002-p004.png)
 
 (a) Palette Menu.
 
 (b) Multi-workspace.
 
 Figure 2: User interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions.
-
-(e.g., functional requirements and space limitations) with aesthetic preferences. It has been the application domain of many prior immersive authoring tools \[[10,](<#page-12>) [29,](<#page-12>) [63](<#page-13>)\] and is a common use case for Mixed Reality. For example, several popular home goods stores, including IKEA[1](<#page-4>), integrate features that allow customers to virtually preview furniture arrangements in their own homes before making a purchase. VRCopilot includes 7, 302 furniture models from 3D-FRONT \[[21](<#page-12>)\], a large open-source dataset of furniture objects and textures.
 
 Designing VRCopilot for interior design allows us to evaluate it in a realistic domain with demonstrated utility. However, we believe many of the concepts behind our design could generalize to other spatial design tasks, as the low-level tasks (e.g., object instantiation, customization, and manipulation) and multimodal interactions with generative models are broadly applicable across domains.
 
@@ -128,11 +128,7 @@ Users can manually import furniture models into the virtual environment from a c
 
 #### 3.2.2 Design Exploration.
 
-The ability to explore multiple alternatives is crucial to supporting creativity in design tasks \[[27,](<#page-12>) [49](<#page-13>)\]. For example, in the realm of interior design, designers typically develop a variety of versions to present to clients or stakeholders. To facilitate the exploration of multiple design variations, VRCopilot offers multiple empty workspaces or templates for users to work on (as seen in Fig. [2b).](<#page-4>) Users can easily switch between workspaces to work on different versions by navigating a list of miniatures in
-
-> <sup>1</sup>[https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-](<https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/>) [a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/](<https://www.ikea.com/global/en/newsroom/innovation/ikea-launches-ikea-place-a-new-app-that-allows-people-to-virtually-place-furniture-in-their-home-170912/>)
-
-VR. This creativity support is inspired by the concept of “World in Miniature” (WIM) \[[52](<#page-13>)\] and recent work on version control in VR \[[63](<#page-13>)\]. To help users reuse partial layouts across different versions of the designs, VRCopilot also includes a copy &amp; paste feature, shown as additional buttons bound to the handheld menu. This feature allow users to copy multiple objects and paste them either in the same workspace or other workspaces.
+The ability to explore multiple alternatives is crucial to supporting creativity in design tasks \[[27,](<#page-12>) [49](<#page-13>)\]. For example, in the realm of interior design, designers typically develop a variety of versions to present to clients or stakeholders. To facilitate the exploration of multiple design variations, VRCopilot offers multiple empty workspaces or templates for users to work on (as seen in Fig. [2b).](<#page-4>) Users can easily switch between workspaces to work on different versions by navigating a list of miniatures in VR. This creativity support is inspired by the concept of “World in Miniature” (WIM) \[[52](<#page-13>)\] and recent work on version control in VR \[[63](<#page-13>)\]. To help users reuse partial layouts across different versions of the designs, VRCopilot also includes a copy &amp; paste feature, shown as additional buttons bound to the handheld menu. This feature allow users to copy multiple objects and paste them either in the same workspace or other workspaces.
 
 ### 3.3 Generative Model in VRCopilot
 
@@ -188,15 +184,13 @@ Figure [3](<#page-6>) 2a-e demonstrates a typical workflow of how users can crea
 
 #### 3.6.3 Scaffolded Creation.
 
-Scaffolded creation enables users to create intermediate representations, i.e., wireframes, to scaffold their
+Scaffolded creation enables users to create intermediate representations, i.e., wireframes, to scaffold their designs. Such a creation method uses a top-down approach where users begin with a broad, overarching vision of the floor plan by creating wireframes in the immersive environments. They can draw their own wireframes and ask for generated wireframes. They can also modify the placements and sizes of wireframes, and convert between wireframes and furniture layouts.
 
 <a id="page-6"></a>
 
-![Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, and retain the completed room.](../figures/zhang-vrcopilot-uist2024/figure-003-p006.png)
+![Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, then switch back to wireframes to explore another layout.](../figures/zhang-vrcopilot-uist2024/figure-003-p006.png)
 
 Figure 3: VRCopilot proposes three ways of human-AI co-creation in virtual immersive environments: manual creation (1a-e), automatic creation (2a-e), and scaffolded creation (3a-e).
-
-designs. Such a creation method uses a top-down approach where users begin with a broad, overarching vision of the floor plan by creating wireframes in the immersive environments. They can draw their own wireframes and ask for generated wireframes. They can also modify the placements and sizes of wireframes, and convert between wireframes and furniture layouts.
 
 Figure [3](<#page-6>) 3a-e a typical workflow of how users can iteratively create layout designs using scaffolded creation: a) Users first ask for generated wireframes from the system. b) Upon getting the results from the generative models, they can draw their own wireframes such as a bed and rearrange the wireframes. c) They can turn the wireframes into furniture layouts via a button press. d) They can then manipulate the furniture models to further fine-tune the design. e) Once they want to explore an alternative design, they can switch back to wireframes for generating another layout option.
 
@@ -206,9 +200,7 @@ VRCopilot is developed using Unity (version 2021.3.20f1) and integrates plugins 
 
 #### 3.7.1 Integration with ChatGPT Models.
 
-Interaction with ChatGPT models is facilitated through voice commands. The system captures user voice input via the microphone, converting the audio to an .mp3 format. This file is then translated into text by the ChatGPT
-
-SpeechToText model (whisper-1) through an HTTP request. The resulting text is processed by the ChatGPT Chat Model (gpt-4-turbo), which identifies the user’s intent from the predefined categories and extracts relevant parameters such as furniture styles or categories. The responses, formatted as JSON, are parsed by the Unity client to execute the corresponding actions. While most actions are deterministic, actions requiring the generation of new items (e.g., “generate a chair in a modern style”) involve a selection process from a set of items meeting the specified criteria.
+Interaction with ChatGPT models is facilitated through voice commands. The system captures user voice input via the microphone, converting the audio to an .mp3 format. This file is then translated into text by the ChatGPT SpeechToText model (whisper-1) through an HTTP request. The resulting text is processed by the ChatGPT Chat Model (gpt-4-turbo), which identifies the user’s intent from the predefined categories and extracts relevant parameters such as furniture styles or categories. The responses, formatted as JSON, are parsed by the Unity client to execute the corresponding actions. While most actions are deterministic, actions requiring the generation of new items (e.g., “generate a chair in a modern style”) involve a selection process from a set of items meeting the specified criteria.
 
 #### 3.7.2 Communication with the Generative Model.
 
@@ -220,15 +212,13 @@ To enhance user interaction, VRCopilot integrates a feedback loop through AWS Po
 
 ## 4 USER STUDY 1
 
-To understand the effectiveness and challenges of co-creating with generative AI in immersive environments, we fist sought to compare immersive authoring with and without AI. Prior research has provided some insights on how people collaborate with generative
-
 <a id="page-7"></a>
+
+To understand the effectiveness and challenges of co-creating with generative AI in immersive environments, we fist sought to compare immersive authoring with and without AI. Prior research has provided some insights on how people collaborate with generative AI in creative domains (e.g. music \[[37](<#page-12>)\] and painting \[[11](<#page-12>)\]). We extend this line of work by understanding people’s behaviors and attitudes when working with generative AI in virtual immersive environments. We conducted a qualitative comparison study between two conditions: 1) immersive authoring using the conventional interfaces (e.g., via direct manipulation and menu selection), 2) immersive authoring with conventional interfaces and generative AI models. We use this study as the first stop to eliciting the challenges that users perceived when co-creating with AI in VR.
 
 ![Figure 4. System architecture. A Unity client coordinates direct manipulation, voice requests and intents, intermediate wireframe representations, and the 3D scene. Audio is sent to OpenAI whisper-1, whose transcript is processed by gpt-4-turbo to return intents and parameters to Unity. The client requests layouts from the ATISS generative model server, receives generated wireframe layouts, and instantiates furniture in the scene. AWS Polly provides text-to-speech audio output. Users can also directly manipulate the scene and draw wireframes through the client interface.](../figures/zhang-vrcopilot-uist2024/figure-004-p007.png)
 
 Figure 4: The system architecture of VRCopilot.
-
-AI in creative domains (e.g. music \[[37](<#page-12>)\] and painting \[[11](<#page-12>)\]). We extend this line of work by understanding people’s behaviors and attitudes when working with generative AI in virtual immersive environments. We conducted a qualitative comparison study between two conditions: 1) immersive authoring using the conventional interfaces (e.g., via direct manipulation and menu selection), 2) immersive authoring with conventional interfaces and generative AI models. We use this study as the first stop to eliciting the challenges that users perceived when co-creating with AI in VR.
 
 ### 4.1 Participants
 
@@ -252,9 +242,9 @@ Generative models are useful for sparking different ideas. One key dimension of 
 
 Creating with generative models can lead to more diverse functionality and color palette. Functionality refers to the ability of a space or its components to serve a specific purpose or function effectively and efficiently. We found that creation results with the help of AI encompass more diverse functionalities. Specifically, the expert observed more diverse object types in each room that can support different activities. For example, the bedrooms shown in both Fig. [5c](<#page-8>) and Fig. [5d](<#page-8>) include desks (for working), wardrobes (for clothes), and bookshelves (for storage). Color palette refers to the selection of colors used in a design, including primary, secondary, and accent colors, which contribute to the overall mood and atmosphere of a space. We found that creation results generated with AI generally have a richer color palette (seen in Fig. 5), which contributes to the expert commenting the creation “more exciting.”
 
-Creating with generative models can lead to poor considerations of circulation and daylighting. Circulation refers to the flow or movement of people within a space. It encompasses the pathways, routes, and patterns that individuals follow as they navigate and move
-
 <a id="page-8"></a>
+
+Creating with generative models can lead to poor considerations of circulation and daylighting. Circulation refers to the flow or movement of people within a space. It encompasses the pathways, routes, and patterns that individuals follow as they navigate and move through an interior environment. We found that creation results generated with AI generally have a poorer circulation. For example, one of the bedrooms shown in Fig. [5c](<#page-8>) includes a nightstand that is blocking the doorway. The dining table in the living/dining room in Fig. [5d](<#page-8>) does not allow for much movement between the two sides due to its close placement to the walls. This is because our underlying generative model (i.e., ATISS) that we utilize does not take doorway or room of movements into consideration when generating. Daylighting in interior design is a design strategy that focuses on harnessing and optimizing natural daylight to illuminate interior spaces. We found that creation results generated with AI generally have a poorer consideration of daylighting. For example, both bedrooms shown in Fig. [5c](<#page-8>) have furniture blocking the windows, making it difficult to harness daylight. This is due to the underlying generative model (i.e., ATISS) that we utilize does not take window placement, size and shape into consideration.
 
 ![Figure 5a. Top-down apartment layout created by P7 without generative AI. Two furnished bedrooms sit above an open living and kitchen area. The lower area has seating along the bottom edge and a broad open center; bedroom furniture includes additional storage or work surfaces.](../figures/zhang-vrcopilot-uist2024/figure-005-p008.png)
 
@@ -268,21 +258,17 @@ Creating with generative models can lead to poor considerations of circulation a
 
 (c) Creation Results with generative AI. Two bedrooms are created with generative AI while the living room is unfinished (P6).
 
-![Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a desk sits diagonally near the bottom-left corner.](../figures/zhang-vrcopilot-uist2024/figure-008-p008.png)
+![Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a separate furnishing is placed diagonally near the bottom-left corner.](../figures/zhang-vrcopilot-uist2024/figure-008-p008.png)
 
 (d) Creation Results with generative AI. All rooms are created with generative AI (P13).
 
 Figure 5: Exemplary top-down view comparison of participants’ creation results with and without the assistance of generative AI in Study 1.
 
-through an interior environment. We found that creation results generated with AI generally have a poorer circulation. For example, one of the bedrooms shown in Fig. [5c](<#page-8>) includes a nightstand that is blocking the doorway. The dining table in the living/dining room in Fig. [5d](<#page-8>) does not allow for much movement between the two sides due to its close placement to the walls. This is because our underlying generative model (i.e., ATISS) that we utilize does not take doorway or room of movements into consideration when generating. Daylighting in interior design is a design strategy that focuses on harnessing and optimizing natural daylight to illuminate interior spaces. We found that creation results generated with AI generally have a poorer consideration of daylighting. For example, both bedrooms shown in Fig. [5c](<#page-8>) have furniture blocking the windows, making it difficult to harness daylight. This is due to the underlying generative model (i.e., ATISS) that we utilize does not take window placement, size and shape into consideration.
-
 Based on these findings around using generative models, our research team investigated further in the second round of study, that was specifically focused on the mitigation of the issue of user agency and the comparison across different ways of human-AI co-creation (as described in Section [3.6).](<#page-5>) We were also able to design tasks for the second study based on the patterns drawn from the expert evaluation session to further develop our ideas. We describe the second user study in the following section.
 
 ## 5 USER STUDY 2
 
-We conducted a second user study to compare three conditions: 1) manual creation using catalog menus and multimodal specification,
-
-2) scaffolded creation using wireframes, and 3) automatic creation using generative AI. We aimed to compare user perceived effort, creativity, and agency, and to elicit potential and challenges that users perceived when co-creating with AI in VR.
+We conducted a second user study to compare three conditions: 1) manual creation using catalog menus and multimodal specification, 2) scaffolded creation using wireframes, and 3) automatic creation using generative AI. We aimed to compare user perceived effort, creativity, and agency, and to elicit potential and challenges that users perceived when co-creating with AI in VR.
 
 ### 5.1 Participants
 
@@ -394,11 +380,9 @@ Through the lens of creativity and agency, we highlight the opportunities and ch
 
 #### 6.1.1 Offering results of generative AI via intermediate representations.
 
-Our design of wireframes offers higher user controllability when working with generative models. Specifically, in the task of creating 3D layouts, users are granted more control over the size and placement of object and think they can view the design in an
+Our design of wireframes offers higher user controllability when working with generative models. Specifically, in the task of creating 3D layouts, users are granted more control over the size and placement of object and think they can view the design in an unbiased way. Besides, the design of wireframes offers unique affordances in VR by making it easier for users to navigate layouts and manipulate distant objects due to less occlusions compared to handling a fully populated 3D scene. This aligns with prior work that utilizes low fidelity representation when working the generative designs (e.g. \[[32](<#page-12>)\]). Similarly, there has been also a long-standing body of work in Sketch Based Interfaces for Modeling that utilizes both the coarseness and the expressiveness of sketches to guide the detailed generation of 3D models \[[43](<#page-12>)\]. This demonstrates the benefits of designing low fidelity representations that can prompt more controllable and sophisticated generated content. We therefore encourage future researchers and designers to consider using more advanced intermediate representations of the generated outcome beyond 2D planes on the floor. These representations should capture richer properties of 3D content, such as color and shape, in the immersive environment while still allowing users to easily manipulate the objects and navigate the scene. The note of intermediate representations could even go beyond immersive environments. The concept of intermediate representations can extend beyond immersive environments. For instance, rather than generating lengthy text, Large Language Models could produce an outline as an intermediate representation, allowing users to make adjustments before finalizing the text. Similarly, other generative models could use intermediate representations like image skeletons for pictures or key frames for videos.
 
 <a id="page-11"></a>
-
-unbiased way. Besides, the design of wireframes offers unique affordances in VR by making it easier for users to navigate layouts and manipulate distant objects due to less occlusions compared to handling a fully populated 3D scene. This aligns with prior work that utilizes low fidelity representation when working the generative designs (e.g. \[[32](<#page-12>)\]). Similarly, there has been also a long-standing body of work in Sketch Based Interfaces for Modeling that utilizes both the coarseness and the expressiveness of sketches to guide the detailed generation of 3D models \[[43](<#page-12>)\]. This demonstrates the benefits of designing low fidelity representations that can prompt more controllable and sophisticated generated content. We therefore encourage future researchers and designers to consider using more advanced intermediate representations of the generated outcome beyond 2D planes on the floor. These representations should capture richer properties of 3D content, such as color and shape, in the immersive environment while still allowing users to easily manipulate the objects and navigate the scene. The note of intermediate representations could even go beyond immersive environments. The concept of intermediate representations can extend beyond immersive environments. For instance, rather than generating lengthy text, Large Language Models could produce an outline as an intermediate representation, allowing users to make adjustments before finalizing the text. Similarly, other generative models could use intermediate representations like image skeletons for pictures or key frames for videos.
 
 #### 6.1.2 Offering multiple generated suggestions for inspirations.
 
@@ -406,9 +390,7 @@ Our study shows that participants felt more creative and more easily inspired wh
 
 #### 6.1.3 Addressing expectation mismatch between users and generative AI.
 
-A common challenge across all conditions, based on the study, is the expectation mismatch when unexpected output was generated by AI. Through the expert evaluation, we found that although by co-creating generative AI models users can create 3D layouts that are diverse in aspects such as functionality and color palette, users generally have preferences of the layout design that fall outside of the capabilities of generative AI models. For example, in study 1, layouts co-created with AI showed poorer consideration of circulation and daylighting because the underlying generative AI model was not trained with those criteria in mind. Additionally, users lacked a sufficient understanding of the system’s capabilities. This highlights the need for more transparent communication between users and generative AI regarding the system’s capabilities and limitations. This aligns with the Explainable AI (XAI) research (e.g., \[[17,](<#page-12>) [24,](<#page-12>) [35](<#page-12>)\]), where researchers aim to provide more transparent explanations of decision-making process of the AI model, with
-
-an emphasis on text or images. However, there has been little explorations in the visualization and interaction techniques for making AI models more understandable in the immersive environments. Therefore, future researchers and practitioners should consider designing human-AI systems that can visualize how the generative AI model perceives and completes the user’s design.
+A common challenge across all conditions, based on the study, is the expectation mismatch when unexpected output was generated by AI. Through the expert evaluation, we found that although by co-creating generative AI models users can create 3D layouts that are diverse in aspects such as functionality and color palette, users generally have preferences of the layout design that fall outside of the capabilities of generative AI models. For example, in study 1, layouts co-created with AI showed poorer consideration of circulation and daylighting because the underlying generative AI model was not trained with those criteria in mind. Additionally, users lacked a sufficient understanding of the system’s capabilities. This highlights the need for more transparent communication between users and generative AI regarding the system’s capabilities and limitations. This aligns with the Explainable AI (XAI) research (e.g., \[[17,](<#page-12>) [24,](<#page-12>) [35](<#page-12>)\]), where researchers aim to provide more transparent explanations of decision-making process of the AI model, with an emphasis on text or images. However, there has been little explorations in the visualization and interaction techniques for making AI models more understandable in the immersive environments. Therefore, future researchers and practitioners should consider designing human-AI systems that can visualize how the generative AI model perceives and completes the user’s design.
 
 ### 6.2 Limitations
 
@@ -469,7 +451,7 @@ We would like to thank Bella Palumbi for her help in system implementation. We w
 - \[21\] Huan Fu, Bowen Cai, Lin Gao, Ling-Xiao Zhang, Jiaming Wang, Cao Li, Qixun Zeng, Chengyue Sun, Rongfei Jia, Binqiang Zhao, et al. 2021. 3d-front: 3d furnished rooms with layouts and semantics. In Proceedings of the IEEE/CVF International Conference on Computer Vision. 10933–10942.
 
 - \[22\] Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, Or Litany, Zan Gojcic, and Sanja Fidler. 2022. Get3d: A generative model of high quality 3d textured shapes learned from images. Advances In Neural Information
-  
+
   - Processing Systems 35 (2022), 31841–31854.
 
 - \[23\] Google. 2016. Google Tilt Brush. [https://www.tiltbrush.com/](<https://www.tiltbrush.com/>)
@@ -543,7 +525,7 @@ We would like to thank Bella Palumbi for her help in system implementation. We w
 - \[56\] Unreal. 2022. Unreal Editor VR Mode. [https://docs.unrealengine.com/5.0/en-](<https://docs.unrealengine.com/5.0/en-US/vr-mode-in-unreal-editor/>) [US/vr-mode-in-unreal-editor/](<https://docs.unrealengine.com/5.0/en-US/vr-mode-in-unreal-editor/>)
 
 - \[57\] Kai Wang, Yu-An Lin, Ben Weissmann, Manolis Savva, Angel X Chang, and Daniel Ritchie. 2019. Planit: Planning and instantiating indoor scenes with
-  
+
   relation graph and spatial prior networks. ACM Transactions on Graphics (TOG) 38, 4 (2019), 1–15.
 
 - \[58\] Kai Wang, Manolis Savva, Angel X Chang, and Daniel Ritchie. 2018. Deep convolutional priors for indoor scene synthesis. ACM Transactions on Graphics (TOG) 37, 4 (2018), 1–14.

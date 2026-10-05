@@ -1,0 +1,139 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/oney-implementing-multi-touch-gestures-chi2019.pdf",
+          "size": 2081963
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 104,
+              "failedRules": 2,
+              "passedChecks": 203310,
+              "failedChecks": 2,
+              "tags": [
+                "metadata",
+                "list",
+                "structure"
+              ],
+              "ruleSummaries": [
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "5",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "metadata"
+                  ],
+                  "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+                  "object": "MainXMPPackage",
+                  "test": "containsPDFUAIdentification == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/metadata[0](216 0 obj PDMetadata)/XMPPackage[0]",
+                      "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+                      "errorArguments": []
+                    }
+                  ]
+                },
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "7.2",
+                  "testNumber": 18,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "list",
+                    "structure"
+                  ],
+                  "description": "LBody element should be contained in LI element",
+                  "object": "SELBody",
+                  "test": "parentStandardType == 'LI'",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/StructTreeRoot[0](142 0 obj PDStructTreeRoot)/K[0](143 0 obj SEDocument Document)/K[5](411 0 obj SESect Sect)/K[13](429 0 obj SEL L)/K[1](433 0 obj SELI LI)/K[1](435 0 obj SELBody LBody)/K[0](443 0 obj SELBody LBody)",
+                      "errorMessage": "LBody element contained in LBody instead of LI element",
+                      "errorArguments": [
+                        "LBody"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is not compliant with Validation Profile requirements.",
+            "compliant": false
+          }
+        ],
+        "processingTime": {
+          "start": 1791228046382,
+          "finish": 1791228050302,
+          "duration": "00:00:03.920",
+          "difference": 3920
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791228046252,
+        "finish": 1791228050367,
+        "duration": "00:00:04.115",
+        "difference": 4115
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "compliantPdfaCount": 0,
+        "nonCompliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "multiJob": false
+    }
+  },
+  "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+  "pdf_sha256": "2dc30df1ceaf564ac09af86ff7046311004f893b59e7854f40ace31c6efa0c70",
+  "stderr": ""
+}

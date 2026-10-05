@@ -1,0 +1,1742 @@
+{
+  "method": "Read-only comparison of current publication PDFs with source-tag archives.\nChecks SHA-256, complete reachable element set, mapped roles, Alt/ActualText,\nstructure parents, and exact ordered K child identities/content references/OBJRs.\nAlso verifies every accepted proposed_alt from the final visual-review JSONs.\nDerived archive text/bboxes and marked-content stream semantics are outside this\ncomparison; use the structural validator for marked-content/ParentTree validity.\n",
+  "summary": {
+    "pdf_count": 74,
+    "archive_count": 74,
+    "review_document_count": 74,
+    "passed_documents": 74,
+    "counts": {
+      "native_content_references": 507373,
+      "archive_content_references": 507373,
+      "native_elements": 38770,
+      "archive_elements": 38770,
+      "proposals_checked": 66,
+      "native_annotations": 5209,
+      "archive_annotations": 5209
+    },
+    "missing_archives": [],
+    "missing_review_records": [],
+    "proposal_conflicts": [],
+    "issue_counts": {},
+    "unexpected_differences": 0
+  },
+  "documents": [
+    {
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "pdf_sha256": "1a28606998b0d723230e699c3539f81d630646be90e720648dc08648c6c908a3",
+      "archive_sha256": "34db2c7131576e865aa1fcc070cf51605b518a24d44ba6119f105bcf94b027e0",
+      "counts": {
+        "native_content_references": 8972,
+        "archive_content_references": 8972,
+        "native_elements": 561,
+        "archive_elements": 561,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "443:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "612:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "pdf_sha256": "b619fd8e204e7e6ee2f4ac6721190759314f06bb72ff18970af6274c91b6656d",
+      "archive_sha256": "bac77ed58f8f01734b0fe159e256270151730096d26d7241e4f32f262838e87e",
+      "counts": {
+        "native_content_references": 15972,
+        "archive_content_references": 15972,
+        "native_elements": 887,
+        "archive_elements": 887,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "pdf_sha256": "abde555d89b5cf15cd1176db009a0e4fd0ada080fa347d4de776948ff258a451",
+      "archive_sha256": "3fbad3900029f1d7b505ec33bf46544a4453f160b040696204bbf76d25aab38f",
+      "counts": {
+        "native_content_references": 12921,
+        "native_annotations": 162,
+        "archive_content_references": 12921,
+        "archive_annotations": 162,
+        "native_elements": 593,
+        "archive_elements": 593,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "pdf_sha256": "9bbd48afe0ec30cd73fb6e02375585a548eb9952b955fd8171439f145ec9d5e8",
+      "archive_sha256": "289c2ae8c274f7502f66ec7f8bd4d1194be1ea05071eb0c386215bff875db52d",
+      "counts": {
+        "native_content_references": 10204,
+        "native_annotations": 64,
+        "archive_content_references": 10204,
+        "archive_annotations": 64,
+        "native_elements": 492,
+        "archive_elements": 492,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "751:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-edcode-vlhcc2020.pdf",
+      "pdf_sha256": "5d560237b2fad4e68048792072e8877f9aa07a7a9a6dc73d790a128c7de05b1c",
+      "archive_sha256": "0b9279785d6279498264e2fe3288fb323363cf1aff589e7ab23d41c1df46e277",
+      "counts": {
+        "native_content_references": 4238,
+        "native_annotations": 31,
+        "archive_content_references": 4238,
+        "archive_annotations": 31,
+        "native_elements": 182,
+        "archive_elements": 182,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-expert-crowd-support-ci2016.pdf",
+      "pdf_sha256": "ccb706263b3430d2c5a6dedaa8e00744e3761731640a82bf40e93ae39ef7a0b9",
+      "archive_sha256": "3559b1c1dd09a8f2ab7dea0340687e378cb743c36f1896025f07024eb71e3d0f",
+      "counts": {
+        "native_content_references": 2261,
+        "archive_content_references": 2261,
+        "native_elements": 125,
+        "archive_elements": 125,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+      "pdf_sha256": "2314b323f248936c1e2d6fe7db9ff69e50d2203a679749b737a9098f83a6b0db",
+      "archive_sha256": "4996314876d54cfcd331ac0eb451f7ec2e82ac420544784082e6c29a46c88956",
+      "counts": {
+        "native_content_references": 6574,
+        "native_annotations": 54,
+        "archive_content_references": 6574,
+        "archive_annotations": 54,
+        "native_elements": 296,
+        "archive_elements": 296,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+      "pdf_sha256": "af864c8939000d55dab47cbe23ae54e19042792d6296505c480fdd49e37f71bc",
+      "archive_sha256": "651afc7af82056d48294bbcd8b447ec939c75794e2834c6bafc46792dc391b8e",
+      "counts": {
+        "native_content_references": 9341,
+        "native_annotations": 109,
+        "archive_content_references": 9341,
+        "archive_annotations": 109,
+        "native_elements": 565,
+        "archive_elements": 565,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "954:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "990:0",
+          "page": 10,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+      "pdf_sha256": "5317c913b5f74c0682dcebe303efe9c262f4b6653f724035c8e6e0717b97ae13",
+      "archive_sha256": "6d53c7a55f0ee18a0d3824e90b471e87dc7cb47b2001ff9f1abc815aa3a5e37b",
+      "counts": {
+        "native_content_references": 2445,
+        "native_annotations": 30,
+        "archive_content_references": 2445,
+        "archive_annotations": 30,
+        "native_elements": 139,
+        "archive_elements": 139,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-providing-on-demand-expert-chi2016.pdf",
+      "pdf_sha256": "663aa661768a6bd8b4af745ff8388f9d62e477b1c67fc5ad06db380740d1e5e8",
+      "archive_sha256": "f378d91da4fe2325be77c386beb2400a0716d6684b5c1c329557deb664bb6ed5",
+      "counts": {
+        "native_content_references": 11053,
+        "native_annotations": 68,
+        "archive_content_references": 11053,
+        "archive_annotations": 68,
+        "native_elements": 548,
+        "archive_elements": 548,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "760:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "855:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "chen-sifter-imx2020.pdf",
+      "pdf_sha256": "a7733ba7384c7b97c6f108535d9a8d66c18dec7b9ad01b4a5c157e2f545c39bb",
+      "archive_sha256": "4448c90b026e5e411711ab0569115e0abaf0a6808aaa7bd86969daa6d591b84d",
+      "counts": {
+        "native_content_references": 7984,
+        "native_annotations": 69,
+        "archive_content_references": 7984,
+        "archive_annotations": 69,
+        "native_elements": 523,
+        "archive_elements": 523,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "im-improving-advising-relationships-chiea2024.pdf",
+      "pdf_sha256": "a6418fdb68574726d8f88b19580d0c016a5e5134e25a2ff411cc41107b16cf13",
+      "archive_sha256": "cf063854d3d89ef56a5f052c59c3c92d7c0c346653f48894a4ae002927f0f0a3",
+      "counts": {
+        "native_content_references": 269,
+        "native_annotations": 34,
+        "archive_content_references": 269,
+        "archive_annotations": 34,
+        "native_elements": 261,
+        "archive_elements": 261,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-expresso-vlhcc2018.pdf",
+      "pdf_sha256": "634251978705db5718dceb4e26d5234760d2b5d3bb7af31eb1462ef1cd20c75d",
+      "archive_sha256": "5bf9fc2f769de0c3c9c476120c46544b0468fbe328e1b20d917f4b76f748080b",
+      "counts": {
+        "native_content_references": 4699,
+        "native_annotations": 97,
+        "archive_content_references": 4699,
+        "archive_annotations": 97,
+        "native_elements": 444,
+        "archive_elements": 444,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pdf_sha256": "174a228266d558762de8e0b21cc3a00d4cb1c9bcede88fab6bcad3c1f8b52e68",
+      "archive_sha256": "70826c0ac0168bb6a238e54f1122eb6d82bc978ce1ef0f017eab893d30bc8c92",
+      "counts": {
+        "native_content_references": 587,
+        "native_annotations": 122,
+        "archive_content_references": 587,
+        "archive_annotations": 122,
+        "native_elements": 681,
+        "archive_elements": 681,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "00c4c8f64cd79c5dbfddfc0d0797c515b94ac003158af4b1afb68e0f2b9ad516",
+      "archive_sha256": "5a368a90d6ffa7716dab06ae6b2cddc6f925183ec21f7cd211637cc366725375",
+      "counts": {
+        "native_content_references": 3028,
+        "native_annotations": 75,
+        "archive_content_references": 3028,
+        "archive_annotations": 75,
+        "native_elements": 233,
+        "archive_elements": 233,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "pdf_sha256": "4cb16e3a27cd8652f8d51e126940cecb0e524cf36a4e710d3fb92c7e9667fd3a",
+      "archive_sha256": "6a5dda46d557bdd96fc0df9342b78ff82e1ec96b2b43a5f5b4775a761d271f2e",
+      "counts": {
+        "native_content_references": 4528,
+        "native_annotations": 30,
+        "archive_content_references": 4528,
+        "archive_annotations": 30,
+        "native_elements": 183,
+        "archive_elements": 183,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "406:0",
+          "page": 3,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "pdf_sha256": "6e3f3370a49e6463f8d8c3fc88cce8363cd9a31fea710f9d7c6e8545dd84f00e",
+      "archive_sha256": "a8f91ab1241c5296927d0f8e3a8ee9b7049ea93d604dad43bc0f1e544e78128a",
+      "counts": {
+        "native_content_references": 5023,
+        "archive_content_references": 5023,
+        "native_elements": 216,
+        "archive_elements": 216,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "pdf_sha256": "1d5755f2c17b14707564e8ada0be5ce1b3a5924221d9578d434875631df44fe6",
+      "archive_sha256": "848d9d912712dda33e28c1faf62feeaf2f00ef4726a8adc1bfcc28817923ccd9",
+      "counts": {
+        "native_content_references": 431,
+        "native_annotations": 113,
+        "archive_content_references": 431,
+        "archive_annotations": 113,
+        "native_elements": 460,
+        "archive_elements": 460,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+      "pdf_sha256": "3eb44ddab765986a1db3e5dc81410ea0e7160c39877daf65f736efeb492ad0dd",
+      "archive_sha256": "f38f4278611eb6ea7e881929858e1ac05f71387cc86905a0ced3742b9f641d71",
+      "counts": {
+        "native_content_references": 1133,
+        "native_annotations": 108,
+        "archive_content_references": 1133,
+        "archive_annotations": 108,
+        "native_elements": 454,
+        "archive_elements": 454,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "lin-adasa-uist2018.pdf",
+      "pdf_sha256": "06528e3eff09a79b3b1d5cf0becadd29c76a0f50c26a02b33dc087ca6d72e90f",
+      "archive_sha256": "1409597cbeddd675645b131f34c3c89ee6b93d1464324598d11fb80984c0dbff",
+      "counts": {
+        "native_content_references": 10216,
+        "native_annotations": 85,
+        "archive_content_references": 10216,
+        "archive_annotations": 85,
+        "native_elements": 471,
+        "archive_elements": 471,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "854:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+      "pdf_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+      "archive_sha256": "023e3ad1c25ceba6b48e921750436205cf397f4f94a2a5c6c63a0895e5f1803b",
+      "counts": {
+        "native_content_references": 96,
+        "native_annotations": 1,
+        "archive_content_references": 96,
+        "archive_annotations": 1,
+        "native_elements": 100,
+        "archive_elements": 100,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "myers-making-end-user-eud2017.pdf",
+      "pdf_sha256": "fc80abfcdd911af9796324657c281f215b9c8e0cb0c2aec6b94b346ada0cf4fa",
+      "archive_sha256": "c334a1ce77fb61a7d340f281dde03410935173bcb9d4a29e6d9bfc3c152f9fc4",
+      "counts": {
+        "native_content_references": 9865,
+        "native_annotations": 110,
+        "archive_content_references": 9865,
+        "archive_annotations": 110,
+        "native_elements": 272,
+        "archive_elements": 272,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "535:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "585:0",
+          "page": 13,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-arboretum-and-arbility-uist2018.pdf",
+      "pdf_sha256": "cb9eb25030c707edcaecfb2a5e066c557f884de7eba9a26a1bc55a4b0ef8575d",
+      "archive_sha256": "320744271a53a6e424d52354600d4a157f12a0c6b4425b40a35aa3125f8beaeb",
+      "counts": {
+        "native_content_references": 263,
+        "native_annotations": 140,
+        "archive_content_references": 263,
+        "archive_annotations": 140,
+        "native_elements": 634,
+        "archive_elements": 634,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-codelets-chi2012.pdf",
+      "pdf_sha256": "d5e42aca50103365ff5742f7bff7609cc53cc78f098b9e32acb89d0281c2ae21",
+      "archive_sha256": "8fbdaa450ee3041c4fe9e5d57c3c542d6918d4180fad7134b67668c55e18803a",
+      "counts": {
+        "native_content_references": 5031,
+        "archive_content_references": 5031,
+        "native_elements": 315,
+        "archive_elements": 315,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "196:0",
+          "page": 3,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "384:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-constraintjs-uist2012.pdf",
+      "pdf_sha256": "dd37ec57b8ed50e6bfcaaa96059f3b1319756e207955a7f75bf60d963f6bc9aa",
+      "archive_sha256": "f7eb7cd5821b39dd8a0850f737bb4ecb52ede4de4d15cd1763e223ccb2aff7f7",
+      "counts": {
+        "native_content_references": 5409,
+        "archive_content_references": 5409,
+        "native_elements": 323,
+        "archive_elements": 323,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "415:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "426:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "pdf_sha256": "ac954034a689a340c977339940c6f224ca123870e1e28f5473f917fd55b4be67",
+      "archive_sha256": "0bdef3a7215822d9b8ab5b4959617522bab1e8d1b5fc845f59b69201ad3069ed",
+      "counts": {
+        "native_content_references": 10959,
+        "native_annotations": 113,
+        "archive_content_references": 10959,
+        "archive_annotations": 113,
+        "native_elements": 545,
+        "archive_elements": 545,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "870:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+      "pdf_sha256": "70f6a8009fbddc161a3fafd46f2611dd3a4d5de87e6ec342ba75f3bdfc810c49",
+      "archive_sha256": "cc1e76f1ff2e94cec9cbfccab76e3f9d6d0a045ce4c1340f26788c4d2e8e9f71",
+      "counts": {
+        "native_content_references": 682,
+        "archive_content_references": 682,
+        "native_elements": 34,
+        "archive_elements": 34,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+      "pdf_sha256": "1e2e1924273064ad9cc2155609b30f9120856f54c23fa9ba659ae4cf0ee1c650",
+      "archive_sha256": "b32af81a83be07fb128134555d1b753e859c250a45500ccfa03e12a9cc644022",
+      "counts": {
+        "native_content_references": 870,
+        "archive_content_references": 870,
+        "native_elements": 50,
+        "archive_elements": 50,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-edbooks-preprint2024.pdf",
+      "pdf_sha256": "ef7ebd06e277dbe908d82b4823aec305b5e102d0e83b0933e47013599bb60ae6",
+      "archive_sha256": "6c50ccc3ec021d7d9f21ec066d3a4b12c3c3cc838ec317b2d0d601e7aaad3d38",
+      "counts": {
+        "native_content_references": 12622,
+        "native_annotations": 118,
+        "archive_content_references": 12622,
+        "archive_annotations": 118,
+        "native_elements": 787,
+        "archive_elements": 787,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "915:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "922:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+      "pdf_sha256": "14ed117754f63aeb099170a98d8aafea4c7843b1cbd76f897f94a8b9ea23aee0",
+      "archive_sha256": "8f5877ddaffbd2d9a0333fc9e24bcea7adc0099674cca8029d943cc2da7e9aa2",
+      "counts": {
+        "native_content_references": 954,
+        "archive_content_references": 954,
+        "native_elements": 29,
+        "archive_elements": 29,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-euclase-live2013.pdf",
+      "pdf_sha256": "458cbed652fe3136a69e5ebf7d0a16c40e99c6dc5153fd93fe8a6de0c735d1ac",
+      "archive_sha256": "21298582b58e88db91c6813050ca643b3562dcabebe02676a9d0300c8c4f6798",
+      "counts": {
+        "native_content_references": 2057,
+        "archive_content_references": 2057,
+        "native_elements": 139,
+        "archive_elements": 139,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "108:0",
+          "page": 1,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pdf_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+      "archive_sha256": "e4c94a08b556a7172ba80a634ad485e0e088a92292d5afb17e0613098a523cbe",
+      "counts": {
+        "native_content_references": 40879,
+        "archive_content_references": 40879,
+        "native_elements": 5285,
+        "archive_elements": 5285,
+        "proposals_checked": 6
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "1881:0",
+          "page": 21,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "2157:0",
+          "page": 50,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "2380:0",
+          "page": 72,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "2444:0",
+          "page": 79,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "2483:0",
+          "page": 84,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "2531:0",
+          "page": 89,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pdf_sha256": "3f6392e9c1099660d5a1e4a6075b7d27edec64c873cdab98104ecc610f731d3e",
+      "archive_sha256": "0ea2dbf153c8394a366aaf12d65bd1a11ee7911048b939b6a6434b89851c9672",
+      "counts": {
+        "native_content_references": 1828,
+        "archive_content_references": 1828,
+        "native_elements": 85,
+        "archive_elements": 85,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "pdf_sha256": "6b9444548830a34e98df1b764480f1ecf01dd4e0f166bbb49d3645ead6e185a4",
+      "archive_sha256": "ba81afcb37b16404a25b0ebd60e4879b131f9eb80b6357da8809bc8b7a9f5dc4",
+      "counts": {
+        "native_content_references": 3801,
+        "native_annotations": 28,
+        "archive_content_references": 3801,
+        "archive_annotations": 28,
+        "native_elements": 479,
+        "archive_elements": 479,
+        "proposals_checked": 4
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "160:0",
+          "page": 1,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "439:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "451:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "635:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "pdf_sha256": "87a2858b850eb9be342920a1ab4a68ade782d40427925139b45a759c0f4f875b",
+      "archive_sha256": "996c2e5a9451a859062ca6cfeb8fa53022f03b899dd24ebcdd4a4faba99ce8d6",
+      "counts": {
+        "native_content_references": 7295,
+        "archive_content_references": 7295,
+        "native_elements": 288,
+        "archive_elements": 288,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "326:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "pdf_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
+      "archive_sha256": "9c973a77cc788dc3be2f1768379a7aa8b50a8d9ffd011158e89b480b83c19f24",
+      "counts": {
+        "native_content_references": 17973,
+        "archive_content_references": 17973,
+        "native_elements": 908,
+        "archive_elements": 908,
+        "proposals_checked": 3
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "712:0",
+          "page": 26,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "817:0",
+          "page": 33,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "831:0",
+          "page": 34,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-playbook-iseud2011.pdf",
+      "pdf_sha256": "489898f38c40a3988e3f144bc546afa222bbaaf50eb0d8179e5676a1fb43f6ef",
+      "archive_sha256": "59d3ad844b76292d1c0588112b8889bba1341a924373b5c81c1498bffbda98b5",
+      "counts": {
+        "native_content_references": 1285,
+        "archive_content_references": 1285,
+        "native_elements": 69,
+        "archive_elements": 69,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+      "pdf_sha256": "3d21e5c704c98eda54a94e4625da3b946f0ab6a15458b49e088812eee8851729",
+      "archive_sha256": "ea2efd73c2d8fa34873e80f367c2e096df7c513142cb2d65c3e1ae9362dd9c7a",
+      "counts": {
+        "native_content_references": 1924,
+        "archive_content_references": 1924,
+        "native_elements": 120,
+        "archive_elements": 120,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "oney-zoomboard-chi2013.pdf",
+      "pdf_sha256": "d2ceadaeedce901bb513624f344439478e86cd36cc4820e7df0b4e0610c0edfe",
+      "archive_sha256": "7d422a11e433cbdd265584a5047745b038272696ad66c9c0b3294f1cdb3580ac",
+      "counts": {
+        "native_content_references": 2162,
+        "archive_content_references": 2162,
+        "native_elements": 149,
+        "archive_elements": 149,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "ozenc-how-support-designers-chi2010.pdf",
+      "pdf_sha256": "eb98a219f13704f07488fcfc65192d2a9756db46133f80f2607bf15986c234a9",
+      "archive_sha256": "3d27d363b665f5a93d7d9f7262b25368ed87ec3a6f10ad0ff98b463aee799f76",
+      "counts": {
+        "native_content_references": 5746,
+        "archive_content_references": 5746,
+        "native_elements": 341,
+        "archive_elements": 341,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "187:0",
+          "page": 4,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "332:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+      "pdf_sha256": "b741a025116ccdf25d639eb23e3f56538fc0f3608d43e030013cc2b262416e9f",
+      "archive_sha256": "6920eaef77b0a45f2223e8ff2397717ebeaa366cfdecc672770574154b8ec059",
+      "counts": {
+        "native_content_references": 8554,
+        "archive_content_references": 8554,
+        "native_elements": 813,
+        "archive_elements": 813,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-explore-create-annotate-chi2020.pdf",
+      "pdf_sha256": "b18316dcd1297682e5fc7820b3ff900a17449848ae9662bc89853b10aa67cad2",
+      "archive_sha256": "6be6a583b8ce1127f3298627b689f05767ae2c5b0832c558fea4e39468bedeb3",
+      "counts": {
+        "native_content_references": 10905,
+        "native_annotations": 85,
+        "archive_content_references": 10905,
+        "archive_annotations": 85,
+        "native_elements": 592,
+        "archive_elements": 592,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "505:0",
+          "page": 1,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+      "pdf_sha256": "bb2ad734aea69e9a413ee2ff16dc6ad8baf61b750d3a23e91bf28b1382d038ab",
+      "archive_sha256": "18ded06e2fd100c479930da3258e71995f37d1c33de5f6dee61ecd133bd17d81",
+      "counts": {
+        "native_content_references": 4296,
+        "native_annotations": 45,
+        "archive_content_references": 4296,
+        "archive_annotations": 45,
+        "native_elements": 208,
+        "archive_elements": 208,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "pdf_sha256": "28fa051edc3f27f558ecde7fda2766cd4787abeabaf36421b556fd5540e4c1a8",
+      "archive_sha256": "24d18e279ad3899d2bb1180aaf9732aa2530401e4cea36a524f953bcaffd1251",
+      "counts": {
+        "native_content_references": 14322,
+        "native_annotations": 206,
+        "archive_content_references": 14322,
+        "archive_annotations": 206,
+        "native_elements": 1229,
+        "archive_elements": 1229,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-ui-development-experiences-edi2024.pdf",
+      "pdf_sha256": "12ca2d59d975f48e9d9034610834f69abd2059eb6065a9bd716619f42b53eabd",
+      "archive_sha256": "8f763b760b3abaf067b55aa2af025c00ba456b2285cd2a9aa4d029de0cf3079e",
+      "counts": {
+        "native_content_references": 510,
+        "native_annotations": 37,
+        "archive_content_references": 510,
+        "archive_annotations": 37,
+        "native_elements": 204,
+        "archive_elements": 204,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+      "pdf_sha256": "7765e40de31c1cb9ece60bd768413ed08cd73dc3a7e5a342effa738a73907bb8",
+      "archive_sha256": "4cbfe6ff6ae5d27a0f96d340f45861daf12de3feed95bfe379ad5ccdbdea8708",
+      "counts": {
+        "native_content_references": 2021,
+        "native_annotations": 256,
+        "archive_content_references": 2021,
+        "archive_annotations": 256,
+        "native_elements": 998,
+        "archive_elements": 998,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "pdf_sha256": "84df8e846d00d424509370c166ada7244ee7c6eb63516a0b8c08226ef69e725b",
+      "archive_sha256": "da0810b548fd482606e1cfd8fa25cb2d97746ea0f4044dd4d9f6227ecb387b9d",
+      "counts": {
+        "native_content_references": 9304,
+        "archive_content_references": 9304,
+        "native_elements": 497,
+        "archive_elements": 497,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "pdf_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
+      "archive_sha256": "ad7686a4cee3d3e5f50d731dc2c5f83f1ebe8d84296fbfbb8cf45aca7ffce3d7",
+      "counts": {
+        "native_content_references": 10434,
+        "native_annotations": 108,
+        "archive_content_references": 10434,
+        "archive_annotations": 108,
+        "native_elements": 544,
+        "archive_elements": 544,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "141:0",
+          "page": 2,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+      "pdf_sha256": "a1989ff5f5f2eaa13bbf5c75a8c93a9467a815727bf570d756a85bd78d7a5ae7",
+      "archive_sha256": "6be65435aa75ba204850543c811e47829618c5fcd6abc25cc445b4bce6a74f6c",
+      "counts": {
+        "native_content_references": 4305,
+        "native_annotations": 69,
+        "archive_content_references": 4305,
+        "archive_annotations": 69,
+        "native_elements": 250,
+        "archive_elements": 250,
+        "proposals_checked": 5
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "272:0",
+          "page": 2,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "274:0",
+          "page": 2,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "430:0",
+          "page": 3,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "432:0",
+          "page": 3,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "469:0",
+          "page": 4,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "pdf_sha256": "d45d8f39953a038dceb2395a2d9b61263fbb1df531d88f05df80cef886064c79",
+      "archive_sha256": "c59b00a8f1cf63bf21e31e7756ec7c9d1002efcccaa921fbd856f8373cd20530",
+      "counts": {
+        "native_content_references": 9737,
+        "native_annotations": 146,
+        "archive_content_references": 9737,
+        "archive_annotations": 146,
+        "native_elements": 653,
+        "archive_elements": 653,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "909:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "1340:0",
+          "page": 7,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-colaroid-chi2023.pdf",
+      "pdf_sha256": "c9b8c52104df34856548c4d661c5236631a03ccac303b1536f3bd6652fc4cd9b",
+      "archive_sha256": "5702392fe410d2c6d5481cb9f8a9e46a08e6f6a11abf8390b130ee01ffaa952e",
+      "counts": {
+        "native_content_references": 17862,
+        "native_annotations": 223,
+        "archive_content_references": 17862,
+        "archive_annotations": 223,
+        "native_elements": 1348,
+        "archive_elements": 1348,
+        "proposals_checked": 3
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "973:0",
+          "page": 10,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "1126:0",
+          "page": 14,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "1488:0",
+          "page": 17,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pdf_sha256": "eea22c064db1848288bb5e67aa8a3024ea916eafde4927aa22dccda42c4aaaea",
+      "archive_sha256": "7b1fca6378eb4abb5c38891d29ae5842254884814a734ed42f494c0d7175e420",
+      "counts": {
+        "native_annotations": 68,
+        "native_content_references": 5124,
+        "archive_annotations": 68,
+        "archive_content_references": 5124,
+        "native_elements": 233,
+        "archive_elements": 233,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "189:0",
+          "page": 2,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "pdf_sha256": "52d09ce89c98ca28f776ed58d7fec7cbc89fd23da48915bb73b03ca0074598f4",
+      "archive_sha256": "875d27f4b2c92a68ed44d2e018c26185eb0c19da6c02b8e0bb38a1ed4a6c2a85",
+      "counts": {
+        "native_content_references": 16261,
+        "native_annotations": 277,
+        "archive_content_references": 16261,
+        "archive_annotations": 277,
+        "native_elements": 1154,
+        "archive_elements": 1154,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "587:0",
+          "page": 2,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "1461:0",
+          "page": 19,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "pdf_sha256": "3809eb0010b1aa38b50e60c2afeff6d9fafb261c07f712b6742d94401d0b737b",
+      "archive_sha256": "e67ebbc77bd042ec6708afcc0a96221d955d8894d767c3f093f5a66620509158",
+      "counts": {
+        "native_content_references": 13298,
+        "native_annotations": 185,
+        "archive_content_references": 13298,
+        "archive_annotations": 185,
+        "native_elements": 729,
+        "archive_elements": 729,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "1110:0",
+          "page": 13,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pdf_sha256": "c1ead332eec99dd2392bb22cc180849876490d1f4044c251126b9e21117d8052",
+      "archive_sha256": "4bf30ac1833e64473e09d6e90774ba5a905d2452787d8252a3a84af64c17492e",
+      "counts": {
+        "native_content_references": 1631,
+        "native_annotations": 24,
+        "archive_content_references": 1631,
+        "archive_annotations": 24,
+        "native_elements": 96,
+        "archive_elements": 96,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "ea606635142e427d0663e8b6f9bc1067ae8c79e56d27d914a967ba35fca2a1cc",
+      "archive_sha256": "b4a62d6b20d2d5edf26572697815b343a65ed3de4504d8214a4c3356202061ea",
+      "counts": {
+        "native_content_references": 1178,
+        "native_annotations": 72,
+        "archive_content_references": 1178,
+        "archive_annotations": 72,
+        "native_elements": 387,
+        "archive_elements": 387,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "xu-how-pairing-code-chilbw2023.pdf",
+      "pdf_sha256": "585c150a7fb9c178854d6192123b97b0da52ce25e3680ff38701bfc43df2dc91",
+      "archive_sha256": "f23f5b1f9d99aadcc41fac95a1d7eadffec533d6b03e355cd6ef00805599a844",
+      "counts": {
+        "native_annotations": 60,
+        "native_content_references": 5015,
+        "archive_annotations": 60,
+        "archive_content_references": 5015,
+        "native_elements": 204,
+        "archive_elements": 204,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "pdf_sha256": "b7f7c8a46994e06bc030ef392040aff70bab0d686d5635ff7819e43fdfac55d5",
+      "archive_sha256": "20028035ef44a93d197e4ad9c90385226ff5f3a79e4591f3fd98bc5699e02517",
+      "counts": {
+        "native_content_references": 11261,
+        "archive_content_references": 11261,
+        "native_elements": 459,
+        "archive_elements": 459,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "656:0",
+          "page": 10,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "pdf_sha256": "f4d043eb0719f578b2d343ee7f75e18cb299193e576ed472678a836faecdb291",
+      "archive_sha256": "0ef46a97099260d9140f33154dca91b6bbb76ed2ceef1b2204a91957715060d3",
+      "counts": {
+        "native_annotations": 19,
+        "native_content_references": 1531,
+        "archive_annotations": 19,
+        "archive_content_references": 1531,
+        "native_elements": 96,
+        "archive_elements": 96,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "260:0",
+          "page": 1,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-cflow-ls2024.pdf",
+      "pdf_sha256": "ceb91610961aa1cfb075cf582f3fc2cffb50cf475c2eca198f9b87bb19f8b05a",
+      "archive_sha256": "4290b02b5eb36c748fdd6be1601c91665edf33ad311604910a9dffb74f886515",
+      "counts": {
+        "native_content_references": 11199,
+        "native_annotations": 128,
+        "archive_content_references": 11199,
+        "archive_annotations": 128,
+        "native_elements": 340,
+        "archive_elements": 340,
+        "proposals_checked": 3
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "782:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "818:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "648:0",
+          "page": 10,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "pdf_sha256": "44201fdb78730ad66b923c324ee5f66cb0f96e16fd6d3f41553002ead8fb5afa",
+      "archive_sha256": "4408d12b8cabee915895f9c96cb7e20beed5cee4f67788431b0d87635ddfe1fc",
+      "counts": {
+        "native_content_references": 1845,
+        "native_annotations": 198,
+        "archive_content_references": 1845,
+        "archive_annotations": 198,
+        "native_elements": 1606,
+        "archive_elements": 1606,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-convomap-vlhcc2025.pdf",
+      "pdf_sha256": "1c9651307834c5ab0cd26351f0f70f1f4fb313d4deca2408c6b7e8f0c123ba48",
+      "archive_sha256": "2b44a75c01bfe874a094018aae6d2dc5ed6e11808c6f4a1d314675364e285beb",
+      "counts": {
+        "native_content_references": 10423,
+        "archive_content_references": 10423,
+        "native_elements": 352,
+        "archive_elements": 352,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+      "pdf_sha256": "656bfc4f7f3c4f357b4505f5ee2c1c176dc1b77ff0e84678a6241062bc26dafc",
+      "archive_sha256": "eadc308e799327bb40f82a3959f18bf9eb0140e15dfd61fd75c7dc8d6ea3181d",
+      "counts": {
+        "native_annotations": 18,
+        "native_content_references": 1612,
+        "archive_annotations": 18,
+        "archive_content_references": 1612,
+        "native_elements": 73,
+        "archive_elements": 73,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "174:0",
+          "page": 1,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-editrail-uist2026.pdf",
+      "pdf_sha256": "702709ec397f3899fecac393fa6c4a43f0ebd40a8fed997e19879853a8ce2e5e",
+      "archive_sha256": "2dc3692c5fd9bffe2cacfa790d59f9003c78dc6e49c00862920c25552f3c6dda",
+      "counts": {
+        "native_content_references": 12608,
+        "native_annotations": 175,
+        "archive_content_references": 12608,
+        "archive_annotations": 175,
+        "native_elements": 831,
+        "archive_elements": 831,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "1097:0",
+          "page": 9,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "pdf_sha256": "dcc5808b4db8bb629538edcd7be02c2e52bf729fc9ef9e38fa6b2cb43a8b60cb",
+      "archive_sha256": "aa2bb12087508ecf11d04417aa57b3eae0851a34928923de386f627ded9b0ff6",
+      "counts": {
+        "native_content_references": 9432,
+        "native_annotations": 131,
+        "archive_content_references": 9432,
+        "archive_annotations": 131,
+        "native_elements": 530,
+        "archive_elements": 530,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "pdf_sha256": "ab78321bd90658f95c7ab42e3cc38f69a10156eb41b699d656b2cbe18dd13ee6",
+      "archive_sha256": "5058827a86f0af9d5f47602e7f3d7ee18619ab6799d1d9f612d718f2592485f6",
+      "counts": {
+        "native_content_references": 1910,
+        "native_annotations": 189,
+        "archive_content_references": 1910,
+        "archive_annotations": 189,
+        "native_elements": 671,
+        "archive_elements": 671,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "1255:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-runex-vlhcc2023.pdf",
+      "pdf_sha256": "9d56add2f02f051951c8e1297f10c25eed2ed3230d4a4d528874aa28d000a1c3",
+      "archive_sha256": "00812b59c833c1e507c8de02128e9cbd3f9d577436b0b5d852ae0fa947bde8a1",
+      "counts": {
+        "native_content_references": 8367,
+        "archive_content_references": 8367,
+        "native_elements": 382,
+        "archive_elements": 382,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "429:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+      "pdf_sha256": "a3d62e8b920dfd30b89f7a48ea852e01f41f2aaf01d72cd799e48b3abdeeba2b",
+      "archive_sha256": "c5cd19572bec23bd286f86f978c91a7507f840ab3c97fd125b283b26b969150c",
+      "counts": {
+        "native_content_references": 3643,
+        "native_annotations": 47,
+        "archive_content_references": 3643,
+        "archive_annotations": 47,
+        "native_elements": 183,
+        "archive_elements": 183,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "pdf_sha256": "ed50f04e067a48be53903e9bf6376cd09d331344bc03d4ed0add2536d9ccfbfd",
+      "archive_sha256": "7d6c691b8645b6a7b49f7804b6711209d88fd73f679982974139a48f5cf83164",
+      "counts": {
+        "native_content_references": 7731,
+        "native_annotations": 131,
+        "archive_content_references": 7731,
+        "archive_annotations": 131,
+        "native_elements": 787,
+        "archive_elements": 787,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "pdf_sha256": "2b5954538ebf495d1cc1302a23302f13333046adc46d28e43074e5b6288b6965",
+      "archive_sha256": "677a6163ab89300bf36b74b2625b2d6f1869bc8398db3ac4f825b2e073d29e62",
+      "counts": {
+        "native_content_references": 3447,
+        "native_annotations": 47,
+        "archive_content_references": 3447,
+        "archive_annotations": 47,
+        "native_elements": 201,
+        "archive_elements": 201,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-vizprog-chi2023.pdf",
+      "pdf_sha256": "9375b86ea46ece16d4b1d96a2cbeb77a7fdf8a13e13fb6714931bfdc16f8f3e7",
+      "archive_sha256": "2ab7808646331a7c5c6c9ca9bdf9347cb0e41ba15760de298066a46af503b79a",
+      "counts": {
+        "native_content_references": 14870,
+        "native_annotations": 132,
+        "archive_content_references": 14870,
+        "archive_annotations": 132,
+        "native_elements": 732,
+        "archive_elements": 732,
+        "proposals_checked": 1
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "759:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-vrcopilot-uist2024.pdf",
+      "pdf_sha256": "1dae0fb483e47a7a2d1a4e9d291b3dd1e361d5cb6e7f857908a3f4ccdb51422b",
+      "archive_sha256": "23a3471398be37adf105f319575dd3428722796e1e613e8915ac882204c8cc73",
+      "counts": {
+        "native_content_references": 12151,
+        "native_annotations": 136,
+        "archive_content_references": 12151,
+        "archive_annotations": 136,
+        "native_elements": 969,
+        "archive_elements": 969,
+        "proposals_checked": 3
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "262:0",
+          "page": 4,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "385:0",
+          "page": 6,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "446:0",
+          "page": 8,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhang-vrgit-chi2023.pdf",
+      "pdf_sha256": "5ee9d61558b07eeead186f3a0612823aaa3ceecbcc6cba22524aeb227c6833d9",
+      "archive_sha256": "008c1d6d25d95068ab68d8a475be77374d9b4e01d6d73a7c66824e80ca13ec30",
+      "counts": {
+        "native_content_references": 2514,
+        "native_annotations": 176,
+        "archive_content_references": 2514,
+        "archive_annotations": 176,
+        "native_elements": 944,
+        "archive_elements": 944,
+        "proposals_checked": 2
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [
+        {
+          "node": "1059:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        },
+        {
+          "node": "1061:0",
+          "page": 5,
+          "matches": true,
+          "actual_text_empty": true
+        }
+      ],
+      "passed": true,
+      "issues": []
+    },
+    {
+      "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+      "pdf_sha256": "99e52d8a11ca858f98ec00f3eee19340ccf632463579eaa456f95bc3ee685b8b",
+      "archive_sha256": "468bf8e60f1090e6f0f188c2272413f45e06592b93be980e99ff75b88506241d",
+      "counts": {
+        "native_content_references": 4492,
+        "native_annotations": 60,
+        "archive_content_references": 4492,
+        "archive_annotations": 60,
+        "native_elements": 209,
+        "archive_elements": 209,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

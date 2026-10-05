@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778 -->
+<!-- Source PDF SHA-256: a7733ba7384c7b97c6f108535d9a8d66c18dec7b9ad01b4a5c157e2f545c39bb -->
 
 <a id="page-1"></a>
 
@@ -6,15 +6,21 @@
 
 [Source PDF](https://from.so/assets/pdfs/chen-sifter-imx2020.pdf) · [Publisher page](https://doi.org/10.1145/3391614.3393657)
 
-Yan Chen Andrés Monroy-Hernández University of Michigan Snap Inc. Ann Arbor, Michigan Seattle, WA, USA yanchenm@umich.edu amh@snap.com Steve Oney Walter S. Lasecki University of Michigan University of Michigan Ann Arbor, MI, USA Ann Arbor, MI, USA soney@umich.edu wlasecki@umich.edu
+Yan Chen University of Michigan Ann Arbor, Michigan yanchenm@umich.edu
+
+Andrés Monroy-Hernández Snap Inc. Seattle, WA, USA amh@snap.com
 
 Ian Wehrman Snap Inc. Santa Monica, CA, USA iwehrman@snap.com
 
+Steve Oney University of Michigan Ann Arbor, MI, USA soney@umich.edu
+
+Walter S. Lasecki University of Michigan Ann Arbor, MI, USA wlasecki@umich.edu
+
 Rajan Vaish Snap Inc. Santa Monica, CA, USA rvaish@snap.com
 
-© 2020 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-7976-2/20/06...$15.00
-
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. IMX ’20, June 17–19, 2020, Cornella, Barcelona, Spain
+
+> © 2020 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-7976-2/20/06...$15.00
 
 ## ABSTRACT
 
@@ -32,11 +38,11 @@ Crowdsourcing; video processing; social media; hybrid workflow; video content an
 
 Yan Chen, Andrés Monroy-Hernández, Ian Wehrman, Steve Oney, Walter S. Lasecki, and Rajan Vaish. 2020. Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale. In ACM International Conference on Interactive Media Experiences (IMX ’20), June 17–19, 2020, Cornella, Barcelona, Spain. ACM, New York, NY, USA, [9](<#page-9>) pages. [https://doi.org/10.1145/3391614.3393657](<https://doi.org/10.1145/3391614.3393657>)
 
+> [https://doi.org/10.1145/3391614.3393657](<https://doi.org/10.1145/3391614.3393657>)
+
 ## 1 INTRODUCTION
 
-Every day, millions of people around the world create, share, and consume short videos on platforms like Snapchat, TikTok, and [https://doi.org/10.1145/3391614.3393657](<https://doi.org/10.1145/3391614.3393657>)
-
-Douyin. These platforms use a variety of curation approaches to help their users discover high-quality and recent (“fresh”) content. These approaches leverage artificial intelligence (AI), user-sourcing, or dedicated curators \[[12](<#page-9>)\]. AI techniques rely on algorithmic aggregation and the ranking of relevant content based on metadata, such as tags \[[28](<#page-9>)\]. These approaches are scalable but limited in their capacity to identify content attributes that require subjective assessments and nuanced cultural understanding. User-sourcing approaches rely on end-users’ votes or “likes” to identify high-quality popular content, such as on Reddit \[[30](<#page-9>)\]. These approaches are also scalable, but have the potential to silence minority opinions or to be dominated by content manipulation strategies like “brigading” \[[10](<#page-9>)\]. Lastly, curator-based approaches rely on staff curators to identify and organize compelling content, such as on Snapchat’s Discover \[[35](<#page-9>)\] or Twitter’s Moments \[[38](<#page-9>)\] (Fig. 1). These approaches give platforms editorial control and overcome machines’ inability to make subjective assessments and prevent adversarial users from manipulating content selection, but are limited by scale \[[12](<#page-9>)\]. Specifically, it is difficult to scale curators’ ability to find appropriate content from a corpus of videos that is large and rapidly growing—on Youtube, for example, over 500 hours of video content is uploaded every minute.
+Every day, millions of people around the world create, share, and consume short videos on platforms like Snapchat, TikTok, and Douyin. These platforms use a variety of curation approaches to help their users discover high-quality and recent (“fresh”) content. These approaches leverage artificial intelligence (AI), user-sourcing, or dedicated curators \[[12](<#page-9>)\]. AI techniques rely on algorithmic aggregation and the ranking of relevant content based on metadata, such as tags \[[28](<#page-9>)\]. These approaches are scalable but limited in their capacity to identify content attributes that require subjective assessments and nuanced cultural understanding. User-sourcing approaches rely on end-users’ votes or “likes” to identify high-quality popular content, such as on Reddit \[[30](<#page-9>)\]. These approaches are also scalable, but have the potential to silence minority opinions or to be dominated by content manipulation strategies like “brigading” \[[10](<#page-9>)\]. Lastly, curator-based approaches rely on staff curators to identify and organize compelling content, such as on Snapchat’s Discover \[[35](<#page-9>)\] or Twitter’s Moments \[[38](<#page-9>)\] (Fig. 1). These approaches give platforms editorial control and overcome machines’ inability to make subjective assessments and prevent adversarial users from manipulating content selection, but are limited by scale \[[12](<#page-9>)\]. Specifically, it is difficult to scale curators’ ability to find appropriate content from a corpus of videos that is large and rapidly growing—on Youtube, for example, over 500 hours of video content is uploaded every minute.
 
 In this paper, we introduce Sifter to scale the third type of curation strategy (dedicated curators). Sifter combines automated video processing techniques and crowdsourced human expertise to provide on-demand assistance to dedicated video curators in the process of selecting and collecting content (i.e., the “select and collect” phase in Fig. 2). In this phase, curators have to rapidly browse through large “fresh-content” corpora to collect just enough raw material that might fit a coherent narrative \[[2](<#page-8>), [39](<#page-9>)\], or theme (e.g., “magic tricks”, or the movie Lion King). As the corpora often have more appropriate (e.g., interesting, relevant) materials than needed, curators do not have to exhaust all the items.
 
@@ -100,13 +106,11 @@ The system enables staff curators to delegate the time-consuming and monotonous 
 
 Sifter addresses these two challenges in the following ways:
 
-- (1) Scale. Sifter addresses the challenge of scale by first leveraging automated video processing techniques (Table [1)](<#page-5>) to
+- (1) Scale. Sifter addresses the challenge of scale by first leveraging automated video processing techniques (Table [1)](<#page-5>) to identify HQ videos. The guidelines for identifying HQ videos are derived from prior experience with videos on the platform and the existing literature (inline citations in Table 1). Then we propose a human-powered pipeline added to the automated filter. This workflow was derived from analyzing human workers’ performance in our pilot studies.
 
 ![Figure 3. An expert curator supplies a query to a video set; the input contains tens of thousands of videos. Machine automated filters reduce the set, then a non-expert crowd selects videos and a separate crowd agreement stage refines the selection. A decision asks Enough videos? No loops back to the selecting stage; yes produces dozens of high-quality, thematically relevant videos for evaluation by the expert curator.](../figures/chen-sifter-imx2020/figure-003-p003.png)
 
 Figure 3: Sifter pipeline.
-
-- identify HQ videos. The guidelines for identifying HQ videos are derived from prior experience with videos on the platform and the existing literature (inline citations in Table 1). Then we propose a human-powered pipeline added to the automated filter. This workflow was derived from analyzing human workers’ performance in our pilot studies.
 
 - (2) Subjectivity. Sifter addresses the need for subjective interpretation by relying on human workers to execute instructions. We evaluate this method by comparing human workers’ results with those of staff curators (e.g., using curators’ prior search keywords).
 
@@ -152,9 +156,9 @@ Before a worker starts executing the task, they see a landing page where they ge
 
 #### 3.2.2 Task page.
 
-The component index is corresponding to the numbers in Figure [4.](<#page-5>) 1. Contextualized instructions. These instructions reiterate what was presented on the landing page, but without the example videos. 2. Progress bar. We used a progress bar to show workers how many videos are still needed, how many are left in the pool, and how many they have selected. 3. No scrolling. To design a user interface that lets workers rapidly sift through videos, we first implemented a web interface with all videos on one page and asked workers to select interesting videos. From follow-up interviews with workers, we found that displaying all the videos on a single page is inefficient because workers would forget what videos they had reviewed already as they scrolled up and down the page. Thus we designed a layout to display as many videos as we could per page while avoiding having workers scroll. 4. Looping videos and audio on mouse over. To enable fast visual scanning of the videos, each task page was populated with eight
-
 <a id="page-5"></a>
+
+The component index is corresponding to the numbers in Figure [4.](<#page-5>) 1. Contextualized instructions. These instructions reiterate what was presented on the landing page, but without the example videos. 2. Progress bar. We used a progress bar to show workers how many videos are still needed, how many are left in the pool, and how many they have selected. 3. No scrolling. To design a user interface that lets workers rapidly sift through videos, we first implemented a web interface with all videos on one page and asked workers to select interesting videos. From follow-up interviews with workers, we found that displaying all the videos on a single page is inefficient because workers would forget what videos they had reviewed already as they scrolled up and down the page. Thus we designed a layout to display as many videos as we could per page while avoiding having workers scroll. 4. Looping videos and audio on mouse over. To enable fast visual scanning of the videos, each task page was populated with eight looping videos. These videos were muted, however, workers could move their mouse over any video to trigger its audio. This approach helped workers to rapidly go through a large corpus of videos. Furthermore, we experimented with using keyboard shortcuts to play, pause, and select videos, but we found that workers were faster with the mouse-based approach. Also, using the mouse resulted in more videos being mouse hovered (reviewed) and selected. We also experimented with different video preview speeds but found no difference in execution time compared to normal video speed.
 
 <table>
   <thead>
@@ -193,8 +197,6 @@ Table 1: A list of automated filters, how we implemented them in Sifter, and the
 ![Figure 4. Sifter’s task page shows a grid of eight video previews in a browser. Callout 1 marks the task instructions and theme keywords at the top. Callout 2 marks progress indicators showing how many videos have been viewed and selected. Callout 3 marks the video grid; callout 4 marks the pointer over a video, where workers can enable audio and click to select. Callout 5 marks the page timer. A green Next button spans the bottom. Videos autoplay silently until a worker hovers over them to hear audio.](../figures/chen-sifter-imx2020/figure-004-p005.png)
 
 Figure 4: Sifter UI task page. Workers can see the instructions, their progress (number of videos they have seen and selected), and a timer on every page. All videos autoplay silently when workers arrive on the page; they can mouse over videos to turn on audio, and click to select.
-
-looping videos. These videos were muted, however, workers could move their mouse over any video to trigger its audio. This approach helped workers to rapidly go through a large corpus of videos. Furthermore, we experimented with using keyboard shortcuts to play, pause, and select videos, but we found that workers were faster with the mouse-based approach. Also, using the mouse resulted in more videos being mouse hovered (reviewed) and selected. We also experimented with different video preview speeds but found no difference in execution time compared to normal video speed.
 
 5. Timer. The sifting task is such that it is not necessary to select every good video, but only a small set of them. Additionally, as one of our goals is to speed up the process, we set a 30-second limit on each page to prevent workers from getting stuck watching videos in great detail.
 
@@ -404,13 +406,11 @@ For each compilation, we calculated a rating for a sample of videos output by Si
 
 To reduce the biases resulting from the raters’ different background knowledge (according to their feedback), we also added a baseline condition that consists of a sample of randomly selected videos. These videos were retrieved from the corpus using the keywords described in Table 3, e.g., 10 random videos out of the 1,984 videos that were collected for compilation C2. Then we measured Sifter’s and the staff curators’ ratings relative to the baseline rating.
 
-The rating for each video in the Sifter sample was calculated by subtracting the average of the baseline ratings from the rating given by the rater to that video. We then calculated the average of all of the individual ratings in Sifter and used that as the rating for Sifter for that compilation, e.g., 0.93 for compilation C5 in Figure [5.](<#page-7>) In this way, we took into account the individual raters’ differences in perception and were able to make the difference comparison to determine the effectiveness of Sifter. We conducted 12 comparisons using two-tailed, paired-samples t-test, and with Bonferroni correction, we considered the comparison result significant if the p−value was below .05/12 = .0042. We found that the ratings for eleven out of the twelve compilations generated by Sifter showed no significant differences (p &gt; .0042); the other one compilation,
+The rating for each video in the Sifter sample was calculated by subtracting the average of the baseline ratings from the rating given by the rater to that video. We then calculated the average of all of the individual ratings in Sifter and used that as the rating for Sifter for that compilation, e.g., 0.93 for compilation C5 in Figure [5.](<#page-7>) In this way, we took into account the individual raters’ differences in perception and were able to make the difference comparison to determine the effectiveness of Sifter. We conducted 12 comparisons using two-tailed, paired-samples t-test, and with Bonferroni correction, we considered the comparison result significant if the p−value was below .05/12 = .0042. We found that the ratings for eleven out of the twelve compilations generated by Sifter showed no significant differences (p &gt; .0042); the other one compilation, C3, were rated significantly lower (p &lt; .0042). We analyzed the reasons in detail in a later section.
 
 ![Figure 5. Paired box plots of relative relevance ratings for compilations C1–C12, Sifter in blue and staff curators in cyan. Ratings are relative to a baseline random sample. Most medians are near 0–2, with substantial overlapping spreads. For C3, the staff-curator median is about 1 while Sifter is near 0; this is the only compilation reported as significantly different after the source’s correction (p&lt;.0042). C12 has among the highest median ratings for both approaches.](../figures/chen-sifter-imx2020/figure-007-p007.png)
 
 Figure 5: A box plot comparing Sifter with staff curators using a relative rating measurement. For C3, the curator’s ratings were significantly different from Sifter’s (p &lt; .0042).
-
-C3, were rated significantly lower (p &lt; .0042). We analyzed the reasons in detail in a later section.
 
 ### 5.3 Workers use different strategies.
 
@@ -424,15 +424,13 @@ A relevance-centric strategy means the worker reported focusing primarily on ide
 
 ### 6.1 Parameter values in the pipeline
 
-One of our contributions is the design of Sifter’s pipeline. However, the parameter values we derived for the final evaluation were based
+<a id="page-8"></a>
+
+One of our contributions is the design of Sifter’s pipeline. However, the parameter values we derived for the final evaluation were based on our need to form compilations with 10 to 20 videos. Future users of Sifter’s pipeline would need to find their own optimal values parameter for their data and scenarios. Future work should also explore the dynamics of the parameter values through additional controlled studies.
 
 ![Figure 6. Strategy occurrences reported by workers: relevance 19; quality 9; quality first then relevance 7; both quality and relevance 7; relevance first then quality 1. Relevance is the most common strategy.](../figures/chen-sifter-imx2020/figure-008-p007.png)
 
 Figure 6: Histogram of the popularity of different strategies among human workers.
-
-<a id="page-8"></a>
-
-IMX ’20, June 17–19, 2020, Cornella, Barcelona, Spain on our need to form compilations with 10 to 20 videos. Future users of Sifter’s pipeline would need to find their own optimal values parameter for their data and scenarios. Future work should also explore the dynamics of the parameter values through additional controlled studies.
 
 ### 6.2 Evaluating Automated Filter
 

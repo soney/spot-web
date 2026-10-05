@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb -->
+<!-- Source PDF SHA-256: 702709ec397f3899fecac393fa6c4a43f0ebd40a8fed997e19879853a8ce2e5e -->
 
 <a id="page-1"></a>
 
@@ -20,7 +20,7 @@
 
 [Steve Oney](<https://orcid.org/0000-0002-5823-1499>) University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
-Please use nonacm option or ACM Engage class to enable CC licenses [This work is licensed under a Creative Commons Attribution 4.0 International License.](<https://creativecommons.org/licenses/by/4.0/legalcode>) UIST ’26, November 02–05, 2026, Detroit, MI, USA © 2026 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-2856-3/2026/11 [https://doi.org/10.1145/3830398.3830696](<https://doi.org/10.1145/3830398.3830696>)
+> Please use nonacm option or ACM Engage class to enable CC licenses [This work is licensed under a Creative Commons Attribution 4.0 International License.](<https://creativecommons.org/licenses/by/4.0/legalcode>) UIST ’26, November 02–05, 2026, Detroit, MI, USA © 2026 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-2856-3/2026/11 [https://doi.org/10.1145/3830398.3830696](<https://doi.org/10.1145/3830398.3830696>)
 
 ## Abstract
 
@@ -34,6 +34,8 @@ Computing Education; Code Visualization; Student-AI Interaction
 
 Ashley Ge Zhang, Yan-Ru Jhou, Yinuo Yang, Shamita Rao, Maryam Arab, Yan Chen, and Steve Oney. 2026. Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code . In The 39th Annual ACM Symposium on User Interface Software and Technology (UIST ’26), November 02–05, 2026, Detroit, MI, USA. ACM, New York, NY, USA, [19](<#page-19>) pages. [https://doi.org/10.1145/3830398.3830696](<https://doi.org/10.1145/3830398.3830696>)
 
+![Creative Commons Attribution (CC BY) license logo.](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-001-p001.png)
+
 ## 1 INTRODUCTION
 
 Recent advances in large language models (LLMs) present both opportunities and challenges in computer science education. While LLMs can boost students’ productivity \[[40](<#page-12>)\] and provide flexible feedback \[[33](<#page-12>)\], they also raise concerns about over-reliance and reduced engagement in the learning process \[10, [37,](<#page-12>) 40\].
@@ -45,8 +47,6 @@ To address this challenge, we propose Editrail, a system for understanding stude
 <a id="page-2"></a>
 
 To evaluate the efficacy of Editrail in understanding students’ AI usage and supporting timely intervention, we collected coding histories and AI interactions from 20 students across two Python programming problems and conducted a within-subject study with 12 instructors. Our findings show that by visualizing AI code contributions as trails in students’ edits, Editrail enables instructors to identify AI usage more accurately and efficiently than a baseline system that shows only code and chat logs. Editrail also reveals new opportunities for designing personalized guidance around students’ AI use. By bridging the visibility gap between students’ interactions with AI and what instructors can observe, Editrail helps instructors align interventions with pedagogical goals and inform effective classroom AI policies. This paper contributes:
-
-![Creative Commons Attribution (CC BY) license logo.](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-001-p001.png)
 
 - (1) A need finding survey of 27 lead programming instructors at 15 universities, spanning multiple continents and course levels, identifying limited instructor visibility into student-AI interactions, challenges in enforcing AI policies, and design goals for monitoring and guidance tools. (2) A dataset of 20 students’ Python coding activities, capturing 188–319 lines of code, up to 2610 edits, and up to 42 AI chats. (3) An interactive tool (Editrail) that enables instructors to identify AI usage patterns and deliver in-situ interventions. (4) Evidence from a comparison study showing that Editrail bridges the visibility gap between students’ AI use and instructors’ observations, enabling alignment of AI policies and interventions with pedagogical goals.
 
@@ -74,13 +74,9 @@ However, this work has largely focused on AI outputs, such as what was prompted 
 
 Students benefit more from active engagement in problem-solving activities than from passive content consumption \[[24](<#page-12>), [25](<#page-12>), [48](<#page-13>)\]. Within this context, feedback is understood not only as corrective but also as motivational, supporting students in persisting after errors and refining their understanding \[49\].
 
-Prior work has introduced tools to help instructors understand students’ code in order to provide targeted and timely feedback \[[12](<#page-12>), [14](<#page-12>), [16](<#page-12>), [50](<#page-13>), [52](<#page-13>), [54](<#page-13>)\]. Some systems cluster code submissions to reveal common approaches and mistakes, enabling reusable feedback at scale \[[12](<#page-12>), [16](<#page-12>), [54](<#page-13>)\]. However, these techniques primarily operate on final submissions and overlook the dynamic process of how code is written. CodeOpticon addresses process-level visibility by streaming multiple students’ live editors \[[14](<#page-12>)\], but this requires intensive manual monitoring and does not scale to large classrooms. VizProg reduces this burden by visualizing coding progress as dynamic points on a 2D map \[[52](<#page-13>)\], yet these tools focus on progress rather than the provenance of code. More recently, tools such as
-
 <a id="page-3"></a>
 
-Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code
-
-Meta-Manager visualize metadata about code origins, for example labeling activities like copy–paste or Stack Overflow search \[[17](<#page-12>)\]. However, such high-level summaries provide only coarse signals and are insufficient for instructors to fully understand how students use AI while programming. Editrail fills this gap by directly visualizing contributions from both students and AI within coding histories, enabling instructors to identify AI usage patterns and deliver timely, targeted support.
+Prior work has introduced tools to help instructors understand students’ code in order to provide targeted and timely feedback \[[12](<#page-12>), [14](<#page-12>), [16](<#page-12>), [50](<#page-13>), [52](<#page-13>), [54](<#page-13>)\]. Some systems cluster code submissions to reveal common approaches and mistakes, enabling reusable feedback at scale \[[12](<#page-12>), [16](<#page-12>), [54](<#page-13>)\]. However, these techniques primarily operate on final submissions and overlook the dynamic process of how code is written. CodeOpticon addresses process-level visibility by streaming multiple students’ live editors \[[14](<#page-12>)\], but this requires intensive manual monitoring and does not scale to large classrooms. VizProg reduces this burden by visualizing coding progress as dynamic points on a 2D map \[[52](<#page-13>)\], yet these tools focus on progress rather than the provenance of code. More recently, tools such as Meta-Manager visualize metadata about code origins, for example labeling activities like copy–paste or Stack Overflow search \[[17](<#page-12>)\]. However, such high-level summaries provide only coarse signals and are insufficient for instructors to fully understand how students use AI while programming. Editrail fills this gap by directly visualizing contributions from both students and AI within coding histories, enabling instructors to identify AI usage patterns and deliver timely, targeted support.
 
 ## 3 NEED FINDING STUDY
 
@@ -94,9 +90,9 @@ The survey covers instructors’ views on effective and inappropriate AI use, de
 
 To capture diverse experiences with AI integration, we targeted university-level lead programming instructors responsible for course-level AI policies in synchronous classes. We identified 44 institutions (41 highly ranked global universities plus three universities affiliated with the authors), selected relevant coding-heavy courses across undergraduate and graduate levels, and conducted personalized email outreach to the instructors. Of 208 instructors contacted, 27 instructors from 15 universities participated. All were Head or Lead Instructors, most with 3 to 15 years of teaching experience and instructing introductory or intermediate programming courses. Appendix [A](<#page-14>) details our recruiting process.
 
-#### 3.1.2 Data
+#### 3.1.2 Data analysis.
 
-analysis. We conducted an inductive thematic analysis \[[6](<#page-12>)\], beginning with open coding \[[41](<#page-12>)\] by two authors, after which six authors reviewed and finalized the themes. In parallel, we conducted a descriptive quantitative analysis of closed-ended and countable responses, using frequency counts (e.g., number of instructors reporting a pattern) to contextualize qualitative findings. The final themes covered: (i) perceived good and bad AI usage by students, (ii) policies and rationales regarding AI usage, and (iii) ways of detecting AI usage and instructors’ thoughts on tool incorporation. We further synthesized three key findings: (i) the need for a better understanding of students’ AI usage, (ii) the challenges in tracking AI usage, and (iii) unclear classroom AI policies. Based on our findings, we derived two design goals for understanding and guiding student-AI interaction in programming courses.
+We conducted an inductive thematic analysis \[[6](<#page-12>)\], beginning with open coding \[[41](<#page-12>)\] by two authors, after which six authors reviewed and finalized the themes. In parallel, we conducted a descriptive quantitative analysis of closed-ended and countable responses, using frequency counts (e.g., number of instructors reporting a pattern) to contextualize qualitative findings. The final themes covered: (i) perceived good and bad AI usage by students, (ii) policies and rationales regarding AI usage, and (iii) ways of detecting AI usage and instructors’ thoughts on tool incorporation. We further synthesized three key findings: (i) the need for a better understanding of students’ AI usage, (ii) the challenges in tracking AI usage, and (iii) unclear classroom AI policies. Based on our findings, we derived two design goals for understanding and guiding student-AI interaction in programming courses.
 
 ### 3.2 Lack of Visibility into Students’ AI Usage
 
@@ -110,23 +106,19 @@ Instructors report several challenges in tracking students’ AI usage. Most cou
 
 ### 3.4 Unclear Tracking of AI Usage Leads to Inconsistent and Unenforceable AI Policies
 
-Policies varied by personal philosophy and course level, shifting from strict control in introductory courses to greater flexibility in advanced and applied contexts. In introductory courses (e.g., CS1/CS2), 8 instructors prohibited AI use entirely, while 12 allowed it with restrictions; none permitted fully open use. Intermediate courses generally allowed limited use of AI tools, often paired with discussions of LLMs, with only one instructor having a strict prohibition. Advanced courses did not prohibit AI, instead integrating it with disclosure requirements, while applied and specialized courses were the most permissive, restricting AI only in specific assessments. Despite these differences, instructors shared a common goal:
-
 <a id="page-4"></a>
+
+Policies varied by personal philosophy and course level, shifting from strict control in introductory courses to greater flexibility in advanced and applied contexts. In introductory courses (e.g., CS1/CS2), 8 instructors prohibited AI use entirely, while 12 allowed it with restrictions; none permitted fully open use. Intermediate courses generally allowed limited use of AI tools, often paired with discussions of LLMs, with only one instructor having a strict prohibition. Advanced courses did not prohibit AI, instead integrating it with disclosure requirements, while applied and specialized courses were the most permissive, restricting AI only in specific assessments. Despite these differences, instructors shared a common goal: ensuring AI use does not undermine learning. They emphasized that students should develop independent problem-solving skills before relying on AI, which may otherwise “rob them of the processes needed to deepen their understanding.” However, binary policies (‘allow’ vs. ‘ban’) are insufficient. Without ways to reliably identify AI misuse, policies were difficult to enforce and sometimes led to unfairness, where compliant students were disadvantaged while others used AI undetected. Even with disclosure requirements, instructors noted that “students are still not being transparent about their use.” These enforcement challenges make it difficult to interpret suspected AI use without visibility into students’ processes. Instructors cannot distinguish among misunderstanding, over-reliance on AI, and a genuine attempt to follow course expectations, motivating DG2 [(§3.5](<#page-4>) below): enabling targeted, learning-oriented guidance on AI use rather than relying on punitive or policy-driven responses.
 
 ![Figure 1: User interface of Editrail. (1) Timeline View: rows represent code lines (b) and time flows horizontally (a). Edits are shown as colored overlays indicating different types of AI involvement (d): red for copy–paste, green for autocomplete, and pink for student-typed code that closely resembles AI-generated output. Indicators also show coding progress from start to finish. (2) Code Content View: aligned program text showing the full source code at the selected point in time (c), enabling instructors to connect timeline annotations with specific code states. When using Editrail, users can follow three steps: (1) get an overview of AI use distribution, (2) identify code regions with potential AI-related concerns, and (3) inspect detailed edits and AI use. The code view shows the content in the student’s editor at the selected time, while the timeline view provides a cumulative visualization of the student’s progress and AI use. When users zoom in and select an area in the timeline, the code view focuses on the corresponding code region at that time. The code view only shows code content without additional AI color coding beyond syntax highlighting. The AI usage color encoding only appears in the timeline visualization.](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-002-p004.png)
 
 Figure 1: User interface of Editrail. (1) Timeline View: rows represent code lines (b) and time flows horizontally (a). Edits are shown as colored overlays indicating different types of AI involvement (d): red for copy–paste, green for autocomplete, and pink for student-typed code that closely resembles AI-generated output. Indicators also show coding progress from start to finish. (2) Code Content View: aligned program text showing the full source code at the selected point in time (c), enabling instructors to connect timeline annotations with specific code states. When using Editrail, users can follow three steps: (1) get an overview of AI use distribution, (2) identify code regions with potential AI-related concerns, and (3) inspect detailed edits and AI use. The code view shows the content in the student’s editor at the selected time, while the timeline view provides a cumulative visualization of the student’s progress and AI use. When users zoom in and select an area in the timeline, the code view focuses on the corresponding code region at that time. The code view only shows code content without additional AI color coding beyond syntax highlighting. The AI usage color encoding only appears in the timeline visualization.
 
-ensuring AI use does not undermine learning. They emphasized that students should develop independent problem-solving skills before relying on AI, which may otherwise “rob them of the processes needed to deepen their understanding.” However, binary policies (‘allow’ vs. ‘ban’) are insufficient. Without ways to reliably identify AI misuse, policies were difficult to enforce and sometimes led to unfairness, where compliant students were disadvantaged while others used AI undetected. Even with disclosure requirements, instructors noted that “students are still not being transparent about their use.” These enforcement challenges make it difficult to interpret suspected AI use without visibility into students’ processes. Instructors cannot distinguish among misunderstanding, over-reliance on AI, and a genuine attempt to follow course expectations, motivating DG2 [(§3.5](<#page-4>) below): enabling targeted, learning-oriented guidance on AI use rather than relying on punitive or policy-driven responses.
-
 ### 3.5 Design Goals
 
 We derived two design goals (DGs) from the need-finding study:
 
-- DG1 Provide visibility into students’ AI usage. Students’ AI usage should be transparent and interpretable to instructors. The system could reveal key aspects of student-AI interaction, such as prompting, adaptation, and authorship balance. This reduces reliance on manual inspection or self-report, giving instructors
-
-the awareness they need to understand coding behaviors and intervene when necessary.
+- DG1 Provide visibility into students’ AI usage. Students’ AI usage should be transparent and interpretable to instructors. The system could reveal key aspects of student-AI interaction, such as prompting, adaptation, and authorship balance. This reduces reliance on manual inspection or self-report, giving instructors the awareness they need to understand coding behaviors and intervene when necessary.
 
 - DG2 Enable targeted, learning-oriented guidance on AI usage. Visibility alone is not sufficient; instructors also need ways to act on this information. Systems should help instructors connect observed AI usage patterns with context-specific feedback that ensures students learn core concepts rather than bypass them. For example, when instructors see over-reliance on AI suggestions, the system could help them create feedback that addresses misconceptions, scaffolds problem-solving, and encourages productive use of AI.
 
@@ -178,9 +170,13 @@ Through this speculative feature, we explored whether instructors might benefit 
 
 Editrail’s implementation contains two key components: a VSCode extension for students and a web application for instructors. Our implementation of Editrail is open-source[1](<#page-6>).
 
+> <sup>1</sup>[https://github.com/AshleyZG/Editrail](<https://github.com/AshleyZG/Editrail>)
+
 #### 4.4.1 VSCode Extension for Students.
 
 The VSCode extension streams coding history and AI chat interactions, and detects whether code originates from AI or students. It builds on an existing tool that collects keystroke-level edits from the University of Michigan[2](<#page-6>), which we extended to also capture students’ GitHub Copilot Chat messages, including the prompt, the AI’s responses, and the context sent when prompting LLMs. Every keystroke, edit, and chat is streamed to the instructor’s website via WebSocket, and a recording function saves students’ edit and chat logs to a JSON file. VSCode also communicates with the instructor’s website to forward questions from instructors to students and answers back.
+
+> <sup>2</sup>[https://github.com/educational-technology-collective/vscode-telemetry](<https://github.com/educational-technology-collective/vscode-telemetry>)
 
 #### 4.4.2 Instructor’s Web Application.
 
@@ -189,6 +185,8 @@ The instructor web application consists of a React/TypeScript frontend and a Nod
 ## 5 Students’ Coding Dataset
 
 To get a realistic dataset of students’ coding histories, we conducted a study to collect students’ coding history data on two Python programming problems. This dataset is used for evaluating Editrail. We also publish the dataset as a contribution to this paper[3](<#page-6>).
+
+> <sup>3</sup>[https://github.com/AshleyZG/Editrail-data](<https://github.com/AshleyZG/Editrail-data>)
 
 ### 5.1 Recruitment
 
@@ -199,12 +197,6 @@ We recruited undergraduate and graduate students (18+) from computer science and
 <a id="page-7"></a>
 
 Each participant completed two Python programming tasks in counterbalanced order, yielding 20 coding histories per task. For each, we collected keystroke coding logs, AI chat messages (GitHub Copilot), and test results per run. To ensure diverse coding and AI usage patterns, 10 participants used AI without restrictions, while the other 10 were instructed to use AI only when stuck. These conditions were independent of experience level, as our goal was to elicit varied AI-usage patterns rather than compare groups by background. The study was conducted virtually on Zoom, and each participant received a $15 USD Amazon gift card.
-
-> <sup>1</sup>[https://github.com/AshleyZG/Editrail](<https://github.com/AshleyZG/Editrail>)
-
-> <sup>2</sup>[https://github.com/educational-technology-collective/vscode-telemetry](<https://github.com/educational-technology-collective/vscode-telemetry>)
-
-> <sup>3</sup>[https://github.com/AshleyZG/Editrail-data](<https://github.com/AshleyZG/Editrail-data>)
 
 ![Figure 4: Three cases of code that originates from AI. (a) The user copies and pastes code directly from an AI agent (e.g., ChatGPT or Copilot chat). (b) The user accepts an autocomplete suggestion (e.g., from Copilot’s in-editor hints). (c) The user types code that is very similar to something that was part of their conversation with an AI agent. The AI usage color encoding appears only in the timeline visualization. The code view shows code content with syntax highlighting only.](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-005-p007.png)
 
@@ -268,7 +260,7 @@ For single-choice questions, accuracy was binary (1 if correct, 0 otherwise). Op
 
 <a id="page-9"></a>
 
-![Figure 6: Baseline system for the user study. It represents conversation turns with AI agents (left) and code states (right).](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-007-p009.png)
+![Baseline study interface with a chronological AI conversation on the left and a source-code state on the right. Alternating blue student messages and gray AI answers discuss printing rows and checking whether a list is empty. The adjacent Python editor shows the student gradebook program with line numbers and syntax highlighting.](https://from.so/assets/markdown/figures/zhang-editrail-uist2026/figure-007-p009.png)
 
 Figure 6: Baseline system for the user study. It represents conversation turns with AI agents (left) and code states (right).
 
@@ -288,11 +280,11 @@ Participants found Editrail’s visualizations enabled quick understanding of AI
 
 However, participants had diverse opinions on what constitutes productive versus unproductive AI use, even when interpreting the same visual patterns. Some viewed heavy reliance on AI (e.g., large AI-generated blocks) as productive, interpreting it as the student assembling a working solution; others saw the same pattern as unproductive, reflecting limited learning. Similarly, back-and-forth edits on AI-generated code were read either as exploration and validation or as struggle and inefficiency. Overall, judgments of productivity varied with how instructors conceptualized AI’s role in learning. This aligns with the formative study (Section [3.3):](<#page-3>) the wide variation in students’ AI usage leads to different interpretations of whether it is productive, and highlights the need for mechanisms to quickly assess students’ understanding of specific concepts. Editrail provides visibility into fine-grained AI use, enabling instructors to monitor and reason about AI usage patterns and then apply their own pedagogical goals to judge whether it is productive.
 
-#### 6.3.2 When better understanding of students’ AI usage than they actually demonstrated.
+#### 6.3.2 When using the baseline, participants believed they had a better understanding of students’ AI usage than they actually demonstrated.
 
 <a id="page-10"></a>
 
-using the baseline, participants believed they had a While participants showed significantly lower quiz accuracy with the baseline, several reported a good understanding of AI usage using the baseline with no statistical significance in their self-report results (Table 4). We identified reasons for this gap between actual and perceived understanding of AI usage. Participants relied on chat histories as direct evidence of prompting behavior, for example, whether students requested explanations or submitted full problem descriptions. P12 noted that prompting patterns reveal learning quality: copy-pasting instructions to obtain full solutions suggests unproductive use, whereas asking for help with syntax, understanding prompts, or small code segments indicates more productive engagement. While chat history is also provided in Editrail, it was less prominent and rarely used. Participants had two main interaction patterns with the baseline: carefully reading all messages or skimming and guessing. The latter often stemmed from cognitive overload, as text-heavy conversations were difficult to process; P5 found it “hard to distill insightful points” from them. Additionally, participants struggled to link chat messages to code changes. P6 noted that without visual cues (e.g., color or code mapping), the baseline requires manual comparison, making it difficult to identify AI-influenced segments and adaptations.
+While participants showed significantly lower quiz accuracy with the baseline, several reported a good understanding of AI usage using the baseline with no statistical significance in their self-report results (Table 4). We identified reasons for this gap between actual and perceived understanding of AI usage. Participants relied on chat histories as direct evidence of prompting behavior, for example, whether students requested explanations or submitted full problem descriptions. P12 noted that prompting patterns reveal learning quality: copy-pasting instructions to obtain full solutions suggests unproductive use, whereas asking for help with syntax, understanding prompts, or small code segments indicates more productive engagement. While chat history is also provided in Editrail, it was less prominent and rarely used. Participants had two main interaction patterns with the baseline: carefully reading all messages or skimming and guessing. The latter often stemmed from cognitive overload, as text-heavy conversations were difficult to process; P5 found it “hard to distill insightful points” from them. Additionally, participants struggled to link chat messages to code changes. P6 noted that without visual cues (e.g., color or code mapping), the baseline requires manual comparison, making it difficult to identify AI-influenced segments and adaptations.
 
 #### 6.3.3 Editrail helps instructors identify when to intervene and which students need intervention.
 
@@ -431,8 +423,6 @@ In this work, we conducted a survey study to examine instructors’ practices, p
 - \[41\] Anselm Strauss and Juliet Corbin. 1994. Grounded theory methodology: An overview. (1994).
 
 <a id="page-13"></a>
-
-Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code
 
 - \[42\] Sangho Suh, Meng Chen, Bryan Min, Toby Jia-Jun Li, and Haijun Xia. 2024. Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation. In Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI ’24). ACM, 1–26. [https://doi.org/](<https://doi.org/10.1145/3613904.3642400>) [10.1145/3613904.3642400](<https://doi.org/10.1145/3613904.3642400>)
 

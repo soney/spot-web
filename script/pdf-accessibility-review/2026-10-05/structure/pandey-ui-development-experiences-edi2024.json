@@ -1,0 +1,196 @@
+{
+  "file": "pandey-ui-development-experiences-edi2024.pdf",
+  "pdf_sha256": "12ca2d59d975f48e9d9034610834f69abd2059eb6065a9bd716619f42b53eabd",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
+  "structure_elements": 204,
+  "roles": {
+    "Document": 1,
+    "Art": 1,
+    "Sect": 1,
+    "P": 48,
+    "H1": 1,
+    "Reference": 36,
+    "Link": 36,
+    "Span": 20,
+    "H2": 6,
+    "BlockQuote": 6,
+    "H3": 4,
+    "Figure": 2,
+    "Caption": 1,
+    "Note": 1,
+    "L": 1,
+    "LI": 13,
+    "Lbl": 13,
+    "LBody": 13
+  },
+  "structure_content_references": 510,
+  "parent_tree_entries": 50,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 1,
+      "text_operations_tagged": 42,
+      "link_annotations": 6
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 62,
+      "link_annotations": 14
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 43,
+      "link_annotations": 5
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 34
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 37,
+      "link_annotations": 1
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 34,
+      "link_annotations": 1
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 37,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 50,
+      "vector_operations_tagged": 38,
+      "text_operations_tagged": 52
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 37,
+      "vector_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 40,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 35,
+      "link_annotations": 2
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 66
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 42,
+      "vector_operations_tagged": 10,
+      "link_annotations": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "165:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "386:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "460:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "466:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "469:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "471:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "481:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "496:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "501:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "292:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "294:0",
+      "page": 12
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "491:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Two visually identical forms demonstrate screen-reader focus order. Both show first name Jane, last name Doe, birthdate 01-01-2000, and a Submit button. In the accessible form, focus follows the visual top-to-bottom order: first name 1, last name 2, birthdate 3, Submit 4. In the inaccessible form, focus starts on Submit 1, then jumps to first name 2, last name 3, and birthdate 4.",
+      "actual_text": ""
+    },
+    {
+      "element": "287:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Creative Commons Attribution 4.0 license symbol.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

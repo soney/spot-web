@@ -1,0 +1,431 @@
+{
+  "file": "chen-providing-on-demand-expert-chi2016.pdf",
+  "pdf_sha256": "663aa661768a6bd8b4af745ff8388f9d62e477b1c67fc5ad06db380740d1e5e8",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "Towards Providing On-Demand Expert Support for Software Developers",
+  "structure_elements": 548,
+  "roles": {
+    "Document": 1,
+    "Sect": 13,
+    "H1": 1,
+    "P": 143,
+    "H2": 11,
+    "H3": 20,
+    "Note": 1,
+    "Link": 68,
+    "L": 5,
+    "LI": 55,
+    "Lbl": 54,
+    "LBody": 55,
+    "H4": 27,
+    "Figure": 2,
+    "Caption": 4,
+    "Table": 2,
+    "THead": 2,
+    "TR": 15,
+    "TH": 22,
+    "TBody": 2,
+    "TD": 44,
+    "Span": 1
+  },
+  "structure_content_references": 11053,
+  "parent_tree_entries": 81,
+  "form_xobjects_visited": 2,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 836,
+      "link_annotations": 2
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 985,
+      "link_annotations": 4
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1025,
+      "link_annotations": 20
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 1003,
+      "link_annotations": 26
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 21,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 895,
+      "link_annotations": 2
+    },
+    {
+      "page": 6,
+      "vector_operations_artifact": 43,
+      "text_operations_tagged": 921,
+      "link_annotations": 2
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 29,
+      "text_operations_tagged": 992,
+      "image_operations_tagged": 6,
+      "link_annotations": 1
+    },
+    {
+      "page": 8,
+      "vector_operations_artifact": 62,
+      "text_operations_tagged": 903
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 994,
+      "link_annotations": 1
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 1002,
+      "link_annotations": 3
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 712,
+      "link_annotations": 5
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 743,
+      "link_annotations": 2
+    },
+    {
+      "page": 13,
+      "text_operations_tagged": 54
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "405:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "407:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "409:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "411:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "413:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "437:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "439:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "444:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "446:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "449:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "451:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "453:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "463:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "468:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "699:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "701:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "714:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "717:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "719:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "724:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "726:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "729:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "731:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "762:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "764:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "766:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "770:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "773:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "778:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "781:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "788:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "796:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "836:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "845:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "847:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "860:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "864:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "868:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "928:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "932:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "937:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "941:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "947:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "949:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "951:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "954:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "960:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "962:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "967:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "973:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "977:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "981:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "983:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "986:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "988:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "990:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "992:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "998:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "760:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Hypothetical-assistant study diagram. A developer works in their own IDE on the left and sends a query to a proposed intelligent assistant in the center; the query is recorded in a log on the right. A curved green arrow carries code context and task information from the developer to the assistant. In this study the assistant is hypothetical, so the interaction captures when developers would ask for help.",
+      "actual_text": ""
+    },
+    {
+      "element": "855:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Expert-help study diagram. A developer and IDE are on the left and a remote expert is on the right. Query and code travel from developer to expert. Voice or chat allows two-way communication, and a curved Answer/Code arrow returns guidance from the expert to the developer. The expert responds when the developer requests help.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

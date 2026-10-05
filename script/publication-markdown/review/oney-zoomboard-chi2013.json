@@ -2,9 +2,9 @@
   "file": "oney-zoomboard-chi2013.pdf",
   "title": "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices",
   "publication_id": "zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013",
-  "pdf_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+  "pdf_sha256": "d2ceadaeedce901bb513624f344439478e86cd36cc4820e7df0b4e0610c0edfe",
   "markdown": "publications/oney-zoomboard-chi2013.md",
-  "markdown_sha256": "c4121956f74e3bfaf22365b5f9969cc3f65ab951cf3b8e1faa0e86810fb52ea4",
+  "markdown_sha256": "abb18ac533ff2e8dfa61daa2e9e2a4206aaf3f1926819590e78119259f4ad9a0",
   "pages": 4,
   "blocks": [
     {
@@ -41,11 +41,11 @@
     },
     {
       "node": "47:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 101
+      "characters": 103
     },
     {
       "node": "55:0",
@@ -112,7 +112,7 @@
       "characters": 588
     },
     {
-      "node": "joined-46:0",
+      "node": "46:0",
       "role": "P",
       "pages": [
         1
@@ -144,7 +144,7 @@
       "characters": 583
     },
     {
-      "node": "joined-52:0",
+      "node": "52:0",
       "role": "P",
       "pages": [
         1,
@@ -193,7 +193,7 @@
       "characters": 1173
     },
     {
-      "node": "joined-61:0",
+      "node": "61:0",
       "role": "P",
       "pages": [
         2
@@ -252,9 +252,10 @@
       "node": "69:0",
       "role": "P",
       "pages": [
-        2
+        2,
+        3
       ],
-      "characters": 294
+      "characters": 392
     },
     {
       "node": "71:0",
@@ -271,14 +272,6 @@
         3
       ],
       "characters": 216
-    },
-    {
-      "node": "73:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 97
     },
     {
       "node": "74:0",
@@ -513,12 +506,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 140,
+    "line_wrap_hyphens_removed": 128,
     "reviewed_wrap_repairs": 8,
-    "paragraph_fragments_joined": 3,
     "line_wrap_hyphens_retained": 10
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-zoomboard-chi2013.json.gz",
-  "source_tags_sha256": "6f033093fccdaf8327cf881dd97778dd97aa770a606837f91a6e35fc367536f3"
+  "source_tags_sha256": "7d422a11e433cbdd265584a5047745b038272696ad66c9c0b3294f1cdb3580ac"
 }

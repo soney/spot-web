@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1 -->
+<!-- Source PDF SHA-256: abde555d89b5cf15cd1176db009a0e4fd0ada080fa347d4de776948ff258a451 -->
 
 <a id="page-1"></a>
 
@@ -16,15 +16,13 @@ Steve Oney University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
 Figure 1: The workflow of CoCapture. There are four steps of using CoCapture to communicate new UI behavior mockups on an existing website. (Step 1) Users first capture existing interface behaviors (base scene) by interacting with the website (scrolling), and CoCapture will automatically capture the Document Object Model (DOM) changes. (Step 2) In CoCapture’s main panel, users can add new behaviors on top of the base scene by demonstration; that is, by directly manipulating any elements (e.g., drag and drop the red element in the replay and see immediate changes). (Step 3) Users can remix (post-edit, e.g., change duration) added behaviors to finalize the mockup. (Step 4) Users can refer to the DOM elements or added behaviors in the textual description using hypertext.
 
-© 2021 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-8096-6/21/05...$15.00 [https://doi.org/10.1145/3411764.3445573](<https://doi.org/10.1145/3411764.3445573>)
+> © 2021 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-8096-6/21/05...$15.00 [https://doi.org/10.1145/3411764.3445573](<https://doi.org/10.1145/3411764.3445573>)
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’21, May 8–13, 2021, Yokohama, Japan
 
 ## ABSTRACT
 
-User Interface (UI) mockups are commonly used as shared context during interface development collaboration. In practice, UI designers often use screenshots and sketches to create mockups of desired UI behaviors for communication. However, in the later stages of UI development, interfaces can be arbitrarily complex, making it labor-intensive to sketch, and static screenshots are limited in the types of interactive and dynamic behaviors they can express. We introduce CoCapture, a system that allows designers to easily create UI behavior mockups on existing web interfaces by demonstrating and remixing, and to accurately describe their requests to helpers by referencing the resulting mockups using hypertext. We showed that participants could more accurately describe UI behaviors with CoCapture than with existing sketch and communication tools and that the resulting descriptions were clear and easy to follow.
-
-Our approach can help teams develop UIs efficiently by bridging communication gaps with more accurate visual context.
+User Interface (UI) mockups are commonly used as shared context during interface development collaboration. In practice, UI designers often use screenshots and sketches to create mockups of desired UI behaviors for communication. However, in the later stages of UI development, interfaces can be arbitrarily complex, making it labor-intensive to sketch, and static screenshots are limited in the types of interactive and dynamic behaviors they can express. We introduce CoCapture, a system that allows designers to easily create UI behavior mockups on existing web interfaces by demonstrating and remixing, and to accurately describe their requests to helpers by referencing the resulting mockups using hypertext. We showed that participants could more accurately describe UI behaviors with CoCapture than with existing sketch and communication tools and that the resulting descriptions were clear and easy to follow. Our approach can help teams develop UIs efficiently by bridging communication gaps with more accurate visual context.
 
 ## KEYWORDS
 
@@ -38,11 +36,9 @@ Yan Chen, Sang Won Lee, and Steve Oney. 2021. CoCapture: Effectively Communicati
 
 Mockups are widely recognized in Human-Computer Interaction (HCI) as invaluable tools for communicating and evaluating design ideas. A mockup can help ground descriptions of UI functionality and can serve as a “boundary object” that allows designers to communicate with developers and other stakeholders. Mockups are useful throughout the User Interface (UI) development lifecycle, from exploration to refinement. However, most tools for mockup creation are built for the earlier (exploratory) stages of UI development.
 
-There are several challenges when creating mockups as communication tools in the later stages of UI development—for example, to
-
 <a id="page-2"></a>
 
-CHI ’21, May 8–13, 2021, Yokohama, Japan propose changes to a UI that already works or to describe a desired behavior in a UI that contains an error. First, most tools for creating mockups cannot import assets or behaviors from existing UIs, and it can be tedious to replicate the intricate details of a working UI in a mockup. Second, it can be difficult to communicate how an existing UI should change because it is not easy to point out the difference between the existing behavior and the mockup’s behavior— particularly when the change is nuanced or dynamic \[[43](<#page-14>), [48](<#page-14>), [51](<#page-14>)\]. Third, mockups that propose changes to existing behaviors often need to be mixed fidelity \[[40](<#page-14>)\]—with high-fidelity representations of existing components and low-fidelity renderings of proposed changes—but few mockup tools support this. These limitations led to our research question: How can we make communicating about changes to existing UIs easier and more effective?
+There are several challenges when creating mockups as communication tools in the later stages of UI development—for example, to propose changes to a UI that already works or to describe a desired behavior in a UI that contains an error. First, most tools for creating mockups cannot import assets or behaviors from existing UIs, and it can be tedious to replicate the intricate details of a working UI in a mockup. Second, it can be difficult to communicate how an existing UI should change because it is not easy to point out the difference between the existing behavior and the mockup’s behavior— particularly when the change is nuanced or dynamic \[[43](<#page-14>), [48](<#page-14>), [51](<#page-14>)\]. Third, mockups that propose changes to existing behaviors often need to be mixed fidelity \[[40](<#page-14>)\]—with high-fidelity representations of existing components and low-fidelity renderings of proposed changes—but few mockup tools support this. These limitations led to our research question: How can we make communicating about changes to existing UIs easier and more effective?
 
 In this paper, we introduce CoCapture, an interactive system that enables users, like UI designers, to easily create and then accurately describe dynamic UI behavior mockups. These mockups could represent changes the users want to propose or questions they want to ask about an aspect of the existing UI. With CoCapture, users first record the existing UI behavior by demonstrating an example interaction on the existing UI (Fig. [1](<#page-1>), Step 1). Building on this scene, users can further create dynamic behaviors via demonstrations that manipulate DOM elements (Fig. [1](<#page-1>), Step 2) and remix these demonstrations as a first-class animation object (Fig. [1](<#page-1>), Step 3) through direct manipulation and low-fidelity sketching. To help accurately specify the visual changes, users can write Natural Language (NL) descriptions in CoCapture that contain hypertext references to specific aspects of the mockups (e.g., specific DOM elements, new animated effects) (Fig. [1](<#page-1>), Step 4).
 
@@ -64,15 +60,15 @@ As Myers et al. \[[43](<#page-14>)\] explain, interactive behaviors define the �
 
 Systems like SILK \[[31](<#page-13>)\] and DENIM \[[39](<#page-14>)\] lower the overhead cost of prototyping by recognizing designers’ sketches as interface elements and implementing the idea of wireframing, respectively. However, they do not support creating prototypes in later stages of UI development. More recently, tools like Rewire \[[56](<#page-14>)\] and Poirot \[[57](<#page-14>)\] have made prototyping new designs easier by enabling the users to directly edit elements of existing examples. However, they do not support interactive UI behavior editing, which is more difficult than designing static layouts, as the behaviors are complex to demonstrate and designers have access to limited tools \[[51](<#page-14>)\]. Commercial tools like Figma \[[2](<#page-13>)\] and Adobe XD \[[1](<#page-13>)\] can ease the creation of interactive behaviors but assume their users would reconstruct existing interfaces from scratch, making it hard to scale. Other layout-capturing tools such as WebToLayers[1](<#page-2>) and PageLayers[2](<#page-2>) automatically convert websites to Photoshop documents. However, they only support static layouts; they do not preserve the DOM structure, element constraints, or dynamic UI behaviors. Crowd-powered systems like Apparition \[[32](<#page-13>)\] and SketchExpress \[[34](<#page-13>)\] allow designers or even non-experts to more rapidly create or reconstruct a prototype than they could with existing tools, but these systems also fall short of recreating particularly complex interfaces.
 
+> <sup>1</sup>[https://neededapps.com/webtolayers/](<https://neededapps.com/webtolayers/>)
+
+> <sup>2</sup>[https://www.pagelayers.com/](<https://www.pagelayers.com/>)
+
 Unlike these systems, CoCapture helps create interactive mock-ups in the later stages of UI development, proposing changes to a UI that already works or describing desired behaviors in a UI that contains an error. These UIs can be arbitrarily complex, requiring effort to create mockups that replicate existing functionality. Compared to layout-capturing tools, CoCapture also captures the DOM structure, allowing designers to easily add behavior mockups on existing interfaces. This gives them the ability to immediately envision the new behaviors and complete the process of creating a mockup as a reference.
 
 ### 2.2 Visual References as Shared Context in Communication
 
 Many prior studies have reported that people often include screenshots, drawings, or sketches as visual context in communication.
-
-> <sup>1</sup>[https://neededapps.com/webtolayers/](<https://neededapps.com/webtolayers/>)
-
-> <sup>2</sup>[https://www.pagelayers.com/](<https://www.pagelayers.com/>)
 
 <a id="page-3"></a>
 
@@ -98,13 +94,13 @@ We conducted two studies to better understand designers’ challenges and needs 
 
 We first conducted an analysis to identify the categories of questions related to UI behaviors that were most frequently asked on Stack Overflow (SO), a well-established Q&amp;A platform in the programming community. We analyzed the 200 most viewed questions that were tagged with JavaScript (JS) and CSS. We used these two tags because they are primarily used for manipulating UI elements (JS) and presenting them (CSS). We read through all the posts, counted other included tags, and documented the use of visual references in the posts. We found that 41 posts (20.5%) included tags that were CSS properties (e.g., height, position) or related to interface element changes (e.g., CSS-transition, sticky menus). We also examined the visual references included in each post and found that 34 posts (17%) included links to a live example of their problem[3](<#page-3>), 18 posts (9%) included screenshots, and 5 posts (2.5%) included sketches. This helped us determine which of the most frequently asked question categories also required visual information. We used this information to guide our system and study design.
 
+> <sup>3</sup>[https://stackoverflow.com/a/{24414642\|5445491\|17722497}](<https://stackoverflow.com/a/%7B24414642%7C5445491%7C17722497%7D>)
+
 ### 3.2 Needs and Challenges
 
 <a id="page-4"></a>
 
 Our second study examined how well existing tools can support communication about common UI behavior issues on existing web interfaces. We recruited eight participants with at least one year of UI design and development experience (3 female, 5 male) from the first author’s university. Among them, half acted as requesters to ask three questions using Scrimba \[[5](<#page-13>)\], a state-of-the-art tool that allows its users to simulate in-person communication by recording voice narration and editor activity (e.g., typing, highlighting). The three questions represent the most popular categories we found in our Stack Overflow analysis: a responsive UI task[4](<#page-3>), a platform game[5](<#page-3>), and an animated effect applied to an object[6](<#page-3>). The remaining participants acted as helpers, reviewing the clarity of the requesters’ three questions by comparing their understanding of the requests to the ground-truth desired output (presented as a video demonstration). All helpers were teaching assistants for a UI development course at the first author’s university. After the tasks, we held a follow-up interview with all participants in order to help inform the design of CoCapture.
-
-> <sup>3</sup>[https://stackoverflow.com/a/{24414642\|5445491\|17722497}](<https://stackoverflow.com/a/%7B24414642%7C5445491%7C17722497%7D>)
 
 > <sup>4</sup>[https://tinyurl.com/ydev4uwr](<https://tinyurl.com/ydev4uwr>)
 
@@ -156,9 +152,9 @@ Figure 2: CoCapture’s main panel (after Step 1 in Fig. [1](<#page-1>)). To cre
 
 Jerry, a junior professional web interface designer, is in the middle of prototyping a website that has most of its content ready. Now he wants to extend the website by adding some interactive behaviors to respond to a user scrolling event (e.g., the user profile picture fades out down[7](<#page-5>)). He decides to use CoCapture to create a mockup of his vision and then ask his peers for feedback. Jerry first clicks the Chrome extension on his website to start CoCapture (Fig. [2](<#page-5>)) and clicks the “Record Web Behavior” button (Fig. [2](<#page-5>).A left) to record a demonstration of him scrolling through the original website as if he were the user. Once finished, he clicks the play button (Fig. [2](<#page-5>).b2a) to watch the replay of his demonstration (Fig. [2](<#page-5>).B), verifying all the relevant context is captured.
 
-To create a mockup where the profile picture fades out down with the appropriate speed and distance as a user scrolls down the whole page (Fig. [2](<#page-5>).b1), Jerry first moves his cursor over the image until he sees a dotted border highlight the right element (e.g., not the element that wraps the image). After selecting the element, Jerry presses the “Record Element Behavior” button (Fig. [2](<#page-5>).A) and directly demonstrates the desired fading behavior. This behavior requires remixing two independent animations: the element moves down until the bottom half of the image is covered by the gray banner, and the transparency level of the element continuously decreases to half of its original value. Jerry creates these two animations by direct manipulation, seeing the changes immediately: he drags the element to the desired position (Fig. [2](<#page-5>).b1) and adjusts the “Transparency level” slider value to half of its original value (Fig. [2](<#page-5>).C).
+> <sup>7</sup>A similar fade-out example: [https://html5up.net/massively](<https://html5up.net/massively>)
 
-<sup>7</sup>A similar fade-out example: [https://html5up.net/massively](<https://html5up.net/massively>)
+To create a mockup where the profile picture fades out down with the appropriate speed and distance as a user scrolls down the whole page (Fig. [2](<#page-5>).b1), Jerry first moves his cursor over the image until he sees a dotted border highlight the right element (e.g., not the element that wraps the image). After selecting the element, Jerry presses the “Record Element Behavior” button (Fig. [2](<#page-5>).A) and directly demonstrates the desired fading behavior. This behavior requires remixing two independent animations: the element moves down until the bottom half of the image is covered by the gray banner, and the transparency level of the element continuously decreases to half of its original value. Jerry creates these two animations by direct manipulation, seeing the changes immediately: he drags the element to the desired position (Fig. [2](<#page-5>).b1) and adjusts the “Transparency level” slider value to half of its original value (Fig. [2](<#page-5>).C).
 
 <a id="page-6"></a>
 
@@ -174,17 +170,15 @@ We describe the technical details of CoCapture in this section.
 
 To quickly create visual context on top of an existing interface (DG1), CoCapture allows users to capture a behavior by demonstrating it on an existing website. This saves significant time and effort in creating a shared visual context—which we will call a base scene—as users can import arbitrarily complex behaviors from any website rather than needing to create animated visuals from scratch. When users demonstrate existing behaviors on a website, CoCapture captures all DOM changes (e.g., node creation, deletion) and events (e.g., mouse movement, browser window size changes). To capture this data, we rely on an open-source library[8](<#page-6>), which in turn uses Muta-tionObservers to track \[[4](<#page-13>)\] and store the timeline of DOM changes. The serialized DOM change sequence can be replayed on CoCapture’s main panel as if it was a screencast (Fig. [2](<#page-5>).B). However, unlike a screencast (pixel-based), each frame in the replay still preserves the DOM tree structure from the original interface.
 
+> 8 [http://rrweb.io](<http://rrweb.io>)
+
 #### 4.2.2 Step 2: Animating the Desired Behaviors.
 
 CoCapture includes a prototyping environment that allows users to demonstrate their desired UI behaviors as animations (DG2). Users can modify the replay of the existing behavior by directly manipulating the UI elements in the base scene, recording their changes, and augmenting the base scene with these demonstrations. The reconstructed DOM recording (i.e., the base scene) also preserves the UI states at each time point of the demonstration (e.g., DOM structure). It accomplishes this with the following steps and techniques.
 
 ##### (Manipulating and adding UI element(s) in the base scene).
 
-CoCapture transforms all the UI elements from the original website into selectable elements that a user can directly manipulate. Users can select one or more DOM elements in the scene by holding the Shift key down. As users hover over each element, CoCapture highlights the element with a red dashed border to ease the selection process (similar to the element selection feature in the Chrome Developer
-
-8 [http://rrweb.io](<http://rrweb.io>)
-
-Tool). CoCapture also allows users to create low-fidelity sketches (which it stores as Scalable Vector Graphics (SVG) drawings), import sketches into the scene, and manipulate them like any other DOM element (Fig. [2](<#page-5>).C).
+CoCapture transforms all the UI elements from the original website into selectable elements that a user can directly manipulate. Users can select one or more DOM elements in the scene by holding the Shift key down. As users hover over each element, CoCapture highlights the element with a red dashed border to ease the selection process (similar to the element selection feature in the Chrome Developer Tool). CoCapture also allows users to create low-fidelity sketches (which it stores as Scalable Vector Graphics (SVG) drawings), import sketches into the scene, and manipulate them like any other DOM element (Fig. [2](<#page-5>).C).
 
 ##### (Record a desired behavior as a behavior mockup).
 
@@ -212,7 +206,7 @@ Figure 3: For each created animation, CoCapture provides information that prompt
 
 ##### (Animations at a glance with visual tag and preview)
 
-To remind users of the animation type (i.e., edited element properties), CoCapture uses icon-like visual tags and a live preview for each animation. We use six different tags to represent the 10 different attribute changes. From top to bottom, Fig. [2](<#page-5>).D illustrates that elements change in color (transparency level, color) and position (x, y, rotation) and can be removed from the scene . CoCapture also includes resize (height, width) , font size and visibility (sketch is added to the scene) icons. The preview feature (Fig. [3](<#page-7>) “Preview” button and preview demo) is also designed to help make animations more glanceable and easier to understand by showing a simplified version of the actual animation (N, DG3). Upon clicking the “Preview” button, the preview demo will play a simplified version of a looping animation where each hollow square represents one relevant DOM element. This simplified animation preview design is inspired by Tufte’s minimalism theory for effective information visualization \[[58](<#page-14>)\]. For example, the first preview demo in Fig. [2](<#page-5>).D is currently playing the change in the transparency level of the background element.
+To remind users of the animation type (i.e., edited element properties), CoCapture uses icon-like visual tags and a live preview for each animation. We use six different tags to represent the 10 different attribute changes. From top to bottom, Fig. [2](<#page-5>).D illustrates that elements change in color (transparency level, color) and position (x, y, rotation) (Position and rotation icon: overlapping circles ending in a filled circle.) and can be removed from the scene . CoCapture also includes resize (height, width) , font size (Font-size icon: small and large capital A letters.) and visibility (sketch is added to the scene) (Visibility icon: an open eye.) icons. The preview feature (Fig. [3](<#page-7>) “Preview” button and preview demo) is also designed to help make animations more glanceable and easier to understand by showing a simplified version of the actual animation (N, DG3). Upon clicking the “Preview” button, the preview demo will play a simplified version of a looping animation where each hollow square represents one relevant DOM element. This simplified animation preview design is inspired by Tufte’s minimalism theory for effective information visualization \[[58](<#page-14>)\]. For example, the first preview demo in Fig. [2](<#page-5>).D is currently playing the change in the transparency level of the background element.
 
 ##### (Cloning and changing element)
 
@@ -242,17 +236,13 @@ We conducted two initial user studies to evaluate CoCapture’s effectiveness to
 
 ## 6 STUDY 1 - CREATING UI BEHAVIOR QUESTIONS
 
-To evaluate question creation, we designed a two-condition, within-subjects study. We recruited 15 participants (9 male, 6 female, age 25–30) from a local participant pool with an average of 3.5 years of UI prototyping experience. All participants had native or bilingual
-
-![Position and rotation icon: overlapping circles ending in a filled circle.](../figures/chen-cocapture-chi2021/figure-005-p007.png)
-
-![Font-size icon: small and large capital A letters.](../figures/chen-cocapture-chi2021/figure-006-p007.png)
-
-![Visibility icon: an open eye.](../figures/chen-cocapture-chi2021/figure-007-p007.png)
-
 <a id="page-8"></a>
 
-CHI ’21, May 8–13, 2021, Yokohama, Japan proficiency in English. Instead of using open-ended tasks, each participant was presented with four websites and asked to create one question per website regarding a predefined UI behavior issue. This can help us compare the description accuracy between conditions. They used either CoCapture or the tools in the control condition, in a randomized order. In the control condition, we asked participants to use Gmail[9](<#page-8>) and Google Drawings[10](<#page-8>) to compose their questions. We chose these tools because of their low learning curve and similar functionality to other prototyping tools. We only recruited people who had prior experience with both these tools. We chose these tools because of their low learning curve and similar functionality to those mentioned in the needfinding study. In the treatment condition, participants first watched a tutorial on CoCapture and replicated the example in the tutorial.
+To evaluate question creation, we designed a two-condition, within-subjects study. We recruited 15 participants (9 male, 6 female, age 25–30) from a local participant pool with an average of 3.5 years of UI prototyping experience. All participants had native or bilingual proficiency in English. Instead of using open-ended tasks, each participant was presented with four websites and asked to create one question per website regarding a predefined UI behavior issue. This can help us compare the description accuracy between conditions. They used either CoCapture or the tools in the control condition, in a randomized order. In the control condition, we asked participants to use Gmail[9](<#page-8>) and Google Drawings[10](<#page-8>) to compose their questions. We chose these tools because of their low learning curve and similar functionality to other prototyping tools. We only recruited people who had prior experience with both these tools. We chose these tools because of their low learning curve and similar functionality to those mentioned in the needfinding study. In the treatment condition, participants first watched a tutorial on CoCapture and replicated the example in the tutorial.
+
+> <sup>9</sup>www.google.com/gmail/
+
+> <sup>10</sup>docs.google.com/drawings/
 
 ![Figure 5: Screenshots of two of the user study tasks: the Reddit website (left column), and an SVG game (right column). The screenshots with a red border (a, c) are the existing UIs, whereas the green ones (b, d) are the desired UIs that the participants were asked to create and describe during the study. The tasks were designed with three goals: realistic, common, and complex. For the Reddit website task, the issue with the existing UI is that some of the DOM elements are not responsive to window resizing user input. For the SVG game task, participants need to add new game behaviors such that when the game character hits the block and the star shape element, the game scene will change dynamically and a new element (the cyan shield shown in the last image) will be added to the scene.](../figures/chen-cocapture-chi2021/figure-008-p008.png)
 
@@ -260,19 +250,15 @@ Figure 5: Screenshots of two of the user study tasks: the Reddit website (left c
 
 To recreate a situation in which the participants would naturally describe a new UI behavior on top of their websites, similar to a prior study setup \[[42](<#page-14>)\], we asked participants to imagine themselves as the designer of the task UI, and also told them that a helper with domain knowledge (but no prior information about the task) will review their questions. We conducted follow-up interviews after each session. We compensated each participant with $20 USD for their time.
 
-We asked participants to ask two questions per condition: one for web UI behavior, and one for SVG game UI behavior. We created the tasks with three goals in mind: they need to be commonly seen in practice, the UIs should look realistic, and they should be near the upper limit (in terms of complexity) of what CoCapture can handle. To achieve these goals, we used two common commercial websites (Reddit[11](<#page-8>) and Stack Overflow[12](<#page-8>)) and an open-source SVG
+<a id="page-9"></a>
+
+We asked participants to ask two questions per condition: one for web UI behavior, and one for SVG game UI behavior. We created the tasks with three goals in mind: they need to be commonly seen in practice, the UIs should look realistic, and they should be near the upper limit (in terms of complexity) of what CoCapture can handle. To achieve these goals, we used two common commercial websites (Reddit[11](<#page-8>) and Stack Overflow[12](<#page-8>)) and an open-source SVG game[13](<#page-9>). We modified their UIs to replicate the popular UI issues we found in our needfinding study. We designed their complexity to result in highly dynamic transformation upon user input and the interplay between different DOM elements, both of which could help demonstrate the strength of CoCapture. Figure [5](<#page-8>) shows two of the tasks: Reddit (left column), and an SVG game (right column). The screenshots with red borders (labeled a, c in Figure [5](<#page-8>)) are the existing UIs that we gave to the participants at the beginning of the study, and the ones with green borders (labeled b, d) are the desired output that we asked the participants to create and describe. Here we describe how these two tasks can show the ceiling of CoCapture along different dimensions:
+
+> 11 www.reddit.com
 
 > <sup>12</sup>www.stackoverflow.com
 
-<sup>9</sup>www.google.com/gmail/
-
-11 www.reddit.com
-
-<sup>10</sup>docs.google.com/drawings/
-
-<a id="page-9"></a>
-
-game[13](<#page-9>). We modified their UIs to replicate the popular UI issues we found in our needfinding study. We designed their complexity to result in highly dynamic transformation upon user input and the interplay between different DOM elements, both of which could help demonstrate the strength of CoCapture. Figure [5](<#page-8>) shows two of the tasks: Reddit (left column), and an SVG game (right column). The screenshots with red borders (labeled a, c in Figure [5](<#page-8>)) are the existing UIs that we gave to the participants at the beginning of the study, and the ones with green borders (labeled b, d) are the desired output that we asked the participants to create and describe. Here we describe how these two tasks can show the ceiling of CoCapture along different dimensions:
+> <sup>13</sup>github.com/starzonmyarmz/js13k-2018
 
 - The Reddit task can show two dimensions of CoCapture’s strength. First, a large part of the existing UI (e.g., header, trending section, and the content DOM elements) already have pre-built behaviors and constraints. With CoCapture, participants do not have to worry about what they are and how to reconstruct them. Second, one desired behavior is to remove the “Today’s top growing” element (right-most one in Fig. [5](<#page-8>) b) when the width of the browser is smaller than a certain threshold. CoCapture helps participants to save all the effort of dealing with the correlated behaviors on other non-target elements (e.g., siblings, parents) because the recording automatically preserves the underlying DOM structure within each snapshot, which static layout-capturing tools like WebToLayers cannot.
 
@@ -292,11 +278,9 @@ the CoCapture condition (p &lt; .0001) than in the control condition, resulting 
 
 #### 6.1.2 Participants Who Used CoCapture Spent Less Time Writing.
 
-One potential downside of using CoCapture is the time that it takes to create desired behaviors by capturing the base scene and adding the behaviors. Overall, we have insufficient evidence that using CoCapture will require more or less time to create a question (Q2) (Control (seconds): µ = 645.68, σ = 377.39, Treatment: µ = 482.96, σ = 190.77, p &gt; .1). We further observed and annotated the video to break down the overall time, allowing us to understand how participants used CoCapture, especially the time that they spent writing the description and creating visual references. We found that, in terms of time, the trade-off between the two conditions existed in authoring animations and writing textual descriptions. While the participants in the control group spent most of their time writing textual descriptions, the opposite was true in the treatment condition: participants using CoCapture spent most of their time creating visual references via animated behavior (See Fig. [6](<#page-10>)). In the control condition, the participants’ sketch activity included taking screenshots and sketching the desired output, but the limitations on what they could express led them to spend more time describing the behavior via text. These results suggest that
-
-<sup>13</sup>github.com/starzonmyarmz/js13k-2018
-
 <a id="page-10"></a>
+
+One potential downside of using CoCapture is the time that it takes to create desired behaviors by capturing the base scene and adding the behaviors. Overall, we have insufficient evidence that using CoCapture will require more or less time to create a question (Q2) (Control (seconds): µ = 645.68, σ = 377.39, Treatment: µ = 482.96, σ = 190.77, p &gt; .1). We further observed and annotated the video to break down the overall time, allowing us to understand how participants used CoCapture, especially the time that they spent writing the description and creating visual references. We found that, in terms of time, the trade-off between the two conditions existed in authoring animations and writing textual descriptions. While the participants in the control group spent most of their time writing textual descriptions, the opposite was true in the treatment condition: participants using CoCapture spent most of their time creating visual references via animated behavior (See Fig. [6](<#page-10>)). In the control condition, the participants’ sketch activity included taking screenshots and sketching the desired output, but the limitations on what they could express led them to spend more time describing the behavior via text. These results suggest that CoCapture encourages designers to actually prototype the behavior visually, which increased the description accuracy, as opposed to describing it in NL.
 
 <table>
   <thead>
@@ -331,8 +315,6 @@ One potential downside of using CoCapture is the time that it takes to create de
 </table>
 
 Table 1: Measurements from 15 participants using CoCapture and control tools (Email + Google Drawings). Description accuracy (%) is calculated using (the number of satisfied items in a rubric / total number of items). Visual references include images, sketches, and animations. \*\* indicates p &lt; .001, \*\*\* indicates p &lt; .0001. ns indicates not statistically significant. Their corresponding standard deviations are in parentheses.
-
-CoCapture encourages designers to actually prototype the behavior visually, which increased the description accuracy, as opposed to describing it in NL.
 
 An additional benefit of using CoCapture was that it required less context switching (e.g., switching between applications), as participants could write down their questions and create visual references in a single application. The participants in the control group switched more frequently between different applications (p &lt; 0.0001), as shown in Table [1](<#page-10>). This indicates that CoCapture can reduce users’ cognitive effort by requiring less context switching across different applications.
 
@@ -374,6 +356,8 @@ challenging to find the right specificity level. With the questions in the contr
 
 To evaluate CoCapture’s effectiveness in helping people understand UI behavior questions, we recruited six participants from two pools— the same participant pool as in Study 1, and Upwork[14](<#page-11>)—to review the questions created in Study 1. There was no overlap in participants between the two studies, and all participants had at least two years of UI development experience. Each participant acted as a helper and was assigned to evaluate four questions created by one participant (only one to reduce learning effect) in Study 1. Participants used the rubric (same as in Study 1) to rate each question from 1 (not clear at all) to 5 (completely clear). Before reviewing the two CoCapture questions, participants watched a 5-minute tutorial on the use of CoCapture, and they were also asked to try it to review an example question. After the evaluations, we interviewed each participant. We conducted Study 2 remotely using TeamViewer[15](<#page-11>). Each session lasted 30 minutes, and we paid each participant $15 USD.
 
+> 14 www.upwork.com. <sup>15</sup>[https://www.teamviewer.com/](<https://www.teamviewer.com/>).
+
 ### 7.1 CoCapture Showed the Potential of Facilitating Effective Comprehension of UI Questions
 
 While we did not conduct any statistical analysis due to the small number of participants, the average time spent and clarity assessment showed promise that CoCapture can be effective in helping users comprehend questions. For the CoCapture questions, participants spent 247.25s (σ = 152.03) evaluating them and gave an average rating of 4.21 out of 5 (σ = 1.32) for clarity. In contrast, participants rating questions from the control condition spent 311.83s (σ = 176.12) and gave an average rating of 1.40 out of 5 (σ = 1.54).
@@ -388,11 +372,7 @@ We also observed that all participants constantly scrolled up and down the quest
 
 In summary, we found that CoCapture helped participants in Study 1 (“requester” from now on) effectively communicate about UI behavior issues by easing the creation of desired behavior mockups on existing websites and by clarifying NL descriptions with hypertext. This in turn made those behavior issues clear and explicit, and it made the descriptions easier to navigate for participants in Study 2 (“helper” from now on). Consistent with prior theory \[[29](<#page-13>)\], this finding indicates that clear visual context helps people ground communication. However, we observed that the dynamic nature of UI behaviors makes it more challenging for requesters to create descriptions, even with basic visual information (e.g., screenshots, sketches) as seen in \[[43](<#page-14>)\].
 
-14 www.upwork.com. <sup>15</sup>[https://www.teamviewer.com/](<https://www.teamviewer.com/>).
-
 <a id="page-12"></a>
-
-CHI ’21, May 8–13, 2021, Yokohama, Japan
 
 ### 8.1 Element-Based Animations as First-Class Objects
 

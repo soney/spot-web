@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-05",
+  "scope": "Source review of all four remaining code spacing/order warnings before PDF/UA declaration. The two repaired PDF/archive pairs were installed on 2026-10-05; reviewed against printed page images at 108 dpi and relevant code crops at 288 dpi. Subsequent PDF/UA metadata changes may update file hashes without changing reviewed code.",
+  "repairs": [
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "before_sha256": "e08984d3401f93bc7cc65593e50363d3558456bd25f81560d34f8df97aa1922a",
+      "after_sha256": "58c621c46e132e443e6a619090596b5650322b3b16086bf777402839e34a9bb6",
+      "changes": [
+        {
+          "kind": "source-reviewed-code-ActualText",
+          "node": "389:0",
+          "page": 8,
+          "before_text": "obj.prototypes = proto1\nproto .prototypes = proto1 2\n…\nproto .prototypes = proto(N-1) N",
+          "actual_text": "obj.prototypes = proto_1\nproto_1.prototypes = proto_2\n…\nproto_(N-1).prototypes = proto_N"
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 288,
+      "content_references": 7295,
+      "mupdf_144dpi_all_pages_identical": true,
+      "pages": 10,
+      "native_actual_text_matches_reviewed_transcription": true,
+      "installed_pdf_sha256": "58c621c46e132e443e6a619090596b5650322b3b16086bf777402839e34a9bb6"
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "before_sha256": "099f1fc40e94fc6c8a3ed70912af469b61f155128d9c729f92a4a783ea2c298a",
+      "after_sha256": "7b05aa9479514732f841e78de2c69d2d51c9d1e3748e159efac6f266365025ec",
+      "changes": [
+        {
+          "kind": "source-reviewed-code-ActualText",
+          "node": "377:0",
+          "page": 6,
+          "before_text": "Algorithm 1 Expression Augmentation generator\nInput: Expr e, Meta-data d\n′\nOutput: Expr e\n′ =\n1: Expr e e\n2: if (d.description == return) then\n′ ′\n3: if (e .root == “ → ”)&&(e .right is variable) then\n′\n4: T erm t = e .right\n5: if findT ype(t) == d.returnT ype then\n6: P redicate p = new P redicate(“returns”)\n7: p.term = t\n′\n8: e .right = p\n9: end if\n10: end if\n11: end if\n12: if (d.description == exception) then\n′ ′\n13: if (e .root == “ → ”)&&(e .right is empty) then\n14: T erm t = d.exception name\n15: P redicate p = new P redicate (“throw”)\n16: p.term = t\n′\n17: e .right = p\n18: end if\n′\n19: if (e .root! == “ → ”) then\n20: T erm t = d.exception name\n21: P redicate p = new P redicate (“throw”)\n22: p.term = t\n′′ =\n23: Expr e new Expr(“ → ”)\n′′ ′\n24: e .left = e\n′′\n25: e .right = p\n′ = ′′\n26: e e\n27: end if\n28: end if\n′\n29: return e",
+          "actual_text": "Algorithm 1 Expression Augmentation generator\nInput: Expr e, Meta-data d\nOutput: Expr e′\n 1: Expr e′ = e\n 2: if (d.description == return) then\n 3:   if (e′.root == “→”)&&(e′.right is variable) then\n 4:     Term t = e′.right\n 5:     if findType(t) == d.returnType then\n 6:       Predicate p = new Predicate(“returns”)\n 7:       p.term = t\n 8:       e′.right = p\n 9:     end if\n10:   end if\n11: end if\n12: if (d.description == exception) then\n13:   if (e′.root == “→”)&&(e′.right is empty) then\n14:     Term t = d.exception_name\n15:     Predicate p = new Predicate (“throw”)\n16:     p.term = t\n17:     e′.right = p\n18:   end if\n19:   if (e′.root! == “→”) then\n20:     Term t = d.exception_name\n21:     Predicate p = new Predicate (“throw”)\n22:     p.term = t\n23:     Expr e′′ = new Expr(“→”)\n24:     e′′.left = e′\n25:     e′′.right = p\n26:     e′ = e′′\n27:   end if\n28: end if\n\n29: return e′"
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 497,
+      "content_references": 9304,
+      "mupdf_144dpi_all_pages_identical": true,
+      "pages": 11,
+      "native_actual_text_matches_reviewed_transcription": true,
+      "installed_pdf_sha256": "7b05aa9479514732f841e78de2c69d2d51c9d1e3748e159efac6f266365025ec"
+    }
+  ],
+  "source_notes": [
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "node": "389:0",
+      "page": 8,
+      "finding": "Printed subscript indices had been detached and moved to line ends. ActualText uses explicit underscore notation for source subscripts; all four source lines remain in printed order."
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "node": "377:0",
+      "page": 6,
+      "finding": "Printed primes were detached onto preceding lines, leading to incorrect assignments. Source review reattaches every prime, reconstructs indentation from the nested printed if/end-if blocks, restores the printed exception_name underscore and removes extraction-created token spaces. All 29 numbered lines, input/output and title remain. The source line 19 spelling root! == and curly quotation marks are retained; this is a transcription, not an algorithm correction."
+    }
+  ],
+  "cleared_without_pdf_change": [
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "4241:0",
+      "page": 169,
+      "pdf_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+      "status": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes serif introductory prose and monospace code, causing uncertain uniform-pitch estimation. The source itself has malformed </strong city markup, retained exactly.",
+      "text": "called with { title: cjs('hello'), subtext: '<strong>steel</strong city'}:"
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "6315:0",
+      "page": 216,
+      "pdf_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+      "status": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes the monospace wildcard and serif explanation, causing uncertain uniform-pitch estimation.",
+      "text": "'*': any state"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059 -->
+<!-- Source PDF SHA-256: 1e2e1924273064ad9cc2155609b30f9120856f54c23fa9ba659ae4cf0ee1c650 -->
 
 <a id="page-1"></a>
 
@@ -56,6 +56,8 @@ For future work, I plan on making additions to the prototype, including a timeli
 
 This research will result in the creation of, and design recommendations for programming languages and environments for creating interactive behaviors. The two-dimensional representation that the current prototype uses is a unique contribution that may prove to be a simpler representation for interactive behaviors than the style of imperative code used by C-derived languages like Processing and OpenFrameworks<sup>1</sup>. Although previous research has focused on providing widgets, or programming-by-example tools to reduce the threshold of creating interactive applications, my research focuses on the underlying representation of interactive behaviors. While interaction designers have played a large part in the design of this environment, its usefulness will likely extend beyond interaction designers. I plan on releasing the development environment for general use over the web.
 
+> <sup>1</sup> http://processing.org/ &amp; http://www.openframeworks.cc/
+
 Acknowledgments. I thank my advisor, Brad Myers, for his continuing guidance and support. The author is also supported by the Ford and ARCS foundations. This research has been partially funded by NSF grants IIS-0757511 and CCF-0811610.
 
 ## References
@@ -70,4 +72,4 @@ Acknowledgments. I thank my advisor, Brad Myers, for his continuing guidance and
 
 - 5. Letondal, C., Chatty, S., Phillips, G., Fabien, A., Conversy, S.: Usability requirements for interaction-oriented development tools. Psychology of Programming, (2010).
 
-- 6. Ozenc, F.K., Kim, M., Zimmerman, J., Oney, S., Myers, B.: How to support designers in getting hold of the immaterial material of software. CHI, pp. 2513-2522, (2010). <sup>1</sup> http://processing.org/ &amp; http://www.openframeworks.cc/
+- 6. Ozenc, F.K., Kim, M., Zimmerman, J., Oney, S., Myers, B.: How to support designers in getting hold of the immaterial material of software. CHI, pp. 2513-2522, (2010).

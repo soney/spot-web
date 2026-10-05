@@ -2,9 +2,9 @@
   "file": "pandey-inclusive-source-code-chi2024.pdf",
   "title": "Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments",
   "publication_id": "towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024",
-  "pdf_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+  "pdf_sha256": "28fa051edc3f27f558ecde7fda2766cd4787abeabaf36421b556fd5540e4c1a8",
   "markdown": "publications/pandey-inclusive-source-code-chi2024.md",
-  "markdown_sha256": "e5ac67bcc1264fb1d895d2716830ba1664404f0adb5bf410e88dfb06760d9852",
+  "markdown_sha256": "bec831d1e840b17ba10da9d27092bf83e540f2edaba9573e1809cf64c9c52f6f",
   "pages": 17,
   "blocks": [
     {
@@ -41,19 +41,11 @@
     },
     {
       "node": "450:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 150
-    },
-    {
-      "node": "451:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 208
+      "characters": 152
     },
     {
       "node": "459:0",
@@ -62,6 +54,14 @@
         1
       ],
       "characters": 631
+    },
+    {
+      "node": "451:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 210
     },
     {
       "node": "437:0",
@@ -136,7 +136,7 @@
       "characters": 17
     },
     {
-      "node": "joined-449:0",
+      "node": "449:0",
       "role": "P",
       "pages": [
         1
@@ -168,7 +168,7 @@
       "characters": 353
     },
     {
-      "node": "joined-458:0",
+      "node": "458:0",
       "role": "P",
       "pages": [
         1,
@@ -241,7 +241,7 @@
       "characters": 812
     },
     {
-      "node": "joined-732:0",
+      "node": "732:0",
       "role": "P",
       "pages": [
         2
@@ -305,7 +305,7 @@
       "characters": 19
     },
     {
-      "node": "joined-741:0",
+      "node": "741:0",
       "role": "P",
       "pages": [
         2,
@@ -370,7 +370,7 @@
       "characters": 603
     },
     {
-      "node": "joined-813:0",
+      "node": "813:0",
       "role": "P",
       "pages": [
         3
@@ -437,9 +437,10 @@
       "node": "833:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 260
+      "characters": 767
     },
     {
       "node": "839:0",
@@ -458,14 +459,6 @@
       "characters": 24410
     },
     {
-      "node": "991:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 506
-    },
-    {
       "node": "992:0",
       "role": "P",
       "pages": [
@@ -482,7 +475,7 @@
       "characters": 15
     },
     {
-      "node": "joined-994:0",
+      "node": "994:0",
       "role": "P",
       "pages": [
         4,
@@ -667,7 +660,7 @@
       "characters": 423
     },
     {
-      "node": "joined-1222:0",
+      "node": "1222:0",
       "role": "P",
       "pages": [
         6
@@ -710,17 +703,10 @@
       "node": "1130:0",
       "role": "P",
       "pages": [
-        6
-      ],
-      "characters": 112
-    },
-    {
-      "node": "joined-1132:0",
-      "role": "P",
-      "pages": [
+        6,
         7
       ],
-      "characters": 211
+      "characters": 218
     },
     {
       "node": "1134:0",
@@ -779,7 +765,7 @@
       "characters": 475
     },
     {
-      "node": "joined-1140:0",
+      "node": "1140:0",
       "role": "P",
       "pages": [
         7
@@ -867,7 +853,7 @@
       "characters": 568
     },
     {
-      "node": "joined-1241:0",
+      "node": "1241:0",
       "role": "P",
       "pages": [
         7,
@@ -924,7 +910,7 @@
       "characters": 350
     },
     {
-      "node": "joined-1254:0",
+      "node": "1254:0",
       "role": "P",
       "pages": [
         8
@@ -1010,14 +996,6 @@
         8
       ],
       "characters": 60
-    },
-    {
-      "node": "1277:0",
-      "role": "P",
-      "pages": [
-        9
-      ],
-      "characters": 105
     },
     {
       "node": "1278:0",
@@ -1212,7 +1190,7 @@
       "characters": 1307
     },
     {
-      "node": "joined-1366:0",
+      "node": "1366:0",
       "role": "P",
       "pages": [
         10,
@@ -1261,7 +1239,7 @@
       "characters": 480
     },
     {
-      "node": "joined-1378:0",
+      "node": "1378:0",
       "role": "P",
       "pages": [
         11
@@ -1317,7 +1295,7 @@
       "characters": 15
     },
     {
-      "node": "joined-1386:0",
+      "node": "1386:0",
       "role": "P",
       "pages": [
         11,
@@ -1358,20 +1336,12 @@
       "characters": 11210
     },
     {
-      "node": "1463:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 105
-    },
-    {
       "node": "1464:0",
       "role": "L",
       "pages": [
         13
       ],
-      "characters": 6231
+      "characters": 6253
     },
     {
       "node": "1543:0",
@@ -1489,25 +1459,10 @@
       "node": "1562:0",
       "role": "Code",
       "pages": [
-        13
-      ],
-      "characters": 168
-    },
-    {
-      "node": "1547:0",
-      "role": "P",
-      "pages": [
+        13,
         14
       ],
-      "characters": 43
-    },
-    {
-      "node": "1563:0",
-      "role": "Code",
-      "pages": [
-        14
-      ],
-      "characters": 210
+      "characters": 369
     },
     {
       "node": "1564:0",
@@ -1841,25 +1796,10 @@
       "node": "1605:0",
       "role": "Code",
       "pages": [
-        14
-      ],
-      "characters": 103
-    },
-    {
-      "node": "1549:0",
-      "role": "P",
-      "pages": [
+        14,
         15
       ],
-      "characters": 105
-    },
-    {
-      "node": "1606:0",
-      "role": "Code",
-      "pages": [
-        15
-      ],
-      "characters": 180
+      "characters": 274
     },
     {
       "node": "1607:0",
@@ -2521,25 +2461,10 @@
       "node": "699:0",
       "role": "Code",
       "pages": [
-        16
-      ],
-      "characters": 84
-    },
-    {
-      "node": "635:0",
-      "role": "P",
-      "pages": [
+        16,
         17
       ],
-      "characters": 105
-    },
-    {
-      "node": "700:0",
-      "role": "Code",
-      "pages": [
-        17
-      ],
-      "characters": 54
+      "characters": 129
     },
     {
       "node": "701:0",
@@ -2750,7 +2675,7 @@
       "characters": 68
     }
   ],
-  "tagged_content_items": 14400,
+  "tagged_content_items": 14322,
   "all_tagged_content_accounted_for_once": true,
   "assets": [],
   "tables": [
@@ -2877,14 +2802,7 @@
     {
       "node": "1562:0",
       "pages": [
-        13
-      ],
-      "method": "native_actual_text",
-      "changed": false
-    },
-    {
-      "node": "1563:0",
-      "pages": [
+        13,
         14
       ],
       "method": "native_actual_text",
@@ -3005,14 +2923,7 @@
     {
       "node": "1605:0",
       "pages": [
-        14
-      ],
-      "method": "native_actual_text",
-      "changed": false
-    },
-    {
-      "node": "1606:0",
-      "pages": [
+        14,
         15
       ],
       "method": "native_actual_text",
@@ -3277,14 +3188,7 @@
     {
       "node": "699:0",
       "pages": [
-        16
-      ],
-      "method": "native_actual_text",
-      "changed": false
-    },
-    {
-      "node": "700:0",
-      "pages": [
+        16,
         17
       ],
       "method": "native_actual_text",
@@ -3381,14 +3285,13 @@
   ],
   "normalization": {
     "frontmatter_notices_grouped": 3,
-    "line_wrap_hyphens_removed": 247,
-    "paragraph_fragments_joined": 14,
+    "line_wrap_hyphens_removed": 201,
     "reviewed_wrap_repairs": 10,
-    "line_wrap_hyphens_retained": 18,
+    "line_wrap_hyphens_retained": 17,
     "script_runs_positioned": 3,
     "reviewed_research_questions_separated": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-inclusive-source-code-chi2024.json.gz",
-  "source_tags_sha256": "9267961196d218b5b0d00ea407724ecf54a942f8caa0397186dae2710fc9e10a"
+  "source_tags_sha256": "24d18e279ad3899d2bb1180aaf9732aa2530401e4cea36a524f953bcaffd1251"
 }

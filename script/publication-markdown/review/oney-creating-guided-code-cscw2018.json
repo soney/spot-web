@@ -2,9 +2,9 @@
   "file": "oney-creating-guided-code-cscw2018.pdf",
   "title": "Creating Guided Code Explanations with chat.codes",
   "publication_id": "creating_guided_code_explanations_with_chat_codes_2018",
-  "pdf_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+  "pdf_sha256": "ac954034a689a340c977339940c6f224ca123870e1e28f5473f917fd55b4be67",
   "markdown": "publications/oney-creating-guided-code-cscw2018.md",
-  "markdown_sha256": "f5349a1a3779124efba019639eb51dab3c9be7f67eeb6dcc42be3756c800a423",
+  "markdown_sha256": "4e200e0c816b7cc43431d9c3da4332cf54ed05932b4caff0cbee5c63f846e2bc",
   "pages": 20,
   "blocks": [
     {
@@ -64,6 +64,30 @@
       "characters": 247
     },
     {
+      "node": "348:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 44
+    },
+    {
+      "node": "349:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 335
+    },
+    {
+      "node": "351:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
       "node": "345:0",
       "role": "H2",
       "pages": [
@@ -88,29 +112,12 @@
       "characters": 693
     },
     {
-      "node": "348:0",
+      "node": "361:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 44
-    },
-    {
-      "node": "349:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 335
-    },
-    {
-      "node": "joined-351:0",
-      "role": "P",
-      "pages": [
-        1,
         2
       ],
-      "characters": 601
+      "characters": 532
     },
     {
       "node": "362:0",
@@ -309,17 +316,10 @@
       "node": "755:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 428
-    },
-    {
-      "node": "756:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 74
+      "characters": 940
     },
     {
       "node": "777:0",
@@ -336,14 +336,6 @@
         5
       ],
       "characters": 365
-    },
-    {
-      "node": "779:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 511
     },
     {
       "node": "780:0",
@@ -394,7 +386,7 @@
       "characters": 506
     },
     {
-      "node": "joined-792:0",
+      "node": "792:0",
       "role": "P",
       "pages": [
         5,
@@ -475,7 +467,7 @@
       "characters": 156
     },
     {
-      "node": "joined-820:0",
+      "node": "820:0",
       "role": "P",
       "pages": [
         6,
@@ -508,20 +500,20 @@
       "characters": 1709
     },
     {
-      "node": "833:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 204
-    },
-    {
       "node": "834:0",
       "role": "Note",
       "pages": [
         7
       ],
       "characters": 128
+    },
+    {
+      "node": "833:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 204
     },
     {
       "node": "840:0",
@@ -596,7 +588,7 @@
       "characters": 40
     },
     {
-      "node": "joined-863:0",
+      "node": "863:0",
       "role": "P",
       "pages": [
         8,
@@ -610,7 +602,7 @@
       "pages": [
         9
       ],
-      "characters": 291
+      "characters": 430
     },
     {
       "node": "871:0",
@@ -982,7 +974,7 @@
       "characters": 571
     },
     {
-      "node": "joined-986:0",
+      "node": "986:0",
       "role": "P",
       "pages": [
         13,
@@ -1135,7 +1127,7 @@
       "characters": 554
     },
     {
-      "node": "joined-1023:0",
+      "node": "1023:0",
       "role": "P",
       "pages": [
         15,
@@ -1400,14 +1392,6 @@
       "characters": 2581
     },
     {
-      "node": "1121:0",
-      "role": "P",
-      "pages": [
-        18
-      ],
-      "characters": 74
-    },
-    {
       "node": "1126:0",
       "role": "L",
       "pages": [
@@ -1432,7 +1416,7 @@
       "characters": 62
     }
   ],
-  "tagged_content_items": 10985,
+  "tagged_content_items": 10959,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1503,7 +1487,7 @@
       ],
       "sha256": "5aeba58502222f35349b46b8084c37eb4c003a2990a068244411e7705462f446",
       "kind": "figure",
-      "alt": "Fig. 5. In chat.codes, code edit summaries are displayed inline with chat messages. By default these summaries only indicate which user changed which files. They can also be expanded to reveal a full diff, as shown above."
+      "alt": "Figure 5. Bob asks why copyName changes capitalization to “boB.” Alice replies that the name is being reversed and expands her edit to file-1 beneath the chat. The red deleted line is name_copy = c + name_copy; the green added line is name_copy = name_copy + c. The diff links the explanation to the correction from prepending characters to appending them."
     },
     {
       "path": "figures/oney-creating-guided-code-cscw2018/figure-006-p014.png",
@@ -1543,12 +1527,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 26,
-    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_removed": 25,
+    "paragraph_fragments_joined": 2,
     "script_runs_positioned": 28,
     "line_wrap_hyphens_retained": 3
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-creating-guided-code-cscw2018.json.gz",
-  "source_tags_sha256": "a5891d8a94413dd47a9d14f899ce5691c1d64232937657ca94441f3825e84fad"
+  "source_tags_sha256": "0bdef3a7215822d9b8ab5b4959617522bab1e8d1b5fc845f59b69201ad3069ed"
 }

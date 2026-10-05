@@ -2,9 +2,9 @@
   "file": "pandita-inferring-method-specifications-icse2012.pdf",
   "title": "Inferring Method Specifications from Natural Language API Descriptions",
   "publication_id": "inferring_method_specifications_from_natural_language_api_descriptions_2012",
-  "pdf_sha256": "8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8",
+  "pdf_sha256": "84df8e846d00d424509370c166ada7244ee7c6eb63516a0b8c08226ef69e725b",
   "markdown": "publications/pandita-inferring-method-specifications-icse2012.md",
-  "markdown_sha256": "c43cc0dd36d017be5ac4601a4385cf769accaad93542e8ee0595012020b47dc9",
+  "markdown_sha256": "3a264297f015bc5b42e6f85280ab7729bb7a19ad8d6e91d754cb16edbbafc422",
   "pages": 11,
   "blocks": [
     {
@@ -93,7 +93,7 @@
       "pages": [
         1
       ],
-      "characters": 236
+      "characters": 489
     },
     {
       "node": "159:0",
@@ -110,14 +110,6 @@
         1
       ],
       "characters": 69
-    },
-    {
-      "node": "161:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 252
     },
     {
       "node": "162:0",
@@ -213,7 +205,7 @@
       "pages": [
         2
       ],
-      "characters": 852
+      "characters": 930
     },
     {
       "node": "184:0",
@@ -222,14 +214,6 @@
         2
       ],
       "characters": 61
-    },
-    {
-      "node": "185:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 79
     },
     {
       "node": "186:0",
@@ -440,7 +424,7 @@
       "characters": 554
     },
     {
-      "node": "joined-213:0",
+      "node": "213:0",
       "role": "P",
       "pages": [
         3,
@@ -668,9 +652,18 @@
       "node": "373:0",
       "role": "P",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 111
+      "characters": 182
+    },
+    {
+      "node": "379:0",
+      "role": "L",
+      "pages": [
+        6
+      ],
+      "characters": 733
     },
     {
       "node": "375:0",
@@ -694,23 +687,7 @@
       "pages": [
         6
       ],
-      "characters": 847
-    },
-    {
-      "node": "378:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 70
-    },
-    {
-      "node": "379:0",
-      "role": "L",
-      "pages": [
-        6
-      ],
-      "characters": 733
+      "characters": 897
     },
     {
       "node": "389:0",
@@ -841,7 +818,7 @@
       "characters": 25
     },
     {
-      "node": "joined-415:0",
+      "node": "415:0",
       "role": "P",
       "pages": [
         7
@@ -1352,11 +1329,8 @@
       "pages": [
         6
       ],
-      "method": "native_text_preserved",
-      "changed": false,
-      "reason": "variable_or_uncertain_character_pitch",
-      "estimated_pitch": 3.3953,
-      "relative_median_deviation": 0.094
+      "method": "native_actual_text",
+      "changed": false
     },
     {
       "node": "395:0",
@@ -1377,21 +1351,12 @@
     }
   ],
   "normalization": {
-    "line_wrap_hyphens_removed": 161,
+    "line_wrap_hyphens_removed": 159,
     "line_wrap_hyphens_retained": 21,
-    "paragraph_fragments_joined": 4,
+    "paragraph_fragments_joined": 2,
     "script_runs_positioned": 31
   },
-  "review_notes": [
-    {
-      "kind": "code_whitespace_needs_review",
-      "node": "377:0",
-      "pages": [
-        6
-      ],
-      "reason": "variable_or_uncertain_character_pitch"
-    }
-  ],
+  "review_notes": [],
   "source_tags": "source-tags/pandita-inferring-method-specifications-icse2012.json.gz",
-  "source_tags_sha256": "a8f50cabecb15ecdeab11f81635caa363ebe4328e898ae208d85b5e0286ba1c9"
+  "source_tags_sha256": "da0810b548fd482606e1cfd8fa25cb2d97746ea0f4044dd4d9f6227ecb387b9d"
 }

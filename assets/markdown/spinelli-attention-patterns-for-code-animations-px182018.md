@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69 -->
+<!-- Source PDF SHA-256: a1989ff5f5f2eaa13bbf5c75a8c93a9467a815727bf570d756a85bd78d7a5ae7 -->
 
 <a id="page-1"></a>
 
@@ -6,11 +6,13 @@
 
 [Source PDF](https://from.so/assets/pdfs/spinelli-attention-patterns-for-code-animations-px182018.pdf) · [Publisher page](https://doi.org/10.1145/3191697.3214338)
 
-Louis Spinelli<sup>∗</sup> Maulishree Pandey<sup>∗</sup> Information School School of Information University of Washington University of Michigan Seattle, WA, USA Ann Arbor, MI, USA spinelli@uw.edu maupande@umich.edu
+Louis Spinelli\*. Information School, University of Washington, Seattle, WA, USA. spinelli@uw.edu. Maulishree Pandey\*. School of Information, University of Michigan, Ann Arbor, MI, USA. maupande@umich.edu.
 
 Steve Oney School of Information University of Michigan Ann Arbor, MI, USA soney@umich.edu
 
-© 2018 Copyright held by the owner/author(s). Publication rights licensed to the Association for Computing Machinery. ACM ISBN 978-1-4503-5513-1/18/04...$15.00
+> <sup>∗</sup>The first and second authors contributed equally to this project
+
+> © 2018 Copyright held by the owner/author(s). Publication rights licensed to the Association for Computing Machinery. ACM ISBN 978-1-4503-5513-1/18/04...$15.00
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
 
@@ -30,13 +32,13 @@ Program Animation, Programming Education, Eye Tracking
 
 Louis Spinelli, Maulishree Pandey, and Steve Oney. 2018. Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques. In Proceedings of 2nd International Conference on the Art, Science, and Engineering of Programming (&lt;Programming’18&gt; Companion). ACM, New York, NY, USA, [6](<#page-6>) pages. [https://doi.org/10.1145/3191697.3214338](<https://doi.org/10.1145/3191697.3214338>)
 
+> &lt;Programming’18&gt; Companion, April 9–12, 2018, Nice, France
+
+> [https://doi.org/10.1145/3191697.3214338](<https://doi.org/10.1145/3191697.3214338>)
+
 ## 1 INTRODUCTION
 
-Since the 1940s, visual representations of program code have evolved from static flow charts to dynamic animations\[[20](<#page-6>)\]. A large body of research is now focused on understanding program visualization in introductory programming education\[[19](<#page-6>)\]. The belief that students
-
-<sup>∗</sup>The first and second authors contributed equally to this project
-
-&lt;Programming’18&gt; Companion, April 9–12, 2018, Nice, France [https://doi.org/10.1145/3191697.3214338](<https://doi.org/10.1145/3191697.3214338>) experience difficulty learning because they lack a concrete mental model has often been cited as a reason for developing program visualizations\[[18](<#page-6>)\]. Two additional reasons given in support of dynamic animations are the ease of describing program behavior and removing the potential for an instructor to make mistakes when presenting code\[[1](<#page-5>)\].
+Since the 1940s, visual representations of program code have evolved from static flow charts to dynamic animations\[[20](<#page-6>)\]. A large body of research is now focused on understanding program visualization in introductory programming education\[[19](<#page-6>)\]. The belief that students experience difficulty learning because they lack a concrete mental model has often been cited as a reason for developing program visualizations\[[18](<#page-6>)\]. Two additional reasons given in support of dynamic animations are the ease of describing program behavior and removing the potential for an instructor to make mistakes when presenting code\[[1](<#page-5>)\].
 
 Our study provides insights into the effects of animating the presentation of textual source code and directions for future research. In this study, animating the presentation of textual source code (“a single textual representation”) refers to animating the text of the source code without the addition of separate graphical representations of elements contained within the code such as variables, classes, and methods.
 
@@ -60,15 +62,13 @@ Previous research has focused on helping novice programmers understand run-time 
 
 We tested 3 animation interventions with 16 novice programmers. Participants’ eye-gaze data, as they interacted with the animations, was recorded using Gazepoint GP3 eye-tracker. The research team recruited participants from introductory programming courses as well as from participants of a summer research program for Masters students. After selection, some participants completed a survey that collected information about years of programming experience, currently enrolled programming courses, completed programming courses, and specifics for each programming language they have used. For other participants this information was collected verbally. All but three participants had less than four years of experience, and these three participants only piloted our first intervention (described below). Participants included students who had previously taken programming courses and students who were self-taught in programming.
 
-A web-based programming environment was designed by the research team to display the animations. The user interface (UI) of the environment enabled participants to view the program and associated tasks, run the program, and debug by viewing error messages in the same screen. The programming tasks we tested included code summarization \[[8](<#page-5>)\], syntax error correction, and logic error correction. Code summarization consisted of asking participants to summarize the code after watching an animation. Syntax and logic error correction are comparable to debugging tasks completed in other studies \[[12](<#page-5>)\]. Syntax errors consisted of code errors that prevented source code execution such as a misspelled variable. Logic errors consisted of errors that caused code execution to produce inaccurate results such as an algorithm meant to sort in ascending order sorting in descending order. Participants were able
+A web-based programming environment was designed by the research team to display the animations. The user interface (UI) of the environment enabled participants to view the program and associated tasks, run the program, and debug by viewing error messages in the same screen. The programming tasks we tested included code summarization \[[8](<#page-5>)\], syntax error correction, and logic error correction. Code summarization consisted of asking participants to summarize the code after watching an animation. Syntax and logic error correction are comparable to debugging tasks completed in other studies \[[12](<#page-5>)\]. Syntax errors consisted of code errors that prevented source code execution such as a misspelled variable. Logic errors consisted of errors that caused code execution to produce inaccurate results such as an algorithm meant to sort in ascending order sorting in descending order. Participants were able to view, interact, and run a static representation of the code while completing all three tasks.
 
-Louis Spinelli, Maulishree Pandey, and Steve Oney to view, interact, and run a static representation of the code while completing all three tasks.
-
-![Figure 1: The interface of the live writing intervention as the animation reveals code in linear order. Participants were asked not to begin writing their summaries until after each animation completed playing.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-001-p002.png)
+![Code-animation task screen. A Python editor on the left shows the program partway through its animation, with the active insertion point highlighted. A large text box on the right asks the participant to summarize the program. Playback controls and a progress bar are below the code. The study asks participants to wait until the animation finishes before entering the summary.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-001-p002.png)
 
 Figure 1: The interface of the live writing intervention as the animation reveals code in linear order. Participants were asked not to begin writing their summaries until after each animation completed playing.
 
-![Figure 2: The live writing intervention after an animation completed. The presented code remained visible and editable during the summarization task.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-002-p002.png)
+![Program-summary task screen after the animation. The full Python program remains in an editable editor on the left. A large response field and Submit button on the right collect a brief account of what the program does; the completed playback bar remains beneath the code.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-002-p002.png)
 
 Figure 2: The live writing intervention after an animation completed. The presented code remained visible and editable during the summarization task.
 
@@ -78,9 +78,9 @@ Based on the theoretical underpinning that making execution order explicit may b
 
 #### 2.2.3 Eye-Gaze Intervention.
 
-Source code was presented with a white background and a yellow dot. The interface was similar
-
 <a id="page-3"></a>
+
+Source code was presented with a white background and a yellow dot. The interface was similar to Stein and Brennan’s, which showed novice programmers the previously-recorded eye gaze of expert programmers represented as a yellow dot \[[21](<#page-6>)\]. Similar to the line-highlighting intervention, this animation played in the order of program execution. Participants were instructed to follow a yellow dot overlaid onto the code editor. We tested the intervention with code visible, blurry, and non visible. We tested this intervention with 3 participants who also tested the line-highlighting intervention.
 
 Table 1: The operationalization of concepts for this study.
 
@@ -111,15 +111,13 @@ Table 1: The operationalization of concepts for this study.
   </tbody>
 </table>
 
-![Figure 3: After completing and submitting their summaries, participants could view their next tasks, edit code, and execute the program.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-003-p003.png)
+![Interactive task screen with the Python program in an editor on the left. Run and Tasks controls appear on the right above instructions to debug the code and identify and fix its logic problem. The participant can edit and run the program to complete these tasks.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-003-p003.png)
 
 Figure 3: After completing and submitting their summaries, participants could view their next tasks, edit code, and execute the program.
 
-![Figure 4: Participants could view execution errors in the intervention interface while completing each task.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-004-p003.png)
+![Runtime-error screen for the Python task. Source code is on the left and a red traceback is on the right beneath the Run and Tasks controls. The error identifies study\_hard as an undefined name on line 24, showing the feedback participants receive when running faulty code.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-004-p003.png)
 
 Figure 4: Participants could view execution errors in the intervention interface while completing each task.
-
-to Stein and Brennan’s, which showed novice programmers the previously-recorded eye gaze of expert programmers represented as a yellow dot \[[21](<#page-6>)\]. Similar to the line-highlighting intervention, this animation played in the order of program execution. Participants were instructed to follow a yellow dot overlaid onto the code editor. We tested the intervention with code visible, blurry, and non visible. We tested this intervention with 3 participants who also tested the line-highlighting intervention.
 
 #### 2.2.4 Live Writing Intervention.
 
@@ -141,11 +139,9 @@ The research questions we focus on in this paper are:
 
 Element coverage is defined as the fraction of words fixated on. \[[8](<#page-5>)\]. We used this metric to explore differences in how participants interacted with the source code between tasks and during the intervention. We found a notable difference when comparing measures taken during the consumption of the intervention and measures taken during the later tasks. Element coverage per minute was much higher when participants were consuming an animation than during a task. This is likely because all participants at least partially track code as it is typed.
 
-Interestingly, we did not observe any clear effects when comparing element coverage measures across interventions. This could be due to individual differences among participants, and also partly due to the small sample size. The only observed difference was between the participant group who completed the debugging task after viewing the non-linear Live Writing Intervention and the
-
 <a id="page-4"></a>
 
-&lt;Programming’18&gt; Companion, April 9–12, 2018, Nice, France groups who either were presented with static code or received the linear treatment.
+Interestingly, we did not observe any clear effects when comparing element coverage measures across interventions. This could be due to individual differences among participants, and also partly due to the small sample size. The only observed difference was between the participant group who completed the debugging task after viewing the non-linear Live Writing Intervention and the groups who either were presented with static code or received the linear treatment.
 
 For all three interventions, we examined the reading approach of our participants. We operationalized reading approach using the same measures defined by Busjahn et al \[[8](<#page-5>)\]. This included element coverage, vertical next text (saccades that stay on same line or move one line below), vertical later text (saccades that stay on same line or move to any line below), horizontal later text (saccades that move right on same line), regression rate (saccades that move to previous lines), and line regression rate (saccades that move left on the same line) \[[8](<#page-5>)\]. These indicators for reading approach were in line with logical explanations for animations (i.e. increased top-to-bottom line reading when viewing a linear animation of line typing).
 
@@ -163,7 +159,7 @@ After observing participant behavior during the first two animation intervention
 
 The eye-tracking data revealed that participants interacted with the animations differently. Our first two interventions - the line highlighting and eye-gaze animations - did not allow participants to control the speed of the animation. We received feedback from two participants that the animation was helpful and was played at a speed they felt was appropriate. Two participants felt the animation played too slowly. When we enabled participants to control the speed of animations we observed participants adjusting the speed up and down during the warm up task until settling on a speed. Participants preferred this control possibly increasing participant satisfaction with the animations.
 
-![Figure 5: Fixations of Participant 11 and 14. Participant 11 (left) tracked the animation at a high speed closely following the code as it became visible. Participant 14 (right) played the animation slowly, reading other parts of the computer code.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-005-p004.png)
+![Two eye-tracking plots compare participants P11 and P14. Horizontal axes show elapsed time in seconds and vertical axes show code line number. Green traces mark the line currently being animated; yellow marks show the participant’s gaze fixations. P11’s fixations largely follow the advancing animation line, whereas P14’s fixations are spread over other lines and a much longer session. The caption interprets this as different preferred viewing speeds.](https://from.so/assets/markdown/figures/spinelli-attention-patterns-for-code-animations-px182018/figure-005-p004.png)
 
 Figure 5: Fixations of Participant 11 and 14. Participant 11 (left) tracked the animation at a high speed closely following the code as it became visible. Participant 14 (right) played the animation slowly, reading other parts of the computer code.
 

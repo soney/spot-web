@@ -1,0 +1,115 @@
+{
+  "file": "oney-playbook-iseud2011.pdf",
+  "pdf_sha256": "489898f38c40a3988e3f144bc546afa222bbaaf50eb0d8179e5676a1fb43f6ef",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "Playbook: Revision Control & Comparison for Interactive Mockups",
+  "structure_elements": 69,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "H1": 1,
+    "P": 25,
+    "H2": 6,
+    "Figure": 1,
+    "Caption": 1,
+    "L": 1,
+    "LI": 9,
+    "Lbl": 9,
+    "LBody": 9
+  },
+  "structure_content_references": 1285,
+  "parent_tree_entries": 6,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 235,
+      "text_operations_artifact": 44
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 214,
+      "text_operations_artifact": 36
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 252,
+      "text_operations_artifact": 29
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 201,
+      "text_operations_artifact": 15,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 159,
+      "text_operations_artifact": 21
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 223,
+      "text_operations_artifact": 44
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "32:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "38:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "45:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "50:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "78:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "81:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "87:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "69:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Fig. 1. The user is mapping stimuli and responses from the script on the left to the \nscript on the right. Equivalent objects have a line between them. For example, a click \non the “MENS” layer in the left mockup is equivalent to a mouseover of the “MENS” \nlayer in the right mockup. When whole behaviors are equivalent, Playbook uses curly \nbraces and a single line between the behaviors to reduce clutter. The mappings be-\ntween mockup stimuli and responses are used to allow the user to interact with multi-\nple interactive mockups simultaneously.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

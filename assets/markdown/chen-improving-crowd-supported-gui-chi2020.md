@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1 -->
+<!-- Source PDF SHA-256: af864c8939000d55dab47cbe23ae54e19042792d6296505c480fdd49e37f71bc -->
 
 <a id="page-1"></a>
 
@@ -10,7 +10,7 @@ Yan Chen, Maulishree Pandey, Jean Y. Song, Walter S. Lasecki, Steve Oney
 
 University of Michigan Ann Arbor, MI, USA {yanchenm, maupande, jyskwon, wlasecki, soney}@umich.edu
 
-Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’20, April 25–30, 2020, Honolulu, HI, USA. Copyright is held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-6708-0/20/04 ...$15.00. http://dx.doi.org/10.1145/3313831.3376835
+> Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’20, April 25–30, 2020, Honolulu, HI, USA. Copyright is held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-6708-0/20/04 ...$15.00. http://dx.doi.org/10.1145/3313831.3376835
 
 ## ABSTRACT
 
@@ -82,7 +82,7 @@ Designing a UI that facilitates effective GUI testing is challenging because tes
 
 <a id="page-4"></a>
 
-To reduce overlapping and redundant sub-paths in testing, we implemented GUI-level guidance that presents previous workers’ navigation paths to new workers by augmenting the UIs with non-clickable CSS overlays (Fig. [1](<#page-2>) circle 2 2 ). We designed this GUI-level guidance by conducting a series of small studies, comparing two different approaches of presenting GUI navigation paths: (1) UI overlays that block out regions in the UI that have previously been explored, and (2) textual logs that show past user events. We chose to compare these presentations because prior work showed that presenting previous people’s responses can effectively improve others’ task performance \[19, 29, 46\]. However, unlike their approaches, we focused on guiding testers to avoid explored GUI regions, thus including information about how often users use particular UI features (such as a heatmap) was unnecessary and potentially misleading.
+To reduce overlapping and redundant sub-paths in testing, we implemented GUI-level guidance that presents previous workers’ navigation paths to new workers by augmenting the UIs with non-clickable CSS overlays (Fig. [1](<#page-2>)circle 2 ). We designed this GUI-level guidance by conducting a series of small studies, comparing two different approaches of presenting GUI navigation paths: (1) UI overlays that block out regions in the UI that have previously been explored, and (2) textual logs that show past user events. We chose to compare these presentations because prior work showed that presenting previous people’s responses can effectively improve others’ task performance \[19, 29, 46\]. However, unlike their approaches, we focused on guiding testers to avoid explored GUI regions, thus including information about how often users use particular UI features (such as a heatmap) was unnecessary and potentially misleading.
 
 ![Figure 2. Three views of an e-commerce delivery form are connected to its event-flow graph. The form has Pick Up, Delivery, and Contact Info tabs. The graph represents selecting pickup or delivery options and entering input, phone, email, or other contact details, with arrows showing transitions among these states. Pink summary nodes group transitions back to the three main tabs.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-002-p004.png)
 
@@ -94,15 +94,7 @@ We compared two presentations with a baseline, which was not presenting any guid
 
 To encourage testers to efficiently increase the test coverage, the UI should enable them to easily navigate among previously explored events to find a broader range of test cases. Prior work has suggested two models to represent previously explored interactions: Finite State Machines (FSMs[) \[34, 47\], and Event-](<#page-12>) Flow Graphs (EFGs[) \[39\]. However, a study \[47\] suggested that](<#page-12>) these approaches can be overwhelming for testers to evaluate because the number of possible permutations of low-level events and targets are too large to test, especially when the context of the path is missing. So developers typically rely on manually crafting a small number of event sequences, which is not scalable.
 
-Inspired by prior work that developed an abstract GUI [model \[31\], we design an interactive, abstract](<#page-12>) EFG as part of our guidance techniques, in which testers can easily understand and navigate the graphs by a simple click interaction on a [node (Fig. 1](<#page-2>)
-
-![circle 1](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-003-p004.png)
-
-1 ). With our interactive event-flow graphs, clicking an event node lets the GUI return to the event-associated state. For example, clicking the node of “filtering” event in Fig. [1](<#page-2>)
-
-![circle 2](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-004-p004.png)
-
-2 will set the GUI to the results page of the filter button being clicked. The active (testers’ current) event of the EFG also updates to the “filtering” event. One can use many kinds of techniques to decide which filter buttons should be clicked, such as applying the values from the last event that occurred on the GUIs. Because we focus on increasing testers’ event-flow coverage, we used a set of predefined values for each state.
+Inspired by prior work that developed an abstract GUI [model \[31\], we design an interactive, abstract](<#page-12>) EFG as part of our guidance techniques, in which testers can easily understand and navigate the graphs by a simple click interaction on a [node (Fig. 1](<#page-2>)circle 1 ). With our interactive event-flow graphs, clicking an event node lets the GUI return to the event-associated state. For example, clicking the node of “filtering” event in Fig. [1](<#page-2>)circle 2 will set the GUI to the results page of the filter button being clicked. The active (testers’ current) event of the EFG also updates to the “filtering” event. One can use many kinds of techniques to decide which filter buttons should be clicked, such as applying the values from the last event that occurred on the GUIs. Because we focus on increasing testers’ event-flow coverage, we used a set of predefined values for each state.
 
 ## APPROACH AND IMPLEMENTATION
 
@@ -110,11 +102,7 @@ In this section, we introduce the implementation of the two novel crowdsourcing 
 
 ### The GUI-level guidance
 
-To help avoid duplicate test cases, we propose using GUI-level guidance that displays information about existing test cases by augmenting the GUI [(Fig. 1](<#page-2>)
-
-![circle 2](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-005-p004.png)
-
-2 ). We implemented this guidance by adding a gray CSS overlay on top of the explored elements. The overlay can prevent testers from interacting with elements that lead to previously explored interaction paths, encouraging them to find other widgets to explore, and helps generate more effective outputs.
+To help avoid duplicate test cases, we propose using GUI-level guidance that displays information about existing test cases by augmenting the GUI [(Fig. 1](<#page-2>)circle 2 ). We implemented this guidance by adding a gray CSS overlay on top of the explored elements. The overlay can prevent testers from interacting with elements that lead to previously explored interaction paths, encouraging them to find other widgets to explore, and helps generate more effective outputs.
 
 ### The interactive event-flow graphs
 
@@ -126,11 +114,7 @@ To visualize the explored interaction paths, we built a human-readable Event-Flo
 
 As discussed in the related work section, the number of possible event sequences for a GUI can be enormous, making the corresponding EFG difficult for testers to understand and interact with. To address this problem, our techniques allow end-user developers to abstract the meta-level events (e.g., click the “Today” checkbox) to a user-intent-level (e.g., pick a delivery day). We did this by instrumenting the parent nodes in the DOM tree instead of an individual leaf node (i.e., nodes without any children). This provides crowd testers an easy way to read navigation history in the EFG.
 
-To track testers’ traces, we implemented a tracker on the client side. We did this by creating an empty EFG object, developed based on the Dagre libraries [1](<#page-5>), so that events and event-flows can be added to it in event handlers JavaScript function on [the client side (Fig 1.](<#page-2>)
-
-![circle 2](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-006-p005.png)
-
-2 ). To tailor the user event displayed on each node to a human-readable level, we presented the corresponding user intents. These user intents come from the unique attribute values of the parent nodes that end-user developers are assigned to, so that when testers are interacting with their children nodes they are automatically be triggered.
+To track testers’ traces, we implemented a tracker on the client side. We did this by creating an empty EFG object, developed based on the Dagre libraries [1](<#page-5>), so that events and event-flows can be added to it in event handlers JavaScript function on [the client side (Fig 1.](<#page-2>)circle 2 ). To tailor the user event displayed on each node to a human-readable level, we presented the corresponding user intents. These user intents come from the unique attribute values of the parent nodes that end-user developers are assigned to, so that when testers are interacting with their children nodes they are automatically be triggered.
 
 The event name displayed on each node could come from any attributes of the corresponding parent node (e.g., id=‘delivery\_- day\_checkboxes’). To decide whether to add a new event-flow to the EFG or to fire an existing one, the tracker compares the incoming event to all the existing event-flows of the current active event and makes the decisions. Because the interactive event-flow graphs run in real time while testers perform their tasks, we used a computationally inexpensive method. Our evaluation shows that this approach is effective. Note that exploring advanced trace tracking techniques (e.g., quadtree decomposition \[42\] or element association analysis \[12\]) is beyond the scope of this work on studying effective tester guidance.
 
@@ -140,9 +124,9 @@ Our technique is a JavaScript library that was developed based on the Dagre libr
 
 ## EVALUATION OF GUIDANCE TECHNIQUES
 
-To evaluate our crowd-powered GUI testing guidance techniques (GUI-level guidance and interactive event-flow graphs), we conducted an experiment in which crowd testers were given 11 GUI testing tasks and were asked to perform them on three web GUIs that were instrumented with both techniques. To make the EFG human-readable, we instrumented their DOM trees so that each event in the EFG denoted one type of user event (e.g., filtering) that was associated with a group of DOM elements (e.g., all “filter” buttons), and each transition denoted the immediate transition action from one event to another. Although this design is different from the standard approach, we hypothesized that our approach can effectively help testers easily navigate through previous traces by providing a readable and scalable EFG. We tested this both individually and
+To evaluate our crowd-powered GUI testing guidance techniques (GUI-level guidance and interactive event-flow graphs), we conducted an experiment in which crowd testers were given 11 GUI testing tasks and were asked to perform them on three web GUIs that were instrumented with both techniques. To make the EFG human-readable, we instrumented their DOM trees so that each event in the EFG denoted one type of user event (e.g., filtering) that was associated with a group of DOM elements (e.g., all “filter” buttons), and each transition denoted the immediate transition action from one event to another. Although this design is different from the standard approach, we hypothesized that our approach can effectively help testers easily navigate through previous traces by providing a readable and scalable EFG. We tested this both individually and collectively (i.e., building on top of an existing EFG generated by others) performing the tasks on a web GUI prototype. We refer the integration of these two techniques as the “guidance” throughout this section. In this section, we first talk about our study setting. Then, we discuss our study results and analysis.
 
-[<sup>1</sup>https://github.com/dagrejs](<https://github.com/dagrejs>) collectively (i.e., building on top of an existing EFG generated by others) performing the tasks on a web GUI prototype. We refer the integration of these two techniques as the “guidance” throughout this section. In this section, we first talk about our study setting. Then, we discuss our study results and analysis.
+> [<sup>1</sup>https://github.com/dagrejs](<https://github.com/dagrejs>)
 
 ![Figure 3. JavaScript example. Get the DIV for the trace-tracking tool: const displayDiv = document.getElementById("displayDiv"); Initialize the trace tracker JSON variable: let currentActiveFSM = t2sm.FSM.fromJSON(JSON.parse(str0)); Initialize the display: const display = new t2sm.StateMachineDisplay(currentActiveFSM, displayDiv, myDisplaySetting); Define function myDisplaySetting(fod) with placeholders for state-box style and transition-box style.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-007-p005.png)
 
@@ -174,12 +158,6 @@ To get realistic tasks for testing, we recruited an independent professional tes
 
 - E-commerce
 
-<a id="page-6"></a>
-
-![Figure 4. Eleven screenshots of the three study prototypes arranged in columns. The left column shows three travel-agent screens for searching restaurants, viewing a result, and reviewing a restaurant. The middle column shows four blog screens for browsing articles, search/results, article content, and discussion. The right column shows four e-commerce screens for product browsing, a shopping cart, product details/reviews, and checkout or delivery preferences.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-008-p006.png)
-
-Figure 4. Screenshots from our three GUI prototypes. From left to right columns: travel agent, blog, e-commerce
-
 <a id="page-7"></a>
 
 - Task 8: Find a toy and add it to the shopping cart
@@ -190,6 +168,12 @@ Figure 4. Screenshots from our three GUI prototypes. From left to right columns:
 
 - Task 11: Verify all the delivery methods
 
+<a id="page-6"></a>
+
+![Figure 4. Eleven screenshots of the three study prototypes arranged in columns. The left column shows three travel-agent screens for searching restaurants, viewing a result, and reviewing a restaurant. The middle column shows four blog screens for browsing articles, search/results, article content, and discussion. The right column shows four e-commerce screens for product browsing, a shopping cart, product details/reviews, and checkout or delivery preferences.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-008-p006.png)
+
+Figure 4. Screenshots from our three GUI prototypes. From left to right columns: travel agent, blog, e-commerce
+
 Although prior work has used artificial defects in their system [under testing \[35\], all of the 11](<#page-12>) GUIs we used were bug-free to avoid potential biases. This also allowed us to evaluate the effectiveness of the tool rather than the testers’ expertise.
 
 ### Participants
@@ -198,9 +182,7 @@ We recruited 30 participants: 18 untrained testers from MTurk and 12 trained tes
 
 ### Experimental Design
 
-Our study had five conditions, each with six testers. The 11 tasks described in the previous section were used in all conditions. Our conditions permute combinations of untrained
-
-(U) or trained (T) testers, and guidance (G) or the baseline (B):
+Our study had five conditions, each with six testers. The 11 tasks described in the previous section were used in all conditions. Our conditions permute combinations of untrained (U) or trained (T) testers, and guidance (G) or the baseline (B):
 
 - C<sub>UB</sub> (untrained baseline): untrained testers / no guidance,
 
@@ -212,11 +194,7 @@ Our study had five conditions, each with six testers. The 11 tasks described in 
 
 - C<sub>TG</sub> (trained with guidance): trained testers / guidance.
 
-For C<sub>UB</sub> and C<sub>TB</sub>, we gave participants the task description, the study goal (i.e., find all possible traces to accomplish the tasks), and the three testing GUIs. At any point, they could go [back to the initial event to restart their navigation (Fig. 1.](<#page-2>)
-
-![circle 1](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-009-p007.png)
-
-1 “Go to the start!” green button) or move on if they thought they had found all the traces. The same information and setup was provided in C<sub>UG</sub>, C<sub>UG+</sub>, and C<sub>TG</sub>, but these groups had the guidance enabled. To evaluate the guidance’s effectiveness in supporting collaboration, testers in C<sub>UG+</sub> were given one of the C<sub>UG</sub> testers’ EFGs, which could have been already fully covered, and they were instructed to build on top of it to accomplish the same navigation tasks. All the EFGs generated in C<sub>UG</sub> were paired with a tester in C<sub>UG+</sub>. In total, the study yielded 330 (6 workers per condition × 11 tasks × 5 conditions) data points (sets of GUI-level activities for a task).
+For C<sub>UB</sub> and C<sub>TB</sub>, we gave participants the task description, the study goal (i.e., find all possible traces to accomplish the tasks), and the three testing GUIs. At any point, they could go [back to the initial event to restart their navigation (Fig. 1.](<#page-2>)circle 1 “Go to the start!” green button) or move on if they thought they had found all the traces. The same information and setup was provided in C<sub>UG</sub>, C<sub>UG+</sub>, and C<sub>TG</sub>, but these groups had the guidance enabled. To evaluate the guidance’s effectiveness in supporting collaboration, testers in C<sub>UG+</sub> were given one of the C<sub>UG</sub> testers’ EFGs, which could have been already fully covered, and they were instructed to build on top of it to accomplish the same navigation tasks. All the EFGs generated in C<sub>UG</sub> were paired with a tester in C<sub>UG+</sub>. In total, the study yielded 330 (6 workers per condition × 11 tasks × 5 conditions) data points (sets of GUI-level activities for a task).
 
 ![A bar chart that shows the average transition coverage for four single worker conditions. From left to the right, we have trained baseline (62.23%), trained with guidance (78.90%), untrained baseline (34.79%), and untrained with guidance (53.83%)](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-010-p007.png)
 
@@ -315,7 +293,7 @@ In summary, we found that the combination of the GUI-level guidance and interact
 
 Overall, testers found the guidance “quite helpful to find paths and avoid duplicate actions” (P1) and “user friendly” (P4), and felt that “all scheme \[was\] forming just right on your eyes” (P5). One participant said “\[the guidance\] helped me to save my time and explore the new links without clicking the already explored link” (P1). Testers also suggested a few ideas for improving the guidance. P11 said that it would be nice to enable a transition- or node-removal function, allowing testers to better focus on expanding major paths. This makes sense, given that the task scopes can be large enough to include a considerable number of paths. In this case, presenting all explored paths could complicate the interactive event-flow graph, making it less useful in terms of finding new transitions. Another tester suggested having a trace log to “record all user doings in log format” (P6). Some other testers did not immediately realize that they could jump to previously discovered events by clicking the nodes; thus, they wasted some time before understanding this function.
 
-![Figure 6. Two grouped bar charts show how testing changes over task progress at 0–25%, 25–50%, 50–75%, and 75–100% of elapsed time. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. In the upper chart, use of the guidance graph increases across time, especially for trained users; in the lower chart, newly discovered transitions generally decline. Together they show growing reliance on guidance as undiscovered transitions become harder to find.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-011-p009.png)
+![Two grouped bar charts show counts over four task-progress intervals, beginning at 0, 25, 50 and 75 percent. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. Effective guidance actions generally rise, most sharply for trained users. New-transition discoveries decline for trained users and for untrained individuals after an early peak, while collaborative untrained users discover more transitions in the final interval than initially.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-011-p009.png)
 
 Figure 6. Testers’ interaction pattern with respect to task progression in time. Chart (a) shows trained and untrained testers’ guidance graph click counts. As time progressed, testers interacted with the guidance graph more because it was harder to find a new transition discovery. Chart (b) shows the number of new transition discovery counts, which decrease as time progresses, implying the discovery becomes more challenging (thus more clicking happening in (a) as time progresses).
 
@@ -353,7 +331,7 @@ For example, a tester’s output test case can be used as a real user behavior t
 
 Our techniques can be most beneficial for testing GUIs with an object model (so that overlays can be drawn over specific elements) and a finite state space (so that the EFG can be rendered). This includes most web and mobile UIs. UIs with non-finite state spaces would need to collapse states together to make the graph readable to testers. For example, for a video playback widget where the user could scrub to an infinite number of playback positions, its states might be reduced to “start,” “middle,” and “end”.
 
-![This is a conceptual figure. It shows a small unit event-flow graph can be integrated into larger application-level graph on the right to test the entire graph without recruiting additional testers.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-012-p010.png)
+![A worker’s output is a small tree with one parent and three child nodes. A curved red arrow maps that parent to a dotted node in a larger GUI behavior tree; three dotted children show where the worker’s tested unit fits. Other solid branches represent the rest of the application. The diagram illustrates combining unit test traces into an application-level graph.](https://from.so/assets/markdown/figures/chen-improving-crowd-supported-gui-chi2020/figure-012-p010.png)
 
 Figure 7. A small “unit” graph (left) can be integrated into larger application-level graph (right) to test the entire graph without recruiting additional testers.
 

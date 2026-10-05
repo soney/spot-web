@@ -1,0 +1,516 @@
+{
+  "file": "zhang-codestream-chi2026.pdf",
+  "pdf_sha256": "44201fdb78730ad66b923c324ee5f66cb0f96e16fd6d3f41553002ead8fb5afa",
+  "normalization_warnings": "",
+  "page_count": 16,
+  "language": "en-US",
+  "title": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
+  "structure_elements": 1606,
+  "roles": {
+    "Document": 1,
+    "H1": 1,
+    "P": 200,
+    "Sub": 4,
+    "Reference": 198,
+    "Link": 198,
+    "Figure": 16,
+    "Caption": 14,
+    "H2": 10,
+    "Span": 477,
+    "L": 8,
+    "LI": 76,
+    "Lbl": 73,
+    "LBody": 76,
+    "H3": 15,
+    "Div": 19,
+    "Sect": 12,
+    "H4": 16,
+    "Formula": 2,
+    "Note": 1,
+    "Table": 4,
+    "THead": 4,
+    "TR": 38,
+    "TH": 40,
+    "TBody": 4,
+    "TD": 99
+  },
+  "structure_content_references": 1845,
+  "parent_tree_entries": 214,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 573,
+      "vector_operations_tagged": 87,
+      "text_operations_artifact": 10,
+      "image_operations_tagged": 1,
+      "link_annotations": 14
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 1909,
+      "vector_operations_artifact": 1,
+      "vector_operations_tagged": 10,
+      "link_annotations": 24
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 2000,
+      "link_annotations": 76
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 1540,
+      "vector_operations_artifact": 2,
+      "vector_operations_tagged": 3,
+      "image_operations_tagged": 4,
+      "link_annotations": 30
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 36,
+      "vector_operations_tagged": 2,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1912,
+      "vector_operations_artifact": 15,
+      "link_annotations": 26
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 53,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 1373,
+      "link_annotations": 3
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 36,
+      "vector_operations_artifact": 1,
+      "image_operations_tagged": 11,
+      "vector_operations_tagged": 29,
+      "text_operations_tagged": 543,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 20,
+      "vector_operations_artifact": 1,
+      "vector_operations_tagged": 45,
+      "image_operations_tagged": 15,
+      "text_operations_tagged": 1071,
+      "link_annotations": 3
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 36,
+      "vector_operations_artifact": 13,
+      "image_operations_tagged": 5,
+      "vector_operations_tagged": 127,
+      "text_operations_tagged": 794
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 36,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 1005,
+      "vector_operations_artifact": 1,
+      "link_annotations": 6
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 1738,
+      "vector_operations_artifact": 6,
+      "link_annotations": 6
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 2,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1167,
+      "vector_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 137,
+      "vector_operations_artifact": 4,
+      "vector_operations_tagged": 314,
+      "text_operations_tagged": 874
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 1897,
+      "vector_operations_artifact": 3,
+      "link_annotations": 2
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 2502,
+      "link_annotations": 1
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 2072
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "815:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "1576:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "1577:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "1578:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "1579:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "1668:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1669:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1789:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1890:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1985:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "1984:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1986:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "2089:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "2090:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "2091:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "2092:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "2093:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "2194:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "2184:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "2152:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "2295:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "2272:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "2242:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "2243:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "2388:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "2390:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "2389:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "2396:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "2497:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "2597:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "2598:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "2699:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "2690:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "2691:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "2738:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "2938:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "2943:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "2965:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "813:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "2978:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "3088:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "3089:0",
+      "page": 15
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "1585:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. A student's attempts to double every element of L = [1, 2, 3, 4] in place. Version 1 doubles only loop variable x, leaving L unchanged. Version 2 builds new_L and assigns it to L, replacing rather than modifying the original list. Version 3 loops to len(L) minus 1 and misses the last element. The final version loops over range(len(L)) and assigns L[idx] = L[idx] * 2. An edit-only timeline below shows colored rectangles; CodeStream adds the relevant code beside each edit, exposing these successive approaches and corrections.",
+      "actual_text": ""
+    },
+    {
+      "element": "1657:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Creative Commons Attribution logo; this paper is licensed under CC BY 4.0.",
+      "actual_text": ""
+    },
+    {
+      "element": "1975:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2: This figure shows examples of vertical clutter. On the left, a long code sample is zoomed out, making the code unreadable. On the right, the same long code sample is zoomed in, causing severe crowding and overlap.",
+      "actual_text": ""
+    },
+    {
+      "element": "1966:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3: It shows an example of horizontal clutter. When many edits occur within a short time span, long code snippets overlap along the timeline, making individual changes difficult to distinguish.",
+      "actual_text": ""
+    },
+    {
+      "element": "2143:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 4. CodeStream links a timeline on the left to the student's full code on the right. Time runs left to right from start to finish; code lines run top to bottom from first to last. Blue blocks denote additions, orange blocks deletions. Gray row shading represents cumulative editing effort: darker means more time. Clicking a block locates its code; a scrubber selects a code snapshot. The editor displays the corresponding complete program.",
+      "actual_text": ""
+    },
+    {
+      "element": "2154:0",
+      "role": "Formula",
+      "page": 6,
+      "alt": "Threshold equals base threshold divided by zoom level squared.",
+      "actual_text": ""
+    },
+    {
+      "element": "2127:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 5: Details of CodeStream’s user interface that address vertical clutter. (a) Code annotations embedded directly into the timeline. (b) Context summary view that abstracts dense code regions into labeled structures (e.g., functions, statements). (c) Hover interaction showing original code lines from summary labels. (d) Level-of-detail rendering, where zooming reveals progressively more detailed edits.",
+      "actual_text": ""
+    },
+    {
+      "element": "2251:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 6: Details of CodeStream’s user interface that address horizontal clutter. (a) Timeline view with code annotations aligned when clicking edits. (b) Dragging the timeline scrubber to inspect snapshots of code history. (c) Projection linking the timeline and editor to show which portion is currently in view. (d) Minimap navigation for global positioning and viewport control.",
+      "actual_text": ""
+    },
+    {
+      "element": "2225:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 7: Layout algorithm for resolving overlaps between code snippets. Step 1: Sort all intervals by start time. Step 2: Compare each interval with later ones until a non-overlapping start is found. Step 3a: If two boxes overlap by more than 50%, merge them and retain the first. Step 3b: If the overlap is less than 50%, shrink the box and truncate long content. Step 4: The final layout ensures no overlaps remain, with orange showing overlap and dark blue showing resolution.",
+      "actual_text": ""
+    },
+    {
+      "element": "2224:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 8. Four outlined groups in a timeline cluster edits by both time distance horizontally and code-line distance vertically. Group 1 contains a long descending run of edits; groups 2–4 contain shorter nearby clusters. The lower panel aligns code annotations horizontally within a group, preserving indentation and helping reveal the code's structure and scope.",
+      "actual_text": ""
+    },
+    {
+      "element": "2655:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "Figure 9: Baseline's user interface. On the left, it is a timeline visualization that shows colored indicators of edits, without code annotation. On the right, it is a code editor of student's code content.",
+      "actual_text": ""
+    },
+    {
+      "element": "2659:0",
+      "role": "Formula",
+      "page": 12,
+      "alt": "F-score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives.",
+      "actual_text": ""
+    },
+    {
+      "element": "2707:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Figure 10. Survey comparison of CodeStream and the baseline. The seven ratings run from 1 (strongly prefer CodeStream) through 4 (neutral) to 7 (strongly prefer baseline). Counts for ratings 1–7 are: identifying students who might need help, 2, 2, 4, 3, 1, 0, 0; interpreting students' intentions behind code changes, 3, 3, 1, 5, 0, 0, 0; navigating and exploring coding histories, 4, 4, 1, 1, 1, 0, 1; less effort to understand coding history, 5, 2, 2, 1, 1, 0, 1. Each question has 12 responses and favors CodeStream overall.",
+      "actual_text": ""
+    },
+    {
+      "element": "2752:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Paired boxplots for Students’ coding history. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 2–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean.",
+      "actual_text": ""
+    },
+    {
+      "element": "2763:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Paired boxplots for Problem solving patterns. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 3–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean.",
+      "actual_text": ""
+    },
+    {
+      "element": "2774:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Paired boxplots for Students’ intention of their edits. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 3–7 for CodeStream and 2–6 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean.",
+      "actual_text": ""
+    },
+    {
+      "element": "2785:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Paired boxplots for Students that might need intervention. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 4–7 for CodeStream and 1–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean.",
+      "actual_text": ""
+    },
+    {
+      "element": "2796:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Paired boxplots for How students invest their effort. CodeStream is above baseline on a 1 (little understanding) to 7 (good understanding) scale. Individual points range from 4–7 for CodeStream and 2–7 for baseline. The adjoining table cells give each condition’s exact mean and standard deviation; CodeStream has the higher mean.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

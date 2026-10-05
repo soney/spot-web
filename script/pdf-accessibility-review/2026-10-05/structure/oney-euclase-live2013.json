@@ -1,0 +1,148 @@
+{
+  "file": "oney-euclase-live2013.pdf",
+  "pdf_sha256": "458cbed652fe3136a69e5ebf7d0a16c40e99c6dc5153fd93fe8a6de0c735d1ac",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Euclase: A Live Development Environment with Constraints and FSMs",
+  "structure_elements": 139,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 39,
+    "Note": 4,
+    "H2": 8,
+    "Figure": 1,
+    "Caption": 1,
+    "H3": 5,
+    "L": 6,
+    "LI": 23,
+    "Lbl": 22,
+    "LBody": 23,
+    "Code": 1
+  },
+  "structure_content_references": 2057,
+  "parent_tree_entries": 5,
+  "form_xobjects_visited": 4,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 87,
+      "text_operations_tagged": 419,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 80,
+      "text_operations_tagged": 486,
+      "vector_operations_artifact": 2
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 129,
+      "text_operations_tagged": 632,
+      "vector_operations_artifact": 2
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 118,
+      "text_operations_tagged": 519,
+      "vector_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "99:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "105:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "112:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "114:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "63:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "65:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "119:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "137:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "140:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "145:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "153:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "182:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "185:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "187:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "108:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. Euclase displays object properties x, y, and z as rows and state-specific constraints as columns. The base definitions are x = [y, z], y = “hello world”, and z = 1 + 2. In state1, y is overridden by z + 1. The live values at left are consequently x = [4, 3], y = 4, and z = 3. A starting dot points to state1 above the constraint column.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

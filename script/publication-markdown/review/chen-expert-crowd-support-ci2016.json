@@ -2,9 +2,9 @@
   "file": "chen-expert-crowd-support-ci2016.pdf",
   "title": "Expert Crowd Support Systems for Software Developers",
   "publication_id": "expert_crowd_support_systems_for_software_developers_2016",
-  "pdf_sha256": "5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a",
+  "pdf_sha256": "ccb706263b3430d2c5a6dedaa8e00744e3761731640a82bf40e93ae39ef7a0b9",
   "markdown": "publications/chen-expert-crowd-support-ci2016.md",
-  "markdown_sha256": "da12d77b12d7ef3b8d6f2d05f01aba5b760be6f2c0e33f621cf0c58a05bc00e6",
+  "markdown_sha256": "fc10f227258a2ef9ea7a471d0fe6a28fc8d884190560998b9dd05939fca09f04",
   "pages": 4,
   "blocks": [
     {
@@ -88,14 +88,6 @@
       "characters": 663
     },
     {
-      "node": "52:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 50
-    },
-    {
       "node": "53:0",
       "role": "Table",
       "pages": [
@@ -163,17 +155,10 @@
       "node": "81:0",
       "role": "P",
       "pages": [
-        2
-      ],
-      "characters": 838
-    },
-    {
-      "node": "98:0",
-      "role": "P",
-      "pages": [
+        2,
         3
       ],
-      "characters": 66
+      "characters": 939
     },
     {
       "node": "99:0",
@@ -216,14 +201,6 @@
       "characters": 119
     },
     {
-      "node": "156:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 130
-    },
-    {
       "node": "157:0",
       "role": "H3",
       "pages": [
@@ -262,14 +239,6 @@
         3
       ],
       "characters": 348
-    },
-    {
-      "node": "163:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 50
     },
     {
       "node": "164:0",
@@ -368,7 +337,7 @@
       "characters": 239
     }
   ],
-  "tagged_content_items": 2290,
+  "tagged_content_items": 2261,
   "all_tagged_content_accounted_for_once": true,
   "assets": [],
   "tables": [
@@ -430,10 +399,9 @@
   "code_layout": [],
   "normalization": {
     "line_wrap_hyphens_removed": 33,
-    "line_wrap_hyphens_retained": 9,
-    "script_runs_positioned": 3
+    "line_wrap_hyphens_retained": 9
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-expert-crowd-support-ci2016.json.gz",
-  "source_tags_sha256": "ec10eb7fc5fbe764a2e5ec10f65fe7a499adcdc8445418b9b8ba3bd9baec84b2"
+  "source_tags_sha256": "3559b1c1dd09a8f2ab7dea0340687e378cb743c36f1896025f07024eb71e3d0f"
 }

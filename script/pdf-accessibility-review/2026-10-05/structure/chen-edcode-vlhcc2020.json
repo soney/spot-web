@@ -1,0 +1,209 @@
+{
+  "file": "chen-edcode-vlhcc2020.pdf",
+  "pdf_sha256": "5d560237b2fad4e68048792072e8877f9aa07a7a9a6dc73d790a128c7de05b1c",
+  "normalization_warnings": "",
+  "page_count": 5,
+  "language": "en-US",
+  "title": "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education",
+  "structure_elements": 182,
+  "roles": {
+    "Document": 1,
+    "Sect": 5,
+    "H1": 1,
+    "P": 29,
+    "Note": 1,
+    "H2": 8,
+    "Link": 31,
+    "L": 2,
+    "LI": 28,
+    "Lbl": 28,
+    "LBody": 28,
+    "H3": 7,
+    "Figure": 3,
+    "Caption": 3,
+    "H4": 3,
+    "H5": 4
+  },
+  "structure_content_references": 4238,
+  "parent_tree_entries": 36,
+  "form_xobjects_visited": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 794,
+      "link_annotations": 10
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 874,
+      "vector_operations_tagged": 1009,
+      "link_annotations": 13
+    },
+    {
+      "page": 3,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 794,
+      "link_annotations": 6
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 995,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 802
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "153:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "158:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "291:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "299:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "301:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "303:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "308:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "309:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "328:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "331:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "333:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "335:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "336:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "338:0",
+      "page": 3
+    },
+    {
+      "level": 5,
+      "element": "340:0",
+      "page": 3
+    },
+    {
+      "level": 5,
+      "element": "352:0",
+      "page": 4
+    },
+    {
+      "level": 5,
+      "element": "354:0",
+      "page": 4
+    },
+    {
+      "level": 5,
+      "element": "356:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "358:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "360:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "362:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "364:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "366:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "305:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Fig. 1. A diagram shows the process of using EdCode to make a request,\nwrite a response, and integrate a response. (1) Students select a portion of\ntheir code and click the ‘Help’ button next to the selection to initialize a\nrequest. (2) Students attach a title, description, and tags to the request and\nsend it to instructors. (3) Instructors can see the code base and other relevant\ninformation in their interface where they could write a contextualized response\nto the request. (4) Students can review the response in their code editor, and\n(5) check response context by clicking the hypertext.",
+      "actual_text": ""
+    },
+    {
+      "element": "325:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Fig. 2. The contextualized explanation feature and the chat tool. To make\ntheir answers more contextualized, instructors can (1) select a portion of the\ntext in their natural language answer and the relevant code context; (2) click\nthe ‘link’ button to create the references, which will highlight the relevant\ncode (hypertext) when clicking the references in the text. Instructors can also\nchat with students via (3).",
+      "actual_text": ""
+    },
+    {
+      "element": "342:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Fig. 3. The code publicity feature. Instructors first click the ‘Show this code’\nbutton to select a portion of the code in original request that is necessary\nto understand the question for other students. Then they click ‘Send Your\nAnswer‘ button to publish the question and the answer to the entire class.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

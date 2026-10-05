@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8 -->
+<!-- Source PDF SHA-256: 84df8e846d00d424509370c166ada7244ee7c6eb63516a0b8c08226ef69e725b -->
 
 <a id="page-1"></a>
 
@@ -24,13 +24,11 @@ Software reuse is commonly practised since the advent of software development \[
 
 Code contracts \[4\], \[20\] have emerged as a popular way of formalizing method specifications close to the implementation level. Code contracts unambiguously capture the expectations of a method in terms of what is required (pre-conditions) and what to expect after method execution (post-conditions). Furthermore, code contracts can be subjected to formal verification by existing state-of-the-art verification tools such as Spec# \[1\], JML<sup>1</sup>, and Code Contracts for .NET<sup>2</sup>. Additionally, code contracts can be used for formal proofs and automated code correction \[38\].
 
-Despite being highly desirable, code contracts do not exist in a formalized form in most existing software systems in practice \[24\]. In contrast, library developers commonly describe legal usage in natural language text in Application
+Despite being highly desirable, code contracts do not exist in a formalized form in most existing software systems in practice \[24\]. In contrast, library developers commonly describe legal usage in natural language text in Application Programming Interface (API) documents. Typically, such documents are provided to client-code developers through online access, or are shipped with the API code. For example, J2EE’s API documentation<sup>3</sup> is one of the most popular API documents.
 
 > <sup>1</sup>http://www.eecs.ucf.edu/<sup>∼</sup>leavens/JML/
 
 > <sup>2</sup>http://research.microsoft.com/en-us/projects/contracts/
-
-Programming Interface (API) documents. Typically, such documents are provided to client-code developers through online access, or are shipped with the API code. For example, J2EE’s API documentation<sup>3</sup> is one of the most popular API documents.
 
 Even with such documents, client-code developers often overlook some API documents and use methods in API libraries incorrectly \[22\]. Since these documents are written in natural language, existing tools cannot verify legal usage described in a library’s API documents against the client code of that library. One possible solution is to manually write code contracts based on the specifications described in API documents. However, due to a large number of sentences in API documents, manually hunting for contract sentences and writing code contracts for the API library is prohibitively time consuming and labor intensive. For instance, the File class of the C# .NET Framework has around 800 sentences. Moreover, not all of these sentences describe code contracts, requiring extra effort to first locate the sentences describing code contracts and then translate them.
 
@@ -60,11 +58,9 @@ Our paper makes the following major contributions:
 
 - A prototype implementation of our approach based on extending the Stanford Parser \[17\], \[30\], which is a natural language parser to derive the grammatical structure of sentences. An open source implementation of our prototype can be found at our website<sup>4</sup>.
 
-- An evaluation of our approach on 2717 sentences (for 333 methods) in five different classes from the .NET Framework and Facebook API for C#. Our evaluation results show that our approach effectively identifies contract sentences with an average of 92% precision and 93% recall. Additionally, our approach infers spec-
+- An evaluation of our approach on 2717 sentences (for 333 methods) in five different classes from the .NET Framework and Facebook API for C#. Our evaluation results show that our approach effectively identifies contract sentences with an average of 92% precision and 93% recall. Additionally, our approach infers specifications from around 1700 contract sentences with an average accuracy of 83%.
 
 > <sup>4</sup>http://research.csc.ncsu.edu/ase/projects/pint/
-
-ifications from around 1700 contract sentences with an average accuracy of 83%.
 
 ## II. BACKGROUND
 
@@ -228,9 +224,15 @@ Intermediate Term Elimination. The intermediate term elimination attempts to rem
 
 Our post-processor identifies such terms and eliminates them by replacing their usage with their definition. In particular, our post-processor eliminates intermediate terms by parsing FOL expressions. We specifically watch out for terms that are involved in an equality operator with a variable name followed by the same term being used as an input to another predicate in the representation.
 
-Expression Augmentation. The sentences in return descriptions and exception descriptions in an API document are
-
 <a id="page-6"></a>
+
+Expression Augmentation. The sentences in return descriptions and exception descriptions in an API document are often not well written. For example, consider the following sentences:
+
+- 1) “true if path is an absolute path; otherwise false.”— the return descriptions for theIsPathRooted method in the Path class in the C# .NET Framework. The main subject and verb are missing as in what is true and false.
+
+- 2) “If path is null.”— one of the exception descriptions repeated in many methods in the File class in the C# .NET Framework. The action is missing as in what happens if the path is null.
+
+- 3) “IO error occurs while accessing specified directory.”— one of the exception descriptions repeated in many methods in the Directory class in the C# .NET framework. While the sentence describes a code contract, the sentence omits important information in terms under what specific condition the exception is thrown.
 
 ![Figure 5. Compacted constraint tree for the property name. An AND root joins three requirements: Name is not greater than 32 characters; Name begins with a letter a–z; and Name consists of an OR choice of letters a–z, numbers 0–9, and underscore. The first branch shows negation above greater.](https://from.so/assets/markdown/figures/pandita-inferring-method-specifications-icse2012/figure-004-p006.png)
 
@@ -239,58 +241,38 @@ Figure 5. FOL expression after synonym analysis and compaction for the DefineObj
 ```
 Algorithm 1 Expression Augmentation generator
 Input: Expr e, Meta-data d
-′
-Output: Expr e
-′ =
-1: Expr e e
-2: if (d.description == return) then
-′ ′
-3: if (e .root == “ → ”)&&(e .right is variable) then
-′
-4: T erm t = e .right
-5: if findT ype(t) == d.returnT ype then
-6: P redicate p = new P redicate(“returns”)
-7: p.term = t
-′
-8: e .right = p
-9: end if
-10: end if
+Output: Expr e′
+ 1: Expr e′ = e
+ 2: if (d.description == return) then
+ 3:   if (e′.root == “→”)&&(e′.right is variable) then
+ 4:     Term t = e′.right
+ 5:     if findType(t) == d.returnType then
+ 6:       Predicate p = new Predicate(“returns”)
+ 7:       p.term = t
+ 8:       e′.right = p
+ 9:     end if
+10:   end if
 11: end if
 12: if (d.description == exception) then
-′ ′
-13: if (e .root == “ → ”)&&(e .right is empty) then
-14: T erm t = d.exception name
-15: P redicate p = new P redicate (“throw”)
-16: p.term = t
-′
-17: e .right = p
-18: end if
-′
-19: if (e .root! == “ → ”) then
-20: T erm t = d.exception name
-21: P redicate p = new P redicate (“throw”)
-22: p.term = t
-′′ =
-23: Expr e new Expr(“ → ”)
-′′ ′
-24: e .left = e
-′′
-25: e .right = p
-′ = ′′
-26: e e
-27: end if
+13:   if (e′.root == “→”)&&(e′.right is empty) then
+14:     Term t = d.exception_name
+15:     Predicate p = new Predicate (“throw”)
+16:     p.term = t
+17:     e′.right = p
+18:   end if
+19:   if (e′.root! == “→”) then
+20:     Term t = d.exception_name
+21:     Predicate p = new Predicate (“throw”)
+22:     p.term = t
+23:     Expr e′′ = new Expr(“→”)
+24:     e′′.left = e′
+25:     e′′.right = p
+26:     e′ = e′′
+27:   end if
 28: end if
-′
-29: return e
+
+29: return e′
 ```
-
-often not well written. For example, consider the following sentences:
-
-- 1) “true if path is an absolute path; otherwise false.”— the return descriptions for theIsPathRooted method in the Path class in the C# .NET Framework. The main subject and verb are missing as in what is true and false.
-
-- 2) “If path is null.”— one of the exception descriptions repeated in many methods in the File class in the C# .NET Framework. The action is missing as in what happens if the path is null.
-
-- 3) “IO error occurs while accessing specified directory.”— one of the exception descriptions repeated in many methods in the Directory class in the C# .NET framework. While the sentence describes a code contract, the sentence omits important information in terms under what specific condition the exception is thrown.
 
 Our expression augmentation attempts to augment these expressions. In particular, for each method, we use meta-data collected in the pre-processor augment to complete the FOL expressions involving return and exception descriptions. Here, we propose Algorithm 1 to achieve our expression augmentation. The algorithm accepts an FOL expression and the meta-data of a sentence. The algorithm returns an augmented expression if successful, and otherwise returns the original expression. The algorithm first checks whether the expression corresponds to a return description statement (Line 2). If the expression is a conditional expression and the right hand side of the expression is a variable term, the algorithm checks whether the type of the variable matches the return type described in the meta-data. Literals, ‘true’, and ‘false’, are identified as boolean; ‘numeric values’ are identified as numeric that matches integer, float, and double. If a match is found, we construct the right hand side of the original predicate as returns.
 

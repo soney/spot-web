@@ -1,0 +1,153 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+          "size": 158040
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 104,
+              "failedRules": 2,
+              "passedChecks": 22682,
+              "failedChecks": 5,
+              "tags": [
+                "metadata",
+                "font"
+              ],
+              "ruleSummaries": [
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "5",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "metadata"
+                  ],
+                  "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+                  "object": "MainXMPPackage",
+                  "test": "containsPDFUAIdentification == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/metadata[0](162 0 obj PDMetadata)/XMPPackage[0]",
+                      "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+                      "errorArguments": []
+                    }
+                  ]
+                },
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "7.21.4.1",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 4,
+                  "tags": [
+                    "font"
+                  ],
+                  "description": "The font programs for all fonts used for rendering within a conforming file shall be embedded within that file, as defined in ISO 32000-1:2008, 9.9",
+                  "object": "PDFont",
+                  "test": "Subtype == \"Type3\" || Subtype == \"Type0\" || renderingMode == 3 || containsFontFile == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/pages[0](64 0 obj PDPage)/contentStream[0]/operators[6]/font[0](TimesNewRomanPSMT)",
+                      "errorMessage": "The font program is not embedded",
+                      "errorArguments": []
+                    },
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/pages[0](64 0 obj PDPage)/contentStream[0]/operators[25]/font[0](Arial-BoldMT)",
+                      "errorMessage": "The font program is not embedded",
+                      "errorArguments": []
+                    },
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/pages[0](64 0 obj PDPage)/contentStream[0]/operators[42]/font[0](TimesNewRomanPS-BoldMT)",
+                      "errorMessage": "The font program is not embedded",
+                      "errorArguments": []
+                    },
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/pages[0](64 0 obj PDPage)/contentStream[0]/operators[811]/font[0](TimesNewRomanPS-ItalicMT)",
+                      "errorMessage": "The font program is not embedded",
+                      "errorArguments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is not compliant with Validation Profile requirements.",
+            "compliant": false
+          }
+        ],
+        "processingTime": {
+          "start": 1791231514504,
+          "finish": 1791231515969,
+          "duration": "00:00:01.465",
+          "difference": 1465
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231514371,
+        "finish": 1791231516015,
+        "duration": "00:00:01.644",
+        "difference": 1644
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 1,
+        "compliantPdfaCount": 0,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+  "pdf_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+  "stderr": ""
+}

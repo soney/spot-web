@@ -1,0 +1,226 @@
+{
+  "file": "krosnick-providing-live-feedback-live2020.pdf",
+  "pdf_sha256": "4cb16e3a27cd8652f8d51e126940cecb0e524cf36a4e710d3fb92c7e9667fd3a",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "Toward Providing Live Feedback in Web Automation IDEs",
+  "structure_elements": 183,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "H1": 1,
+    "P": 47,
+    "H2": 7,
+    "Link": 30,
+    "L": 4,
+    "LI": 21,
+    "Lbl": 21,
+    "LBody": 21,
+    "H3": 8,
+    "Figure": 3,
+    "Caption": 3,
+    "H4": 10
+  },
+  "structure_content_references": 4528,
+  "parent_tree_entries": 36,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 810,
+      "link_annotations": 15
+    },
+    {
+      "page": 2,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 508
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 852,
+      "image_operations_tagged": 2,
+      "link_annotations": 3
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 937,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 1086
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 332,
+      "link_annotations": 10
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "244:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "249:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "373:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "375:0",
+      "page": 1
+    },
+    {
+      "level": 4,
+      "element": "386:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "388:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "391:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "393:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "396:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "398:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "400:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "402:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "409:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "420:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "422:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "425:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "431:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "284:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "286:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "288:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "292:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "294:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "296:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "302:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "304:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "383:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 1. The VizMac user interface. VizMac enables users to record their actions on a website (A) and generate a corresponding macro script (C, D).\nAn animation of the recording is also presented (E). To understand what code does, the user can click on a line in either code editor to see the CSS\nselector (H) and its corresponding UI element in the animation (K) highlighted in orange. Clicking on a line in the static code editor (D) will specifically\nhighlight and loop through the UI snapshots in the animation corresponding to this action. To make any edits to the generated script, the user can make\nchanges in the editable code editor (C).",
+      "actual_text": ""
+    },
+    {
+      "element": "404:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 2. The user can create input fields for their macro parameters,\ne.g., a date (A). VizMac then automatically adds corresponding variables\nto the script providing access to the input field values (B).",
+      "actual_text": ""
+    },
+    {
+      "element": "406:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 3. VizMac displays a red timeout error above the macro editor: waiting for selector #datepicker-21-09-2020 > .text-muted failed. The form at left supplies delivery date 09/21/2020. Callout A marks the click command that constructs the date selector from input variables; B marks a separate time-selection command. The surrounding text explains that leading zeros in single-digit days or months must be removed to match the site’s selectors.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

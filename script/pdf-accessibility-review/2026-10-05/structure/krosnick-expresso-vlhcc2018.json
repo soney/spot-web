@@ -1,0 +1,319 @@
+{
+  "file": "krosnick-expresso-vlhcc2018.pdf",
+  "pdf_sha256": "634251978705db5718dceb4e26d5234760d2b5d3bb7af31eb1462ef1cd20c75d",
+  "normalization_warnings": "",
+  "page_count": 9,
+  "language": "en-US",
+  "title": "Expresso: Building Responsive Interfaces with Keyframes",
+  "structure_elements": 444,
+  "roles": {
+    "Sect": 9,
+    "H1": 1,
+    "P": 69,
+    "Link": 97,
+    "Figure": 3,
+    "Caption": 4,
+    "Note": 5,
+    "H2": 9,
+    "Span": 21,
+    "L": 5,
+    "LI": 45,
+    "Lbl": 45,
+    "LBody": 45,
+    "H3": 19,
+    "H4": 8,
+    "Table": 1,
+    "THead": 1,
+    "TR": 12,
+    "TH": 14,
+    "TBody": 1,
+    "TD": 22,
+    "BlockQuote": 8
+  },
+  "structure_content_references": 4699,
+  "parent_tree_entries": 106,
+  "form_xobjects_visited": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 497,
+      "text_operations_artifact": 11,
+      "vector_operations_tagged": 50,
+      "image_operations_tagged": 8,
+      "link_annotations": 6
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 517,
+      "text_operations_artifact": 2,
+      "link_annotations": 31
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 569,
+      "text_operations_artifact": 14,
+      "link_annotations": 11
+    },
+    {
+      "page": 4,
+      "vector_operations_tagged": 114,
+      "text_operations_tagged": 447,
+      "image_operations_tagged": 11,
+      "text_operations_artifact": 14,
+      "link_annotations": 9
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 40,
+      "text_operations_tagged": 628,
+      "text_operations_artifact": 42,
+      "link_annotations": 10
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 528,
+      "text_operations_artifact": 23,
+      "link_annotations": 11
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 48,
+      "vector_operations_artifact": 25,
+      "text_operations_tagged": 485,
+      "text_operations_artifact": 21,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 458,
+      "text_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 639,
+      "link_annotations": 12
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "388:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "397:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "487:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "488:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "490:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "492:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "495:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "498:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "502:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "504:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "505:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "571:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "577:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "583:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "585:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "589:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "591:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "426:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "427:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "433:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "436:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "440:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "445:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "447:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "449:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "451:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "455:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "509:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "522:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "676:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "680:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "685:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "690:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "693:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "695:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "698:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "393:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1 presents an illustration of four different keyframes created in Expresso for a sample web page.\r\nEach keyframe is a rectangle of a different shape and size, representing different viewport sizes.\r\nThe four keyframes appear as though on an x-axis, sorted by viewport width, with the narrowest keyframe on the left and the widest keyframe on the right.\r\nThere is a bi-directional arrow above the set of keyframes with the label 'viewport width', providing a label for the axis. \r\nThe sample web page shown in the keyframes is adapted from the Mozilla website that we used during one of our study tasks.\r\nEach keyframe has the following items: 1) a blue background, 2) the orange FireFox logo, 3) the text 'The new Firefox' in white font, 4) the text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in white font, 5) a green rectangle representing a button, with the text 'Download Firefox' on it in white font, and 6) an illustration of an open laptop with a Firefox browser shown.\r\nNote that the element and viewport widths mentioned below are not to scale; the keyframes are shrunk down for the figure.\r\nMoving from left to right, the keyframes can be described as follows:\r\nThe leftmost keyframe is called k_0 and has a width of 722 pixels. The viewport width is narrow compared to its height, and represents the portrait-view viewport on a mobile device. In keyframe k_0, the whole web page has a blue background. The other elements on the page are all horizontally centered and stacked vertically. At the top is the Firefox logo which is medium-sized. Below that is the text 'The new Firefox' in a small font size. Below that is the text 'Fast for good.' in a large font size. Below that is the long line of text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in a very small font size. Below that is the green 'Download Firefox' button. Below that is the laptop illustration which is of medium size and which is at the bottom of the page. Note that the laptop's x-position is 148 pixels.\r\nThe next keyframe is called k_1 and has a width of 990 pixels. The viewport width is approximately the same as the viewport height. In keyframe k_1, the UI elements have the same arrangement as in k_0, with all elements horizontally centered and stacked vertically. All elements are the same size as in k_0. Since k_1's viewport is wider, there is more margin to the left and right of elements. Note that the laptop's x-position is 203 pixels.\r\nThe next keyframe is called k_2 and has a width of 1000 pixels. The viewport width is wider than the viewport height. In k_2, the page has the same elements as in k_0 and k_1, but a vastly different layout and some elements are different sizes. k_2 has more of a 2-column layout.  In k_2, the blue background only takes up the top half of the page (the lower half of the page is a placeholder gray). The Firefox logo is smaller and is on the far-left edge of the page. The 'The new Firefox' text is of medium font size and appear directly to the right of the Firefox logo. Below the 'The new Firefox' text appears the 'Fast for good' text of large font size. Below that is the long line of text 'With 2x the speed, built-in privacy protection and Mozilla behind it, the new Firefox is the better way to browse' in a very small font size. Below that is the green button with the text 'Download Firefox'. The text elements and the green button are left-aligned with each other. On the right side of the screen is the laptop, of large size, with equal margin on its left and right sides. Note that the laptop's x-position is 550 pixels.\r\nThe next keyframe is called k_3 and has a width of 1200 pixels. The viewport width is much wider than the viewport height. In k_3, the UI elements have the same 2-column arrangement as in k_2. The only difference is that, with the wider page size, the laptop has more margin on its left and right sides. Note that the laptop's x-position is 650 pixels.\r\nAs a summary of the layouts, keyframes k_0 and k_1 have all elements horizontally centered and stacked vertically. k_2 and k_3 have the Firefox logo and all text on the left side of the page, and the laptop on the right side of the page.\r\nEach keyframe has a colored-strip beneath it to help in explaining transitions between keyframes. k_0 has a light green strip, k_1 has a magenta strip, k_2 has a turquoise strip, and k_3 has a brown strip.\r\nEach strip also has a label of the laptop's x-position on it, as the transitions highlighted in this figure are those for the laptop x-position.\r\nThere is a colored-strip between each pair of adjacent keyframes representing the transition type.\r\nThe colored-strip between k_0 and k_1 is a left-to-right gradient of light green to magenta, indicating a smooth transition between k_0 and k_1.\r\nSimilarly, the colored-strip between k_2 and k_3 is a left-to-right gradient, of turquoise to light brown, indicating a smooth transition between k_2 and k_3.\r\nThe colored-strip between k_1 (magenta) and k_2 (turquoise) is a solid color of magent indicating a jump transition between k_1 and k_2. Specifically, the magenta color means that the range between k_1 and k_2, namely viewport sizes 991 to 999 pixels, should continue the behavior for the laptop x-position from the smaller viewports. This means that the laptop (and all UI elements) are shown horizontally centered and stacked vertically for the range of viewports 991 to 999 pixels wide.\r\nThere are range arrows below the set of keyframes indicating the laptop x-position. For the range of viewports less than 1000 pixels wide, there is an arrow pointing left with the label 'laptop is centered in viewport' beneath it. For the range of viewports greater than or equal to 1000 pixels wide, there is an arrow pointing right with the label 'laptop is on the right side of the viewport'.",
+      "actual_text": ""
+    },
+    {
+      "element": "580:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2 presents an illustration of the Expresso user interface.\r\nIn this illustration, the sample web page used is meant to look like a shoe catalog on a shopping site, and is adapted from the Bass website.\r\nOn the left side of the figure is part 'a', which is the web page viewing area.\r\nFor this example, the viewing area contains the shoe catalog website, containing the following elements: 1) a brown rectangle at the top representing the page header, with the 'Bass' logo centered, 2) on the left side, a list of menu items with text 'WEEJUNS', 'WOMEN', 'MEN', 'KIDS', 3) a tall and thin brown rectangle representing the border of the left menu bar, 4) in the body of the web page, six Bass loafer shoes arranged in 2 rows of 3; from left to right, the top row contains light green, red, and yellow shoes; from left to right, the bottom row contains pink, lilac, and brown shoes, 5) the pink shoe is currently in 'selected' mode, where it has a black border around it.\r\nAt the bottom of the figure is part 'b', which is the keyframe menu.\r\nIt contains a list of keyframes for the current responsive web page, represented in a list from left to right with 'width' and 'height' viewport sizes.\r\nFor this particular example, the keyframe sizes are, from left to right, 1) width 635 pixels and height 752 pixels, 2) width 769 pixels and height 752 pixels, 3) width 780 pixels and height 752 pixels, and 4) width 1200 pixels and height 752 pixels.\r\nCurrently the keyframe of width 780 pixels is selected, which is indicated by its tab having a blue background; the web page shown in the viewing area in the illustration is this keyframe of width 780 pixels.\r\nTo the right of the keyframe list, the bottom part of the figure also has a button with the label 'Result webpage (click to resize)' which users can click in order to enter 'resize' mode.\r\nTo the right of this are 'Create new keyframe' and 'Delete current keyframe' buttons.\r\nOn the right side of the figure is part 'c', which is the element property values menu.\r\nThis menu appears in the format of a table and contains the current property and transition values for the currently selected UI element in the viewing area, in this case, the pink shoe.\r\nOn the left side of the table are the property values, with the properties 'width', 'height', 'x', and 'y' in the first column, and the corresponding values '183px', '183px', '157px', and '378px' in the second column.\r\nOn the right side of the table are the transition rules for each element property.\r\nFor each element property, there are dropdown menus for setting transitions between keyframes.\r\nFrom left to right, the elements are: 1) the 'Left' label with a magenta background, 2) a dropdown widget with colors magenta, turquoise, and magenta-to-turquoise gradient, 3) the 'Current' label with a turquoise background, 4) a dropdown widget with colors turquoise, orange, and turquoise-to-orange, and 5) the 'Right' label with an orange background.\r\nFor this example, all four properties for the currently selected item have the following transition settings: the dropdown widget between 'Left' and 'Current' is magenta, indicating a jump transition; and the dropdown widget between 'Current' and 'Right' is the turquoise-to-orange gradient, indication a smooth transition.\r\nTo illustrate the different options in the dropdown widget, the second row dropdown between 'Left' and 'Current' is open.",
+      "actual_text": ""
+    },
+    {
+      "element": "407:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Three graphs compare transition rules between the Left keyframe (magenta) and Current keyframe (turquoise), with viewport width on the horizontal axis and property value on the vertical axis. The left graph has a magenta-to-turquoise gradient selector and a rising straight line connecting the two solid keyframe points: values interpolate smoothly. The middle graph has a solid magenta selector: a horizontal magenta line continues the value from the Left point up to an open circle at the Current viewport width, where the higher solid Current point causes a jump. The right graph has a solid turquoise selector: a horizontal turquoise line extends backward from the Current point to an open circle at the Left viewport width, immediately above the lower solid Left point. Dashed horizontal lines show the continued behavior outside the interval. Thus the gradient interpolates, solid magenta continues the behavior from smaller widths, and solid turquoise continues the behavior from larger widths.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

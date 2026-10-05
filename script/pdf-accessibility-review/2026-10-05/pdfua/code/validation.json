@@ -1,0 +1,634 @@
+[
+  {
+    "file": "oney-interstate-uist2014.pdf",
+    "structure": {
+      "page_count": 10,
+      "language": "en-US",
+      "title": "InterState: A Language and Environment for Expressing Interface Behavior",
+      "structure_elements": 288,
+      "roles": {
+        "Document": 1,
+        "Sect": 10,
+        "H1": 1,
+        "P": 103,
+        "H2": 11,
+        "H3": 16,
+        "Note": 1,
+        "Figure": 5,
+        "Caption": 6,
+        "Code": 4,
+        "H4": 15,
+        "L": 2,
+        "LI": 38,
+        "Lbl": 37,
+        "LBody": 38
+      },
+      "structure_content_references": 7295,
+      "parent_tree_entries": 10,
+      "form_xobjects_visited": 0,
+      "pages": [
+        {
+          "page": 1,
+          "text_operations_tagged": 570,
+          "text_operations_artifact": 107,
+          "vector_operations_tagged": 121,
+          "vector_operations_artifact": 27
+        },
+        {
+          "page": 2,
+          "text_operations_tagged": 631,
+          "text_operations_artifact": 165
+        },
+        {
+          "page": 3,
+          "text_operations_tagged": 593,
+          "text_operations_artifact": 125
+        },
+        {
+          "page": 4,
+          "text_operations_tagged": 587,
+          "text_operations_artifact": 68
+        },
+        {
+          "page": 5,
+          "text_operations_tagged": 691,
+          "text_operations_artifact": 154,
+          "vector_operations_tagged": 184,
+          "vector_operations_artifact": 22
+        },
+        {
+          "page": 6,
+          "text_operations_tagged": 653,
+          "text_operations_artifact": 118,
+          "vector_operations_tagged": 1029,
+          "vector_operations_artifact": 120
+        },
+        {
+          "page": 7,
+          "text_operations_tagged": 578,
+          "text_operations_artifact": 111,
+          "vector_operations_tagged": 15,
+          "image_operations_tagged": 1
+        },
+        {
+          "page": 8,
+          "text_operations_tagged": 577,
+          "text_operations_artifact": 86
+        },
+        {
+          "page": 9,
+          "text_operations_tagged": 642,
+          "text_operations_artifact": 113
+        },
+        {
+          "page": 10,
+          "text_operations_tagged": 423,
+          "text_operations_artifact": 88
+        }
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "element": "113:0",
+          "page": 1
+        },
+        {
+          "level": 2,
+          "element": "118:0",
+          "page": 1
+        },
+        {
+          "level": 3,
+          "element": "120:0",
+          "page": 1
+        },
+        {
+          "level": 2,
+          "element": "122:0",
+          "page": 1
+        },
+        {
+          "level": 3,
+          "element": "128:0",
+          "page": 1
+        },
+        {
+          "level": 2,
+          "element": "140:0",
+          "page": 2
+        },
+        {
+          "level": 3,
+          "element": "147:0",
+          "page": 3
+        },
+        {
+          "level": 4,
+          "element": "149:0",
+          "page": 3
+        },
+        {
+          "level": 4,
+          "element": "152:0",
+          "page": 3
+        },
+        {
+          "level": 4,
+          "element": "154:0",
+          "page": 3
+        },
+        {
+          "level": 2,
+          "element": "157:0",
+          "page": 3
+        },
+        {
+          "level": 3,
+          "element": "161:0",
+          "page": 3
+        },
+        {
+          "level": 3,
+          "element": "299:0",
+          "page": 4
+        },
+        {
+          "level": 4,
+          "element": "302:0",
+          "page": 4
+        },
+        {
+          "level": 4,
+          "element": "306:0",
+          "page": 4
+        },
+        {
+          "level": 4,
+          "element": "309:0",
+          "page": 4
+        },
+        {
+          "level": 4,
+          "element": "312:0",
+          "page": 4
+        },
+        {
+          "level": 3,
+          "element": "314:0",
+          "page": 4
+        },
+        {
+          "level": 2,
+          "element": "320:0",
+          "page": 5
+        },
+        {
+          "level": 3,
+          "element": "322:0",
+          "page": 5
+        },
+        {
+          "level": 3,
+          "element": "335:0",
+          "page": 6
+        },
+        {
+          "level": 2,
+          "element": "341:0",
+          "page": 6
+        },
+        {
+          "level": 3,
+          "element": "344:0",
+          "page": 6
+        },
+        {
+          "level": 4,
+          "element": "351:0",
+          "page": 7
+        },
+        {
+          "level": 4,
+          "element": "354:0",
+          "page": 7
+        },
+        {
+          "level": 2,
+          "element": "361:0",
+          "page": 7
+        },
+        {
+          "level": 3,
+          "element": "363:0",
+          "page": 7
+        },
+        {
+          "level": 4,
+          "element": "365:0",
+          "page": 7
+        },
+        {
+          "level": 4,
+          "element": "369:0",
+          "page": 7
+        },
+        {
+          "level": 4,
+          "element": "374:0",
+          "page": 8
+        },
+        {
+          "level": 3,
+          "element": "379:0",
+          "page": 8
+        },
+        {
+          "level": 4,
+          "element": "382:0",
+          "page": 8
+        },
+        {
+          "level": 4,
+          "element": "386:0",
+          "page": 8
+        },
+        {
+          "level": 4,
+          "element": "394:0",
+          "page": 9
+        },
+        {
+          "level": 2,
+          "element": "397:0",
+          "page": 9
+        },
+        {
+          "level": 3,
+          "element": "399:0",
+          "page": 9
+        },
+        {
+          "level": 3,
+          "element": "401:0",
+          "page": 9
+        },
+        {
+          "level": 3,
+          "element": "404:0",
+          "page": 9
+        },
+        {
+          "level": 3,
+          "element": "406:0",
+          "page": 9
+        },
+        {
+          "level": 3,
+          "element": "408:0",
+          "page": 9
+        },
+        {
+          "level": 2,
+          "element": "410:0",
+          "page": 9
+        },
+        {
+          "level": 2,
+          "element": "416:0",
+          "page": 10
+        },
+        {
+          "level": 2,
+          "element": "418:0",
+          "page": 10
+        }
+      ],
+      "figure_descriptions": [
+        {
+          "element": "125:0",
+          "role": "Figure",
+          "page": 1,
+          "alt": "Figure 1: A basic InterState object, named draggable, which \nimplements draggable and drag lock behaviors. Properties that\ncontrol draggable\u2019s display are represented as rows (e.g. x, y, \nand fill). States and transitions are represented as columns (e.g.\nno_drag and drag). An entry in a property\u2019s row for a particular \nstate specifies a constraint that controls that property\u2019s value in that\nstate. Here, while draggable is in the drag state, x and y will be \nconstrained to mouse.x and mouse.y respectively, meaning \ndraggable will follow the mouse.",
+          "actual_text": ""
+        },
+        {
+          "element": "326:0",
+          "role": "Figure",
+          "page": 5,
+          "alt": "Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instance my_square lists square as its prototype and overrides width with 20. It inherits the expression height = width rather than the fixed value 15, so its height evaluates to its own width, 20. Inherited expressions are displayed in gray.",
+          "actual_text": ""
+        },
+        {
+          "element": "332:0",
+          "role": "Figure",
+          "page": 6,
+          "alt": "Figure 4. InterState multiple inheritance combines selectable and draggable objects. Selectable has not_selected and selected states and supplies a blue fill when selected. Draggable has not_dragging and dragging states, supplies a red fill while dragging, and constrains x and y to mouse.x and mouse.y. The combined my_selectable_draggable object inherits both state machines and their property definitions; its prototypes field lists selectable before draggable.",
+          "actual_text": ""
+        },
+        {
+          "element": "347:0",
+          "role": "Figure",
+          "page": 6,
+          "alt": "Figure 5. InterState person_display object has copies ['Jane', 'Sue']. The selected first copy has my_copy 'Jane' and copy_num 0; the second has my_copy 'Sue' and copy_num 1. The copies control shows copy 1 of 2.",
+          "actual_text": ""
+        },
+        {
+          "element": "358:0",
+          "role": "Figure",
+          "page": 7,
+          "alt": "Figure 6. The editor highlights the x constraint other_shape.x+5 in red and displays: Error: Could not find field 'other_shape'. The program continues running despite this missing-field error.",
+          "actual_text": ""
+        }
+      ],
+      "issue_counts": {},
+      "issues": [],
+      "checks_passed": true,
+      "manual_review_required": [
+        "Logical reading order, especially columns and sidebars",
+        "Heading and paragraph boundaries",
+        "Meaningful alternatives for figures and formulas",
+        "Correct table cell/header relationships",
+        "Appropriate artifact classification",
+        "Screen-reader behavior and link navigation"
+      ]
+    },
+    "archive_sync": {
+      "file": "oney-interstate-uist2014.pdf",
+      "pdf_sha256": "58c621c46e132e443e6a619090596b5650322b3b16086bf777402839e34a9bb6",
+      "archive_sha256": "6a4c7592c6d01aebb135309651f225c33f855c6f58ddcca30e9b5ee5c255f037",
+      "counts": {
+        "native_content_references": 7295,
+        "archive_content_references": 7295,
+        "native_elements": 288,
+        "archive_elements": 288,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "file": "pandita-inferring-method-specifications-icse2012.pdf",
+    "structure": {
+      "page_count": 11,
+      "language": "en-US",
+      "title": "Inferring Method Specifications from Natural Language API Descriptions",
+      "structure_elements": 497,
+      "roles": {
+        "Document": 1,
+        "Sect": 11,
+        "H1": 1,
+        "P": 97,
+        "L": 7,
+        "LI": 55,
+        "LBody": 55,
+        "H2": 10,
+        "Note": 7,
+        "Lbl": 52,
+        "H3": 10,
+        "Figure": 4,
+        "Caption": 8,
+        "Table": 2,
+        "THead": 2,
+        "TR": 14,
+        "TH": 31,
+        "TBody": 2,
+        "TD": 124,
+        "Code": 3,
+        "Formula": 1
+      },
+      "structure_content_references": 9304,
+      "parent_tree_entries": 11,
+      "form_xobjects_visited": 4,
+      "pages": [
+        {
+          "page": 1,
+          "text_operations_tagged": 832
+        },
+        {
+          "page": 2,
+          "text_operations_tagged": 847
+        },
+        {
+          "page": 3,
+          "image_operations_tagged": 1,
+          "vector_operations_tagged": 658,
+          "text_operations_tagged": 666,
+          "vector_operations_artifact": 1
+        },
+        {
+          "page": 4,
+          "text_operations_tagged": 910,
+          "vector_operations_artifact": 1
+        },
+        {
+          "page": 5,
+          "text_operations_tagged": 757,
+          "vector_operations_artifact": 97,
+          "vector_operations_tagged": 630
+        },
+        {
+          "page": 6,
+          "vector_operations_tagged": 531,
+          "text_operations_tagged": 802,
+          "vector_operations_artifact": 5
+        },
+        {
+          "page": 7,
+          "text_operations_tagged": 911,
+          "vector_operations_artifact": 3
+        },
+        {
+          "page": 8,
+          "text_operations_tagged": 891,
+          "vector_operations_artifact": 156
+        },
+        {
+          "page": 9,
+          "text_operations_tagged": 912
+        },
+        {
+          "page": 10,
+          "text_operations_tagged": 855
+        },
+        {
+          "page": 11,
+          "text_operations_tagged": 917
+        }
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "element": "144:0",
+          "page": 1
+        },
+        {
+          "level": 2,
+          "element": "155:0",
+          "page": 1
+        },
+        {
+          "level": 2,
+          "element": "186:0",
+          "page": 2
+        },
+        {
+          "level": 3,
+          "element": "187:0",
+          "page": 2
+        },
+        {
+          "level": 3,
+          "element": "189:0",
+          "page": 2
+        },
+        {
+          "level": 2,
+          "element": "193:0",
+          "page": 2
+        },
+        {
+          "level": 2,
+          "element": "206:0",
+          "page": 3
+        },
+        {
+          "level": 3,
+          "element": "208:0",
+          "page": 3
+        },
+        {
+          "level": 3,
+          "element": "210:0",
+          "page": 3
+        },
+        {
+          "level": 3,
+          "element": "223:0",
+          "page": 4
+        },
+        {
+          "level": 3,
+          "element": "229:0",
+          "page": 4
+        },
+        {
+          "level": 3,
+          "element": "391:0",
+          "page": 6
+        },
+        {
+          "level": 2,
+          "element": "397:0",
+          "page": 7
+        },
+        {
+          "level": 3,
+          "element": "409:0",
+          "page": 7
+        },
+        {
+          "level": 3,
+          "element": "414:0",
+          "page": 7
+        },
+        {
+          "level": 3,
+          "element": "495:0",
+          "page": 9
+        },
+        {
+          "level": 2,
+          "element": "498:0",
+          "page": 9
+        },
+        {
+          "level": 2,
+          "element": "509:0",
+          "page": 10
+        },
+        {
+          "level": 2,
+          "element": "516:0",
+          "page": 10
+        },
+        {
+          "level": 2,
+          "element": "518:0",
+          "page": 10
+        },
+        {
+          "level": 2,
+          "element": "521:0",
+          "page": 11
+        }
+      ],
+      "figure_descriptions": [
+        {
+          "element": "198:0",
+          "role": "Figure",
+          "page": 3,
+          "alt": "Figure 1. Java forum question titled Download A File NullPointerException. The poster reports java.lang.NullPointerException in a servlet download method. The code sets text/plain and Content-Disposition headers, obtains ServletContext ctx, then calls InputStream is = ctx.getResourceAsStream(\"sample.txt\"). This line is underlined in red. The subsequent while loop calls is.read(bytes) and writes bytes to the response output stream. The poster asks for help fixing the exception. The example illustrates that a missing resource can make getResourceAsStream return null before read is called.",
+          "actual_text": ""
+        },
+        {
+          "element": "204:0",
+          "role": "Figure",
+          "page": 3,
+          "alt": "Figure 2. Code-contract inference pipeline. API documents pass through Parser, Pre-processor and Text Analysis Engine to produce Specifications in first-order-logic expressions. A Post-processor uses Domain Dictionaries to produce Refined Specifications. A Code Contract Generator uses Mappings to turn these refined expressions into Code Contracts. Arrows connect these stages in this order.",
+          "actual_text": ""
+        },
+        {
+          "element": "364:0",
+          "role": "Figure",
+          "page": 5,
+          "alt": "Figure 3: an AND tree combines four requirements for a property name. The name must be a valid identifier; the identifier must be no longer than 32 characters, start with a lowercase letter a through z, and consist only of lowercase letters, digits zero through nine, or an underscore. The final character-category condition uses an OR node.",
+          "actual_text": ""
+        },
+        {
+          "element": "375:0",
+          "role": "Figure",
+          "page": 6,
+          "alt": "Figure 5. Compacted constraint tree for the property name. An AND root joins three requirements: Name is not greater than 32 characters; Name begins with a letter a\u2013z; and Name consists of an OR choice of letters a\u2013z, numbers 0\u20139, and underscore. The first branch shows negation above greater.",
+          "actual_text": ""
+        },
+        {
+          "element": "430:0",
+          "role": "Formula",
+          "page": 7,
+          "alt": "Precision equals TP divided by the sum of TP and FP. Recall equals TP divided by the sum of TP and FN. F-score equals two times Precision times Recall, divided by the sum of Precision and Recall. TP, FP, and FN denote true positives, false positives, and false negatives.",
+          "actual_text": ""
+        }
+      ],
+      "issue_counts": {},
+      "issues": [],
+      "checks_passed": true,
+      "manual_review_required": [
+        "Logical reading order, especially columns and sidebars",
+        "Heading and paragraph boundaries",
+        "Meaningful alternatives for figures and formulas",
+        "Correct table cell/header relationships",
+        "Appropriate artifact classification",
+        "Screen-reader behavior and link navigation"
+      ]
+    },
+    "archive_sync": {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "pdf_sha256": "7b05aa9479514732f841e78de2c69d2d51c9d1e3748e159efac6f266365025ec",
+      "archive_sha256": "bfa5b805eff220547b75b9cac2ec19bcc10849fc7120e426d05b111c32af9530",
+      "counts": {
+        "native_content_references": 9304,
+        "archive_content_references": 9304,
+        "native_elements": 497,
+        "archive_elements": 497,
+        "proposals_checked": 0
+      },
+      "role_alias_equivalences": [],
+      "proposal_checks": [],
+      "passed": true,
+      "issues": []
+    }
+  }
+]

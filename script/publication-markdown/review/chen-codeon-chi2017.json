@@ -2,9 +2,9 @@
   "file": "chen-codeon-chi2017.pdf",
   "title": "Codeon: On-Demand Software Development Assistance",
   "publication_id": "codeon_on_demand_software_development_assistance_2017",
-  "pdf_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+  "pdf_sha256": "9bbd48afe0ec30cd73fb6e02375585a548eb9952b955fd8171439f145ec9d5e8",
   "markdown": "publications/chen-codeon-chi2017.md",
-  "markdown_sha256": "0d0281e2549fb369b402cffae7bb9dcbea1a32af85af067058a6c5b6e9d8b7dc",
+  "markdown_sha256": "ca832835c922f779395181b06490e91a5da1a2bf1faa155c6d457236b4f813ea",
   "pages": 12,
   "blocks": [
     {
@@ -21,7 +21,7 @@
       "pages": [
         1
       ],
-      "characters": 374
+      "characters": 288
     },
     {
       "node": "455:0",
@@ -128,7 +128,7 @@
       "characters": 48
     },
     {
-      "node": "joined-454:0",
+      "node": "454:0",
       "role": "P",
       "pages": [
         1,
@@ -321,7 +321,7 @@
       "characters": 9
     },
     {
-      "node": "joined-634:0",
+      "node": "634:0",
       "role": "P",
       "pages": [
         3
@@ -476,9 +476,10 @@
       "node": "692:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 354
+      "characters": 516
     },
     {
       "node": "696:0",
@@ -495,14 +496,6 @@
         5
       ],
       "characters": 127
-    },
-    {
-      "node": "718:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 161
     },
     {
       "node": "719:0",
@@ -585,7 +578,7 @@
       "characters": 51
     },
     {
-      "node": "joined-729:0",
+      "node": "729:0",
       "role": "P",
       "pages": [
         5,
@@ -695,7 +688,7 @@
       "pages": [
         7
       ],
-      "characters": 354
+      "characters": 362
     },
     {
       "node": "752:0",
@@ -767,7 +760,7 @@
       "pages": [
         7
       ],
-      "characters": 244
+      "characters": 1808
     },
     {
       "node": "766:0",
@@ -802,20 +795,13 @@
       "characters": 195
     },
     {
-      "node": "805:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 1563
-    },
-    {
       "node": "806:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 1336
+      "characters": 1921
     },
     {
       "node": "809:0",
@@ -834,14 +820,6 @@
       "characters": 104
     },
     {
-      "node": "827:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 584
-    },
-    {
       "node": "828:0",
       "role": "H3",
       "pages": [
@@ -855,7 +833,7 @@
       "pages": [
         8
       ],
-      "characters": 2396
+      "characters": 3050
     },
     {
       "node": "830:0",
@@ -872,14 +850,6 @@
         8
       ],
       "characters": 95
-    },
-    {
-      "node": "848:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 653
     },
     {
       "node": "849:0",
@@ -1316,7 +1286,7 @@
       ],
       "sha256": "c17db442f9bf3e61be6f645d8d9716099d7ebb9340fa058326e7177948d4c4d6",
       "kind": "figure",
-      "alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. An arrow points from the Codeon result to the baseline comparison. The paired t-test reports p = 0.03."
+      "alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. A greater-than sign emphasizes that more tasks were completed with Codeon. The paired t-test reports p = 0.03."
     }
   ],
   "tables": [
@@ -1432,13 +1402,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 423,
-    "paragraph_fragments_joined": 7,
-    "line_wrap_hyphens_retained": 15,
+    "line_wrap_hyphens_removed": 393,
+    "line_wrap_hyphens_retained": 13,
+    "paragraph_fragments_joined": 4,
     "reviewed_wrap_repairs": 3,
-    "script_runs_positioned": 22
+    "script_runs_positioned": 10
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-codeon-chi2017.json.gz",
-  "source_tags_sha256": "0c07a973aaa3ee01b6e9aa8f641fc578d122d9255e7557e2394bb1a6c4a7dd11"
+  "source_tags_sha256": "289c2ae8c274f7502f66ec7f8bd4d1194be1ea05071eb0c386215bff875db52d"
 }

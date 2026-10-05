@@ -1,0 +1,131 @@
+{
+  "file": "im-improving-advising-relationships-chiea2024.pdf",
+  "pdf_sha256": "a6418fdb68574726d8f88b19580d0c016a5e5134e25a2ff411cc41107b16cf13",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction",
+  "structure_elements": 261,
+  "roles": {
+    "H1": 1,
+    "Part": 1,
+    "Sect": 10,
+    "P": 45,
+    "Link": 34,
+    "H2": 8,
+    "Span": 46,
+    "Note": 5,
+    "L": 9,
+    "LI": 33,
+    "Lbl": 33,
+    "LBody": 33,
+    "H3": 2,
+    "Figure": 1
+  },
+  "structure_content_references": 269,
+  "parent_tree_entries": 38,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 2,
+      "text_operations_tagged": 1487,
+      "image_operations_tagged": 1,
+      "link_annotations": 27
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 40,
+      "text_operations_tagged": 1955,
+      "link_annotations": 6
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 1890,
+      "link_annotations": 1
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 40,
+      "text_operations_tagged": 844
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "153:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "157:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "159:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "161:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "285:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "296:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "361:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "413:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "421:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "202:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "207:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "280:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "CrossMark: Check for updates.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

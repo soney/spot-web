@@ -1,0 +1,451 @@
+{
+  "file": "zhang-vrcopilot-uist2024.pdf",
+  "pdf_sha256": "1dae0fb483e47a7a2d1a4e9d291b3dd1e361d5cb6e7f857908a3f4ccdb51422b",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "VRCopilot: Authoring 3D Layouts with Generative AI Models in VR",
+  "structure_elements": 969,
+  "roles": {
+    "Document": 1,
+    "H1": 1,
+    "P": 102,
+    "Span": 240,
+    "Reference": 141,
+    "Sub": 4,
+    "Figure": 9,
+    "H2": 12,
+    "Link": 136,
+    "L": 6,
+    "LI": 81,
+    "Lbl": 80,
+    "LBody": 81,
+    "Note": 3,
+    "H3": 21,
+    "H4": 17,
+    "Div": 20,
+    "Sect": 14
+  },
+  "structure_content_references": 12151,
+  "parent_tree_entries": 149,
+  "form_xobjects_visited": 7,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 457,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 1097,
+      "link_annotations": 33
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1051,
+      "link_annotations": 33
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 935,
+      "vector_operations_artifact": 1,
+      "link_annotations": 20
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1097,
+      "link_annotations": 14
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 554,
+      "link_annotations": 2
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 18,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 974,
+      "link_annotations": 8
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 4,
+      "text_operations_tagged": 858,
+      "link_annotations": 6
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 18,
+      "vector_operations_tagged": 100,
+      "text_operations_tagged": 902,
+      "link_annotations": 6
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 1016
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1027,
+      "link_annotations": 5
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 1487,
+      "link_annotations": 5
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 708,
+      "link_annotations": 3
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "121:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "146:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "151:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "158:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "165:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "212:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "214:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "236:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "253:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "257:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "260:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "276:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "280:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "283:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "294:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "302:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "349:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "365:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1290:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1291:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1292:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "390:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1293:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1294:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1295:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "405:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "413:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "415:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "417:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "420:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "455:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "458:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "461:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "486:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "497:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "572:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "575:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1296:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1297:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1298:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1299:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1300:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "609:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "612:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1301:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1302:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1303:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "638:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "640:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "642:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "644:0",
+      "page": 12
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "143:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. VRCopilot offers three creation modes. Automatic creation generates an entire furnished room from a voice request. Manual creation combines pointing and speech to request a chair at a location, then offers three candidate chairs for selection. Scaffolded creation lets the user draw or generate labeled floor-plan wireframes, such as a bed footprint, and convert them into furniture.",
+      "actual_text": ""
+    },
+    {
+      "element": "262:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions.",
+      "actual_text": ""
+    },
+    {
+      "element": "385:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, then switch back to wireframes to explore another layout.",
+      "actual_text": ""
+    },
+    {
+      "element": "408:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4. System architecture. A Unity client coordinates direct manipulation, voice requests and intents, intermediate wireframe representations, and the 3D scene. Audio is sent to OpenAI whisper-1, whose transcript is processed by gpt-4-turbo to return intents and parameters to Unity. The client requests layouts from the ATISS generative model server, receives generated wireframe layouts, and instantiates furniture in the scene. AWS Polly provides text-to-speech audio output. Users can also directly manipulate the scene and draw wireframes through the client interface.",
+      "actual_text": ""
+    },
+    {
+      "element": "440:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 5a. Top-down apartment layout created by P7 without generative AI. Two furnished bedrooms sit above an open living and kitchen area. The lower area has seating along the bottom edge and a broad open center; bedroom furniture includes additional storage or work surfaces.",
+      "actual_text": ""
+    },
+    {
+      "element": "442:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 5b. Top-down apartment layout created by P10 without generative AI. Two bedrooms appear above a living and dining area with an L-shaped sofa on the left and a rectangular dining table and chairs in the center. The bedrooms use a coordinated pale furniture palette.",
+      "actual_text": ""
+    },
+    {
+      "element": "444:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 5c. P6 used generative AI for the two bedrooms and created the remainder of the apartment without AI. Both upper bedrooms are densely furnished. The lower living area contains a sofa and two round tables with a broad open space to the right.",
+      "actual_text": ""
+    },
+    {
+      "element": "446:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a separate furnishing is placed diagonally near the bottom-left corner.",
+      "actual_text": ""
+    },
+    {
+      "element": "484:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 6. Box plots of agency, creativity, and effort on a seven-point Likert scale, comparing manual creation in red, scaffolded creation in green, and automatic creation in blue. Manual creation has the highest agency ratings, scaffolded creation is intermediate, and automatic creation is lowest; all pairwise agency differences are significant. Manual creation also has higher creativity ratings than the other two conditions, which do not significantly differ. Effort ratings cluster near the lower-middle of the scale and do not significantly differ. Boxes show the middle half of responses with median lines, whiskers, and plotted means.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

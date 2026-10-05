@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/wang-puzzleme-cscw2021.pdf",
+          "size": 2334549
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 439991,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231570013,
+          "finish": 1791231573625,
+          "duration": "00:00:03.612",
+          "difference": 3612
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231569870,
+        "finish": 1791231573650,
+        "duration": "00:00:03.780",
+        "difference": 3780
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "wang-puzzleme-cscw2021.pdf",
+  "pdf_sha256": "3809eb0010b1aa38b50e60c2afeff6d9fafb261c07f712b6742d94401d0b737b",
+  "stderr": "Oct 05, 2026 4:19:32 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\n"
+}

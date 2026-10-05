@@ -1,0 +1,28 @@
+[
+  {
+    "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+    "before_sha256": "0ecd58b2101aefb1a4aac2269d5360055eb619f0c9a4d21245f7bc5600d955b8",
+    "after_sha256": "64e25afa34900334064e3b85347e978cbe57c14ed20178a501477f5474d50056",
+    "changes": [
+      {
+        "node": "571:0",
+        "id": "spot-notice-571"
+      }
+    ]
+  },
+  {
+    "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+    "before_sha256": "8dfed69adca32f119a43de30234c4d040345776d426a10f1418d76e581ba94ff",
+    "after_sha256": "fa295670cf1d5843d4fbe37988aa2e031c0e96251652d1655e7850c16c3343b7",
+    "changes": [
+      {
+        "node": "47:0",
+        "id": "spot-notice-47"
+      },
+      {
+        "node": "200:0",
+        "id": "spot-notice-200"
+      }
+    ]
+  }
+]

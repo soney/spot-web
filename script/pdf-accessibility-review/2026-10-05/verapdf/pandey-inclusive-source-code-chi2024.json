@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/pandey-inclusive-source-code-chi2024.pdf",
+          "size": 1491426
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 455285,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231550766,
+          "finish": 1791231554986,
+          "duration": "00:00:04.220",
+          "difference": 4220
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231550623,
+        "finish": 1791231555010,
+        "duration": "00:00:04.387",
+        "difference": 4387
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "nonCompliantPdfaCount": 0,
+        "successfulJobCount": 1
+      }
+    }
+  },
+  "file": "pandey-inclusive-source-code-chi2024.pdf",
+  "pdf_sha256": "28fa051edc3f27f558ecde7fda2766cd4787abeabaf36421b556fd5540e4c1a8",
+  "stderr": "Oct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\nOct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\nOct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\nOct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\nOct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\nOct 05, 2026 4:19:13 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\n"
+}

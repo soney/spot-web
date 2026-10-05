@@ -2,9 +2,9 @@
   "file": "oney-development-tools-interactive-iseuddc2011.pdf",
   "title": "Development Tools for Interactive Behaviors",
   "publication_id": "development_tools_for_interactive_behaviors_2011",
-  "pdf_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+  "pdf_sha256": "1e2e1924273064ad9cc2155609b30f9120856f54c23fa9ba659ae4cf0ee1c650",
   "markdown": "publications/oney-development-tools-interactive-iseuddc2011.md",
-  "markdown_sha256": "349bd3b69f64e791246126aaef47e3d94475bf015780ed7bf14c493824627583",
+  "markdown_sha256": "d767b00830f6939e7c867ecd4eed5e7d43cb550644671760760505e51d5c8420",
   "pages": 4,
   "blocks": [
     {
@@ -64,7 +64,7 @@
       "characters": 1006
     },
     {
-      "node": "joined-37:0",
+      "node": "37:0",
       "role": "P",
       "pages": [
         1,
@@ -161,7 +161,7 @@
       "characters": 13
     },
     {
-      "node": "joined-52:0",
+      "node": "52:0",
       "role": "P",
       "pages": [
         3,
@@ -194,6 +194,14 @@
       "characters": 889
     },
     {
+      "node": "94:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 73
+    },
+    {
       "node": "58:0",
       "role": "P",
       "pages": [
@@ -215,7 +223,7 @@
       "pages": [
         4
       ],
-      "characters": 968
+      "characters": 896
     }
   ],
   "tagged_content_items": 870,
@@ -240,10 +248,9 @@
   "code_layout": [],
   "normalization": {
     "line_wrap_hyphens_retained": 4,
-    "paragraph_fragments_joined": 2,
     "script_runs_positioned": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-development-tools-interactive-iseuddc2011.json.gz",
-  "source_tags_sha256": "ceef89401d40343f7c6eeac6e14e6c6c6c0ef8ae762c68fc311652e4aa26f5b9"
+  "source_tags_sha256": "b32af81a83be07fb128134555d1b753e859c250a45500ccfa03e12a9cc644022"
 }

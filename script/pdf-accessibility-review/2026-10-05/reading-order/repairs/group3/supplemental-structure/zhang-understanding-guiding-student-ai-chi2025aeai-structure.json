@@ -1,0 +1,164 @@
+{
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Understanding And Guiding Student-AI Interaction In Future Programming Education",
+  "structure_elements": 201,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 29,
+    "H2": 10,
+    "L": 5,
+    "LI": 29,
+    "Lbl": 29,
+    "LBody": 29,
+    "Span": 3,
+    "Link": 47,
+    "Note": 6,
+    "H3": 4,
+    "H4": 2,
+    "Figure": 1,
+    "Caption": 1
+  },
+  "structure_content_references": 3447,
+  "parent_tree_entries": 51,
+  "form_xobjects_visited": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 823,
+      "vector_operations_artifact": 1,
+      "link_annotations": 18
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 974,
+      "vector_operations_artifact": 1,
+      "link_annotations": 23
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 17,
+      "vector_operations_tagged": 70,
+      "text_operations_tagged": 803,
+      "link_annotations": 4
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 875,
+      "link_annotations": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "196:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "438:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "440:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "445:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "447:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "452:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "477:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "478:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "480:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "483:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "485:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "487:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "531:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "533:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "536:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "552:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "560:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "523:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1. Proposed instructor dashboard. The class overview has an AI-use frequency bar chart; topic badges for debugging, conceptual explanation, and syntax help; and red alerts for potential plagiarism, suspicious patterns, and under-utilization. The individual-student view groups students into clusters and shows a timeline of AI queries above plus and minus symbols for code edits. A syntax-help query and a potential-plagiarism alert are attached to one student\u2019s timeline.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ],
+  "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+  "pdf_sha256": "196dd477126bd94d66867e757c82e5268d94276c80a5f56d2aafb0f3139d8683"
+}

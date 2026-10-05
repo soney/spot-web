@@ -1,0 +1,439 @@
+{
+  "page_count": 13,
+  "language": "en-US",
+  "title": "Improving Crowd-Supported GUI Testing with Structural Guidance",
+  "structure_elements": 565,
+  "roles": {
+    "Document": 1,
+    "Part": 1,
+    "H1": 1,
+    "P": 71,
+    "Span": 32,
+    "Sect": 54,
+    "H2": 15,
+    "Note": 2,
+    "Link": 82,
+    "Div": 2,
+    "Figure": 13,
+    "Caption": 4,
+    "L": 10,
+    "LI": 75,
+    "Lbl": 75,
+    "LBody": 75,
+    "H3": 20,
+    "H4": 5,
+    "Table": 1,
+    "THead": 1,
+    "TR": 6,
+    "TH": 8,
+    "TBody": 1,
+    "TD": 10
+  },
+  "structure_content_references": 9341,
+  "parent_tree_entries": 122,
+  "form_xobjects_visited": 8,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 867,
+      "link_annotations": 17
+    },
+    {
+      "page": 2,
+      "vector_operations_tagged": 17,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 416,
+      "vector_operations_artifact": 2,
+      "link_annotations": 3
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1101,
+      "vector_operations_tagged": 1,
+      "link_annotations": 41
+    },
+    {
+      "page": 4,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 871,
+      "vector_operations_tagged": 3,
+      "link_annotations": 14
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 908,
+      "vector_operations_tagged": 4,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 13,
+      "image_operations_tagged": 11,
+      "text_operations_tagged": 17
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 805,
+      "vector_operations_tagged": 29,
+      "link_annotations": 6
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 1020,
+      "vector_operations_artifact": 7,
+      "link_annotations": 4
+    },
+    {
+      "page": 9,
+      "vector_operations_tagged": 41,
+      "text_operations_tagged": 911,
+      "link_annotations": 5
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 887,
+      "vector_operations_tagged": 33,
+      "link_annotations": 12
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 739
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 752
+    },
+    {
+      "page": 13,
+      "text_operations_tagged": 127
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "699:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "703:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "705:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "707:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "710:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "732:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "735:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "744:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "759:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "770:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "776:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "778:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "787:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "800:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "802:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "806:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "821:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "825:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "833:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "872:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "874:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "893:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "899:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "907:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "910:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "914:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1260:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "942:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "945:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "949:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "952:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "958:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "961:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "967:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "973:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "978:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "988:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "992:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "997:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "999:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1001:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "722:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 1. Instrumented e-commerce testing interface. The left pane shows instructions and an interactive event-flow graph labeled 1; the active filtering state is highlighted red. The main pane shows a toy catalog. Red arrows connect outgoing graph transitions to previously explored controls, including the filter and the bottom result-navigation control, marked by gray non-clickable overlays and label 2. Testers can click a graph node to revisit an explored state; the overlays discourage repeating actions.",
+      "actual_text": ""
+    },
+    {
+      "element": "781:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "circle 2",
+      "actual_text": ""
+    },
+    {
+      "element": "782:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2. Three views of an e-commerce delivery form are connected to its event-flow graph. The form has Pick Up, Delivery, and Contact Info tabs. The graph represents selecting pickup or delivery options and entering input, phone, email, or other contact details, with arrows showing transitions among these states. Pink summary nodes group transitions back to the three main tabs.",
+      "actual_text": ""
+    },
+    {
+      "element": "797:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "circle 1",
+      "actual_text": ""
+    },
+    {
+      "element": "799:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "circle 2",
+      "actual_text": ""
+    },
+    {
+      "element": "805:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "circle 2",
+      "actual_text": ""
+    },
+    {
+      "element": "817:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "circle 2",
+      "actual_text": ""
+    },
+    {
+      "element": "829:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3. JavaScript example. Get the DIV for the trace-tracking tool: const displayDiv = document.getElementById(\"displayDiv\"); Initialize the trace tracker JSON variable: let currentActiveFSM = t2sm.FSM.fromJSON(JSON.parse(str0)); Initialize the display: const display = new t2sm.StateMachineDisplay(currentActiveFSM, displayDiv, myDisplaySetting); Define function myDisplaySetting(fod) with placeholders for state-box style and transition-box style.",
+      "actual_text": ""
+    },
+    {
+      "element": "860:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 4. Eleven screenshots of the three study prototypes arranged in columns. The left column shows three travel-agent screens for searching restaurants, viewing a result, and reviewing a restaurant. The middle column shows four blog screens for browsing articles, search/results, article content, and discussion. The right column shows four e-commerce screens for product browsing, a shopping cart, product details/reviews, and checkout or delivery preferences.",
+      "actual_text": ""
+    },
+    {
+      "element": "889:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "circle 1",
+      "actual_text": ""
+    },
+    {
+      "element": "891:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "A bar chart that shows the average transition coverage for four single worker conditions. From left to the right, we have trained baseline (62.23%), trained with guidance (78.90%), untrained baseline (34.79%), and untrained with guidance (53.83%)",
+      "actual_text": ""
+    },
+    {
+      "element": "954:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Two grouped bar charts show counts over four task-progress intervals, beginning at 0, 25, 50 and 75 percent. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. Effective guidance actions generally rise, most sharply for trained users. New-transition discoveries decline for trained users and for untrained individuals after an early peak, while collaborative untrained users discover more transitions in the final interval than initially.",
+      "actual_text": ""
+    },
+    {
+      "element": "990:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "A worker\u2019s output is a small tree with one parent and three child nodes. A curved red arrow maps that parent to a dotted node in a larger GUI behavior tree; three dotted children show where the worker\u2019s tested unit fits. Other solid branches represent the rest of the application. The diagram illustrates combining unit test traces into an application-level graph.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {
+    "warning:repeated_figure_alternative": 1
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "repeated_figure_alternative",
+      "message": "Multiple figures on the same page repeat the same alternative; check figure/caption association and decorative layers.",
+      "page": 4,
+      "elements": [
+        "799:0",
+        "805:0"
+      ],
+      "alt": "circle 2"
+    }
+  ],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ],
+  "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+  "pdf_sha256": "cbabaaf6d864398f5227ffa007e44457af47fcbfa977cacc1447352214602f2c"
+}

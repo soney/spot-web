@@ -1,0 +1,3594 @@
+{
+  "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+  "pdf_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+  "normalization_warnings": "",
+  "page_count": 227,
+  "language": "en-US",
+  "title": "Expressing Interactivity with States and Constraints",
+  "structure_elements": 5285,
+  "roles": {
+    "Document": 1,
+    "Sect": 227,
+    "H1": 1,
+    "P": 1555,
+    "H2": 16,
+    "TOC": 11,
+    "TOCI": 355,
+    "H3": 228,
+    "H4": 113,
+    "Figure": 44,
+    "Caption": 51,
+    "L": 216,
+    "LI": 626,
+    "LBody": 626,
+    "Lbl": 623,
+    "Note": 11,
+    "H5": 28,
+    "Code": 450,
+    "Table": 4,
+    "TR": 23,
+    "TD": 42,
+    "TH": 30,
+    "THead": 1,
+    "TBody": 1,
+    "H6": 2
+  },
+  "structure_content_references": 40879,
+  "parent_tree_entries": 226,
+  "form_xobjects_visited": 30,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 46,
+      "text_operations_tagged": 68
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 53,
+      "text_operations_tagged": 7
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 44,
+      "text_operations_tagged": 316
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 90
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 81,
+      "text_operations_tagged": 333
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 88,
+      "text_operations_tagged": 369
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 16
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 183
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 269
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 246
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 210
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 29,
+      "text_operations_tagged": 267
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 25,
+      "text_operations_tagged": 294
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 147
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 86
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 151
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 285
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 39,
+      "text_operations_tagged": 255
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 133,
+      "vector_operations_tagged": 55,
+      "vector_operations_artifact": 10,
+      "image_operations_tagged": 3
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 116,
+      "text_operations_tagged": 238
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 238,
+      "vector_operations_tagged": 122,
+      "vector_operations_artifact": 25
+    },
+    {
+      "page": 22,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 222
+    },
+    {
+      "page": 23,
+      "text_operations_artifact": 60,
+      "text_operations_tagged": 223
+    },
+    {
+      "page": 24,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 173
+    },
+    {
+      "page": 25,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 232
+    },
+    {
+      "page": 26,
+      "text_operations_artifact": 39,
+      "text_operations_tagged": 309
+    },
+    {
+      "page": 27,
+      "text_operations_artifact": 40,
+      "text_operations_tagged": 278
+    },
+    {
+      "page": 28,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 215
+    },
+    {
+      "page": 29,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 244
+    },
+    {
+      "page": 30,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 212,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 31,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 255
+    },
+    {
+      "page": 32,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 252
+    },
+    {
+      "page": 33,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 265
+    },
+    {
+      "page": 34,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 252
+    },
+    {
+      "page": 35,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 266
+    },
+    {
+      "page": 36,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 204
+    },
+    {
+      "page": 37,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 3
+    },
+    {
+      "page": 38,
+      "text_operations_artifact": 37,
+      "text_operations_tagged": 136,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 39,
+      "text_operations_artifact": 33,
+      "text_operations_tagged": 257
+    },
+    {
+      "page": 40,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 261
+    },
+    {
+      "page": 41,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 325
+    },
+    {
+      "page": 42,
+      "text_operations_artifact": 86,
+      "text_operations_tagged": 244,
+      "vector_operations_artifact": 11,
+      "vector_operations_tagged": 55,
+      "image_operations_tagged": 3
+    },
+    {
+      "page": 43,
+      "text_operations_artifact": 115,
+      "text_operations_tagged": 239
+    },
+    {
+      "page": 44,
+      "text_operations_artifact": 101,
+      "text_operations_tagged": 281
+    },
+    {
+      "page": 45,
+      "text_operations_artifact": 102,
+      "text_operations_tagged": 267,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 46,
+      "text_operations_artifact": 80,
+      "text_operations_tagged": 150
+    },
+    {
+      "page": 47,
+      "text_operations_artifact": 97,
+      "text_operations_tagged": 239,
+      "vector_operations_artifact": 7
+    },
+    {
+      "page": 48,
+      "text_operations_artifact": 65,
+      "text_operations_tagged": 188,
+      "vector_operations_artifact": 3,
+      "image_operations_tagged": 12,
+      "vector_operations_tagged": 40
+    },
+    {
+      "page": 49,
+      "text_operations_artifact": 67,
+      "text_operations_tagged": 196
+    },
+    {
+      "page": 50,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 193,
+      "vector_operations_tagged": 22,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 51,
+      "text_operations_artifact": 84,
+      "text_operations_tagged": 146
+    },
+    {
+      "page": 52,
+      "text_operations_artifact": 80,
+      "text_operations_tagged": 151
+    },
+    {
+      "page": 53,
+      "text_operations_artifact": 73,
+      "text_operations_tagged": 157,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 5
+    },
+    {
+      "page": 54,
+      "text_operations_artifact": 53,
+      "text_operations_tagged": 183,
+      "image_operations_tagged": 11,
+      "vector_operations_tagged": 54
+    },
+    {
+      "page": 55,
+      "text_operations_artifact": 98,
+      "text_operations_tagged": 296
+    },
+    {
+      "page": 56,
+      "text_operations_artifact": 72,
+      "text_operations_tagged": 245
+    },
+    {
+      "page": 57,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 141
+    },
+    {
+      "page": 58,
+      "text_operations_artifact": 53,
+      "text_operations_tagged": 167
+    },
+    {
+      "page": 59,
+      "text_operations_artifact": 55,
+      "text_operations_tagged": 123,
+      "image_operations_tagged": 6,
+      "vector_operations_tagged": 38
+    },
+    {
+      "page": 60,
+      "text_operations_artifact": 26,
+      "text_operations_tagged": 222,
+      "image_operations_tagged": 43,
+      "vector_operations_tagged": 84,
+      "vector_operations_artifact": 8
+    },
+    {
+      "page": 61,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 202,
+      "image_operations_tagged": 16,
+      "vector_operations_tagged": 12,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 62,
+      "text_operations_artifact": 25,
+      "text_operations_tagged": 126
+    },
+    {
+      "page": 63,
+      "text_operations_artifact": 29,
+      "text_operations_tagged": 110,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 64,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 251
+    },
+    {
+      "page": 65,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 279
+    },
+    {
+      "page": 66,
+      "text_operations_artifact": 96,
+      "text_operations_tagged": 294
+    },
+    {
+      "page": 67,
+      "text_operations_artifact": 52,
+      "text_operations_tagged": 313,
+      "vector_operations_tagged": 103,
+      "vector_operations_artifact": 25
+    },
+    {
+      "page": 68,
+      "text_operations_artifact": 169,
+      "text_operations_tagged": 230
+    },
+    {
+      "page": 69,
+      "text_operations_artifact": 31,
+      "text_operations_tagged": 219,
+      "vector_operations_tagged": 134,
+      "vector_operations_artifact": 28
+    },
+    {
+      "page": 70,
+      "text_operations_artifact": 45,
+      "text_operations_tagged": 324
+    },
+    {
+      "page": 71,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 304
+    },
+    {
+      "page": 72,
+      "text_operations_artifact": 317,
+      "text_operations_tagged": 354,
+      "vector_operations_tagged": 171,
+      "vector_operations_artifact": 323
+    },
+    {
+      "page": 73,
+      "text_operations_artifact": 48,
+      "text_operations_tagged": 224
+    },
+    {
+      "page": 74,
+      "text_operations_artifact": 41,
+      "text_operations_tagged": 194
+    },
+    {
+      "page": 75,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 205,
+      "vector_operations_artifact": 18,
+      "vector_operations_tagged": 1551
+    },
+    {
+      "page": 76,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 232
+    },
+    {
+      "page": 77,
+      "text_operations_artifact": 46,
+      "text_operations_tagged": 270
+    },
+    {
+      "page": 78,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 151,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 79,
+      "text_operations_artifact": 35,
+      "text_operations_tagged": 169,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 80,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 186,
+      "vector_operations_artifact": 15,
+      "vector_operations_tagged": 51
+    },
+    {
+      "page": 81,
+      "text_operations_artifact": 52,
+      "text_operations_tagged": 684,
+      "vector_operations_tagged": 597,
+      "vector_operations_artifact": 20
+    },
+    {
+      "page": 82,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 151,
+      "vector_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 83,
+      "text_operations_artifact": 69,
+      "text_operations_tagged": 353,
+      "vector_operations_tagged": 184,
+      "vector_operations_artifact": 22
+    },
+    {
+      "page": 84,
+      "text_operations_artifact": 54,
+      "text_operations_tagged": 288,
+      "vector_operations_tagged": 1004,
+      "vector_operations_artifact": 109
+    },
+    {
+      "page": 85,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 129,
+      "vector_operations_tagged": 30
+    },
+    {
+      "page": 86,
+      "text_operations_artifact": 47,
+      "text_operations_tagged": 221,
+      "vector_operations_artifact": 21,
+      "vector_operations_tagged": 122
+    },
+    {
+      "page": 87,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 237,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 88,
+      "text_operations_artifact": 45,
+      "text_operations_tagged": 222
+    },
+    {
+      "page": 89,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 187,
+      "vector_operations_tagged": 15,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 90,
+      "text_operations_artifact": 73,
+      "text_operations_tagged": 255,
+      "vector_operations_artifact": 102
+    },
+    {
+      "page": 91,
+      "text_operations_artifact": 28,
+      "text_operations_tagged": 163,
+      "vector_operations_artifact": 17,
+      "vector_operations_tagged": 6
+    },
+    {
+      "page": 92,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 217
+    },
+    {
+      "page": 93,
+      "text_operations_artifact": 61,
+      "text_operations_tagged": 167,
+      "vector_operations_tagged": 20,
+      "vector_operations_artifact": 13
+    },
+    {
+      "page": 94,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 165
+    },
+    {
+      "page": 95,
+      "text_operations_artifact": 69,
+      "text_operations_tagged": 236,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 96,
+      "text_operations_artifact": 41,
+      "text_operations_tagged": 174,
+      "vector_operations_artifact": 64
+    },
+    {
+      "page": 97,
+      "text_operations_artifact": 84,
+      "vector_operations_artifact": 77,
+      "text_operations_tagged": 222
+    },
+    {
+      "page": 98,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 259,
+      "vector_operations_tagged": 177
+    },
+    {
+      "page": 99,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 248
+    },
+    {
+      "page": 100,
+      "text_operations_artifact": 104,
+      "text_operations_tagged": 220,
+      "vector_operations_artifact": 91
+    },
+    {
+      "page": 101,
+      "text_operations_artifact": 67,
+      "vector_operations_artifact": 23,
+      "text_operations_tagged": 296
+    },
+    {
+      "page": 102,
+      "text_operations_artifact": 28,
+      "text_operations_tagged": 86
+    },
+    {
+      "page": 103,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 127
+    },
+    {
+      "page": 104,
+      "text_operations_artifact": 25,
+      "text_operations_tagged": 247
+    },
+    {
+      "page": 105,
+      "text_operations_artifact": 27,
+      "text_operations_tagged": 211
+    },
+    {
+      "page": 106,
+      "text_operations_artifact": 27,
+      "text_operations_tagged": 188
+    },
+    {
+      "page": 107,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 150,
+      "vector_operations_artifact": 4,
+      "vector_operations_tagged": 36
+    },
+    {
+      "page": 108,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 92
+    },
+    {
+      "page": 109,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 146
+    },
+    {
+      "page": 110,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 226
+    },
+    {
+      "page": 111,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 267
+    },
+    {
+      "page": 112,
+      "text_operations_artifact": 120,
+      "text_operations_tagged": 183
+    },
+    {
+      "page": 113,
+      "text_operations_artifact": 64,
+      "text_operations_tagged": 268
+    },
+    {
+      "page": 114,
+      "text_operations_artifact": 27,
+      "text_operations_tagged": 118
+    },
+    {
+      "page": 115,
+      "text_operations_artifact": 29,
+      "text_operations_tagged": 132,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 116,
+      "text_operations_artifact": 54,
+      "text_operations_tagged": 180
+    },
+    {
+      "page": 117,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 234
+    },
+    {
+      "page": 118,
+      "text_operations_artifact": 28,
+      "text_operations_tagged": 54
+    },
+    {
+      "page": 119,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 55,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 120,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 79,
+      "image_operations_tagged": 19,
+      "vector_operations_tagged": 38,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 121,
+      "text_operations_artifact": 29,
+      "text_operations_tagged": 175,
+      "image_operations_tagged": 3
+    },
+    {
+      "page": 122,
+      "text_operations_artifact": 25,
+      "text_operations_tagged": 57,
+      "vector_operations_tagged": 44
+    },
+    {
+      "page": 123,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 92
+    },
+    {
+      "page": 124,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 71
+    },
+    {
+      "page": 125,
+      "text_operations_artifact": 33,
+      "text_operations_tagged": 240
+    },
+    {
+      "page": 126,
+      "text_operations_artifact": 36,
+      "text_operations_tagged": 242
+    },
+    {
+      "page": 127,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 275
+    },
+    {
+      "page": 128,
+      "text_operations_artifact": 27,
+      "text_operations_tagged": 212
+    },
+    {
+      "page": 129,
+      "text_operations_artifact": 26,
+      "text_operations_tagged": 158
+    },
+    {
+      "page": 130,
+      "text_operations_artifact": 35,
+      "text_operations_tagged": 200
+    },
+    {
+      "page": 131,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 231
+    },
+    {
+      "page": 132,
+      "text_operations_artifact": 26,
+      "text_operations_tagged": 116
+    },
+    {
+      "page": 133,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 112
+    },
+    {
+      "page": 134,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 157
+    },
+    {
+      "page": 135,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 67
+    },
+    {
+      "page": 136,
+      "text_operations_artifact": 39,
+      "text_operations_tagged": 128
+    },
+    {
+      "page": 137,
+      "text_operations_artifact": 46,
+      "text_operations_tagged": 106
+    },
+    {
+      "page": 138,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 113
+    },
+    {
+      "page": 139,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 101
+    },
+    {
+      "page": 140,
+      "text_operations_artifact": 48,
+      "text_operations_tagged": 114
+    },
+    {
+      "page": 141,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 116
+    },
+    {
+      "page": 142,
+      "text_operations_artifact": 44,
+      "text_operations_tagged": 111
+    },
+    {
+      "page": 143,
+      "text_operations_artifact": 44,
+      "text_operations_tagged": 101
+    },
+    {
+      "page": 144,
+      "text_operations_artifact": 46,
+      "text_operations_tagged": 117
+    },
+    {
+      "page": 145,
+      "text_operations_artifact": 43,
+      "text_operations_tagged": 109
+    },
+    {
+      "page": 146,
+      "text_operations_artifact": 33,
+      "text_operations_tagged": 74
+    },
+    {
+      "page": 147,
+      "text_operations_artifact": 35
+    },
+    {
+      "page": 148,
+      "text_operations_artifact": 90,
+      "text_operations_tagged": 115
+    },
+    {
+      "page": 149,
+      "text_operations_artifact": 57,
+      "text_operations_tagged": 122
+    },
+    {
+      "page": 150,
+      "text_operations_artifact": 106,
+      "text_operations_tagged": 163
+    },
+    {
+      "page": 151,
+      "text_operations_artifact": 68,
+      "text_operations_tagged": 122,
+      "vector_operations_artifact": 6,
+      "vector_operations_tagged": 12
+    },
+    {
+      "page": 152,
+      "text_operations_artifact": 86,
+      "text_operations_tagged": 96
+    },
+    {
+      "page": 153,
+      "text_operations_artifact": 77,
+      "text_operations_tagged": 119
+    },
+    {
+      "page": 154,
+      "text_operations_artifact": 84,
+      "text_operations_tagged": 116
+    },
+    {
+      "page": 155,
+      "text_operations_artifact": 72,
+      "text_operations_tagged": 119
+    },
+    {
+      "page": 156,
+      "text_operations_artifact": 58,
+      "text_operations_tagged": 114
+    },
+    {
+      "page": 157,
+      "text_operations_artifact": 57,
+      "text_operations_tagged": 124
+    },
+    {
+      "page": 158,
+      "text_operations_artifact": 60,
+      "text_operations_tagged": 133
+    },
+    {
+      "page": 159,
+      "text_operations_artifact": 76,
+      "text_operations_tagged": 83
+    },
+    {
+      "page": 160,
+      "text_operations_artifact": 31,
+      "text_operations_tagged": 18
+    },
+    {
+      "page": 161,
+      "text_operations_artifact": 45,
+      "text_operations_tagged": 43,
+      "vector_operations_artifact": 140
+    },
+    {
+      "page": 162,
+      "text_operations_artifact": 103,
+      "vector_operations_artifact": 55,
+      "text_operations_tagged": 168
+    },
+    {
+      "page": 163,
+      "text_operations_artifact": 90,
+      "text_operations_tagged": 123,
+      "vector_operations_artifact": 112
+    },
+    {
+      "page": 164,
+      "text_operations_artifact": 67,
+      "text_operations_tagged": 90,
+      "vector_operations_artifact": 102
+    },
+    {
+      "page": 165,
+      "text_operations_artifact": 65,
+      "text_operations_tagged": 97,
+      "vector_operations_artifact": 137
+    },
+    {
+      "page": 166,
+      "text_operations_artifact": 62,
+      "text_operations_tagged": 78,
+      "vector_operations_artifact": 144
+    },
+    {
+      "page": 167,
+      "text_operations_artifact": 59,
+      "text_operations_tagged": 82,
+      "vector_operations_artifact": 124
+    },
+    {
+      "page": 168,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 95,
+      "vector_operations_artifact": 100
+    },
+    {
+      "page": 169,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 102,
+      "vector_operations_artifact": 9
+    },
+    {
+      "page": 170,
+      "text_operations_artifact": 85,
+      "text_operations_tagged": 117,
+      "vector_operations_artifact": 8
+    },
+    {
+      "page": 171,
+      "text_operations_artifact": 74,
+      "text_operations_tagged": 104,
+      "vector_operations_artifact": 59
+    },
+    {
+      "page": 172,
+      "text_operations_artifact": 60,
+      "text_operations_tagged": 75,
+      "vector_operations_artifact": 148
+    },
+    {
+      "page": 173,
+      "text_operations_artifact": 72,
+      "text_operations_tagged": 117,
+      "vector_operations_artifact": 102
+    },
+    {
+      "page": 174,
+      "text_operations_artifact": 68,
+      "vector_operations_artifact": 190,
+      "text_operations_tagged": 67
+    },
+    {
+      "page": 175,
+      "text_operations_artifact": 75,
+      "vector_operations_artifact": 108,
+      "text_operations_tagged": 110
+    },
+    {
+      "page": 176,
+      "text_operations_artifact": 90,
+      "text_operations_tagged": 143,
+      "vector_operations_artifact": 61
+    },
+    {
+      "page": 177,
+      "text_operations_artifact": 56,
+      "vector_operations_artifact": 126,
+      "text_operations_tagged": 75
+    },
+    {
+      "page": 178,
+      "text_operations_artifact": 81,
+      "vector_operations_artifact": 98,
+      "text_operations_tagged": 106
+    },
+    {
+      "page": 179,
+      "text_operations_artifact": 68,
+      "text_operations_tagged": 77,
+      "vector_operations_artifact": 60
+    },
+    {
+      "page": 180,
+      "text_operations_artifact": 59,
+      "vector_operations_artifact": 137,
+      "text_operations_tagged": 86
+    },
+    {
+      "page": 181,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 115,
+      "vector_operations_artifact": 44
+    },
+    {
+      "page": 182,
+      "text_operations_artifact": 53,
+      "text_operations_tagged": 65,
+      "vector_operations_artifact": 116
+    },
+    {
+      "page": 183,
+      "text_operations_artifact": 74,
+      "vector_operations_artifact": 139,
+      "text_operations_tagged": 116
+    },
+    {
+      "page": 184,
+      "text_operations_artifact": 66,
+      "text_operations_tagged": 96,
+      "vector_operations_artifact": 122
+    },
+    {
+      "page": 185,
+      "text_operations_artifact": 73,
+      "vector_operations_artifact": 171,
+      "text_operations_tagged": 128
+    },
+    {
+      "page": 186,
+      "text_operations_artifact": 55,
+      "text_operations_tagged": 69,
+      "vector_operations_artifact": 134
+    },
+    {
+      "page": 187,
+      "text_operations_artifact": 68,
+      "vector_operations_artifact": 129,
+      "text_operations_tagged": 110
+    },
+    {
+      "page": 188,
+      "text_operations_artifact": 47,
+      "text_operations_tagged": 72,
+      "vector_operations_artifact": 131
+    },
+    {
+      "page": 189,
+      "text_operations_artifact": 50,
+      "text_operations_tagged": 82,
+      "vector_operations_artifact": 137
+    },
+    {
+      "page": 190,
+      "text_operations_artifact": 68,
+      "text_operations_tagged": 101,
+      "vector_operations_artifact": 107
+    },
+    {
+      "page": 191,
+      "text_operations_artifact": 49,
+      "vector_operations_artifact": 121,
+      "text_operations_tagged": 77
+    },
+    {
+      "page": 192,
+      "text_operations_artifact": 44,
+      "vector_operations_artifact": 144,
+      "text_operations_tagged": 70
+    },
+    {
+      "page": 193,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 33,
+      "vector_operations_artifact": 188
+    },
+    {
+      "page": 194,
+      "text_operations_artifact": 44,
+      "vector_operations_artifact": 143,
+      "text_operations_tagged": 42
+    },
+    {
+      "page": 195,
+      "text_operations_artifact": 76,
+      "vector_operations_artifact": 69,
+      "text_operations_tagged": 104
+    },
+    {
+      "page": 196,
+      "text_operations_artifact": 57,
+      "vector_operations_artifact": 146,
+      "text_operations_tagged": 85
+    },
+    {
+      "page": 197,
+      "text_operations_artifact": 53,
+      "text_operations_tagged": 73,
+      "vector_operations_artifact": 168
+    },
+    {
+      "page": 198,
+      "text_operations_artifact": 45,
+      "vector_operations_artifact": 125,
+      "text_operations_tagged": 63
+    },
+    {
+      "page": 199,
+      "text_operations_artifact": 54,
+      "vector_operations_artifact": 145,
+      "text_operations_tagged": 72
+    },
+    {
+      "page": 200,
+      "text_operations_artifact": 45,
+      "text_operations_tagged": 60,
+      "vector_operations_artifact": 131
+    },
+    {
+      "page": 201,
+      "text_operations_artifact": 56,
+      "vector_operations_artifact": 136,
+      "text_operations_tagged": 74
+    },
+    {
+      "page": 202,
+      "text_operations_artifact": 65,
+      "vector_operations_artifact": 129,
+      "text_operations_tagged": 91
+    },
+    {
+      "page": 203,
+      "text_operations_artifact": 65,
+      "vector_operations_artifact": 131,
+      "text_operations_tagged": 116
+    },
+    {
+      "page": 204,
+      "text_operations_artifact": 57,
+      "text_operations_tagged": 73,
+      "vector_operations_artifact": 141
+    },
+    {
+      "page": 205,
+      "text_operations_artifact": 52,
+      "vector_operations_artifact": 139,
+      "text_operations_tagged": 68
+    },
+    {
+      "page": 206,
+      "text_operations_artifact": 69,
+      "vector_operations_artifact": 110,
+      "text_operations_tagged": 89
+    },
+    {
+      "page": 207,
+      "text_operations_artifact": 53,
+      "vector_operations_artifact": 182,
+      "text_operations_tagged": 60
+    },
+    {
+      "page": 208,
+      "text_operations_artifact": 50,
+      "vector_operations_artifact": 144,
+      "text_operations_tagged": 73
+    },
+    {
+      "page": 209,
+      "text_operations_artifact": 54,
+      "vector_operations_artifact": 123,
+      "text_operations_tagged": 70
+    },
+    {
+      "page": 210,
+      "text_operations_artifact": 65,
+      "vector_operations_artifact": 164,
+      "text_operations_tagged": 87
+    },
+    {
+      "page": 211,
+      "text_operations_artifact": 57,
+      "vector_operations_artifact": 158,
+      "text_operations_tagged": 83
+    },
+    {
+      "page": 212,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 67,
+      "vector_operations_artifact": 119
+    },
+    {
+      "page": 213,
+      "text_operations_artifact": 56,
+      "text_operations_tagged": 74,
+      "vector_operations_artifact": 171
+    },
+    {
+      "page": 214,
+      "text_operations_artifact": 81,
+      "text_operations_tagged": 134,
+      "vector_operations_artifact": 87
+    },
+    {
+      "page": 215,
+      "text_operations_artifact": 74,
+      "text_operations_tagged": 130,
+      "vector_operations_artifact": 75
+    },
+    {
+      "page": 216,
+      "text_operations_artifact": 65,
+      "vector_operations_artifact": 124,
+      "text_operations_tagged": 100
+    },
+    {
+      "page": 217,
+      "text_operations_artifact": 73,
+      "text_operations_tagged": 110,
+      "vector_operations_artifact": 101
+    },
+    {
+      "page": 218,
+      "text_operations_artifact": 47,
+      "vector_operations_artifact": 109,
+      "text_operations_tagged": 69
+    },
+    {
+      "page": 219,
+      "text_operations_artifact": 73,
+      "vector_operations_artifact": 139,
+      "text_operations_tagged": 113
+    },
+    {
+      "page": 220,
+      "text_operations_artifact": 79,
+      "vector_operations_artifact": 67,
+      "text_operations_tagged": 111
+    },
+    {
+      "page": 221,
+      "text_operations_artifact": 70,
+      "vector_operations_artifact": 137,
+      "text_operations_tagged": 102
+    },
+    {
+      "page": 222,
+      "text_operations_artifact": 84,
+      "vector_operations_artifact": 175,
+      "text_operations_tagged": 140
+    },
+    {
+      "page": 223,
+      "text_operations_artifact": 63,
+      "text_operations_tagged": 82,
+      "vector_operations_artifact": 144
+    },
+    {
+      "page": 224,
+      "text_operations_artifact": 76,
+      "vector_operations_artifact": 112,
+      "text_operations_tagged": 115
+    },
+    {
+      "page": 225,
+      "text_operations_artifact": 59,
+      "vector_operations_artifact": 143,
+      "text_operations_tagged": 86
+    },
+    {
+      "page": 226,
+      "text_operations_artifact": 44,
+      "text_operations_tagged": 50,
+      "vector_operations_artifact": 137
+    },
+    {
+      "page": 227,
+      "text_operations_artifact": 42,
+      "vector_operations_artifact": 87,
+      "text_operations_tagged": 55
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "579:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "589:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "596:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "600:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "1547:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1823:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "1841:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1843:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "1848:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "1857:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "1861:0",
+      "page": 18
+    },
+    {
+      "level": 4,
+      "element": "1867:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1877:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "1884:0",
+      "page": 21
+    },
+    {
+      "level": 4,
+      "element": "1886:0",
+      "page": 21
+    },
+    {
+      "level": 4,
+      "element": "1888:0",
+      "page": 21
+    },
+    {
+      "level": 3,
+      "element": "1893:0",
+      "page": 22
+    },
+    {
+      "level": 3,
+      "element": "1897:0",
+      "page": 22
+    },
+    {
+      "level": 4,
+      "element": "1928:0",
+      "page": 23
+    },
+    {
+      "level": 3,
+      "element": "1942:0",
+      "page": 23
+    },
+    {
+      "level": 2,
+      "element": "1945:0",
+      "page": 24
+    },
+    {
+      "level": 3,
+      "element": "1947:0",
+      "page": 24
+    },
+    {
+      "level": 3,
+      "element": "1952:0",
+      "page": 25
+    },
+    {
+      "level": 4,
+      "element": "1956:0",
+      "page": 25
+    },
+    {
+      "level": 4,
+      "element": "1965:0",
+      "page": 27
+    },
+    {
+      "level": 4,
+      "element": "1970:0",
+      "page": 27
+    },
+    {
+      "level": 4,
+      "element": "1977:0",
+      "page": 28
+    },
+    {
+      "level": 3,
+      "element": "1979:0",
+      "page": 28
+    },
+    {
+      "level": 4,
+      "element": "1981:0",
+      "page": 28
+    },
+    {
+      "level": 4,
+      "element": "1987:0",
+      "page": 29
+    },
+    {
+      "level": 3,
+      "element": "643:0",
+      "page": 30
+    },
+    {
+      "level": 4,
+      "element": "1995:0",
+      "page": 31
+    },
+    {
+      "level": 4,
+      "element": "2002:0",
+      "page": 32
+    },
+    {
+      "level": 4,
+      "element": "2005:0",
+      "page": 32
+    },
+    {
+      "level": 3,
+      "element": "2007:0",
+      "page": 32
+    },
+    {
+      "level": 3,
+      "element": "2012:0",
+      "page": 33
+    },
+    {
+      "level": 3,
+      "element": "2020:0",
+      "page": 34
+    },
+    {
+      "level": 3,
+      "element": "2024:0",
+      "page": 34
+    },
+    {
+      "level": 3,
+      "element": "2031:0",
+      "page": 35
+    },
+    {
+      "level": 4,
+      "element": "2033:0",
+      "page": 35
+    },
+    {
+      "level": 4,
+      "element": "2037:0",
+      "page": 36
+    },
+    {
+      "level": 4,
+      "element": "2039:0",
+      "page": 36
+    },
+    {
+      "level": 3,
+      "element": "2042:0",
+      "page": 36
+    },
+    {
+      "level": 2,
+      "element": "2047:0",
+      "page": 38
+    },
+    {
+      "level": 3,
+      "element": "2050:0",
+      "page": 38
+    },
+    {
+      "level": 4,
+      "element": "2052:0",
+      "page": 38
+    },
+    {
+      "level": 4,
+      "element": "2060:0",
+      "page": 39
+    },
+    {
+      "level": 5,
+      "element": "2067:0",
+      "page": 40
+    },
+    {
+      "level": 3,
+      "element": "2069:0",
+      "page": 40
+    },
+    {
+      "level": 4,
+      "element": "2071:0",
+      "page": 40
+    },
+    {
+      "level": 4,
+      "element": "2076:0",
+      "page": 41
+    },
+    {
+      "level": 4,
+      "element": "2078:0",
+      "page": 41
+    },
+    {
+      "level": 3,
+      "element": "2081:0",
+      "page": 41
+    },
+    {
+      "level": 3,
+      "element": "2084:0",
+      "page": 42
+    },
+    {
+      "level": 3,
+      "element": "2106:0",
+      "page": 45
+    },
+    {
+      "level": 4,
+      "element": "2108:0",
+      "page": 45
+    },
+    {
+      "level": 5,
+      "element": "2122:0",
+      "page": 46
+    },
+    {
+      "level": 4,
+      "element": "2130:0",
+      "page": 47
+    },
+    {
+      "level": 5,
+      "element": "2138:0",
+      "page": 48
+    },
+    {
+      "level": 4,
+      "element": "2149:0",
+      "page": 49
+    },
+    {
+      "level": 5,
+      "element": "2153:0",
+      "page": 49
+    },
+    {
+      "level": 5,
+      "element": "2170:0",
+      "page": 50
+    },
+    {
+      "level": 4,
+      "element": "2177:0",
+      "page": 51
+    },
+    {
+      "level": 4,
+      "element": "2183:0",
+      "page": 52
+    },
+    {
+      "level": 4,
+      "element": "2187:0",
+      "page": 52
+    },
+    {
+      "level": 4,
+      "element": "2193:0",
+      "page": 53
+    },
+    {
+      "level": 4,
+      "element": "2204:0",
+      "page": 54
+    },
+    {
+      "level": 4,
+      "element": "2238:0",
+      "page": 55
+    },
+    {
+      "level": 3,
+      "element": "2254:0",
+      "page": 56
+    },
+    {
+      "level": 4,
+      "element": "2260:0",
+      "page": 57
+    },
+    {
+      "level": 4,
+      "element": "2262:0",
+      "page": 57
+    },
+    {
+      "level": 4,
+      "element": "2265:0",
+      "page": 58
+    },
+    {
+      "level": 4,
+      "element": "2272:0",
+      "page": 58
+    },
+    {
+      "level": 3,
+      "element": "2274:0",
+      "page": 58
+    },
+    {
+      "level": 4,
+      "element": "2277:0",
+      "page": 59
+    },
+    {
+      "level": 4,
+      "element": "2288:0",
+      "page": 60
+    },
+    {
+      "level": 4,
+      "element": "2296:0",
+      "page": 61
+    },
+    {
+      "level": 4,
+      "element": "2304:0",
+      "page": 62
+    },
+    {
+      "level": 3,
+      "element": "2307:0",
+      "page": 62
+    },
+    {
+      "level": 2,
+      "element": "2310:0",
+      "page": 63
+    },
+    {
+      "level": 3,
+      "element": "2312:0",
+      "page": 63
+    },
+    {
+      "level": 3,
+      "element": "2324:0",
+      "page": 64
+    },
+    {
+      "level": 3,
+      "element": "2334:0",
+      "page": 66
+    },
+    {
+      "level": 3,
+      "element": "2359:0",
+      "page": 69
+    },
+    {
+      "level": 4,
+      "element": "2362:0",
+      "page": 70
+    },
+    {
+      "level": 5,
+      "element": "2367:0",
+      "page": 70
+    },
+    {
+      "level": 4,
+      "element": "2374:0",
+      "page": 71
+    },
+    {
+      "level": 4,
+      "element": "2383:0",
+      "page": 72
+    },
+    {
+      "level": 5,
+      "element": "2390:0",
+      "page": 73
+    },
+    {
+      "level": 5,
+      "element": "2392:0",
+      "page": 73
+    },
+    {
+      "level": 4,
+      "element": "2396:0",
+      "page": 74
+    },
+    {
+      "level": 5,
+      "element": "2399:0",
+      "page": 74
+    },
+    {
+      "level": 5,
+      "element": "2403:0",
+      "page": 74
+    },
+    {
+      "level": 5,
+      "element": "2412:0",
+      "page": 76
+    },
+    {
+      "level": 5,
+      "element": "2415:0",
+      "page": 76
+    },
+    {
+      "level": 4,
+      "element": "2417:0",
+      "page": 76
+    },
+    {
+      "level": 5,
+      "element": "2423:0",
+      "page": 77
+    },
+    {
+      "level": 3,
+      "element": "2426:0",
+      "page": 77
+    },
+    {
+      "level": 4,
+      "element": "2430:0",
+      "page": 78
+    },
+    {
+      "level": 5,
+      "element": "2432:0",
+      "page": 78
+    },
+    {
+      "level": 5,
+      "element": "2437:0",
+      "page": 79
+    },
+    {
+      "level": 5,
+      "element": "2442:0",
+      "page": 79
+    },
+    {
+      "level": 5,
+      "element": "2449:0",
+      "page": 80
+    },
+    {
+      "level": 4,
+      "element": "2455:0",
+      "page": 80
+    },
+    {
+      "level": 5,
+      "element": "2462:0",
+      "page": 81
+    },
+    {
+      "level": 3,
+      "element": "2467:0",
+      "page": 82
+    },
+    {
+      "level": 4,
+      "element": "2470:0",
+      "page": 82
+    },
+    {
+      "level": 4,
+      "element": "2487:0",
+      "page": 84
+    },
+    {
+      "level": 3,
+      "element": "2501:0",
+      "page": 87
+    },
+    {
+      "level": 4,
+      "element": "2503:0",
+      "page": 87
+    },
+    {
+      "level": 4,
+      "element": "2512:0",
+      "page": 88
+    },
+    {
+      "level": 4,
+      "element": "2529:0",
+      "page": 89
+    },
+    {
+      "level": 3,
+      "element": "2534:0",
+      "page": 89
+    },
+    {
+      "level": 4,
+      "element": "2537:0",
+      "page": 90
+    },
+    {
+      "level": 4,
+      "element": "2579:0",
+      "page": 90
+    },
+    {
+      "level": 4,
+      "element": "2587:0",
+      "page": 91
+    },
+    {
+      "level": 3,
+      "element": "2593:0",
+      "page": 92
+    },
+    {
+      "level": 4,
+      "element": "2595:0",
+      "page": 92
+    },
+    {
+      "level": 4,
+      "element": "2613:0",
+      "page": 93
+    },
+    {
+      "level": 4,
+      "element": "2622:0",
+      "page": 94
+    },
+    {
+      "level": 3,
+      "element": "2625:0",
+      "page": 94
+    },
+    {
+      "level": 4,
+      "element": "2627:0",
+      "page": 94
+    },
+    {
+      "level": 4,
+      "element": "2648:0",
+      "page": 95
+    },
+    {
+      "level": 4,
+      "element": "2651:0",
+      "page": 95
+    },
+    {
+      "level": 5,
+      "element": "2652:0",
+      "page": 95
+    },
+    {
+      "level": 5,
+      "element": "2701:0",
+      "page": 97
+    },
+    {
+      "level": 5,
+      "element": "2704:0",
+      "page": 97
+    },
+    {
+      "level": 5,
+      "element": "2716:0",
+      "page": 99
+    },
+    {
+      "level": 4,
+      "element": "2721:0",
+      "page": 100
+    },
+    {
+      "level": 4,
+      "element": "2753:0",
+      "page": 101
+    },
+    {
+      "level": 4,
+      "element": "2759:0",
+      "page": 102
+    },
+    {
+      "level": 3,
+      "element": "2761:0",
+      "page": 102
+    },
+    {
+      "level": 2,
+      "element": "2764:0",
+      "page": 103
+    },
+    {
+      "level": 3,
+      "element": "2766:0",
+      "page": 103
+    },
+    {
+      "level": 3,
+      "element": "2773:0",
+      "page": 104
+    },
+    {
+      "level": 3,
+      "element": "2777:0",
+      "page": 105
+    },
+    {
+      "level": 4,
+      "element": "2779:0",
+      "page": 105
+    },
+    {
+      "level": 4,
+      "element": "2790:0",
+      "page": 107
+    },
+    {
+      "level": 3,
+      "element": "2796:0",
+      "page": 108
+    },
+    {
+      "level": 2,
+      "element": "2799:0",
+      "page": 109
+    },
+    {
+      "level": 3,
+      "element": "2801:0",
+      "page": 109
+    },
+    {
+      "level": 4,
+      "element": "2805:0",
+      "page": 110
+    },
+    {
+      "level": 4,
+      "element": "2809:0",
+      "page": 110
+    },
+    {
+      "level": 4,
+      "element": "2817:0",
+      "page": 111
+    },
+    {
+      "level": 3,
+      "element": "2820:0",
+      "page": 111
+    },
+    {
+      "level": 3,
+      "element": "2832:0",
+      "page": 113
+    },
+    {
+      "level": 4,
+      "element": "2836:0",
+      "page": 114
+    },
+    {
+      "level": 5,
+      "element": "2840:0",
+      "page": 114
+    },
+    {
+      "level": 5,
+      "element": "2850:0",
+      "page": 116
+    },
+    {
+      "level": 5,
+      "element": "2875:0",
+      "page": 116
+    },
+    {
+      "level": 4,
+      "element": "2895:0",
+      "page": 117
+    },
+    {
+      "level": 3,
+      "element": "2903:0",
+      "page": 118
+    },
+    {
+      "level": 4,
+      "element": "2905:0",
+      "page": 118
+    },
+    {
+      "level": 4,
+      "element": "2915:0",
+      "page": 120
+    },
+    {
+      "level": 4,
+      "element": "2928:0",
+      "page": 121
+    },
+    {
+      "level": 3,
+      "element": "2937:0",
+      "page": 122
+    },
+    {
+      "level": 2,
+      "element": "2943:0",
+      "page": 124
+    },
+    {
+      "level": 3,
+      "element": "2945:0",
+      "page": 124
+    },
+    {
+      "level": 4,
+      "element": "2947:0",
+      "page": 124
+    },
+    {
+      "level": 4,
+      "element": "2953:0",
+      "page": 125
+    },
+    {
+      "level": 4,
+      "element": "2955:0",
+      "page": 125
+    },
+    {
+      "level": 3,
+      "element": "2961:0",
+      "page": 126
+    },
+    {
+      "level": 4,
+      "element": "2963:0",
+      "page": 126
+    },
+    {
+      "level": 4,
+      "element": "2970:0",
+      "page": 127
+    },
+    {
+      "level": 3,
+      "element": "2972:0",
+      "page": 127
+    },
+    {
+      "level": 3,
+      "element": "2977:0",
+      "page": 128
+    },
+    {
+      "level": 4,
+      "element": "2979:0",
+      "page": 128
+    },
+    {
+      "level": 4,
+      "element": "2982:0",
+      "page": 128
+    },
+    {
+      "level": 3,
+      "element": "2986:0",
+      "page": 129
+    },
+    {
+      "level": 3,
+      "element": "2989:0",
+      "page": 129
+    },
+    {
+      "level": 3,
+      "element": "2992:0",
+      "page": 129
+    },
+    {
+      "level": 4,
+      "element": "2996:0",
+      "page": 130
+    },
+    {
+      "level": 4,
+      "element": "2998:0",
+      "page": 130
+    },
+    {
+      "level": 4,
+      "element": "3001:0",
+      "page": 130
+    },
+    {
+      "level": 4,
+      "element": "3007:0",
+      "page": 131
+    },
+    {
+      "level": 3,
+      "element": "3009:0",
+      "page": 131
+    },
+    {
+      "level": 3,
+      "element": "3017:0",
+      "page": 132
+    },
+    {
+      "level": 3,
+      "element": "3019:0",
+      "page": 132
+    },
+    {
+      "level": 3,
+      "element": "3021:0",
+      "page": 132
+    },
+    {
+      "level": 2,
+      "element": "3024:0",
+      "page": 133
+    },
+    {
+      "level": 2,
+      "element": "3034:0",
+      "page": 135
+    },
+    {
+      "level": 2,
+      "element": "3580:0",
+      "page": 148
+    },
+    {
+      "level": 3,
+      "element": "3582:0",
+      "page": 148
+    },
+    {
+      "level": 3,
+      "element": "3590:0",
+      "page": 149
+    },
+    {
+      "level": 4,
+      "element": "3599:0",
+      "page": 149
+    },
+    {
+      "level": 3,
+      "element": "3603:0",
+      "page": 149
+    },
+    {
+      "level": 4,
+      "element": "3613:0",
+      "page": 150
+    },
+    {
+      "level": 3,
+      "element": "3633:0",
+      "page": 151
+    },
+    {
+      "level": 3,
+      "element": "3652:0",
+      "page": 152
+    },
+    {
+      "level": 4,
+      "element": "3692:0",
+      "page": 153
+    },
+    {
+      "level": 3,
+      "element": "3696:0",
+      "page": 153
+    },
+    {
+      "level": 4,
+      "element": "3697:0",
+      "page": 153
+    },
+    {
+      "level": 4,
+      "element": "3701:0",
+      "page": 153
+    },
+    {
+      "level": 3,
+      "element": "3709:0",
+      "page": 154
+    },
+    {
+      "level": 4,
+      "element": "3711:0",
+      "page": 154
+    },
+    {
+      "level": 4,
+      "element": "3733:0",
+      "page": 154
+    },
+    {
+      "level": 3,
+      "element": "3770:0",
+      "page": 155
+    },
+    {
+      "level": 4,
+      "element": "3773:0",
+      "page": 155
+    },
+    {
+      "level": 4,
+      "element": "3778:0",
+      "page": 155
+    },
+    {
+      "level": 4,
+      "element": "3782:0",
+      "page": 156
+    },
+    {
+      "level": 4,
+      "element": "3788:0",
+      "page": 156
+    },
+    {
+      "level": 4,
+      "element": "3793:0",
+      "page": 156
+    },
+    {
+      "level": 4,
+      "element": "3798:0",
+      "page": 157
+    },
+    {
+      "level": 3,
+      "element": "3801:0",
+      "page": 157
+    },
+    {
+      "level": 3,
+      "element": "3805:0",
+      "page": 157
+    },
+    {
+      "level": 4,
+      "element": "3807:0",
+      "page": 157
+    },
+    {
+      "level": 4,
+      "element": "3809:0",
+      "page": 157
+    },
+    {
+      "level": 4,
+      "element": "3816:0",
+      "page": 158
+    },
+    {
+      "level": 4,
+      "element": "3822:0",
+      "page": 158
+    },
+    {
+      "level": 4,
+      "element": "3824:0",
+      "page": 158
+    },
+    {
+      "level": 4,
+      "element": "3832:0",
+      "page": 158
+    },
+    {
+      "level": 4,
+      "element": "3837:0",
+      "page": 159
+    },
+    {
+      "level": 4,
+      "element": "3841:0",
+      "page": 159
+    },
+    {
+      "level": 4,
+      "element": "3843:0",
+      "page": 159
+    },
+    {
+      "level": 4,
+      "element": "3849:0",
+      "page": 160
+    },
+    {
+      "level": 2,
+      "element": "3853:0",
+      "page": 161
+    },
+    {
+      "level": 3,
+      "element": "3854:0",
+      "page": 161
+    },
+    {
+      "level": 3,
+      "element": "3932:0",
+      "page": 163
+    },
+    {
+      "level": 3,
+      "element": "3948:0",
+      "page": 163
+    },
+    {
+      "level": 3,
+      "element": "3978:0",
+      "page": 164
+    },
+    {
+      "level": 3,
+      "element": "4066:0",
+      "page": 165
+    },
+    {
+      "level": 3,
+      "element": "4091:0",
+      "page": 166
+    },
+    {
+      "level": 3,
+      "element": "4113:0",
+      "page": 166
+    },
+    {
+      "level": 3,
+      "element": "4137:0",
+      "page": 167
+    },
+    {
+      "level": 3,
+      "element": "4159:0",
+      "page": 167
+    },
+    {
+      "level": 3,
+      "element": "4181:0",
+      "page": 167
+    },
+    {
+      "level": 3,
+      "element": "4201:0",
+      "page": 168
+    },
+    {
+      "level": 3,
+      "element": "4223:0",
+      "page": 168
+    },
+    {
+      "level": 4,
+      "element": "4227:0",
+      "page": 168
+    },
+    {
+      "level": 5,
+      "element": "4230:0",
+      "page": 169
+    },
+    {
+      "level": 6,
+      "element": "4237:0",
+      "page": 169
+    },
+    {
+      "level": 4,
+      "element": "4244:0",
+      "page": 169
+    },
+    {
+      "level": 4,
+      "element": "4246:0",
+      "page": 169
+    },
+    {
+      "level": 4,
+      "element": "4254:0",
+      "page": 169
+    },
+    {
+      "level": 5,
+      "element": "4256:0",
+      "page": 170
+    },
+    {
+      "level": 6,
+      "element": "4261:0",
+      "page": 170
+    },
+    {
+      "level": 5,
+      "element": "4270:0",
+      "page": 171
+    },
+    {
+      "level": 4,
+      "element": "4274:0",
+      "page": 171
+    },
+    {
+      "level": 3,
+      "element": "4306:0",
+      "page": 172
+    },
+    {
+      "level": 3,
+      "element": "4320:0",
+      "page": 172
+    },
+    {
+      "level": 3,
+      "element": "4338:0",
+      "page": 172
+    },
+    {
+      "level": 3,
+      "element": "4363:0",
+      "page": 173
+    },
+    {
+      "level": 3,
+      "element": "4384:0",
+      "page": 173
+    },
+    {
+      "level": 3,
+      "element": "4401:0",
+      "page": 173
+    },
+    {
+      "level": 3,
+      "element": "4416:0",
+      "page": 174
+    },
+    {
+      "level": 3,
+      "element": "4431:0",
+      "page": 174
+    },
+    {
+      "level": 3,
+      "element": "4445:0",
+      "page": 174
+    },
+    {
+      "level": 3,
+      "element": "4459:0",
+      "page": 174
+    },
+    {
+      "level": 3,
+      "element": "4507:0",
+      "page": 175
+    },
+    {
+      "level": 3,
+      "element": "4526:0",
+      "page": 176
+    },
+    {
+      "level": 3,
+      "element": "4570:0",
+      "page": 176
+    },
+    {
+      "level": 3,
+      "element": "4583:0",
+      "page": 177
+    },
+    {
+      "level": 3,
+      "element": "4609:0",
+      "page": 177
+    },
+    {
+      "level": 3,
+      "element": "4625:0",
+      "page": 178
+    },
+    {
+      "level": 3,
+      "element": "4673:0",
+      "page": 179
+    },
+    {
+      "level": 3,
+      "element": "4698:0",
+      "page": 179
+    },
+    {
+      "level": 3,
+      "element": "4700:0",
+      "page": 179
+    },
+    {
+      "level": 3,
+      "element": "4715:0",
+      "page": 180
+    },
+    {
+      "level": 3,
+      "element": "4718:0",
+      "page": 180
+    },
+    {
+      "level": 3,
+      "element": "4727:0",
+      "page": 180
+    },
+    {
+      "level": 3,
+      "element": "4743:0",
+      "page": 181
+    },
+    {
+      "level": 3,
+      "element": "4745:0",
+      "page": 181
+    },
+    {
+      "level": 3,
+      "element": "4750:0",
+      "page": 181
+    },
+    {
+      "level": 3,
+      "element": "4772:0",
+      "page": 182
+    },
+    {
+      "level": 3,
+      "element": "4774:0",
+      "page": 182
+    },
+    {
+      "level": 3,
+      "element": "4790:0",
+      "page": 182
+    },
+    {
+      "level": 3,
+      "element": "4799:0",
+      "page": 182
+    },
+    {
+      "level": 3,
+      "element": "4822:0",
+      "page": 183
+    },
+    {
+      "level": 3,
+      "element": "4842:0",
+      "page": 183
+    },
+    {
+      "level": 3,
+      "element": "4864:0",
+      "page": 184
+    },
+    {
+      "level": 3,
+      "element": "4885:0",
+      "page": 184
+    },
+    {
+      "level": 3,
+      "element": "4907:0",
+      "page": 184
+    },
+    {
+      "level": 3,
+      "element": "4951:0",
+      "page": 185
+    },
+    {
+      "level": 3,
+      "element": "4968:0",
+      "page": 186
+    },
+    {
+      "level": 3,
+      "element": "4982:0",
+      "page": 186
+    },
+    {
+      "level": 3,
+      "element": "5003:0",
+      "page": 186
+    },
+    {
+      "level": 3,
+      "element": "5026:0",
+      "page": 187
+    },
+    {
+      "level": 3,
+      "element": "5038:0",
+      "page": 187
+    },
+    {
+      "level": 3,
+      "element": "5061:0",
+      "page": 188
+    },
+    {
+      "level": 3,
+      "element": "5072:0",
+      "page": 188
+    },
+    {
+      "level": 3,
+      "element": "5088:0",
+      "page": 188
+    },
+    {
+      "level": 3,
+      "element": "5098:0",
+      "page": 189
+    },
+    {
+      "level": 3,
+      "element": "5112:0",
+      "page": 189
+    },
+    {
+      "level": 3,
+      "element": "5128:0",
+      "page": 189
+    },
+    {
+      "level": 3,
+      "element": "5141:0",
+      "page": 190
+    },
+    {
+      "level": 3,
+      "element": "5162:0",
+      "page": 190
+    },
+    {
+      "level": 3,
+      "element": "5183:0",
+      "page": 190
+    },
+    {
+      "level": 3,
+      "element": "5198:0",
+      "page": 191
+    },
+    {
+      "level": 3,
+      "element": "5224:0",
+      "page": 191
+    },
+    {
+      "level": 3,
+      "element": "5237:0",
+      "page": 192
+    },
+    {
+      "level": 3,
+      "element": "5246:0",
+      "page": 192
+    },
+    {
+      "level": 3,
+      "element": "5262:0",
+      "page": 192
+    },
+    {
+      "level": 3,
+      "element": "5271:0",
+      "page": 193
+    },
+    {
+      "level": 3,
+      "element": "5279:0",
+      "page": 193
+    },
+    {
+      "level": 3,
+      "element": "5288:0",
+      "page": 193
+    },
+    {
+      "level": 3,
+      "element": "5297:0",
+      "page": 193
+    },
+    {
+      "level": 3,
+      "element": "5311:0",
+      "page": 193
+    },
+    {
+      "level": 3,
+      "element": "5314:0",
+      "page": 194
+    },
+    {
+      "level": 3,
+      "element": "5323:0",
+      "page": 194
+    },
+    {
+      "level": 3,
+      "element": "5332:0",
+      "page": 194
+    },
+    {
+      "level": 3,
+      "element": "5342:0",
+      "page": 194
+    },
+    {
+      "level": 3,
+      "element": "5361:0",
+      "page": 195
+    },
+    {
+      "level": 3,
+      "element": "5400:0",
+      "page": 195
+    },
+    {
+      "level": 3,
+      "element": "5412:0",
+      "page": 196
+    },
+    {
+      "level": 3,
+      "element": "5423:0",
+      "page": 196
+    },
+    {
+      "level": 3,
+      "element": "5442:0",
+      "page": 196
+    },
+    {
+      "level": 3,
+      "element": "5461:0",
+      "page": 197
+    },
+    {
+      "level": 3,
+      "element": "5472:0",
+      "page": 197
+    },
+    {
+      "level": 3,
+      "element": "5483:0",
+      "page": 197
+    },
+    {
+      "level": 3,
+      "element": "5499:0",
+      "page": 198
+    },
+    {
+      "level": 3,
+      "element": "5510:0",
+      "page": 198
+    },
+    {
+      "level": 3,
+      "element": "5521:0",
+      "page": 198
+    },
+    {
+      "level": 3,
+      "element": "5532:0",
+      "page": 198
+    },
+    {
+      "level": 3,
+      "element": "5550:0",
+      "page": 199
+    },
+    {
+      "level": 3,
+      "element": "5566:0",
+      "page": 199
+    },
+    {
+      "level": 3,
+      "element": "5583:0",
+      "page": 200
+    },
+    {
+      "level": 3,
+      "element": "5599:0",
+      "page": 200
+    },
+    {
+      "level": 3,
+      "element": "5610:0",
+      "page": 200
+    },
+    {
+      "level": 3,
+      "element": "5621:0",
+      "page": 200
+    },
+    {
+      "level": 3,
+      "element": "5638:0",
+      "page": 201
+    },
+    {
+      "level": 3,
+      "element": "5660:0",
+      "page": 201
+    },
+    {
+      "level": 3,
+      "element": "5683:0",
+      "page": 202
+    },
+    {
+      "level": 3,
+      "element": "5699:0",
+      "page": 202
+    },
+    {
+      "level": 3,
+      "element": "5711:0",
+      "page": 202
+    },
+    {
+      "level": 3,
+      "element": "5724:0",
+      "page": 203
+    },
+    {
+      "level": 3,
+      "element": "5735:0",
+      "page": 203
+    },
+    {
+      "level": 3,
+      "element": "5753:0",
+      "page": 204
+    },
+    {
+      "level": 3,
+      "element": "5769:0",
+      "page": 204
+    },
+    {
+      "level": 3,
+      "element": "5785:0",
+      "page": 204
+    },
+    {
+      "level": 3,
+      "element": "5796:0",
+      "page": 204
+    },
+    {
+      "level": 3,
+      "element": "5813:0",
+      "page": 205
+    },
+    {
+      "level": 3,
+      "element": "5829:0",
+      "page": 205
+    },
+    {
+      "level": 3,
+      "element": "5840:0",
+      "page": 205
+    },
+    {
+      "level": 3,
+      "element": "5862:0",
+      "page": 206
+    },
+    {
+      "level": 3,
+      "element": "5887:0",
+      "page": 206
+    },
+    {
+      "level": 3,
+      "element": "5905:0",
+      "page": 207
+    },
+    {
+      "level": 3,
+      "element": "5919:0",
+      "page": 207
+    },
+    {
+      "level": 3,
+      "element": "5930:0",
+      "page": 207
+    },
+    {
+      "level": 3,
+      "element": "5948:0",
+      "page": 208
+    },
+    {
+      "level": 3,
+      "element": "5964:0",
+      "page": 208
+    },
+    {
+      "level": 3,
+      "element": "5978:0",
+      "page": 208
+    },
+    {
+      "level": 3,
+      "element": "5992:0",
+      "page": 208
+    },
+    {
+      "level": 3,
+      "element": "6004:0",
+      "page": 209
+    },
+    {
+      "level": 3,
+      "element": "6025:0",
+      "page": 209
+    },
+    {
+      "level": 3,
+      "element": "6044:0",
+      "page": 210
+    },
+    {
+      "level": 3,
+      "element": "6055:0",
+      "page": 210
+    },
+    {
+      "level": 3,
+      "element": "6066:0",
+      "page": 210
+    },
+    {
+      "level": 3,
+      "element": "6084:0",
+      "page": 211
+    },
+    {
+      "level": 3,
+      "element": "6095:0",
+      "page": 211
+    },
+    {
+      "level": 3,
+      "element": "6107:0",
+      "page": 211
+    },
+    {
+      "level": 3,
+      "element": "6120:0",
+      "page": 212
+    },
+    {
+      "level": 3,
+      "element": "6136:0",
+      "page": 212
+    },
+    {
+      "level": 3,
+      "element": "6146:0",
+      "page": 212
+    },
+    {
+      "level": 3,
+      "element": "6150:0",
+      "page": 212
+    },
+    {
+      "level": 3,
+      "element": "6165:0",
+      "page": 213
+    },
+    {
+      "level": 3,
+      "element": "6181:0",
+      "page": 213
+    },
+    {
+      "level": 3,
+      "element": "6268:0",
+      "page": 215
+    },
+    {
+      "level": 3,
+      "element": "6270:0",
+      "page": 215
+    },
+    {
+      "level": 3,
+      "element": "6281:0",
+      "page": 215
+    },
+    {
+      "level": 3,
+      "element": "6299:0",
+      "page": 216
+    },
+    {
+      "level": 3,
+      "element": "6313:0",
+      "page": 216
+    },
+    {
+      "level": 3,
+      "element": "6352:0",
+      "page": 217
+    },
+    {
+      "level": 3,
+      "element": "6368:0",
+      "page": 217
+    },
+    {
+      "level": 3,
+      "element": "6408:0",
+      "page": 218
+    },
+    {
+      "level": 3,
+      "element": "6410:0",
+      "page": 218
+    },
+    {
+      "level": 3,
+      "element": "6421:0",
+      "page": 218
+    },
+    {
+      "level": 3,
+      "element": "6430:0",
+      "page": 218
+    },
+    {
+      "level": 3,
+      "element": "6442:0",
+      "page": 219
+    },
+    {
+      "level": 3,
+      "element": "6464:0",
+      "page": 219
+    },
+    {
+      "level": 3,
+      "element": "6481:0",
+      "page": 220
+    },
+    {
+      "level": 3,
+      "element": "6517:0",
+      "page": 220
+    },
+    {
+      "level": 3,
+      "element": "6534:0",
+      "page": 221
+    },
+    {
+      "level": 3,
+      "element": "6551:0",
+      "page": 221
+    },
+    {
+      "level": 3,
+      "element": "6562:0",
+      "page": 221
+    },
+    {
+      "level": 3,
+      "element": "6603:0",
+      "page": 222
+    },
+    {
+      "level": 3,
+      "element": "6620:0",
+      "page": 223
+    },
+    {
+      "level": 3,
+      "element": "6641:0",
+      "page": 223
+    },
+    {
+      "level": 3,
+      "element": "6653:0",
+      "page": 223
+    },
+    {
+      "level": 3,
+      "element": "6675:0",
+      "page": 224
+    },
+    {
+      "level": 3,
+      "element": "6696:0",
+      "page": 224
+    },
+    {
+      "level": 3,
+      "element": "6728:0",
+      "page": 225
+    },
+    {
+      "level": 3,
+      "element": "6744:0",
+      "page": 225
+    },
+    {
+      "level": 3,
+      "element": "1415:0",
+      "page": 225
+    },
+    {
+      "level": 3,
+      "element": "1430:0",
+      "page": 226
+    },
+    {
+      "level": 3,
+      "element": "1444:0",
+      "page": 226
+    },
+    {
+      "level": 3,
+      "element": "1458:0",
+      "page": 226
+    },
+    {
+      "level": 3,
+      "element": "1469:0",
+      "page": 226
+    },
+    {
+      "level": 3,
+      "element": "1486:0",
+      "page": 227
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "1869:0",
+      "role": "Figure",
+      "page": 19,
+      "alt": "Figure 1.1 An example ConstraintJS application that uses the Facebook API to retrieve a list of a user’s \nfriends and subsequently a picture for every friend. While the list of friends is loading, the \nmessage “Loading friends…” is shown. After the list of friends has loaded, this interface \ndisplays the name of every friend next to their picture. While any user’s picture is loading, a \nspinning loading icon is displayed next to their name.",
+      "actual_text": ""
+    },
+    {
+      "element": "1881:0",
+      "role": "Figure",
+      "page": 21,
+      "alt": "InterState drag-lock editor. The no_drag state enters drag on mouse down and drag returns on mouse up. A double-click enters drag_lock; a single click exits it. In drag and drag_lock, x and y follow mouse coordinates. Fill changes from black in no_drag to blue in drag and navy in drag_lock. Rows are properties and columns give values for each state or transition.",
+      "actual_text": ""
+    },
+    {
+      "element": "2086:0",
+      "role": "Figure",
+      "page": 42,
+      "alt": "Figure 3.1 The target application for the motivating example. An asynchronous Facebook API call \nreturns a list of friends. While the list of friends is loading, “Loading Friends…” appears on \nscreen. After the list of friends has loaded, the profile picture of each friend is then \nindependently requested. While the application is waiting for the Facebook API to return a \npicture URL for a friend, a loading image is displayed.",
+      "actual_text": ""
+    },
+    {
+      "element": "2136:0",
+      "role": "Figure",
+      "page": 48,
+      "alt": "Three interaction states for two blocks A and B. With no hover, both blocks are black. Hovering over B makes A yellow; hovering over A makes B yellow. A two-state finite-state machine at right begins in idle, enters myhover on mouseover, and returns to idle on mouseout.",
+      "actual_text": ""
+    },
+    {
+      "element": "2157:0",
+      "role": "Figure",
+      "page": 50,
+      "alt": "State machine for an asynchronous value: Pending transitions to Resolved when loading succeeds and Rejected on error. A refresh event from either Resolved or Rejected returns to Pending to begin another request.",
+      "actual_text": ""
+    },
+    {
+      "element": "2195:0",
+      "role": "Figure",
+      "page": 53,
+      "alt": "jQuery UI horizontal slider displaying the current value 59, with a draggable thumb on its track. A constraint variable reads the widget value and is invalidated when the slider changes.",
+      "actual_text": ""
+    },
+    {
+      "element": "2207:0",
+      "role": "Figure",
+      "page": 54,
+      "alt": "Figure 3.7 A color selector that uses constraint variables to automatically update the preview color and \nhex value text. A constraint variable tracks the values for each of the red, green, and blue \nsliders (r, g, and b respectively). A fourth constraint variable (hex) computes a hex color \nvalue. Finally, constraints update the background color and text of the color selector to \nreflect the slider values.",
+      "actual_text": ""
+    },
+    {
+      "element": "2279:0",
+      "role": "Figure",
+      "page": 59,
+      "alt": "Bubble cursor demonstration in two panels. Several light-gray circular targets surround a dotted circular cursor area. In panel A the cursor is away from every target, so its dotted halo is gray. In panel B the cursor intersects a target: the target becomes dark gray and the halo turns red. Constraints implement the cursor radius and target highlighting.",
+      "actual_text": ""
+    },
+    {
+      "element": "2290:0",
+      "role": "Figure",
+      "page": 60,
+      "alt": "Figure 3.9 A scatterplot application implemented with ConstraintJS. By default, constraints set the \nposition of every data point to reflect the values of an underlying data model (A). When a \npoint is dragged (B), a constraint in the opposite direction updates the underlying data model \nbased on the position of the point, which in turn, is constrained to the mouse’s position. The \naxes may also be dragged (C) and constraints automatically update the axis labels to reflect \nits position. Finally, axes’ scales may be changed (D) by dragging a point while holding \nSHIFT. This example illustrates how one-way constraints in ConstraintJS may be combined \nwith FSMs to enable functionality that was previously only possible with multi-way \nconstraints.",
+      "actual_text": ""
+    },
+    {
+      "element": "2298:0",
+      "role": "Figure",
+      "page": 61,
+      "alt": "Figure 3.10 An illustration of a touchscreen-based application written with ConstraintJS. Constraints \ncontrol the position, scale, and angle of photos, which users can manipulate with one or two \nfingers. When two fingers touch a photo, a red slider appears that controls the photo’s \nopacity and can be changed using a third finger. Constraints set the position and text of the \nslider.",
+      "actual_text": ""
+    },
+    {
+      "element": "2342:0",
+      "role": "Figure",
+      "page": 67,
+      "alt": "InterState draggable object. Its state columns are no_drag, drag and drag_lock. Pressing the mouse on the object enters drag; releasing returns to no_drag. Double-clicking toggles drag_lock, where the object follows the mouse without holding the button. The x and y property rows are constrained to mouse coordinates during dragging and drag lock, while no_drag preserves their position.",
+      "actual_text": ""
+    },
+    {
+      "element": "2354:0",
+      "role": "Figure",
+      "page": 69,
+      "alt": "Revised InterState drag-lock object. An Escape-key transition and a single-click transition leave drag_lock; mouse-down and mouse-up retain ordinary dragging. The added fill property is black in no_drag, blue in drag and navy in drag_lock, providing visible state feedback.",
+      "actual_text": ""
+    },
+    {
+      "element": "2380:0",
+      "role": "Figure",
+      "page": 72,
+      "alt": "Two InterState objects transition from noclick to clicked on mouse.click(). In obj1, x is 1 in noclick,2 during the transition, and 3 in clicked. obj2 sets x from obj1.x during the same transition, obtaining 2; that value remains 2 after obj1 reaches 3. The example illustrates simultaneous transition evaluation.",
+      "actual_text": ""
+    },
+    {
+      "element": "2408:0",
+      "role": "Figure",
+      "page": 75,
+      "alt": "Radio-button state-space example. At left, Cats is selected and outlined for keyboard focus; Dogs, Squirrels and Llamas are unselected. At right, an illustrated table separates three independent dimensions: selection (not selected or selected), keyboard focus (not focused or focused), and mouse state (idle, hover, pressed or pressed out). Their combinations yield 2 times 2 times 4, or 16 possible states.",
+      "actual_text": ""
+    },
+    {
+      "element": "2434:0",
+      "role": "Figure",
+      "page": 78,
+      "alt": "Figure 4.7 A preliminary version of InterState (then called Euclase). This version contains the basic \nobject layout (states as columns and properties as rows). However, this version of Euclase \ndoes not differentiate between states and events. The state of an object is the last event that \noccurred on that object. Every object also has a draw field that specifies, in JavaScript \ncanvas code, how it should be drawn (typically referencing other fields), as described in \nsection 4.4.5. This example also utilizes the defunct KEEPVALUE primitive, described in \nsection 4.4.1. Empty cell values are KEEP by default (greyed out in the figure); an idea that \nwas maintained through the current version of InterState by replacing the “KEEP” keyword \nwith a circle.",
+      "actual_text": ""
+    },
+    {
+      "element": "2439:0",
+      "role": "Figure",
+      "page": 79,
+      "alt": "Early InterState state-machine design with trapezoidal state boxes. Transitions are drawn between points along the sloped lower edges, and event conditions are written on the connecting arrows. Adjacent state boxes consume substantial horizontal space.",
+      "actual_text": ""
+    },
+    {
+      "element": "2444:0",
+      "role": "Figure",
+      "page": 79,
+      "alt": "Optimized InterState state-machine layout for my_behavior. Top-level states are inactive and active; active contains out and hover, connected by mouse.over and mouse.out transitions. active.out is narrower because it defines no property value; active.hover has x=true while inactive has x=false. Columns are reserved for transition starting points and defined values to save horizontal space. The current inactive state and value are outlined green.",
+      "actual_text": ""
+    },
+    {
+      "element": "2452:0",
+      "role": "Figure",
+      "page": 80,
+      "alt": "Breakout ball state machine with two main states, in_play and dead. Several collision events loop within in_play for the paddle, walls and blocks. A bottom collision ends play, and gameReset starts a new run. The many events around few states make this diagram wide, illustrating a layout limitation.",
+      "actual_text": ""
+    },
+    {
+      "element": "2459:0",
+      "role": "Figure",
+      "page": 81,
+      "alt": "Figure 4.11 The InterState editor shows one object at a time (in this case, myShape) and the fields and \ncurrent values of every parent object in the containment hierarchy (in this case, sketch and \npaper). The editor also allows developers to pin objects to the screen by dragging them to \nthe bottom of the window.",
+      "actual_text": ""
+    },
+    {
+      "element": "2465:0",
+      "role": "Figure",
+      "page": 82,
+      "alt": "Early Euclase editor using a tree of objects. Multiple expanded object tables and state machines are linked diagonally across the page, with highlighted property cells. The simultaneous display of parent and child objects creates the clutter that motivated the later one-object-at-a-time view.",
+      "actual_text": ""
+    },
+    {
+      "element": "2474:0",
+      "role": "Figure",
+      "page": 83,
+      "alt": "InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes \nare simply specified in the prototypes property. Here, my_square inherits from square. \nBecause my_square does not define a value for height, it inherits the definition of \nsquare.height, as indicated by the greyed out text in the columns on the right. Note that \nmy_square inherits the definition of height, not the value. Thus, the width property of \nmy_square evaluates to a different value (20) than the width of square (15).",
+      "actual_text": ""
+    },
+    {
+      "element": "2483:0",
+      "role": "Figure",
+      "page": 84,
+      "alt": "my_selectable_draggable combines the selectable and draggable state machines. The fill property inherits blue for selection and black/red for the dragging states. The combined object retains both sets of states and inherits x/y values that follow the mouse while dragging. When definitions conflict, the leftmost prototype takes precedence, as explained in the surrounding text.",
+      "actual_text": ""
+    },
+    {
+      "element": "2491:0",
+      "role": "Figure",
+      "page": 85,
+      "alt": "Figure 4.15 An object with multiple copies; copies is set to ['Jane', 'Sue']. Every copy has two \nproperties: my_copy, which is set to that copy's item (here, either 'Jane' or 'Sue') and \ncopy_num, which is set to that copy's index. Here, we are looking at the first copy (index 0).",
+      "actual_text": ""
+    },
+    {
+      "element": "2495:0",
+      "role": "Figure",
+      "page": 86,
+      "alt": "Figure 4.16 Two InterState objects (favs_panel and color_disp) that create a dynamically changing \ndisplay for a dynamic list of favorite colors. Annotations are in gold boxes. This code stores a \nlist of favorites under favs_panel.favorites. When a user clicks on any color  \n(represented favs_panel’s transition diagram as mouse.click(color), that color is added \nto the list of favorites (by setting favorites to favorites.push(color) in the color click \ntransition). Because color_disp’s copies field is set to favorites, new copies of \ncolor_disp are added and removed as favorites changes, automatically adding and \nremoving visual elements from the screen.",
+      "actual_text": ""
+    },
+    {
+      "element": "2531:0",
+      "role": "Figure",
+      "page": 89,
+      "alt": "InterState displays a red error for x=other_shape.x+5. The tooltip reads Could not find field other_shape, and the evaluated value is undefined. Dependent values also become undefined while the rest of the program continues running.",
+      "actual_text": ""
+    },
+    {
+      "element": "2583:0",
+      "role": "Figure",
+      "page": 91,
+      "alt": "Task completion time, with means and standard-deviation error bars for 20 participants. Drag lock: JavaScript 19.3 minutes, SD 13.6; InterState 8.0 minutes, SD 6.8. Image carousel: JavaScript 28.3 minutes, SD 7.6; InterState 14.7 minutes, SD 5.5. InterState takes about half the time on both tasks; the surrounding text reports p less than .05 and p less than .01, respectively.",
+      "actual_text": ""
+    },
+    {
+      "element": "2615:0",
+      "role": "Figure",
+      "page": 93,
+      "alt": "Three benchmark plots of update delay in milliseconds as object complexity grows. A gray band marks delays above 100 milliseconds as non-instantaneous. The yellow prototype-chain curve reaches this threshold at N equals 58; the blue number-of-prototypes curve at about 2,400; and the green number-of-children curve at about 1,200. Delay generally rises with complexity.",
+      "actual_text": ""
+    },
+    {
+      "element": "2707:0",
+      "role": "Figure",
+      "page": 98,
+      "alt": "Figure 4.20 A representation of the basic object structure for the objects shown in Figure 4.13. The basic \nobject tree is a mutable tree that gets modified when the developer performs an edit on their \nprogram. This model contains three objects (sketch, square, and my_square) and five cells \n(sq_protos, sq_width, sq_height, mysq_protos, and mysq_width). Note there is no field \nfor my_square.height, the inherited field that only exists in the contextual object tree shown \nin Figure 4.21. There is also no slot for values, which are computed in the contextual object \ntree because the value of a given variable depends on its computation context. This model \nmakes two simplifying assumptions. First, it omits the state machines of square and \nmy_square (which would each have one start state). Second, it gives human-readable names \nto objects (sq_protos, sq_width, etc.) whereas in the InterState runtime, objects’ names \nonly exist in their container object’s field name.",
+      "actual_text": ""
+    },
+    {
+      "element": "2711:0",
+      "role": "Figure",
+      "page": 98,
+      "alt": "Contextual object tree corresponding to the basic tree above. The root contextual dictionary c_sketch has square and my_square children. Every contextual dictionary and cell references its underlying basic object and a context path, and cells additionally contain computed values. The inherited my_square.height exists here even though the basic my_square object defines no height cell. Changing a basic definition updates the contextual values that depend on it.",
+      "actual_text": ""
+    },
+    {
+      "element": "2788:0",
+      "role": "Figure",
+      "page": 107,
+      "alt": "Figure 5.1  A state machine showing the various states of an event with priority p. Every event can be in \nthree states: idle, pending fire, and pending block. By default, every event is in the idle state. \nWhen the event requests to fire (a), through the fire method, it enters the pending fire state. \nAfter enough time (specified by the timeout parameter) or if the event has no timeout\nparameter, then the event’s firing is confirmed (b). If the event firing is cancelled (through the \ncancel method) before the timeout interval passes, then the event is cancelled (c). If another \nevent in the same group with higher priority is requested before the timeout interval passes, \nthen the event moves to the pending block stage (g). If all of the events with a higher priority \nare cancelled, then the event will return to the pending fire state (f). If any other event with a \nhigher priority fires, then the event is blocked (d). If another event is still pending fire when \nthe event’s timeout interval passes, then the event is also blocked (e).",
+      "actual_text": ""
+    },
+    {
+      "element": "2843:0",
+      "role": "Figure",
+      "page": 115,
+      "alt": "Figure 6.1 The default, “non-greedy” behavior for touch clusters is that every touch cluster can claim \nthe same fingers. For instance, suppose a developer defines one three-finger touch cluster \nand three one-finger touch clusters across different elements in an interface. With non-\ngreedy behavior, when the user presses three fingers down, all four touch cluster activation \nevents would fire.",
+      "actual_text": ""
+    },
+    {
+      "element": "2846:0",
+      "role": "Figure",
+      "page": 115,
+      "alt": "Figure 6.2 Like in Figure 6.1, here the developer has defined one three-finger touch cluster and three \none-finger touch clusters. However, the developer has specified that the three-finger touch \ncluster should be “greedy”, so that other touch clusters should not fire with any of the \ntouches used. In this case, when the user presses three fingers down, only the three-finger \ntouch cluster will fire.",
+      "actual_text": ""
+    },
+    {
+      "element": "2908:0",
+      "role": "Figure",
+      "page": 119,
+      "alt": "Figure 6.3 In most multi-touch devices, when a user taps a numeric input field, a numeric keypad is \ninvoked. In this example, I augment that interaction to allow a user’s finger to also “nudge” \nthe numeric slider left or right to select a number slightly lower or higher than the current \nvalue. Implemented with InterState’s touch extensions, this example uses path crossing \nevents to determine if the user’s finger is moving horizontally or tapping the widget.",
+      "actual_text": ""
+    },
+    {
+      "element": "2913:0",
+      "role": "Figure",
+      "page": 120,
+      "alt": "InterState numerical-slider definition with init, fingerDown, and slidingMode states. A touch starts tracking; crossEvent enters slidingMode. A timeout(100) self-transition repeatedly updates the numerical value during a sustained slide, and releasing the touch returns to init. Rows define the slider's position, offset, crossing event, value, and displayed value text.",
+      "actual_text": ""
+    },
+    {
+      "element": "2917:0",
+      "role": "Figure",
+      "page": 120,
+      "alt": "Figure 6.4, initial drawing canvas: overlapping multicolored brush strokes appear on a white canvas, with the controls hidden below the screen.",
+      "actual_text": ""
+    },
+    {
+      "element": "2918:0",
+      "role": "Figure",
+      "page": 120,
+      "alt": "Figure 6.4, one-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of brush and pen choices.",
+      "actual_text": ""
+    },
+    {
+      "element": "2919:0",
+      "role": "Figure",
+      "page": 120,
+      "alt": "Figure 6.4, two-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of colored swatches for selecting the drawing color.",
+      "actual_text": ""
+    },
+    {
+      "element": "2924:0",
+      "role": "Figure",
+      "page": 121,
+      "alt": "InterState oneFinger touch-event definition. numFingers is 1, downInside restricts the gesture's starting area, and delay is 100 milliseconds so a second finger can be detected before the one-finger event fires.",
+      "actual_text": ""
+    },
+    {
+      "element": "2925:0",
+      "role": "Figure",
+      "page": 121,
+      "alt": "InterState twoFingers touch-event definition. numFingers is 2, greedy is true, and downInside restricts the gesture's starting area. The greedy two-finger event prevents both the one-finger and two-finger actions from firing together.",
+      "actual_text": ""
+    },
+    {
+      "element": "2927:0",
+      "role": "Figure",
+      "page": 121,
+      "alt": "InterState brushesPanel definition. Its state machine contains hidden, dragging, and showing states, with tHide and tShow substates inside dragging. The oneFinger event controls dragging and release transitions. The x, y, width, and height constraint rows position the panel, make it follow the finger, and determine whether it remains docked or hides.",
+      "actual_text": ""
+    },
+    {
+      "element": "2932:0",
+      "role": "Figure",
+      "page": 122,
+      "alt": "Figure 6.5 This example represents an undo/redo (or more generally, back/forward) mechanism for \ntablet applications. The user first presses down two fingers (in the diagram shown, the index \nand ring fingers) and presses a third to the left to undo or a third finger to the right to redo. \nTo prevent conflicts with panning and scrolling gestures, this undo/redo gesture also cancels \nif the two finger centroid moves or scales past a low threshold.",
+      "actual_text": ""
+    },
+    {
+      "element": "2935:0",
+      "role": "Figure",
+      "page": 122,
+      "alt": "Touch regions for the undo/redo gesture. Two central fingers establish an anchor. A dashed red rectangle extends to the left of that anchor and a dashed blue rectangle to the right. Pressing a third finger inside the left region requests undo; pressing inside the right region requests redo. The regions move relative to the two-finger touch cluster.",
+      "actual_text": ""
+    },
+    {
+      "element": "3638:0",
+      "role": "Figure",
+      "page": 151,
+      "alt": "Dependency diagram with an arrow from x on the right to y on the left. The definition y equals x plus 1 makes y depend on x.",
+      "actual_text": ""
+    },
+    {
+      "element": "3643:0",
+      "role": "Figure",
+      "page": 151,
+      "alt": "After x changes, the same dependency arrow points from x to y. The y node is colored red and explicitly labeled invalid, indicating that its cached value must be recomputed when requested.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {
+    "warning:page_has_no_semantic_text": 1
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "page_has_no_semantic_text",
+      "message": "Page has no semantic text; verify that its text consists only of page numbers, running headers, or other artifacts. Uncovered text remains a separate error.",
+      "page": 147,
+      "artifact_operations": 35,
+      "uncovered_operations": 0
+    }
+  ],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

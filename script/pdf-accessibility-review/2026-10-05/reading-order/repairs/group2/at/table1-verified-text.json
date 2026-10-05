@@ -1,0 +1,62 @@
+[
+  [
+    "Category",
+    "N",
+    "Description",
+    "Example"
+  ],
+  [
+    "Process",
+    "2115 (58.65%)",
+    "The Markdown cell describes what the following code cell is doing. This always appears before the relevant code cell.",
+    "Transforming Feature X to a new binary variable"
+  ],
+  [
+    "Headline",
+    "1167 (32.36%)",
+    "The Markdown cell contains a headline in Markdown syntax. The cell is used for navigation purposes or marking the structure of the notebook. It may be relevant to a nearby code cell.",
+    "# Blending Models"
+  ],
+  [
+    "Result",
+    "692 (19.19%)",
+    "The Markdown cell explains the output. This type always appears after the relevant code cell.",
+    "It turns out there is a long tail of outlying properties..."
+  ],
+  [
+    "Education",
+    "414 (11.48%)",
+    "The Markdown cell provides a rich content as an educational tutorial, but may not be relevant to a specific code cell.",
+    "Multicollinearity increases the standard errors of the coefficients."
+  ],
+  [
+    "Reason",
+    "227 (6.30%)",
+    "The Markdown cell explains the reasons why certain functions are used or why a task is performed. This may appear before or after the relevant code cell.",
+    "We do this manually, because ML models won't be able to reliably tell the differences."
+  ],
+  [
+    "Todo",
+    "202 (5.60%)",
+    "The Markdown cell describes a list of actions for future implementations. This normally is not relevant to a specific code cell.",
+    "1. Apply models 2. Get cross validation scores 3. Calculate the mean"
+  ],
+  [
+    "Reference",
+    "200 (5.55%)",
+    "The Markdown cell contains an external reference. This is also relevant to the adjacent code cell.",
+    "Gradient Boosting Regression Refer [here](https://...)"
+  ],
+  [
+    "Meta-Information",
+    "141 (3.91%)",
+    "The Markdown cell contains meta-information such as project overview, author’s information, and a link to the data sources. This often is not relevant to a specific code.",
+    "The purpose of this notebook is to build a model with Tensorflow."
+  ],
+  [
+    "Summary",
+    "51 (1.41%)",
+    "The Markdown cell summarizes what has been done so far for a section or a series of steps. This often is not relevant to a specific code.",
+    "**In summary** By EDA we found a strong impact of features like Age, Embarked.."
+  ]
+]

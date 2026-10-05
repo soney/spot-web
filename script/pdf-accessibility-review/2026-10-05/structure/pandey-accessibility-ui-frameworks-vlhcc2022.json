@@ -1,0 +1,219 @@
+{
+  "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+  "pdf_sha256": "b741a025116ccdf25d639eb23e3f56538fc0f3608d43e030013cc2b262416e9f",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments",
+  "structure_elements": 813,
+  "roles": {
+    "Document": 1,
+    "H1": 1,
+    "P": 229,
+    "Sub": 8,
+    "Span": 185,
+    "Reference": 29,
+    "Note": 2,
+    "H2": 7,
+    "L": 2,
+    "LI": 54,
+    "Lbl": 54,
+    "LBody": 54,
+    "H3": 11,
+    "Table": 1,
+    "THead": 1,
+    "TR": 19,
+    "TH": 25,
+    "TBody": 1,
+    "TD": 108,
+    "Div": 9,
+    "Sect": 6,
+    "H4": 6
+  },
+  "structure_content_references": 8554,
+  "parent_tree_entries": 10,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 743
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 943
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 582,
+      "vector_operations_artifact": 20
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 920
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 951
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 932
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 1023
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 913
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 1137
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 410,
+      "vector_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "66:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "80:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "96:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "99:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "103:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "109:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "112:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "404:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "408:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "411:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "414:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "444:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "914:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "915:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "916:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "503:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "917:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "918:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "919:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "573:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "575:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "578:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "582:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "591:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "594:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

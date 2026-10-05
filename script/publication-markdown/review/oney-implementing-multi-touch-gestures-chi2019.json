@@ -2,9 +2,9 @@
   "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
   "title": "Implementing Multi-Touch Gestures with Touch Groups and Cross Events",
   "publication_id": "implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019",
-  "pdf_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+  "pdf_sha256": "6b9444548830a34e98df1b764480f1ecf01dd4e0f166bbb49d3645ead6e185a4",
   "markdown": "publications/oney-implementing-multi-touch-gestures-chi2019.md",
-  "markdown_sha256": "9cf156828b787de26c0307a13688d434fa0680bc10b134bdf38f0fbd022e463b",
+  "markdown_sha256": "0ef555dedb53511cf8ad05444397af878d5bbd7471862b9656fb0c9639aa6678",
   "pages": 12,
   "blocks": [
     {
@@ -128,20 +128,12 @@
       "characters": 366
     },
     {
-      "node": "159:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 89
-    },
-    {
       "node": "160:0",
       "role": "Figure",
       "pages": [
         1
       ],
-      "characters": 482
+      "characters": 394
     },
     {
       "node": "161:0",
@@ -150,6 +142,14 @@
         1
       ],
       "characters": 400
+    },
+    {
+      "node": "159:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 89
     },
     {
       "node": "162:0",
@@ -184,7 +184,7 @@
       "characters": 40
     },
     {
-      "node": "joined-166:0",
+      "node": "166:0",
       "role": "P",
       "pages": [
         1,
@@ -249,12 +249,12 @@
       "characters": 285
     },
     {
-      "node": "joined-341:0",
+      "node": "342:0",
       "role": "P",
       "pages": [
         2
       ],
-      "characters": 140
+      "characters": 86
     },
     {
       "node": "343:0",
@@ -531,7 +531,7 @@
       "characters": 46
     },
     {
-      "node": "joined-389:0",
+      "node": "389:0",
       "role": "P",
       "pages": [
         4,
@@ -620,7 +620,7 @@
       "characters": 27
     },
     {
-      "node": "joined-406:0",
+      "node": "406:0",
       "role": "P",
       "pages": [
         5,
@@ -669,7 +669,7 @@
       "characters": 35
     },
     {
-      "node": "joined-418:0",
+      "node": "418:0",
       "role": "P",
       "pages": [
         6
@@ -736,9 +736,10 @@
       "node": "429:0",
       "role": "L",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 438
+      "characters": 543
     },
     {
       "node": "439:0",
@@ -746,7 +747,7 @@
       "pages": [
         7
       ],
-      "characters": 596
+      "characters": 570
     },
     {
       "node": "440:0",
@@ -762,10 +763,10 @@
       "pages": [
         7
       ],
-      "characters": 639
+      "characters": 552
     },
     {
-      "node": "joined-450:0",
+      "node": "450:0",
       "role": "P",
       "pages": [
         7
@@ -778,7 +779,7 @@
       "pages": [
         7
       ],
-      "characters": 818
+      "characters": 537
     },
     {
       "node": "452:0",
@@ -990,20 +991,12 @@
       "characters": 29
     },
     {
-      "node": "634:0",
-      "role": "P",
-      "pages": [
-        9
-      ],
-      "characters": 491
-    },
-    {
       "node": "635:0",
       "role": "Figure",
       "pages": [
         9
       ],
-      "characters": 379
+      "characters": 428
     },
     {
       "node": "636:0",
@@ -1012,6 +1005,14 @@
         9
       ],
       "characters": 297
+    },
+    {
+      "node": "634:0",
+      "role": "P",
+      "pages": [
+        9
+      ],
+      "characters": 491
     },
     {
       "node": "637:0",
@@ -1049,9 +1050,10 @@
       "node": "650:0",
       "role": "P",
       "pages": [
-        9
+        9,
+        10
       ],
-      "characters": 287
+      "characters": 445
     },
     {
       "node": "654:0",
@@ -1068,14 +1070,6 @@
         10
       ],
       "characters": 460
-    },
-    {
-      "node": "656:0",
-      "role": "P",
-      "pages": [
-        10
-      ],
-      "characters": 157
     },
     {
       "node": "657:0",
@@ -1118,7 +1112,7 @@
       "characters": 27
     },
     {
-      "node": "joined-662:0",
+      "node": "662:0",
       "role": "P",
       "pages": [
         10
@@ -1230,7 +1224,7 @@
       "characters": 26
     },
     {
-      "node": "joined-680:0",
+      "node": "680:0",
       "role": "P",
       "pages": [
         11
@@ -1326,7 +1320,7 @@
       "characters": 2753
     }
   ],
-  "tagged_content_items": 3810,
+  "tagged_content_items": 3801,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1341,7 +1335,7 @@
       ],
       "sha256": "6ca8a3c33e610de553322dfc4aad7e6f6155ec7e50d1e2cf2006eac069f3874e",
       "kind": "figure",
-      "alt": "Figure 1: An illustration of a two-finger swipe-right gesture implemented with touch groups and cross events. Touch groups summarize properties of groups of touch events that move in synchrony. Cross events fire when a touch group crosses a given path. In this gesture, a 'twoFin-gerRightSwipe' event fires after a two-finger touch group crosses a path 10 pixels to the right of where the touch group"
+      "alt": "Figure 1. A two-finger touch group moves right from its starting position. Its center crosses a vertical dashed path at touchGroup.startX + 10 pixels, triggering a cross event that emits twoFingerRightSwipe. The diagram contrasts the dashed starting hand with the solid current hand and marks the crossing point."
     },
     {
       "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-002-p005.png",
@@ -1411,7 +1405,7 @@
       ],
       "sha256": "6379df1209757ae759ecbc7d9081e331dfa3dd2cf999a43250299c073e4da5f4",
       "kind": "figure",
-      "alt": "Figure 6: Participants were given the code for a multi-touch behavior. In this example, the code implements a “tap” gesture. To gauge their understanding of the code, they were asked to select which behavior that code implemented, from the four choices at the bottom. Participants were given ten behaviors in one implementation (either touch* or touch groups/cross events) and then ten using the other implementation. We randomized the implemented behaviors, multiple choice options, and multiple-choice ordering."
+      "alt": "Figure 6. A tap recognizer written with low-level touch events. touchstart stores the first changed touch, its identifier and starting coordinates, marks it valid, and starts a 500-millisecond timeout that invalidates it. touchmove invalidates the tap if movement exceeds 40 pixels. touchend fires only if the touch is still valid and has the stored identifier, clearing the timeout. The four answer choices below are two-finger swipe up, tap, two-finger tap, and three-finger swipe down."
     },
     {
       "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-007-p007.png",
@@ -1425,7 +1419,7 @@
       ],
       "sha256": "63e6057f862009bc521f0fc6f5a1b4e776d79625d405f41b2ce2497fcd062d00",
       "kind": "figure",
-      "alt": "Figure 7: The same (“tap”) behavior as Figure 6, implemented with cross events touch groups. In addition to being more concise than the touch* implementation of the same gesture, many modifications to this gesture that would require significant changes to the touch* implementation are straightforward. For example, changing this gesture from a one-finger tap to a two-finger tap requires significant changes to the touch* implementation but is a one-line change in the touch group/cross event implementation (updating the second line to numFingers: 2). Using correctness in this task as a measure of understanding, participants were better able to understand code written with touch groups and cross events than with touch* events."
+      "alt": "Figure 7. The same tap recognizer expressed with a greedy one-finger TouchGroup and a circular cross-event path of radius 40 around its starting location. When the group is satisfied, it becomes valid and a 500-millisecond timeout begins; crossing the circle invalidates it; when the group is unsatisfied, it fires only if still valid. Changing numFingers from 1 to 2 changes the recognizer to a two-finger tap. Four gesture choices appear below the code."
     },
     {
       "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-008-p009.png",
@@ -1439,7 +1433,7 @@
       ],
       "sha256": "73e81fbd3363affce612af7feddb912c99c99dd90c10d08408ce290c19530cc5",
       "kind": "figure",
-      "alt": "Figure 8: An example of the UI for defining behaviors in the GUI / touch group + cross event condition via a state machine. The black dot symbolizes the start state. Small light squares symbolize states. The larger grey squares specify transition events (e.g., cross events or touch group events)."
+      "alt": "Figure 8. A graphical state-machine editor. A black starting dot leads to the initial state. Transition boxes connect small state squares and select touch-group Start or End events or a Cross event using path_1. One branch continues through a timeout event set to 2000 to a checked final state. The boxes expose event choices within the diagram."
     },
     {
       "path": "figures/oney-implementing-multi-touch-gestures-chi2019/figure-009-p010.png",
@@ -1539,13 +1533,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 339,
-    "line_wrap_hyphens_retained": 49,
-    "paragraph_fragments_joined": 14,
-    "reviewed_wrap_repairs": 6,
+    "line_wrap_hyphens_removed": 316,
+    "line_wrap_hyphens_retained": 44,
+    "paragraph_fragments_joined": 6,
+    "reviewed_wrap_repairs": 5,
     "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-implementing-multi-touch-gestures-chi2019.json.gz",
-  "source_tags_sha256": "56c0c66929fd653a61c221f883c77e4787e4e2c7713e3c1941304933a0d74ec5"
+  "source_tags_sha256": "ba81afcb37b16404a25b0ebd60e4879b131f9eb80b6357da8809bc8b7a9f5dc4"
 }

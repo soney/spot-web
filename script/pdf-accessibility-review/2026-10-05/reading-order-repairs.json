@@ -1,0 +1,34 @@
+[
+  {
+    "file": "oney-constraintjs-uist2012.pdf",
+    "before_sha256": "149832d19fc0515a53a690201e885f310071a0dcf4eca4017c29178a8fd99576",
+    "after_sha256": "2c4d3fea0b59e917ce3be821409a177f588211b867c0620a3fe0c9595bd55a27",
+    "changes": [
+      {
+        "kind": "reading_order",
+        "page": 1,
+        "parent": "168:0",
+        "description": "Move Figure171 after author and affiliation nodes172 and173."
+      }
+    ]
+  },
+  {
+    "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+    "before_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+    "after_sha256": "0ecd58b2101aefb1a4aac2269d5360055eb619f0c9a4d21245f7bc5600d955b8",
+    "changes": [
+      {
+        "kind": "separate_notice",
+        "page": 1,
+        "paragraph": "373:0",
+        "note": "571:0",
+        "mcids": [
+          632,
+          633,
+          634
+        ],
+        "description": "Move copyright from introduction paragraph to a Note before the introduction."
+      }
+    ]
+  }
+]

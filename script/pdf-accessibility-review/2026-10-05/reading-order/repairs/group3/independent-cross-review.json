@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-05",
+  "reviewer": "fix_order_3",
+  "scope": {
+    "documents_scanned": 43,
+    "pages": 513,
+    "method": "Built expanded native/archive reading streams for 43 Group 1/Group 2 documents; scanned all for interrupted prose blocks, examined returned transition candidates and selected footnote-adjacent paragraphs; inspected reported ActualText/code/math changes. Then prioritized concrete PDF/UA role failures and source-confirmed PuzzleMe footnote repair as requested.",
+    "limit": "This supplemental pass did not re-read all 43 documents in full or independently revalidate every mathematical transcription against rendered pages. It does not replace each group's own source/semantic review or screen-reader checks."
+  },
+  "findings": [
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "finding": "Footnote marker 1 preceded their coding style instead of following online lecture; note intervened between list introduction and contributions list.",
+      "status": "Repaired natively and in archive; source verified visually on page 2.",
+      "evidence": "puzzleme-footnote.json"
+    },
+    {
+      "file": "pandita-inferring-method-specifications-icse2012.pdf",
+      "finding": "Note directly inside L violates role hierarchy.",
+      "status": "Moved note after list with exact reading sequence unchanged.",
+      "evidence": "role-fixes.json"
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "finding": "Three Notes directly inside L violate role hierarchy.",
+      "status": "Nested notes at end of related LBody text, exact flattened reading sequence unchanged.",
+      "evidence": "role-fixes.json"
+    },
+    {
+      "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+      "finding": "Six inline circle alternatives were followed by a second spoken copy of their printed digit.",
+      "status": "Moved pure numeral MCIDs into corresponding Figure scopes; native inline positions and Alt retained.",
+      "evidence": "crowdgui-circles.json"
+    }
+  ],
+  "files": [
+    {
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "final_sha256": "236de6f394a11aa6f66b77192dd845dd2072583c2f7d77221346f53c3d00efa3"
+    },
+    {
+      "file": "wang-colaroid-chi2023.pdf",
+      "final_sha256": "835cd7c69e773dc7425e49c835e0100d7538ad223f8db0d7e7bb6fd77566ea01"
+    },
+    {
+      "file": "zhang-editrail-uist2026.pdf",
+      "final_sha256": "f6147ca58cabd939fb4fb223516ef852f4c12d121e315415b3a013303c1aafa7"
+    },
+    {
+      "file": "zhang-vizprog-chi2023.pdf",
+      "final_sha256": "664ee9ad9b1edea891ba04fad268fa2f9d081f4d637d74a256fa302b89087f62"
+    },
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "final_sha256": "b857a6f581cbd7392b18461cab411bae633db04e91ca96c035f40f2d928c2807"
+    },
+    {
+      "file": "pandey-ui-development-experiences-edi2024.pdf",
+      "final_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8"
+    },
+    {
+      "file": "chen-providing-on-demand-expert-chi2016.pdf",
+      "final_sha256": "47aab2505a3810cd197b3f481e4c260dcbeaccc47cd194649f2b16d221a27dee"
+    },
+    {
+      "file": "zhang-convomap-vlhcc2025.pdf",
+      "final_sha256": "2b8156929f2f507cb41009b55eba8615e0cfb95ef92777cb27131f820f0939e8"
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "final_sha256": "2c64089f50a46e6b38d1ad370d50bfef9035ab6566448e482ea9f1478d558369"
+    },
+    {
+      "file": "lin-adasa-uist2018.pdf",
+      "final_sha256": "bc9f084da7a71ae471eaa5583da6dccd50b51b319bf0dd1f4cfef911fcf73867"
+    },
+    {
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "final_sha256": "34809784f89cc59f47376340417d2746464ac33c02cb7132c5aee8825f1d7633"
+    },
+    {
+      "file": "ozenc-how-support-designers-chi2010.pdf",
+      "final_sha256": "016c7fcce50de826aa967946513a7ca6f6e681d0085bac8b1f4723abbb6c2ebe"
+    },
+    {
+      "file": "oney-codelets-chi2012.pdf",
+      "final_sha256": "83873959dfa2668d43544fadf4f7241411005d49e621016224a775ca2a8e6735"
+    },
+    {
+      "file": "krosnick-expresso-vlhcc2018.pdf",
+      "final_sha256": "921b98c5fbd3849810f4730d3ae3fc355b981c0d566ba37579d2bcea3c386cb7"
+    },
+    {
+      "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+      "final_sha256": "e3582933fb39fad1f3995bdc411adba1ec970454d0c5d77d3555fe14f9a84518"
+    },
+    {
+      "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+      "final_sha256": "c91f44a154dda06efc231e70dbb7803776318c44460c48a039434c0f78d72b87"
+    },
+    {
+      "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+      "final_sha256": "0a4d97f030f42502cdc17b76c7cf007a95473c6def9f41d7b460c40d1517b7fd"
+    },
+    {
+      "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+      "final_sha256": "196dd477126bd94d66867e757c82e5268d94276c80a5f56d2aafb0f3139d8683"
+    },
+    {
+      "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+      "final_sha256": "34507e475d1f10c3013b80540015baa31b8f825f80eb70de835f607c8666ef73"
+    },
+    {
+      "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+      "final_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222"
+    },
+    {
+      "file": "chen-expert-crowd-support-ci2016.pdf",
+      "final_sha256": "4a0e3da222478ad892ba34f0cbc2376ad9f912ee69411471bc97bf8c389656f4"
+    },
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "final_sha256": "d80e08b25eef20eb62e1440b2fab669a0285a237ebf61a34a75f6fe7c7ed5e01"
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "final_sha256": "9e128450c8a3d8f22ab779e5678dea39e2fbeae8da09d6abd5a09823f810e175"
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "final_sha256": "335ce666bf4da31eccb70b5cb29ddc6b6be954743d6c5066a30265603689b8fd"
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "final_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516"
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "final_sha256": "f7ea16b1aaaf6f1d4c7da3de9068a3f8aa5ec47dfd8efa3b5024ea80d001cdc7"
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "final_sha256": "bd388581e41482e0741c3412b8e1c6eb4e109d817c044a1cf45b9757a452b7ed"
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "final_sha256": "ef7b39901a6158b68160ab892a4f2a0a77f7f57017e70059f261982b14698d9b"
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "final_sha256": "32567037858f95110c873353f068d865b87e090019cce2925682d28bac7a849f"
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "final_sha256": "50343ad631528e897587c563f1734ec02db0331f87028131a478bce73869b881"
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "final_sha256": "e08984d3401f93bc7cc65593e50363d3558456bd25f81560d34f8df97aa1922a"
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "final_sha256": "c46262ed04415d851b24bccde1d2047339222571c75b74aea2e896395831e4a8"
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "final_sha256": "92a3f43a4f5872ec900aa2250773273ad6550acd1ac74347b21926ececaf32aa"
+    },
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "final_sha256": "117ffda39327166d86c0f04b9ebf2305b2f8edeb00c659e0319441365d1d0a57"
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "final_sha256": "691ed5b7a7babcc16b46ad2e995be62729db7fb1159081e7b1af5c8b94164277"
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "final_sha256": "e8a7e36c69a9e45fe27a0ba97beaa386809d514d25efbed83ba98718680a3291"
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "final_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8"
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "final_sha256": "7f9990643ee0fd17af9444791d1d470fe0dd186dbec3f17995134a800b5989bc"
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "final_sha256": "206a1c3d5feb53c09168d80a11df851ef339add86d223e879327ab8db4e17af9"
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "final_sha256": "985f2cb7f3a3cb0131b4714a9b64675f6f4026321244fd64e9f777c4261425e6"
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "final_sha256": "720c78ddcbb102753c45c1b8e85ee85d8c484734667a43e67dfb782e0f71ad02"
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "final_sha256": "4bae50530f0352e6e484f7fe9bee64d02461a09f363bfb784f4f19ceb603388d"
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "final_sha256": "c3aa023cf89f1ef6d0bb3705587400d08d2d34be0dc02175d6cfee55719550a7"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/oney-constraintjs-uist2012.pdf",
+          "size": 1464836
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 105,
+              "failedRules": 1,
+              "passedChecks": 222426,
+              "failedChecks": 1,
+              "tags": [
+                "metadata"
+              ],
+              "ruleSummaries": [
+                {
+                  "ruleStatus": "FAILED",
+                  "specification": "ISO 14289-1:2014",
+                  "clause": "5",
+                  "testNumber": 1,
+                  "status": "failed",
+                  "failedChecks": 1,
+                  "tags": [
+                    "metadata"
+                  ],
+                  "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+                  "object": "MainXMPPackage",
+                  "test": "containsPDFUAIdentification == true",
+                  "checks": [
+                    {
+                      "status": "failed",
+                      "context": "root/document[0]/metadata[0](146 0 obj PDMetadata)/XMPPackage[0]",
+                      "errorMessage": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+                      "errorArguments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is not compliant with Validation Profile requirements.",
+            "compliant": false
+          }
+        ],
+        "processingTime": {
+          "start": 1791228339846,
+          "finish": 1791228341903,
+          "duration": "00:00:02.057",
+          "difference": 2057
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791228339782,
+        "finish": 1791228341996,
+        "duration": "00:00:02.214",
+        "difference": 2214
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 1,
+        "compliantPdfaCount": 0,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "multiJob": false
+    }
+  },
+  "file": "oney-constraintjs-uist2012.pdf",
+  "pdf_sha256": "8f73d21a634532f2e22a59c6f1ecca7172943f83eba2a59d89dcc4b221404a78"
+}

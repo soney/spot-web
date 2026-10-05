@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667 -->
+<!-- Source PDF SHA-256: fc80abfcdd911af9796324657c281f215b9c8e0cb0c2aec6b94b346ada0cf4fa -->
 
 <a id="page-1"></a>
 
@@ -8,11 +8,9 @@
 
 Brad A. Myers, Amy J. Ko, Chris Scaffidi, Stephen Oney, YoungSeok Yoon, Kerry Chang, Mary Beth Kery, and Toby Jia-Jun Li
 
-Abstract When end users approach a development task, they bring with them a set of techniques, expressions, and knowledge, which can be leveraged in order to make the process easier. The Natural Programming Project has been working for over twenty years to better understand how end users think about their tasks, and to develop new ways for users to express those tasks that will be more “natural,” by which we mean closer to the way they think. Our chapter in the previous book covered the first 10 years of this research; and here we summarize the most recent 10 years. This includes studies on barriers that impede EUD, and a new tool that helps with the understanding and debugging barriers by showing developers why their program has its current behavior. We also describe a tool that we created to
-
 B.A. Myers (✉) · M.B. Kery · T.J.-J. Li Carnegie Mellon University, Pittsburgh, PA, United States e-mail: bam@cs.cmu.edu
 
-M.B. Kery mkery@andrew.cmu.edue-mail:
+M.B. Kery, e-mail: mkery@andrew.cmu.edu
 
 T.J.-J. Li e-mail: tobyli@cs.cmu.edu
 
@@ -26,13 +24,15 @@ S. Oney University of Michigan, Ann Arbor, MI, United States e-mail: soney@umich
 
 Y. Yoon Google, Mountain View, CA, United States e-mail: youngseokyoon@google.com
 
+K. Chang IBM, Armonk, NY, United States e-mail: kerry.chang@ibm.com
+
 <a id="page-2"></a>
 
-K. Chang IBM, Armonk, NY, United States e-mail: kerry.chang@ibm.com help EUDs input, process, and transform data in the context of spreadsheets and web pages. Interaction designers are a class of EUDs that may need to program interactive behaviors, so we studied how they naturally express those behaviors, and then built a spreadsheet-like tool to allow them to author new behaviors. Another spreadsheet tool we created helps EUDs access web service data without writing code, and extends the familiar spreadsheet to support analyzing the acquired web-based hierarchical data and programming data-driven GUI applications. Finally, EUDs often need to engage in exploratory programming, where the goals and tasks are not well-formed in advance. We describe new tools to help users selectively undo past actions, along with on-going research to help EUDs create more efficient behaviors on smartphones and facilitate variations when performing data analysis.
+Abstract When end users approach a development task, they bring with them a set of techniques, expressions, and knowledge, which can be leveraged in order to make the process easier. The Natural Programming Project has been working for over twenty years to better understand how end users think about their tasks, and to develop new ways for users to express those tasks that will be more “natural,” by which we mean closer to the way they think. Our chapter in the previous book covered the first 10 years of this research; and here we summarize the most recent 10 years. This includes studies on barriers that impede EUD, and a new tool that helps with the understanding and debugging barriers by showing developers why their program has its current behavior. We also describe a tool that we created to help EUDs input, process, and transform data in the context of spreadsheets and web pages. Interaction designers are a class of EUDs that may need to program interactive behaviors, so we studied how they naturally express those behaviors, and then built a spreadsheet-like tool to allow them to author new behaviors. Another spreadsheet tool we created helps EUDs access web service data without writing code, and extends the familiar spreadsheet to support analyzing the acquired web-based hierarchical data and programming data-driven GUI applications. Finally, EUDs often need to engage in exploratory programming, where the goals and tasks are not well-formed in advance. We describe new tools to help users selectively undo past actions, along with on-going research to help EUDs create more efficient behaviors on smartphones and facilitate variations when performing data analysis.
 
 Keywords Spreadsheets · exploratory programming · data analysis · the Natural Programming Group
 
-© Springer International Publishing AG 2017 F. Paternò, V. Wulf (eds.), New Perspectives in End-User Development, DOI 10.1007/978-3-319-60291-2\_1
+> © Springer International Publishing AG 2017 F. Paternò, V. Wulf (eds.), New Perspectives in End-User Development, DOI 10.1007/978-3-319-60291-2\_1
 
 ## 1 Introduction
 
@@ -96,7 +96,7 @@ The Topes system includes tools that allow EUDs to define their own categories, 
 
 Creating a good user interface requires more than carefully arranging the graphical elements that define its appearance. It also requires defining the interface’s behavior – how it reacts to user input and other events. Although sketches and drawing software make it relatively straightforward to define an interface’s appearance, correctly implementing its behavior requires programming skill. The event-callback model, which most user interface frameworks rely on to define interface behaviors, has several drawbacks that make it inappropriate for EUDs (Meyerovich et al., [2009](<#page-21>); Myers, [1991](<#page-21>); Oney, Myers, &amp; Brandt, [2012](<#page-21>)). We explore how to enable interaction designers who are EUDs to program behaviors themselves by extending the spreadsheet model of programming.
 
-![Fig. 2 Dragging and dropping a prototype’s icon from the Toolbox creates a new part, and the editor also supports drag/drop rearrangement of parts as well as copy/paste. Users can click the example in a part’s icon to edit it, while clicking other parts of the icon displays widgets for editing its constraints, which are shared by every instance of the part. Clicking the “+” icon adds a constraint while clicking the “x” icon deletes the constraint](../figures/myers-making-end-user-eud2017/figure-002-p007.png)
+![Data Description Editor for a person name. A toolbox on the left supplies example parts; the top area shows first-name and last-name parts in alternative orders, using John and von Neumann. Selecting the last-name part opens constraints for word and letter counts, separators and capitalization. Plus and x controls add or remove constraints, and parts can be rearranged by dragging.](../figures/myers-making-end-user-eud2017/figure-002-p007.png)
 
 Fig. 2 Dragging and dropping a prototype’s icon from the Toolbox creates a new part, and the editor also supports drag/drop rearrangement of parts as well as copy/paste. Users can click the example in a part’s icon to edit it, while clicking other parts of the icon displays widgets for editing its constraints, which are shared by every instance of the part. Clicking the “+” icon adds a constraint while clicking the “x” icon deletes the constraint
 
@@ -158,7 +158,7 @@ So how could we support backtracking better? One insight we had was that a selec
 
 <a id="page-13"></a>
 
-![Fig. 6 An example screenshot of Azurite running in the Eclipse IDE. At the bottom, a timeline visualization of recent code changes is provided. The user is currently using the “Interactive Selective Undo” dialog, which is one of the more sophisticated selective undo features of Azurite](../figures/myers-making-end-user-eud2017/figure-006-p013.png)
+![Azurite in Eclipse. A timeline beneath the Java editor shows recent edits as colored rectangles on separate file rows. The Interactive Selective Undo dialog compares Current Source with Preview of Selective Undo Result, with changed lines highlighted. A selected change offers Keep this code unchanged, allowing the user to preview which edits will be undone while retaining others.](../figures/myers-making-end-user-eud2017/figure-006-p013.png)
 
 Fig. 6 An example screenshot of Azurite running in the Eclipse IDE. At the bottom, a timeline visualization of recent code changes is provided. The user is currently using the “Interactive Selective Undo” dialog, which is one of the more sophisticated selective undo features of Azurite
 
@@ -186,7 +186,7 @@ What does it mean to develop exploratory code? We found that developers currentl
 
 Finding ways to support data scientists’ needs with versioning and experiment-tracking may help make their explorations more robust. Informal versioning that data scientists currently rely on allows them to perform interactions which typical VCSs currently do not support. For example, a data scientist using simple copy/ paste and text commands can create versions of any size chunk of code, whereas standard VCS only support versions at the file level. Furthermore, with informal techniques, there is a far lower learning curve for EUDs who do not know VCS, since they can simply leverage their text editing skills to explore variants, rather than learning a new tool.
 
-[3](<#page-15>) an extension to the Atom editor, to investigate newWe created Variolite, kinds of support for data science versioning (Kery et al., [2017](<#page-20>)). In Variolite (Fig. 7), a developer can select any size piece of code and issue the command “wrap in variant.” This wraps the code chunk in a box, which can be tabbed, similar to a web browser, to keep different local versions of that code on different tabs. We used participatory design for Variolite by showing initial sketches of potential design ideas to data scientists and getting their feedback. In a preliminary usability test of an implemented version of Variolite with 10 participants, who were a mix of novice and advanced developers, the majority found this interaction usable and desirable. We are continuing work on Variolite, and are investigating new ways to support data scientists in their exploratory code.
+We created Variolite,[3](<#page-15>) an extension to the Atom editor, to investigate new kinds of support for data science versioning (Kery et al., [2017](<#page-20>)). In Variolite (Fig. 7), a developer can select any size piece of code and issue the command “wrap in variant.” This wraps the code chunk in a box, which can be tabbed, similar to a web browser, to keep different local versions of that code on different tabs. We used participatory design for Variolite by showing initial sketches of potential design ideas to data scientists and getting their feedback. In a preliminary usability test of an implemented version of Variolite with 10 participants, who were a mix of novice and advanced developers, the majority found this interaction usable and desirable. We are continuing work on Variolite, and are investigating new ways to support data scientists in their exploratory code.
 
 <sup>3</sup>Variolite, which is a kind of rock structure, here stands for Variations Augment Real Iterative Outcomes Letting Information Transcend Exploration.
 
@@ -198,17 +198,15 @@ Fig. 7 A screenshot of Variolite. Here are two variant boxes. An outer box wraps
 
 ## 8 Sugilite
 
-In recent years, mobile phones have evolved from being solely communication devices into ubiquitous tools that support a wide range of computing tasks, including information seeking, game playing, entertainment, and navigating. Mobile devices have exceeded PCs in internet usage (O’Toole, [2014](<#page-21>)) and have become the main computing device for many users (Smith, [2015](<#page-22>)). Thus, it is increasingly important to study how end-user development can be applied to enable end-users to create automations to help perform personalized computing tasks on mobile devices. In this section, we report on our ongoing project to create a new EUD tool named SUGILITE[4](<#page-16>) (Li et al., [2017](<#page-21>)) to enable EUDs to automate mobile tasks using a Programming by Demonstration (PbD) approach
+<a id="page-17"></a>
+
+In recent years, mobile phones have evolved from being solely communication devices into ubiquitous tools that support a wide range of computing tasks, including information seeking, game playing, entertainment, and navigating. Mobile devices have exceeded PCs in internet usage (O’Toole, [2014](<#page-21>)) and have become the main computing device for many users (Smith, [2015](<#page-22>)). Thus, it is increasingly important to study how end-user development can be applied to enable end-users to create automations to help perform personalized computing tasks on mobile devices. In this section, we report on our ongoing project to create a new EUD tool named SUGILITE[4](<#page-16>) (Li et al., [2017](<#page-21>)) to enable EUDs to automate mobile tasks using a Programming by Demonstration (PbD) approach (Cypher et al., [1993](<#page-20>); Myers, McDaniel, &amp; Wolber, [2000](<#page-21>)) combined with a conversational agent.
 
 > <sup>4</sup>Sugilite is named after a purple gemstone, and here stands for Smartphone Users Generating Intelligent Likable Interfaces Through Examples.
-
-<a id="page-17"></a>
 
 ![Figure 8. Four SUGILITE phone screenshots, labeled a–d. Panel a shows the conversational interface for giving spoken commands; b shows a confirmation popup while recording a demonstration; c shows an operation-editing panel for disambiguating the recorded action; d shows the resulting script as an editable sequence of operations. These are stages of creating and refining a smartphone automation by demonstration.](../figures/myers-making-end-user-eud2017/figure-008-p017.png)
 
 Fig. 8 Screenshots of SUGILITE: (a) the conversational interface; (b) the recording confirmation popup; (c) the recording disambiguation/operation editing panel; and (d) the viewing/editing script window
-
-(Cypher et al., [1993](<#page-20>); Myers, McDaniel, &amp; Wolber, [2000](<#page-21>)) combined with a conversational agent.
 
 Tasks on mobile devices are often performed using mobile apps. Each app usually has limited functionality within a single domain. As a result, complex tasks often require the use of multiple apps (Sun, Chen, &amp; Rudnicky, [2016](<#page-22>)). For example, planning a dinner event may require steps like searching for a restaurant, viewing the transportation options, determining scheduling information, making the actual reservation, and entering information into a calendar, where each step is performed with a different app. However, coordinating multiple apps is particularly challenging on mobile compared to on a computer due to the small screen size and limited support for multi-tasking and cross-app data sharing. For the most common scenarios of cross-app usage, the developers of the apps may implement features to support a few built-in data sharing mechanisms (e.g. the “Share To” button to share data from Photo Gallery to Messenger or Social Media Apps) or the API of services (e.g. Google Maps showing Uber fare estimates in the results). Nevertheless, the “long tail” of personalized mobile computing tasks are mostly not supported directly. This is where EUD can play an important role in enabling the users to create their own automations for repetitive mobile tasks in order to improve their efficiencies in mobile computing.
 

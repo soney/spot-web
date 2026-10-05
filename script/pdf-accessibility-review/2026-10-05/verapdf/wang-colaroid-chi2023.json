@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/wang-colaroid-chi2023.pdf",
+          "size": 5287834
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 578190,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231562234,
+          "finish": 1791231567828,
+          "duration": "00:00:05.594",
+          "difference": 5594
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231562040,
+        "finish": 1791231567906,
+        "duration": "00:00:05.866",
+        "difference": 5866
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "compliantPdfaCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "wang-colaroid-chi2023.pdf",
+  "pdf_sha256": "c9b8c52104df34856548c4d661c5236631a03ccac303b1536f3bd6652fc4cd9b",
+  "stderr": "Oct 05, 2026 4:19:25 PM org.verapdf.pd.font.cmap.CMapParser readLineBFRange\nWARNING: Incorrect bfrange in toUnicode CMap: the last byte of the string incremented past 255.\n"
+}

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe -->
+<!-- Source PDF SHA-256: 3809eb0010b1aa38b50e60c2afeff6d9fafb261c07f712b6742d94401d0b737b -->
 
 <a id="page-1"></a>
 
@@ -22,17 +22,15 @@ Additional Key Words and Phrases: peer assessment, live programming, synchronous
 
 April Yi Wang, Yan Chen, John Joon Young Chung, Christopher Brooks, and Steve Oney. 2021. PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises. Proc. ACM Hum.-Comput. Interact. 5, CSCW2, Article 415 (October 2021), [24](<#page-24>) pages. [https://doi.org/10.1145/3479559](<https://doi.org/10.1145/3479559>)
 
-## 1 INTRODUCTION
-
-Collaborative learning actively engages students to work together to learn new concepts, solve problems, and provide feedback \[[58](<#page-24>)\]. Programming instructors often use various collaborative
-
 <sup>∗</sup>Both authors contributed equally to this research.
 
 Authors’ addresses: April Yi Wang, University of Michigan, Ann Arbor, Michigan, USA, aprilww@umich.edu; Yan Chen, yanchenm@umich.edu, University of Michigan, Ann Arbor, Michigan, USA; John Joon Young Chung, jjyc@umich.edu, University of Michigan, Ann Arbor, Michigan, USA; Christopher Brooks, University of Michigan, 105 S State St., Ann Arbor, MI, 48103, USA, brooksch@umich.edu; Steve Oney, University of Michigan, 105 S State St., Ann Arbor, MI, 48103, USA, soney@umich.edu.
 
+## 1 INTRODUCTION
+
 <a id="page-2"></a>
 
-learning activities in teaching, such as group discussion, project-based work \[[41](<#page-23>)\], pair programming \[[48](<#page-23>)\], code debugging \[[26](<#page-22>)\], and peer assessment \[[59](<#page-24>)\]. In particular, peer assessment through reviewing and testing each other’s solutions can improve students’ motivation, engagement, and learning gains \[[38](<#page-22>), [39](<#page-23>), [53](<#page-23>), [59](<#page-24>)\], while reducing the effort required for instructors to provide scalable personalized feedback \[[39](<#page-23>)\].
+Collaborative learning actively engages students to work together to learn new concepts, solve problems, and provide feedback \[[58](<#page-24>)\]. Programming instructors often use various collaborative learning activities in teaching, such as group discussion, project-based work \[[41](<#page-23>)\], pair programming \[[48](<#page-23>)\], code debugging \[[26](<#page-22>)\], and peer assessment \[[59](<#page-24>)\]. In particular, peer assessment through reviewing and testing each other’s solutions can improve students’ motivation, engagement, and learning gains \[[38](<#page-22>), [39](<#page-23>), [53](<#page-23>), [59](<#page-24>)\], while reducing the effort required for instructors to provide scalable personalized feedback \[[39](<#page-23>)\].
 
 Despite the benefits of peer assessment, current programming and teaching environments provide little support to conduct peer assessment for in-class programming exercises—small scale programming exercises for students to practice during lectures or labs. As a result, peer assessment is typically conducted asynchronously rather than in a live classroom setting \[[59](<#page-24>)\]. Prior research has made it easier for instructors to share and monitor code with multiple students in real time \[[8](<#page-21>), [28](<#page-22>)\]. However, designing real-time systems to enable both student-student interactions and student-instructor interactions in a live setting is still a challenge \[[10](<#page-21>)\]. Moreover, students often struggle to give each other high-quality feedback or even start a fruitful conversation without proper moderation and effective grouping \[[7](<#page-21>), [43](<#page-23>)\]. In a needs analysis, we also found that it is difficult for instructors to effectively break students up into groups with appropriate balances of expertise in physical classroom situations. Further, because of the overall lack of expertise, peers can find it difficult to assess whether a given piece of code would fail unknown edge cases even if it generates the desired output for the test cases given by instructors.
 
@@ -40,13 +38,11 @@ In this paper, we present PuzzleMe, a web-based in-class programming exercise to
 
 To validate PuzzleMe’s effectiveness, we deployed it to an introductory programming course for two weeks and conducted several exploratory studies. Our results show that the peer testing feature can motivate students to write more high-quality tests, help identify potential errors in their code, and gain confidence in their solutions. Further, the peer code review feature can help students correct misunderstandings of the course materials, understand alternative solutions, and improve their coding style. We also report on the use of PuzzleMe in an online lecture[1](<#page-2>) and demonstrate its potential to be used at scale in synchronous online education. We found that PuzzleMe is perceived to be useful in a wide range of programming classes, reducing the stress of providing near-immediate feedback, helping instructors to engage students, and providing opportunities to explore different types of pedagogy.
 
-The key contribution of this work is the design lessons learned from a series of mixed methods studies, which add to the body of work on personalized feedback, peer assessment, and in-class exercises. We believe these lessons can guide future interface design exploration in similar contexts
-
 > <sup>1</sup>During our deployment, this course migrated to a fully online setting due to the outbreak of COVID-19.
 
 <a id="page-3"></a>
 
-(e.g., live workshops and programming education via live streaming \[[10](<#page-21>)\]). PuzzleMe shows the potential for increasing learning outcomes via in-class peer support without increasing teaching costs. Specifically, our contribution includes:
+The key contribution of this work is the design lessons learned from a series of mixed methods studies, which add to the body of work on personalized feedback, peer assessment, and in-class exercises. We believe these lessons can guide future interface design exploration in similar contexts (e.g., live workshops and programming education via live streaming \[[10](<#page-21>)\]). PuzzleMe shows the potential for increasing learning outcomes via in-class peer support without increasing teaching costs. Specifically, our contribution includes:
 
 - (1) an articulation of the needs and challenges that instructors have when conducting in-class exercises for introductory programming courses based on formative interviews with five instructors,
 
@@ -104,9 +100,9 @@ A complementary approach to synthesizing feedback is through learnersourcing \[[
 
 ## 3 IN-CLASS PROGRAMMING EXERCISE CHALLENGES
 
-To better understand the current practices and challenges for conducting in-class programming exercises, we conducted formative interviews with instructors of introductory programming courses. We chose to focus on introductory programming courses because (1) they typically have larger enrollments, (2) students in introductory courses often need more support, and (3) large knowledge
-
 <a id="page-6"></a>
+
+To better understand the current practices and challenges for conducting in-class programming exercises, we conducted formative interviews with instructors of introductory programming courses. We chose to focus on introductory programming courses because (1) they typically have larger enrollments, (2) students in introductory courses often need more support, and (3) large knowledge gaps between students are more likely, making it difficult for instructors to accommodate all students’ needs.
 
 Table 1. Instructors’ course demographics in formative interviews.
 
@@ -153,8 +149,6 @@ Table 1. Instructors’ course demographics in formative interviews.
   </tbody>
 </table>
 
-gaps between students are more likely, making it difficult for instructors to accommodate all students’ needs.
-
 ### 3.1 Method
 
 We recruited five instructors from different introductory programming courses at the authors’ university. Table [1](<#page-6>) presents an overview of the courses that the five interviewees taught. They include three undergraduate- and two graduate-level courses across three departments, with the same session time (80 minutes, twice per week). Each interview lasted 30 minutes. We asked instructors to recall the most recent introductory programming courses they had taught and explain what types of in-class exercises they conducted and what processes and tools were involved to facilitate the exercises. In addition, instructors were encouraged to tell us about any challenges they had encountered with conducting in-class programming exercises. Two authors separately conducted iterative coding to identify reoccurring themes using inductive analysis. We then merged similar codes to infer important findings. During the process, the codes of common practices for conducting in-class exercises, such as the types of exercises and tools, were merged smoothly. However, those of challenges in conducting programming exercises were rather difficult because of the authors’ different perspectives (e.g., process vs. roles involved). By dividing the in-class exercise activity into different stages and identifying the major roles of each party, the authors discussed and finalized the codes.
@@ -167,13 +161,9 @@ On average, interviewees spent a third of the lecture time on programming exerci
 
 #### 3.2.2 Impromptu exercises are valuable.
 
-To conduct effective exercises, instructors get feedback from students on what they understand and then improvise exercises based on that feedback. Some instructors would live code in class and call on students to verbally describe what code they should write (S2, S5). They encountered cases of “a lot of people making similar misconceptions that I did not expect” (S1), so they would often choose to let students vocally explain them to the rest of the class (S1, S4). Although vocal feedback has a low overhead cost, interviewees were concerned that “you always get the same people participating” (S4). S1 wished to leave more lecture time
-
-Proc. ACM Hum.-Comput. Interact., Vol. 5, No. CSCW2, Article 415. Publication date: October 2021.
-
 <a id="page-7"></a>
 
-for students to “share their thoughts”, or “learn from the person sitting 20 feet away.” Additionally, vocal communication is often not accessible (e.g., hard to hear) for students and is not archived for students to revisit.
+To conduct effective exercises, instructors get feedback from students on what they understand and then improvise exercises based on that feedback. Some instructors would live code in class and call on students to verbally describe what code they should write (S2, S5). They encountered cases of “a lot of people making similar misconceptions that I did not expect” (S1), so they would often choose to let students vocally explain them to the rest of the class (S1, S4). Although vocal feedback has a low overhead cost, interviewees were concerned that “you always get the same people participating” (S4). S1 wished to leave more lecture time for students to “share their thoughts”, or “learn from the person sitting 20 feet away.” Additionally, vocal communication is often not accessible (e.g., hard to hear) for students and is not archived for students to revisit.
 
 #### 3.2.3 Hard to scale support for exercises.
 
@@ -283,11 +273,11 @@ We chose self-assessment and face-to-face discussion as a representation of conv
 
 #### 5.2.1 Study setup.
 
-The GSIs gave students a set of problems to work on based on the material they were learning at the time. We used one of the programming exercises to evaluate live peer testing (noted as E1 for answering Q1) and another programming exercise to evaluate live peer code review (noted as E2 to answer Q2). For E1, the GSIs gave students 8–10 minutes to work
+<a id="page-12"></a>
+
+The GSIs gave students a set of problems to work on based on the material they were learning at the time. We used one of the programming exercises to evaluate live peer testing (noted as E1 for answering Q1) and another programming exercise to evaluate live peer code review (noted as E2 to answer Q2). For E1, the GSIs gave students 8–10 minutes to work individually and encouraged them to create additional test cases. For E2, the GSIs gave students around 5 minutes to work on the solution individually before placing them into groups. They then gave another 5 minutes to discuss with peers and continue working on their solutions. We used a between-subjects design where the four lab sections were randomly assigned to use PuzzleMe with or without the live features.
 
 > <sup>3</sup>https://github.com/soney/puzzlemi
-
-<a id="page-12"></a>
 
 Table 2. The four lab sections were randomly assigned into the treatment condition or the control condition.
 
@@ -327,8 +317,6 @@ Table 2. The four lab sections were randomly assigned into the treatment conditi
     </tr>
   </tbody>
 </table>
-
-individually and encouraged them to create additional test cases. For E2, the GSIs gave students around 5 minutes to work on the solution individually before placing them into groups. They then gave another 5 minutes to discuss with peers and continue working on their solutions. We used a between-subjects design where the four lab sections were randomly assigned to use PuzzleMe with or without the live features.
 
 (Treatment) Using PuzzleMe with the Live Features: For E1, students were encouraged to write, verify, and share test cases using PuzzleMe, and use others’ test cases to assess their code. For E2, PuzzleMe assigned students into groups to perform live peer code review after working individually on the problem.
 
@@ -404,7 +392,7 @@ Our comparison suggests that the number of test cases (p = 0.002, Mann-Whitney U
 
 In the follow-up interviews, the students and instructors explained why they felt the live peer testing feature was useful. Live peer testing gives students feedback on their test cases, ensuring the quality of the shared test pool because PuzzleMe verifies the test cases against a known correct solution before sharing across the student body. In contrast, students in the control condition were hesitant to write new tests because they “don’t know if my code is being tested correctly” (C2). Second, the participants felt that writing tests improved their understanding of the learning materials overall. Students commented that the “writing test was helpful to practice the new coding skill learned from class readings” (T2). Similarly, I2 mentioned that “I think \[writing tests\] might be helpful for students to think about what they should expect from their program”. Lastly, both students and instructors reported that the live peer testing feature helped the former gain confidence in their solutions, and both instructors indicated that PuzzleMe might help identify problems in students’ solutions. Moreover, the instructors reported that the live peer testing feature reduced their teaching stress as students gained confidence:
 
-![Three test cases for alphabetically sorting names. Score0 reuses Alice, Bob, Charlie but asserts an incorrect order, Charlie, Alice, Bob. Score1 keeps those input names and checks that the output length matches the input length. Score2 supplies new names Alice, Bob, Mark and checks the correctly sorted output Alice, Bob, Mark. The caption defines the three scoring levels.](../figures/wang-puzzleme-cscw2021/figure-003-p013.png)
+![Three test cases illustrate quality scores 0, 1, 2. Score 0 uses names Alice, Bob, Charlie and asserts the order Charlie, Alice, Bob. Score 1 uses the same input and checks len(names\_sorted\[0\]) &gt; len(names\_sorted\[1\]), comparing the lengths of the first two output strings. Score 2 changes the input to Alice, Bob, Mark and asserts Alice, Mark, Bob. The caption describes alphabetical sorting, but the displayed Score 2 expected order is Alice, Mark, Bob; this source inconsistency is retained.](../figures/wang-puzzleme-cscw2021/figure-003-p013.png)
 
 Fig. 3. An example of three different levels of test cases for one exercise (Problem description: alphabetically sort the given array, names, and assign the output to a variable named, names\_sorted). Test cases were manually coded into three levels: 0 if the test case was wrong, meaningless, or duplicated the default case; 1 if the test case did not create new examples of names but added additional checks on the output names\_sorted; 2 if the test case contained new examples of names and names\_sorted.
 
@@ -448,15 +436,13 @@ PuzzleMe connected students who were struggling with the problem with their peer
 
 #### 5.3.3 Code review is correlated to better completion status.
 
-For students who were not able to complete the problem before peer code review, we ran a proportions z-test to identify whether there is a correlation between using the code review feature (as indicated by blue and orange dots in
-
 <a id="page-16"></a>
+
+For students who were not able to complete the problem before peer code review, we ran a proportions z-test to identify whether there is a correlation between using the code review feature (as indicated by blue and orange dots in Figure [4](<#page-15>)) and solving the problem. The result shows that there is a strong correlation between using the code review feature and eventually solving the problem (p = 0.02). We examined the editing histories of the code and did not observe students directly copying and pasting others’ solutions. Our interpretation is that students are self-motivated to work out their own solutions rather than having a correct solution since the programming exercise is voluntary and not associated with grades. This corresponds to the observation that students who failed to improve the code were inspired by their peers’ code while continuing to work on their original solutions.
 
 ![Three Python acronymBuilder implementations use common\_words equal to of, a, the, an. SolutionA accepts a to\_ignore argument but mistakenly filters using common\_words directly, so a nondefault argument is ignored. SolutionB correctly filters using to\_ignore and joins the initial letters in one comprehension. SolutionC also respects to\_ignore, but uses a loop to collect allowed words and a second loop to collect their first letters before joining them. All three pass the default test.](../figures/wang-puzzleme-cscw2021/figure-005-p016.png)
 
 Fig. 5. Three example solutions that pass the default test. Solution A is a false positive because students did not use the function arguments correctly. Solution B is the most elegant way to solve the problem. Solution C is correct but does not demonstrate an understanding of advanced list operations.
-
-Figure [4](<#page-15>)) and solving the problem. The result shows that there is a strong correlation between using the code review feature and eventually solving the problem (p = 0.02). We examined the editing histories of the code and did not observe students directly copying and pasting others’ solutions. Our interpretation is that students are self-motivated to work out their own solutions rather than having a correct solution since the programming exercise is voluntary and not associated with grades. This corresponds to the observation that students who failed to improve the code were inspired by their peers’ code while continuing to work on their original solutions.
 
 #### 5.3.4 Who initiates the talk? Conversations need nudging.
 
@@ -525,8 +511,6 @@ Table 4. Participants’ background in Study 3.
     </tr>
   </tbody>
 </table>
-
-Proc. ACM Hum.-Comput. Interact., Vol. 5, No. CSCW2, Article 415. Publication date: October 2021.
 
 <a id="page-18"></a>
 

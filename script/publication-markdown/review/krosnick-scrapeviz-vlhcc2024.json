@@ -2,9 +2,9 @@
   "file": "krosnick-scrapeviz-vlhcc2024.pdf",
   "title": "ScrapeViz: Hierarchical Representations for Web Scraping Macros",
   "publication_id": "scrapeviz_hierarchical_representations_for_web_scraping_macros_2024",
-  "pdf_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+  "pdf_sha256": "6e3f3370a49e6463f8d8c3fc88cce8363cd9a31fea710f9d7c6e8545dd84f00e",
   "markdown": "publications/krosnick-scrapeviz-vlhcc2024.md",
-  "markdown_sha256": "ec764ee593c7567360cf7df9f52562f0049ebb2f5b5a9143d18bc8e6fa27bf57",
+  "markdown_sha256": "a4e22ed51e76aa01a35f053bc0c200f511bbb5a1fc460cd6d782698972a351de",
   "pages": 6,
   "blocks": [
     {
@@ -40,6 +40,22 @@
       "characters": 1011
     },
     {
+      "node": "47:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
+      "node": "200:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 154
+    },
+    {
       "node": "43:0",
       "role": "H2",
       "pages": [
@@ -69,31 +85,7 @@
       "pages": [
         1
       ],
-      "characters": 111
-    },
-    {
-      "node": "47:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 44
-    },
-    {
-      "node": "200:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 152
-    },
-    {
-      "node": "201:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 420
+      "characters": 532
     },
     {
       "node": "202:0",
@@ -128,7 +120,7 @@
       "characters": 19
     },
     {
-      "node": "joined-206:0",
+      "node": "206:0",
       "role": "P",
       "pages": [
         1,
@@ -182,15 +174,7 @@
       "pages": [
         2
       ],
-      "characters": 356
-    },
-    {
-      "node": "215:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 108
+      "characters": 465
     },
     {
       "node": "216:0",
@@ -209,7 +193,7 @@
       "characters": 719
     },
     {
-      "node": "joined-218:0",
+      "node": "218:0",
       "role": "P",
       "pages": [
         2,
@@ -266,7 +250,7 @@
       "characters": 320
     },
     {
-      "node": "joined-80:0",
+      "node": "80:0",
       "role": "P",
       "pages": [
         3
@@ -314,7 +298,7 @@
       "characters": 1569
     },
     {
-      "node": "joined-87:0",
+      "node": "87:0",
       "role": "P",
       "pages": [
         3,
@@ -500,35 +484,35 @@
     },
     {
       "node": "255:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 87
+      "characters": 89
     },
     {
       "node": "256:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 117
+      "characters": 119
     },
     {
       "node": "257:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 147
+      "characters": 149
     },
     {
       "node": "258:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 127
+      "characters": 129
     },
     {
       "node": "260:0",
@@ -760,12 +744,11 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 59,
-    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_removed": 54,
     "script_runs_positioned": 13,
     "line_wrap_hyphens_retained": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-scrapeviz-vlhcc2024.json.gz",
-  "source_tags_sha256": "e86113950085604df191aa75f64f25f49813bf566fc4acca166abf284b46dbe8"
+  "source_tags_sha256": "a8f91ab1241c5296927d0f8e3a8ee9b7049ea93d604dad43bc0f1e544e78128a"
 }

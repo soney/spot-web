@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189 -->
+<!-- Source PDF SHA-256: ac954034a689a340c977339940c6f224ca123870e1e28f5473f917fd55b4be67 -->
 
 <a id="page-1"></a>
 
@@ -18,19 +18,21 @@ Effective communication is crucial for programmers of all skill levels. However,
 
 Steve Oney, Christopher Brooks, and Paul Resnick. 2010. Creating Guided Code Explanations with chat.codes. ACM Trans. Web 9, 4, Article 39 (January 2010), [20](<#page-20>) pages. [https://doi.org/0000001.0000001](<https://doi.org/0000001.0000001>)
 
+<sup>∗</sup>This is the corresponding author
+
+Authors’ addresses: Steve Oney, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, soney@umich.edu; Christopher Brooks, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, brooksch@umich.edu; Paul Resnick, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, presnick@umich.edu.
+
+[https://doi.org/0000001.0000001](<https://doi.org/0000001.0000001>)
+
 ## 1 INTRODUCTION
 
 Communication is a fundamentally collaborative act where two (or more) parties try to reach “common ground” \[[14](<#page-19>), [15](<#page-19>)\]. Communication about code poses several unique challenges. First, communication is typically about specific parts of the code, and it is difficult to establish common ground about which part of code is being discussed. Second, the code being discussed may change during the conversation, which complicates any reuse of the conversation history, either within the session or at a later time.
 
 We developed a tool called chat.codes to address some of the challenges of discussing code. As with some other tools for communicating about code \[[13](<#page-18>), [28](<#page-19>)\], it provides side-by-side windows for code and natural language explanations. Its novel contribution is the integration of three other features: deictic code pointers, code versioning, and inline code diffs. Pointers allow for chat messages to reference to specific segments of code. Versioning maintains a version history for the code, and ties the chat contents (including code pointers) to specific versions. Diffs are automated summaries, in the chat window, of code changes between versions of the code.
 
-<sup>∗</sup>This is the corresponding author
-
-Authors’ addresses: Steve Oney, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, soney@umich.edu; Christopher Brooks, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, brooksch@umich.edu; Paul Resnick, The University of Michigan, 105 S State St. Ann Arbor, MI, 48103, USA, presnick@umich.edu.
-
 <a id="page-2"></a>
 
-[https://doi.org/0000001.0000001](<https://doi.org/0000001.0000001>) chat.codes can be used in several alternative workflows. One is synchronous chat (where participants are involved in the conversation at the same time), sharing the code and chat windows between multiple remote users. It can also be used asynchronously, where one user writes an explanation meant to be read later (either by a single user or multiple users). The two modes can also be combined, with people dropping in and out of participation and with later participants “catching up” on the conversation and possibly adding to it.
+chat.codes can be used in several alternative workflows. One is synchronous chat (where participants are involved in the conversation at the same time), sharing the code and chat windows between multiple remote users. It can also be used asynchronously, where one user writes an explanation meant to be read later (either by a single user or multiple users). The two modes can also be combined, with people dropping in and out of participation and with later participants “catching up” on the conversation and possibly adding to it.
 
 In this paper, we describe the tool and report on the first stage of evaluating the tool, assessing whether it is usable and useful in the simplest (but arguably one of the most important) workflows — in creating guided explanations, which we define to be a one-stage asynchronous communication where an instructor constructs an explanation for a chunk of code and learners consume that explanation later on. In particular, in a qualitative study with four experienced programmers, they quickly learned to use the features to create guided explanations. In a second study, nine students from an introductory programming course were each exposed to both conventional text explanations and explanations that take advantage of the pointers, versioning, and diff features of chat.codes; all of them preferred the chat.codes explanations. In a third study, twenty-four freelancers with some programming experience were randomly assigned to use either chat.codes explanations or video-based code explanations with the exact same content; performance with chat.codes was better on average, but the results were not statistically significant.
 
@@ -84,17 +86,13 @@ Previous researchers have proposed blending the best features of synchronous and
 
 ### 2.3 Version Control Systems
 
-GitHub and other Version Control Systems (VCSs) tools enable formal discussions of code. Professional programmers often use commit messages, pull requests, and issue trackers to communicate with collaborators. However, VCSs are often too heavy-weight for explanatory discussions because they require actively committing and labeling code changes. Azurite \[[45](<#page-20>), [46](<#page-20>)\] and CodePilot \[[42](<#page-19>)\]
-
-ACM Trans. Web, Vol. 9, No. 4, Article 39. Publication date: January 2010.
-
 <a id="page-5"></a>
+
+GitHub and other Version Control Systems (VCSs) tools enable formal discussions of code. Professional programmers often use commit messages, pull requests, and issue trackers to communicate with collaborators. However, VCSs are often too heavy-weight for explanatory discussions because they require actively committing and labeling code changes. Azurite \[[45](<#page-20>), [46](<#page-20>)\] and CodePilot \[[42](<#page-19>)\] have explored ways of making the features of VCSs more lightweight. Azurite provides a visual timeline view to explore the history of code changes. CodePilot \[[42](<#page-19>)\] included the automatic posting of notification of version control events such as new commit messages into a chat log, a feature that some software development teams also include in their use of the commercial product Slack. Prior work, however, has not investigated how to inject useful summaries of code diffs into the chat stream.
 
 ![Fig. 2. chat.codes is implemented as a website and as a plugin for the Atom IDE. Atom users can use chat.codes in their IDE, which will automatically converts their editor into a shared editor. Programmers can click a button to create a unique shareable URL that helpers can then visit. Helpers can then access the requester’s IDE over the web by visiting that URL.](../figures/oney-creating-guided-code-cscw2018/figure-002-p005.png)
 
 Fig. 2. chat.codes is implemented as a website and as a plugin for the Atom IDE. Atom users can use chat.codes in their IDE, which will automatically converts their editor into a shared editor. Programmers can click a button to create a unique shareable URL that helpers can then visit. Helpers can then access the requester’s IDE over the web by visiting that URL.
-
-have explored ways of making the features of VCSs more lightweight. Azurite provides a visual timeline view to explore the history of code changes. CodePilot \[[42](<#page-19>)\] included the automatic posting of notification of version control events such as new commit messages into a chat log, a feature that some software development teams also include in their use of the commercial product Slack. Prior work, however, has not investigated how to inject useful summaries of code diffs into the chat stream.
 
 ### 2.4 Improving Scalability for Programming Support Tools
 
@@ -146,9 +144,9 @@ Fig. 4. In order to allow users to easily create code pointers in chat messages,
 
 - (1) no text is selected in the chat input box (or the chat input box is empty): When the user selects a region of code, the system will insert a new code pointer that points to the user’s code selection and whose text is the first 10 characters of their code selection. Then, it will select the full code pointer text (putting them in state 2). (2) a code pointer is selected in the chat input box: \[this line of code\](file-1:L24): When the user selects a region of code, the system will replace the selected code pointer with a new code pointer that points to the user’s new code selection and whose text is the first 10 characters of their new code selection. Then, it will select the full code pointer text (stay in state 2). If the user has an empty code selection, then remove the complete code pointer (go back to state 1). (3) text is selected but it is not part of a code pointer: this line of code When the user selects a region of code, the system will add a link that points to the selected code and whose text content was the word that was previously selected in the chat input box. Then, it will select the same text in the chat input box. In the above example, “this” would remain selected but a code pointer would be added around it (putting them in state 4). (4) text is selected that is part of a code pointer[1](<#page-7>): \[this\](file-1:24) line of code When the user selects a region of code, the system will update the code pointer but not the text. The previously selected text also remains selected (remain in state 4). If the user has an empty code selection, then it will remove the code pointer portion while keeping the selected chat input text (putting them back in state 3).
 
-Despite the complexity of these rules, we found that they were intuitively understandable with a minimal learning curve for users in our evaluation. To illustrate why, consider the following interactions:
-
 > <sup>1</sup> This also applies for selections that partially overlap code pointers (e.g., “\[this line of code\](file-1:L24)”)
+
+Despite the complexity of these rules, we found that they were intuitively understandable with a minimal learning curve for users in our evaluation. To illustrate why, consider the following interactions:
 
 <a id="page-8"></a>
 
@@ -178,7 +176,7 @@ There is a danger that navigation through code versions will lead to confusion, 
 
 chat.codes displays code edits as status notifications in the chat window (see Figure [1](<#page-3>)B). Code edits are “grouped” together if they occur sufficiently close in time (no longer than 5 minutes between the first to last edit) and if there are not chat messages between edits. By default, these diff summaries are concise and only display information about who edited which files when (e.g., “Alice and Bob edited file-1, file-2, and file-3 (3 minutes ago)”). However, they can also be expanded to reveal more information about what edits were made, as Figure [5](<#page-9>) illustrates.
 
-![Fig. 5. In chat.codes, code edit summaries are displayed inline with chat messages. By default these summaries only indicate which user changed which files. They can also be expanded to reveal a full diff, as shown above.](../figures/oney-creating-guided-code-cscw2018/figure-005-p009.png)
+![Figure 5. Bob asks why copyName changes capitalization to “boB.” Alice replies that the name is being reversed and expands her edit to file-1 beneath the chat. The red deleted line is name\_copy = c + name\_copy; the green added line is name\_copy = name\_copy + c. The diff links the explanation to the correction from prepending characters to appending them.](../figures/oney-creating-guided-code-cscw2018/figure-005-p009.png)
 
 Fig. 5. In chat.codes, code edit summaries are displayed inline with chat messages. By default these summaries only indicate which user changed which files. They can also be expanded to reveal a full diff, as shown above.
 
@@ -473,8 +471,6 @@ We thank all of our participants across all three studies and our reviewers for 
 - \[12\] Clarence A Ellis and Simon J Gibbs. 1989. Concurrency control in groupware systems. In Acm Sigmod Record, Vol. 18. ACM, 399–407.
 
 - \[13\] Floobits. 2015. [https://floobits.com/](<https://floobits.com/>) Accessed: September, 2017.
-
-ACM Trans. Web, Vol. 9, No. 4, Article 39. Publication date: January 2010.
 
 <a id="page-19"></a>
 

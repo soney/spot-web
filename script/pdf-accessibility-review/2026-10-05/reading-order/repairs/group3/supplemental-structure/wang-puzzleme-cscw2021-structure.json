@@ -1,0 +1,562 @@
+{
+  "page_count": 24,
+  "language": "en-US",
+  "title": "PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises",
+  "structure_elements": 729,
+  "roles": {
+    "Document": 1,
+    "Sect": 24,
+    "H1": 1,
+    "P": 94,
+    "H2": 10,
+    "Link": 185,
+    "Note": 4,
+    "L": 8,
+    "LI": 61,
+    "LBody": 61,
+    "H3": 17,
+    "H4": 35,
+    "Caption": 10,
+    "Table": 5,
+    "THead": 3,
+    "TR": 40,
+    "TH": 45,
+    "TBody": 3,
+    "TD": 63,
+    "Lbl": 54,
+    "Figure": 5
+  },
+  "structure_content_references": 13298,
+  "parent_tree_entries": 209,
+  "form_xobjects_visited": 4,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 4,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 497,
+      "link_annotations": 4
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 669,
+      "vector_operations_artifact": 1,
+      "link_annotations": 17
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 602,
+      "link_annotations": 20
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 595,
+      "link_annotations": 12
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 617,
+      "link_annotations": 17
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 500,
+      "vector_operations_artifact": 3,
+      "link_annotations": 3
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 557,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 26,
+      "image_operations_tagged": 5,
+      "text_operations_tagged": 356,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 23,
+      "vector_operations_tagged": 10,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 397,
+      "link_annotations": 10
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 649,
+      "link_annotations": 9
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 526,
+      "vector_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 563,
+      "vector_operations_artifact": 3,
+      "link_annotations": 2
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 419,
+      "vector_operations_artifact": 8,
+      "vector_operations_tagged": 10,
+      "image_operations_tagged": 3
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 621,
+      "link_annotations": 2
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 23,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 439,
+      "link_annotations": 1
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 7,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 486,
+      "link_annotations": 3
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 554,
+      "vector_operations_artifact": 3,
+      "link_annotations": 4
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 509,
+      "vector_operations_artifact": 5,
+      "link_annotations": 1
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 570,
+      "link_annotations": 6
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 540,
+      "link_annotations": 6
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 708,
+      "link_annotations": 12
+    },
+    {
+      "page": 22,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 756,
+      "link_annotations": 14
+    },
+    {
+      "page": 23,
+      "text_operations_artifact": 23,
+      "text_operations_tagged": 697,
+      "link_annotations": 14
+    },
+    {
+      "page": 24,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 485,
+      "link_annotations": 13
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "527:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "532:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "534:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "577:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "579:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "816:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "833:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "835:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "837:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "839:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "854:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "856:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "858:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "861:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "915:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "917:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "918:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "920:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "928:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "930:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "932:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "944:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "953:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "956:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "970:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "972:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "974:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "988:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "990:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "993:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "996:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1010:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1012:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1014:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1016:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1022:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1061:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "1063:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "1117:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1120:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1123:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1130:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1132:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1134:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1137:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1144:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "1146:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1153:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1155:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1227:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "1229:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "1231:0",
+      "page": 18
+    },
+    {
+      "level": 4,
+      "element": "1232:0",
+      "page": 18
+    },
+    {
+      "level": 4,
+      "element": "1237:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1239:0",
+      "page": 19
+    },
+    {
+      "level": 3,
+      "element": "1241:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1242:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1252:0",
+      "page": 20
+    },
+    {
+      "level": 4,
+      "element": "1254:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "1256:0",
+      "page": 20
+    },
+    {
+      "level": 2,
+      "element": "1258:0",
+      "page": 20
+    },
+    {
+      "level": 2,
+      "element": "1267:0",
+      "page": 21
+    },
+    {
+      "level": 2,
+      "element": "1269:0",
+      "page": 21
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "950:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "PuzzleMe student interface for an alphabetic name-sorting exercise. The problem appears above a Python editor and paired setup/assertion test. A test-library panel lists shared tests with pass/fail feedback, beside the execution output. Tabs open instructor live coding and peer review; class completion and a leaderboard show progress. The labeled A\u2013I controls are explained individually in the adjacent caption.",
+      "actual_text": ""
+    },
+    {
+      "element": "967:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Two PuzzleMe views. The instructor live-code tab shows Python code with a freehand red diagram drawn over the editor to explain it. The peer-review view presents group members as selectable tabs, displays the selected member\u2019s solution, and places the group text conversation to its right, so code and discussion can be inspected together.",
+      "actual_text": ""
+    },
+    {
+      "element": "1110:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Three test cases illustrate quality scores 0, 1, 2. Score 0 uses names Alice, Bob, Charlie and asserts the order Charlie, Alice, Bob. Score 1 uses the same input and checks len(names_sorted[0]) > len(names_sorted[1]), comparing the lengths of the first two output strings. Score 2 changes the input to Alice, Bob, Mark and asserts Alice, Mark, Bob. The caption describes alphabetical sorting, but the displayed Score 2 expected order is Alice, Mark, Bob; this source inconsistency is retained.",
+      "actual_text": ""
+    },
+    {
+      "element": "1128:0",
+      "role": "Figure",
+      "page": 15,
+      "alt": "Timeline of student activity over0\u20131000seconds, with one horizontal row per student. Red dots mark failed executions and green dots successful executions. Discussion starts near490seconds, editing is allowed near610seconds and the answer is revealed near695seconds. Peer-code checks and sent/received messages cluster between discussion and answer release. Green horizontal highlights identify ten students whose failures became successes after discussion; many of these first successes occur before the answer is shown.",
+      "actual_text": ""
+    },
+    {
+      "element": "1141:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Three Python acronymBuilder implementations use common_words equal to of, a, the, an. SolutionA accepts a to_ignore argument but mistakenly filters using common_words directly, so a nondefault argument is ignored. SolutionB correctly filters using to_ignore and joins the initial letters in one comprehension. SolutionC also respects to_ignore, but uses a loop to collect allowed words and a second loop to collect their first letters before joining them. All three pass the default test.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ],
+  "file": "wang-puzzleme-cscw2021.pdf",
+  "pdf_sha256": "691ed5b7a7babcc16b46ad2e995be62729db7fb1159081e7b1af5c8b94164277"
+}

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895 -->
+<!-- Source PDF SHA-256: b619fd8e204e7e6ee2f4ac6721190759314f06bb72ff18970af6274c91b6656d -->
 
 <a id="page-1"></a>
 
@@ -130,7 +130,7 @@ Next, three authors independently reviewed the grouped activities and synthesize
 
 #### 3) Derivation of Challenges and Contextual Factors:
 
-In parallel with strategy codification, two authors extracted descriptions of challenging debugging situations from the literature and the reason or factor that contributed to the challenge. They focused on identifying recurring environmental and structural barriers that historically complicate the debugging process. These were extracted through a thematic analysis of the ”Challenges” or ”Barriers” sections or paragraphs of the 17 core papers. The two authors compared their extracted challenges and merged similar ones into higher-level categories. They moved from specific paper-level descriptions to higher-level abstractions by grouping these contexts based on their underlying cause of difficulty. For instance, they identified situations where the deployment setting limits developer actions combined with situations where experimentation and instrumentation are restricted or risky compared to local environments under production-only category. References to multi-component systems, cross-service failures, and massive code-base were grouped under Distributed and Unfamiliar/Huge Code contexts. The output of this analysis was organized into three higher level categories: behaviors, domain, and context of the challenge that provided the initial structure for our study
+In parallel with strategy codification, two authors extracted descriptions of challenging debugging situations from the literature and the reason or factor that contributed to the challenge. They focused on identifying recurring environmental and structural barriers that historically complicate the debugging process. These were extracted through a thematic analysis of the ”Challenges” or ”Barriers” sections or paragraphs of the 17 core papers. The two authors compared their extracted challenges and merged similar ones into higher-level categories. They moved from specific paper-level descriptions to higher-level abstractions by grouping these contexts based on their underlying cause of difficulty. For instance, they identified situations where the deployment setting limits developer actions combined with situations where experimentation and instrumentation are restricted or risky compared to local environments under production-only category. References to multi-component systems, cross-service failures, and massive code-base were grouped under Distributed and Unfamiliar/Huge Code contexts. The output of this analysis was organized into three higher level categories: behaviors, domain, and context of the challenge that provided the initial structure for our study and were integrated into the comprehensive defect landscape in Table III.
 
 TABLE I SIX DEBUGGING STRATEGIES FROM PRIOR WORK. EACH STRATEGY OUTLINES A SEQUENTIAL APPROACH FOR TROUBLESHOOTING AND RESOLVING DEFECTS. THE COMPLETE DEFINITION OF THE STRATEGIES CAN BE FOUND IN THE SUPPLEMENTAL MATERIALS.
 
@@ -175,8 +175,6 @@ TABLE I SIX DEBUGGING STRATEGIES FROM PRIOR WORK. EACH STRATEGY OUTLINES A SEQUE
     </tr>
   </tbody>
 </table>
-
-and were integrated into the comprehensive defect landscape in Table III.
 
 #### 4) Output:
 
@@ -449,9 +447,9 @@ We judged thematic saturation to have been reached after 14 interviews because n
 
 The results presented in this section build on outputs from three phases and contributed complementary evidence.
 
-Phase 0 synthesized an initial vocabulary of six debugging strategies, along with a preliminary set of challenging defects and contextual characteristics reported in prior work. Phase 1 expanded the challenge landscape through survey responses,
-
 <a id="page-8"></a>
+
+Phase 0 synthesized an initial vocabulary of six debugging strategies, along with a preliminary set of challenging defects and contextual characteristics reported in prior work. Phase 1 expanded the challenge landscape through survey responses, identifying defects that developers currently find difficult in practice, including non-replicable failures, inconsistent outcomes, and data-flow problems. Phase 2 then provided detailed accounts of how contextual factors shaped expert developers’ strategy selection, adaptation, and transitions during challenging debugging scenarios. Thus, although the final taxonomy and transition model were synthesized primarily from the Phase 2 interviews, all three phases contributed to the final results: Phase 0 provided the conceptual strategies vocabulary, Phase 1 provided empirically grounded challenging scenarios, and Phase 2 provided the evidence for contextual factors and strategy transitions.
 
 TABLE III INTEGRATED LANDSCAPE OF CHALLENGING WEB DEBUGGING PROBLEMS, SYNTHESIZING LITERATURE-DERIVED CONTEXTS AND SURVEY-DERIVED SCENARIOS. WE ORGANIZE CHALLENGES INTO THREE DIMENSIONS: behaviors, domains, AND contexts. THE TWO MOST FREQUENTLY REPORTED SURVEY CHALLENGES ARE UNDERLINED AND WERE USED AS ANCHOR SCENARIOS IN THE FIRST INTERVIEW SESSION. The two underlined anchor scenarios are Non-replicable failures and Concurrency-related.
 
@@ -536,8 +534,6 @@ TABLE III INTEGRATED LANDSCAPE OF CHALLENGING WEB DEBUGGING PROBLEMS, SYNTHESIZI
   </tbody>
 </table>
 
-identifying defects that developers currently find difficult in practice, including non-replicable failures, inconsistent outcomes, and data-flow problems. Phase 2 then provided detailed accounts of how contextual factors shaped expert developers’ strategy selection, adaptation, and transitions during challenging debugging scenarios. Thus, although the final taxonomy and transition model were synthesized primarily from the Phase 2 interviews, all three phases contributed to the final results: Phase 0 provided the conceptual strategies vocabulary, Phase 1 provided empirically grounded challenging scenarios, and Phase 2 provided the evidence for contextual factors and strategy transitions.
-
 ### A. RQ1: What types of defects do developers find most challenging to debug in web applications?
 
 During coding, we observed that participants described challenging defects along three related dimensions: (1) how the failure appeared, which we call behavior; (2) where the likely technical cause was located, which we call domain; and (3) the environmental or codebase conditions that made diagnosis more difficult, which we call context. We therefore organized the challenge landscape around these three dimensions.
@@ -608,9 +604,9 @@ Developers’ prior experience and habits (e.g., always starting with print stat
 
 #### 6) Project expectations (static):
 
-Finally, project-level expectations—such as deadlines, documentation standards, and performance or reliability targets—affect how thorough developers can be and which strategies are acceptable in practice (Table VI). Participants reported that tight timelines often push them toward faster, less exhaustive strategies, increasing the
-
 <a id="page-10"></a>
+
+Finally, project-level expectations—such as deadlines, documentation standards, and performance or reliability targets—affect how thorough developers can be and which strategies are acceptable in practice (Table VI). Participants reported that tight timelines often push them toward faster, less exhaustive strategies, increasing the risk of leaving underlying issues unresolved or introducing new defects.
 
 TABLE IV THE CONTEXT FACTORS RELATED TO DEFECT CHARACTERISTICS DEVELOPERS CONSIDER WHEN SELECTING A DEBUGGING STRATEGY. CONTEXT FACTORS IDENTIFIED IN PRIOR WORK ARE STARRED (\*).
 
@@ -685,8 +681,6 @@ TABLE IV THE CONTEXT FACTORS RELATED TO DEFECT CHARACTERISTICS DEVELOPERS CONSID
     </tr>
   </tbody>
 </table>
-
-risk of leaving underlying issues unresolved or introducing new defects.
 
 ### C. RQ3: How do defect characteristics affect developers’ choice of debugging strategies in challenging debugging scenarios?
 
@@ -860,15 +854,13 @@ Inconsistent defects—failures that appear intermittently under poorly understo
 
 For these problems, experts relied heavily on hypothesis-testing (k). Rather than expecting the bug on every run, they formed hypotheses about underlying causes and looked for indirect evidence supporting or refuting those hypotheses across multiple executions: “It \[hypothesis-testing\] is a little bit easier to do if the bug is nondeterministic because even if you do not see the bug on a particular run you might still be able to prove or disprove that hypothesis” (P12).
 
-By contrast, simplification was generally seen as less effective for highly inconsistent defects because removing code did not reliably produce clear evidence about whether the cause had been removed. Participants found simplification or binary search useful only after they could identify a specific, consistently failing sequence of inputs or conditions: “If there is a particular sequence of inputs that got to the bad state, one could think about trying to use binary search debugging”
-
 <a id="page-12"></a>
+
+By contrast, simplification was generally seen as less effective for highly inconsistent defects because removing code did not reliably produce clear evidence about whether the cause had been removed. Participants found simplification or binary search useful only after they could identify a specific, consistently failing sequence of inputs or conditions: “If there is a particular sequence of inputs that got to the bad state, one could think about trying to use binary search debugging” (P12). They also noted that many intermittent behaviors were linked to dynamic code paths (e.g., JavaScript or server-side logic) rather than static markup—“HTML is just rendered,” as P3 remarked—so they focused on where executable code manipulated state: “HTML is not executing and it is just rendered, so the inconsistent behavior is related to JS that is executing the code” (P3).
 
 ![Figure 2. Network summarizing commonly reported debugging strategy transitions from 16 expert web developers. It is a descriptive model, not a decision tree: context questions do not uniquely determine the next strategy, and a missing edge does not rule out a transition. Six green ellipses are numbered: 1, Forward-reasoning; 2, Error-message; 3, Hypothesis-test; 4, Backward-reasoning; 5, Simplification; and 6, External Strategy. Starting from whether a defect is observable, the diagram connects a non-observable defect through codebase complexity (l) to forward reasoning. For an observable defect, clear messages (a) lead toward error-message debugging, vague messages (b) toward hypothesis testing, and client-side versus other failures (c) toward simplification or hypothesis testing. Error-message debugging connects through access to the codebase (d) to backward reasoning. Hypothesis testing connects through debugger availability (e) to backward reasoning, or through reproducibility (f), familiarity (g), and search-space size (h) to simplification. Constrained production, compiled-binary, or ownership contexts (i) distinguish external strategies from simplification. User-specific failures (j) also connect hypothesis testing to external strategies. Sporadic behavior or infeasible traces (k) connect backward reasoning back to hypothesis testing; legacy or unmaintained code (n) connects to backward reasoning. Forward reasoning connects through familiarity (m) toward hypothesis testing when familiar or external strategies when unfamiliar, and through reproducibility and a narrowed search space (o) toward simplification. Simplification connects through unsafe or limited opportunities to simplify (q) toward external strategies. Context boxes are blue for codebase characteristics, tan for defect characteristics, and pale yellow for environmental, tooling, and organizational constraints. The printed legend labels both codebase and defect characteristics as Table IV; the body text identifies codebase characteristics in Table V. Arrow weight encodes breadth of participant support: thick solid lines, at least 7 participants; thin solid lines, 4 to 6; dashed lines, 3 or fewer. Thick routes emphasize complexity to forward reasoning, clear errors to error-message debugging, debugger availability to backward reasoning, familiarity to hypothesis testing, and a large search space to simplification. Dashed routes include reproducible, narrowed problems from forward reasoning to simplification, sporadic or infeasible traces from backward reasoning to hypothesis testing, and unsafe simplification to external strategies. Table VII gives the associated conditions, participant evidence, and quotations.](../figures/arab-navigating-complexity-tse2026/figure-002-p012.png)
 
 Fig. 2. A summary of commonly reported transition tendencies of strategy adaptation by 16 expert web developers. An absent edge means the transition was not commonly reported, not that it cannot occur. The model is not a decision tree and does not imply that a particular answer to a contextual question determines the next strategy. Debugging strategies are depicted as Nodes (green circles 1-6) represent dominant debugging strategies; directed edges represent common transitions between strategies. Rectangular boxes denote contextual changes that trigger switches. Context factors grouped with color codes. Arrows wight indicates the breadth of supporting evidence, based on the number of participants who described the corresponding transition in Table VII.
-
-(P12). They also noted that many intermittent behaviors were linked to dynamic code paths (e.g., JavaScript or server-side logic) rather than static markup—“HTML is just rendered,” as P3 remarked—so they focused on where executable code manipulated state: “HTML is not executing and it is just rendered, so the inconsistent behavior is related to JS that is executing the code” (P3).
 
 Although experts often used backward-reasoning for server-side defects, 10 experts found it less effective for timing-sensitive concurrency bugs. Breakpoints and added instrumentation could change timing and make the defect disappear (“Heisenbugs”). In these cases, they de-emphasized interactive debugging and instead combined hypothesis-testing and simplification with lightweight logging and monitoring.
 
@@ -884,9 +876,9 @@ Codebase characteristics (Table V) shape both the strategies developers choose i
 
 Eight out of 16 participants described familiarity with the codebase as pivotal for choosing debugging strategies. This aligns with Gould’s observation that developers take less time to debug when revisiting a codebase \[13\], and subsequent research highlighting the importance of program comprehension for successful debugging \[5\], \[45\], \[57\], \[58\].
 
-When developers understood how components interacted, which modules were fragile, and where similar defects had occurred before, they could quickly prioritize areas to investigate (1, m), generate precise hypotheses (3, e), and work backward from observed failures to likely causes. They were also more comfortable using simplification (m, 5) to carve out a minimal failing case without breaking unrelated functionality. As one expert put it: “To form a precise hypothesis (...) you have to be very familiar with the code... how the software is put
-
 <a id="page-13"></a>
+
+When developers understood how components interacted, which modules were fragile, and where similar defects had occurred before, they could quickly prioritize areas to investigate (1, m), generate precise hypotheses (3, e), and work backward from observed failures to likely causes. They were also more comfortable using simplification (m, 5) to carve out a minimal failing case without breaking unrelated functionality. As one expert put it: “To form a precise hypothesis (...) you have to be very familiar with the code... how the software is put together (...) Working backwards from what the problem was and trying to come up with hypotheses that could explain how you got there” (P12). Once they had a plausible fault region, experts often combined hypothesis-testing with simplification to eliminate irrelevant code and converge on the defect.
 
 TABLE VII CONTEXTUAL FACTORS THAT INFLUENCE THE EFFECTIVENESS OF DEBUGGING STRATEGIES, DERIVED FROM CROSS-CASE QUALITATIVE ANALYSIS OF 16 EXPERT DEVELOPERS. EVIDENCE INDICATES THE BREADTH OF PARTICIPANT SUPPORT FOR EACH PATTERN. THIS FACTOR-BASED VIEW COMPLEMENTS THE TRANSITION-BASED MODEL IN FIGURE 2.
 
@@ -938,8 +930,6 @@ TABLE VII CONTEXTUAL FACTORS THAT INFLUENCE THE EFFECTIVENESS OF DEBUGGING STRAT
     </tr>
   </tbody>
 </table>
-
-together (...) Working backwards from what the problem was and trying to come up with hypotheses that could explain how you got there” (P12). Once they had a plausible fault region, experts often combined hypothesis-testing with simplification to eliminate irrelevant code and converge on the defect.
 
 In unfamiliar codebases, developers typically started with forward reasoning (l, 5) to build a mental model of the architecture and control flow before committing to specific hypotheses. They sometimes anchored this exploration with limited backward reasoning (e.g., stepping through a small failing path), and a few mentioned using tools such as Chat- GPT to quickly understand unfamiliar languages or patterns in maintenance-heavy code: “I may not even understand a particular language (...), I have started using ChatGPT where I would just put that piece of code, and it would help me understand what it does” (P6).
 

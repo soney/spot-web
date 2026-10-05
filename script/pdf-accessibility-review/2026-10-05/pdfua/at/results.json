@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-05",
+  "reader": "Mozilla Firefox 156.0.1",
+  "environment": "Separate dbus-run-session, Xvfb display, fresh Firefox profile and temporary XDG configuration/runtime directories for each sample. No user browser or profile accessed.",
+  "scope": "Fresh live Firefox PDF.js AT-SPI samples after PDF/UA metadata and semantic attribute repairs. These verify reader-exposed cell names, header relationships and selected reading order; not continuous speech or whole-corpus conformance.",
+  "checks": [
+    {
+      "sample": "notebook",
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "ea606635142e427d0663e8b6f9bc1067ae8c79e56d27d914a967ba35fca2a1cc",
+      "tree": "notebook-atspi.json.gz",
+      "tree_sha256": "137d1633733a3306ffe724281791448cd31203cf2b659bde163a10a00420dab9",
+      "captured_utc": "2026-10-05T20:21:02.879397+00:00",
+      "result": "pass",
+      "check": "All40 source-verified Table1 cell names,13 semantic headers and27 data-cell row/column header relationships. Table2 remains14rows×4columns.",
+      "rows": 10,
+      "columns": 4,
+      "cell_texts_checked": 40,
+      "headers_checked": 13,
+      "data_cell_header_associations_checked": 27,
+      "second_table_rows": 14,
+      "second_table_columns": 4
+    },
+    {
+      "sample": "code",
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "00c4c8f64cd79c5dbfddfc0d0797c515b94ac003158af4b1afb68e0f2b9ad516",
+      "tree": "code-atspi.json.gz",
+      "tree_sha256": "861a8b31c86fc3f9556896b9aba389a28e5500df65d59fc7adbc23130d978d2e",
+      "captured_utc": "2026-10-05T20:21:15.917263+00:00",
+      "result": "pass",
+      "check": "Setup paragraph → first_name → last_name → Section5 in reader-exposed order.",
+      "page": 2,
+      "setup_text": "When given the website’s HTML and asked to write code for scraping , ChatGPT seemed to mostly generate correct code logic and CSS selectors [ 2 ] if the elements to be scraped have salient selectors – e.g., when we asked ChatGPT to scrape player names from the NBA website, it generated the following correct Python code and CSS classes for first and last names:",
+      "sequence": [
+        {
+          "accessible_tree_index": 2062,
+          "role": "section",
+          "text": "first_name"
+        },
+        {
+          "accessible_tree_index": 2085,
+          "role": "section",
+          "text": "last_name"
+        },
+        {
+          "accessible_tree_index": 2110,
+          "role": "heading",
+          "text": "5 POTENTIAL PITFALLS"
+        }
+      ]
+    },
+    {
+      "sample": "crosspage",
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pdf_sha256": "3f6392e9c1099660d5a1e4a6075b7d27edec64c873cdab98104ecc610f731d3e",
+      "tree": "crosspage-atspi.json.gz",
+      "tree_sha256": "6ae9de8188e01cdaad7b3c378ee60bfbd4b00e387c0af985dff1117c86ca40c0",
+      "captured_utc": "2026-10-05T20:21:24.342176+00:00",
+      "result": "pass",
+      "check": "Sentence continues from Page1 to start of Page2 before Figure1.",
+      "pages": [
+        1,
+        2
+      ],
+      "before_text": "Web page code is almost never designed for readability; it is frequently poorly formatted, or sometimes intentionally rendered unreadable through",
+      "continuation_text": "code obfuscation methods ranging from eliminating whitespaces to renaming variables or even inserting nonfunctional code fragments.",
+      "continuation_tree_index_on_page2": 3,
+      "figure_tree_index_on_page2": 58,
+      "reader_behavior": "Separate page landmarks retain distinct word-bearing accessible objects across the page boundary."
+    }
+  ],
+  "continuous_speech": "Not rerun. Prior isolated Orca audio-backend limitation is recorded in reading-order/repairs/group2/at/results.json; no end-to-end speech claim is made."
+}

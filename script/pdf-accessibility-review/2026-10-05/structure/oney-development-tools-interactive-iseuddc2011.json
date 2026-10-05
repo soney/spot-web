@@ -1,0 +1,107 @@
+{
+  "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+  "pdf_sha256": "1e2e1924273064ad9cc2155609b30f9120856f54c23fa9ba659ae4cf0ee1c650",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Development Tools for Interactive Behaviors",
+  "structure_elements": 50,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 16,
+    "H2": 6,
+    "Figure": 1,
+    "Caption": 1,
+    "Note": 1,
+    "L": 1,
+    "LI": 6,
+    "Lbl": 6,
+    "LBody": 6
+  },
+  "structure_content_references": 870,
+  "parent_tree_entries": 4,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 226,
+      "text_operations_artifact": 45
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 260,
+      "text_operations_artifact": 49
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 129,
+      "text_operations_artifact": 21,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 254,
+      "text_operations_artifact": 57,
+      "vector_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "30:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "35:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "40:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "43:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "51:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "56:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "59:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "48:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Fig. 1. A representation of a draggable red circle. The top half of the window shows \nthe “design” view, while the bottom half shows the “code” view. In the code view, \nattribute names are shown in the far left column. The current values of the attributes \nare shown in “Value” column. Initial values are shown in the INIT column. The \nsubsequent two columns specify constraints that will hold in various states: the fourth \ncolumn specifies constraints that will hold when the user is dragging the circle (to \nconstrain the center of the circle to always be the mouse location), and the last \ncolumn specifies constraints that will hold after the user stops dragging (KEEPVALUE\nkeeps the current value but gets rid of the constraints that were in place when the user \nwas dragging the circle.)",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

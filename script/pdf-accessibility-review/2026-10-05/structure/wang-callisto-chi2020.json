@@ -1,0 +1,416 @@
+{
+  "file": "wang-callisto-chi2020.pdf",
+  "pdf_sha256": "d45d8f39953a038dceb2395a2d9b61263fbb1df531d88f05df80cef886064c79",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "Callisto: Capturing the “Why” by Connecting Conversations with Computational Narratives",
+  "structure_elements": 653,
+  "roles": {
+    "Document": 1,
+    "Part": 1,
+    "H1": 1,
+    "P": 170,
+    "Span": 44,
+    "Link": 131,
+    "Sect": 56,
+    "H2": 13,
+    "Figure": 5,
+    "Caption": 10,
+    "L": 2,
+    "LI": 9,
+    "Lbl": 9,
+    "LBody": 9,
+    "H3": 18,
+    "H4": 18,
+    "Table": 5,
+    "THead": 3,
+    "TR": 34,
+    "TH": 48,
+    "TBody": 3,
+    "TD": 57,
+    "Div": 3,
+    "Note": 3
+  },
+  "structure_content_references": 9737,
+  "parent_tree_entries": 159,
+  "form_xobjects_visited": 5,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 767,
+      "vector_operations_tagged": 239,
+      "link_annotations": 16
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 1044,
+      "link_annotations": 40
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 934,
+      "vector_operations_artifact": 1,
+      "link_annotations": 12
+    },
+    {
+      "page": 4,
+      "vector_operations_artifact": 10,
+      "text_operations_tagged": 773,
+      "link_annotations": 9
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 409,
+      "text_operations_tagged": 707,
+      "link_annotations": 7
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 340,
+      "text_operations_tagged": 719,
+      "link_annotations": 3
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 47,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 746,
+      "vector_operations_artifact": 1,
+      "link_annotations": 6
+    },
+    {
+      "page": 8,
+      "vector_operations_artifact": 8,
+      "text_operations_tagged": 933,
+      "link_annotations": 2
+    },
+    {
+      "page": 9,
+      "vector_operations_artifact": 10,
+      "text_operations_tagged": 931,
+      "link_annotations": 6
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 897,
+      "vector_operations_artifact": 1,
+      "link_annotations": 9
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 674,
+      "link_annotations": 18
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 713,
+      "link_annotations": 16
+    },
+    {
+      "page": 13,
+      "text_operations_tagged": 75,
+      "link_annotations": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "742:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "754:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "756:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "758:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "760:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "794:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "795:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "818:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "831:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "841:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "843:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "846:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "853:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "855:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "859:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "863:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "866:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "873:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "875:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "881:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "887:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "897:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "901:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "906:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "929:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "933:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "936:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "943:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "946:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "948:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "953:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "963:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1025:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1028:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1037:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1045:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1047:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1049:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1060:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1065:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1082:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1088:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1090:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1097:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1099:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1101:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1103:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1108:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1110:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1112:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "767:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Concept diagram of notebook and conversation history. Notebook versions progress from left to right across the top, while messages progress across the bottom. Colored curved connectors link individual messages to the cells, plots or annotations discussed at that version, preserving the context even as the notebook changes.",
+      "actual_text": ""
+    },
+    {
+      "element": "893:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Overview of Callisto: (A) The changelog panel shows users' edit histories; (B) The collaborative notebook editor synchronizes edits, runtime variables, outputs, annotations (see G, H), and cursors (see F) among collaborators; (C) The filter button enables the filtering mode (see Figure 3); (D) The user panel lists collaborators that are connected to the notebook. Users can navigate to others' cursor locations by clicking on their name; (E) The embedded synchronous chat pane creates connections between messages and notebook content. Messages mapped to the selected cell are highlighted in light green. Users can create explicit references by clicking the magic wand (see J) and then selecting the relevant part of the notebook---for example, to create an annotation reference (see I).",
+      "actual_text": ""
+    },
+    {
+      "element": "909:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Callisto filter mode highlights the selected notebook cell, associated edits in the left changelog, and related messages in the right chat in pale yellow. The example selects a GrLivArea-versus-SalePrice scatterplot and conversation about outliers, connecting the relevant context across the panes.",
+      "actual_text": ""
+    },
+    {
+      "element": "1340:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output. The example changes a SalePrice distribution plot to a log-transformed distribution: the original is strongly right-skewed and the transformed output is more nearly bell-shaped.",
+      "actual_text": ""
+    },
+    {
+      "element": "938:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook.  When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure 4). Users can manually refine the links using the edit button (see B).",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

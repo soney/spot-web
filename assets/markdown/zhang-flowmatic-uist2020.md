@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc -->
+<!-- Source PDF SHA-256: dcc5808b4db8bb629538edcd7be02c2e52bf729fc9ef9e38fa6b2cb43a8b60cb -->
 
 <a id="page-1"></a>
 
@@ -20,9 +20,9 @@ Figure 1: System preview of FlowMatic. (a) shows the edit mode. (i) is a palette
 
 ## ABSTRACT
 
-Immersive authoring is a paradigm that makes Virtual Reality (VR) application development easier by allowing programmers to create VR content while immersed in the virtual environment. In this paradigm, programmers manipulate programming primitives through direct manipulation and get immediate feedback on their program’s state and output. However, existing immersive authoring tools have a low ceiling; their programming primitives are intuitive but can only express a limited set of static relationships between elements in a scene. In this paper, we introduce FlowMatic, an immersive authoring tool that raises the ceiling of expressiveness by allowing programmers to specify reactive behaviors— behaviors that react to discrete events such as user actions,
+Immersive authoring is a paradigm that makes Virtual Reality (VR) application development easier by allowing programmers to create VR content while immersed in the virtual environment. In this paradigm, programmers manipulate programming primitives through direct manipulation and get immediate feedback on their program’s state and output. However, existing immersive authoring tools have a low ceiling; their programming primitives are intuitive but can only express a limited set of static relationships between elements in a scene. In this paper, we introduce FlowMatic, an immersive authoring tool that raises the ceiling of expressiveness by allowing programmers to specify reactive behaviors— behaviors that react to discrete events such as user actions, system timers, or collisions. FlowMatic also introduces primitives for programmatically creating and destroying new objects, for abstracting and re-using functionality, and for importing three-dimensional (3D) models. Importantly, FlowMatic uses novel visual representations to allow these primitives to be represented directly in VR. We also describe the results of a user study that illustrates the usability advantages of Flow- Matic relative to a two-dimensional (2D) authoring tool and we demonstrate its expressiveness through several example applications that would be impossible to implement with existing immersive authoring tools. By combining a visual program representation with expressive programming primitives and a natural User Interface (UI) for authoring programs, FlowMatic shows how programmers can build fully interactive virtual experiences with immersive authoring.
 
-DOI: [https://doi.org/10.1145/3313831.XXXXXXX](<https://doi.org/10.1145/3313831.XXXXXXX>) system timers, or collisions. FlowMatic also introduces primitives for programmatically creating and destroying new objects, for abstracting and re-using functionality, and for importing three-dimensional (3D) models. Importantly, FlowMatic uses novel visual representations to allow these primitives to be represented directly in VR. We also describe the results of a user study that illustrates the usability advantages of Flow- Matic relative to a two-dimensional (2D) authoring tool and we demonstrate its expressiveness through several example applications that would be impossible to implement with existing immersive authoring tools. By combining a visual program representation with expressive programming primitives and a natural User Interface (UI) for authoring programs, FlowMatic shows how programmers can build fully interactive virtual experiences with immersive authoring.
+DOI: [https://doi.org/10.1145/3313831.XXXXXXX](<https://doi.org/10.1145/3313831.XXXXXXX>)
 
 ## INTRODUCTION
 
@@ -138,19 +138,17 @@ FlowMatic allows users to import both primitive models (e.g. cubes, spheres) and
 
 #### Stop Mode and Run Mode
 
-Although users enjoy liveness (where they can see the output immediately after they write part of the program), prior work has found that they prefer having a button that allows them to
+<a id="page-5"></a>
 
-<sup>1</sup>The operations that FlowMatic includes are based on those of the RxJS JavaScript library \[[35](<#page-12>)\].
+Although users enjoy liveness (where they can see the output immediately after they write part of the program), prior work has found that they prefer having a button that allows them to switch between running and editing the program \[[52](<#page-12>)\]. This is partly because they may accidentally trigger the actions in their application while they are using the controllers to manipulate the programming primitives. As Figure [2](<#page-5>) shows, users can switch between stop mode and run mode, where stop mode shows both 3D models and the programming primitives (e.g. operators, data sources, or attributes), whereas run mode only shows the 3D models.
+
+> <sup>1</sup>The operations that FlowMatic includes are based on those of the RxJS JavaScript library \[[35](<#page-12>)\].
 
 > <sup>2</sup>[https://sketchfab.com/](<https://sketchfab.com/>)
-
-<a id="page-5"></a>
 
 ![Figure 2: The palette menu of FlowMatic. (a)/(i) is the interface that allows users to import primitive models and select their colors using the color palette. (b)/(ii) is the interface that allows users to browse, search for, and import models from online. (iii) is a toggle for displaying the FRP diagram. (iv) allows users to create text elements in the scene.](https://from.so/assets/markdown/figures/zhang-flowmatic-uist2020/figure-002-p005.png)
 
 Figure 2: The palette menu of FlowMatic. (a)/(i) is the interface that allows users to import primitive models and select their colors using the color palette. (b)/(ii) is the interface that allows users to browse, search for, and import models from online. (iii) is a toggle for displaying the FRP diagram. (iv) allows users to create text elements in the scene.
-
-switch between running and editing the program \[[52](<#page-12>)\]. This is partly because they may accidentally trigger the actions in their application while they are using the controllers to manipulate the programming primitives. As Figure [2](<#page-5>) shows, users can switch between stop mode and run mode, where stop mode shows both 3D models and the programming primitives (e.g. operators, data sources, or attributes), whereas run mode only shows the 3D models.
 
 ### Functional Reactive Programming Diagram
 
@@ -212,11 +210,9 @@ FlowMatic enables users to define and re-use customized operators by taking abst
 
 ## IMPLEMENTATION
 
-FlowMatic is open source and publicly available for other researchers to build on and evaluate[4](<#page-7>). The front-end of Flow-
+FlowMatic is open source and publicly available for other researchers to build on and evaluate[4](<#page-7>). The front-end of Flow- Matic builds on A-FRAME, which in turn builds on Three.js and WebVR. The back end of FlowMatic uses Node.js and RxJS \[[35](<#page-12>)\] to handle FRP logic.
 
 > <sup>4</sup>[https://github.com/RayneZhang/FlowMatic](<https://github.com/RayneZhang/FlowMatic>)
-
-Matic builds on A-FRAME, which in turn builds on Three.js and WebVR. The back end of FlowMatic uses Node.js and RxJS \[[35](<#page-12>)\] to handle FRP logic.
 
 ## EVALUATION
 
@@ -232,9 +228,9 @@ We recruited 8 participants (6 female, 1 male, and 1 non-binary, age 20–26) to
 
 We used two different study tasks and two systems with which to implement them (A-FRAME or FlowMatic), all counterbalanced to control for learning effects. The study procedure consisted of three sessions: 50 minutes for training and experimenting with the first system, 50 minutes for training and experimenting with the second system, and 15 minutes for retrospective interviews and post-task questionnaires. In each 50-minute session, we spent the first 20 minutes helping the participants go through a tutorial of the system and then gave the participants 30 minutes to implement the task. The tutorial for A-FRAME was a document that introduced the syntax and Application Programming Interfaces (APIs) necessary for programming VR applications. The tutorial for FlowMatic contained basic concepts and operators necessary for the experiment. Participants also did some exercises with each system to write basic features in addition to the tutorials, but none of the features were the same as the actual tasks. The task descriptions were the same regardless of the implementation system. Table [1](<#page-8>) shows the descriptions for each task, which consisted of four steps.
 
-After the training, we gave participants 30 minutes for the task in each condition and did not give them further instructions
-
 <a id="page-8"></a>
+
+After the training, we gave participants 30 minutes for the task in each condition and did not give them further instructions on how to complete the task unless they specifically asked for help or we noticed they had been stuck for more than 1 minute. Participants were allowed to freely use the tutorials for reference. In the A-FRAME condition, the participants were allowed to copy the APIs from the document directly to the Integrated Development Environment (IDE). In both conditions, the participants were allowed to ask for clarifications on specific concepts, APIs, or operators covered in the tutorials. The researchers would then give the clarifications verbally. Questions that were unrelated to the contents of the tutorials, such as what the next step in the task should be, were counted as asking for help.
 
 Table 1: Two tasks given to the participants in the evaluation
 
@@ -269,8 +265,6 @@ Table 1: Two tasks given to the participants in the evaluation
     </tr>
   </tbody>
 </table>
-
-on how to complete the task unless they specifically asked for help or we noticed they had been stuck for more than 1 minute. Participants were allowed to freely use the tutorials for reference. In the A-FRAME condition, the participants were allowed to copy the APIs from the document directly to the Integrated Development Environment (IDE). In both conditions, the participants were allowed to ask for clarifications on specific concepts, APIs, or operators covered in the tutorials. The researchers would then give the clarifications verbally. Questions that were unrelated to the contents of the tutorials, such as what the next step in the task should be, were counted as asking for help.
 
 To make the comparison with A-FRAME fair, we tried to provide the same level of abstractions of APIs. For example, when implementing the feature of translation from one position to another, the participants only needed to specify the entity (which will translate), the from position, and the to position in both systems. We also provided the same resources in terms of digital models. During the tasks, we observed how often participants made errors and what types of errors they made in both conditions.
 

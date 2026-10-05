@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 6c16f896b866c678cc7dbba0de40dbdf88a2369faa2c47f10970e1e7853d4d3e -->
+<!-- Source PDF SHA-256: 2b5954538ebf495d1cc1302a23302f13333046adc46d28e43074e5b6288b6965 -->
 
 <a id="page-1"></a>
 
@@ -16,7 +16,7 @@ Yan Chen Virginia Tech Blacksburg, Virginia, USA ych@vt.edu
 
 Steve Oney University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
-© 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-XXXX-X/18/06
+> © 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-XXXX-X/18/06
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Conference acronym ’XX, June 03–05, 2018, Woodstock, NY
 
@@ -34,7 +34,9 @@ Do, Not, Us, This, Code, Put, the, Correct, Terms, for, Your, Paper
 
 ## ACM Reference Format:
 
-Ashley Ge Zhang, Yinuo Yang, Maryam Arab, Yan Chen, and Steve Oney. 2018. Understanding And Guiding Student-AI Interaction In Future Programming Education. In Proceedings of Make sure to enter the correct conference [https://doi.org/XXXXXXX.XXXXXXX](<https://doi.org/XXXXXXX.XXXXXXX>) title from your rights confirmation emai (Conference acronym ’XX). ACM, New York, NY, USA, [4](<#page-4>) pages. [https://doi.org/XXXXXXX.XXXXXXX](<https://doi.org/XXXXXXX.XXXXXXX>)
+Ashley Ge Zhang, Yinuo Yang, Maryam Arab, Yan Chen, and Steve Oney. 2018. Understanding And Guiding Student-AI Interaction In Future Programming Education. In Proceedings of Make sure to enter the correct conference title from your rights confirmation emai (Conference acronym ’XX). ACM, New York, NY, USA, [4](<#page-4>) pages. [https://doi.org/XXXXXXX.XXXXXXX](<https://doi.org/XXXXXXX.XXXXXXX>)
+
+> [https://doi.org/XXXXXXX.XXXXXXX](<https://doi.org/XXXXXXX.XXXXXXX>)
 
 ## 1 INTRODUCTION
 
@@ -72,21 +74,19 @@ The target population is university-level programming instructors teaching cours
 
 - Identify universities. We will focus on the top 100 universities worldwide, using established rankings (e.g., Times Higher Education) and enrollment data from Wikipedia [1](<#page-2>). This approach balances the selection of schools and ensures access to active programming courses with exposure to AI tools.
 
-- Identify relevant courses and instructors. For each selected university, we will use Google [2](<#page-2>) and ChatGPT [3](<#page-2>) to compile a list of programming-related courses. We will then extract the names and contact information of instructors, along with course details (e.g., course title, level, subject area) to ensure a balanced sample. We will focus on programming
-
-> <sup>1</sup>https://en.wikipedia.org/wiki/List\_of\_largest\_universities\_and\_university\_networks\_by\_enrollment
-
-> <sup>2</sup>https://www.google.com/
-
-> <sup>3</sup>https://openai.com/index/chatgpt/
+  > <sup>1</sup>https://en.wikipedia.org/wiki/List\_of\_largest\_universities\_and\_university\_networks\_by\_enrollment
 
 <a id="page-3"></a>
+
+- Identify relevant courses and instructors. For each selected university, we will use Google [2](<#page-2>) and ChatGPT [3](<#page-2>) to compile a list of programming-related courses. We will then extract the names and contact information of instructors, along with course details (e.g., course title, level, subject area) to ensure a balanced sample. We will focus on programming courses that emphasize hands-on coding and teach programming languages, concept, or practices. Both undergraduate and graduate-level courses will be included. We will exclude seminars, capstone projects, and theory-based courses without substantial coding components. Short-term workshops or bootcamps outside the standard curriculum will also be excluded.
+
+  > <sup>2</sup>https://www.google.com/
+
+  > <sup>3</sup>https://openai.com/index/chatgpt/
 
 ![Figure 1. Proposed instructor dashboard. The class overview has an AI-use frequency bar chart; topic badges for debugging, conceptual explanation, and syntax help; and red alerts for potential plagiarism, suspicious patterns, and under-utilization. The individual-student view groups students into clusters and shows a timeline of AI queries above plus and minus symbols for code edits. A syntax-help query and a potential-plagiarism alert are attached to one student’s timeline.](https://from.so/assets/markdown/figures/zhang-understanding-guiding-student-ai-chi2025aeai/figure-001-p003.png)
 
 Figure 1: System Design
-
-courses that emphasize hands-on coding and teach programming languages, concept, or practices. Both undergraduate and graduate-level courses will be included. We will exclude seminars, capstone projects, and theory-based courses without substantial coding components. Short-term workshops or bootcamps outside the standard curriculum will also be excluded.
 
 - Email outreach. We will send personalized emails to each instructor, including: (1) an description of the study’s goals and relevance, (2) a link to the online survey, and (3) a request for referrals, encouraging instructors to forward the invitation or suggest potential participants.
 

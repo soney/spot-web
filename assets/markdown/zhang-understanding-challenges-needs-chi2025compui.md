@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca -->
+<!-- Source PDF SHA-256: ed50f04e067a48be53903e9bf6376cd09d331344bc03d4ed0add2536d9ccfbfd -->
 
 <a id="page-1"></a>
 
@@ -302,17 +302,15 @@ We employed mixed-methods analysis of transcribed and anonymized interviews. For
 
 ### 4.1 Data Overview
 
-We analyzed participants’ responses for 312 tasks—150 user-defined tasks (from 5–10 proposed by each participant), 143 pre-defined tasks (same for each participant), and 19 tasks from the “take-home”
-
-
-
 <a id="page-4"></a>
+
+We analyzed participants’ responses for 312 tasks—150 user-defined tasks (from 5–10 proposed by each participant), 143 pre-defined tasks (same for each participant), and 19 tasks from the “take-home” survey. Each participant on average proposed 7 tasks from individual experience and browsing history. Figure [2](<#page-5>) presents the distribution of user-defined tasks across categories.
+
+
 
 ![Figure 1: Users first went through a screening survey (A) to collect demographic and technical background information. During the interview, participants were introduced to the web automation concepts and demonstrations through an overview session (B). Users were asked to propose 5–10 examples of web tasks they commonly perform (C). Then they evaluated each of these tasks and six predefined tasks through discussions of interaction, preferred automation levels, concerns, and usage frequency (D). This evaluation process was repeated for all scenarios (E). Participants then answered follow-up questions to explore additional use cases or concerns (F). After the interview, they completed a continuous survey over the next month to log additional tasks incrementally (G).](https://from.so/assets/markdown/figures/zhang-understanding-challenges-needs-chi2025compui/figure-001-p004.png)
 
 Figure 1: Users first went through a screening survey (A) to collect demographic and technical background information. During the interview, participants were introduced to the web automation concepts and demonstrations through an overview session (B). Users were asked to propose 5–10 examples of web tasks they commonly perform (C). Then they evaluated each of these tasks and six predefined tasks through discussions of interaction, preferred automation levels, concerns, and usage frequency (D). This evaluation process was repeated for all scenarios (E). Participants then answered follow-up questions to explore additional use cases or concerns (F). After the interview, they completed a continuous survey over the next month to log additional tasks incrementally (G).
-
-survey. Each participant on average proposed 7 tasks from individual experience and browsing history. Figure [2](<#page-5>) presents the distribution of user-defined tasks across categories.
 
 Participants rated their preferred level of automation for both the tasks they proposed and the examples we provided. Semi-automation was most preferred (48.39%), followed by full automation (32.05%) and no automation (15.71%). On a 5-point scale, participants expressed moderate concerns about error rates (2.24), privacy (2.04), efficiency (1.89), and usefulness (1.75), with errors being the primary concern. Figure [3](<#page-5>) details the automation preferences and concerns across predefined and user-defined tasks. In what follows, we explore participants’ openness to automation, their varying preferences, and specific needs.
 

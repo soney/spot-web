@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f -->
+<!-- Source PDF SHA-256: 28fa051edc3f27f558ecde7fda2766cd4787abeabaf36421b556fd5540e4c1a8 -->
 
 <a id="page-1"></a>
 
@@ -12,11 +12,11 @@
 
 [Andrew Begel](<https://orcid.org/0000-0002-7425-4818>) abegel@cmu.edu Carnegie Mellon University Software and Societal Systems Department Pittsburgh, PA, USA
 
-<sup>∗</sup>The author is currently a UX researcher at Google. The research was done when she was an a doctoral student at the University of Michigan.
-
-© 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0330-0/24/05...$15.00 [https://doi.org/10.1145/3613904.3642512](<https://doi.org/10.1145/3613904.3642512>)
+> <sup>∗</sup>The author is currently a UX researcher at Google. The research was done when she was an a doctoral student at the University of Michigan.
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+> © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0330-0/24/05...$15.00 [https://doi.org/10.1145/3613904.3642512](<https://doi.org/10.1145/3613904.3642512>)
 
 ## ABSTRACT
 
@@ -120,9 +120,9 @@ We conducted a remote exploratory qualitative study with 16 BVI developers to un
 
 We obtained IRB approval from the university for our study. We recruited our participants through snowball sampling and on-line forums such as program-l, a mailing list primarily comprising BVI developers \[[45](<#page-13>)\]. The eligibility criteria for participation were that developers should be 18 years or older, possess at least one year of experience programming with screen readers, and be able to communicate about code in spoken English. Since code styling guidelines vary across programming languages, we selected Python and JavaScript for the study. Our choice was informed by the immense and consistent popularity of both programming languages in the developer community \[[38](<#page-12>), [39](<#page-12>)\].
 
-We circulated a questionnaire to screen participants who met our eligibility criteria. The questionnaire asked respondents to self-report their programming experience in Python and JavaScript on a scale of 1 to 5; 1 meant no experience and 5 meant expertise in
-
 <a id="page-4"></a>
+
+We circulated a questionnaire to screen participants who met our eligibility criteria. The questionnaire asked respondents to self-report their programming experience in Python and JavaScript on a scale of 1 to 5; 1 meant no experience and 5 meant expertise in the language. We selected respondents who reported an experience of 3 or higher. We received a total of 20 responses and conducted the study with 16 respondents. All recruited participants reported either equal experience between Python and JavaScript or more programming experience with Python. Therefore, we conducted the study entirely using the Python stimuli. The questionnaire also collected details about participants’ demographics, assistive technology use, and job role (see Table [2](<#page-6>)).
 
 Table 1: Readability factors we considered in our study. #O1 and #O2 indicate the number of participants who chose option 1 and option 2 respectively for any factor/sub-factor combination. #O3 indicates participants who found both options equally readable or proposed a third alternative. Last column is a sum of O1 – O3 and equals the total number of participants in our study
 
@@ -295,8 +295,6 @@ Table 1: Readability factors we considered in our study. #O1 and #O2 indicate th
     </tr>
   </tbody>
 </table>
-
-the language. We selected respondents who reported an experience of 3 or higher. We received a total of 20 responses and conducted the study with 16 respondents. All recruited participants reported either equal experience between Python and JavaScript or more programming experience with Python. Therefore, we conducted the study entirely using the Python stimuli. The questionnaire also collected details about participants’ demographics, assistive technology use, and job role (see Table [2](<#page-6>)).
 
 In our final study sample, 14 participants identified as men and 2 identified as women. Participants were between 18 – 38 years old. They were employed as backend developers, full stack developers, tech lead positions, or were pursuing a higher education degree in computer science or a related field. All participants relied on screen readers to interact with digital devices; three participants reported using braille displays in the screening questionnaire but did not utilize them during the study. Specifically for the study, 14 participants used NVDA and 2 used JAWS (see Table [2](<#page-6>)).
 
@@ -552,11 +550,9 @@ Length of line interacted with type of code in determining participants’ prefe
 
 Participants mentioned that comments were typically written in English without special syntax or characters. They were easier to comprehend even when they exceeded the recommended character length, with our example being 109 characters long (see Rule #3.0.5 Option 2 in Appendix A):
 
-“It’s \[comments\] not that much sensitive that I need to read character by character. Whereas, if it is a code,
-
 <a id="page-7"></a>
 
-Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments syntax, right? That I need to read character by character. So that makes sense to logically break.” — P11
+“It’s \[comments\] not that much sensitive that I need to read character by character. Whereas, if it is a code, syntax, right? That I need to read character by character. So that makes sense to logically break.” — P11
 
 The preference is in contrast with PEP8’s recommendation, which suggests limiting comments to 72 characters for ease of visual consumption \[[63](<#page-13>)\]. Participants also mentioned that ideally comments should be written in plain English because its purpose is to explain the code. However, if a comment was fairly descriptive and listed “2 or 3 different steps” (P2), they would consider breaking them down.
 
@@ -668,8 +664,6 @@ ham[lower:upper+offset]
 Figure 4: Options presented to understand use of whitespaces
 
 <a id="page-9"></a>
-
-Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
 
 #### 4.3.2 Word-level navigation.
 
@@ -1008,8 +1002,6 @@ This study would not have been possible without our participants. We are gratefu
 
 <a id="page-13"></a>
 
-Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
-
 - \[43\] Venkatesh Potluri, Maulishree Pandey, Andrew Begel, Michael Barnett, and Scott Reitherman. 2022. CodeWalk: Facilitating Shared Awareness in Mixed-Ability Collaborative Software Development. In Proceedings of the 24th International ACM SIGACCESS Conference on Computers and Accessibility (Athens, Greece) (ASSETS ’22). Association for Computing Machinery, New York, NY, USA, Article 20, 16 pages. [https://doi.org/10.1145/3517428.3544812](<https://doi.org/10.1145/3517428.3544812>)
 
 - \[44\] Venkatesh Potluri, Priyan Vaithilingam, Suresh Iyengar, Y. Vidya, Manohar Swaminathan, and Gopal Srinivasa. 2018. CodeTalk: Improving Programming Environment Accessibility for Visually Impaired Developers. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (Montreal QC, Canada) (CHI ’18). Association for Computing Machinery, New York, NY, USA, 1–11. [https://doi.org/10.1145/3173574.3174192](<https://doi.org/10.1145/3173574.3174192>)
@@ -1136,6 +1128,8 @@ def add_binary(a, b):
 
 Option 2: Doctring is indented
 
+<a id="page-14"></a>
+
 ````
 ```
 def add_binary(a, b):
@@ -1144,13 +1138,6 @@ def add_binary(a, b):
 
         Parameters:
                 a (int): A decimal integer
-````
-
-<a id="page-14"></a>
-
-CHI ’24, May 11–16, 2024, Honolulu, HI, USA
-
-````
                 b (int): Another decimal integer
 
         Returns:
@@ -1339,17 +1326,12 @@ ImportantClass.important_method(
 
 Option 1: Render arguments on separate lines
 
+<a id="page-15"></a>
+
 ````
 ```
 # Applies `variables` to the `template` and writes to `file`
 def very_important_function(
-````
-
-<a id="page-15"></a>
-
-Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
-
-````
     template: str,
     *variables,
     file: os.PathLike,
@@ -1750,19 +1732,14 @@ extra_argument)
 
 Option 2: Render arguments on separate lines
 
+<a id="page-17"></a>
+
 ````
 ```
 ImportantClass.important_method(
     exc,
     limit,
     lookup_lines,
-````
-
-<a id="page-17"></a>
-
-Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
-
-````
     capture_locals,
     extra_argument
 )

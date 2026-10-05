@@ -2,9 +2,9 @@
   "file": "zhang-convomap-vlhcc2025.pdf",
   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
   "publication_id": "convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025",
-  "pdf_sha256": "f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2",
+  "pdf_sha256": "1c9651307834c5ab0cd26351f0f70f1f4fb313d4deca2408c6b7e8f0c123ba48",
   "markdown": "publications/zhang-convomap-vlhcc2025.md",
-  "markdown_sha256": "8b9e7bbbb02f0d9cd860b097fb531620a607ec9cf4ce8b246d3def67531f22ab",
+  "markdown_sha256": "0e39ae542b5dd178f54d62606498778fb5bacf85e939850d0a86e31b5ec48cac",
   "pages": 12,
   "blocks": [
     {
@@ -112,7 +112,7 @@
       "characters": 529
     },
     {
-      "node": "joined-156:0",
+      "node": "156:0",
       "role": "P",
       "pages": [
         1,
@@ -419,7 +419,7 @@
       "characters": 780
     },
     {
-      "node": "joined-207:0",
+      "node": "207:0",
       "role": "P",
       "pages": [
         4,
@@ -476,7 +476,7 @@
       "characters": 594
     },
     {
-      "node": "joined-336:0",
+      "node": "336:0",
       "role": "P",
       "pages": [
         5,
@@ -677,37 +677,20 @@
       "characters": 769
     },
     {
-      "node": "221:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 256
-    },
-    {
-      "node": "222:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 276
-    },
-    {
-      "node": "joined-223:0",
-      "role": "P",
-      "pages": [
-        7,
-        8
-      ],
-      "characters": 453
-    },
-    {
       "node": "87:0",
       "role": "Note",
       "pages": [
         7
       ],
       "characters": 63
+    },
+    {
+      "node": "221:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 256
     },
     {
       "node": "224:0",
@@ -726,12 +709,29 @@
       "characters": 81
     },
     {
+      "node": "222:0",
+      "role": "P",
+      "pages": [
+        7
+      ],
+      "characters": 276
+    },
+    {
       "node": "226:0",
       "role": "Note",
       "pages": [
         7
       ],
       "characters": 84
+    },
+    {
+      "node": "223:0",
+      "role": "P",
+      "pages": [
+        7,
+        8
+      ],
+      "characters": 453
     },
     {
       "node": "353:0",
@@ -1192,13 +1192,13 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 205,
-    "line_wrap_hyphens_retained": 33,
-    "paragraph_fragments_joined": 13,
+    "line_wrap_hyphens_removed": 197,
+    "line_wrap_hyphens_retained": 29,
+    "paragraph_fragments_joined": 9,
     "reviewed_wrap_repairs": 2,
     "script_runs_positioned": 45
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-convomap-vlhcc2025.json.gz",
-  "source_tags_sha256": "b878454c995dd613c0b862783e110bdee42e8362a1a0dbf795a921eb8601836c"
+  "source_tags_sha256": "2b44a75c01bfe874a094018aae6d2dc5ed6e11808c6f4a1d314675364e285beb"
 }

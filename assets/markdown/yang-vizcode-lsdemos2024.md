@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874 -->
+<!-- Source PDF SHA-256: f4d043eb0719f578b2d343ee7f75e18cb299193e576ed472678a836faecdb291 -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,7 @@ Yinuo Yang University of Michigan Ann Arbor, Michigan, USA inon@umich.edu
 
 Steve Oney University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
-![Figure 1: The VizCode Web Page interface consists of student boxes (a), code boxes (b), and document tags (c). This screenshot shows two code boxes with several code boxes in them, each displaying one student’s code in real-time from the student’s VSCode. Documents under editing are displayed in blue (d), indicating that the student is currently editing this document.](https://from.so/assets/markdown/figures/yang-vizcode-lsdemos2024/figure-002-p001.png)
+![VizCode comparison view with two student panels side by side. Each panel has document tabs above a syntax-highlighted source editor, allowing the instructor to compare students’ work. Blue document names indicate the file each student is currently editing: style.css for Student 1 and index.html for Student 2. The displayed source in both panels is HTML.](https://from.so/assets/markdown/figures/yang-vizcode-lsdemos2024/figure-002-p001.png)
 
 Figure 1: The VizCode Web Page interface consists of student boxes (a), code boxes (b), and document tags (c). This screenshot shows two code boxes with several code boxes in them, each displaying one student’s code in real-time from the student’s VSCode. Documents under editing are displayed in blue (d), indicating that the student is currently editing this document.
 
@@ -28,15 +28,13 @@ Prior research has shown the benefits and promise of allowing instructors in lar
 
 • Applied computing → Education; • Human-centered computing → Interactive systems and tools.
 
-[https://doi.org/10.1145/3657604.3664716](<https://doi.org/10.1145/3657604.3664716>)
-
 ## KEYWORDS
 
 programming education at scale; computer science education
 
 ## ACM Reference Format:
 
-Yinuo Yang and Steve Oney. 2024. VizCode: A Practical Real-time Tool for In- Class Computer Programming Tutoring. In Proceedings of the Eleventh ACM Conference on Learning @ Scale (L@S ’24), July 18–20, 2024, Altanta, GA, USA. ACM, New York, NY, USA, [3](<#page-3>) pages. [https://doi.org/10.1145/3657604.3664716](<https://doi.org/10.1145/3657604.3664716>)
+Yinuo Yang and Steve Oney. 2024. VizCode: A Practical Real-time Tool for In- Class Computer Programming Tutoring. In Proceedings of the Eleventh ACM Conference on Learning @ Scale (L@S ’24), July 18–20, 2024, Altanta, GA, USA. ACM, New York, NY, USA, [3](<#page-3>) pages. [https://doi.org/10.1145/3657604.3664716](<https://doi.org/10.1145/3657604.3664716>) [https://doi.org/10.1145/3657604.3664716](<https://doi.org/10.1145/3657604.3664716>)
 
 ## 1 INTRODUCTION
 
@@ -58,6 +56,8 @@ Figure 2: VizCode workflow. Each student’s editing data would send to the VizC
 
 As a first step, students can install the VizCode extension for VS- Code from the built-in Extension Marketplace[1](<#page-2>). This extension has a minimal User Interface, only notifying students if and when their code modifications are being tracked.
 
+> <sup>1</sup>[https://marketplace.visualstudio.com/items?itemName=educational-technology-](<https://marketplace.visualstudio.com/items?itemName=educational-technology-collective.telemetry>) [collective.telemetry](<https://marketplace.visualstudio.com/items?itemName=educational-technology-collective.telemetry>)
+
 Students are not required to do anything other than install the extension; there is no additional configuration or setup. Instead, most of the configuration is done by instructors—to specify where (which server) data should be logged to and which files to keep track of along with links to the private policies for every exporter. These configuration options can be specified in a .vscode configuration file that instructors can distribute alongside assignments to students. When students first start the extension, the extension will send them links to the private policies to handle the consent. As students make code modifications to the relevant directories, this extension will communicate code changes to the data server in real-time.
 
 ### 2.2 Data Server
@@ -69,8 +69,6 @@ The data server is a Node.js application that listens for code changes and distr
 The VizCode dashboard connects with the data server to offer a user-friendly platform for monitoring students’ coding progress. As students edit their code, their code updates are immediately reflected in the dashboard. Figure 1 shows its main structure:
 
 - Figure 1.a: Student boxes, showing a student’s real-time documents within VSCode.
-
-> <sup>1</sup>[https://marketplace.visualstudio.com/items?itemName=educational-technology-](<https://marketplace.visualstudio.com/items?itemName=educational-technology-collective.telemetry>) [collective.telemetry](<https://marketplace.visualstudio.com/items?itemName=educational-technology-collective.telemetry>)
 
 - Figure 1.b: Code boxes, showing student’s code (using the Monaco web-based code editor).
 

@@ -2,9 +2,9 @@
   "file": "chen-sifter-imx2020.pdf",
   "title": "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale",
   "publication_id": "sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020",
-  "pdf_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+  "pdf_sha256": "a7733ba7384c7b97c6f108535d9a8d66c18dec7b9ad01b4a5c157e2f545c39bb",
   "markdown": "publications/chen-sifter-imx2020.md",
-  "markdown_sha256": "49652c4e78ff320aae290f216dcde9c8e0731a1d1c3701c422a0c1787627544b",
+  "markdown_sha256": "ca538574a9a7260d398f4726abdab7a0713e6f76dd4ec589626805bfc085417a",
   "pages": 9,
   "blocks": [
     {
@@ -21,7 +21,15 @@
       "pages": [
         1
       ],
-      "characters": 282
+      "characters": 70
+    },
+    {
+      "node": "1009:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 63
     },
     {
       "node": "410:0",
@@ -32,6 +40,22 @@
       "characters": 61
     },
     {
+      "node": "1010:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 68
+    },
+    {
+      "node": "1011:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 78
+    },
+    {
       "node": "411:0",
       "role": "P",
       "pages": [
@@ -40,20 +64,20 @@
       "characters": 59
     },
     {
-      "node": "425:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 123
-    },
-    {
       "node": "430:0",
       "role": "Note",
       "pages": [
         1
       ],
       "characters": 641
+    },
+    {
+      "node": "425:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 125
     },
     {
       "node": "412:0",
@@ -120,6 +144,14 @@
       "characters": 421
     },
     {
+      "node": "426:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
       "node": "423:0",
       "role": "H2",
       "pages": [
@@ -128,20 +160,12 @@
       "characters": 17
     },
     {
-      "node": "joined-424:0",
+      "node": "424:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 211
-    },
-    {
-      "node": "427:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 1522
+      "characters": 1649
     },
     {
       "node": "428:0",
@@ -152,7 +176,7 @@
       "characters": 743
     },
     {
-      "node": "joined-429:0",
+      "node": "429:0",
       "role": "P",
       "pages": [
         1,
@@ -265,7 +289,7 @@
       "characters": 513
     },
     {
-      "node": "joined-638:0",
+      "node": "638:0",
       "role": "P",
       "pages": [
         2,
@@ -359,7 +383,7 @@
       "pages": [
         3
       ],
-      "characters": 136
+      "characters": 480
     },
     {
       "node": "660:0",
@@ -383,7 +407,7 @@
       "pages": [
         3
       ],
-      "characters": 611
+      "characters": 264
     },
     {
       "node": "667:0",
@@ -418,7 +442,7 @@
       "characters": 292
     },
     {
-      "node": "joined-673:0",
+      "node": "673:0",
       "role": "P",
       "pages": [
         3,
@@ -550,9 +574,10 @@
       "node": "702:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 1026
+      "characters": 1606
     },
     {
       "node": "710:0",
@@ -585,14 +610,6 @@
         5
       ],
       "characters": 282
-    },
-    {
-      "node": "735:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 579
     },
     {
       "node": "736:0",
@@ -808,7 +825,7 @@
       "pages": [
         7
       ],
-      "characters": 881
+      "characters": 986
     },
     {
       "node": "910:0",
@@ -825,14 +842,6 @@
         7
       ],
       "characters": 183
-    },
-    {
-      "node": "912:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 104
     },
     {
       "node": "913:0",
@@ -886,9 +895,10 @@
       "node": "919:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 137
+      "characters": 418
     },
     {
       "node": "920:0",
@@ -905,14 +915,6 @@
         7
       ],
       "characters": 82
-    },
-    {
-      "node": "joined-926:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 334
     },
     {
       "node": "928:0",
@@ -1083,7 +1085,7 @@
       "characters": 7788
     }
   ],
-  "tagged_content_items": 7992,
+  "tagged_content_items": 7984,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1272,12 +1274,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 114,
-    "paragraph_fragments_joined": 5,
-    "line_wrap_hyphens_retained": 11,
+    "line_wrap_hyphens_removed": 93,
+    "line_wrap_hyphens_retained": 9,
     "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-sifter-imx2020.json.gz",
-  "source_tags_sha256": "68e75c9fbad0a018f67294d71668f57f3e5c451426cdf911d9c87053052fd6f2"
+  "source_tags_sha256": "4448c90b026e5e411711ab0569115e0abaf0a6808aaa7bd86969daa6d591b84d"
 }

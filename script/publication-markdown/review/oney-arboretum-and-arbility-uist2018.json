@@ -2,9 +2,9 @@
   "file": "oney-arboretum-and-arbility-uist2018.pdf",
   "title": "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture",
   "publication_id": "arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018",
-  "pdf_sha256": "e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1",
+  "pdf_sha256": "cb9eb25030c707edcaecfb2a5e066c557f884de7eba9a26a1bc55a4b0ef8575d",
   "markdown": "publications/oney-arboretum-and-arbility-uist2018.md",
-  "markdown_sha256": "708c9f680ecac1561a77e55abdc2fa8ff55fa99e2ad5f984c26a0578c4960e16",
+  "markdown_sha256": "1053df0dd4e9b0675a1cc57d6538df71e16de39f54a4c3ce1bf91f3ee5c9713f",
   "pages": 13,
   "blocks": [
     {
@@ -25,19 +25,19 @@
     },
     {
       "node": "962:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 575
+      "characters": 577
     },
     {
       "node": "964:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 50
+      "characters": 52
     },
     {
       "node": "958:0",
@@ -73,19 +73,19 @@
     },
     {
       "node": "963:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 47
+      "characters": 49
     },
     {
       "node": "965:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 46
+      "characters": 48
     },
     {
       "node": "966:0",
@@ -123,17 +123,10 @@
       "node": "956:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 122
-    },
-    {
-      "node": "1170:0",
-      "role": "P",
-      "pages": [
+        1,
         2
       ],
-      "characters": 672
+      "characters": 793
     },
     {
       "node": "1172:0",
@@ -160,7 +153,7 @@
       "characters": 901
     },
     {
-      "node": "joined-929:0",
+      "node": "929:0",
       "role": "P",
       "pages": [
         2
@@ -203,18 +196,18 @@
       "node": "899:0",
       "role": "P",
       "pages": [
-        2
-      ],
-      "characters": 1661
-    },
-    {
-      "node": "joined-900:0",
-      "role": "P",
-      "pages": [
         2,
         3
       ],
-      "characters": 474
+      "characters": 2049
+    },
+    {
+      "node": "900:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 88
     },
     {
       "node": "1340:0",
@@ -383,7 +376,7 @@
       "pages": [
         4
       ],
-      "characters": 1661
+      "characters": 1657
     },
     {
       "node": "1272:0",
@@ -908,7 +901,7 @@
       "characters": 9
     },
     {
-      "node": "joined-1503:0",
+      "node": "1503:0",
       "role": "P",
       "pages": [
         7,
@@ -997,7 +990,7 @@
       "characters": 17
     },
     {
-      "node": "joined-1462:0",
+      "node": "1462:0",
       "role": "P",
       "pages": [
         8,
@@ -1007,11 +1000,19 @@
     },
     {
       "node": "1463:0",
-      "role": "Figure",
+      "role": "Table",
       "pages": [
         9
       ],
-      "characters": 1183
+      "characters": 3428
+    },
+    {
+      "node": "1976:0",
+      "role": "Table",
+      "pages": [
+        9
+      ],
+      "characters": 3288
     },
     {
       "node": "1464:0",
@@ -1803,15 +1804,7 @@
       "pages": [
         13
       ],
-      "characters": 161
-    },
-    {
-      "node": "1192:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 51
+      "characters": 213
     },
     {
       "node": "1193:0",
@@ -1918,7 +1911,7 @@
       "characters": 264
     }
   ],
-  "tagged_content_items": 232,
+  "tagged_content_items": 263,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -2018,33 +2011,55 @@
       "sha256": "9ec46d9c2484b8f0d0ec49819aa841239d962038b45808dcbf4154fbb111fbf9",
       "kind": "figure",
       "alt": "Figure 4 depicts each of the three task pages and their corresponding task question and reason for inaccessible content. The task question for the Calorie Counter page is \"How many calories are needed to lose 1 pound?\" and this content is inaccessible because it encodes this information in a visual canvas element. The task question for the Gary Turk Video page is \"Name the person who did sound engineering for the video\" and this content is inaccessible because it requires a mousedown event to reveal, whereas screen reader interactions typically simulate click events. The task question for the Noodlehead Menu page is \"Name one $8 noodle dis that is indicated as spicy\" and is inaccessible because spiciness is indicated only by red text CSS styling."
-    },
-    {
-      "path": "figures/oney-arboretum-and-arbility-uist2018/figure-008-p009.png",
-      "node": "1463:0",
-      "page": 9,
-      "bbox": [
-        51.92900085449219,
-        60.361881256103516,
-        299.010986328125,
-        172.70700073242188
-      ],
-      "sha256": "643286be6e27426253070515b610063c2b5c16a47581f8e5f4f47e606d9901ed",
-      "kind": "figure",
-      "alt": "Figure 5 is a two-part table with quantitative results for each of the three tasks. The first part of the table shows the accuracy by study participant group. Blind (solo) participants achieved accuracies of 0, 63, and 14 on the Counter, Video and Menu tasks respectively. Sighted (solo) participants achieved accuracies of 100, 90, and 86 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participants achieved accuracies of 100, 89, and 89 on the Counter, Video, and Menu tasks respectively. The second part of the table shows the time to successful completion of a task in seconds by study participant group. Blind (solo) participant times were n/a, 108, and 133 on the Counter, Video, and Menu tasks respectively. (Note: the time for completion on the Counter task was not applicable because no blind participant successfully completed this task.) Sighted (solo) participant times were 62, 93, and 82 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participant times were 418, 240, and 304 on the Counter, Video, and Menu tasks respectively."
     }
   ],
-  "tables": [],
+  "tables": [
+    {
+      "source_table_id": "1463:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1463:0"
+    },
+    {
+      "source_table_id": "1976:0",
+      "source_pages": [
+        9
+      ],
+      "format": "html",
+      "row_count": 4,
+      "column_count": 4,
+      "cell_count": 16,
+      "header_count": 7,
+      "empty_cell_count": 0,
+      "has_spans": false,
+      "grid_holes": [],
+      "warnings": [],
+      "scope_both_strategy": null,
+      "column_header_band_count": 1,
+      "node": "1976:0"
+    }
+  ],
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 419,
+    "line_wrap_hyphens_removed": 376,
     "line_wrap_hyphens_retained": 28,
-    "paragraph_fragments_joined": 4,
-    "reviewed_wrap_repairs": 4,
+    "reviewed_wrap_repairs": 3,
     "script_runs_positioned": 11
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-arboretum-and-arbility-uist2018.json.gz",
-  "source_tags_sha256": "f11c35b9c5e24bde4af853d6b3e5a88f1b4df15d8e15c7ad5134fd5969861a3b"
+  "source_tags_sha256": "320744271a53a6e424d52354600d4a157f12a0c6b4425b40a35aa3125f8beaeb"
 }

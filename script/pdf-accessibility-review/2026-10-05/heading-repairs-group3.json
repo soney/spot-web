@@ -1,0 +1,90 @@
+[
+  {
+    "file": "wang-colaroid-chi2023.pdf",
+    "before": "b43f9df79553c581b623670a55b5060872a490d05e4714f03624bc7fbb7d9cc2",
+    "after": "29ea72cb8340dd18d17ad63288ce7e89be7ac6872ba8a8165b1a2ad2c1075b51",
+    "repairs": [
+      {
+        "heading": 949,
+        "paragraph": 950,
+        "parent": 944,
+        "page_object": 105,
+        "mcids": [
+          505,
+          506,
+          507,
+          508
+        ],
+        "insert_at": 2,
+        "prefix": " Git for Code Versioning.",
+        "text": "4.7.1 Leveraging Git for Code Versioning."
+      },
+      {
+        "heading": 1109,
+        "paragraph": 1110,
+        "parent": 1105,
+        "page_object": 626,
+        "mcids": [
+          488,
+          489,
+          490
+        ],
+        "insert_at": 2,
+        "prefix": " Benefits for Learners.",
+        "text": "6.2.3 Perceived Benefits for Learners."
+      },
+      {
+        "heading": 1119,
+        "paragraph": 1120,
+        "parent": 1105,
+        "page_object": 626,
+        "mcids": [
+          406
+        ],
+        "insert_at": 2,
+        "prefix": " Setup.",
+        "text": "7.1.2 Study Setup."
+      }
+    ],
+    "painted_content_changed": false
+  },
+  {
+    "file": "zhang-editrail-uist2026.pdf",
+    "before": "55a38fecb8b614c0b083fc352af3db890a0e1ba09d160758e44f31efc014620a",
+    "after": "e5be9706d4f0254afc8baee3a40bc3b967ef95f9af7c51f6e0bb139f367f5d83",
+    "repairs": [
+      {
+        "heading": 967,
+        "paragraph": 968,
+        "parent": 958,
+        "page_object": 485,
+        "mcids": [
+          644
+        ],
+        "insert_at": 2,
+        "prefix": " analysis.",
+        "text": "3.1.2 Data analysis."
+      },
+      {
+        "heading": 1108,
+        "paragraph": 1109,
+        "parent": 1096,
+        "page_object": 198,
+        "mcids": [
+          564,
+          565,
+          566,
+          567,
+          568,
+          569,
+          570,
+          571
+        ],
+        "insert_at": 2,
+        "prefix": " using the baseline, participants believed they had a\n",
+        "text": "6.3.2 When using the baseline, participants believed they had a\nbetter understanding of students’ AI usage than they actually demon-\nstrated."
+      }
+    ],
+    "painted_content_changed": false
+  }
+]

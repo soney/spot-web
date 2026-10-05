@@ -2,9 +2,9 @@
   "file": "myers-making-end-user-eud2017.pdf",
   "title": "Making End User Development More Natural",
   "publication_id": "making_end_user_development_more_natural_2016",
-  "pdf_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+  "pdf_sha256": "fc80abfcdd911af9796324657c281f215b9c8e0cb0c2aec6b94b346ada0cf4fa",
   "markdown": "publications/myers-making-end-user-eud2017.md",
-  "markdown_sha256": "168b469108b9554492d2cf4471e2d769377d39e94a25899c5f65bb01f558cf94",
+  "markdown_sha256": "825bc86f6c575792ff35ff2e26587c392da227c79b80f32f83c6c3aef5abda7d",
   "pages": 22,
   "blocks": [
     {
@@ -24,14 +24,6 @@
       "characters": 120
     },
     {
-      "node": "348:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 804
-    },
-    {
       "node": "349:0",
       "role": "P",
       "pages": [
@@ -45,7 +37,7 @@
       "pages": [
         1
       ],
-      "characters": 37
+      "characters": 39
     },
     {
       "node": "351:0",
@@ -96,13 +88,21 @@
       "characters": 81
     },
     {
-      "node": "joined-357:0",
+      "node": "357:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 67
+    },
+    {
+      "node": "348:0",
       "role": "P",
       "pages": [
         1,
         2
       ],
-      "characters": 956
+      "characters": 1693
     },
     {
       "node": "361:0",
@@ -114,11 +114,11 @@
     },
     {
       "node": "358:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 146
+      "characters": 148
     },
     {
       "node": "362:0",
@@ -217,7 +217,7 @@
       "characters": 976
     },
     {
-      "node": "joined-416:0",
+      "node": "416:0",
       "role": "P",
       "pages": [
         4,
@@ -250,7 +250,7 @@
       "characters": 10
     },
     {
-      "node": "joined-429:0",
+      "node": "429:0",
       "role": "P",
       "pages": [
         5,
@@ -283,7 +283,7 @@
       "characters": 15
     },
     {
-      "node": "joined-531:0",
+      "node": "531:0",
       "role": "P",
       "pages": [
         6,
@@ -297,7 +297,7 @@
       "pages": [
         7
       ],
-      "characters": 515
+      "characters": 448
     },
     {
       "node": "536:0",
@@ -308,7 +308,7 @@
       "characters": 450
     },
     {
-      "node": "joined-538:0",
+      "node": "538:0",
       "role": "P",
       "pages": [
         7,
@@ -389,7 +389,7 @@
       "characters": 1303
     },
     {
-      "node": "joined-431:0",
+      "node": "431:0",
       "role": "P",
       "pages": [
         9,
@@ -499,7 +499,7 @@
       "pages": [
         13
       ],
-      "characters": 351
+      "characters": 447
     },
     {
       "node": "586:0",
@@ -526,7 +526,7 @@
       "characters": 607
     },
     {
-      "node": "joined-589:0",
+      "node": "589:0",
       "role": "P",
       "pages": [
         13,
@@ -634,9 +634,10 @@
       "node": "445:0",
       "role": "P",
       "pages": [
-        16
+        16,
+        17
       ],
-      "characters": 813
+      "characters": 938
     },
     {
       "node": "446:0",
@@ -663,14 +664,6 @@
       "characters": 203
     },
     {
-      "node": "454:0",
-      "role": "P",
-      "pages": [
-        17
-      ],
-      "characters": 124
-    },
-    {
       "node": "455:0",
       "role": "P",
       "pages": [
@@ -679,7 +672,7 @@
       "characters": 1346
     },
     {
-      "node": "joined-456:0",
+      "node": "456:0",
       "role": "P",
       "pages": [
         17,
@@ -829,7 +822,7 @@
       ],
       "sha256": "92207d402e0c028d22ad6bfd45fb24d06f87b5a1a957db01e0ad126244a6c09f",
       "kind": "figure",
-      "alt": "Fig. 2 Dragging and dropping a prototype’s icon from the Toolbox creates a new part, and the editor also supports drag/drop rearrangement of parts as well as copy/paste. Users can click the example in a part’s icon to edit it, while clicking other parts of the icon displays widgets for editing its constraints, which are shared by every instance of the part. Clicking the “+” icon adds a constraint while clicking the “x” icon deletes the constraint"
+      "alt": "Data Description Editor for a person name. A toolbox on the left supplies example parts; the top area shows first-name and last-name parts in alternative orders, using John and von Neumann. Selecting the last-name part opens constraints for word and letter counts, separators and capitalization. Plus and x controls add or remove constraints, and parts can be rearranged by dragging."
     },
     {
       "path": "figures/myers-making-end-user-eud2017/figure-003-p008.png",
@@ -885,7 +878,7 @@
       ],
       "sha256": "6ac892294b6c6357b96214228502e10a43e4edc31a2f8a41c41f0c750bf77f99",
       "kind": "figure",
-      "alt": "Fig. 6 An example screenshot of Azurite running in the Eclipse IDE. At the bottom, a timeline visualization of recent code changes is provided. The user is currently using the “Interactive Selective Undo” dialog, which is one of the more sophisticated selective undo features of Azurite"
+      "alt": "Azurite in Eclipse. A timeline beneath the Java editor shows recent edits as colored rectangles on separate file rows. The Interactive Selective Undo dialog compares Current Source with Preview of Selective Undo Result, with changed lines highlighted. A selected change offers Keep this code unchanged, allowing the user to preview which edits will be undone while retaining others."
     },
     {
       "path": "figures/myers-making-end-user-eud2017/figure-007-p016.png",
@@ -920,13 +913,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 199,
-    "paragraph_fragments_joined": 8,
-    "line_wrap_hyphens_retained": 16,
+    "line_wrap_hyphens_removed": 166,
+    "line_wrap_hyphens_retained": 13,
     "reviewed_wrap_repairs": 3,
     "script_runs_positioned": 8
   },
   "review_notes": [],
   "source_tags": "source-tags/myers-making-end-user-eud2017.json.gz",
-  "source_tags_sha256": "fa1b92ea191a8ad538974f1b0f38f93f89c5c73faed3eaea1901a14c44e6f66a"
+  "source_tags_sha256": "c334a1ce77fb61a7d340f281dde03410935173bcb9d4a29e6d9bfc3c152f9fc4"
 }

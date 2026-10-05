@@ -223,6 +223,7 @@ module Jekyll
         "pdf_path" => pub["pdf"] && "/assets/#{pub["pdf"]}",
         "pdf_filename" => pub["pdf"] && pdf_download_name(pub),
         "markdown_path" => pub["markdown"] && "/assets/#{pub["markdown"]}",
+        "markdown_bundle_path" => pub["markdown_bundle"] && "/assets/#{pub["markdown_bundle"]}",
         "links" => pub["links"] && Array(pub["links"]).map { |link| { "url" => link["url"], "description" => link["description"] } },
         "doi" => pub["doi"],
         "award" => award_label(pub),

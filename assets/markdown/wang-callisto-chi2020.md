@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9 -->
+<!-- Source PDF SHA-256: d45d8f39953a038dceb2395a2d9b61263fbb1df531d88f05df80cef886064c79 -->
 
 <a id="page-1"></a>
 
@@ -116,8 +116,6 @@ We also investigated the granularity of the notebook elements [collaborators ref
 
 ### Implications
 
-We derive three design implications from our findings:
-
 <a id="page-4"></a>
 
 <table>
@@ -222,6 +220,8 @@ Table 2. Relevance between messages, the notebook history, and the final noteboo
 
 Table 3. Granularity: the level of detail of the referenced elements
 
+We derive three design implications from our findings:
+
 Chat messages are useful for explaining the exploration process. We were able to better understand the motivations for doing specific analyses, the purpose of the code written to run them, the interpretation of their results, and alternative analysis paths (tested or rejected without implementation). These details are often missing or poorly captured in traditional Jupyter Notebook artifacts.
 
 Chat messages are difficult to follow. Chat messages are long and tedious to read because of scattered insights, a large amount of out-of-scope information, and information that requires notebook context to understand (which is likely to change before being finalized, as [Table 2 shows). This makes](<#page-4>) it difficult for newcomers to build on earlier work.
@@ -236,23 +236,21 @@ We designed Callisto to improve collaborative data science by better connecting 
 
 Although the creators of Jupyter recognized the importance of real-time collaboration, they left it as future work [†](<#page-4>) [\[ 25\]. Sev-](<#page-12>) [eral offshoots of the Jupyter project \[4, 3\] have](<#page-11>) incorporated collaborative features such as synchronized editing and shared cursors. Callisto starts by enabling notebook sharing and edit synchronization in Jupyter. We designed Callisto as a Jupyter plugin, rather than as a fork of the codebase, to allow users to easily share any standard Jupyter notebook and maintain compatibility with future versions of the Jupyter platform.
 
+> † At the time of writing, Jupyter does not support real-time collaboration.
+
 #### Basic Collaboration Features
 
 The Callisto plugin augments the standard Jupyter User Interface (UI) with several widgets, as Figure [2 shows.](<#page-5>) First, Callisto adds a “share” button that generates a unique URL for collaborators to join the shared notebook session. A panel lists the collaborators that are connected to the notebook (Figure [2.D). When collaborators join the notebook, their edits](<#page-5>) are synchronized in real time with other collaborators. They can also see every other user’s cursor location and selection (Figure [2.F) and navigate to](<#page-5>) any other user’s location by clicking on their name [in the list of collaborators (Figure 2.D).](<#page-5>)
 
 #### Shared Runtime and Outputs
 
-One important difference between computational notebooks and standard code is that computational notebooks are divided into smaller cells that can be run individually. Cells run in a
-
-† At the time of writing, Jupyter does not support real-time collaboration.
-
 <a id="page-5"></a>
+
+One important difference between computational notebooks and standard code is that computational notebooks are divided into smaller cells that can be run individually. Cells run in a common variable space, meaning that the ordering and timing of cell execution can (and typically does) influence execution outputs. This can be confusing for users, particularly in situations where one user’s output cannot be replicated by other users who have different runtime states. Thus, rather than giving users their own runtime, Callisto connects every collaborator to a single shared runtime. This means that the state of the program is shared—if the value of a variable is modified (by executing code that modifies its value), its value is updated for every collaborator. Cell outputs (the results of running a cell, which can be textual, graphical, or shared data frames) are also shared automatically, which gives all collaborators a shared point of reference.
 
 ![Overview of Callisto: (A) The changelog panel shows users' edit histories; (B) The collaborative notebook editor synchronizes edits, runtime variables, outputs, annotations (see G, H), and cursors (see F) among collaborators; (C) The filter button enables the filtering mode (see Figure 3); (D) The user panel lists collaborators that are connected to the notebook. Users can navigate to others' cursor locations by clicking on their name; (E) The embedded synchronous chat pane creates connections between messages and notebook content. Messages mapped to the selected cell are highlighted in light green. Users can create explicit references by clicking the magic wand (see J) and then selecting the relevant part of the notebook---for example, to create an annotation reference (see I).](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-002-p005.png)
 
 Figure 2. Overview of Callisto: (A) The changelog panel shows users’ edit histories; (B) The collaborative notebook editor synchronizes edits, runtime variables, outputs, annotations (see G, H), and cursors (see F) among collaborators; (C) The filter button enables the filtering mode (see Figure [3); (D)](<#page-6>) The user panel lists collaborators that are connected to the notebook. Users can navigate to others’ cursor locations by clicking on their name; (E) The embedded synchronous chat pane creates connections between messages and notebook content. Messages mapped to the selected cell are highlighted in light green. Users can create explicit references by clicking the magic wand (see J) and then selecting the relevant part of the notebook—for example, to create an annotation reference (see I).
-
-common variable space, meaning that the ordering and timing of cell execution can (and typically does) influence execution outputs. This can be confusing for users, particularly in situations where one user’s output cannot be replicated by other users who have different runtime states. Thus, rather than giving users their own runtime, Callisto connects every collaborator to a single shared runtime. This means that the state of the program is shared—if the value of a variable is modified (by executing code that modifies its value), its value is updated for every collaborator. Cell outputs (the results of running a cell, which can be textual, graphical, or shared data frames) are also shared automatically, which gives all collaborators a shared point of reference.
 
 #### Synchronous Chat
 
@@ -268,7 +266,7 @@ As we found in our formative study, data scientists often refer to the computati
 
 <a id="page-6"></a>
 
-![Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell.](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-003-p006.png)
+![Callisto filter mode highlights the selected notebook cell, associated edits in the left changelog, and related messages in the right chat in pale yellow. The example selects a GrLivArea-versus-SalePrice scatterplot and conversation about outliers, connecting the relevant context across the panes.](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-003-p006.png)
 
 Figure 3. Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell.
 
@@ -302,13 +300,13 @@ While collaborating, data scientists often need to determine which part of a not
 
 <a id="page-7"></a>
 
-![Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output.](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-004-p007.png)
+![Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output. The example changes a SalePrice distribution plot to a log-transformed distribution: the original is strongly right-skewed and the transformed output is more nearly bell-shaped.](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-004-p007.png)
+
+Figure 4. Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output.
 
 ![Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook. When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure 4). Users can manually refine the links using the edit button (see B).](https://from.so/assets/markdown/figures/wang-callisto-chi2020/figure-005-p007.png)
 
-Figure 4. Diff View. Code differences (see A) and output differences (see
-
-B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output.
+Figure 5. Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook. When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure [4).](<#page-7>) Users can manually refine the links using the edit button (see B).
 
 Subsequent notebook readers might also want to understand how the content of the notebook changed as the discussion moved on—what collaborators were doing between messages. To allow readers to understand how the notebook evolved through the discussion, Callisto enables them to compute the difference between any set of notebook versions. For example, if a user selects two chat messages, a diff button will appear in the chat panel, as [Figure 5 shows.](<#page-7>) This will trigger Callisto to render the code and output differences between the state of the notebook when each of those messages was sent.
 
@@ -324,8 +322,6 @@ We designed a two-stage evaluation study with 32 data science students to assess
 
 The real-time collaboration study and the follow-up study follow a similar study protocol. We invited each participant for a 90-minute lab session. Before the study, participants reported their data science backgrounds on a pre-task questionnaire. Each participant was given a 15–20-minute training session on the tool, with example tasks to complete. After the study, we conducted a 10–15-minute semi-structured interview with each participant. We collected data from server-side usage logs, screen recordings, and post-task interviews. We also took observational notes during the study.
 
-Figure 5. Chat Panel. When selecting one message, a snapshot button (see A) will navigate users to the snapshot of the notebook. When selecting two messages, a diff button (see C) will navigate users to the diff view comparing two snapshots (see Figure [4).](<#page-7>) Users can manually refine the links using the edit button (see B).
-
 ### Participants (for Both Stages)
 
 We reached out to data science programs and interest groups on campus, filtering qualified participants based on the courses they had taken and other data science-related experience. Overall, qualified participants were familiar with Jupyter Notebook, Python, and common exploratory data analysis packages (e.g., Pandas, NumPy). Most of them had experience of collaborating on an exploratory data analysis project.
@@ -334,15 +330,15 @@ We recruited 32 participants in total (11 female, 20 male, 1 non-binary, average
 
 Based on participants’ prior knowledge, we rated their experience level as beginner[‡](<#page-7>) (n=6), intermediate[§](<#page-7>) (n=10), or expert[¶](<#page-7>) (n=16). We randomly assigned participants into one of the two stages with a balanced distribution of experience level. There was no overlap in participants across study stages. We compensated participants with $25 USD gift cards.
 
+> ‡ Beginner: has taken 1–2 data science classes, basic experience with Pandas and Python, but little experience with data science problems
+
+> § Intermediate: limited experience with data science problems ¶ Expert: is familiar with libraries frequently used in data science, and very experienced in solving data science problems
+
 ### Stage 1: Real-time Collaboration
 
-In Stage 1, we investigated the perceived usability of Callisto for real-time collaboration. We observed eight participants
-
-‡ Beginner: has taken 1–2 data science classes, basic experience with Pandas and Python, but little experience with data science problems
-
-§ Intermediate: limited experience with data science problems ¶ Expert: is familiar with libraries frequently used in data science, and very experienced in solving data science problems
-
 <a id="page-8"></a>
+
+In Stage 1, we investigated the perceived usability of Callisto for real-time collaboration. We observed eight participants (P1–P8) working in pairs to solve a data science task together using the full version of Callisto. Participants were invited to the study site at the same time and sat in separate rooms. We informed participants at the outset that they would not have enough time to complete the task and a new collaborator would take over the remaining work.
 
 <table>
   <thead>
@@ -412,8 +408,6 @@ In Stage 1, we investigated the perceived usability of Callisto for real-time co
 </table>
 
 Table 4. Server-side Usage Logs (mean: x, standard deviation: σ): (1) Most contextual links were created by inferred references; (2) The two navigating features were used equally to understand past decisions.
-
-(P1–P8) working in pairs to solve a data science task together using the full version of Callisto. Participants were invited to the study site at the same time and sat in separate rooms. We informed participants at the outset that they would not have enough time to complete the task and a new collaborator would take over the remaining work.
 
 The data science task was modified from a Kaggle competition (predicting house sale price). To scope the task within the study duration, we asked participants to only perform exploratory data analysis. We provided a basic framework of the notebook for participants to begin with, as well as example API usage code for common data analysis packages.
 

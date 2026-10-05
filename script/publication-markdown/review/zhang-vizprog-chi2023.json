@@ -2,9 +2,9 @@
   "file": "zhang-vizprog-chi2023.pdf",
   "title": "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress",
   "publication_id": "vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023",
-  "pdf_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+  "pdf_sha256": "9375b86ea46ece16d4b1d96a2cbeb77a7fdf8a13e13fb6714931bfdc16f8f3e7",
   "markdown": "publications/zhang-vizprog-chi2023.md",
-  "markdown_sha256": "67f5503a91d6a41e25b37d8a005ccf44ee8112b5843a84bc56a982f37bd0456f",
+  "markdown_sha256": "4b8a11748a43f9f74388d80c49d41cb8a3536e80a4c5bdfc469eead5a7961175",
   "pages": 16,
   "blocks": [
     {
@@ -41,11 +41,11 @@
     },
     {
       "node": "316:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 208
+      "characters": 210
     },
     {
       "node": "321:0",
@@ -112,7 +112,7 @@
       "characters": 17
     },
     {
-      "node": "joined-315:0",
+      "node": "315:0",
       "role": "P",
       "pages": [
         1
@@ -136,7 +136,7 @@
       "characters": 1038
     },
     {
-      "node": "joined-320:0",
+      "node": "320:0",
       "role": "P",
       "pages": [
         1,
@@ -437,17 +437,10 @@
       "node": "750:0",
       "role": "P",
       "pages": [
-        4
-      ],
-      "characters": 127
-    },
-    {
-      "node": "joined-758:0",
-      "role": "P",
-      "pages": [
+        4,
         5
       ],
-      "characters": 123
+      "characters": 206
     },
     {
       "node": "759:0",
@@ -455,7 +448,7 @@
       "pages": [
         5
       ],
-      "characters": 515
+      "characters": 659
     },
     {
       "node": "760:0",
@@ -506,7 +499,7 @@
       "characters": 47
     },
     {
-      "node": "joined-776:0",
+      "node": "776:0",
       "role": "P",
       "pages": [
         5,
@@ -580,6 +573,14 @@
       "characters": 1672
     },
     {
+      "node": "816:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 83
+    },
+    {
       "node": "811:0",
       "role": "H4",
       "pages": [
@@ -620,14 +621,6 @@
       "characters": 652
     },
     {
-      "node": "816:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 81
-    },
-    {
       "node": "817:0",
       "role": "P",
       "pages": [
@@ -649,7 +642,7 @@
       "pages": [
         7
       ],
-      "characters": 457
+      "characters": 448
     },
     {
       "node": "820:0",
@@ -660,28 +653,20 @@
       "characters": 587
     },
     {
-      "node": "joined-821:0",
-      "role": "P",
+      "node": "821:0",
+      "role": "Code",
       "pages": [
         7
       ],
-      "characters": 143
+      "characters": 141
     },
     {
-      "node": "825:0",
-      "role": "P",
+      "node": "824:0",
+      "role": "Code",
       "pages": [
         7
       ],
-      "characters": 56
-    },
-    {
-      "node": "joined-826:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 57
+      "characters": 146
     },
     {
       "node": "828:0",
@@ -708,6 +693,14 @@
       "characters": 77
     },
     {
+      "node": "900:0",
+      "role": "Code",
+      "pages": [
+        8
+      ],
+      "characters": 66
+    },
+    {
       "node": "862:0",
       "role": "Caption",
       "pages": [
@@ -724,20 +717,12 @@
       "characters": 3771
     },
     {
-      "node": "joined-900:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 53
-    },
-    {
       "node": "902:0",
       "role": "P",
       "pages": [
         8
       ],
-      "characters": 1063
+      "characters": 1025
     },
     {
       "node": "903:0",
@@ -769,7 +754,7 @@
       "pages": [
         8
       ],
-      "characters": 663
+      "characters": 632
     },
     {
       "node": "908:0",
@@ -785,7 +770,7 @@
       "pages": [
         8
       ],
-      "characters": 1020
+      "characters": 969
     },
     {
       "node": "910:0",
@@ -793,7 +778,7 @@
       "pages": [
         8
       ],
-      "characters": 134
+      "characters": 125
     },
     {
       "node": "911:0",
@@ -810,7 +795,7 @@
         8,
         9
       ],
-      "characters": 661
+      "characters": 641
     },
     {
       "node": "920:0",
@@ -818,7 +803,7 @@
       "pages": [
         9
       ],
-      "characters": 764
+      "characters": 708
     },
     {
       "node": "921:0",
@@ -837,12 +822,12 @@
       "characters": 93
     },
     {
-      "node": "joined-923:0",
-      "role": "P",
+      "node": "923:0",
+      "role": "Code",
       "pages": [
         9
       ],
-      "characters": 133
+      "characters": 106
     },
     {
       "node": "925:0",
@@ -850,7 +835,7 @@
       "pages": [
         9
       ],
-      "characters": 476
+      "characters": 416
     },
     {
       "node": "926:0",
@@ -874,7 +859,7 @@
       "pages": [
         9
       ],
-      "characters": 237
+      "characters": 234
     },
     {
       "node": "929:0",
@@ -906,7 +891,7 @@
       "pages": [
         9
       ],
-      "characters": 397
+      "characters": 362
     },
     {
       "node": "933:0",
@@ -914,7 +899,7 @@
       "pages": [
         9
       ],
-      "characters": 109
+      "characters": 91
     },
     {
       "node": "934:0",
@@ -922,7 +907,7 @@
       "pages": [
         9
       ],
-      "characters": 321
+      "characters": 292
     },
     {
       "node": "935:0",
@@ -941,12 +926,12 @@
       "characters": 93
     },
     {
-      "node": "joined-937:0",
-      "role": "P",
+      "node": "937:0",
+      "role": "Code",
       "pages": [
         9
       ],
-      "characters": 136
+      "characters": 109
     },
     {
       "node": "939:0",
@@ -986,7 +971,7 @@
       "pages": [
         9
       ],
-      "characters": 741
+      "characters": 723
     },
     {
       "node": "944:0",
@@ -1075,7 +1060,7 @@
       "pages": [
         10
       ],
-      "characters": 437
+      "characters": 1075
     },
     {
       "node": "961:0",
@@ -1092,14 +1077,6 @@
         10
       ],
       "characters": 9782
-    },
-    {
-      "node": "1053:0",
-      "role": "P",
-      "pages": [
-        10
-      ],
-      "characters": 637
     },
     {
       "node": "1054:0",
@@ -1126,21 +1103,21 @@
       "characters": 498
     },
     {
-      "node": "joined-1057:0",
-      "role": "P",
-      "pages": [
-        10,
-        11
-      ],
-      "characters": 786
-    },
-    {
       "node": "1058:0",
       "role": "Note",
       "pages": [
         10
       ],
       "characters": 196
+    },
+    {
+      "node": "1057:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 786
     },
     {
       "node": "1062:0",
@@ -1276,15 +1253,16 @@
       "pages": [
         11
       ],
-      "characters": 46
+      "characters": 98
     },
     {
       "node": "1084:0",
       "role": "P",
       "pages": [
-        11
+        11,
+        12
       ],
-      "characters": 492
+      "characters": 1027
     },
     {
       "node": "1088:0",
@@ -1301,14 +1279,6 @@
         12
       ],
       "characters": 10270
-    },
-    {
-      "node": "1170:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 586
     },
     {
       "node": "1171:0",
@@ -1513,6 +1483,14 @@
       "characters": 1784
     },
     {
+      "node": "1205:0",
+      "role": "Note",
+      "pages": [
+        14
+      ],
+      "characters": 213
+    },
+    {
       "node": "1203:0",
       "role": "H3",
       "pages": [
@@ -1521,20 +1499,12 @@
       "characters": 51
     },
     {
-      "node": "joined-1204:0",
+      "node": "1204:0",
       "role": "P",
       "pages": [
         14
       ],
       "characters": 1232
-    },
-    {
-      "node": "1205:0",
-      "role": "Note",
-      "pages": [
-        14
-      ],
-      "characters": 213
     },
     {
       "node": "1207:0",
@@ -1634,7 +1604,7 @@
       "characters": 1614
     }
   ],
-  "tagged_content_items": 14877,
+  "tagged_content_items": 14870,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1649,7 +1619,7 @@
       ],
       "sha256": "cc269e0b5238ec5a1365b6320d84caead17e51908b9c8110472dcb7bb638fdc9",
       "kind": "figure",
-      "alt": "Figure 1: VizProg’s User Interface. There are three main view panels: the overall class progress 2D map view (1), a solution-centered view (4), and a progress detailed view (5). On the 2D map view, each dot represents a student’s submission, each line between two dots indicates the edit movement. The x-axis encodes the size of a code edit to be proportional to the distance (2), and the y-axis represents different kinds of solutions for this exercise (3)."
+      "alt": "Figure 1. VizProg has a class-progress map on the left, a solution-centered panel in the middle, and detailed progress/error information on the right. Map dots are orange for incorrect current submissions, blue for correct submissions, and gray for past versions; lines connect consecutive edits, and gray rectangles group a solution. Horizontal distance reflects edit distance, with progress toward correct solutions on the right; vertical position separates kinds of solutions. The middle panel lists students and their submitted code, while the right panel groups errors and highlights related code."
     },
     {
       "path": "figures/zhang-vizprog-chi2023/figure-002-p006.png",
@@ -1862,15 +1832,56 @@
       "node": "1089:0"
     }
   ],
-  "code_layout": [],
+  "code_layout": [
+    {
+      "node": "821:0",
+      "pages": [
+        7
+      ],
+      "method": "native_actual_text",
+      "changed": false
+    },
+    {
+      "node": "824:0",
+      "pages": [
+        7
+      ],
+      "method": "native_actual_text",
+      "changed": false
+    },
+    {
+      "node": "900:0",
+      "pages": [
+        8
+      ],
+      "method": "native_actual_text",
+      "changed": false
+    },
+    {
+      "node": "923:0",
+      "pages": [
+        9
+      ],
+      "method": "native_actual_text",
+      "changed": false
+    },
+    {
+      "node": "937:0",
+      "pages": [
+        9
+      ],
+      "method": "native_actual_text",
+      "changed": false
+    }
+  ],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 313,
-    "line_wrap_hyphens_retained": 16,
-    "paragraph_fragments_joined": 25,
-    "script_runs_positioned": 55
+    "line_wrap_hyphens_removed": 263,
+    "line_wrap_hyphens_retained": 15,
+    "paragraph_fragments_joined": 12,
+    "script_runs_positioned": 7
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-vizprog-chi2023.json.gz",
-  "source_tags_sha256": "bc444a9d1fe94c7ee05ba773a70c2e72bceb0662765af343b3c07f7eba5cd238"
+  "source_tags_sha256": "2ab7808646331a7c5c6c9ca9bdf9347cb0e41ba15760de298066a46af503b79a"
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "node": "4241:0",
+    "page": 169,
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "text": "called with { title: cjs('hello'), subtext: '<strong>steel</strong city'}:",
+    "review": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes serif introductory prose and monospace code, causing uncertain uniform-pitch estimation. The source itself has malformed </strong city markup, retained exactly.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "node": "6315:0",
+    "page": 216,
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "text": "'*': any state",
+    "review": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes the monospace wildcard and serif explanation, causing uncertain uniform-pitch estimation.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  }
+]

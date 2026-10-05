@@ -2,9 +2,9 @@
   "file": "oney-firecrystal-vlhcc2009.pdf",
   "title": "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages",
   "publication_id": "firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009",
-  "pdf_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+  "pdf_sha256": "3f6392e9c1099660d5a1e4a6075b7d27edec64c873cdab98104ecc610f731d3e",
   "markdown": "publications/oney-firecrystal-vlhcc2009.md",
-  "markdown_sha256": "2ab5e8fd061c1ef1cf3f2d25dd315fc302cf995866e0dd3f21d0b17f889ec22a",
+  "markdown_sha256": "11844a4b4ba111f995e94b6bbec4dc209609ee2e592b6603528e2b7d9379b218",
   "pages": 4,
   "blocks": [
     {
@@ -120,7 +120,7 @@
       "characters": 695
     },
     {
-      "node": "joined-47:0",
+      "node": "47:0",
       "role": "P",
       "pages": [
         1,
@@ -392,10 +392,10 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "paragraph_fragments_joined": 6,
+    "paragraph_fragments_joined": 5,
     "line_wrap_hyphens_retained": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-firecrystal-vlhcc2009.json.gz",
-  "source_tags_sha256": "e47996c9a9d15b3fa392cfe8a9b9131e8e2ff56954e7dfd2f71c1bb68015ca79"
+  "source_tags_sha256": "0ea2dbf153c8394a366aaf12d65bd1a11ee7911048b939b6a6434b89851c9672"
 }

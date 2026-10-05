@@ -1,0 +1,488 @@
+{
+  "file": "chen-cocapture-chi2021.pdf",
+  "pdf_sha256": "abde555d89b5cf15cd1176db009a0e4fd0ada080fa347d4de776948ff258a451",
+  "normalization_warnings": "",
+  "page_count": 14,
+  "language": "en-US",
+  "title": "CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing",
+  "structure_elements": 593,
+  "roles": {
+    "Document": 1,
+    "Sect": 14,
+    "H1": 1,
+    "P": 87,
+    "Figure": 9,
+    "Caption": 7,
+    "H2": 13,
+    "Span": 10,
+    "Link": 162,
+    "Note": 16,
+    "L": 6,
+    "LI": 68,
+    "Lbl": 68,
+    "LBody": 68,
+    "H3": 18,
+    "H4": 15,
+    "H5": 7,
+    "Table": 1,
+    "THead": 1,
+    "TR": 5,
+    "TH": 7,
+    "TBody": 1,
+    "TD": 8
+  },
+  "structure_content_references": 12921,
+  "parent_tree_entries": 176,
+  "form_xobjects_visited": 40,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 613,
+      "vector_operations_tagged": 62,
+      "image_operations_tagged": 14,
+      "vector_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 7,
+      "text_operations_tagged": 1022,
+      "vector_operations_artifact": 1,
+      "link_annotations": 24
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 8,
+      "text_operations_tagged": 1088,
+      "vector_operations_artifact": 1,
+      "link_annotations": 49
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 7,
+      "text_operations_tagged": 1076,
+      "link_annotations": 3
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 8,
+      "image_operations_tagged": 18,
+      "vector_operations_tagged": 61,
+      "text_operations_tagged": 491,
+      "vector_operations_artifact": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 7,
+      "text_operations_tagged": 1138,
+      "vector_operations_artifact": 1,
+      "link_annotations": 20
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 8,
+      "image_operations_tagged": 24,
+      "text_operations_tagged": 830,
+      "vector_operations_tagged": 16,
+      "image_operations_artifact": 3,
+      "link_annotations": 12
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 7,
+      "vector_operations_tagged": 39,
+      "image_operations_tagged": 28,
+      "text_operations_tagged": 459,
+      "vector_operations_artifact": 2,
+      "link_annotations": 9
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 8,
+      "text_operations_tagged": 1117,
+      "vector_operations_artifact": 1,
+      "link_annotations": 10
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 7,
+      "vector_operations_artifact": 3,
+      "text_operations_tagged": 773,
+      "vector_operations_tagged": 46,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 8,
+      "text_operations_tagged": 1002,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 7,
+      "text_operations_tagged": 1036,
+      "link_annotations": 3
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 8,
+      "text_operations_tagged": 1301,
+      "link_annotations": 9
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 7,
+      "text_operations_tagged": 1024
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "757:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "763:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "767:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "771:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "794:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "796:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "799:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "952:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "957:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "959:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "961:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "996:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "998:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1000:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1003:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1005:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "1017:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1025:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1043:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1045:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1053:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "1055:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "1059:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1062:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "1064:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "1066:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "1087:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "1089:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "1091:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1093:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1098:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1110:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1163:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1165:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1167:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1202:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1204:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1211:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1213:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1218:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1220:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1222:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1224:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1226:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1229:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1241:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1244:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1247:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1249:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1360:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1362:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1366:0",
+      "page": 13
+    },
+    {
+      "level": 2,
+      "element": "1368:0",
+      "page": 13
+    },
+    {
+      "level": 2,
+      "element": "1370:0",
+      "page": 13
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "761:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: The workflow of CoCapture. There are four steps of using CoCapture to communicate new UI behavior mockups\non an existing website. (Step 1) Users first capture existing interface behaviors (base scene) by interacting with the website\n(scrolling), and CoCapture will automatically capture the Document Object Model (DOM) changes. (Step 2) In CoCapture’s\nmain panel, users can add new behaviors on top of the base scene by demonstration; that is, by directly manipulating any\nelements (e.g., drag and drop the red element in the replay and see immediate changes). (Step 3) Users can remix (post-edit,\ne.g., change duration) added behaviors to finalize the mockup. (Step 4) Users can refer to the DOM elements or added behaviors\nin the textual description using hypertext.",
+      "actual_text": ""
+    },
+    {
+      "element": "1023:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: CoCapture’s main panel (after Step 1 in Fig. 1). To create an animation, a user first clicks on an existing DOM element\n(b1) (can select multiple by holding Shift key down) from the base scene (B). Once recording starts (A), the user can demonstrate\nthe desired behaviors by changing the elements’ properties (C) or directly dragging them in the base scene. Once the recording\nis finished, the demonstration will be appended to the Animation List (D) with a set of meta operations, such as adjust start/end\ntime, replay, and preview. The user can write their question (E) and refer to the animations or DOM elements in the scene by\nselecting portions of text and clicking the ‘Link to a Reference’ button. Text with references, or hypertext, is in blue with a click\naffordance displaying the relevant context (i.e., highlight elements (b1), replay animations (D)). The process of the animation\n(inbetweening) will also be displayed (F). The user can also filter the Animation List (D) to only display the animations related\nto the selected elements.",
+      "actual_text": ""
+    },
+    {
+      "element": "1084:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 3: For each created animation, CoCapture provides\ninformation that prompts users about the actions they can\ntake, including creating visual tags and replaying or preview-\ning the animation. It also supports a set of operations to\nmake the creation process easier and more accurate, includ-\ning a range slider for time adjustment, as well as options for\ncloning, changing, or deleting an element.",
+      "actual_text": ""
+    },
+    {
+      "element": "1112:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Position and rotation icon: overlapping circles ending in a filled circle.",
+      "actual_text": ""
+    },
+    {
+      "element": "1113:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Font-size icon: small and large capital A letters.",
+      "actual_text": ""
+    },
+    {
+      "element": "1114:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Visibility icon: an open eye.",
+      "actual_text": ""
+    },
+    {
+      "element": "1095:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4: There are three steps to create hypertext: (1) se-\nlect portions of the text in the question description, (2) click\n“Link to a Reference,” and either (3.1) select an element in\nthe scene or (3.2) check an animation. The hypertext will be\nhighlighted afterwards.",
+      "actual_text": ""
+    },
+    {
+      "element": "1129:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 5: Screenshots of two of the user study tasks: the Reddit website (left column), and an SVG game (right column). The\nscreenshots with a red border (a, c) are the existing UIs, whereas the green ones (b, d) are the desired UIs that the participants\nwere asked to create and describe during the study. The tasks were designed with three goals: realistic, common, and complex.\nFor the Reddit website task, the issue with the existing UI is that some of the DOM elements are not responsive to window\nresizing user input. For the SVG game task, participants need to add new game behaviors such that when the game character\nhits the block and the star shape element, the game scene will change dynamically and a new element (the cyan shield shown\nin the last image) will be added to the scene.",
+      "actual_text": ""
+    },
+    {
+      "element": "1208:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 6. Box plots of time in seconds, control in coral and CoCapture treatment in cyan. For visual-reference creation, control median is about 110 seconds, with middle half roughly 65–200, while CoCapture median is about 325, with middle half roughly 280–475 and a long upper whisker near 760. For writing text, control median is about 350 seconds, with middle half roughly 315–380, versus CoCapture median about 95, with middle half roughly 60–145. Control has high outliers near 490 seconds for visual references and near 560 and 800 for text. Participants spent more time creating visual references and less time writing with CoCapture; the source reports both differences p<.0001.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

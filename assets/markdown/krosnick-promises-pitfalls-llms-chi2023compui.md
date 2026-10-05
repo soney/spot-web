@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e -->
+<!-- Source PDF SHA-256: 00c4c8f64cd79c5dbfddfc0d0797c515b94ac003158af4b1afb68e0f2b9ad516 -->
 
 <a id="page-1"></a>
 
@@ -60,6 +60,11 @@ Given a portion of the website’s HTML and asked to scrape, ChatGPT sometimes r
 
 When given the website’s HTML and asked to write code for scraping, ChatGPT seemed to mostly generate correct code logic and CSS selectors \[[2](<#page-3>)\] if the elements to be scraped have salient selectors – e.g., when we asked ChatGPT to scrape player names from the NBA website, it generated the following correct Python code and CSS classes for first and last names:
 
+```
+first_name = player_row.select_one('.RosterRow_playerFirstName__NYm50').text
+last_name = player_row.select_one('.RosterRow_playerName__G28lg p:nth-of-type(2)').text
+```
+
 ## 5 POTENTIAL PITFALLS
 
 ### 5.1 Asking ChatGPT to scrape and return an answer
@@ -73,8 +78,6 @@ In one especially interesting case where we gave ChatGPT the HTML for the CODA m
 Even though it seems ChatGPT may be more accurate in scraping tasks when given page text rather than HTML, HTML may be needed for certain kinds of scraping and automation tasks – when desired data is embedded in the HTML and not included as regular text on the page (e.g., links, or data in widgets like drop-down menus), and when the page needs to be navigated to uncover desired data (e.g., clicking on buttons and links, typing into text fields).
 
 Beyond just scraping raw data on the page, we sometimes also asked ChatGPT to filter those results. ChatGPT was wrong nearly every time, regardless of whether the prompt contained page text or HTML. For example, when we asked ChatGPT to show all players shorter than 6 foot 5 (Table [1](<#page-3>), website #2), when we gave it HTML it returned only players who are exactly 6 foot 5, and when we gave it text it returned some players shorter than 6 foot 5 but missed several others. When we asked ChatGPT to show all menu items on the Serafina menu (Table [1](<#page-3>), website #7) under $25, it was almost correct but missed one item. As ChatGPT users have been reporting, ChatGPT seems to make a lot of mistakes on reasoning or math tasks.
-
-first\_name = player\_row.select\_one('.RosterRow\_playerFirstName\_\_NYm50').text last\_name = player\_row.select\_one('.RosterRow\_playerName\_\_G28lg p:nth-of-type(2)').text
 
 <a id="page-3"></a>
 

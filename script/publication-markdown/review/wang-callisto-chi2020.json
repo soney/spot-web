@@ -2,9 +2,9 @@
   "file": "wang-callisto-chi2020.pdf",
   "title": "Callisto: Capturing the \"Why\" by Connecting Conversations with Computational Narratives",
   "publication_id": "callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020",
-  "pdf_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+  "pdf_sha256": "d45d8f39953a038dceb2395a2d9b61263fbb1df531d88f05df80cef886064c79",
   "markdown": "publications/wang-callisto-chi2020.md",
-  "markdown_sha256": "6d6322fcfee07d2f4f08ff5756184a0d2382dc2596e34575a091daa84568dd10",
+  "markdown_sha256": "c2053ad9a0782df67fe47dcdd73e022b02c32349611a6ebd044cbc821d1b506f",
   "pages": 13,
   "blocks": [
     {
@@ -401,14 +401,6 @@
       "characters": 16
     },
     {
-      "node": "867:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 54
-    },
-    {
       "node": "1366:0",
       "role": "Table",
       "pages": [
@@ -455,6 +447,14 @@
         4
       ],
       "characters": 68
+    },
+    {
+      "node": "867:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 54
     },
     {
       "node": "869:0",
@@ -513,6 +513,14 @@
       "characters": 605
     },
     {
+      "node": "889:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 77
+    },
+    {
       "node": "881:0",
       "role": "H4",
       "pages": [
@@ -540,17 +548,10 @@
       "node": "888:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 182
-    },
-    {
-      "node": "889:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 75
+      "characters": 955
     },
     {
       "node": "893:0",
@@ -567,14 +568,6 @@
         5
       ],
       "characters": 810
-    },
-    {
-      "node": "896:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 772
     },
     {
       "node": "897:0",
@@ -630,7 +623,7 @@
       "pages": [
         6
       ],
-      "characters": 184
+      "characters": 355
     },
     {
       "node": "910:0",
@@ -726,7 +719,15 @@
       "pages": [
         7
       ],
-      "characters": 371
+      "characters": 549
+    },
+    {
+      "node": "939:0",
+      "role": "Caption",
+      "pages": [
+        7
+      ],
+      "characters": 324
     },
     {
       "node": "938:0",
@@ -737,20 +738,12 @@
       "characters": 370
     },
     {
-      "node": "939:0",
+      "node": "950:0",
       "role": "Caption",
       "pages": [
         7
       ],
-      "characters": 73
-    },
-    {
-      "node": "940:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 250
+      "characters": 336
     },
     {
       "node": "941:0",
@@ -801,20 +794,12 @@
       "characters": 44
     },
     {
-      "node": "joined-949:0",
+      "node": "949:0",
       "role": "P",
       "pages": [
         7
       ],
       "characters": 588
-    },
-    {
-      "node": "950:0",
-      "role": "Caption",
-      "pages": [
-        7
-      ],
-      "characters": 336
     },
     {
       "node": "953:0",
@@ -849,6 +834,22 @@
       "characters": 393
     },
     {
+      "node": "965:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 139
+    },
+    {
+      "node": "969:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 187
+    },
+    {
       "node": "963:0",
       "role": "H3",
       "pages": [
@@ -860,25 +861,10 @@
       "node": "964:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 123
-    },
-    {
-      "node": "965:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 137
-    },
-    {
-      "node": "969:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 185
+      "characters": 466
     },
     {
       "node": "972:0",
@@ -895,14 +881,6 @@
         8
       ],
       "characters": 208
-    },
-    {
-      "node": "1023:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 342
     },
     {
       "node": "1024:0",
@@ -1918,7 +1896,7 @@
       ],
       "sha256": "5dd2b627e9edff77c7cb24f3aa16153a2d4718eaacc00ddf1b00b07d8b8fcac4",
       "kind": "figure",
-      "alt": "Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell."
+      "alt": "Callisto filter mode highlights the selected notebook cell, associated edits in the left changelog, and related messages in the right chat in pale yellow. The example selects a GrLivArea-versus-SalePrice scatterplot and conversation about outliers, connecting the relevant context across the panes."
     },
     {
       "path": "figures/wang-callisto-chi2020/figure-004-p007.png",
@@ -1932,7 +1910,7 @@
       ],
       "sha256": "9862cc9ce6c74cf977e3880a859084c32586c5d8d23519dc6fa264e9323309d0",
       "kind": "figure",
-      "alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output."
+      "alt": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output. The example changes a SalePrice distribution plot to a log-transformed distribution: the original is strongly right-skewed and the transformed output is more nearly bell-shaped."
     },
     {
       "path": "figures/wang-callisto-chi2020/figure-005-p007.png",
@@ -2044,13 +2022,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 226,
-    "paragraph_fragments_joined": 14,
+    "line_wrap_hyphens_removed": 218,
+    "paragraph_fragments_joined": 13,
     "line_wrap_hyphens_retained": 11,
     "reviewed_wrap_repairs": 5,
     "script_runs_positioned": 13
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-callisto-chi2020.json.gz",
-  "source_tags_sha256": "1b467304adb09293ef596a268be4225744ae3dd783cac1d5f0ce6440cf675ca2"
+  "source_tags_sha256": "c59b00a8f1cf63bf21e31e7756ec7c9d1002efcccaa921fbd856f8373cd20530"
 }

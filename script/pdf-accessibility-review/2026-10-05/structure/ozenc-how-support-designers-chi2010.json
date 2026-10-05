@@ -1,0 +1,255 @@
+{
+  "file": "ozenc-how-support-designers-chi2010.pdf",
+  "pdf_sha256": "eb98a219f13704f07488fcfc65192d2a9756db46133f80f2607bf15986c234a9",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "How to Support Designers in Getting Hold of the Immaterial Material of Software",
+  "structure_elements": 341,
+  "roles": {
+    "Document": 1,
+    "Sect": 10,
+    "H1": 1,
+    "P": 93,
+    "H2": 9,
+    "H3": 11,
+    "Note": 2,
+    "Span": 2,
+    "L": 12,
+    "LI": 68,
+    "Lbl": 52,
+    "LBody": 68,
+    "H4": 6,
+    "Figure": 3,
+    "Caption": 3
+  },
+  "structure_content_references": 5746,
+  "parent_tree_entries": 10,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 120,
+      "text_operations_tagged": 814,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 605
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 49,
+      "text_operations_tagged": 622
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 425,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 41,
+      "text_operations_tagged": 571
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 31,
+      "text_operations_tagged": 348,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 31,
+      "text_operations_tagged": 645
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 514
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 515
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 101,
+      "text_operations_tagged": 684
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "63:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "68:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "70:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "72:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "74:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "129:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "131:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "135:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "141:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "143:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "168:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "184:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "189:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "276:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "282:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "285:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "342:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "369:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "374:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "384:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "386:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "388:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "391:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "398:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "402:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "406:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "408:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "187:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Hand-drawn concept for a foot-controlled collaborative music selector. Two people lie in bed with control strips near their feet. Annotations propose moving a foot left or right to scroll options and pointing or tapping to select. The controls include genre, station and song choices, illustrating how a couple might choose music without using their hands.",
+      "actual_text": ""
+    },
+    {
+      "element": "332:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Used-car shopping interface mockup. A car preview occupies the center above a pale gray timeline with owner and maintenance markers; reviews appear on the left. A yellow strip beneath the timeline contains small car-view controls for inspecting the vehicle from different angles. The timeline presents the car’s repair history, supporting inspection of its condition and wear.",
+      "actual_text": ""
+    },
+    {
+      "element": "340:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 3: wireframe flight-reservation interface. Selection controls occupy the left, plane-shaped result markers show how well flights match the criteria, and a dressing-room area on the right holds flights the user wants to keep for comparison.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

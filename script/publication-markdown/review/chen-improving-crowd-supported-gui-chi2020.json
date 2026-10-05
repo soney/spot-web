@@ -2,9 +2,9 @@
   "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
   "title": "Improving Crowd-Supported GUI Testing with Structural Guidance",
   "publication_id": "improving_crowd_supported_gui_testing_with_structural_guidance_2020",
-  "pdf_sha256": "27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1",
+  "pdf_sha256": "af864c8939000d55dab47cbe23ae54e19042792d6296505c480fdd49e37f71bc",
   "markdown": "publications/chen-improving-crowd-supported-gui-chi2020.md",
-  "markdown_sha256": "44e026a97500e4735e180684c6d0a3b1eb4df7f170953f8cd20ef402f1793da9",
+  "markdown_sha256": "4f777c5c50be9a867707c6bbdfc5760f8320442043db25722950bdb52271f2c6",
   "pages": 13,
   "blocks": [
     {
@@ -33,11 +33,11 @@
     },
     {
       "node": "709:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 786
+      "characters": 788
     },
     {
       "node": "703:0",
@@ -112,7 +112,7 @@
       "characters": 1211
     },
     {
-      "node": "joined-719:0",
+      "node": "719:0",
       "role": "P",
       "pages": [
         1,
@@ -290,13 +290,13 @@
       "characters": 41
     },
     {
-      "node": "joined-779:0",
+      "node": "779:0",
       "role": "P",
       "pages": [
         3,
         4
       ],
-      "characters": 936
+      "characters": 933
     },
     {
       "node": "782:0",
@@ -339,28 +339,12 @@
       "characters": 729
     },
     {
-      "node": "797:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 86
-    },
-    {
-      "node": "799:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 86
-    },
-    {
       "node": "794:0",
       "role": "P",
       "pages": [
         4
       ],
-      "characters": 1087
+      "characters": 921
     },
     {
       "node": "800:0",
@@ -387,20 +371,12 @@
       "characters": 26
     },
     {
-      "node": "805:0",
-      "role": "Figure",
-      "pages": [
-        4
-      ],
-      "characters": 86
-    },
-    {
       "node": "803:0",
       "role": "P",
       "pages": [
         4
       ],
-      "characters": 560
+      "characters": 477
     },
     {
       "node": "806:0",
@@ -435,20 +411,12 @@
       "characters": 590
     },
     {
-      "node": "817:0",
-      "role": "Figure",
-      "pages": [
-        5
-      ],
-      "characters": 86
-    },
-    {
       "node": "814:0",
       "role": "P",
       "pages": [
         5
       ],
-      "characters": 731
+      "characters": 648
     },
     {
       "node": "818:0",
@@ -488,15 +456,15 @@
       "pages": [
         5
       ],
-      "characters": 846
+      "characters": 1164
     },
     {
-      "node": "joined-1227:0",
-      "role": "P",
+      "node": "1227:0",
+      "role": "Note",
       "pages": [
         5
       ],
-      "characters": 388
+      "characters": 72
     },
     {
       "node": "829:0",
@@ -531,7 +499,7 @@
       "characters": 544
     },
     {
-      "node": "joined-836:0",
+      "node": "836:0",
       "role": "P",
       "pages": [
         5
@@ -579,6 +547,14 @@
       "characters": 392
     },
     {
+      "node": "1295:0",
+      "role": "L",
+      "pages": [
+        7
+      ],
+      "characters": 230
+    },
+    {
       "node": "860:0",
       "role": "Figure",
       "pages": [
@@ -593,14 +569,6 @@
         6
       ],
       "characters": 111
-    },
-    {
-      "node": "1295:0",
-      "role": "L",
-      "pages": [
-        7
-      ],
-      "characters": 230
     },
     {
       "node": "870:0",
@@ -640,15 +608,7 @@
       "pages": [
         7
       ],
-      "characters": 178
-    },
-    {
-      "node": "876:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 65
+      "characters": 244
     },
     {
       "node": "1296:0",
@@ -659,20 +619,12 @@
       "characters": 408
     },
     {
-      "node": "889:0",
-      "role": "Figure",
-      "pages": [
-        7
-      ],
-      "characters": 86
-    },
-    {
       "node": "887:0",
       "role": "P",
       "pages": [
         7
       ],
-      "characters": 1119
+      "characters": 1036
     },
     {
       "node": "891:0",
@@ -779,7 +731,7 @@
       "characters": 50
     },
     {
-      "node": "joined-911:0",
+      "node": "911:0",
       "role": "P",
       "pages": [
         8
@@ -811,7 +763,7 @@
       "characters": 99
     },
     {
-      "node": "joined-921:0",
+      "node": "921:0",
       "role": "P",
       "pages": [
         8
@@ -891,7 +843,7 @@
       "characters": 43
     },
     {
-      "node": "joined-953:0",
+      "node": "953:0",
       "role": "P",
       "pages": [
         8,
@@ -905,7 +857,7 @@
       "pages": [
         9
       ],
-      "characters": 608
+      "characters": 598
     },
     {
       "node": "955:0",
@@ -924,7 +876,7 @@
       "characters": 49
     },
     {
-      "node": "joined-959:0",
+      "node": "959:0",
       "role": "P",
       "pages": [
         9
@@ -1050,7 +1002,7 @@
       "pages": [
         10
       ],
-      "characters": 276
+      "characters": 442
     },
     {
       "node": "991:0",
@@ -1183,62 +1135,6 @@
       "alt": "Figure 2. Three views of an e-commerce delivery form are connected to its event-flow graph. The form has Pick Up, Delivery, and Contact Info tabs. The graph represents selecting pickup or delivery options and entering input, phone, email, or other contact details, with arrows showing transitions among these states. Pink summary nodes group transitions back to the three main tabs."
     },
     {
-      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-003-p004.png",
-      "node": "797:0",
-      "page": 4,
-      "bbox": [
-        368.3807373046875,
-        178.28472900390625,
-        383.26727294921875,
-        193.1712646484375
-      ],
-      "sha256": "4f3e08ebbe429e8dadf1199b679dc4d1728f12f90d7c49768b53d4833a63c069",
-      "kind": "figure",
-      "alt": "circle 1"
-    },
-    {
-      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-004-p004.png",
-      "node": "799:0",
-      "page": 4,
-      "bbox": [
-        344.2127380371094,
-        212.375732421875,
-        359.0992736816406,
-        227.26226806640625
-      ],
-      "sha256": "dc7de27390d0284711368c34e5a9f66d9ad4bde948845f940aa567835966e19a",
-      "kind": "figure",
-      "alt": "circle 2"
-    },
-    {
-      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-005-p004.png",
-      "node": "805:0",
-      "page": 4,
-      "bbox": [
-        450.6137390136719,
-        401.3907165527344,
-        465.5002746582031,
-        416.27728271484375
-      ],
-      "sha256": "482b84233f5c0a7f71fa440bd7defaac407785dbac41f800a8ad8d4f3518790b",
-      "kind": "figure",
-      "alt": "circle 2"
-    },
-    {
-      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-006-p005.png",
-      "node": "817:0",
-      "page": 5,
-      "bbox": [
-        140.9087371826172,
-        222.1207275390625,
-        155.79527282714844,
-        237.00726318359375
-      ],
-      "sha256": "23d605764a006dafe44c6e0ccf12d3bd1c9f4f3ea1fae77fd6c2a610acbc9268",
-      "kind": "figure",
-      "alt": "circle 2"
-    },
-    {
       "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-007-p005.png",
       "node": "829:0",
       "page": 5,
@@ -1267,20 +1163,6 @@
       "alt": "Figure 4. Eleven screenshots of the three study prototypes arranged in columns. The left column shows three travel-agent screens for searching restaurants, viewing a result, and reviewing a restaurant. The middle column shows four blog screens for browsing articles, search/results, article content, and discussion. The right column shows four e-commerce screens for product browsing, a shopping cart, product details/reviews, and checkout or delivery preferences."
     },
     {
-      "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-009-p007.png",
-      "node": "889:0",
-      "page": 7,
-      "bbox": [
-        283.9137268066406,
-        582.9617309570312,
-        298.8002624511719,
-        597.8482666015625
-      ],
-      "sha256": "31887235ade3cc69d065f810c61a18e4eb9314c4230ba24984af0f03cf223c4a",
-      "kind": "figure",
-      "alt": "circle 1"
-    },
-    {
       "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-010-p007.png",
       "node": "891:0",
       "page": 7,
@@ -1306,7 +1188,7 @@
       ],
       "sha256": "4997568352e4d2c4ebd776e2647f813ffb112731d50b4d83a1a5b41d8d1720fc",
       "kind": "figure",
-      "alt": "Figure 6. Two grouped bar charts show how testing changes over task progress at 0–25%, 25–50%, 50–75%, and 75–100% of elapsed time. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. In the upper chart, use of the guidance graph increases across time, especially for trained users; in the lower chart, newly discovered transitions generally decline. Together they show growing reliance on guidance as undiscovered transitions become harder to find."
+      "alt": "Two grouped bar charts show counts over four task-progress intervals, beginning at 0, 25, 50 and 75 percent. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. Effective guidance actions generally rise, most sharply for trained users. New-transition discoveries decline for trained users and for untrained individuals after an early peak, while collaborative untrained users discover more transitions in the final interval than initially."
     },
     {
       "path": "figures/chen-improving-crowd-supported-gui-chi2020/figure-012-p010.png",
@@ -1320,7 +1202,7 @@
       ],
       "sha256": "5e60029cd4f39f0d1cb045744d6189e5f5b23b6ad53f3b5270ebe4dc86ae2439",
       "kind": "figure",
-      "alt": "This is a conceptual figure. It shows a small unit event-flow graph can be integrated into larger application-level graph on the right to test the entire graph without recruiting additional testers."
+      "alt": "A worker’s output is a small tree with one parent and three child nodes. A curved red arrow maps that parent to a dotted node in a larger GUI behavior tree; three dotted children show where the worker’s tested unit fits. Other solid branches represent the rest of the application. The diagram illustrates combining unit test traces into an application-level graph."
     }
   ],
   "tables": [
@@ -1346,12 +1228,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 158,
-    "line_wrap_hyphens_retained": 13,
-    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_removed": 134,
+    "line_wrap_hyphens_retained": 12,
     "script_runs_positioned": 40
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-improving-crowd-supported-gui-chi2020.json.gz",
-  "source_tags_sha256": "692ec514b7f4696fbe760453f6d44819dcd33aa2c24d13563b68a916755d9aff"
+  "source_tags_sha256": "651afc7af82056d48294bbcd8b447ec939c75794e2834c6bafc46792dc391b8e"
 }

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975 -->
+<!-- Source PDF SHA-256: d2ceadaeedce901bb513624f344439478e86cd36cc4820e7df0b4e0610c0edfe -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,7 @@ Pittsburgh, PA 15213 USA
 
 { soney, chris.harrison, aeo, wiese }@cs.cmu.edu
 
-CHI 2013, April 27–May 2, 2013, Paris, France. Copyright © 2013 ACM 978-1-4503-1899-0/13/04...$15.00.
+> CHI 2013, April 27–May 2, 2013, Paris, France. Copyright © 2013 ACM 978-1-4503-1899-0/13/04...$15.00.
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.
 
@@ -66,15 +66,13 @@ ZoomBoard can be scaled to variety of screen sizes and shapes. For example, Zoom
 
 ZoomBoard may also have implications for users with impaired vision and/or reduced motor skill. The zooming interaction could be applied to larger keyboards, like those found on smartphones and tablets, to further increase their size. We created a smartphone-sized version (Figure 2, top left) with one level of zoom. Although doubling the keystrokes per character (KSPC), buttons surface area increases 400%, providing both a larger item to see and target to hit.
 
-Of note, ZoomBoard has an innate KSPC of 2.0 - that is, all keys can be typed with 2 presses. Spaces can be typed with one swipe, bringing the KSPC-min down to 1.84 on typical phrase sets. This compares favorably to other small-device input methods, for example, 2.1, 3.3, and 4.3 for H4-Writer
-
 <a id="page-3"></a>
+
+Of note, ZoomBoard has an innate KSPC of 2.0 - that is, all keys can be typed with 2 presses. Spaces can be typed with one swipe, bringing the KSPC-min down to 1.84 on typical phrase sets. This compares favorably to other small-device input methods, for example, 2.1, 3.3, and 4.3 for H4-Writer \[17\], LURD Writer \[7\], and EdgeWrite \[27,28\] respectively (see \[17\] for more discussion).
 
 ![Figure 3: Three applicable zooming approaches. When the user zooms in on a key (A), the area of the keyboard pressed could stay under the finger (B) or move to the center (C). We use a linear combination of both (D).](../figures/oney-zoomboard-chi2013/figure-003-p003.png)
 
 Figure 3: Three applicable zooming approaches. When the user zooms in on a key (A), the area of the keyboard pressed could stay under the finger (B) or move to the center (C). We use a linear combination of both (D).
-
-\[17\], LURD Writer \[7\], and EdgeWrite \[27,28\] respectively (see \[17\] for more discussion).
 
 As a proof-of-concept, we built a prototype of ZoomBoard in JavaScript for Webkit-based browsers. Our implementation uses native touch events on iOS devices (iPad and iPh-one) to detect swipes and button presses (though our design could be ported to other platforms).
 

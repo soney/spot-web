@@ -1,0 +1,461 @@
+{
+  "file": "zhang-vrgit-chi2023.pdf",
+  "pdf_sha256": "5ee9d61558b07eeead186f3a0612823aaa3ceecbcc6cba22524aeb227c6833d9",
+  "normalization_warnings": "",
+  "page_count": 14,
+  "language": "en-US",
+  "title": "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality",
+  "structure_elements": 944,
+  "roles": {
+    "Part": 1,
+    "H1": 1,
+    "Div": 1,
+    "P": 154,
+    "Figure": 8,
+    "Caption": 8,
+    "Sect": 63,
+    "H2": 14,
+    "Span": 178,
+    "Link": 174,
+    "Note": 8,
+    "H3": 22,
+    "Table": 1,
+    "THead": 1,
+    "TR": 12,
+    "TH": 21,
+    "TBody": 1,
+    "TD": 90,
+    "H4": 15,
+    "L": 12,
+    "LI": 53,
+    "Lbl": 53,
+    "LBody": 53
+  },
+  "structure_content_references": 2514,
+  "parent_tree_entries": 190,
+  "form_xobjects_visited": 4,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 960,
+      "text_operations_artifact": 40,
+      "image_operations_tagged": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 2192,
+      "link_annotations": 37
+    },
+    {
+      "page": 3,
+      "vector_operations_artifact": 4,
+      "text_operations_artifact": 166,
+      "text_operations_tagged": 1707,
+      "link_annotations": 41
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 1921,
+      "image_operations_tagged": 1,
+      "link_annotations": 30
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 481,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 1287,
+      "link_annotations": 8
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 268,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 1827,
+      "link_annotations": 22
+    },
+    {
+      "page": 7,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 38,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1272,
+      "link_annotations": 7
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 32,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1821
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 297,
+      "text_operations_tagged": 2161,
+      "link_annotations": 1
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 443,
+      "text_operations_tagged": 1779,
+      "link_annotations": 10
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 2078,
+      "link_annotations": 12
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 2592,
+      "link_annotations": 4
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 38,
+      "text_operations_tagged": 3024,
+      "link_annotations": 2
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 32,
+      "text_operations_tagged": 1381
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "396:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "391:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "824:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "826:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "792:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "794:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "799:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "752:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "882:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "871:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1093:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "1096:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1102:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1085:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1136:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1139:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1142:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1176:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1240:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1243:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1215:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1250:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1263:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1254:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1306:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1297:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1290:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1333:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1286:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1336:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1328:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1340:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1343:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1318:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1413:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1403:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1398:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1387:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1378:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1440:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1427:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1429:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1431:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "946:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "947:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "990:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "992:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "649:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "657:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "659:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "677:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "697:0",
+      "page": 14
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "397:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: An illustration of VRGit. The user is in an empty apartment. A History Graph that represents non-linear version history is anchored on the user’s left arm, where each node is a 3D miniature of that version. Inside each miniature, furniture objects are highlighted using color coding (green represents addition, yellow represents transformation, red represents deletion) if they are changed compared to the previous version. Mini avatars are anchored in the history graph that represents which version users are in. Users can also create a portal to monitor another user’s first-person view. A shared history visualization facilitates group discussion by anchoring the HG to a shared location in the virtual scene and allowing users to discuss and to preview a version and reuse objects collaboratively.",
+      "actual_text": ""
+    },
+    {
+      "element": "1098:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2: A screenshot of the furniture menu that is always attached to the left controller. Inside the menu, there are six sub-menus of pre-made furniture models: sofas, tables, chairs, desks, storage, and lights. Users can populate a model from a sub-menu by aiming and selecting it using the raycast shooting from the controller and place it in the virtual scene.",
+      "actual_text": ""
+    },
+    {
+      "element": "1054:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3: An illustration of the summarized version history. In the middle it shows part of the summarized history graph including V2, V4, V8, V10, V11, and V15 (the version that the user is currently in), where a set of dots indicating an ellipsis is shown before V2 and between V11 and V15. On top of the history graph it shows how V4 to V8 expand as part of the DAG, where each operation will generate a new node in the DAG. At the bottom it shows a new branch that only shows the version that another collaborator is in.",
+      "actual_text": ""
+    },
+    {
+      "element": "1059:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "VRGit history graph with miniature room versions arranged along three branches. Green, red and dark-green edges distinguish the branches, and a yellow square marks the selected miniature V4 on the upper branch. The caption states that the user remains in V17 while selecting this earlier version.",
+      "actual_text": ""
+    },
+    {
+      "element": "1061:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "VRGit history graph after changing the selection to another branch. The yellow selection square moves to V4.0 on the lower row of miniature rooms while the user remains in V17. The selected lower branch appears green in the screenshot, although the printed caption calls it dark red.",
+      "actual_text": ""
+    },
+    {
+      "element": "1051:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5.a: A screenshot of previewing a version in the system, where a larger 3D miniature is shown on top of the history graph on the user’s non-dominant arm. The preview is labeled as “V5.11_preview”.\n\nFigure 5.b: A screenshot of reusing objects in the preview. The user is in V14 and they are viewing a preview of V5.11. The user selects the chair in the preview and after selecting it, the chair appears in the virtual scene with the same transformation as in the preview. The system then automatically creates a commit due to the addition and moves the user to V15.",
+      "actual_text": ""
+    },
+    {
+      "element": "1166:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6: An illustration of shared history visualization. Firstly, two users are working in the same version and one user creates a shared visualization by clicking on the history graph. Second, the history visualization moved to a shared location in the virtual scene and the sharer can select a version for all users. Third, when the sharer enters a different version, they can bring all users together. Finally, the sharer creates a shared preview of another version and reuses objects in the preview based on discussion with other users.",
+      "actual_text": ""
+    },
+    {
+      "element": "1211:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 7: A flow chart of the system architecture of VRGit. The chart contains four components: Application 1, Application 2, Firebase, and Photon Voice. Application 1 and Application 2 are connected via Photon Voice for in-app voice communication. Application 1 and Application 2 are also connected via Firebase, where each sub-component in the Applications is connected to a document on Firebase. A sub-component from the application named Oculus Headsets & Controllers is connected to a document named Avatars. Similarly, History Graph is connected to Operations; First-person View Encoded with WebRTC is connected to Portals; and Shared History Visualization is connected to Shared History Operations.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

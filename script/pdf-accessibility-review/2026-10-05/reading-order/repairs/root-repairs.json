@@ -1,0 +1,1783 @@
+[
+  {
+    "file": "xu-how-pairing-code-chilbw2023.pdf",
+    "before_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+    "after_sha256": "1f86d939cd21ff54c2b815ae501e38a309b6e4fb395d0396a26566e70b6a4707",
+    "changes": [
+      {
+        "kind": "publication_notices_before_intro",
+        "nodes": [
+          "288:0",
+          "289:0"
+        ],
+        "before": "286:0"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "287:0",
+        "continuation": "322:0",
+        "before_end": "sometime struggleto help individual students due to large enrollments. Therefore,instructors often use peer learning, a form of collaborative learning",
+        "after_start": "where students provide mutual support and feedback by workingtogether or discussing code in groups. Studies have shown thatpeer programming can be ben"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "327:0",
+        "continuation": "335:0",
+        "before_end": "amming courses [15],there are limited interactions between the lecturer and the studentswhile novice programmers need more support. Instructors take a",
+        "after_start": "variety of approaches such as using a flipped classroom to encour-age interactive activities and collaboration inside the classroom [1].Peer learning "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "341:0",
+        "continuation": "342:0",
+        "before_end": "larity detection, socode that is more similar to each other will be grouped together.Instructors can then find larger meaningful patterns by analyzing",
+        "after_start": "these clusters [12]. Code clustering tools are essential to computerscience education and have been commonly used to support grad-ing [3], generate fe"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "383:0",
+        "continuation": "384:0",
+        "before_end": "heir explanation.For example, most students explain the concept following a similarstyle to \"I first built a dictionary with words ending with e. Then",
+        "after_start": "with a for loop to get the length of that item. And then I use themax function to find the max value.\""
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "394:0",
+        "continuation": "401:0",
+        "before_end": "When we are reviewing the recorded video discussion and thequestionnaires where participants were explaining their thought",
+        "after_start": "processes, we found that students have a deeper understanding ofthe problem than what was been reflected by their code. For exam-ple, during the discu"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "420:0",
+        "continuation": "421:0",
+        "before_end": "articipant’s answerin different piles, generating 14 piles in total, so we had to groupthe participants by our judgment on similarity. Our study shows",
+        "after_start": "that OverCode cannot cluster when errors are presented in thecode segment, and it’s difficult to cluster code with the same logic.Further study should"
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 204,
+    "content_references": 5015
+  },
+  {
+    "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+    "before_sha256": "fa295670cf1d5843d4fbe37988aa2e031c0e96251652d1655e7850c16c3343b7",
+    "after_sha256": "1c4167ffd9528077adb95a1e45f406d28c1df9f183181a33b12a8b5e45d924c0",
+    "changes": [
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "46:0",
+        "continuation": "201:0",
+        "before_end": "We present ScrapeViz, a new PBD tool for creating webscraping macros, with a focus on helping users understand",
+        "after_start": "macros’ behavior. ScrapeViz is designed for scraping dis-tributed hierarchical data [5], which involves parent-childrelationships (hierarchical) acros"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "206:0",
+        "continuation": "210:0",
+        "before_end": "t involve hierarchical dataor multiple pages. Sifter [22] can extract data across multiplepages but is limited to pagination-based navigation and does",
+        "after_start": "not support hierarchical data. In contrast, ScrapeViz supportsweb scraping for hierarchical data and across multiple pages."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "214:0",
+        "continuation": "215:0",
+        "before_end": "of data they want to scrape for thesystem to generalize from; in WebRobot [6] and ScrapeViz,users provide two examples. However, unlike these systems,",
+        "after_start": "ScrapeViz also provides a visual representation that gives acomplete overview of macro behavior in context."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "218:0",
+        "continuation": "49:0",
+        "before_end": "n overview of pages visited,cannot see visual correspondence highlighting across multiplepages, and cannot easily determine the page and location that",
+        "after_start": "data in the output table came from. Instead, ScrapeViz aims tohelp users get an overview of macro behavior across differentpage contexts through a vis"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "80:0",
+        "continuation": "83:0",
+        "before_end": "additions. Susan clicks on thesmaller viewport to expand it and see the movie page moreclearly; this then shrinks the original viewport containing the",
+        "after_start": "list of movies. She then clicks the first actor name link on theEEAAO movie page, Michelle Yeoh (Fig 1-K), which scrapesher name and navigates to her "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "87:0",
+        "continuation": "220:0",
+        "before_end": "confident that the macro is scrapingthe data she wants. ScrapeViz has allowed Susan to authornested-loop scraping logic, and across multiple pages—for",
+        "after_start": "each movie, scrape its name and click on it to reach its listof actors; for each actor, scrape their name and click on it toreach their birthdate and "
+      },
+      {
+        "kind": "note_roles",
+        "nodes": [
+          "255:0",
+          "256:0",
+          "257:0",
+          "258:0"
+        ]
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 216,
+    "content_references": 5023
+  },
+  {
+    "file": "chen-edcode-vlhcc2020.pdf",
+    "before_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+    "after_sha256": "b80f3a3c53c66187e300d7d5c39db09468933bafb8b49f03ae534616149ec935",
+    "changes": [
+      {
+        "kind": "publication_notices_before_intro",
+        "nodes": [
+          "161:0"
+        ],
+        "before": "158:0"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "292:0",
+        "continuation": "297:0",
+        "before_end": "systems, but they often lackpersonalized support for programmers, especially novices [13]–[15]. To scale personalized support, prior work has proposed",
+        "after_start": "automated techniques to repair bugs [16], construct in-situexplanations for code examples [17], and provide intelligenttutoring [18]. While results ar"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "304:0",
+        "continuation": "307:0",
+        "before_end": "earcher instructor gave throughCodeon were difficult for students to interpret as studentslacked the ability to efficiently switch between deciphering",
+        "after_start": "a textual explanation and parsing references to code, whichwere often included in responses. This is because Codeonwas designed to help programmers co"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "310:0",
+        "continuation": "327:0",
+        "before_end": "lized explanation featurethat allows instructors to link a selection of code to textualexplanations (Fig. 2). In students’ code editor, they can click",
+        "after_start": "highlighted text in an answer to see the code associated with it(4, 5 in Fig. 1). This feature helps to lower the cognitive costfor novices by derefer"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "341:0",
+        "continuation": "351:0",
+        "before_end": " All seven students reported an overall preference forEdCode, as it was “convenient” (S1, S3–S6), “effortless” (S2),",
+        "after_start": "or “localized to my text editor” (S7). The flexibility betweensynchronous and asynchronous communication in EdCodeallows students to “easily follow up"
+      },
+      {
+        "kind": "author_affiliation_order",
+        "node": "154:0",
+        "actual": "Yan Chen (affiliation 1), Jaylin Herskovitz (affiliation 1), Gabriel Matute (affiliation 1), April Wang (affiliation 1), Sang Won Lee (affiliation 2), Walter S. Lasecki (affiliation 1), Steve Oney (affiliation 1)."
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 182,
+    "content_references": 4238
+  },
+  {
+    "file": "oney-zoomboard-chi2013.pdf",
+    "before_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+    "after_sha256": "7aed5f355a67a0710784799bc5566e2c4f4781a7b0941ab361fc700cbbd4c5d7",
+    "changes": [
+      {
+        "kind": "publication_notices_before_intro",
+        "nodes": [
+          "47:0",
+          "55:0"
+        ],
+        "before": "44:0"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "46:0",
+        "continuation": "48:0",
+        "before_end": "le[25] and smaller devices, such as a wristwatchcomputersor digital jewelry[20].These devicesarecomputationally capable, but suffer from a paucity of ",
+        "after_start": "inputarea, whichgenerally precludes the use of conven-tional soft keyboards(andin turn limits therange of possi-bleapplications). At present, text ent"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "52:0",
+        "continuation": "59:0",
+        "before_end": " approach to support text entry on mobile devices has beento find clever ways to shrink QWERTYkeyboards, such that they can be accommodated on mobile ",
+        "after_start": "deviceenclosures and touchscreens[14]. However, fitting 27+ keys onto a small device is neither straightforward, nor particularlyaccurate. It is now s"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "61:0",
+        "continuation": "62:0",
+        "before_end": "ed a limited distance from their traditional positions. Efforts have also looked at compressing the QWERTYkeyboarddown into a single row of keys[15], ",
+        "after_start": "while retaining the overall layout, so as to take up less screen real estate(though not less width)."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "69:0",
+        "continuation": "73:0",
+        "before_end": "e KSPC-mindown to 1.84on typical phrase sets. This compares favorably to other small-deviceinput methods, for example,2.1, 3.3, and 4.3 for H4-Writer ",
+        "after_start": "[17],LURDWriter[7], and EdgeWrite[27,28]respectively(see [17]for more discussion)."
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 149,
+    "content_references": 2162
+  },
+  {
+    "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+    "before_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+    "after_sha256": "97abd0c7d6b9e91f0c76ea093673d8d3415c5f7abb1164b80ac3bc5ac9e168b8",
+    "changes": [
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "37:0",
+        "continuation": "39:0",
+        "before_end": " interactive behaviors that make them difficult to program in traditional programming languages and exploring ways to lower the threshold forcreating ",
+        "after_start": "interactive software.This is a form of End-User Developmentsince interaction designers are authoring code, but they are notprofessional programmers."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "52:0",
+        "continuation": "54:0",
+        "before_end": " of the immediate feedback that our prototype provided when they updated their code. They also were very willing to experiment in their code.In fact, ",
+        "after_start": "some designers asked for more immediate feedback where the design view would update as they were typing code."
+      },
+      {
+        "kind": "separate_footnote_from_bibliography",
+        "reference": "76:0",
+        "note": "94:0",
+        "after": "57:0",
+        "text": "1http://processing.org/& http://www.openframeworks.cc/"
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 50,
+    "content_references": 870
+  },
+  {
+    "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+    "before_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+    "after_sha256": "bc5294ee26d6a8bf4f0dd99b17caa755b5916b2a3516836fdbc57f442689af0c",
+    "changes": [
+      {
+        "kind": "artifact_running_header",
+        "node": "174:0",
+        "text": "Chen, et al."
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "227:0",
+        "text": "On-Demand Collaboration in Programming"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "238:0",
+        "text": "New Future of Work ’20, August 03–05, 2020, Woodstock, NY"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "239:0",
+        "text": "Chen, et al."
+      },
+      {
+        "kind": "publication_notices_before_intro",
+        "nodes": [
+          "169:0",
+          "170:0"
+        ],
+        "before": "166:0"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "233:0",
+        "continuation": "240:0",
+        "before_end": "hours and more easily understandcomprehension gaps by viewing learners’ past attempts, thus reducing the interaction delay. Additionally, the produced",
+        "after_start": "tools could enable more collaboration, from peer feedback to team projects, than digital-only communication techniquesbetween learners, thus helping t"
+      }
+    ],
+    "artifact_content_keys": [
+      [
+        "2:0",
+        0
+      ],
+      [
+        "2:0",
+        1
+      ],
+      [
+        "2:0",
+        2
+      ],
+      [
+        "3:0",
+        0
+      ],
+      [
+        "3:0",
+        1
+      ],
+      [
+        "3:0",
+        2
+      ],
+      [
+        "3:0",
+        3
+      ],
+      [
+        "4:0",
+        0
+      ],
+      [
+        "4:0",
+        1
+      ],
+      [
+        "4:0",
+        2
+      ],
+      [
+        "4:0",
+        3
+      ],
+      [
+        "4:0",
+        4
+      ],
+      [
+        "4:0",
+        5
+      ],
+      [
+        "4:0",
+        6
+      ],
+      [
+        "4:0",
+        7
+      ],
+      [
+        "4:0",
+        8
+      ],
+      [
+        "4:0",
+        9
+      ],
+      [
+        "4:0",
+        10
+      ],
+      [
+        "4:0",
+        11
+      ],
+      [
+        "4:0",
+        12
+      ]
+    ],
+    "elements": 139,
+    "content_references": 2445
+  },
+  {
+    "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+    "before_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+    "after_sha256": "c14b12120a1c9e3c2fca3380a1d0a9f624cead02ec3d5222097577793e69f096",
+    "changes": [
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "33:0",
+        "continuation": "34:0",
+        "before_end": "ctive software, including Adobe Catalyst, Microsoft Blend, and Processing, these tools still rely on a fixed set of widgets for ease of use. Although ",
+        "after_start": "widgets can often provide a decent approxi-mation of what an application designer wants, they often are not able to capture exactly what they want[2]."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "42:0",
+        "continuation": "43:0",
+        "before_end": " immediately seen. We want to augment this by reducing some of the known deficiencies of spreadsheets, like lack of visibility, and by making our pro-",
+        "after_start": "gramming environment multimodal, so that multiple views of a program can be used to manipulate the logic. For example, when de-signing program logic, "
+      }
+    ],
+    "artifact_content_keys": [],
+    "elements": 34,
+    "content_references": 682
+  },
+  {
+    "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "before_sha256": "5967c1c2a052f68781284c72b7b5ea57769759b79dc9de4ea761e12914688d92",
+    "after_sha256": "1f89d283ffe80e2eec3384cefe19e06503e0a940e9f789f84dbe5a8be9c15aef",
+    "changes": [
+      {
+        "kind": "artifact_running_header",
+        "node": "1847:0",
+        "text": "Chapter 1: Introduction / Interactive Behaviors"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "1855:0",
+        "text": "Chapter 1: Introduction / Problem Statement"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "1880:0",
+        "text": "Chapter 1: Introduction / Reusing and Combining Behaviors"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "1891:0",
+        "text": "Chapter 1: Introduction / Multi-Touch Development"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "1911:0",
+        "text": "Chapter 1: Introduction / Outline"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "1999:0",
+        "text": "Chapter 2: Related Work / UI Management Systems and Frameworks"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2010:0",
+        "text": "Chapter 2: Related Work / Behavior Re-Use"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2018:0",
+        "text": "Chapter 2: Related Work / Visual Programming"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2027:0",
+        "text": "Chapter 2: Related Work / Multi-touch Gestures"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2056:0",
+        "text": "Chapter 3: ConstraintJS / Web Development Technologies"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2065:0",
+        "text": "Chapter 3: ConstraintJS / Contributions"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2075:0",
+        "text": "Chapter 3: ConstraintJS / Terminology"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2302:0",
+        "text": "Chapter 3: ConstraintJS / Conclusion"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2758:0",
+        "text": "Chapter 4: InterState / Conclusion"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2769:0",
+        "text": "Chapter 5: Defining Custom Event Types / Improving Custom Events"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2794:0",
+        "text": "Chapter 5: Defining Custom Event Types / Conclusion"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2804:0",
+        "text": "Chapter 6: Multi-Touch Primitives / Multi-Touch Challenges"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2951:0",
+        "text": "Chapter 7: Limitations and Future Work / Scope"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2959:0",
+        "text": "Chapter 7: Limitations and Future Work / Tools for Non-Developers"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2968:0",
+        "text": "Chapter 7: Limitations and Future Work / Pre-Supplied Widgets"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2976:0",
+        "text": "Chapter 7: Limitations and Future Work / Debugging Tools"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2985:0",
+        "text": "Chapter 7: Limitations and Future Work / Animations"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "2995:0",
+        "text": "130Chapter 7: Limitations and Future Work / InterState Editor Feature Extensions"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3005:0",
+        "text": "Chapter 7: Limitations and Future Work / Direct Manipulation"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3015:0",
+        "text": "Chapter 7: Limitations and Future Work / Better Support for Exploration"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3030:0",
+        "text": "Chapter 8: Conclusion"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3589:0",
+        "text": "Appendix A: ConstraintJS Tutorial / Using ConstraintJS"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3609:0",
+        "text": "Appendix A: ConstraintJS Tutorial / Constraint Variables"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3632:0",
+        "text": "Appendix A: ConstraintJS Tutorial / ConstraintJS Internals"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3650:0",
+        "text": "Appendix A: ConstraintJS Tutorial / DOM Bindings"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3691:0",
+        "text": "Appendix A: ConstraintJS Tutorial / Detecting Variable Changes"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3708:0",
+        "text": "Appendix A: ConstraintJS Tutorial / Array and Map Constraints"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3797:0",
+        "text": "Appendix A: ConstraintJS Tutorial / Templates"
+      },
+      {
+        "kind": "artifact_running_header",
+        "node": "3847:0",
+        "text": "Appendix A: ConstraintJS TutorialConstraintJS Tutorial / Template Syntax"
+      },
+      {
+        "kind": "heading_note_marker_order",
+        "node": "2047:0",
+        "before": "23ConstraintJS",
+        "after": "3ConstraintJS2"
+      },
+      {
+        "kind": "heading_note_marker_order",
+        "node": "2310:0",
+        "before": "74InterState",
+        "after": "4InterState7"
+      },
+      {
+        "kind": "panel_label_columns",
+        "node": "2920:0",
+        "before": "a one-finger swipe a two-finger swipe from the bottom brings from the bottom brings up the brush menuup the color menu",
+        "after": "a one-finger swipe from the bottom brings up the brush menua two-finger swipe from the bottom brings up the color menu"
+      },
+      {
+        "kind": "footnote_placement",
+        "node": "2091:0",
+        "after": "2088:0"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1863:0",
+        "continuation": "1865:0",
+        "before_end": "havior by tracking its state and include a set of rules that control when it changes state. Its use of constraints was motivated by previous research ",
+        "after_start": "showing howconstraintscan help developers avoid writing spaghetti code[94,110].In contrast with the event-callback model, which requires writing a sni"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1889:0",
+        "continuation": "1892:0",
+        "before_end": "t of the state machines for another behavior. For example, a developer might define a custom n-click gesture (double click, triple click, etc.) where ",
+        "after_start": "developers can customize the number of clicks (n). They can then abstract away this gesture and use it like any other built-in event in other behavior"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1949:0",
+        "continuation": "1951:0",
+        "before_end": "nt-based concepts [132]. Additionally, tools for designers must allow them to evaluate an interface as they are creating it (also known as reflection-",
+        "after_start": "in-action [129,143]). To support reflection-in-action, InterState is implemented as a liveeditor, where changes to the program source are immediately "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1958:0",
+        "continuation": "1960:0",
+        "before_end": "ompute the value of a variable based on others, but not vice-versa. For instance, if ais constrained to b+1(expressed a <=b+1) then a <=b+1solves for ",
+        "after_start": "a, but does not express what happens to bif achanges.The kinds of constraints that user interface developers often want to express require nuanced con"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1982:0",
+        "continuation": "1984:0",
+        "before_end": "re consideredby many researchers to be the most popular form of “programming”[98]. Part of their appeal lies in their beginner friendliness: the user ",
+        "after_start": "always has a working program and errors can be localized. Constraints are also a fundamental part of the spreadsheet paradigm: users can write equatio"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "647:0",
+        "continuation": "1991:0",
+        "before_end": " Nested states allowanystate to contain substates. Both features aim to avoid the “state explosion problem”, where the number of states to describe a ",
+        "after_start": "behavior grows exponentially.Propositional Production Systems (PPS) [122], an alternative notation for describing high-level GUIbehavior with state ma"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1997:0",
+        "continuation": "2000:0",
+        "before_end": "ve three states: pending(the asynchronous value does not have a value yet), fulfilled (the asynchronous value has a value), and rejected(there was an ",
+        "after_start": "error of some sort). As section 3.5.3 belowdiscusses, ConstraintJS uses these three states in its state machine for asynchronous values."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2008:0",
+        "continuation": "2011:0",
+        "before_end": "uild UIs. Most UIMSalso help developers separate the underlying program logic (the model) from the user interface logic (the view). Although the term ",
+        "after_start": "“UIMS” was coined by Kasik in 1982 [72], the separation of user interface logic and view logic is a longstanding idea [9]. Although the distinction be"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2025:0",
+        "continuation": "2028:0",
+        "before_end": "ivedevelopment environments are ones that provide some form of immediate feedback when developers edit their programs. Livenessis a relatively common ",
+        "after_start": "feature in visual programming languages [21,151], particularly in spreadsheets [20,161]. Live development environments can help developers by allowing"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2034:0",
+        "continuation": "2036:0",
+        "before_end": "based on regular expressions. These regular expressions (which are functionally equivalent to state machines), abstract away many of the difficulties ",
+        "after_start": "of implementing these behaviors in event-callback code. The focus of all of these systems is on building more intuitive and understandable event archi"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2043:0",
+        "continuation": "2045:0",
+        "before_end": "aradigms that have been the subject of much previous work: states and constraints. Many of the contributions described in this dissertation stem from ",
+        "after_start": "the ways that ConstraintJS and InterState combine and augment these features in cohesive development tools."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2053:0",
+        "continuation": "2057:0",
+        "before_end": "Web’s three languages have complimentary, pre-defined roles. HTML, a declarative markup language, defines a page’s content. CSSdefines the appearance ",
+        "after_start": "of that content with a declarative language that allows developers to specify stylistic properties of particular DOMnodes. CSSuses a “selector” langua"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2063:0",
+        "continuation": "2066:0",
+        "before_end": "model, reducing the need for writing callbacks. It also introduces mechanisms for creating templates and to help developers structure their code in a ",
+        "after_start": "readable and maintainable way. However, whereas the goal of ConstraintJS is to introduce primitives for defining interactive behaviors, Angular is int"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2154:0",
+        "continuation": "2156:0",
+        "before_end": "od for defining asynchronous constraints is through state machines. ConstraintJS allows developers to handleasynchronous values with a combination of ",
+        "after_start": "abuilt-inFSMand a constrainable variable that depends on that FSM[126]. The FSMfor asynchronous constraintshas three states:"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2201:0",
+        "continuation": "2203:0",
+        "before_end": "es four linestocreate a variable whose value always represents the slider’s value. Thiscannow betreatedjust like any other constrainable variable and ",
+        "after_start": "have any number ofothervariables, including DOMelements (as shown below) depend on it."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2300:0",
+        "continuation": "2303:0",
+        "before_end": "very componentin this application is controlled by constraints –photo position, scale, rotation, & opacity and the position, visibility & text of the ",
+        "after_start": "opacity slider. Compared to an implementation of this example that does not use constraints, the ConstraintJS implementation requires fewer lines of c"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2326:0",
+        "continuation": "2328:0",
+        "before_end": "ts that are enforced only in particular states. It also removes much of the boilerplate that is required to express constraints in other systems (see ",
+        "after_start": "[94,99,106,126]for examples of boilerplate code required in other constraint libraries), allowing programmers to express constraints with simple equat"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2339:0",
+        "continuation": "2341:0",
+        "before_end": "animating transitions as they fire. In the evaluation described later in this paper, these features were found to be effective in helping programmers ",
+        "after_start": "implement this behavior in about half the time with InterState compared to JavaScript."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2369:0",
+        "continuation": "2371:0",
+        "before_end": "pecial expression that specified that a field should retain its current valueand stop updating. In other words, a field would retain its valueas soon ",
+        "after_start": "as the InterState runtime evaluated its constraint expression as KEEPVALUE. ONCE()had a similar purpose, but allowed developers to enteran expressiona"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2376:0",
+        "continuation": "2378:0",
+        "before_end": "ght ordering convention used to resolve conflicts in constraint expressions is one viable solution. The problem with using object ordering to control ",
+        "after_start": "transition order is that when transitions with identical events are declared in multiple objects, the order of these objects would affect both the tra"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2384:0",
+        "continuation": "2386:0",
+        "before_end": "it from their expressiveness; state machine transitions can useconstraints to express mutable targets and events (e.g., a transition could trigger on ",
+        "after_start": "obj1.ev1, with both obj1 and ev1 being calculated by constraints at run-time), objects can dynamically vary their prototypes using constraints, and co"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2404:0",
+        "continuation": "2406:0",
+        "before_end": "with using the mouse, based on whether it is idle, being hovered over, if the mouse is pressed down, or if it is pressed down and moved outside while ",
+        "after_start": "pressed.Combining all of these independent states into a single diagram would require 2×2×4= 16states, many of which will be semantically un-intuitive"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2419:0",
+        "continuation": "2421:0",
+        "before_end": " a default value of 150and imagehas a srcattributewith a default URIthat points to the InterState logo).InterState SVGobjects also include attributes ",
+        "after_start": "that allow developers to specify how display properties should animate between values,using CSStransitions. Finally, to enable a dynamic DOMhierarchy "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2446:0",
+        "continuation": "2448:0",
+        "before_end": "ke any other states. InterState’s state layout allows for arbitrary levels of nesting this way. Incorporating a way to represent nested states in the ",
+        "after_start": "representation of state machines is important because, as section 3.2.2 abovedescribes, nested states are an effective way to reduce the verbosity of "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2479:0",
+        "continuation": "2481:0",
+        "before_end": "is in one of the object’s prototypes,thenthat prototype’s definitionis usedfor the state. This allows multiple behaviors to control the same property ",
+        "after_start": "simultaneously.For example, inFigure 4.14, selectableand draggable define color.my_selectable_draggablecombines the definitions of both of these proto"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2488:0",
+        "continuation": "2490:0",
+        "before_end": " to ordinary objects. When copiesis set to either an array or a number, its parent object then creates a set of items rather than a single item. When ",
+        "after_start": "the value of copieschanges (either dynamically or through user edits), the list is updated with respect to added, moved, and removed items instead of "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2507:0",
+        "continuation": "2511:0",
+        "before_end": "[40]. Again, it is relatively easy to experiment with different application looks with sketches, drawing programs, etc. However, it is more difficult ",
+        "after_start": "to change or experiment with the feel of the application. For example, imagine that the designer wants to tweak the scrolling “friction” to find a sui"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2526:0",
+        "continuation": "2528:0",
+        "before_end": "cuted,the property’s value would ideally backtrack to evaluate as if that value were set beforethe transition was executed. To balance this need with ",
+        "after_start": "performance and memory concerns (tracking past states can be computationally expensive), InterState only backtracks property values when that property"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2590:0",
+        "continuation": "2592:0",
+        "before_end": "an object with multiple copies changed every copy or just one, a distinction that the editor could make clearer.Some participants also had difficulty ",
+        "after_start": "reasoning about the interaction between state machines in different copies. In the image carousel example, when a user clicks a thumbnail, that thumbn"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2782:0",
+        "continuation": "2784:0",
+        "before_end": " a higher priority. The four atomic sub-events thus cover every outcome a user event might have. As soon as an event requests to be fired (by calling ",
+        "after_start": "the event prototype’s built-in fire()method), a requestedsub-event fires. Thus, developers can specify intermediate feedback after the event is reques"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2792:0",
+        "continuation": "2795:0",
+        "before_end": "events in the same fashion as the built-in events. For example, a developer might define an InterState object myGesturethat inherits from eventand is ",
+        "after_start": "parameterizable by numFingers. If myGesture’s state machine or any other field depends on the numFingersproperty, then inherited instances of myGestur"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2813:0",
+        "continuation": "2815:0",
+        "before_end": "al desktop application, when the user presses their mouse curser on a particular element, their subsequent interactions (until they release the mouse ",
+        "after_start": "button) typically only involve that element. If the mouse leaves that element before the user releases the mouse (or the user presses ESC), then that "
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2833:0",
+        "continuation": "2835:0",
+        "before_end": " higher-level path from the series of “touch move” events that nearly every multi-touch framework uses. Thus, InterState introduces crossing eventsas ",
+        "after_start": "a way to help developers define multi-touch gestures that reference the path or direction that fingers move."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2876:0",
+        "continuation": "2878:0",
+        "before_end": "simple constraintsand eventsthat depend on many of the most relevant properties of the group of fingers. A touch cluster’s position is defined as the ",
+        "after_start": "average of every finger involved in the touch cluster. Every touch cluster also includesother outputs, listed below:"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2899:0",
+        "continuation": "2901:0",
+        "before_end": "g event defining swipe gesture might require that a user’s finger is travelling with sufficient velocity to register. By default, boththe minimum and ",
+        "after_start": "maximum speedparameters are false, meaning that the crossing event will register at any speed."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2938:0",
+        "continuation": "2940:0",
+        "before_end": "mented in the context of imperative multi-touch development frameworks. Touch clusters and path crossing events can be represented as parameterizable ",
+        "after_start": "objects in any general-purpose language. Although many of the features of touch clusters and path crossing events benefitted from being implemented in"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2949:0",
+        "continuation": "2952:0",
+        "before_end": "roblems with event-callback code described in this dissertation apply when callbacks have to track and maintain a consistent state.  Although this is ",
+        "after_start": "the case in most graphical user interfaces, there is one particular class of non-state oriented interfaces that I have encountered: video games. In vi"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2957:0",
+        "continuation": "2960:0",
+        "before_end": " with InterState primitives, I have conducted preliminary experiments to explore creating 3D renderings (using a WebGL-enabled canvas) and HTMLcanvas ",
+        "after_start": "drawings. As is the case with alternate event types, designing for different output mediums requires carefully exploiting APImechanisms that were inte"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2966:0",
+        "continuation": "2969:0",
+        "before_end": "], whichevaluates to the value of the field in other_objwhose name is the value of this.prop_name. Writing this expression requires understanding the ",
+        "after_start": "idea of dynamically specified fields (how other_obj[this.prop_name]is entirely different than other_obj.this.prop_name) and a careful consideration of"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "3003:0",
+        "continuation": "3006:0",
+        "before_end": "ling the editor to show the rows for objects under the transition diagram of a different object. In the previous paragraph’s example, this would mean ",
+        "after_start": "allowing a developer to edit the row that defines the value of my_obj.is_pressedwhile looking at the state machine for the buttonobject in the editor."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1853:0",
+        "continuation": "1856:0",
+        "before_end": "culties of creating interactive behaviors. Because designing, implementing, and evaluating new interactive behaviors are common in the Human-Computer ",
+        "after_start": "Interaction (HCI) community, making interactive behaviorseasier to implement is a fundamental problem in HCI[98]."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "1972:0",
+        "continuation": "1974:0",
+        "before_end": "the specification visual layouts. Early research in geometric constraints, including The Constraint Window System (CWS) [31], IDEAL[166], Juno [116], ",
+        "after_start": "Animus [29], and GITS[123], and OPUS [57]focused on maintaining relationships in drawings or animations. Peridot [97]inferred geometric constraints an"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2317:0",
+        "continuation": "2320:0",
+        "before_end": "lopers should ideally be able to write “y+1”, which requiresparsing constraint values at runtime or compiling ConstraintJS code before deployment, as ",
+        "after_start": "JavaScript does not have an operator overloading mechanism. Other ideas, such as providing a visual notation to help developers understand ConstraintJ"
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "2580:0",
+        "continuation": "2582:0",
+        "before_end": ", two-tailed heteroscedastic Student’s t-testp < 0.05). Although relatively few lines of code were required, reasoning about callbacks’ timing in the ",
+        "after_start": "JavaScript task proved challenging for many users, and many participants used console logs to help them understand their interface’s state."
+      },
+      {
+        "kind": "join_paragraph_continuation",
+        "first": "3012:0",
+        "continuation": "3016:0",
+        "before_end": "tegrate InterState with creative tools like Photoshop. This way, designers could specify an interface’s appearancewith Photoshop and its behaviorwith ",
+        "after_start": "InterState. I have conducted preliminary investigations into this idea, with an early-stage mockup tool that integrates with Photoshop [124]."
+      }
+    ],
+    "artifact_content_keys": [
+      [
+        "1239:0",
+        0
+      ],
+      [
+        "1239:0",
+        1
+      ],
+      [
+        "1239:0",
+        2
+      ],
+      [
+        "1239:0",
+        3
+      ],
+      [
+        "1239:0",
+        4
+      ],
+      [
+        "1239:0",
+        5
+      ],
+      [
+        "1243:0",
+        0
+      ],
+      [
+        "1243:0",
+        1
+      ],
+      [
+        "1243:0",
+        2
+      ],
+      [
+        "1243:0",
+        3
+      ],
+      [
+        "126:0",
+        0
+      ],
+      [
+        "126:0",
+        1
+      ],
+      [
+        "126:0",
+        2
+      ],
+      [
+        "126:0",
+        3
+      ],
+      [
+        "126:0",
+        4
+      ],
+      [
+        "126:0",
+        5
+      ],
+      [
+        "126:0",
+        6
+      ],
+      [
+        "126:0",
+        7
+      ],
+      [
+        "1277:0",
+        0
+      ],
+      [
+        "1277:0",
+        1
+      ],
+      [
+        "1277:0",
+        2
+      ],
+      [
+        "1277:0",
+        3
+      ],
+      [
+        "1277:0",
+        4
+      ],
+      [
+        "1279:0",
+        0
+      ],
+      [
+        "1279:0",
+        1
+      ],
+      [
+        "1279:0",
+        2
+      ],
+      [
+        "1279:0",
+        3
+      ],
+      [
+        "1279:0",
+        4
+      ],
+      [
+        "1281:0",
+        0
+      ],
+      [
+        "1281:0",
+        1
+      ],
+      [
+        "1281:0",
+        2
+      ],
+      [
+        "1281:0",
+        3
+      ],
+      [
+        "1281:0",
+        4
+      ],
+      [
+        "1286:0",
+        0
+      ],
+      [
+        "1286:0",
+        1
+      ],
+      [
+        "1286:0",
+        2
+      ],
+      [
+        "1286:0",
+        3
+      ],
+      [
+        "1286:0",
+        4
+      ],
+      [
+        "1286:0",
+        5
+      ],
+      [
+        "1288:0",
+        0
+      ],
+      [
+        "1288:0",
+        1
+      ],
+      [
+        "1288:0",
+        2
+      ],
+      [
+        "1288:0",
+        3
+      ],
+      [
+        "1288:0",
+        4
+      ],
+      [
+        "1291:0",
+        0
+      ],
+      [
+        "1291:0",
+        1
+      ],
+      [
+        "1291:0",
+        2
+      ],
+      [
+        "1291:0",
+        3
+      ],
+      [
+        "1291:0",
+        4
+      ],
+      [
+        "1291:0",
+        5
+      ],
+      [
+        "1297:0",
+        0
+      ],
+      [
+        "1297:0",
+        1
+      ],
+      [
+        "1297:0",
+        2
+      ],
+      [
+        "1297:0",
+        3
+      ],
+      [
+        "1297:0",
+        4
+      ],
+      [
+        "129:0",
+        0
+      ],
+      [
+        "129:0",
+        1
+      ],
+      [
+        "129:0",
+        2
+      ],
+      [
+        "129:0",
+        3
+      ],
+      [
+        "129:0",
+        4
+      ],
+      [
+        "129:0",
+        5
+      ],
+      [
+        "1303:0",
+        0
+      ],
+      [
+        "1303:0",
+        1
+      ],
+      [
+        "1303:0",
+        2
+      ],
+      [
+        "1303:0",
+        3
+      ],
+      [
+        "1303:0",
+        4
+      ],
+      [
+        "1303:0",
+        5
+      ],
+      [
+        "148:0",
+        0
+      ],
+      [
+        "148:0",
+        1
+      ],
+      [
+        "148:0",
+        2
+      ],
+      [
+        "148:0",
+        3
+      ],
+      [
+        "148:0",
+        4
+      ],
+      [
+        "148:0",
+        5
+      ],
+      [
+        "148:0",
+        6
+      ],
+      [
+        "150:0",
+        0
+      ],
+      [
+        "150:0",
+        1
+      ],
+      [
+        "150:0",
+        2
+      ],
+      [
+        "150:0",
+        3
+      ],
+      [
+        "150:0",
+        4
+      ],
+      [
+        "150:0",
+        5
+      ],
+      [
+        "150:0",
+        6
+      ],
+      [
+        "150:0",
+        7
+      ],
+      [
+        "153:0",
+        0
+      ],
+      [
+        "153:0",
+        1
+      ],
+      [
+        "153:0",
+        2
+      ],
+      [
+        "153:0",
+        3
+      ],
+      [
+        "153:0",
+        4
+      ],
+      [
+        "153:0",
+        5
+      ],
+      [
+        "155:0",
+        0
+      ],
+      [
+        "155:0",
+        1
+      ],
+      [
+        "155:0",
+        2
+      ],
+      [
+        "155:0",
+        3
+      ],
+      [
+        "155:0",
+        4
+      ],
+      [
+        "155:0",
+        5
+      ],
+      [
+        "155:0",
+        6
+      ],
+      [
+        "155:0",
+        7
+      ],
+      [
+        "163:0",
+        0
+      ],
+      [
+        "163:0",
+        1
+      ],
+      [
+        "163:0",
+        2
+      ],
+      [
+        "163:0",
+        3
+      ],
+      [
+        "163:0",
+        4
+      ],
+      [
+        "163:0",
+        5
+      ],
+      [
+        "165:0",
+        0
+      ],
+      [
+        "165:0",
+        1
+      ],
+      [
+        "165:0",
+        2
+      ],
+      [
+        "165:0",
+        3
+      ],
+      [
+        "165:0",
+        4
+      ],
+      [
+        "165:0",
+        5
+      ],
+      [
+        "167:0",
+        0
+      ],
+      [
+        "167:0",
+        1
+      ],
+      [
+        "167:0",
+        2
+      ],
+      [
+        "167:0",
+        3
+      ],
+      [
+        "167:0",
+        4
+      ],
+      [
+        "167:0",
+        5
+      ],
+      [
+        "167:0",
+        6
+      ],
+      [
+        "279:0",
+        0
+      ],
+      [
+        "279:0",
+        1
+      ],
+      [
+        "279:0",
+        2
+      ],
+      [
+        "279:0",
+        3
+      ],
+      [
+        "279:0",
+        4
+      ],
+      [
+        "279:0",
+        5
+      ],
+      [
+        "355:0",
+        0
+      ],
+      [
+        "355:0",
+        1
+      ],
+      [
+        "355:0",
+        2
+      ],
+      [
+        "355:0",
+        3
+      ],
+      [
+        "355:0",
+        4
+      ],
+      [
+        "355:0",
+        5
+      ],
+      [
+        "359:0",
+        0
+      ],
+      [
+        "359:0",
+        1
+      ],
+      [
+        "359:0",
+        2
+      ],
+      [
+        "359:0",
+        3
+      ],
+      [
+        "359:0",
+        4
+      ],
+      [
+        "359:0",
+        5
+      ],
+      [
+        "371:0",
+        0
+      ],
+      [
+        "371:0",
+        1
+      ],
+      [
+        "371:0",
+        2
+      ],
+      [
+        "371:0",
+        3
+      ],
+      [
+        "371:0",
+        4
+      ],
+      [
+        "371:0",
+        5
+      ],
+      [
+        "375:0",
+        0
+      ],
+      [
+        "375:0",
+        1
+      ],
+      [
+        "375:0",
+        2
+      ],
+      [
+        "375:0",
+        3
+      ],
+      [
+        "375:0",
+        4
+      ],
+      [
+        "375:0",
+        5
+      ],
+      [
+        "375:0",
+        6
+      ],
+      [
+        "375:0",
+        7
+      ],
+      [
+        "375:0",
+        8
+      ],
+      [
+        "375:0",
+        9
+      ],
+      [
+        "425:0",
+        0
+      ],
+      [
+        "425:0",
+        1
+      ],
+      [
+        "425:0",
+        2
+      ],
+      [
+        "425:0",
+        3
+      ],
+      [
+        "425:0",
+        4
+      ],
+      [
+        "425:0",
+        5
+      ],
+      [
+        "425:0",
+        6
+      ],
+      [
+        "427:0",
+        0
+      ],
+      [
+        "427:0",
+        1
+      ],
+      [
+        "427:0",
+        2
+      ],
+      [
+        "427:0",
+        3
+      ],
+      [
+        "427:0",
+        4
+      ],
+      [
+        "427:0",
+        5
+      ],
+      [
+        "427:0",
+        6
+      ],
+      [
+        "427:0",
+        7
+      ],
+      [
+        "429:0",
+        0
+      ],
+      [
+        "429:0",
+        1
+      ],
+      [
+        "429:0",
+        2
+      ],
+      [
+        "429:0",
+        3
+      ],
+      [
+        "429:0",
+        4
+      ],
+      [
+        "429:0",
+        5
+      ],
+      [
+        "429:0",
+        6
+      ],
+      [
+        "429:0",
+        7
+      ],
+      [
+        "431:0",
+        0
+      ],
+      [
+        "431:0",
+        1
+      ],
+      [
+        "431:0",
+        2
+      ],
+      [
+        "431:0",
+        3
+      ],
+      [
+        "431:0",
+        4
+      ],
+      [
+        "431:0",
+        5
+      ],
+      [
+        "433:0",
+        0
+      ],
+      [
+        "433:0",
+        1
+      ],
+      [
+        "433:0",
+        2
+      ],
+      [
+        "433:0",
+        3
+      ],
+      [
+        "433:0",
+        4
+      ],
+      [
+        "433:0",
+        5
+      ],
+      [
+        "436:0",
+        0
+      ],
+      [
+        "436:0",
+        1
+      ],
+      [
+        "436:0",
+        2
+      ],
+      [
+        "436:0",
+        3
+      ],
+      [
+        "436:0",
+        4
+      ],
+      [
+        "436:0",
+        5
+      ],
+      [
+        "436:0",
+        6
+      ],
+      [
+        "436:0",
+        7
+      ],
+      [
+        "438:0",
+        0
+      ],
+      [
+        "438:0",
+        1
+      ],
+      [
+        "438:0",
+        2
+      ],
+      [
+        "438:0",
+        3
+      ],
+      [
+        "438:0",
+        4
+      ],
+      [
+        "438:0",
+        5
+      ],
+      [
+        "48:0",
+        0
+      ],
+      [
+        "48:0",
+        1
+      ],
+      [
+        "48:0",
+        2
+      ],
+      [
+        "48:0",
+        3
+      ],
+      [
+        "48:0",
+        4
+      ],
+      [
+        "48:0",
+        5
+      ],
+      [
+        "52:0",
+        0
+      ],
+      [
+        "52:0",
+        1
+      ],
+      [
+        "52:0",
+        2
+      ],
+      [
+        "52:0",
+        3
+      ],
+      [
+        "52:0",
+        4
+      ],
+      [
+        "52:0",
+        5
+      ],
+      [
+        "78:0",
+        0
+      ],
+      [
+        "78:0",
+        1
+      ],
+      [
+        "78:0",
+        2
+      ],
+      [
+        "78:0",
+        3
+      ],
+      [
+        "78:0",
+        4
+      ],
+      [
+        "78:0",
+        5
+      ]
+    ],
+    "elements": 5285,
+    "content_references": 40879
+  }
+]

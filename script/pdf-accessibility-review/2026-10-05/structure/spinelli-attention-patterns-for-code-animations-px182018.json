@@ -1,0 +1,271 @@
+{
+  "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+  "pdf_sha256": "a1989ff5f5f2eaa13bbf5c75a8c93a9467a815727bf570d756a85bd78d7a5ae7",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques",
+  "structure_elements": 250,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "H1": 1,
+    "P": 38,
+    "Note": 5,
+    "H2": 9,
+    "Link": 69,
+    "Span": 4,
+    "H3": 7,
+    "H4": 10,
+    "Figure": 6,
+    "Caption": 7,
+    "Table": 1,
+    "THead": 1,
+    "TR": 4,
+    "TH": 6,
+    "TBody": 1,
+    "TD": 6,
+    "L": 3,
+    "LI": 22,
+    "LBody": 22,
+    "Lbl": 21
+  },
+  "structure_content_references": 4305,
+  "parent_tree_entries": 75,
+  "form_xobjects_visited": 6,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 830,
+      "vector_operations_artifact": 2,
+      "text_operations_artifact": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 709,
+      "image_operations_tagged": 2,
+      "link_annotations": 22
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 13,
+      "text_operations_tagged": 643,
+      "vector_operations_artifact": 21,
+      "image_operations_tagged": 2,
+      "link_annotations": 9
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 760,
+      "image_operations_tagged": 2,
+      "link_annotations": 4
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 13,
+      "text_operations_tagged": 1115,
+      "link_annotations": 15
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 242,
+      "link_annotations": 8
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "229:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "232:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "234:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "236:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "238:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "240:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "263:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "264:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "267:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "268:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "406:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "408:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "435:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "440:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "445:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "446:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "462:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "464:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "466:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "467:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "474:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "482:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "483:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "486:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "489:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "318:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "320:0",
+      "page": 5
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "272:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Code-animation task screen. A Python editor on the left shows the program partway through its animation, with the active insertion point highlighted. A large text box on the right asks the participant to summarize the program. Playback controls and a progress bar are below the code. The study asks participants to wait until the animation finishes before entering the summary.",
+      "actual_text": ""
+    },
+    {
+      "element": "274:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Program-summary task screen after the animation. The full Python program remains in an editable editor on the left. A large response field and Submit button on the right collect a brief account of what the program does; the completed playback bar remains beneath the code.",
+      "actual_text": ""
+    },
+    {
+      "element": "430:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Interactive task screen with the Python program in an editor on the left. Run and Tasks controls appear on the right above instructions to debug the code and identify and fix its logic problem. The participant can edit and run the program to complete these tasks.",
+      "actual_text": ""
+    },
+    {
+      "element": "432:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Runtime-error screen for the Python task. Source code is on the left and a red traceback is on the right beneath the Run and Tasks controls. The error identifies study_hard as an undefined name on line 24, showing the feedback participants receive when running faulty code.",
+      "actual_text": ""
+    },
+    {
+      "element": "469:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Two eye-tracking plots compare participants P11 and P14. Horizontal axes show elapsed time in seconds and vertical axes show code line number. Green traces mark the line currently being animated; yellow marks show the participant’s gaze fixations. P11’s fixations largely follow the advancing animation line, whereas P14’s fixations are spread over other lines and a much longer session. The caption interprets this as different preferred viewing speeds.",
+      "actual_text": ""
+    },
+    {
+      "element": "471:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 6. Box plots of mean K-coefficient values for four participants by activity and treatment: linear animation (blue), non-linear animation (green), and static code (orange). For summarization, linear and non-linear animation are higher than static. For syntax errors, animation values are mostly positive while static values are near or below zero. For logic errors, static has the highest central value, non-linear is near zero, and linear has the broadest spread extending well below zero. Higher K indicates more focal attention; lower K indicates more ambient attention.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

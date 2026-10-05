@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37 -->
+<!-- Source PDF SHA-256: 634251978705db5718dceb4e26d5234760d2b5d3bb7af31eb1462ef1cd20c75d -->
 
 <a id="page-1"></a>
 
@@ -118,15 +118,13 @@ User-created keyframes specify the required UI layout at particular viewport siz
 
 ### D. Transition Behaviors
 
-We infer element property behavior over the range between two adjacent keyframes. By default, we infer a linear interpolation behavior between two adjacent keyframes. For example, in Fig. 1, the laptop has an x-position of x<sub>2</sub> = 550 pixels in keyframe k<sub>2</sub> of viewport width w<sub>2</sub> = 1000 pixels, and an x- position of x<sub>3</sub> = 650 pixels in keyframe k<sub>3</sub> of viewport width w<sub>3</sub> = 1200 pixels. Expresso infers a linear interpolation rule
-
 <a id="page-5"></a>
+
+We infer element property behavior over the range between two adjacent keyframes. By default, we infer a linear interpolation behavior between two adjacent keyframes. For example, in Fig. 1, the laptop has an x-position of x<sub>2</sub> = 550 pixels in keyframe k<sub>2</sub> of viewport width w<sub>2</sub> = 1000 pixels, and an x- position of x<sub>3</sub> = 650 pixels in keyframe k<sub>3</sub> of viewport width w<sub>3</sub> = 1200 pixels. Expresso infers a linear interpolation rule (x = mw + b) for the laptop x-position for viewport widths w ∈ \[w<sub>2</sub>, w<sub>3</sub>\]. The slope m and constant b are calculated based on the (w<sub>2</sub>, x<sub>2</sub>) and (w<sub>3</sub>, x<sub>3</sub>) data points provided. Expresso currently only infers linear rules, but other rules, such as higher-order polynomial rules, could be applied under this approach, as we discuss in the Scope section below.
 
 ![Three graphs compare transition rules between the Left keyframe (magenta) and Current keyframe (turquoise), with viewport width on the horizontal axis and property value on the vertical axis. The left graph has a magenta-to-turquoise gradient selector and a rising straight line connecting the two solid keyframe points: values interpolate smoothly. The middle graph has a solid magenta selector: a horizontal magenta line continues the value from the Left point up to an open circle at the Current viewport width, where the higher solid Current point causes a jump. The right graph has a solid turquoise selector: a horizontal turquoise line extends backward from the Current point to an open circle at the Left viewport width, immediately above the lower solid Left point. Dashed horizontal lines show the continued behavior outside the interval. Thus the gradient interpolates, solid magenta continues the behavior from smaller widths, and solid turquoise continues the behavior from larger widths.](../figures/krosnick-expresso-vlhcc2018/figure-003-p005.png)
 
 Fig. 3: Graphs illustrating the property behaviors the gradient and solid color dropdown options shown in Fig. 2 encode. Each solid dot represents a keyframe and the line in each graph corresponds to the behavior for the range between the “Left” and “Current” keyframes.
-
-(x = mw + b) for the laptop x-position for viewport widths w ∈ \[w<sub>2</sub>, w<sub>3</sub>\]. The slope m and constant b are calculated based on the (w<sub>2</sub>, x<sub>2</sub>) and (w<sub>3</sub>, x<sub>3</sub>) data points provided. Expresso currently only infers linear rules, but other rules, such as higher-order polynomial rules, could be applied under this approach, as we discuss in the Scope section below.
 
 Expresso’s linear interpolation inference as described above results in a continuous transition between two keyframes, but not all responsive UI behavior can be represented in this way; some responsive behaviors require consistent properties within a range and discontinuous jumps between ranges. Expresso lets the user encode discontinuous jumps in element property behavior between two adjacent keyframes k<sub>i</sub> and k<sub>i</sub><sub>+1</sub>. The location at which the discontinuity occurs affects the behavior for the range of viewport widths w ∈ \[w<sub>i</sub>, w<sub>i</sub><sub>+1</sub>\].
 
@@ -206,9 +204,9 @@ The two web pages we chose for the study are adapted from real web pages, repres
 
 ### C. Results
 
-We evaluated the web pages participants created in Expresso against the same rubric we used in the motivational CSS study. Elements that shared the same kind of behavior (e.g., all of the
-
 <a id="page-7"></a>
+
+We evaluated the web pages participants created in Expresso against the same rubric we used in the motivational CSS study. Elements that shared the same kind of behavior (e.g., all of the white text in the Mozilla example were either all left-aligned or center-aligned), fell under one rubric item. Note that we evaluated accuracy of tasks by reviewing work completed by the 22.7 minute mark. We retroactively chose this cutoff time based on the earliest time we asked a participant to end their work before they had finished. For the Mozilla task (Fig. 1), participants achieved a mean accuracy of 80.7% (σ = 15.9%), with a mean completion time of 12.5 minutes (σ = 4.95 m). For the Bass task (Fig. 2), participants achieved a mean accuracy of 72.2% (σ = 24.6%), with a mean completion time of 17.3 minutes (σ = 2.87 m). Overall, participants achieved a mean accuracy of 76.5% (σ = 21.2%), with a mean completion time of 14.9 minutes (σ = 4.70 m).
 
 <table>
   <thead>
@@ -278,8 +276,6 @@ We evaluated the web pages participants created in Expresso against the same rub
 </table>
 
 TABLE I: Results of the Technology Acceptance Model (TAM) questionnaire we presented participants, with each statement rated on a scale from 1 (extremely unlikely) to 7 (extremely likely).
-
-white text in the Mozilla example were either all left-aligned or center-aligned), fell under one rubric item. Note that we evaluated accuracy of tasks by reviewing work completed by the 22.7 minute mark. We retroactively chose this cutoff time based on the earliest time we asked a participant to end their work before they had finished. For the Mozilla task (Fig. 1), participants achieved a mean accuracy of 80.7% (σ = 15.9%), with a mean completion time of 12.5 minutes (σ = 4.95 m). For the Bass task (Fig. 2), participants achieved a mean accuracy of 72.2% (σ = 24.6%), with a mean completion time of 17.3 minutes (σ = 2.87 m). Overall, participants achieved a mean accuracy of 76.5% (σ = 21.2%), with a mean completion time of 14.9 minutes (σ = 4.70 m).
 
 After participants completed their tasks, we asked them to complete a TAM questionnaire, with each statement to be rated on a scale from 1 (extremely unlikely) to 7 (extremely likely). When presented with the statement “I would find this tool useful in my job”, participants responded with a mean rating of 6.17 (σ = 0.373). When presented with the statement “I would find this tool easy to use”, participants responded with a mean rating of 6.67 (σ = 0.471). Average results for the full set of TAM statements are reported in Table I.
 

@@ -1,0 +1,357 @@
+{
+  "file": "chen-sifter-imx2020.pdf",
+  "pdf_sha256": "a7733ba7384c7b97c6f108535d9a8d66c18dec7b9ad01b4a5c157e2f545c39bb",
+  "normalization_warnings": "",
+  "page_count": 9,
+  "language": "en-US",
+  "title": "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale",
+  "structure_elements": 523,
+  "roles": {
+    "Document": 1,
+    "Sect": 9,
+    "H1": 1,
+    "P": 66,
+    "H2": 14,
+    "L": 11,
+    "LI": 55,
+    "Lbl": 49,
+    "LBody": 55,
+    "Link": 69,
+    "Note": 3,
+    "Figure": 8,
+    "Caption": 9,
+    "H3": 15,
+    "Span": 1,
+    "H4": 5,
+    "Table": 3,
+    "THead": 3,
+    "TR": 21,
+    "TH": 33,
+    "TBody": 3,
+    "TD": 88,
+    "Formula": 1
+  },
+  "structure_content_references": 7984,
+  "parent_tree_entries": 78,
+  "form_xobjects_visited": 5,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 847,
+      "vector_operations_artifact": 1,
+      "link_annotations": 14
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 11,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 769,
+      "vector_operations_tagged": 21,
+      "link_annotations": 19
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 9,
+      "text_operations_tagged": 851,
+      "vector_operations_tagged": 60,
+      "image_operations_tagged": 1,
+      "link_annotations": 11
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 1137,
+      "link_annotations": 6
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 9,
+      "vector_operations_artifact": 17,
+      "text_operations_tagged": 706,
+      "vector_operations_tagged": 15,
+      "image_operations_tagged": 3,
+      "link_annotations": 6
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 11,
+      "vector_operations_artifact": 93,
+      "text_operations_tagged": 775,
+      "image_operations_tagged": 6,
+      "link_annotations": 5
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 9,
+      "vector_operations_artifact": 15,
+      "text_operations_tagged": 886,
+      "vector_operations_tagged": 179,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 994,
+      "link_annotations": 2
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 9,
+      "text_operations_tagged": 1060,
+      "link_annotations": 3
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "408:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "412:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "414:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "419:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "421:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "423:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "634:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "636:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "648:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "653:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "668:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "688:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "690:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "692:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "696:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "699:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "701:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "737:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "739:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "745:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "870:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "872:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "874:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "905:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "913:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "917:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "918:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "928:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "930:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "934:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "936:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "938:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "953:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "956:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "958:0",
+      "page": 8
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "446:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 1: Screenshot from 2018 of some curated content\nfrom users’ posts in Snapchat, e.g., “So Satisfying: The oddly\nstatisfying cut of this balloon...” (left), and Twitter, e.g., “The\nbest pictures from Coachella 2018” (right).",
+      "actual_text": ""
+    },
+    {
+      "element": "453:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 2. Common curation pipeline: Research → Select and collect → Interpret individual content → Organize content and annotation → Interpret across content → Narrate. Sifter focuses on the Select and collect stage, shaded darker than the other stages.",
+      "actual_text": ""
+    },
+    {
+      "element": "660:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 3. An expert curator supplies a query to a video set; the input contains tens of thousands of videos. Machine automated filters reduce the set, then a non-expert crowd selects videos and a separate crowd agreement stage refines the selection. A decision asks Enough videos? No loops back to the selecting stage; yes produces dozens of high-quality, thematically relevant videos for evaluation by the expert curator.",
+      "actual_text": ""
+    },
+    {
+      "element": "733:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 4. Sifter’s task page shows a grid of eight video previews in a browser. Callout 1 marks the task instructions and theme keywords at the top. Callout 2 marks progress indicators showing how many videos have been viewed and selected. Callout 3 marks the video grid; callout 4 marks the pointer over a video, where workers can enable audio and click to select. Callout 5 marks the page timer. A green Next button spans the bottom. Videos autoplay silently until a worker hovers over them to hear audio.",
+      "actual_text": ""
+    },
+    {
+      "element": "860:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Face with rolling eyes emoji.",
+      "actual_text": ""
+    },
+    {
+      "element": "861:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Five fire emojis.",
+      "actual_text": ""
+    },
+    {
+      "element": "876:0",
+      "role": "Formula",
+      "page": 6,
+      "alt": "Equation 1. Sifter subscript T equals max(t subscript worker 1, selection; t subscript worker 2, selection) plus max(t subscript worker 1, agreement; t subscript worker 2, agreement). That is, the larger of the two workers’ selection times plus the larger of their two agreement times.",
+      "actual_text": ""
+    },
+    {
+      "element": "910:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 5. Paired box plots of relative relevance ratings for compilations C1–C12, Sifter in blue and staff curators in cyan. Ratings are relative to a baseline random sample. Most medians are near 0–2, with substantial overlapping spreads. For C3, the staff-curator median is about 1 while Sifter is near 0; this is the only compilation reported as significantly different after the source’s correction (p<.0042). C12 has among the highest median ratings for both approaches.",
+      "actual_text": ""
+    },
+    {
+      "element": "920:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6. Strategy occurrences reported by workers: relevance 19; quality 9; quality first then relevance 7; both quality and relevance 7; relevance first then quality 1. Relevance is the most common strategy.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

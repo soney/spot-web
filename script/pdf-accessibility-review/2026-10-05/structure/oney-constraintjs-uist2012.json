@@ -1,0 +1,350 @@
+{
+  "file": "oney-constraintjs-uist2012.pdf",
+  "pdf_sha256": "dd37ec57b8ed50e6bfcaaa96059f3b1319756e207955a7f75bf60d963f6bc9aa",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States",
+  "structure_elements": 323,
+  "roles": {
+    "Document": 1,
+    "Sect": 10,
+    "H1": 1,
+    "P": 101,
+    "Figure": 8,
+    "Code": 17,
+    "Caption": 8,
+    "H2": 11,
+    "Note": 8,
+    "H3": 23,
+    "L": 8,
+    "LI": 42,
+    "Lbl": 42,
+    "LBody": 42,
+    "H4": 1
+  },
+  "structure_content_references": 5409,
+  "parent_tree_entries": 10,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 188,
+      "text_operations_tagged": 517,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 10,
+      "vector_operations_tagged": 50,
+      "vector_operations_artifact": 10
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 120,
+      "text_operations_tagged": 665,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 201,
+      "text_operations_tagged": 752
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 153,
+      "text_operations_tagged": 523,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 197,
+      "text_operations_tagged": 496,
+      "vector_operations_artifact": 2,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 186,
+      "text_operations_tagged": 558,
+      "vector_operations_artifact": 2,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 187,
+      "text_operations_tagged": 479,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 139,
+      "text_operations_tagged": 428,
+      "image_operations_artifact": 1,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 85,
+      "text_operations_tagged": 420,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 115,
+      "text_operations_tagged": 504
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "169:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "176:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "179:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "182:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "184:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "190:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "192:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "195:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "209:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "213:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "223:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "225:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "231:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "235:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "237:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "240:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "242:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "338:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "371:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "407:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "411:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "422:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "440:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "449:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "453:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "457:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "463:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "474:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "479:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "488:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "495:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "498:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "504:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "506:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "254:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "257:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "171:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: The code on the right produces the interface on the left. Here, asynchronous calls are made to the Facebook API using the\nfb_request function to fetch a list of friends (line 1) and a profile picture for each friend (lines 2—5). These values are placed into the friends\nand pics constraint variables respectively. Lines 9—21 declare a template that depends on these variables. As the list of friends is loading,\nfriends.state will be pending, so the message “Loading friends…” is displayed (line 10). After the list of friends has loaded (lines 12—20) the\npicture for each friend is displayed alongside their name. While the application is waiting for the Facebook API to return a picture URL for a\nfriend, a loading image (loading.gif) is displayed (line 15). The code also correctly notifies the user of any errors (lines 11, 17).",
+      "actual_text": ""
+    },
+    {
+      "element": "344:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: An illustration of a jQuery UI slider widget. Constraint vari-\nables can be attached to track the value of this widget.",
+      "actual_text": ""
+    },
+    {
+      "element": "375:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3: A color selector that uses constraint variables to automati-\ncally update the preview color and hex value text. A constraint varia-\nble tracks the values for each of the red, green, and blue sliders (r, g, \nand b respectively.) A fourth constraint variable (hex) computes a hex\ncolor value. Finally, constraints update the background color and text\nof the color selector to reflect the slider values.",
+      "actual_text": ""
+    },
+    {
+      "element": "415:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Two views of a black block show yellow hover feedback. The state machine starts in idle, changes to myhover on mouseover, and returns to idle on mouseout. The block is black in idle and yellow in myhover.",
+      "actual_text": ""
+    },
+    {
+      "element": "426:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Asynchronous-value state machine: Pending transitions to Resolved on success and Rejected on error. A refresh event returns Rejected to Pending for another request.",
+      "actual_text": ""
+    },
+    {
+      "element": "476:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 6: An illustration of Bubble Cursors [6]. Clickable “targets” are\nlight grey-filled circles. When the cursor is too far from any of the\ntargets, a grey dotted halo appears around the cursor (A). When a\ntarget is in range (B), the halo becomes red and shrinks enough that\nit intersects the target, which turns dark grey. The ConstraintJS im-\nplementation of this application allows all of this behavior to be ex-\npressed declaratively.",
+      "actual_text": ""
+    },
+    {
+      "element": "485:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 7: A scatterplot application implemented with ConstraintJS.\nBy default, constraints set the position of every data point to reflect\nthe values of an underlying data model (A). When a point is dragged\n(B), a constraint in the opposite direction updates the underlying data\nmodel based on the position of the point, which in turn, is con-\nstrained to the mouse’s position. The axes may also be dragged (C)\nand constraints automatically update the axis labels to reflect its\nposition. Finally, axes’ scales may be changed (D) by dragging a\npoint while holding SHIFT. This example illustrates how one-way con-\nstraints in ConstraintJS may be combined with FSMs to enable func-\ntionality that was previously only possible with multi-way constraints.",
+      "actual_text": ""
+    },
+    {
+      "element": "492:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 8: An illustration of a touchscreen-based application written\nwith ConstraintJS. Constraints control the position, scale, and angle \nof photos, which users can manipulate with one or two fingers. When\ntwo fingers touch a photo, a red slider appears that controls the pho-\nto’s opacity and can be changed using a third finger. Constraints set\nthe position and text of the slider.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

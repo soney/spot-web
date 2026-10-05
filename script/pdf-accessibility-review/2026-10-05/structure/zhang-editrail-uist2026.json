@@ -1,0 +1,605 @@
+{
+  "file": "zhang-editrail-uist2026.pdf",
+  "pdf_sha256": "702709ec397f3899fecac393fa6c4a43f0ebd40a8fed997e19879853a8ce2e5e",
+  "normalization_warnings": "",
+  "page_count": 19,
+  "language": "en-US",
+  "title": "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code",
+  "structure_elements": 831,
+  "roles": {
+    "Document": 1,
+    "Sect": 19,
+    "H1": 1,
+    "P": 98,
+    "Link": 175,
+    "H2": 17,
+    "Figure": 11,
+    "Note": 7,
+    "Span": 7,
+    "L": 6,
+    "LI": 56,
+    "LBody": 56,
+    "H3": 28,
+    "H4": 19,
+    "Caption": 11,
+    "Lbl": 55,
+    "Formula": 1,
+    "Table": 4,
+    "THead": 4,
+    "TR": 52,
+    "TH": 61,
+    "TBody": 4,
+    "TD": 137,
+    "Code": 1
+  },
+  "structure_content_references": 12608,
+  "parent_tree_entries": 193,
+  "form_xobjects_visited": 16,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 690,
+      "vector_operations_artifact": 1,
+      "vector_operations_tagged": 10,
+      "link_annotations": 23
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 1004,
+      "link_annotations": 51
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1005,
+      "vector_operations_artifact": 2,
+      "link_annotations": 12
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 11,
+      "vector_operations_tagged": 42,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 573,
+      "vector_operations_artifact": 3,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 874,
+      "vector_operations_artifact": 6,
+      "vector_operations_tagged": 15,
+      "image_operations_tagged": 5,
+      "link_annotations": 25
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 11,
+      "vector_operations_tagged": 39,
+      "image_operations_tagged": 14,
+      "text_operations_tagged": 648,
+      "vector_operations_artifact": 1,
+      "link_annotations": 14
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 18,
+      "vector_operations_tagged": 72,
+      "image_operations_tagged": 21,
+      "text_operations_tagged": 481,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 11,
+      "vector_operations_artifact": 7,
+      "text_operations_tagged": 1025,
+      "link_annotations": 6
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 18,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 694,
+      "link_annotations": 6
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 971,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 965,
+      "link_annotations": 5
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 1504,
+      "link_annotations": 6
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 498,
+      "link_annotations": 9
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 13,
+      "text_operations_tagged": 685,
+      "vector_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 374,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 133,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 277,
+      "link_annotations": 3
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 310,
+      "vector_operations_artifact": 6,
+      "vector_operations_tagged": 220
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 18
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "308:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "316:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "318:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "320:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "322:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "893:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "894:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "898:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "904:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "961:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "963:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "965:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "967:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "969:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "983:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "985:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "993:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "1004:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1009:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1011:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1013:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1015:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1017:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1022:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "354:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "357:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "359:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "361:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "363:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "365:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "367:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1055:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1061:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1073:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1075:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1079:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1080:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1082:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1085:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1087:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1099:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1100:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1103:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1104:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1108:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "1118:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1120:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1122:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1123:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1124:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1127:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1129:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1132:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1138:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1143:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1146:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1151:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "1159:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1236:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1251:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1253:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1417:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "1420:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "1422:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "1424:0",
+      "page": 17
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "327:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Creative Commons Attribution (CC BY) license logo.",
+      "actual_text": ""
+    },
+    {
+      "element": "990:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 1: User interface of Editrail. (1) Timeline View: rows represent code lines (b) and time flows horizontally (a). Edits are\nshown as colored overlays indicating different types of AI involvement (d): red for copy–paste, green for autocomplete, and\npink for student-typed code that closely resembles AI-generated output. Indicators also show coding progress from start to\nfinish. (2) Code Content View: aligned program text showing the full source code at the selected point in time (c), enabling\ninstructors to connect timeline annotations with specific code states. When using Editrail, users can follow three steps: (1) get\nan overview of AI use distribution, (2) identify code regions with potential AI-related concerns, and (3) inspect detailed edits\nand AI use. The code view shows the content in the student’s editor at the selected time, while the timeline view provides a\ncumulative visualization of the student’s progress and AI use. When users zoom in and select an area in the timeline, the code\nview focuses on the corresponding code region at that time. The code view only shows code content without additional AI color\ncoding beyond syntax highlighting. The AI usage color encoding only appears in the timeline visualization.",
+      "actual_text": ""
+    },
+    {
+      "element": "1019:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: Details of Editrail’s timeline interaction. (a)\nKeystroke-level edit indicators shown along the timeline,\nwhere blue ones represent insertion and orange ones repre-\nsent deletion edits. (b) Zoomed-in timeline view revealing\nthe exact code content associated with individual change in-\ndicators for detailed inspection.",
+      "actual_text": ""
+    },
+    {
+      "element": "352:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 3: Details of Editrail’s interaction of monitoring AI\nusage. (a) AI–student dialogue shown at the exact point of\ninteraction. (b) Timeline-to-code projection aligning edits\nwith program text. (c) Precise timing of AI code usage. (d)\nCode pasted from AI without further edits and code pasted\nfrom AI with frequent back-and-forth edits by the student.",
+      "actual_text": ""
+    },
+    {
+      "element": "1050:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4: Three cases of code that originates from AI. (a) The user copies and pastes code directly from an AI agent (e.g., ChatGPT\nor Copilot chat). (b) The user accepts an autocomplete suggestion (e.g., from Copilot’s in-editor hints). (c) The user types code\nthat is very similar to something that was part of their conversation with an AI agent. The AI usage color encoding appears\nonly in the timeline visualization. The code view shows code content with syntax highlighting only.",
+      "actual_text": ""
+    },
+    {
+      "element": "1052:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 5: User interface of Editrail’s question creation. (a) Instructors select a point on the coding timeline to create questions.\n(b) Question type options (multiple choice or open-ended). (c) Code area highlighting AI-contributed lines in student’s code. (d)\nInput field for customizing the question. (e) Button to generate the question. (f) Example of a system-generated question based\non the selected code. (g) Generated answer for the question. (h) Button to send the question to students.",
+      "actual_text": ""
+    },
+    {
+      "element": "1089:0",
+      "role": "Formula",
+      "page": 8,
+      "alt": "F score equals two times true positives divided by the sum of two times true positives, false positives, and false negatives.",
+      "actual_text": ""
+    },
+    {
+      "element": "1097:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Baseline study interface with a chronological AI conversation on the left and a source-code state on the right. Alternating blue student messages and gray AI answers discuss printing rows and checking whether a list is empty. The adjacent Python editor shows the student gradebook program with line numbers and syntax highlighting.",
+      "actual_text": ""
+    },
+    {
+      "element": "879:0",
+      "role": "Figure",
+      "page": 18,
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for understanding students’ AI-usage patterns. Mean scores are 5.92 versus 4.50, respectively; Editrail is higher.",
+      "actual_text": ""
+    },
+    {
+      "element": "880:0",
+      "role": "Figure",
+      "page": 18,
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for providing targeted learning-oriented guidance on AI usage. Mean scores are 5.67 versus 4.67, respectively; Editrail is higher.",
+      "actual_text": ""
+    },
+    {
+      "element": "881:0",
+      "role": "Figure",
+      "page": 18,
+      "alt": "Paired distributions on a 1-to-7 understanding scale compare Editrail with Baseline for identifying students who might need intervention. Mean scores are 6.33 versus 5.25, respectively; Editrail is higher.",
+      "actual_text": ""
+    },
+    {
+      "element": "882:0",
+      "role": "Figure",
+      "page": 18,
+      "alt": "Figure 7. Five questions compare Editrail with Baseline on a seven-point preference scale: 1 means prefer Editrail, 4 is neutral, and 7 means prefer Baseline. Twelve participants answered each question. Counts in order from 1 through 7: less extra workflow effort, 4, 4, 1, 1, 0, 0, 2; helpful guidance on AI usage, 4, 4, 2, 0, 0, 0, 2; identifying when and which students need intervention, 6, 3, 0, 1, 0, 1, 1; identifying unproductive AI usage patterns, 5, 2, 0, 1, 1, 0, 3; less effort understanding students’ AI usage, 5, 4, 0, 0, 1, 0, 2. Responses favor Editrail on every question.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {
+    "warning:page_has_no_semantic_text": 1
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "page_has_no_semantic_text",
+      "message": "Page has no semantic text; verify that its text consists only of page numbers, running headers, or other artifacts. Uncovered text remains a separate error.",
+      "page": 19,
+      "artifact_operations": 18,
+      "uncovered_operations": 0
+    }
+  ],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

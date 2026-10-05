@@ -1,0 +1,128 @@
+{
+  "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+  "pdf_sha256": "5317c913b5f74c0682dcebe303efe9c262f4b6653f724035c8e6e0717b97ae13",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "On-Demand Collaboration in Programming",
+  "structure_elements": 139,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 20,
+    "H2": 5,
+    "Link": 30,
+    "Note": 2,
+    "H3": 3,
+    "H4": 3,
+    "L": 1,
+    "LI": 23,
+    "Lbl": 23,
+    "LBody": 23
+  },
+  "structure_content_references": 2445,
+  "parent_tree_entries": 34,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 551,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 653,
+      "link_annotations": 22
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 589,
+      "link_annotations": 3
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 652,
+      "link_annotations": 3
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "157:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "164:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "166:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "175:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "177:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "179:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "181:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "183:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "228:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "231:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "241:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "243:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

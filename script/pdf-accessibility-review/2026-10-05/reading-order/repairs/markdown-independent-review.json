@@ -1,0 +1,365 @@
+{
+  "date": "2026-10-05",
+  "method": "Independently rendered eight selected current Markdown files with Kramdown GFM, then independently rendered the repaired ParamMacros follow-up. Compared parsed table cells/code strings and read targeted narrative transitions against repaired source-tag archives/native evidence. No converter output supplied the expected table-cell or code content.",
+  "documents": [
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "markdown_sha256": "67c66b18198e924400bcbdef9ec948e4c35f1c6f177ae7765417d7e2faf9fc38",
+      "rendered_html_sha256": "eb52f06327875d2811609f1e7fcaf3562bb84c86c1537e62f1907c07720a487c"
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516",
+      "markdown_sha256": "63f7d43c4523e460f6fed96bef1e8a59f57e37b74bfbf2468b0973a7d3d3d531",
+      "rendered_html_sha256": "0422d742a3ae5d37e126a0a68564535bd5b1c2a96ca677d64d998dae1376ebd5"
+    },
+    {
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "pdf_sha256": "8f8b2b0277f3da2c3f27f359c1af5239945a2116ad6b658abe5e21cff983d448",
+      "markdown_sha256": "f7f4d2e3e89c728a625acfd1bae0add4e399b84c7862200027295b572f280845",
+      "rendered_html_sha256": "5487a946bba222cc5c6956add99cbcb1a7962ba52a3e6a6e39fdd115b9388b2d"
+    },
+    {
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "pdf_sha256": "236de6f394a11aa6f66b77192dd845dd2072583c2f7d77221346f53c3d00efa3",
+      "markdown_sha256": "9cc6b23ed8c9e62d1f99e89286b1dddbec3481c50317620f03f6ff7b908c9fbc",
+      "rendered_html_sha256": "1cc955a23acf58bc2eeae0fc385b6d6a738876308668d3f76fd968f2fe047f36"
+    },
+    {
+      "file": "zhang-cflow-ls2024.pdf",
+      "pdf_sha256": "7985077ac5c90b0da448ce9f77df1054593cd80a0024d257c789d465218e9bad",
+      "markdown_sha256": "a93e404eee257f062339f53b34ee7013cc3d3ceb1717004263e6ce7301d4babb",
+      "rendered_html_sha256": "5343e49e610010cf05ec921a8659fa85a9612f8541ba0ba017086c034761c76d"
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pdf_sha256": "3b8e7c9759669cb071527c3e17919af5a797e9d2526c7881989bca6b5ed0122d",
+      "markdown_sha256": "6e795ab267723d1b4501355562f4ff15ca78878c3d8ba47036476d68586b0ec5",
+      "rendered_html_sha256": "aec3826bbbc1082e2f7a55ceb1fd8a3e965ed7050671fdd959d223b562cd3390",
+      "previous_markdown_sha256": "309c74d2b431273faac73e5cf828b30e4b15b7517e7d5ef3c877706e88e695b0",
+      "followup": "Only blank list-line indentation changed; fresh final-converter output reproduces repository Markdown and rendered HTML is byte-identical to the independently checked version."
+    },
+    {
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "pdf_sha256": "34809784f89cc59f47376340417d2746464ac33c02cb7132c5aee8825f1d7633",
+      "markdown_sha256": "c978700c4cff2e032eb51d16442d9bac6249e072f9c5c29258b5c623720d3584",
+      "rendered_html_sha256": "bfb1f37990a9d71d805d88c602a42805d00399f11e669cc5e701753eb4302d79"
+    },
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "pdf_sha256": "b857a6f581cbd7392b18461cab411bae633db04e91ca96c035f40f2d928c2807",
+      "markdown_sha256": "d52aab4f76b1b2216e0791083eaa3ce373d5ddb8ba1f256fc332b184f19b4e31",
+      "rendered_html_sha256": "22e27170645ac3eec9e71482629755f4024e5258d290962b8c21b0e3afdfff59"
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pdf_sha256": "f51e2f0f9f341fc8d8f9935071908af18109bc93f9047c6bd8d23b6d93be63dc",
+      "markdown_sha256": "ec633c1ddbcd6cf93cbfe556b06a999c02c0e5a042a091e7ba252444f32de5f2",
+      "rendered_html_sha256": "73b0bb6e44e81279671cf8979264a98fec7abb183b40e39e755152a4b80c1b52"
+    }
+  ],
+  "checks": [
+    {
+      "check": "Notebook Table 1: all 40 cells exactly match reviewed native ActualText, in row/column order",
+      "passed": true,
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "table": "573:0",
+      "rows": 10,
+      "columns": 4,
+      "cells": 40,
+      "accepted_cells": [
+        [
+          "Category",
+          "N",
+          "Description",
+          "Example"
+        ],
+        [
+          "Process",
+          "2115 (58.65%)",
+          "The Markdown cell describes what the following code cell is doing. This always appears before the relevant code cell.",
+          "Transforming Feature X to a new binary variable"
+        ],
+        [
+          "Headline",
+          "1167 (32.36%)",
+          "The Markdown cell contains a headline in Markdown syntax. The cell is used for navigation purposes or marking the structure of the notebook. It may be relevant to a nearby code cell.",
+          "# Blending Models"
+        ],
+        [
+          "Result",
+          "692 (19.19%)",
+          "The Markdown cell explains the output. This type always appears after the relevant code cell.",
+          "It turns out there is a long tail of outlying properties..."
+        ],
+        [
+          "Education",
+          "414 (11.48%)",
+          "The Markdown cell provides a rich content as an educational tutorial, but may not be relevant to a specific code cell.",
+          "Multicollinearity increases the standard errors of the coefficients."
+        ],
+        [
+          "Reason",
+          "227 (6.30%)",
+          "The Markdown cell explains the reasons why certain functions are used or why a task is performed. This may appear before or after the relevant code cell.",
+          "We do this manually, because ML models won't be able to reliably tell the differences."
+        ],
+        [
+          "Todo",
+          "202 (5.60%)",
+          "The Markdown cell describes a list of actions for future implementations. This normally is not relevant to a specific code cell.",
+          "1. Apply models 2. Get cross validation scores 3. Calculate the mean"
+        ],
+        [
+          "Reference",
+          "200 (5.55%)",
+          "The Markdown cell contains an external reference. This is also relevant to the adjacent code cell.",
+          "Gradient Boosting Regression Refer [here](https://...)"
+        ],
+        [
+          "Meta-Information",
+          "141 (3.91%)",
+          "The Markdown cell contains meta-information such as project overview, author’s information, and a link to the data sources. This often is not relevant to a specific code.",
+          "The purpose of this notebook is to build a model with Tensorflow."
+        ],
+        [
+          "Summary",
+          "51 (1.41%)",
+          "The Markdown cell summarizes what has been done so far for a section or a series of steps. This often is not relevant to a specific code.",
+          "**In summary** By EDA we found a strong impact of features like Age, Embarked.."
+        ]
+      ]
+    },
+    {
+      "check": "Python first_name/last_name example appears exactly once between its setup and section 5",
+      "passed": true,
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "accepted_code": "first_name = player_row.select_one('.RosterRow_playerFirstName__NYm50').text\nlast_name = player_row.select_one('.RosterRow_playerName__G28lg p:nth-of-type(2)').text"
+    },
+    {
+      "check": "Inclusive Code ActualText preserved byte-for-byte within rendered code blocks, including whitespace",
+      "passed": true,
+      "file": "pandey-inclusive-source-code-chi2024.pdf",
+      "nodes": 68,
+      "node_ids": [
+        "1026:0",
+        "1145:0",
+        "1304:0",
+        "1305:0",
+        "1306:0",
+        "1555:0",
+        "1557:0",
+        "1560:0",
+        "1562:0",
+        "1567:0",
+        "1569:0",
+        "1573:0",
+        "1575:0",
+        "1578:0",
+        "1580:0",
+        "1584:0",
+        "1586:0",
+        "1589:0",
+        "1591:0",
+        "1594:0",
+        "1596:0",
+        "1600:0",
+        "1602:0",
+        "1605:0",
+        "1608:0",
+        "1611:0",
+        "1613:0",
+        "1616:0",
+        "1618:0",
+        "1621:0",
+        "1623:0",
+        "1626:0",
+        "638:0",
+        "642:0",
+        "644:0",
+        "650:0",
+        "652:0",
+        "655:0",
+        "657:0",
+        "658:0",
+        "661:0",
+        "663:0",
+        "666:0",
+        "668:0",
+        "671:0",
+        "673:0",
+        "676:0",
+        "678:0",
+        "681:0",
+        "682:0",
+        "684:0",
+        "687:0",
+        "689:0",
+        "692:0",
+        "694:0",
+        "697:0",
+        "699:0",
+        "703:0",
+        "705:0",
+        "708:0",
+        "710:0",
+        "711:0",
+        "714:0",
+        "716:0",
+        "719:0",
+        "721:0",
+        "724:0",
+        "726:0"
+      ]
+    },
+    {
+      "check": "MIT reviewed transcriptions, F-score LI 938 and parameter optimization code preserved; caption once",
+      "passed": true,
+      "file": "oney-natural-language-search-mit2008.pdf",
+      "transcription_nodes": [
+        "923:0",
+        "738:0",
+        "741:0",
+        "746:0",
+        "776:0",
+        "782:0",
+        "806:0",
+        "807:0",
+        "911:0",
+        "938:0"
+      ]
+    },
+    {
+      "check": "CFlow bibliography 54 is a single complete list item immediately before 55",
+      "passed": true,
+      "file": "zhang-cflow-ls2024.pdf",
+      "accepted_reference": "[54] Ashley Ge Zhang, Yan Chen, and Steve Oney. 2023. RunEx: Augmenting Regular- Expression Code Search with Runtime Values. In 2023 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). IEEE, 139–147."
+    },
+    {
+      "check": "CMU all 11 notes retained once; eight repaired markers follow correct words; note 3 precedes consecutive code fragments; no running headers",
+      "passed": true,
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "marker_words": {
+        "1": "one",
+        "3": "Facebook API",
+        "4": "function",
+        "5": "below",
+        "6": "passed in",
+        "9": "list views",
+        "10": "running program",
+        "11": "implications"
+      },
+      "notes": 11,
+      "code_nodes": [
+        "2089:0",
+        "2090:0",
+        "2093:0"
+      ]
+    },
+    {
+      "check": "Reparented inline figure descriptions remain in rendered prose",
+      "passed": true,
+      "file": "arab-co-advisor-vlhcc2025.pdf",
+      "nodes": 31
+    },
+    {
+      "check": "Reparented inline figure descriptions remain in rendered prose",
+      "passed": true,
+      "file": "chen-cocapture-chi2021.pdf",
+      "nodes": 3
+    },
+    {
+      "check": "CoCapture icon descriptions have explicit inline parentheses after regeneration",
+      "passed": true,
+      "nodes": [
+        "1112:0",
+        "1113:0",
+        "1114:0"
+      ]
+    },
+    {
+      "check": "ParamMacros final list continuations and adjacent footnotes 4/5 interpretation",
+      "passed": true,
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "assertions": [
+        "List 1 sentence and continuation share a single paragraph.",
+        "XPath (notes 4 and 5) explicitly distinguishes its two footnote references.",
+        "List 2 XPath/suffix sentence and continuation share a single paragraph."
+      ],
+      "evidence": "parammacros-followup.json"
+    }
+  ],
+  "limitations": [
+    "Focused sample check, not a full proofreading of all 74 Markdown files.",
+    "Source wording, typos, and code examples remain as printed.",
+    "Generic list/container ActualText bypass remains latent: current matching MIT LI 938 has a reviewed override and its rendered equivalent was explicitly checked.",
+    "Unrelated empty superscript elements around markers 6–8 remain; no text is lost and the reviewed references 4/5 ambiguity is resolved."
+  ],
+  "findings": [
+    {
+      "file": "chen-cocapture-chi2021.pdf",
+      "status": "resolved_and_rechecked",
+      "issue": "Inline icon descriptions originally ran directly into sentence prose. Root wrapped all three in parentheses; regenerated and independently rendered output now preserves their inline context with explicit delimiters."
+    }
+  ],
+  "converter_sha256": "58e3475134a37a67774f16b32292508ca780ab6f8859ab88657190a374d7fa45",
+  "summary": {
+    "documents": 9,
+    "passed_checks": 10,
+    "unresolved_sample_regressions": 0
+  },
+  "final_converter_reproduction": {
+    "scope": "All original 8 samples were reconverted using the final converter to a temporary directory and compared with previous review hashes and final repository outputs. Seven are byte-identical to the earlier review; CMU differs only in blank list-line indentation and has byte-identical rendered HTML.",
+    "comparisons": [
+      {
+        "file": "wang-what-makes-well-documented-chiea2021.pdf",
+        "previous_markdown_sha256": "67c66b18198e924400bcbdef9ec948e4c35f1c6f177ae7765417d7e2faf9fc38",
+        "fresh_converter_markdown_sha256": "67c66b18198e924400bcbdef9ec948e4c35f1c6f177ae7765417d7e2faf9fc38",
+        "identical": true
+      },
+      {
+        "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+        "previous_markdown_sha256": "63f7d43c4523e460f6fed96bef1e8a59f57e37b74bfbf2468b0973a7d3d3d531",
+        "fresh_converter_markdown_sha256": "63f7d43c4523e460f6fed96bef1e8a59f57e37b74bfbf2468b0973a7d3d3d531",
+        "identical": true
+      },
+      {
+        "file": "pandey-inclusive-source-code-chi2024.pdf",
+        "previous_markdown_sha256": "f7f4d2e3e89c728a625acfd1bae0add4e399b84c7862200027295b572f280845",
+        "fresh_converter_markdown_sha256": "f7f4d2e3e89c728a625acfd1bae0add4e399b84c7862200027295b572f280845",
+        "identical": true
+      },
+      {
+        "file": "oney-natural-language-search-mit2008.pdf",
+        "previous_markdown_sha256": "9cc6b23ed8c9e62d1f99e89286b1dddbec3481c50317620f03f6ff7b908c9fbc",
+        "fresh_converter_markdown_sha256": "9cc6b23ed8c9e62d1f99e89286b1dddbec3481c50317620f03f6ff7b908c9fbc",
+        "identical": true
+      },
+      {
+        "file": "zhang-cflow-ls2024.pdf",
+        "previous_markdown_sha256": "a93e404eee257f062339f53b34ee7013cc3d3ceb1717004263e6ce7301d4babb",
+        "fresh_converter_markdown_sha256": "a93e404eee257f062339f53b34ee7013cc3d3ceb1717004263e6ce7301d4babb",
+        "identical": true
+      },
+      {
+        "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+        "previous_markdown_sha256": "309c74d2b431273faac73e5cf828b30e4b15b7517e7d5ef3c877706e88e695b0",
+        "fresh_converter_markdown_sha256": "6e795ab267723d1b4501355562f4ff15ca78878c3d8ba47036476d68586b0ec5",
+        "identical": false
+      },
+      {
+        "file": "arab-co-advisor-vlhcc2025.pdf",
+        "previous_markdown_sha256": "c978700c4cff2e032eb51d16442d9bac6249e072f9c5c29258b5c623720d3584",
+        "fresh_converter_markdown_sha256": "c978700c4cff2e032eb51d16442d9bac6249e072f9c5c29258b5c623720d3584",
+        "identical": true
+      },
+      {
+        "file": "chen-cocapture-chi2021.pdf",
+        "previous_markdown_sha256": "d52aab4f76b1b2216e0791083eaa3ce373d5ddb8ba1f256fc332b184f19b4e31",
+        "fresh_converter_markdown_sha256": "d52aab4f76b1b2216e0791083eaa3ce373d5ddb8ba1f256fc332b184f19b4e31",
+        "identical": true
+      }
+    ]
+  }
+}

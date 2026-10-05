@@ -2,9 +2,9 @@
   "file": "oney-expressing-interactivity-states-cmu2015.pdf",
   "title": "Expressing Interactivity with States and Constraints",
   "publication_id": "expressing_interactivity_with_states_and_constraints_2015",
-  "pdf_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+  "pdf_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
   "markdown": "publications/oney-expressing-interactivity-states-cmu2015.md",
-  "markdown_sha256": "72f8cf54373f85d3fb3a82b78cd8938f29a9f8110ba82ed37570e66b2f443a4e",
+  "markdown_sha256": "3f40c0c7a6670b816680f73c523b19fffd0e4f8170b988cfad59b3eed2f985ad",
   "pages": 227,
   "blocks": [
     {
@@ -3136,14 +3136,6 @@
       "characters": 522
     },
     {
-      "node": "1847:0",
-      "role": "P",
-      "pages": [
-        17
-      ],
-      "characters": 47
-    },
-    {
       "node": "1848:0",
       "role": "H4",
       "pages": [
@@ -3187,25 +3179,10 @@
       "node": "1853:0",
       "role": "P",
       "pages": [
-        17
-      ],
-      "characters": 578
-    },
-    {
-      "node": "1855:0",
-      "role": "P",
-      "pages": [
+        17,
         18
       ],
-      "characters": 43
-    },
-    {
-      "node": "1856:0",
-      "role": "P",
-      "pages": [
-        18
-      ],
-      "characters": 117
+      "characters": 696
     },
     {
       "node": "1857:0",
@@ -3256,7 +3233,7 @@
       "characters": 604
     },
     {
-      "node": "joined-1863:0",
+      "node": "1863:0",
       "role": "P",
       "pages": [
         18,
@@ -3345,20 +3322,12 @@
       "characters": 907
     },
     {
-      "node": "1880:0",
-      "role": "P",
-      "pages": [
-        21
-      ],
-      "characters": 57
-    },
-    {
       "node": "1881:0",
       "role": "Figure",
       "pages": [
         21
       ],
-      "characters": 504
+      "characters": 450
     },
     {
       "node": "1882:0",
@@ -3420,17 +3389,10 @@
       "node": "1889:0",
       "role": "P",
       "pages": [
-        21
-      ],
-      "characters": 335
-    },
-    {
-      "node": "joined-1891:0",
-      "role": "P",
-      "pages": [
+        21,
         22
       ],
-      "characters": 218
+      "characters": 504
     },
     {
       "node": "1893:0",
@@ -3489,20 +3451,12 @@
       "characters": 414
     },
     {
-      "node": "1911:0",
-      "role": "P",
-      "pages": [
-        23
-      ],
-      "characters": 33
-    },
-    {
       "node": "1912:0",
       "role": "L",
       "pages": [
         23
       ],
-      "characters": 571
+      "characters": 593
     },
     {
       "node": "1928:0",
@@ -3593,7 +3547,7 @@
       "characters": 784
     },
     {
-      "node": "joined-1949:0",
+      "node": "1949:0",
       "role": "P",
       "pages": [
         24,
@@ -3650,7 +3604,7 @@
       "characters": 207
     },
     {
-      "node": "joined-1958:0",
+      "node": "1958:0",
       "role": "P",
       "pages": [
         25,
@@ -3742,17 +3696,10 @@
       "node": "1972:0",
       "role": "P",
       "pages": [
-        27
-      ],
-      "characters": 246
-    },
-    {
-      "node": "1974:0",
-      "role": "P",
-      "pages": [
+        27,
         28
       ],
-      "characters": 251
+      "characters": 498
     },
     {
       "node": "1975:0",
@@ -3811,7 +3758,7 @@
       "characters": 34
     },
     {
-      "node": "joined-1982:0",
+      "node": "1982:0",
       "role": "P",
       "pages": [
         28,
@@ -3884,6 +3831,14 @@
       "characters": 480
     },
     {
+      "node": "648:0",
+      "role": "Note",
+      "pages": [
+        30
+      ],
+      "characters": 366
+    },
+    {
       "node": "645:0",
       "role": "P",
       "pages": [
@@ -3900,21 +3855,13 @@
       "characters": 806
     },
     {
-      "node": "joined-647:0",
+      "node": "647:0",
       "role": "P",
       "pages": [
         30,
         31
       ],
       "characters": 622
-    },
-    {
-      "node": "648:0",
-      "role": "Note",
-      "pages": [
-        30
-      ],
-      "characters": 366
     },
     {
       "node": "1992:0",
@@ -3960,17 +3907,10 @@
       "node": "1997:0",
       "role": "P",
       "pages": [
-        31
-      ],
-      "characters": 590
-    },
-    {
-      "node": "joined-1999:0",
-      "role": "P",
-      "pages": [
+        31,
         32
       ],
-      "characters": 200
+      "characters": 728
     },
     {
       "node": "2001:0",
@@ -4024,25 +3964,10 @@
       "node": "2008:0",
       "role": "P",
       "pages": [
-        32
-      ],
-      "characters": 389
-    },
-    {
-      "node": "2010:0",
-      "role": "P",
-      "pages": [
+        32,
         33
       ],
-      "characters": 41
-    },
-    {
-      "node": "2011:0",
-      "role": "P",
-      "pages": [
-        33
-      ],
-      "characters": 606
+      "characters": 996
     },
     {
       "node": "2012:0",
@@ -4083,14 +4008,6 @@
         33
       ],
       "characters": 625
-    },
-    {
-      "node": "2018:0",
-      "role": "P",
-      "pages": [
-        34
-      ],
-      "characters": 44
     },
     {
       "node": "2019:0",
@@ -4144,17 +4061,10 @@
       "node": "2025:0",
       "role": "P",
       "pages": [
-        34
-      ],
-      "characters": 152
-    },
-    {
-      "node": "joined-2027:0",
-      "role": "P",
-      "pages": [
+        34,
         35
       ],
-      "characters": 332
+      "characters": 438
     },
     {
       "node": "2029:0",
@@ -4197,7 +4107,7 @@
       "characters": 47
     },
     {
-      "node": "joined-2034:0",
+      "node": "2034:0",
       "role": "P",
       "pages": [
         35,
@@ -4254,7 +4164,7 @@
       "characters": 19
     },
     {
-      "node": "joined-2043:0",
+      "node": "2043:0",
       "role": "P",
       "pages": [
         36,
@@ -4277,6 +4187,14 @@
         38
       ],
       "characters": 576
+    },
+    {
+      "node": "2054:0",
+      "role": "Note",
+      "pages": [
+        38
+      ],
+      "characters": 65
     },
     {
       "node": "2049:0",
@@ -4314,25 +4232,10 @@
       "node": "2053:0",
       "role": "P",
       "pages": [
-        38
-      ],
-      "characters": 165
-    },
-    {
-      "node": "2054:0",
-      "role": "Note",
-      "pages": [
-        38
-      ],
-      "characters": 65
-    },
-    {
-      "node": "joined-2056:0",
-      "role": "P",
-      "pages": [
+        38,
         39
       ],
-      "characters": 345
+      "characters": 456
     },
     {
       "node": "2058:0",
@@ -4378,17 +4281,10 @@
       "node": "2063:0",
       "role": "P",
       "pages": [
-        39
-      ],
-      "characters": 476
-    },
-    {
-      "node": "joined-2065:0",
-      "role": "P",
-      "pages": [
+        39,
         40
       ],
-      "characters": 493
+      "characters": 930
     },
     {
       "node": "2067:0",
@@ -4445,14 +4341,6 @@
         40
       ],
       "characters": 431
-    },
-    {
-      "node": "2075:0",
-      "role": "P",
-      "pages": [
-        41
-      ],
-      "characters": 37
     },
     {
       "node": "2076:0",
@@ -4527,6 +4415,14 @@
       "characters": 789
     },
     {
+      "node": "2091:0",
+      "role": "Note",
+      "pages": [
+        42
+      ],
+      "characters": 74
+    },
+    {
       "node": "2086:0",
       "role": "Figure",
       "pages": [
@@ -4565,14 +4461,6 @@
         42
       ],
       "characters": 41
-    },
-    {
-      "node": "2091:0",
-      "role": "Note",
-      "pages": [
-        42
-      ],
-      "characters": 74
     },
     {
       "node": "2093:0",
@@ -4671,6 +4559,14 @@
       "characters": 239
     },
     {
+      "node": "2113:0",
+      "role": "Note",
+      "pages": [
+        45
+      ],
+      "characters": 155
+    },
+    {
       "node": "2108:0",
       "role": "H4",
       "pages": [
@@ -4709,14 +4605,6 @@
         45
       ],
       "characters": 61
-    },
-    {
-      "node": "2113:0",
-      "role": "Note",
-      "pages": [
-        45
-      ],
-      "characters": 155
     },
     {
       "node": "2115:0",
@@ -5007,7 +4895,7 @@
       "characters": 59
     },
     {
-      "node": "joined-2154:0",
+      "node": "2154:0",
       "role": "P",
       "pages": [
         49,
@@ -5021,7 +4909,7 @@
       "pages": [
         50
       ],
-      "characters": 525
+      "characters": 291
     },
     {
       "node": "2158:0",
@@ -5272,7 +5160,7 @@
       "characters": 47
     },
     {
-      "node": "joined-2201:0",
+      "node": "2201:0",
       "role": "P",
       "pages": [
         53,
@@ -5844,17 +5732,10 @@
       "node": "2300:0",
       "role": "P",
       "pages": [
-        61
-      ],
-      "characters": 174
-    },
-    {
-      "node": "joined-2302:0",
-      "role": "P",
-      "pages": [
+        61,
         62
       ],
-      "characters": 211
+      "characters": 349
     },
     {
       "node": "2304:0",
@@ -5905,6 +5786,14 @@
       "characters": 691
     },
     {
+      "node": "2318:0",
+      "role": "Note",
+      "pages": [
+        63
+      ],
+      "characters": 69
+    },
+    {
       "node": "2312:0",
       "role": "H3",
       "pages": [
@@ -5948,25 +5837,10 @@
       "node": "2317:0",
       "role": "P",
       "pages": [
-        63
-      ],
-      "characters": 163
-    },
-    {
-      "node": "2318:0",
-      "role": "Note",
-      "pages": [
-        63
-      ],
-      "characters": 69
-    },
-    {
-      "node": "2320:0",
-      "role": "P",
-      "pages": [
+        63,
         64
       ],
-      "characters": 189
+      "characters": 353
     },
     {
       "node": "2321:0",
@@ -6012,17 +5886,10 @@
       "node": "2326:0",
       "role": "P",
       "pages": [
-        64
-      ],
-      "characters": 656
-    },
-    {
-      "node": "2328:0",
-      "role": "P",
-      "pages": [
+        64,
         65
       ],
-      "characters": 219
+      "characters": 876
     },
     {
       "node": "2329:0",
@@ -6097,7 +5964,7 @@
       "characters": 116
     },
     {
-      "node": "joined-2339:0",
+      "node": "2339:0",
       "role": "P",
       "pages": [
         66,
@@ -6298,7 +6165,7 @@
       "characters": 520
     },
     {
-      "node": "joined-2369:0",
+      "node": "2369:0",
       "role": "P",
       "pages": [
         70,
@@ -6339,7 +6206,7 @@
       "characters": 959
     },
     {
-      "node": "joined-2376:0",
+      "node": "2376:0",
       "role": "P",
       "pages": [
         71,
@@ -6361,7 +6228,7 @@
       "pages": [
         72
       ],
-      "characters": 419
+      "characters": 393
     },
     {
       "node": "2381:0",
@@ -6388,7 +6255,7 @@
       "characters": 33
     },
     {
-      "node": "joined-2384:0",
+      "node": "2384:0",
       "role": "P",
       "pages": [
         72,
@@ -6525,7 +6392,7 @@
       "characters": 30
     },
     {
-      "node": "joined-2404:0",
+      "node": "2404:0",
       "role": "P",
       "pages": [
         74,
@@ -6614,7 +6481,7 @@
       "characters": 387
     },
     {
-      "node": "joined-2419:0",
+      "node": "2419:0",
       "role": "P",
       "pages": [
         76,
@@ -6788,7 +6655,7 @@
       "pages": [
         79
       ],
-      "characters": 331
+      "characters": 530
     },
     {
       "node": "2445:0",
@@ -6799,7 +6666,7 @@
       "characters": 152
     },
     {
-      "node": "joined-2446:0",
+      "node": "2446:0",
       "role": "P",
       "pages": [
         79,
@@ -6952,6 +6819,14 @@
       "characters": 612
     },
     {
+      "node": "2472:0",
+      "role": "Note",
+      "pages": [
+        82
+      ],
+      "characters": 159
+    },
+    {
       "node": "2469:0",
       "role": "P",
       "pages": [
@@ -6974,14 +6849,6 @@
         82
       ],
       "characters": 409
-    },
-    {
-      "node": "2472:0",
-      "role": "Note",
-      "pages": [
-        82
-      ],
-      "characters": 159
     },
     {
       "node": "2474:0",
@@ -7024,7 +6891,7 @@
       "characters": 733
     },
     {
-      "node": "joined-2479:0",
+      "node": "2479:0",
       "role": "P",
       "pages": [
         83,
@@ -7046,7 +6913,7 @@
       "pages": [
         84
       ],
-      "characters": 260
+      "characters": 460
     },
     {
       "node": "2484:0",
@@ -7081,7 +6948,7 @@
       "characters": 34
     },
     {
-      "node": "joined-2488:0",
+      "node": "2488:0",
       "role": "P",
       "pages": [
         84,
@@ -7138,20 +7005,20 @@
       "characters": 610
     },
     {
+      "node": "2499:0",
+      "role": "Note",
+      "pages": [
+        86
+      ],
+      "characters": 94
+    },
+    {
       "node": "2498:0",
       "role": "P",
       "pages": [
         86
       ],
       "characters": 391
-    },
-    {
-      "node": "2499:0",
-      "role": "P",
-      "pages": [
-        86
-      ],
-      "characters": 92
     },
     {
       "node": "2501:0",
@@ -7194,6 +7061,14 @@
       "characters": 646
     },
     {
+      "node": "2509:0",
+      "role": "Note",
+      "pages": [
+        87
+      ],
+      "characters": 176
+    },
+    {
       "node": "2506:0",
       "role": "P",
       "pages": [
@@ -7202,21 +7077,13 @@
       "characters": 956
     },
     {
-      "node": "joined-2507:0",
+      "node": "2507:0",
       "role": "P",
       "pages": [
         87,
         88
       ],
       "characters": 752
-    },
-    {
-      "node": "2509:0",
-      "role": "Note",
-      "pages": [
-        87
-      ],
-      "characters": 176
     },
     {
       "node": "2512:0",
@@ -7259,7 +7126,7 @@
       "characters": 831
     },
     {
-      "node": "joined-2526:0",
+      "node": "2526:0",
       "role": "P",
       "pages": [
         88,
@@ -7289,7 +7156,7 @@
       "pages": [
         89
       ],
-      "characters": 279
+      "characters": 314
     },
     {
       "node": "2532:0",
@@ -7391,17 +7258,10 @@
       "node": "2580:0",
       "role": "P",
       "pages": [
-        90
-      ],
-      "characters": 327
-    },
-    {
-      "node": "2582:0",
-      "role": "P",
-      "pages": [
+        90,
         91
       ],
-      "characters": 139
+      "characters": 467
     },
     {
       "node": "2583:0",
@@ -7460,7 +7320,7 @@
       "characters": 484
     },
     {
-      "node": "joined-2590:0",
+      "node": "2590:0",
       "role": "P",
       "pages": [
         91,
@@ -7674,7 +7534,7 @@
       "pages": [
         95
       ],
-      "characters": 483
+      "characters": 481
     },
     {
       "node": "2646:0",
@@ -7709,6 +7569,14 @@
       "characters": 530
     },
     {
+      "node": "2654:0",
+      "role": "Note",
+      "pages": [
+        95
+      ],
+      "characters": 137
+    },
+    {
       "node": "2650:0",
       "role": "P",
       "pages": [
@@ -7739,14 +7607,6 @@
         95
       ],
       "characters": 305
-    },
-    {
-      "node": "2654:0",
-      "role": "Note",
-      "pages": [
-        95
-      ],
-      "characters": 137
     },
     {
       "node": "2656:0",
@@ -8022,14 +7882,6 @@
       "characters": 830
     },
     {
-      "node": "2758:0",
-      "role": "P",
-      "pages": [
-        102
-      ],
-      "characters": 34
-    },
-    {
       "node": "2759:0",
       "role": "H4",
       "pages": [
@@ -8092,14 +7944,6 @@
         103
       ],
       "characters": 591
-    },
-    {
-      "node": "2769:0",
-      "role": "P",
-      "pages": [
-        104
-      ],
-      "characters": 64
     },
     {
       "node": "2770:0",
@@ -8190,7 +8034,7 @@
       "characters": 430
     },
     {
-      "node": "joined-2782:0",
+      "node": "2782:0",
       "role": "P",
       "pages": [
         105,
@@ -8250,17 +8094,10 @@
       "node": "2792:0",
       "role": "P",
       "pages": [
-        107
-      ],
-      "characters": 235
-    },
-    {
-      "node": "joined-2794:0",
-      "role": "P",
-      "pages": [
+        107,
         108
       ],
-      "characters": 418
+      "characters": 602
     },
     {
       "node": "2796:0",
@@ -8309,14 +8146,6 @@
         109
       ],
       "characters": 614
-    },
-    {
-      "node": "2804:0",
-      "role": "P",
-      "pages": [
-        110
-      ],
-      "characters": 58
     },
     {
       "node": "2805:0",
@@ -8375,7 +8204,7 @@
       "characters": 612
     },
     {
-      "node": "joined-2813:0",
+      "node": "2813:0",
       "role": "P",
       "pages": [
         110,
@@ -8504,7 +8333,7 @@
       "characters": 47
     },
     {
-      "node": "joined-2833:0",
+      "node": "2833:0",
       "role": "P",
       "pages": [
         113,
@@ -8649,7 +8478,7 @@
       "characters": 13
     },
     {
-      "node": "joined-2876:0",
+      "node": "2876:0",
       "role": "P",
       "pages": [
         116,
@@ -8698,7 +8527,7 @@
       "characters": 853
     },
     {
-      "node": "joined-2899:0",
+      "node": "2899:0",
       "role": "P",
       "pages": [
         117,
@@ -8955,7 +8784,7 @@
       "characters": 18
     },
     {
-      "node": "joined-2938:0",
+      "node": "2938:0",
       "role": "P",
       "pages": [
         122,
@@ -9023,17 +8852,10 @@
       "node": "2949:0",
       "role": "P",
       "pages": [
-        124
-      ],
-      "characters": 510
-    },
-    {
-      "node": "joined-2951:0",
-      "role": "P",
-      "pages": [
+        124,
         125
       ],
-      "characters": 860
+      "characters": 1324
     },
     {
       "node": "2953:0",
@@ -9071,17 +8893,10 @@
       "node": "2957:0",
       "role": "P",
       "pages": [
-        125
-      ],
-      "characters": 317
-    },
-    {
-      "node": "joined-2959:0",
-      "role": "P",
-      "pages": [
+        125,
         126
       ],
-      "characters": 274
+      "characters": 526
     },
     {
       "node": "2961:0",
@@ -9127,17 +8942,10 @@
       "node": "2966:0",
       "role": "P",
       "pages": [
-        126
-      ],
-      "characters": 555
-    },
-    {
-      "node": "joined-2968:0",
-      "role": "P",
-      "pages": [
+        126,
         127
       ],
-      "characters": 986
+      "characters": 1480
     },
     {
       "node": "2970:0",
@@ -9178,14 +8986,6 @@
         127
       ],
       "characters": 619
-    },
-    {
-      "node": "2976:0",
-      "role": "P",
-      "pages": [
-        128
-      ],
-      "characters": 56
     },
     {
       "node": "2977:0",
@@ -9242,14 +9042,6 @@
         128
       ],
       "characters": 665
-    },
-    {
-      "node": "2985:0",
-      "role": "P",
-      "pages": [
-        129
-      ],
-      "characters": 51
     },
     {
       "node": "2986:0",
@@ -9316,14 +9108,6 @@
       "characters": 285
     },
     {
-      "node": "2995:0",
-      "role": "P",
-      "pages": [
-        130
-      ],
-      "characters": 80
-    },
-    {
       "node": "2996:0",
       "role": "H4",
       "pages": [
@@ -9383,17 +9167,10 @@
       "node": "3003:0",
       "role": "P",
       "pages": [
-        130
-      ],
-      "characters": 511
-    },
-    {
-      "node": "joined-3005:0",
-      "role": "P",
-      "pages": [
+        130,
         131
       ],
-      "characters": 707
+      "characters": 1158
     },
     {
       "node": "3007:0",
@@ -9439,25 +9216,10 @@
       "node": "3012:0",
       "role": "P",
       "pages": [
-        131
-      ],
-      "characters": 247
-    },
-    {
-      "node": "3015:0",
-      "role": "P",
-      "pages": [
+        131,
         132
       ],
-      "characters": 71
-    },
-    {
-      "node": "3016:0",
-      "role": "P",
-      "pages": [
-        132
-      ],
-      "characters": 143
+      "characters": 391
     },
     {
       "node": "3017:0",
@@ -9546,14 +9308,6 @@
         133
       ],
       "characters": 404
-    },
-    {
-      "node": "3030:0",
-      "role": "P",
-      "pages": [
-        134
-      ],
-      "characters": 21
     },
     {
       "node": "3031:0",
@@ -9740,14 +9494,6 @@
       "characters": 173
     },
     {
-      "node": "3589:0",
-      "role": "P",
-      "pages": [
-        149
-      ],
-      "characters": 54
-    },
-    {
       "node": "3590:0",
       "role": "H3",
       "pages": [
@@ -9892,14 +9638,6 @@
       "characters": 24
     },
     {
-      "node": "3609:0",
-      "role": "P",
-      "pages": [
-        150
-      ],
-      "characters": 56
-    },
-    {
       "node": "3610:0",
       "role": "Code",
       "pages": [
@@ -9986,14 +9724,6 @@
         150
       ],
       "characters": 71
-    },
-    {
-      "node": "3632:0",
-      "role": "P",
-      "pages": [
-        151
-      ],
-      "characters": 58
     },
     {
       "node": "3633:0",
@@ -10124,14 +9854,6 @@
       "characters": 11
     },
     {
-      "node": "3650:0",
-      "role": "P",
-      "pages": [
-        152
-      ],
-      "characters": 48
-    },
-    {
       "node": "3651:0",
       "role": "Code",
       "pages": [
@@ -10202,14 +9924,6 @@
         152
       ],
       "characters": 216
-    },
-    {
-      "node": "3691:0",
-      "role": "P",
-      "pages": [
-        153
-      ],
-      "characters": 62
     },
     {
       "node": "3692:0",
@@ -10330,14 +10044,6 @@
         153
       ],
       "characters": 99
-    },
-    {
-      "node": "3708:0",
-      "role": "P",
-      "pages": [
-        154
-      ],
-      "characters": 61
     },
     {
       "node": "3709:0",
@@ -10650,14 +10356,6 @@
         156
       ],
       "characters": 281
-    },
-    {
-      "node": "3797:0",
-      "role": "P",
-      "pages": [
-        157
-      ],
-      "characters": 45
     },
     {
       "node": "3798:0",
@@ -11020,14 +10718,6 @@
       "characters": 21
     },
     {
-      "node": "3847:0",
-      "role": "P",
-      "pages": [
-        160
-      ],
-      "characters": 72
-    },
-    {
       "node": "3848:0",
       "role": "P",
       "pages": [
@@ -11145,7 +10835,7 @@
       "pages": [
         161
       ],
-      "characters": 191
+      "characters": 185
     },
     {
       "node": "3873:0",
@@ -11193,7 +10883,7 @@
       "pages": [
         161
       ],
-      "characters": 137
+      "characters": 133
     },
     {
       "node": "3885:0",
@@ -11257,7 +10947,7 @@
       "pages": [
         161
       ],
-      "characters": 185
+      "characters": 179
     },
     {
       "node": "3903:0",
@@ -11321,7 +11011,7 @@
       "pages": [
         162
       ],
-      "characters": 173
+      "characters": 167
     },
     {
       "node": "3920:0",
@@ -11465,7 +11155,7 @@
       "pages": [
         163
       ],
-      "characters": 157
+      "characters": 153
     },
     {
       "node": "3946:0",
@@ -11585,7 +11275,7 @@
       "pages": [
         163
       ],
-      "characters": 233
+      "characters": 225
     },
     {
       "node": "3973:0",
@@ -11697,7 +11387,7 @@
       "pages": [
         164
       ],
-      "characters": 228
+      "characters": 222
     },
     {
       "node": "3997:0",
@@ -11761,7 +11451,7 @@
       "pages": [
         164
       ],
-      "characters": 213
+      "characters": 207
     },
     {
       "node": "4014:0",
@@ -11913,7 +11603,7 @@
       "pages": [
         165
       ],
-      "characters": 233
+      "characters": 227
     },
     {
       "node": "4044:0",
@@ -11977,7 +11667,7 @@
       "pages": [
         165
       ],
-      "characters": 221
+      "characters": 215
     },
     {
       "node": "4061:0",
@@ -12090,7 +11780,7 @@
         165,
         166
       ],
-      "characters": 165
+      "characters": 159
     },
     {
       "node": "4086:0",
@@ -12114,7 +11804,7 @@
       "pages": [
         166
       ],
-      "characters": 39
+      "characters": 37
     },
     {
       "node": "4088:0",
@@ -12218,7 +11908,7 @@
       "pages": [
         166
       ],
-      "characters": 182
+      "characters": 176
     },
     {
       "node": "4110:0",
@@ -12322,7 +12012,7 @@
       "pages": [
         166
       ],
-      "characters": 121
+      "characters": 115
     },
     {
       "node": "4133:0",
@@ -12426,7 +12116,7 @@
       "pages": [
         167
       ],
-      "characters": 119
+      "characters": 113
     },
     {
       "node": "4156:0",
@@ -12530,7 +12220,7 @@
       "pages": [
         167
       ],
-      "characters": 130
+      "characters": 124
     },
     {
       "node": "4178:0",
@@ -12634,7 +12324,7 @@
       "pages": [
         168
       ],
-      "characters": 268
+      "characters": 262
     },
     {
       "node": "4201:0",
@@ -12714,7 +12404,7 @@
       "pages": [
         168
       ],
-      "characters": 180
+      "characters": 174
     },
     {
       "node": "4220:0",
@@ -13242,7 +12932,7 @@
       "pages": [
         171
       ],
-      "characters": 297
+      "characters": 289
     },
     {
       "node": "4302:0",
@@ -13330,7 +13020,7 @@
       "pages": [
         172
       ],
-      "characters": 124
+      "characters": 120
     },
     {
       "node": "4320:0",
@@ -13394,7 +13084,7 @@
       "pages": [
         172
       ],
-      "characters": 107
+      "characters": 103
     },
     {
       "node": "4335:0",
@@ -13498,7 +13188,7 @@
       "pages": [
         172
       ],
-      "characters": 206
+      "characters": 200
     },
     {
       "node": "4357:0",
@@ -13618,7 +13308,7 @@
       "pages": [
         173
       ],
-      "characters": 227
+      "characters": 221
     },
     {
       "node": "4382:0",
@@ -13698,7 +13388,7 @@
       "pages": [
         173
       ],
-      "characters": 109
+      "characters": 105
     },
     {
       "node": "4398:0",
@@ -13786,7 +13476,7 @@
       "pages": [
         174
       ],
-      "characters": 110
+      "characters": 106
     },
     {
       "node": "4416:0",
@@ -13850,7 +13540,7 @@
       "pages": [
         174
       ],
-      "characters": 86
+      "characters": 82
     },
     {
       "node": "4431:0",
@@ -13914,7 +13604,7 @@
       "pages": [
         174
       ],
-      "characters": 95
+      "characters": 91
     },
     {
       "node": "4445:0",
@@ -13978,7 +13668,7 @@
       "pages": [
         174
       ],
-      "characters": 108
+      "characters": 104
     },
     {
       "node": "4459:0",
@@ -14090,7 +13780,7 @@
       "pages": [
         175
       ],
-      "characters": 198
+      "characters": 192
     },
     {
       "node": "4504:0",
@@ -14178,7 +13868,7 @@
       "pages": [
         175
       ],
-      "characters": 151
+      "characters": 147
     },
     {
       "node": "4521:0",
@@ -14314,7 +14004,7 @@
       "pages": [
         176
       ],
-      "characters": 174
+      "characters": 168
     },
     {
       "node": "4567:0",
@@ -14386,7 +14076,7 @@
       "pages": [
         177
       ],
-      "characters": 25
+      "characters": 23
     },
     {
       "node": "4580:0",
@@ -14490,7 +14180,7 @@
       "pages": [
         177
       ],
-      "characters": 224
+      "characters": 218
     },
     {
       "node": "4602:0",
@@ -14594,7 +14284,7 @@
       "pages": [
         177
       ],
-      "characters": 54
+      "characters": 52
     },
     {
       "node": "4623:0",
@@ -14618,7 +14308,7 @@
       "pages": [
         178
       ],
-      "characters": 90
+      "characters": 88
     },
     {
       "node": "4625:0",
@@ -14714,7 +14404,7 @@
       "pages": [
         178
       ],
-      "characters": 164
+      "characters": 158
     },
     {
       "node": "4665:0",
@@ -14850,7 +14540,7 @@
       "pages": [
         179
       ],
-      "characters": 127
+      "characters": 121
     },
     {
       "node": "4692:0",
@@ -14978,7 +14668,7 @@
       "pages": [
         180
       ],
-      "characters": 124
+      "characters": 120
     },
     {
       "node": "4715:0",
@@ -15050,7 +14740,7 @@
       "pages": [
         180
       ],
-      "characters": 46
+      "characters": 44
     },
     {
       "node": "4727:0",
@@ -15114,7 +14804,7 @@
       "pages": [
         180
       ],
-      "characters": 66
+      "characters": 62
     },
     {
       "node": "4743:0",
@@ -15266,7 +14956,7 @@
       "pages": [
         181
       ],
-      "characters": 91
+      "characters": 89
     },
     {
       "node": "4772:0",
@@ -15346,7 +15036,7 @@
       "pages": [
         182
       ],
-      "characters": 124
+      "characters": 120
     },
     {
       "node": "4788:0",
@@ -15410,7 +15100,7 @@
       "pages": [
         182
       ],
-      "characters": 94
+      "characters": 92
     },
     {
       "node": "4799:0",
@@ -15474,7 +15164,7 @@
       "pages": [
         182
       ],
-      "characters": 116
+      "characters": 112
     },
     {
       "node": "4818:0",
@@ -15498,7 +15188,7 @@
       "pages": [
         183
       ],
-      "characters": 95
+      "characters": 93
     },
     {
       "node": "4820:0",
@@ -15594,7 +15284,7 @@
       "pages": [
         183
       ],
-      "characters": 191
+      "characters": 185
     },
     {
       "node": "4842:0",
@@ -15674,7 +15364,7 @@
       "pages": [
         183
       ],
-      "characters": 169
+      "characters": 163
     },
     {
       "node": "4861:0",
@@ -15770,7 +15460,7 @@
       "pages": [
         184
       ],
-      "characters": 214
+      "characters": 208
     },
     {
       "node": "4883:0",
@@ -15866,7 +15556,7 @@
       "pages": [
         184
       ],
-      "characters": 199
+      "characters": 193
     },
     {
       "node": "4904:0",
@@ -15938,7 +15628,7 @@
       "pages": [
         185
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "4917:0",
@@ -15986,7 +15676,7 @@
       "pages": [
         185
       ],
-      "characters": 75
+      "characters": 71
     },
     {
       "node": "4929:0",
@@ -16050,7 +15740,7 @@
       "pages": [
         185
       ],
-      "characters": 89
+      "characters": 83
     },
     {
       "node": "4947:0",
@@ -16146,7 +15836,7 @@
       "pages": [
         185
       ],
-      "characters": 111
+      "characters": 107
     },
     {
       "node": "4965:0",
@@ -16226,7 +15916,7 @@
       "pages": [
         186
       ],
-      "characters": 242
+      "characters": 238
     },
     {
       "node": "4982:0",
@@ -16306,7 +15996,7 @@
       "pages": [
         186
       ],
-      "characters": 214
+      "characters": 208
     },
     {
       "node": "5001:0",
@@ -16386,7 +16076,7 @@
       "pages": [
         186
       ],
-      "characters": 123
+      "characters": 119
     },
     {
       "node": "5022:0",
@@ -16410,7 +16100,7 @@
       "pages": [
         187
       ],
-      "characters": 96
+      "characters": 94
     },
     {
       "node": "5024:0",
@@ -16474,7 +16164,7 @@
       "pages": [
         187
       ],
-      "characters": 45
+      "characters": 43
     },
     {
       "node": "5036:0",
@@ -16570,7 +16260,7 @@
       "pages": [
         187
       ],
-      "characters": 247
+      "characters": 241
     },
     {
       "node": "5057:0",
@@ -16642,7 +16332,7 @@
       "pages": [
         188
       ],
-      "characters": 60
+      "characters": 58
     },
     {
       "node": "5070:0",
@@ -16722,7 +16412,7 @@
       "pages": [
         188
       ],
-      "characters": 126
+      "characters": 122
     },
     {
       "node": "5086:0",
@@ -16786,7 +16476,7 @@
       "pages": [
         188
       ],
-      "characters": 74
+      "characters": 72
     },
     {
       "node": "5098:0",
@@ -16850,7 +16540,7 @@
       "pages": [
         189
       ],
-      "characters": 141
+      "characters": 137
     },
     {
       "node": "5112:0",
@@ -16914,7 +16604,7 @@
       "pages": [
         189
       ],
-      "characters": 71
+      "characters": 67
     },
     {
       "node": "5126:0",
@@ -16978,7 +16668,7 @@
       "pages": [
         189
       ],
-      "characters": 46
+      "characters": 44
     },
     {
       "node": "5138:0",
@@ -17074,7 +16764,7 @@
       "pages": [
         190
       ],
-      "characters": 237
+      "characters": 231
     },
     {
       "node": "5160:0",
@@ -17170,7 +16860,7 @@
       "pages": [
         190
       ],
-      "characters": 190
+      "characters": 184
     },
     {
       "node": "5181:0",
@@ -17250,7 +16940,7 @@
       "pages": [
         191
       ],
-      "characters": 257
+      "characters": 253
     },
     {
       "node": "5198:0",
@@ -17346,7 +17036,7 @@
       "pages": [
         191
       ],
-      "characters": 812
+      "characters": 804
     },
     {
       "node": "5222:0",
@@ -17410,7 +17100,7 @@
       "pages": [
         192
       ],
-      "characters": 77
+      "characters": 75
     },
     {
       "node": "5234:0",
@@ -17474,7 +17164,7 @@
       "pages": [
         192
       ],
-      "characters": 60
+      "characters": 58
     },
     {
       "node": "5246:0",
@@ -17538,7 +17228,7 @@
       "pages": [
         192
       ],
-      "characters": 90
+      "characters": 86
     },
     {
       "node": "5260:0",
@@ -17682,7 +17372,7 @@
       "pages": [
         193
       ],
-      "characters": 27
+      "characters": 25
     },
     {
       "node": "5288:0",
@@ -17730,7 +17420,7 @@
       "pages": [
         193
       ],
-      "characters": 27
+      "characters": 25
     },
     {
       "node": "5297:0",
@@ -17794,7 +17484,7 @@
       "pages": [
         193
       ],
-      "characters": 104
+      "characters": 100
     },
     {
       "node": "5311:0",
@@ -17858,7 +17548,7 @@
       "pages": [
         194
       ],
-      "characters": 69
+      "characters": 67
     },
     {
       "node": "5323:0",
@@ -17906,7 +17596,7 @@
       "pages": [
         194
       ],
-      "characters": 78
+      "characters": 76
     },
     {
       "node": "5332:0",
@@ -17954,7 +17644,7 @@
       "pages": [
         194
       ],
-      "characters": 69
+      "characters": 67
     },
     {
       "node": "5342:0",
@@ -18018,7 +17708,7 @@
       "pages": [
         194
       ],
-      "characters": 172
+      "characters": 168
     },
     {
       "node": "5357:0",
@@ -18122,7 +17812,7 @@
       "pages": [
         195
       ],
-      "characters": 191
+      "characters": 187
     },
     {
       "node": "5400:0",
@@ -18170,7 +17860,7 @@
       "pages": [
         196
       ],
-      "characters": 93
+      "characters": 91
     },
     {
       "node": "5410:0",
@@ -18234,7 +17924,7 @@
       "pages": [
         196
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "5421:0",
@@ -18314,7 +18004,7 @@
       "pages": [
         196
       ],
-      "characters": 162
+      "characters": 158
     },
     {
       "node": "5438:0",
@@ -18418,7 +18108,7 @@
       "pages": [
         197
       ],
-      "characters": 252
+      "characters": 248
     },
     {
       "node": "5459:0",
@@ -18482,7 +18172,7 @@
       "pages": [
         197
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "5470:0",
@@ -18546,7 +18236,7 @@
       "pages": [
         197
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "5481:0",
@@ -18618,7 +18308,7 @@
       "pages": [
         197
       ],
-      "characters": 107
+      "characters": 105
     },
     {
       "node": "5497:0",
@@ -18682,7 +18372,7 @@
       "pages": [
         198
       ],
-      "characters": 63
+      "characters": 61
     },
     {
       "node": "5508:0",
@@ -18746,7 +18436,7 @@
       "pages": [
         198
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "5519:0",
@@ -18810,7 +18500,7 @@
       "pages": [
         198
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "5530:0",
@@ -18890,7 +18580,7 @@
       "pages": [
         199
       ],
-      "characters": 130
+      "characters": 126
     },
     {
       "node": "5548:0",
@@ -18970,7 +18660,7 @@
       "pages": [
         199
       ],
-      "characters": 162
+      "characters": 158
     },
     {
       "node": "5564:0",
@@ -19050,7 +18740,7 @@
       "pages": [
         199
       ],
-      "characters": 134
+      "characters": 130
     },
     {
       "node": "5580:0",
@@ -19130,7 +18820,7 @@
       "pages": [
         200
       ],
-      "characters": 135
+      "characters": 131
     },
     {
       "node": "5597:0",
@@ -19194,7 +18884,7 @@
       "pages": [
         200
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "5608:0",
@@ -19258,7 +18948,7 @@
       "pages": [
         200
       ],
-      "characters": 72
+      "characters": 70
     },
     {
       "node": "5619:0",
@@ -19338,7 +19028,7 @@
       "pages": [
         201
       ],
-      "characters": 177
+      "characters": 173
     },
     {
       "node": "5636:0",
@@ -19434,7 +19124,7 @@
       "pages": [
         201
       ],
-      "characters": 259
+      "characters": 253
     },
     {
       "node": "5658:0",
@@ -19514,7 +19204,7 @@
       "pages": [
         201
       ],
-      "characters": 172
+      "characters": 168
     },
     {
       "node": "5679:0",
@@ -19538,7 +19228,7 @@
       "pages": [
         202
       ],
-      "characters": 57
+      "characters": 55
     },
     {
       "node": "5681:0",
@@ -19618,7 +19308,7 @@
       "pages": [
         202
       ],
-      "characters": 142
+      "characters": 138
     },
     {
       "node": "5697:0",
@@ -19690,7 +19380,7 @@
       "pages": [
         202
       ],
-      "characters": 34
+      "characters": 32
     },
     {
       "node": "5709:0",
@@ -19762,7 +19452,7 @@
       "pages": [
         203
       ],
-      "characters": 89
+      "characters": 87
     },
     {
       "node": "5722:0",
@@ -19826,7 +19516,7 @@
       "pages": [
         203
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "5733:0",
@@ -19906,7 +19596,7 @@
       "pages": [
         203
       ],
-      "characters": 172
+      "characters": 168
     },
     {
       "node": "5750:0",
@@ -19986,7 +19676,7 @@
       "pages": [
         204
       ],
-      "characters": 171
+      "characters": 167
     },
     {
       "node": "5767:0",
@@ -20066,7 +19756,7 @@
       "pages": [
         204
       ],
-      "characters": 165
+      "characters": 161
     },
     {
       "node": "5783:0",
@@ -20130,7 +19820,7 @@
       "pages": [
         204
       ],
-      "characters": 63
+      "characters": 61
     },
     {
       "node": "5794:0",
@@ -20210,7 +19900,7 @@
       "pages": [
         205
       ],
-      "characters": 134
+      "characters": 130
     },
     {
       "node": "5811:0",
@@ -20290,7 +19980,7 @@
       "pages": [
         205
       ],
-      "characters": 135
+      "characters": 131
     },
     {
       "node": "5827:0",
@@ -20354,7 +20044,7 @@
       "pages": [
         205
       ],
-      "characters": 64
+      "characters": 62
     },
     {
       "node": "5838:0",
@@ -20442,7 +20132,7 @@
       "pages": [
         206
       ],
-      "characters": 148
+      "characters": 144
     },
     {
       "node": "5860:0",
@@ -20546,7 +20236,7 @@
       "pages": [
         206
       ],
-      "characters": 180
+      "characters": 174
     },
     {
       "node": "5885:0",
@@ -20634,7 +20324,7 @@
       "pages": [
         207
       ],
-      "characters": 186
+      "characters": 182
     },
     {
       "node": "5903:0",
@@ -20714,7 +20404,7 @@
       "pages": [
         207
       ],
-      "characters": 121
+      "characters": 117
     },
     {
       "node": "5919:0",
@@ -20762,7 +20452,7 @@
       "pages": [
         207
       ],
-      "characters": 63
+      "characters": 61
     },
     {
       "node": "5928:0",
@@ -20842,7 +20532,7 @@
       "pages": [
         207
       ],
-      "characters": 109
+      "characters": 105
     },
     {
       "node": "5946:0",
@@ -20922,7 +20612,7 @@
       "pages": [
         208
       ],
-      "characters": 137
+      "characters": 133
     },
     {
       "node": "5962:0",
@@ -21002,7 +20692,7 @@
       "pages": [
         208
       ],
-      "characters": 130
+      "characters": 126
     },
     {
       "node": "5978:0",
@@ -21066,7 +20756,7 @@
       "pages": [
         208
       ],
-      "characters": 69
+      "characters": 65
     },
     {
       "node": "5992:0",
@@ -21114,7 +20804,7 @@
       "pages": [
         209
       ],
-      "characters": 72
+      "characters": 70
     },
     {
       "node": "6002:0",
@@ -21210,7 +20900,7 @@
       "pages": [
         209
       ],
-      "characters": 227
+      "characters": 221
     },
     {
       "node": "6023:0",
@@ -21274,7 +20964,7 @@
       "pages": [
         209
       ],
-      "characters": 58
+      "characters": 56
     },
     {
       "node": "6039:0",
@@ -21298,7 +20988,7 @@
       "pages": [
         210
       ],
-      "characters": 57
+      "characters": 55
     },
     {
       "node": "6041:0",
@@ -21362,7 +21052,7 @@
       "pages": [
         210
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "6053:0",
@@ -21426,7 +21116,7 @@
       "pages": [
         210
       ],
-      "characters": 71
+      "characters": 69
     },
     {
       "node": "6064:0",
@@ -21515,7 +21205,7 @@
         210,
         211
       ],
-      "characters": 190
+      "characters": 184
     },
     {
       "node": "6082:0",
@@ -21579,7 +21269,7 @@
       "pages": [
         211
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "6093:0",
@@ -21643,7 +21333,7 @@
       "pages": [
         211
       ],
-      "characters": 62
+      "characters": 60
     },
     {
       "node": "6104:0",
@@ -21715,7 +21405,7 @@
       "pages": [
         211
       ],
-      "characters": 59
+      "characters": 57
     },
     {
       "node": "6116:0",
@@ -21803,7 +21493,7 @@
       "pages": [
         212
       ],
-      "characters": 121
+      "characters": 117
     },
     {
       "node": "6134:0",
@@ -21867,7 +21557,7 @@
       "pages": [
         212
       ],
-      "characters": 75
+      "characters": 73
     },
     {
       "node": "6146:0",
@@ -21963,7 +21653,7 @@
       "pages": [
         212
       ],
-      "characters": 106
+      "characters": 102
     },
     {
       "node": "6165:0",
@@ -22027,7 +21717,7 @@
       "pages": [
         213
       ],
-      "characters": 127
+      "characters": 123
     },
     {
       "node": "6179:0",
@@ -22107,7 +21797,7 @@
       "pages": [
         213
       ],
-      "characters": 142
+      "characters": 138
     },
     {
       "node": "6195:0",
@@ -22171,7 +21861,7 @@
       "pages": [
         213
       ],
-      "characters": 214
+      "characters": 208
     },
     {
       "node": "6212:0",
@@ -22228,7 +21918,7 @@
         213,
         214
       ],
-      "characters": 182
+      "characters": 176
     },
     {
       "node": "6230:0",
@@ -22252,7 +21942,7 @@
       "pages": [
         214
       ],
-      "characters": 67
+      "characters": 65
     },
     {
       "node": "6232:0",
@@ -22332,7 +22022,7 @@
       "pages": [
         214
       ],
-      "characters": 295
+      "characters": 287
     },
     {
       "node": "6255:0",
@@ -22492,7 +22182,7 @@
       "pages": [
         215
       ],
-      "characters": 60
+      "characters": 58
     },
     {
       "node": "6279:0",
@@ -22556,7 +22246,7 @@
       "pages": [
         215
       ],
-      "characters": 64
+      "characters": 62
     },
     {
       "node": "6295:0",
@@ -22580,7 +22270,7 @@
       "pages": [
         216
       ],
-      "characters": 114
+      "characters": 112
     },
     {
       "node": "6297:0",
@@ -22660,7 +22350,7 @@
       "pages": [
         216
       ],
-      "characters": 86
+      "characters": 82
     },
     {
       "node": "6313:0",
@@ -22788,7 +22478,7 @@
       "pages": [
         216
       ],
-      "characters": 70
+      "characters": 68
     },
     {
       "node": "6337:0",
@@ -22844,7 +22534,7 @@
       "pages": [
         217
       ],
-      "characters": 178
+      "characters": 172
     },
     {
       "node": "6350:0",
@@ -22924,7 +22614,7 @@
       "pages": [
         217
       ],
-      "characters": 84
+      "characters": 80
     },
     {
       "node": "6366:0",
@@ -23012,7 +22702,7 @@
       "pages": [
         218
       ],
-      "characters": 89
+      "characters": 87
     },
     {
       "node": "6408:0",
@@ -23076,7 +22766,7 @@
       "pages": [
         218
       ],
-      "characters": 37
+      "characters": 35
     },
     {
       "node": "6419:0",
@@ -23140,7 +22830,7 @@
       "pages": [
         218
       ],
-      "characters": 94
+      "characters": 92
     },
     {
       "node": "6430:0",
@@ -23188,7 +22878,7 @@
       "pages": [
         219
       ],
-      "characters": 74
+      "characters": 72
     },
     {
       "node": "6440:0",
@@ -23284,7 +22974,7 @@
       "pages": [
         219
       ],
-      "characters": 165
+      "characters": 159
     },
     {
       "node": "6462:0",
@@ -23364,7 +23054,7 @@
       "pages": [
         219
       ],
-      "characters": 95
+      "characters": 91
     },
     {
       "node": "6479:0",
@@ -23508,7 +23198,7 @@
       "pages": [
         220
       ],
-      "characters": 457
+      "characters": 445
     },
     {
       "node": "6515:0",
@@ -23588,7 +23278,7 @@
       "pages": [
         221
       ],
-      "characters": 117
+      "characters": 113
     },
     {
       "node": "6532:0",
@@ -23668,7 +23358,7 @@
       "pages": [
         221
       ],
-      "characters": 101
+      "characters": 97
     },
     {
       "node": "6549:0",
@@ -23732,7 +23422,7 @@
       "pages": [
         221
       ],
-      "characters": 68
+      "characters": 66
     },
     {
       "node": "6560:0",
@@ -23796,7 +23486,7 @@
       "pages": [
         222
       ],
-      "characters": 50
+      "characters": 48
     },
     {
       "node": "6572:0",
@@ -23844,7 +23534,7 @@
       "pages": [
         222
       ],
-      "characters": 74
+      "characters": 70
     },
     {
       "node": "6584:0",
@@ -23908,7 +23598,7 @@
       "pages": [
         222
       ],
-      "characters": 102
+      "characters": 96
     },
     {
       "node": "6601:0",
@@ -23988,7 +23678,7 @@
       "pages": [
         222
       ],
-      "characters": 107
+      "characters": 103
     },
     {
       "node": "6617:0",
@@ -24084,7 +23774,7 @@
       "pages": [
         223
       ],
-      "characters": 196
+      "characters": 190
     },
     {
       "node": "6639:0",
@@ -24148,7 +23838,7 @@
       "pages": [
         223
       ],
-      "characters": 39
+      "characters": 37
     },
     {
       "node": "6651:0",
@@ -24244,7 +23934,7 @@
       "pages": [
         223
       ],
-      "characters": 127
+      "characters": 121
     },
     {
       "node": "6673:0",
@@ -24340,7 +24030,7 @@
       "pages": [
         224
       ],
-      "characters": 135
+      "characters": 129
     },
     {
       "node": "6694:0",
@@ -24468,7 +24158,7 @@
       "pages": [
         224
       ],
-      "characters": 222
+      "characters": 212
     },
     {
       "node": "6726:0",
@@ -24548,7 +24238,7 @@
       "pages": [
         225
       ],
-      "characters": 68
+      "characters": 64
     },
     {
       "node": "6742:0",
@@ -24628,7 +24318,7 @@
       "pages": [
         225
       ],
-      "characters": 99
+      "characters": 95
     },
     {
       "node": "1415:0",
@@ -24692,7 +24382,7 @@
       "pages": [
         225
       ],
-      "characters": 169
+      "characters": 165
     },
     {
       "node": "1430:0",
@@ -24756,7 +24446,7 @@
       "pages": [
         226
       ],
-      "characters": 102
+      "characters": 98
     },
     {
       "node": "1444:0",
@@ -24820,7 +24510,7 @@
       "pages": [
         226
       ],
-      "characters": 169
+      "characters": 165
     },
     {
       "node": "1458:0",
@@ -24868,7 +24558,7 @@
       "pages": [
         226
       ],
-      "characters": 43
+      "characters": 41
     },
     {
       "node": "1467:0",
@@ -24948,7 +24638,7 @@
       "pages": [
         227
       ],
-      "characters": 117
+      "characters": 113
     },
     {
       "node": "1484:0",
@@ -25012,7 +24702,7 @@
       "pages": [
         227
       ],
-      "characters": 41
+      "characters": 39
     },
     {
       "node": "1495:0",
@@ -25031,7 +24721,7 @@
       "characters": 59
     }
   ],
-  "tagged_content_items": 41095,
+  "tagged_content_items": 40879,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -25060,7 +24750,7 @@
       ],
       "sha256": "835927f7d508f4c32ab8837d976757add9a0ff17f59a5f68747af96b0d2eb9e6",
       "kind": "figure",
-      "alt": "Figure 1.3 An illustration of a basic InterState object, named draggable. Properties, which control draggable’s display, are represented as rows (e.g. x, y, and fill). States and transitions are represented as columns (e.g. no_drag, drag, and drag_lock). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state. Chapter 4 further describes this example."
+      "alt": "InterState drag-lock editor. The no_drag state enters drag on mouse down and drag returns on mouse up. A double-click enters drag_lock; a single click exits it. In drag and drag_lock, x and y follow mouse coordinates. Fill changes from black in no_drag to blue in drag and navy in drag_lock. Rows are properties and columns give values for each state or transition."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-003-p042.png",
@@ -25102,7 +24792,7 @@
       ],
       "sha256": "0dfd9a96c2eaa2681deb945825c885462a436e2c4a91be8acc5e9b089f6c57bc",
       "kind": "figure",
-      "alt": "Figure 3.5 The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state."
+      "alt": "State machine for an asynchronous value: Pending transitions to Resolved when loading succeeds and Rejected on error. A refresh event from either Resolved or Rejected returns to Pending to begin another request."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-006-p053.png",
@@ -25214,7 +24904,7 @@
       ],
       "sha256": "2df97a3d11324fc9a18fb847285c050e99af80c0690dff4e1270a2d66cc3ce1d",
       "kind": "figure",
-      "alt": "Two InterState objects each change from noclick to clicked on the same mouse click. In obj1, x changes from 1 to 3. In obj2, a transition expression reads obj1.x before the state change takes effect, obtaining 1, while its clicked-state value is 2. The example illustrates simultaneous event semantics instead of order-dependent callbacks."
+      "alt": "Two InterState objects transition from noclick to clicked on mouse.click(). In obj1, x is 1 in noclick,2 during the transition, and 3 in clicked. obj2 sets x from obj1.x during the same transition, obtaining 2; that value remains 2 after obj1 reaches 3. The example illustrates simultaneous transition evaluation."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-014-p075.png",
@@ -25270,7 +24960,7 @@
       ],
       "sha256": "db27be4bacc76c50084aedbfb7cbc5e2788857a334c55668503f4d203d1adb4b",
       "kind": "figure",
-      "alt": "Revised InterState state-machine layout. Compact rectangular state boxes sit above property columns. Transition arrows share the space above the states, reducing their horizontal footprint. The current state and active values are highlighted in green."
+      "alt": "Optimized InterState state-machine layout for my_behavior. Top-level states are inactive and active; active contains out and hover, connected by mouse.over and mouse.out transitions. active.out is narrower because it defines no property value; active.hover has x=true while inactive has x=false. Columns are reserved for transition starting points and defined values to save horizontal space. The current inactive state and value are outlined green."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-018-p080.png",
@@ -25291,12 +24981,12 @@
       "node": "2459:0",
       "page": 81,
       "bbox": [
-        145.23800659179688,
-        151.07020568847656,
-        612.0,
-        542.8367919921875
+        148.0,
+        182.0,
+        520.0,
+        434.0
       ],
-      "sha256": "e8f8e9d03ba416d07eec6a9ddeda87cac88393090fa2cef8a89c55cb97d220fd",
+      "sha256": "533f5d17f7a11e5472bbf4d6591ac89ac9970f8189ee44df64e960c3e972cbec",
       "kind": "figure",
       "alt": "Figure 4.11 The InterState editor shows one object at a time (in this case, myShape) and the fields and current values of every parent object in the containment hierarchy (in this case, sketch and paper). The editor also allows developers to pin objects to the screen by dragging them to the bottom of the window."
     },
@@ -25319,12 +25009,12 @@
       "node": "2474:0",
       "page": 83,
       "bbox": [
-        147.11607360839844,
-        71.51809692382812,
-        541.3106689453125,
-        223.9904022216797
+        147.0,
+        72.0,
+        522.0,
+        160.0
       ],
-      "sha256": "a4f1ff225e00fb4a506e7e3104ce235ac7d441f8118e757a8de868347ca45ffb",
+      "sha256": "1876bd8b834120bf2532c92d0e78e59b2a58c7df79d2bf7d67bedf42c1487f46",
       "kind": "figure",
       "alt": "InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my_square inherits from square. Because my_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my_square inherits the definition of height, not the value. Thus, the width property of my_square evaluates to a different value (20) than the width of square (15)."
     },
@@ -25333,14 +25023,14 @@
       "node": "2483:0",
       "page": 84,
       "bbox": [
-        139.77647399902344,
-        225.28579711914062,
-        578.8973388671875,
-        608.4364013671875
+        147.0,
+        305.0,
+        523.0,
+        433.0
       ],
-      "sha256": "cb5611e508349a754a357f2198674c343091cfc01a37474da5beaad65ff5d1fd",
+      "sha256": "3055bc7e651501a80adaa64ce5b89d849b9010fe7d3f7469a5be07e8a8591b4c",
       "kind": "figure",
-      "alt": "An object that inherits from both draggable and selectable behaviors. Note that the definitions for the color property are inherited from draggable ('red') and selectable ('blue')."
+      "alt": "my_selectable_draggable combines the selectable and draggable state machines. The fill property inherits blue for selection and black/red for the dragging states. The combined object retains both sets of states and inherits x/y values that follow the mouse while dragging. When definitions conflict, the leftmost prototype takes precedence, as explained in the surrounding text."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-023-p085.png",
@@ -25382,7 +25072,7 @@
       ],
       "sha256": "de2d626e31fc9d7273ab502f463332f300faf9221761d04dbcc32a1d7055c42e",
       "kind": "figure",
-      "alt": "Figure 4.17 Syntax and runtime errors are highlighted in the editor but do not prevent the program from running. Fields with errors and other fields that depend on them are given the value undefined."
+      "alt": "InterState displays a red error for x=other_shape.x+5. The tooltip reads Could not find field other_shape, and the evaluated value is undefined. Dependent values also become undefined while the rest of the program continues running."
     },
     {
       "path": "figures/oney-expressing-interactivity-states-cmu2015/figure-026-p091.png",
@@ -25515,12 +25205,12 @@
       "node": "2917:0",
       "page": 120,
       "bbox": [
-        138.57119750976562,
-        426.98419189453125,
-        260.4068603515625,
-        640.1915283203125
+        147.0,
+        460.0,
+        260.0,
+        609.0
       ],
-      "sha256": "fecd9e2b5c2e0094fa131be48786eb5265241d681d6ee6ffecde22dcbaea98df",
+      "sha256": "3a8f0b30e968932aaefa6eb4e6e9052a89e4d3971563f99626470b79f5d03bf3",
       "kind": "figure",
       "alt": "Figure 6.4, initial drawing canvas: overlapping multicolored brush strokes appear on a white canvas, with the controls hidden below the screen."
     },
@@ -25529,12 +25219,12 @@
       "node": "2918:0",
       "page": 120,
       "bbox": [
-        217.135498046875,
-        426.98419189453125,
-        480.514892578125,
-        792.0
+        267.0,
+        460.0,
+        393.0,
+        717.0
       ],
-      "sha256": "fdd00e9c6f691b66763c1b1c70b946d3f5a8fb5798d781cbc7b16f5212e73dcc",
+      "sha256": "f02e1147ed5342e27de31528a7704092ed7d64b8a8699daa909e1cbd54001e32",
       "kind": "figure",
       "alt": "Figure 6.4, one-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of brush and pen choices."
     },
@@ -25543,12 +25233,12 @@
       "node": "2919:0",
       "page": 120,
       "bbox": [
-        393.8763732910156,
-        425.67730712890625,
-        522.480224609375,
-        657.6998291015625
+        396.0,
+        460.0,
+        522.0,
+        717.0
       ],
-      "sha256": "169f803078664a8d03d94bdff440d0eea1d13dfbc46dbc4cd4fd42a9e95863fc",
+      "sha256": "25a9eb53462901617a9f37f85c72315e2159db6f16c1d43795937b47272333b4",
       "kind": "figure",
       "alt": "Figure 6.4, two-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of colored swatches for selecting the drawing color."
     },
@@ -28388,7 +28078,8 @@
       "changed": false,
       "reason": "variable_or_uncertain_character_pitch",
       "estimated_pitch": 5.3927,
-      "relative_median_deviation": 0.0012
+      "relative_median_deviation": 0.0012,
+      "source_review": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes serif introductory prose and monospace code, causing uncertain uniform-pitch estimation. The source itself has malformed </strong city markup, retained exactly."
     },
     {
       "node": "4243:0",
@@ -32581,7 +32272,8 @@
       "changed": false,
       "reason": "variable_or_uncertain_character_pitch",
       "estimated_pitch": 4.5176,
-      "relative_median_deviation": 0.1901
+      "relative_median_deviation": 0.1901,
+      "source_review": "Source wording, punctuation, and order verified; no content or indentation defect. One line mixes the monospace wildcard and serif explanation, causing uncertain uniform-pitch estimation."
     },
     {
       "node": "6325:0",
@@ -33435,29 +33127,12 @@
     }
   ],
   "normalization": {
-    "line_wrap_hyphens_retained": 82,
-    "paragraph_fragments_joined": 39,
+    "line_wrap_hyphens_retained": 73,
     "line_wrap_hyphens_removed": 6,
+    "paragraph_fragments_joined": 1,
     "script_runs_positioned": 23
   },
-  "review_notes": [
-    {
-      "kind": "code_whitespace_needs_review",
-      "node": "4241:0",
-      "pages": [
-        169
-      ],
-      "reason": "variable_or_uncertain_character_pitch"
-    },
-    {
-      "kind": "code_whitespace_needs_review",
-      "node": "6315:0",
-      "pages": [
-        216
-      ],
-      "reason": "variable_or_uncertain_character_pitch"
-    }
-  ],
+  "review_notes": [],
   "source_tags": "source-tags/oney-expressing-interactivity-states-cmu2015.json.gz",
-  "source_tags_sha256": "7a0c40a09e434a7432bc51c0dd954c176fddfc311895b01955b1af9e2eb987cf"
+  "source_tags_sha256": "e4c94a08b556a7172ba80a634ad485e0e088a92292d5afb17e0613098a523cbe"
 }

@@ -1,0 +1,1159 @@
+{
+  "date": "2026-10-05",
+  "initial_review": "../../group-2-review.json",
+  "initial_review_sha256": "02d1e7ea99f221fb6b7a9e898622235989ad74a7a728604e07944eb994afe992",
+  "method": "Bind every original example to its explicit repair and recheck the stable native PDF K sequence, roles, table relationships and hash-bound archive. Sentence proofs compare the original marked-content/annotation leaves with a contiguous sequence inside the retained native paragraph. This is targeted evidence reconciliation, not a new broad review or an end-to-end speech claim.",
+  "files": 22,
+  "original_examples": 27,
+  "resolved": 27,
+  "unresolved": 0,
+  "examples": [
+    {
+      "example": 1,
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "pdf_sha256": "117ffda39327166d86c0f04b9ebf2305b2f8edeb00c659e0319441365d1d0a57",
+      "original_issue_pointer": "/files/0/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "1140:0",
+      "pages": [
+        10,
+        11
+      ],
+      "status": "resolved",
+      "original_continuation": "1189:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/12/changes/11",
+      "native_evidence": {
+        "retained_node": "1140:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 58,
+        "first_part_references": 37,
+        "continuation_references": 21,
+        "last_first_part_key": [
+          "MCID",
+          "604:0",
+          547
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "605:0",
+          74
+        ],
+        "adjacent_native_leaf_indices": [
+          36,
+          37
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1145:0",
+          "1146:0",
+          "1147:0",
+          "1149:0",
+          "1150:0",
+          "1151:0",
+          "1153:0",
+          "1154:0",
+          "1156:0",
+          "1157:0",
+          "1159:0",
+          "1160:0",
+          "1162:0",
+          "1163:0",
+          "1164:0",
+          "1166:0",
+          "1167:0",
+          "1169:0",
+          "1170:0",
+          "1172:0",
+          "1173:0",
+          "1175:0",
+          "1176:0",
+          "1178:0",
+          "1179:0",
+          "1181:0",
+          "1183:0",
+          "1184:0",
+          "1186:0",
+          "1187:0",
+          "1188:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 2,
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "pdf_sha256": "691ed5b7a7babcc16b46ad2e995be62729db7fb1159081e7b1af5c8b94164277",
+      "original_issue_pointer": "/files/1/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "862:0",
+      "pages": [
+        5,
+        6
+      ],
+      "status": "resolved",
+      "original_continuation": "914:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/13/changes/5",
+      "native_evidence": {
+        "retained_node": "862:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 67,
+        "first_part_references": 51,
+        "continuation_references": 16,
+        "last_first_part_key": [
+          "MCID",
+          "5:0",
+          616
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "102:0",
+          51
+        ],
+        "adjacent_native_leaf_indices": [
+          50,
+          51
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "881:0",
+          "884:0",
+          "885:0",
+          "886:0",
+          "887:0",
+          "889:0",
+          "890:0",
+          "891:0",
+          "892:0",
+          "894:0",
+          "895:0",
+          "896:0",
+          "897:0",
+          "899:0",
+          "900:0",
+          "901:0",
+          "902:0",
+          "904:0",
+          "905:0",
+          "906:0",
+          "907:0",
+          "909:0",
+          "910:0",
+          "911:0",
+          "913:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 3,
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "pdf_sha256": "ef7b39901a6158b68160ab892a4f2a0a77f7f57017e70059f261982b14698d9b",
+      "original_issue_pointer": "/files/2/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "792:0",
+      "pages": [
+        5,
+        6
+      ],
+      "status": "resolved",
+      "original_continuation": "803:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/6/changes/4",
+      "native_evidence": {
+        "retained_node": "792:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 86,
+        "first_part_references": 57,
+        "continuation_references": 29,
+        "last_first_part_key": [
+          "MCID",
+          "5:0",
+          449
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "209:0",
+          50
+        ],
+        "adjacent_native_leaf_indices": [
+          56,
+          57
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "801:0",
+          "802:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 4,
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "pdf_sha256": "d80e08b25eef20eb62e1440b2fab669a0285a237ebf61a34a75f6fe7c7ed5e01",
+      "original_issue_pointer": "/files/3/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "154:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "157:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/0/changes/1",
+      "native_evidence": {
+        "retained_node": "154:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 94,
+        "first_part_references": 57,
+        "continuation_references": 37,
+        "last_first_part_key": [
+          "MCID",
+          "7:0",
+          759
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "8:0",
+          0
+        ],
+        "adjacent_native_leaf_indices": [
+          56,
+          57
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "155:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 5,
+      "file": "zhang-codestream-chi2026.pdf",
+      "pdf_sha256": "985f2cb7f3a3cb0131b4714a9b64675f6f4026321244fd64e9f777c4261425e6",
+      "original_issue_pointer": "/files/4/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "1941:0",
+      "pages": [
+        4
+      ],
+      "status": "resolved",
+      "original_continuation": "1935:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/18/changes/3",
+      "native_evidence": {
+        "retained_node": "1941:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 17,
+        "first_part_references": 7,
+        "continuation_references": 10,
+        "last_first_part_key": [
+          "MCID",
+          "104:0",
+          67
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "104:0",
+          78
+        ],
+        "adjacent_native_leaf_indices": [
+          6,
+          7
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1975:0",
+          "1976:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 6,
+      "file": "wang-callisto-chi2020.pdf",
+      "pdf_sha256": "c46262ed04415d851b24bccde1d2047339222571c75b74aea2e896395831e4a8",
+      "original_issue_pointer": "/files/5/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "949:0",
+      "pages": [
+        7
+      ],
+      "status": "resolved",
+      "original_continuation": "952:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/10/changes/4",
+      "native_evidence": {
+        "retained_node": "949:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 83,
+        "first_part_references": 43,
+        "continuation_references": 40,
+        "last_first_part_key": [
+          "MCID",
+          "311:0",
+          365
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "311:0",
+          425
+        ],
+        "adjacent_native_leaf_indices": [
+          42,
+          43
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "950:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 7,
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "pdf_sha256": "bd388581e41482e0741c3412b8e1c6eb4e109d817c044a1cf45b9757a452b7ed",
+      "original_issue_pointer": "/files/6/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "703:0",
+      "pages": [
+        3,
+        4
+      ],
+      "status": "resolved",
+      "original_continuation": "768:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/5/changes/0",
+      "native_evidence": {
+        "retained_node": "703:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 6,
+        "first_part_references": 3,
+        "continuation_references": 3,
+        "last_first_part_key": [
+          "MCID",
+          "52:0",
+          75
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "111:0",
+          7
+        ],
+        "adjacent_native_leaf_indices": [
+          2,
+          3
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "705:0",
+          "784:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 8,
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "pdf_sha256": "720c78ddcbb102753c45c1b8e85ee85d8c484734667a43e67dfb782e0f71ad02",
+      "original_issue_pointer": "/files/7/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "1237:0",
+      "pages": [
+        6
+      ],
+      "status": "resolved",
+      "original_continuation": "1240:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/19/changes/4",
+      "native_evidence": {
+        "retained_node": "1237:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 181,
+        "first_part_references": 106,
+        "continuation_references": 75,
+        "last_first_part_key": [
+          "MCID",
+          "600:0",
+          724
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "600:0",
+          11
+        ],
+        "adjacent_native_leaf_indices": [
+          105,
+          106
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1238:0",
+          "1239:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 9,
+      "file": "yang-spark-vlhcc2025.pdf",
+      "pdf_sha256": "7f9990643ee0fd17af9444791d1d470fe0dd186dbec3f17995134a800b5989bc",
+      "original_issue_pointer": "/files/8/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "654:0",
+      "pages": [
+        9,
+        10
+      ],
+      "status": "resolved",
+      "original_continuation": "658:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/16/changes/6",
+      "native_evidence": {
+        "retained_node": "654:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 86,
+        "first_part_references": 61,
+        "continuation_references": 25,
+        "last_first_part_key": [
+          "MCID",
+          "68:0",
+          553
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "76:0",
+          117
+        ],
+        "adjacent_native_leaf_indices": [
+          60,
+          61
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "656:0",
+          "657:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 10,
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "pdf_sha256": "50343ad631528e897587c563f1734ec02db0331f87028131a478bce73869b881",
+      "original_issue_pointer": "/files/9/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "389:0",
+      "pages": [
+        4,
+        5
+      ],
+      "status": "resolved",
+      "original_continuation": "397:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/8/changes/3",
+      "native_evidence": {
+        "retained_node": "389:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 85,
+        "first_part_references": 23,
+        "continuation_references": 62,
+        "last_first_part_key": [
+          "MCID",
+          "74:0",
+          352
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "78:0",
+          107
+        ],
+        "adjacent_native_leaf_indices": [
+          22,
+          23
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "395:0",
+          "396:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 11,
+      "file": "chen-codeon-chi2017.pdf",
+      "pdf_sha256": "9e128450c8a3d8f22ab779e5678dea39e2fbeae8da09d6abd5a09823f810e175",
+      "original_issue_pointer": "/files/10/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "729:0",
+      "pages": [
+        5,
+        6
+      ],
+      "status": "resolved",
+      "original_continuation": "736:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/1/changes/4",
+      "native_evidence": {
+        "retained_node": "729:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 49,
+        "first_part_references": 21,
+        "continuation_references": 28,
+        "last_first_part_key": [
+          "MCID",
+          "69:0",
+          870
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "73:0",
+          234
+        ],
+        "adjacent_native_leaf_indices": [
+          20,
+          21
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "734:0",
+          "735:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 12,
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "pdf_sha256": "c3aa023cf89f1ef6d0bb3705587400d08d2d34be0dc02175d6cfee55719550a7",
+      "original_issue_pointer": "/files/11/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "971:0",
+      "pages": [
+        4,
+        5
+      ],
+      "status": "resolved",
+      "original_continuation": "1076:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/21/changes/1",
+      "native_evidence": {
+        "retained_node": "971:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 192,
+        "first_part_references": 166,
+        "continuation_references": 26,
+        "last_first_part_key": [
+          "MCID",
+          "287:0",
+          964
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "288:0",
+          78
+        ],
+        "adjacent_native_leaf_indices": [
+          165,
+          166
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1072:0",
+          "1073:0",
+          "1074:0",
+          "1075:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 13,
+      "file": "zhang-multi-click-uist2025.pdf",
+      "pdf_sha256": "4bae50530f0352e6e484f7fe9bee64d02461a09f363bfb784f4f19ceb603388d",
+      "original_issue_pointer": "/files/12/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "1211:0",
+      "pages": [
+        3,
+        4
+      ],
+      "status": "resolved",
+      "original_continuation": "1176:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/20/changes/4",
+      "native_evidence": {
+        "retained_node": "1211:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 18,
+        "first_part_references": 14,
+        "continuation_references": 4,
+        "last_first_part_key": [
+          "MCID",
+          "107:0",
+          165
+        ],
+        "first_continuation_key": [
+          "OBJR",
+          "156:0"
+        ],
+        "adjacent_native_leaf_indices": [
+          13,
+          14
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1134:0",
+          "1135:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 14,
+      "file": "oney-interstate-uist2014.pdf",
+      "pdf_sha256": "e08984d3401f93bc7cc65593e50363d3558456bd25f81560d34f8df97aa1922a",
+      "original_issue_pointer": "/files/13/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "325:0",
+      "pages": [
+        5
+      ],
+      "status": "resolved",
+      "original_continuation": "328:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/9/changes/4",
+      "native_evidence": {
+        "retained_node": "325:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 77,
+        "first_part_references": 37,
+        "continuation_references": 40,
+        "last_first_part_key": [
+          "MCID",
+          "34:0",
+          874
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "34:0",
+          427
+        ],
+        "adjacent_native_leaf_indices": [
+          36,
+          37
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "326:0",
+          "327:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 15,
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pdf_sha256": "f51e2f0f9f341fc8d8f9935071908af18109bc93f9047c6bd8d23b6d93be63dc",
+      "original_issue_pointer": "/files/14/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "1383:0",
+      "pages": [
+        4,
+        5
+      ],
+      "status": "resolved",
+      "original_continuation": "1428:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/2/changes/5",
+      "native_evidence": {
+        "retained_node": "1383:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 16,
+        "first_part_references": 15,
+        "continuation_references": 1,
+        "last_first_part_key": [
+          "MCID",
+          "103:0",
+          191
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "104:0",
+          22
+        ],
+        "adjacent_native_leaf_indices": [
+          14,
+          15
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "1434:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 16,
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "original_issue_pointer": "/files/15/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "387:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "294:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/15/changes/7",
+      "native_evidence": {
+        "retained_node": "387:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 46,
+        "first_part_references": 41,
+        "continuation_references": 5,
+        "last_first_part_key": [
+          "OBJR",
+          "64:0"
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "3:0",
+          1
+        ],
+        "adjacent_native_leaf_indices": [
+          40,
+          41
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "388:0",
+          "389:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 17,
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "original_issue_pointer": "/files/15/issues/1",
+      "kind": "interleaved_table_cells",
+      "original_node": "573:0",
+      "pages": [
+        5
+      ],
+      "status": "resolved",
+      "repair_pointer": "detailed-changes.json.gz#/results/15/changes/5",
+      "native_evidence": {
+        "retained_table": "573:0",
+        "rows": 10,
+        "columns": 4,
+        "header_cells": 13,
+        "data_cells": 27,
+        "column_headers": [
+          "Category",
+          "N",
+          "Description",
+          "Example"
+        ],
+        "exact_verified_ActualText_cells": 40,
+        "correct_native_row_and_column_header_associations": 27
+      },
+      "reader_evidence": "at/results.json#/checks/0"
+    },
+    {
+      "example": 18,
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "original_issue_pointer": "/files/15/issues/2",
+      "kind": "interrupted_sentence_by_publication_notice",
+      "original_node": "513:0",
+      "pages": [
+        3
+      ],
+      "status": "resolved",
+      "original_continuation": "515:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/15/changes/8",
+      "native_evidence": {
+        "retained_node": "513:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 7,
+        "first_part_references": 3,
+        "continuation_references": 4,
+        "last_first_part_key": [
+          "OBJR",
+          "41:0"
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "27:0",
+          36
+        ],
+        "adjacent_native_leaf_indices": [
+          2,
+          3
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "514:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 19,
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pdf_sha256": "92a3f43a4f5872ec900aa2250773273ad6550acd1ac74347b21926ececaf32aa",
+      "original_issue_pointer": "/files/16/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "317:0",
+      "pages": [
+        2,
+        3
+      ],
+      "status": "resolved",
+      "original_continuation": "337:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/11/changes/2",
+      "native_evidence": {
+        "retained_node": "317:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 60,
+        "first_part_references": 36,
+        "continuation_references": 24,
+        "last_first_part_key": [
+          "MCID",
+          "3:0",
+          581
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "37:0",
+          485
+        ],
+        "adjacent_native_leaf_indices": [
+          35,
+          36
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "335:0",
+          "336:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 20,
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pdf_sha256": "92a3f43a4f5872ec900aa2250773273ad6550acd1ac74347b21926ececaf32aa",
+      "original_issue_pointer": "/files/16/issues/1",
+      "kind": "interrupted_sentence_by_publication_notice",
+      "original_node": "149:0",
+      "pages": [
+        1
+      ],
+      "status": "resolved",
+      "original_continuation": "152:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/11/changes/1",
+      "native_evidence": {
+        "retained_node": "149:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 165,
+        "first_part_references": 113,
+        "continuation_references": 52,
+        "last_first_part_key": [
+          "MCID",
+          "51:0",
+          640
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "51:0",
+          40
+        ],
+        "adjacent_native_leaf_indices": [
+          112,
+          113
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "150:0",
+          "151:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 21,
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "pdf_sha256": "f7ea16b1aaaf6f1d4c7da3de9068a3f8aa5ec47dfd8efa3b5024ea80d001cdc7",
+      "original_issue_pointer": "/files/17/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "403:0",
+      "pages": [
+        3
+      ],
+      "status": "resolved",
+      "original_continuation": "408:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/4/changes/1",
+      "native_evidence": {
+        "retained_node": "403:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 128,
+        "first_part_references": 31,
+        "continuation_references": 97,
+        "last_first_part_key": [
+          "MCID",
+          "3:0",
+          844
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "3:0",
+          331
+        ],
+        "adjacent_native_leaf_indices": [
+          30,
+          31
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "404:0",
+          "405:0",
+          "406:0",
+          "407:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 22,
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pdf_sha256": "e8a7e36c69a9e45fe27a0ba97beaa386809d514d25efbed83ba98718680a3291",
+      "original_issue_pointer": "/files/18/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "132:0",
+      "pages": [
+        2,
+        3
+      ],
+      "status": "resolved",
+      "original_continuation": "166:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/14/changes/2",
+      "native_evidence": {
+        "retained_node": "132:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 127,
+        "first_part_references": 78,
+        "continuation_references": 49,
+        "last_first_part_key": [
+          "MCID",
+          "2:0",
+          482
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "3:0",
+          0
+        ],
+        "adjacent_native_leaf_indices": [
+          77,
+          78
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "133:0",
+          "134:0",
+          "135:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 23,
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pdf_sha256": "e8a7e36c69a9e45fe27a0ba97beaa386809d514d25efbed83ba98718680a3291",
+      "original_issue_pointer": "/files/18/issues/1",
+      "kind": "interrupted_sentence_by_publication_notice",
+      "original_node": "162:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "118:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/14/changes/1",
+      "native_evidence": {
+        "retained_node": "162:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 226,
+        "first_part_references": 60,
+        "continuation_references": 166,
+        "last_first_part_key": [
+          "MCID",
+          "9:0",
+          189
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "2:0",
+          0
+        ],
+        "adjacent_native_leaf_indices": [
+          59,
+          60
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "163:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 24,
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pdf_sha256": "32567037858f95110c873353f068d865b87e090019cce2925682d28bac7a849f",
+      "original_issue_pointer": "/files/19/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "47:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "51:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/7/changes/0",
+      "native_evidence": {
+        "retained_node": "47:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 34,
+        "first_part_references": 20,
+        "continuation_references": 14,
+        "last_first_part_key": [
+          "MCID",
+          "3:0",
+          361
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "11:0",
+          62
+        ],
+        "adjacent_native_leaf_indices": [
+          19,
+          20
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "49:0",
+          "50:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 25,
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516",
+      "original_issue_pointer": "/files/20/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "236:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "262:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/3/changes/2",
+      "native_evidence": {
+        "retained_node": "236:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 120,
+        "first_part_references": 40,
+        "continuation_references": 80,
+        "last_first_part_key": [
+          "MCID",
+          "9:0",
+          944
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "2:0",
+          0
+        ],
+        "adjacent_native_leaf_indices": [
+          39,
+          40
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "237:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    },
+    {
+      "example": 26,
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516",
+      "original_issue_pointer": "/files/20/issues/1",
+      "kind": "misplaced_code_example",
+      "original_node": "392:0",
+      "pages": [
+        2
+      ],
+      "status": "resolved",
+      "repair_pointer": "detailed-changes.json.gz#/results/3/changes/1",
+      "native_evidence": {
+        "parent": "261:0",
+        "consecutive_native_siblings": [
+          "384:0",
+          "392:0",
+          "385:0"
+        ],
+        "roles": [
+          "P",
+          "Code",
+          "H2"
+        ],
+        "original_content_preserved": true
+      },
+      "reader_evidence": "at/results.json#/checks/1"
+    },
+    {
+      "example": 27,
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "pdf_sha256": "206a1c3d5feb53c09168d80a11df851ef339add86d223e879327ab8db4e17af9",
+      "original_issue_pointer": "/files/21/issues/0",
+      "kind": "interrupted_sentence",
+      "original_node": "301:0",
+      "pages": [
+        1,
+        2
+      ],
+      "status": "resolved",
+      "original_continuation": "309:0",
+      "repair_pointer": "detailed-changes.json.gz#/results/17/changes/2",
+      "native_evidence": {
+        "retained_node": "301:0",
+        "role": "/P",
+        "continuation_node_detached": true,
+        "original_content_references_in_contiguous_order": 67,
+        "first_part_references": 33,
+        "continuation_references": 34,
+        "last_first_part_key": [
+          "MCID",
+          "39:0",
+          572
+        ],
+        "first_continuation_key": [
+          "MCID",
+          "3:0",
+          0
+        ],
+        "adjacent_native_leaf_indices": [
+          32,
+          33
+        ],
+        "intervening_original_nodes_outside_paragraph": [
+          "266:0"
+        ],
+        "native_archive_content_order_equal": true
+      }
+    }
+  ]
+}

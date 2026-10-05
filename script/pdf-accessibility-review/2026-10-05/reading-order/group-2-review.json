@@ -1,0 +1,1553 @@
+{
+  "review_date": "2026-10-05",
+  "reviewer": "reading_order_2",
+  "scope": "Current native PDF reading order, verified against hash-bound source tag archives; no Markdown order relied on. Read-only.",
+  "coverage": {
+    "files": 22,
+    "pages": 256,
+    "native_blocks_machine_scanned": 5583,
+    "files_with_confirmed_issues": 22,
+    "issues_recorded": 27
+  },
+  "limitations": [
+    "This is a focused defect-finding pass, not a screen-reader user test.",
+    "Every file has at least one confirmed issue; recorded examples are not exhaustive.",
+    "Native content operation order was scanned for backward jumps; most flagged jumps were normal left-to-right column continuations.",
+    "Body text, figure/caption/table boundaries, notes, and publication furniture were checked at recorded locations. No claim that every prose line or table cell was manually verified."
+  ],
+  "files": [
+    {
+      "file": "wang-how-data-scientists-cscw2019.pdf",
+      "pdf_sha256": "2e5cfb67711765554e3a16fecc8e1d12360281478b81e707f2c1e7f3073486da",
+      "pages": 30,
+      "native_blocks": 602,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "1140:0",
+          "pages": [
+            10,
+            11
+          ],
+          "before_text": "activities: data cleaning(67.69%), applying machine learning algorithms (57.95%), data visualization (52.82%), exploratorydata analysis (49.74%), collecting raw data (44.10%), writing a report (38.97%), feature selection",
+          "after_node": "1189:0",
+          "after_text": "(38.46%), applying statistical models (31.28%), doing an oral presentation (31.28%), data sampling(28.20%), hypothesis testing (22.56%), and building data products (21.03%).",
+          "intervening_nodes": [
+            {
+              "node": "1145:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Purpose"
+            },
+            {
+              "node": "1146:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Tool"
+            },
+            {
+              "node": "1147:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Percent"
+            },
+            {
+              "node": "1149:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Programming"
+            },
+            {
+              "node": "1150:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Jupyter Notebooks"
+            },
+            {
+              "node": "1151:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "88.72%"
+            },
+            {
+              "node": "1153:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "IDEs (e.g., RStudio, PyCharm)"
+            },
+            {
+              "node": "1154:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "51.79%"
+            },
+            {
+              "node": "1156:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Code Editors (e.g., Atom, Sublime)"
+            },
+            {
+              "node": "1157:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "46.15%"
+            },
+            {
+              "node": "1159:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Google Colab"
+            },
+            {
+              "node": "1160:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "12.31%"
+            },
+            {
+              "node": "1162:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Communication"
+            },
+            {
+              "node": "1163:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "E-mail"
+            },
+            {
+              "node": "1164:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "79.49%"
+            },
+            {
+              "node": "1166:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Face-to-face Communication"
+            },
+            {
+              "node": "1167:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "68.72%"
+            },
+            {
+              "node": "1169:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Instant Messaging"
+            },
+            {
+              "node": "1170:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "55.90%"
+            },
+            {
+              "node": "1172:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Google Docs"
+            },
+            {
+              "node": "1173:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "40.51%"
+            },
+            {
+              "node": "1175:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Video Conferencing"
+            },
+            {
+              "node": "1176:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "38.46%"
+            },
+            {
+              "node": "1178:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Project Management"
+            },
+            {
+              "node": "1179:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Version Control (e.g., Github, Bitbucket)"
+            },
+            {
+              "node": "1181:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "49.74%"
+            },
+            {
+              "node": "1183:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Task Tracking (e.g., Trello, Jira)"
+            },
+            {
+              "node": "1184:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "21.03%"
+            },
+            {
+              "node": "1186:0",
+              "role": "TH",
+              "pages": [
+                11
+              ],
+              "text": "Shared Storage Services (e.g., Google Drive, Dropbox)"
+            },
+            {
+              "node": "1187:0",
+              "role": "TD",
+              "pages": [
+                11
+              ],
+              "text": "3.07%"
+            },
+            {
+              "node": "1188:0",
+              "role": "Caption",
+              "pages": [
+                11
+              ],
+              "text": "Table 1. The tools that respondents have used for programming, communication and project managementduring collaboration."
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 1140:0 immediately followed by 1189:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "wang-puzzleme-cscw2021.pdf",
+      "pdf_sha256": "5ce3dcd475786865461a38b193ef5bd6bd97a256c29aa1ab092b34c700b7a5de",
+      "pages": 24,
+      "native_blocks": 354,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "862:0",
+          "pages": [
+            5,
+            6
+          ],
+          "before_text": "roductory programming courses.We chose to focus on introductory programming courses because (1) they typically have largerenrollments, (2) students in introductory courses often need more support, and (3) large knowledge",
+          "after_node": "914:0",
+          "after_text": "gaps between students are more likely, making it difficult for instructors to accommodate allstudents’ needs.",
+          "intervening_nodes": [
+            {
+              "node": "881:0",
+              "role": "Caption",
+              "pages": [
+                6
+              ],
+              "text": "Table 1. Instructors’ course demographics in formative interviews."
+            },
+            {
+              "node": "884:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "PID"
+            },
+            {
+              "node": "885:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "Size"
+            },
+            {
+              "node": "886:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "Name"
+            },
+            {
+              "node": "887:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "Language(s)"
+            },
+            {
+              "node": "889:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "S1"
+            },
+            {
+              "node": "890:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "260"
+            },
+            {
+              "node": "891:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Intro. to Prog. I (G)"
+            },
+            {
+              "node": "892:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Python"
+            },
+            {
+              "node": "894:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "S2"
+            },
+            {
+              "node": "895:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "250"
+            },
+            {
+              "node": "896:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Intro. to Engr. (U)"
+            },
+            {
+              "node": "897:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "MATLAB"
+            },
+            {
+              "node": "899:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "S2,S3"
+            },
+            {
+              "node": "900:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "300"
+            },
+            {
+              "node": "901:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Intro. to Prog. II (U)"
+            },
+            {
+              "node": "902:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Python"
+            },
+            {
+              "node": "904:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "S4"
+            },
+            {
+              "node": "905:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "260"
+            },
+            {
+              "node": "906:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Intro. to UI Prog. (G)"
+            },
+            {
+              "node": "907:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "HTML,CSS,JS"
+            },
+            {
+              "node": "909:0",
+              "role": "TH",
+              "pages": [
+                6
+              ],
+              "text": "S5"
+            },
+            {
+              "node": "910:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "260"
+            },
+            {
+              "node": "911:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Intro. to Prog. I (U)"
+            },
+            {
+              "node": "913:0",
+              "role": "TD",
+              "pages": [
+                6
+              ],
+              "text": "Python"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 862:0 immediately followed by 914:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "oney-creating-guided-code-cscw2018.pdf",
+      "pdf_sha256": "a56d43b25b521a8421d400bfbed323b2dfa0ac9a2fd84350eba3cbb6dcc20157",
+      "pages": 20,
+      "native_blocks": 271,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "792:0",
+          "pages": [
+            5,
+            6
+          ],
+          "before_text": "ns in real-time, simultaneouslyedit the same code, and chat in real-time. Users can create a new discussion channel by visitinghttps://chat.codes/ and clicking “New Channel”. This generates a one-word channel name, which",
+          "after_node": "803:0",
+          "after_text": "other users can join by visiting https://chat.codes/[channel name]. Every channel name is a randomshort English word, to make it easy to verbally share a channel name.",
+          "intervening_nodes": [
+            {
+              "node": "801:0",
+              "role": "Figure",
+              "pages": [
+                6
+              ],
+              "text": "[Figure: Fig. 3. chat.codes enables programmers to point to regions of code in their messages through a Markdown- based "
+            },
+            {
+              "node": "802:0",
+              "role": "Caption",
+              "pages": [
+                6
+              ],
+              "text": "Fig. 3. chat.codes enables programmers to point to regions of code in their messages through a Markdown-based syntax. Us"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 792:0 immediately followed by 803:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "arab-navigating-complexity-tse2026.pdf",
+      "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+      "pages": 18,
+      "native_blocks": 602,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "154:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "ies [19], [23]. Moreover, designingtools that adapt to context is important because differentstrategies may require entirely different debugging tools. Toolsdesigned to aid specific strategies (e.g., slicers for backward",
+          "after_node": "157:0",
+          "after_text": "debugging) may become entirely inapplicable in scenariosrequiring a different debugging approach (e.g., delta debuggingfor defect simplification). Finally, a deeper understanding ofhow developers choose debugging strategies offers",
+          "intervening_nodes": [
+            {
+              "node": "155:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Authorized licensed use limited to: University of Michigan Library. Downloaded on September 14,2026 at 19:00:02 UTC from"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 154:0 immediately followed by 157:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "zhang-codestream-chi2026.pdf",
+      "pdf_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+      "pages": 16,
+      "native_blocks": 373,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "1941:0",
+          "pages": [
+            4
+          ],
+          "before_text": "Prior code history visualizations either emphasize high-level abstractions [65] or expose low-level edit streams [18], leaving a",
+          "after_node": "1935:0",
+          "after_text": "gap between fine-grained edits and readable code context. In pro­gramming education, instructors needs real-time access to code histories for timely feedback [18, 65], yet commit-level views miss keystroke-level attempts and mista",
+          "intervening_nodes": [
+            {
+              "node": "1975:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: Figure 2: This figure shows examples of vertical clutter. On the left, a long code sample is zoomed out, making"
+            },
+            {
+              "node": "1976:0",
+              "role": "Caption",
+              "pages": [
+                4
+              ],
+              "text": "Figure 2: Vertical clutter. When many code lines are mapped onto the timeline, zooming out makes text unreadable (left),"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 1941:0 immediately followed by 1935:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "wang-callisto-chi2020.pdf",
+      "pdf_sha256": "387a8b6bba4ebb551e488b4e3049a50865b8e5580fb79e7a4aebc67eac5f448a",
+      "pages": 13,
+      "native_blocks": 356,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "949:0",
+          "pages": [
+            7
+          ],
+          "before_text": "otocol. We invited each participant fora 90-minute lab session. Before the study, participants reportedtheir data science backgrounds on a pre-task questionnaire.Each participant was given a 15–20-minute training session",
+          "after_node": "952:0",
+          "after_text": "on the tool, with example tasks to complete. After the study,we conducted a 10–15-minute semi-structured interview witheach participant. We collected data from server-side usagelogs, screen recordings, and post-task interviews. We",
+          "intervening_nodes": [
+            {
+              "node": "950:0",
+              "role": "Caption",
+              "pages": [
+                7
+              ],
+              "text": "Figure 5. Chat Panel. When selecting one message, a snapshot button(see A) will navigate users to the snapshot of the no"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 949:0 immediately followed by 952:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "krosnick-think-aloud-computing-chi2021.pdf",
+      "pdf_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+      "pages": 13,
+      "native_blocks": 222,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "703:0",
+          "pages": [
+            3,
+            4
+          ],
+          "before_text": "Overall, unique and useful information about user processes, de­sign intent, and many other categories was captured from both",
+          "after_node": "768:0",
+          "after_text": "the concurrent and retrospective think-aloud conditions. Partici­pants reported that think-aloud requires effort but they believe the information they capture will be useful.",
+          "intervening_nodes": [
+            {
+              "node": "705:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: The chart has 6 mini bar charts. On left are 3 mini bar charts for the concurrent think-aloud condition, and on"
+            },
+            {
+              "node": "784:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: The chart has 6 mini bar charts. On the left are 3 mini bar charts for the concurrent think-aloud condition, an"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 703:0 immediately followed by 768:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "zhang-flowmatic-uist2020.pdf",
+      "pdf_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+      "pages": 12,
+      "native_blocks": 240,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "1237:0",
+          "pages": [
+            6
+          ],
+          "before_text": "an event and a signal—and produces oneoutput. The functionality of the operator is to always take a“snapshot” of the signal’s current value whenever the eventfires. After dynamically getting the position value of the gun",
+          "after_node": "1240:0",
+          "after_text": "tip, Bob uses the create() operator to dynamically instan-tiate a sphere (that represents a bullet) at that position. Thecreate() operator thus takes several inputs including a classthat comes from an abstract model indicating wha",
+          "intervening_nodes": [
+            {
+              "node": "1238:0",
+              "role": "Figure",
+              "pages": [
+                6
+              ],
+              "text": "[Figure: Figure 5. An immersive dataflow graph for the shooting example overlays a gun and asteroid scene. Colored conne"
+            },
+            {
+              "node": "1239:0",
+              "role": "Caption",
+              "pages": [
+                6
+              ],
+              "text": "Figure 5: Resulting scene of a simple interactive example."
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 1237:0 immediately followed by 1240:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "yang-spark-vlhcc2025.pdf",
+      "pdf_sha256": "76f72aa40b425550eafbc00daa824bac79b3a548d863f9e556bbdd1d23f4ac94",
+      "pages": 12,
+      "native_blocks": 285,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "654:0",
+          "pages": [
+            9,
+            10
+          ],
+          "before_text": " cluttered and difficult to interpret as thenumber of students grew. Second, some participants notedthat the system’s rich features and modular interface, whilepowerful, occasionally introduced additional visual and cog-",
+          "after_node": "658:0",
+          "after_text": "nitive load—particularly during real-time monitoring. Theseobservations suggest the need for systems that can bettersupport large-scale classrooms while maintaining usability andminimizing cognitive effort.",
+          "intervening_nodes": [
+            {
+              "node": "656:0",
+              "role": "Figure",
+              "pages": [
+                10
+              ],
+              "text": "[Figure: Figure 8. Three progress snapshots at timestamps 2, 10, and 18 in an image-carousel exercise. Shaded regions sp"
+            },
+            {
+              "node": "657:0",
+              "role": "Caption",
+              "pages": [
+                10
+              ],
+              "text": "Fig. 8.How the shaded areas in the visualization diagram change over timein the Image Carousel example."
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 654:0 immediately followed by 658:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "pdf_sha256": "3782daf68a2bc19df120fbdf893581f09aa5dd725517a76f90c05f7d70629dc0",
+      "pages": 12,
+      "native_blocks": 340,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "389:0",
+          "pages": [
+            4,
+            5
+          ],
+          "before_text": "e-finger swipe from the left edge of the touchscreen pulls out a sidebar and a five-finger swipe from the left edge of the touchscreen changes the currently exe-cuted application. Here, the five-finger swipe has a higher",
+          "after_node": "397:0",
+          "after_text": "priority than the one-finger swipe and should thus prevent the one-finger one from triggering. These conflicts can oc-cur both in standard touch* frameworks and in touch-group-based gestures. For example, suppose a developer de-fi",
+          "intervening_nodes": [
+            {
+              "node": "395:0",
+              "role": "Figure",
+              "pages": [
+                5
+              ],
+              "text": "[Figure: Figure 2: A state machine showing the various states of a touch event with priority p. An event can be in three"
+            },
+            {
+              "node": "396:0",
+              "role": "Caption",
+              "pages": [
+                5
+              ],
+              "text": "Figure 2: A state machine showing the various states of a touch event with priority p. An event can be in three states: "
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 389:0 immediately followed by 397:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "chen-codeon-chi2017.pdf",
+      "pdf_sha256": "87f3b95a64e8967938baeda7608cff0f1903f92715f828681253f58f943c2b02",
+      "pages": 12,
+      "native_blocks": 284,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "729:0",
+          "pages": [
+            5,
+            6
+          ],
+          "before_text": "Codeon implements the response panel on the right side of theAtom.io editor. As there can be multiple requests and multi-",
+          "after_node": "736:0",
+          "after_text": "ple formats per response, a scalable design is essential. Theview consists of two hierarchical levels: the requests viewand the response detail view (Fig. 2).",
+          "intervening_nodes": [
+            {
+              "node": "734:0",
+              "role": "Figure",
+              "pages": [
+                6
+              ],
+              "text": "[Figure: Figure 3: The helper side of Codeon is an interactive web- page that allows helpers to replay the request(0) an"
+            },
+            {
+              "node": "735:0",
+              "role": "Caption",
+              "pages": [
+                6
+              ],
+              "text": "Figure 3: The helper side of Codeon is an interactive web-page that allows helpers to replay the request(0) and runthe c"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 729:0 immediately followed by 736:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+      "pdf_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+      "pages": 10,
+      "native_blocks": 415,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "971:0",
+          "pages": [
+            4,
+            5
+          ],
+          "before_text": "nce issues centeredaround AI’s limitations and reliability. P12 directly stated \"I don’thave much trust in AI tools like ChatGPT,\" while P1 worried about\"AI’s data sources may be inaccurate.\" P20 noted that \"the tool may",
+          "after_node": "1076:0",
+          "after_text": "not work very well if I don’t provide my personal information in de-tails,\" highlighting concerns about AI’s ability to function reliablywithout complete information.",
+          "intervening_nodes": [
+            {
+              "node": "1072:0",
+              "role": "Figure",
+              "pages": [
+                5
+              ],
+              "text": "[Figure: Figure 2. Distribution of 150 user-defined tasks. Subjectivity: 56.2 percent partially subjective, 26.6 percent"
+            },
+            {
+              "node": "1073:0",
+              "role": "Caption",
+              "pages": [
+                5
+              ],
+              "text": "Figure 2: Distribution of 150 user-defined tasks across categories such as subjectivity, repetition pattern, and sensiti"
+            },
+            {
+              "node": "1074:0",
+              "role": "Figure",
+              "pages": [
+                5
+              ],
+              "text": "[Figure: Figure 3. Stacked bars compare six predefined tasks and user-defined tasks. Automation runs from 1, full automa"
+            },
+            {
+              "node": "1075:0",
+              "role": "Caption",
+              "pages": [
+                5
+              ],
+              "text": "Figure 3: Distribution of preferred automation levels and reported concerns (error, privacy, efficiency, usefulness) for"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 971:0 immediately followed by 1076:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "zhang-multi-click-uist2025.pdf",
+      "pdf_sha256": "3bb8524367198b6b862d91ff8375d7eb32b1be4126841173d3c6a67daec01002",
+      "pages": 10,
+      "native_blocks": 247,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "1211:0",
+          "pages": [
+            3,
+            4
+          ],
+          "before_text": "In‘multi-targetmode’,Multi-Clickhighlightstargetelementswithatranslucentoverlayonthepage",
+          "after_node": "1176:0",
+          "after_text": "(Figure 2). To ensure that users can see every target element, ele­ments that are not visible (i.e., elements in other tabs) are previewed in preview overlay ‘cards’. The preview system features several key components:",
+          "intervening_nodes": [
+            {
+              "node": "1134:0",
+              "role": "Figure",
+              "pages": [
+                4
+              ],
+              "text": "[Figure: Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll "
+            },
+            {
+              "node": "1135:0",
+              "role": "Caption",
+              "pages": [
+                4
+              ],
+              "text": "Figure 3: Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 1211:0 immediately followed by 1176:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "pdf_sha256": "7acf76c528b3775ea3dcd0e44a2f4e894d2042d6ddea8a4398baf80697f4d87b",
+      "pages": 10,
+      "native_blocks": 205,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "325:0",
+          "pages": [
+            5
+          ],
+          "before_text": "operty’sconstraint.Further, the values of the of references in the constraint expression are computed based on the context of the instance, not the prototype.By inheriting the constraint’s definitionand redeterminingref-",
+          "after_node": "328:0",
+          "after_text": "erents, InterState allows prototypes to define behaviors thatreference the state and property values of the objects that inherit from them. This is illustrated inFigure 3, where my_squareinherits the definition of height, rather t",
+          "intervening_nodes": [
+            {
+              "node": "326:0",
+              "role": "Figure",
+              "pages": [
+                5
+              ],
+              "text": "[Figure: Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instanc"
+            },
+            {
+              "node": "327:0",
+              "role": "Caption",
+              "pages": [
+                5
+              ],
+              "text": "Figure3:InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes aresimplyspecifiedi"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 325:0 immediately followed by 328:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "krosnick-parammacros-vlhcc2022.pdf",
+      "pdf_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+      "pages": 10,
+      "native_blocks": 136,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "1383:0",
+          "pages": [
+            4,
+            5
+          ],
+          "before_text": "or <stat2> (e.g., Home Runs and Strikeouts), she would also like to ask about the player’s “position” (i.e., their role on the team, such as pitcher, second base, outfield). However, when she runs her macro, she realizes",
+          "after_node": "1428:0",
+          "after_text": "it only returns the correct answer for the original statistic values and not for <stat2 = position> (the word “position” does not appear as text on the page, so our algorithm does not know where to find the answer; explained more ",
+          "intervening_nodes": [
+            {
+              "node": "1434:0",
+              "role": "Figure",
+              "pages": [
+                5
+              ],
+              "text": "[Figure: A program description we would present to a user who has created demonstrations for the question \"For the playe"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 1383:0 immediately followed by 1428:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+      "pages": 7,
+      "native_blocks": 187,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "387:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "Datascienceishighlyinterdisciplinary.Itofteninvolvesvariousroles[32],spansacrossdifferentstagesofthedatasciencelifecy-cle[30],andhasawidespectrumofusagescenarios[20].Thus,",
+          "after_node": "294:0",
+          "after_text": "different data scientists’ documentation best practices may be dif­ferent depending on the user persona and the user scenario. For example, a notebook written for one’s future self may have a differ­ent definition of documentation",
+          "intervening_nodes": [
+            {
+              "node": "388:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Permissiontomakedigitalorhardcopiesofallorpartofthisworkforpersonalorclassroomuseisgrantedwithoutfeeprovidedthatcopiesar"
+            },
+            {
+              "node": "389:0",
+              "role": "Figure",
+              "pages": [
+                1
+              ],
+              "text": "[Figure: CrossMark: Check for updates.]"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 387:0 immediately followed by 294:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        },
+        {
+          "kind": "interleaved_table_cells",
+          "node": "573:0",
+          "pages": [
+            5
+          ],
+          "before_text": "Native TH596:0: Category N Description Example",
+          "after_text": "TH597:0: Process 2115 The Markdown cell describes what the following Transforming Feature X to a; TH598:0: (58.65%) code cell is doing. This always appears before the new binary variable; TH599:0: relevant code cell.",
+          "impact": "The four visible table columns are grouped into physical lines instead of logical cells. Description and example text interleave, and every line is incorrectly a column header. Table1 is not meaningful as currently read or navigated.",
+          "confidence": "high",
+          "proposed_order": "Reconstruct four columns Category, N, Description, Example and ten logical rows (header plus nine categories), grouping multiline cell content before moving to the next cell. Use TH only for actual headers and appropriate row/column scopes.",
+          "visual_evidence": "/tmp/spot-reading-order/wang-what-makes-well-documented-chiea2021-p5.png"
+        },
+        {
+          "kind": "interrupted_sentence_by_publication_notice",
+          "node": "513:0",
+          "pages": [
+            3
+          ],
+          "before_text": "a) House Price Prediction [9] and b) Titanic Survival Prediction",
+          "after_node": "515:0",
+          "after_text": "[10]. We chose these two competitions because they are the most popular competitions (5,280 notebooks submitted for House Price and 6,300 notebooks submitted for Titanic Survival), and because many da",
+          "intervening_nodes": [
+            "514:0"
+          ],
+          "impact": "Running conference header splits competition name Titanic Survival Prediction from its citation and following sentence.",
+          "confidence": "high",
+          "proposed_order": "Keep 513:0 followed by 515:0; move the publication notice to front matter or artifact the repeated running header."
+        }
+      ]
+    },
+    {
+      "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+      "pdf_sha256": "29628a27ce2f63add0df7c87581bdc3f3bb1244040350b11ee28f457505eb172",
+      "pages": 6,
+      "native_blocks": 108,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "317:0",
+          "pages": [
+            2,
+            3
+          ],
+          "before_text": "tion: Conflicts may ariseduring “competitive authoring” [19], where data scientists work onthe same problems simultaneously. To avoid conflicts on interde-pendent code, collaborators must either be in close communication",
+          "after_node": "337:0",
+          "after_text": "or edit their own copies of the shared code and coordinate an even-tual merge. This can be prohibitively difficult, particularly in largeteams.",
+          "intervening_nodes": [
+            {
+              "node": "335:0",
+              "role": "Figure",
+              "pages": [
+                3
+              ],
+              "text": "[Figure: Figure 2: Overview of the three conflict-free mechanisms in PADLOCK. (A) Cell-level access control allows colla"
+            },
+            {
+              "node": "336:0",
+              "role": "Caption",
+              "pages": [
+                3
+              ],
+              "text": "Figure 2: Overview of the three conflict-free mechanisms inPADLOCK. (A) Cell-level access control allows collaboratorsto"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 317:0 immediately followed by 337:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        },
+        {
+          "kind": "interrupted_sentence_by_publication_notice",
+          "node": "149:0",
+          "pages": [
+            1
+          ],
+          "before_text": "ch areoften used by data scientists, introduce new challenges for collab-oration. Although some version control tools (e.g., Git) work forcomputational notebooks, they mostly support the collaboration",
+          "after_node": "152:0",
+          "after_text": "strategies for dividing work (e.g., working in independent files). Fur-ther, data scientists sometimes collaborate synchronously, with toolslike JupyterLab [4], Google Colab [2], and Deepnote [1] that",
+          "intervening_nodes": [
+            "150:0",
+            "151:0"
+          ],
+          "impact": "Copyright/DOI split introduction sentence between collaboration and strategies.",
+          "confidence": "high",
+          "proposed_order": "Keep 149:0 followed by 152:0; move the publication notice to front matter or artifact the repeated running header."
+        }
+      ]
+    },
+    {
+      "file": "krosnick-providing-live-feedback-live2020.pdf",
+      "pdf_sha256": "217d7b531ab88f72dc2114a88745c088df77e7c1f08f91be3da3db1768f21cd5",
+      "pages": 6,
+      "native_blocks": 102,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "403:0",
+          "pages": [
+            3
+          ],
+          "before_text": "To test out her script, Sasha enters test date and time valuesinto the form and then clicks ‘Run Macro’. Unfortunatelywhen running, an error occurs and Sasha is shown the",
+          "after_node": "408:0",
+          "after_text": "errormessage‘waiting for selector “#date-picker-23-09-2020 > .text-muted” failed’.She realizes that the date elements in the DOM actually donot include a leading zero for single-digit days and months(e.g., ‘9’ and not ‘09’ for Sep",
+          "intervening_nodes": [
+            {
+              "node": "404:0",
+              "role": "Figure",
+              "pages": [
+                3
+              ],
+              "text": "[Figure: Figure 2. The user can create input fields for their macro parameters, e.g., a date (A). VizMac then automatica"
+            },
+            {
+              "node": "405:0",
+              "role": "Caption",
+              "pages": [
+                3
+              ],
+              "text": "Figure 2. The user can create input fields for their macro parameters,e.g., a date (A). VizMac then automatically adds c"
+            },
+            {
+              "node": "406:0",
+              "role": "Figure",
+              "pages": [
+                3
+              ],
+              "text": "[Figure: Figure 3. VizMac displays a red timeout error above the macro editor: waiting for selector #datepicker-21-09-20"
+            },
+            {
+              "node": "407:0",
+              "role": "Caption",
+              "pages": [
+                3
+              ],
+              "text": "Figure 3. An error is shown when a particular CSS selector does notexist on the page."
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 403:0 immediately followed by 408:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+      "pdf_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+      "pages": 4,
+      "native_blocks": 41,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "132:0",
+          "pages": [
+            2,
+            3
+          ],
+          "before_text": "s revealed several challenges.For example, two users editing the same notebook may amplify the tension between explorationand keeping a clear explanation of the notebook, which has already been identified as a problem in",
+          "after_node": "166:0",
+          "after_text": "existing single-authored notebooks [10]. Thus, we believe that real-time collaborative editors should(a) support task management such as planning, assignment, and tracking, (b) improve accountabilityof code cells and awareness of ",
+          "intervening_nodes": [
+            {
+              "node": "133:0",
+              "role": "Note",
+              "pages": [
+                2
+              ],
+              "text": "1The preliminary result showed that learnersexplored 3.5 times more features in a feature en-gineering task when working"
+            },
+            {
+              "node": "134:0",
+              "role": "Note",
+              "pages": [
+                2
+              ],
+              "text": "2https://colab.research.google.com"
+            },
+            {
+              "node": "135:0",
+              "role": "Note",
+              "pages": [
+                2
+              ],
+              "text": "3This study was undertaken on a custom ver-sion of the Juptyer system."
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 132:0 immediately followed by 166:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        },
+        {
+          "kind": "interrupted_sentence_by_publication_notice",
+          "node": "162:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "tstjob of the 21 century” [2]. In addition to the growth of data science degree programs in colleges,there has been a proliferation of data science Massive Open Online Courses (MOOCs). This has scaled",
+          "after_node": "118:0",
+          "after_text": "the access to quality education for learners who are seeking to gain data science skills. On Coursera,there are currently more than 100 data science courses, including a series of specialized training",
+          "intervening_nodes": [
+            "163:0"
+          ],
+          "impact": "Venue/date footer splits introduction sentence between This has scaled and the access to quality education.",
+          "confidence": "high",
+          "proposed_order": "Keep 162:0 followed by 118:0; move the publication notice to front matter or artifact the repeated running header."
+        }
+      ]
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pdf_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+      "pages": 4,
+      "native_blocks": 60,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "47:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "Web page code is almost never designed for readability; itis frequently poorly formatted, or sometimes intentionally rendered unreadable through",
+          "after_node": "51:0",
+          "after_text": "codeobfuscationmethods ranging from eliminating whitespaces to renaming variables or even inserting nonfunctional code fragments.",
+          "intervening_nodes": [
+            {
+              "node": "49:0",
+              "role": "Figure",
+              "pages": [
+                2
+              ],
+              "text": "[Figure: Figure 1 - FireCrystal replaying an interaction with an article on the New York Times website (http://www.nytim"
+            },
+            {
+              "node": "50:0",
+              "role": "Caption",
+              "pages": [
+                2
+              ],
+              "text": "Figure 1-FireCrystal replaying an interaction with an articleon the New York Times website (http://www.nytimes.com/). In"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 47:0 immediately followed by 51:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+      "pages": 4,
+      "native_blocks": 99,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "236:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "sing language models for inter-preting and interacting with website UIs. SemanticOn [21] lever-ages natural language input and language models to enable usersto specify semantic conditions to refine web scraping programs",
+          "after_node": "262:0",
+          "after_text": "generated by WebRobot [13]. Recent prototypes [6, 9, 10] haveleveraged GPT-3 [5] and ChatGPT for a related task – web automa-tion. The user provides a natural language description of their taskand these prototypes then programmati",
+          "intervening_nodes": [
+            {
+              "node": "237:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Permission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fe"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 236:0 immediately followed by 262:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        },
+        {
+          "kind": "misplaced_code_example",
+          "node": "392:0",
+          "pages": [
+            2
+          ],
+          "before_node": "384:0",
+          "before_text": "...it generated the following correct Python code and CSS classes for first and last names:",
+          "current_order": [
+            "384:0",
+            "385:0",
+            "386:0",
+            "387:0",
+            "388:0",
+            "389:0",
+            "390:0",
+            "391:0",
+            "392:0"
+          ],
+          "after_text": "first_name = player_row.select_one(...); last_name = player_row.select_one(...)",
+          "impact": "The entire right-column Potential Pitfalls discussion is read after the setup sentence and before its code example at the bottom of the page.",
+          "confidence": "high",
+          "proposed_order": "Move native code-example node392:0 immediately after384:0 and before Section5 heading385:0. Preserve visible content.",
+          "visual_evidence": "/tmp/spot-reading-order/krosnick-promises-pitfalls-llms-chi2023compui-p2.png"
+        }
+      ]
+    },
+    {
+      "file": "yang-vizcode-lsdemos2024.pdf",
+      "pdf_sha256": "3672105391da493920c8132646fcf179cfe7ea6163ba54c9e7d0493ba7b8415c",
+      "pages": 3,
+      "native_blocks": 54,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "all_blocks_machine_scanned": true,
+        "all_page_boundaries_scanned": true,
+        "within_block_op_jumps_scanned": true,
+        "human_review": "Read each recorded before/interruption/continuation sequence in the unmodified native structure order. Broad flow and heading/list/reference summaries were sampled; this is sufficient to establish per-file defects, not a full clean certification."
+      },
+      "issues": [
+        {
+          "kind": "interrupted_sentence",
+          "node": "301:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "VizCode consists of three components: (1) a VSCode extension thatstudents can install locally, (2) a data server that the VSCode exten-sion communicates with (this can either be an external server or",
+          "after_node": "309:0",
+          "after_text": "run locally on an instructor’s computer, and (3) a dashboard thatallows instructors to monitor students’ code in real-time. We planto release VizCode as a free and open-source tool available to anyinstructor.",
+          "intervening_nodes": [
+            {
+              "node": "266:0",
+              "role": "Note",
+              "pages": [
+                1
+              ],
+              "text": "Permission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fe"
+            }
+          ],
+          "impact": "Native sequential reading interrupts one narrative sentence with a figure, table, or note before its continuation. This is stronger evidence than merely placing a float between paragraphs.",
+          "confidence": "high",
+          "proposed_order": "Keep narrative 301:0 immediately followed by 309:0; place intervening float/note material at an appropriate completed-paragraph boundary, preserving its figure/caption or table hierarchy."
+        }
+      ]
+    }
+  ]
+}

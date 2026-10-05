@@ -2,9 +2,9 @@
   "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
   "title": "Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments",
   "publication_id": "accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022",
-  "pdf_sha256": "8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b",
+  "pdf_sha256": "b741a025116ccdf25d639eb23e3f56538fc0f3608d43e030013cc2b262416e9f",
   "markdown": "publications/pandey-accessibility-ui-frameworks-vlhcc2022.md",
-  "markdown_sha256": "038f374d9139dfe890dba9f52920dbeaf649cb46b03b5270a6ad56a0f709ed2a",
+  "markdown_sha256": "49da154a91f7c5c8cb8d23abbb71670220ab45bcfc375b05aea67e34af5b12e4",
   "pages": 10,
   "blocks": [
     {
@@ -40,12 +40,20 @@
       "characters": 1442
     },
     {
-      "node": "842:0",
-      "role": "P",
+      "node": "841:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 38
+      "characters": 47
+    },
+    {
+      "node": "842:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 40
     },
     {
       "node": "80:0",
@@ -64,7 +72,7 @@
       "characters": 1106
     },
     {
-      "node": "joined-83:0",
+      "node": "83:0",
       "role": "P",
       "pages": [
         1
@@ -127,14 +135,6 @@
         2
       ],
       "characters": 855
-    },
-    {
-      "node": "841:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 45
     },
     {
       "node": "102:0",
@@ -220,9 +220,10 @@
       "node": "115:0",
       "role": "P",
       "pages": [
-        2
+        2,
+        3
       ],
-      "characters": 606
+      "characters": 769
     },
     {
       "node": "116:0",
@@ -239,14 +240,6 @@
         3
       ],
       "characters": 26846
-    },
-    {
-      "node": "403:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 162
     },
     {
       "node": "404:0",
@@ -1089,11 +1082,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 139,
-    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_removed": 134,
+    "paragraph_fragments_joined": 1,
     "line_wrap_hyphens_retained": 20
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-accessibility-ui-frameworks-vlhcc2022.json.gz",
-  "source_tags_sha256": "d26d98dfd1feb2e2b2ec97260c948f643be6a77d2b05a6d54fc45b088971b1ba"
+  "source_tags_sha256": "6920eaef77b0a45f2223e8ff2397717ebeaa366cfdecc672770574154b8ec059"
 }

@@ -1,0 +1,397 @@
+{
+  "file": "zhang-cflow-ls2024.pdf",
+  "pdf_sha256": "ceb91610961aa1cfb075cf582f3fc2cffb50cf475c2eca198f9b87bb19f8b05a",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+  "structure_elements": 340,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 91,
+    "Link": 128,
+    "Figure": 4,
+    "Caption": 4,
+    "H2": 12,
+    "Note": 5,
+    "L": 5,
+    "LI": 14,
+    "Lbl": 14,
+    "LBody": 14,
+    "H3": 15,
+    "H4": 19,
+    "Formula": 1
+  },
+  "structure_content_references": 11199,
+  "parent_tree_entries": 140,
+  "form_xobjects_visited": 4,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 638,
+      "vector_operations_tagged": 482,
+      "image_operations_tagged": 42,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1042,
+      "link_annotations": 7
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 1042,
+      "link_annotations": 59
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1123,
+      "link_annotations": 19
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 21,
+      "vector_operations_tagged": 112,
+      "image_operations_tagged": 56,
+      "text_operations_tagged": 896,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 18,
+      "vector_operations_tagged": 413,
+      "text_operations_tagged": 926,
+      "image_operations_tagged": 18,
+      "vector_operations_artifact": 1,
+      "link_annotations": 9
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 1098,
+      "link_annotations": 9
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1077,
+      "vector_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 1036
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 18,
+      "vector_operations_tagged": 33,
+      "image_operations_tagged": 12,
+      "text_operations_tagged": 824,
+      "link_annotations": 8
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 21,
+      "text_operations_tagged": 1472
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 153
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "477:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "484:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "488:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "491:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "493:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "495:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "521:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "523:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "534:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "699:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "703:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "705:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "706:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "751:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "753:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "757:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "759:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "784:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "801:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "806:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "822:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "825:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "828:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "845:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "847:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "848:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "850:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "854:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "859:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "872:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "874:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "880:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "882:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "614:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "616:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "618:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "620:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "629:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "635:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "640:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "642:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "645:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "652:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "657:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "659:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "661:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "663:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "482:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: A system overview of CFlow. (a) Upon collecting student code submissions, (b) CFlow extracts and semantically labels\nthe code statements. (c left) These labels are then clustered and represented in a Semantic Aggregation View (SAV). (c right)\nStatement correctness is color coded and visualized using a stacked bar histogram, forming the Semantic Histogram View\n(SHV). (d) Users can filter the views by clicking on labels in the SAV or bars in the SHV. The Code Detailed View (CDV) enables\nfor an in-depth inspection of specific code branches.",
+      "actual_text": ""
+    },
+    {
+      "element": "782:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h). The correctness scale runs from green for all correct to red for none correct, so selecting a flow group also reveals the distribution of correctness within that group.",
+      "actual_text": ""
+    },
+    {
+      "element": "818:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "CFlow algorithm pipeline. Code lines are normalized and represented with CodeBERT vectors to identify semantic groups and tags. Common tag order in correct solutions forms a canonical progression; lines are aligned to it using longest common subsequences. An LLM labels lines as correct or as semantic, syntax, or runtime errors. Finer CodeBERT clustering within semantic groups combines with correctness labels to populate the aggregated flow and histogram views.",
+      "actual_text": ""
+    },
+    {
+      "element": "877:0",
+      "role": "Formula",
+      "page": 8,
+      "alt": "Equation 1. Accuracy equals the number of matched answers divided by the greater of the number of correct answers and the number of selected answers.",
+      "actual_text": ""
+    },
+    {
+      "element": "648:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "CFlow example without LLM line-correctness classification. Selecting the prominent red histogram group reveals a condition that tests whether e occurs anywhere in a word, using e in word, instead of whether its last character is e, using word[-1] == e. Choosing LogicalError opens the full solution and highlights the faulty condition in the code that appends d or ed to words.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

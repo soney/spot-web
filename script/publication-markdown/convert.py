@@ -87,6 +87,18 @@ class Converter:
         layout_path = HERE / 'reviewed-layout.json'
         self.layout_repairs = [r for r in json.loads(layout_path.read_text()) if r['pdf'] == data['file']] if layout_path.exists() else []
         assert all(r['source_sha256'] == data['pdf_sha256'] for r in self.layout_repairs)
+        crops_path = HERE / 'reviewed-crops.json'
+        self.crop_repairs = [r for r in json.loads(crops_path.read_text()) if r['pdf'] == data['file']] if crops_path.exists() else []
+        assert all(r['source_sha256'] == data['pdf_sha256'] for r in self.crop_repairs)
+        paths_file = HERE / 'image-paths.json'
+        self.image_names = [r for r in json.loads(paths_file.read_text())['names']
+                            if r['pdf'] == data['file']] if paths_file.exists() else []
+        assert all(r['source_sha256'] == data['pdf_sha256'] for r in self.image_names)
+        self.used_image_names = set()
+        code_reviews_path = HERE / 'reviewed-code-layout.json'
+        self.code_reviews = [r for r in json.loads(code_reviews_path.read_text())
+                             if r['pdf'] == data['file']] if code_reviews_path.exists() else []
+        assert all(r['source_sha256'] == data['pdf_sha256'] for r in self.code_reviews)
 
     def role(self, node):
         role = node.get('role', '')
@@ -174,6 +186,10 @@ class Converter:
             return [{'raw': value, 'first': first, 'last': last}]
         if role == 'Figure':
             value = node.get('alt') or node.get('text', '')
+            # Sentence-length icon descriptions are asides within prose;
+            # short letter/number callouts retain the source's punctuation.
+            if ':' in value and value.rstrip().endswith(('.', '!', '?')):
+                value = '(' + value + ')'
             return [{'raw': value, 'first': first, 'last': last}]
         target = self.url(node) if role in {'Link', 'Reference'} and not suppress_links else None
         if target:
@@ -429,10 +445,26 @@ class Converter:
                 continue
             page = self.pdf[int(page_key) - 1]
             rect = (pymupdf.Rect(box) + (-2, -2, 2, 2)) & page.rect
+            repair = next((r for r in self.crop_repairs if r['node'] == node['id']
+                           and r['page'] == int(page_key)), None)
+            if repair:
+                rect = pymupdf.Rect(repair['bbox']) & page.rect
             if rect.is_empty or rect.width < 2 or rect.height < 2:
                 continue
             self.asset_counter[category] += 1
             name = f'{category}-{self.asset_counter[category]:03d}-p{int(page_key):03d}.png'
+            preserved = next((r for r in self.image_names if r['node'] == node['id']
+                              and r['page'] == int(page_key)), None)
+            if preserved:
+                name = preserved['name']
+                assert re.fullmatch(rf'{category}-\d+-p{int(page_key):03d}\.png', name)
+            else:
+                reserved = {r['name'] for r in self.image_names}
+                while name in reserved or name in self.used_image_names:
+                    self.asset_counter[category] += 1
+                    name = f'{category}-{self.asset_counter[category]:03d}-p{int(page_key):03d}.png'
+            assert name not in self.used_image_names, (self.stem, 'duplicate image name', name)
+            self.used_image_names.add(name)
             path = self.output / 'figures' / self.stem / name
             path.parent.mkdir(parents=True, exist_ok=True)
             pix = page.get_pixmap(matrix=pymupdf.Matrix(2, 2), clip=rect, alpha=False)
@@ -491,13 +523,21 @@ class Converter:
         return html_children(node)
 
     def paragraph(self, node):
-        # A nested Code/Formula/Table is a block in its own right. Preserve the
-        # surrounding inline content as separate runs instead of flattening it.
+        # Keep small callout symbols in their sentence. Other nested figures,
+        # code and tables retain their block presentation.
         special = {'Code', 'Table', 'Figure'}
-        if any(isinstance(c, dict) and self.role(c) in special for c in children(node)):
+        if any(isinstance(c, dict) and self.role(c) in special
+               and not self.inline_callout(c) for c in children(node)):
             return self.render_children(node)
         self.consume(node)
         return self.inline(node)
+
+    def inline_callout(self, node):
+        if self.role(node) != 'Figure' or len(node.get('alt', '')) > 80:
+            return False
+        boxes = list(node.get('bbox_by_page', {}).values())
+        return bool(boxes) and all(0 < b[2] - b[0] <= 30 and
+                                   0 < b[3] - b[1] <= 30 for b in boxes)
 
     def render_children(self, node):
         output, pending = [], []
@@ -515,7 +555,8 @@ class Converter:
             if not isinstance(child, dict):
                 continue
             role = self.role(child)
-            if child.get('kind') == 'element' and (role in BLOCKS or role in CONTAINERS):
+            if (child.get('kind') == 'element' and (role in BLOCKS or role in CONTAINERS)
+                    and not self.inline_callout(child)):
                 flush()
                 output.append(self.render(child))
             else:
@@ -550,7 +591,8 @@ class Converter:
             self.normalization['reviewed_research_questions_separated'] += 1
             return (anchors + '\n\n' if anchors else '') + '- ' + first + '\n\n- (2) RQ2.' + second
         lines = text.splitlines()
-        return (anchors + '\n\n' if anchors else '') + '- ' + (lines[0] if lines else '') + ''.join('\n  ' + line for line in lines[1:])
+        return (anchors + '\n\n' if anchors else '') + '- ' + (lines[0] if lines else '') + ''.join(
+            '\n' + ('  ' + line if line else '') for line in lines[1:])
 
     def render(self, node):
         if not isinstance(node, dict):
@@ -602,7 +644,12 @@ class Converter:
                 result += '\n\n' + md_escape(override.get('caption', ''))
                 self.warnings.append({'kind': 'reviewed_pseudocode_transcription', 'node': node['id'], 'note': override['review']})
             elif layout['method'] == 'native_text_preserved':
-                self.warnings.append({'kind': 'code_whitespace_needs_review', 'node': node['id'], 'pages': node.get('pages', []), 'reason': layout['reason']})
+                reviewed = next((r for r in self.code_reviews if r['node'] == node['id']), None)
+                if reviewed:
+                    assert text == reviewed['text'], (self.stem, node['id'], 'reviewed code changed')
+                    self.code_layout[-1]['source_review'] = reviewed['review']
+                else:
+                    self.warnings.append({'kind': 'code_whitespace_needs_review', 'node': node['id'], 'pages': node.get('pages', []), 'reason': layout['reason']})
         elif role == 'Formula':
             self.consume(node)
             description = self.normalize(node.get('actual') or node.get('alt') or node.get('text', ''))

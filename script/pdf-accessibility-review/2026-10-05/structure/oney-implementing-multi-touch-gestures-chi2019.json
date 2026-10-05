@@ -1,0 +1,411 @@
+{
+  "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+  "pdf_sha256": "6b9444548830a34e98df1b764480f1ecf01dd4e0f166bbb49d3645ead6e185a4",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "Implementing Multi-Touch Gestures with Touch Groups and Cross Events",
+  "structure_elements": 479,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 94,
+    "Link": 28,
+    "H2": 14,
+    "H3": 21,
+    "Figure": 12,
+    "Caption": 14,
+    "Note": 1,
+    "L": 7,
+    "LI": 41,
+    "Lbl": 40,
+    "LBody": 41,
+    "H4": 3,
+    "Span": 1,
+    "Table": 2,
+    "TR": 15,
+    "TD": 100,
+    "TH": 29,
+    "THead": 1,
+    "TBody": 1
+  },
+  "structure_content_references": 3801,
+  "parent_tree_entries": 40,
+  "form_xobjects_visited": 11,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 271,
+      "text_operations_artifact": 65,
+      "vector_operations_tagged": 132,
+      "link_annotations": 6
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 83,
+      "text_operations_tagged": 349
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 78,
+      "text_operations_tagged": 266
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 89,
+      "text_operations_tagged": 353,
+      "link_annotations": 4
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 51,
+      "text_operations_tagged": 287,
+      "vector_operations_tagged": 582,
+      "link_annotations": 4
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 74,
+      "text_operations_tagged": 267,
+      "vector_operations_tagged": 285,
+      "link_annotations": 3
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 42,
+      "text_operations_tagged": 223,
+      "vector_operations_tagged": 1221,
+      "link_annotations": 2
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 228,
+      "text_operations_tagged": 380,
+      "vector_operations_artifact": 526,
+      "link_annotations": 3
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 87,
+      "text_operations_tagged": 246,
+      "vector_operations_artifact": 68,
+      "image_operations_tagged": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 70,
+      "text_operations_tagged": 280,
+      "image_operations_tagged": 6,
+      "vector_operations_tagged": 1474,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 65,
+      "text_operations_tagged": 283,
+      "vector_operations_tagged": 129,
+      "link_annotations": 2
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 598,
+      "text_operations_artifact": 73
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "145:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "150:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "152:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "154:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "156:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "162:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "165:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "176:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "332:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "351:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "353:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "359:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "361:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "364:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "367:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "371:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "379:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "381:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "388:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "402:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "405:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "415:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "417:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "424:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "427:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "460:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "627:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "631:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "633:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "648:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "658:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "661:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "666:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "674:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "677:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "679:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "685:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "687:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "692:0",
+      "page": 12
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "160:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. A two-finger touch group moves right from its starting position. Its center crosses a vertical dashed path at touchGroup.startX + 10 pixels, triggering a cross event that emits twoFingerRightSwipe. The diagram contrasts the dashed starting hand with the solid current hand and marks the crossing point.",
+      "actual_text": ""
+    },
+    {
+      "element": "395:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2: A state machine showing the various states of a \ntouch event with priority p. An event can be in three states: \nidle, pending fire, or pending block. By default, every event is \nin the idle state. When the event fires (a), it enters the pend-\ning state. After enough time (as defined by the timeout pa-\nrameter, default:0), the event’s firing is confirmed (b). If the \nevent firing is cancelled before the timeout interval passes, \nthen the event is cancelled (c). If a higher priority event is \nrequested before the timeout interval passes, then the event \nmoves to the pending block stage (f). If any other event with \na higher priority is confirmed, then the event is blocked (d). \nIf all the events with a higher priority are cancelled, then \nthe event will return to the pending fire state (g). If the event \ntimes out while in the “pending block” state, then the event \nis blocked (e) and does not fire.",
+      "actual_text": ""
+    },
+    {
+      "element": "400:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3: The sequence of states for single-tap and double-\ntap gestures as a user performs a single-tap then a double-\ntap. The states and events that are shown here reference \nthose that are defined in Figure 2. In this example, there are \ntwo instantiations of the state machine: one for single-tap \nand one for double-tap. The single-tap gesture uses \ntimeout=dbl_interval and the double-tap gesture uses\ntimeout=0. User actions are shown on the left. After the user \nperforms a single tap, the single-tap event is requested and \nconfirmed after dbl_interval milliseconds. When the user \nperforms a double tap, the double-tap event blocks the sin-\ngle-tap event, because it has a higher priority.",
+      "actual_text": ""
+    },
+    {
+      "element": "412:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 4: The default, “non-greedy” behavior for touch \ngroups is that every touch group can claim the same fingers. \nFor instance, suppose a developer defines one three-finger \ntouch group and three one-finger touch groups across dif-\nferent elements in an interface. With non-greedy behavior, \nwhen the user presses three fingers down, all four touch \ngroup activation events would fire.",
+      "actual_text": ""
+    },
+    {
+      "element": "419:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5: Like in Figure 4, here the developer has defined one \nthree-finger touch group and three one-finger touch groups. \nHowever, the developer has specified that the three-finger \ntouch group should be “greedy”, so that other touch groups \nshould not fire with any of the touches used. In this case, \nwhen the user presses three fingers down, only the three-\nfinger touch group will fire.",
+      "actual_text": ""
+    },
+    {
+      "element": "439:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6. A tap recognizer written with low-level touch events. touchstart stores the first changed touch, its identifier and starting coordinates, marks it valid, and starts a 500-millisecond timeout that invalidates it. touchmove invalidates the tap if movement exceeds 40 pixels. touchend fires only if the touch is still valid and has the stored identifier, clearing the timeout. The four answer choices below are two-finger swipe up, tap, two-finger tap, and three-finger swipe down.",
+      "actual_text": ""
+    },
+    {
+      "element": "451:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 7. The same tap recognizer expressed with a greedy one-finger TouchGroup and a circular cross-event path of radius 40 around its starting location. When the group is satisfied, it becomes valid and a 500-millisecond timeout begins; crossing the circle invalidates it; when the group is unsatisfied, it fires only if still valid. Changing numFingers from 1 to 2 changes the recognizer to a two-finger tap. Four gesture choices appear below the code.",
+      "actual_text": ""
+    },
+    {
+      "element": "635:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 8. A graphical state-machine editor. A black starting dot leads to the initial state. Transition boxes connect small state squares and select touch-group Start or End events or a Cross event using path_1. One branch continues through a timeout event set to 2000 to a checked final state. The boxes expose event choices within the diagram.",
+      "actual_text": ""
+    },
+    {
+      "element": "654:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 9: An illustration of a set of pressure-sensitive track-\npad gestures. When the user presses three fingers on the \ntrackpad, the selected window resizes in response (yellow, \ntop right). When the user presses with two fingers, the view-\nport scrolls (blue, bottom left) or the window moves (red, \nbottom right) depending on the finger pressure. Our imple-\nmentation manages conflicts between these three gestures \nand standard one-finger touches (grey, top left).",
+      "actual_text": ""
+    },
+    {
+      "element": "663:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 10: An illustration of three gestures for pressure-sen-\nsitive trackpads that manipulate text. Here, the user initi-\nates “command mode” with a heavy (high pressure) one-fin-\nger press in the top left quadrant of the trackpad. As the \nuser holds that finger down, they can perform a light (low \npressure) one-finger vertical scroll gesture to select text \n(top), a heavy two-finger gesture to enumerate the selected \ntext (middle), or a light two-finger scroll gesture to specify \nthe selected text’s indentation (bottom). The paths that spec-\nify cross events that initiate the gesture are shown in red.",
+      "actual_text": ""
+    },
+    {
+      "element": "672:0",
+      "role": "Figure",
+      "page": 11,
+      "alt": "Figure 11: An illustration of HandMark menus. HandMark\nmenus are contextual menus that a user invokes with a \nmulti-finger gesture. We implemented two different version \nof hand-mark menus. In the two-finger version (left) the \nuser invokes a context menu by pressing with two fingers. \nAs the user moves their two fingers, the menu follows. The \nuser can then use a third finger to select a single item. In the \nfive-finger version (right), users invoke the context menu by \npressing the touchscreen with five fingers. Menu items then \nfollow the individual fingers as they move. Users can use a \nsixth finger to select a menu item.",
+      "actual_text": ""
+    },
+    {
+      "element": "681:0",
+      "role": "Figure",
+      "page": 11,
+      "alt": "Figure 12: An illustration of a custom contextual pie menu \nfor touchscreen devices. We created three implementations \nwith minimal changes to the gesture’s implementation: 1) \nthe user holds their finger then selects a menu item, 2) the \nuser taps their finger then selects a menu item, or 3) the user \ndouble taps their finger then selects a menu item.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

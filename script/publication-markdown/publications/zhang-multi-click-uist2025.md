@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe -->
+<!-- Source PDF SHA-256: ab78321bd90658f95c7ab42e3cc38f69a10156eb41b699d656b2cbe18dd13ee6 -->
 
 <a id="page-1"></a>
 
@@ -22,31 +22,31 @@ Figure 1: Multi-Click is a technique for simultaneously performing the same acti
 
 ## Abstract
 
-Repetitive actions are a common and frustrating part of using the web. Prior work has proposed automating repetitive actions with natural language descriptions, demonstrations, and pseudocode. However, these approaches introduce abstractions that can be difficult to write, evaluate, and fit within web workflows. We describe a new approach, Multi-Click, for simultaneously performing the same action (e.g., clicking or typing) across multiple pages while maintaining the immediacy and understandability of direct manipulation. Users can intuitively select groups of analogous elements within or across windows/tabs (e.g., equivalent elements in different instantiations of a template) and interact with these elements as if each simultaneously had keyboard or cursor focus (e.g., one click propagates to multiple targets). Multi-Click introduces algorithms for identifying analogous elements from structural and visual attributes; techniques for intuitively selecting and visualizing targets;
+Repetitive actions are a common and frustrating part of using the web. Prior work has proposed automating repetitive actions with natural language descriptions, demonstrations, and pseudocode. However, these approaches introduce abstractions that can be difficult to write, evaluate, and fit within web workflows. We describe a new approach, Multi-Click, for simultaneously performing the same action (e.g., clicking or typing) across multiple pages while maintaining the immediacy and understandability of direct manipulation. Users can intuitively select groups of analogous elements within or across windows/tabs (e.g., equivalent elements in different instantiations of a template) and interact with these elements as if each simultaneously had keyboard or cursor focus (e.g., one click propagates to multiple targets). Multi-Click introduces algorithms for identifying analogous elements from structural and visual attributes; techniques for intuitively selecting and visualizing targets; and uses interactive data grids to manage variation in text entry and retrieval tasks.
 
-![CC-BY Logo](../figures/zhang-multi-click-uist2025/figure-002-p001.png)
 
-and uses interactive data grids to manage variation in text entry and retrieval tasks.
 
 ## ACM Reference Format:
 
 Jiacheng Zhang, Jiawen Li, Maryam Arab, and Steve Oney. 2025. Multi- Click: Cross-Tab Web Automation via Action Generalization. In The 38th Annual ACM Symposium on User Interface Software and Technology (UIST ’25), September 28–October 01, 2025, Busan, Republic of Korea. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3746059.3747780
 
+> This work is supported by NSF award 2007857.
+
+![CC-BY Logo](../figures/zhang-multi-click-uist2025/figure-002-p001.png)
+
+[This work is licensed under a Creative Commons Attribution 4.0 International License.](<https://creativecommons.org/licenses/by/4.0>)
+
+UIST ’25, Busan, Republic of Korea
+
+![Crossmark: Check for updates.](../figures/zhang-multi-click-uist2025/figure-003-p001.png)
+
 ## 1 Introduction
 
 Web users often need to perform repetitive actions—tasks that are very similar and must be executed multiple times to achieve a [larger goal \[38\]. For example, tasks such as extracting data across](<#page-9>) multiple product pages, entering similar information into numerous inputs, or updating the same setting across multiple records in administrative interfaces all might require performing the same series of clicks and key presses repeatedly, with minimal variation.
 
-Prior work has proposed using web automation—software that performs actions on behalf of users—to automate repetitive tasks. [Academic \[13,](<#page-9>) [15,](<#page-9>) [19,](<#page-9>) [32,](<#page-9>) [39,](<#page-9>) [66\] and commercial systems \[](<#page-10>)[5](<#page-9>), [9,](<#page-9>) [46,](<#page-9>) [51,](<#page-10>) [52,](<#page-10>) [58\] have](<#page-10>) explored various strategies to improve web automation capabilities. However, interacting with these tools often
-
-> This work is supported by NSF award 2007857.
-
-[This work is licensed under a Creative Commons Attribution 4.0 International License.](<https://creativecommons.org/licenses/by/4.0>)
-
 <a id="page-2"></a>
 
-UIST ’25, Busan, Republic of Korea presents its own challenges. Writing automation scripts manu[ally can be difficult \[31\] and scripts specified by demonstration or](<#page-9>) [natural language can be difficult to predict and control \[36\]. Web](<#page-9>) automation tools also often suffer from high error rates and may not integrate smoothly into standard web user workflows, making mixed-initiative control difficult.
-
-![Crossmark: Check for updates.](../figures/zhang-multi-click-uist2025/figure-003-p001.png)
+Prior work has proposed using web automation—software that performs actions on behalf of users—to automate repetitive tasks. [Academic \[13,](<#page-9>) [15,](<#page-9>) [19,](<#page-9>) [32,](<#page-9>) [39,](<#page-9>) [66\] and commercial systems \[](<#page-10>)[5](<#page-9>), [9,](<#page-9>) [46,](<#page-9>) [51,](<#page-10>) [52,](<#page-10>) [58\] have](<#page-10>) explored various strategies to improve web automation capabilities. However, interacting with these tools often presents its own challenges. Writing automation scripts manu[ally can be difficult \[31\] and scripts specified by demonstration or](<#page-9>) [natural language can be difficult to predict and control \[36\]. Web](<#page-9>) automation tools also often suffer from high error rates and may not integrate smoothly into standard web user workflows, making mixed-initiative control difficult.
 
 Recognizing these limitations, we propose action generalization as an alternative approach to automation, enabling users to apply a single operation simultaneously to multiple elements in batch. We present Multi-Click, an instantiation of action generalization that lets users select multiple targets for input events (e.g., mouse clicks or keyboard input) within or across web browser tabs and windows. Multi-target operations are typically implemented at the application level; for example, many list interfaces feature “select all” and “delete selected” widgets. However, these application-level implementations are limited to actions that are explicitly provided by the application developers. In contrast, action generalization is an input-level technique that can be applied to any application.
 
@@ -132,15 +132,13 @@ Users pick among generalization strategies by scrolling the mouse wheel, each sc
 
 #### 3.1.2 Step 2: Assessing Targets.
 
-In ‘multi-target mode’, Multi-Click highlights target elements with a translucent overlay on the page
-
 <a id="page-4"></a>
+
+In ‘multi-target mode’, Multi-Click highlights target elements with a translucent overlay on the page [(Figure 2). To ensure that users can see every target element, ele](<#page-3>) ments that are not visible (i.e., elements in other tabs) are previewed in preview overlay ‘cards’. The preview system features several key components:
 
 ![Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll to select the input elements to enter values. The generalized elements are highlighted in purple (a). The user can see selected elements in other tabs in the preview cards, where the selected elements are highlighted in blue (c). Then the user can enter values in the interactive data table (d) and calculate results for each term simultaneously.](../figures/zhang-multi-click-uist2025/figure-005-p004.png)
 
 Figure 3: Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll to select the input elements to enter values. The generalized elements are highlighted in purple (a). Tab badges are colored and indexed to match their corresponding preview cards (b). The user can see selected elements in other tabs in the preview cards, where the selected elements are highlighted in blue (c). Then the user can enter values in the interactive data table (d) and calculate results for each term simultaneously.
-
-[(Figure 2). To ensure that users can see every target element, ele](<#page-3>) ments that are not visible (i.e., elements in other tabs) are previewed in preview overlay ‘cards’. The preview system features several key components:
 
 - Preview cards: Previews are organized by tab, with each tab’s previews displayed in a separate preview card. Each card consists of a color-coded screenshot to match the cor[responding tab’s badge color (Figure 3b), making it easy for](<#page-4>) users to track which previews belong to which tabs (Fig[ure 3c).](<#page-4>)
 
@@ -198,23 +196,21 @@ After completing a pre-study survey, each participant read a tutorial on the int
 
 Upon completing these tasks, participants were asked to complete an exit survey and participate in a brief interview to share their experiences.
 
+> <sup>2</sup>Several automa[tion tools, including Rousillon \[13\] and ScrapeViz \[](<#page-9>)[33](<#page-9>)\] can extract data but not input data so could only perform one task out of three (Task #3–Walmart). [We also tested MIWA \[14\], which can perform input events but in our testing, was not](<#page-9>) able to synthesize scripts with only input actions (and thus could also only complete Task #3–Walmart). <sup>3</sup>All 20 participants did three tasks. 15 participants did two tasks with Multi-Click and one task manually (task and condition orders were randomized) and five (separate) participants performed all three tasks with Operator (task order was randomized).
+
 ### 4.2 Tasks
 
 We designed three tasks to be realistic (using popular websites for practical real-world tasks), differentiated (each involving performing a different type of action on these websites), and roughly similar difficulty. Each task involves multiple steps across operating on at least three analogous websites.
 
 [Task 1: Canvas Assignment Editing.](<https://instructure.com/>) Canvas is the most popular Learning Management System (LMS) for schools to track and deploy educational content. We created an example Canvas page with ten assignments and asked participants to modify the point [value on each assignment (similar to Figure 1) and update the sub](<#page-1>) mission type. Participants navigated to the Canvas assignment page, opened Assignments 1–10 in separate tabs, clicked ‘Edit’ on each, set the point value to 100 and checked ‘File upload’ as the submission type. This task is representative of multi-step workflows involving several user actions.
 
-[Task 2: GPA Calculator Input.](<https://www.calculator.net/gpa-calculator.html>) This GPA calculator website allows students to enter grades and computes a Grade Point Average (GPA). We created a spreadsheet with example grades and asked participants to enter GPA data for three terms (five courses each)
-
-<sup>2</sup>Several automa[tion tools, including Rousillon \[13\] and ScrapeViz \[](<#page-9>)[33](<#page-9>)\] can extract data but not input data so could only perform one task out of three (Task #3–Walmart). [We also tested MIWA \[14\], which can perform input events but in our testing, was not](<#page-9>) able to synthesize scripts with only input actions (and thus could also only complete Task #3–Walmart). <sup>3</sup>All 20 participants did three tasks. 15 participants did two tasks with Multi-Click and one task manually (task and condition orders were randomized) and five (separate) participants performed all three tasks with Operator (task order was randomized).
-
 <a id="page-6"></a>
 
-![Three grouped bar charts compare average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p &lt; 0.05 in Welch’s t-test.](../figures/zhang-multi-click-uist2025/figure-006-p006.png)
+[Task 2: GPA Calculator Input.](<https://www.calculator.net/gpa-calculator.html>) This GPA calculator website allows students to enter grades and computes a Grade Point Average (GPA). We created a spreadsheet with example grades and asked participants to enter GPA data for three terms (five courses each) from the provided spreadsheet. This task is representative of input-focused workflows involving entering many input fields.
+
+![A grouped bar chart compares average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p &lt; 0.05 in Welch’s t-test.](../figures/zhang-multi-click-uist2025/figure-006-p006.png)
 
 Figure 4: Average Task Completion Time (∗ = 𝑝 &lt; 0.05, Welch’s t-test)
-
-from the provided spreadsheet. This task is representative of input-focused workflows involving entering many input fields.
 
 [Task 3: Walmart Product Scraping.](<https://www.walmart.com>) Walmart is a popular retail website and store. We asked participants to visit seven Walmart product pages for computer monitors and extract these products’ names, prices, and specs (resolution, screen size, and refresh rate). This task is representative of data extraction workflows that import and combine data from many sources.
 
@@ -326,9 +322,7 @@ Still, these criteria align with a broad class of practical tasks. Below, we des
 
 - Extracting abstracts from ACM: [Figure 6 shows that the](<#page-7>) user can use Multi-Click to efficiently access and manage abstracts from ACM articles. With a simple scrolling interaction, users can preview abstracts from multiple ACM paper web pages simultaneously. Furthermore, Multi-Click automatically extracts these abstracts into a structured spreadsheet, allowing convenient future operations such as copying, pasting, and further analysis.
 
-- Batch Inputs on Job Application Portals: Many companies use similar or standardized application systems. Despite being deployed on different websites, their output structured nearly identically in a way that Multi-Click can leverage. Multi-Click enables users to input personalized information in batch to different portals with a single click and scroll. As
-
-[Figure 7 shows, users can select from available input lists](<#page-7>) and employ a spreadsheet interface to efficiently enter data customized for various company application portals.
+- Batch Inputs on Job Application Portals: Many companies use similar or standardized application systems. Despite being deployed on different websites, their output structured nearly identically in a way that Multi-Click can leverage. Multi-Click enables users to input personalized information in batch to different portals with a single click and scroll. As [Figure 7 shows, users can select from available input lists](<#page-7>) and employ a spreadsheet interface to efficiently enter data customized for various company application portals.
 
 - Collecting Stock Data: Users can use Multi-Click to efficiently collect and compare data from stock market websites [(Figure 8). By hovering and scrolling, users can easily gather](<#page-8>) and manage stock data across multiple tabs, each displaying information from different market indices. This capability enhances the user’s ability to analyze and compare financial data effectively.
 

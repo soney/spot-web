@@ -1,0 +1,537 @@
+{
+  "file": "zhang-vizprog-chi2023.pdf",
+  "pdf_sha256": "9375b86ea46ece16d4b1d96a2cbeb77a7fdf8a13e13fb6714931bfdc16f8f3e7",
+  "normalization_warnings": "",
+  "page_count": 16,
+  "language": "en-US",
+  "title": "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress",
+  "structure_elements": 732,
+  "roles": {
+    "Document": 1,
+    "Sect": 16,
+    "H1": 1,
+    "P": 119,
+    "Link": 132,
+    "H2": 14,
+    "Note": 5,
+    "Span": 16,
+    "L": 5,
+    "LI": 51,
+    "Lbl": 51,
+    "LBody": 51,
+    "H3": 16,
+    "H4": 28,
+    "Figure": 5,
+    "Caption": 5,
+    "Code": 5,
+    "Table": 3,
+    "THead": 3,
+    "TR": 39,
+    "TH": 47,
+    "TBody": 3,
+    "TD": 109,
+    "Formula": 7
+  },
+  "structure_content_references": 14870,
+  "parent_tree_entries": 148,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 916,
+      "vector_operations_artifact": 1,
+      "link_annotations": 12
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 1002,
+      "link_annotations": 24
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1096,
+      "link_annotations": 23
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 979,
+      "link_annotations": 6
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 15,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 553,
+      "link_annotations": 6
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 14,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 662,
+      "link_annotations": 14
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1009,
+      "vector_operations_artifact": 1,
+      "link_annotations": 18
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 877,
+      "vector_operations_artifact": 28,
+      "image_operations_tagged": 3,
+      "link_annotations": 7
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1209,
+      "vector_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 987,
+      "vector_operations_artifact": 4,
+      "link_annotations": 5
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1096,
+      "vector_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 775,
+      "vector_operations_artifact": 17,
+      "link_annotations": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1097
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 1046,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 1338
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 223
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "304:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "308:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "310:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "312:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "314:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "350:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "352:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "353:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "356:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "701:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "703:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "704:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "708:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "711:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "738:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "740:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "742:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "744:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "746:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "748:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "749:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "773:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "775:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "795:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "797:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "811:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "813:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "814:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "818:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "904:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "929:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "942:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "944:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "946:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "954:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "956:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "957:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "959:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1063:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1067:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1069:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1072:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1080:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1083:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1171:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "1174:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "1178:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "1184:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1189:0",
+      "page": 13
+    },
+    {
+      "level": 2,
+      "element": "1194:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1195:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1197:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1201:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1203:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1207:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1209:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1221:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "1223:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "1225:0",
+      "page": 15
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "759:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 1. VizProg has a class-progress map on the left, a solution-centered panel in the middle, and detailed progress/error information on the right. Map dots are orange for incorrect current submissions, blue for correct submissions, and gray for past versions; lines connect consecutive edits, and gray rectangles group a solution. Horizontal distance reflects edit distance, with progress toward correct solutions on the right; vertical position separates kinds of solutions. The middle panel lists students and their submitted code, while the right panel groups errors and highlights related code.",
+      "actual_text": ""
+    },
+    {
+      "element": "784:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 2: A detailed view of VizProg’s user interface. Instructors can crop a region on the 2-D map to view solutions in that\narea (a). Cropped regions appear as gray rectangles surrounded by dots (a), and the progress detailed view shows statistics\nfor the region (i, j, k, n). Correct solutions are displayed on the right of the map as blue dots with gray labels (c). When the\ninstructor clicks a student name (f), the 2-D map will highlight this student’s trajectory (b). The solution-centered view consists\nof statistics related to the solution (e), a list of students’ IDs (f), and correct (g) and incorrect submissions (h) made by these\nstudents. Instructors can search for a specific student (d). They can also send feedback to either an individual student or a group\nof students (d).",
+      "actual_text": ""
+    },
+    {
+      "element": "882:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "VizProg interface sketch: a spatial plot distinguishes correct and incorrect code and earlier versions; adjacent student and submission lists provide code details and search.",
+      "actual_text": ""
+    },
+    {
+      "element": "883:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "OverCode interface sketch: a list of code clusters, the largest cluster, and filters for selected code lines organize students by representative code.",
+      "actual_text": ""
+    },
+    {
+      "element": "884:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Codeopticon interface sketch: a grid displays six separate learner code panels, each with an individual chat area.",
+      "actual_text": ""
+    },
+    {
+      "element": "911:0",
+      "role": "Formula",
+      "page": 8,
+      "alt": "P is the matrix of code vectors vec of norm of p sub 1 through vec of norm of p sub n past. P belongs to the real matrices of size n past by 768.",
+      "actual_text": ""
+    },
+    {
+      "element": "921:0",
+      "role": "Formula",
+      "page": 9,
+      "alt": "NEAR_APPROACH of c is the subset PC of correct past code, with n vec sim elements, that maximizes the sum over p in PC of vec_sim of c and p.",
+      "actual_text": ""
+    },
+    {
+      "element": "927:0",
+      "role": "Formula",
+      "page": 9,
+      "alt": "y_position of c equals the sum over p sub n in NEAR_APPROACH of c of y tilde sub n multiplied by the softmax weight of vec_sim of c and p sub n cubed.",
+      "actual_text": ""
+    },
+    {
+      "element": "931:0",
+      "role": "Formula",
+      "page": 9,
+      "alt": "edit_distance of c sub 1 and c sub 2 equals the Levenshtein distance between norm of c sub 1 and norm of c sub 2, divided by the larger length of those two normalized code strings.",
+      "actual_text": ""
+    },
+    {
+      "element": "935:0",
+      "role": "Formula",
+      "page": 9,
+      "alt": "NEAR_EDIT of c is the subset PC of correct past code, with n edit sim elements, that minimizes the sum over p in PC of edit_distance of c and p.",
+      "actual_text": ""
+    },
+    {
+      "element": "940:0",
+      "role": "Formula",
+      "page": 9,
+      "alt": "x_position of c equals zero if c is correct. Otherwise it is the arithmetic mean, over p in NEAR_EDIT of c, of minus edit_distance of c and p.",
+      "actual_text": ""
+    },
+    {
+      "element": "1078:0",
+      "role": "Formula",
+      "page": 11,
+      "alt": "Quiz accuracy equals the number of matched answers divided by the maximum of the total number of correct answers and the total number of selected answers.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

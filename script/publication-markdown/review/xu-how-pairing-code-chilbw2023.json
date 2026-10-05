@@ -2,9 +2,9 @@
   "file": "xu-how-pairing-code-chilbw2023.pdf",
   "title": "How Pairing by Code Similarity Influences Discussions in Peer Learning",
   "publication_id": "how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023",
-  "pdf_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+  "pdf_sha256": "585c150a7fb9c178854d6192123b97b0da52ce25e3680ff38701bfc43df2dc91",
   "markdown": "publications/xu-how-pairing-code-chilbw2023.md",
-  "markdown_sha256": "3d9cb25c6c54f26ce5518b38792a2b57d8295dae4a7bfd7f2585e6666de33609",
+  "markdown_sha256": "4cd5c40f31dd8126de2579cb31a4e9f101c145605f5fc48b2a8d0c5765ec8b93",
   "pages": 6,
   "blocks": [
     {
@@ -49,11 +49,11 @@
     },
     {
       "node": "288:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 164
+      "characters": 166
     },
     {
       "node": "289:0",
@@ -120,7 +120,7 @@
       "characters": 17
     },
     {
-      "node": "joined-287:0",
+      "node": "287:0",
       "role": "P",
       "pages": [
         1
@@ -160,7 +160,7 @@
       "characters": 495
     },
     {
-      "node": "joined-327:0",
+      "node": "327:0",
       "role": "P",
       "pages": [
         1,
@@ -209,7 +209,7 @@
       "characters": 328
     },
     {
-      "node": "joined-341:0",
+      "node": "341:0",
       "role": "P",
       "pages": [
         2
@@ -353,7 +353,7 @@
       "characters": 21
     },
     {
-      "node": "joined-383:0",
+      "node": "383:0",
       "role": "P",
       "pages": [
         3
@@ -433,7 +433,7 @@
       "characters": 126
     },
     {
-      "node": "joined-394:0",
+      "node": "394:0",
       "role": "P",
       "pages": [
         3,
@@ -570,7 +570,7 @@
       "characters": 39
     },
     {
-      "node": "joined-420:0",
+      "node": "420:0",
       "role": "P",
       "pages": [
         5
@@ -738,11 +738,10 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 79,
-    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_removed": 67,
     "line_wrap_hyphens_retained": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/xu-how-pairing-code-chilbw2023.json.gz",
-  "source_tags_sha256": "46d0110ea43bfb5c30dbb086d2fe45e79551f728d60f2b1c2673ca46d95e9f0e"
+  "source_tags_sha256": "f23f5b1f9d99aadcc41fac95a1d7eadffec533d6b03e355cd6ef00805599a844"
 }

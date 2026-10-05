@@ -1,0 +1,585 @@
+{
+  "file": "wang-how-data-scientists-cscw2019.pdf",
+  "pdf_sha256": "52d09ce89c98ca28f776ed58d7fec7cbc89fd23da48915bb73b03ca0074598f4",
+  "normalization_warnings": "",
+  "page_count": 30,
+  "language": "en-US",
+  "title": "How Data Scientists Use Computational Notebooks for Real-Time Collaboration",
+  "structure_elements": 1154,
+  "roles": {
+    "Document": 1,
+    "Sect": 30,
+    "H1": 1,
+    "P": 132,
+    "Link": 277,
+    "H2": 12,
+    "Note": 18,
+    "Figure": 5,
+    "Caption": 10,
+    "L": 11,
+    "LI": 87,
+    "LBody": 87,
+    "H3": 23,
+    "H4": 24,
+    "Lbl": 84,
+    "Table": 5,
+    "THead": 4,
+    "TR": 67,
+    "TH": 87,
+    "TBody": 4,
+    "TD": 185
+  },
+  "structure_content_references": 16261,
+  "parent_tree_entries": 307,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 4,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 554,
+      "link_annotations": 5
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 360,
+      "vector_operations_artifact": 1,
+      "link_annotations": 13
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 520,
+      "link_annotations": 4
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 578,
+      "link_annotations": 16
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 554,
+      "vector_operations_artifact": 1,
+      "link_annotations": 18
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 633,
+      "vector_operations_artifact": 1,
+      "link_annotations": 30
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 589,
+      "link_annotations": 25
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 611,
+      "vector_operations_artifact": 1,
+      "link_annotations": 33
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 520,
+      "link_annotations": 2
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 548,
+      "link_annotations": 1
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 24,
+      "vector_operations_artifact": 5,
+      "text_operations_tagged": 396,
+      "link_annotations": 1
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 19,
+      "vector_operations_artifact": 3,
+      "text_operations_tagged": 487,
+      "link_annotations": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 24,
+      "vector_operations_artifact": 3,
+      "text_operations_tagged": 444,
+      "link_annotations": 1
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 538,
+      "vector_operations_artifact": 1,
+      "link_annotations": 6
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 605,
+      "link_annotations": 2
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 19,
+      "vector_operations_artifact": 4,
+      "text_operations_tagged": 479,
+      "link_annotations": 2
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 639,
+      "link_annotations": 1
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 634,
+      "link_annotations": 1
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 24,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 450,
+      "vector_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 363,
+      "vector_operations_artifact": 1,
+      "link_annotations": 6
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 24,
+      "vector_operations_artifact": 8,
+      "text_operations_tagged": 490,
+      "link_annotations": 1
+    },
+    {
+      "page": 22,
+      "text_operations_artifact": 19,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 373
+    },
+    {
+      "page": 23,
+      "text_operations_artifact": 24,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 455,
+      "link_annotations": 5
+    },
+    {
+      "page": 24,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 623,
+      "link_annotations": 8
+    },
+    {
+      "page": 25,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 622,
+      "vector_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 26,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 607,
+      "link_annotations": 6
+    },
+    {
+      "page": 27,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 630,
+      "link_annotations": 18
+    },
+    {
+      "page": 28,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 698,
+      "link_annotations": 28
+    },
+    {
+      "page": 29,
+      "text_operations_artifact": 24,
+      "text_operations_tagged": 756,
+      "link_annotations": 21
+    },
+    {
+      "page": 30,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 500,
+      "link_annotations": 12
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "568:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "573:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "575:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "915:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "922:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "929:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "931:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "952:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "954:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1022:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1024:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1071:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "1085:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1113:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "1121:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1124:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1133:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "1135:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1137:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "1190:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1192:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1194:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1229:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "1231:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "1295:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1301:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1303:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1305:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1307:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1309:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1311:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1323:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "1328:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "1414:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1416:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "1437:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1440:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1444:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1452:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "1455:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "1464:0",
+      "page": 19
+    },
+    {
+      "level": 3,
+      "element": "1494:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "1550:0",
+      "page": 21
+    },
+    {
+      "level": 4,
+      "element": "1552:0",
+      "page": 21
+    },
+    {
+      "level": 4,
+      "element": "1556:0",
+      "page": 21
+    },
+    {
+      "level": 4,
+      "element": "1564:0",
+      "page": 22
+    },
+    {
+      "level": 4,
+      "element": "1573:0",
+      "page": 23
+    },
+    {
+      "level": 4,
+      "element": "1577:0",
+      "page": 23
+    },
+    {
+      "level": 4,
+      "element": "1581:0",
+      "page": 23
+    },
+    {
+      "level": 2,
+      "element": "1591:0",
+      "page": 24
+    },
+    {
+      "level": 3,
+      "element": "1593:0",
+      "page": 24
+    },
+    {
+      "level": 3,
+      "element": "1608:0",
+      "page": 25
+    },
+    {
+      "level": 3,
+      "element": "1611:0",
+      "page": 25
+    },
+    {
+      "level": 4,
+      "element": "1613:0",
+      "page": 25
+    },
+    {
+      "level": 4,
+      "element": "1623:0",
+      "page": 26
+    },
+    {
+      "level": 4,
+      "element": "1625:0",
+      "page": 26
+    },
+    {
+      "level": 3,
+      "element": "1628:0",
+      "page": 26
+    },
+    {
+      "level": 2,
+      "element": "1630:0",
+      "page": 26
+    },
+    {
+      "level": 2,
+      "element": "1642:0",
+      "page": 27
+    },
+    {
+      "level": 2,
+      "element": "1644:0",
+      "page": 27
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "587:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 1. A Jupyter notebook contains a code cell importing libraries and loading house-price data, a dataframe summary, a Markdown heading, and a histogram. A Share control enables a collaborative extension. The right panel illustrates the workflow: Bob enables sharing and sends a generated code; Alice joins with that code; both edit the notebook while it synchronizes changes and displays collaborators’ cursor positions and selections.",
+      "actual_text": ""
+    },
+    {
+      "element": "1461:0",
+      "role": "Figure",
+      "page": 19,
+      "alt": "Figure 2. Paired participant timelines for six shared-notebook groups S1–S6 and six non-shared groups N1–N6 across four 15-minute sessions. Colored segments mark preparing, cleaning, modeling, feature engineering, and submission. Shared groups switch between phases more frequently and begin modeling earlier. Non-shared groups spend longer continuous stretches in cleaning or feature engineering before modeling. Brown submission segments appear mainly at the end.",
+      "actual_text": ""
+    },
+    {
+      "element": "1491:0",
+      "role": "Figure",
+      "page": 20,
+      "alt": "Figure 3. Stacked response distributions on a seven-point scale from strongly agree to strongly disagree, comparing shared and non-shared notebooks. Combined strongly-agree and agree percentages, shared versus non-shared, are: following conversations 80% versus 79%; effective team communication 67% versus 77%; awareness of teammates’ subtasks 80% versus 71%; awareness of teammates’ technical issues 56% versus 40%; fair workload 70% versus 54%; all teammates fully engaged 77% versus 84%; enough work 82% versus 88%; waiting for others 14% versus 17%; enjoyment of teammates 82% versus 71%. Most responses are positive except the negatively worded waiting question, where disagreement is common. Bars also show somewhat agree, neutral and three levels of disagreement.",
+      "actual_text": ""
+    },
+    {
+      "element": "1561:0",
+      "role": "Figure",
+      "page": 22,
+      "alt": "Figure 4. Group S3 notebook begins with a Pre-processing and cleaning plan: replace discrete values with indices; remove samples with too many missing features; normalize continuous variables; compute correlations or otherwise select features. Two code cells below implement count_nans, printing missing-value counts per column, and label_encoding, converting object-valued columns to categorical codes. Written subgoals coordinate the team’s later code work.",
+      "actual_text": ""
+    },
+    {
+      "element": "1571:0",
+      "role": "Figure",
+      "page": 23,
+      "alt": "Fig. 5. An example of participants manually annotating a graph for discussion: P14 circled the outlier point\nin a scatter plot using MS Paint and sent it back to P15 using Slack.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

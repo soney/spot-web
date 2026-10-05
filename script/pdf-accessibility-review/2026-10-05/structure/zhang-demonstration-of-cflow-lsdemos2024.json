@@ -1,0 +1,118 @@
+{
+  "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+  "pdf_sha256": "656bfc4f7f3c4f357b4505f5ee2c1c176dc1b77ff0e84678a6241062bc26dafc",
+  "normalization_warnings": "",
+  "page_count": 2,
+  "language": "en-US",
+  "title": "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
+  "structure_elements": 73,
+  "roles": {
+    "Document": 1,
+    "Sect": 2,
+    "Figure": 2,
+    "Link": 18,
+    "H1": 1,
+    "P": 14,
+    "Caption": 1,
+    "Note": 3,
+    "H2": 8,
+    "L": 2,
+    "LI": 7,
+    "Lbl": 7,
+    "LBody": 7
+  },
+  "structure_content_references": 1612,
+  "parent_tree_entries": 20,
+  "form_xobjects_visited": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 568,
+      "vector_operations_tagged": 112,
+      "image_operations_tagged": 57,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 1064,
+      "link_annotations": 10
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "138:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "176:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "181:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "189:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "191:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "199:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "204:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "207:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "209:0",
+      "page": 2
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "137:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Crossmark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "174:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "CFlow workflow shown before and after filtering. The initial visualization on the left groups similar code statements into flows and shows adjacent horizontal bars summarizing each group. Colors run from green when all code lines in a group are correct to red when none are correct. Selecting a group narrows the flows in the right-hand filtered view. An error list on the far right has IndentationError selected, and red-bordered example submissions below highlight the relevant code in yellow. Clear and Go Back controls appear above each view.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

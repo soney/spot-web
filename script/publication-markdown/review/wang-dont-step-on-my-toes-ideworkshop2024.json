@@ -2,9 +2,9 @@
   "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
   "title": "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks",
   "publication_id": "don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024",
-  "pdf_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+  "pdf_sha256": "eea22c064db1848288bb5e67aa8a3024ea916eafde4927aa22dccda42c4aaaea",
   "markdown": "publications/wang-dont-step-on-my-toes-ideworkshop2024.md",
-  "markdown_sha256": "52da61de5952b2161cfab92c31239cba049afd16a14db1e2e9556aed52c390f2",
+  "markdown_sha256": "caa8433416b196ed29e3c9603b15e8e5d7c359b1a8329bbf25fbcaed260c2978",
   "pages": 6,
   "blocks": [
     {
@@ -112,12 +112,12 @@
       "characters": 24
     },
     {
-      "node": "147:0",
+      "node": "joined-147:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 410
+      "characters": 495
     },
     {
       "node": "148:0",
@@ -128,12 +128,12 @@
       "characters": 17
     },
     {
-      "node": "joined-149:0",
+      "node": "149:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 1091
+      "characters": 1006
     },
     {
       "node": "153:0",
@@ -181,7 +181,7 @@
       "pages": [
         2
       ],
-      "characters": 432
+      "characters": 543
     },
     {
       "node": "190:0",
@@ -248,7 +248,7 @@
       "characters": 147
     },
     {
-      "node": "joined-317:0",
+      "node": "317:0",
       "role": "P",
       "pages": [
         2,
@@ -687,7 +687,7 @@
       ],
       "sha256": "1359e228555d601c060037aadac6803fa4cbbcc06c9bfd300c5914b60b88148d",
       "kind": "figure",
-      "alt": "Figure 1: Editing conflicts in real-time collaborative notebooks can be implicit. As shown on the left, one can get an unexpected execution result because the collaborator accidentally changed the shared variable. As shown on the right, PADLOCK helps data scientists resolve editing conflicts in real-time collaborative editing in computational notebooks."
+      "alt": "Two collaborative-notebook screenshots illustrate an interference problem and Padlock’s protection. In the shared notebook, blue and green collaborator markers appear beside different text-cleaning cells; red arrows point to execution counters and yellow highlights mark unexpected outputs after changes to shared data. The protected notebook shows a padlock beside a cell and a separate preview, indicating that a collaborator’s execution is restricted or isolated."
     },
     {
       "path": "figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-003-p003.png",
@@ -708,13 +708,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 116,
-    "paragraph_fragments_joined": 4,
-    "reviewed_wrap_repairs": 3,
+    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_removed": 108,
     "line_wrap_hyphens_retained": 5,
-    "script_runs_positioned": 2
+    "script_runs_positioned": 2,
+    "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-dont-step-on-my-toes-ideworkshop2024.json.gz",
-  "source_tags_sha256": "036732c6abee7e5944d2feddcc9385e14d3e81dff0bf8e4fe42db53a341930ed"
+  "source_tags_sha256": "7b1fca6378eb4abb5c38891d29ae5842254884814a734ed42f494c0d7175e420"
 }

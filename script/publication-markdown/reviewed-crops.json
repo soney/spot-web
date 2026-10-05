@@ -1,0 +1,152 @@
+[
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2459:0",
+    "page": 81,
+    "bbox": [
+      148,
+      182,
+      520,
+      434
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2474:0",
+    "page": 83,
+    "bbox": [
+      147,
+      72,
+      522,
+      160
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2483:0",
+    "page": 84,
+    "bbox": [
+      147,
+      305,
+      523,
+      433
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2917:0",
+    "page": 120,
+    "bbox": [
+      147,
+      460,
+      260,
+      609
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2918:0",
+    "page": 120,
+    "bbox": [
+      267,
+      460,
+      393,
+      717
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "source_sha256": "47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376",
+    "node": "2919:0",
+    "page": 120,
+    "bbox": [
+      396,
+      460,
+      522,
+      717
+    ],
+    "review": "Visually checked against the complete page. Retains the complete diagram and labels while excluding adjacent prose or neighboring figures; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "oney-interstate-uist2014.pdf",
+    "source_sha256": "87a2858b850eb9be342920a1ab4a68ade782d40427925139b45a759c0f4f875b",
+    "node": "332:0",
+    "page": 6,
+    "bbox": [
+      167,
+      66,
+      560,
+      201
+    ],
+    "review": "Visually checked against the complete page and enlarged trial crop. Retains the complete diagram, internal labels and panel labels while excluding adjacent prose and separately tagged captions; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "rong-codemend-uist2016.pdf",
+    "source_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
+    "node": "547:0",
+    "page": 4,
+    "bbox": [
+      323,
+      64,
+      562,
+      201
+    ],
+    "review": "Visually checked against the complete page and enlarged trial crop. Retains the complete diagram, internal labels and panel labels while excluding adjacent prose and separately tagged captions; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "rong-codemend-uist2016.pdf",
+    "source_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
+    "node": "559:0",
+    "page": 5,
+    "bbox": [
+      55,
+      62,
+      561,
+      268
+    ],
+    "review": "Visually checked against the complete page and enlarged trial crop. Retains the complete diagram, internal labels and panel labels while excluding adjacent prose and separately tagged captions; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  },
+  {
+    "pdf": "rong-codemend-uist2016.pdf",
+    "source_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
+    "node": "588:0",
+    "page": 6,
+    "bbox": [
+      324,
+      168,
+      564,
+      314
+    ],
+    "review": "Visually checked against the complete page and enlarged trial crop. Retains the complete diagram, internal labels and panel labels while excluding adjacent prose and separately tagged captions; PDF geometry and appearance unchanged.",
+    "revalidation": "Reading-order repair leaves this figure content and page geometry unchanged; complete-page pixel comparison verifies preserved appearance.",
+    "formal_pdfua_revalidation": "Source node content remains exact after nonvisual artifact/list/metadata repairs; complete page appearance comparison recorded separately."
+  }
+]

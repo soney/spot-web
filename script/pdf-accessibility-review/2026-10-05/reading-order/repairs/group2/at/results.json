@@ -1,0 +1,540 @@
+{
+  "date": "2026-10-05",
+  "reader": "Mozilla Firefox156.0.1",
+  "at_bridge": "GI Atspi2.60.4",
+  "screen_reader": "Orca50.2",
+  "environment": "Separate dbus-run-session, Xvfb display, temporary Firefox profile and XDG configuration/runtime directories for each sample; no user browser/profile accessed.",
+  "scope": "Actual live AT-SPI accessible objects from Firefox PDF.js; sampled three repaired PDFs. Does not certify all PDFs or all reading software.",
+  "checks": [
+    {
+      "file": "wang-what-makes-well-documented-chiea2021.pdf",
+      "pdf_sha256": "71fbc37293b29981b467a4f344399ad37ecc259a72d66b60197fdb87101d90a8",
+      "tree": "notebook-atspi.json.gz",
+      "check": "Rebuilt Table1 cell names and live TableCell header associations",
+      "rows": 10,
+      "columns": 4,
+      "exact_source_verified_cell_names": 40,
+      "correct_data_cell_row_and_column_headers": 27,
+      "cells": [
+        [
+          {
+            "role": "column header",
+            "name": "Category",
+            "headers": {
+              "columns": [],
+              "rows": []
+            }
+          },
+          {
+            "role": "column header",
+            "name": "N",
+            "headers": {
+              "columns": [],
+              "rows": []
+            }
+          },
+          {
+            "role": "column header",
+            "name": "Description",
+            "headers": {
+              "columns": [],
+              "rows": []
+            }
+          },
+          {
+            "role": "column header",
+            "name": "Example",
+            "headers": {
+              "columns": [],
+              "rows": []
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Process",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "2115 (58.65%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Process"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell describes what the following code cell is doing. This always appears before the relevant code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Process"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "Transforming Feature X to a new binary variable",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Process"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Headline",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "1167 (32.36%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Headline"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell contains a headline in Markdown syntax. The cell is used for navigation purposes or marking the structure of the notebook. It may be relevant to a nearby code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Headline"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "# Blending Models",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Headline"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Result",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "692 (19.19%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Result"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell explains the output. This type always appears after the relevant code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Result"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "It turns out there is a long tail of outlying properties...",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Result"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Education",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "414 (11.48%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Education"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell provides a rich content as an educational tutorial, but may not be relevant to a specific code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Education"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "Multicollinearity increases the standard errors of the coefficients.",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Education"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Reason",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "227 (6.30%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Reason"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell explains the reasons why certain functions are used or why a task is performed. This may appear before or after the relevant code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Reason"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "We do this manually, because ML models won't be able to reliably tell the differences.",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Reason"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Todo",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "202 (5.60%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Todo"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell describes a list of actions for future implementations. This normally is not relevant to a specific code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Todo"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "1. Apply models 2. Get cross validation scores 3. Calculate the mean",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Todo"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Reference",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "200 (5.55%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Reference"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell contains an external reference. This is also relevant to the adjacent code cell.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Reference"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "Gradient Boosting Regression Refer [here](https://...)",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Reference"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Meta-Information",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "141 (3.91%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Meta-Information"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell contains meta-information such as project overview, author’s information, and a link to the data sources. This often is not relevant to a specific code.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Meta-Information"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The purpose of this notebook is to build a model with Tensorflow.",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Meta-Information"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "role": "row header",
+            "name": "Summary",
+            "headers": {
+              "columns": [
+                "Category"
+              ],
+              "rows": []
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "51 (1.41%)",
+            "headers": {
+              "columns": [
+                "N"
+              ],
+              "rows": [
+                "Summary"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "The Markdown cell summarizes what has been done so far for a section or a series of steps. This often is not relevant to a specific code.",
+            "headers": {
+              "columns": [
+                "Description"
+              ],
+              "rows": [
+                "Summary"
+              ]
+            }
+          },
+          {
+            "role": "table cell",
+            "name": "**In summary** By EDA we found a strong impact of features like Age, Embarked..",
+            "headers": {
+              "columns": [
+                "Example"
+              ],
+              "rows": [
+                "Summary"
+              ]
+            }
+          }
+        ]
+      ],
+      "result": "pass",
+      "Table2_dimensions": {
+        "rows": 14,
+        "columns": 4
+      }
+    },
+    {
+      "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+      "pdf_sha256": "a943308a032bf1f2f0d0bc2a4ea071499d7d7ee4d3f7b15ec795e4691d939516",
+      "tree": "code-atspi.json.gz",
+      "check": "Python example follows the setup and precedes Section5 in reader-exposed order",
+      "page": 2,
+      "setup_text": "When given the website’s HTML and asked to write code for scraping , ChatGPT seemed to mostly generate correct code logic and CSS selectors [ 2 ] if the elements to be scraped have salient selectors – e.g., when we asked ChatGPT to scrape player names from the NBA website, it generated the following correct Python code and CSS classes for first and last names:",
+      "sequence": [
+        {
+          "accessible_tree_index": 2062,
+          "text": "first_name"
+        },
+        {
+          "accessible_tree_index": 2085,
+          "text": "last_name"
+        },
+        {
+          "accessible_tree_index": 2110,
+          "text": "￼￼￼"
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "file": "oney-firecrystal-vlhcc2009.pdf",
+      "pdf_sha256": "32567037858f95110c873353f068d865b87e090019cce2925682d28bac7a849f",
+      "tree": "crosspage-atspi.json.gz",
+      "check": "Page1 sentence continues at start of Page2 before Figure1 and caption",
+      "pages": [
+        1,
+        2
+      ],
+      "before_text": "Web page code is almost never designed for readability; it is frequently poorly formatted, or sometimes intentionally rendered unreadable through",
+      "continuation_text": "code obfuscation methods ranging from eliminating whitespaces to renaming variables or even inserting nonfunctional code fragments.",
+      "continuation_tree_index_on_page2": 3,
+      "figure_tree_index_on_page2": 58,
+      "word_boundary": "through and code remain separate word-bearing accessible objects across the page boundary",
+      "reader_behavior": "Firefox retains separate Page1 and Page2 landmarks but presents the continuation before the figure.",
+      "result": "pass"
+    }
+  ],
+  "orca_attempt": {
+    "status": "partial; not a completed speech test",
+    "versions": "Orca50.2; AT-SPI2 2.60.4; Speech Dispatcher0.12.1",
+    "observed": "Orca recognized the Firefox PDF, entered browse mode, reported4landmarks/7headings, and generated title/Abstract/Introduction utterances.",
+    "limitation": "The isolated dummy speech backend failed audio initialization and fell back to an unavailable PulseAudio backend, preventing a reliable continuous SayAll run. No successful end-to-end speech claim is made.",
+    "log": "orca-generated-speech.txt"
+  }
+}

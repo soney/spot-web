@@ -2,9 +2,9 @@
   "file": "zhang-vrcopilot-uist2024.pdf",
   "title": "VRCopilot: Authoring 3D Layouts with Generative Models in VR",
   "publication_id": "vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024",
-  "pdf_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+  "pdf_sha256": "1dae0fb483e47a7a2d1a4e9d291b3dd1e361d5cb6e7f857908a3f4ccdb51422b",
   "markdown": "publications/zhang-vrcopilot-uist2024.md",
-  "markdown_sha256": "ffab4db351c9391e2cf9d2c2baf8912c1da56e9d3bab818086ecefd51e9d6160",
+  "markdown_sha256": "877ed78441381e5d712524cad7f36bf9b37ee344645a33aa981ca5a819527bc0",
   "pages": 13,
   "blocks": [
     {
@@ -120,12 +120,20 @@
       "characters": 601
     },
     {
-      "node": "joined-944:0",
-      "role": "P",
+      "node": "944:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 841
+      "characters": 802
+    },
+    {
+      "node": "945:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 42
     },
     {
       "node": "146:0",
@@ -141,15 +149,7 @@
       "pages": [
         1
       ],
-      "characters": 465
-    },
-    {
-      "node": "150:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 648
+      "characters": 1114
     },
     {
       "node": "151:0",
@@ -320,7 +320,7 @@
       "characters": 57
     },
     {
-      "node": "joined-237:0",
+      "node": "237:0",
       "role": "P",
       "pages": [
         3
@@ -379,9 +379,18 @@
       "node": "261:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 197
+      "characters": 804
+    },
+    {
+      "node": "287:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 492
     },
     {
       "node": "262:0",
@@ -389,7 +398,7 @@
       "pages": [
         4
       ],
-      "characters": 295
+      "characters": 316
     },
     {
       "node": "263:0",
@@ -414,14 +423,6 @@
         4
       ],
       "characters": 226
-    },
-    {
-      "node": "266:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 606
     },
     {
       "node": "275:0",
@@ -477,23 +478,7 @@
       "pages": [
         4
       ],
-      "characters": 555
-    },
-    {
-      "node": "287:0",
-      "role": "Note",
-      "pages": [
-        4
-      ],
-      "characters": 492
-    },
-    {
-      "node": "291:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 469
+      "characters": 1025
     },
     {
       "node": "294:0",
@@ -576,7 +561,7 @@
       "characters": 35
     },
     {
-      "node": "joined-350:0",
+      "node": "350:0",
       "role": "P",
       "pages": [
         5
@@ -661,7 +646,7 @@
       "pages": [
         6
       ],
-      "characters": 595
+      "characters": 622
     },
     {
       "node": "386:0",
@@ -670,14 +655,6 @@
         6
       ],
       "characters": 181
-    },
-    {
-      "node": "387:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 363
     },
     {
       "node": "388:0",
@@ -717,15 +694,7 @@
       "pages": [
         6
       ],
-      "characters": 221
-    },
-    {
-      "node": "582:0",
-      "role": "Span",
-      "pages": [
-        6
-      ],
-      "characters": 579
+      "characters": 801
     },
     {
       "node": "1294:0",
@@ -755,9 +724,10 @@
       "node": "406:0",
       "role": "P",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 258
+      "characters": 867
     },
     {
       "node": "408:0",
@@ -774,14 +744,6 @@
         7
       ],
       "characters": 47
-    },
-    {
-      "node": "410:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 608
     },
     {
       "node": "413:0",
@@ -875,9 +837,10 @@
       "node": "434:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 264
+      "characters": 1342
     },
     {
       "node": "440:0",
@@ -933,7 +896,7 @@
       "pages": [
         8
       ],
-      "characters": 334
+      "characters": 354
     },
     {
       "node": "447:0",
@@ -950,14 +913,6 @@
         8
       ],
       "characters": 139
-    },
-    {
-      "node": "449:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 1077
     },
     {
       "node": "453:0",
@@ -981,15 +936,7 @@
       "pages": [
         8
       ],
-      "characters": 130
-    },
-    {
-      "node": "457:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 246
+      "characters": 377
     },
     {
       "node": "458:0",
@@ -1384,14 +1331,6 @@
       "characters": 78
     },
     {
-      "node": "622:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 1631
-    },
-    {
       "node": "1302:0",
       "role": "H4",
       "pages": [
@@ -1406,14 +1345,6 @@
         11
       ],
       "characters": 75
-    },
-    {
-      "node": "637:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 375
     },
     {
       "node": "638:0",
@@ -1494,7 +1425,7 @@
         12,
         13
       ],
-      "characters": 15397
+      "characters": 15393
     }
   ],
   "tagged_content_items": 12151,
@@ -1526,7 +1457,7 @@
       ],
       "sha256": "e61a57ab6d940f21e95a71440e7804b7a45c3b3ff61a461f717a18f27ce39385",
       "kind": "figure",
-      "alt": "Figure 2 shows the user interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions."
+      "alt": "VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions."
     },
     {
       "path": "figures/zhang-vrcopilot-uist2024/figure-003-p006.png",
@@ -1540,7 +1471,7 @@
       ],
       "sha256": "901d26694d400867760519a51ec56becdde1a68ef391830895ff59a90d67ef53",
       "kind": "figure",
-      "alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, and retain the completed room."
+      "alt": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, then switch back to wireframes to explore another layout."
     },
     {
       "path": "figures/zhang-vrcopilot-uist2024/figure-004-p007.png",
@@ -1610,7 +1541,7 @@
       ],
       "sha256": "10c0c6ac2b5c7309b285313630184d0d4fc6b605e6e339002a97f6341fbfcda4",
       "kind": "figure",
-      "alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a desk sits diagonally near the bottom-left corner."
+      "alt": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a separate furnishing is placed diagonally near the bottom-left corner."
     },
     {
       "path": "figures/zhang-vrcopilot-uist2024/figure-009-p009.png",
@@ -1631,13 +1562,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "paragraph_fragments_joined": 3,
-    "line_wrap_hyphens_removed": 279,
+    "line_wrap_hyphens_removed": 245,
     "reviewed_wrap_repairs": 5,
-    "line_wrap_hyphens_retained": 11,
+    "line_wrap_hyphens_retained": 12,
     "script_runs_positioned": 5
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-vrcopilot-uist2024.json.gz",
-  "source_tags_sha256": "8cc238f99f083de130cb980f8dee76b080c1c49433c07eeaea81ad7f99993aa4"
+  "source_tags_sha256": "23a3471398be37adf105f319575dd3428722796e1e613e8915ac882204c8cc73"
 }

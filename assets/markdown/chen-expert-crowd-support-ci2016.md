@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a -->
+<!-- Source PDF SHA-256: ccb706263b3430d2c5a6dedaa8e00744e3761731640a82bf40e93ae39ef7a0b9 -->
 
 <a id="page-1"></a>
 
@@ -25,8 +25,6 @@ We conducted studies to inform design of each of the three main stages of help s
 To find out what methods allow developers to make requests easily and quickly, we compared three request modalities for describing requests: 1) speak the request (Voice), 2) type the request (Text), and 3) choose the request from a fixed set of options (Multiple Choice). We also compared two context selectors for specifying a request’s context: 1) select a segment of content (Highlight), and 2) point to one location in the content (Click). The multiple choice options are pre-selected from the types of request that we found in our previous studies \[Chen et al. 2016\], and the multiple location options are the most common programming language constructors.
 
 <a id="page-2"></a>
-
-1:2 <sup>•</sup> Y. Chen, S. Oney and W.S. Lasecki
 
 <table>
   <thead>
@@ -73,11 +71,9 @@ To better understand the trade-offs between different methods that helpers can u
 
 Based on the common requests that participants made in Study 1, we developed three tasks (developer requests to respond to) and asked participants to respond to them using the documentation of the synthesized programming language. We hired 12 participants with three for each condition, recorded their performance and conducted a post-task interview.
 
-Our major findings are shown in Table II where we computed the usage of each response format quantitatively and analyzed feedback from interview. Additionally, among the six participants who did not use a consistent response format during the study, four of them started with one method for task 1, and then used annotation for task two, and then switched back to the first method for task 3. Based on this pattern and participants’ later reports, we found the usage of response format depends on the types of requests. For example, a general question is better to use explanation to respond and a request relates to a specific line of code is better to use annotation. Code inline is good for code request where one can explain the code in natural language along with his editing. The takeaway is that these Collective Intelligence 2016.
-
 <a id="page-3"></a>
 
-Crowd Supporting Systems for Software Development <sup>•</sup> 1:3
+Our major findings are shown in Table II where we computed the usage of each response format quantitatively and analyzed feedback from interview. Additionally, among the six participants who did not use a consistent response format during the study, four of them started with one method for task 1, and then used annotation for task two, and then switched back to the first method for task 3. Based on this pattern and participants’ later reports, we found the usage of response format depends on the types of requests. For example, a general question is better to use explanation to respond and a request relates to a specific line of code is better to use annotation. Code inline is good for code request where one can explain the code in natural language along with his editing. The takeaway is that these three methods complement with each other. The trade-offs between them depends on the types of the requests and helpers preference.
 
 Study 2: developers’ angle
 
@@ -159,8 +155,6 @@ Study 3: helpers’ angle
 
 Table II. : Some pros and cons of three response formats from both helpers and developers’ angle, and design takeaways.
 
-three methods complement with each other. The trade-offs between them depends on the types of the requests and helpers preference.
-
 ### 2.3 Study 3: Developers Integration Methods
 
 To understand these three response methods (annotation, explanation, and code inline) from developers’ perspective, we observed how developers integrate the same responses written in different formats. We ran the same four-condition experiment with one multi-step task, which contains subtasks that would be better to represent in one of the three formats.
@@ -172,8 +166,6 @@ Participants mentioned pros and cons for different response methods. For example
 We summarized the pros and cons for each response format and drew design implications from the results that facilitate future system development (Table II). When developing the integration part of the support systems, one should consider the speed of integration, correctness of responses, and understandability of responses as three major factors.
 
 <a id="page-4"></a>
-
-1:4 <sup>•</sup> Y. Chen, S. Oney and W.S. Lasecki
 
 ## 3. RELATED WORK
 

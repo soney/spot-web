@@ -1,0 +1,138 @@
+{
+  "file": "oney-firecrystal-vlhcc2009.pdf",
+  "pdf_sha256": "3f6392e9c1099660d5a1e4a6075b7d27edec64c873cdab98104ecc610f731d3e",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages",
+  "structure_elements": 85,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 34,
+    "H2": 8,
+    "H3": 4,
+    "Figure": 1,
+    "Caption": 1,
+    "L": 1,
+    "LI": 10,
+    "Lbl": 10,
+    "LBody": 10
+  },
+  "structure_content_references": 1828,
+  "parent_tree_entries": 4,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 362,
+      "text_operations_artifact": 49
+    },
+    {
+      "page": 2,
+      "vector_operations_tagged": 2,
+      "text_operations_artifact": 31,
+      "text_operations_tagged": 279,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 566,
+      "text_operations_artifact": 74
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 617,
+      "text_operations_artifact": 165,
+      "vector_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "33:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "36:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "38:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "40:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "43:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "45:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "52:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "75:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "80:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "91:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "95:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "98:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "100:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "49:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 1 - FireCrystal replaying an interaction with an article on the New York Times website \n(http://www.nytimes.com/). In this interaction, the question mark box (outlined in red) appears after the user has \nhighlighted a phrase (“great alumni” in this case). The timeline on the bottom of the screen shows user input events \n(in blue, from left: mouse down and up events, keyboard keys down and up, and window resizing, etc.) and DOM \nchanges (as yellow bars). As the user drags the timeline handle (in red) to different times, a callout box gives more \ndetails on the event, the interaction is shown on a clone of the web page (left panel), and relevant code (Javascript, \nHTML, or CSS) is highlighted (right panel)",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

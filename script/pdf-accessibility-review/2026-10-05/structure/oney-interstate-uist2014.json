@@ -1,0 +1,354 @@
+{
+  "file": "oney-interstate-uist2014.pdf",
+  "pdf_sha256": "87a2858b850eb9be342920a1ab4a68ade782d40427925139b45a759c0f4f875b",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "InterState: A Language and Environment for Expressing Interface Behavior",
+  "structure_elements": 288,
+  "roles": {
+    "Document": 1,
+    "Sect": 10,
+    "H1": 1,
+    "P": 103,
+    "H2": 11,
+    "H3": 16,
+    "Note": 1,
+    "Figure": 5,
+    "Caption": 6,
+    "Code": 4,
+    "H4": 15,
+    "L": 2,
+    "LI": 38,
+    "Lbl": 37,
+    "LBody": 38
+  },
+  "structure_content_references": 7295,
+  "parent_tree_entries": 10,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 570,
+      "text_operations_artifact": 107,
+      "vector_operations_tagged": 121,
+      "vector_operations_artifact": 27
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 631,
+      "text_operations_artifact": 165
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 593,
+      "text_operations_artifact": 125
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 587,
+      "text_operations_artifact": 68
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 691,
+      "text_operations_artifact": 154,
+      "vector_operations_tagged": 184,
+      "vector_operations_artifact": 22
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 653,
+      "text_operations_artifact": 118,
+      "vector_operations_tagged": 1029,
+      "vector_operations_artifact": 120
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 578,
+      "text_operations_artifact": 111,
+      "vector_operations_tagged": 15,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 577,
+      "text_operations_artifact": 86
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 642,
+      "text_operations_artifact": 113
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 423,
+      "text_operations_artifact": 88
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "113:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "118:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "120:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "122:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "128:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "140:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "147:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "149:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "152:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "154:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "157:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "161:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "299:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "302:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "306:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "309:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "312:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "314:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "320:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "322:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "335:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "341:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "344:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "351:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "354:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "361:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "363:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "365:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "369:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "374:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "379:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "382:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "386:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "394:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "397:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "399:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "401:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "404:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "406:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "408:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "410:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "416:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "418:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "125:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1: A basic InterState object, named draggable, which \nimplements draggable and drag lock behaviors. Properties that\ncontrol draggable’s display are represented as rows (e.g. x, y, \nand fill). States and transitions are represented as columns (e.g.\nno_drag and drag). An entry in a property’s row for a particular \nstate specifies a constraint that controls that property’s value in that\nstate. Here, while draggable is in the drag state, x and y will be \nconstrained to mouse.x and mouse.y respectively, meaning \ndraggable will follow the mouse.",
+      "actual_text": ""
+    },
+    {
+      "element": "326:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instance my_square lists square as its prototype and overrides width with 20. It inherits the expression height = width rather than the fixed value 15, so its height evaluates to its own width, 20. Inherited expressions are displayed in gray.",
+      "actual_text": ""
+    },
+    {
+      "element": "332:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 4. InterState multiple inheritance combines selectable and draggable objects. Selectable has not_selected and selected states and supplies a blue fill when selected. Draggable has not_dragging and dragging states, supplies a red fill while dragging, and constrains x and y to mouse.x and mouse.y. The combined my_selectable_draggable object inherits both state machines and their property definitions; its prototypes field lists selectable before draggable.",
+      "actual_text": ""
+    },
+    {
+      "element": "347:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5. InterState person_display object has copies ['Jane', 'Sue']. The selected first copy has my_copy 'Jane' and copy_num 0; the second has my_copy 'Sue' and copy_num 1. The copies control shows copy 1 of 2.",
+      "actual_text": ""
+    },
+    {
+      "element": "358:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6. The editor highlights the x constraint other_shape.x+5 in red and displays: Error: Could not find field 'other_shape'. The program continues running despite this missing-field error.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

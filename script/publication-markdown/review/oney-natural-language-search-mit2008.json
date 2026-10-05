@@ -2,9 +2,9 @@
   "file": "oney-natural-language-search-mit2008.pdf",
   "title": "Natural Language Search of Structured Documents",
   "publication_id": "natural_language_search_of_structured_documents_2008",
-  "pdf_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+  "pdf_sha256": "30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4",
   "markdown": "publications/oney-natural-language-search-mit2008.md",
-  "markdown_sha256": "3f0ddaee9672e43528d67cdb2fcb19abb51edcdf57181806c75823fd96bee858",
+  "markdown_sha256": "47180830ef7faabde7cf7f7250e391cb529701644d532c0ebac90b17a11c3d11",
   "pages": 48,
   "blocks": [
     {
@@ -920,21 +920,21 @@
       "characters": 1027
     },
     {
-      "node": "joined-203:0",
-      "role": "P",
-      "pages": [
-        10,
-        11
-      ],
-      "characters": 660
-    },
-    {
       "node": "194:0",
       "role": "Note",
       "pages": [
         10
       ],
       "characters": 132
+    },
+    {
+      "node": "203:0",
+      "role": "P",
+      "pages": [
+        10,
+        11
+      ],
+      "characters": 660
     },
     {
       "node": "1015:0",
@@ -1189,6 +1189,14 @@
       "characters": 334
     },
     {
+      "node": "530:0",
+      "role": "Note",
+      "pages": [
+        15
+      ],
+      "characters": 138
+    },
+    {
       "node": "523:0",
       "role": "H3",
       "pages": [
@@ -1227,14 +1235,6 @@
         15
       ],
       "characters": 339
-    },
-    {
-      "node": "530:0",
-      "role": "Note",
-      "pages": [
-        15
-      ],
-      "characters": 138
     },
     {
       "node": "532:0",
@@ -1725,7 +1725,7 @@
       "pages": [
         26
       ],
-      "characters": 352
+      "characters": 598
     },
     {
       "node": "713:0",
@@ -1848,23 +1848,6 @@
       "characters": 343
     },
     {
-      "node": "736:0",
-      "role": "H4",
-      "pages": [
-        28
-      ],
-      "characters": 25
-    },
-    {
-      "node": "joined-737:0",
-      "role": "P",
-      "pages": [
-        28,
-        29
-      ],
-      "characters": 526
-    },
-    {
       "node": "738:0",
       "role": "Note",
       "pages": [
@@ -1873,20 +1856,21 @@
       "characters": 695
     },
     {
-      "node": "741:0",
-      "role": "P",
+      "node": "736:0",
+      "role": "H4",
       "pages": [
-        29
+        28
       ],
-      "characters": 106
+      "characters": 25
     },
     {
-      "node": "742:0",
+      "node": "737:0",
       "role": "P",
       "pages": [
+        28,
         29
       ],
-      "characters": 123
+      "characters": 757
     },
     {
       "node": "joined-743:0",
@@ -1913,6 +1897,14 @@
       "characters": 14
     },
     {
+      "node": "771:0",
+      "role": "Note",
+      "pages": [
+        29
+      ],
+      "characters": 159
+    },
+    {
       "node": "748:0",
       "role": "Table",
       "pages": [
@@ -1935,14 +1927,6 @@
         29
       ],
       "characters": 374
-    },
-    {
-      "node": "771:0",
-      "role": "Note",
-      "pages": [
-        29
-      ],
-      "characters": 159
     },
     {
       "node": "773:0",
@@ -1977,20 +1961,20 @@
       "characters": 387
     },
     {
-      "node": "777:0",
-      "role": "P",
-      "pages": [
-        30
-      ],
-      "characters": 448
-    },
-    {
       "node": "778:0",
       "role": "Note",
       "pages": [
         30
       ],
       "characters": 99
+    },
+    {
+      "node": "777:0",
+      "role": "P",
+      "pages": [
+        30
+      ],
+      "characters": 448
     },
     {
       "node": "780:0",
@@ -2129,6 +2113,14 @@
       "characters": 446
     },
     {
+      "node": "824:0",
+      "role": "Note",
+      "pages": [
+        33
+      ],
+      "characters": 400
+    },
+    {
       "node": "812:0",
       "role": "H4",
       "pages": [
@@ -2158,7 +2150,7 @@
       "pages": [
         33
       ],
-      "characters": 340
+      "characters": 381
     },
     {
       "node": "818:0",
@@ -2177,21 +2169,13 @@
       "characters": 335
     },
     {
-      "node": "joined-823:0",
+      "node": "823:0",
       "role": "P",
       "pages": [
         33,
         34
       ],
       "characters": 327
-    },
-    {
-      "node": "824:0",
-      "role": "Note",
-      "pages": [
-        33
-      ],
-      "characters": 400
     },
     {
       "node": "827:0",
@@ -2231,7 +2215,7 @@
       "pages": [
         34
       ],
-      "characters": 359
+      "characters": 414
     },
     {
       "node": "832:0",
@@ -3262,7 +3246,7 @@
       ],
       "sha256": "c3696416ce487fef771643928fff7a7454e23d0cd356df310c4b26ea181f79f7",
       "kind": "formula",
-      "alt": "P of w-e given w-f equals P of w-e times P of w-f given w-e, divided by P of w-f; proportional to P of w-e times P of w-f given w-e."
+      "alt": "P of w-e given w-f equals P of w-e times P of w-f given w-e divided by P of w-f. The printed expression then equates this to P of w-e times P of w-f given w-e; with w-f fixed, that final relationship is proportionality because the denominator is constant."
     },
     {
       "path": "figures/oney-natural-language-search-mit2008/formula-004-p026.png",
@@ -3332,7 +3316,7 @@
       ],
       "sha256": "f3ebed68602ab1ef78ae41281a7e276c8c5e5112947c75aa54dea4257a200a7d",
       "kind": "figure",
-      "alt": "Named-entity recognition examples. Player mentions such as Gary Sheffield, Chien-Ming Wang, Webb and Johnson are highlighted and labeled Player. New York is marked as a Location and Red Sox as a Team. The labels distinguish entities from the surrounding sentence text."
+      "alt": "Named-entity recognition examples. Gary Sheffield, Matsui, Wells, Johnson and Damon are highlighted in blue and labeled Player. New York is highlighted in green and labeled Location; Red Sox is highlighted in red and labeled Team. The annotations separate baseball entities from the surrounding sentence text."
     },
     {
       "path": "figures/oney-natural-language-search-mit2008/figure-012-p034.png",
@@ -3346,7 +3330,7 @@
       ],
       "sha256": "56f0235566ec49b367e34b4008da02b280fd1977250c1ade333e2edbf8301b43",
       "kind": "figure",
-      "alt": "Game-summary excerpt illustrating inning inference. The first sentence says Johnson came out dealing in the first inning; the following sentence describes his first pitch, an ensuing strikeout and fly outs. The later events inherit the inning context established by the earlier sentence."
+      "alt": "Game-summary excerpt illustrating inning inference. The opening sentence places Johnson in the first inning. Johnny Damon swings through the first pitch; the following sentence describes Edgar Renteria and Manny Ramirez taking strike three, completing a 1-2-3 inning. Those later events inherit the inning established by the opening sentence."
     },
     {
       "path": "figures/oney-natural-language-search-mit2008/formula-007-p035.png",
@@ -3988,7 +3972,7 @@
     }
   ],
   "normalization": {
-    "paragraph_fragments_joined": 97,
+    "paragraph_fragments_joined": 94,
     "line_wrap_hyphens_retained": 6,
     "script_runs_positioned": 43
   },
@@ -4000,5 +3984,5 @@
     }
   ],
   "source_tags": "source-tags/oney-natural-language-search-mit2008.json.gz",
-  "source_tags_sha256": "588da8250720f645633d2a45640d49e0df52b3f8d13c4299eda6a4d1ee91bfe9"
+  "source_tags_sha256": "9c973a77cc788dc3be2f1768379a7aa8b50a8d9ffd011158e89b480b83c19f24"
 }

@@ -2,9 +2,9 @@
   "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
   "title": "Understanding Challenges and Needs of Using AI in Web Automation Systems",
   "publication_id": "understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025",
-  "pdf_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+  "pdf_sha256": "ed50f04e067a48be53903e9bf6376cd09d331344bc03d4ed0add2536d9ccfbfd",
   "markdown": "publications/zhang-understanding-challenges-needs-chi2025compui.md",
-  "markdown_sha256": "c0016706700996414a963eaa9a9c1184abaf9a00a7926147b6bf822746436f9c",
+  "markdown_sha256": "de3e5740f7c305d4b369bef4532804e733bf76431c97266b25bc242bb6042246",
   "pages": 10,
   "blocks": [
     {
@@ -452,9 +452,10 @@
       "node": "937:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 199
+      "characters": 390
     },
     {
       "node": "959:0",
@@ -471,14 +472,6 @@
         4
       ],
       "characters": 774
-    },
-    {
-      "node": "961:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 190
     },
     {
       "node": "962:0",
@@ -545,7 +538,7 @@
       "characters": 38
     },
     {
-      "node": "joined-971:0",
+      "node": "971:0",
       "role": "P",
       "pages": [
         4,
@@ -1080,13 +1073,13 @@
   ],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 142,
-    "paragraph_fragments_joined": 6,
-    "line_wrap_hyphens_retained": 18,
+    "line_wrap_hyphens_removed": 134,
+    "paragraph_fragments_joined": 5,
+    "line_wrap_hyphens_retained": 17,
     "script_runs_positioned": 1,
     "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-understanding-challenges-needs-chi2025compui.json.gz",
-  "source_tags_sha256": "2559901268b83a5d1515ab0e7f2edc41031e0d31ca5f620cbaaf9646ace6129e"
+  "source_tags_sha256": "7d6c691b8645b6a7b49f7804b6711209d88fd73f679982974139a48f5cf83164"
 }

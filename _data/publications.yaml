@@ -36,6 +36,7 @@
   venue: tse_2026
   pdf: pdfs/arab-navigating-complexity-tse2026.pdf
   markdown: markdown/arab-navigating-complexity-tse2026.md
+  markdown_bundle: markdown/arab-navigating-complexity-tse2026.zip
 - id: editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026
   title: "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code"
   abstract: >-
@@ -72,6 +73,7 @@
   venue: uist_2026
   pdf: pdfs/zhang-editrail-uist2026.pdf
   markdown: markdown/zhang-editrail-uist2026.md
+  markdown_bundle: markdown/zhang-editrail-uist2026.zip
 - id: codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026
   title: "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories"
   doi: 10.1145/3772318.3791873
@@ -107,6 +109,7 @@
   venue: chi_2026
   pdf: pdfs/zhang-codestream-chi2026.pdf
   markdown: markdown/zhang-codestream-chi2026.md
+  markdown_bundle: markdown/zhang-codestream-chi2026.zip
 - id: simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026
   title: Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation
   doi: 10.1145/3772363.3798829
@@ -136,6 +139,7 @@
   venue: chi_posters_2026
   pdf: pdfs/zhou-simulating-human-cursor-chiposters2026.pdf
   markdown: markdown/zhou-simulating-human-cursor-chiposters2026.md
+  markdown_bundle: markdown/zhou-simulating-human-cursor-chiposters2026.zip
 - id: co_advisor_learning_programming_strategies_in_context_2025
   title: "Co-Advisor: Learning Programming Strategies in Context"
   doi: 10.1109/vl-hcc65237.2025.00045
@@ -174,6 +178,7 @@
   venue: vl_hcc_2025
   pdf: pdfs/arab-co-advisor-vlhcc2025.pdf
   markdown: markdown/arab-co-advisor-vlhcc2025.md
+  markdown_bundle: markdown/arab-co-advisor-vlhcc2025.zip
 - id: convomap_interactive_visualizations_for_exploring_complex_conversations_in_multi_agent_systems_2025
   title: "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems"
   doi: 10.1109/vl-hcc65237.2025.00043
@@ -210,6 +215,7 @@
   venue: vl_hcc_2025
   pdf: pdfs/zhang-convomap-vlhcc2025.pdf
   markdown: markdown/zhang-convomap-vlhcc2025.md
+  markdown_bundle: markdown/zhang-convomap-vlhcc2025.zip
 - id: multi_click_cross_tab_web_automation_via_action_generalization_2025
   title: "Multi-Click: Cross-Tab Web Automation via Action Generalization"
   doi: 10.1145/3746059.3747780
@@ -240,6 +246,7 @@
   venue: uist_2025
   pdf: pdfs/zhang-multi-click-uist2025.pdf
   markdown: markdown/zhang-multi-click-uist2025.md
+  markdown_bundle: markdown/zhang-multi-click-uist2025.zip
 - id: spark_real_time_monitoring_of_multi_faceted_programming_exercises_2025
   title: "SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises"
   doi: 10.1109/vl-hcc65237.2025.00018
@@ -272,6 +279,7 @@
   venue: vl_hcc_2025
   pdf: pdfs/yang-spark-vlhcc2025.pdf
   markdown: markdown/yang-spark-vlhcc2025.md
+  markdown_bundle: markdown/yang-spark-vlhcc2025.zip
 - id: understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025
   title: Understanding And Guiding Student-AI Interaction In Future Programming Education
   abstract: >-
@@ -305,6 +313,7 @@
   venue: chi2025_ae_ai_2025
   pdf: pdfs/zhang-understanding-guiding-student-ai-chi2025aeai.pdf
   markdown: markdown/zhang-understanding-guiding-student-ai-chi2025aeai.md
+  markdown_bundle: markdown/zhang-understanding-guiding-student-ai-chi2025aeai.zip
 - id: understanding_challenges_and_needs_of_using_ai_in_web_automation_systems_2025
   title: Understanding Challenges and Needs of Using AI in Web Automation Systems
   abstract: >-
@@ -335,6 +344,7 @@
   venue: chi2025_compui_2025
   pdf: pdfs/zhang-understanding-challenges-needs-chi2025compui.pdf
   markdown: markdown/zhang-understanding-challenges-needs-chi2025compui.md
+  markdown_bundle: markdown/zhang-understanding-challenges-needs-chi2025compui.zip
 - id: don_t_step_on_my_toes_resolving_editing_conflicts_in_real_time_collaboration_in_computational_notebooks_2024
   title: "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks"
   doi: 10.1145/3643796.3648453
@@ -361,6 +371,7 @@
   venue: ide_workshop_2024
   pdf: pdfs/wang-dont-step-on-my-toes-ideworkshop2024.pdf
   markdown: markdown/wang-dont-step-on-my-toes-ideworkshop2024.md
+  markdown_bundle: markdown/wang-dont-step-on-my-toes-ideworkshop2024.zip
 - id: cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
   title: "CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale"
   doi: 10.1145/3657604.3662025
@@ -401,6 +412,7 @@
   venue: l_s_2024
   pdf: pdfs/zhang-cflow-ls2024.pdf
   markdown: markdown/zhang-cflow-ls2024.md
+  markdown_bundle: markdown/zhang-cflow-ls2024.zip
 - id: demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024
   title: "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale"
   doi: 10.1145/3657604.3664717
@@ -437,6 +449,7 @@
   venue: l_s_demos_2024
   pdf: pdfs/zhang-demonstration-of-cflow-lsdemos2024.pdf
   markdown: markdown/zhang-demonstration-of-cflow-lsdemos2024.md
+  markdown_bundle: markdown/zhang-demonstration-of-cflow-lsdemos2024.zip
 - id: edbooks_ai_enhanced_interactive_narratives_for_programming_education_2024
   title: "EDBooks: AI-Enhanced Interactive Narratives for Programming Education"
   abstract: >-
@@ -461,6 +474,7 @@
   venue: preprint_2024
   pdf: pdfs/oney-edbooks-preprint2024.pdf
   markdown: markdown/oney-edbooks-preprint2024.md
+  markdown_bundle: markdown/oney-edbooks-preprint2024.zip
 - id: improving_advising_relationships_between_phd_students_and_faculty_in_human_computer_interaction_2024
   title: Improving Advising Relationships Between PhD Students and Faculty in Human-Computer Interaction
   doi: 10.1145/3613905.3643971
@@ -490,6 +504,7 @@
   venue: chi_ea_2024
   pdf: pdfs/im-improving-advising-relationships-chiea2024.pdf
   markdown: markdown/im-improving-advising-relationships-chiea2024.md
+  markdown_bundle: markdown/im-improving-advising-relationships-chiea2024.zip
 - id: scrapeviz_hierarchical_representations_for_web_scraping_macros_2024
   title: "ScrapeViz: Hierarchical Representations for Web Scraping Macros"
   doi: 10.1109/vl/hcc60511.2024.00040
@@ -517,6 +532,7 @@
   venue: vl_hcc_2024
   pdf: pdfs/krosnick-scrapeviz-vlhcc2024.pdf
   markdown: markdown/krosnick-scrapeviz-vlhcc2024.md
+  markdown_bundle: markdown/krosnick-scrapeviz-vlhcc2024.zip
 - id: towards_inclusive_source_code_readability_based_on_the_preferences_of_programmers_with_visual_impairments_2024
   title: Towards Inclusive Source Code Readability Based on the Preferences of Programmers with Visual Impairments
   doi: 10.1145/3613904.3642512
@@ -545,6 +561,7 @@
   venue: chi_2024
   pdf: pdfs/pandey-inclusive-source-code-chi2024.pdf
   markdown: markdown/pandey-inclusive-source-code-chi2024.md
+  markdown_bundle: markdown/pandey-inclusive-source-code-chi2024.zip
 - id: vizcode_a_practical_real_time_tool_for_in_class_computer_programming_tutoring_2024
   title: "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring"
   doi: 10.1145/3657604.3664716
@@ -571,6 +588,7 @@
   venue: l_s_demos_2024
   pdf: pdfs/yang-vizcode-lsdemos2024.pdf
   markdown: markdown/yang-vizcode-lsdemos2024.md
+  markdown_bundle: markdown/yang-vizcode-lsdemos2024.zip
 - id: vrcopilot_authoring_3d_layouts_with_generative_models_in_vr_2024
   title: "VRCopilot: Authoring 3D Layouts with Generative Models in VR"
   doi: 10.1145/3654777.3676451
@@ -606,6 +624,7 @@
   venue: uist_2024
   pdf: pdfs/zhang-vrcopilot-uist2024.pdf
   markdown: markdown/zhang-vrcopilot-uist2024.md
+  markdown_bundle: markdown/zhang-vrcopilot-uist2024.zip
 - id: colaroid_a_literate_programming_approach_for_authoring_explorable_multi_stage_tutorials_2023
   title: "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials"
   doi: 10.1145/3544548.3581525
@@ -637,6 +656,7 @@
   venue: chi_2023
   pdf: pdfs/wang-colaroid-chi2023.pdf
   markdown: markdown/wang-colaroid-chi2023.md
+  markdown_bundle: markdown/wang-colaroid-chi2023.zip
 - id: how_pairing_by_code_similarity_influences_discussions_in_peer_learning_2023
   title: How Pairing by Code Similarity Influences Discussions in Peer Learning
   doi: 10.1145/3544549.3585837
@@ -667,6 +687,7 @@
   venue: chi_lbw_2023
   pdf: pdfs/xu-how-pairing-code-chilbw2023.pdf
   markdown: markdown/xu-how-pairing-code-chilbw2023.md
+  markdown_bundle: markdown/xu-how-pairing-code-chilbw2023.zip
 - id: promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023
   title: Promises and Pitfalls of Using LLMs for Scraping Web UIs
   abstract: >-
@@ -687,6 +708,7 @@
   venue: chi2023_compui_2023
   pdf: pdfs/krosnick-promises-pitfalls-llms-chi2023compui.pdf
   markdown: markdown/krosnick-promises-pitfalls-llms-chi2023compui.md
+  markdown_bundle: markdown/krosnick-promises-pitfalls-llms-chi2023compui.zip
 - id: runex_augmenting_regular_expression_code_search_with_runtime_values_2023
   title: "RunEx: Augmenting Regular-Expression Code Search with Runtime Values"
   doi: 10.1109/vl-hcc57772.2023.00024
@@ -718,6 +740,7 @@
   venue: vl_hcc_2023
   pdf: pdfs/zhang-runex-vlhcc2023.pdf
   markdown: markdown/zhang-runex-vlhcc2023.md
+  markdown_bundle: markdown/zhang-runex-vlhcc2023.zip
 - id: ui_development_in_mixed_ability_software_engineering_teams_2023
   title: UI Development Experiences of Programmers with Visual Impairments in Product Teams
   doi: 10.1007/978-1-4842-9651-6_8
@@ -741,6 +764,7 @@
   venue: edi_2024
   pdf: pdfs/pandey-ui-development-experiences-edi2024.pdf
   markdown: markdown/pandey-ui-development-experiences-edi2024.md
+  markdown_bundle: markdown/pandey-ui-development-experiences-edi2024.zip
 - id: vizprog_identifying_misunderstandings_by_visualizing_students_coding_progress_2023
   title: "VizProg: Identifying Misunderstandings by Visualizing Students' Coding Progress"
   doi: 10.1145/3544548.3581516
@@ -770,6 +794,7 @@
   venue: chi_2023
   pdf: pdfs/zhang-vizprog-chi2023.pdf
   markdown: markdown/zhang-vizprog-chi2023.md
+  markdown_bundle: markdown/zhang-vizprog-chi2023.zip
 - id: vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023
   title: "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality"
   doi: 10.1145/3544548.3581136
@@ -805,6 +830,7 @@
   venue: chi_2023
   pdf: pdfs/zhang-vrgit-chi2023.pdf
   markdown: markdown/zhang-vrgit-chi2023.md
+  markdown_bundle: markdown/zhang-vrgit-chi2023.zip
 - id: accessibility_of_ui_frameworks_and_libraries_for_programmers_with_visual_impairments_2022
   title: Accessibility of UI Frameworks and Libraries for Programmers with Visual Impairments
   doi: 10.1109/vl/hcc53370.2022.9833098
@@ -838,6 +864,7 @@
   venue: vl_hcc_2022
   pdf: pdfs/pandey-accessibility-ui-frameworks-vlhcc2022.pdf
   markdown: markdown/pandey-accessibility-ui-frameworks-vlhcc2022.md
+  markdown_bundle: markdown/pandey-accessibility-ui-frameworks-vlhcc2022.zip
 - id: parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022
   title: "ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization"
   doi: 10.1109/vl/hcc53370.2022.9833005
@@ -863,6 +890,7 @@
   venue: vl_hcc_2022
   pdf: pdfs/krosnick-parammacros-vlhcc2022.pdf
   markdown: markdown/krosnick-parammacros-vlhcc2022.md
+  markdown_bundle: markdown/krosnick-parammacros-vlhcc2022.zip
 - id: cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021
   title: "CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing"
   doi: 10.1145/3411764.3445573
@@ -893,6 +921,7 @@
   venue: chi_2021
   pdf: pdfs/chen-cocapture-chi2021.pdf
   markdown: markdown/chen-cocapture-chi2021.md
+  markdown_bundle: markdown/chen-cocapture-chi2021.zip
 - id: puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021
   title: "PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises"
   doi: 10.1145/3479559
@@ -930,6 +959,7 @@
   venue: cscw_2021
   pdf: pdfs/wang-puzzleme-cscw2021.pdf
   markdown: markdown/wang-puzzleme-cscw2021.md
+  markdown_bundle: markdown/wang-puzzleme-cscw2021.zip
 - id: think_aloud_computing_supporting_rich_and_low_effort_knowledge_capture_2021
   title: "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture"
   doi: 10.1145/3411764.3445066
@@ -965,6 +995,7 @@
   venue: chi_2021
   pdf: pdfs/krosnick-think-aloud-computing-chi2021.pdf
   markdown: markdown/krosnick-think-aloud-computing-chi2021.md
+  markdown_bundle: markdown/krosnick-think-aloud-computing-chi2021.zip
 - id: understanding_accessibility_and_collaboration_in_programming_for_people_with_visual_impairments_2021
   title: Understanding Accessibility and Collaboration in Programming for People with Visual Impairments
   doi: 10.1145/3449203
@@ -1002,6 +1033,7 @@
   venue: cscw_2021
   pdf: pdfs/pandey-understanding-accessibility-collaboration-cscw2021.pdf
   markdown: markdown/pandey-understanding-accessibility-collaboration-cscw2021.md
+  markdown_bundle: markdown/pandey-understanding-accessibility-collaboration-cscw2021.zip
 - id: understanding_the_challenges_and_needs_of_programmers_writing_web_automation_scripts_2021
   title: Understanding the Challenges and Needs of Programmers Writing Web Automation Scripts
   doi: 10.1109/vl/hcc51201.2021.9576476
@@ -1032,6 +1064,7 @@
   venue: vl_hcc_2021
   pdf: pdfs/krosnick-understanding-challenges-needs-vlhcc2021.pdf
   markdown: markdown/krosnick-understanding-challenges-needs-vlhcc2021.md
+  markdown_bundle: markdown/krosnick-understanding-challenges-needs-vlhcc2021.zip
 - id: what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021
   title: What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle
   doi: 10.1145/3411763.3451617
@@ -1066,6 +1099,7 @@
   venue: chi_ea_2021
   pdf: pdfs/wang-what-makes-well-documented-chiea2021.pdf
   markdown: markdown/wang-what-makes-well-documented-chiea2021.md
+  markdown_bundle: markdown/wang-what-makes-well-documented-chiea2021.zip
 - id: a_hybrid_crowd_machine_workflow_for_program_synthesis_2020
   title: A Hybrid Crowd-Machine Workflow for Program Synthesis
   abstract: >-
@@ -1098,6 +1132,7 @@
   venue: vl_hcc_2020
   pdf: pdfs/chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf
   markdown: markdown/chen-hybrid-crowd-machine-workflow-vlhcc2020.md
+  markdown_bundle: markdown/chen-hybrid-crowd-machine-workflow-vlhcc2020.zip
 - id: callisto_capturing_the_why_by_connecting_conversations_with_computational_narratives_2020
   title: "Callisto: Capturing the \"Why\" by Connecting Conversations with Computational Narratives"
   doi: 10.1145/3313831.3376740
@@ -1130,6 +1165,7 @@
   venue: chi_2020
   pdf: pdfs/wang-callisto-chi2020.pdf
   markdown: markdown/wang-callisto-chi2020.md
+  markdown_bundle: markdown/wang-callisto-chi2020.zip
 - id: edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020
   title: "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education"
   doi: 10.1109/vl/hcc50065.2020.9127260
@@ -1167,6 +1203,7 @@
   venue: vl_hcc_2020
   pdf: pdfs/chen-edcode-vlhcc2020.pdf
   markdown: markdown/chen-edcode-vlhcc2020.md
+  markdown_bundle: markdown/chen-edcode-vlhcc2020.zip
 - id: explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020
   title: "Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People"
   doi: 10.1145/3313831.3376349
@@ -1198,6 +1235,7 @@
   venue: chi_2020
   pdf: pdfs/pandey-explore-create-annotate-chi2020.pdf
   markdown: markdown/pandey-explore-create-annotate-chi2020.md
+  markdown_bundle: markdown/pandey-explore-create-annotate-chi2020.zip
 - id: flowmatic_an_immersive_authoring_tool_for_creating_interactive_scenes_in_virtual_reality_2020
   title: "FlowMatic: An Immersive Authoring Tool for Creating Interactive Scenes in Virtual Reality"
   doi: 10.1145/3379337.3415824
@@ -1233,6 +1271,7 @@
   venue: uist_2020
   pdf: pdfs/zhang-flowmatic-uist2020.pdf
   markdown: markdown/zhang-flowmatic-uist2020.md
+  markdown_bundle: markdown/zhang-flowmatic-uist2020.zip
 - id: improving_crowd_supported_gui_testing_with_structural_guidance_2020
   title: Improving Crowd-Supported GUI Testing with Structural Guidance
   doi: 10.1145/3313831.3376835
@@ -1271,6 +1310,7 @@
   venue: chi_2020
   pdf: pdfs/chen-improving-crowd-supported-gui-chi2020.pdf
   markdown: markdown/chen-improving-crowd-supported-gui-chi2020.md
+  markdown_bundle: markdown/chen-improving-crowd-supported-gui-chi2020.zip
 - id: on_demand_collaboration_in_programming_2020
   title: On-Demand Collaboration in Programming
   abstract: >-
@@ -1300,6 +1340,7 @@
   venue: msnfws_2020
   pdf: pdfs/chen-on-demand-collaboration-programming-msnfws2020.pdf
   markdown: markdown/chen-on-demand-collaboration-programming-msnfws2020.md
+  markdown_bundle: markdown/chen-on-demand-collaboration-programming-msnfws2020.zip
 - id: sifter_a_hybrid_workflow_for_theme_based_video_curation_at_scale_2020
   title: "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale"
   doi: 10.1145/3391614.3393657
@@ -1331,6 +1372,7 @@
   venue: imx_2020
   pdf: pdfs/chen-sifter-imx2020.pdf
   markdown: markdown/chen-sifter-imx2020.md
+  markdown_bundle: markdown/chen-sifter-imx2020.zip
 - id: toward_providing_live_feedback_in_web_automation_ides_2020
   title: Toward Providing Live Feedback in Web Automation IDEs
   short_description: >-
@@ -1346,6 +1388,7 @@
   venue: live_2020
   pdf: pdfs/krosnick-providing-live-feedback-live2020.pdf
   markdown: markdown/krosnick-providing-live-feedback-live2020.md
+  markdown_bundle: markdown/krosnick-providing-live-feedback-live2020.zip
 - id: exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019
   title: Exploring the Tracking Needs and Practices of  Recreational Athletes.
   abstract: >-
@@ -1375,6 +1418,7 @@
   venue: pervasivehealth_2019
   pdf: pdfs/pandey-exploring-tracking-needs-pervasivehealth2019.pdf
   markdown: markdown/pandey-exploring-tracking-needs-pervasivehealth2019.md
+  markdown_bundle: markdown/pandey-exploring-tracking-needs-pervasivehealth2019.zip
 - id: how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019
   title: How Data Scientists Use Computational Notebooks for Real-Time Collaboration
   doi: 10.1145/3359141
@@ -1414,6 +1458,7 @@
   venue: cscw_2019
   pdf: pdfs/wang-how-data-scientists-cscw2019.pdf
   markdown: markdown/wang-how-data-scientists-cscw2019.md
+  markdown_bundle: markdown/wang-how-data-scientists-cscw2019.zip
 - id: implementing_multi_touch_gestures_with_touch_groups_and_cross_events_2019
   title: Implementing Multi-Touch Gestures with Touch Groups and Cross Events
   doi: 10.1145/3290605.3300585
@@ -1447,6 +1492,7 @@
   venue: chi_2019
   pdf: pdfs/oney-implementing-multi-touch-gestures-chi2019.pdf
   markdown: markdown/oney-implementing-multi-touch-gestures-chi2019.md
+  markdown_bundle: markdown/oney-implementing-multi-touch-gestures-chi2019.zip
 - id: redesigning_notebooks_for_data_science_education_2019
   title: Redesigning Notebooks for Data Science Education
   abstract: >-
@@ -1471,6 +1517,7 @@
   venue: husdat_2019
   pdf: pdfs/wang-redesigning-notebooks-data-husdat2019.pdf
   markdown: markdown/wang-redesigning-notebooks-data-husdat2019.md
+  markdown_bundle: markdown/wang-redesigning-notebooks-data-husdat2019.zip
 - id: studying_the_benefits_and_challenges_of_immersive_dataflow_programming_2019
   title: Studying the Benefits and Challenges of Immersive Dataflow Programming
   doi: 10.1109/vlhcc.2019.8818856
@@ -1501,6 +1548,7 @@
   venue: vl_hcc_2019
   pdf: pdfs/zhang-studying-benefits-challenges-vlhcc2019.pdf
   markdown: markdown/zhang-studying-benefits-challenges-vlhcc2019.md
+  markdown_bundle: markdown/zhang-studying-benefits-challenges-vlhcc2019.zip
 - id: adasa_a_conversational_in_vehicle_digital_assistant_for_advanced_driver_assistance_features_2018
   title: "Adasa: A Conversational In-Vehicle Digital Assistant for Advanced Driver Assistance Features"
   doi: 10.1145/3242587.3242593
@@ -1535,6 +1583,7 @@
   venue: uist_2018
   pdf: pdfs/lin-adasa-uist2018.pdf
   markdown: markdown/lin-adasa-uist2018.md
+  markdown_bundle: markdown/lin-adasa-uist2018.zip
 - id: arboretum_and_arbility_improving_web_accessibility_through_a_shared_browsing_architecture_2018
   title: "Arboretum and Arbility: Improving Web Accessibility Through a Shared Browsing Architecture"
   doi: 10.1145/3242587.3242649
@@ -1576,6 +1625,7 @@
   venue: uist_2018
   pdf: pdfs/oney-arboretum-and-arbility-uist2018.pdf
   markdown: markdown/oney-arboretum-and-arbility-uist2018.md
+  markdown_bundle: markdown/oney-arboretum-and-arbility-uist2018.zip
 - id: attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018
   title: "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques"
   doi: 10.1145/3191697.3214338
@@ -1604,6 +1654,7 @@
   venue: px_18_2018
   pdf: pdfs/spinelli-attention-patterns-for-code-animations-px182018.pdf
   markdown: markdown/spinelli-attention-patterns-for-code-animations-px182018.md
+  markdown_bundle: markdown/spinelli-attention-patterns-for-code-animations-px182018.zip
 - id: creating_guided_code_explanations_with_chat_codes_2018
   title: Creating Guided Code Explanations with chat.codes
   doi: 10.1145/3274400
@@ -1637,6 +1688,7 @@
   venue: cscw_2018
   pdf: pdfs/oney-creating-guided-code-cscw2018.pdf
   markdown: markdown/oney-creating-guided-code-cscw2018.md
+  markdown_bundle: markdown/oney-creating-guided-code-cscw2018.zip
 - id: expresso_building_responsive_interfaces_with_keyframes_2018
   title: "Expresso: Building Responsive Interfaces with Keyframes"
   doi: 10.1109/vlhcc.2018.8506516
@@ -1670,6 +1722,7 @@
   venue: vl_hcc_2018
   pdf: pdfs/krosnick-expresso-vlhcc2018.pdf
   markdown: markdown/krosnick-expresso-vlhcc2018.md
+  markdown_bundle: markdown/krosnick-expresso-vlhcc2018.zip
   links:
     - url: /assets/supplements/expresso-table-i.html
       description: Table I (HTML)
@@ -1714,6 +1767,7 @@
   venue: chi_2017
   pdf: pdfs/chen-codeon-chi2017.pdf
   markdown: markdown/chen-codeon-chi2017.md
+  markdown_bundle: markdown/chen-codeon-chi2017.zip
 - id: codemend_assisting_interactive_programming_with_bimodal_embedding_2016
   title: "CodeMend: Assisting Interactive Programming with Bimodal Embedding"
   doi: 10.1145/2984511.2984544
@@ -1749,6 +1803,7 @@
   venue: uist_2016
   pdf: pdfs/rong-codemend-uist2016.pdf
   markdown: markdown/rong-codemend-uist2016.md
+  markdown_bundle: markdown/rong-codemend-uist2016.zip
 - id: expert_crowd_support_systems_for_software_developers_2016
   title: Expert Crowd Support Systems for Software Developers
   short_description: >-
@@ -1765,6 +1820,7 @@
   venue: ci_2016
   pdf: pdfs/chen-expert-crowd-support-ci2016.pdf
   markdown: markdown/chen-expert-crowd-support-ci2016.md
+  markdown_bundle: markdown/chen-expert-crowd-support-ci2016.zip
 - id: making_end_user_development_more_natural_2016
   title: Making End User Development More Natural
   doi: 10.1007/978-3-319-60291-2_1
@@ -1807,6 +1863,7 @@
   venue: eud_2017
   pdf: pdfs/myers-making-end-user-eud2017.pdf
   markdown: markdown/myers-making-end-user-eud2017.md
+  markdown_bundle: markdown/myers-making-end-user-eud2017.zip
 - id: towards_providing_on_demand_expert_support_for_software_developers_2016
   title: Towards Providing On-Demand Expert Support for Software Developers
   doi: 10.1145/2858036.2858512
@@ -1834,6 +1891,7 @@
   venue: chi_2016
   pdf: pdfs/chen-providing-on-demand-expert-chi2016.pdf
   markdown: markdown/chen-providing-on-demand-expert-chi2016.md
+  markdown_bundle: markdown/chen-providing-on-demand-expert-chi2016.zip
 - id: expressing_interactivity_with_states_and_constraints_2015
   title: Expressing Interactivity with States and Constraints
   abstract: >-
@@ -1884,6 +1942,7 @@
   venue: cmu_2015
   pdf: pdfs/oney-expressing-interactivity-states-cmu2015.pdf
   markdown: markdown/oney-expressing-interactivity-states-cmu2015.md
+  markdown_bundle: markdown/oney-expressing-interactivity-states-cmu2015.zip
 - id: interstate_a_language_and_environment_for_expressing_interface_behavior_2014
   title: "InterState: A Language and Environment for Expressing Interface Behavior"
   doi: 10.1145/2642918.2647358
@@ -1917,6 +1976,7 @@
   venue: uist_2014
   pdf: pdfs/oney-interstate-uist2014.pdf
   markdown: markdown/oney-interstate-uist2014.md
+  markdown_bundle: markdown/oney-interstate-uist2014.zip
 - id: creativity_support_in_authoring_and_backtracking_2013
   title: Creativity Support in Authoring and Backtracking
   abstract: >-
@@ -1945,6 +2005,7 @@
   venue: chi_2013_workshop_on_evaluation_methods_for_creativity_support_environments_2013
   pdf: pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf
   markdown: markdown/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.md
+  markdown_bundle: markdown/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.zip
 - id: euclase_a_live_development_environment_with_constraints_and_fsms_2013
   title: "Euclase: A Live Development Environment with Constraints and FSMs"
   doi: 10.1109/live.2013.6617342
@@ -1972,6 +2033,7 @@
   venue: live_2013
   pdf: pdfs/oney-euclase-live2013.pdf
   markdown: markdown/oney-euclase-live2013.md
+  markdown_bundle: markdown/oney-euclase-live2013.zip
 - id: zoomboard_a_diminutive_qwerty_soft_keyboard_using_iterative_zooming_for_ultra_small_devices_2013
   title: "ZoomBoard: A Diminutive QWERTY Soft Keyboard Using Iterative Zooming for Ultra-Small Devices"
   doi: 10.1145/2470654.2481387
@@ -2005,6 +2067,7 @@
   venue: chi_2013
   pdf: pdfs/oney-zoomboard-chi2013.pdf
   markdown: markdown/oney-zoomboard-chi2013.md
+  markdown_bundle: markdown/oney-zoomboard-chi2013.zip
 - id: codelets_linking_interactive_documentation_and_example_code_in_the_editor_2012
   title: "Codelets: Linking Interactive Documentation and Example Code in the Editor"
   doi: 10.1145/2207676.2208664
@@ -2037,6 +2100,7 @@
   venue: chi_2012
   pdf: pdfs/oney-codelets-chi2012.pdf
   markdown: markdown/oney-codelets-chi2012.md
+  markdown_bundle: markdown/oney-codelets-chi2012.zip
 - id: constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012
   title: "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States"
   doi: 10.1145/2380116.2380146
@@ -2065,6 +2129,7 @@
   venue: uist_2012
   pdf: pdfs/oney-constraintjs-uist2012.pdf
   markdown: markdown/oney-constraintjs-uist2012.md
+  markdown_bundle: markdown/oney-constraintjs-uist2012.zip
 - id: inferring_method_specifications_from_natural_language_api_descriptions_2012
   title: Inferring Method Specifications from Natural Language API Descriptions
   doi: 10.1109/icse.2012.6227137
@@ -2100,6 +2165,7 @@
   venue: icse_2012
   pdf: pdfs/pandita-inferring-method-specifications-icse2012.pdf
   markdown: markdown/pandita-inferring-method-specifications-icse2012.md
+  markdown_bundle: markdown/pandita-inferring-method-specifications-icse2012.zip
 - id: development_tools_for_interactive_behaviors_2011
   title: Development Tools for Interactive Behaviors
   doi: 10.1007/978-3-642-21530-8_49
@@ -2125,6 +2191,7 @@
   venue: is_eud_dc_2011
   pdf: pdfs/oney-development-tools-interactive-iseuddc2011.pdf
   markdown: markdown/oney-development-tools-interactive-iseuddc2011.md
+  markdown_bundle: markdown/oney-development-tools-interactive-iseuddc2011.zip
 - id: playbook_revision_control_comparison_for_interactive_mockups_2011
   title: "Playbook: Revision Control & Comparison for Interactive Mockups"
   abstract: >-
@@ -2154,6 +2221,7 @@
   venue: is_eud_2011
   pdf: pdfs/oney-playbook-iseud2011.pdf
   markdown: markdown/oney-playbook-iseud2011.md
+  markdown_bundle: markdown/oney-playbook-iseud2011.zip
 - id: democratizing_computational_tools_for_interaction_designers_2010
   title: Democratizing Computational Tools for Interaction Designers
   doi: 10.1109/vlhcc.2010.43
@@ -2174,6 +2242,7 @@
   venue: vl_hcc_gc_2010
   pdf: pdfs/oney-democratizing-computational-tools-vlhccgc2010.pdf
   markdown: markdown/oney-democratizing-computational-tools-vlhccgc2010.md
+  markdown_bundle: markdown/oney-democratizing-computational-tools-vlhccgc2010.zip
 - id: how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010
   title: How to Support Designers in Getting Hold of the Immaterial Material of Software
   doi: 10.1145/1753326.1753707
@@ -2209,6 +2278,7 @@
   venue: chi_2010
   pdf: pdfs/ozenc-how-support-designers-chi2010.pdf
   markdown: markdown/ozenc-how-support-designers-chi2010.md
+  markdown_bundle: markdown/ozenc-how-support-designers-chi2010.zip
 - id: empowering_designers_with_creativity_support_tools_2009
   title: Empowering Designers with Creativity Support Tools
   doi: 10.1109/vlhcc.2009.5295244
@@ -2233,6 +2303,7 @@
   venue: vl_hcc_gc_2009
   pdf: pdfs/oney-empowering-designers-creativity-vlhccgc2009.pdf
   markdown: markdown/oney-empowering-designers-creativity-vlhccgc2009.md
+  markdown_bundle: markdown/oney-empowering-designers-creativity-vlhccgc2009.zip
 - id: firecrystal_understanding_interactive_behaviors_in_dynamic_web_pages_2009
   title: "FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages"
   doi: 10.1109/vlhcc.2009.5295287
@@ -2259,6 +2330,7 @@
   venue: vl_hcc_2009
   pdf: pdfs/oney-firecrystal-vlhcc2009.pdf
   markdown: markdown/oney-firecrystal-vlhcc2009.md
+  markdown_bundle: markdown/oney-firecrystal-vlhcc2009.zip
 - id: visions_for_euclase_ideas_for_supporting_creativity_through_better_prototyping_of_behaviors_2009
   title: "Visions for Euclase: Ideas for Supporting Creativity through Better Prototyping of Behaviors"
   abstract: >-
@@ -2285,6 +2357,7 @@
   venue: workshop_on_computational_creativity_chi_2009
   pdf: pdfs/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf
   markdown: markdown/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.md
+  markdown_bundle: markdown/oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.zip
 - id: natural_language_search_of_structured_documents_2008
   title: Natural Language Search of Structured Documents
   abstract: >-
@@ -2320,6 +2393,7 @@
   venue: mit_2008
   pdf: pdfs/oney-natural-language-search-mit2008.pdf
   markdown: markdown/oney-natural-language-search-mit2008.md
+  markdown_bundle: markdown/oney-natural-language-search-mit2008.zip
   links:
     - url: /assets/supplements/mit-thesis-xml-example.html
       description: XML appendix (HTML)

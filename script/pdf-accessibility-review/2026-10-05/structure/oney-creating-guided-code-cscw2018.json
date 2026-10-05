@@ -1,0 +1,447 @@
+{
+  "file": "oney-creating-guided-code-cscw2018.pdf",
+  "pdf_sha256": "ac954034a689a340c977339940c6f224ca123870e1e28f5473f917fd55b4be67",
+  "normalization_warnings": "",
+  "page_count": 20,
+  "language": "en-US",
+  "title": "Creating Guided Code Explanations with chat.codes",
+  "structure_elements": 545,
+  "roles": {
+    "Document": 1,
+    "Sect": 20,
+    "H1": 1,
+    "P": 98,
+    "H2": 11,
+    "Link": 113,
+    "Note": 9,
+    "L": 12,
+    "LI": 66,
+    "LBody": 66,
+    "H3": 18,
+    "Figure": 6,
+    "Caption": 7,
+    "H4": 14,
+    "Lbl": 64,
+    "Table": 1,
+    "TR": 5,
+    "TD": 17,
+    "TH": 16
+  },
+  "structure_content_references": 10959,
+  "parent_tree_entries": 133,
+  "form_xobjects_visited": 5,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 4,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 610,
+      "link_annotations": 7
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 583,
+      "link_annotations": 5
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 20,
+      "image_operations_tagged": 4,
+      "vector_operations_tagged": 11,
+      "text_operations_tagged": 458,
+      "link_annotations": 12
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 640,
+      "link_annotations": 22
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 20,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 2,
+      "text_operations_tagged": 452,
+      "link_annotations": 7
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 17,
+      "image_operations_tagged": 4,
+      "vector_operations_tagged": 3,
+      "text_operations_tagged": 436,
+      "vector_operations_artifact": 2,
+      "link_annotations": 5
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 20,
+      "vector_operations_tagged": 59,
+      "text_operations_tagged": 601,
+      "vector_operations_artifact": 6,
+      "link_annotations": 4
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 684,
+      "vector_operations_artifact": 3,
+      "link_annotations": 6
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 20,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 323,
+      "vector_operations_artifact": 3,
+      "link_annotations": 4
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 667,
+      "link_annotations": 8
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 647
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 17,
+      "vector_operations_artifact": 31,
+      "text_operations_tagged": 601
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 567,
+      "vector_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 17,
+      "vector_operations_tagged": 34,
+      "text_operations_tagged": 473,
+      "link_annotations": 1
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 543,
+      "vector_operations_artifact": 1,
+      "link_annotations": 15
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 556,
+      "vector_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 595,
+      "link_annotations": 5
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 699,
+      "link_annotations": 3
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 20,
+      "text_operations_tagged": 779,
+      "link_annotations": 6
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 183
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "340:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "343:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "345:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "367:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "369:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "382:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "384:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "401:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "752:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "754:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "780:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "782:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "804:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "808:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "847:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "851:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "862:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "874:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "876:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "878:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "885:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "901:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "919:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "921:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "966:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "969:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "975:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "983:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "994:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "996:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "1014:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "1016:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "1018:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1020:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1047:0",
+      "page": 16
+    },
+    {
+      "level": 2,
+      "element": "1049:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1052:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1054:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1056:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "1060:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "1064:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "1066:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "1078:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "1080:0",
+      "page": 18
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "378:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Fig. 1. chat.codes is a communication tool for programmers that combines a shared editor (left) with syn-\nchronous text chat (right). Users can click on any given message to see the state of the code when that\nmessage was sent (A). chat.codes also allows programmers to see when code was edited by displaying edit\nmessages in-line with chat messages (B). These messages can be expanded to reveal a full diff (Figure 5 shows\nwhat clicking the ‘(more)’ button displays). Users can also easily “point” to regions of code through a simple\nhighlighting interaction (as Figure 3 illustrates).",
+      "actual_text": ""
+    },
+    {
+      "element": "777:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Fig. 2. chat.codes is implemented as a website and as a plugin for the Atom IDE. Atom users can use chat.codes\nin their IDE, which will automatically converts their editor into a shared editor. Programmers can click a\nbutton to create a unique shareable URL that helpers can then visit. Helpers can then access the requester’s\nIDE over the web by visiting that URL.",
+      "actual_text": ""
+    },
+    {
+      "element": "801:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Fig. 3. chat.codes enables programmers to point to regions of code in their messages through a Markdown-\nbased syntax. Users can also easily specify what region of code they want to refer to by simply highlighting\nthat region in the code window, which automatically inserts an appropriate code pointer.",
+      "actual_text": ""
+    },
+    {
+      "element": "827:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4. Four states for creating code pointers in chat. From state 1, with no chat text selected, selecting code inserts and selects a complete pointer (state 2); clearing the code selection removes it. While the full pointer is selected, changing the code selection updates its target. From state 3, with ordinary chat text selected, selecting code turns that text into a pointer (state 4). While pointer label text is selected, changing the code selection changes the target while preserving the label; clearing code selection removes the pointer and leaves the text selected.",
+      "actual_text": ""
+    },
+    {
+      "element": "870:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 5. Bob asks why copyName changes capitalization to “boB.” Alice replies that the name is being reversed and expands her edit to file-1 beneath the chat. The red deleted line is name_copy = c + name_copy; the green added line is name_copy = name_copy + c. The diff links the explanation to the correction from prepending characters to appending them.",
+      "actual_text": ""
+    },
+    {
+      "element": "991:0",
+      "role": "Figure",
+      "page": 14,
+      "alt": "Figure 6. Completion-time histogram for 20 video and 20 chat.codes participants who finished the task. Counts in time bins 0–2, 2–4, 4–6, 6–8, 8–10, 10–12, 12–20 and over 20 minutes are: video 0, 4, 6, 2, 1, 2, 3, 2; chat.codes 2, 7, 1, 3, 2, 2, 3, 0. Video is blue and chat.codes red. Chat.codes has more completions under four minutes, but the source reports the overall mean-time difference was not statistically significant.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

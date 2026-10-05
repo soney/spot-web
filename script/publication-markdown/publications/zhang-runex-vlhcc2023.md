@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09 -->
+<!-- Source PDF SHA-256: 9d56add2f02f051951c8e1297f10c25eed2ed3230d4a4d528874aa28d000a1c3 -->
 
 <a id="page-1"></a>
 
@@ -16,15 +16,13 @@ Abstract—Programming instructors frequently use in-class exercises to help stu
 
 Index Terms—code search, programming education
 
+> This material is based upon work supported by the National Science Foundation under DUE 1915515.
+
 ## I. INTRODUCTION
 
 In large programming courses with hundreds or thousands of students, it can be difficult for instructors to provide timely and personalized feedback. Programming instructors often face the challenge of finding and understanding class-wide patterns in students’ code \[1\]. As a result, students may not receive the support they need to succeed, and instructors may not have a clear understanding of the learning needs of their students. For example, an instructor might want to check how many students correctly adopt the concepts taught in class, track the prevalence of particular mistakes, or simply search for specific approaches among a large set of student code samples. These tasks represent instances of "code search", as outlined in the literature by Di Grazia et al \[2\]. Code search is a longstanding and well-studied research topic; however, the vast majority of prior work has focused on professional developers \[3\]–\[6\].
 
-In the context of programming education, there are unique design challenges and opportunities for code search tools. For
-
-This material is based upon work supported by the National Science Foundation under DUE 1915515.
-
-instance, in programming classes—particularly introductory ones—an instructor might conduct a search across code samples that are relatively small and self-contained, rather than in larger codebases with complex dependencies \[7\], \[8\]. This allows for the possibility of executing the candidate code samples and more easily searching across runtime values in novel ways. Further, whereas many code search tools are focused on finding a handful of optimal examples (e.g., finding code to reuse), an instructor’s goal might be to get descriptive statistics about their class \[7\]–\[9\]. This necessitates re-designing how we display the output from code search tools. Finally, whereas most code search tools focus on finding new code samples that fit some criteria, instructors might want to find code samples that are similar to an existing piece of code \[7\]. For example, they might observe an anti-pattern—code that works but goes against the principles being taught—in one student’s code and want to assess its prevalence in the class.
+In the context of programming education, there are unique design challenges and opportunities for code search tools. For instance, in programming classes—particularly introductory ones—an instructor might conduct a search across code samples that are relatively small and self-contained, rather than in larger codebases with complex dependencies \[7\], \[8\]. This allows for the possibility of executing the candidate code samples and more easily searching across runtime values in novel ways. Further, whereas many code search tools are focused on finding a handful of optimal examples (e.g., finding code to reuse), an instructor’s goal might be to get descriptive statistics about their class \[7\]–\[9\]. This necessitates re-designing how we display the output from code search tools. Finally, whereas most code search tools focus on finding new code samples that fit some criteria, instructors might want to find code samples that are similar to an existing piece of code \[7\]. For example, they might observe an anti-pattern—code that works but goes against the principles being taught—in one student’s code and want to assess its prevalence in the class.
 
 <a id="page-2"></a>
 
@@ -111,11 +109,11 @@ There are many situations in which instructors would benefit from performing the
 
 ### A. Understanding Students’ Problem Solving Approaches
 
-To better understand their class, instructors might want to better understand students’ problem solving approaches— e.g., how many students used a given approach to solve a problem. Code clustering tools can help with this but might not cluster along the dimensions that the instructor is interested in. For example, suppose students wrote code answering the problem “given a sentence (string), find a list of words that do not contain a vowel.” An instructor
-
 <a id="page-4"></a>
 
-<sup>1</sup>We could also handle aliasing by replacing ‘d’ with ‘«λ<sub>v</sub>: v is d»’ might want to know how many students solved this problem by, in part, writing an if statement that checked if individual characters are a part of a list of vowels (for example: if char in \['a','e','i','o','u'\]). Doing this with standard regular expressions is difficult to the point of impracticality. It would need to handle cases where students used a variable name other than c, where the list of vowels was in a different order, where the list of vowels was in a variable instead of a literal expression, where they used double quotation marks (") instead of single quotation marks ('), and many more failure cases. It also would not be able to specifically check if char is one character long. With RunEx, however, this could be done with the search expression:
+To better understand their class, instructors might want to better understand students’ problem solving approaches— e.g., how many students used a given approach to solve a problem. Code clustering tools can help with this but might not cluster along the dimensions that the instructor is interested in. For example, suppose students wrote code answering the problem “given a sentence (string), find a list of words that do not contain a vowel.” An instructor might want to know how many students solved this problem by, in part, writing an if statement that checked if individual characters are a part of a list of vowels (for example: if char in \['a','e','i','o','u'\]). Doing this with standard regular expressions is difficult to the point of impracticality. It would need to handle cases where students used a variable name other than c, where the list of vowels was in a different order, where the list of vowels was in a variable instead of a literal expression, where they used double quotation marks (") instead of single quotation marks ('), and many more failure cases. It also would not be able to specifically check if char is one character long. With RunEx, however, this could be done with the search expression:
+
+> <sup>1</sup>We could also handle aliasing by replacing ‘d’ with ‘«λ<sub>v</sub>: v is d»’
 
 ```
 if «λ : len(v)==1» in
@@ -173,7 +171,7 @@ To fulfill these design goals, we designed RunEx, a code search tool that combin
 
 Step 1: Search and refine a query Once instructors find a pattern or a mistake they are interested in, they can create a search query by selecting content in the code block (Fig. 1.a). The selection is highlighted in orange background. Instructors can click any variable in the selection to add constraints to the variable. When the variable is clicked, a input area is displayed below it. It is checked by default in the input area to match any variable name, which means any code that has the same pattern but uses different variable names should be matched when searching. To add constraints on the runtime value of a variable, instructors can type in a Python condition in the input for “value(v)”. For example, to check whether the runtime value is a Python string, instructors can use the condition type(v) is str. This is equivalent to «λ<sub>v</sub>: type(v) is str». Additionally, instructors can add constraints on the name of variable (which does not reference the runtime value). To check whether the variable name has more than two letters, instructors can apply the condition len(n) &gt; 2 for “name(n)” (Fig. 1.b). After making a selection and adding constraint to the variables, instructors can click the search button on the top right corner to create a query (Fig. 1.a).
 
-![Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2) Chaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted.](../figures/zhang-runex-vlhcc2023/figure-001-p005.png)
+![RunEx query interface. Selecting code tokens creates generalized patterns. Filters can constrain runtime values, such as type(v) is str, and variable names, such as len(n)&gt;2. Queries can be combined using set operations, including complementing a selected loop pattern, and nested to find constructs such as iteration over set(v0). The two result panels show matching code with the corresponding expressions highlighted.](../figures/zhang-runex-vlhcc2023/figure-001-p005.png)
 
 Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2) Chaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted.
 
@@ -239,17 +237,15 @@ def __EVAL__(variable, fn):
 
 The code sample is considered a ‘match’ if the value of SIGNAL is True after the code has executed. As we will discuss in the ‘Limitations’ section, one downside to our implementation of RunEx is that the \_\_EVAL\_\_ substitution does not work in every situation. Most notably, it does not work on the left side of variable assignment statements because a search expression like «» = 5 would be translated into the syntactically invalid statement \_\_EVAL\_\_(...) = 5. However, when constraints in the RunEx UI are declared that do not have any runtime value constraints, RunEx does not insert a call to \_\_EVAL\_\_, as these searches can be done with standard regular expressions. This is why we can specify a constraint on the length of v1 in the expression for v1 in v0: in Figure 1.b.
 
+> <sup>2</sup>This version of \_\_EVAL\_\_ is a simplification of our implementation, which also passes in the program text as an argument to fn.
+
 ## VII. USER STUDY
 
 We conducted a within-subjects study to evaluate the effectiveness of RunEx for searching through large numbers of code samples. Specifically, participants searched through more than 3000 code samples from students in prior programming courses (that were slightly modified to ensure anonymity). We designed two code search tools with text matching alone as our baseline systems, with limited user interface and search capabilities as described in Section VII-A4. We selected code search tools with text matching alone as a baseline due to their widespread use in real-world programming courses.
 
 ### A. Method
 
-1) Recruitment: Because the target users of RunEx are programming instructors, we primarily recruited participants with experience teaching Python programming courses. We reached out students from the Computer Science and Information Science programs at the University of Michigan and Virginia Tech. During the screening session, participants were asked
-
-<sup>2</sup>This version of \_\_EVAL\_\_ is a simplification of our implementation, which also passes in the program text as an argument to fn.
-
-about their previous experience teaching Python. Qualified participants were experienced Python programmers, including graduate student instructors, teaching assistants, tutors, and senior students with at least 2 years of Python programming experience. We recruited 12 participants, consisting of 6 men and 6 women. All 12 participants completed the 70-minute user study. Their experience in Python programming ranged from 2 years to over 6 years, with 10 participants having previously taught programming courses in Python.
+1) Recruitment: Because the target users of RunEx are programming instructors, we primarily recruited participants with experience teaching Python programming courses. We reached out students from the Computer Science and Information Science programs at the University of Michigan and Virginia Tech. During the screening session, participants were asked about their previous experience teaching Python. Qualified participants were experienced Python programmers, including graduate student instructors, teaching assistants, tutors, and senior students with at least 2 years of Python programming experience. We recruited 12 participants, consisting of 6 men and 6 women. All 12 participants completed the 70-minute user study. Their experience in Python programming ranged from 2 years to over 6 years, with 10 participants having previously taught programming courses in Python.
 
 2) Programming problems and students’ solutions: To ensure the authenticity of the data used in the study, we collected data from a large introductory programming course at the University of Michigan. This data consisted of students’ solutions to three distinct programming problems assigned in the course, completed on their own time. The data were collected from an interactive Python textbook used by the course. The data contain genuine examples of mistakes and common patterns that students had when approaching the programming problems. To maintain comparability across the systems, we selected one programming exercise from the dataset for each system that had a comparable level of complexity.
 
@@ -263,11 +259,11 @@ The three selected programming exercises, E1, E2, and E3, had 3249, 3942, and 34
 
 3) Study setup: In our within-subjects evaluation, participants engaged in a 70-minute user study, utilizing RunEx alongside two baseline systems. The order of systems and tasks was counterbalanced using the Latin squares method to minimize learning biases. Participants received 15 minutes of system training, including exploration of the user interface. During this training, participants used RunEx to browse a subset of student solutions and conducted training tasks within the subset using RunEx.
 
-After the training session, participants utilized RunEx and the two baseline systems to view solutions for three distinct programming problems. For each programming problem, participants were given 15 minutes to answer quiz questions related to students’ coding patterns and errors using the system. Subsequently, after using all three systems to review
-
 <a id="page-7"></a>
 
-<sup>3</sup>In our examples, there was no identifying information contained in code. In other examples, students might use their given name as a variable name or output their name in their code students’ solutions to the programming problems, participants were asked to complete a survey regarding their overall user experience. Additionally, we conducted a reflective interview to facilitate a comparison between the different systems.
+After the training session, participants utilized RunEx and the two baseline systems to view solutions for three distinct programming problems. For each programming problem, participants were given 15 minutes to answer quiz questions related to students’ coding patterns and errors using the system. Subsequently, after using all three systems to review students’ solutions to the programming problems, participants were asked to complete a survey regarding their overall user experience. Additionally, we conducted a reflective interview to facilitate a comparison between the different systems.
+
+> <sup>3</sup>In our examples, there was no identifying information contained in code. In other examples, students might use their given name as a variable name or output their name in their code
 
 This study was conducted remotely using Zoom. During the study, we recorded participants’ screens as they performed the tasks, as well as their responses to the quiz questions and their audio think-aloud process, along with their answers to the post-study survey and the follow-up interview. Each participant was compensated with a $25 USD Amazon Gift Card for their participation in the study.
 
@@ -281,7 +277,7 @@ Baseline 2 (B2) allowed code search through text level matching alone, using the
 
 ### B. Results
 
-The quiz questions were designed as tasks for participants to find how many students have a pattern or a mistake in their code. One member of the research team created a list of correct answers to the quiz questions based on the dataset. We calculated the accuracy of participants’ responses. We conducted a one-way ANOVA to analyze and compare the accuracy of three conditions in E1-3 (Table I). We also used a two-tailed Welch’s t-test to determine the significance for our statistical analysis on accuracy in all three conditions (Table II). We also coded the screen recordings to analyze participants’ interactions with the tool during the tasks. In the post-study survey, we analyzed participants’ responses to the
+The quiz questions were designed as tasks for participants to find how many students have a pattern or a mistake in their code. One member of the research team created a list of correct answers to the quiz questions based on the dataset. We calculated the accuracy of participants’ responses. We conducted a one-way ANOVA to analyze and compare the accuracy of three conditions in E1-3 (Table I). We also used a two-tailed Welch’s t-test to determine the significance for our statistical analysis on accuracy in all three conditions (Table II). We also coded the screen recordings to analyze participants’ interactions with the tool during the tasks. In the post-study survey, we analyzed participants’ responses to the Likert scale questions and coded their answers to the interview questions. We assessed if the Likert scale responses deviated significantly from a reference value of 4 using a t-test.
 
 TABLE I
 
@@ -411,8 +407,6 @@ TWO-TAILED T-TEST ON ACCURACY OF PARTICIPANTS’ RESPONSES TO THE QUIZ QUESTIONS
     </tr>
   </tbody>
 </table>
-
-Likert scale questions and coded their answers to the interview questions. We assessed if the Likert scale responses deviated significantly from a reference value of 4 using a t-test.
 
 1) Participants identify students’ mistakes and patterns more accurately using RunEx’s runtime value search feature than with the baseline systems: We compared participants’ accuracy of the tools in answering the quiz questions. Results in Table I demonstrate that participants using RunEx achieved significantly higher accuracy than those using B1 and B2. Specifically, when using RunEx, 11 out of 12 participants were successful in identifying mistakes where the code was similar to a correct solution, but the runtime value was incorrect. In contrast, when using the baseline systems, none of the participants were able to identify mistakes of this nature.
 

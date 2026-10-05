@@ -1,0 +1,440 @@
+{
+  "file": "krosnick-think-aloud-computing-chi2021.pdf",
+  "pdf_sha256": "1d5755f2c17b14707564e8ada0be5ce1b3a5924221d9578d434875631df44fe6",
+  "normalization_warnings": "",
+  "page_count": 13,
+  "language": "en-US",
+  "title": "Think-Aloud Computing: Supporting Rich and Low-Effort Knowledge Capture",
+  "structure_elements": 460,
+  "roles": {
+    "Part": 1,
+    "H1": 1,
+    "P": 113,
+    "Link": 112,
+    "H2": 13,
+    "Reference": 50,
+    "Sect": 40,
+    "H3": 20,
+    "Span": 74,
+    "Figure": 8,
+    "Caption": 8,
+    "H4": 17,
+    "L": 1,
+    "LI": 1,
+    "LBody": 1
+  },
+  "structure_content_references": 431,
+  "parent_tree_entries": 126,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 2,
+      "text_operations_tagged": 1399,
+      "link_annotations": 14
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 2041,
+      "link_annotations": 21
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 1994,
+      "link_annotations": 24
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 22,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 840,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 30,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1239,
+      "link_annotations": 3
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 2012,
+      "link_annotations": 5
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 30,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 1131,
+      "link_annotations": 8
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1793,
+      "image_operations_tagged": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 30,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1596,
+      "vector_operations_tagged": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 2325,
+      "link_annotations": 1
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 1805
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 2855,
+      "link_annotations": 24
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 30,
+      "text_operations_tagged": 614,
+      "link_annotations": 5
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "460:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "462:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "464:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "466:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "470:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "456:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "448:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "640:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "616:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "684:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "673:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "679:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "677:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "702:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "770:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "757:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "750:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "739:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "740:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "742:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "736:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "719:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "721:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "722:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "723:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "816:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "817:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "852:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "820:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "837:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "833:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "826:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "858:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "860:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "871:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "866:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "867:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "903:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "904:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "912:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "913:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "979:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "949:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "935:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "936:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "939:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "928:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "956:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "960:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "964:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "966:0",
+      "page": 12
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "705:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "The chart has 6 mini bar charts. On left are 3 mini bar charts for the concurrent think-aloud condition, and on right are 3 mini bar charts for the retrospective think-aloud condition. For each condition there is a mini bar chart per domain (i.e., coding, models, and slides). First we describe the concurrent think-aloud ratings: For concurrent think-aloud for the coding domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 3 (i.e., 3 participants out of 4) for \"moderately useful\" and a blue bar of height 1 for \"very useful\". For concurrent think-aloud for the models domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 4 for \"moderately useful\" and a bar of height 0 for \"very useful\". For concurrent think-aloud for the slides domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 2 for \"moderately useful\" and a blue bar of height 2 for \"very useful\". Next we describe the retrospective think-aloud ratings: For retrospective think-aloud for the coding domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 3 for \"moderately useful\" and a blue bar of height 1 for \"very useful\". For retrospective think-aloud for the models domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 4 for \"moderately useful\" and a bar of height 0 for \"very useful\". For retrospective think-aloud for the slides domain there are 3 bars from left: a bar of height 0 for \"not useful\", a pink bar of height 1 for \"moderately useful\" and a blue bar of height 3 for \"very useful\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Not Useful, and 7-Extremely Useful). Ratings (1, 2) have been aggregated into \"not useful\", ratings (3, 4, 5) have been aggregated into \"moderately useful\" and ratings (6, 7) have been aggregated into \"very useful\".",
+      "actual_text": ""
+    },
+    {
+      "element": "784:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "The chart has 6 mini bar charts. On the left are 3 mini bar charts for the concurrent think-aloud condition, and on the right are 3 mini bar charts for the retrospective think-aloud condition. For each condition, there is a mini bar chart per domain (i.e., coding, models, and slides). First we describe the concurrent think-aloud ratings: For concurrent think-aloud for the coding domain, there are 3 bars, from left: an orange bar of height 1 (i.e., 1 participant out of 4) for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 3 for \"confident\". For concurrent think-aloud for the models domain, there are 3 bars, from left: an orange bar of height 2 for \"not confident\", a yellow bar of height 2 for \"neutral\", and a bar of height 0 for \"confident\". For concurrent think-aloud for the slides domain, there are 3 bars, from left: an orange bar of height 1 for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 3 for \"confident\". For retrospective think-aloud for the coding domain, there are 3 bars, from left: an orange bar of height 2 for \"not confident\", a bar of height 0 for \"neutral\", and a green bar of height 2 for \"confident\". For retrospective think-aloud for the models domain, there are 3 bars, from left: a bar of height 0 for \"not confident\", a yellow bar of height 1 for \"neutral\", and a green bar of height 3 for \"confident\". For retrospective think-aloud for the slides domain, there are 3 bars, from left: a bar of height 0 for \"not confident\", a yellow bar of height 1 for \"neutral\", and a green bar of height 3 for \"confident\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Very Not Confident, and 7-Very Confident). Ratings (1, 2, 3) have been aggregated into \"Not Confident\", rating (4) is \"Neutral\", and ratings (5, 6, 7) have been aggregated into \"Confident\".",
+      "actual_text": ""
+    },
+    {
+      "element": "789:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Stacked bar chart illustrating the top 20 speech item categories (i.e., all categories with 5 or more speech items), ordered from top to bottom by concurrent to reflective occurrence ratio. Each category is a bar. For a given bar, it contains 2 colors - blue on the left side of the 0 line indicating what percentage of speech items in that category were spoken during concurrent speech, and red on the right side of the 0 line indicating percentage of speech items spoken during reflective speech. Ordered in descending order by concurrent to reflective occurrence ratio, these are the categories and their concurrent and reflective counts: frustrations, difficulties, confusion (16 concurrent, 0 reflective); indicating something is done (12 concurrent, 0 reflective); why they're doing something (10 concurrent, 0 reflective); says they'll get back to something later (10 concurrent, 0 reflective); testing something out (5 concurrent, 0 reflective); what they're currently doing/about to do (73 concurrent, 1 reflective); encountering something unexpected, making a fix (25 concurrent, 2 reflective); planning, decision making, thinking (22 concurrent, 2 reflective); speaking verbatim what they're typing/doing (20 concurrent, 2 reflective); commenting on state of something (5 concurrent, 1 reflective); sharing opinion about state of artifact (5 concurrent, 1 reflective); short utterances, talking to self (13 concurrent, 3 reflective); requirements, end-goals, intent for artifact (6 concurrent, 3 reflective); environment config or basic software interactions (4 concurrent, 3 reflective); process suggestions/opinions (7 concurrent, 7 reflective); todo items or delegating (3 concurrent, 3 reflective); sharing opinions/facts about content (6 concurrent, 11 reflective); limitations or unfinished work (5 concurrent, 13 reflective); talking about the software (3 concurrent, 10 reflective); references some documentation (4 concurrent, 14 reflective).",
+      "actual_text": ""
+    },
+    {
+      "element": "727:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4: In the top left there are two versions of the visual widget presented in Figure 5. The one of the left is identical to the one in Figure 5, and the one on the right has 2 additional smaller wedges, one on the far left and one on the far right. Beneath these visual widgets are three yellow rubber ducks with varying fill-levels; the far-left one is at a low fill-level, with opaque yellow at the bottom but transparent above; the duck in the middle is half-filled; and the duck on the right is completely filled. In the top-right of the figure is the Apple menu bar, of notice on the left side are red, blue, and orange circles with different fill-levels (low fill level means mostly transparent except for the very bottom). In the bottom-right of the figure is a check-list kind of interface, where each item has icons representing the design intent (lightbulb), process (tools), important (star), and problem (alert) items.",
+      "actual_text": ""
+    },
+    {
+      "element": "883:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 5: Visual widget with 3 wedges at the top, short yellow on the left (with a lightbulb icon) representing \"design intent\", tall blue in the middle (with a person speaking icon) representing \"all utterances\", and medium red on the right (with a tool icon) representing \"process\". Each wedge also has a dotted line representing the wedge fill-goal. Below the wedges is a circle with 3 parts representing buttons: the top half has a star in a center and represents \"important\", the bottom left quadrant has a checklist and represents \"to-do item\", and the bottom right quadrant has an alert icon and represents \"problem\". Each wedge or button has associated keywords:\rfor design intent: \"this is meant to\", \"because\", \"goal\",\rfor process: \"this tool is for\", \"this tool is useful for\",\rfor to-do item: \"i still need to\", \"i still have to\",\rfor problem: \"issue\", \"problem\",\rfor important: \"it is important\"",
+      "actual_text": ""
+    },
+    {
+      "element": "822:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6: A screenshot of a rectangular computer window. The window has 2 sections, each one having rows of speech utterances on the left, YouTube video clips in the center, and Fusion 360 command names on the right. Each section has a gray background.",
+      "actual_text": ""
+    },
+    {
+      "element": "887:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 7: A system diagram, with arrows connecting components. On the left is a speaking head representing the user. To the right an arrow points to a computer monitor/webpage icon representing the think-aloud system. The think-aloud system component then has arrows pointing to the right, sending speech to the Azure cloud (cloud icon) and livestream to YouTube (play button icon). The Azure cloud has an arrow pointing to the left back to the think-aloud system sending transcript. The YouTube icon has an arrow pointing to the left back to the think-aloud system sending playback. In the far right column are the 3rd party applications section, specifically Fusion 360, which sends an arrow to the left to the think-aloud system with command metadata. Below Fusion 360 is the OSX operating system with a Mac smiley face icon, with an arrow to the left to think-aloud system sending accessibility information.",
+      "actual_text": ""
+    },
+    {
+      "element": "891:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 8 is a chart illustrating participants' ratings of how much effort it took to document knowledge for think-aloud and traditional documentation techniques. The chart has 2 mini bar charts. On the left is the bar chart for the think-aloud condition. It has 3 bars, from left: a red bar of height 3 (i.e., 3 participants out of 12) for the category of \"high effort\", a yellow bar of height 3 for \"medium effort\", and a green bar of height 6 for \"low effort\". On the right is the bar chart for the traditional documentation condition. It has 3 bars, from left: a red bar of height 4 for the \"high effort\", a yellow bar of height 2 for \"medium effort\", and a green bar of height 6 for \"low effort\". Note that these categories are aggregations of the participant ratings from the 7-point Likert scale results (between 1-Very Low Effort, and 7-Very High Effort). Ratings (1, 2, 3) have been aggregated into \"low effort\", rating (4) is \"medium effort\", and ratings (5, 6, 7) have been aggregated into \"high effort\".",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc -->
+<!-- Source PDF SHA-256: b7f7c8a46994e06bc030ef392040aff70bab0d686d5635ff7819e43fdfac55d5 -->
 
 <a id="page-1"></a>
 
@@ -18,13 +18,13 @@ Abstract—Monitoring in-class programming exercises can help instructors identi
 
 Index Terms—programming education
 
+> <sup>∗</sup>Work done as an undergraduate student at the University of Michigan.
+
 ## I. INTRODUCTION
 
 Programming instructors often use in-class exercises— short hands-on coding tasks conducted during class time— to actively engage students and reinforce the concepts being taught \[1\]–\[6\]. However, ensuring students gain meaningful learning outcomes from these exercises is not easy, given the variability in coding abilities, paces, and problem solving approaches \[2\]. This variation can make it challenging for instructors to provide timely and personalized feedback. Without such assistance, students may struggle to develop essential metacognitive skills, such as formulating effective problem solving strategies, tracking their progress, and assessing whether goals have been met \[2\], \[7\]–\[9\]. This can lead to frustration and a potential loss of confidence in their abilities \[10\]. Therefore, it is essential for instructors to effectively monitor students’ progress and promptly recognize the difficulties they encounter.
 
 However, successfully monitoring students can be challenging, particularly for problems that are multi-faceted. We refer to “multi-faceted” problems as those involving non-sequential workflow paths with nested substeps—where some steps are interdependent, others independent, and where uniform evaluation criteria cannot be easily applied across many students. For example, in a web programming exercise, students may need to: (1) create the HTML layout, (2) add CSS for styling, and (3) implement JavaScript for interactivity. Adding CSS may involve edits to both the CSS and HTML files and depends on the layout being complete, but is independent of the JavaScript. Students can choose their own order and often alternate between tasks as they work.
-
-> <sup>∗</sup>Work done as an undergraduate student at the University of Michigan.
 
 Prior work has emphasized the importance of real-time monitoring tools, but existing solutions struggle to effectively summarize student progress for complex, multi-faceted programming problems. Code clustering tools (e.g., \[11\], \[12\]) and progress visualizations (e.g., \[13\]) can summarize many code samples but do not give instructors control over which aspects to group by or summarize. Techniques for monitoring code in real-time (e.g., \[14\], \[15\]) give instructors real-time feedback but do not summarize students’ progress and can be overwhelming in large classes. Further, most prior work does not address additional difficulties of monitoring in-class exercises. Implementations for features often span multiple files or modules \[16\], \[17\] but most prior work is focused on short, one-file snippets \[11\], \[13\], \[14\]. Further, instructors should be able to explore variations in students’ code output and intermediate states to gain deeper insights into students’ approaches and challenges.
 
@@ -120,7 +120,7 @@ Implementation: SPARK uses the OpenAI API \[63\] to provide testing code suggest
 
 Once Emily creates the checkpoints, she simply shares a folder with setup files and starter code. When students open it in VS Code with the required extension, SPARK begins receiving real-time programming data. This data is reorganized and displayed in code boxes within the My Classroom panel (Fig.3), similar to Codeopticon \[14\].
 
-<sup>1</sup>More details could be found in the supplementary material: link.
+> <sup>1</sup>More details could be found in the supplementary material: link.
 
 <a id="page-5"></a>
 
@@ -242,13 +242,11 @@ SPARK offered deeper insights beyond task progress. P6 pointed out that abrupt c
 
 The checkpoint structure also reduced cognitive load and made tracking progress more intuitive. P15 noted, “Organizing tasks into checkpoints is intuitive and allows for more detailed insights.” While Baseline users struggled to recall common issues, 15 of 16 participants using SPARK successfully identified at least one issue faced by over half the class.
 
-3) SPARK enables instructors to active engage with the monitoring process: During the SPARK condition, participants used the Components Inspector an average of 3.4 times during the 20-minute session. Many appreciated its customization, with P2 noting, “It’s great that I could inspect only one element—much easier to compare.” In exploring issues in checkpoint 2, 15 of 16 participants used the inspector, most selecting multiple task boards. As P12 observed, “...the add
-
 <a id="page-9"></a>
 
-TABLE I
+3) SPARK enables instructors to active engage with the monitoring process: During the SPARK condition, participants used the Components Inspector an average of 3.4 times during the 20-minute session. Many appreciated its customization, with P2 noting, “It’s great that I could inspect only one element—much easier to compare.” In exploring issues in checkpoint 2, 15 of 16 participants used the inspector, most selecting multiple task boards. As P12 observed, “...the add button interactivity is more difficult, so I’d take a look at this.” SPARK’s flexible inspection tools enabled participants to focus on specific problem areas, boosting their confidence in identifying issues and offering targeted feedback.
 
-MIXED-EFFECTS LINEAR REGRESSION MODEL RESULTS FOR TOOL EFFECT (SPARK VS. BASELINE)
+TABLE I MIXED-EFFECTS LINEAR REGRESSION MODEL RESULTS FOR TOOL EFFECT (SPARK VS. BASELINE)
 
 <table>
   <thead>
@@ -346,8 +344,6 @@ Fig. 6. Perceptions of the Baseline and SPARK system. Participant rated on a 5-p
 
 Fig. 7. Results from the questionnaire of the Likert-scale responses to “usefulness”, “easy to use”, and “easy to learn” after each session.
 
-button interactivity is more difficult, so I’d take a look at this.” SPARK’s flexible inspection tools enabled participants to focus on specific problem areas, boosting their confidence in identifying issues and offering targeted feedback.
-
 4) SPARK makes creating step-nested checkpoints as well as their test cases easy: In the third session (S3), participants used SPARK to create a checkpoint with one task. Features were highly rated for usefulness, ease of use, and ease of learning (Fig.7). Most participants strongly agreed that AI Generate Test (12/16), Verify Checkpoint (14/16), and Reference Panel (13/16) supported easy test case creation and clarified assessment goals.
 
 Participants found the AI-generated tests “super convenient and time-saving (P10, P11)”, while the verification and reference features gave them “confidence \[they\] could use these in real classrooms (P13)”. All 16 participants expressed willingness to use these features for creating step-nested checkpoints.
@@ -356,7 +352,7 @@ Participants found the AI-generated tests “super convenient and time-saving (P
 
 User Challenges and Feedback. Participants identified several challenges when using SPARK. First, they raised concerns about the scalability of the scatter plot, which became increasingly cluttered and difficult to interpret as the number of students grew. Second, some participants noted that the system’s rich features and modular interface, while powerful, occasionally introduced additional visual and cognitive load—particularly during real-time monitoring. These observations suggest the need for systems that can better support large-scale classrooms while maintaining usability and minimizing cognitive effort.
 
-![Figure 8. Three progress snapshots at timestamps 2, 8, and 19 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. The views retain separate rows for different checkpoints, showing uneven progress among task components.](../figures/yang-spark-vlhcc2025/figure-008-p010.png)
+![Figure 8. Three progress snapshots at timestamps 2, 10, and 18 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. Separate checkpoint rows show uneven progress among task components.](../figures/yang-spark-vlhcc2025/figure-008-p010.png)
 
 Fig. 8. How the shaded areas in the visualization diagram change over time in the Image Carousel example.
 

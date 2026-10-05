@@ -1,0 +1,228 @@
+{
+  "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+  "pdf_sha256": "6e3f3370a49e6463f8d8c3fc88cce8363cd9a31fea710f9d7c6e8545dd84f00e",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "ScrapeViz: Hierarchical Representations for Web Scraping Macros",
+  "structure_elements": 216,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "H1": 1,
+    "P": 47,
+    "Note": 8,
+    "H2": 11,
+    "H3": 16,
+    "Figure": 1,
+    "Caption": 1,
+    "L": 4,
+    "LI": 40,
+    "Lbl": 40,
+    "LBody": 40
+  },
+  "structure_content_references": 5023,
+  "parent_tree_entries": 6,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 735,
+      "text_operations_artifact": 5,
+      "vector_operations_artifact": 3
+    },
+    {
+      "page": 2,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 5,
+      "text_operations_tagged": 651,
+      "text_operations_artifact": 2
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1010,
+      "vector_operations_artifact": 7,
+      "text_operations_artifact": 2
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 868,
+      "vector_operations_artifact": 8,
+      "text_operations_artifact": 2
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 949,
+      "text_operations_artifact": 2,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 809,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "39:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "43:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "203:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "205:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "212:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "216:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "50:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "77:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "78:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "221:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "223:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "224:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "228:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "230:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "232:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "234:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "260:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "262:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "266:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "268:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "270:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "272:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "273:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "276:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "278:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "280:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "283:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "285:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "208:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Fig. 1. An illustration of ScrapeViz’s final state after the user has completed the IMDb scraping task in section IV. ScrapeViz gives users a programming\nby demonstration (PBD) authoring interface and interactive storyboard-like visual representations of their web scraping macro. A user begins with a single\nwebsite viewport (D) and provides demonstrations (C and A for movie titles, K and M for actor names, S for birthdate) of the scraping and navigation actions\nthey want to perform – ScrapeViz adds colored borders to indicate selected elements, opens new viewports for website pages navigated to, and generalizes\nthese actions across UI elements and pages (using the PBD algorithm described below). During this process, ScrapeViz builds up a hierarchy of pages visited\neither manually or by PBD generalization – a top-level IMDb page containing a list of movies (D); in column L, a movie page for each of the movies in the\ntop-level list; and in column R, an actor page for each actor in the first movie, “Everything Everywhere All at Once”. ScrapeViz uses color-coding to indicate\nscraping generalizations (e.g., orange for movie titles (B), purple for actor names (J)) and to indicate which UI elements when clicked lead to which website\npages (e.g., orange-bordered movie titles (B) when clicked open the movie pages (L)). Users can navigate and inspect pages more closely by clicking directly\non a small viewport, browsing sibling pages (P), or by clicking on a cell in the output table (H) to be taken to its source page and location.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

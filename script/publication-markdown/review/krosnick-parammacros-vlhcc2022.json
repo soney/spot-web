@@ -2,9 +2,9 @@
   "file": "krosnick-parammacros-vlhcc2022.pdf",
   "title": "ParamMacros: Creating UI Automation Leveraging End-User Natural Language Parameterization",
   "publication_id": "parammacros_creating_ui_automation_leveraging_end_user_natural_language_parameterization_2022",
-  "pdf_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+  "pdf_sha256": "174a228266d558762de8e0b21cc3a00d4cb1c9bcede88fab6bcad3c1f8b52e68",
   "markdown": "publications/krosnick-parammacros-vlhcc2022.md",
-  "markdown_sha256": "c4b40a654f3649cb29d15b335c86d8847b2c436875c23c0d828a73158ebb9fad",
+  "markdown_sha256": "269d4edaa1e91d5ece1db3abe0c466e0f662128ab4e79c9b05eacbf15e6221d6",
   "pages": 10,
   "blocks": [
     {
@@ -64,6 +64,14 @@
       "characters": 108
     },
     {
+      "node": "809:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
+    },
+    {
       "node": "811:0",
       "role": "Note",
       "pages": [
@@ -85,39 +93,16 @@
       "pages": [
         1
       ],
-      "characters": 1284
-    },
-    {
-      "node": "810:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 56
+      "characters": 1341
     },
     {
       "node": "882:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 2234
-    },
-    {
-      "node": "809:0",
-      "role": "Note",
-      "pages": [
-        1
-      ],
-      "characters": 46
-    },
-    {
-      "node": "1114:0",
-      "role": "P",
-      "pages": [
+        1,
         2
       ],
-      "characters": 371
+      "characters": 2606
     },
     {
       "node": "1115:0",
@@ -296,6 +281,14 @@
       "characters": 458
     },
     {
+      "node": "1289:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 252
+    },
+    {
       "node": "1277:0",
       "role": "H3",
       "pages": [
@@ -331,17 +324,10 @@
       "node": "1219:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 816
-    },
-    {
-      "node": "1289:0",
-      "role": "Note",
-      "pages": [
-        3
-      ],
-      "characters": 252
+      "characters": 1059
     },
     {
       "node": "1350:0",
@@ -350,14 +336,6 @@
         4
       ],
       "characters": 1223
-    },
-    {
-      "node": "1294:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 242
     },
     {
       "node": "1365:0",
@@ -416,7 +394,7 @@
       "characters": 57
     },
     {
-      "node": "joined-1383:0",
+      "node": "1383:0",
       "role": "P",
       "pages": [
         4,
@@ -460,17 +438,19 @@
       "node": "1538:0",
       "role": "P",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 419
+      "characters": 1234
     },
     {
       "node": "1500:0",
       "role": "L",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 421
+      "characters": 1257
     },
     {
       "node": "1551:0",
@@ -479,14 +459,6 @@
         5
       ],
       "characters": 1082
-    },
-    {
-      "node": "1501:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 644
     },
     {
       "node": "1502:0",
@@ -503,14 +475,6 @@
         6
       ],
       "characters": 1037
-    },
-    {
-      "node": "1503:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 177
     },
     {
       "node": "1504:0",
@@ -606,7 +570,7 @@
       "pages": [
         7
       ],
-      "characters": 2246
+      "characters": 2276
     },
     {
       "node": "1611:0",
@@ -614,15 +578,7 @@
       "pages": [
         7
       ],
-      "characters": 2248
-    },
-    {
-      "node": "1612:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 29
+      "characters": 2278
     },
     {
       "node": "1669:0",
@@ -968,13 +924,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 72,
-    "line_wrap_hyphens_retained": 23,
-    "paragraph_fragments_joined": 1,
-    "script_runs_positioned": 28,
+    "line_wrap_hyphens_removed": 62,
+    "line_wrap_hyphens_retained": 21,
+    "script_runs_positioned": 26,
     "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-parammacros-vlhcc2022.json.gz",
-  "source_tags_sha256": "ea29e2dc47e5a502ebf5ab593a40c4699213ba4e602aff5f47e1e164b0d99cd7"
+  "source_tags_sha256": "70826c0ac0168bb6a238e54f1122eb6d82bc978ce1ef0f017eab893d30bc8c92"
 }

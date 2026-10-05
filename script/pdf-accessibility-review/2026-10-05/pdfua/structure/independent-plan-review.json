@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-05",
+  "scope": "Independent read-only review of planned artifact pagination typing and numbered-list attributes; no renewed broad document audit.",
+  "plan_sha256": "fb624fb4bdaa300a9dacc871f5f1d020f943be62c098e302e2f88624ede8031d",
+  "plan_counts": {
+    "pdfs": 68,
+    "artifact_pdfs": 48,
+    "artifacts": 8550,
+    "list_pdfs": 62,
+    "lists": 149
+  },
+  "status": "approved; all68 final candidates independently passed native object/content delta verification",
+  "artifact_review": {
+    "method": "Reassembled every target artifact chunk by document/page/subtype/PDF-space y and read all distinct resulting text bands, then visually checked boundary cases against rendered source pages.",
+    "target_chunks": 8550,
+    "outcome": "Only existing running publisher/chapter/author titles, page or article numbers, publication footers, table continuation footers, and whitespace belonging to these bands are selected. No body text, duplicate figure content, reference content or footnote is selected.",
+    "excluded_artifact_text_records": 398,
+    "visual_samples": [
+      {
+        "file": "oney-creating-guided-code-cscw2018.pdf",
+        "pages": [
+          1
+        ],
+        "checked": "Article-number side tab at bottom of page and publication footer, distinct from above footnotes/notice."
+      },
+      {
+        "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+        "pages": [
+          1,
+          24,
+          25
+        ],
+        "checked": "Top article-number tab and continued-on-next-page table footers match pagination classifications."
+      },
+      {
+        "file": "zhang-editrail-uist2026.pdf",
+        "pages": [
+          14
+        ],
+        "checked": "Running header selected; bottom timeshighereducation footnote and marker excluded."
+      },
+      {
+        "file": "wang-colaroid-chi2023.pdf",
+        "pages": [
+          20
+        ],
+        "checked": "Running header selected; reference continuation near top of right column excluded."
+      }
+    ],
+    "refinement": "Excluded56 whitespace-only chunks lacking same-page same-y nonblank running-furniture anchors; now8550 chunks in48PDFs."
+  },
+  "list_review": {
+    "initial_plan": 136,
+    "corrected_plan": 149,
+    "independent_enumeration_exactly_matches_updated_plan": true,
+    "required_change_found": "Initial matcher omitted thirteen lists with parenthesized decimal labels. Updated matcher includes CodeStream, Multi-Click, and VRGit lists; all149 match independently enumerated numeric-only labels.",
+    "all149_target_lists_had_no_existing_direct_A": true,
+    "inherited_layout_class_to_preserve": {
+      "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+      "node": "754:0",
+      "C": "/CM10",
+      "LineHeight": 12,
+      "StartIndent": 24.25,
+      "TextAlign": "Justify",
+      "TextIndent": -14.25
+    },
+    "all149_labels_unambiguously_decimal": true,
+    "excluded_examples": [
+      "RQ1: question labels",
+      "C1 criteria labels",
+      "Bullets and dashes",
+      "API parameter names and Returns definition labels"
+    ]
+  },
+  "candidate_verification": {
+    "pdfs": 68,
+    "pages": 974,
+    "artifact_markers": 8550,
+    "decimal_list_attributes": 149,
+    "plan_and_candidate_hashes_match": true,
+    "checks": "All original PDF objects compared; only planned artifact opener properties and List /A attributes differ. New objects are only cross-reference streams. Every original painting/text instruction, all native tag objects including repaired Code ActualText, all prior artifact properties and List /C attributes, and entire source archive trees are unchanged. Same planned artifact ordinals and Header/Footer subtype checked against final native instructions."
+  }
+}

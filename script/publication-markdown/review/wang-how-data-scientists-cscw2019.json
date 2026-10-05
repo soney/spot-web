@@ -2,9 +2,9 @@
   "file": "wang-how-data-scientists-cscw2019.pdf",
   "title": "How Data Scientists Use Computational Notebooks for Real-Time Collaboration",
   "publication_id": "how_data_scientists_use_computational_notebooks_for_real_time_collaboration_2019",
-  "pdf_sha256": "a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b",
+  "pdf_sha256": "52d09ce89c98ca28f776ed58d7fec7cbc89fd23da48915bb73b03ca0074598f4",
   "markdown": "publications/wang-how-data-scientists-cscw2019.md",
-  "markdown_sha256": "cfe8ededd662e4b5cd6bb91ee1bba854e82cacecbcfe55b01d3302d719b9acdd",
+  "markdown_sha256": "45bfa96705ddff84dc54f73ac5aacb278969914325b476a87c632cda7072ad91",
   "pages": 30,
   "blocks": [
     {
@@ -80,22 +80,6 @@
       "characters": 310
     },
     {
-      "node": "575:0",
-      "role": "H2",
-      "pages": [
-        1
-      ],
-      "characters": 17
-    },
-    {
-      "node": "576:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 290
-    },
-    {
       "node": "577:0",
       "role": "P",
       "pages": [
@@ -112,12 +96,29 @@
       "characters": 441
     },
     {
+      "node": "575:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "576:0",
+      "role": "P",
+      "pages": [
+        1,
+        2
+      ],
+      "characters": 1534
+    },
+    {
       "node": "587:0",
       "role": "Figure",
       "pages": [
         2
       ],
-      "characters": 380
+      "characters": 509
     },
     {
       "node": "588:0",
@@ -126,14 +127,6 @@
         2
       ],
       "characters": 311
-    },
-    {
-      "node": "890:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 1243
     },
     {
       "node": "891:0",
@@ -283,25 +276,10 @@
       "node": "932:0",
       "role": "P",
       "pages": [
-        4
-      ],
-      "characters": 192
-    },
-    {
-      "node": "933:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 96
-    },
-    {
-      "node": "951:0",
-      "role": "P",
-      "pages": [
+        4,
         5
       ],
-      "characters": 636
+      "characters": 829
     },
     {
       "node": "952:0",
@@ -400,7 +378,7 @@
       "characters": 2421
     },
     {
-      "node": "joined-988:0",
+      "node": "988:0",
       "role": "P",
       "pages": [
         6,
@@ -734,9 +712,10 @@
       "node": "1140:0",
       "role": "P",
       "pages": [
-        10
+        10,
+        11
       ],
-      "characters": 290
+      "characters": 465
     },
     {
       "node": "1143:0",
@@ -753,14 +732,6 @@
         11
       ],
       "characters": 121
-    },
-    {
-      "node": "1189:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 174
     },
     {
       "node": "1190:0",
@@ -806,9 +777,10 @@
       "node": "1195:0",
       "role": "P",
       "pages": [
-        11
+        11,
+        12
       ],
-      "characters": 136
+      "characters": 1176
     },
     {
       "node": "1198:0",
@@ -825,14 +797,6 @@
         12
       ],
       "characters": 54
-    },
-    {
-      "node": "1228:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 1039
     },
     {
       "node": "1229:0",
@@ -862,17 +826,10 @@
       "node": "1232:0",
       "role": "P",
       "pages": [
-        12
+        12,
+        13
       ],
-      "characters": 191
-    },
-    {
-      "node": "1233:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 96
+      "characters": 438
     },
     {
       "node": "1236:0",
@@ -889,14 +846,6 @@
         13
       ],
       "characters": 48
-    },
-    {
-      "node": "1293:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 246
     },
     {
       "node": "1294:0",
@@ -1020,7 +969,7 @@
       "characters": 26
     },
     {
-      "node": "joined-1312:0",
+      "node": "1312:0",
       "role": "P",
       "pages": [
         14,
@@ -1326,20 +1275,12 @@
       "characters": 139
     },
     {
-      "node": "1460:0",
-      "role": "P",
-      "pages": [
-        19
-      ],
-      "characters": 75
-    },
-    {
       "node": "1461:0",
       "role": "Figure",
       "pages": [
         19
       ],
-      "characters": 342
+      "characters": 534
     },
     {
       "node": "1462:0",
@@ -1382,7 +1323,7 @@
       "characters": 408
     },
     {
-      "node": "joined-1486:0",
+      "node": "1486:0",
       "role": "P",
       "pages": [
         19,
@@ -1442,9 +1383,10 @@
       "node": "1497:0",
       "role": "P",
       "pages": [
-        20
+        20,
+        21
       ],
-      "characters": 284
+      "characters": 470
     },
     {
       "node": "1498:0",
@@ -1453,14 +1395,6 @@
         20
       ],
       "characters": 80
-    },
-    {
-      "node": "1506:0",
-      "role": "P",
-      "pages": [
-        21
-      ],
-      "characters": 75
     },
     {
       "node": "1507:0",
@@ -1477,14 +1411,6 @@
         21
       ],
       "characters": 212
-    },
-    {
-      "node": "1549:0",
-      "role": "P",
-      "pages": [
-        21
-      ],
-      "characters": 185
     },
     {
       "node": "1550:0",
@@ -1768,14 +1694,6 @@
       "characters": 468
     },
     {
-      "node": "1596:0",
-      "role": "P",
-      "pages": [
-        24
-      ],
-      "characters": 96
-    },
-    {
       "node": "1606:0",
       "role": "P",
       "pages": [
@@ -1840,7 +1758,7 @@
       "characters": 56
     },
     {
-      "node": "joined-1614:0",
+      "node": "1614:0",
       "role": "P",
       "pages": [
         25,
@@ -1924,25 +1842,10 @@
       "node": "1631:0",
       "role": "P",
       "pages": [
-        26
-      ],
-      "characters": 1275
-    },
-    {
-      "node": "1632:0",
-      "role": "P",
-      "pages": [
-        26
-      ],
-      "characters": 96
-    },
-    {
-      "node": "joined-1640:0",
-      "role": "P",
-      "pages": [
+        26,
         27
       ],
-      "characters": 179
+      "characters": 1379
     },
     {
       "node": "1642:0",
@@ -2009,7 +1912,7 @@
       "characters": 60
     }
   ],
-  "tagged_content_items": 16344,
+  "tagged_content_items": 16261,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -2024,7 +1927,7 @@
       ],
       "sha256": "9ec73981eccf481719e067cab5d1639445de5edfa71abb31da6a6cad1c367986",
       "kind": "figure",
-      "alt": "Fig. 1. An example of a Jupyter notebook. (1) A custom collaborative extension for users to share their notebook. (2) A notebook cell that contains code to import libraries and load dataset. (3) An output of a shared data frame. (4) A markdown cell that contains narrative text. (5) An output of a visualization"
+      "alt": "Figure 1. A Jupyter notebook contains a code cell importing libraries and loading house-price data, a dataframe summary, a Markdown heading, and a histogram. A Share control enables a collaborative extension. The right panel illustrates the workflow: Bob enables sharing and sends a generated code; Alice joins with that code; both edit the notebook while it synchronizes changes and displays collaborators’ cursor positions and selections."
     },
     {
       "path": "figures/wang-how-data-scientists-cscw2019/figure-002-p019.png",
@@ -2038,7 +1941,7 @@
       ],
       "sha256": "e80df22eea17c3655f9f75d70c58ba9dcc9ef97ea44cb234e46dfa9316db42a2",
       "kind": "figure",
-      "alt": "Fig. 2. Overview of how participants iteratively explore the house price prediction task in 15-minute intervals. Participants in the shared condition tended to switch between phases more frequently. The initial attempts at modeling occurred earlier in the shared condition."
+      "alt": "Figure 2. Paired participant timelines for six shared-notebook groups S1–S6 and six non-shared groups N1–N6 across four 15-minute sessions. Colored segments mark preparing, cleaning, modeling, feature engineering, and submission. Shared groups switch between phases more frequently and begin modeling earlier. Non-shared groups spend longer continuous stretches in cleaning or feature engineering before modeling. Brown submission segments appear mainly at the end."
     },
     {
       "path": "figures/wang-how-data-scientists-cscw2019/figure-003-p020.png",
@@ -2178,12 +2081,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 40,
+    "line_wrap_hyphens_removed": 38,
     "line_wrap_hyphens_retained": 7,
-    "paragraph_fragments_joined": 10,
+    "paragraph_fragments_joined": 5,
     "script_runs_positioned": 40
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-how-data-scientists-cscw2019.json.gz",
-  "source_tags_sha256": "43812cb9b7ed5810d4cdded6fa2ff4075d97f341169deaf53ac27d2956d95126"
+  "source_tags_sha256": "875d27f4b2c92a68ed44d2e018c26185eb0c19da6c02b8e0bb38a1ed4a6c2a85"
 }

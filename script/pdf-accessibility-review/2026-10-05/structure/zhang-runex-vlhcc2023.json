@@ -1,0 +1,215 @@
+{
+  "file": "zhang-runex-vlhcc2023.pdf",
+  "pdf_sha256": "9d56add2f02f051951c8e1297f10c25eed2ed3230d4a4d528874aa28d000a1c3",
+  "normalization_warnings": "",
+  "page_count": 9,
+  "language": "en-US",
+  "title": "RunEx: Augmenting Regular-Expression Code Search with Runtime Values",
+  "structure_elements": 382,
+  "roles": {
+    "Document": 1,
+    "Sect": 9,
+    "H1": 1,
+    "P": 78,
+    "Note": 4,
+    "H2": 10,
+    "L": 8,
+    "LI": 51,
+    "Lbl": 50,
+    "LBody": 51,
+    "H3": 11,
+    "Code": 8,
+    "Figure": 1,
+    "Caption": 3,
+    "Table": 2,
+    "THead": 2,
+    "TR": 17,
+    "TH": 28,
+    "TBody": 2,
+    "TD": 45
+  },
+  "structure_content_references": 8367,
+  "parent_tree_entries": 9,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 807,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 915,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1011,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 1047,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 823,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 927,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 932,
+      "vector_operations_artifact": 41,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 993,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 911,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "131:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "315:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "333:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "335:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "341:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "344:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "348:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "389:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "393:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "401:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "407:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "412:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "413:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "425:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "451:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "463:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "465:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "144:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "482:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "488:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "492:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "495:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "429:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "RunEx query interface. Selecting code tokens creates generalized patterns. Filters can constrain runtime values, such as type(v) is str, and variable names, such as len(n)>2. Queries can be combined using set operations, including complementing a selected loop pattern, and nested to find constructs such as iteration over set(v0). The two result panels show matching code with the corresponding expressions highlighted.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

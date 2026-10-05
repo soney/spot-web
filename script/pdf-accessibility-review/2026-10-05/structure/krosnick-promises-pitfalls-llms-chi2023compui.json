@@ -1,0 +1,149 @@
+{
+  "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+  "pdf_sha256": "00c4c8f64cd79c5dbfddfc0d0797c515b94ac003158af4b1afb68e0f2b9ad516",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Promises and Pitfalls of Using LLMs for Scraping Web UIs",
+  "structure_elements": 233,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 27,
+    "H2": 12,
+    "Link": 75,
+    "Note": 1,
+    "Code": 1,
+    "H3": 2,
+    "Table": 1,
+    "THead": 1,
+    "TR": 8,
+    "TH": 11,
+    "TBody": 1,
+    "TD": 21,
+    "Caption": 1,
+    "L": 2,
+    "LI": 21,
+    "Lbl": 21,
+    "LBody": 21
+  },
+  "structure_content_references": 3028,
+  "parent_tree_entries": 79,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 945,
+      "vector_operations_artifact": 1,
+      "link_annotations": 23
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 1089,
+      "link_annotations": 16
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 18,
+      "vector_operations_artifact": 49,
+      "text_operations_tagged": 631,
+      "link_annotations": 36
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 363
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "218:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "221:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "223:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "225:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "227:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "229:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "233:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "263:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "381:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "385:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "386:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "446:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "293:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "296:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "298:0",
+      "page": 3
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

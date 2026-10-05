@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809 -->
+<!-- Source PDF SHA-256: bb2ad734aea69e9a413ee2ff16dc6ad8baf61b750d3a23e91bf28b1382d038ab -->
 
 <a id="page-1"></a>
 
@@ -12,9 +12,9 @@ University of Michigan Ann Arbor, USA
 
 (maupande,nebeling,sunypark,soney)@umich.edu
 
-© 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9999-9/18/06...$15.00
-
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Woodstock ’18, June 03–05, 2018, Woodstock, NY
+
+> © 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9999-9/18/06...$15.00
 
 ## ABSTRACT
 
@@ -28,13 +28,13 @@ Sports are the primary physical activity for over 52 million people in the Unite
 
 Personal informatics, activity tracking, recreational sports
 
+> [https://doi.org/10.1145/1122445.1122456](<https://doi.org/10.1145/1122445.1122456>)
+
 ## INTRODUCTION
 
 Sports is one of the many ways in which people seek to improve and maintain their health and fitness. In the United States alone, sports are the primary physical activity for over 52 million people \[[15](<#page-4>)\]. The vast majority of these are recreational athletes. We define recreational athletes as people who frequently play a sport with a goal other than material compensation. These goals could typically include playing for fun, to improve health, or as a way to socialize.
 
 Personal informatics tools like activity trackers and mobile applications are designed to track metrics such as steps, distance and heart rate. These are important to give users a general sense of their physical activity. They have shown promise in improving people’s health \[[16](<#page-4>)\]. However, they are of limited utility when one wishes to track detailed information on more complex activities such as exercise and recreational sports.
-
-[https://doi.org/10.1145/1122445.1122456](<https://doi.org/10.1145/1122445.1122456>)
 
 Previous HCI research has designed tracking technologies for individual sports and techniques. These are useful technical contributions for engineering tracking tools. However, they do not inform us about how recreational athletes generally use tracking technologies. Given their sizable population and the unique nature of sports as a physical activity, studying their needs and practices can offer useful insights for design of personal informatics systems.
 
@@ -86,11 +86,9 @@ Lastly, participants reported referring to their feelings (e.g., feeling of comp
 
 ### Desired Metrics and Categories
 
-We inquired about measures participants wanted better tracking support for. This revealed a variety of unmet tracking desires. We
-
 <a id="page-3"></a>
 
-Exploring Tracking Needs and Practices of Recreational Athletes refer to this as a ‘long tail’ of desired metrics because of the individual differences in tracking desires of participants, within a sport as well as across sports. We recorded 70 unique measures (table 1), categorized into four groups.
+We inquired about measures participants wanted better tracking support for. This revealed a variety of unmet tracking desires. We refer to this as a ‘long tail’ of desired metrics because of the individual differences in tracking desires of participants, within a sport as well as across sports. We recorded 70 unique measures (table 1), categorized into four groups.
 
 The category of ‘technique’ includes skills specific to the sport. We found that technique information, despite being most desired, was least supported by tracking tools. Most of these measures were mentioned by non-runners: “I would like to know how fast my shots are or my racquet speed... I think they are critical to track especially in a serve, (because) speed trumps all. I think speed is my primary focus.” (T5). Participants in these sports felt less supported by existing tracking technologies.
 

@@ -1,0 +1,240 @@
+[
+  {
+    "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+    "pages": 13,
+    "pdf_sha256": "cbabaaf6d864398f5227ffa007e44457af47fcbfa977cacc1447352214602f2c",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 9341,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 109,
+    "alternatives_preserved": 13,
+    "previous_pixel_checked_sha256": "7577a95d69406e7bbb41de18d98cde23f22993cd9e2b21b268d5c136298d808b",
+    "supplemental144dpi_pixel_identical": true
+  },
+  {
+    "file": "chen-sifter-imx2020.pdf",
+    "pages": 9,
+    "pdf_sha256": "bc19fca4193013d013a2d8e5c94b6b99e23a9dee0be91b71768d61df74aa87a8",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 7984,
+    "artifact_content_keys": 8,
+    "annotations_preserved": 69,
+    "alternatives_preserved": 9,
+    "previous_pixel_checked_sha256": "e8d3f1be19effb782ac989cd5ef0e4959b202c43416246cadec86f1aa113c196",
+    "supplemental144dpi_pixel_identical": true
+  },
+  {
+    "file": "im-improving-advising-relationships-chiea2024.pdf",
+    "pages": 4,
+    "pdf_sha256": "5c3ccce8e3cd2ec2b030e8072ccb58874f1ef91c48d3ddedd492a61497a5fb4d",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 269,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 34,
+    "alternatives_preserved": 1
+  },
+  {
+    "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+    "pages": 12,
+    "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 1133,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 108,
+    "alternatives_preserved": 8
+  },
+  {
+    "file": "myers-making-end-user-eud2017.pdf",
+    "pages": 22,
+    "pdf_sha256": "325f1800a7b96c0df7545ddf59cd95db89964a655852bf492ae2385ec102100a",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 9865,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 110,
+    "alternatives_preserved": 8
+  },
+  {
+    "file": "oney-arboretum-and-arbility-uist2018.pdf",
+    "pages": 13,
+    "pdf_sha256": "5b67142d6d7dcc1af5269b8922396617a6e72d2987e4b849e26b2d904f44a350",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 263,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 140,
+    "alternatives_preserved": 7
+  },
+  {
+    "file": "oney-constraintjs-uist2012.pdf",
+    "pages": 10,
+    "pdf_sha256": "8f73d21a634532f2e22a59c6f1ecca7172943f83eba2a59d89dcc4b221404a78",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 5409,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 8,
+    "previous_pixel_checked_sha256": "758f16f97afa02a31fbf0bc2bc9e2683367cdc5f280a28e0d23332e5c71be7bc",
+    "supplemental144dpi_pixel_identical": true
+  },
+  {
+    "file": "oney-edbooks-preprint2024.pdf",
+    "pages": 23,
+    "pdf_sha256": "9f30df077f40c3a0ee35ecf60883ee92461183474fd254b403c112d05a16c5ba",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 12622,
+    "artifact_content_keys": 40,
+    "annotations_preserved": 118,
+    "alternatives_preserved": 11
+  },
+  {
+    "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+    "pages": 2,
+    "pdf_sha256": "316b080209af4815d50d11d8188d03d7c5226396513acbd524a10069ef17f935",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 954,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 0
+  },
+  {
+    "file": "oney-euclase-live2013.pdf",
+    "pages": 4,
+    "pdf_sha256": "1482165ae8865ae11222b1216b2ff0b183aa0abce8cadce8d2a4275e1857bda7",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 2057,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 1
+  },
+  {
+    "file": "oney-playbook-iseud2011.pdf",
+    "pages": 6,
+    "pdf_sha256": "555bb84899d9814c226c502053a8359c05988aabdb52c27829e88a1aa8f2ad8f",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 1285,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 1
+  },
+  {
+    "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+    "pages": 10,
+    "pdf_sha256": "62929a1d952bc46baa80ee97eb54940e2cafaa08b8496474b735f14c3bab2412",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 8554,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 0
+  },
+  {
+    "file": "pandey-explore-create-annotate-chi2020.pdf",
+    "pages": 12,
+    "pdf_sha256": "474f42a447d8941d21e72c9c1de36503d8dcb018be39092fda9b0d2d312df118",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 10905,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 85,
+    "alternatives_preserved": 3
+  },
+  {
+    "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+    "pages": 4,
+    "pdf_sha256": "e218316f06d2c88bc21e2e663c4485b9798d7b51d76f303ef58a7cfcb20d54bb",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 4296,
+    "artifact_content_keys": 8,
+    "annotations_preserved": 45,
+    "alternatives_preserved": 0
+  },
+  {
+    "file": "pandey-inclusive-source-code-chi2024.pdf",
+    "pages": 17,
+    "pdf_sha256": "8f8b2b0277f3da2c3f27f359c1af5239945a2116ad6b658abe5e21cff983d448",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 14322,
+    "artifact_content_keys": 78,
+    "annotations_preserved": 206,
+    "alternatives_preserved": 0
+  },
+  {
+    "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+    "pages": 30,
+    "pdf_sha256": "22b4f4bf6c95afe4b448131d8d913df98a18a051d0cc1da6e031d032dcb99156",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 2021,
+    "artifact_content_keys": 8,
+    "annotations_preserved": 256,
+    "alternatives_preserved": 0
+  },
+  {
+    "file": "pandita-inferring-method-specifications-icse2012.pdf",
+    "pages": 11,
+    "pdf_sha256": "099f1fc40e94fc6c8a3ed70912af469b61f155128d9c729f92a4a783ea2c298a",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 9304,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 5,
+    "previous_pixel_checked_sha256": "c2789d2e0dd7d42ec100f6c669164756077485cb5699ac59f7f49f7afbefd76a",
+    "supplemental144dpi_pixel_identical": true
+  },
+  {
+    "file": "zhang-cflow-ls2024.pdf",
+    "pages": 12,
+    "pdf_sha256": "7985077ac5c90b0da448ce9f77df1054593cd80a0024d257c789d465218e9bad",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 11199,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 128,
+    "alternatives_preserved": 5
+  },
+  {
+    "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+    "pages": 2,
+    "pdf_sha256": "76600b8335112906c8c8235a6d8a4d1e1e66a6e428e0348942712974ea922206",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 1612,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 18,
+    "alternatives_preserved": 2
+  },
+  {
+    "file": "zhang-runex-vlhcc2023.pdf",
+    "pages": 9,
+    "pdf_sha256": "a108cc8ba2069aef7f1ec88c7ae0995b03790a75450e6360627fff760957912e",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 8367,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 0,
+    "alternatives_preserved": 1
+  },
+  {
+    "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+    "pages": 5,
+    "pdf_sha256": "7b366c0c8b13eb987cf4576afa48fe8499debd37e979da0e38c0ff17dfceb82f",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 3643,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 47,
+    "alternatives_preserved": 3
+  },
+  {
+    "file": "zhang-vrcopilot-uist2024.pdf",
+    "pages": 13,
+    "pdf_sha256": "64fdf55cb008156d269c33ed4d3bbbc7268c24778b48301b1a1962b4179f33c3",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 12151,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 136,
+    "alternatives_preserved": 9
+  },
+  {
+    "file": "zhang-vrgit-chi2023.pdf",
+    "pages": 14,
+    "pdf_sha256": "dbd3bdccf759adc9ca1ede25c7c90870a5286109d54675ee479c92fba7a0535e",
+    "mupdf144_pixel_identical": true,
+    "content_keys_preserved": 2514,
+    "artifact_content_keys": 0,
+    "annotations_preserved": 176,
+    "alternatives_preserved": 8
+  }
+]

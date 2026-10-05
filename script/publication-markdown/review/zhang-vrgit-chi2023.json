@@ -2,9 +2,9 @@
   "file": "zhang-vrgit-chi2023.pdf",
   "title": "VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality",
   "publication_id": "vrgit_a_version_control_system_for_collaborative_content_creation_in_virtual_reality_2023",
-  "pdf_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+  "pdf_sha256": "5ee9d61558b07eeead186f3a0612823aaa3ceecbcc6cba22524aeb227c6833d9",
   "markdown": "publications/zhang-vrgit-chi2023.md",
-  "markdown_sha256": "17826d3e72a9ebdfb52f2368e1664e1341be4705841184687eb876c5dd93ec6e",
+  "markdown_sha256": "012465d4e2fc8ad16982f3b399ce834632e0ac17e492155f37802a63abe0e160",
   "pages": 14,
   "blocks": [
     {
@@ -65,19 +65,19 @@
     },
     {
       "node": "393:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 617
+      "characters": 619
     },
     {
       "node": "820:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 208
+      "characters": 210
     },
     {
       "node": "391:0",
@@ -93,15 +93,7 @@
       "pages": [
         1
       ],
-      "characters": 659
-    },
-    {
-      "node": "joined-822:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 770
+      "characters": 1385
     },
     {
       "node": "824:0",
@@ -150,6 +142,14 @@
         2
       ],
       "characters": 351
+    },
+    {
+      "node": "822:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 46
     },
     {
       "node": "794:0",
@@ -369,7 +369,7 @@
       "characters": 10
     },
     {
-      "node": "joined-1097:0",
+      "node": "1097:0",
       "role": "P",
       "pages": [
         4
@@ -406,15 +406,7 @@
       "pages": [
         4
       ],
-      "characters": 260
-    },
-    {
-      "node": "1104:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 322
+      "characters": 583
     },
     {
       "node": "1085:0",
@@ -425,7 +417,7 @@
       "characters": 30
     },
     {
-      "node": "joined-1086:0",
+      "node": "1086:0",
       "role": "P",
       "pages": [
         4,
@@ -479,7 +471,7 @@
       "pages": [
         5
       ],
-      "characters": 99
+      "characters": 501
     },
     {
       "node": "1059:0",
@@ -487,7 +479,7 @@
       "pages": [
         5
       ],
-      "characters": 322
+      "characters": 351
     },
     {
       "node": "1060:0",
@@ -503,7 +495,7 @@
       "pages": [
         5
       ],
-      "characters": 189
+      "characters": 338
     },
     {
       "node": "1062:0",
@@ -520,14 +512,6 @@
         5
       ],
       "characters": 381
-    },
-    {
-      "node": "1064:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 401
     },
     {
       "node": "1065:0",
@@ -549,9 +533,10 @@
       "node": "1144:0",
       "role": "P",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 489
+      "characters": 761
     },
     {
       "node": "1051:0",
@@ -576,14 +561,6 @@
         6
       ],
       "characters": 410
-    },
-    {
-      "node": "1190:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 271
     },
     {
       "node": "1191:0",
@@ -642,13 +619,13 @@
       "characters": 40
     },
     {
-      "node": "joined-1245:0",
+      "node": "1245:0",
       "role": "P",
       "pages": [
         6,
         7
       ],
-      "characters": 1916
+      "characters": 2003
     },
     {
       "node": "1166:0",
@@ -683,28 +660,20 @@
       "characters": 1546
     },
     {
-      "node": "1217:0",
-      "role": "P",
+      "node": "1218:0",
+      "role": "Note",
       "pages": [
         7
       ],
-      "characters": 65
-    },
-    {
-      "node": "joined-1218:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 116
+      "characters": 97
     },
     {
       "node": "1220:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         7
       ],
-      "characters": 147
+      "characters": 149
     },
     {
       "node": "1211:0",
@@ -851,7 +820,7 @@
       "characters": 69
     },
     {
-      "node": "joined-1335:0",
+      "node": "1335:0",
       "role": "P",
       "pages": [
         9
@@ -915,7 +884,7 @@
       "characters": 982
     },
     {
-      "node": "joined-1278:0",
+      "node": "1278:0",
       "role": "P",
       "pages": [
         10
@@ -955,7 +924,7 @@
       "characters": 1103
     },
     {
-      "node": "joined-1312:0",
+      "node": "1312:0",
       "role": "P",
       "pages": [
         10
@@ -2038,7 +2007,7 @@
       ],
       "sha256": "22e0078849407555809fe65f839e5a1c05ecd6a48fe1eeb01e9cf7d1f50cf48a",
       "kind": "figure",
-      "alt": "Figure 4.a: A screenshot of the history graph that contains three branches in the system. Each branch is represented by different colors of edges between the nodes including light green, red, and dark green. The user is currently on the branch colored in light green."
+      "alt": "VRGit history graph with miniature room versions arranged along three branches. Green, red and dark-green edges distinguish the branches, and a yellow square marks the selected miniature V4 on the upper branch. The caption states that the user remains in V17 while selecting this earlier version."
     },
     {
       "path": "figures/zhang-vrgit-chi2023/figure-005-p005.png",
@@ -2052,7 +2021,7 @@
       ],
       "sha256": "dd1d501cebb2529b7175106023e09c0c48d494818d1e1417d98c7e70339104ce",
       "kind": "figure",
-      "alt": "Figure 4.b: A screenshot of the history graph after the user switches the branch and now they are selecting the branch colored in red."
+      "alt": "VRGit history graph after changing the selection to another branch. The yellow selection square moves to V4.0 on the lower row of miniature rooms while the user remains in V17. The selected lower branch appears green in the screenshot, although the printed caption calls it dark red."
     },
     {
       "path": "figures/zhang-vrgit-chi2023/figure-006-p006.png",
@@ -2120,12 +2089,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 137,
-    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_removed": 119,
     "line_wrap_hyphens_retained": 18,
     "script_runs_positioned": 7
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-vrgit-chi2023.json.gz",
-  "source_tags_sha256": "e1ec8d4b5d25951729ca2a4eba95424609c5c1e584b3c14367f72d26e460a1cf"
+  "source_tags_sha256": "008c1d6d25d95068ab68d8a475be77374d9b4e01d6d73a7c66824e80ca13ec30"
 }

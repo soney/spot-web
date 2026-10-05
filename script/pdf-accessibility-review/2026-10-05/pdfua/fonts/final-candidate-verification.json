@@ -1,0 +1,112 @@
+[
+  {
+    "file": "/tmp/spot-ua-final/fonts/croscore-ua1.pdf",
+    "sha256": "4624925f0f981f7a6548c049e7a4f5c12959c0e4021390077ccf17d0982f650f",
+    "source_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+    "font_names_corrected": true,
+    "pages": [
+      {
+        "page": 1,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": false,
+        "mupdf_changed_pixels": 249935,
+        "poppler_identical": true,
+        "poppler_changed_pixels": 0
+      },
+      {
+        "page": 2,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": false,
+        "mupdf_changed_pixels": 184312,
+        "poppler_identical": true,
+        "poppler_changed_pixels": 0
+      },
+      {
+        "page": 3,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": false,
+        "mupdf_changed_pixels": 285328,
+        "poppler_identical": true,
+        "poppler_changed_pixels": 0
+      },
+      {
+        "page": 4,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": false,
+        "mupdf_changed_pixels": 279059,
+        "poppler_identical": true,
+        "poppler_changed_pixels": 0
+      }
+    ],
+    "verapdf": {
+      "version": "1.30.2",
+      "profile": "PDF/UA-1",
+      "compliant": true,
+      "passed_rules": 106,
+      "passed_checks": 22699
+    }
+  },
+  {
+    "file": "/tmp/spot-ua-final/fonts/mupdf-builtin-ua1.pdf",
+    "sha256": "eea79b86a946b665ad7f48f3213fc4d5f884d801719b4cac877a2f8f239eb25b",
+    "source_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+    "font_names_corrected": true,
+    "pages": [
+      {
+        "page": 1,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": true,
+        "mupdf_changed_pixels": 0,
+        "poppler_identical": false,
+        "poppler_changed_pixels": 251172
+      },
+      {
+        "page": 2,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": true,
+        "mupdf_changed_pixels": 0,
+        "poppler_identical": false,
+        "poppler_changed_pixels": 185299
+      },
+      {
+        "page": 3,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": true,
+        "mupdf_changed_pixels": 0,
+        "poppler_identical": false,
+        "poppler_changed_pixels": 287144
+      },
+      {
+        "page": 4,
+        "geometry_unchanged": true,
+        "text_unchanged": true,
+        "content_stream_bytes_unchanged": true,
+        "mupdf_identical": true,
+        "mupdf_changed_pixels": 0,
+        "poppler_identical": false,
+        "poppler_changed_pixels": 280199
+      }
+    ],
+    "verapdf": {
+      "version": "1.30.2",
+      "profile": "PDF/UA-1",
+      "compliant": true,
+      "passed_rules": 106,
+      "passed_checks": 22687
+    }
+  }
+]

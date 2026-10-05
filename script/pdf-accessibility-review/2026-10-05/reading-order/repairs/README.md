@@ -1,0 +1,35 @@
+# Reading-order repairs — October 5, 2026
+
+This is the historical reading-order phase, before the later [PDF/UA work](../../pdfua/summary.json). Its repair records and reader captures remain tied to the hashes recorded here. For current files, use the [October manifest](../../manifest.json), [current overview](../../README.md) and [fresh reader-interface samples](../../pdfua/at/README.md).
+
+All **141 recorded examples** from the [focused review](../README.md) were addressed, along with analogous interruptions and additional issues found during repair. Seventy PDFs changed in this phase; four required no further native change. The [phase summary](summary.json) binds all 74 PDFs and 1,028 pages to that intermediate inventory. Original page appearance was preserved.
+
+The repairs join sentence and paragraph continuations across columns and pages; place figures, captions, examples and notes at coherent boundaries; remove repeated running headers from the body sequence; correct author-column and inline-marker order; and restore meaningful mathematical and code sequences. They include the CSCW 2021 numbered tenets, VRGit's section boundary, the Promises and Pitfalls Python example, and CFlow reference 54. Small callout icons remain in their sentences. A final [ParamMacros check](parammacros-followup.json) rejoins two list continuations and distinguishes adjacent footnote references as “notes 4 and 5.” Five list-nesting failures detected during validation were also corrected.
+
+*What Makes a Well-Documented Notebook*, Table 1, now has ten logical rows and four columns, with 40 cells and 13 headers. Source-checked cell text fixes word-spacing loss in the reader interface. Each data cell exposes its category and column header. These changes affect accessible structure and text replacements, not the printed table.
+
+## Repair evidence
+
+- [Root repairs](root-repairs.json) and [independent review of all eight root documents](root-independent-review.json): all 17 original examples, plus twelve misplaced footnote markers and associated note placement.
+- [Group 1](group1/final-review.json): 21 PDFs and all 56 original examples, including reviewed mathematics and inline callouts. Later Student-AI list-role cleanup is recorded in Group 3.
+- [Group 2](group2/report.json): 22 PDFs and all [27 original examples](group2/original-examples.json), including the rebuilt table. [Supplemental role corrections](group2/role-fixes/report.json) cover Sifter, ConstraintJS and Multi-touch.
+- [Group 3](group3/final-review.json): 23 PDFs and all 41 original examples. [Independent cross-review](group3/independent-cross-review.json) records the additional PuzzleMe repair and its precise review scope.
+
+The reports preserve intermediate validation hashes where later corrections changed a file. The phase summary is historical; the [October manifest](../../manifest.json) records the current inventory after subsequent PDF/UA changes. Scripts under `source/` and group directories record these specific transformations and their session paths; they are not generic or repeatedly runnable repair commands.
+
+## Checks and subsequent verification
+
+- All 74 current PDFs pass the [native structure checks](../../structure-summary.json). The [archive comparison](../../archive-native-sync.json) verifies every parent, role, ordered content reference, alternative and text replacement, plus all 5,209 annotations. All 66 figure-description changes from the earlier October pass remain exact.
+- At this phase's close, all 995 pages in its 70 changed PDFs were pixel-identical in **MuPDF 1.28.2 and Poppler 26.01.0 at 144 DPI**, while the four other PDFs were byte-identical. The superseding [appearance results](../../appearance-comparison.json) now cover 1,024 pages in 73 changed PDFs with identical pixels and geometry; Myers 2013's four pages remain byte-identical.
+- This phase's [summary](summary.json) records two veraPDF passes, 71 files missing only PDF/UA identification, and Myers 2013 with missing identification and four unembedded fonts. The later [PDF/UA phase](../../pdfua/summary.json) added 71 declarations after semantic review and repairs. [Current veraPDF results](../../verapdf-summary.json) show 73 passes. On October 5, 2026, the user accepted Myers as the one font/PDF-UA exception to preserve appearance; no font candidate or declaration is installed for that file.
+- The phase's [Firefox AT-SPI checks](group2/at/results.json) verified all 40 rebuilt table-cell names and the row/column headers of all 27 data cells; setup → Python example → following section; and a cross-page paragraph continuation before its figure. These historical captures were superseded by [fresh checks on the current PDFs](../../pdfua/at/results.json), which pass the same assertions. Orca generated title/heading utterances during the earlier attempt, but its isolated audio backend failed; continuous speech was not rerun.
+- All 74 [Markdown conversions](../../../../publication-markdown/verification.json) render without warnings and account for every tagged content reference, 420 figure/equation images, 128 tables, 4,986 cells, 1,609 headers and 578 source code elements. [Independent samples](markdown-independent-review.json) check the repaired table, notes, code, transcriptions and reference in nine documents.
+- All 74 [download packages](../../download-check.json) pass byte/path checks; an [offline browser](../../browser-check.json) loaded every one of their 420 images. Both download buttons work on individual paper pages. A clean Jekyll build completed without content warnings.
+
+The Markdown-only Expresso and CFlow layout workarounds were retired because their corresponding repairs now exist in the PDFs. Twelve reviewed transcriptions match native ActualText exactly; ten crop definitions retain their reviewed content. [Rebinding evidence](markdown-rebinding.json).
+
+All **461 published image URLs** retain their identities. Current downloads use inline descriptions for 39 former callout images and semantic tables for two former table images; those 41 old images remain available for earlier downloads. No image pixels changed during this reading-order round. [Image compatibility](markdown-image-compatibility.json).
+
+## Limits
+
+This was a focused semantic review with complete mechanical coverage and three reader-interface samples, not a full 1,028-page screen-reader listening test or accessibility certification. It did not independently proofread every source word, formula, code token or table value. Original small text, contrast, overlaps and source editorial errors remain to preserve appearance, as requested; the [October findings](../../README.md#remaining-source-and-presentation-concerns) describe those limitations. The four code-spacing regions flagged at this phase's close were subsequently [reviewed against the source](../../pdfua/code/README.md): two gained Code ActualText repairs and the two CMU snippets were cleared without text changes. No code-whitespace review warnings remain in the current conversions.

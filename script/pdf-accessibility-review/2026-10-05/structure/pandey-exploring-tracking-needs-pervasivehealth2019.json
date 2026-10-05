@@ -1,0 +1,180 @@
+{
+  "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+  "pdf_sha256": "bb2ad734aea69e9a413ee2ff16dc6ad8baf61b750d3a23e91bf28b1382d038ab",
+  "normalization_warnings": "",
+  "page_count": 4,
+  "language": "en-US",
+  "title": "Exploring the Tracking Needs and Practices of  Recreational Athletes.",
+  "structure_elements": 208,
+  "roles": {
+    "Document": 1,
+    "Sect": 4,
+    "H1": 1,
+    "P": 36,
+    "H2": 10,
+    "Note": 3,
+    "Link": 45,
+    "H3": 8,
+    "Caption": 1,
+    "Table": 1,
+    "THead": 1,
+    "TR": 5,
+    "TH": 6,
+    "TBody": 1,
+    "TD": 4,
+    "H4": 2,
+    "L": 1,
+    "LI": 26,
+    "Lbl": 26,
+    "LBody": 26
+  },
+  "structure_content_references": 4296,
+  "parent_tree_entries": 49,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 899,
+      "vector_operations_artifact": 1,
+      "link_annotations": 23
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1073,
+      "link_annotations": 3
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 15,
+      "text_operations_tagged": 988,
+      "vector_operations_artifact": 21,
+      "link_annotations": 3
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1336,
+      "link_annotations": 16
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "165:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "169:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "171:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "173:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "175:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "185:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "186:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "210:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "233:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "236:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "238:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "242:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "247:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "258:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "260:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "279:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "281:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "283:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "290:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "292:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "295:0",
+      "page": 4
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

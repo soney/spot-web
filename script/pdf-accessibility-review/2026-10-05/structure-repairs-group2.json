@@ -1,0 +1,167 @@
+[
+  {
+    "file": "arab-co-advisor-vlhcc2025.pdf",
+    "before_sha256": "f6c2ba22fef7762ac8c2f8a6908e30775f00489db1eefe5e061a428d7ce64cbb",
+    "after_sha256": "2d9906e5133e39638bd43bafdfd678496b85ffcf1bea0236ba598eb36c392114",
+    "source_tags_sha256": "4607722fa53f1512cbb68fb09476889ee81693e9ab0a514d16f3c400c2c22bfd",
+    "changes": [
+      {
+        "kind": "heading_role",
+        "node": "515:0",
+        "page": 7,
+        "old": "P",
+        "new": "H3",
+        "reason": "Visible RQ1 subsection A matches subsection B level."
+      }
+    ],
+    "painted_content_changed": false
+  },
+  {
+    "file": "zhang-vizprog-chi2023.pdf",
+    "before_sha256": "8022c2aad14a2bac394ff397117f7225261312de1ab803e4abeb84c5c63a99fc",
+    "after_sha256": "6ca6e4d8622d6cfbc58ec7091975bc67f68e74fa01d2bea63e3f44aee7a86360",
+    "source_tags_sha256": "d66b805b25c393d9c0cfd4990af2d9a442877189c54f228d15682d9868ca8cfb",
+    "changes": [
+      {
+        "kind": "heading_content",
+        "heading": "1083:0",
+        "paragraph": "1084:0",
+        "page": 11,
+        "mcids": [
+          956,
+          957,
+          958,
+          959,
+          960,
+          961,
+          962
+        ],
+        "heading_text": "5.2.2 VizProg helps participants understand issues faster in live\nsettings than the baseline."
+      }
+    ],
+    "painted_content_changed": false
+  },
+  {
+    "file": "pandey-explore-create-annotate-chi2020.pdf",
+    "before_sha256": "d91cc84afe92530dccc87479c5fa9a42a58ef0e0642b6f9e2cc467eff228435a",
+    "after_sha256": "5331c323fed73944794b465857d17faad215296e1b88916b5fb2f30a92cf14db",
+    "source_tags_sha256": "6939f8cb71c58826874d773da1937fa85635e25255d839614d8b81a59c4a6ab1",
+    "changes": [
+      {
+        "kind": "affiliation_order",
+        "page": 1,
+        "node": "502:0",
+        "old_parent": "783:0",
+        "new_parent": "779:0",
+        "after": "489:0"
+      }
+    ],
+    "painted_content_changed": false
+  },
+  {
+    "file": "chen-sifter-imx2020.pdf",
+    "before_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+    "after_sha256": "ca6c383914590a70e722e863eec4d180c982f726602953c566bb76bf7c132881",
+    "source_tags_sha256": "8457cca33b436746788d5d80417a7f4c72d1f9905d67a73dda93e2c3d92cd01c",
+    "changes": [
+      {
+        "kind": "author_columns",
+        "page": 1,
+        "original": "409:0",
+        "author_order": [
+          "409:0",
+          "1009:0",
+          "410:0",
+          "1010:0",
+          "1011:0",
+          "411:0"
+        ],
+        "author_groups": [
+          {
+            "node": "409:0",
+            "mcids": [
+              10,
+              11,
+              16,
+              17,
+              18,
+              23,
+              24,
+              25,
+              33
+            ],
+            "text": "Yan Chen\nUniversity of Michigan\nAnn Arbor, Michigan\nyanchenm@umich.edu"
+          },
+          {
+            "node": "1009:0",
+            "mcids": [
+              12,
+              13,
+              19,
+              20,
+              26,
+              27,
+              28,
+              34
+            ],
+            "text": "Andrés Monroy-Hernández\nSnap Inc.\nSeattle, WA, USA\namh@snap.com"
+          },
+          {
+            "node": "1010:0",
+            "mcids": [
+              36,
+              37,
+              43,
+              44,
+              45,
+              51,
+              52,
+              53,
+              54,
+              63
+            ],
+            "text": "Steve Oney\nUniversity of Michigan\nAnn Arbor, MI, USA\nsoney@umich.edu"
+          },
+          {
+            "node": "1011:0",
+            "mcids": [
+              38,
+              39,
+              40,
+              46,
+              47,
+              48,
+              55,
+              56,
+              57,
+              58,
+              64
+            ],
+            "text": "Walter S. Lasecki\nUniversity of Michigan\nAnn Arbor, MI, USA\nwlasecki@umich.edu"
+          }
+        ]
+      }
+    ],
+    "painted_content_changed": false
+  },
+  {
+    "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+    "before_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+    "after_sha256": "8dfed69adca32f119a43de30234c4d040345776d426a10f1418d76e581ba94ff",
+    "source_tags_sha256": "fa9bd37df19e2484766457b0cf351580624dcbf4fc5b32aeb5054b26ee1e6efe",
+    "changes": [
+      {
+        "kind": "notes_order",
+        "page": 1,
+        "nodes": [
+          "47:0",
+          "200:0"
+        ],
+        "before": "43:0",
+        "role": "Note",
+        "reason": "Restore sentence continuity between paragraphs46 and201."
+      }
+    ],
+    "painted_content_changed": false
+  }
+]

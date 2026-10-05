@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f -->
+<!-- Source PDF SHA-256: c1ead332eec99dd2392bb22cc180849876490d1f4044c251126b9e21117d8052 -->
 
 <a id="page-1"></a>
 
@@ -20,15 +20,13 @@ Computational notebooks enable data scientists to document their exploration and
 
 computational notebooks, data science education, computational narrative, literate programming
 
-## INTRODUCTION
-
-The rise of big data has increased the job demand for data scientists, which has been called “the sexiest job of the 21<sup>st</sup> century” \[[2](<#page-4>)\]. In addition to the growth of data science degree programs in colleges, there has been a proliferation of data science Massive Open Online Courses (MOOCs). This has scaled
-
 HusDat @ CHI19, May 04–09, 2019, Glasgow, UK 2019.
+
+## INTRODUCTION
 
 <a id="page-2"></a>
 
-the access to quality education for learners who are seeking to gain data science skills. On Coursera, there are currently more than 100 data science courses, including a series of specialized training and degree programs. Many of the data science curricula and degree programs have introduced Python programming in computational notebooks, including Jupyter — the most popular tool for interactive data science \[[9](<#page-4>)\]. Jupyter’s design supports exploratory programming \[[5](<#page-4>)\], where the implementation can not be decided in advance in an open-ended task. This is particularly helpful for data scientists, who need to frequently inspect the output of parts of the code before knowing how to proceed. In addition, Jupyter notebooks allow users to document their exploration process using a combination of code, output, narrative text, visualizations, and other rich media. This supports sharing and reproducing their results. In online learning environments, instructors often use Jupyter notebooks to demonstrate code and output, and couple the notebooks with video lectures and assessments.
+The rise of big data has increased the job demand for data scientists, which has been called “the sexiest job of the 21<sup>st</sup> century” \[[2](<#page-4>)\]. In addition to the growth of data science degree programs in colleges, there has been a proliferation of data science Massive Open Online Courses (MOOCs). This has scaled the access to quality education for learners who are seeking to gain data science skills. On Coursera, there are currently more than 100 data science courses, including a series of specialized training and degree programs. Many of the data science curricula and degree programs have introduced Python programming in computational notebooks, including Jupyter — the most popular tool for interactive data science \[[9](<#page-4>)\]. Jupyter’s design supports exploratory programming \[[5](<#page-4>)\], where the implementation can not be decided in advance in an open-ended task. This is particularly helpful for data scientists, who need to frequently inspect the output of parts of the code before knowing how to proceed. In addition, Jupyter notebooks allow users to document their exploration process using a combination of code, output, narrative text, visualizations, and other rich media. This supports sharing and reproducing their results. In online learning environments, instructors often use Jupyter notebooks to demonstrate code and output, and couple the notebooks with video lectures and assessments.
 
 In this paper, we describe a vision of how Jupyter (and other computational notebook environments) could be redesigned to better support data science education. In particular, we suggest that computational notebooks should be augmented to:
 

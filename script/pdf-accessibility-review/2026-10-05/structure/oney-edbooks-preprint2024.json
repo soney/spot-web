@@ -1,0 +1,520 @@
+{
+  "file": "oney-edbooks-preprint2024.pdf",
+  "pdf_sha256": "ef7ebd06e277dbe908d82b4823aec305b5e102d0e83b0933e47013599bb60ae6",
+  "normalization_warnings": "",
+  "page_count": 23,
+  "language": "en-US",
+  "title": "EDBooks: AI-Enhanced Interactive Narratives for Programming Education",
+  "structure_elements": 787,
+  "roles": {
+    "Document": 1,
+    "Sect": 23,
+    "H1": 1,
+    "P": 86,
+    "H2": 9,
+    "Link": 118,
+    "Note": 5,
+    "Figure": 11,
+    "Caption": 12,
+    "L": 14,
+    "LI": 65,
+    "Lbl": 57,
+    "LBody": 65,
+    "H3": 21,
+    "H4": 16,
+    "Table": 4,
+    "THead": 4,
+    "TR": 54,
+    "TH": 70,
+    "TBody": 4,
+    "TD": 146,
+    "Code": 1
+  },
+  "structure_content_references": 12622,
+  "parent_tree_entries": 141,
+  "form_xobjects_visited": 14,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 554,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 9,
+      "link_annotations": 11
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 6,
+      "vector_operations_tagged": 111,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 386,
+      "vector_operations_artifact": 4,
+      "link_annotations": 5
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 526,
+      "link_annotations": 6
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 6,
+      "text_operations_tagged": 663,
+      "link_annotations": 30
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 653,
+      "link_annotations": 23
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 6,
+      "text_operations_tagged": 664,
+      "vector_operations_artifact": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 12,
+      "vector_operations_tagged": 8,
+      "text_operations_tagged": 498,
+      "link_annotations": 4
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 6,
+      "vector_operations_tagged": 81,
+      "text_operations_tagged": 558,
+      "vector_operations_artifact": 10,
+      "link_annotations": 1
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 556,
+      "vector_operations_tagged": 50,
+      "image_operations_tagged": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 6,
+      "text_operations_tagged": 431,
+      "link_annotations": 6
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 381,
+      "vector_operations_artifact": 3,
+      "link_annotations": 1
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 6,
+      "vector_operations_tagged": 428,
+      "text_operations_tagged": 513,
+      "link_annotations": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 12,
+      "vector_operations_tagged": 194,
+      "text_operations_tagged": 573,
+      "vector_operations_artifact": 4,
+      "link_annotations": 5
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 6,
+      "vector_operations_artifact": 17,
+      "text_operations_tagged": 466,
+      "image_operations_tagged": 7,
+      "link_annotations": 2
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 707,
+      "link_annotations": 1
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 6,
+      "vector_operations_artifact": 16,
+      "text_operations_tagged": 450,
+      "image_operations_tagged": 3,
+      "link_annotations": 1
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 578,
+      "link_annotations": 1
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 6,
+      "vector_operations_tagged": 31,
+      "text_operations_tagged": 489,
+      "vector_operations_artifact": 1,
+      "link_annotations": 6
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 531,
+      "link_annotations": 2
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 6,
+      "text_operations_tagged": 486,
+      "link_annotations": 2
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 694
+    },
+    {
+      "page": 22,
+      "text_operations_artifact": 6,
+      "text_operations_tagged": 958
+    },
+    {
+      "page": 23,
+      "text_operations_artifact": 12,
+      "text_operations_tagged": 539
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "295:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "298:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "300:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "701:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "703:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "716:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "752:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "849:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "874:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "892:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "894:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "896:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "906:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "912:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "917:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "919:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "928:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "931:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "933:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "936:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "938:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "947:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1201:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "1229:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1231:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1233:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1235:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1237:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1330:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1336:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1342:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1352:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1405:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "1417:0",
+      "page": 17
+    },
+    {
+      "level": 4,
+      "element": "1426:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "1432:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "1441:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "1443:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "956:0",
+      "page": 19
+    },
+    {
+      "level": 3,
+      "element": "960:0",
+      "page": 19
+    },
+    {
+      "level": 3,
+      "element": "965:0",
+      "page": 20
+    },
+    {
+      "level": 2,
+      "element": "967:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "969:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "972:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "974:0",
+      "page": 20
+    },
+    {
+      "level": 2,
+      "element": "980:0",
+      "page": 21
+    },
+    {
+      "level": 2,
+      "element": "982:0",
+      "page": 21
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "672:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Fig. 1. An illustration of EDBook content that describes the basics of Python modules. Readers learn through an interactive dialog\n(left column) that includes a natural language didactic dialog, multiple choice questions, and code writing questions. With EDBook,\nreaders work through this narrative over time. At any point in the narrative, they can also interact with a context-aware LLM for\nadditional questions. These dialogs can also include larger code samples that are incrementally built and explained over the course\nof the narrative (right column). Deictic pointers (represented as blue lines) can link the narratives with specific parts of code. At the\nbottom of the leftmost column, the reader is given three options for how to proceed with the narrative: two pre-built questions (“is\nrandom a built-in module?” and “Could we call import inside of rollDice?”) and the option to query an LLM.",
+      "actual_text": ""
+    },
+    {
+      "element": "888:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "A continuum runs from less constrained to more constrained dialog. From left to right: open-ended LLMs such as ChatGPT; topic-shifting agents; pre-written tree- or state-based dialogs; and pre-written linear dialogs. EDBooks is positioned above the tree- or state-based category.",
+      "actual_text": ""
+    },
+    {
+      "element": "904:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Fig. 3. Conceptually, EDBook dialogs are trees (left) but these trees are visually simplified and flattened in the reader UI (right) for\nreadability. On the left is an illustration of an example dialog tree. Each node in the tree represents a message and is labeled according\nto its depth (1–5) and breadth-first search order (a–z). For example, 3a represents the leftmost node in the third layer. EDBook allows\ninstructors to define a ‘target’ node (message 5d in this example) that represents completion of the learning goals for the page. In\nthis example, the user is currently focused on message 4b, so ‘ancestor’ cells 1a, 2a, 3a, and 4b are visible in the UI (right). In the\nUI, users can also select pre-existing subsequent messages (5b and 5c) or write a custom message (‘Edit’) that will query an LLM to\nadd a response message. The user’s current node is part of the dialog tree but not on the path of the target, 5d. Thus, the user is\nalso nudged to go to a node that would move them back towards target node 5d by back-tracking to node 3b (with a “back to main\nthread” button). The UI also shows icons ( ) to indicate messages with multiple possible responses (right) and calls attention to the\nfirst message where the user’s path diverges away from the target message (in red ).",
+      "actual_text": ""
+    },
+    {
+      "element": "915:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 4. An EDBook dialog cell answers why JavaScript has its name. A warning triangle and text below the response say, “This cell contains AI-generated content that has not been verified,” distinguishing this answer from verified course content.",
+      "actual_text": ""
+    },
+    {
+      "element": "922:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 5. A dialog message introduces clearing the current cache with the _write_to_file function and notes edits to file_1.py and file_2.py. A side-by-side code diff shows the earlier file on the left and the new version on the right, with a newly added clear_cache function highlighted in green.",
+      "actual_text": ""
+    },
+    {
+      "element": "1213:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "Fig. 6. An Illustration of the two conditions in our evaluation of EDBook. In CEDBook (left), participants performed a task with the\nEDBook platform. In CWeb+GPT (right), participants performed a task with equivalent content, converted to a webpage. CWeb+GPT\nparticipants can also interact with a “context-informed” instance of ChatGPT that has the context of the relevant webpage content\nto provide contextually-appropriate responses.",
+      "actual_text": ""
+    },
+    {
+      "element": "1227:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Figure 7. Counterbalanced study workflow. After screening, four groups of five participants each complete both EDBook and Web plus ChatGPT conditions, using Scheme and Cache tasks in opposite orders. The four sequences are EDBook Scheme then Web plus ChatGPT Cache; EDBook Cache then Web plus ChatGPT Scheme; Web plus ChatGPT Scheme then EDBook Cache; and Web plus ChatGPT Cache then EDBook Scheme. Each condition starts with up to 10 minutes of training, followed by up to 30 minutes on its task, up to 10 minutes of assessment, and up to 5 minutes of survey. All finish with an approximately 10-minute post-study interview.",
+      "actual_text": ""
+    },
+    {
+      "element": "1297:0",
+      "role": "Figure",
+      "page": 14,
+      "alt": "Five pairs of box plots compare Web+GPT and EDBook: number of LLM questions, learning time, assessment time, assessment score, and attempts at example code. Mean values are respectively 3.45 versus 3.30 questions; 1389.90 versus 1817.85 seconds of learning; 575.0 versus 543.6 seconds of assessment; scores 1.35 versus 1.50; and 0.40 versus 0.95 example attempts. Learning time and example attempts differ significantly, as marked in Table 2.",
+      "actual_text": ""
+    },
+    {
+      "element": "1328:0",
+      "role": "Figure",
+      "page": 14,
+      "alt": "Diverging bar charts compare the categories of questions asked in Web+GPT, blue bars to the left, and EDBook, pink bars to the right. Web+GPT has more requests to understand concepts, evaluate solutions, and directly create code. EDBook has more requests to apply concepts, analyze concepts, and converse outside a question.",
+      "actual_text": ""
+    },
+    {
+      "element": "1402:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Stacked five-category agreement bars compare Web+GPT and EDBook responses to the statements in Table 4. Colors run from strongly disagree in orange through neutral in gray to strongly agree in blue. EDBook receives more agreement for concept explanation, tutorial structure, engagement, and the usefulness of quiz questions. For EDBook-only features, 80 percent strongly agree code previews were useful, 55 percent strongly agree selecting among suggested messages was useful, and 50 percent strongly agree writing custom messages was useful.",
+      "actual_text": ""
+    },
+    {
+      "element": "1436:0",
+      "role": "Figure",
+      "page": 18,
+      "alt": "Figure 8. EDBook data schema separates persistent page content from per-user state. Page data, stored as a JSON file, contains a target cell, a map of participants, a map of cells, and media files. Participants have an ID, name, color, and description. Each cell records its source, parent and child cells, sender, editor pointer decorations, file differences, and directives. Pointer decorations locate a filename and start and end line-column positions; differences represent added content, removed lines, or unchanged lines. User state, stored in browser local storage, contains the selected cell and a map of cell states. Each user-cell state records whether it has been passed and the states of its directives.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

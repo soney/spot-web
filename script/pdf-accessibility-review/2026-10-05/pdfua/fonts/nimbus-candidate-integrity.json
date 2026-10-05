@@ -1,0 +1,219 @@
+{
+  "source": "assets/pdfs/myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+  "source_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+  "candidate": "nimbus-fonts-only.pdf",
+  "candidate_sha256": "ac32c4c6d5a9f2ab72d930bb4273f1f13faa0b4f377df2dd79172115df0f20e8",
+  "source_xref_length": 177,
+  "candidate_xref_length": 182,
+  "changed_existing_objects": [
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+  ],
+  "added_objects": [
+    177,
+    178,
+    179,
+    180,
+    181
+  ],
+  "native_tree_all_object_ids_and_contents_unchanged": true,
+  "all_other_existing_objects_unchanged": true,
+  "annotations_unchanged": true,
+  "metadata_unchanged": true,
+  "all_page_content_stream_bytes_unchanged": true,
+  "all_page_geometry_unchanged": true,
+  "all_page_extracted_text_unchanged": true,
+  "all_four_pages_mupdf_144dpi_identical": true,
+  "archive_native_sync": {
+    "file": "nimbus-fonts-only.pdf",
+    "pdf_sha256": "ac32c4c6d5a9f2ab72d930bb4273f1f13faa0b4f377df2dd79172115df0f20e8",
+    "archive_sha256": "97904e096efb836891b440ceb8ad04b63dd553ef28e275fa093c8f7f299cea59",
+    "counts": {
+      "native_content_references": 96,
+      "native_annotations": 1,
+      "archive_content_references": 96,
+      "archive_annotations": 1,
+      "native_elements": 100,
+      "archive_elements": 100,
+      "proposals_checked": 0
+    },
+    "role_alias_equivalences": [],
+    "proposal_checks": [],
+    "passed": true,
+    "issues": []
+  },
+  "structure": {
+    "page_count": 4,
+    "language": "en-US",
+    "title": "Creativity Support in Authoring and Backtracking",
+    "structure_elements": 100,
+    "roles": {
+      "Sect": 1,
+      "H1": 1,
+      "Div": 5,
+      "P": 78,
+      "H2": 9,
+      "Note": 1,
+      "Figure": 1,
+      "Caption": 1,
+      "H3": 2,
+      "Link": 1
+    },
+    "structure_content_references": 96,
+    "parent_tree_entries": 5,
+    "form_xobjects_visited": 0,
+    "pages": [
+      {
+        "page": 1,
+        "text_operations_artifact": 7,
+        "text_operations_tagged": 406,
+        "vector_operations_tagged": 1
+      },
+      {
+        "page": 2,
+        "text_operations_artifact": 7,
+        "text_operations_tagged": 240,
+        "vector_operations_tagged": 1,
+        "image_operations_tagged": 1
+      },
+      {
+        "page": 3,
+        "text_operations_artifact": 7,
+        "text_operations_tagged": 429,
+        "vector_operations_tagged": 1,
+        "link_annotations": 1
+      },
+      {
+        "page": 4,
+        "text_operations_artifact": 7,
+        "text_operations_tagged": 371
+      }
+    ],
+    "headings": [
+      {
+        "level": 1,
+        "element": "37:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "149:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "151:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "153:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "155:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "157:0",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "element": "135:0",
+        "page": 2
+      },
+      {
+        "level": 3,
+        "element": "136:0",
+        "page": 2
+      },
+      {
+        "level": 3,
+        "element": "139:0",
+        "page": 2
+      },
+      {
+        "level": 2,
+        "element": "122:0",
+        "page": 3
+      },
+      {
+        "level": 2,
+        "element": "125:0",
+        "page": 3
+      },
+      {
+        "level": 2,
+        "element": "127:0",
+        "page": 3
+      }
+    ],
+    "figure_descriptions": [
+      {
+        "element": "144:0",
+        "role": "Figure",
+        "page": 2,
+        "alt": "Screenshot of the AZURITE plug-in in Eclipse. A source-code editor appears above a timeline of editing operations grouped into labeled file rows. Green rectangles represent insertions, red rectangles deletions, and blue rectangles replacements. A gray vertical separator divides editing sessions and a yellow vertical line marks the current time. Yellow outlines indicate selected operations; the interface supports selecting edits and selectively undoing them.",
+        "actual_text": ""
+      }
+    ],
+    "issue_counts": {},
+    "issues": [],
+    "checks_passed": true,
+    "manual_review_required": [
+      "Logical reading order, especially columns and sidebars",
+      "Heading and paragraph boundaries",
+      "Meaningful alternatives for figures and formulas",
+      "Correct table cell/header relationships",
+      "Appropriate artifact classification",
+      "Screen-reader behavior and link navigation"
+    ]
+  },
+  "font_programs": [
+    {
+      "font_object_id": "67:0",
+      "name": "NimbusRoman-Regular",
+      "source": "PyMuPDF 1.28.2, MuPDF 1.28.2, Font('Times-Roman').buffer",
+      "byte_length": 48556,
+      "sha256": "eb609a306b81357853ba91c2a3c47f3bba04f3a8cfdeedc733b1aa4af5d03d4c",
+      "license": "URW base35 AGPL-3 with explicit PDF font embedding exception",
+      "license_source": "https://github.com/ArtifexSoftware/urw-base35-fonts/blob/master/LICENSE"
+    },
+    {
+      "font_object_id": "69:0",
+      "name": "NimbusSans-Bold",
+      "source": "PyMuPDF 1.28.2, MuPDF 1.28.2, Font('Helvetica-Bold').buffer",
+      "byte_length": 34024,
+      "sha256": "d4ea80d1d0e29a1e950808009ca8f96fe07a0670b60b556f6b2cf0705337fa9f",
+      "license": "URW base35 AGPL-3 with explicit PDF font embedding exception",
+      "license_source": "https://github.com/ArtifexSoftware/urw-base35-fonts/blob/master/LICENSE"
+    },
+    {
+      "font_object_id": "71:0",
+      "name": "NimbusRoman-Bold",
+      "source": "PyMuPDF 1.28.2, MuPDF 1.28.2, Font('Times-Bold').buffer",
+      "byte_length": 50579,
+      "sha256": "219011281845fd509a0042c1b70bf98d49e0f562815a6b4a2549ef2ca14fa70a",
+      "license": "URW base35 AGPL-3 with explicit PDF font embedding exception",
+      "license_source": "https://github.com/ArtifexSoftware/urw-base35-fonts/blob/master/LICENSE"
+    },
+    {
+      "font_object_id": "73:0",
+      "name": "NimbusRoman-Italic",
+      "source": "PyMuPDF 1.28.2, MuPDF 1.28.2, Font('Times-Italic').buffer",
+      "byte_length": 56086,
+      "sha256": "9deed810d473df0bfe15f426b2e69e560bcb756b801a9cbcebdd5cd82519ffa6",
+      "license": "URW base35 AGPL-3 with explicit PDF font embedding exception",
+      "license_source": "https://github.com/ArtifexSoftware/urw-base35-fonts/blob/master/LICENSE"
+    }
+  ]
+}

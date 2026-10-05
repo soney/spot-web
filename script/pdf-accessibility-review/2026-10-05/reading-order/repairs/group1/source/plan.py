@@ -1,0 +1,25 @@
+# Repair/review source retained as evidence. Replay requires the matching per-task baselines and shared order_editor.py; scratch paths are explicit below.
+# Explicit, reviewed repairs. Every identifier is from the independently matched native archive.
+PLANS={
+'oney-natural-language-search-mit2008': {'joins':[(203,1014),(737,740),(737,741),(737,742),(823,826)], 'notes':[(194,202),(530,522),(738,735),(771,747),(778,776),(824,811)]},
+'wang-colaroid-chi2023':{'joins':[(1828,1831),(742,759),(1842,1942),(913,916),(922,937),(968,975),(1002,1099),(1124,1128),(1167,1481),(1485,2028)],'front':[(388,738)],'notes':[(768,761),(914,1973),(915,910)],'artifacts':[1106,2078]},
+'zhang-editrail-uist2026':{'joins':[(996,999),(326,889),(906,960),(986,992),(1018,1021),(368,1054),(1056,1060)],'front':[(327,322),(328,322)],'notes':[(369,358),(370,360),(371,364),(1057,1056),(1058,1056),(1059,1056)],'artifacts':[959,1182]},
+'zhang-vizprog-chi2023':{'joins':[(315,317),(320,335),(750,761),(776,786),(960,1053),(1057,1061),(1084,1170),(1204,1206)],'front':[(316,314),(321,314)],'notes':[(816,810),(1058,1056),(1205,1202)],'artifacts':[758]},
+'chen-cocapture-chi2021':{'joins':[(764,766),(773,780),(962,993),(1056,1058),(1067,1086),(1094,1097),(1111,1131),(1133,1148),(1168,1200),(1207,1210)],'front':[(765,771),(774,771)],'notes':[(801,797),(802,797),(963,960),(964,962),(965,962),(966,962),(1028,1026),(1057,1046),(1135,1111),(1137,1111),(1136,1133),(1134,1133),(1169,1133),(1231,1223)],'artifacts':[779,1128,1240]},
+'pandey-ui-development-experiences-edi2024':{},
+'chen-providing-on-demand-expert-chi2016':{'joins':[(871,926)],'front':[(420,413)]},
+'zhang-convomap-vlhcc2025':{'joins':[(156,158),(207,211),(336,340),(223,352)],'notes':[(87,220),(224,221),(225,221),(226,222)]},
+'rong-codemend-uist2016':{'joins':[(131,133),(135,143),(546,549),(552,561),(616,648),(696,700),(703,712),(765,770)],'front':[(132,130),(137,130)],'notes':[(136,134),(553,552),(697,696),(704,696),(766,761)]},
+'lin-adasa-uist2018':{'joins':[(828,831),(853,888)],'front':[(545,552),(546,552),(547,552),(555,552)]},
+'arab-co-advisor-vlhcc2025':{'joins':[(174,177),(197,201),(369,371),(369,373),(435,438),(616,249)]},
+'ozenc-how-support-designers-chi2010':{'joins':[(75,77),(123,125)],'front':[(76,74),(81,74)]},
+'oney-codelets-chi2012':{'joins':[(81,85),(195,201),(215,221),(371,375),(383,386),(392,396)],'front':[(82,80),(161,80)]},
+'krosnick-expresso-vlhcc2018':{'joins':[(403,479),(398,399),(578,582),(592,409),(523,661)],'front':[(184,397)]},
+'chen-hybrid-crowd-machine-workflow-vlhcc2020':{'joins':[(373,376),(377,392),(161,163)],'notes':[(162,160)]},
+'spinelli-attention-patterns-for-code-animations-px182018':{'joins':[(241,246),(270,276),(409,434),(448,460)],'front':[(242,232),(243,240),(244,240),(245,240),(250,240)],'artifacts':[271,459]},
+'zhou-simulating-human-cursor-chiposters2026':{'joins':[(160,164),(310,318),(328,343),(355,367)],'front':[(161,159),(162,159),(163,159),(165,159)]},
+'zhang-understanding-guiding-student-ai-chi2025aeai':{'joins':[(448,451),(455,475),(493,525)],'front':[(449,452),(450,452),(201,452)],'notes':[(496,490),(497,493),(498,493)]},
+'oney-visions-for-euclase-workshoponcomputationalcreativitychi2009':{},
+'myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments':{},
+'chen-expert-crowd-support-ci2016':{'joins':[(81,156)],'artifacts':[52,98,163]},
+}

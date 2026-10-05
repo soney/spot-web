@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3 -->
+<!-- Source PDF SHA-256: 30a26a268148fb1b963b6b4a17c4eba1681b80a957af4909bfdc894a56d98fa4 -->
 
 <a id="page-1"></a>
 
@@ -238,11 +238,11 @@ The broad goal of the research behind this thesis is to form a bridge between sp
 
 To native English speakers, the English language and its grammatical rules might, at first glance, seem very natural and well defined. However, in many ways, the English language is very complex, highly context dependent and potentially ambiguous – one sentence might have different meanings under different contexts. Thus, machine processing of English (and every other commonly spoken language) is believed by some to be an AI-Complete<sup>1</sup> problem, making it necessary to build statistical and other models of languages. The field of Natural Language Processing has evolved out of necessity due to these complexities. In addition, several file formats, including XML, and programming languages have been created as intermediaries between written word and computer instructions. Still, XML and similar formats, such as HTML fall much closer to machine language than written word. Much work is still required to bring these languages and formats closer to natural language. This is the problem addressed by this thesis.
 
+> <sup>1</sup> An AI-Complete problem is defined as a problem that is equivalent to making computers as intelligent as humans. \[1\]
+
 <a id="page-11"></a>
 
 I have chosen to focus on XML documents detailing events from Major League Baseball (MLB) games. Sports are a particularly good dataset for language processing tasks because they are just restrictive enough with their possible contexts. The rules of any sport limit the terminology and information necessary to understand the context of any game event. As previously mentioned, one of the main problems with computers understanding natural language is that language is highly context-dependent. Although there are many efforts to make computers more context-aware, the problem is outside of the scope of this thesis. Thus, I chose a topic with limited context.
-
-> <sup>1</sup> An AI-Complete problem is defined as a problem that is equivalent to making computers as intelligent as humans. \[1\]
 
 Although rules of every major sport are restrictive enough to limit context, they are simultaneously permissive enough to allow for an unlimited variety of possible events and outcomes, which is precisely why they are exciting – many different things could happen. Baseball in particular is a good sport on which to focus. In baseball, plays are cleanly segmented – each play has a minimal effect on the context necessary to understand the rest of the game. In addition, it is easy to identify and segment individual game plays, unlike continuous-play sports such as basketball and soccer.
 
@@ -416,6 +416,8 @@ Somewhat related to this work are the efforts to create natural language program
 
 Finally, although the problems might seem disparate, I found many similarities between the task of searching structured documents and that of machine translation<sup>2</sup>. Although the similarities will be detailed in the next section, the basic idea is roughly that we are translating from English to a highly structured language.
 
+> <sup>2</sup> Machine translation is defined as the automated translation of a document written in one language to another by a computer.
+
 ### 1.4 Approaches
 
 I tried two different approaches while trying to solve this problem. The first system I built was strictly feature-based, similar to Snyder’s system described in the above section. The second, which uses a few techniques from machine translation, is the main system discussed in the subsequent chapters. My approaches for data gathering will be discussed in the next chapter, followed by a description of the two aforementioned systems in chapters 3 and 4.
@@ -425,8 +427,6 @@ I tried two different approaches while trying to solve this problem. The first s
 ### 2.1 Data Collection
 
 There were two types of data to collect – game events and natural language (newspaper) game summaries. From there, I combined the data into a set of XML documents for organizational purposes, which allowed me to leverage existing tools for accessing XML documents. All of the data collected for this project comes from the website MLB.com.
-
-> <sup>2</sup> Machine translation is defined as the automated translation of a document written in one language to another by a computer.
 
 <a id="page-16"></a>
 
@@ -680,9 +680,9 @@ English. The goal of this project can be thought of as translating from a natura
 
 When looking at the problem from this perspective, other similarities to MT appeared. Take the following MT problem: you are translating a French sentence to English, and are trying to find the probability that French word w<sub>f</sub> translates to English word w<sub>e</sub>, which is written as <sub>e</sub> . If you already have a model of translation the P(w \| w f ) opposite way (from English to French) and a decent model of English word usage frequencies, which is sometimes the case, it would be helpful to use Bayes’ Rule and model the probability as:
 
-![P of w-e given w-f equals P of w-e times P of w-f given w-e, divided by P of w-f; proportional to P of w-e times P of w-f given w-e.](../figures/oney-natural-language-search-mit2008/formula-003-p026.png)
+![P of w-e given w-f equals P of w-e times P of w-f given w-e divided by P of w-f. The printed expression then equates this to P of w-e times P of w-f given w-e; with w-f fixed, that final relationship is proportionality because the denominator is constant.](../figures/oney-natural-language-search-mit2008/formula-003-p026.png)
 
-**Formula:** P of w-e given w-f equals P of w-e times P of w-f given w-e, divided by P of w-f; proportional to P of w-e times P of w-f given w-e.
+**Formula:** P of w-e given w-f equals P of w-e times P of w-f given w-e divided by P of w-f. The printed expression then equates this to P of w-e times P of w-f given w-e; with w-f fixed, that final relationship is proportionality because the denominator is constant.
 
 Equation 1 – MT Word Probabilities
 
@@ -722,23 +722,21 @@ Equation 3 - Approximate Typed Event Probability
 
 That is, the total amount of events which are in DISCUSSED for any sentence over the total amount of sentences of that types.<sup>5</sup> This is not the complete equation - there are more factors, as discussed in the “Add-One Smoothing” section below. But first, the methodology for splitting events into types based on features is discussed.
 
+> 5 An alternative (and problematic) way to define P(e) is as (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(e where (∃s s.t. e ∈ DISCUSSED(s)))). That is, by dividing by the total number of discussed events of any type, rather than the total number of that type. The problem with this definition is that there are some events which are rare, but always discussed when they happen – for instance, a grand slam (when 4 runs are scored at the same time). If a grand slam, which happens very infrequently, is discussed every time one happens, we want P(e) to be near 1 if e is a grand slam. This is why we set P(e) = (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(type(e))).
+
 #### 4.1.1 Event Features
 
 <a id="page-29"></a>
 
-In order to be able to split events into types, we must first find features of events which distinguish it from other events. However, we don’t want too many event types – as the number of types of events increases, we approach a system which would predict that P(e) = 0 for nearly any e it hasn’t yet encountered, or which has not been discussed yet. We also don’t want too few types of events, or it will reduce the effectiveness of this method. For instance, if we placed each event into a single type, we would end up with
-
-> 5 An alternative (and problematic) way to define P(e) is as (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(e where (∃s s.t. e ∈ DISCUSSED(s)))). That is, by dividing by the total number of discussed events of any type, rather than the total number of that type. The problem with this definition is that there are some events which are rare, but always discussed when they happen – for instance, a grand slam (when 4 runs are scored at the same time). If a grand slam, which happens very infrequently, is discussed every time one happens, we want P(e) to be near 1 if e is a grand slam. This is why we set P(e) = (count(type(e) where (∃s s.t. e ∈ DISCUSSED(s)))) / (count(type(e))).
-
-P(e) = (count(e where ∃s s.t. e ∈ DISUSSED(s))) / (count(e)) for every e, giving a uniform distribution of
-
-probabilities. This is not what we want – a home run, for instance, is much more likely to be discussed than a regular hit.
+In order to be able to split events into types, we must first find features of events which distinguish it from other events. However, we don’t want too many event types – as the number of types of events increases, we approach a system which would predict that P(e) = 0 for nearly any e it hasn’t yet encountered, or which has not been discussed yet. We also don’t want too few types of events, or it will reduce the effectiveness of this method. For instance, if we placed each event into a single type, we would end up with P(e) = (count(e where ∃s s.t. e ∈ DISUSSED(s))) / (count(e)) for every e, giving a uniform distribution of probabilities. This is not what we want – a home run, for instance, is much more likely to be discussed than a regular hit.
 
 Thus, part of the challenge of devising good features by which to split events is finding the right number of features to distinguish events. In my system, having limited my feature-types to binary features, if \|f\| is the number of features, the number of event
 
 types is 2^(\|f\|). 6 I chose to have five features to describe each event. They are described in
 
 Table 7 below.
+
+> <sup>6</sup> This is only always true if the features are independent. In my system, the features are not independent, but this equation still roughly holds.
 
 <table>
   <thead>
@@ -775,8 +773,6 @@ Table 7 - Binary Event Categorization Features
 
 Although I have five features, which theoretically allows 32 event classifications, only approximately 10 of these actually show up in baseball play, due to the rules and nature of baseball. Now, given an event e, I can find the feature vector for that event, give it a type, and a probability. However, there is a minor revision to Equation 3 discussed in the next section.
 
-> <sup>6</sup> This is only always true if the features are independent. In my system, the features are not independent, but this equation still roughly holds.
-
 <a id="page-30"></a>
 
 #### 4.1.2 Add-One Smoothing
@@ -787,9 +783,9 @@ Still, no matter how many training data there are, there is always the possibili
 
 Add-One smoothing is common in NLP, due to the “sparse data” problem. 7 One example of the sparse data problem in NLP is as follows. Suppose you are searching for the probability of a word, w\_b, following another word, w\_a. If you have a corpus, or a set of texts, the simplest way to do this is by setting the probability to (# of times w\_b follows w\_a) / (# of times w\_a appears).
 
-However, if w<sub>b</sub> never follows w<sub>a</sub> in the corpus (there are, after all, many possible two-word combinations), this probability will be 0, which we don’t want. A simple way of correcting this is to simply add 1 to the numerator of each probability. In order to maintain a proper probability (where everything adds to 1) a factor must also be added onto the denominator. After add-one smoothing, the resulting equation for P(e) is:
-
 > <sup>7</sup> This is distinct from the problem with sparse data that the feature-based model had.
+
+However, if w<sub>b</sub> never follows w<sub>a</sub> in the corpus (there are, after all, many possible two-word combinations), this probability will be 0, which we don’t want. A simple way of correcting this is to simply add 1 to the numerator of each probability. In order to maintain a proper probability (where everything adds to 1) a factor must also be added onto the denominator. After add-one smoothing, the resulting equation for P(e) is:
 
 <a id="page-31"></a>
 
@@ -835,13 +831,15 @@ each common stem, c\_s, we assign a “co-occurrence probability” of
 
 the co-occurrence probability of every stem is added for every common stem.<sup>8</sup> In addition, for every stem in e, but not in s, the co-occurrence is subtracted from the score. Because we are searching for P(s\|e), the co-occurrence score is found for every potential s. This means that the lowest score is usually negative. If we call l the lowest score, then (l+1) is added to each score to ensure that all resulting scores are positive.
 
+> <sup>8</sup> The probabilities are added, to form a score, rather than multiplied for various reasons. First of all, there is almost guaranteed to be a 0 co-occurrence probability for every potential pair, which would always render the result as zero. Secondly, this component is meant to output a score, rather than a real probability, at first. The scores will later be mapped into probabilities.
+
 #### 4.2.3 Named Entity Recognition
 
 In the introduction, I mentioned that one of the benefits of working with baseball is that it is a domain which doesn’t require too much context. To contrast, look at any given newspaper article. It will likely mention named entities such as corporations, people, or places without giving much context. By contrast, the vast majority of named entities mentioned in a baseball game are players, teams, or locations which are mentioned in the
 
 XML document.
 
-![Named-entity recognition examples. Player mentions such as Gary Sheffield, Chien-Ming Wang, Webb and Johnson are highlighted and labeled Player. New York is marked as a Location and Red Sox as a Team. The labels distinguish entities from the surrounding sentence text.](../figures/oney-natural-language-search-mit2008/figure-011-p033.png)
+![Named-entity recognition examples. Gary Sheffield, Matsui, Wells, Johnson and Damon are highlighted in blue and labeled Player. New York is highlighted in green and labeled Location; Red Sox is highlighted in red and labeled Team. The annotations separate baseball entities from the surrounding sentence text.](../figures/oney-natural-language-search-mit2008/figure-011-p033.png)
 
 Figure 11 - Named Entity Recognition
 
@@ -851,8 +849,6 @@ Recognizing mentioned players is very useful. One of the most telling features o
 
 Appendix A), the player names are stored. This way, when reading a summary, player names can be easily identified. This is done for each player, by searching for and tagging any times where the full name (first and last) is mentioned, after which the players list is traversed again, and the summary is tagged by the last name.
 
-> <sup>8</sup> The probabilities are added, to form a score, rather than multiplied for various reasons. First of all, there is almost guaranteed to be a 0 co-occurrence probability for every potential pair, which would always render the result as zero. Secondly, this component is meant to output a score, rather than a real probability, at first. The scores will later be mapped into probabilities.
-
 Unlike the players, cities and teams (of which there are 30 in the MLB) were simply entered manually. They only come into play as a factor when tagging sentences, which is discussed in the “Result Size Predictors” section.
 
 #### 4.2.4 Inning Matches
@@ -861,7 +857,7 @@ One potentially very telling feature of any potential (s, e) pair is whether or 
 
 This system takes advantage of this pattern by searching for manually entered phrases such as “the first”, and “the second” as part of the sentence. Sometimes, however, the phrase “the first”, or similar phrases are mentioned in sentences well before any specific game event is discussed. Take the summary in Figure 12 – the first sentence (“Johnson came out dealing in the first inning, …”) lets us know that the rest of the paragraph is discussing something that happened in the first inning.
 
-![Game-summary excerpt illustrating inning inference. The first sentence says Johnson came out dealing in the first inning; the following sentence describes his first pitch, an ensuing strikeout and fly outs. The later events inherit the inning context established by the earlier sentence.](../figures/oney-natural-language-search-mit2008/figure-012-p034.png)
+![Game-summary excerpt illustrating inning inference. The opening sentence places Johnson in the first inning. Johnny Damon swings through the first pitch; the following sentence describes Edgar Renteria and Manny Ramirez taking strike three, completing a 1-2-3 inning. Those later events inherit the inning established by the opening sentence.](../figures/oney-natural-language-search-mit2008/figure-012-p034.png)
 
 Figure 12 - Inning Inference
 

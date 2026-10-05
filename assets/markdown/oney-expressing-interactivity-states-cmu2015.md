@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95 -->
+<!-- Source PDF SHA-256: 47da5d2bea7741f63c63db30ced99a6bc4e2dde8b8c2410554b9fe7b81b67376 -->
 
 <a id="page-1"></a>
 
@@ -796,8 +796,6 @@ Throughout this dissertation, the terms behavior and interactive behavior are in
 
 <a id="page-17"></a>
 
-Chapter 1: Introduction / Interactive Behaviors
-
 #### 1.1.1 Implementing Interactive Behaviors
 
 Most user interfaces are developed using general purpose programming languages— programming languages whose features are designed to support a wide variety of programming goals. Nearly all widely deployed user interface frameworks built for these languages—e.g., Cocoa, QT, Java Swing, .NET Windows Forms, and JavaScript/Web development—rely on an event-callback programming model \[38,50\]. In this model, developers specify interactive behaviors by writing imperative code that determines how the user interface should react to every relevant stimulus.
@@ -808,13 +806,9 @@ Of course, one way to address the challenges developers face writing interactive
 
 However, reusable widgets and GUI builders do not represent a complete solution for the problems UI developers face. Although these widgets allow developers to work at higher abstraction levels—button presses instead of mouse clicks or menu item selections rather than touchscreen presses—the interactions between these components can still be challenging to implement correctly. For instance, a developer might be able to re-use a color selection widget in the context of a drawing application, but they still must program what the effect of the user picking a color should be (to change the color of the currently selected shape) and when it is activated (when a shape is selected).
 
-Also, widget creators cannot anticipate all of the widgets that developers will want or all of the ways they will want to customize a widget. When a designer or developer has an idea for a new interaction technique to help users accomplish a task in their interface, to implement or explore their idea, developer must write it from scratch. Thus it is important that the underlying frameworks and tools they use address the difficulties of creating interactive behaviors. Because designing, implementing, and evaluating new interactive behaviors are common in the Human-Computer
-
 <a id="page-18"></a>
 
-Chapter 1: Introduction / Problem Statement
-
-Interaction (HCI) community, making interactive behaviors easier to implement is a fundamental problem in HCI \[98\].
+Also, widget creators cannot anticipate all of the widgets that developers will want or all of the ways they will want to customize a widget. When a designer or developer has an idea for a new interaction technique to help users accomplish a task in their interface, to implement or explore their idea, developer must write it from scratch. Thus it is important that the underlying frameworks and tools they use address the difficulties of creating interactive behaviors. Because designing, implementing, and evaluating new interactive behaviors are common in the Human-Computer Interaction (HCI) community, making interactive behaviors easier to implement is a fundamental problem in HCI \[98\].
 
 ### 1.2 Problem Statement
 
@@ -856,9 +850,7 @@ InterState explores whether the programming primitives introduced by ConstraintJ
 
 <a id="page-21"></a>
 
-Chapter 1: Introduction / Reusing and Combining Behaviors
-
-![Figure 1.3 An illustration of a basic InterState object, named draggable. Properties, which control draggable’s display, are represented as rows (e.g. x, y, and fill). States and transitions are represented as columns (e.g. no\_drag, drag, and drag\_lock). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state. Chapter 4 further describes this example.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-002-p021.png)
+![InterState drag-lock editor. The no\_drag state enters drag on mouse down and drag returns on mouse up. A double-click enters drag\_lock; a single click exits it. In drag and drag\_lock, x and y follow mouse coordinates. Fill changes from black in no\_drag to blue in drag and navy in drag\_lock. Rows are properties and columns give values for each state or transition.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-002-p021.png)
 
 Figure 1.3 An illustration of a basic InterState object, named draggable. Properties, which control draggable’s display, are represented as rows (e.g. x, y, and fill). States and transitions are represented as columns (e.g. no\_drag, drag, and drag\_lock). An entry in a property’s row for a particular state specifies a constraint that controls that property’s value in that state. Chapter 4 further describes this example.
 
@@ -874,11 +866,9 @@ Interactive behaviors are often inherited and combined to produce new, compound 
 
 #### 1.4.2 Event and Gesture Abstraction
 
-A separate, but related concept is the idea of behavior re-use through abstraction. Event abstraction allows developers to create customizable events types that can be used in the context of the state machines for another behavior. For example, a developer might define a custom n-click gesture (double click, triple click, etc.) where
-
 <a id="page-22"></a>
 
-Chapter 1: Introduction / Multi-Touch Development developers can customize the number of clicks (n). They can then abstract away this gesture and use it like any other built-in event in other behaviors’ state machines.
+A separate, but related concept is the idea of behavior re-use through abstraction. Event abstraction allows developers to create customizable events types that can be used in the context of the state machines for another behavior. For example, a developer might define a custom n-click gesture (double click, triple click, etc.) where developers can customize the number of clicks (n). They can then abstract away this gesture and use it like any other built-in event in other behaviors’ state machines.
 
 ### 1.5 Multi-Touch Development
 
@@ -899,8 +889,6 @@ This dissertation contributes new frameworks, techniques, and tools aimed at red
 - A JavaScript library (ConstraintJS) that enables developers to make use of these frameworks using a familiar syntax.
 
 <a id="page-23"></a>
-
-Chapter 1: Introduction / Outline
 
 - A visual notation to help developers visualize and understand how these constraints and state machines are combined.
 
@@ -982,11 +970,9 @@ AngularJS \[37\] enables multi-way data bindings where developers can update an 
 
 Sketchpad influenced a number of other constraint systems in the 1980s as researchers saw the potential for constraints to help users in a number of domains.
 
-In addition to data-bindings, another domain in which constraints have been adopted is in the specification visual layouts. Early research in geometric constraints, including The Constraint Window System (CWS) \[31\], IDEAL \[166\], Juno \[116\],
-
 <a id="page-28"></a>
 
-Animus \[29\], and GITS \[123\], and OPUS \[57\] focused on maintaining relationships in drawings or animations. Peridot \[97\] inferred geometric constraints and interactive behaviors from designers’ interactions with a direct-manipulation interface.
+In addition to data-bindings, another domain in which constraints have been adopted is in the specification visual layouts. Early research in geometric constraints, including The Constraint Window System (CWS) \[31\], IDEAL \[166\], Juno \[116\], Animus \[29\], and GITS \[123\], and OPUS \[57\] focused on maintaining relationships in drawings or animations. Peridot \[97\] inferred geometric constraints and interactive behaviors from designers’ interactions with a direct-manipulation interface.
 
 Many current interface builders also use a form of constraints to determine application layout. Typically, such constraint systems use special-purpose constraint solvers to determine visual layout. For example, iOS development libraries enable “springs and struts” and “auto-layout” to help developers write applications that can work across multiple screen sizes and resolutions.
 
@@ -1024,6 +1010,8 @@ Functional Reactive Programming has a similar goal to ConstraintJS and InterStat
 
 ConstraintJS and InterState extend the constraint model by integrating finite state machines (FSMs) or state machines for short. FSMs are formalisms in which the state machine has one<sup>1</sup> active state, or status. Researchers have used state machines across many domains, including text parsing, input handling, and modeling embedded systems. However, this section will focus on previous research that uses state machines in the context of user interface development tools.
 
+> <sup>1</sup> InterState’s state machines, like Harel’s Statecharts \[44\], allow multiple states to be active simultaneously to reduce the verbosity of expressing certain state machines \[45\]. However, state machines that enable multiple simultaneous states are functionally equivalent to state machines in which only one state may be active at a time \[62,148\].
+
 Newman \[117\] and Parnas \[133\] first proposed using state machines to describe user interface behavior in 1968 and 1969 respectively. State machines are a natural way to describe a GUI’s interactive behaviors because they allow developers to handle user and system events in a way that depends on the current state of the GUI. State machines are also beneficial in GUI programming because a GUI’s appearance and behavior often depend on its state. However, no mainstream programming language currently supports a notion of state. Thus, researchers have built toolkits and libraries that enable GUI developers to use FSMs.
 
 Most of the early work on integrating state machines with user interface toolkits used state machines to model users’ paths through various states \[117,133\] rather than implementing behaviors with the state machine. Subsequently, a number of User Interface Management Systems (UIMS) used state machines (or related formalisms, such as petri nets \[7,135\] and context-free grammars \[120\]) as part of their development model \[7,32,38,48,63,121,122,159,160\]. Garnet \[106\] and Amulet \[99\] rather than including a general state machine mechanism, used the same three-state machine (with “start”, “running”, and “outside” states) for all of their interactors \[109\]. Developers could control their interactive behavior by specifying how to react to the pre-built transitions among those three states.
@@ -1031,8 +1019,6 @@ Most of the early work on integrating state machines with user interface toolkit
 <a id="page-31"></a>
 
 InterState’s state machines contain several features introduced by Statecharts \[44\], including concurrent and nested states. Concurrent states allow multiple state machines to operate independently, meaning that multiple states may be active simultaneously. Nested states allow any state to contain substates. Both features aim to avoid the “state explosion problem”, where the number of states to describe a behavior grows exponentially. Propositional Production Systems (PPS) \[122\], an alternative notation for describing high-level GUI behavior with state machines, also enabled a similar notion of parallel states.
-
-> <sup>1</sup> InterState’s state machines, like Harel’s Statecharts \[44\], allow multiple states to be active simultaneously to reduce the verbosity of expressing certain state machines \[45\]. However, state machines that enable multiple simultaneous states are functionally equivalent to state machines in which only one state may be active at a time \[62,148\].
 
 Some recent examples include SwingStates \[4\], Chasm \[163\], IntuiKit, and HsmTk \[4,14,83,163\]. SwingStates \[4\] integrates state diagrams into the Java Swing toolkit. It features parallel state diagrams (the ability to have multiple diagrams affect one object) and fits well with the standard Java syntax. Chasm \[163\] used a tiered representation to describe 3D user interfaces while allowing developers to specify finite state machines as part of the paradigm. However, neither framework includes mechanisms for specifying constraints or permanent relationships among objects.
 
@@ -1044,11 +1030,9 @@ Although developers can use state machine libraries in combination with constrai
 
 Asynchronous variables are variables that have an indeterminate wait time before returning a value. They are common in Web programming when fetching information from third-party Web services. As section 3.5.3 below discusses, handling asynchronous values can be particularly challenging because developers have to manage the state of the asynchronous call, correctly propagate values, and handle any possible errors that might occur during the call.
 
-Although not explicitly state machines, promises (also known as futures) are one approach to helping developers deal with the states of asynchronous values. Friedman first proposed promises as a way to handle values that are unknown (as an asynchronous call is until it has a value) by representing them as proxy objects \[35\]. jQuery \[65\] and other libraries support promises through a standardized API. In this API, promise objects have three states: pending (the asynchronous value does not have a value yet), fulfilled (the asynchronous value has a value), and rejected (there was an
-
 <a id="page-32"></a>
 
-Chapter 2: Related Work / UI Management Systems and Frameworks error of some sort). As section 3.5.3 below discusses, ConstraintJS uses these three states in its state machine for asynchronous values.
+Although not explicitly state machines, promises (also known as futures) are one approach to helping developers deal with the states of asynchronous values. Friedman first proposed promises as a way to handle values that are unknown (as an asynchronous call is until it has a value) by representing them as proxy objects \[35\]. jQuery \[65\] and other libraries support promises through a standardized API. In this API, promise objects have three states: pending (the asynchronous value does not have a value yet), fulfilled (the asynchronous value has a value), and rejected (there was an error of some sort). As section 3.5.3 below discusses, ConstraintJS uses these three states in its state machine for asynchronous values.
 
 Promises help developers correctly handle the state of asynchronous calls, and the timing of changed asynchronous values—when the developer cannot make one asynchronous call until another has finished. However, by combining the notion of state used in promises with constraints, ConstraintJS also helps developers manage the propagation of asynchronous values—ensuring that objects that depend on their result stay in sync when the value is fulfilled.
 
@@ -1062,13 +1046,9 @@ As I will discuss in section 6.1.2 below, many multi-touch gestures cannot be su
 
 ### 2.5 UI Management Systems and Frameworks
 
-Many of the related work systems described in the previous sections were implemented in the context of User Interface Management Systems (UIMSs) \[9,23,121,153\]. “UIMS” is an umbrella term to describe many systems that helped developers build UIs. Most UIMS also help developers separate the underlying program logic (the model) from the user interface logic (the view). Although the term
-
 <a id="page-33"></a>
 
-Chapter 2: Related Work / Behavior Re-Use
-
-“UIMS” was coined by Kasik in 1982 \[72\], the separation of user interface logic and view logic is a longstanding idea \[9\]. Although the distinction between UIMS and non-UIMS systems is not cut and dried, I do not consider ConstraintJS or InterState to be a UIMS. Although ConstraintJS and InterState contain features to communicate with JavaScript objects, the goal of my systems is to simplify the specification of interface behavior, rather than separating the logic of interface behavior from an underlying data model. However, both systems and the ideas behind them can be incorporated into a UIMS.
+Many of the related work systems described in the previous sections were implemented in the context of User Interface Management Systems (UIMSs) \[9,23,121,153\]. “UIMS” is an umbrella term to describe many systems that helped developers build UIs. Most UIMS also help developers separate the underlying program logic (the model) from the user interface logic (the view). Although the term “UIMS” was coined by Kasik in 1982 \[72\], the separation of user interface logic and view logic is a longstanding idea \[9\]. Although the distinction between UIMS and non-UIMS systems is not cut and dried, I do not consider ConstraintJS or InterState to be a UIMS. Although ConstraintJS and InterState contain features to communicate with JavaScript objects, the goal of my systems is to simplify the specification of interface behavior, rather than separating the logic of interface behavior from an underlying data model. However, both systems and the ideas behind them can be incorporated into a UIMS.
 
 ### 2.6 Behavior Re-Use
 
@@ -1082,8 +1062,6 @@ InterState’s templating mechanism allows developers to create multiple copies 
 
 <a id="page-34"></a>
 
-Chapter 2: Related Work / Visual Programming
-
 Amulet’s \[99\] “maps” (see section 4.9 in \[96\]) helped guide several design decisions in InterState’s templating mechanism. Like Amulet’s maps, when developers create multiple copies of a prototype, each copy has two special fields to indicate the item and index of that copy. Both mechanisms also allow developers to enter a number or an array into the copies field. This value can also be a constraint, to allow for dynamically updating lists. However, InterState’s templating mechanism is more general than Amulet’s maps. InterState’s copies mechanism can be used for graphical objects, behavior objects, events, groups, or any other kind of InterState object.
 
 ### 2.7 Visual Programming
@@ -1096,11 +1074,9 @@ InterState’s visual notation also includes a graphical representation for obje
 
 ### 2.8 Live Development
 
-Live development environments are ones that provide some form of immediate feedback when developers edit their programs. Liveness is a relatively common
-
 <a id="page-35"></a>
 
-Chapter 2: Related Work / Multi-touch Gestures feature in visual programming languages \[21,151\], particularly in spreadsheets \[20,161\]. Live development environments can help developers by allowing them to switch between editing and debugging quickly \[81\] and informing them of the current status of an application \[20,146\].
+Live development environments are ones that provide some form of immediate feedback when developers edit their programs. Liveness is a relatively common feature in visual programming languages \[21,151\], particularly in spreadsheets \[20,161\]. Live development environments can help developers by allowing them to switch between editing and debugging quickly \[81\] and informing them of the current status of an application \[20,146\].
 
 Tanimoto, who coined the term “liveness” to describe such development systems, described four levels of liveness \[21,151,152\]. Level 1 provides no semantic information to the developer. In level 2 liveness, developers must manually request semantic information about their program and it is provided at a later time. Level 3 live environments automatically provide developers with feedback when they perform an edit. Level 4 live systems provide developers with immediate feedback when they perform edits and when the state of their program changes (in response to user events, etc.). Tanimoto later proposed two further levels of liveness for development systems that predict future programmer actions (level 5 liveness) and automatically synthesize working programs (level 6 liveness) \[152\].
 
@@ -1134,9 +1110,11 @@ As this chapter overviews, ConstraintJS and InterState have been influenced by a
 
 <a id="page-38"></a>
 
-## 2 3 ConstraintJS
+## 3 ConstraintJS 2
 
 ConstraintJS is a JavaScript library to help Web developers create custom interactive behaviors. ConstraintJS enables constraints that can be used both to control content and control display across interface states, and integrates these constraints with the three Web languages— HTML, CSS, and JavaScript. ConstraintJS is designed to take advantage of the declarative syntaxes of HTML and CSS: it allows the majority of an interactive behavior to be expressed concisely in HTML and CSS (see Figure 1), rather than requiring the programmer to write large amounts of JavaScript.
+
+> <sup>2</sup> Portions of this chapter were adapted from \[126\]
 
 This chapter begins with an overview of Web development tools and particular challenges of Web development. It then will give an overview of how ConstraintJS and its features address some of these challenges—first through a motivating example and then with a more specific breakdown of ConstraintJS’s contributions. Finally, it will detail how ConstraintJS is implemented and describe example applications built with ConstraintJS.
 
@@ -1146,13 +1124,9 @@ The World Wide Web is perhaps today’s most widely used GUI platform. The three
 
 #### 3.1.1 The Three Web Languages
 
-In theory, the Web’s three languages have complimentary, pre-defined roles. HTML, a declarative markup language, defines a page’s content. CSS defines the appearance
-
-> <sup>2</sup> Portions of this chapter were adapted from \[126\]
-
 <a id="page-39"></a>
 
-Chapter 3: ConstraintJS / Web Development Technologies of that content with a declarative language that allows developers to specify stylistic properties of particular DOM nodes. CSS uses a “selector” language to allow developers to specify the DOM nodes they are controlling. JavaScript defines a page’s interactivity by modifying the DOM tree.
+In theory, the Web’s three languages have complimentary, pre-defined roles. HTML, a declarative markup language, defines a page’s content. CSS defines the appearance of that content with a declarative language that allows developers to specify stylistic properties of particular DOM nodes. CSS uses a “selector” language to allow developers to specify the DOM nodes they are controlling. JavaScript defines a page’s interactivity by modifying the DOM tree.
 
 In practice, these roles are not set in stone. Dynamic Web pages, which load data from a third-party server without requiring users to reload their browser, define significant portions of the page’s content using JavaScript. CSS can also define a limited range of interactive behaviors using “dynamic pseudo-classes”. Dynamic pseudo-classes—most notably the “hover” pseudo-class, which is activated when the user hovers their mouse over an element, can be used in combination with style definitions to show and hide elements.
 
@@ -1164,11 +1138,9 @@ A number of frameworks and libraries have been created to help Web developers sc
 
 Currently, one of the most widely used libraries is jQuery \[65\], a JavaScript library that provides a wide array of useful functions. Of the functions most relevant to implementing interactive behaviors, jQuery simplifies the process of modifying the DOM with JavaScript by providing a mechanism by which developers can query the DOM. jQuery also provides several functions to help developers write correct, succinct event specifications for event-callback code and pre-defined UI widgets \[66\]. jQuery also includes a “promise” API (sometimes called “futures”) that helps developers track the status of asynchronous calls (described in section 3.4 below). jQuery’s functions help JavaScript developers write interactive behaviors in a more succinct and readable fashion, but it does not address many of the control flow issues that make event-callback code difficult to write and debug.
 
-Other JavaScript libraries use variations of the Model-View-Controller (MVC) framework to improve Web development. At the time of writing, the most popular of these frameworks is AngularJS \[37\]. Like ConstraintJS, Angular supports data bindings that help connect the visual appearance of a Web page with some underlying data model, reducing the need for writing callbacks. It also introduces mechanisms for creating templates and to help developers structure their code in a
-
 <a id="page-40"></a>
 
-Chapter 3: ConstraintJS / Contributions readable and maintainable way. However, whereas the goal of ConstraintJS is to introduce primitives for defining interactive behaviors, Angular is intended to help developers structure large Web applications. Although MVC Web frameworks like Angular reduce the need for event-callback code through data-bindings, templates, and other built in primitives, they still rely on the event-callback paradigm for developers to define new interactive behaviors.
+Other JavaScript libraries use variations of the Model-View-Controller (MVC) framework to improve Web development. At the time of writing, the most popular of these frameworks is AngularJS \[37\]. Like ConstraintJS, Angular supports data bindings that help connect the visual appearance of a Web page with some underlying data model, reducing the need for writing callbacks. It also introduces mechanisms for creating templates and to help developers structure their code in a readable and maintainable way. However, whereas the goal of ConstraintJS is to introduce primitives for defining interactive behaviors, Angular is intended to help developers structure large Web applications. Although MVC Web frameworks like Angular reduce the need for event-callback code through data-bindings, templates, and other built in primitives, they still rely on the event-callback paradigm for developers to define new interactive behaviors.
 
 ##### Differentiating Libraries and Frameworks
 
@@ -1185,8 +1157,6 @@ As section 2.2 describes, constraints can help developers avoid writing spaghett
 While both of these types of constraints are useful to programmers, they are often limited in expressiveness, and further are almost entirely distinct and unaware of each other, despite their conceptual similarities. For instance, while current JavaScript data binding libraries allow developers to create constraints to set the content of DOM nodes, they do not allow them to create constraints that control CSS or DOM attributes.
 
 <a id="page-41"></a>
-
-Chapter 3: ConstraintJS / Terminology
 
 #### 3.2.2 States in GUIs
 
@@ -1208,6 +1178,8 @@ Throughout this chapter, I will use the term constraint to mean a one-way constr
 
 To help concretely illustrate ConstraintJS’s features, consider the example shown in Figure 3.1, which uses the Facebook API<sup>3</sup> to pull in a list of Facebook friends and display their names alongside their pictures. The Facebook API makes this a three-step process (not counting the required initial authentication): first, the code must retrieve a list of friend IDs. This is done using one Facebook API call, which returns a list of friend IDs and names. After the list of friends has been retrieved, the second step is to take this list of friend IDs and retrieve a URL pointing to a picture for each friend. This means that the code must make another Facebook API call for each friend the user has. Finally, once these data are retrieved, they must all be correctly displayed.
 
+> <sup>3</sup> This example code is based on version 1 of the Facebook API
+
 ![Figure 3.1 The target application for the motivating example. An asynchronous Facebook API call returns a list of friends. While the list of friends is loading, “Loading Friends…” appears on screen. After the list of friends has loaded, the profile picture of each friend is then independently requested. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image is displayed.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-003-p042.png)
 
 Figure 3.1 The target application for the motivating example. An asynchronous Facebook API call returns a list of friends. While the list of friends is loading, “Loading Friends…” appears on screen. After the list of friends has loaded, the profile picture of each friend is then independently requested. While the application is waiting for the Facebook API to return a picture URL for a friend, a loading image is displayed.
@@ -1222,8 +1194,6 @@ To further complicate matters, every JavaScript Facebook API call is asynchronou
 ```
 3      var friends = answer.data;
 ```
-
-> <sup>3</sup> This example code is based on version 1 of the Facebook API
 
 <a id="page-43"></a>
 
@@ -1303,6 +1273,8 @@ Overall implementing this example with constraints produces relatively clear and
 
 The following sections describe the ConstraintJS application programming interface (API). All of ConstraintJS’s functionality is accessed via a global cjs() JavaScript function<sup>4</sup> to avoid potential conflicts with other libraries.
 
+> <sup>4</sup> In JavaScript, function objects may have properties, so although cjs is a callable function, it also has subfields (for example, cjs.mouse).
+
 #### 3.5.1 Basics: Creating Constrainable Variables
 
 Any JavaScript object or widget may be turned into a constrainable variable using the cjs function with the JavaScript variable as a parameter. For instance, this code snippet creates x as a constrainable variable whose value is 1:
@@ -1318,8 +1290,6 @@ x.get();  // = 1
 x.set(2); // x <= 2
 x.get();  // = 2
 ```
-
-> <sup>4</sup> In JavaScript, function objects may have properties, so although cjs is a callable function, it also has subfields (for example, cjs.mouse).
 
 <a id="page-46"></a>
 
@@ -1477,7 +1447,7 @@ Constraints are particularly well-suited to handling asynchronous values because
 
 The first method for defining asynchronous constraints is through state machines. ConstraintJS allows developers to handle asynchronous values with a combination of a built-in FSM and a constrainable variable that depends on that FSM \[126\]. The FSM for asynchronous constraints has three states:
 
-![Figure 3.5 The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-005-p050.png)
+![State machine for an asynchronous value: Pending transitions to Resolved when loading succeeds and Rejected on error. A refresh event from either Resolved or Rejected returns to Pending to begin another request.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-005-p050.png)
 
 Figure 3.5 The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state.
 
@@ -1835,11 +1805,9 @@ Although all of the examples we have discussed so far are based on mouse and key
 
 Figure 3.10 An illustration of a touchscreen-based application written with ConstraintJS. Constraints control the position, scale, and angle of photos, which users can manipulate with one or two fingers. When two fingers touch a photo, a red slider appears that controls the photo’s opacity and can be changed using a third finger. Constraints set the position and text of the slider.
 
-The layout of every component in this application is controlled by constraints – photo position, scale, rotation, &amp; opacity and the position, visibility &amp; text of the
-
 <a id="page-62"></a>
 
-Chapter 3: ConstraintJS / Conclusion opacity slider. Compared to an implementation of this example that does not use constraints, the ConstraintJS implementation requires fewer lines of code and fewer callbacks.
+The layout of every component in this application is controlled by constraints – photo position, scale, rotation, &amp; opacity and the position, visibility &amp; text of the opacity slider. Compared to an implementation of this example that does not use constraints, the ConstraintJS implementation requires fewer lines of code and fewer callbacks.
 
 #### 3.7.4 ConstraintJS in Other Projects
 
@@ -1851,9 +1819,11 @@ ConstraintJS integrates constraints and finite-state-machines (FSMs) with Web la
 
 <a id="page-63"></a>
 
-## 7 4 InterState
+## 4 InterState 7
 
 InterState further develops the idea of integrating constraints and states by introducing a spreadsheet-like syntax, new language primitives, a visual notation, and a live interactive editor. InterState builds on ConstraintJS both conceptually and functionally. Conceptually, InterState builds on ConstraintJS’s paradigm of defining interactive behaviors by adding a visual notation and primitives for behavior re-use. Functionally, InterState builds on ConstraintJS by using ConstraintJS as its underlying constraint solver. This chapter discusses InterState’s contributions and design in detail and evaluates its effectiveness in allowing developers to create custom interactive behaviors.
+
+> <sup>7</sup> Portions of this chapter were adapted from \[127,128\]
 
 ### 4.1 JavaScript Library Limitations
 
@@ -1869,13 +1839,9 @@ I also introduced a syntax that simplified this somewhat:
 var x = y.add(1);
 ```
 
-However, developers should ideally be able to write “y+1”, which requires parsing constraint values at runtime or compiling ConstraintJS code before deployment, as
-
-> <sup>7</sup> Portions of this chapter were adapted from \[127,128\]
-
 <a id="page-64"></a>
 
-JavaScript does not have an operator overloading mechanism. Other ideas, such as providing a visual notation to help developers understand ConstraintJS variables, also require a custom IDE.
+However, developers should ideally be able to write “y+1”, which requires parsing constraint values at runtime or compiling ConstraintJS code before deployment, as JavaScript does not have an operator overloading mechanism. Other ideas, such as providing a visual notation to help developers understand ConstraintJS variables, also require a custom IDE.
 
 There were also a number of practical decisions that influenced the scope of ConstraintJS’s features. Most immediately, JavaScript libraries are limited in size because they are designed to minimize the bandwidth servers need to use when communicating with Web clients. A 30 kilobyte library, for example, would be considered large by current Web standards. Thus, ConstraintJS’s feature set was limited, in part, to minimize its size when deployed.
 
@@ -1887,11 +1853,9 @@ Because of these limitations, I decide to implement InterState as a custom inter
 
 InterState improves user interface development by redesigning the language and runtime features in concert. InterState contributes to the state of the art for user interface development tools by introducing a number of innovations: in its computational model, visual notation, inheritance mechanism, and live editor for its visual notation. Further, InterState demonstrates how designing these features to work well together improves both the individual components and the usability of the system as an integrated whole.
 
-Computational Model — The state of a user interface often controls its appearance and behavior, which in turn are defined by relationships among objects. In event-callback code, it is difficult to manage, maintain, debug, and understand these states and relationships (see chapters 3.4 and 4.3). InterState introduces a computational model that addresses these challenges by including state machines and constraints as fundamental language constructs. This model expresses interactive behaviors as constraints that are enforced only in particular states. It also removes much of the boilerplate that is required to express constraints in other systems (see
-
 <a id="page-65"></a>
 
-\[94,99,106,126\] for examples of boilerplate code required in other constraint libraries), allowing programmers to express constraints with simple equations—like those in spreadsheets—rather than with a complex syntax.
+Computational Model — The state of a user interface often controls its appearance and behavior, which in turn are defined by relationships among objects. In event-callback code, it is difficult to manage, maintain, debug, and understand these states and relationships (see chapters 3.4 and 4.3). InterState introduces a computational model that addresses these challenges by including state machines and constraints as fundamental language constructs. This model expresses interactive behaviors as constraints that are enforced only in particular states. It also removes much of the boilerplate that is required to express constraints in other systems (see \[94,99,106,126\] for examples of boilerplate code required in other constraint libraries), allowing programmers to express constraints with simple equations—like those in spreadsheets—rather than with a complex syntax.
 
 Visual Notation — In most languages, understanding what user events affect a particular property or, conversely, what properties are affected by a particular user event, can be difficult because event-callback code is usually spread throughout multiple locations \[110\]. InterState introduces a visual notation that concisely represents interactive behaviors as a table whose rows are properties and columns are states. Combined with its computational model, the visual notation allows programmers to see which events affect a property by scanning the property’s row and which properties an event affects by looking at that event’s column.
 
@@ -2063,7 +2027,7 @@ However, in a live declarative environment, this convention does not work as wel
 
 To illustrate, consider the two objects shown in Figure 4.5, which has two objects (obj1 and obj2) that simultaneously transition from the state noclick to the state clicked when the user clicks their mouse anywhere, which is expressed as mouse.click(). After the user clicks their mouse, obj1.x will be 3 (its value from the clicked state). The value of obj2.x will be 2 because its value was evaluated “during” the click event, where obj1.x was still 2. Because this value is on a transition rather than on a state, it does not re-evaluate its constraint expression during the clicked state. This example illustrates how the InterState runtime executes these two transitions “simultaneously”.
 
-![Two InterState objects each change from noclick to clicked on the same mouse click. In obj1, x changes from 1 to 3. In obj2, a transition expression reads obj1.x before the state change takes effect, obtaining 1, while its clicked-state value is 2. The example illustrates simultaneous event semantics instead of order-dependent callbacks.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-013-p072.png)
+![Two InterState objects transition from noclick to clicked on mouse.click(). In obj1, x is 1 in noclick,2 during the transition, and 3 in clicked. obj2 sets x from obj1.x during the same transition, obtaining 2; that value remains 2 after obj1 reaches 3. The example illustrates simultaneous transition evaluation.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-013-p072.png)
 
 Figure 4.5 Two objects (obj1 and obj2) have state machines with transitions that fire when the mouse clicks. InterState executes the constraints that are set on these transitions as if they are executed simultaneously.
 
@@ -2193,7 +2157,7 @@ However, the problem with this trapezoidal representation of state machines was 
 
 In the current design for state machines, the design goal was to reduce the horizontal space as much as possible while still allowing each transition to have an allocated column. The state machines also had to be capable of displaying nested and concurrent states. The final design optimizes for space by only allocating horizontal space for the transition start points (unlike the trapezoidal shape, which allocated space for transition start and end points) and by reducing the horizontal space taken for states that do not have any values set on them. For example, in Figure 4.9, active.out is narrower than active.hover because there is a property set on active.hover (x) but nothing set on active.out.
 
-![Revised InterState state-machine layout. Compact rectangular state boxes sit above property columns. Transition arrows share the space above the states, reducing their horizontal footprint. The current state and active values are highlighted in green.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-017-p079.png)
+![Optimized InterState state-machine layout for my\_behavior. Top-level states are inactive and active; active contains out and hover, connected by mouse.over and mouse.out transitions. active.out is narrower because it defines no property value; active.hover has x=true while inactive has x=false. Columns are reserved for transition starting points and defined values to save horizontal space. The current inactive state and value are outlined green.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-017-p079.png)
 
 Figure 4.9 The final state machine design for InterState state machines. This design reduces the amount of horizontal space taken by the state machines.
 
@@ -2241,13 +2205,13 @@ Figure 4.12 InterState (then Euclase) with a tree layout. However, the tree nota
 
 User interfaces often re-use and combine behaviors. InterState supports this by introducing an inheritance mechanism that allows behaviors to be re-used as easily as fields and methods are in traditional inheritance. It does this by allowing objects to inherit not only properties and their constraints but also an instance 8 of the prototypes’ state machines, as section 4.6.2 below details. InterState’s visual notation also lets developers understand which properties and behaviors are inherited by showing them with a grayed background in the editor (for example, the my\_square.height field in Figure 4.13).
 
+> <sup>8</sup> In this context, an “instance” of the state machine means a new state machine that has the same structure but may have a different active state.
+
 In addition to inheritance, InterState also supports dynamic templating—another form of behavior reuse. Dynamic templating allows developers to create a copy of an element or behavior for each item in some underlying dynamically changing data model. For example, a developer might want every item in a list view to have different text content but the same selectable behavior. InterState allows any object to serve as a dynamic template by setting an optional “copies” field, as explained below.
 
 #### 4.6.1 Inheritance
 
 Other toolkits have achieved behavior inheritance by requiring that programmers create separate interactor objects that describe specific built-in behaviors and can be attached to graphical objects \[99,106\]. Rather than requiring such specialized mechanisms, InterState’s inheritance model extends traditional prototype-instance inheritance \[99\] by adding several features to support behavior inheritance.
-
-> <sup>8</sup> In this context, an “instance” of the state machine means a new state machine that has the same structure but may have a different active state.
 
 <a id="page-83"></a>
 
@@ -2267,7 +2231,7 @@ Third, unlike most prototype-instance inheritance models, InterState allows mult
 
 Previous multiple inheritance frameworks have been hampered by the “diamond problem”, which occurs when objects B and C both inherit from A and then object D inherits from both B and C, leading previous systems to inherit A twice \[91\]. InterState addresses the diamond problem by detecting duplicate prototypes and only inheriting them once. If there are conflicts among prototypes (i.e. two prototypes set the same field for the same state), InterState gives precedence to the first (leftmost) prototype.
 
-![An object that inherits from both draggable and selectable behaviors. Note that the definitions for the color property are inherited from draggable ('red') and selectable ('blue').](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-022-p084.png)
+![my\_selectable\_draggable combines the selectable and draggable state machines. The fill property inherits blue for selection and black/red for the dragging states. The combined object retains both sets of states and inherits x/y values that follow the mouse while dragging. When definitions conflict, the leftmost prototype takes precedence, as explained in the surrounding text.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-022-p084.png)
 
 Figure 4.14
 
@@ -2295,9 +2259,9 @@ Figure 4.16 Two InterState objects (favs\_panel and color\_disp) that create a d
 
 They can set copies (displayed under color\_disp\[0\] in Figure 4.16) as a constraint to favorites and the InterState runtime environment creates an instance of color\_disp for every element in the favorites array (updated automatically). color\_disp can then constrain its fill property to be my\_copy, so that every instance has the appropriate color. This functionality is analogous to list views<sup>9</sup> in data-binding libraries and maps in Amulet \[99\] that allow programmers to specify a template display and to specify the number of instances they want. This example is illustrated in Figure 4.16.
 
-Note that the copies’ prototypes fields can be computed by a constraint that can depend on each one’s my\_copy field. For instance, in a directory viewer application, copies could be set to the contents of the directory. Then, every item could have a constraint that computes the prototype field to inherit from folder\_view if my\_copy is a folder and from file\_view if my\_copy is a file.
+> <sup>9</sup> http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.listview.aspx
 
-<sup>9</sup> http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.listview.aspx
+Note that the copies’ prototypes fields can be computed by a constraint that can depend on each one’s my\_copy field. For instance, in a directory viewer application, copies could be set to the contents of the directory. Then, every item could have a constraint that computes the prototype field to inherit from folder\_view if my\_copy is a folder and from file\_view if my\_copy is a file.
 
 <a id="page-87"></a>
 
@@ -2311,13 +2275,13 @@ Previous research has shown how live programming can improve the experience of b
 
 First, by making the result of changes immediately visible, live development environments help bridge the gulf of evaluation \[119\]—a significant barrier for new developers \[79\]. Another important aspect of most live development environments is that the developer always has a running program<sup>10</sup>. One great aspect of spreadsheet programming, for instance, is that when the user makes a mistake in a particular cell’s formula, the entire spreadsheet does not stop working \[20,98\]. Similarly, InterState allows errors to be “localized”: cells with errors only prevent the parts of the program from running that depend on those cells.
 
+> <sup>10</sup> This is not necessarily inherent to live development environments but because of the implementation requirements of live development environments, it is common.
+
 Second, liveness can enable the user to quickly evaluate the design. Although syntactic errors can sometimes be made immediately visible in edit-compile-run environments, live programming allows both syntactic and semantic errors to become immediately apparent by enabling developers to immediately test their code. This is particularly important because reflection-in-action – stepping back and evaluating their design as developers are in the process of creating it – is a crucial part of the design process \[143\]. Previous research \[101\] has shown that designers are more satisfied with their tools for designing an application’s look than with those for designing an application’s behavior. While sketches and drawing applications allow designers to quickly evaluate the look of their application during the design process, InterState is designed to be one of the first tools to allow them to quickly evaluate the feel of their application as well.
 
 <a id="page-88"></a>
 
 Finally, liveness makes quick experimentation possible. Experimentation is a crucial part of the design process and one that is not well supported by today’s development environments \[40\]. Again, it is relatively easy to experiment with different application looks with sketches, drawing programs, etc. However, it is more difficult to change or experiment with the feel of the application. For example, imagine that the designer wants to tweak the scrolling “friction” to find a suitable value. With InterState’s live development, this parameter can be iteratively modified to see the result, versus in a conventional environment where the user would have to re-run the entire program and re-enter the program state where this parameter is relevant.
-
-> <sup>10</sup> This is not necessarily inherent to live development environments but because of the implementation requirements of live development environments, it is common.
 
 #### 4.7.2 Design Challenges of a Live Environment
 
@@ -2341,7 +2305,7 @@ Finally, the fact that the finite state machines used by InterState are imperati
 
 One of the barriers to the adoption of constraint systems has been the difficulty of understanding and fixing bugs in constraint specifications \[98\]. When there is a bug in a constraint method, many constraint systems will halt program execution and present a cryptic error message \[99,106\]. InterState’s runtime was designed to enable programmers to always have a running application, like in spreadsheet programming, where constraint errors do not halt updates of other constraints \[20,98\]. InterState achieves this by “localizing” errors: constraints with errors only prevent the parts of the program from running that depend on those constraints. A constraint that fails has the value undefined and any constraint that depends on that field will also have the value undefined. In the editor, errors are displayed next to the problematic constraint expression (see Figure 4.17).
 
-![Figure 4.17 Syntax and runtime errors are highlighted in the editor but do not prevent the program from running. Fields with errors and other fields that depend on them are given the value undefined.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-025-p089.png)
+![InterState displays a red error for x=other\_shape.x+5. The tooltip reads Could not find field other\_shape, and the evaluated value is undefined. Dependent values also become undefined while the rest of the program continues running.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-025-p089.png)
 
 Figure 4.17 Syntax and runtime errors are highlighted in the editor but do not prevent the program from running. Fields with errors and other fields that depend on them are given the value undefined.
 
@@ -2415,11 +2379,9 @@ To make our comparison as fair as possible, I started with third-party code for 
 
 #### 4.8.2 Results
 
-Participants were able to implement the drag lock task significantly faster with InterState—taking less than half the time (JavaScript: 19.5±13.6 min, InterState: 8.0±6.8 min, two-tailed heteroscedastic Student’s t-test p &lt; 0.05). Although relatively few lines of code were required, reasoning about callbacks’ timing in the
-
 <a id="page-91"></a>
 
-JavaScript task proved challenging for many users, and many participants used console logs to help them understand their interface’s state.
+Participants were able to implement the drag lock task significantly faster with InterState—taking less than half the time (JavaScript: 19.5±13.6 min, InterState: 8.0±6.8 min, two-tailed heteroscedastic Student’s t-test p &lt; 0.05). Although relatively few lines of code were required, reasoning about callbacks’ timing in the JavaScript task proved challenging for many users, and many participants used console logs to help them understand their interface’s state.
 
 ![Task completion time, with means and standard-deviation error bars for 20 participants. Drag lock: JavaScript 19.3 minutes, SD 13.6; InterState 8.0 minutes, SD 6.8. Image carousel: JavaScript 28.3 minutes, SD 7.6; InterState 14.7 minutes, SD 5.5. InterState takes about half the time on both tasks; the surrounding text reports p less than .05 and p less than .01, respectively.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-026-p091.png)
 
@@ -2510,7 +2472,7 @@ One challenge in implementing InterState was to create a fully dynamic prototype
 - A is a dynamic property (whose value is constrained to some other object) and the value of that property changes
 
 - - o A changed state and x’s value changed o A.x was inherited but it changes to now be a normal (non-inherited) field o A.x was a normal (non-inherited) field but is now inherited o The definition for A.x changes
-  
+
   Object A changes its value for x, because either
 
 o The value of A.x changes (with no change in definition)
@@ -2521,6 +2483,8 @@ Very early prototypes of InterState (before I built ConstraintJS) used event-lis
 
 The fact that ConstraintJS uses pulled constraints (which evaluate only when the constraint’s value is requested) instead of pushed constraints (which evaluate as soon as a constraint’s value may have changed) has important performance implications<sup>11</sup>. For instance, when a cell that is not currently being used changes its value, no resources are dedicated to re-evaluating the constraint (also known as lazy evaluation). This can be helpful in situations where large or computationally expensive portions are disabled.
 
+> <sup>11</sup> Previous literature often refers to pushed constraints as eager constraints and pulled constraints as demand constraints.
+
 However, there are some instances where InterState needs constraint variables to behave like push constraints. Event listeners, for instance, must be updated as soon as variable references and values change. Suppose one finite state machine has a transition whose event is mouse.dblclick(selected\_item), meaning the transition will fire when selected\_item is double clicked. The event listener needs to be updated as soon as selected\_item changes (listening to every item and determining later on if it was selected\_item would be prohibitively inefficient). To enable this, I added an extension to ConstraintJS that allows some constraints to behave like pushed constraints, as described in section 3.6.2.
 
 #### 4.10.3 Contextual and Basic Objects
@@ -2528,8 +2492,6 @@ However, there are some instances where InterState needs constraint variables to
 ##### Definitions and Values
 
 InterState’s inheritance mechanism focuses on inheriting definitions, rather than values. For example, in Figure 4.13, the definition of square.width is inherited (width &lt;= height) by my\_square. Conceptually, this is because any square should have equal width and height, regardless of its dimensions.
-
-> <sup>11</sup> Previous literature often refers to pushed constraints as eager constraints and pulled constraints as demand constraints.
 
 <a id="page-96"></a>
 
@@ -2699,8 +2661,6 @@ Third, when evaluating multi-level prototypes (for example, C.prototypes &lt;= B
 
 <a id="page-102"></a>
 
-Chapter 4: InterState / Conclusion
-
 #### 4.10.6 InterState Editor
 
 The InterState editor uses ConstraintJS templates to implement its display and interactions internally. Communication between the InterState editor and runtime windows is done through a wrapper layer using the HTML channel messaging API. The InterState editor uses asynchronous constraints to track the variable states and values in the runtime window. The editor sends edit commands to the runtime window through the same wrapper layer. InterState objects can also be serialized and use the HTML local storage API to save and load InterState programs across sessions.
@@ -2720,8 +2680,6 @@ When writing custom user interface behaviors, developers often need to create, a
 In large applications with multiple event types, a single user input might cause multiple events to fire. Event conflicts occur when these events should be mutually exclusive, meaning that one or more events must override the others. Many of the challenges of managing conflicts between event types arrive in touchscreen development, where conflicts between gestures are more common. Although many of the challenges of handling touchscreen gestures will be described in further detail in the next chapter, this chapter will focus on some of the challenges of dealing with conflicting events.
 
 <a id="page-104"></a>
-
-Chapter 5: Defining Custom Event Types / Improving Custom Events
 
 InterState’s event architecture manages event conflicts by generalizing a common mechanism that is used for touchscreen development: introducing optional delays and groupings for events \[77,89\]. For example, if a menu item performs one action if it is single clicked and a different action if it is double clicked, developers would need to introduce a timer delay before verifying the single click (on touchscreens, this behavior is often seen to differentiate between presses and press-hold gestures). Typically, when a user performs a double click, the event recognizer will fire two single click events before firing a double click event. If a developer needs to differentiate between single and double click events, they must manually add a timer to wait to see if there will be a double click event, before recognizing either single click event.
 
@@ -2765,11 +2723,9 @@ Figure 5.1 A state machine showing the various states of an event with priority 
 
 InterState’s event model also works well with its re-use mechanism to allow developers to create re-usable events in a consistent way. To illustrate how this works, consider a mousedown event (mouse.down in InterState). The mouse down event contains customizable arguments, such as the mousedown target and all of the event parameters described above (delay, priority, etc.). When a developer creates a mouse.down(domObj) transition, they are simply creating an instance of the mouse.down event that overrides the target field (to domObj).
 
-One of the benefits of this mechanism is that developers can define parameterizable events in the same fashion as the built-in events. For example, a developer might define an InterState object myGesture that inherits from event and is
-
 <a id="page-108"></a>
 
-Chapter 5: Defining Custom Event Types / Conclusion parameterizable by numFingers. If myGesture’s state machine or any other field depends on the numFingers property, then inherited instances of myGesture can override its behavior by overriding the numFingers property, just as in the mouse.down example. Further, the developer can use instances of myGesture as transition events, just as they can for built-in events.
+One of the benefits of this mechanism is that developers can define parameterizable events in the same fashion as the built-in events. For example, a developer might define an InterState object myGesture that inherits from event and is parameterizable by numFingers. If myGesture’s state machine or any other field depends on the numFingers property, then inherited instances of myGesture can override its behavior by overriding the numFingers property, just as in the mouse.down example. Further, the developer can use instances of myGesture as transition events, just as they can for built-in events.
 
 ### 5.4 Conclusion
 
@@ -2786,8 +2742,6 @@ This chapter focuses on a particular GUI application area: multi-touch and touch
 As the previous chapters described, ConstraintJS and InterState can both build multi-touch applications. Both tools expose the event types that are provided by the browser runtime and most browsers expose low-level touch events. More specifically, a typical browser runtime will expose three different touch events: touchStart, touchMove, and touchEnd. These events are analogous to mouseDown, mouseMove, and mouseUp in mouse-based interfaces. However, multi-touch behaviors are often significantly more difficult to program compared to mouse-keyboard interactive behaviors for a number of reasons, described next.
 
 <a id="page-110"></a>
-
-Chapter 6: Multi-Touch Primitives / Multi-Touch Challenges
 
 #### 6.1.1 Larger State Space
 
@@ -3014,7 +2968,7 @@ I also implemented the multi-touch gesture illustrated in Figure 6.4. This examp
 
 ![Figure 6.4, two-finger gesture: swiping upward from the bottom of the drawing canvas reveals a panel of colored swatches for selecting the drawing color.](https://from.so/assets/markdown/figures/oney-expressing-interactivity-states-cmu2015/figure-037-p120.png)
 
-a one-finger swipe a two-finger swipe from the bottom brings from the bottom brings up the brush menu up the color menu
+a one-finger swipe from the bottom brings up the brush menu a two-finger swipe from the bottom brings up the color menu
 
 <a id="page-121"></a>
 
@@ -3070,11 +3024,9 @@ This section further describes the scope of both tools and considerations for ho
 
 The combination of states and constraints that ConstraintJS and InterState use as their computational model was designed for defining user interface code, rather than general-purpose code. I believe that standard imperative languages are often more understandable for computational-oriented code (code where the primary goal is to compute a value). For example, a developer might not want to implement a sorting algorithm in InterState’s state-constraint primitives, but they might want to reference it to sort a list in the context of a sorted UI list. It is important to be able to connect this computational-oriented code with user interface code correctly, which is why both ConstraintJS and InterState include mechanisms for communicating with code written in computational-oriented languages.
 
-Similarly, ConstraintJS and InterState work best with stateful applications, where an application’s appearance and behavior depends upon its state. I believe the event-callback paradigm can be more effective when 1) an interface is not stateful and 2) the effect of most user actions is to update property values rather than change state. In effect most of the problems with event-callback code described in this dissertation apply when callbacks have to track and maintain a consistent state. Although this is
-
 <a id="page-125"></a>
 
-Chapter 7: Limitations and Future Work / Scope the case in most graphical user interfaces, there is one particular class of non-state oriented interfaces that I have encountered: video games. In video games, the effect of user input (such as button presses or joystick movement) is often to increment the position of a sprite or perform some other action rather than changing the state of the game. As the InterState implementation of Breakout (described in section 4.9.1 above) shows, InterState can implement such behaviors. However, Breakout involved a number of self-transitions that updated variable states (for example, when the user presses the left arrow, move the paddle to the left). Although InterState’s visual notation is capable of handling large numbers of self-transitions like this (as Figure 4.10 shows), it is not yet optimized for doing so.
+Similarly, ConstraintJS and InterState work best with stateful applications, where an application’s appearance and behavior depends upon its state. I believe the event-callback paradigm can be more effective when 1) an interface is not stateful and 2) the effect of most user actions is to update property values rather than change state. In effect most of the problems with event-callback code described in this dissertation apply when callbacks have to track and maintain a consistent state. Although this is the case in most graphical user interfaces, there is one particular class of non-state oriented interfaces that I have encountered: video games. In video games, the effect of user input (such as button presses or joystick movement) is often to increment the position of a sprite or perform some other action rather than changing the state of the game. As the InterState implementation of Breakout (described in section 4.9.1 above) shows, InterState can implement such behaviors. However, Breakout involved a number of self-transitions that updated variable states (for example, when the user presses the left arrow, move the paddle to the left). Although InterState’s visual notation is capable of handling large numbers of self-transitions like this (as Figure 4.10 shows), it is not yet optimized for doing so.
 
 #### 7.1.2 Touchscreen Drawing Gestures
 
@@ -3084,11 +3036,9 @@ Chapter 6 describes InterState features to help developers create custom multi-t
 
 ConstraintJS works with any of the event types that are exposed by the browser runtime in which it is executing. If that runtime exposes stylus events, for instance, developers can write transitions that reference stylus events. However, event conventions or library APIs that are designed for imperative contexts do not always translate well to declarative environments. For example, Chapter 6 described primitives for expressing touchscreen gestures in InterState. Without these primitives, developers could express touchscreen gestures with touchStart, touchMove, and touchEnd events but the state machines for expressing multi-touch gesture would quickly grow unwieldy and difficult to understand. Avoiding this required creating primitives to concisely express higher-level touchscreen events using fewer transitions and states. Another benefit of building such primitives was that the editor and runtime environment could also display information to help developers debug their multi-touch gestures. The same principles might apply in many other input and event domains, including body or around-device gestures.
 
-Conversely, InterState’s features can also be adapted for different output mediums. Although we have only fully implemented mechanisms for creating SVG and DOM objects with InterState primitives, I have conducted preliminary experiments to explore creating 3D renderings (using a WebGL-enabled canvas) and HTML canvas
-
 <a id="page-126"></a>
 
-Chapter 7: Limitations and Future Work / Tools for Non-Developers drawings. As is the case with alternate event types, designing for different output mediums requires carefully exploiting API mechanisms that were intended for imperative environments into a declarative APIs.
+Conversely, InterState’s features can also be adapted for different output mediums. Although we have only fully implemented mechanisms for creating SVG and DOM objects with InterState primitives, I have conducted preliminary experiments to explore creating 3D renderings (using a WebGL-enabled canvas) and HTML canvas drawings. As is the case with alternate event types, designing for different output mediums requires carefully exploiting API mechanisms that were intended for imperative environments into a declarative APIs.
 
 ### 7.2 Tools for Non-Developers
 
@@ -3100,11 +3050,9 @@ One of the first areas to address is the syntax for expressing constraints, whic
 
 Still, it would be best to address this error in the editor’s paradigm itself rather than in documentation materials. One potential way to address it would be to add features to the editor that would infer a developer’s intent (either based on constraint values or on the semantics of the field). Another would be to treat constraints that reference non-existent fields (yellow in the previous example) as string literals. Alternatively, this issue could be mitigated by incorporating direct manipulation features (see section 7.8 below) to allow users to express these constraints by directly modifying objects’ colors and text in the runtime window.
 
-Second, although the current syntax for expressing constraints in InterState is natural for mathematical expressions, such as width\*2 or mouse.x - offset\_x, it could be improved for many kinds of complex expressions. In particular, constraint expressions that reference other fields can be unintuitive for non-developers. For example, consider the constraint expression: other\_obj\[this. prop\_name\], which evaluates to the value of the field in other\_obj whose name is the value of this.prop\_name. Writing this expression requires understanding the
-
 <a id="page-127"></a>
 
-Chapter 7: Limitations and Future Work / Pre-Supplied Widgets idea of dynamically specified fields (how other\_obj\[this.prop\_name\] is entirely different than other\_obj.this.prop\_name) and a careful consideration of scoping rules. It also requires knowing the correct syntactic conventions (periods and square brackets) and knowing when to properly close square brackets (how other\_obj\[this.prop\_name\] is also entirely different than other\_obj.this\[ prop\_name\]). Analogous issues exist with function call expressions. It is possible that the commonalities in how non-programmers describe such expressions could help guide the design of a more beginner-friendly syntax \[132\]. The InterState editor could also help developers write and understand constraint expressions through auto-complete features (see section 7.7.1 below), by highlighting referenced fields as developers enter constraint values, and by allowing developers to point to the fields they want to reference.
+Second, although the current syntax for expressing constraints in InterState is natural for mathematical expressions, such as width\*2 or mouse.x - offset\_x, it could be improved for many kinds of complex expressions. In particular, constraint expressions that reference other fields can be unintuitive for non-developers. For example, consider the constraint expression: other\_obj\[this. prop\_name\], which evaluates to the value of the field in other\_obj whose name is the value of this.prop\_name. Writing this expression requires understanding the idea of dynamically specified fields (how other\_obj\[this.prop\_name\] is entirely different than other\_obj.this.prop\_name) and a careful consideration of scoping rules. It also requires knowing the correct syntactic conventions (periods and square brackets) and knowing when to properly close square brackets (how other\_obj\[this.prop\_name\] is also entirely different than other\_obj.this\[ prop\_name\]). Analogous issues exist with function call expressions. It is possible that the commonalities in how non-programmers describe such expressions could help guide the design of a more beginner-friendly syntax \[132\]. The InterState editor could also help developers write and understand constraint expressions through auto-complete features (see section 7.7.1 below), by highlighting referenced fields as developers enter constraint values, and by allowing developers to point to the fields they want to reference.
 
 #### 7.2.2 Expressing States and Transitions
 
@@ -3117,8 +3065,6 @@ As Chapter 1 describes, one way to address the problem of simplifying the develo
 In practice, providing such a widget library would be a crucial factor in how quickly new developers can write InterState code. Ideally, developers would be able to easily incorporate pre-built widgets, such as scroll bars and buttons, into their code and modify the implementation of these widgets to customize their behavior. Such widgets could be called clear box widgets. In contrast with the black box widgets provided by most interface builders, which can be re-used but not easily modified. As a starting point, I have implemented re-usable widgets for buttons, radio buttons, checkboxes, lists, and text inputs.
 
 <a id="page-128"></a>
-
-Chapter 7: Limitations and Future Work / Debugging Tools
 
 ### 7.4 Debugging Tools
 
@@ -3135,8 +3081,6 @@ As the ConstraintJS chapter discusses, however, library size is an important con
 The InterState editor includes some features for debugging: displaying field values, highlighting state changes, and breakpoints on transitions. However, there are still several aspects of InterState that have proven difficult for users to understand or debug. First, field references can be difficult to understand and debug; understanding the way field expressions in constraint expressions can navigate up the constraint hierarchy. Also, future versions of InterState could also help developers better understand its internal event mechanism (described in Chapter 5 above), for example, by providing an overview of events that are fired, overridden, and blocked.
 
 <a id="page-129"></a>
-
-Chapter 7: Limitations and Future Work / Animations
 
 ### 7.5 Animations
 
@@ -3156,8 +3100,6 @@ I have also considered a number of features that might improve the InterState ed
 
 <a id="page-130"></a>
 
-130Chapter 7: Limitations and Future Work / InterState Editor Feature Extensions
-
 #### 7.7.1 Auto-complete
 
 One of the features participants in the InterState laboratory study requested in post-study surveys was autocomplete. Autocomplete may help reduce some of the syntactic challenges non-developers face when using InterState, as described in section 7.2 above. It also helps developers quickly determine which field names are valid without needing to fully navigate to other InterState objects.
@@ -3172,11 +3114,9 @@ The InterState editor could also make it easier to incorporate InterState object
 
 In InterState’s programming model, the only way for developers to set a field’s value is by entering a constraint for that field for a particular state or transition (so values are always “pulled” to the current cell). In contrast, event-callback code allows developers to set any field’s value in any callback (which contributes to the spaghetti-code problem). For instance, suppose clicking on a button called button should set the field my\_obj.is\_pressed to true. Doing this in InterState would require that either my\_obj’s state machine includes a transition for when button is pushed or that the field my\_obj.is\_pressed references another object whose value changes to true when button is pressed. Event-callback code would allow developers to set my\_obj.is\_pressed in an event listener for button.
 
-In InterState’s initial pilot studies, some participants had trouble understanding how to use InterState’s convention. One way to rectify this without losing the benefits of InterState’s model (that every possible value for a field is visible in a row) is by adding editor features that allow developers to set fields in other objects. This could be done by enabling the editor to show the rows for objects under the transition diagram of a different object. In the previous paragraph’s example, this would mean
-
 <a id="page-131"></a>
 
-Chapter 7: Limitations and Future Work / Direct Manipulation allowing a developer to edit the row that defines the value of my\_obj.is\_pressed while looking at the state machine for the button object in the editor. Although this convention would not increase the expressiveness of InterState’s state constraint paradigm (because state machine transitions can refer to other objects, which is functionally equivalent) it might make it easier to express events that affect different objects. This convention can be implemented as a “convenience view” in the editor that does not change InterState’s internal program model while still allowing developers to work in a style where they can set values anywhere.
+In InterState’s initial pilot studies, some participants had trouble understanding how to use InterState’s convention. One way to rectify this without losing the benefits of InterState’s model (that every possible value for a field is visible in a row) is by adding editor features that allow developers to set fields in other objects. This could be done by enabling the editor to show the rows for objects under the transition diagram of a different object. In the previous paragraph’s example, this would mean allowing a developer to edit the row that defines the value of my\_obj.is\_pressed while looking at the state machine for the button object in the editor. Although this convention would not increase the expressiveness of InterState’s state constraint paradigm (because state machine transitions can refer to other objects, which is functionally equivalent) it might make it easier to express events that affect different objects. This convention can be implemented as a “convenience view” in the editor that does not change InterState’s internal program model while still allowing developers to work in a style where they can set values anywhere.
 
 #### 7.7.4 State Machine Sharing
 
@@ -3188,13 +3128,9 @@ InterState is situated somewhere between traditional development tools (IDEs) an
 
 I have conducted preliminary investigations into better supporting direct manipulation in InterState. CMU undergraduate student Sukhada Kulkarni helped write an experimental version of the InterState editor that allows developers to enter a “design mode” in the runtime and edit the constraints that control graphical objects’ displays directly. Future versions of InterState could also allow designers to write constraints through demonstration \[107\] by inferring constraints.
 
-Another way to better enable non-programmers to create interfaces with InterState would be to integrate InterState with creative tools like Photoshop. This way, designers could specify an interface’s appearance with Photoshop and its behavior with
-
 <a id="page-132"></a>
 
-Chapter 7: Limitations and Future Work / Better Support for Exploration
-
-InterState. I have conducted preliminary investigations into this idea, with an early-stage mockup tool that integrates with Photoshop \[124\].
+Another way to better enable non-programmers to create interfaces with InterState would be to integrate InterState with creative tools like Photoshop. This way, designers could specify an interface’s appearance with Photoshop and its behavior with InterState. I have conducted preliminary investigations into this idea, with an early-stage mockup tool that integrates with Photoshop \[124\].
 
 ### 7.9 Better Support for Exploration
 
@@ -3221,8 +3157,6 @@ ConstraintJS, the first tool to enable this state constraint framework, can be i
 InterState builds on the state constraint framework by introducing a visual notation, live editor, and mechanisms for behavior reuse: behavior inheritance and templating. The comparative laboratory study described in section 4.8 also showed that InterState and its visual notation are effective in helping developers write and understand interactive behaviors relative to traditional event-callback code.
 
 <a id="page-134"></a>
-
-Chapter 8: Conclusion
 
 InterState shows how innovations in the execution model, combined with a visual notation and live editor, can work together to express many custom interactive behaviors without writing imperative code. InterState also introduces an event architecture that allows developers to create and re-use events and define custom multi-touch gestures. InterState also shows the value of putting these ideas together into a single cohesive programming framework. InterState information is available at http://interstate.from.so/. Finally, the example applications and scalability analysis described in section 4.9 and the example applications built with InterState’s multi-touch gesture extensions (describe in section 6.4) show how InterState and its implementation of the state constraint framework can scale to implement nuanced and complex interactive behaviors.
 
@@ -3630,8 +3564,6 @@ Now, whenever x changes, y's value automatically updates with it. ConstraintJS a
 
 <a id="page-149"></a>
 
-Appendix A: ConstraintJS Tutorial / Using ConstraintJS
-
 ### A.2 Using ConstraintJS
 
 ConstraintJS works in both client-side browser JavaScript (e.g. Chrome, IE, &amp; Firefox) and server-side JavaScript (e.g. Node.JS). It can be integrated into any codebase; your code could use 99% standard JavaScript and a single ConstraintJS constraint.
@@ -3683,8 +3615,6 @@ x.get();  // = 1
 
 <a id="page-150"></a>
 
-Appendix A: ConstraintJS Tutorial / Constraint Variables
-
 ```
 x.set(2); // x <= 2
 x.get();  // = 2
@@ -3725,8 +3655,6 @@ In this case, .add() is a built-in function that creates a new constraint variab
 For a full list of modifier functions, see the cjs.Constraint API docs.
 
 <a id="page-151"></a>
-
-Appendix A: ConstraintJS Tutorial / ConstraintJS Internals
 
 ### A.4 ConstraintJS Internals
 
@@ -3771,8 +3699,6 @@ var y = cjs.constraint(function() {
 ```
 
 <a id="page-152"></a>
-
-Appendix A: ConstraintJS Tutorial / DOM Bindings
 
 ```
 x.get();   // = 2
@@ -3825,8 +3751,6 @@ Here, binding is a binding object. This binding object has several operations to
 
 <a id="page-153"></a>
 
-Appendix A: ConstraintJS Tutorial / Detecting Variable Changes
-
 #### A.5.1 Input Value Constraints
 
 Related to bindings are input value constraints. Input value constraints are constraints whose values are bound to the value of an &lt;input&gt; element. cjs.inputValue(elem) creates an input value constraint. For instance, suppose my\_input\_elem is an &lt;input&gt; element.
@@ -3878,8 +3802,6 @@ var live_fn = cjs.liven(function() {
 The above snippet will automatically call some\_other\_library.setPosition whenever x or y changes.
 
 <a id="page-154"></a>
-
-Appendix A: ConstraintJS Tutorial / Array and Map Constraints
 
 ### A.7 Array and Map Constraints
 
@@ -4031,8 +3953,6 @@ var my_fsm = cjs.fsm()
 
 <a id="page-157"></a>
 
-Appendix A: ConstraintJS Tutorial / Templates
-
 #### A.8.6 FSM Constraints
 
 Constraint variables may depend on FSMs. To create an FSM-dependent constraint, pass the FSM as the first parameter to cjs.inFSM(fsm, values) and an object with states and their values as the second parameter:
@@ -4177,8 +4097,6 @@ The {{#with}} block helper changes the context in which constraints are evaluate
 
 <a id="page-160"></a>
 
-Appendix A: ConstraintJS TutorialConstraintJS Tutorial / Template Syntax
-
 Value: {{x}} {{/with}} when called with { obj: {x: 1} } results in Value: 1
 
 #### A.10.10 Partials
@@ -4200,15 +4118,15 @@ cjs(value, options)
 ```
 
 - value object
-  
+
   A map of initial values
 
 - options object
-  
+
   A set of options to control how the array constraint is evaluated
 
 - Returns cjs.ArrayConstraint
-  
+
   A new array constraint
 
 ```
@@ -4216,11 +4134,11 @@ cjs(node)
 ```
 
 - node dom
-  
+
   The DOM node whose value to follow
 
 - Returns cjs.Binding
-  
+
   A constraint whose value is the current value of the input
 
 ```
@@ -4228,15 +4146,15 @@ cjs(value, options)
 ```
 
 - value object
-  
+
   A map of initial values
 
 - options object
-  
+
   A set of options to control how the map constraint is evaluated
 
 - Returns cjs.MapConstraint
-  
+
   A new map constraint
 
 <a id="page-162"></a>
@@ -4246,15 +4164,15 @@ cjs(value, options)
 ```
 
 - value object
-  
+
   The constraint's value
 
 - options object
-  
+
   A set of options to control how the constraint is evaluated
 
 - Returns cjs.Constraint
-  
+
   A new constraint
 
 Example:
@@ -4316,11 +4234,11 @@ Create an array constraint
 ```
 
 - \[options\] Object
-  
+
   A set of options to control how the array constraint is evaluated
 
 - Returns cjs.ArrayConstraint
-  
+
   A new array constraint object
 
 Example:
@@ -4340,19 +4258,19 @@ When oldArray removes every item in removed, adds every item in added, and moves
 ```
 
 - from\_val array\[\*\]
-  
+
   The 'former' array
 
 - to\_val array\[\*\]
-  
+
   The 'new' array
 
 - \[equality\_check\] function
-  
+
   A function that checks for equality between items
 
 - Returns Object
-  
+
   added, removed, and moved items
 
 Example:
@@ -4386,15 +4304,15 @@ Constrain a DOM node's attribute values
 ```
 
 - element dom
-  
+
   The DOM element
 
 - values object
-  
+
   An object whose key-value pairs are the attribute names and values respectively
 
 - Returns Binding
-  
+
   A binding object representing the link from constraints to elements
 
 ```
@@ -4402,15 +4320,15 @@ Constrain a DOM node's attribute values
 ```
 
 - key string
-  
+
   The name of the attribute to constraint
 
 - value cjs.Constraint,string
-  
+
   The value of this attribute
 
 - Returns Binding
-  
+
   A binding object representing the link from constraints to elements
 
 Example:
@@ -4456,15 +4374,15 @@ Constrain a DOM node's CSS style
 ```
 
 - element dom
-  
+
   The DOM element
 
 - values object
-  
+
   An object whose key-value pairs are the CSS property names and values respectively
 
 - Returns Binding
-  
+
   A binding object representing the link from constraints to CSS styles
 
 ```
@@ -4472,15 +4390,15 @@ Constrain a DOM node's CSS style
 ```
 
 - key string
-  
+
   The name of the CSS attribute to constraint
 
 - value cjs.Constraint,string
-  
+
   The value of this CSS attribute
 
 - Returns Binding
-  
+
   A binding object representing the link from constraints to elements
 
 Example:
@@ -4511,19 +4429,19 @@ Constrain a DOM node's children
 ```
 
 - element dom
-  
+
   The DOM element
 
 <a id="page-166"></a>
 
 - ...elements \*
-  
+
   The elements to use as the constraint. The binding
-  
+
   automatically flattens them.
 
 - Returns Binding
-  
+
   A binding object
 
 Example:
@@ -4544,15 +4462,15 @@ Constrain a DOM node's class names
 ```
 
 - element dom
-  
+
   The DOM element
 
 - ...values \*
-  
+
   The list of classes the element should have. The binding automatically flattens them.
 
 - Returns Binding
-  
+
   A binding object
 
 Example:
@@ -4573,15 +4491,15 @@ Constrain a DOM node's HTML content
 ```
 
 - element dom
-  
+
   The DOM element
 
 - ...values \*
-  
+
   The desired html content
 
 - Returns Binding
-  
+
   A binding object
 
 Example:
@@ -4604,15 +4522,15 @@ Constrain a DOM node's text content
 ```
 
 - element dom
-  
+
   The DOM element
 
 - ...values \*
-  
+
   The desired text value
 
 - Returns Binding
-  
+
   A binding object
 
 Example:
@@ -4633,15 +4551,15 @@ Constrain a DOM node's value
 ```
 
 - element dom
-  
+
   The DOM element
 
 - ...values \*
-  
+
   The value the element should have
 
 - Returns Binding
-  
+
   A binding object
 
 Example:
@@ -4664,15 +4582,15 @@ Constraint constructor
 <a id="page-168"></a>
 
 - value \*
-  
+
   The initial value of the constraint or a function to compute its value
 
 - \[options\] Object
-  
+
   A set of options to control how and when the constraint's value is evaluated
 
 - Returns cjs.Constraint
-  
+
   A new constraint object
 
 ### cjs.createParsedConstraint(str, context)
@@ -4684,15 +4602,15 @@ Parses a string and returns a constraint whose value represents the result of ev
 ```
 
 - str string
-  
+
   The string to parse
 
 - context object
-  
+
   The context in which to look for variables
 
 - Returns cjs.Cosntraint
-  
+
   Whether the template was successfully resumed
 
 Example:
@@ -4886,19 +4804,19 @@ Nests a copy of my\_template in context
 ```
 
 - template string,dom
-  
+
   the template as either a string or a script tag whose contents are the template
 
 - \[context\] object
-  
+
   Any number of target objects to listen to
 
 - \[parent\] dom
-  
+
   The parent DOM node for the template
 
 - Returns function,dom
-  
+
   An event that can be attached to
 
 Example:
@@ -4928,11 +4846,11 @@ Destroy a template instance
 ```
 
 - node dom
-  
+
   The dom node created by createTemplate
 
 - Returns boolean
-  
+
   Whether the template was successfully removed
 
 ### cjs.fsm(...state\_names)
@@ -4944,11 +4862,11 @@ Create an FSM
 ```
 
 - ...state\_names string
-  
+
   An initial set of state names to add to the FSM
 
 - Returns FSM
-  
+
   A new FSM
 
 Example:
@@ -4968,15 +4886,15 @@ Gets the value of an object regardless of if it's a constraint (standard, array,
 ```
 
 - obj \*
-  
+
   The object whose value to return
 
 - \[autoAddOutgoing=true\] boolean
-  
+
   Whether to automatically add a dependency from this constraint to ones that depend on it.
 
 - Returns \*
-  
+
   The value
 
 Example:
@@ -5012,15 +4930,15 @@ Create a new constraint whose value changes by state
 ```
 
 - fsm cjs.FSM
-  
+
   The finite-state machine to depend on
 
 - values Object
-  
+
   Keys are the state specifications for the FSM, values are the value for those specific states
 
 - Returns cjs.Constraint
-  
+
   A new constraint object
 
 Example:
@@ -5043,11 +4961,11 @@ Take an input element and create a constraint whose value is constrained to the 
 ```
 
 - inp dom
-  
+
   The input element
 
 - Returns cjs.Constraint
-  
+
   A constraint whose value is the input's value
 
 Example:
@@ -5069,11 +4987,11 @@ Determine whether an object is an array constraint
 ```
 
 - obj \*
-  
+
   An object to check
 
 - Returns boolean
-  
+
   true if obj is a cjs.ArrayConstraint, false otherwise
 
 ### cjs.isConstraint(obj)
@@ -5085,11 +5003,11 @@ Determine whether an object is a constraint
 ```
 
 - obj \*
-  
+
   An object to check
 
 - Returns boolean
-  
+
   obj instanceof cjs.Constraint
 
 ### cjs.isFSM(obj)
@@ -5101,11 +5019,11 @@ Determine whether an object is an FSM
 ```
 
 - obj \*
-  
+
   An object to check
 
 - Returns boolean
-  
+
   true if obj is an FSM, false otherwise
 
 ### cjs.isMapConstraint(obj)
@@ -5117,11 +5035,11 @@ Determine whether an object is a map constraint
 ```
 
 - obj \*
-  
+
   An object to check
 
 - Returns boolean
-  
+
   true if obj is a cjs.MapConstraint, false otherwise
 
 ### cjs.liven(func, \[options\])
@@ -5151,15 +5069,15 @@ The return value of this method also has two functions:
 ```
 
 - func function
-  
+
   The function to make live
 
 - \[options\] object
-  
+
   A set of options to control how liven works
 
 - Returns object
-  
+
   An object with properties destroy, pause, resume, and run
 
 Example:
@@ -5185,11 +5103,11 @@ Create a map constraint
 ```
 
 - \[options\] Object
-  
+
   A set of options to control how the map constraint is evaluated
 
 - Returns cjs.MapConstraint
-  
+
   A new map constraint object
 
 Example:
@@ -5233,15 +5151,15 @@ The return value of this method also has two functions:
 ```
 
 - getter\_fn function
-  
+
   The function to memoize
 
 - \[options\] object
-  
+
   A set of options to control how memoization works
 
 - Returns function
-  
+
   The memoized function
 
 Example:
@@ -5273,7 +5191,7 @@ Restore the previous value of cjs
 ```
 
 - Returns object
-  
+
   cjs
 
 Example:
@@ -5294,15 +5212,15 @@ Create a new event for use in a finite state machine transition
 ```
 
 - event\_type string
-  
+
   the type of event to listen for (e.g. mousedown, timeout)
 
 - ...targets=window element,number
-  
+
   Any number of target objects to listen to
 
 - Returns CJSEvent
-  
+
   An event that can be attached to
 
 Example:
@@ -5334,13 +5252,13 @@ Pause dynamic updates to a template
 ```
 
 - node dom
-  
+
   The dom node created by createTemplate
 
 <a id="page-178"></a>
 
 - Returns boolean
-  
+
   Whether the template was successfully paused
 
 ### cjs.registerCustomPartial(name, options)
@@ -5366,15 +5284,15 @@ Options are (only createNode is mandatory):
 ```
 
 - name string
-  
+
   The name that this partial can be referred to as
 
 - options Object
-  
+
   The set of options (described in the description)
 
 - Returns cjs
-  
+
   cjs
 
 Example:
@@ -5426,15 +5344,15 @@ Register a partial that can be used in other templates
 ```
 
 - name string
-  
+
   The name that this partial can be referred to as
 
 - value Template
-  
+
   The template
 
 - Returns cjs
-  
+
   cjs
 
 Example:
@@ -5469,11 +5387,11 @@ Resume dynamic updates to a template
 ```
 
 - node dom
-  
+
   The dom node created by createTemplate
 
 - Returns boolean
-  
+
   Whether the template was successfully resumed
 
 ### cjs.signal(...)
@@ -5502,7 +5420,7 @@ Print out the name and version of ConstraintJS
 ```
 
 - Returns string
-  
+
   ConstraintJS v(version#)
 
 ### cjs.unregisterPartial(name)
@@ -5514,11 +5432,11 @@ Unregister a partial for other templates
 ```
 
 - name string
-  
+
   The name of the partial
 
 - Returns cjs
-  
+
   cjs
 
 <a id="page-181"></a>
@@ -5573,7 +5491,7 @@ Options:
 ```
 
 - \[options\] Object
-  
+
   A set of options to control how the array constraint is evaluated
 
 <a id="page-182"></a>
@@ -5591,11 +5509,11 @@ The concat() method returns a new array comprised of this array joined with othe
 ```
 
 - ...values \*
-  
+
   Arrays and/or values to concatenate to the resulting array.
 
 - Returns array
-  
+
   The concatenated array
 
 Example:
@@ -5615,7 +5533,7 @@ Clear this array and try to clean up any memory.
 ```
 
 - \[silent=false\] boolean
-  
+
   If set to true, avoids invalidating any dependent constraints.
 
 ### cjs.ArrayConstraint.prototype.every(fil ter, thisArg)
@@ -5627,17 +5545,17 @@ Return true if filter against every item in my array is truthy
 ```
 
 - filter function
-  
+
   The function to check against
 
 - thisArg \*
-  
+
   Object to use as this when executing filter.
 
 <a id="page-183"></a>
 
 - Returns boolean
-  
+
   true if some item matches filter. false otherwise
 
 Example:
@@ -5656,15 +5574,15 @@ The filter() method creates a new array with all elements that pass the test imp
 ```
 
 - callback function
-  
+
   Function to test each element of the array.
 
 - \[thisObject\] \*
-  
+
   Object to use as this when executing callback.
 
 - Returns array
-  
+
   A filtered JavaScript array
 
 ### cjs.ArrayConstraint.prototype.forEach(c allback, thisArg)
@@ -5676,15 +5594,15 @@ The forEach() method executes a provided function once per array element.
 ```
 
 - callback function
-  
+
   Function to execute for each element.
 
 - thisArg \*
-  
+
   Object to use as this when executing callback.
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 Example:
@@ -5710,15 +5628,15 @@ Returns the first index of item
 ```
 
 - item \*
-  
+
   The item we are searching for
 
 - \[equality\_check\] function
-  
+
   How to check whether two objects are equal, defaults to the option that was passed in)
 
 - Returns number
-  
+
   The item's index or -1
 
 Example:
@@ -5737,15 +5655,15 @@ Returns the first item where calling filter is truthy
 ```
 
 - filter function
-  
+
   The function to call on every item
 
 - thisArg \*
-  
+
   Object to use as this when executing callback.
 
 - Returns number
-  
+
   The first index where calling filter is truthy or -1
 
 Example:
@@ -5771,7 +5689,7 @@ Convert my value to a standard JavaScript array
 <a id="page-185"></a>
 
 - Returns array
-  
+
   A standard JavaScript array
 
 ```
@@ -5779,11 +5697,11 @@ Convert my value to a standard JavaScript array
 ```
 
 - key number
-  
+
   The array index
 
 - Returns \*
-  
+
   The value at index key
 
 ```
@@ -5791,15 +5709,15 @@ Convert my value to a standard JavaScript array
 ```
 
 - key number
-  
+
   The array index
 
 - value \*
-  
+
   The new value
 
 - Returns \*
-  
+
   value
 
 Examples:
@@ -5829,11 +5747,11 @@ Return a constraint whose value is bound to my value for key
 ```
 
 - key number,Constraint
-  
+
   The array index
 
 - Returns Constraint
-  
+
   A constraint whose value is this\[key\]
 
 Example:
@@ -5857,11 +5775,11 @@ The join() method joins all elements of an array into a string.
 ```
 
 - \[separator=','\] string
-  
+
   Specifies a string to separate each element of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma.
 
 - Returns string
-  
+
   The joined string
 
 ### cjs.ArrayConstraint.prototype.lastIndex Of(item, \[equality\_check\])
@@ -5873,15 +5791,15 @@ Returns the last index of item
 ```
 
 - item \*
-  
+
   The item we are searching for
 
 - \[equality\_check\] function
-  
+
   How to check whether two objects are equal, defaults to the option that was passed in)
 
 - Returns number
-  
+
   The item's index or -1
 
 Example:
@@ -5900,17 +5818,17 @@ Returns the last item where calling filter is truthy
 ```
 
 - filter function
-  
+
   The function to call on every item
 
 - thisArg \*
-  
+
   Object to use as this when executing callback.
 
 <a id="page-187"></a>
 
 - Returns number
-  
+
   The last index where calling filter is truthy or -1
 
 Example:
@@ -5931,7 +5849,7 @@ Get the length of the array.
 ```
 
 - Returns number
-  
+
   The length of the array
 
 Example:
@@ -5950,15 +5868,15 @@ The map() method creates a new array (not array constraint) with the results of 
 ```
 
 - callback function
-  
+
   Function that produces an element of the new Array from an element of the current one.
 
 - thisArg \*
-  
+
   Object to use as this when executing callback.
 
 - Returns array
-  
+
   The result of calling callback on every element
 
 Example:
@@ -5984,7 +5902,7 @@ The pop() method removes the last element from an array and returns that element
 ```
 
 - Returns \*
-  
+
   The value that was popped off or undefined
 
 Example:
@@ -6004,11 +5922,11 @@ The push() method mutates an array by appending the given elements and returning
 ```
 
 - ...elements \*
-  
+
   The set of elements to append to the end of the array
 
 - Returns number
-  
+
   The new length of the array
 
 Example:
@@ -6028,7 +5946,7 @@ The reverse() method reverses an array in place. The first array element becomes
 ```
 
 - Returns array
-  
+
   A JavaScript array whose value is the reverse of mine
 
 <a id="page-189"></a>
@@ -6042,11 +5960,11 @@ Change the equality check; useful for indexOf
 ```
 
 - equality\_check function
-  
+
   A new function to check for equality between two items in this array
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 ### cjs.ArrayConstraint.prototype.setValue( arr)
@@ -6058,11 +5976,11 @@ Replaces the whole array
 ```
 
 - arr array
-  
+
   The new value
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 Example:
@@ -6083,7 +6001,7 @@ The shift() method removes the first element from an array and returns that elem
 ```
 
 - Returns \*
-  
+
   The element that was removed
 
 Example:
@@ -6105,15 +6023,15 @@ The slice() method returns a portion of an array.
 ```
 
 - \[begin=0\] number
-  
+
   Zero-based index at which to begin extraction.
 
 - \[end=this.length\] number
-  
+
   Zero-based index at which to end extraction. slice extracts up to but not including end.
 
 - Returns array
-  
+
   A JavaScript array
 
 Example:
@@ -6132,15 +6050,15 @@ Return true if filter against any item in my array is truthy
 ```
 
 - filter function
-  
+
   The function to check against
 
 - thisArg \*
-  
+
   Object to use as this when executing filter.
 
 - Returns boolean
-  
+
   true if some item matches filter. false otherwise
 
 Example:
@@ -6163,11 +6081,11 @@ The sort() method sorts the elements of an array in place and returns the array.
 ```
 
 - \[compareFunction\] function
-  
+
   Specifies a function that defines the sort order. If omitted, the array is sorted lexicographically (in dictionary order) according to the string conversion of each element.
 
 - Returns array
-  
+
   A sorted JavaScript array
 
 ### cjs.ArrayConstraint.prototype.splice(in dex, howMany, ...elements)
@@ -6179,19 +6097,19 @@ The splice() method changes the content of an array, adding new elements while r
 ```
 
 - index number
-  
+
   Index at which to start changing the array. If greater than the length of the array, no elements will be removed.
 
 - howMany number
-  
+
   An integer indicating the number of old array elements to remove. If howMany is 0, no elements are removed. In this case, you should specify at least one new element. If howMany is greater than the number of elements left in the array starting at index, then all of the elements through the end of the array will be deleted.
 
 - ...elements \*
-  
+
   The elements to add to the array. If you don't specify any elements, splice simply removes elements from the array.
 
 - Returns array.\*
-  
+
   An array containing the removed elements. If only one element is removed, an array of one element is returned. If no elements are removed, an empty array is returned.
 
 Example:
@@ -6213,7 +6131,7 @@ Converts this array to a JavaScript array
 <a id="page-192"></a>
 
 - Returns array
-  
+
   This object as a JavaScript array
 
 Example:
@@ -6232,7 +6150,7 @@ The toString() method returns a string representing the specified array and its 
 ```
 
 - Returns string
-  
+
   A string representation of this array.
 
 ### cjs.ArrayConstraint.prototype.unshift(. ..elements)
@@ -6244,11 +6162,11 @@ The unshift() method adds one or more elements to the beginning of an array and 
 ```
 
 - ...elements \*
-  
+
   The elements to be added
 
 - Returns number
-  
+
   The new array length
 
 Example:
@@ -6290,7 +6208,7 @@ Pause binding (no updates to the attribute until resume is called)
 ```
 
 - Returns Binding
-  
+
   this
 
 ### cjs.Binding.prototype.resume()
@@ -6302,7 +6220,7 @@ Resume binding (after pause)
 ```
 
 - Returns Binding
-  
+
   this
 
 ### cjs.Binding.prototype.throttle(min\_dela y)
@@ -6314,11 +6232,11 @@ Require at least min\_delay milliseconds between setting the attribute
 ```
 
 - min\_delay number
-  
+
   The minimum number of milliseconds between updates
 
 - Returns Binding
-  
+
   this
 
 ### new cjs.CJSEvent(...)
@@ -6336,7 +6254,7 @@ Add a transition to my list of transitions that this event is attached to
 ```
 
 - transition Transition
-  
+
   The transition this event is attached to
 
 ### cjs.CJSEvent.prototype.\_fire(...events)
@@ -6348,7 +6266,7 @@ When I fire, go through every transition I'm attached to and fire it then let an
 ```
 
 - ...events \*
-  
+
   Any number of events that will be passed to the transition
 
 ### cjs.CJSEvent.prototype.\_removeTransitio n(transition)
@@ -6360,7 +6278,7 @@ Remove a transition from my list of transitions
 ```
 
 - transition Transition
-  
+
   The transition this event is attached to
 
 ### cjs.CJSEvent.prototype.guard(\[filter\])
@@ -6372,11 +6290,11 @@ Create a transition that calls filter whenever it fires to ensure that it should
 ```
 
 - \[filter\] function
-  
+
   Returns true if the event should fire and false otherwise
 
 - Returns CJSEvent
-  
+
   A new event that only fires when filter returns a truthy value
 
 <a id="page-195"></a>
@@ -6419,11 +6337,11 @@ Note: The preferred way to create a constraint is with the cjs.constraint functi
 ```
 
 - value \*
-  
+
   The initial value of the constraint or a function to compute its value
 
 - \[options\] Object
-  
+
   A set of options to control how and when the constraint's value is evaluated:
 
 ### cjs.Constraint.prototype.abs()
@@ -6437,7 +6355,7 @@ Absolute value constraint modifier
 <a id="page-196"></a>
 
 - Returns number
-  
+
   A constraint whose value is Math.abs(this.get())
 
 Example:
@@ -6455,7 +6373,7 @@ Arccosine
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.acos(this.get())
 
 Example:
@@ -6473,11 +6391,11 @@ Addition constraint modifier
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 - Returns number
-  
+
   A constraint whose value is this.get() + args\[0\].get() + args\[1\].get() + ...
 
 Example:
@@ -6505,11 +6423,11 @@ x = cjs(false); cjs.get(x.and(a)) does not evaluate a
 <a id="page-197"></a>
 
 - ...args \*
-  
+
   Any number of constraints or values to pass the "and" test
 
 - Returns cjs.Constraitnboolean,\*
-  
+
   A constraint whose value is false if this or any passed in value is falsy. Otherwise, the last value passed in.
 
 Example:
@@ -6527,7 +6445,7 @@ Arcsin
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.asin(this.get())
 
 Example:
@@ -6545,7 +6463,7 @@ Arctan
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.atan(this.get())
 
 Example:
@@ -6565,7 +6483,7 @@ Arctan2
 - x number,cjs.Constraint
 
 - Returns number
-  
+
   A constraint whose value is Math.atan2(this.get()/x.get())
 
 <a id="page-198"></a>
@@ -6585,7 +6503,7 @@ Bitwise not operator
 ```
 
 - Returns number
-  
+
   A constraint whose value is ~(this.get())
 
 Example:
@@ -6603,7 +6521,7 @@ Ceil
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.ceil(this.get())
 
 Example:
@@ -6621,7 +6539,7 @@ Cosine
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.cos(this.get())
 
 Example:
@@ -6641,11 +6559,11 @@ Removes any dependent constraint, clears this constraints options, and removes e
 ```
 
 - \[silent=false\] boolean
-  
+
   If set to true, avoids invalidating any dependent constraints.
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -6664,11 +6582,11 @@ Division constraint modifier
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 - Returns number
-  
+
   A constraint whose value is this.get() / args\[0\].get() / args\[1\].get() / ...
 
 Example:
@@ -6686,11 +6604,11 @@ Equals unary operator
 ```
 
 - other \*
-  
+
   A constraint or value to compare against
 
 - Returns boolean
-  
+
   A constraint whose value is this.get() == other.get()
 
 Example:
@@ -6708,11 +6626,11 @@ Strict equals operator
 ```
 
 - other \*
-  
+
   A constraint or value to compare against
 
 - Returns boolean
-  
+
   A constraint whose value is this.get() === other.get()
 
 Example:
@@ -6730,7 +6648,7 @@ Exp (E^x)
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.exp(this.get())
 
 Example:
@@ -6748,7 +6666,7 @@ Floor
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.floor(this.get())
 
 Example:
@@ -6768,11 +6686,11 @@ Get the current value of this constraint. For computed constraints, if the const
 ```
 
 - \[autoAddOutgoing=true\] boolean
-  
+
   Whether to automatically add a dependency from this constraint to ones that depend on it.
 
 - Returns \*
-  
+
   The current constraint value
 
 Example:
@@ -6791,15 +6709,15 @@ Inline if function: similar to the javascript a ? b : c expression
 ```
 
 - true\_val \*
-  
+
   The value to return if this is truthy
 
 - other\_val \*
-  
+
   The value to return if this is falsy
 
 - Returns cjs.Constraint
-  
+
   A constraint whose value is false if this or any passed in value is falsy. Otherwise, the last value passed in.
 
 Example:
@@ -6817,17 +6735,17 @@ Change this constraint's value in different states
 ```
 
 - fsm cjs.FSM
-  
+
   The finite-state machine to depend on
 
 - values Object
-  
+
   Keys are the state specifications for the FSM, values are the value for those specific states
 
 <a id="page-202"></a>
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -6851,11 +6769,11 @@ Object instance check modifier
 ```
 
 - other \*
-  
+
   a constraint or value to compare against
 
 - Returns boolean
-  
+
   a constraint whose value is this.get() instanceof other.get()
 
 Example:
@@ -6875,7 +6793,7 @@ An invalid constraint's value is only updated when it is next requested (for exa
 ```
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -6895,7 +6813,7 @@ An invalid constraint's value is only updated when it is next requested (for exa
 ```
 
 - Returns boolean
-  
+
   true if this constraint's current value is valid. false otherwise.
 
 Example:
@@ -6920,7 +6838,7 @@ Natural Log (base e)
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.log(this.get())
 
 Example:
@@ -6938,11 +6856,11 @@ Max
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 - Returns number
-  
+
   A constraint whose value is the highest of this.get(), args\[0\].get(), args\[1\].get()...
 
 Example:
@@ -6962,11 +6880,11 @@ Min
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 - Returns number
-  
+
   A constraint whose value is the lowest of this.get(), args\[0\].get(), args\[1\].get()...
 
 Example:
@@ -6984,11 +6902,11 @@ Multiplication constraint modifier
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 - Returns number
-  
+
   A constraint whose value is this.get() \* args\[0\].get() \* args\[1\].get() \* ...
 
 Example:
@@ -7006,7 +6924,7 @@ Negative operator
 ```
 
 - Returns number
-  
+
   A constraint whose value is -(this.get())
 
 Example:
@@ -7026,11 +6944,11 @@ Not equals operator
 ```
 
 - other \*
-  
+
   A constraint or value to compare against
 
 - Returns boolean
-  
+
   A constraint whose value is this.get() != other.get()
 
 Example:
@@ -7048,11 +6966,11 @@ Not strict equals binary operator
 ```
 
 - other \*
-  
+
   A constraint or value to compare against
 
 - Returns boolean
-  
+
   A constraint whose value is this.get() !== other.get()
 
 Example:
@@ -7070,7 +6988,7 @@ Not operator
 ```
 
 - Returns boolean
-  
+
   A constraint whose value is !(this.get())
 
 Example:
@@ -7092,11 +7010,11 @@ Removes the first listener to callback that was created by onChange. thisArg is 
 - callback function
 
 - \[thisArg\] \*
-  
+
   If specified, only remove listeners that were added with this context
 
 - Returns cjs.Constraint
-  
+
   this
 
 ```
@@ -7121,15 +7039,15 @@ Call callback as soon as this constraint's value is invalidated. Note that if th
 - callback function
 
 - \[thisArg=window\] \*
-  
+
   The context to use for callback
 
 - ...args \*
-  
+
   The first args.length arguments to callback
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -7155,11 +7073,11 @@ y = cjs(true); cjs.get(y.or(b)) does not evaluate b
 ```
 
 - ...args \*
-  
+
   Any number of constraints or values to pass the "or" test
 
 - Returns cjs.Constraint
-  
+
   A constraitn whose value is the first truthy value or false if there aren't any
 
 Example:
@@ -7177,11 +7095,11 @@ Signal that this constraint's value will be computed later. For instance, for as
 ```
 
 - temporaryValue \*
-  
+
   The temporary value to use for this node until it is resumed
 
 - Returns cjs.Constraint
-  
+
   this
 
 ### cjs.Constraint.prototype.pos()
@@ -7193,7 +7111,7 @@ Coerce an object to a number
 ```
 
 - Returns number
-  
+
   A constraint whose value is +(this.get())
 
 Example:
@@ -7211,11 +7129,11 @@ Power
 ```
 
 - x number
-  
+
   The exponent
 
 - Returns number
-  
+
   A constraint whose value is Math.pow(this.get(), x.get())
 
 <a id="page-208"></a>
@@ -7235,11 +7153,11 @@ Property constraint modifier.
 ```
 
 - ...args strings
-  
+
   Any number of properties to fetch
 
 - Returns \*
-  
+
   A constraint whose value is this\[args\[0\]\]\[args\[1\]\]...
 
 Example:
@@ -7257,11 +7175,11 @@ Removes every dependency to this node
 ```
 
 - \[silent=false\] boolean
-  
+
   If set to true, avoids invalidating any dependent constraints.
 
 - Returns cjs.Constraint
-  
+
   this
 
 ### cjs.Constraint.prototype.resumeGetter(v alue)
@@ -7273,11 +7191,11 @@ Signal that this Constraint, which has been paused with pauseGetter now has a va
 ```
 
 - value \*
-  
+
   This node's value
 
 - Returns cjs.Constraint
-  
+
   this
 
 ### cjs.Constraint.prototype.round()
@@ -7291,7 +7209,7 @@ Round
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.round(this.get())
 
 Example:
@@ -7309,15 +7227,15 @@ Change the current value of the constraint. Other constraints that depend on its
 ```
 
 - value \*
-  
+
   The initial value of the constraint or a function to compute its value
 
 - \[options\] Object
-  
+
   A set of options to control how and when the constraint's value is evaluated:
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -7342,13 +7260,13 @@ Change how this constraint is computed (see Constraint options)
 ```
 
 - options Object
-  
+
   An object with the options to change
 
 <a id="page-210"></a>
 
 - Returns cjs.Constraint
-  
+
   this
 
 Example:
@@ -7372,7 +7290,7 @@ Sine
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.sin(this.get())
 
 Example:
@@ -7390,7 +7308,7 @@ Square root
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.sqrt(this.get())
 
 Example:
@@ -7408,15 +7326,15 @@ Subtraction constraint modifier
 ```
 
 - ...args number
-  
+
   Any number of constraints or numbers
 
 <a id="page-211"></a>
 
 - Returns number
-  
+
   A constraint whose value is this.get() - args\[0\].get() -
-  
+
   args\[1\].get() - ...
 
 Example:
@@ -7434,7 +7352,7 @@ Tangent
 ```
 
 - Returns number
-  
+
   A constraint whose value is Math.tan(this.get())
 
 Example:
@@ -7452,7 +7370,7 @@ Float conversion constraint modifier.
 ```
 
 - Returns \*
-  
+
   A constraint whose value is parseFloat(this)
 
 Example:
@@ -7472,7 +7390,7 @@ Integer conversion constraint modifier.
 ```
 
 - Returns \*
-  
+
   A constrant whose value is parseInt(this)
 
 Example:
@@ -7494,11 +7412,11 @@ Object type modifier
 ```
 
 - other \*
-  
+
   a constraint or value to compare against
 
 - Returns \*
-  
+
   a constraint whose value is typeof this.get()
 
 Example:
@@ -7516,7 +7434,7 @@ Note: The preferred way to create a FSM is through the cjs.fsm function This cla
 ```
 
 - ...state\_names string
-  
+
   Any number of state names for the FSM to have
 
 ### cjs.FSM.state
@@ -7539,11 +7457,11 @@ Changes the active state of this FSM. This function should, ideally, be called b
 ```
 
 - state State,string
-  
+
   The state to transition to
 
 - transition Transition
-  
+
   The transition that ran
 
 <a id="page-213"></a>
@@ -7557,11 +7475,11 @@ Create states and set the current "chain state" to that state
 ```
 
 - ...state\_names string
-  
+
   Any number of state names to add. The last state becomes the chain state
 
 - Returns FSM
-  
+
   this
 
 Example:
@@ -7582,11 +7500,11 @@ Add a transition between two states
 ```
 
 - to\_state string
-  
+
   The name of the state the transition should go to
 
 - Returns function
-  
+
   A function that tells the transition to run
 
 ```
@@ -7594,15 +7512,15 @@ Add a transition between two states
 ```
 
 - to\_state string
-  
+
   The name of the state the transition should go to
 
 - add\_transition\_fn CJSEvent,function
-  
+
   A CJSEvent or a user-specified function for adding the event listener
 
 - Returns FSM
-  
+
   this
 
 ```
@@ -7610,19 +7528,19 @@ Add a transition between two states
 ```
 
 - from\_state string
-  
+
   The name of the state the transition should come from
 
 <a id="page-214"></a>
 
 - to\_state string
-  
+
   The name of the state the transition should
-  
+
   go to
 
 - Returns function
-  
+
   A function that tells the transition to run
 
 ```
@@ -7630,19 +7548,19 @@ Add a transition between two states
 ```
 
 - from\_state string
-  
+
   The name of the state the transition should come from
 
 - to\_state string
-  
+
   The name of the state the transition should go to
 
 - add\_transition\_fn CJSEvent,function
-  
+
   A CJSEvent or a user-specified function for adding the event listener
 
 - Returns FSM
-  
+
   this
 
 Examples:
@@ -7721,7 +7639,7 @@ Returns the name of the state this machine is currently in. Constraints that dep
 ```
 
 - Returns string
-  
+
   The name of the currently active state
 
 Example:
@@ -7740,13 +7658,13 @@ Check if the current state is state\_name
 ```
 
 - state\_name string
-  
+
   The name of the state to check against
 
 <a id="page-216"></a>
 
 - Returns boolean
-  
+
   true if the name of the active state is state\_name. false otherwise
 
 Example:
@@ -7765,11 +7683,11 @@ Remove the listener specified by an on call; pass in just the callback
 ```
 
 - callback function
-  
+
   The function to remove as a callback
 
 - Returns FSM
-  
+
   this
 
 ### cjs.FSM.prototype.on(spec, callback, \[context\])
@@ -7803,21 +7721,21 @@ Call a given function when the finite-state machine enters a given state. spec c
 ```
 
 - spec string
-  
+
   A specification of which state to call the callback
 
 <a id="page-217"></a>
 
 - callback function
-  
+
   The function to be called
 
 - \[context\] object
-  
+
   What this should evaluate to when callback is called
 
 - Returns FSM
-  
+
   this
 
 Example:
@@ -7836,11 +7754,11 @@ Specify which state this FSM should begin at.
 ```
 
 - state\_name string
-  
+
   The name of the state to start at
 
 - Returns FSM
-  
+
   this
 
 Example:
@@ -7881,7 +7799,7 @@ Options:
 ```
 
 - \[options\] Object
-  
+
   A set of options to control how the map constraint is evaluated
 
 ### cjs.MapConstraint.BREAK
@@ -7897,7 +7815,7 @@ Clear every entry of this object.
 ```
 
 - Returns cjs.MapConstraint
-  
+
   this
 
 Example:
@@ -7918,7 +7836,7 @@ Clear this object and try to clean up any memory.
 ```
 
 - \[silent=false\] boolean
-  
+
   If set to true, avoids invalidating any dependent constraints.
 
 ### cjs.MapConstraint.prototype.entries()
@@ -7932,7 +7850,7 @@ Get every key and value of this object as an array.
 ```
 
 - Returns array.object
-  
+
   A set of objects with properties key and value
 
 Example:
@@ -7952,15 +7870,15 @@ The forEach() method executes a provided function once per entry. If cjs.MapCons
 ```
 
 - callback function
-  
+
   Function to execute for each entry.
 
 - thisArg \*
-  
+
   Object to use as this when executing callback.
 
 - Returns cjs.MapConstraint
-  
+
   this
 
 Example:
@@ -7985,11 +7903,11 @@ Get the item at key (like this\[key\])
 ```
 
 - key \*
-  
+
   The entry's key
 
 - Returns \*,undefined
-  
+
   the value at that entry or undefined
 
 <a id="page-220"></a>
@@ -8010,27 +7928,27 @@ Search for a key or create it if it wasn't found
 ```
 
 - key \*
-  
+
   The key to search for.
 
 - create\_fn function
-  
+
   A function to create the value if key is not found
 
 - \[create\_fn\_context\] \*
-  
+
   The context in which to call create\_fn
 
 - \[index=this.size\] number
-  
+
   Where to place a value that is created
 
 - \[literal=false\] boolean
-  
+
   Whether to create the value as a literal constraint (the value of a function is the function)
 
 - Returns number
-  
+
   The index of the entry with key=key or -1
 
 Example:
@@ -8062,11 +7980,11 @@ Check if there is any entry with key = key
 ```
 
 - key \*
-  
+
   The key to search for.
 
 - Returns boolean
-  
+
   true if there is an entry with key=key, false otherwise.
 
 Example:
@@ -8085,11 +8003,11 @@ Get the index of the entry with key = key
 ```
 
 - key \*
-  
+
   The key to search for.
 
 - Returns number
-  
+
   The index of the entry with key=key or -1
 
 Example:
@@ -8108,7 +8026,7 @@ Check if this object has any entries
 ```
 
 - Returns boolean
-  
+
   true if there are no entries, false otherwise
 
 Example:
@@ -8129,7 +8047,7 @@ Convert my value to a standard JavaScript object. The keys are converted using t
 ```
 
 - Returns object
-  
+
   A standard JavaScript object
 
 ```
@@ -8137,11 +8055,11 @@ Convert my value to a standard JavaScript object. The keys are converted using t
 ```
 
 - key number
-  
+
   The object key
 
 - Returns \*
-  
+
   The value at index key
 
 ```
@@ -8149,15 +8067,15 @@ Convert my value to a standard JavaScript object. The keys are converted using t
 ```
 
 - key number
-  
+
   The object key
 
 - value \*
-  
+
   The new value
 
 - Returns cjs.MapConstraint
-  
+
   this
 
 Example:
@@ -8181,11 +8099,11 @@ Return a constraint whose value is bound to my value for key
 ```
 
 - key \*,Constraint
-  
+
   The array index
 
 - Returns Constraint
-  
+
   A constraint whose value is this\[key\]
 
 Example:
@@ -8209,15 +8127,15 @@ Given a value, find the corresponding key
 ```
 
 - value \*
-  
+
   The value whose key to search for
 
 - \[eq\_check\] function
-  
+
   How to check if two values are equal (default: ===
 
 - Returns \*,undefined
-  
+
   The key where this.get(key)===value
 
 Example:
@@ -8236,7 +8154,7 @@ Get the keys on this object.
 ```
 
 - Returns array.\*
-  
+
   The set of keys
 
 Example:
@@ -8255,15 +8173,15 @@ Move the entry with key key to \`index
 ```
 
 - key \*
-  
+
   The key to search for
 
 - to\_index number
-  
+
   The new index for the key
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 <a id="page-224"></a>
@@ -8286,15 +8204,15 @@ Move the entry at old\_index to index new\_index
 ```
 
 - old\_index number
-  
+
   The index to move from
 
 - new\_index number
-  
+
   The index to move to
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 Example:
@@ -8315,23 +8233,23 @@ Set the entry for key to value (this\[key\]=value)
 ```
 
 - key \*
-  
+
   The entry's key
 
 - value \*
-  
+
   The entry's value
 
 - \[index=this.size\] number
-  
+
   The entry's index
 
 - \[literal\] boolean
-  
+
   Whether to treat the value as literal
 
 - Returns cjs.MapConstraint
-  
+
   this
 
 <a id="page-225"></a>
@@ -8353,11 +8271,11 @@ Remove a key's entry (like delete this\[key\])
 ```
 
 - key \*
-  
+
   The entry's key
 
 - Returns cjs.MapConstraint
-  
+
   this
 
 Example:
@@ -8377,11 +8295,11 @@ Change the default equality check when getting a key
 ```
 
 - equality\_check function
-  
+
   The new key equality check
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 ### cjs.MapConstraint.prototype.setHash(has h)
@@ -8393,11 +8311,11 @@ Change the hash function when getting a key
 ```
 
 - hash function,string
-  
+
   The new hashing function (or a string representing a property name for every key to use as the hash)
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 <a id="page-226"></a>
@@ -8411,11 +8329,11 @@ Change the default value equality check when getting a value
 ```
 
 - vequality\_check function
-  
+
   The new value equality check
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 ### cjs.MapConstraint.prototype.setValueHas h(hash)
@@ -8427,11 +8345,11 @@ Change the hash function when getting a value
 ```
 
 - hash function,string
-  
+
   The new hashing function (or a string representing a property name for every key to use as the hash)
 
 - Returns cjs.ArrayConstraint
-  
+
   this
 
 ### cjs.MapConstraint.prototype.size()
@@ -8443,7 +8361,7 @@ Get the number of entries in this object.
 ```
 
 - Returns number
-  
+
   The number of entries
 
 Example:
@@ -8464,11 +8382,11 @@ Converts this array to a JavaScript object.
 ```
 
 - \[key\_map\_fn\] function
-  
+
   A function to convert keys
 
 - Returns object
-  
+
   This object as a JavaScript object
 
 Example:
@@ -8487,7 +8405,7 @@ Get the values on this object.
 ```
 
 - Returns array.\*
-  
+
   The set of values
 
 Example:

@@ -1,0 +1,16 @@
+{
+  "engine": "PDFium from LibreOffice system library, not the exact Chrome build",
+  "library": "/usr/lib/libreoffice/program/libpdfiumlo.so",
+  "dpi": 144,
+  "page": 1,
+  "comparisons": {
+    "croscore": {
+      "identical": false,
+      "changed_pixels": 324679
+    },
+    "mupdf-builtin": {
+      "identical": false,
+      "changed_pixels": 187229
+    }
+  }
+}

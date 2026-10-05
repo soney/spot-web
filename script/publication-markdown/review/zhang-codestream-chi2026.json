@@ -2,9 +2,9 @@
   "file": "zhang-codestream-chi2026.pdf",
   "title": "CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories",
   "publication_id": "codestream_augmenting_timelines_with_code_annotation_for_navigating_large_coding_histories_2026",
-  "pdf_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+  "pdf_sha256": "44201fdb78730ad66b923c324ee5f66cb0f96e16fd6d3f41553002ead8fb5afa",
   "markdown": "publications/zhang-codestream-chi2026.md",
-  "markdown_sha256": "58cdbfa76d99a12488a4af076c51b5c2363c010321b349a18498b9c089e1b864",
+  "markdown_sha256": "3ca1b61a75102ad97cc0ee3abf5a937297897266e52194243071e5ef662cd052",
   "pages": 16,
   "blocks": [
     {
@@ -144,22 +144,6 @@
       "characters": 475
     },
     {
-      "node": "1579:0",
-      "role": "H2",
-      "pages": [
-        2
-      ],
-      "characters": 17
-    },
-    {
-      "node": "1489:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 1129
-    },
-    {
       "node": "1656:0",
       "role": "Reference",
       "pages": [
@@ -182,6 +166,22 @@
         2
       ],
       "characters": 163
+    },
+    {
+      "node": "1579:0",
+      "role": "H2",
+      "pages": [
+        2
+      ],
+      "characters": 17
+    },
+    {
+      "node": "1489:0",
+      "role": "P",
+      "pages": [
+        2
+      ],
+      "characters": 1129
     },
     {
       "node": "1641:0",
@@ -394,7 +394,7 @@
       "characters": 1194
     },
     {
-      "node": "joined-1941:0",
+      "node": "1941:0",
       "role": "P",
       "pages": [
         4
@@ -610,14 +610,6 @@
       "characters": 598
     },
     {
-      "node": "2145:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 293
-    },
-    {
       "node": "2184:0",
       "role": "H3",
       "pages": [
@@ -685,9 +677,10 @@
       "node": "2161:0",
       "role": "P",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 685
+      "characters": 1252
     },
     {
       "node": "2127:0",
@@ -714,20 +707,12 @@
       "characters": 50
     },
     {
-      "node": "2140:0",
-      "role": "L",
-      "pages": [
-        7
-      ],
-      "characters": 715
-    },
-    {
-      "node": "2290:0",
+      "node": "2289:0",
       "role": "P",
       "pages": [
         7
       ],
-      "characters": 133
+      "characters": 219
     },
     {
       "node": "2221:0",
@@ -859,7 +844,7 @@
       "characters": 34
     },
     {
-      "node": "joined-2240:0",
+      "node": "2240:0",
       "role": "P",
       "pages": [
         9,
@@ -959,9 +944,10 @@
       "node": "2304:0",
       "role": "P",
       "pages": [
-        10
+        10,
+        11
       ],
-      "characters": 602
+      "characters": 1079
     },
     {
       "node": "2340:0",
@@ -978,14 +964,6 @@
         11
       ],
       "characters": 10870
-    },
-    {
-      "node": "2421:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 476
     },
     {
       "node": "2404:0",
@@ -1017,7 +995,7 @@
       "pages": [
         11
       ],
-      "characters": 869
+      "characters": 1241
     },
     {
       "node": "2518:0",
@@ -1034,14 +1012,6 @@
         11
       ],
       "characters": 2667
-    },
-    {
-      "node": "2595:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 371
     },
     {
       "node": "2598:0",
@@ -1215,9 +1185,10 @@
       "node": "2721:0",
       "role": "P",
       "pages": [
-        13
+        13,
+        14
       ],
-      "characters": 281
+      "characters": 358
     },
     {
       "node": "2701:0",
@@ -1234,14 +1205,6 @@
         14
       ],
       "characters": 6390
-    },
-    {
-      "node": "2937:0",
-      "role": "P",
-      "pages": [
-        14
-      ],
-      "characters": 76
     },
     {
       "node": "2938:0",
@@ -1434,7 +1397,7 @@
       "pages": [
         16
       ],
-      "characters": 5230
+      "characters": 5226
     },
     {
       "node": "3009:0",
@@ -1443,7 +1406,7 @@
         15,
         16
       ],
-      "characters": 14100
+      "characters": 14038
     }
   ],
   "tagged_content_items": 1845,
@@ -1764,13 +1727,13 @@
   ],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 131,
-    "line_wrap_hyphens_retained": 31,
-    "paragraph_fragments_joined": 8,
+    "line_wrap_hyphens_removed": 114,
+    "line_wrap_hyphens_retained": 30,
+    "paragraph_fragments_joined": 5,
     "reviewed_wrap_repairs": 1,
     "script_runs_positioned": 20
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-codestream-chi2026.json.gz",
-  "source_tags_sha256": "66812ffa6b9dbfd0aa1c510b801997781ec3f46a35cf3bd9ddada3e32f33b539"
+  "source_tags_sha256": "4408d12b8cabee915895f9c96cb7e20beed5cee4f67788431b0d87635ddfe1fc"
 }

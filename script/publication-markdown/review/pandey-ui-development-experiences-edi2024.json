@@ -2,9 +2,9 @@
   "file": "pandey-ui-development-experiences-edi2024.pdf",
   "title": "UI Development Experiences of Programmers with Visual Impairments in Product Teams",
   "publication_id": "ui_development_in_mixed_ability_software_engineering_teams_2023",
-  "pdf_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+  "pdf_sha256": "12ca2d59d975f48e9d9034610834f69abd2059eb6065a9bd716619f42b53eabd",
   "markdown": "publications/pandey-ui-development-experiences-edi2024.md",
-  "markdown_sha256": "b1755313fcb968994c8715aee9ee2f989f2e5a01905e25609aab2e2254efd803",
+  "markdown_sha256": "e2d3b69e3d7fd20d669ef9c09bb3cadb1a6a57d70dd99f5d982efb091bdca2c5",
   "pages": 13,
   "blocks": [
     {
@@ -606,5 +606,5 @@
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-ui-development-experiences-edi2024.json.gz",
-  "source_tags_sha256": "b313feea54195db2117c483e8009734a60b22e3e42bf053bd46b7c5603b8ac57"
+  "source_tags_sha256": "8f763b760b3abaf067b55aa2af025c00ba456b2285cd2a9aa4d029de0cf3079e"
 }

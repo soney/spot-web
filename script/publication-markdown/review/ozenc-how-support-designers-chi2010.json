@@ -2,9 +2,9 @@
   "file": "ozenc-how-support-designers-chi2010.pdf",
   "title": "How to Support Designers in Getting Hold of the Immaterial Material of Software",
   "publication_id": "how_to_support_designers_in_getting_hold_of_the_immaterial_material_of_software_2010",
-  "pdf_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+  "pdf_sha256": "eb98a219f13704f07488fcfc65192d2a9756db46133f80f2607bf15986c234a9",
   "markdown": "publications/ozenc-how-support-designers-chi2010.md",
-  "markdown_sha256": "ecb5b50b29ef092b5f8d22edc3ab6bb5206f6316d73f0f10e365b67f30a4cd61",
+  "markdown_sha256": "d798503c77df845d68131e1a44df400e26127fbbd113ca81a86c7f3f86a20075",
   "pages": 10,
   "blocks": [
     {
@@ -41,11 +41,11 @@
     },
     {
       "node": "76:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 106
+      "characters": 108
     },
     {
       "node": "81:0",
@@ -112,7 +112,7 @@
       "characters": 15
     },
     {
-      "node": "joined-75:0",
+      "node": "75:0",
       "role": "P",
       "pages": [
         1
@@ -136,7 +136,7 @@
       "characters": 345
     },
     {
-      "node": "joined-123:0",
+      "node": "123:0",
       "role": "P",
       "pages": [
         1,
@@ -391,7 +391,7 @@
       "pages": [
         4
       ],
-      "characters": 267
+      "characters": 427
     },
     {
       "node": "188:0",
@@ -623,7 +623,7 @@
       "pages": [
         6
       ],
-      "characters": 372
+      "characters": 447
     },
     {
       "node": "333:0",
@@ -1091,7 +1091,7 @@
       ],
       "sha256": "202ba0cedc06171a719f6aa48c81d1fa5d8cd8d334d7333082d0885edbc88375",
       "kind": "figure",
-      "alt": "Figure 1. Drawings of Team Radio: Notice this exploratory sketch shows the context of use and not simply the systems interface. Note that most tools force designers to focus exclusively on the GUI"
+      "alt": "Hand-drawn concept for a foot-controlled collaborative music selector. Two people lie in bed with control strips near their feet. Annotations propose moving a foot left or right to scroll options and pointing or tapping to select. The controls include genre, station and song choices, illustrating how a couple might choose music without using their hands."
     },
     {
       "path": "figures/ozenc-how-support-designers-chi2010/figure-002-p006.png",
@@ -1105,7 +1105,7 @@
       ],
       "sha256": "2ec1e69f2b19027429f6a442a14c79e0f4dab6a4c980f7a23f2286868d6f0340",
       "kind": "figure",
-      "alt": "Figure 2: wireframe used-car shopping interface. A large car preview sits above a horizontal timeline of earlier and later models; sliding along the timeline changes the car year. Controls beside the car select additional attributes. The design was used as a novel control for the refinement workshop."
+      "alt": "Used-car shopping interface mockup. A car preview occupies the center above a pale gray timeline with owner and maintenance markers; reviews appear on the left. A yellow strip beneath the timeline contains small car-view controls for inspecting the vehicle from different angles. The timeline presents the car’s repair history, supporting inspection of its condition and wear."
     },
     {
       "path": "figures/ozenc-how-support-designers-chi2010/figure-003-p006.png",
@@ -1126,13 +1126,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "paragraph_fragments_joined": 9,
-    "line_wrap_hyphens_removed": 429,
-    "reviewed_wrap_repairs": 4,
+    "paragraph_fragments_joined": 7,
+    "line_wrap_hyphens_removed": 419,
     "line_wrap_hyphens_retained": 7,
+    "reviewed_wrap_repairs": 3,
     "script_runs_positioned": 8
   },
   "review_notes": [],
   "source_tags": "source-tags/ozenc-how-support-designers-chi2010.json.gz",
-  "source_tags_sha256": "cde2631da18cc65764a785e72aabc7c0a383e2823c1a326c8c515889604b5a46"
+  "source_tags_sha256": "3d27d363b665f5a93d7d9f7262b25368ed87ec3a6f10ad0ff98b463aee799f76"
 }

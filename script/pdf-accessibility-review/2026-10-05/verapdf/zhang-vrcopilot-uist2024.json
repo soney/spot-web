@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/zhang-vrcopilot-uist2024.pdf",
+          "size": 18790578
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 390062,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231600790,
+          "finish": 1791231604158,
+          "duration": "00:00:03.368",
+          "difference": 3368
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231600698,
+        "finish": 1791231604229,
+        "duration": "00:00:03.531",
+        "difference": 3531
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "totalJobCount": 1,
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "totalJobCount": 0,
+        "failedJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "totalJobCount": 0,
+        "failedJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "zhang-vrcopilot-uist2024.pdf",
+  "pdf_sha256": "1dae0fb483e47a7a2d1a4e9d291b3dd1e361d5cb6e7f857908a3f4ccdb51422b",
+  "stderr": ""
+}

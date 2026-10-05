@@ -2,9 +2,9 @@
   "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
   "title": "Exploring the Tracking Needs and Practices of  Recreational Athletes.",
   "publication_id": "exploring_the_tracking_needs_and_practices_of_recreational_athletes_2019",
-  "pdf_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+  "pdf_sha256": "bb2ad734aea69e9a413ee2ff16dc6ad8baf61b750d3a23e91bf28b1382d038ab",
   "markdown": "publications/pandey-exploring-tracking-needs-pervasivehealth2019.md",
-  "markdown_sha256": "229b8e908ff0912427381f29f7304db7ee2524810c7dfce24c2b369db11fe775",
+  "markdown_sha256": "fa641a31e8bd72fda7101d7ac35d12848c99ef6ac035ed57603762fa99d47b64",
   "pages": 4,
   "blocks": [
     {
@@ -40,20 +40,20 @@
       "characters": 44
     },
     {
-      "node": "178:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 123
-    },
-    {
       "node": "187:0",
       "role": "Note",
       "pages": [
         1
       ],
       "characters": 634
+    },
+    {
+      "node": "178:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 125
     },
     {
       "node": "169:0",
@@ -104,6 +104,14 @@
       "characters": 60
     },
     {
+      "node": "179:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
       "node": "175:0",
       "role": "H2",
       "pages": [
@@ -126,14 +134,6 @@
         1
       ],
       "characters": 447
-    },
-    {
-      "node": "179:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 84
     },
     {
       "node": "180:0",
@@ -208,7 +208,7 @@
       "characters": 31
     },
     {
-      "node": "joined-211:0",
+      "node": "211:0",
       "role": "P",
       "pages": [
         1,
@@ -273,7 +273,7 @@
       "characters": 475
     },
     {
-      "node": "joined-240:0",
+      "node": "240:0",
       "role": "P",
       "pages": [
         2
@@ -332,17 +332,10 @@
       "node": "248:0",
       "role": "P",
       "pages": [
-        2
-      ],
-      "characters": 129
-    },
-    {
-      "node": "joined-253:0",
-      "role": "P",
-      "pages": [
+        2,
         3
       ],
-      "characters": 301
+      "characters": 367
     },
     {
       "node": "255:0",
@@ -457,7 +450,7 @@
       "characters": 57
     },
     {
-      "node": "joined-284:0",
+      "node": "284:0",
       "role": "P",
       "pages": [
         3,
@@ -522,7 +515,7 @@
       "characters": 7751
     }
   ],
-  "tagged_content_items": 4304,
+  "tagged_content_items": 4296,
   "all_tagged_content_accounted_for_once": true,
   "assets": [],
   "tables": [
@@ -548,11 +541,10 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 80,
-    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_removed": 66,
     "line_wrap_hyphens_retained": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-exploring-tracking-needs-pervasivehealth2019.json.gz",
-  "source_tags_sha256": "c9bd23d7ffed889f82404ddf2ed0bdd5aac70fc3a8edf77c60cdb86e54c9b8dd"
+  "source_tags_sha256": "18ded06e2fd100c479930da3258e71995f37d1c33de5f6dee61ecd133bd17d81"
 }

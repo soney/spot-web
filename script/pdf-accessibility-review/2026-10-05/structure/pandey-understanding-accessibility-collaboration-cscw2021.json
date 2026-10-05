@@ -1,0 +1,419 @@
+{
+  "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+  "pdf_sha256": "7765e40de31c1cb9ece60bd768413ed08cd73dc3a7e5a342effa738a73907bb8",
+  "normalization_warnings": "",
+  "page_count": 30,
+  "language": "en-US",
+  "title": "Understanding Accessibility and Collaboration in Programming for People with Visual Impairments",
+  "structure_elements": 998,
+  "roles": {
+    "Part": 1,
+    "H1": 1,
+    "P": 210,
+    "Span": 159,
+    "Link": 256,
+    "Sect": 12,
+    "H2": 9,
+    "L": 1,
+    "LI": 3,
+    "Lbl": 3,
+    "LBody": 3,
+    "Note": 15,
+    "H3": 12,
+    "Div": 17,
+    "H4": 12,
+    "Quote": 39,
+    "Table": 3,
+    "THead": 3,
+    "TR": 26,
+    "TH": 47,
+    "TBody": 3,
+    "TD": 161,
+    "Caption": 2
+  },
+  "structure_content_references": 2021,
+  "parent_tree_entries": 286,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 276,
+      "text_operations_tagged": 1082,
+      "link_annotations": 20
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 240,
+      "text_operations_tagged": 1066,
+      "link_annotations": 6
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 264,
+      "text_operations_tagged": 1254,
+      "link_annotations": 29
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 1406,
+      "text_operations_tagged": 1241,
+      "link_annotations": 30
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 1288,
+      "text_operations_tagged": 1223,
+      "link_annotations": 36
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 218,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1114,
+      "link_annotations": 6
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 1253,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1151,
+      "link_annotations": 17
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 176,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1306,
+      "link_annotations": 2
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 1488,
+      "text_operations_tagged": 1250
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 1282,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1159,
+      "link_annotations": 8
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 1377,
+      "text_operations_tagged": 1238,
+      "link_annotations": 2
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 174,
+      "text_operations_tagged": 1256,
+      "link_annotations": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 1325,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1205,
+      "link_annotations": 7
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 1402,
+      "text_operations_tagged": 1325,
+      "link_annotations": 2
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 196,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1356,
+      "link_annotations": 2
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 164,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1181,
+      "link_annotations": 4
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 216,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1195,
+      "link_annotations": 1
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 1342,
+      "vector_operations_artifact": 1,
+      "text_operations_tagged": 1257,
+      "link_annotations": 2
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 1395,
+      "text_operations_tagged": 1091,
+      "link_annotations": 5
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 1356,
+      "text_operations_tagged": 1270,
+      "link_annotations": 9
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 276,
+      "text_operations_tagged": 1258,
+      "link_annotations": 11
+    },
+    {
+      "page": 22,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 218,
+      "text_operations_tagged": 1129,
+      "link_annotations": 12
+    },
+    {
+      "page": 23,
+      "text_operations_artifact": 218,
+      "text_operations_tagged": 946,
+      "link_annotations": 8
+    },
+    {
+      "page": 24,
+      "vector_operations_artifact": 12,
+      "text_operations_artifact": 602,
+      "text_operations_tagged": 239,
+      "link_annotations": 1
+    },
+    {
+      "page": 25,
+      "vector_operations_artifact": 13,
+      "text_operations_artifact": 651,
+      "text_operations_tagged": 196
+    },
+    {
+      "page": 26,
+      "vector_operations_artifact": 33,
+      "text_operations_artifact": 738,
+      "text_operations_tagged": 434,
+      "link_annotations": 5
+    },
+    {
+      "page": 27,
+      "vector_operations_artifact": 345,
+      "text_operations_artifact": 340,
+      "text_operations_tagged": 1500,
+      "link_annotations": 9
+    },
+    {
+      "page": 28,
+      "vector_operations_artifact": 342,
+      "text_operations_artifact": 328,
+      "text_operations_tagged": 1383,
+      "link_annotations": 7
+    },
+    {
+      "page": 29,
+      "vector_operations_artifact": 301,
+      "text_operations_artifact": 338,
+      "text_operations_tagged": 1481,
+      "link_annotations": 10
+    },
+    {
+      "page": 30,
+      "text_operations_artifact": 188,
+      "vector_operations_artifact": 133,
+      "text_operations_tagged": 875,
+      "link_annotations": 4
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "364:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "371:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "836:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "902:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "877:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "841:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "931:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "933:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1032:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "960:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "961:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "965:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "970:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "938:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "941:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1034:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "1321:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "1240:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1324:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "1327:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1329:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1436:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1438:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1341:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "1055:0",
+      "page": 19
+    },
+    {
+      "level": 3,
+      "element": "1057:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1131:0",
+      "page": 19
+    },
+    {
+      "level": 4,
+      "element": "1133:0",
+      "page": 20
+    },
+    {
+      "level": 3,
+      "element": "1065:0",
+      "page": 21
+    },
+    {
+      "level": 3,
+      "element": "1154:0",
+      "page": 23
+    },
+    {
+      "level": 2,
+      "element": "1149:0",
+      "page": 23
+    },
+    {
+      "level": 2,
+      "element": "1151:0",
+      "page": 23
+    },
+    {
+      "level": 2,
+      "element": "1162:0",
+      "page": 24
+    },
+    {
+      "level": 2,
+      "element": "1548:0",
+      "page": 26
+    }
+  ],
+  "figure_descriptions": [],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

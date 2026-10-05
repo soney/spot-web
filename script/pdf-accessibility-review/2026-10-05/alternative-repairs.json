@@ -1,0 +1,709 @@
+[
+  {
+    "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "before_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+    "after_sha256": "5967c1c2a052f68781284c72b7b5ea57769759b79dc9de4ea761e12914688d92",
+    "changes": [
+      {
+        "node": "1881:0",
+        "page": 21,
+        "before": "Figure 1.3 An illustration of a basic InterState object, named draggable. Properties, which control \ndraggable’s display, are represented as rows (e.g. x, y, and fill). States and transitions \nare represented as columns (e.g. no_drag, drag, and drag_lock). An entry in a property’s \nrow for a particular state specifies a constraint that controls that property’s value in that \nstate. Chapter 4 further describes this example. ",
+        "after": "InterState drag-lock editor. The no_drag state enters drag on mouse down and drag returns on mouse up. A double-click enters drag_lock; a single click exits it. In drag and drag_lock, x and y follow mouse coordinates. Fill changes from black in no_drag to blue in drag and navy in drag_lock. Rows are properties and columns give values for each state or transition.",
+        "reason": "Caption-style description omits the concrete state transitions and feedback shown."
+      },
+      {
+        "node": "2157:0",
+        "page": 50,
+        "before": "Figure 3.5 The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are \nconstraints that don’t have a value until after some delay period, e.g. data returned from \nnetwork or file system queries. While the constraint is waiting for a value, the FSM is in the \n“Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there \nis an error or the request times out, it enters the “Rejected” state. ",
+        "after": "State machine for an asynchronous value: Pending transitions to Resolved when loading succeeds and Rejected on error. A refresh event from either Resolved or Rejected returns to Pending to begin another request.",
+        "reason": "The existing description omits the refresh paths that make the asynchronous state machine reusable."
+      },
+      {
+        "node": "2380:0",
+        "page": 72,
+        "before": "Two InterState objects each change from noclick to clicked on the same mouse click. In obj1, x changes from 1 to 3. In obj2, a transition expression reads obj1.x before the state change takes effect, obtaining 1, while its clicked-state value is 2. The example illustrates simultaneous event semantics instead of order-dependent callbacks.",
+        "after": "Two InterState objects transition from noclick to clicked on mouse.click(). In obj1, x is 1 in noclick,2 during the transition, and 3 in clicked. obj2 sets x from obj1.x during the same transition, obtaining 2; that value remains 2 after obj1 reaches 3. The example illustrates simultaneous transition evaluation.",
+        "reason": "Current alt says the dependent object reads1 during the transition, but the visible transition value and prose establish2."
+      },
+      {
+        "node": "2444:0",
+        "page": 79,
+        "before": "Revised InterState state-machine layout. Compact rectangular state boxes sit above property columns. Transition arrows share the space above the states, reducing their horizontal footprint. The current state and active values are highlighted in green.",
+        "after": "Optimized InterState state-machine layout for my_behavior. Top-level states are inactive and active; active contains out and hover, connected by mouse.over and mouse.out transitions. active.out is narrower because it defines no property value; active.hover has x=true while inactive has x=false. Columns are reserved for transition starting points and defined values to save horizontal space. The current inactive state and value are outlined green.",
+        "reason": "Description focuses on box shape, missing the nested state relationships and reason columns differ in width."
+      },
+      {
+        "node": "2483:0",
+        "page": 84,
+        "before": "An object that inherits from both draggable and selectable behaviors. Note that the \ndefinitions for the color property are inherited from draggable ('red') and selectable\n('blue').",
+        "after": "my_selectable_draggable combines the selectable and draggable state machines. The fill property inherits blue for selection and black/red for the dragging states. The combined object retains both sets of states and inherits x/y values that follow the mouse while dragging. When definitions conflict, the leftmost prototype takes precedence, as explained in the surrounding text.",
+        "reason": "The screenshot property is named fill, and the two inherited state machines and competing values are the important information."
+      },
+      {
+        "node": "2531:0",
+        "page": 89,
+        "before": "Figure 4.17 Syntax and runtime errors are highlighted in the editor but do not prevent the program from \nrunning. Fields with errors and other fields that depend on them are given the value \nundefined. ",
+        "after": "InterState displays a red error for x=other_shape.x+5. The tooltip reads Could not find field other_shape, and the evaluated value is undefined. Dependent values also become undefined while the rest of the program continues running.",
+        "reason": "Generic error-handling caption omits the concrete error and resulting value shown."
+      }
+    ]
+  },
+  {
+    "file": "zhang-multi-click-uist2025.pdf",
+    "before_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+    "after_sha256": "3bb8524367198b6b862d91ff8375d7eb32b1be4126841173d3c6a67daec01002",
+    "changes": [
+      {
+        "node": "1255:0",
+        "page": 6,
+        "before": "Three grouped bar charts compare average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test.",
+        "after": "A grouped bar chart compares average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test.",
+        "reason": "The numbers/trends are correct, but this is one grouped chart, not three separate charts."
+      }
+    ]
+  },
+  {
+    "file": "zhang-vrcopilot-uist2024.pdf",
+    "before_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+    "after_sha256": "c655678821de5bf7040d2f55b98289e216575030ef254d4865d88602cfa02d7b",
+    "changes": [
+      {
+        "node": "262:0",
+        "page": 4,
+        "before": "Figure 2 shows the user interfaces in VRCopilot including (a) a palette menu where users can select and furniture from the catalog, and (b) a multi-workspace visualization that allows users to work and switch between multiple versions.",
+        "after": "VRCopilot interfaces. At left, a palette menu offers furniture categories and catalog items for selection. At right, miniature room workspaces represent alternative versions; highlighting indicates the current workspace and users can switch among versions.",
+        "reason": "Alt has an incomplete phrase and can state what the two interfaces show."
+      },
+      {
+        "node": "385:0",
+        "page": 6,
+        "before": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, and retain the completed room.",
+        "after": "Figure 3. Three five-step workflows for furnishing a bedroom. Manual creation: request a bed at a pointed location, choose a suggested bed, request a nightstand, choose it, and place it beside the bed. Automatic creation: request room furniture, review a generated room, delete an unwanted item, inspect the reduced layout, then add or adjust furniture. Scaffolded creation: generate floor-plan wireframes, label a selected region as a bed, turn labeled wireframes into furniture, adjust the arrangement, then switch back to wireframes to explore another layout.",
+        "reason": "Last scaffolded panel returns to wireframes to support another layout, rather than retaining the finished room."
+      },
+      {
+        "node": "446:0",
+        "page": 8,
+        "before": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a desk sits diagonally near the bottom-left corner.",
+        "after": "Figure 5d. P13 used generative AI for all rooms. The two upper bedrooms and lower living area have varied furniture. In the lower area, a sofa and round table are at left, a long dining table occupies the center-right, and a separate furnishing is placed diagonally near the bottom-left corner.",
+        "reason": "The diagonal lower-left furnishing is not clearly a desk; remove the unsupported specific identification."
+      }
+    ]
+  },
+  {
+    "file": "wang-puzzleme-cscw2021.pdf",
+    "before_sha256": "aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe",
+    "after_sha256": "5ce3dcd475786865461a38b193ef5bd6bd97a256c29aa1ab092b34c700b7a5de",
+    "changes": [
+      {
+        "node": "1110:0",
+        "page": 13,
+        "before": "Three test cases for alphabetically sorting names. Score0 reuses Alice, Bob, Charlie but asserts an incorrect order, Charlie, Alice, Bob. Score1 keeps those input names and checks that the output length matches the input length. Score2 supplies new names Alice, Bob, Mark and checks the correctly sorted output Alice, Bob, Mark. The caption defines the three scoring levels.",
+        "after": "Three test cases illustrate quality scores 0, 1, 2. Score 0 uses names Alice, Bob, Charlie and asserts the order Charlie, Alice, Bob. Score 1 uses the same input and checks len(names_sorted[0]) > len(names_sorted[1]), comparing the lengths of the first two output strings. Score 2 changes the input to Alice, Bob, Mark and asserts Alice, Mark, Bob. The caption describes alphabetical sorting, but the displayed Score 2 expected order is Alice, Mark, Bob; this source inconsistency is retained.",
+        "reason": "Score1 and Score2 were described incorrectly; the replacement preserves the visible source inconsistency instead of silently correcting it."
+      }
+    ]
+  },
+  {
+    "file": "oney-constraintjs-uist2012.pdf",
+    "before_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+    "after_sha256": "149832d19fc0515a53a690201e885f310071a0dcf4eca4017c29178a8fd99576",
+    "changes": [
+      {
+        "node": "415:0",
+        "page": 6,
+        "before": "Figure 4: (Left) An illustration of an interactive behavior where hov-\nering over one block highlights the other block. (Right) the FSM used\nby both blocks to track their state. ",
+        "after": "Two views of a black block show yellow hover feedback. The state machine starts in idle, changes to myhover on mouseover, and returns to idle on mouseout. The block is black in idle and yellow in myhover.",
+        "reason": "The caption alone omits directional transition labels."
+      },
+      {
+        "node": "426:0",
+        "page": 7,
+        "before": "Figure 5: The FSM of asynchronous constraints in ConstraintJS.\nAsynchronous constraints are constraints that don’t have a value\nuntil after some delay period, e.g. data returned from network or file\nsystem queries. While the constraint is waiting for a value, the FSM\nis in the “Pending” state. When it successfully receives a value, it\nenters the “Resolved” state. If there is an error or the request times\nout, it enters the “Rejected” state. ",
+        "after": "Asynchronous-value state machine: Pending transitions to Resolved on success and Rejected on error. A refresh event returns Rejected to Pending for another request.",
+        "reason": "State overview omits the visible retry path; unlike the later thesis version this image shows refresh from Rejected only."
+      }
+    ]
+  },
+  {
+    "file": "wang-callisto-chi2020.pdf",
+    "before_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+    "after_sha256": "387a8b6bba4ebb551e488b4e3049a50865b8e5580fb79e7a4aebc67eac5f448a",
+    "changes": [
+      {
+        "node": "909:0",
+        "page": 6,
+        "before": "Filter Mode. When filter mode is enabled, it only displays messages and edits that are marked as relevant to the selected cell.",
+        "after": "Callisto filter mode highlights the selected notebook cell, associated edits in the left changelog, and related messages in the right chat in pale yellow. The example selects a GrLivArea-versus-SalePrice scatterplot and conversation about outliers, connecting the relevant context across the panes.",
+        "reason": "Caption-only alt does not explain the highlighted relationship across panes."
+      },
+      {
+        "node": "1340:0",
+        "page": 7,
+        "before": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output.",
+        "after": "Diff View. Code differences (see A) and output differences (see B) are highlighted in a diff view. The new and old outputs are overlapped for comparison: hovering the mouse over the output will highlight the difference in purple and pink; the slider underneath controls the transparency between new and old output. The example changes a SalePrice distribution plot to a log-transformed distribution: the original is strongly right-skewed and the transformed output is more nearly bell-shaped.",
+        "reason": "Controls are described, but the concrete before/after visual change is omitted."
+      }
+    ]
+  },
+  {
+    "file": "zhang-cflow-ls2024.pdf",
+    "before_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "after_sha256": "e0137a7e201072ab754b1ada25b6ed6b87d5fc8ab5e1081f74a9b5bb5700928f",
+    "changes": [
+      {
+        "node": "782:0",
+        "page": 5,
+        "before": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic\naggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV\n(b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The\nvisualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the\nselected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of\ntypes of errors within that group (k), and detailed solutions with context-aware highlighting (h).",
+        "after": "Figure 2: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h). The correctness scale runs from green for all correct to red for none correct, so selecting a flow group also reveals the distribution of correctness within that group.",
+        "reason": "The existing walkthrough omits the visual correctness scale needed to interpret the histogram."
+      },
+      {
+        "node": "818:0",
+        "page": 6,
+        "before": "Figure 3: CFlow’s algorithm. To generate the results required in CFlow’s user interface, CFlow’s algorithm include four primary\nstages: (1) identifying and tagging the steps required to solve a problem, (2) grouping and aligning lines of code across code\nsamples, (3) identifying semantic, syntactic, and runtime errors, and (4) clustering the grouped results.",
+        "after": "CFlow algorithm pipeline. Code lines are normalized and represented with CodeBERT vectors to identify semantic groups and tags. Common tag order in correct solutions forms a canonical progression; lines are aligned to it using longest common subsequences. An LLM labels lines as correct or as semantic, syntax, or runtime errors. Finer CodeBERT clustering within semantic groups combines with correctness labels to populate the aggregated flow and histogram views.",
+        "reason": "Generic stage names omit the algorithmic relationships and intermediate representations visible in the diagram."
+      },
+      {
+        "node": "648:0",
+        "page": 10,
+        "before": "Figure 4: An example of how CFlow looks like without LLM\ndetermining line correctness. (a) is a collection of code lines\nthat check the end of a word, and (b) is the correctness his-\ntogram. Upon selecting the prominent red block (c), users\ncan view an example that incorrectly check the end of a word\n(d). By clicking on “LogicalError” (e), users are then able to\nexplore detailed solutions (f).",
+        "after": "CFlow example without LLM line-correctness classification. Selecting the prominent red histogram group reveals a condition that tests whether e occurs anywhere in a word, using e in word, instead of whether its last character is e, using word[-1] == e. Choosing LogicalError opens the full solution and highlights the faulty condition in the code that appends d or ed to words.",
+        "reason": "Caption identifies an error but omits the highlighted faulty condition that explains it."
+      }
+    ]
+  },
+  {
+    "file": "chen-codeon-chi2017.pdf",
+    "before_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+    "after_sha256": "87f3b95a64e8967938baeda7608cff0f1903f92715f828681253f58f943c2b02",
+    "changes": [
+      {
+        "node": "751:0",
+        "page": 7,
+        "before": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. An arrow points from the Codeon result to the baseline comparison. The paired t-test reports p = 0.03.",
+        "after": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. A greater-than sign emphasizes that more tasks were completed with Codeon. The paired t-test reports p = 0.03.",
+        "reason": "Comparison uses a greater-than symbol, not the arrow described."
+      }
+    ]
+  },
+  {
+    "file": "zhang-runex-vlhcc2023.pdf",
+    "before_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+    "after_sha256": "ad0e68b8dacbebc6180bef7caf4fc37edd04eb7b7f4cb508a9515dd40ac52651",
+    "changes": [
+      {
+        "node": "429:0",
+        "page": 5,
+        "before": "Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2)\nChaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted.",
+        "after": "RunEx query interface. Selecting code tokens creates generalized patterns. Filters can constrain runtime values, such as type(v) is str, and variable names, such as len(n)>2. Queries can be combined using set operations, including complementing a selected loop pattern, and nested to find constructs such as iteration over set(v0). The two result panels show matching code with the corresponding expressions highlighted.",
+        "reason": "Generic three-step caption does not convey the concrete query refinements demonstrated."
+      }
+    ]
+  },
+  {
+    "file": "arab-co-advisor-vlhcc2025.pdf",
+    "before_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+    "after_sha256": "f6c2ba22fef7762ac8c2f8a6908e30775f00489db1eefe5e061a428d7ce64cbb",
+    "changes": [
+      {
+        "node": "443:0",
+        "page": 5,
+        "before": "Fig. 3. Co-Advisor provides feedback (A, D) if the user performs the wrong\naction by making the wrong decision (B) or inserting the wrong value (C)",
+        "after": "Figure 3. Co-Advisor flags two incorrect actions while following the ErrorMessage strategy. At the decision about more than one error message, choosing True triggers a warning that the traceback describes one ValueError, so False is appropriate. Entering line 55 triggers a second warning identifying line 45 as the failing randrange call and explaining that the start value exceeds the stop value. Callouts A and D mark the warnings, B the True/False choice, and C the entered line number.",
+        "reason": "Caption repeats only generic feedback function and omits what the two concrete examples show."
+      },
+      {
+        "node": "612:0",
+        "page": 9,
+        "before": "Figure 6. Percentage of total task time spent learning or using the debugging strategy, by participant and condition. Co-Advisor is 100 percent for every participant except P8, approximately 47 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant.",
+        "after": "Figure 6. Grouped bars plot percentage of total task time spent learning or using the debugging strategy for participants P1–P14. Co-Advisor is 100 percent except P8, approximately 47 percent, and P10, approximately 87 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant.",
+        "reason": "The existing alternative incorrectly states that P8 is the only Co-Advisor bar below 100 percent. P10 is also below 100."
+      }
+    ]
+  },
+  {
+    "file": "oney-edbooks-preprint2024.pdf",
+    "before_sha256": "47d108a17d438a47343048fe1fccce347dcd1595862ba259f1827433ef269b31",
+    "after_sha256": "23f8ff42416fa98e0daae3b87bcfa1edbc36842e1a934058f8bafe2680f79932",
+    "changes": [
+      {
+        "node": "915:0",
+        "page": 9,
+        "before": "Fig. 4. Warning labels are added to any cells that contain un-\nverified LLM-generated content.",
+        "after": "Figure 4. An EDBook dialog cell answers why JavaScript has its name. A warning triangle and text below the response say, “This cell contains AI-generated content that has not been verified,” distinguishing this answer from verified course content.",
+        "reason": "Generic caption-only text omits the concrete warning label and example shown."
+      },
+      {
+        "node": "922:0",
+        "page": 9,
+        "before": "Fig. 5. Instructors can work with larger codebases that change\nover time. Readers can see these incremental code edits, as diffs.",
+        "after": "Figure 5. A dialog message introduces clearing the current cache with the _write_to_file function and notes edits to file_1.py and file_2.py. A side-by-side code diff shows the earlier file on the left and the new version on the right, with a newly added clear_cache function highlighted in green.",
+        "reason": "Caption-only alternative does not describe the displayed before/after code change."
+      }
+    ]
+  },
+  {
+    "file": "zhang-vizprog-chi2023.pdf",
+    "before_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+    "after_sha256": "8022c2aad14a2bac394ff397117f7225261312de1ab803e4abeb84c5c63a99fc",
+    "changes": [
+      {
+        "node": "759:0",
+        "page": 5,
+        "before": "Figure 1: VizProg’s User Interface. There are three main view panels: the overall class progress 2D map view (1), a solution-\ncentered view (4), and a progress detailed view (5). On the 2D map view, each dot represents a student’s submission, each line\nbetween two dots indicates the edit movement. The x-axis encodes the size of a code edit to be proportional to the distance (2),\nand the y-axis represents different kinds of solutions for this exercise (3).",
+        "after": "Figure 1. VizProg has a class-progress map on the left, a solution-centered panel in the middle, and detailed progress/error information on the right. Map dots are orange for incorrect current submissions, blue for correct submissions, and gray for past versions; lines connect consecutive edits, and gray rectangles group a solution. Horizontal distance reflects edit distance, with progress toward correct solutions on the right; vertical position separates kinds of solutions. The middle panel lists students and their submitted code, while the right panel groups errors and highlights related code.",
+        "reason": "Existing description gives axes and panels but omits the legend and the meaningful relationship of correct solutions at the right edge."
+      }
+    ]
+  },
+  {
+    "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+    "before_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+    "after_sha256": "3782daf68a2bc19df120fbdf893581f09aa5dd725517a76f90c05f7d70629dc0",
+    "changes": [
+      {
+        "node": "160:0",
+        "page": 1,
+        "before": "Figure 1: An illustration of a two-finger swipe-right gesture \nimplemented with touch groups and cross events. Touch \ngroups summarize properties of groups of touch events that \nmove in synchrony. Cross events fire when a touch group \ncrosses a given path. In this gesture, a 'twoFin-\ngerRightSwipe' event fires after a two-finger touch group \ncrosses a path 10 pixels to the right of where the touch group ",
+        "after": "Figure 1. A two-finger touch group moves right from its starting position. Its center crosses a vertical dashed path at touchGroup.startX + 10 pixels, triggering a cross event that emits twoFingerRightSwipe. The diagram contrasts the dashed starting hand with the solid current hand and marks the crossing point.",
+        "reason": "Current alternative terminates mid-sentence and breaks the event name."
+      },
+      {
+        "node": "439:0",
+        "page": 7,
+        "before": "Figure 6: Participants were given the code for a multi-touch \nbehavior. In this example, the code implements a “tap” ges-\nture. To gauge their understanding of the code, they were \nasked to select which behavior that code implemented, from \nthe four choices at the bottom. Participants were given ten \nbehaviors in one implementation (either touch* or touch \ngroups/cross events) and then ten using the other imple-\nmentation. We randomized the implemented behaviors, \nmultiple choice options, and multiple-choice ordering. ",
+        "after": "Figure 6. A tap recognizer written with low-level touch events. touchstart stores the first changed touch, its identifier and starting coordinates, marks it valid, and starts a 500-millisecond timeout that invalidates it. touchmove invalidates the tap if movement exceeds 40 pixels. touchend fires only if the touch is still valid and has the stored identifier, clearing the timeout. The four answer choices below are two-finger swipe up, tap, two-finger tap, and three-finger swipe down.",
+        "reason": "Alternative identifies a tap but omits the logic of the code that is the main figure content."
+      },
+      {
+        "node": "451:0",
+        "page": 7,
+        "before": "Figure 7: The same (“tap”) behavior as Figure 6, implemented \nwith cross events touch groups. In addition to being more \nconcise than the touch* implementation of the same ges-\nture, many modifications to this gesture that would require \nsignificant changes to the touch* implementation are \nstraightforward. For example, changing this gesture from a \none-finger tap to a two-finger tap requires significant \nchanges to the touch* implementation but is a one-line \nchange in the touch group/cross event implementation (up-\ndating the second line to numFingers: 2). Using correctness \nin this task as a measure of understanding, participants \nwere better able to understand code written with touch \ngroups and cross events than with touch* events. ",
+        "after": "Figure 7. The same tap recognizer expressed with a greedy one-finger TouchGroup and a circular cross-event path of radius 40 around its starting location. When the group is satisfied, it becomes valid and a 500-millisecond timeout begins; crossing the circle invalidates it; when the group is unsatisfied, it fires only if still valid. Changing numFingers from 1 to 2 changes the recognizer to a two-finger tap. Four gesture choices appear below the code.",
+        "reason": "Alternative explains study comparison but not the recognizer code shown."
+      },
+      {
+        "node": "635:0",
+        "page": 9,
+        "before": "Figure 8: An example of the UI for defining behaviors in the \nGUI / touch group + cross event condition via a state ma-\nchine. The black dot symbolizes the start state. Small light \nsquares symbolize states. The larger grey squares specify \ntransition events (e.g., cross events or touch group events).  ",
+        "after": "Figure 8. A graphical state-machine editor. A black starting dot leads to the initial state. Transition boxes connect small state squares and select touch-group Start or End events or a Cross event using path_1. One branch continues through a timeout event set to 2000 to a checked final state. The boxes expose event choices within the diagram.",
+        "reason": "The caption explains the notation but omits connections and the example timeout."
+      }
+    ]
+  },
+  {
+    "file": "wang-how-data-scientists-cscw2019.pdf",
+    "before_sha256": "a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b",
+    "after_sha256": "2e5cfb67711765554e3a16fecc8e1d12360281478b81e707f2c1e7f3073486da",
+    "changes": [
+      {
+        "node": "587:0",
+        "page": 2,
+        "before": "Fig. 1. An example of a Jupyter notebook. (1) A custom collaborative extension for users to share their\nnotebook. (2) A notebook cell that contains code to import libraries and load dataset. (3) An output of a\nshared data frame. (4) A markdown cell that contains narrative text. (5) An output of a visualization",
+        "after": "Figure 1. A Jupyter notebook contains a code cell importing libraries and loading house-price data, a dataframe summary, a Markdown heading, and a histogram. A Share control enables a collaborative extension. The right panel illustrates the workflow: Bob enables sharing and sends a generated code; Alice joins with that code; both edit the notebook while it synchronizes changes and displays collaborators’ cursor positions and selections.",
+        "reason": "Caption-only alternative omits the entire collaboration workflow panel at right."
+      },
+      {
+        "node": "1461:0",
+        "page": 19,
+        "before": "Fig. 2. Overview of how participants iteratively explore the house price prediction task in 15-minute intervals.\nParticipants in the shared condition tended to switch between phases more frequently. The initial attempts\nat modeling occurred earlier in the shared condition.",
+        "after": "Figure 2. Paired participant timelines for six shared-notebook groups S1–S6 and six non-shared groups N1–N6 across four 15-minute sessions. Colored segments mark preparing, cleaning, modeling, feature engineering, and submission. Shared groups switch between phases more frequently and begin modeling earlier. Non-shared groups spend longer continuous stretches in cleaning or feature engineering before modeling. Brown submission segments appear mainly at the end.",
+        "reason": "Trend description omits rows, time intervals and the phase encoding needed to understand this chart."
+      }
+    ]
+  },
+  {
+    "file": "oney-creating-guided-code-cscw2018.pdf",
+    "before_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+    "after_sha256": "a56d43b25b521a8421d400bfbed323b2dfa0ac9a2fd84350eba3cbb6dcc20157",
+    "changes": [
+      {
+        "node": "870:0",
+        "page": 9,
+        "before": "Fig. 5. In chat.codes, code edit summaries are displayed inline with chat messages. By default these summaries\nonly indicate which user changed which files. They can also be expanded to reveal a full diff, as shown above.",
+        "after": "Figure 5. Bob asks why copyName changes capitalization to “boB.” Alice replies that the name is being reversed and expands her edit to file-1 beneath the chat. The red deleted line is name_copy = c + name_copy; the green added line is name_copy = name_copy + c. The diff links the explanation to the correction from prepending characters to appending them.",
+        "reason": "Generic caption omits the concrete code change shown by the expanded diff."
+      }
+    ]
+  },
+  {
+    "file": "yang-spark-vlhcc2025.pdf",
+    "before_sha256": "6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc",
+    "after_sha256": "76f72aa40b425550eafbc00daa824bac79b3a548d863f9e556bbdd1d23f4ac94",
+    "changes": [
+      {
+        "node": "656:0",
+        "page": 10,
+        "before": "Figure 8. Three progress snapshots at timestamps 2, 8, and 19 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. The views retain separate rows for different checkpoints, showing uneven progress among task components.",
+        "after": "Figure 8. Three progress snapshots at timestamps 2, 10, and 18 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. Separate checkpoint rows show uneven progress among task components.",
+        "reason": "Alternative timestamps2,8,19 conflict with the three visible panel labels2,10,18."
+      }
+    ]
+  },
+  {
+    "file": "lin-adasa-uist2018.pdf",
+    "before_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+    "after_sha256": "88c72061ab3a80eb6507052208adc30dcafb771cd04c46d8782be278847a97c7",
+    "changes": [
+      {
+        "node": "854:0",
+        "page": 7,
+        "before": "Figure 4: The map of the 11.7 miles route. It includes 7 miles\nhighway and 4.7 miles suburban road to accommodate the use\nof both ACC and LKS.",
+        "after": "Figure 4. The driving-study route is shown as a blue loop around northeastern Ann Arbor, starting and ending near the University of Michigan North Campus. Numbered red markers 1–8 identify route segments around the loop. The 11.7-mile route combines 7 miles of highway and 4.7 miles of suburban roads to support testing adaptive cruise control and lane keeping.",
+        "reason": "Existing alternative gives route length but omits the geography and numbered path conveyed by the map."
+      }
+    ]
+  },
+  {
+    "file": "oney-interstate-uist2014.pdf",
+    "before_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+    "after_sha256": "7acf76c528b3775ea3dcd0e44a2f4e894d2042d6ddea8a4398baf80697f4d87b",
+    "changes": [
+      {
+        "node": "326:0",
+        "page": 5,
+        "before": "Figure 3: InterState uses a prototype-instance inheritance model \nwith multiple inheritance. Prototypes are simply specified in the \nprototypes property. Here, my_square inherits from square. \nBecause my_square does not define a value for height, it inherits \nthe definition of square.height, as indicated by the greyed out\ntext in the columns on the right. Note that my_square inherits the \ndefinition of height, not the value. Thus, its width property evalu-\nates to a different value (20) than it does in square (15).",
+        "after": "Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instance my_square lists square as its prototype and overrides width with 20. It inherits the expression height = width rather than the fixed value 15, so its height evaluates to its own width, 20. Inherited expressions are displayed in gray.",
+        "reason": "The existing caption-derived description obscures the key inherited height computation by ending with width; describe both local width and inherited height explicitly."
+      }
+    ]
+  },
+  {
+    "file": "pandey-explore-create-annotate-chi2020.pdf",
+    "before_sha256": "5805ca7d1c5e6da765a55aac0038695291837f7c2b70740699a7a36033e7cb14",
+    "after_sha256": "d91cc84afe92530dccc87479c5fa9a42a58ef0e0642b6f9e2cc467eff228435a",
+    "changes": [
+      {
+        "node": "505:0",
+        "page": 1,
+        "before": "Tactile graphic created by a participant in the study. He labeled the graphic using both braille and audio labels. Audio label represented in different texture using paper tape\n",
+        "after": "Figure 1. A participant’s tactile map of a park, drawn as raised outlines on transparent film. Several locations are marked with braille label strips and pieces of textured paper tape for audio labels, so the participant can distinguish the two label types by touch.",
+        "reason": "The current alternative describes labels but does not identify the graphic as a tactile park map or its spatial content."
+      }
+    ]
+  },
+  {
+    "file": "krosnick-providing-live-feedback-live2020.pdf",
+    "before_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+    "after_sha256": "217d7b531ab88f72dc2114a88745c088df77e7c1f08f91be3da3db1768f21cd5",
+    "changes": [
+      {
+        "node": "406:0",
+        "page": 3,
+        "before": "Figure 3. VizMac highlights a failing click command in the editable macro and shows a timeout waiting for selector #date-picker-23-09-2020. The code editor and page snapshot help locate the missing date element. The surrounding example explains that the site uses non-padded day and month numbers, so a script generating leading zeros must be corrected.",
+        "after": "Figure 3. VizMac displays a red timeout error above the macro editor: waiting for selector #datepicker-21-09-2020 > .text-muted failed. The form at left supplies delivery date 09/21/2020. Callout A marks the click command that constructs the date selector from input variables; B marks a separate time-selection command. The surrounding text explains that leading zeros in single-digit days or months must be removed to match the site’s selectors.",
+        "reason": "Existing alternative gives selector23 and an extra hyphen in date-picker from narrative text, but the screenshot shows #datepicker-21-09-2020. It also mentions a page snapshot absent from this specific crop."
+      }
+    ]
+  },
+  {
+    "file": "oney-euclase-live2013.pdf",
+    "before_sha256": "da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4",
+    "after_sha256": "503917db80dbdb12570302733dbc43d42c6376d7bd544a3bc7f7f7910f3e76b4",
+    "changes": [
+      {
+        "node": "108:0",
+        "page": 1,
+        "before": "Fig. 1. A mockup for the display of the properties of an object in Euclase. \nProperties are represented in rows while different states are represented in \neach column. An entry for a particular property in a particular state \nrepresents a constraint that applies to that property in that state. ",
+        "after": "Figure 1. Euclase displays object properties x, y, and z as rows and state-specific constraints as columns. The base definitions are x = [y, z], y = “hello world”, and z = 1 + 2. In state1, y is overridden by z + 1. The live values at left are consequently x = [4, 3], y = 4, and z = 3. A starting dot points to state1 above the constraint column.",
+        "reason": "Caption explains notation only and omits the concrete dependency and state override shown."
+      }
+    ]
+  },
+  {
+    "file": "oney-natural-language-search-mit2008.pdf",
+    "before_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "after_sha256": "e0f176772c21791cf2116bfa68982745c3e2b636f80a6d6432562b4c304c1944",
+    "changes": [
+      {
+        "node": "712:0",
+        "page": 26,
+        "before": "P of w-e given w-f equals P of w-e times P of w-f given w-e, divided by P of w-f; proportional to P of w-e times P of w-f given w-e.",
+        "after": "P of w-e given w-f equals P of w-e times P of w-f given w-e divided by P of w-f. The printed expression then equates this to P of w-e times P of w-f given w-e; with w-f fixed, that final relationship is proportionality because the denominator is constant.",
+        "reason": "The mathematically justified proportionality in the alternative differs from the visible equality sign and should be identified as an interpretation."
+      },
+      {
+        "node": "817:0",
+        "page": 33,
+        "before": "Named-entity recognition examples. Player mentions such as Gary Sheffield, Chien-Ming Wang, Webb and Johnson are highlighted and labeled Player. New York is marked as a Location and Red Sox as a Team. The labels distinguish entities from the surrounding sentence text.",
+        "after": "Named-entity recognition examples. Gary Sheffield, Matsui, Wells, Johnson and Damon are highlighted in blue and labeled Player. New York is highlighted in green and labeled Location; Red Sox is highlighted in red and labeled Team. The annotations separate baseball entities from the surrounding sentence text.",
+        "reason": "Names in current alternative do not match the illustrated labels."
+      },
+      {
+        "node": "831:0",
+        "page": 34,
+        "before": "Game-summary excerpt illustrating inning inference. The first sentence says Johnson came out dealing in the first inning; the following sentence describes his first pitch, an ensuing strikeout and fly outs. The later events inherit the inning context established by the earlier sentence.",
+        "after": "Game-summary excerpt illustrating inning inference. The opening sentence places Johnson in the first inning. Johnny Damon swings through the first pitch; the following sentence describes Edgar Renteria and Manny Ramirez taking strike three, completing a 1-2-3 inning. Those later events inherit the inning established by the opening sentence.",
+        "reason": "Current description invents fly outs. The excerpt describes three strikeouts."
+      }
+    ]
+  },
+  {
+    "file": "wang-colaroid-chi2023.pdf",
+    "before_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+    "after_sha256": "b43f9df79553c581b623670a55b5060872a490d05e4714f03624bc7fbb7d9cc2",
+    "changes": [
+      {
+        "node": "973:0",
+        "page": 10,
+        "before": "Figure 2: Colaroid implements code versioning and change propagating through git. Suppose the author wants to edit the first\nstep (e.g., changing HTML page title) and propagate the change to subsequent steps. Colaroid maps steps with the hash ID of\nthe code commits in Git. As shown in phase 1 and phase 2, Colaroid will first check out the main branch into a new branch\nnamed “change” and reset the head to the code version that needs to be edited. By doing this, authors would see commit A\nloaded in their code editor. Next, tutorial authors can make changes directly in the code editor. Once they confirm finishing the\nedits, Colaroid will create a new commit for the changes and merge commits in the later steps into the change branch.",
+        "after": "Five-phase diagram of propagating a tutorial edit through Git. Initially the main branch contains commits A and B. Colaroid creates a change branch at A, the author edits A to make A-prime, and later changes are reapplied to produce B-prime. The final phase removes the original main branch and renames change to main. Tutorial step entries are updated to the new commit IDs so the edited page title propagates to later steps.",
+        "reason": "Caption describes editing and merging but omits final replacement of the main branch visible in phase 5."
+      },
+      {
+        "node": "1126:0",
+        "page": 14,
+        "before": "Figure 4: We used GitHub Codespaces for participants to access tutorials. All the three types of tutorials are displayed side by\nside with the main code editor.",
+        "after": "GitHub Codespaces study setup. A repository page on the left has the Codespaces launch control highlighted; an arrow leads to three browser-based editors on the right. Each places source code beside one tutorial format: an article with step text, a video player, or the Colaroid notebook with editable code and a rendered Flappy Bird preview.",
+        "reason": "Existing alternative repeats only the caption and omits the actual tutorial formats and left-to-right relationship."
+      },
+      {
+        "node": "1488:0",
+        "page": 17,
+        "before": "Figure 5: We manually coded the screen recording to understand how students interact with the tutorials. All participants used\nthe full 40 mins on the task. Participants’ engagement time with Colaroid tutorials is significantly more than article tutorials\n(1) and video tutorials (2). In particular, we noticed that some participants (3) gave up on the video tutorials after watching a\nsegment at the beginning of the study.",
+        "after": "Participant activity timelines during the 40-minute task. Rows labeled by participant compare Colaroid with an article or video tutorial. Blue segments mark Colaroid use, orange article use, green video use and gray dashed segments work on the dinosaur game. Colaroid use recurs throughout many sessions; article or video use is often more concentrated early. Highlighted groups 1 and 2 compare conditions; callout 3 marks a participant who stops using the video after the opening segment.",
+        "reason": "Caption reports findings but does not explain the participant timelines or their encodings."
+      }
+    ]
+  },
+  {
+    "file": "zhang-editrail-uist2026.pdf",
+    "before_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+    "after_sha256": "55a38fecb8b614c0b083fc352af3db890a0e1ba09d160758e44f31efc014620a",
+    "changes": [
+      {
+        "node": "1097:0",
+        "page": 9,
+        "before": "Figure 6: Baseline system for the user study. It represents conversation turns with AI agents (left) and code states (right).",
+        "after": "Baseline study interface with a chronological AI conversation on the left and a source-code state on the right. Alternating blue student messages and gray AI answers discuss printing rows and checking whether a list is empty. The adjacent Python editor shows the student gradebook program with line numbers and syntax highlighting.",
+        "reason": "Caption names two sides but omits the baseline display content."
+      }
+    ]
+  },
+  {
+    "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+    "before_sha256": "27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1",
+    "after_sha256": "dc7389986e527437c6d201c1bb04ebfa2e87ee9f8eb7ad591658652cfe815a0d",
+    "changes": [
+      {
+        "node": "954:0",
+        "page": 9,
+        "before": "Figure 6. Two grouped bar charts show how testing changes over task progress at 0–25%, 25–50%, 50–75%, and 75–100% of elapsed time. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. In the upper chart, use of the guidance graph increases across time, especially for trained users; in the lower chart, newly discovered transitions generally decline. Together they show growing reliance on guidance as undiscovered transitions become harder to find.",
+        "after": "Two grouped bar charts show counts over four task-progress intervals, beginning at 0, 25, 50 and 75 percent. Blue denotes untrained users with guidance, red collaborative untrained users with guidance, and yellow trained users with guidance. Effective guidance actions generally rise, most sharply for trained users. New-transition discoveries decline for trained users and for untrained individuals after an early peak, while collaborative untrained users discover more transitions in the final interval than initially.",
+        "reason": "Current summary obscures the opposing trend for collaborative untrained users in the lower chart."
+      },
+      {
+        "node": "990:0",
+        "page": 10,
+        "before": "This is a conceptual figure. It shows a small unit event-flow graph can be integrated into larger application-level graph on the right to test the entire graph without recruiting additional testers.",
+        "after": "A worker’s output is a small tree with one parent and three child nodes. A curved red arrow maps that parent to a dotted node in a larger GUI behavior tree; three dotted children show where the worker’s tested unit fits. Other solid branches represent the rest of the application. The diagram illustrates combining unit test traces into an application-level graph.",
+        "reason": "Caption states the idea but omits the visible subtree relationship."
+      }
+    ]
+  },
+  {
+    "file": "myers-making-end-user-eud2017.pdf",
+    "before_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+    "after_sha256": "3882923ec22759e544bc7e992ce21339e8685e3e76965fa6b5fe9693f06c21f2",
+    "changes": [
+      {
+        "node": "535:0",
+        "page": 7,
+        "before": "Fig. 2 Dragging and dropping a prototype’s icon from the Toolbox creates a new part, and the\neditor also supports drag/drop rearrangement of parts as well as copy/paste. Users can click the\nexample in a part’s icon to edit it, while clicking other parts of the icon displays widgets for edit-\ning its constraints, which are shared by every instance of the part. Clicking the “+” icon adds a\nconstraint while clicking the “x” icon deletes the constraint",
+        "after": "Data Description Editor for a person name. A toolbox on the left supplies example parts; the top area shows first-name and last-name parts in alternative orders, using John and von Neumann. Selecting the last-name part opens constraints for word and letter counts, separators and capitalization. Plus and x controls add or remove constraints, and parts can be rearranged by dragging.",
+        "reason": "Alternative describes generic editor actions but omits the pictured data-description example and visible constraints."
+      },
+      {
+        "node": "585:0",
+        "page": 13,
+        "before": "Fig. 6 An example screenshot of Azurite running in the Eclipse IDE. At the bottom, a timeline\nvisualization of recent code changes is provided. The user is currently using the “Interactive\nSelective Undo” dialog, which is one of the more sophisticated selective undo features of Azurite",
+        "after": "Azurite in Eclipse. A timeline beneath the Java editor shows recent edits as colored rectangles on separate file rows. The Interactive Selective Undo dialog compares Current Source with Preview of Selective Undo Result, with changed lines highlighted. A selected change offers Keep this code unchanged, allowing the user to preview which edits will be undone while retaining others.",
+        "reason": "Caption names selective undo but does not describe the comparison or selection mechanism that makes the screenshot meaningful."
+      }
+    ]
+  },
+  {
+    "file": "zhang-vrgit-chi2023.pdf",
+    "before_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+    "after_sha256": "e62f1166a43a0c2884c6eedef380712fdcc851b89b13aa0052b231d0a4ccd704",
+    "changes": [
+      {
+        "node": "1059:0",
+        "page": 5,
+        "before": "Figure 4.a: A screenshot of the history graph that contains three branches in the system. Each branch is represented by different colors of edges between the nodes including light green, red, and dark green. The user is currently on the branch colored in light green.",
+        "after": "VRGit history graph with miniature room versions arranged along three branches. Green, red and dark-green edges distinguish the branches, and a yellow square marks the selected miniature V4 on the upper branch. The caption states that the user remains in V17 while selecting this earlier version.",
+        "reason": "Alternative confuses selecting a historical version with currently inhabiting it; the caption says the user remains in V17 while selecting V4."
+      },
+      {
+        "node": "1061:0",
+        "page": 5,
+        "before": "Figure 4.b: A screenshot of the history graph after the user switches the branch and now they are selecting the branch colored in red.",
+        "after": "VRGit history graph after changing the selection to another branch. The yellow selection square moves to V4.0 on the lower row of miniature rooms while the user remains in V17. The selected lower branch appears green in the screenshot, although the printed caption calls it dark red.",
+        "reason": "The caption calls the selected branch dark red, but the displayed lower branch appears green; identify the selected version and acknowledge the source color discrepancy instead of relying on it."
+      }
+    ]
+  },
+  {
+    "file": "rong-codemend-uist2016.pdf",
+    "before_sha256": "2bb575031bcb0950bfded6230a989fb817fc57e635de35c4b1dbaff6049d6937",
+    "after_sha256": "52dc8f1ac5ad33271f670bbf607d0eed8c067437f8dee043552ab8f83baf5d26",
+    "changes": [
+      {
+        "node": "141:0",
+        "page": 2,
+        "before": "Figure 1. CodeMend system screenshot: (A) code editor: highlights relevant lines and columns based on the user’s natural language query; (B) preview\nwindow: shows the image generated by the code; (C) query box: allows the user to type in natural language queries; (D) multi-function information\nbox: provides code summary and nested-layer suggestions of possible code modifications.",
+        "after": "CodeMend interface. The left editor contains a scatter-plot program and highlights the scatter call. Its output is a colored scatter plot. On the right, the query 'change transparency' produces suggestions for the alpha parameter, with 0.5 highlighted as the current value and alternative values below. Panels A–D identify the editor, plot preview, query box and suggestions.",
+        "reason": "Caption lists panels but omits the pictured natural-language modification and parameter control."
+      }
+    ]
+  },
+  {
+    "file": "oney-codelets-chi2012.pdf",
+    "before_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+    "after_sha256": "15e37a29822cd60123fac73e438e0e7cb9eda859a42a4acc84a04433f2420dff",
+    "changes": [
+      {
+        "node": "196:0",
+        "page": 3,
+        "before": "Figure 3. A Codelet inspired by CSSPortal’s Rounded Corner Genera-\ntor. As the developer moves the slider, it modifies the code and illus-\ntrates which parts of code are changing. ",
+        "after": "CSS Rounded Corners Codelet beside a CSS editor. The helper offers an all-corners radius slider and separate controls for the four corners; links connect those controls to highlighted border-radius declarations in the source. Adjusting the helper therefore changes the corresponding CSS values.",
+        "reason": "Caption identifies sliders but omits the concrete CSS property and linked editor content."
+      },
+      {
+        "node": "384:0",
+        "page": 7,
+        "before": "Figure 7. If the user edits the region of code attached to a Codelet so \nthat the helper becomes out of sync with the attached code, the Codelet \nasks the user before the helper makes any code changes. ",
+        "after": "A Codelet displays the warning 'I don’t understand the attached code. May I overwrite it?' above the example-code area. Buttons labeled Overwrite, Don’t and Never let the programmer permit this overwrite, decline it, or disable future overwrites. This appears when the attached code cannot be understood by the helper.",
+        "reason": "Alternative states that permission is requested but does not convey the visible warning or distinct responses."
+      }
+    ]
+  },
+  {
+    "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+    "before_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+    "after_sha256": "202011696f853c8d145af06bd8d0107f647115f478fa3861092a6c9595abb0dc",
+    "changes": [
+      {
+        "node": "272:0",
+        "page": 2,
+        "before": "Figure 1: The interface of the live writing intervention as\nthe animation reveals code in linear order. Participants were\nasked not to begin writing their summaries until after each\nanimation completed playing.",
+        "after": "Code-animation task screen. A Python editor on the left shows the program partway through its animation, with the active insertion point highlighted. A large text box on the right asks the participant to summarize the program. Playback controls and a progress bar are below the code. The study asks participants to wait until the animation finishes before entering the summary.",
+        "reason": "Caption alone omits the task screen layout and animated code presentation."
+      },
+      {
+        "node": "274:0",
+        "page": 2,
+        "before": "Figure 2: The live writing intervention after an animation\ncompleted. The presented code remained visible and ed-\nitable during the summarization task.",
+        "after": "Program-summary task screen after the animation. The full Python program remains in an editable editor on the left. A large response field and Submit button on the right collect a brief account of what the program does; the completed playback bar remains beneath the code.",
+        "reason": "Caption alone omits the completed-code and response controls."
+      },
+      {
+        "node": "430:0",
+        "page": 3,
+        "before": "Figure 3: After completing and submitting their summaries,\nparticipants could view their next tasks, edit code, and exe-\ncute the program.",
+        "after": "Interactive task screen with the Python program in an editor on the left. Run and Tasks controls appear on the right above instructions to debug the code and identify and fix its logic problem. The participant can edit and run the program to complete these tasks.",
+        "reason": "Caption names the phase but does not describe the visible debugging and logic tasks."
+      },
+      {
+        "node": "432:0",
+        "page": 3,
+        "before": "Figure 4: Participants could view execution errors in the in-\ntervention interface while completing each task.",
+        "after": "Runtime-error screen for the Python task. Source code is on the left and a red traceback is on the right beneath the Run and Tasks controls. The error identifies study_hard as an undefined name on line 24, showing the feedback participants receive when running faulty code.",
+        "reason": "Caption omits the actual runtime feedback illustrated."
+      },
+      {
+        "node": "469:0",
+        "page": 4,
+        "before": "Figure 5: Fixations of Participant 11 and 14. Participant 11\n(left) tracked the animation at a high speed closely following\nthe code as it became visible. Participant 14 (right) played\nthe animation slowly, reading other parts of the computer\ncode.",
+        "after": "Two eye-tracking plots compare participants P11 and P14. Horizontal axes show elapsed time in seconds and vertical axes show code line number. Green traces mark the line currently being animated; yellow marks show the participant’s gaze fixations. P11’s fixations largely follow the advancing animation line, whereas P14’s fixations are spread over other lines and a much longer session. The caption interprets this as different preferred viewing speeds.",
+        "reason": "Caption gives the study interpretation but omits axes and the two overlaid traces."
+      }
+    ]
+  },
+  {
+    "file": "ozenc-how-support-designers-chi2010.pdf",
+    "before_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+    "after_sha256": "91ba2dc0ebbbe0378fa522e6c9990dd5e5dad41c330a6c23b7bb8a44bcf29f4c",
+    "changes": [
+      {
+        "node": "187:0",
+        "page": 4,
+        "before": "Figure 1. Drawings of Team Radio: Notice this exploratory \nsketch shows the context of use and not simply the systems \ninterface. Note that most tools force designers to focus exclu-\nsively on the GUI",
+        "after": "Hand-drawn concept for a foot-controlled collaborative music selector. Two people lie in bed with control strips near their feet. Annotations propose moving a foot left or right to scroll options and pointing or tapping to select. The controls include genre, station and song choices, illustrating how a couple might choose music without using their hands.",
+        "reason": "Caption only names a team’s sketch and does not convey the proposed interaction."
+      },
+      {
+        "node": "332:0",
+        "page": 6,
+        "before": "Figure 2: wireframe used-car shopping interface. A large car preview sits above a horizontal timeline of earlier and later models; sliding along the timeline changes the car year. Controls beside the car select additional attributes. The design was used as a novel control for the refinement workshop.",
+        "after": "Used-car shopping interface mockup. A car preview occupies the center above a pale gray timeline with owner and maintenance markers; reviews appear on the left. A yellow strip beneath the timeline contains small car-view controls for inspecting the vehicle from different angles. The timeline presents the car’s repair history, supporting inspection of its condition and wear.",
+        "reason": "Current alternative invents browsing earlier/later car models by year; the surrounding text identifies the timeline as repair history and the control as a view change."
+      }
+    ]
+  },
+  {
+    "file": "chen-providing-on-demand-expert-chi2016.pdf",
+    "before_sha256": "01eb3cb3ea1465dd599b16245ac52cf2b1556c2ff3c979c88c9f1e6e299fb9cc",
+    "after_sha256": "6b06fdc556b9f95d2ac06b2dee1ab56ded083c54a8f91988ff4ba3e9af79be2f",
+    "changes": [
+      {
+        "node": "760:0",
+        "page": 5,
+        "before": "Figure 1. Setup for our hypothetical assistant study. Developer partic-\nipants were asked to bring their own task to complete, and ask ques-\ntions from our hypothetical assistant as if it could answer any support\nquestion needed. Participants were still allowed to use traditional online\nresources and augment them with the assistant as they saw fit. Context\nrelated to their programming task was collected at the beginning of each\nstudy, and audio of their questions was recorded during the session.",
+        "after": "Hypothetical-assistant study diagram. A developer works in their own IDE on the left and sends a query to a proposed intelligent assistant in the center; the query is recorded in a log on the right. A curved green arrow carries code context and task information from the developer to the assistant. In this study the assistant is hypothetical, so the interaction captures when developers would ask for help.",
+        "reason": "Caption describes the study procedure but omits arrow relationships in the diagram."
+      },
+      {
+        "node": "855:0",
+        "page": 7,
+        "before": "Figure 2. Setup for our human expert assistant study. In each trial, one\n“requester” participant (developer) was paired with one “helper” (ex-\npert, based on a pre-study skill assessment). Participants could chat via\neither text or voice, and requesters were able to share their screen with\nhelpers as needed using Skype. The helper was tasked with assisting the\nrequester reactively, meaning that they only responded to queries, and\ndid not proactively propose solutions or approaches. This simulates a\n“best case” (repeated, non-multiplexed helper) on-demand model where\nhuman experts are not expected to be continuously available between\nend-user queries.",
+        "after": "Expert-help study diagram. A developer and IDE are on the left and a remote expert is on the right. Query and code travel from developer to expert. Voice or chat allows two-way communication, and a curved Answer/Code arrow returns guidance from the expert to the developer. The expert responds when the developer requests help.",
+        "reason": "Caption omits the different communication channels and their direction."
+      }
+    ]
+  },
+  {
+    "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+    "before_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+    "after_sha256": "29628a27ce2f63add0df7c87581bdc3f3bb1244040350b11ee28f457505eb172",
+    "changes": [
+      {
+        "node": "189:0",
+        "page": 2,
+        "before": "Figure 1: Editing conflicts in real-time collaborative notebooks can be implicit. As shown on the left, one can get an unexpected\nexecution result because the collaborator accidentally changed the shared variable. As shown on the right, PADLOCK helps data\nscientists resolve editing conflicts in real-time collaborative editing in computational notebooks.",
+        "after": "Two collaborative-notebook screenshots illustrate an interference problem and Padlock’s protection. In the shared notebook, blue and green collaborator markers appear beside different text-cleaning cells; red arrows point to execution counters and yellow highlights mark unexpected outputs after changes to shared data. The protected notebook shows a padlock beside a cell and a separate preview, indicating that a collaborator’s execution is restricted or isolated.",
+        "reason": "Caption explains conflicts in general but omits the visible shared-state and protected-cell comparison."
+      }
+    ]
+  },
+  {
+    "file": "yang-vizcode-lsdemos2024.pdf",
+    "before_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+    "after_sha256": "3672105391da493920c8132646fcf179cfe7ea6163ba54c9e7d0493ba7b8415c",
+    "changes": [
+      {
+        "node": "260:0",
+        "page": 1,
+        "before": "Figure 1: The VizCode Web Page interface consists of student boxes (a), code boxes (b), and document tags (c). This screenshot\nshows two code boxes with several code boxes in them, each displaying one student’s code in real-time from the student’s\nVSCode. Documents under editing are displayed in blue (d), indicating that the student is currently editing this document.",
+        "after": "VizCode comparison view with two student panels side by side. Each panel has document tabs above a syntax-highlighted source editor, allowing the instructor to compare students’ work. Blue document names indicate the file each student is currently editing: style.css for Student 1 and index.html for Student 2. The displayed source in both panels is HTML.",
+        "reason": "Caption’s repeated code-box phrase obscures the actual hierarchy of student panels and files."
+      }
+    ]
+  },
+  {
+    "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+    "before_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+    "after_sha256": "ebd0d81a40052b199cd0fabfbe5deee920332ef8058bd5c7870276e202ad9961",
+    "changes": [
+      {
+        "node": "174:0",
+        "page": 1,
+        "before": "Figure 1: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic\naggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV\n(b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The\nvisualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the\nselected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of\ntypes of errors within that group (k), and detailed solutions with context-aware highlighting (h).",
+        "after": "CFlow workflow shown before and after filtering. The initial visualization on the left groups similar code statements into flows and shows adjacent horizontal bars summarizing each group. Colors run from green when all code lines in a group are correct to red when none are correct. Selecting a group narrows the flows in the right-hand filtered view. An error list on the far right has IndentationError selected, and red-bordered example submissions below highlight the relevant code in yellow. Clear and Go Back controls appear above each view.",
+        "reason": "Long caption describes the main views but omits the correctness legend and detailed error example."
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a -->
+<!-- Source PDF SHA-256: eea22c064db1848288bb5e67aa8a3024ea916eafde4927aa22dccda42c4aaaea -->
 
 <a id="page-1"></a>
 
@@ -30,11 +30,11 @@ computational notebooks, data science, synchronous editing
 
 ## ACM Reference Format:
 
-April Yi Wang, Zihan Wu, Christopher Brooks, and Steve Oney. 2024. “Don’t Step on My Toes”: Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks. In 2024 First IDE Workshop (IDE ’24), April 20, 2024, Lisbon, Portugal. ACM, New York, NY, USA, 6 pages. [https://doi.org/](<https://doi.org/10.1145/3643796.3648453>) [10.1145/3643796.3648453](<https://doi.org/10.1145/3643796.3648453>)
+April Yi Wang, Zihan Wu, Christopher Brooks, and Steve Oney. 2024. “Don’t Step on My Toes”: Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks. In 2024 First IDE Workshop (IDE ’24), April 20, 2024, Lisbon, Portugal. ACM, New York, NY, USA, 6 pages. [https://doi.org/](<https://doi.org/10.1145/3643796.3648453>) [10.1145/3643796.3648453](<https://doi.org/10.1145/3643796.3648453>) [https://doi.org/10.1145/3643796.3648453](<https://doi.org/10.1145/3643796.3648453>)
 
 ## 1 INTRODUCTION
 
-“You work on this section, and I’ll work on that one” is a familiar refrain for authors who work in teams. Working on different parts of the same document is a natural way to combine collaborators’ work and avoid conflicts \[15\]. In data science programming, collaborators use a variety of collaborative strategies including “divide and conquer” (splitting work between team members) and “competitive authoring” (working on the same sub-problem simultaneously) \[19\]. However, Jupyter and other computational notebooks, which are often used by data scientists, introduce new challenges for collaboration. Although some version control tools (e.g., Git) work for computational notebooks, they mostly support the collaboration [https://doi.org/10.1145/3643796.3648453](<https://doi.org/10.1145/3643796.3648453>) strategies for dividing work (e.g., working in independent files). Further, data scientists sometimes collaborate synchronously, with tools like JupyterLab \[4\], Google Colab \[2\], and Deepnote \[1\] that broadcast code and runtime updates to collaborators in real-time \[19\].
+“You work on this section, and I’ll work on that one” is a familiar refrain for authors who work in teams. Working on different parts of the same document is a natural way to combine collaborators’ work and avoid conflicts \[15\]. In data science programming, collaborators use a variety of collaborative strategies including “divide and conquer” (splitting work between team members) and “competitive authoring” (working on the same sub-problem simultaneously) \[19\]. However, Jupyter and other computational notebooks, which are often used by data scientists, introduce new challenges for collaboration. Although some version control tools (e.g., Git) work for computational notebooks, they mostly support the collaboration strategies for dividing work (e.g., working in independent files). Further, data scientists sometimes collaborate synchronously, with tools like JupyterLab \[4\], Google Colab \[2\], and Deepnote \[1\] that broadcast code and runtime updates to collaborators in real-time \[19\].
 
 Synchronized collaborative computational notebooks allow data scientists to immediately share the notebook edits and the runtime state, which improves data science teamwork by creating a shared context, encouraging more explanation, reducing communication costs, and improving reproducibility \[13, 19\]. However, these synchronized notebooks also introduce many unique collaboration challenges \[19\]. For example, one collaborator might inadvertently change the runtime state and indirectly break another collaborator’s code in a way that is difficult to debug \[19\].
 
@@ -52,7 +52,7 @@ This work makes several contributions that advance the state of the art for coll
 
 <a id="page-2"></a>
 
-![Figure 1: Editing conflicts in real-time collaborative notebooks can be implicit. As shown on the left, one can get an unexpected execution result because the collaborator accidentally changed the shared variable. As shown on the right, PADLOCK helps data scientists resolve editing conflicts in real-time collaborative editing in computational notebooks.](../figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-002-p002.png)
+![Two collaborative-notebook screenshots illustrate an interference problem and Padlock’s protection. In the shared notebook, blue and green collaborator markers appear beside different text-cleaning cells; red arrows point to execution counters and yellow highlights mark unexpected outputs after changes to shared data. The protected notebook shows a padlock beside a cell and a separate preview, indicating that a collaborator’s execution is restricted or isolated.](../figures/wang-dont-step-on-my-toes-ideworkshop2024/figure-002-p002.png)
 
 Figure 1: Editing conflicts in real-time collaborative notebooks can be implicit. As shown on the left, one can get an unexpected execution result because the collaborator accidentally changed the shared variable. As shown on the right, PADLOCK helps data scientists resolve editing conflicts in real-time collaborative editing in computational notebooks.
 

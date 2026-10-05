@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4 -->
+<!-- Source PDF SHA-256: 458cbed652fe3136a69e5ebf7d0a16c40e99c6dc5153fd93fe8a6de0c735d1ac -->
 
 <a id="page-1"></a>
 
@@ -16,13 +16,17 @@ Abstract—Euclase is a live development environment focused on creating interac
 
 Index Terms—Live development, interactive applications, constraints, finite state machines, interaction design
 
+> 978-1-4673-6265-8/13/$31.00 c⃝ 2013 IEEE
+
+> LIVE 2013, San Francisco, CA, USA
+
 ## I. MOTIVATION
 
 Interaction designers often find it valuable to build high-fidelity interactive prototypes of interactive behaviors, both to fully explore an idea and to clearly communicate intended behaviors to developers \[8\]. Unfortunately, standard tools and languages for building interactive applications are too complex for rapid prototyping, and do not conceptually match how designers think about constructing interfaces \[12\]. Designers usually iterate through many designs, first sketching the behavior of the interactive application and then iteratively refining their designs through prototypes and mockups \[2,8\]. As a result, we believe that designers would benefit greatly from programming tools that are specifically designed to support rapid iteration on user interface behavior and with primitives made especially for creating interactive behaviors.
 
 We consider designers to be a form of end-user programmers (EUPs) because they create these prototypes not as a primary goal, but as a step in designing a user interface \[8\]. To support these designers, we are creating a development tool for programming interactive applications. We want our development tool to be live (changes in the source are reflected immediately in the running program) in order to achieve beginner friendliness, quick evaluation, and quick experimentation. We will discuss these goals in more depth in the next section. Because we consider the development of interactive applications to be conceptually separate from the development of backend applications \[4\], we decided to start from scratch and develop new programming primitives especially for interactive applications. In this paper, we will refer to both the interactive editor and our underlying programming primitives as the “development environment”, as the two are often inseparable from the users’ perspective.
 
-![Fig. 1. A mockup for the display of the properties of an object in Euclase. Properties are represented in rows while different states are represented in each column. An entry for a particular property in a particular state represents a constraint that applies to that property in that state.](https://from.so/assets/markdown/figures/oney-euclase-live2013/figure-001-p001.png)
+![Figure 1. Euclase displays object properties x, y, and z as rows and state-specific constraints as columns. The base definitions are x = \[y, z\], y = “hello world”, and z = 1 + 2. In state1, y is overridden by z + 1. The live values at left are consequently x = \[4, 3\], y = 4, and z = 3. A starting dot points to state1 above the constraint column.](https://from.so/assets/markdown/figures/oney-euclase-live2013/figure-001-p001.png)
 
 Fig. 1. A mockup for the display of the properties of an object in Euclase. Properties are represented in rows while different states are represented in each column. An entry for a particular property in a particular state represents a constraint that applies to that property in that state.
 
@@ -36,15 +40,13 @@ One of the most important aspects of our development environment is that it is l
 
 Many interaction designers are not familiar with traditional programming languages. We hypothesize that by providing a live environment, we can help beginners better understand their programs. We believe that having a live development helps bridge the gulf of evaluation \[9\], which can be a significant barrier for new developers \[3\].
 
-One reason is that beginning developers can become discouraged when a barrage of syntactic errors appears after they try to compile their programs. Even after they manage to fix all of those syntactic issues, by running their program, they will often find that they made semantic errors as well, which can lead to debugging and potentially another round of syntactic and semantic error fixing. A live development environment can help novice programmers in overcoming this barrier. Although syntactic errors can sometimes be made immediately visible in edit-compile-run environments, live programming allows both
-
-978-1-4673-6265-8/13/$31.00 c⃝ 2013 IEEE
-
 <a id="page-2"></a>
 
-LIVE 2013, San Francisco, CA, USA syntactic and semantic errors to become immediately apparent by enabling developers to immediately test their code.
+One reason is that beginning developers can become discouraged when a barrage of syntactic errors appears after they try to compile their programs. Even after they manage to fix all of those syntactic issues, by running their program, they will often find that they made semantic errors as well, which can lead to debugging and potentially another round of syntactic and semantic error fixing. A live development environment can help novice programmers in overcoming this barrier. Although syntactic errors can sometimes be made immediately visible in edit-compile-run environments, live programming allows both syntactic and semantic errors to become immediately apparent by enabling developers to immediately test their code.
 
 Another important aspect of most live development environments is that the developer always has a working program<sup>1</sup>. One great aspect of spreadsheet programming, for instance, is that when the user makes a mistake in a particular cell’s formula, the entire spreadsheet does not stop working \[1,7\]. Similarly, Euclase allows errors to be “localized”: cells with errors only prevent the parts of the program from running that depend on those cells.
+
+> <sup>1</sup> This is not necessarily inherent to live development environments but because of the implementation requirements of live development environments, it is common.
 
 ### 2) Quick evaluation:
 
@@ -62,11 +64,7 @@ Our development environment’s primary goals are to be:
 
 - Succinct. We want to be able to express the code for interactive applications in as few lines of “code” as possible. This means we must have powerful primitives.
 
-- Beginner friendly and approachable. As previously mentioned, many interaction designers are not familiar with traditional programming languages \[8\]. This means that our programming primitives should be easy to understand and not too numerous, a common tension in new development tools \[14\]. Additionally, Euclase
-
-> <sup>1</sup> This is not necessarily inherent to live development environments but because of the implementation requirements of live development environments, it is common.
-
-should be a “gentle slope” system; simple things should be simple and difficult things should scale linearly \[7\]. We also made our development environment live to help achieve this goal, as we will discuss later.
+- Beginner friendly and approachable. As previously mentioned, many interaction designers are not familiar with traditional programming languages \[8\]. This means that our programming primitives should be easy to understand and not too numerous, a common tension in new development tools \[14\]. Additionally, Euclase should be a “gentle slope” system; simple things should be simple and difficult things should scale linearly \[7\]. We also made our development environment live to help achieve this goal, as we will discuss later.
 
 - Expressive. Interaction designers often have nuanced custom designs \[12\] and our development environment should support these designs. This means that while it is convenient to provide pre-made widgets (like buttons and scroll bars), designers should be able to understand and modify the code for these widgets if desired.
 
@@ -100,13 +98,13 @@ If the developer changes code in the add\_entry function, should the development
 
 Declarative languages, on the other hand, do not rely on side effects, meaning that any piece of code can be re-evaluated any number of times without changing the program’s behavior. This is likely why many of the development environments for declarative languages are live, including Chrome’s HTML editor and many dataflow language editors. Constraints are particularly well suited to live development environments. Since constraints are declarative<sup>2</sup>, they can be re-evaluated without concern for undesirable side effects changing the meaning of the program. Additionally, the development environment can use the same constraint solver as used by application developers to make sure that the running program automatically updates in response to changes in the source program. The constraints expressed in Euclase are not entirely declarative, because they are enabled or disabled by finite state machines, where transitions are a form of side effect. However, this is accounted for in the Euclase implementation.
 
+> 2 Some constraint evaluators allow constraints to have side effects \[15\]. However, constraints in the Euclase environment are more like spreadsheet formulas and cannot have side effects.
+
 ### B. Euclase Implementation
 
 Euclase is built in HTML and JavaScript using the ConstraintJS constraint solver \[10\]. ConstraintJS uses a pull-based constraint solver based on the algorithm described by Vander Zanden et al \[15\].
 
 One implementation challenge of Euclase was dealing with changing variable references. In Euclase, not only may variable values change as the program is executing, but variable references may change as the user is editing the program source code. For example, if we have a cell for a variable y whose value is x+1, not only does the constraint for y need to be re-evaluated when x changes; it also has to be re-evaluated if the user renames, moves, or removes the property x, in order to achieve a live response to the edit. Also, if the user adds a variable named x closer in scope, then we need to use that x instead of the original x. Further, if the user deletes the property x, Euclase should handle that error without crashing the entire executing program.
-
-> 2 Some constraint evaluators allow constraints to have side effects \[15\]. However, constraints in the Euclase environment are more like spreadsheet formulas and cannot have side effects.
 
 Another challenge is handling finite state machine transitions because event listeners must be kept in sync with changing variable values. Suppose one finite state machine has a transition whose event is on('dbl\_click', selected\_item), meaning to switch states when the selected item is double clicked, Euclase needs to update its underlying event listeners as selected\_item changes (listening to every item and determining later on if it was selected\_item would be too inefficient). Euclase also has mechanisms to ensure that constraint values are correctly timed with the transitions that occur in finite state machines.
 

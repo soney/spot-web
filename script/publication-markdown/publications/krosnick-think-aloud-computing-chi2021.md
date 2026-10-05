@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126 -->
+<!-- Source PDF SHA-256: 1d5755f2c17b14707564e8ada0be5ce1b3a5924221d9578d434875631df44fe6 -->
 
 <a id="page-1"></a>
 
@@ -234,11 +234,9 @@ As with the formative study, conducting a more in-depth study with more particip
 
 #### 6.2.1 Training Phase.
 
-Participants were provided context for the kinds of information they might want to share, why they might be sharing, and who their audience may be. It is a similar script to the one used in the formative study, with the addition of five potential information types we highlight (design intent, process, to-do, problem, important). For each condition, we briefly explained how to capture knowledge and gave participants an opportunity to practice. • Traditional text documentation: We provided participants a Word document they could capture information in and showed them how to take screenshots. They were also informed they could document in any other natural way (e.g., code comments or slide notes). We chose text documentation as our baseline condition because this is how people commonly document in practice. • Think-aloud tool: We gave a brief tutorial on interacting with the prompting widget (Figure 5), including how to use the keywords shown in Figure 5 to automatically classify speech,
+Participants were provided context for the kinds of information they might want to share, why they might be sharing, and who their audience may be. It is a similar script to the one used in the formative study, with the addition of five potential information types we highlight (design intent, process, to-do, problem, important). For each condition, we briefly explained how to capture knowledge and gave participants an opportunity to practice. • Traditional text documentation: We provided participants a Word document they could capture information in and showed them how to take screenshots. They were also informed they could document in any other natural way (e.g., code comments or slide notes). We chose text documentation as our baseline condition because this is how people commonly document in practice. • Think-aloud tool: We gave a brief tutorial on interacting with the prompting widget (Figure 5), including how to use the keywords shown in Figure 5 to automatically classify speech, pointing out that the wedges fill as you speak more, and that dotted lines indicate fill-goals per wedge. The number of utterances required to hit the goal lines were chosen based on data from the formative study.
 
 - 
-
-pointing out that the wedges fill as you speak more, and that dotted lines indicate fill-goals per wedge. The number of utterances required to hit the goal lines were chosen based on data from the formative study.
 
 #### 6.2.2 Work Phase.
 

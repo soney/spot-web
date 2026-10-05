@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/zhang-convomap-vlhcc2025.pdf",
+          "size": 1597086
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 327528,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231581502,
+          "finish": 1791231584403,
+          "duration": "00:00:02.901",
+          "difference": 2901
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231581372,
+        "finish": 1791231584422,
+        "duration": "00:00:03.050",
+        "difference": 3050
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "zhang-convomap-vlhcc2025.pdf",
+  "pdf_sha256": "1c9651307834c5ab0cd26351f0f70f1f4fb313d4deca2408c6b7e8f0c123ba48",
+  "stderr": "Oct 05, 2026 4:19:42 PM org.verapdf.pd.font.cff.CFFFontProgram containsROS\nWARNING: The Top DICT does not begin with ROS operator\nOct 05, 2026 4:19:42 PM org.verapdf.pd.font.cff.CFFCIDFontProgram readCharSet\nWARNING: Invalid embedded cff font. Charset range exceeds number of glyphs\n"
+}

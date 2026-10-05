@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405 -->
+<!-- Source PDF SHA-256: 585c150a7fb9c178854d6192123b97b0da52ce25e3680ff38701bfc43df2dc91 -->
 
 <a id="page-1"></a>
 
@@ -14,7 +14,7 @@
 
 [Steve Oney](<https://orcid.org/0000-0002-5823-1499>) University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
-© 2023 Copyright held by the owner/author(s). ACM ISBN 978-1-4503-9422-2/23/04. [https://doi.org/10.1145/3544549.3585837](<https://doi.org/10.1145/3544549.3585837>)
+> © 2023 Copyright held by the owner/author(s). ACM ISBN 978-1-4503-9422-2/23/04. [https://doi.org/10.1145/3544549.3585837](<https://doi.org/10.1145/3544549.3585837>)
 
 > Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s). CHI EA ’23, April 23–28, 2023, Hamburg, Germany
 

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9 -->
+<!-- Source PDF SHA-256: 4cb16e3a27cd8652f8d51e126940cecb0e524cf36a4e710d3fb92c7e9667fd3a -->
 
 <a id="page-1"></a>
 
@@ -86,7 +86,7 @@ To test out her script, Sasha enters test date and time values into the form and
 
 Figure 2. The user can create input fields for their macro parameters, e.g., a date (A). VizMac then automatically adds corresponding variables to the script providing access to the input field values (B).
 
-![Figure 3. VizMac highlights a failing click command in the editable macro and shows a timeout waiting for selector #date-picker-23-09-2020. The code editor and page snapshot help locate the missing date element. The surrounding example explains that the site uses non-padded day and month numbers, so a script generating leading zeros must be corrected.](../figures/krosnick-providing-live-feedback-live2020/figure-003-p003.png)
+![Figure 3. VizMac displays a red timeout error above the macro editor: waiting for selector #datepicker-21-09-2020 &gt; .text-muted failed. The form at left supplies delivery date 09/21/2020. Callout A marks the click command that constructs the date selector from input variables; B marks a separate time-selection command. The surrounding text explains that leading zeros in single-digit days or months must be removed to match the site’s selectors.](../figures/krosnick-providing-live-feedback-live2020/figure-003-p003.png)
 
 Figure 3. An error is shown when a particular CSS selector does not exist on the page.
 

@@ -1,0 +1,1030 @@
+[
+  {
+    "file": "arab-co-advisor-vlhcc2025.pdf",
+    "pdf_sha256": "a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "arab-navigating-complexity-tse2026.pdf",
+    "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-cocapture-chi2021.pdf",
+    "pdf_sha256": "935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-codeon-chi2017.pdf",
+    "pdf_sha256": "454ef1bfbc313be64c4fcc4e2a03b22b13ba86a09ab1f7e5ab0a3fda85523b86",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-edcode-vlhcc2020.pdf",
+    "pdf_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-expert-crowd-support-ci2016.pdf",
+    "pdf_sha256": "5dba284f91253285320a5d3544cc2d835545aa708e60bd27ee0a2d851364519a",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
+    "pdf_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+    "pdf_sha256": "27956a650e601f4f1961d25dc71ded9225ef4132af0d8419e7687d81d1faa8b1",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+    "pdf_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-providing-on-demand-expert-chi2016.pdf",
+    "pdf_sha256": "01eb3cb3ea1465dd599b16245ac52cf2b1556c2ff3c979c88c9f1e6e299fb9cc",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "chen-sifter-imx2020.pdf",
+    "pdf_sha256": "83c8d4df0ce89a1a085d04d317bd8c90c052ec84c12297b06fcf37353d8d1778",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "im-improving-advising-relationships-chiea2024.pdf",
+    "pdf_sha256": "f1be9a76da868fe0a22d9225ed8260cb765ab0180e07df33794b6da32983019b",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-expresso-vlhcc2018.pdf",
+    "pdf_sha256": "e38d55c4503fb6448676c108460209c2913d1e165ed2650783c10596ee4f2f37",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-parammacros-vlhcc2022.pdf",
+    "pdf_sha256": "2dc6cf656afeabcc85c6ca3e815d67171d22f1a4f3ad0d51c741be4868a4bed5",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
+    "pdf_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-providing-live-feedback-live2020.pdf",
+    "pdf_sha256": "0ef3db860fc33f3ffb09b68405468f6408fb882c3d8dc66c7ec57143c76caff9",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+    "pdf_sha256": "e02f769aa78225e63122ea229138884b3c9e8a0a3d3ab523fe69422730a2b79a",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-think-aloud-computing-chi2021.pdf",
+    "pdf_sha256": "c1f51f42304baf9f13f5c7e7d2a85de77081c431c055bbb4d74c9da11b95c126",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "krosnick-understanding-challenges-needs-vlhcc2021.pdf",
+    "pdf_sha256": "e437c3d2396eb1e663cf8786b79019b6f823706d2985e8474c670817059e564a",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "lin-adasa-uist2018.pdf",
+    "pdf_sha256": "89c5f036cc142aa49157a8b284ec1142be324bb6339748e2f2c07fd4bac988ca",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "myers-creativity-support-authoring-chi2013workshoponevaluationmethodsforcreativitysupportenvironments.pdf",
+    "pdf_sha256": "5896c2425f702d93a96791e1c9a64f4d21ecb837f40ab81dff5cd4b297976222",
+    "compliant": false,
+    "missing_identification_only": false,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      },
+      {
+        "clause": "7.21.4.1",
+        "test": 1,
+        "description": "The font programs for all fonts used for rendering within a conforming file shall be embedded within that file, as defined in ISO 32000-1:2008, 9.9",
+        "failed_checks": 4
+      }
+    ]
+  },
+  {
+    "file": "myers-making-end-user-eud2017.pdf",
+    "pdf_sha256": "d8413b9daf6fb657d41fcf8f5bc4bcd3505d8d86c484f939a531982f5ace6667",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-arboretum-and-arbility-uist2018.pdf",
+    "pdf_sha256": "e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-codelets-chi2012.pdf",
+    "pdf_sha256": "4880dd7556529e806405e8327e7505f4734de105be56d137f0467611428812ec",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-constraintjs-uist2012.pdf",
+    "pdf_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-creating-guided-code-cscw2018.pdf",
+    "pdf_sha256": "f7bcb09267588c76ee4b30501f851421beac354fa0b7732761e5652b18aed189",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+    "pdf_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+    "pdf_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-edbooks-preprint2024.pdf",
+    "pdf_sha256": "47d108a17d438a47343048fe1fccce347dcd1595862ba259f1827433ef269b31",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
+    "pdf_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-euclase-live2013.pdf",
+    "pdf_sha256": "da9fd42dd40d4f3230798af8a8a79003a7c221f130d5d9e137cdd602ff4775f4",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+    "pdf_sha256": "dca7f943589b0b7def32ac2a9ed555c2e1d970489b8c27ff25d922ca86fb8c95",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-firecrystal-vlhcc2009.pdf",
+    "pdf_sha256": "73d5a86b27d602a7723e0bc58cf50e9c01292f48f5078a13ac12ae0a2762f2d6",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+    "pdf_sha256": "a02dc021edd6ea1f87082d5eb6b7a3650c25ecd7a97b43dda40df8085d0e7f8b",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-interstate-uist2014.pdf",
+    "pdf_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-natural-language-search-mit2008.pdf",
+    "pdf_sha256": "ec9ed38c55bf0a4231b26f91c5d3f5145fb6a550a13cebd57a971edbdade74c3",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-playbook-iseud2011.pdf",
+    "pdf_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-visions-for-euclase-workshoponcomputationalcreativitychi2009.pdf",
+    "pdf_sha256": "34507e475d1f10c3013b80540015baa31b8f825f80eb70de835f607c8666ef73",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "oney-zoomboard-chi2013.pdf",
+    "pdf_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "ozenc-how-support-designers-chi2010.pdf",
+    "pdf_sha256": "e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandey-accessibility-ui-frameworks-vlhcc2022.pdf",
+    "pdf_sha256": "8be07f57c788ce3891d0cb83e5e244f7e7e47e75b75435b7fb61dc64d93fca0b",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandey-explore-create-annotate-chi2020.pdf",
+    "pdf_sha256": "5805ca7d1c5e6da765a55aac0038695291837f7c2b70740699a7a36033e7cb14",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandey-exploring-tracking-needs-pervasivehealth2019.pdf",
+    "pdf_sha256": "d84737a441b4be935a491ec3818ab9ebf03aef6706e909b66cadeeb8c21ef809",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandey-inclusive-source-code-chi2024.pdf",
+    "pdf_sha256": "752f7315180d8d64dd19d077e8604f6c4d716bba959ade5486989b1498ba1c2f",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandey-ui-development-experiences-edi2024.pdf",
+    "pdf_sha256": "272b235d6e44f5d3f01394dd1fdc30cd2e0f51364ba05a057b9376c802b0b1b8",
+    "compliant": true,
+    "missing_identification_only": false,
+    "failed_rules": []
+  },
+  {
+    "file": "pandey-understanding-accessibility-collaboration-cscw2021.pdf",
+    "pdf_sha256": "87272230c27776c41c67a3a56f5c12289888d9a7205e8c8a6687221775214456",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "pandita-inferring-method-specifications-icse2012.pdf",
+    "pdf_sha256": "8f683de307c41dab7318bececd2983796c878c178539ce1bd815929edcd86ba8",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "rong-codemend-uist2016.pdf",
+    "pdf_sha256": "2bb575031bcb0950bfded6230a989fb817fc57e635de35c4b1dbaff6049d6937",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
+    "pdf_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-callisto-chi2020.pdf",
+    "pdf_sha256": "74ac0e411cb9b0b3b6424269bf2485b6582f40b25cd49b87bd07727153b5b3e9",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-colaroid-chi2023.pdf",
+    "pdf_sha256": "61c7c41263aa787d8fcfbd07471082bf6dd4c7cb2576754b5c45c2afd91b5ee7",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+    "pdf_sha256": "52d4f3e15f8fd0fef0f869e272ca578abb71d04961ed514152fd5ffdf4b9b57a",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-how-data-scientists-cscw2019.pdf",
+    "pdf_sha256": "a269eff777850358f78d3b22fcb471930aca0c2858c2dc5bcb23af3f127aed6b",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-puzzleme-cscw2021.pdf",
+    "pdf_sha256": "aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
+    "pdf_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "wang-what-makes-well-documented-chiea2021.pdf",
+    "pdf_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "xu-how-pairing-code-chilbw2023.pdf",
+    "pdf_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "yang-spark-vlhcc2025.pdf",
+    "pdf_sha256": "6080f86538ffa543ec7a75e299b46011c62ad1d9146fceae5807b173b1ed1fcc",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "yang-vizcode-lsdemos2024.pdf",
+    "pdf_sha256": "1f02303e03cf83a19c85136b666f4db581110ea49cc3f45e4eb4d7cf881f8874",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-cflow-ls2024.pdf",
+    "pdf_sha256": "dff271229687aa039a95bdefc04577ac4a6ce611c83b761425324ed49a17d460",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-codestream-chi2026.pdf",
+    "pdf_sha256": "8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd",
+    "compliant": true,
+    "missing_identification_only": false,
+    "failed_rules": []
+  },
+  {
+    "file": "zhang-convomap-vlhcc2025.pdf",
+    "pdf_sha256": "f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
+    "pdf_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-editrail-uist2026.pdf",
+    "pdf_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-flowmatic-uist2020.pdf",
+    "pdf_sha256": "82166c7853ab231d0e9f5e7aef9dbc061d154fd765ca58827a910e56f38e97fc",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-multi-click-uist2025.pdf",
+    "pdf_sha256": "0d297ded89ae34326adc5984ea341f4b5f2b59571f6836569799137a8d2077fe",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-runex-vlhcc2023.pdf",
+    "pdf_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+    "pdf_sha256": "39c422f13cef57ce46aa952144eb9b51408c9a27bfb51e1906d42b27ad6473a1",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+    "pdf_sha256": "79045f71ede95648cd253e70610fa780667e0bf1b8b99f3065f24cb052053bca",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
+    "pdf_sha256": "6c16f896b866c678cc7dbba0de40dbdf88a2369faa2c47f10970e1e7853d4d3e",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-vizprog-chi2023.pdf",
+    "pdf_sha256": "e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-vrcopilot-uist2024.pdf",
+    "pdf_sha256": "313a66f0decb37543406502f8ea16c1b007f062a3f20529e8d343ecfeca8dfb8",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhang-vrgit-chi2023.pdf",
+    "pdf_sha256": "372a9221711ca434002ba132db1336ee1782a2a309fc3c7ac2521e0e61e2c785",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  },
+  {
+    "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
+    "pdf_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+    "compliant": false,
+    "missing_identification_only": true,
+    "failed_rules": [
+      {
+        "clause": "5",
+        "test": 1,
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "failed_checks": 1
+      }
+    ]
+  }
+]

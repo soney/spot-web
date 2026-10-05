@@ -2,9 +2,9 @@
   "file": "zhang-runex-vlhcc2023.pdf",
   "title": "RunEx: Augmenting Regular-Expression Code Search with Runtime Values",
   "publication_id": "runex_augmenting_regular_expression_code_search_with_runtime_values_2023",
-  "pdf_sha256": "f8b3e3d793ad5d0c65b8471d45047b177befb89fc5593646b1945c4f22193c09",
+  "pdf_sha256": "9d56add2f02f051951c8e1297f10c25eed2ed3230d4a4d528874aa28d000a1c3",
   "markdown": "publications/zhang-runex-vlhcc2023.md",
-  "markdown_sha256": "b3ee236a7da0af93432a5cb9823cd08002d368030a4ed8d4ac7cc2a09cc33e32",
+  "markdown_sha256": "31cfbe27272716edca82f189b90400ad3ad3561fe3173051f99aa0ab0e6b085a",
   "pages": 9,
   "blocks": [
     {
@@ -56,6 +56,14 @@
       "characters": 46
     },
     {
+      "node": "318:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 98
+    },
+    {
       "node": "315:0",
       "role": "H2",
       "pages": [
@@ -77,26 +85,10 @@
       "pages": [
         1
       ],
-      "characters": 120
+      "characters": 1164
     },
     {
-      "node": "318:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 96
-    },
-    {
-      "node": "319:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 1043
-    },
-    {
-      "node": "joined-320:0",
+      "node": "320:0",
       "role": "P",
       "pages": [
         1,
@@ -161,7 +153,7 @@
       "characters": 961
     },
     {
-      "node": "joined-339:0",
+      "node": "339:0",
       "role": "P",
       "pages": [
         2
@@ -201,7 +193,7 @@
       "characters": 41
     },
     {
-      "node": "joined-345:0",
+      "node": "345:0",
       "role": "P",
       "pages": [
         2,
@@ -341,18 +333,18 @@
       "node": "394:0",
       "role": "P",
       "pages": [
-        3
-      ],
-      "characters": 459
-    },
-    {
-      "node": "joined-395:0",
-      "role": "P",
-      "pages": [
         3,
         4
       ],
-      "characters": 858
+      "characters": 1228
+    },
+    {
+      "node": "395:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 91
     },
     {
       "node": "398:0",
@@ -427,7 +419,7 @@
       "characters": 59
     },
     {
-      "node": "joined-408:0",
+      "node": "408:0",
       "role": "P",
       "pages": [
         4
@@ -499,7 +491,7 @@
       "characters": 601
     },
     {
-      "node": "joined-427:0",
+      "node": "427:0",
       "role": "P",
       "pages": [
         4,
@@ -513,7 +505,7 @@
       "pages": [
         5
       ],
-      "characters": 348
+      "characters": 480
     },
     {
       "node": "430:0",
@@ -564,7 +556,7 @@
       "characters": 220
     },
     {
-      "node": "joined-449:0",
+      "node": "449:0",
       "role": "P",
       "pages": [
         5
@@ -660,6 +652,14 @@
       "characters": 791
     },
     {
+      "node": "467:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 145
+    },
+    {
       "node": "463:0",
       "role": "H2",
       "pages": [
@@ -689,23 +689,7 @@
       "pages": [
         6
       ],
-      "characters": 353
-    },
-    {
-      "node": "467:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 143
-    },
-    {
-      "node": "468:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 525
+      "characters": 879
     },
     {
       "node": "469:0",
@@ -759,18 +743,18 @@
       "node": "475:0",
       "role": "P",
       "pages": [
-        6
-      ],
-      "characters": 353
-    },
-    {
-      "node": "joined-476:0",
-      "role": "P",
-      "pages": [
         6,
         7
       ],
-      "characters": 436
+      "characters": 596
+    },
+    {
+      "node": "476:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 195
     },
     {
       "node": "139:0",
@@ -826,7 +810,7 @@
       "pages": [
         7
       ],
-      "characters": 719
+      "characters": 903
     },
     {
       "node": "146:0",
@@ -875,14 +859,6 @@
         7
       ],
       "characters": 3725
-    },
-    {
-      "node": "214:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 183
     },
     {
       "node": "215:0",
@@ -965,7 +941,7 @@
       "characters": 847
     },
     {
-      "node": "joined-485:0",
+      "node": "485:0",
       "role": "P",
       "pages": [
         8
@@ -1060,7 +1036,7 @@
       ],
       "sha256": "35c96d283483e9c75f289f5f125cd4429bd3628dcf92ac1f2f30b7a7a3f2e222",
       "kind": "figure",
-      "alt": "Fig. 1. RunEx’s User Interface: Comprised of three steps. (a, b) Search and refine query: Users initiate a query by highlighting code sections. (c1, c2) Chaining queries: Set operations are applied to compose queries. (d1,d2) Viewing results: Results, are presented with matches highlighted."
+      "alt": "RunEx query interface. Selecting code tokens creates generalized patterns. Filters can constrain runtime values, such as type(v) is str, and variable names, such as len(n)>2. Queries can be combined using set operations, including complementing a selected loop pattern, and nested to find constructs such as iteration over set(v0). The two result panels show matching code with the corresponding expressions highlighted."
     }
   ],
   "tables": [
@@ -1242,13 +1218,12 @@
     }
   ],
   "normalization": {
-    "line_wrap_hyphens_removed": 112,
-    "paragraph_fragments_joined": 9,
+    "line_wrap_hyphens_removed": 89,
     "reviewed_wrap_repairs": 3,
     "line_wrap_hyphens_retained": 11,
     "script_runs_positioned": 19
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-runex-vlhcc2023.json.gz",
-  "source_tags_sha256": "3d1ca0c4d3968ef83ca5b4eab790168d09676d93977d94ad9065fe1067dbcef6"
+  "source_tags_sha256": "00812b59c833c1e507c8de02128e9cbd3f9d577436b0b5d852ae0fa947bde8a1"
 }

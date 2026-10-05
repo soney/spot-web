@@ -1,0 +1,326 @@
+{
+  "file": "yang-spark-vlhcc2025.pdf",
+  "pdf_sha256": "b7f7c8a46994e06bc030ef392040aff70bab0d686d5635ff7819e43fdfac55d5",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "SPARK: Real-Time Monitoring of Multi-Faceted Programming Exercises",
+  "structure_elements": 459,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 95,
+    "Note": 2,
+    "H2": 8,
+    "L": 5,
+    "LI": 75,
+    "Lbl": 75,
+    "LBody": 75,
+    "H3": 17,
+    "Figure": 8,
+    "Caption": 9,
+    "Table": 1,
+    "THead": 1,
+    "TR": 9,
+    "TH": 15,
+    "TBody": 1,
+    "TD": 48,
+    "H4": 1
+  },
+  "structure_content_references": 11261,
+  "parent_tree_entries": 12,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 752,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 4
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 899,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 816,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "vector_operations_artifact": 38,
+      "image_operations_tagged": 33,
+      "vector_operations_tagged": 1211,
+      "text_operations_tagged": 489,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 332,
+      "image_operations_tagged": 7,
+      "text_operations_tagged": 579,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "vector_operations_tagged": 167,
+      "image_operations_tagged": 220,
+      "text_operations_tagged": 401,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 7,
+      "vector_operations_tagged": 46,
+      "image_operations_tagged": 13,
+      "text_operations_tagged": 601,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 970,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 406,
+      "vector_operations_artifact": 4,
+      "vector_operations_tagged": 133,
+      "image_operations_tagged": 15,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 10,
+      "vector_operations_tagged": 9,
+      "image_operations_tagged": 12,
+      "text_operations_tagged": 807,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 1267,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 1076,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "319:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "326:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "347:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "348:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "354:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "359:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "360:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "370:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "393:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "398:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "407:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "511:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "521:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "525:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "532:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "533:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "537:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "555:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "562:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "659:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "660:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "664:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "668:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "672:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "675:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "678:0",
+      "page": 11
+    },
+    {
+      "level": 2,
+      "element": "680:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "390:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Fig. 1. SPARK consists of five panels. Here’s an overview of the SPARK dashboard: the Reference Panel (a), which provides instructors with the expected\ncode answer, the webpage, and a DOM tree preview for the programming exercise; the Checkpoints Panel (b), which allows for the creation and display\nof nested-task checkpoints; the Progress Visualization (c), which presents a visualization of students’ programming progress; the Component Inspector (d),\nwhich enables instructors to customize inspections of students’ output variations; and the My Classroom (e), which contains student code and statistics on\noverall task performance.",
+      "actual_text": ""
+    },
+    {
+      "element": "402:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Fig. 2. Checkpoints panel. In the Checkpoints panel, instructors can freely create nested-task checkpoints. Each checkpoint consists of multiple tasks, and\neach task (a) is made up of two parts: Task Description and Testing Code. Instructors can click the Generate Tests (b) button to view AI-suggested testing\ncode, which can be manually modified. They can then click the Verify Checkpoint (c) button to test the reference code to see if it passes (e) or fails (d).",
+      "actual_text": ""
+    },
+    {
+      "element": "516:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Fig. 3. My Classroom panel. Each student working on the programming problem has a Student Code Box (e), which includes the student’s code and task\ncompletion status (a) indicating whether they have passed the task. There is also a Classroom Statistics board (b) showing the class’s performance across\ndifferent tasks. The My Classroom panel can switch between two modes (c): Real-Time Mode, where instructors can view students’ code in real-time, and\nTimestamp Mode, which records students’ code history every minute. In Timestamp Mode, Instructors can use the slider to review the students’ code history.\nIf instructors change the order of the student code boxes in the Progress Viz panel or Components Inspector panel, they can use the Reset Order button (d)\nto revert the Code Boxes to their default order.",
+      "actual_text": ""
+    },
+    {
+      "element": "518:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Fig. 4. Progress Visualization panel. The Progress Visualization panel includes a diagram (a) that displays students’ progress across checkpoints. Each dot\nalong the checkpoint line represents a student’s task completion rate for that checkpoint at a particular timestamp (b). Instructors can hover over a dot to\nhighlight a student (c), use the brush tool to select multiple students within that area (d), and click to select an individual student (e), with the selected student\nremaining highlighted. Additionally, instructors can adjust the slider to view the visualization diagrams at different timestamps (f).",
+      "actual_text": ""
+    },
+    {
+      "element": "528:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Fig. 5. Components Inspector Panel. The Components Inspector (a) is structured according to checkpoints. Each task is linked to a corresponding inspector\nboard (b) that includes two key features: the Element Inspector (c) and the Element Previewer (e). Instructors can view the inspection results in (d) (a full\nview of the results is shown in (g)) and preview the element in (f). The inspector automatically simulates interactions before performing the inspection. For\nexample, (h) displays clustered screenshots of the newly added .todoitem following the interaction ”Add new item after clicking the add button (Task 4)”.\nScreenshots of identical elements are grouped together to facilitate easier analysis.",
+      "actual_text": ""
+    },
+    {
+      "element": "647:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 6. Sixteen participants compare Baseline and SPARK. Each following pair gives mean and standard deviation for Baseline, then SPARK: comprehensive progress monitoring, 2.19 (1.28) and 4.63 (0.62); detailed trajectory insights, 2.63 (1.15) and 4.63 (0.62); identifying students falling behind, 2.81 (1.42) and 4.88 (0.34); identifying student challenges, 2.06 (1.06) and 4.13 (1.09); assessing element functionality, 1.69 (0.79) and 4.44 (0.96); inspecting element behavior variations, 1.69 (1.01) and 4.69 (0.48). Quiz correct answers out of five: 2.50 (0.97) and 4.69 (0.70). Unsure answers out of five: 2.56 (1.46) and 0.31 (0.79). The first six rows include stacked response distributions; the last two include boxplots. The source legend labels its darkest category “Not Used”, although those bars coincide with high mean ratings.",
+      "actual_text": ""
+    },
+    {
+      "element": "649:0",
+      "role": "Figure",
+      "page": 9,
+      "alt": "Figure 7. Sixteen participants rate usefulness, ease of use, and ease of learning for nine SPARK features: progress visualization, element inspector, element previewer, simulated interactions, real-time code boxes, timestamp code boxes, AI-generated tests, checkpoint verification, and the reference panel. Agree and strongly agree dominate every bar. All sixteen strongly agree that checkpoint verification is easy to use and easy to learn. Fifteen strongly agree that AI-generated tests are easy to use and learn. The few other responses are neutral, disagree, or not used; no strongly-disagree segment is visible.",
+      "actual_text": ""
+    },
+    {
+      "element": "656:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 8. Three progress snapshots at timestamps 2, 10, and 18 in an image-carousel exercise. Shaded regions spread rightward over time as students complete checkpoints. Separate checkpoint rows show uneven progress among task components.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

@@ -2,9 +2,9 @@
   "file": "zhang-understanding-guiding-student-ai-chi2025aeai.pdf",
   "title": "Understanding And Guiding Student-AI Interaction In Future Programming Education",
   "publication_id": "understanding_and_guiding_student_ai_interaction_in_future_programming_education_2025",
-  "pdf_sha256": "6c16f896b866c678cc7dbba0de40dbdf88a2369faa2c47f10970e1e7853d4d3e",
+  "pdf_sha256": "2b5954538ebf495d1cc1302a23302f13333046adc46d28e43074e5b6288b6965",
   "markdown": "publications/zhang-understanding-guiding-student-ai-chi2025aeai.md",
-  "markdown_sha256": "9860f45f07ede49b4e8537b417a20a0c2cb5db31240a7183b7b5a6f2625cc847",
+  "markdown_sha256": "59c1690300df528ccc68678864ab7b5294a27c903491e5976d09bc5aa7774725",
   "pages": 4,
   "blocks": [
     {
@@ -57,11 +57,11 @@
     },
     {
       "node": "449:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 114
+      "characters": 116
     },
     {
       "node": "201:0",
@@ -128,12 +128,20 @@
       "characters": 24
     },
     {
-      "node": "joined-448:0",
+      "node": "448:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 466
+      "characters": 397
+    },
+    {
+      "node": "450:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 70
     },
     {
       "node": "452:0",
@@ -160,7 +168,7 @@
       "characters": 1210
     },
     {
-      "node": "joined-455:0",
+      "node": "455:0",
       "role": "P",
       "pages": [
         1,
@@ -265,14 +273,6 @@
       "characters": 365
     },
     {
-      "node": "489:0",
-      "role": "L",
-      "pages": [
-        2
-      ],
-      "characters": 694
-    },
-    {
       "node": "496:0",
       "role": "Note",
       "pages": [
@@ -297,6 +297,15 @@
       "characters": 47
     },
     {
+      "node": "489:0",
+      "role": "L",
+      "pages": [
+        2,
+        3
+      ],
+      "characters": 1286
+    },
+    {
       "node": "523:0",
       "role": "Figure",
       "pages": [
@@ -311,14 +320,6 @@
         3
       ],
       "characters": 23
-    },
-    {
-      "node": "525:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 356
     },
     {
       "node": "526:0",
@@ -488,13 +489,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 78,
-    "paragraph_fragments_joined": 5,
+    "line_wrap_hyphens_removed": 69,
+    "paragraph_fragments_joined": 2,
     "script_runs_positioned": 3,
     "reviewed_wrap_repairs": 2,
     "line_wrap_hyphens_retained": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-understanding-guiding-student-ai-chi2025aeai.json.gz",
-  "source_tags_sha256": "48a561a9c076d67abfed92e51001e13bfad03d57cd5f00df5fe271142b42e6c1"
+  "source_tags_sha256": "677a6163ab89300bf36b74b2625b2d6f1869bc8398db3ac4f825b2e073d29e62"
 }

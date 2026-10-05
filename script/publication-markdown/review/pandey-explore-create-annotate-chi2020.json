@@ -2,9 +2,9 @@
   "file": "pandey-explore-create-annotate-chi2020.pdf",
   "title": "Explore, Create, Annotate: Designing Digital Drawing Tools with Visually Impaired People",
   "publication_id": "explore_create_annotate_designing_digital_drawing_tools_with_visually_impaired_people_2020",
-  "pdf_sha256": "5805ca7d1c5e6da765a55aac0038695291837f7c2b70740699a7a36033e7cb14",
+  "pdf_sha256": "b18316dcd1297682e5fc7820b3ff900a17449848ae9662bc89853b10aa67cad2",
   "markdown": "publications/pandey-explore-create-annotate-chi2020.md",
-  "markdown_sha256": "9e3574b585453ee21edf6fce914d74f6e6e5cd1b315874ac96da157064feefda",
+  "markdown_sha256": "2cf02640277da4526127481a94ae4a1e32c6180334c69d1bbbc0011a596af491",
   "pages": 12,
   "blocks": [
     {
@@ -32,12 +32,20 @@
       "characters": 94
     },
     {
-      "node": "842:0",
+      "node": "502:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 803
+      "characters": 90
+    },
+    {
+      "node": "842:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 805
     },
     {
       "node": "492:0",
@@ -101,15 +109,15 @@
       "pages": [
         1
       ],
-      "characters": 811
+      "characters": 1395
     },
     {
-      "node": "joined-502:0",
-      "role": "P",
+      "node": "516:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 674
+      "characters": 210
     },
     {
       "node": "505:0",
@@ -117,7 +125,7 @@
       "pages": [
         1
       ],
-      "characters": 250
+      "characters": 340
     },
     {
       "node": "506:0",
@@ -139,18 +147,10 @@
       "node": "515:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 180
-    },
-    {
-      "node": "joined-516:0",
-      "role": "P",
-      "pages": [
         1,
         2
       ],
-      "characters": 586
+      "characters": 558
     },
     {
       "node": "522:0",
@@ -311,7 +311,7 @@
       "pages": [
         3
       ],
-      "characters": 177
+      "characters": 984
     },
     {
       "node": "1020:0",
@@ -344,22 +344,6 @@
         3
       ],
       "characters": 161
-    },
-    {
-      "node": "572:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 571
-    },
-    {
-      "node": "574:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 234
     },
     {
       "node": "577:0",
@@ -403,11 +387,11 @@
     },
     {
       "node": "586:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         3
       ],
-      "characters": 201
+      "characters": 203
     },
     {
       "node": "591:0",
@@ -423,15 +407,7 @@
       "pages": [
         4
       ],
-      "characters": 263
-    },
-    {
-      "node": "593:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 1
+      "characters": 265
     },
     {
       "node": "594:0",
@@ -447,15 +423,7 @@
       "pages": [
         4
       ],
-      "characters": 992
-    },
-    {
-      "node": "597:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 99
+      "characters": 1092
     },
     {
       "node": "598:0",
@@ -651,7 +619,7 @@
       "characters": 47
     },
     {
-      "node": "joined-630:0",
+      "node": "630:0",
       "role": "P",
       "pages": [
         5
@@ -870,9 +838,10 @@
       "node": "665:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 929
+      "characters": 1151
     },
     {
       "node": "1023:0",
@@ -889,14 +858,6 @@
         8
       ],
       "characters": 377
-    },
-    {
-      "node": "978:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 221
     },
     {
       "node": "979:0",
@@ -939,7 +900,7 @@
       "characters": 39
     },
     {
-      "node": "joined-1003:0",
+      "node": "1003:0",
       "role": "P",
       "pages": [
         8
@@ -987,7 +948,7 @@
       "characters": 188
     },
     {
-      "node": "joined-1010:0",
+      "node": "1010:0",
       "role": "P",
       "pages": [
         8,
@@ -1065,15 +1026,7 @@
       "pages": [
         9
       ],
-      "characters": 304
-    },
-    {
-      "node": "681:0",
-      "role": "P",
-      "pages": [
-        9
-      ],
-      "characters": 410
+      "characters": 715
     },
     {
       "node": "682:0",
@@ -1619,7 +1572,7 @@
       ],
       "sha256": "2872e6aa8eb70f1cd0b93b3e7b546da256a01b68f8535df5d938ccf177b1d509",
       "kind": "figure",
-      "alt": "Tactile graphic created by a participant in the study. He labeled the graphic using both braille and audio labels. Audio label represented in different texture using paper tape"
+      "alt": "Figure 1. A participant’s tactile map of a park, drawn as raised outlines on transparent film. Several locations are marked with braille label strips and pieces of textured paper tape for audio labels, so the participant can distinguish the two label types by touch."
     },
     {
       "path": "figures/pandey-explore-create-annotate-chi2020/figure-002-p004.png",
@@ -1745,13 +1698,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 181,
-    "reviewed_wrap_repairs": 3,
-    "paragraph_fragments_joined": 5,
-    "line_wrap_hyphens_retained": 17,
-    "script_runs_positioned": 14
+    "line_wrap_hyphens_removed": 166,
+    "line_wrap_hyphens_retained": 15,
+    "script_runs_positioned": 14,
+    "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/pandey-explore-create-annotate-chi2020.json.gz",
-  "source_tags_sha256": "8c9e77b3647d6dbe10b77d6dc54a2b65d1c9799bf5d829f56d3570505031009f"
+  "source_tags_sha256": "6be6a583b8ce1127f3298627b689f05767ae2c5b0832c558fea4e39468bedeb3"
 }

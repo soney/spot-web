@@ -1,0 +1,676 @@
+{
+  "file": "oney-codelets-chi2012.pdf",
+  "before_sha256": "15e37a29822cd60123fac73e438e0e7cb9eda859a42a4acc84a04433f2420dff",
+  "after_sha256": "bcf17eb5f53af352394c1eeb9976fc6f1b5aaaf0f5bc7f051d582d03b39b1492",
+  "change": {
+    "date": "2026-10-05",
+    "baseline_pdf_sha256": "15e37a29822cd60123fac73e438e0e7cb9eda859a42a4acc84a04433f2420dff",
+    "kind": "raster_table_semantics",
+    "page": 5,
+    "table": "219:0",
+    "caption": "220:0",
+    "removed_figure_mcid": 0,
+    "new_text_mcids": [
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549
+    ],
+    "description": "Native Table with two heading rows, four grouped step headings, metric headings and Codelets/Control row headers. Invisible text carries exact bitmap cell text; original raster painting remains an artifact.",
+    "former_figure_alt": "Table 1. Task completion time and number of refreshes used for testing during part A. Each value is a mean followed by its standard deviation in parentheses. Time is measured in minutes; refreshes are counts. Step 1: Codelets time 2.09 (0.78), control time 4.04 (1.84); the time difference is significant at p < 0.01. Codelets refreshes 1.70 (0.67), control refreshes 2.90 (1.66). Step 2: Codelets time 1.75 (1.22), control time 2.54 (1.04). Codelets refreshes 1.0 (0.00), control refreshes 2.44 (0.88); the refresh-count difference is significant at p < 0.01. Step 3: Codelets time 5.57 (2.72), control time 10.40 (3.91); the time difference is significant at p < 0.01. Codelets refreshes 4.30 (3.59), control refreshes 8.78 (4.55); the refresh-count difference is significant at p < 0.05. Step 4: Codelets time 3.26 (1.73), control time 5.26 (3.46). Codelets refreshes 2.3 (2.11), control refreshes 4.78 (3.63). The source marks the p < 0.01 comparisons with two asterisks and green shading, and the p < 0.05 comparison with one asterisk and blue shading. Other comparisons have no significance marking."
+  },
+  "mapping": [
+    {
+      "node": "461:0",
+      "role": "TH",
+      "text": "",
+      "mcid": null,
+      "bbox_mupdf": [
+        54,
+        61.2,
+        101.7,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 2,
+      "colspan": 1,
+      "id": null,
+      "headers": []
+    },
+    {
+      "node": "462:0",
+      "role": "TH",
+      "text": "Step 1",
+      "mcid": 520,
+      "bbox_mupdf": [
+        101.7,
+        61.2,
+        215.1,
+        79
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 2,
+      "id": "codelets-table1-step1",
+      "headers": []
+    },
+    {
+      "node": "463:0",
+      "role": "TH",
+      "text": "Step 2",
+      "mcid": 521,
+      "bbox_mupdf": [
+        215.1,
+        61.2,
+        328.5,
+        79
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 2,
+      "id": "codelets-table1-step2",
+      "headers": []
+    },
+    {
+      "node": "464:0",
+      "role": "TH",
+      "text": "Step 3",
+      "mcid": 522,
+      "bbox_mupdf": [
+        328.5,
+        61.2,
+        441.9,
+        79
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 2,
+      "id": "codelets-table1-step3",
+      "headers": []
+    },
+    {
+      "node": "465:0",
+      "role": "TH",
+      "text": "Step 4",
+      "mcid": 523,
+      "bbox_mupdf": [
+        441.9,
+        61.2,
+        558,
+        79
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 2,
+      "id": "codelets-table1-step4",
+      "headers": []
+    },
+    {
+      "node": "467:0",
+      "role": "TH",
+      "text": "Time",
+      "mcid": 524,
+      "bbox_mupdf": [
+        101.7,
+        79,
+        158.4,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step1-time",
+      "headers": [
+        "codelets-table1-step1"
+      ]
+    },
+    {
+      "node": "468:0",
+      "role": "TH",
+      "text": "# Refreshes",
+      "mcid": 525,
+      "bbox_mupdf": [
+        158.4,
+        79,
+        215.1,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step1-refreshes",
+      "headers": [
+        "codelets-table1-step1"
+      ]
+    },
+    {
+      "node": "469:0",
+      "role": "TH",
+      "text": "Time",
+      "mcid": 526,
+      "bbox_mupdf": [
+        215.1,
+        79,
+        271.8,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step2-time",
+      "headers": [
+        "codelets-table1-step2"
+      ]
+    },
+    {
+      "node": "470:0",
+      "role": "TH",
+      "text": "# Refreshes",
+      "mcid": 527,
+      "bbox_mupdf": [
+        271.8,
+        79,
+        328.5,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step2-refreshes",
+      "headers": [
+        "codelets-table1-step2"
+      ]
+    },
+    {
+      "node": "471:0",
+      "role": "TH",
+      "text": "Time",
+      "mcid": 528,
+      "bbox_mupdf": [
+        328.5,
+        79,
+        385.2,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step3-time",
+      "headers": [
+        "codelets-table1-step3"
+      ]
+    },
+    {
+      "node": "472:0",
+      "role": "TH",
+      "text": "# Refreshes",
+      "mcid": 529,
+      "bbox_mupdf": [
+        385.2,
+        79,
+        441.9,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step3-refreshes",
+      "headers": [
+        "codelets-table1-step3"
+      ]
+    },
+    {
+      "node": "473:0",
+      "role": "TH",
+      "text": "Time",
+      "mcid": 530,
+      "bbox_mupdf": [
+        441.9,
+        79,
+        498.6,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step4-time",
+      "headers": [
+        "codelets-table1-step4"
+      ]
+    },
+    {
+      "node": "474:0",
+      "role": "TH",
+      "text": "# Refreshes",
+      "mcid": 531,
+      "bbox_mupdf": [
+        498.6,
+        79,
+        558,
+        92.6
+      ],
+      "scope": "Column",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-step4-refreshes",
+      "headers": [
+        "codelets-table1-step4"
+      ]
+    },
+    {
+      "node": "476:0",
+      "role": "TH",
+      "text": "Codelets",
+      "mcid": 532,
+      "bbox_mupdf": [
+        54,
+        92.6,
+        101.7,
+        107.8
+      ],
+      "scope": "Row",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-codelets",
+      "headers": []
+    },
+    {
+      "node": "477:0",
+      "role": "TD",
+      "text": "2.09 (0.78)**",
+      "mcid": 533,
+      "bbox_mupdf": [
+        101.7,
+        92.6,
+        158.4,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step1",
+        "codelets-table1-step1-time"
+      ]
+    },
+    {
+      "node": "478:0",
+      "role": "TD",
+      "text": "1.70 (0.67)",
+      "mcid": 534,
+      "bbox_mupdf": [
+        158.4,
+        92.6,
+        215.1,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step1",
+        "codelets-table1-step1-refreshes"
+      ]
+    },
+    {
+      "node": "479:0",
+      "role": "TD",
+      "text": "1.75 (1.22)",
+      "mcid": 535,
+      "bbox_mupdf": [
+        215.1,
+        92.6,
+        271.8,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step2",
+        "codelets-table1-step2-time"
+      ]
+    },
+    {
+      "node": "480:0",
+      "role": "TD",
+      "text": "1.0 (0.00)**",
+      "mcid": 536,
+      "bbox_mupdf": [
+        271.8,
+        92.6,
+        328.5,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step2",
+        "codelets-table1-step2-refreshes"
+      ]
+    },
+    {
+      "node": "481:0",
+      "role": "TD",
+      "text": "5.57 (2.72)**",
+      "mcid": 537,
+      "bbox_mupdf": [
+        328.5,
+        92.6,
+        385.2,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step3",
+        "codelets-table1-step3-time"
+      ]
+    },
+    {
+      "node": "482:0",
+      "role": "TD",
+      "text": "4.30 (3.59)*",
+      "mcid": 538,
+      "bbox_mupdf": [
+        385.2,
+        92.6,
+        441.9,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step3",
+        "codelets-table1-step3-refreshes"
+      ]
+    },
+    {
+      "node": "483:0",
+      "role": "TD",
+      "text": "3.26 (1.73)",
+      "mcid": 539,
+      "bbox_mupdf": [
+        441.9,
+        92.6,
+        498.6,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step4",
+        "codelets-table1-step4-time"
+      ]
+    },
+    {
+      "node": "484:0",
+      "role": "TD",
+      "text": "2.3 (2.11)",
+      "mcid": 540,
+      "bbox_mupdf": [
+        498.6,
+        92.6,
+        558,
+        107.8
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-codelets",
+        "codelets-table1-step4",
+        "codelets-table1-step4-refreshes"
+      ]
+    },
+    {
+      "node": "486:0",
+      "role": "TH",
+      "text": "Control",
+      "mcid": 541,
+      "bbox_mupdf": [
+        54,
+        107.8,
+        101.7,
+        123.9
+      ],
+      "scope": "Row",
+      "rowspan": 1,
+      "colspan": 1,
+      "id": "codelets-table1-control",
+      "headers": []
+    },
+    {
+      "node": "487:0",
+      "role": "TD",
+      "text": "4.04 (1.84)**",
+      "mcid": 542,
+      "bbox_mupdf": [
+        101.7,
+        107.8,
+        158.4,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step1",
+        "codelets-table1-step1-time"
+      ]
+    },
+    {
+      "node": "488:0",
+      "role": "TD",
+      "text": "2.90 (1.66)",
+      "mcid": 543,
+      "bbox_mupdf": [
+        158.4,
+        107.8,
+        215.1,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step1",
+        "codelets-table1-step1-refreshes"
+      ]
+    },
+    {
+      "node": "489:0",
+      "role": "TD",
+      "text": "2.54 (1.04)",
+      "mcid": 544,
+      "bbox_mupdf": [
+        215.1,
+        107.8,
+        271.8,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step2",
+        "codelets-table1-step2-time"
+      ]
+    },
+    {
+      "node": "490:0",
+      "role": "TD",
+      "text": "2.44 (0.88)**",
+      "mcid": 545,
+      "bbox_mupdf": [
+        271.8,
+        107.8,
+        328.5,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step2",
+        "codelets-table1-step2-refreshes"
+      ]
+    },
+    {
+      "node": "491:0",
+      "role": "TD",
+      "text": "10.40 (3.91)**",
+      "mcid": 546,
+      "bbox_mupdf": [
+        328.5,
+        107.8,
+        385.2,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step3",
+        "codelets-table1-step3-time"
+      ]
+    },
+    {
+      "node": "492:0",
+      "role": "TD",
+      "text": "8.78 (4.55)*",
+      "mcid": 547,
+      "bbox_mupdf": [
+        385.2,
+        107.8,
+        441.9,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step3",
+        "codelets-table1-step3-refreshes"
+      ]
+    },
+    {
+      "node": "493:0",
+      "role": "TD",
+      "text": "5.26 (3.46)",
+      "mcid": 548,
+      "bbox_mupdf": [
+        441.9,
+        107.8,
+        498.6,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step4",
+        "codelets-table1-step4-time"
+      ]
+    },
+    {
+      "node": "494:0",
+      "role": "TD",
+      "text": "4.78 (3.63)",
+      "mcid": 549,
+      "bbox_mupdf": [
+        498.6,
+        107.8,
+        558,
+        123.9
+      ],
+      "scope": null,
+      "rowspan": 1,
+      "colspan": 1,
+      "id": null,
+      "headers": [
+        "codelets-table1-control",
+        "codelets-table1-step4",
+        "codelets-table1-step4-refreshes"
+      ]
+    }
+  ],
+  "table_rendering": {
+    "source_table_id": "219:0",
+    "source_pages": [
+      5
+    ],
+    "format": "html",
+    "row_count": 4,
+    "column_count": 9,
+    "cell_count": 31,
+    "header_count": 15,
+    "empty_cell_count": 1,
+    "has_spans": true,
+    "grid_holes": [],
+    "warnings": [],
+    "scope_both_strategy": null,
+    "column_header_band_count": 1
+  },
+  "output_pdf": "/home/soney/nucode/spot-web/assets/pdfs/oney-codelets-chi2012.pdf",
+  "output_archive": "/home/soney/nucode/spot-web/script/publication-markdown/source-tags/oney-codelets-chi2012.json.gz"
+}

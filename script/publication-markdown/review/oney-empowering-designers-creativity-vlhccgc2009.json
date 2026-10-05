@@ -2,9 +2,9 @@
   "file": "oney-empowering-designers-creativity-vlhccgc2009.pdf",
   "title": "Empowering Designers with Creativity Support Tools",
   "publication_id": "empowering_designers_with_creativity_support_tools_2009",
-  "pdf_sha256": "65f57ce52b05dbbcb5964105f62393d99374185b16855bb450603ee5c8487f42",
+  "pdf_sha256": "14ed117754f63aeb099170a98d8aafea4c7843b1cbd76f897f94a8b9ea23aee0",
   "markdown": "publications/oney-empowering-designers-creativity-vlhccgc2009.md",
-  "markdown_sha256": "0094bdc884260b612221786f5f146e9dc36e4ced6310e2a5a3c12e32a6a1301b",
+  "markdown_sha256": "677e1b31552c0a2c0b416bcd828055296ab1f332450188ea1c6d73e30373d0f0",
   "pages": 2,
   "blocks": [
     {
@@ -104,7 +104,7 @@
       "characters": 14
     },
     {
-      "node": "joined-34:0",
+      "node": "34:0",
       "role": "P",
       "pages": [
         1,
@@ -145,7 +145,7 @@
       "characters": 477
     },
     {
-      "node": "joined-41:0",
+      "node": "41:0",
       "role": "P",
       "pages": [
         2
@@ -222,10 +222,8 @@
   "assets": [],
   "tables": [],
   "code_layout": [],
-  "normalization": {
-    "paragraph_fragments_joined": 2
-  },
+  "normalization": {},
   "review_notes": [],
   "source_tags": "source-tags/oney-empowering-designers-creativity-vlhccgc2009.json.gz",
-  "source_tags_sha256": "7be4d104478af427709be53251d3eef33088e02ad2ca33d3d0b1f262c06fb7e3"
+  "source_tags_sha256": "8f5877ddaffbd2d9a0333fc9e24bcea7adc0099674cca8029d943cc2da7e9aa2"
 }

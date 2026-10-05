@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d -->
+<!-- Source PDF SHA-256: 2314b323f248936c1e2d6fe7db9ff69e50d2203a679749b737a9098f83a6b0db -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,7 @@ Abstract—Despite advances in machine learning, there has been little progress 
 
 Index Terms—program synthesis; crowdsourcing; crowd workflows
 
-In this paper, we propose leveraging non-expert crowd workers to boost the accuracy of an existing program synthesis system (Tellina \[4\]) for generating Bash commands from natural language descriptions. We show that despite not having expertise with Bash scripting, crowd workers can increase the 978-1-7281-6901-9/20/31.00 ©2020 IEEE
+> 978-1-7281-6901-9/20/31.00 ©2020 IEEE
 
 ## I. INTRODUCTION
 
@@ -20,11 +20,11 @@ Bash is a complex but powerful Unix shell and user interface. Users can paramete
 
 Although researchers have created automated systems to help users write Bash scripts and programs from natural language descriptions \[3\]–\[5\], they are limited to accomplishing constrained tasks. In our tests with Tellina \[4\], a state-of-the-art automated tool that translates natural language queries found in the wild into Bash commands, we found a 10% accuracy rate. Part of this is because currently, most automated systems only work reliably in domains where there is sufficient, well-organized training data \[6\] and the “output” of the system is simple \[7\]. The only reliable source for support in complex domains like Bash scripting is from human experts, who can be difficult to find.
 
+In this paper, we propose leveraging non-expert crowd workers to boost the accuracy of an existing program synthesis system (Tellina \[4\]) for generating Bash commands from natural language descriptions. We show that despite not having expertise with Bash scripting, crowd workers can increase the effectiveness of the fully automated system by nearly 30%. We also introduce Bashon (Fig. 1), a user interface that uses our hybrid workflow to allow users to generate Bash commands from natural language descriptions.
+
 ![Fig. 1. Bashon allows users to create Bash commands from natural language. It uses a hybrid workflow that integrates crowd workers and an AI for program synthesis. In this example, the user types a command in natural language: “List files that are modified more than 30 days ago under the css directory” and Bashon proposes three Bash commands. The user can press ‘Run’ to execute any of the proposed commands](https://from.so/assets/markdown/figures/chen-hybrid-crowd-machine-workflow-vlhcc2020/figure-001-p001.png)
 
 Fig. 1. Bashon allows users to create Bash commands from natural language. It uses a hybrid workflow that integrates crowd workers and an AI for program synthesis. In this example, the user types a command in natural language: “List files that are modified more than 30 days ago under the css directory” and Bashon proposes three Bash commands. The user can press ‘Run’ to execute any of the proposed commands
-
-effectiveness of the fully automated system by nearly 30%. We also introduce Bashon (Fig. 1), a user interface that uses our hybrid workflow to allow users to generate Bash commands from natural language descriptions.
 
 <a id="page-2"></a>
 
@@ -70,11 +70,11 @@ To explore the effectiveness of using hybrid workflows for generating Bash comma
 
 - Argument Filling: The final step fills the argument slots in the candidate commands with the extracted entities to form the complete script. Users then receive a list of full commands. However, this step does not ensure that commands are safe, valid, or executable.
 
-1) Performance[1](<#page-3>): The reported accuracies of Tellina are Acc<sup>1</sup><sub>F</sub> 30.0%, and Acc<sup>3</sup><sub>F</sub> 36.0% where Acc<sup>k</sup><sub>F</sub> is denoted = = as the percentage of their test examples for which a correct full command is ranked k<sup>th</sup> or higher in a list of possible translations. According to the authors, 41 out of 50 incorrect sample commands are caused by the mis-recognition of entities in the first step. In addition, the generated commands need to be validated by the users, and these commands can sometimes be unusual and complex, which makes validation difficult. Furthermore, this process could be very tedious and error-prone when using a large-scale file system.
-
-These performance limitations provide an opportunity to introduce a hybrid workflow as a possible solution. Where Tellina’s parser fails to extract the correct entities from a query, human input could potentially be more accurate. Crowd workers could also help to validate the outcomes by voting on the execution results, as troubleshooting is a cumbersome process when the file system is large. However, the language translation and argument filling steps require domain-specific knowledge of the syntax of Bash commands, which non-expert crowd workers might not be able to gain in a short amount of time. So, for the translation step, we can continue to leverage Tellina’s automated system.
+1) Performance (note 1): The reported accuracies of Tellina are Acc\_F^1 = 30.0%, and Acc\_F^3 = 36.0% where Acc\_F^k is denoted as the percentage of their test examples for which a correct full command is ranked kth or higher in a list of possible translations. According to the authors, 41 out of 50 incorrect sample commands are caused by the mis-recognition of entities in the first step. In addition, the generated commands need to be validated by the users, and these commands can sometimes be unusual and complex, which makes validation difficult. Furthermore, this process could be very tedious and error-prone when using a large-scale file system.
 
 > <sup>1</sup>Tellina’s original report only has their model evaluation results, which is what we reported in this section. Our final evaluation used and compared the “real task” performance which they collected for their user study but without any data cleaning process.
+
+These performance limitations provide an opportunity to introduce a hybrid workflow as a possible solution. Where Tellina’s parser fails to extract the correct entities from a query, human input could potentially be more accurate. Crowd workers could also help to validate the outcomes by voting on the execution results, as troubleshooting is a cumbersome process when the file system is large. However, the language translation and argument filling steps require domain-specific knowledge of the syntax of Bash commands, which non-expert crowd workers might not be able to gain in a short amount of time. So, for the translation step, we can continue to leverage Tellina’s automated system.
 
 ## III. THE BASHON WORKFLOW
 

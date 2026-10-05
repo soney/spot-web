@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: f09d9a3a88ab9afe00420ba344b1d5d416b297d0184ef42dd872ff5f4cdf6cf2 -->
+<!-- Source PDF SHA-256: 1c9651307834c5ab0cd26351f0f70f1f4fb313d4deca2408c6b7e8f0c123ba48 -->
 
 <a id="page-1"></a>
 
@@ -190,21 +190,21 @@ We conduced a within-subjects study with 16 participants to evaluate ConvoMap’
 
 3) MASs and their conversations: Since no publicly available MAS conversation dataset exists, the first author built two MASs and collected conversations from each. To ensure the authenticity of the data used in the study, the two MASs were adapted from examples on the AutoGen \[25\] website, a widely used commercial tool for MAS development<sup>1</sup>. For each MAS, we tested 25 prompts with 4 different system settings, collecting up to 100 conversations per MAS. The dataset contains genuine examples of errors and common patterns that agents encounter when modeling real-world tasks, as reported in the formative interviews (Section III). To maintain comparability across conditions, we designed one MAS for each condition with a comparable level of complexity.
 
-Multi-Agent System 1 (MAS-DATA): A data analysis assistant adapted from an automated data visualization example<sup>2</sup>. The MAS first loads an online dataset about car information<sup>3</sup> and writes code to answer user questions about the dataset.
-
-Multi-Agent System 2 (MAS-CHAT): A group chat system that answers research-related questions from users, adapted from an example on automated task solving by group chat<sup>4</sup>. Given a research-related question from the user, the system writes code to provide the answer.
-
-<a id="page-8"></a>
-
-Both MASs had three LLM agents and one user agent, handling user prompts ranging from 5 to 30 words. MAS-DATA generated 100 conversations, ranging from 6 to 10 messages, with word counts between 70 and 1903. MAS-CHAT generated 100 conversations, ranging from 3 to 12 messages, with word counts between 58 and 3835. In both MAS-DATA and MAS- CHAT, the output messages included three formats: natural language, Python code, and terminal execution results.
-
 > <sup>1</sup>https://microsoft.github.io/autogen/docs/Examples
+
+Multi-Agent System 1 (MAS-DATA): A data analysis assistant adapted from an automated data visualization example<sup>2</sup>. The MAS first loads an online dataset about car information<sup>3</sup> and writes code to answer user questions about the dataset.
 
 > <sup>2</sup>https://microsoft.github.io/autogen/docs/notebooks/agentchat groupchat vis
 
 > <sup>3</sup>https://raw.githubusercontent.com/uwdata/draco/master/data/cars.csv
 
+Multi-Agent System 2 (MAS-CHAT): A group chat system that answers research-related questions from users, adapted from an example on automated task solving by group chat<sup>4</sup>. Given a research-related question from the user, the system writes code to provide the answer.
+
 > <sup>4</sup>https://microsoft.github.io/autogen/docs/notebooks/agentchat groupchat
+
+<a id="page-8"></a>
+
+Both MASs had three LLM agents and one user agent, handling user prompts ranging from 5 to 30 words. MAS-DATA generated 100 conversations, ranging from 6 to 10 messages, with word counts between 70 and 1903. MAS-CHAT generated 100 conversations, ranging from 3 to 12 messages, with word counts between 58 and 3835. In both MAS-DATA and MAS- CHAT, the output messages included three formats: natural language, Python code, and terminal execution results.
 
 4) Study setup: The study was conducted remotely using Zoom using a within-subjects format where participants used both ConvoMap and the baseline system. We counterbalanced the order of the systems and the tasks (MASs). For each condition, we provided 20 minutes of training on how to use the system and the MAS settings, and to read the quiz questions. After training, participants had 20 minutes to answer quiz questions about agents’ behavior, errors, and patterns using the assigned system. After finishing the quiz questions, participants were asked to complete a survey about their experience using the system. At the end of each study, we conducted a reflective interview to compare the two systems. We encouraged participants to ask any questions about the usage of both systems. Each session lasted around 90 minutes.
 

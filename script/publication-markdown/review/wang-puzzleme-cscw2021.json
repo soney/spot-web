@@ -2,9 +2,9 @@
   "file": "wang-puzzleme-cscw2021.pdf",
   "title": "PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises",
   "publication_id": "puzzleme_leveraging_peer_assessment_for_in_class_programming_exercises_2021",
-  "pdf_sha256": "aaf92cb2a710c32ecb3483e9dcfcf27b9100bae5f51044a297f6b67f1b85cefe",
+  "pdf_sha256": "3809eb0010b1aa38b50e60c2afeff6d9fafb261c07f712b6742d94401d0b737b",
   "markdown": "publications/wang-puzzleme-cscw2021.md",
-  "markdown_sha256": "368905ba5ec1559c15c18987fed0ef1535843dd8341416209eced4e10a84f2d0",
+  "markdown_sha256": "2fe6af7b740d653ef900c9dee152f64f347b9d520a672cb34fbd1e4e629b164c",
   "pages": 24,
   "blocks": [
     {
@@ -80,22 +80,6 @@
       "characters": 326
     },
     {
-      "node": "534:0",
-      "role": "H2",
-      "pages": [
-        1
-      ],
-      "characters": 17
-    },
-    {
-      "node": "535:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 203
-    },
-    {
       "node": "536:0",
       "role": "P",
       "pages": [
@@ -112,12 +96,21 @@
       "characters": 477
     },
     {
-      "node": "545:0",
+      "node": "534:0",
+      "role": "H2",
+      "pages": [
+        1
+      ],
+      "characters": 17
+    },
+    {
+      "node": "535:0",
       "role": "P",
       "pages": [
+        1,
         2
       ],
-      "characters": 557
+      "characters": 761
     },
     {
       "node": "546:0",
@@ -144,14 +137,6 @@
       "characters": 920
     },
     {
-      "node": "549:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 291
-    },
-    {
       "node": "550:0",
       "role": "Note",
       "pages": [
@@ -160,12 +145,13 @@
       "characters": 116
     },
     {
-      "node": "569:0",
+      "node": "549:0",
       "role": "P",
       "pages": [
+        2,
         3
       ],
-      "characters": 253
+      "characters": 545
     },
     {
       "node": "570:0",
@@ -364,9 +350,10 @@
       "node": "862:0",
       "role": "P",
       "pages": [
-        5
+        5,
+        6
       ],
-      "characters": 384
+      "characters": 495
     },
     {
       "node": "881:0",
@@ -383,14 +370,6 @@
         6
       ],
       "characters": 3407
-    },
-    {
-      "node": "914:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 110
     },
     {
       "node": "915:0",
@@ -441,28 +420,13 @@
       "characters": 44
     },
     {
-      "node": "921:0",
+      "node": "joined-921:0",
       "role": "P",
       "pages": [
-        6
-      ],
-      "characters": 642
-    },
-    {
-      "node": "922:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 97
-    },
-    {
-      "node": "927:0",
-      "role": "P",
-      "pages": [
+        6,
         7
       ],
-      "characters": 225
+      "characters": 868
     },
     {
       "node": "928:0",
@@ -593,7 +557,7 @@
       "characters": 46
     },
     {
-      "node": "joined-957:0",
+      "node": "957:0",
       "role": "P",
       "pages": [
         8,
@@ -854,9 +818,10 @@
       "node": "1023:0",
       "role": "P",
       "pages": [
-        11
+        11,
+        12
       ],
-      "characters": 354
+      "characters": 770
     },
     {
       "node": "1024:0",
@@ -881,14 +846,6 @@
         12
       ],
       "characters": 2863
-    },
-    {
-      "node": "1058:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 415
     },
     {
       "node": "1059:0",
@@ -963,7 +920,7 @@
       "characters": 292
     },
     {
-      "node": "joined-1109:0",
+      "node": "1109:0",
       "role": "P",
       "pages": [
         13,
@@ -977,7 +934,7 @@
       "pages": [
         13
       ],
-      "characters": 432
+      "characters": 560
     },
     {
       "node": "1111:0",
@@ -1143,9 +1100,10 @@
       "node": "1138:0",
       "role": "P",
       "pages": [
-        15
+        15,
+        16
       ],
-      "characters": 229
+      "characters": 909
     },
     {
       "node": "1141:0",
@@ -1162,14 +1120,6 @@
         16
       ],
       "characters": 303
-    },
-    {
-      "node": "1143:0",
-      "role": "P",
-      "pages": [
-        16
-      ],
-      "characters": 679
     },
     {
       "node": "1144:0",
@@ -1275,14 +1225,6 @@
         17
       ],
       "characters": 3195
-    },
-    {
-      "node": "1190:0",
-      "role": "P",
-      "pages": [
-        17
-      ],
-      "characters": 97
     },
     {
       "node": "1196:0",
@@ -1543,7 +1485,7 @@
       "characters": 61
     }
   ],
-  "tagged_content_items": 13326,
+  "tagged_content_items": 13298,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1586,7 +1528,7 @@
       ],
       "sha256": "a29830be5c7191eadf24dc34a96d3c7d6260288a7ba69963f7bb7c09efc82b8c",
       "kind": "figure",
-      "alt": "Three test cases for alphabetically sorting names. Score0 reuses Alice, Bob, Charlie but asserts an incorrect order, Charlie, Alice, Bob. Score1 keeps those input names and checks that the output length matches the input length. Score2 supplies new names Alice, Bob, Mark and checks the correctly sorted output Alice, Bob, Mark. The caption defines the three scoring levels."
+      "alt": "Three test cases illustrate quality scores 0, 1, 2. Score 0 uses names Alice, Bob, Charlie and asserts the order Charlie, Alice, Bob. Score 1 uses the same input and checks len(names_sorted[0]) > len(names_sorted[1]), comparing the lengths of the first two output strings. Score 2 changes the input to Alice, Bob, Mark and asserts Alice, Mark, Bob. The caption describes alphabetical sorting, but the displayed Score 2 expected order is Alice, Mark, Bob; this source inconsistency is retained."
     },
     {
       "path": "figures/wang-puzzleme-cscw2021/figure-004-p015.png",
@@ -1712,12 +1654,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 27,
-    "paragraph_fragments_joined": 7,
+    "line_wrap_hyphens_removed": 24,
+    "paragraph_fragments_joined": 6,
     "line_wrap_hyphens_retained": 6,
     "script_runs_positioned": 9
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-puzzleme-cscw2021.json.gz",
-  "source_tags_sha256": "6d99588f8f20511e5f1a69ce753cab209ae25ec0381412e1813637f4779e8b93"
+  "source_tags_sha256": "e67ebbc77bd042ec6708afcc0a96221d955d8894d767c3f093f5a66620509158"
 }

@@ -1,0 +1,780 @@
+{
+  "file": "wang-colaroid-chi2023.pdf",
+  "pdf_sha256": "c9b8c52104df34856548c4d661c5236631a03ccac303b1536f3bd6652fc4cd9b",
+  "normalization_warnings": "",
+  "page_count": 22,
+  "language": "en-US",
+  "title": "Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials",
+  "structure_elements": 1348,
+  "roles": {
+    "Document": 1,
+    "Sect": 22,
+    "H1": 1,
+    "P": 153,
+    "Link": 223,
+    "H2": 16,
+    "Note": 4,
+    "Span": 10,
+    "L": 10,
+    "LI": 25,
+    "Lbl": 20,
+    "LBody": 25,
+    "H3": 21,
+    "H4": 41,
+    "Table": 5,
+    "THead": 5,
+    "TR": 120,
+    "TH": 159,
+    "TBody": 5,
+    "TD": 446,
+    "Caption": 9,
+    "Figure": 27
+  },
+  "structure_content_references": 17862,
+  "parent_tree_entries": 245,
+  "form_xobjects_visited": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 815,
+      "vector_operations_artifact": 1,
+      "link_annotations": 17
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1046,
+      "vector_operations_artifact": 1,
+      "link_annotations": 16
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1137,
+      "link_annotations": 36
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 999,
+      "link_annotations": 17
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 17,
+      "vector_operations_artifact": 19,
+      "text_operations_tagged": 861
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1120,
+      "link_annotations": 2
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1053,
+      "vector_operations_artifact": 1,
+      "link_annotations": 12
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 10,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 497
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1053,
+      "link_annotations": 3
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 10,
+      "image_operations_tagged": 5,
+      "vector_operations_tagged": 215,
+      "text_operations_tagged": 791,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1048,
+      "link_annotations": 2
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 435,
+      "vector_operations_artifact": 3,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1013
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 10,
+      "vector_operations_tagged": 16,
+      "image_operations_tagged": 4,
+      "text_operations_tagged": 697,
+      "link_annotations": 2
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1054,
+      "link_annotations": 2
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 501,
+      "vector_operations_artifact": 159,
+      "image_operations_tagged": 22,
+      "link_annotations": 1
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 17,
+      "vector_operations_tagged": 21,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 774,
+      "link_annotations": 9
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1006,
+      "link_annotations": 4
+    },
+    {
+      "page": 19,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 1522,
+      "link_annotations": 6
+    },
+    {
+      "page": 20,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 25
+    },
+    {
+      "page": 21,
+      "text_operations_artifact": 17,
+      "text_operations_tagged": 312,
+      "vector_operations_artifact": 27,
+      "link_annotations": 46
+    },
+    {
+      "page": 22,
+      "text_operations_artifact": 18,
+      "vector_operations_artifact": 21,
+      "text_operations_tagged": 332,
+      "link_annotations": 46
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "385:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "729:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "731:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "733:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "735:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "738:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "776:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "778:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "779:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "785:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "1782:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1784:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1814:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "1816:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1818:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1819:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1832:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1834:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1836:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1838:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1839:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1944:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "1949:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1951:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1953:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1955:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1958:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1960:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1962:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1964:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1970:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "1972:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "909:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "912:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "920:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "938:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "942:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "947:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "949:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "951:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "954:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "956:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "958:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "962:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "964:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "966:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "976:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "979:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "981:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "987:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "989:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "990:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "992:0",
+      "page": 11
+    },
+    {
+      "level": 3,
+      "element": "998:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "999:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1001:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "1109:0",
+      "page": 13
+    },
+    {
+      "level": 2,
+      "element": "1114:0",
+      "page": 13
+    },
+    {
+      "level": 3,
+      "element": "1116:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1117:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1119:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1123:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "1129:0",
+      "page": 14
+    },
+    {
+      "level": 4,
+      "element": "1132:0",
+      "page": 14
+    },
+    {
+      "level": 3,
+      "element": "1137:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1138:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1145:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1161:0",
+      "page": 15
+    },
+    {
+      "level": 4,
+      "element": "1482:0",
+      "page": 16
+    },
+    {
+      "level": 4,
+      "element": "2030:0",
+      "page": 17
+    },
+    {
+      "level": 2,
+      "element": "2032:0",
+      "page": 17
+    },
+    {
+      "level": 3,
+      "element": "2048:0",
+      "page": 18
+    },
+    {
+      "level": 3,
+      "element": "2050:0",
+      "page": 18
+    },
+    {
+      "level": 4,
+      "element": "2051:0",
+      "page": 18
+    },
+    {
+      "level": 4,
+      "element": "2054:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "2058:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "2060:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "2062:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "1491:0",
+      "page": 21
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "935:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 1: An overview of Colaroid. Colaroid is implemented as a VS Code extension. The user can open the Colaroid Notebook\n(B) side by side with their main code editor (A). A Colaroid notebook consists of cells. Each cell captures a history state of the\ncodebase, which contains three components — a text annotation area explaining the rationale behind this state (C), a code\neditor area displaying the state of the code and highlighting the changes compared to the previous state (D), and an output area\nrendering the HTML display of the history state (E).",
+      "actual_text": ""
+    },
+    {
+      "element": "973:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Five-phase diagram of propagating a tutorial edit through Git. Initially the main branch contains commits A and B. Colaroid creates a change branch at A, the author edits A to make A-prime, and later changes are reapplied to produce B-prime. The final phase removes the original main branch and renames change to main. Tutorial step entries are updated to the new commit IDs so the edited page title propagates to later steps.",
+      "actual_text": ""
+    },
+    {
+      "element": "1097:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "Figure 3. Post-task questionnaire, 10 participants. Counts are listed from Strongly Disagree, Disagree, Neutral, Agree, to Strongly Agree; omitted categories have zero responses. Most people would learn the system quickly: Agree 4, Strongly Agree 6. System difficult to use: Strongly Disagree 6, Disagree 3, Neutral 1. Satisfied with the created tutorial: Neutral 2, Agree 6, Strongly Agree 2. Students can follow the tutorial and replicate the project: Agree 5, Strongly Agree 5. Would use the tool for future teaching tutorials and demonstrations: Neutral 4, Agree 2, Strongly Agree 4. Useful for students creating project reports: Disagree 1, Neutral 1, Agree 2, Strongly Agree 6. Necessary to edit intermediate code after creating checkpoints: Strongly Disagree 1, Disagree 1, Agree 3, Strongly Agree 5. Useful to record and replay tutorial interactions: Disagree 2, Neutral 3, Agree 2, Strongly Agree 3.",
+      "actual_text": ""
+    },
+    {
+      "element": "1126:0",
+      "role": "Figure",
+      "page": 14,
+      "alt": "GitHub Codespaces study setup. A repository page on the left has the Codespaces launch control highlighted; an arrow leads to three browser-based editors on the right. Each places source code beside one tutorial format: an article with step text, a video player, or the Colaroid notebook with editable code and a rendered Flappy Bird preview.",
+      "actual_text": ""
+    },
+    {
+      "element": "1198:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for ease of following the tutorial. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.63 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1289:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for ease of following the tutorial. The corresponding mean values in Table 3 are 3.88 for Colaroid and 3.38 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1290:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for clarity of how the steps evolved. The corresponding mean values in Table 3 are 4.63 for Colaroid and 3.63 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1291:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for clarity of how the steps evolved. The corresponding mean values in Table 3 are 4.38 for Colaroid and 4.00 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1292:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for understanding how step changes affect the output. The corresponding mean values in Table 3 are 4.38 for Colaroid and 3.63 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1293:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for understanding how step changes affect the output. The corresponding mean values in Table 3 are 4.25 for Colaroid and 3.50 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1294:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for help making progress on the dinosaur project. The corresponding mean values in Table 3 are 4.50 for Colaroid and 4.00 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1295:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for help making progress on the dinosaur project. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.63 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1386:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for confidence reproducing the Flappy Bird project from scratch. The corresponding mean values in Table 3 are 4.25 for Colaroid and 2.88 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1387:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for confidence reproducing the Flappy Bird project from scratch. The corresponding mean values in Table 3 are 3.50 for Colaroid and 3.50 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1388:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for confidence building similar HTML5 games. The corresponding mean values in Table 3 are 3.50 for Colaroid and 2.75 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1389:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for confidence building similar HTML5 games. The corresponding mean values in Table 3 are 3.88 for Colaroid and 2.88 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1390:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for the tutorial taking too much time to read. The corresponding mean values in Table 3 are 2.25 for Colaroid and 3.25 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1391:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for the tutorial taking too much time to read. The corresponding mean values in Table 3 are 2.38 for Colaroid and 3.88 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1392:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for engagement while reading the tutorial. The corresponding mean values in Table 3 are 4.13 for Colaroid and 3.50 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1474:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for engagement while reading the tutorial. The corresponding mean values in Table 3 are 3.88 for Colaroid and 3.38 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1475:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for satisfaction with progress on the dinosaur game. The corresponding mean values in Table 3 are 4.00 for Colaroid and 3.38 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1476:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for satisfaction with progress on the dinosaur game. The corresponding mean values in Table 3 are 3.88 for Colaroid and 4.00 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1477:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for expert evaluation of the resulting artifact. The corresponding mean values in Table 3 are 60.00 for Colaroid and 54.38 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1478:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for expert evaluation of the resulting artifact. The corresponding mean values in Table 3 are 58.13 for Colaroid and 63.13 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1479:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Article for actual engagement time in minutes. The corresponding mean values in Table 3 are 14.68 for Colaroid and 8.76 for Article, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1480:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Box plots and individual points compare Colaroid with Video for actual engagement time in minutes. The corresponding mean values in Table 3 are 14.37 for Colaroid and 8.79 for Video, with eight participants in each condition.",
+      "actual_text": ""
+    },
+    {
+      "element": "1488:0",
+      "role": "Figure",
+      "page": 17,
+      "alt": "Participant activity timelines during the 40-minute task. Rows labeled by participant compare Colaroid with an article or video tutorial. Blue segments mark Colaroid use, orange article use, green video use and gray dashed segments work on the dinosaur game. Colaroid use recurs throughout many sessions; article or video use is often more concentrated early. Highlighted groups 1 and 2 compare conditions; callout 3 marks a participant who stops using the video after the opening segment.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

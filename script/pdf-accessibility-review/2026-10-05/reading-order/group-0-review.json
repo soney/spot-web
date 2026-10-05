@@ -1,0 +1,533 @@
+{
+  "review_date": "2026-10-05",
+  "scope": "Focused native tag reading-order review; read-only PDFs.",
+  "files": [
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "pdf_sha256": "5967c1c2a052f68781284c72b7b5ea57769759b79dc9de4ea761e12914688d92",
+      "pages": 227,
+      "native_blocks": 2943,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "running_header_inside_sentence",
+          "node": "1853:0",
+          "after_node": "1856:0",
+          "pages": [
+            17,
+            18
+          ],
+          "before_text": "t or explore their idea, developer must write it from scratch. Thus it is important that the underlying frameworks and tools they use address the difficulties of creating interactive behaviors. Because designing, implementing, and evaluating new interactive behaviors are common in the Human-Computer",
+          "after_text": "Interaction (HCI) community, making interactive behaviorseasier to implement is a fundamental problem in HCI[98].",
+          "intervening_nodes": [
+            {
+              "node": "1855:0",
+              "role": "P",
+              "text": "Chapter 1:Introduction/ Problem Statement"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "footnote_and_header_inside_sentence",
+          "node": "2053:0",
+          "after_node": "2057:0",
+          "pages": [
+            38,
+            39
+          ],
+          "before_text": "In theory, the Web’s three languages have complimentary, pre-defined roles. HTML, a declarative markup language, defines a page’s content. CSSdefines the appearance",
+          "after_text": "of that content with a declarative language that allows developers to specify stylistic properties of particular DOMnodes. CSSuses a “selector” language to allow developers to specify the DOMnodes they are controlling. JavaScript defines a page’s interactivity by modifying the DOMtree.",
+          "intervening_nodes": [
+            {
+              "node": "2054:0",
+              "role": "Note",
+              "text": "2Portions of this chapter were adapted from [126]"
+            },
+            {
+              "node": "2056:0",
+              "role": "P",
+              "text": "Chapter 3:ConstraintJS/ Web Development Technologies"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "footnote_inside_code",
+          "node": "2090:0",
+          "after_node": "2093:0",
+          "pages": [
+            42,
+            43
+          ],
+          "before_text": "3var friends =answer.data;",
+          "after_text": "4if(friends) {5people.text(\"\");6friends.forEach(function(friend) {7var img =$(\"<img />\");8people.append($(\"<div>\" + 9friend.name +10\"</div>\"))11.prepend(img);1213img.attr(\"src\", \"loading.gif\");14FB.api(\"/\" + friend.id + \"/picture\",15function(picanswer){16var picture =picanswer.data;17if(picture) {18",
+          "intervening_nodes": [
+            {
+              "node": "2091:0",
+              "role": "Note",
+              "text": "3This example code is based on version 1 of the Facebook API"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "superscript_marker_before_heading_number",
+          "node": "2047:0",
+          "pages": [
+            38
+          ],
+          "before_text": "23ConstraintJS",
+          "impact": "The footnote marker2 precedes the chapter number3 in native content order, so the heading starts as23 instead of chapter3 followed by its title and note marker.",
+          "confidence": "high",
+          "proposed_order": "Move the superscript note marker after the heading text in the native tag content order, preserving its printed location."
+        }
+      ]
+    },
+    {
+      "file": "xu-how-pairing-code-chilbw2023.pdf",
+      "pdf_sha256": "ef9ff034fdba04ef1b1db9faa77e4644bc692c95ae3ff16cd8be865e22320405",
+      "pages": 6,
+      "native_blocks": 106,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "copyright_inside_sentence",
+          "node": "287:0",
+          "after_node": "322:0",
+          "pages": [
+            1
+          ],
+          "before_text": " all essential skills for a developer,but all these can be quite challenging for beginners. What makesit more challenging is that teachers and tutors sometime struggleto help individual students due to large enrollments. Therefore,instructors often use peer learning, a form of collaborative learning",
+          "after_text": "where students provide mutual support and feedback by workingtogether or discussing code in groups. Studies have shown thatpeer programming can be beneficial for students by improving theirability to read and write code [17]. By discussing different methodsof solving the problem and reading other’s ",
+          "intervening_nodes": [
+            {
+              "node": "288:0",
+              "role": "P",
+              "text": "© 2023 Copyright held by the owner/author(s).ACM ISBN 978-1-4503-9422-2/23/04.https://doi.org/10.1145/3544549.3585837"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "permission_notice_inside_sentence",
+          "node": "327:0",
+          "after_node": "335:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "Due to large enrollments in introductory programming courses [15],there are limited interactions between the lecturer and the studentswhile novice programmers need more support. Instructors take a",
+          "after_text": "variety of approaches such as using a flipped classroom to encour-age interactive activities and collaboration inside the classroom [1].Peer learning is a widely used learning technique happening in labsor discussions for effective programming learning, and previousresearch has shown that peer learn",
+          "intervening_nodes": [
+            {
+              "node": "289:0",
+              "role": "Note",
+              "text": "Permission to make digital or hard copies of part or all of this work for personal orclassroom use is granted without fee provided that copies are not made or distributedfor profit or commercial advantage and that copies bear this notice and the full citationon the first page. Copyrights for third-party components of this work must be honored.For all other uses, contact the owner/author(s).CHI EA ’23, April 23–28, 2023, Hamburg, Germany"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "394:0",
+          "after_node": "401:0",
+          "pages": [
+            3,
+            4
+          ],
+          "before_text": "When we are reviewing the recorded video discussion and thequestionnaires where participants were explaining their thought",
+          "after_text": "processes, we found that students have a deeper understanding ofthe problem than what was been reflected by their code. For exam-ple, during the discussion, the participant explained her thoughtprocess in solving the problem to her partner (Figure 3, Example 2),which demonstrated her understanding o",
+          "intervening_nodes": [
+            {
+              "node": "399:0",
+              "role": "Figure",
+              "text": "[Figure: Figure 2. Methods used for questions 1 and 2, using indices defined in Figure 1. D denotes different-solution groups, shaded gray; S denotes similar-solution groups, white. Each row below gives question 1, then question 2. D1a: 2, partially solved; 1, 2, 4, 5. D1b: 1, 2; data lost. D2a: 1, 3; 1, 2, 4, 5. D2b: 1, 2; 1, 2. D3a: 3, partially solved; 1, 3. D3b: 1, 4; 1, 4, 6. D4a and D4b: failed to solve both questions. S1a: 5; 2, 4, 5. S1b: 5; 5. S2a: 5; 1, 4. S2b: 3, partially solved; 3, 6. S3a and S3b: 5; 1, 4, 5. S3c: 5; 3, 4, 5.]"
+            },
+            {
+              "node": "400:0",
+              "role": "Caption",
+              "text": "Figure 2: The first column is the participants. The middlecolumn represented question 1 and the right-most columnrepresented question 2. The indexes in the middle and theright-most column represent what specific method the par-ticipants used in order to solve question 1 and question 2.The participant’s name with grey background representedparticipant’s from different solution groups and the whitebackground represented participants from similar solutiongroups."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        }
+      ]
+    },
+    {
+      "file": "krosnick-scrapeviz-vlhcc2024.pdf",
+      "pdf_sha256": "fa295670cf1d5843d4fbe37988aa2e031c0e96251652d1655e7850c16c3343b7",
+      "pages": 6,
+      "native_blocks": 131,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "figure_inside_sentence",
+          "node": "206:0",
+          "after_node": "210:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "mite [21] offers users a visual data flow interface forscraping and a spreadsheet interface for viewing scrapedresults, but does not support tasks that involve hierarchical dataor multiple pages. Sifter [22] can extract data across multiplepages but is limited to pagination-based navigation and does",
+          "after_text": "not support hierarchical data. In contrast, ScrapeViz supportsweb scraping for hierarchical data and across multiple pages.",
+          "intervening_nodes": [
+            {
+              "node": "208:0",
+              "role": "Figure",
+              "text": "[Figure: Fig. 1. An illustration of ScrapeViz’s final state after the user has completed the IMDb scraping task in section IV. ScrapeViz gives users a programming by demonstration (PBD) authoring interface and interactive storyboard-like visual representations of their web scraping macro. A user begins with a single website viewport (D) and provides demonstrations (C and A for movie titles, K and M for actor names, S for birthdate) of the scraping and navigation actions they want to perform – ScrapeViz adds colored borders to indicate selected elements, opens new viewports for website pages navigated to, and generalizes these actions across UI elements and pages (using the PBD algorithm described below). During this process, ScrapeViz builds up a hierarchy of pages visited either manually or by PBD generalization – a top-level IMDb page containing a list of movies (D); in column L, a movie page for each of the movies in the top-level list; and in column R, an actor page for each actor in the first movie, “Everything Everywhere All at Once”. ScrapeViz uses color-coding to indicate scraping generalizations (e.g., orange for movie titles (B), purple for actor names (J)) and to indicate which UI elements when clicked lead to which website pages (e.g., orange-bordered movie titles (B) when clicked open the movie pages (L)). Users can navigate and inspect pages more closely by clicking directly on a small viewport, browsing sibling pages (P), or by clicking on a cell in the output table (H) to be taken to its source page and location.]"
+            },
+            {
+              "node": "209:0",
+              "role": "Caption",
+              "text": "Fig. 1.An illustration of ScrapeViz’s final state after the user has completed the IMDb scraping task in section IV. ScrapeViz gives users a programmingby demonstration (PBD) authoring interface and interactive storyboard-like visual representations of their web scraping macro. A user begins with a singlewebsite viewport (D) and provides demonstrations (C and A for movie titles, K and M for actor names, S for birthdate) of the scraping and navigation actionsthey want to perform – ScrapeViz adds colored borders to indicate selected elements, opens new viewports for website pages navigated to, and generalizesthese actions across UI elements and pages (using the PBD algorithm described below). During this process, ScrapeViz builds up a hierarchy of pages visitedeither manually or by PBD generalization – a top-level IMDb page containing a list of movies (D); in column L, a movie page for each of the movies in thetop-level list; and in column R, an actor page for each actor in the first movie, “Everything Everywhere All at Once”. ScrapeViz uses color-coding to indicatescraping generalizations (e.g., orange for movie titles (B), purple for actor names (J)) and to indicate which UI elements when clicked lead to which websitepages (e.g., orange-bordered movie titles (B) when clicked open the movie pages (L)). Users can navigate and inspect pages more closely by clicking directlyon a small viewport, browsing sibling pages (P), or by clicking on a cell in the output table (H) to be taken to its source page and location."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "footnotes_inside_sentence",
+          "node": "80:0",
+          "after_node": "83:0",
+          "pages": [
+            3
+          ],
+          "before_text": "ort(Fig 1-N) next to it to load the movie page in. This allowsSusan to keep track of the pages she has visited and revisitthem later to make edits or additions. Susan clicks on thesmaller viewport to expand it and see the movie page moreclearly; this then shrinks the original viewport containing the",
+          "after_text": "list of movies. She then clicks the first actor name link on theEEAAO movie page, Michelle Yeoh (Fig 1-K), which scrapesher name and navigates to her page. Finally, she scrapes thebirthdate “August 6, 1962” (Fig 1-S) on Michelle Yeoh’s page.",
+          "intervening_nodes": [
+            {
+              "node": "81:0",
+              "role": "Note",
+              "text": "1https://web.archive.org/web/20230404103018/https://www.imdb.com/search/title/?count=100&groups=oscar best picture winners&sort=year,desc&ref =nv ch osc"
+            },
+            {
+              "node": "82:0",
+              "role": "Note",
+              "text": "2IMDb example inspired by Rousillon [5]"
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        }
+      ]
+    },
+    {
+      "file": "chen-edcode-vlhcc2020.pdf",
+      "pdf_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+      "pages": 5,
+      "native_blocks": 91,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "figure_inside_sentence",
+          "node": "304:0",
+          "after_node": "307:0",
+          "pages": [
+            2
+          ],
+          "before_text": "We observed three common problems across these studies.First, the responses that our researcher instructor gave throughCodeon were difficult for students to interpret as studentslacked the ability to efficiently switch between deciphering",
+          "after_text": "a textual explanation and parsing references to code, whichwere often included in responses. This is because Codeonwas designed to help programmers complete tasks ratherthan guiding students to learn, and thus prioritizes allowingusers to quickly integrate code snippets over explaining orannotating ",
+          "intervening_nodes": [
+            {
+              "node": "305:0",
+              "role": "Figure",
+              "text": "[Figure: Fig. 1. A diagram shows the process of using EdCode to make a request, write a response, and integrate a response. (1) Students select a portion of their code and click the ‘Help’ button next to the selection to initialize a request. (2) Students attach a title, description, and tags to the request and send it to instructors. (3) Instructors can see the code base and other relevant information in their interface where they could write a contextualized response to the request. (4) Students can review the response in their code editor, and (5) check response context by clicking the hypertext.]"
+            },
+            {
+              "node": "306:0",
+              "role": "Caption",
+              "text": "Fig. 1. A diagram shows the process of using EdCode to make a request,write a response, and integrate a response. (1) Students select a portion oftheir code and click the ‘Help’ button next to the selection to initialize arequest. (2) Students attach a title, description, and tags to the request andsend it to instructors. (3) Instructors can see the code base and other relevantinformation in their interface where they could write a contextualized responseto the request. (4) Students can review the response in their code editor, and(5) check response context by clicking the hypertext."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "310:0",
+          "after_node": "327:0",
+          "pages": [
+            2,
+            3
+          ],
+          "before_text": "en the different pieces of information they receive.Borrowing from the idea of hyperlinks, which are pervasive inweb documents, we created a contextualized explanation featurethat allows instructors to link a selection of code to textualexplanations (Fig. 2). In students’ code editor, they can click",
+          "after_text": "highlighted text in an answer to see the code associated with it(4, 5 in Fig. 1). This feature helps to lower the cognitive costfor novices by dereferencing and removing navigation effort offinding the relevant code [24]. It also helps instructors avoid theeffort of clarifying each piece of code con",
+          "intervening_nodes": [
+            {
+              "node": "325:0",
+              "role": "Figure",
+              "text": "[Figure: Fig. 2. The contextualized explanation feature and the chat tool. To make their answers more contextualized, instructors can (1) select a portion of the text in their natural language answer and the relevant code context; (2) click the ‘link’ button to create the references, which will highlight the relevant code (hypertext) when clicking the references in the text. Instructors can also chat with students via (3).]"
+            },
+            {
+              "node": "326:0",
+              "role": "Caption",
+              "text": "Fig. 2. The contextualized explanation feature and the chat tool. To maketheir answers more contextualized, instructors can (1) select a portion of thetext in their natural language answer and the relevant code context; (2) clickthe ‘link’ button to create the references, which will highlight the relevantcode (hypertext) when clicking the references in the text. Instructors can alsochat with students via (3)."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "341:0",
+          "after_node": "351:0",
+          "pages": [
+            3,
+            4
+          ],
+          "before_text": "All seven students reported an overall preference forEdCode, as it was “convenient” (S1, S3–S6), “effortless” (S2),",
+          "after_text": "or “localized to my text editor” (S7). The flexibility betweensynchronous and asynchronous communication in EdCodeallows students to “easily follow up with the chat” (S2) and“ask questions wherever” (S1). EdCode also encouraged onestudent to ask more questions: “I felt better asking questions[using ",
+          "intervening_nodes": [
+            {
+              "node": "342:0",
+              "role": "Figure",
+              "text": "[Figure: Fig. 3. The code publicity feature. Instructors first click the ‘Show this code’ button to select a portion of the code in original request that is necessary to understand the question for other students. Then they click ‘Send Your Answer‘ button to publish the question and the answer to the entire class.]"
+            },
+            {
+              "node": "343:0",
+              "role": "Caption",
+              "text": "Fig. 3. The code publicity feature. Instructors first click the ‘Show this code’button to select a portion of the code in original request that is necessaryto understand the question for other students. Then they click ‘Send YourAnswer‘ button to publish the question and the answer to the entire class."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        }
+      ]
+    },
+    {
+      "file": "oney-zoomboard-chi2013.pdf",
+      "pdf_sha256": "169639db5df0451a3b406cee2c804ca0cce71f4d47c2058ceaf7adf628e83975",
+      "pages": 4,
+      "native_blocks": 87,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "copyright_inside_sentence",
+          "node": "46:0",
+          "after_node": "48:0",
+          "pages": [
+            1
+          ],
+          "before_text": "We present our work on ZoomBoard, a novel text entry technique for inch-scale[25] and smaller devices, such as a wristwatchcomputersor digital jewelry[20].These devicesarecomputationally capable, but suffer from a paucity of",
+          "after_text": "inputarea, whichgenerally precludes the use of conven-tional soft keyboards(andin turn limits therange of possi-bleapplications). At present, text entry methods for such small devices areabsent(e.g., iPod Nano, Sony Smart-Watch), unwieldy(e.g., calculator watch), or exotic(see e.g., [16,17,24]), whi",
+          "intervening_nodes": [
+            {
+              "node": "47:0",
+              "role": "P",
+              "text": "CHI 2013, April 27–May 2, 2013, Paris, France.Copyright © 2013 ACM 978-1-4503-1899-0/13/04...$15.00."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "figures_and_permission_notice_inside_sentence",
+          "node": "52:0",
+          "after_node": "59:0",
+          "pages": [
+            1,
+            2
+          ],
+          "before_text": "The most direct approach to support text entry on mobile devices has beento find clever ways to shrink QWERTYkeyboards, such that they can be accommodated on mobile",
+          "after_text": "deviceenclosures and touchscreens[14]. However, fitting 27+ keys onto a small device is neither straightforward, nor particularlyaccurate. It is now standard for touchscreen keyboards to feature real-time spelling correction, simply because it is assumed that users are unable to accurately hit such ",
+          "intervening_nodes": [
+            {
+              "node": "53:0",
+              "role": "Figure",
+              "text": "[Figure: Figure 1: ZoomBoard on a watch-sized device. The keyboard is fully zoomed out by default (A). When users press a key, the key- board iteratively zooms in (B & C), until the keys are a size that is comfortable and accurate (C). After the desired character is entered, the keyboard resets (D). Users may also swipe to the left to delete, to the right for a space, and up to switch to a symbols keyboard. ]"
+            },
+            {
+              "node": "54:0",
+              "role": "Caption",
+              "text": "Figure 1:ZoomBoard on a watch-sized device. The keyboard isfully zoomed out by default (A). When users press a key, the key-board iteratively zooms in (B & C), until the keys are a sizethat is comfortable and accurate (C). After the desired character is entered, the keyboard resets (D). Users may also swipe to the left to delete,to the right for a space, and up to switch to a symbols keyboard."
+            },
+            {
+              "node": "55:0",
+              "role": "Note",
+              "text": "Permission to make digital or hard copies of all orpart of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copiesbear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee."
+            },
+            {
+              "node": "57:0",
+              "role": "Figure",
+              "text": "[Figure: Figure 2: ZoomBoard could be used on a variety of device sizes, for example a smartphone (top left), watch (top right; simulated on a iPad), or coin-sized (bottom left). For size comparison, a typical physical number keypad (bottom right). ]"
+            },
+            {
+              "node": "58:0",
+              "role": "Caption",
+              "text": "Figure 2:ZoomBoard could be used on a variety of device sizes, forexample a smartphone (top left), watch (top right; simulated on aiPad), or coin-sized (bottom left). For size comparison, a typical physical number keypad (bottom right)."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        },
+        {
+          "kind": "figure_inside_sentence",
+          "node": "69:0",
+          "after_node": "73:0",
+          "pages": [
+            2,
+            3
+          ],
+          "before_text": "Of note, ZoomBoard has aninnateKSPCof 2.0-that is, all keys can be typed with 2 presses. Spaces can be typed with one swipe, bringing the KSPC-mindown to 1.84on typical phrase sets. This compares favorably to other small-deviceinput methods, for example,2.1, 3.3, and 4.3 for H4-Writer",
+          "after_text": "[17],LURDWriter[7], and EdgeWrite[27,28]respectively(see [17]for more discussion).",
+          "intervening_nodes": [
+            {
+              "node": "71:0",
+              "role": "Figure",
+              "text": "[Figure: Figure 3: Three applicable zooming approaches. When the user zooms in on a key (A), the area of the keyboard pressed could stay under the finger (B) or move to the center (C). We use a linear combination of both (D). ]"
+            },
+            {
+              "node": "72:0",
+              "role": "Caption",
+              "text": "Figure 3:Three applicable zooming approaches. When the user zooms in on a key (A), the area of the keyboard pressed could stay under the finger (B) or move to the center (C). We use a linear combination of both (D)."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        }
+      ]
+    },
+    {
+      "file": "oney-development-tools-interactive-iseuddc2011.pdf",
+      "pdf_sha256": "0af502de945c014e0890d328d966c6a2221f7ec5a318fed191d9f2d8f86d3059",
+      "pages": 4,
+      "native_blocks": 33,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "footnote_inside_bibliography_item",
+          "node": "76:0",
+          "pages": [
+            4
+          ],
+          "before_text": "6.Ozenc, F.K., Kim, M., Zimmerman, J., Oney, S., Myers, B.: How tosupport designers in getting hold of the immaterial material of software.CHI,pp. 2513-2522, (2010).1http://processing.org/& http://www.openframeworks.cc/",
+          "impact": "Footnote1 for Processing/OpenFrameworks is tagged as part of reference6 (Ozenc et al.) rather than as the note linked to the preceding Impact paragraph.",
+          "confidence": "high",
+          "proposed_order": "Separate the URL note from reference6 and associate it with its footnote marker; keep citation6 intact."
+        }
+      ]
+    },
+    {
+      "file": "chen-on-demand-collaboration-programming-msnfws2020.pdf",
+      "pdf_sha256": "d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf",
+      "pages": 4,
+      "native_blocks": 62,
+      "status": "needs_reading_order_work",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": [
+        {
+          "kind": "running_headers_inside_sentence",
+          "node": "233:0",
+          "after_node": "240:0",
+          "pages": [
+            3,
+            4
+          ],
+          "before_text": " facilitate their progress through resulting tools. With moreefficient remote support, instructors can host virtual office hours instead of in-person hours and more easily understandcomprehension gaps by viewing learners’ past attempts, thus reducing the interaction delay. Additionally, the produced",
+          "after_text": "tools could enable more collaboration, from peer feedback to team projects, than digital-only communication techniquesbetween learners, thus helping to increase learner engagement.",
+          "intervening_nodes": [
+            {
+              "node": "238:0",
+              "role": "P",
+              "text": "New Future of Work ’20, August 03–05, 2020, Woodstock, NY"
+            },
+            {
+              "node": "239:0",
+              "role": "P",
+              "text": "Chen, et al."
+            }
+          ],
+          "impact": "Native continuous reading interrupts a sentence or code listing with separate page furniture or a float.",
+          "confidence": "high",
+          "proposed_order": "Keep the sentence or code continuation adjacent; place the separate figure/table/note at a logical boundary. Mark repeated running headers as artifacts instead of body text where appropriate."
+        }
+      ]
+    },
+    {
+      "file": "oney-democratizing-computational-tools-vlhccgc2010.pdf",
+      "pdf_sha256": "8fed795ba24f760809733eb8caec80034b440b0231f37127b4fbed603c20315c",
+      "pages": 2,
+      "native_blocks": 25,
+      "status": "no_disruptive_order_issue_found_in_focused_review",
+      "block_checks": {
+        "native_sequence_generated_for_all_pages": true,
+        "summary_review": "Read native summaries across each short document; for CMU, inspected chapter/appendix flow, header interruptions, and selected footnote/code transitions. Not a manual line-by-line review of all227pages.",
+        "positive_observations": "Short documents generally follow left column then right column and reference number order. Plain consecutive paragraph fragments at a column/page break are not reported as defects."
+      },
+      "issues": []
+    }
+  ],
+  "coverage": {
+    "files": 8,
+    "pages": 258,
+    "files_with_confirmed_issues": 7,
+    "issues_recorded": 17
+  },
+  "limitations": [
+    "Findings are confirmed examples, not an exhaustive repair list.",
+    "No screen-reader test in this follow-up.",
+    "CMU thesis received targeted semantic checks; not every prose line or API table row was manually checked."
+  ],
+  "visual_checks_viewed": [
+    "oney-expressing-interactivity-states-cmu2015-p18.png",
+    "oney-expressing-interactivity-states-cmu2015-p38.png",
+    "oney-development-tools-interactive-iseuddc2011-p4.png",
+    "krosnick-scrapeviz-vlhcc2024-p3.png",
+    "chen-edcode-vlhcc2020-p2.png"
+  ]
+}

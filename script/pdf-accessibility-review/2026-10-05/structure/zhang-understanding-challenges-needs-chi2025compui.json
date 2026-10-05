@@ -1,0 +1,337 @@
+{
+  "file": "zhang-understanding-challenges-needs-chi2025compui.pdf",
+  "pdf_sha256": "ed50f04e067a48be53903e9bf6376cd09d331344bc03d4ed0add2536d9ccfbfd",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "Understanding Challenges and Needs of Using AI in Web Automation Systems",
+  "structure_elements": 787,
+  "roles": {
+    "Document": 1,
+    "Sect": 10,
+    "H1": 1,
+    "P": 56,
+    "H2": 11,
+    "Link": 131,
+    "L": 5,
+    "LI": 71,
+    "Lbl": 71,
+    "LBody": 71,
+    "H3": 13,
+    "H4": 15,
+    "Table": 6,
+    "THead": 6,
+    "TR": 67,
+    "TH": 90,
+    "TBody": 6,
+    "TD": 145,
+    "Caption": 8,
+    "Figure": 3
+  },
+  "structure_content_references": 7731,
+  "parent_tree_entries": 141,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 849,
+      "link_annotations": 22
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 1059,
+      "link_annotations": 46
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 893,
+      "vector_operations_artifact": 17,
+      "link_annotations": 28
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 10,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 964,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 18,
+      "image_operations_tagged": 2,
+      "text_operations_tagged": 267,
+      "link_annotations": 2
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 954,
+      "link_annotations": 9
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 18,
+      "text_operations_tagged": 1455,
+      "vector_operations_artifact": 603,
+      "link_annotations": 15
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 10,
+      "text_operations_tagged": 737,
+      "vector_operations_artifact": 197,
+      "link_annotations": 6
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 18,
+      "vector_operations_artifact": 40,
+      "text_operations_tagged": 314,
+      "link_annotations": 1
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 10,
+      "vector_operations_artifact": 3,
+      "text_operations_tagged": 236
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "511:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "515:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "517:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "549:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "550:0",
+      "page": 1
+    },
+    {
+      "level": 4,
+      "element": "552:0",
+      "page": 1
+    },
+    {
+      "level": 4,
+      "element": "702:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "704:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "706:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "708:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "712:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "714:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "763:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "765:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "910:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "912:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "914:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "916:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "931:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "933:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "935:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "936:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "963:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "966:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "970:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "1077:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1080:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1087:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1089:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1091:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1093:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1096:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1098:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1101:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "1103:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1105:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "1117:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1031:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1033:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1035:0",
+      "page": 8
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "959:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 1: Users first went through a screening survey (A) to collect demographic and technical background information. During\nthe interview, participants were introduced to the web automation concepts and demonstrations through an overview session\n(B). Users were asked to propose 5–10 examples of web tasks they commonly perform (C). Then they evaluated each of these\ntasks and six predefined tasks through discussions of interaction, preferred automation levels, concerns, and usage frequency\n(D). This evaluation process was repeated for all scenarios (E). Participants then answered follow-up questions to explore\nadditional use cases or concerns (F). After the interview, they completed a continuous survey over the next month to log\nadditional tasks incrementally (G).",
+      "actual_text": ""
+    },
+    {
+      "element": "1072:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 2. Distribution of 150 user-defined tasks. Subjectivity: 56.2 percent partially subjective, 26.6 percent not subjective, 17.2 percent completely subjective. Initiative: 76.6 percent reactive, 13.8 percent proactive, 9.7 percent mixed. Repetition: 84.0 percent unpredictable, 15.4 percent predictable, 0.6 percent one-time. Information sensitivity: 59.8 percent low, 18.9 percent moderate, 8.9 percent high, 12.4 percent none. Communication: 76.3 percent none, 12.4 percent with known people, 11.2 percent with strangers. Context: 69.2 percent personal, 27.8 percent professional, 3.0 percent mixed.",
+      "actual_text": ""
+    },
+    {
+      "element": "1074:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 3. Stacked bars compare six predefined tasks and user-defined tasks. Automation runs from 1, full automation, to 6, none; concern runs from 1, no concern, to 5, extreme concern. Full automation is most common for news summaries (59.1 percent) and market reports (50.0 percent); price comparison has 34.8 percent at automation level 5. Privacy has the clearest high-concern shares: rent payment has 42.1 percent extreme concern and 15.8 percent level 4; appointments have 30.0 percent extreme concern. For user-defined tasks, 34.8 percent favor full automation, while no-concern shares are 48.6 percent for errors, 64.5 percent for privacy, 52.9 percent for efficiency, and 66.7 percent for usefulness.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

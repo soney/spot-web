@@ -2,9 +2,9 @@
   "file": "zhang-demonstration-of-cflow-lsdemos2024.pdf",
   "title": "Demonstration of CFlow: Supporting Semantic Flow Analysis of Students' Code in Programming Problems at Scale",
   "publication_id": "demonstration_of_cflow_supporting_semantic_flow_analysis_of_students_code_in_programming_problems_at_scale_2024",
-  "pdf_sha256": "13d6ae6f390de2066bb71ff37570f3341b5840689457a008636fad8127c986a3",
+  "pdf_sha256": "656bfc4f7f3c4f357b4505f5ee2c1c176dc1b77ff0e84678a6241062bc26dafc",
   "markdown": "publications/zhang-demonstration-of-cflow-lsdemos2024.md",
-  "markdown_sha256": "b26696d2c4acf8d9d65bf1f533f681f194cb97a1e5e2118f7d4e6a0b1b36bc93",
+  "markdown_sha256": "0d69fac0f399dfb7622a60bbf594cdb4ad6fa17ba4d4cd444b11be7f3c2a896e",
   "pages": 2,
   "blocks": [
     {
@@ -61,7 +61,7 @@
       "pages": [
         1
       ],
-      "characters": 800
+      "characters": 622
     },
     {
       "node": "175:0",
@@ -72,12 +72,12 @@
       "characters": 724
     },
     {
-      "node": "178:0",
-      "role": "P",
+      "node": "179:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 78
+      "characters": 86
     },
     {
       "node": "141:0",
@@ -88,6 +88,14 @@
       "characters": 443
     },
     {
+      "node": "178:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 80
+    },
+    {
       "node": "176:0",
       "role": "H2",
       "pages": [
@@ -96,12 +104,12 @@
       "characters": 11
     },
     {
-      "node": "joined-177:0",
+      "node": "177:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 1486
+      "characters": 1401
     },
     {
       "node": "181:0",
@@ -277,19 +285,18 @@
       ],
       "sha256": "0ed8aaafc35259ab19117a20d29a0906ae93cd5b01ca369e521015a6c0e055e3",
       "kind": "figure",
-      "alt": "Figure 1: CFlow allows users to explore the semantic flows of student code submissions at a high level through semantic aggregation. First, users are presented with an overview of the entire set of solutions (1), including the SAV (a) and the SHV (b). They can then click on individual code lines (f) to progressively explore the details of specific implementations. The visualization will update to focus on a smaller subset of solutions, displaying the aggregated flow and distributions of the selected set only (2). Users can inspect details of the flow at individual code level in the CDV (e). CFlow offers a breakdown of types of errors within that group (k), and detailed solutions with context-aware highlighting (h)."
+      "alt": "CFlow workflow shown before and after filtering. The initial visualization on the left groups similar code statements into flows and shows adjacent horizontal bars summarizing each group. Colors run from green when all code lines in a group are correct to red when none are correct. Selecting a group narrows the flows in the right-hand filtered view. An error list on the far right has IndentationError selected, and red-bordered example submissions below highlight the relevant code in yellow. Clear and Go Back controls appear above each view."
     }
   ],
   "tables": [],
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 49,
-    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_removed": 46,
     "line_wrap_hyphens_retained": 2,
     "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-demonstration-of-cflow-lsdemos2024.json.gz",
-  "source_tags_sha256": "d6317701f65ea325272dd2a59c09fc63e16c6d8530f937d816dd8de3026276e4"
+  "source_tags_sha256": "eadc308e799327bb40f82a3959f18bf9eb0140e15dfd61fd75c7dc8d6ea3181d"
 }

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5 -->
+<!-- Source PDF SHA-256: 5d560237b2fad4e68048792072e8877f9aa07a7a9a6dc73d790a128c7de05b1c -->
 
 <a id="page-1"></a>
 
@@ -6,7 +6,7 @@
 
 [Source PDF](https://from.so/assets/pdfs/chen-edcode-vlhcc2020.pdf) · [Publisher page](https://doi.org/10.1109/vl/hcc50065.2020.9127260)
 
-Yan Chen<sup>1</sup>, Jaylin Herskovitz<sup>1</sup>, Gabriel Matute<sup>1</sup>, April Wang<sup>1</sup>, Sang Won Lee<sup>2</sup>, Walter S. Lasecki<sup>1</sup>, Steve Oney<sup>1</sup>
+Yan Chen (affiliation 1), Jaylin Herskovitz (affiliation 1), Gabriel Matute (affiliation 1), April Wang (affiliation 1), Sang Won Lee (affiliation 2), Walter S. Lasecki (affiliation 1), Steve Oney (affiliation 1).
 
 <sup>1</sup>University of Michigan, Ann Arbor, United States, {yanchenm,jayhersk,gmatute,aprilww,wlasecki,soney}@umich.edu <sup>2</sup>Virginia Polytechnic Institute and State University, Blacksburg, United States, sangwonlee@vt.edu
 
@@ -14,7 +14,7 @@ Abstract—Programming support methods, like discussion forums and office hours,
 
 Index Terms—Programming Education, Remote Assistance, Scalable Support
 
-978-1-7281-6901-9/20/$31.00 ©2020 IEEE
+> 978-1-7281-6901-9/20/$31.00 ©2020 IEEE
 
 ## I. INTRODUCTION
 

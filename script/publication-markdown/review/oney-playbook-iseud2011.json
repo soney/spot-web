@@ -2,9 +2,9 @@
   "file": "oney-playbook-iseud2011.pdf",
   "title": "Playbook: Revision Control & Comparison for Interactive Mockups",
   "publication_id": "playbook_revision_control_comparison_for_interactive_mockups_2011",
-  "pdf_sha256": "286be9d233bdb365d2d6423cfcb179908724070f0f3e2e9eb63e90777287013c",
+  "pdf_sha256": "489898f38c40a3988e3f144bc546afa222bbaaf50eb0d8179e5676a1fb43f6ef",
   "markdown": "publications/oney-playbook-iseud2011.md",
-  "markdown_sha256": "447bc878ffc720474dc8c57ad9431e7e54c30fffff5b2c8e2d2bc78c47ccf43b",
+  "markdown_sha256": "634ef4a68409a5910b74b7ff96502887bfbe7a167eb571d302a9d272be247881",
   "pages": 6,
   "blocks": [
     {
@@ -72,7 +72,7 @@
       "characters": 905
     },
     {
-      "node": "joined-40:0",
+      "node": "40:0",
       "role": "P",
       "pages": [
         1,
@@ -113,7 +113,7 @@
       "characters": 589
     },
     {
-      "node": "joined-47:0",
+      "node": "47:0",
       "role": "P",
       "pages": [
         2,
@@ -250,7 +250,7 @@
       "characters": 33
     },
     {
-      "node": "joined-82:0",
+      "node": "82:0",
       "role": "P",
       "pages": [
         5,
@@ -312,12 +312,11 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 123,
-    "paragraph_fragments_joined": 3,
-    "line_wrap_hyphens_retained": 2,
-    "script_runs_positioned": 7
+    "line_wrap_hyphens_removed": 109,
+    "script_runs_positioned": 7,
+    "line_wrap_hyphens_retained": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-playbook-iseud2011.json.gz",
-  "source_tags_sha256": "8b60b08ad0ea10de97d9b360fbf3e00d0402df818ca021d2e5769c32ab38fb47"
+  "source_tags_sha256": "59d3ad844b76292d1c0588112b8889bba1341a924373b5c81c1498bffbda98b5"
 }

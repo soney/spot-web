@@ -1,0 +1,61 @@
+{
+  "reviewed_transcriptions": 12,
+  "native_transcriptions_exact": true,
+  "retired_layout_repairs": [
+    "Expresso contribution continuation",
+    "CFlow reference 54"
+  ],
+  "figure_crop_revalidation": [
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2459:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2474:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2483:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2917:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2918:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-expressing-interactivity-states-cmu2015.pdf",
+      "node": "2919:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "oney-interstate-uist2014.pdf",
+      "node": "332:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "node": "547:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "node": "559:0",
+      "content_operations_unchanged": true
+    },
+    {
+      "file": "rong-codemend-uist2016.pdf",
+      "node": "588:0",
+      "content_operations_unchanged": true
+    }
+  ],
+  "stable_image_names": 459
+}

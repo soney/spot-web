@@ -1,0 +1,368 @@
+{
+  "file": "rong-codemend-uist2016.pdf",
+  "pdf_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "CodeMend: Assisting Interactive Programming with Bimodal Embedding",
+  "structure_elements": 544,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 89,
+    "H2": 12,
+    "H3": 16,
+    "Note": 7,
+    "Span": 8,
+    "Link": 108,
+    "Figure": 8,
+    "Caption": 13,
+    "H4": 8,
+    "Table": 5,
+    "THead": 5,
+    "TR": 28,
+    "TH": 36,
+    "TBody": 5,
+    "TD": 32,
+    "L": 3,
+    "LI": 49,
+    "Lbl": 49,
+    "LBody": 49
+  },
+  "structure_content_references": 10434,
+  "parent_tree_entries": 120,
+  "form_xobjects_visited": 6,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 767,
+      "vector_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 2,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 604,
+      "link_annotations": 16
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 1080,
+      "link_annotations": 53
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 806,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 29,
+      "vector_operations_artifact": 12,
+      "link_annotations": 4
+    },
+    {
+      "page": 5,
+      "vector_operations_tagged": 173,
+      "text_operations_tagged": 806,
+      "vector_operations_artifact": 14,
+      "link_annotations": 6
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 989,
+      "vector_operations_tagged": 109,
+      "vector_operations_artifact": 9,
+      "link_annotations": 10
+    },
+    {
+      "page": 7,
+      "vector_operations_artifact": 29,
+      "text_operations_tagged": 815,
+      "vector_operations_tagged": 134,
+      "link_annotations": 8
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 848,
+      "image_operations_tagged": 1,
+      "vector_operations_tagged": 251,
+      "link_annotations": 2
+    },
+    {
+      "page": 9,
+      "vector_operations_artifact": 8,
+      "text_operations_tagged": 1086,
+      "link_annotations": 2
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 927,
+      "vector_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 757,
+      "link_annotations": 3
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 634
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "118:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "124:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "126:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "128:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "130:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "148:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "150:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "170:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "489:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "493:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "497:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "499:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "500:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "545:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "550:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "563:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "565:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "570:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "582:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "591:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "613:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "615:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "669:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "695:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "702:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "716:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "718:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "720:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "722:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "729:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "762:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "773:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "780:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "783:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "788:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "792:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "794:0",
+      "page": 10
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "141:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "CodeMend interface. The left editor contains a scatter-plot program and highlights the scatter call. Its output is a colored scatter plot. On the right, the query 'change transparency' produces suggestions for the alpha parameter, with 0.5 highlighted as the current value and alternative values below. Panels A–D identify the editor, plot preview, query box and suggestions.",
+      "actual_text": ""
+    },
+    {
+      "element": "541:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2. CodeMend showing a ranked list of suggested functions based\non the query “create a scatter plot”. Clicking on a suggested function\nwill make the system display a number of images generated by the code\nexamples using the function.",
+      "actual_text": ""
+    },
+    {
+      "element": "547:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 3. CodeMend architecture has offline and online stages. Offline indexing gathers code from GitHub and code/text from webpages as training data. Modeling simplifies code representations and trains a bimodal embedding model. Online, a user interacts with a user interface that sends a query and current code context to Ranking and Filtering; the trained model supplies this ranking stage, which returns code suggestions to the interface.",
+      "actual_text": ""
+    },
+    {
+      "element": "559:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Figure 4. Training pipeline. GitHub and webpages supply code and natural-language content. Code becomes indexed function and argument n-grams; the example simplifies a matplotlib pie chart, title, bounding-box and axis calls. Natural-language content trains an embedding network, supplemented by API docstrings. The combined network takes a code-context vector and a natural-language vector, joins them in a hidden layer and predicts an output code element. In the example, code context plus the words color, set, face, bounding, the, box predict plt.title.set_bbox@1@facecolor, identifier 8206.",
+      "actual_text": ""
+    },
+    {
+      "element": "588:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 5. Four usage scenarios of the bimodal embedding model, arranged in a two-by-two grid. Each panel shows the same network connecting code context and natural-language input through an intermediate representation to code output; colored nodes and arrows indicate the inputs or outputs used, while unused input branches are gray. Panel (a), Code to Code: code context enters the upper input branch and predicts code at the right. Panel (b), NL to Code: natural language enters the lower input branch and predicts code at the right. Panel (c), NL plus Code to Code: both input branches are supplied to predict code. Panel (d), Code to NL: code context and target code are supplied, with the right-hand arrow pointing into the network and the lower-left arrow pointing outward to indicate natural-language output.",
+      "actual_text": ""
+    },
+    {
+      "element": "698:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 6. Two-dimensional projection of function-name vectors. Dashed segments connect four pairs: plt.xlim to plt.ylim, plt.xscale to plt.yscale, plt.xticks to plt.yticks, and plt.xlabel to plt.ylabel. In each pair the blue x-related function is left of its red y-related counterpart, with approximately horizontal displacement, illustrating the common x-to-y analogy.",
+      "actual_text": ""
+    },
+    {
+      "element": "713:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 7. Nested-layer spotlight search expands the pyplot grid function. The function call preview is plt.grid(linestyle=\"dashed\", linewidth=1). Below it, a strip of parameters highlights linestyle, whose explanation says it sets the line style of the line. The next layer lists possible styles, including solid and dashed, allowing the user to refine the function into a parameter value without leaving the editor.",
+      "actual_text": ""
+    },
+    {
+      "element": "725:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Figure 8. Before-and-after bar-chart pair used to elicit natural-language editing requests. Both plots show Adam, Bobby and Charlie with the same Case 1 and Case 2 bar heights. Plot A uses solid red and blue bars, a grid and a legend to the right. Plot B removes the grid, changes the bars to light salmon and pale blue with diagonal hatching, and moves the legend below the plot.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

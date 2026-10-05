@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: e548e4c1a3a207e63e0bc796465997ed215a2350bbe0ad6eecc90c8d3a8442a6 -->
+<!-- Source PDF SHA-256: 9375b86ea46ece16d4b1d96a2cbeb77a7fdf8a13e13fb6714931bfdc16f8f3e7 -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,7 @@
 
 [Steve Oney](<https://orcid.org/0000-0002-5823-1499>) University of Michigan Ann Arbor, Michigan, USA soney@umich.edu
 
-© 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9421-5/23/04...$15.00 [https://doi.org/10.1145/3544548.3581516](<https://doi.org/10.1145/3544548.3581516>)
+> © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9421-5/23/04...$15.00 [https://doi.org/10.1145/3544548.3581516](<https://doi.org/10.1145/3544548.3581516>)
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CHI ’23, April 23–28, 2023, Hamburg, Germany
 
@@ -122,13 +122,11 @@ More than half of the respondents (4/6) said they sometimes did not have enough 
 
 ### 4.1 System Design Goals
 
-Led by prior work and our interviews with instructors, we developed three design goals (DG1-DG3) to guide the design of VizProg
-
 <a id="page-5"></a>
 
-CHI ’23, April 23–28, 2023, Hamburg, Germany to help instructors monitor students’ in-class exercise progress in real-time.
+Led by prior work and our interviews with instructors, we developed three design goals (DG1-DG3) to guide the design of VizProg to help instructors monitor students’ in-class exercise progress in real-time.
 
-![Figure 1: VizProg’s User Interface. There are three main view panels: the overall class progress 2D map view (1), a solution-centered view (4), and a progress detailed view (5). On the 2D map view, each dot represents a student’s submission, each line between two dots indicates the edit movement. The x-axis encodes the size of a code edit to be proportional to the distance (2), and the y-axis represents different kinds of solutions for this exercise (3).](../figures/zhang-vizprog-chi2023/figure-001-p005.png)
+![Figure 1. VizProg has a class-progress map on the left, a solution-centered panel in the middle, and detailed progress/error information on the right. Map dots are orange for incorrect current submissions, blue for correct submissions, and gray for past versions; lines connect consecutive edits, and gray rectangles group a solution. Horizontal distance reflects edit distance, with progress toward correct solutions on the right; vertical position separates kinds of solutions. The middle panel lists students and their submitted code, while the right panel groups errors and highlights related code.](../figures/zhang-vizprog-chi2023/figure-001-p005.png)
 
 Figure 1: VizProg’s User Interface. There are three main view panels: the overall class progress 2D map view (1), a solution-centered view (4), and a progress detailed view (5). On the 2D map view, each dot represents a student’s submission, each line between two dots indicates the edit movement. The x-axis encodes the size of a code edit to be proportional to the distance (2), and the y-axis represents different kinds of solutions for this exercise (3).
 
@@ -168,6 +166,8 @@ To inspect the submissions from all the students who arrived at the same solutio
 
 To allow users to navigate students’ progress at different granularities, VizProg lets users examine the code progress of both groups and individuals at the code level (DG3). For group progress, instructors can crop a region on the 2D map to see the submissions only within that region (Fig. 2.a). When a region is selected, the area on the map will be a gray rectangle surrounding multiple dots. As long as the selected region has at least one submission, the 2D map view will hide all the dots outside of the region, and the progress detailed view will also display only the selected submission code (Fig. 1.5). To assist users in identifying common misconceptions, VizProg lists these submissions by error type frequency in descending order (Fig. 2.i)[1](<#page-7>). Furthermore, VizProg color codes each submission by its correctness, where orange indicates an incorrect submission and gray indicates a correct submission (Fig. 2.n). VizProg also displays the error message (Fig. 2.j) and highlights the line of code that caused the error when there is an error in the submission (Fig. 2.k). By resizing the overlay or dragging the overlay on the 2D map, the user can view real-time updates on the progress detailed view of the selected region (Fig. 2.a). For individual progress, users can either search by student ID (Fig. 1.5), or click a student ID on the solution-centered view (Fig. 1.4). This student’s progress will also be represented by a trajectory line on the 2D map (Fig. 2.b). After cropping a region or selecting submissions of a student, instructor can use the lightweight feedback feature (Fig. 2.d) to send feedback to the students that are selected.
 
+> <sup>1</sup>Failing the unit tests for the problem also produces a runtime error.
+
 #### 4.2.4 VizProg visualization compared to alternatives.
 
 We compare the visualization of VizProg to alternative tools in Table [1.](<#page-8>) We choose OverCode \[[14](<#page-15>)\] and Codeopticon \[[16](<#page-15>)\] as alternatives, which provide the state-of-the-art support for instructors to view students’ solutions in programming courses. The comparison is based on the four aspects listed in Table [1.](<#page-8>) First, VizProg and Codeopticon provide dynamic visualizations that update in real-time for instructors to monitor students’ progress, while OverCode analyzes students’ final solutions that are correct without regard to how they come up with the solutions. Second, the visualization of VizProg and OverCode is more concise than Codeopticon’s. VizProg encodes students’ progress into a 2-D map, where instructors can view hundreds of students’ progress in a single page without scrolling. By displaying clusters of student solutions, OverCode saves space by eliminating solutions with the same computation but different variable names. In Codeopticon, each learner’s progress is summarized in a tile, and the instructors interact with a dashboard consisting of a list of tiles. As a result, Codeopticon is not suitable for large programming courses. Third, VizProg and Codeopticon visualize solutions from all students, while OverCode visualize only solutions that can be executed without syntax errors. Fourth, VizProg summarizes editing history using 2-D trajectories, whereas OverCode and Codeopticon do not. OverCode displays only final submissions. Codeopticon shows code edits as diffs, but does not summarize editing history.
@@ -178,21 +178,33 @@ We compare the visualization of VizProg to alternative tools in Table [1.](<#pag
 
 The easiest approach would be to compute a code vector (using CodeBERT \[[11](<#page-15>)\] or similar tools) and perform dimensionality reduction (using T-SNE \[[37](<#page-16>)\] or similar algorithms) to reduce each code sample to two dimensions that can be displayed to instructors. However, this approach has two important downsides. First, we found that small edits can result in disproportionately large “jumps” in 2-D space by using vector embeddings alone. Second, this approach does not represent data points in a way that are necessarily intuitive; it is difficult to infer whether a student is close to a solution from their position alone.
 
-<sup>1</sup>Failing the unit tests for the problem also produces a runtime error.
-
 Finally, depending on the approach for dimensionality reduction, the lower-dimensional embeddings might need to be re-computed frequently, which is too computationally expensive for real-time updates.
 
 #### 4.3.2 Normalizing Code.
 
-We refer to a given piece of code as 𝑐, a string of characters. 𝑐<sub>𝑠,𝑡</sub> refers to the code of student 𝑠 at time 𝑡. We will use is\_correct(𝑐) ∈ {𝑡𝑟𝑢𝑒, 𝑓 𝑎𝑙𝑠𝑒} to represent if a solution 𝑐 is correct (is\_correct(𝑐) = 𝑡𝑟𝑢𝑒) or incorrect (is\_correct(𝑐) = 𝑓 𝑎𝑙𝑠𝑒), as determined by unit tests. We will use only\_correct(𝐶), where 𝐶 is a set of code samples, to represent the subset of 𝐶 where is\_correct = 𝑡𝑟𝑢𝑒. This means that: only\_correct(𝐶) ⊆ 𝐶.
+We refer to a given piece of code as c, a string of characters. c\_(s,t) refers to the code of student s at time t. We will use is\_correct(c) ∈ {true, false} to represent if a solution c is correct (is\_correct(c) = true) or incorrect (is\_correct(c) = false), as determined by unit tests. We will use only\_correct(C), where C is a set of code samples, to represent the subset of C where is\_correct = true. This means that: only\_correct(C) ⊆ C.
 
 We rely on two separate similarity metrics to determine how to represent a student with code 𝑐 in VizProg: edit distance and vector similarity (both described below). However, neither of these similarity metrics account for differences that have no functional meaning to the Python interpreter, such as differences in variable names, comments, and spacing. For example, both similarity metrics would determine that the following pieces of code are different, even though they are functionally nearly identical (the only difference being that the code sample on the right prints ‘Done!’):
 
-my\_variable = 10 my\_dictionary = {} for key, value in my\_dictionary.items(): other\_value = value + 1 print(key, other\_value) v = 10 d = {}
+```
+my_variable = 10
+my_dictionary = {}
 
-# loop over all of the items in d for k, v in d.items():
+for key, value in my_dictionary.items():
+    other_value = value + 1
+    print(key, other_value)
+```
 
-w = v + 1 # add 1 to the value print(k, w) print('Done!')
+```
+v = 10
+d = {}
+
+# loop over all of the items in d
+for k, v in d.items():
+    w = v + 1  # add 1 to the value
+    print(k, w)
+print('Done!')
+```
 
 Prior work has accounted for this by computing the Abstract Syntax Trees (ASTs) of both samples and modifying variable names between code samples to match \[[14](<#page-15>)\]. However, this approach relies on building an AST, which is typically not possible in the presence of syntax errors. As we discuss above, we designed VizProg to work with code that has syntax errors. VizProg instead relies on text-based normalization, which attempts to normalize code by performing string-level operations, using regular expressions. Our normalization performs the following:
 
@@ -207,6 +219,14 @@ Prior work has accounted for this by computing the Abstract Syntax Trees (ASTs) 
 For example, VizProg’s normalization on the above code samples would produce:
 
 <a id="page-8"></a>
+
+```
+v0 = 10
+v1 = {}
+
+for v2, v3 in v1.items():
+    v4 = v3 + 1
+```
 
 Table 1: We compared the visualization of VizProg to OverCode \[[14](<#page-15>)\] and Codeopticon \[[16](<#page-15>)\] based on four features. A “Dynamic” visualization is one that updates in real-time. “Concise” means that the information can be read in a single page without having to scroll. The term “Represent All” indicates whether it displays all the students in the class. “Summary History” refers to whether history editing is summarized.
 
@@ -253,9 +273,7 @@ Table 1: We compared the visualization of VizProg to OverCode \[[14](<#page-15>)
   </tbody>
 </table>
 
-v0 = 10 v1 = {} for v2, v3 in v1.items(): v4 = v3 + 1
-
-We refer to the normalized version of code 𝑐 as norm(𝑐). Our normalization method has several drawbacks. First, it could result in small changes producing large semantic changes. For example, if a student 𝑠 as code at time 𝑡 𝑐<sub>𝑠,𝑡</sub> and at time 𝑡 + 1, they add a ‘#’ to comment out some portion of code, the distance between 𝑛𝑜𝑟𝑚(𝑐<sub>𝑠,𝑡</sub>) and 𝑛𝑜𝑟𝑚(𝑐<sub>𝑠,𝑡</sub><sub>+</sub><sub>1</sub>) could be large. Second, there are still several non-functional changes that it does not account for. For example, changing the order of declaration of v0 and v1 in the above code makes no functional difference to the code execution but is not accounted for in our normalization technique. Still, we have found that these issues have a small impact on our underlying algorithm. One of the reasons we used short variable names like v0 is that there is a relatively small cost for naming mistakes; for example, the edit distance between ‘v0’ and ‘v5’ is small. However, future work could further improve our normalization method to account for these challenges.
+We refer to the normalized version of code c as norm(c). Our normalization method has several drawbacks. First, it could result in small changes producing large semantic changes. For example, if a student s as code at time t c\_(s,t) and at time t + 1, they add a ‘#’ to comment out some portion of code, the distance between norm(c\_(s,t)) and norm(c\_(s,t+1)) could be large. Second, there are still several non-functional changes that it does not account for. For example, changing the order of declaration of v0 and v1 in the above code makes no functional difference to the code execution but is not accounted for in our normalization technique. Still, we have found that these issues have a small impact on our underlying algorithm. One of the reasons we use small short variable names like v0 is that there is a relatively small cost for naming mistakes; for example, the edit distance between ‘v0’ and ‘v5’ is small. However, future work could further improve our normalization method to account for these challenges.
 
 We divide our discussion into our techniques for determining students’ approach and their progress.
 
@@ -263,13 +281,13 @@ We divide our discussion into our techniques for determining students’ approac
 
 We represent students’ approach on the y-axis and we use the vector similarity between a students’ solution and existing solutions to determine which approach they are using.
 
-Vector Similarity The first distance metric that VizProg uses is vector similarity. VizProg leverages CodeBERT \[[11](<#page-15>)\], a pre-trained transformer model capable of representing code, to convert code into a vector (with 768 dimensions by default). vec(𝑐) ∈ R<sup>768</sup> represents the vectorized version of code 𝑐, as computed by CodeBERT. We can compute the vector similarity of two different code samples 𝑐<sub>1</sub> and 𝑐<sub>2</sub> using the cosine similarity, after normalizing the code samples (using the normalization technique described above): vec(norm(𝑐 )) · vec(norm(𝑐 ))1 2 vec\_sim(𝑐 ,𝑐 ) ≔1 2 \| vec(norm(𝑐 ))\|\| vec(norm(𝑐 ))\|1 2
+Vector Similarity The first distance metric that VizProg uses is vector similarity. VizProg leverages CodeBERT \[11\], a pre-trained transformer model capable of representing code, to convert code into a vector (with 768 dimensions by default). vec(c) ∈ R^768 represents the vectorized version of code c, as computed by CodeBERT. We can compute the vector similarity of two different code samples c\_1 and c\_2 using the cosine similarity, after normalizing the code samples (using the normalization technique described above): vec\_sim(c\_1, c\_2) := (vec(norm(c\_1)) · vec(norm(c\_2))) / (\|vec(norm(c\_1))\| \|vec(norm(c\_2))\|).
 
 This produces a single number in the range \[−1, 1\] where higher numbers represent higher similarity. In practice, this vector similarity tends to be very close to 1 when comparing code samples for the same exercise, even when comparing different approaches to the same problem (empirically, in the range \[0.96, 1.0\]).
 
-Building a Solution Space In order to build a Euclidean space for code solutions to a given problem, VizProg first needs a pre-existing set of prior solutions. In practice, these prior solutions might come from previous class sessions, previous semesters, instructor-written solutions, or could be collected after some subset of students has completed the exercise. The source of prior solutions may affect the solution space. Ideally, solution sets should be seeded from a source that contains a diverse and comprehensive set of approaches to solving the problem. We will discuss the problem of seeding VizProg in more detail in section [4.3.6.](<#page-9>) We denote the set of prior solutions as PAST\_CODE = {𝑝<sub>1</sub>, 𝑝<sub>2</sub>, · · · , 𝑝<sub>𝑛</sub><sub>𝑝𝑎𝑠𝑡</sub> }, where there are 𝑛 prior code examples. Ideally, PAST\_CODE should contain𝑝𝑎𝑠𝑡 several examples of correct solutions (is\_correct(𝑝) = 𝑡𝑟𝑢𝑒 for some 𝑝 ∈ PAST\_CODE) but typically should contain a mixture of correct and incorrect solutions.
+Building a Solution Space In order to build a Euclidean space for code solutions to a given problem, VizProg first needs a pre-existing set of prior solutions. In practice, these prior solutions might come from previous class sessions, previous semesters, instructor-written solutions, or could be collected after some subset of students has completed the exercise. The source of prior solutions may affect the solution space. Ideally, solution sets should be seeded from a source that contains a diverse and comprehensive set of approaches to solving the problem. We will discuss the problem of seeding VizProg in more detail in section 4.3.6. We denote the set of prior solutions as PAST\_CODE = {p\_1, p\_2, …, p\_(n\_past)}, where there are n\_past prior code examples. Ideally, PAST\_CODE should contain several examples of correct solutions (is\_correct(p) = true for some p ∈ PAST\_CODE) but typically should contain a mixture of correct and incorrect solutions.
 
-We first build a matrix 𝑃 containing the vector representation of every item 𝑝<sub>𝑛</sub> in PAST\_CODE (after normalizing the code):
+We first build a matrix P containing the vector representation of every item p\_n in PAST\_CODE (after normalizing the code):
 
 ![P is the matrix of code vectors vec of norm of p sub 1 through vec of norm of p sub n past. P belongs to the real matrices of size n past by 768.](../figures/zhang-vizprog-chi2023/formula-001-p008.png)
 
@@ -277,9 +295,9 @@ We first build a matrix 𝑃 containing the vector representation of every item 
 
 <a id="page-9"></a>
 
-We then reduce 𝑃 from 768 rows to 1 row, first using Principal Component Analysis (PCA) (to reduce from (𝑛<sub>𝑝𝑎𝑠𝑡</sub> ×768) to (𝑛<sub>𝑝𝑎𝑠𝑡</sub> × 40)) and then T-SNE \[[37](<#page-16>)\] (to reduce from (𝑛 × 40) to (𝑛 × 1)).𝑝𝑎𝑠𝑡 𝑝𝑎𝑠𝑡 This reduces 𝑃 to a single vector, which we call ⃗𝑦 =T-SNE(PCA(𝑃, 40), 1) ∈ R<sup>𝑛</sup><sup>𝑝𝑎𝑠𝑡</sup> , because we will use it to compute the vertical (y) position of students’ code. ⃗𝑦 ∈ R denotes the position of prior𝑝 code sample 𝑝. We go through this process in order to distinguish between solutions 𝑝<sub>𝑖</sub> and 𝑝 that are very similar (𝑦 ⃗<sub>𝑖</sub> ≈ 𝑦⃗<sub>𝑗</sub> ) or𝑗 𝑝 𝑝 different (𝑦 ⃗ ≉ 𝑦⃗ ).𝑝 𝑝𝑖 𝑗
+We then reduce P from 768 rows to 1 row, first using Principal Component Analysis (PCA) (to reduce from (n\_past × 768) to (n\_past × 40)) and then T-SNE \[37\] (to reduce from (n\_past × 40) to (n\_past × 1)). This reduces P to a single vector, which we call y-vector = T-SNE(PCA(P, 40), 1) ∈ R^(n\_past), because we will use it to compute the vertical (y) position of students’ code. y-vector\_p ∈ R denotes the position of prior code sample p. We go through this process in order to distinguish between solutions p\_i and p\_j that are very similar (y-vector\_(p\_i) ≈ y-vector\_(p\_j)) or different (y-vector\_(p\_i) ≉ y-vector\_(p\_j)).
 
-In addition, we use OverCode \[[14](<#page-15>)\] to cluster similar correct solutions from PAST\_CODE more robustly. A cluster in OverCode \[[14](<#page-15>)\] is a set of correct solutions that perform the same computation. For a given problem, we get distinct solution clusters, which we use to label correct solutions along the y-axis in VizProg (Fig. 1.3). Encoding Approach To determine which approach students are attempting to use, we use the vector similarity between students’ solutions and prior solutions (all after normalizing the code). For a student’s code 𝑐 we first select the 𝑛<sub>𝑣𝑒𝑐</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub> prior solutions in PAST\_CODE that are correct and most similar to 𝑐 and store the result in NEAR\_APPROACH. Formally, this is:
+In addition, we use OverCode \[14\] to cluster similar correct solutions from PAST\_CODE more robustly. A cluster in OverCode \[14\] is a set of correct solutions that perform the same computation. For a given problem, we get distinct solution clusters, which we use to label correct solutions along the y-axis in VizProg (Fig. 1.3). Encoding Approach To determine which approaches students are attempting to use, we use the vector similarity between students’ solutions and prior solutions (all after normalizing the code). For a student’s code c, we first select the n\_vec\_sim prior solutions in PAST\_CODE that are correct and most similar to c and store the result in NEAR\_APPROACH. Formally, this is:
 
 ![NEAR\_APPROACH of c is the subset PC of correct past code, with n vec sim elements, that maximizes the sum over p in PC of vec\_sim of c and p.](../figures/zhang-vizprog-chi2023/formula-002-p009.png)
 
@@ -287,9 +305,12 @@ In addition, we use OverCode \[[14](<#page-15>)\] to cluster similar correct sol
 
 In Python code, this could be computed as (assuming c is defined as the current code sample):
 
-NEAR\_APPROACH = sorted(filter(is\_correct, PAST\_CODE), key=lambda p: vec\_sim(c, p))\[𝑛<sub>𝑣𝑒𝑐</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub>:\]
+```
+NEAR_APPROACH = sorted(filter(is_correct, PAST_CODE),
+    key=lambda p: vec_sim(c, p))[n_vec_sim:]
+```
 
-This produces the subset of PAST\_CODE with most semantically similar correct solutions. Smaller values of 𝑛<sub>𝑣𝑒𝑐</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub> produce movement that better reflects the solution that a given code sample is closest to but it can result in frequent vertical jumps as the closest solution changes. Larger values of 𝑛<sub>𝑣𝑒𝑐</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub> produce movement over time that is smoother but can be less accurate. VizProg uses 𝑛 = 10.𝑣𝑒𝑐\_𝑠𝑖𝑚
+This produces the subset of PAST\_CODE with most semantically similar correct solutions. Smaller values of n\_vec\_sim produce movement that better reflects the solution that a given code sample is closest to but it can result in frequent vertical jumps as the closest solution changes. Larger values of n\_vec\_sim produce movement over time that is smoother but can be less accurate. VizProg uses n\_vec\_sim = 10.
 
 We then compute the y position of code𝑐 as the weighted average of these similar solutions:
 
@@ -297,7 +318,7 @@ We then compute the y position of code𝑐 as the weighted average of these simi
 
 **Formula:** y\_position of c equals the sum over p sub n in NEAR\_APPROACH of c of y tilde sub n multiplied by the softmax weight of vec\_sim of c and p sub n cubed.
 
-Where ⃗𝑦<sub>𝑛</sub> ∈ R represents the y position of code 𝑛 (as computed above). We cube the vector similarity to better differentiate between several similarities that are close to 1, while preserving the sign of the vector similarity.
+Where y-vector\_n ∈ R represents the y position of code n (as computed above). We cube the vector similarity to better differentiate between several similarities that are close to 1, while preserving the sign of the vector similarity.
 
 #### 4.3.4 Representing Students’ Progress in VizProg.
 
@@ -307,11 +328,11 @@ The second distance metric that VizProg uses is edit distance. We represent stud
 
 **Formula:** edit\_distance of c sub 1 and c sub 2 equals the Levenshtein distance between norm of c sub 1 and norm of c sub 2, divided by the larger length of those two normalized code strings.
 
-where len(𝑐) represents the number of characters in 𝑐 (a positive integer ∈ N) and max(𝑎,𝑏) represents 𝑎 if 𝑎 ≥ 𝑏 and 𝑏 otherwise. We normalize (divide by the maximum length code sequence) in order to avoid disproportionately long or short solutions or submission from overly influencing the edit distance. Thus, edit\_distance(𝑐<sub>1</sub>,𝑐<sub>2</sub>) always returns a positive number between
+where len(c) represents the number of characters in c (a positive integer ∈ N) and max(a, b) represents a if a ≥ b and b otherwise. We normalize (divide by the maximum length code sequence) in order to avoid disproportionately long or short solutions from overly influencing the distance. Thus, edit\_distance(c\_1, c\_2) always returns a positive number between
 
-\[0, 1\] where 0 would mean 𝑐<sub>1</sub> and 𝑐<sub>2</sub> are functionally identical (small edit distance).
+\[0, 1\] where 0 would mean c\_1 and c\_2 are functionally identical (small edit distance).
 
-Encoding Progress To determine how close students are to a correct solution, we use the edit distance between students’ solutions and prior solutions (all after normalizing the code). We first find the 𝑛<sub>𝑒𝑑𝑖𝑡</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub> closest solutions by edit distance. VizProg uses 𝑛 = 10. Formally:𝑒𝑑𝑖𝑡\_𝑠𝑖𝑚
+Encoding Progress To determine how close students are to a correct solution, we use the edit distance between students’ solutions and prior solutions (all after normalizing the code). We first find the n\_edit\_sim closest solutions by edit distance. VizProg uses n\_edit\_sim = 10. Formally:
 
 ![NEAR\_EDIT of c is the subset PC of correct past code, with n edit sim elements, that minimizes the sum over p in PC of edit\_distance of c and p.](../figures/zhang-vizprog-chi2023/formula-005-p009.png)
 
@@ -319,7 +340,10 @@ Encoding Progress To determine how close students are to a correct solution, we 
 
 In Python code, this could be computed as (assuming c is defined as the current code sample):
 
-NEAR\_EDIT = sorted(filter(is\_correct, PAST\_CODE), key=lambda p: edit\_distance(c, p))\[:𝑛<sub>𝑒𝑑𝑖𝑡</sub><sub>\_</sub><sub>𝑠𝑖𝑚</sub>\]
+```
+NEAR_EDIT = sorted(filter(is_correct, PAST_CODE),
+    key=lambda p: edit_distance(c, p))[:n_edit_sim]
+```
 
 If solution 𝑐 is correct (passes the instructor’s unit tests) then we assign its x position to 0. If it is not correct, we compute the x position as the average edit distance for items in NEAR\_EDIT:
 
@@ -331,7 +355,7 @@ Where ‘average’ represents the arithmetic mean. Note that we negate the edit
 
 #### 4.3.5 Computational Efficiency and Displaying Progress in Real- Time.
 
-The process of building a solution space is computationally expensive but only needs to be done once before the instructor begins an exercise. After ⃗𝑦 has been computed, we can use it to quickly compute x\_position(𝑐) and y\_position(𝑐) for any student code 𝑐 at little computational cost. Computing the position of 𝑐<sub>𝑠,𝑡</sub> requires doing a forward pass of 𝑐<sub>𝑠,𝑡</sub> through the CodeBERT transformer, building NEAR\_APPROACH(𝑐<sub>𝑠,𝑡</sub>), taking the weighted sum to compute y\_position, computing NEAR\_EDIT(𝑐<sub>𝑠,𝑡</sub>), and taking the weighted sum to compute x\_position. Of these operations, the most computationally expensive is the forward pass through CodeBERT, which executes almost instantly on any modern GPU.
+The process of building a solution space is computationally expensive but only needs to be done once before the instructor begins an exercise. After y-vector has been computed, we can use it to quickly compute x\_position(c) and y\_position(c) for any student code c at any time computationally inexpensive. The computation of c\_(s,t) requires doing a forward pass of c\_(s,t) through the CodeBERT transformer, building NEAR\_APPROACH(c\_(s,t)), taking the weighted sum to compute y\_position, computing NEAR\_EDIT(c\_(s,t)), and taking the weighted sum to compute x\_position. Of these operations, the most computationally expensive is the forward pass through CodeBERT, which executes almost instantly on any modern GPU.
 
 #### 4.3.6 Seeding VizProg with good sets of solutions.
 
@@ -355,7 +379,7 @@ Because the target users of VizProg are instructors, we primarily recruited part
 
 #### 5.1.2 Live Simulation.
 
-In order to ensure the data we used in the study were authentic, we used data collected from a large introductory programming course at \[redacted for anonymity\]. The course size ranges from 130–190 students. Our data were collected from an exercise within an interactive Python textbook used by the course. The data represented students’ attempts at solving exercises on their own time (rather than during time-limited class exercises)
+In order to ensure the data we used in the study were authentic, we used data collected from a large introductory programming course at \[redacted for anonymity\]. The course size ranges from 130–190 students. Our data were collected from an exercise within an interactive Python textbook used by the course. The data represented students’ attempts at solving exercises on their own time (rather than during time-limited class exercises) but they contained genuine examples of misunderstandings and challenges that students faced when attempting the exercises. We first collected students’ submissions for 100 programming exercises from the course. We filtered the dataset by the number of students who submitted solutions to the exercise, and the number of submissions made per students. We ended up getting 69 programming exercises which have more than 100 students’ submissions and each student have more than 2 submissions in average. We chose two programming exercises from the filtered dataset, one for each session, that were roughly equivalent in terms of complexity:
 
 Table 2: For the user study, we recruited 16 teaching assistants, tutors, instructors, and senior students who are experienced in Python programming.
 
@@ -468,19 +492,17 @@ Table 2: For the user study, we recruited 16 teaching assistants, tutors, instru
   </tbody>
 </table>
 
-but they contained genuine examples of misunderstandings and challenges that students faced when attempting the exercises. We first collected students’ submissions for 100 programming exercises from the course. We filtered the dataset by the number of students who submitted solutions to the exercise, and the number of submissions made per students. We ended up getting 69 programming exercises which have more than 100 students’ submissions and each student have more than 2 submissions in average. We chose two programming exercises from the filtered dataset, one for each session, that were roughly equivalent in terms of complexity:
-
 Exercise 1 (E1): Provided is a string saved to the variable s1. Create a dictionary named counts that contains each letter in s1 and the number of times it occurs.
 
 Exercise 2 (E2): Create a list of numbers 0 through 40 and assign this list to the variable numbers. Then, accumulate the total of the list’s values and assign that sum to the variable sum1.
 
 E1 had 627 Python code snippets from 109 students. E2 had 823 Python code snippets from 117 students. The solutions varied from 2 lines to 20 lines of code. The submission time ranges from a few minutes to several days. We trim the submission by setting a time threshold and them normalized the time to a 15 minute time window. We also checked each submission to ensure that it did not contain any identifying information or present any privacy concerns and anonymized appropriately[2](<#page-10>).
 
+> <sup>2</sup>In our examples, there was no identifying information contained in code. In other examples, students might use their given name as a variable name or output their name in their code.
+
 <a id="page-11"></a>
 
 The data captured contained a snapshot of every submission that students made (every time they ran the code). However, we want our evaluation to work with keystroke-level data. To maintain the setting realism and ensure participants’ experience quality, we generated synthetic keystroke-level data from the submissions to simulate students’ typing activities. For each submission, we compared it with the most recent previous submission, calculated the string difference between them. For each addition and deletion in the difference, we split it into character level editing activities. With the keystroke-level data, participants observed students consistently changing from one submission to the next submission character by character, rather than sudden jumps in the solution space.
-
-> <sup>2</sup>In our examples, there was no identifying information contained in code. In other examples, students might use their given name as a variable name or output their name in their code.
 
 Finally, we computed our visualization in a way that the visualization of 𝑐<sub>𝑠,𝑡</sub> could never depend on student 𝑠’s code after time 𝑡 (no forward dependencies). This means that the trajectory for each student is what would be generated if that student’s solutions were embedded in a space generated from the rest of the solutions, a setup conceptually similar to cross-validation.
 
@@ -516,11 +538,11 @@ In the first session, we designed the quiz questions as multiple-choice question
 
 In the open-ended questions, we asked participants to use the system to find common misunderstandings of the whole class. We coded the misunderstandings participants found during the study. Comparing to the list of existing misunderstandings generated by the researcher, we calculated the number of valid misunderstandings participants mentioned. As shown in Table [3,](<#page-12>) the valid misunderstandings participants found using VizProg (𝜇 = 4.5, 𝜎 = 1.5) is significantly more than what they found using the baseline system (𝜇 = 2.4, 𝜎 = 0.5, 𝑝 &lt; 0.01). We listed the misunderstandings participants found in two conditions in Table [3.](<#page-12>) In the control condition, 4 out of 7 participants described misunderstandings in a general way, using terms including “Name Error”, “Type Error” and “Syntax Error”. In VizProg, 6 out of 8 participants described misunderstandings more specifically by pointing out the parts that made the solution incorrect.
 
-#### 5.2.2 VizProg settings than the baseline.
-
-helps participants understand issues faster in live To investigate how the two systems help participants understand students’ problems in live settings, we calculated 1) when participants started finding errors, and 2) how much time they spent to find students’ errors. We found participants using the baseline system started identifying errors significantly later than participants using VizProg (𝑝 &lt; 0.05). In the baseline system, participants started finding errors 1069.9 seconds after
+#### 5.2.2 VizProg helps participants understand issues faster in live settings than the baseline.
 
 <a id="page-12"></a>
+
+To investigate how the two systems help participants understand students’ problems in live settings, we calculated 1) when participants started finding errors, and 2) how much time they spent to find students’ errors. We found participants using the baseline system started identifying errors significantly later than participants using VizProg (𝑝 &lt; 0.05). In the baseline system, participants started finding errors 1069.9 seconds after the replay starts in average (𝜎 = 360.2). In VizProg, participants started finding errors 500.1 seconds after the replay starts in average (𝜎 = 468.2). As the replay lasted 15 minutes, this indicated that with VizProg, people are able to understand students’ problems synchronously with students working on the problem, while in the baseline system, people tended to wait until students finished the exercise. We did not find significant difference of how much time they spent on finding errors between two conditions (VizProg 𝜇 = 261.5 seconds, baseline 𝜇 = 214.9 seconds, 𝑝 &gt; 0.05)
 
 Table 3: Common misunderstandings participants found in the second session. The third column lists all the misunderstandings per participant, and the fourth column calculates the total number of the misunderstandings the participant identified in the study.
 
@@ -627,8 +649,6 @@ Table 3: Common misunderstandings participants found in the second session. The 
   </tbody>
 </table>
 
-the replay starts in average (𝜎 = 360.2). In VizProg, participants started finding errors 500.1 seconds after the replay starts in average (𝜎 = 468.2). As the replay lasted 15 minutes, this indicated that with VizProg, people are able to understand students’ problems synchronously with students working on the problem, while in the baseline system, people tended to wait until students finished the exercise. We did not find significant difference of how much time they spent on finding errors between two conditions (VizProg 𝜇 = 261.5 seconds, baseline 𝜇 = 214.9 seconds, 𝑝 &gt; 0.05)
-
 ### 5.3 System Usability and Study Insights
 
 To better understand VizProg’s usability benefits or issues, we ran a thematic analysis on the interview transcripts with our own observations of participants’ behavior patterns from the video.
@@ -683,11 +703,11 @@ VizProg offers an innovative way to visualize students’ coding progress, which
 
 Beyond helping instructors, VizProg might also benefit to students in several ways. Most directly, by helping instructors identify struggling students and class-wide patterns, VizProg allows instructors to adapt their instruction to students’ needs. For example, instructors might discuss mistakes that they observed across many students, give students tailored feedback, or create impromptu in-class exercises in response to what observe in VizProg. Future versions of VizProg could incorporate additional student information[3](<#page-14>) that might help instructors better understand if there might be class-wide equity issues (e.g., if there are hidden barriers that prevent a group of people from being able to meaningfully participate in class exercises). Future versions of VizProg could also help to increase student engagement and improve the effectiveness of peer learning. Prior work found that in peer learning, students are grouped without regard to their diverse backgrounds, solution approaches, and levels of knowledge, which could lead to less meaningful and less fruitful group discussions \[[38](<#page-16>)\]. By encoding students’ progress into a 2D map, VizProg can help instructors connect students with each other strategically—for example, to form groups of students who took different approaches or to pair students who are struggling with peers that can help them. Third, Denny et al. \[[8](<#page-15>)\] found that students benefit from exposure to a wider diversity of solutions by reviewing others’ code. With the assistance of VizProg, instructors could easily guide students to diverse solutions from other students without revealing their identities, thus giving students a deeper understanding of how they can apply the concepts they learn in class.
 
+> <sup>3</sup>The design and presentation of this information would need to be considered carefully, as including demographic information might have important drawbacks, as we discuss in section [6.4.](<#page-14>)
+
 ### 6.4 Ethical Implications and Privacy in VizProg
 
 VizProg provides a code-centered view, where instructors can focus on the code itself without sensitive information such as students’ names, genders, grades, or race. Given sensitive information such as identities, instructor may stereotype some groups of students. Inequities embedded in and around computing courses can be barriers to participation and promote bias in class \[[24](<#page-15>), [30](<#page-15>)\]. Therefore, the code-centered view in VizProg could potentially reduce bias and help create a fairer environment for students. Future deployments of VizProg should also give students the option to opt out of sharing their data. The current VizProg interface allows instructors to monitor students’ progress in real-time without regard to students’ consent to submit. This could harm students’ privacy and make students less motivated to engage in class due to social pressure. We can extend VizProg at the student side to give students the option to turn monitoring mode on and off. In addition, students should be aware of being monitored when working on programming exercises in class. VizProg can be extended with an in-editor notification to inform them that they are being passively monitored by the instructor.
-
-> <sup>3</sup>The design and presentation of this information would need to be considered carefully, as including demographic information might have important drawbacks, as we discuss in section [6.4.](<#page-14>)
 
 ## 7 LIMITATIONS
 

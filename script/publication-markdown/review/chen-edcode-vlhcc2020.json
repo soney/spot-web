@@ -2,9 +2,9 @@
   "file": "chen-edcode-vlhcc2020.pdf",
   "title": "EdCode: Towards Personalized Support at Scale for Remote Assistance in CS Education",
   "publication_id": "edcode_towards_personalized_support_at_scale_for_remote_assistance_in_cs_education_2020",
-  "pdf_sha256": "3c8939abcf44b575773695fa0cc8bbd29ad4d137b64bd80b3b7d08b79dfae1b5",
+  "pdf_sha256": "5d560237b2fad4e68048792072e8877f9aa07a7a9a6dc73d790a128c7de05b1c",
   "markdown": "publications/chen-edcode-vlhcc2020.md",
-  "markdown_sha256": "1753bf0dbe698ea4608984e5d981028981254f32dc13cd6611700059539676e3",
+  "markdown_sha256": "9ec6e7aa8096ef2721e04010593861b506309b067ada841c9aec5308ac7e0952",
   "pages": 5,
   "blocks": [
     {
@@ -21,7 +21,7 @@
       "pages": [
         1
       ],
-      "characters": 184
+      "characters": 213
     },
     {
       "node": "155:0",
@@ -49,11 +49,11 @@
     },
     {
       "node": "161:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 38
+      "characters": 40
     },
     {
       "node": "158:0",
@@ -112,7 +112,7 @@
       "characters": 19
     },
     {
-      "node": "joined-292:0",
+      "node": "292:0",
       "role": "P",
       "pages": [
         1,
@@ -169,7 +169,7 @@
       "characters": 14
     },
     {
-      "node": "joined-304:0",
+      "node": "304:0",
       "role": "P",
       "pages": [
         2
@@ -209,7 +209,7 @@
       "characters": 68
     },
     {
-      "node": "joined-310:0",
+      "node": "310:0",
       "role": "P",
       "pages": [
         2,
@@ -338,7 +338,7 @@
       "characters": 16
     },
     {
-      "node": "joined-341:0",
+      "node": "341:0",
       "role": "P",
       "pages": [
         3,
@@ -549,12 +549,11 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 17,
-    "paragraph_fragments_joined": 4,
+    "line_wrap_hyphens_removed": 14,
     "line_wrap_hyphens_retained": 3,
-    "script_runs_positioned": 9
+    "script_runs_positioned": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-edcode-vlhcc2020.json.gz",
-  "source_tags_sha256": "600f1bd8687f85a4644e4b864af4fdce8581b012198cb9cb784cab9729b469c3"
+  "source_tags_sha256": "0b9279785d6279498264e2fe3288fb323363cf1aff589e7ab23d41c1df46e277"
 }

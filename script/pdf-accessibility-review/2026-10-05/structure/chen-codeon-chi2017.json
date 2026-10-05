@@ -1,0 +1,403 @@
+{
+  "file": "chen-codeon-chi2017.pdf",
+  "pdf_sha256": "9bbd48afe0ec30cd73fb6e02375585a548eb9952b955fd8171439f145ec9d5e8",
+  "normalization_warnings": "",
+  "page_count": 12,
+  "language": "en-US",
+  "title": "Codeon: On-Demand Software Development Assistance",
+  "structure_elements": 492,
+  "roles": {
+    "Document": 1,
+    "Sect": 12,
+    "H1": 1,
+    "P": 81,
+    "H2": 12,
+    "H3": 24,
+    "Note": 2,
+    "Link": 64,
+    "L": 4,
+    "LI": 47,
+    "Lbl": 46,
+    "LBody": 47,
+    "H4": 12,
+    "Figure": 4,
+    "Caption": 10,
+    "Table": 6,
+    "THead": 6,
+    "TR": 23,
+    "TH": 39,
+    "TBody": 6,
+    "TD": 45
+  },
+  "structure_content_references": 10204,
+  "parent_tree_entries": 76,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 880,
+      "text_operations_artifact": 1,
+      "link_annotations": 8
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 954,
+      "text_operations_artifact": 1,
+      "link_annotations": 21
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 900,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 3,
+      "text_operations_artifact": 1,
+      "link_annotations": 15
+    },
+    {
+      "page": 4,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 622,
+      "text_operations_artifact": 1,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "vector_operations_artifact": 5,
+      "text_operations_tagged": 871,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 6,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 825,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 7,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 874,
+      "vector_operations_artifact": 9,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 8,
+      "vector_operations_artifact": 6,
+      "text_operations_tagged": 1046,
+      "text_operations_artifact": 1,
+      "link_annotations": 5
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 1016,
+      "text_operations_artifact": 1,
+      "link_annotations": 1
+    },
+    {
+      "page": 10,
+      "text_operations_tagged": 994,
+      "text_operations_artifact": 1,
+      "link_annotations": 3
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 769,
+      "text_operations_artifact": 1
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 449,
+      "text_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "441:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "443:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "445:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "447:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "449:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "453:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "590:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "592:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "593:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "596:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "599:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "602:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "627:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "630:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "633:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "640:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "641:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "686:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "689:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "690:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "719:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "722:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "723:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "728:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "739:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "741:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "743:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "753:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "758:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "759:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "761:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "828:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "850:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "851:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "863:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "867:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "873:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "874:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "880:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "885:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "888:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "890:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "892:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "894:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "896:0",
+      "page": 10
+    },
+    {
+      "level": 3,
+      "element": "898:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "900:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "902:0",
+      "page": 10
+    },
+    {
+      "level": 2,
+      "element": "908:0",
+      "page": 11
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "635:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1: Asynchronous interactions between developers\nand helpers can occur in three stages: making a request\n(S1), writing a response (S2), and integrating the response\n(S3). In Codeon, developers use an IDE plug-in to make\nrequests (S1) and integrate responses (S3), and helpers\nuse a web-based IDE to view content and generate re-\nsponses (S2).",
+      "actual_text": ""
+    },
+    {
+      "element": "682:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 2: Codeon interface where the requests and responses are on the right panel(2). Developer’s code(1) and helper’s\ncode(3) are side by side for better comparison. Other responses includes explanation(4), annotation(5), and comments(6)",
+      "actual_text": ""
+    },
+    {
+      "element": "734:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "Figure 3: The helper side of Codeon is an interactive web-\npage that allows helpers to replay the request(0) and run\nthe code(4). Helpers can respond to it with explanation(1),\nand inline code(2), and annotation(3).",
+      "actual_text": ""
+    },
+    {
+      "element": "751:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 4. Developers completed an average of 2.2 tasks with Codeon, standard deviation 1.0, versus 1.3 tasks with the baseline, standard deviation 0.9, out of four programming tasks in 30 minutes. A greater-than sign emphasizes that more tasks were completed with Codeon. The paired t-test reports p = 0.03.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

@@ -2,9 +2,9 @@
   "file": "oney-interstate-uist2014.pdf",
   "title": "InterState: A Language and Environment for Expressing Interface Behavior",
   "publication_id": "interstate_a_language_and_environment_for_expressing_interface_behavior_2014",
-  "pdf_sha256": "2f9588bebba024fb79342d1a7d17b2bc9150de81bcce22273c7d20e293f28e68",
+  "pdf_sha256": "87a2858b850eb9be342920a1ab4a68ade782d40427925139b45a759c0f4f875b",
   "markdown": "publications/oney-interstate-uist2014.md",
-  "markdown_sha256": "2b3c5abe3835c6b5b0a3292bf50631f9a35bcc96298fb34e985396143f48d22c",
+  "markdown_sha256": "bab379b92ad9245573e04596dcf6eb3abd0e7615e24e9e2ddf8c44d8c843c618",
   "pages": 10,
   "blocks": [
     {
@@ -21,7 +21,7 @@
       "pages": [
         1
       ],
-      "characters": 135
+      "characters": 91
     },
     {
       "node": "115:0",
@@ -29,15 +29,23 @@
       "pages": [
         1
       ],
-      "characters": 13
+      "characters": 16
     },
     {
-      "node": "joined-116:0",
+      "node": "116:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 38
+      "characters": 18
+    },
+    {
+      "node": "117:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 21
     },
     {
       "node": "124:0",
@@ -96,7 +104,7 @@
       "characters": 15
     },
     {
-      "node": "joined-123:0",
+      "node": "123:0",
       "role": "P",
       "pages": [
         1
@@ -136,7 +144,7 @@
       "characters": 548
     },
     {
-      "node": "joined-130:0",
+      "node": "130:0",
       "role": "P",
       "pages": [
         1,
@@ -266,20 +274,20 @@
       "characters": 228
     },
     {
-      "node": "151:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 25
-    },
-    {
       "node": "152:0",
       "role": "H4",
       "pages": [
         3
       ],
       "characters": 13
+    },
+    {
+      "node": "151:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 25
     },
     {
       "node": "153:0",
@@ -371,11 +379,11 @@
     },
     {
       "node": "295:0",
-      "role": "P",
+      "role": "Code",
       "pages": [
         3
       ],
-      "characters": 43
+      "characters": 49
     },
     {
       "node": "joined-296:0",
@@ -572,7 +580,7 @@
       "characters": 1043
     },
     {
-      "node": "joined-325:0",
+      "node": "325:0",
       "role": "P",
       "pages": [
         5
@@ -585,7 +593,7 @@
       "pages": [
         5
       ],
-      "characters": 576
+      "characters": 407
     },
     {
       "node": "327:0",
@@ -724,7 +732,7 @@
       "characters": 286
     },
     {
-      "node": "joined-346:0",
+      "node": "346:0",
       "role": "P",
       "pages": [
         6,
@@ -797,7 +805,7 @@
       "characters": 457
     },
     {
-      "node": "joined-357:0",
+      "node": "357:0",
       "role": "P",
       "pages": [
         7
@@ -1019,7 +1027,7 @@
       "pages": [
         8
       ],
-      "characters": 95
+      "characters": 96
     },
     {
       "node": "390:0",
@@ -1276,19 +1284,19 @@
       ],
       "sha256": "ecdac96a77275cc76a3d946b9eec04bd4a3a6a62e0158eea695535aa8d806175",
       "kind": "figure",
-      "alt": "Figure 3: InterState uses a prototype-instance inheritance model with multiple inheritance. Prototypes are simply specified in the prototypes property. Here, my_square inherits from square. Because my_square does not define a value for height, it inherits the definition of square.height, as indicated by the greyed out text in the columns on the right. Note that my_square inherits the definition of height, not the value. Thus, its width property evaluates to a different value (20) than it does in square (15)."
+      "alt": "Figure 3. The prototype square defines width as 10 + 5 and height as width, so both evaluate to 15. The instance my_square lists square as its prototype and overrides width with 20. It inherits the expression height = width rather than the fixed value 15, so its height evaluates to its own width, 20. Inherited expressions are displayed in gray."
     },
     {
       "path": "figures/oney-interstate-uist2014/figure-003-p006.png",
       "node": "332:0",
       "page": 6,
       "bbox": [
-        158.96119689941406,
-        0.0,
-        612.0,
-        383.836669921875
+        167.0,
+        66.0,
+        560.0,
+        201.0
       ],
-      "sha256": "728200a9785e4f4e1835266b6b3a96da29466808cd5782a954eb17e2cab34984",
+      "sha256": "0deb59e1547d663f37880a8f5f26afba8acfe191e96b09d66d8adc1ef3a17ddf",
       "kind": "figure",
       "alt": "Figure 4. InterState multiple inheritance combines selectable and draggable objects. Selectable has not_selected and selected states and supplies a blue fill when selected. Draggable has not_dragging and dragging states, supplies a red fill while dragging, and constrains x and y to mouse.x and mouse.y. The combined my_selectable_draggable object inherits both state machines and their property definitions; its prototypes field lists selectable before draggable."
     },
@@ -1358,32 +1366,39 @@
       "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
     },
     {
+      "node": "295:0",
+      "pages": [
+        3
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 1,
+      "character_pitch": 5.39,
+      "relative_median_deviation": 0.0015,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    },
+    {
       "node": "389:0",
       "pages": [
         8
       ],
-      "method": "native_text_preserved",
-      "changed": false,
-      "reason": "nonmonotonic_horizontal_order"
+      "method": "native_actual_text",
+      "changed": false
     }
   ],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "paragraph_fragments_joined": 15,
-    "line_wrap_hyphens_retained": 19,
-    "line_wrap_hyphens_removed": 427,
-    "script_runs_positioned": 6
+    "line_wrap_hyphens_removed": 399,
+    "line_wrap_hyphens_retained": 18,
+    "paragraph_fragments_joined": 9,
+    "script_runs_positioned": 1
   },
-  "review_notes": [
-    {
-      "kind": "code_whitespace_needs_review",
-      "node": "389:0",
-      "pages": [
-        8
-      ],
-      "reason": "nonmonotonic_horizontal_order"
-    }
-  ],
+  "review_notes": [],
   "source_tags": "source-tags/oney-interstate-uist2014.json.gz",
-  "source_tags_sha256": "37062da1c2e6addf69d6b1a8bd248d816cd30a94d79f9916028223ae3a262639"
+  "source_tags_sha256": "996c2e5a9451a859062ca6cfeb8fa53022f03b899dd24ebcdd4a4faba99ce8d6"
 }

@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: a6cbe0f145bd8deeb0d96265456b98d5dc3810f7325bf49eebf7d140deedcdcb -->
+<!-- Source PDF SHA-256: 1a28606998b0d723230e699c3539f81d630646be90e720648dc08648c6c908a3 -->
 
 <a id="page-1"></a>
 
@@ -98,67 +98,27 @@ To meet these diverse needs, we implemented a mapping algorithm that dynamically
 
 ## IV. MOTIVATING EXAMPLE
 
-To illustrate how Co-Advisor supports developers in problem-solving, consider a fictional scenario depicted in butFigure 2. Alice is implementing a Python snake game she encounters errors when trying to implement the snake’s movement She attempts to fix the problem but cannot locate the fault in the code. Alice requests a debugging strategy from Co-Advisor in her VS Code IDE. Co-Advisor runs the program, evaluates error logs, and identifies the source of the defect, including the defective file, defective lines, and other contextual factors in the background. Then it describes the detected defect(s) to Alice. She reads the description and finds a supportive link related to the defect. Based on the defect type, Co-Advisor chooses and maps a debugging strategy from a repository of expert debugging strategies. She starts executing the strategy step by step using the next/previous buttons Co-Advisor reflects on Alice’s actions on each step by confirming its correctness and marking the step with a check mark or by providing feedback on how she made a mistake and how she can correct her action. If a step requires Alice to check a condition in her code and decide or set values such as identifying the defective line numbers in the code she must make the correct decisions or insert the correct values to proceed. Otherwise, she receives feedback from Co-Advisor on her incorrect decisions or actions (Figure 3).
+To illustrate how Co-Advisor supports developers in problem-solving, consider a fictional scenario depicted in Figure 2. Alice is implementing a Python snake game (Callout A), but she encounters errors when trying to implement the snake’s movement (Callout B). She attempts to fix the problem but cannot locate the fault in the code. Alice requests a debugging strategy from Co-Advisor (Callout C) in her VS Code IDE. Co-Advisor runs the program, evaluates error logs, and identifies the source of the defect, including the defective file, defective lines, and other contextual factors in the background. Then it describes the detected defect(s) (Callout D) to Alice. She reads the description (Callout E) and finds a supportive link (Callout F) related to the defect. Based on the defect type, Co-Advisor chooses and maps a debugging strategy (Callout G) from a repository of expert debugging strategies. She starts executing the strategy step by step using the next/previous buttons (Callout G1). Co-Advisor reflects on Alice’s actions on each step by confirming its correctness and marking the step with a check mark (Callout G2) or by providing feedback on how she made a mistake and how she can correct her action. If a step requires Alice to check a condition in her code and decide (Callout G3), or set values such as identifying the defective line numbers in the code (Callout G4), she must make the correct decisions or insert the correct values to proceed. Otherwise, she receives feedback from Co-Advisor on her incorrect decisions or actions (Figure 3).
 
 ## V. CO-ADVISOR COMPONENTS AND IMPLEMENTATION
 
 In designing Co-Advisor, our goal is to address the challenge for developers to find and choose an appropriate problem-solving strategy and apply it effectively \[13\]. Co- Advisor is designed through two main components: Intelligent Problem Context Evaluation to identify the problem context, including defect specifics and problem-solving state (Section V-A); and strategy mapping protocol to assign relevant expert strategies to particular problems (Section V-B).
 
-Co-Advisor operates as an extension to the Microsoft Visual Studio Code (VS Code), ensuring accessibility and ease of use. Figure 2 shows the components of Co-Advisor, including the code environment in which a learner works in the left panel , and the Co-Advisor with its components - in the right panel. Each component is explained in the subsequent sections with reference to Figure 2.
-
-![Callout A](../figures/arab-co-advisor-vlhcc2025/figure-003-p004.png)
-
-![Callout B](../figures/arab-co-advisor-vlhcc2025/figure-004-p004.png)
+Co-Advisor operates as an extension to the Microsoft Visual Studio Code (VS Code), ensuring accessibility and ease of use. Figure 2 shows the components of Co-Advisor, including the code environment in which a learner works in the left panel (Callout A) , (Callout B) and the Co-Advisor with its components (Callout C) - (Callout G) in the right panel. Each component is explained in the subsequent sections with reference to Figure 2.
 
 ### A. Problem Context Evaluation
 
 The Co-Advisor’s context evaluation component is powered by a GPT-4 agent. Traditional chatbots are based on hardcoded conversation rules and responses \[42\], \[43\]. In contrast, LLM-based chatbots, like those used in Co-Advisor, rely on natural language prompts \[44\]. For this, we have designed two distinct prompts: one for analyzing the code and errors, and one for evaluating the strategy using state.
 
-First: This prompt is used to identify the characteristics of the problem, referred to as context-attributes in this paper, and to map the most relevant debugging strategy. Unlike GitHub Copilot \[45\], which offers contextually relevant code suggestions based on currently open files and developer input, Co-Advisor evaluates all components of the program and error logs to provide more comprehensive guidance.
+First: This prompt is used to identify the characteristics of the problem, referred to as context-attributes in this paper, and to map the most relevant debugging strategy. Unlike GitHub Copilot \[45\], which offers contextually relevant code suggestions based on currently open files and developer input, Co-Advisor evaluates all components of the program (Callout A) and error logs (Callout B) to provide more comprehensive guidance.
 
-![Callout A](../figures/arab-co-advisor-vlhcc2025/figure-005-p004.png)
-
-![Callout B](../figures/arab-co-advisor-vlhcc2025/figure-006-p004.png)
-
-After a programmer requests a strategy the Co-Advisor executes the code and collects the entire code content and a buffer of all error logs. These will be sent to GPT with the following prompt.
+After a programmer requests a strategy (Callout C), the Co-Advisor executes the code and collects the entire code content and a buffer of all error logs. These will be sent to GPT with the following prompt.
 
 Prompt 1: Analyze the code and errors and generate contextAttribute JSON object with the following attributes:
 
 - description: general description of the problem, supportiveLinks: reference link related to the defect, category: type of programming problems defectiveLines: \[line1, line2,...\], defectiveFile: \[root file of defect\] expectedActions: \[actions required for debugging\], expectedChanges: \[changes required in the code\], defectsCount: count of error messages in the error buffer
 
-The description of the problem and possible supporting links are shown to the user - The category is used in the mapping protocol to match the relevant strategy (Section V-B), and the rest is used in the second prompt.
-
-![Callout B](../figures/arab-co-advisor-vlhcc2025/figure-007-p004.png)
-
-![Callout C](../figures/arab-co-advisor-vlhcc2025/figure-008-p004.png)
-
-![Callout D](../figures/arab-co-advisor-vlhcc2025/figure-009-p004.png)
-
-![Callout F](../figures/arab-co-advisor-vlhcc2025/figure-010-p004.png)
-
-![Callout E](../figures/arab-co-advisor-vlhcc2025/figure-011-p004.png)
-
-![Callout G](../figures/arab-co-advisor-vlhcc2025/figure-012-p004.png)
-
-![Callout G1](../figures/arab-co-advisor-vlhcc2025/figure-013-p004.png)
-
-![Callout G2](../figures/arab-co-advisor-vlhcc2025/figure-014-p004.png)
-
-![Callout G3](../figures/arab-co-advisor-vlhcc2025/figure-015-p004.png)
-
-![Callout G4](../figures/arab-co-advisor-vlhcc2025/figure-016-p004.png)
-
-![Callout C](../figures/arab-co-advisor-vlhcc2025/figure-017-p004.png)
-
-![Callout G](../figures/arab-co-advisor-vlhcc2025/figure-018-p004.png)
-
-![Callout A](../figures/arab-co-advisor-vlhcc2025/figure-019-p004.png)
-
-![Callout C](../figures/arab-co-advisor-vlhcc2025/figure-020-p004.png)
-
-![Callout D](../figures/arab-co-advisor-vlhcc2025/figure-021-p004.png)
-
-![Callout E](../figures/arab-co-advisor-vlhcc2025/figure-022-p004.png)
+The description of the problem and possible supporting links are shown to the user (Callout D) - (Callout E). The category is used in the mapping protocol to match the relevant strategy (Section V-B), and the rest is used in the second prompt.
 
 <a id="page-5"></a>
 
@@ -212,13 +172,7 @@ Second: The second prompt was designed to identify the user’s state within the
 
 Prompt 2: Based on the $user-action and related $context-attributes describe why the user is wrong. Include enough details and rationale and imagine that you are teaching a novice programmer.
 
-As the user progresses through the steps in the strategy Co-Advisor checks whether the user completes the required steps as outlined by the strategy within the development environment or directly through the strategy steps in the tool. If the user performs an action that matches the expected solution for their current step (e.g., code edit or response to a question within the strategy,) a checkmark is shown. Otherwise, the system offers feedback to clarify discrepancies and guide the learner in the correct direction. For instance, in Figure 3, a user receives feedback if they make an incorrect decision on a conditional statement Similarly, if user enters an incorrect value after collecting information from the code and logs Co-Advisor provides a description of the correct value and explains why the user’s entry was incorrect
-
-![Callout G2](../figures/arab-co-advisor-vlhcc2025/figure-023-p005.png)
-
-![Callout G3](../figures/arab-co-advisor-vlhcc2025/figure-024-p005.png)
-
-![Callout D](../figures/arab-co-advisor-vlhcc2025/figure-025-p005.png)
+As the user progresses through the steps in the strategy (Callout G1), Co-Advisor checks whether the user completes the required steps as outlined by the strategy within the development environment (Callout A) (Callout B) or directly through the strategy steps (Callout G1) (Callout G2) (Callout G3) in the tool. If the user performs an action that matches the expected solution for their current step (e.g., code edit or response to a question within the strategy,) a checkmark is shown. Otherwise, the system offers feedback to clarify discrepancies and guide the learner in the correct direction. For instance, in Figure 3, a user receives feedback (Callout A) if they make an incorrect decision on a conditional statement (Callout B). Similarly, if user enters an incorrect value after collecting information from the code and logs (Callout C), Co-Advisor provides a description of the correct value and explains why the user’s entry was incorrect (Callout D).
 
 ### B. Strategy Mapping Protocol
 
@@ -226,7 +180,7 @@ Our strategy mapping protocol draws on six categories of debugging strategies (s
 
 To operationalize these findings, we developed a mapping to align each strategy with a set of keywords representing specific contextual factors. This enables the system to recommend the most appropriate debugging strategy based on the developer’s current problem scenario.
 
-![Fig. 3. Co-Advisor provides feedback (A, D) if the user performs the wrong action by making the wrong decision (B) or inserting the wrong value (C)](../figures/arab-co-advisor-vlhcc2025/figure-026-p005.png)
+![Figure 3. Co-Advisor flags two incorrect actions while following the ErrorMessage strategy. At the decision about more than one error message, choosing True triggers a warning that the traceback describes one ValueError, so False is appropriate. Entering line 55 triggers a second warning identifying line 45 as the failing randrange call and explaining that the start value exceeds the stop value. Callouts A and D mark the warnings, B the True/False choice, and C the entered line number.](../figures/arab-co-advisor-vlhcc2025/figure-026-p005.png)
 
 Fig. 3. Co-Advisor provides feedback (A, D) if the user performs the wrong action by making the wrong decision (B) or inserting the wrong value (C)
 
@@ -235,20 +189,6 @@ For example, when developers encounter a runtime or syntax error, the system rec
 - 1) Default to the Hypothesis-Test debugging strategy.
 
 - 2) For each strategy, check if its associated keywords are present within the contextual attributes.
-
-![Callout A](../figures/arab-co-advisor-vlhcc2025/figure-027-p005.png)
-
-![Callout B](../figures/arab-co-advisor-vlhcc2025/figure-028-p005.png)
-
-![Callout G1](../figures/arab-co-advisor-vlhcc2025/figure-029-p005.png)
-
-![Callout G1](../figures/arab-co-advisor-vlhcc2025/figure-030-p005.png)
-
-![Callout A](../figures/arab-co-advisor-vlhcc2025/figure-031-p005.png)
-
-![Callout B](../figures/arab-co-advisor-vlhcc2025/figure-032-p005.png)
-
-![Callout C](../figures/arab-co-advisor-vlhcc2025/figure-033-p005.png)
 
 <a id="page-6"></a>
 
@@ -260,9 +200,7 @@ Once a strategy is identified, the system could tailors it to the specific conte
 
 - 1) Generating an ‘EXPECTED’ attribute for each relevant step in the strategy.
 
-- 2) Defining the correct user action required for each step (e.g., setting EXPECTED to “True” for a conditional decision in Step 4 ).
-
-![Callout G3](../figures/arab-co-advisor-vlhcc2025/figure-034-p006.png)
+- 2) Defining the correct user action required for each step (e.g., setting EXPECTED to “True” for a conditional decision in Step 4 (Callout G3) ).
 
 - 3) Regenerating the strategy so it is customized for immediate execution in the current context.
 
@@ -330,7 +268,7 @@ We also measured the time participants spent completing each task with their ord
 
 Our formative evaluation sought to answer two research questions which are answered in the following sections.
 
-A. How do context-related strategies help and hinder developers’ problem solving compared to general (non-context-related) strategies? (RQ1)
+### A. How do context-related strategies help and hinder developers’ problem solving compared to general (non-context-related) strategies? (RQ1)
 
 The results showed that Co-Advisor helped users focus and direct their attention to the most relevant issues. By offering clear directions to the source of problems and eliminating distractions, users can quickly and efficiently address errors with minimal back-and-forth.
 
@@ -489,7 +427,7 @@ The results shown in Figure 4 illustrate that in the adaptive task, 9 participan
 
 Fig. 5. The total time each participant spend in adaptive and non-adaptive tasks. Different shapes represents the success rate for each participants: (failed), (approached), (tried), (partially fixed), (fixed).
 
-![Figure 6. Percentage of total task time spent learning or using the debugging strategy, by participant and condition. Co-Advisor is 100 percent for every participant except P8, approximately 47 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant.](../figures/arab-co-advisor-vlhcc2025/figure-037-p009.png)
+![Figure 6. Grouped bars plot percentage of total task time spent learning or using the debugging strategy for participants P1–P14. Co-Advisor is 100 percent except P8, approximately 47 percent, and P10, approximately 87 percent. HowToo ranges from approximately 13 to 87 percent and is lower than Co-Advisor for every participant.](../figures/arab-co-advisor-vlhcc2025/figure-037-p009.png)
 
 Fig. 6. Time Spent on Strategy Learning and Utilization as a Portion of Total Task Time for Each Participant and Condition
 
@@ -497,9 +435,9 @@ Fig. 6. Time Spent on Strategy Learning and Utilization as a Portion of Total Ta
 
 In contrast, during the non-adaptive tasks, the participants used the total allotted 15 minutes to try to resolve the issue, but none succeeded in fixing the defect. The results, shown in Figure 5, indicate that 3 out of 14 participants used all 15 minutes when using Co-Advisor; one managed to fix the defect completely, while the other two partially fixed the issue. In contrast, all participants in the non-adaptive task exhausted the allotted time and none succeeded in resolving the defect.
 
-3) Strategy Involvement: We also tracked participant engagement with the debugging strategies in both conditions. Figure 6 shows the time each participant follow the strategies in each condition. Although we cannot draw causal conclusions, our observations suggest that spending more
-
 <a id="page-10"></a>
+
+3) Strategy Involvement: We also tracked participant engagement with the debugging strategies in both conditions. Figure 6 shows the time each participant follow the strategies in each condition. Although we cannot draw causal conclusions, our observations suggest that spending more time engaging with the strategy—especially in the adaptive condition—may have contributed to better performance. For example, with Co-Advisor, participants not only spent more time actively referring to strategy descriptions but also seemed to benefit from more context-appropriate feedback, which prompted earlier corrective actions.
 
 TABLE V
 
@@ -597,8 +535,6 @@ RESULTS OF NASA-TLX SURVEY ABOUT USING DEBUGGING STRATEGIES IN HOWTOO AND CO-ADV
     </tr>
   </tbody>
 </table>
-
-time engaging with the strategy—especially in the adaptive condition—may have contributed to better performance. For example, with Co-Advisor, participants not only spent more time actively referring to strategy descriptions but also seemed to benefit from more context-appropriate feedback, which prompted earlier corrective actions.
 
 4) Statistics: We tested the effect of using context-related strategy on task time and ordinal progress rates with a Wilcoxon Sum Rank Test. As the results in Table IV show, the effect of the context-related strategy on task time (p=0.000034) and progress (p=0.000015) was statistically significant.
 

@@ -1,0 +1,23 @@
+15:20:30.376146 - SPEECH OUTPUT: 'Screen reader on.' {'established': False}
+15:20:36.149721 - SPEECH OUTPUT: 'FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages - oney-firecrystal-vlhcc2009.pdf' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:36.154071 - SPEECH OUTPUT: 'document web' {'established': False}
+15:20:36.198698 - SPEECH OUTPUT: 'Browse mode' {'established': False}
+15:20:37.153062 - SPEECH OUTPUT: 'Page has 4 landmarks, 7 headings, 2 unvisited links.' {'established': False}
+15:20:37.220577 - WEB: Not doing SayAll due to page fragment
+15:20:42.269842 - SPEECH OUTPUT: 'left control' {'established': False, 'family': {'name': '', 'gender': None, 'lang': 'C', 'dialect': '', 'variant': None}}
+15:20:42.361911 - SPEECH OUTPUT: 'left control' {'established': False, 'family': {'name': '', 'gender': None, 'lang': 'C', 'dialect': '', 'variant': None}}
+15:20:42.759815 - SPEECH OUTPUT: 'blank' {'established': False, 'family': {'name': '', 'gender': None, 'lang': 'C', 'dialect': '', 'variant': None}}
+15:20:42.855103 - SPEECH OUTPUT: 'blank' {'established': False, 'family': {'name': '', 'gender': None, 'lang': 'C', 'dialect': '', 'variant': None}}
+15:20:42.940229 - SPEECH OUTPUT: 'blank' {'established': False, 'family': {'name': '', 'gender': None, 'lang': 'C', 'dialect': '', 'variant': None}}
+15:20:43.047116 - SPEECH OUTPUT: 'h' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:43.064129 - SPEECH OUTPUT: 'h' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:43.083720 - SPEECH OUTPUT: 'h' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:43.393687 - SPEECH OUTPUT: 'FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages.' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:43.861660 - SPEECH OUTPUT: 'Abstract.' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:43.924274 - SPEECH OUTPUT: '+' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:43.951910 - SPEECH OUTPUT: '+' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:43.969374 - SPEECH OUTPUT: '+' {'established': 'False', 'family': "{'dialect': '', 'gender': 'None', 'lang': 'C', 'name': '', 'variant': 'None'}"}
+15:20:44.978660 - SPEECH OUTPUT: '1.' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:44.979712 - SPEECH OUTPUT: ' ' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:44.985170 - SPEECH OUTPUT: 'Introduction' {'established': False, 'family': {'name': 'English (America)', 'gender': None, 'lang': 'en', 'dialect': 'US', 'variant': None}}
+15:20:44.986015 - SPEECH OUTPUT: 'heading 2.' {'established': False}

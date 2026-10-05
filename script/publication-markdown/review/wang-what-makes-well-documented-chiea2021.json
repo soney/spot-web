@@ -2,9 +2,9 @@
   "file": "wang-what-makes-well-documented-chiea2021.pdf",
   "title": "What Makes a Well-Documented Notebook? A Case Study of Data Scientists’ Documentation Practices in Kaggle",
   "publication_id": "what_makes_a_well_documented_notebook_a_case_study_of_data_scientists_documentation_practices_in_kaggle_2021",
-  "pdf_sha256": "293bb242433eaa5161344177da92928a490d76154ef689c92b3edc1c3d997530",
+  "pdf_sha256": "ea606635142e427d0663e8b6f9bc1067ae8c79e56d27d914a967ba35fca2a1cc",
   "markdown": "publications/wang-what-makes-well-documented-chiea2021.md",
-  "markdown_sha256": "762474ec57337c0123131146f7740c26cd67f820d0b672ddefcb12bd9b58fa8a",
+  "markdown_sha256": "7c91f9889a1e0cc75950caeed02ab8485eba582d999ed46a0b4b1dbe7c6bc593",
   "pages": 7,
   "blocks": [
     {
@@ -144,6 +144,14 @@
       "characters": 423
     },
     {
+      "node": "389:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 106
+    },
+    {
       "node": "383:0",
       "role": "H2",
       "pages": [
@@ -176,21 +184,13 @@
       "characters": 317
     },
     {
-      "node": "joined-387:0",
+      "node": "387:0",
       "role": "P",
       "pages": [
         1,
         2
       ],
       "characters": 707
-    },
-    {
-      "node": "389:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 106
     },
     {
       "node": "412:0",
@@ -271,14 +271,6 @@
         2
       ],
       "characters": 321
-    },
-    {
-      "node": "430:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 11
     },
     {
       "node": "431:0",
@@ -415,23 +407,7 @@
       "pages": [
         3
       ],
-      "characters": 128
-    },
-    {
-      "node": "514:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 59
-    },
-    {
-      "node": "515:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 821
+      "characters": 950
     },
     {
       "node": "516:0",
@@ -491,7 +467,7 @@
     },
     {
       "node": "529:0",
-      "role": "P",
+      "role": "Caption",
       "pages": [
         4
       ],
@@ -530,6 +506,22 @@
       "characters": 631
     },
     {
+      "node": "550:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 174
+    },
+    {
+      "node": "573:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 8356
+    },
+    {
       "node": "535:0",
       "role": "H3",
       "pages": [
@@ -544,6 +536,22 @@
         4
       ],
       "characters": 1011
+    },
+    {
+      "node": "626:0",
+      "role": "Caption",
+      "pages": [
+        5
+      ],
+      "characters": 204
+    },
+    {
+      "node": "627:0",
+      "role": "Table",
+      "pages": [
+        5
+      ],
+      "characters": 4967
     },
     {
       "node": "541:0",
@@ -573,49 +581,10 @@
       "node": "547:0",
       "role": "P",
       "pages": [
-        4
-      ],
-      "characters": 259
-    },
-    {
-      "node": "550:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 174
-    },
-    {
-      "node": "573:0",
-      "role": "Table",
-      "pages": [
-        5
-      ],
-      "characters": 30113
-    },
-    {
-      "node": "626:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 204
-    },
-    {
-      "node": "627:0",
-      "role": "Table",
-      "pages": [
-        5
-      ],
-      "characters": 4967
-    },
-    {
-      "node": "697:0",
-      "role": "P",
-      "pages": [
+        4,
         6
       ],
-      "characters": 592
+      "characters": 852
     },
     {
       "node": "699:0",
@@ -656,14 +625,6 @@
         6
       ],
       "characters": 71
-    },
-    {
-      "node": "712:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 11
     },
     {
       "node": "713:0",
@@ -914,14 +875,6 @@
       "characters": 209
     },
     {
-      "node": "353:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 59
-    },
-    {
       "node": "354:0",
       "role": "P",
       "pages": [
@@ -978,7 +931,7 @@
       "characters": 220
     }
   ],
-  "tagged_content_items": 1131,
+  "tagged_content_items": 1178,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1017,10 +970,10 @@
         5
       ],
       "format": "html",
-      "row_count": 28,
-      "column_count": 1,
-      "cell_count": 28,
-      "header_count": 28,
+      "row_count": 10,
+      "column_count": 4,
+      "cell_count": 40,
+      "header_count": 13,
       "empty_cell_count": 0,
       "has_spans": false,
       "grid_holes": [],
@@ -1051,13 +1004,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 97,
-    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_removed": 88,
     "line_wrap_hyphens_retained": 6,
+    "paragraph_fragments_joined": 1,
     "reviewed_wrap_repairs": 2,
     "script_runs_positioned": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-what-makes-well-documented-chiea2021.json.gz",
-  "source_tags_sha256": "b2d2e79e963b54fe522403c00bfbbccfe41e44af205c16560672a46ac634e41b"
+  "source_tags_sha256": "b4a62d6b20d2d5edf26572697815b343a65ed3de4504d8214a4c3356202061ea"
 }

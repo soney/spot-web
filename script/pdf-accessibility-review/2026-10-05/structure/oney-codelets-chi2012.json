@@ -1,0 +1,336 @@
+{
+  "file": "oney-codelets-chi2012.pdf",
+  "pdf_sha256": "d5e42aca50103365ff5742f7bff7609cc53cc78f098b9e32acb89d0281c2ae21",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "Codelets: Linking Interactive Documentation and Example Code in the Editor",
+  "structure_elements": 315,
+  "roles": {
+    "Document": 1,
+    "Sect": 10,
+    "H1": 1,
+    "P": 88,
+    "H2": 10,
+    "H3": 16,
+    "Note": 4,
+    "Span": 6,
+    "Figure": 7,
+    "Caption": 9,
+    "L": 3,
+    "LI": 39,
+    "Lbl": 36,
+    "LBody": 39,
+    "H4": 7,
+    "Table": 1,
+    "THead": 1,
+    "TR": 4,
+    "TH": 15,
+    "TBody": 1,
+    "TD": 16,
+    "Code": 1
+  },
+  "structure_content_references": 5031,
+  "parent_tree_entries": 10,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 78,
+      "text_operations_tagged": 386,
+      "vector_operations_artifact": 2,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 62,
+      "text_operations_tagged": 518
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 54,
+      "text_operations_tagged": 333,
+      "image_operations_tagged": 10,
+      "image_operations_artifact": 9,
+      "vector_operations_artifact": 3,
+      "vector_operations_tagged": 17
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 130,
+      "text_operations_tagged": 533,
+      "image_operations_artifact": 4,
+      "image_operations_tagged": 1
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 549,
+      "text_operations_artifact": 126,
+      "image_operations_artifact": 2
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 215,
+      "text_operations_tagged": 723,
+      "vector_operations_artifact": 2,
+      "image_operations_artifact": 4
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 129,
+      "text_operations_tagged": 570,
+      "image_operations_artifact": 2,
+      "image_operations_tagged": 2
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 85,
+      "text_operations_tagged": 516
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 88,
+      "text_operations_tagged": 509
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 110,
+      "text_operations_tagged": 363
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "68:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "74:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "77:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "80:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "164:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "185:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "187:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "204:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "206:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "212:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "213:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "227:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "229:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "232:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "239:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "244:0",
+      "page": 6
+    },
+    {
+      "level": 3,
+      "element": "378:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "380:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "388:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "391:0",
+      "page": 7
+    },
+    {
+      "level": 4,
+      "element": "397:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "399:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "402:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "404:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "406:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "409:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "411:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "414:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "419:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "422:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "425:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "427:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "433:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "435:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "83:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Figure 1. Codelets attach helpers to regions of code. Helpers are dis-\nplayed inline with the rest of the code without obscuring it. This Codelet\ncreates a jQuery Mobile button. Its helper is interactive and allows its\nuser to customize the button by interacting with a form, drawing a line to \nillustrate which region of code each form element is changing. The user\nmay also edit the code and the form will automatically update itself.",
+      "actual_text": ""
+    },
+    {
+      "element": "191:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 2. Our augmented editor allows Codelets to be searched for and inserted in the editor, searching for stored Codelets based on their keywords \nand descriptions. The search box (A) is invoked using a keyboard shortcut. If a result is selected, a Codelet (B) is inserted following the caret.",
+      "actual_text": ""
+    },
+    {
+      "element": "196:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "CSS Rounded Corners Codelet beside a CSS editor. The helper offers an all-corners radius slider and separate controls for the four corners; links connect those controls to highlighted border-radius declarations in the source. Adjusting the helper therefore changes the corresponding CSS values.",
+      "actual_text": ""
+    },
+    {
+      "element": "198:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 4. This Codelet displays a warning (D) after it detects the ab-\nsence of a required library. On its right side (E) is a link to a Codelet for \nincluding the library. The link can be dragged into place and its Codelet \n(F) is inserted.",
+      "actual_text": ""
+    },
+    {
+      "element": "216:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Figure 5: grouped bar charts compare the control group in blue with Codelets in red. Mean completion time falls from about 22.2 minutes to 12.7 minutes; mean browser refresh count falls from about 19 to 9. Error bars show variation. Both reductions are statistically significant.",
+      "actual_text": ""
+    },
+    {
+      "element": "384:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "A Codelet displays the warning 'I don’t understand the attached code. May I overwrite it?' above the example-code area. Buttons labeled Overwrite, Don’t and Never let the programmer permit this overwrite, decline it, or disable future overwrites. This appears when the attached code cannot be understood by the helper.",
+      "actual_text": ""
+    },
+    {
+      "element": "393:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Figure 8. For consistency, Codelets have a standard mechanism for\ndisplaying warnings with text and any number of buttons. Helpers can\ntake advantage of their semantic understanding of what their attached\nexample code is supposed to do to display warnings even if the code is\nsyntactically correct. This Codelet, for reading a file in Java, displays an \nerror because the programmer has not specified a filename.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

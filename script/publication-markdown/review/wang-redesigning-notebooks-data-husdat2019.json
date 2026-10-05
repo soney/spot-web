@@ -2,9 +2,9 @@
   "file": "wang-redesigning-notebooks-data-husdat2019.pdf",
   "title": "Redesigning Notebooks for Data Science Education",
   "publication_id": "redesigning_notebooks_for_data_science_education_2019",
-  "pdf_sha256": "25b98991aec6a0f5d36589007954bf3caba2b99f52a03931579028676d09307f",
+  "pdf_sha256": "c1ead332eec99dd2392bb22cc180849876490d1f4044c251126b9e21117d8052",
   "markdown": "publications/wang-redesigning-notebooks-data-husdat2019.md",
-  "markdown_sha256": "317962edfa53ad00b04a4307669b1b70b18eb92e7f5a4036d60a2982d260afa4",
+  "markdown_sha256": "9f31c277e2ccac55a61a9d44520298bf07ff28d268243eabf1ca359229b378f0",
   "pages": 4,
   "blocks": [
     {
@@ -72,6 +72,14 @@
       "characters": 94
     },
     {
+      "node": "163:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 50
+    },
+    {
       "node": "161:0",
       "role": "H2",
       "pages": [
@@ -83,25 +91,10 @@
       "node": "162:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 332
-    },
-    {
-      "node": "163:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 50
-    },
-    {
-      "node": "118:0",
-      "role": "P",
-      "pages": [
+        1,
         2
       ],
-      "characters": 1115
+      "characters": 1448
     },
     {
       "node": "119:0",
@@ -136,7 +129,7 @@
       "characters": 1097
     },
     {
-      "node": "joined-132:0",
+      "node": "132:0",
       "role": "P",
       "pages": [
         2,
@@ -240,11 +233,11 @@
   "tables": [],
   "code_layout": [],
   "normalization": {
-    "line_wrap_hyphens_removed": 9,
-    "paragraph_fragments_joined": 2,
+    "line_wrap_hyphens_removed": 7,
+    "paragraph_fragments_joined": 1,
     "script_runs_positioned": 6
   },
   "review_notes": [],
   "source_tags": "source-tags/wang-redesigning-notebooks-data-husdat2019.json.gz",
-  "source_tags_sha256": "b3acf33b1728a336fc1c0c321db9093e31d57873e3dc2c8ebf97f979e5957cb0"
+  "source_tags_sha256": "4bf30ac1833e64473e09d6e90774ba5a905d2452787d8252a3a84af64c17492e"
 }

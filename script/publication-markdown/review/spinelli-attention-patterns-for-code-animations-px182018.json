@@ -2,9 +2,9 @@
   "file": "spinelli-attention-patterns-for-code-animations-px182018.pdf",
   "title": "Attention Patterns for Code Animations: Using Eye Trackers to Evaluate Dynamic Code Presentation Techniques",
   "publication_id": "attention_patterns_for_code_animations_using_eye_trackers_to_evaluate_dynamic_code_presentation_techniques_2018",
-  "pdf_sha256": "3a24df64fed891c4d08ec8a4f8da60cc56b830a0ef411b3ec6e03bb42779ee69",
+  "pdf_sha256": "a1989ff5f5f2eaa13bbf5c75a8c93a9467a815727bf570d756a85bd78d7a5ae7",
   "markdown": "publications/spinelli-attention-patterns-for-code-animations-px182018.md",
-  "markdown_sha256": "97a781adacd5eb1115b89f81ef7778ca608db9dc75d60c858d0f41ead8078a0d",
+  "markdown_sha256": "c67cc6424c7c84d296a352ea2f9353b9bf3b60125fc380a5f912dcd56b6b4f49",
   "pages": 6,
   "blocks": [
     {
@@ -21,7 +21,7 @@
       "pages": [
         1
       ],
-      "characters": 216
+      "characters": 206
     },
     {
       "node": "231:0",
@@ -32,12 +32,20 @@
       "characters": 90
     },
     {
-      "node": "244:0",
-      "role": "P",
+      "node": "242:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 159
+      "characters": 78
+    },
+    {
+      "node": "244:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 161
     },
     {
       "node": "250:0",
@@ -112,6 +120,22 @@
       "characters": 431
     },
     {
+      "node": "243:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 66
+    },
+    {
+      "node": "245:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
       "node": "240:0",
       "role": "H2",
       "pages": [
@@ -125,23 +149,7 @@
       "pages": [
         1
       ],
-      "characters": 296
-    },
-    {
-      "node": "242:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 76
-    },
-    {
-      "node": "joined-243:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 521
+      "characters": 668
     },
     {
       "node": "247:0",
@@ -229,15 +237,7 @@
       "pages": [
         2
       ],
-      "characters": 930
-    },
-    {
-      "node": "joined-271:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 146
+      "characters": 1027
     },
     {
       "node": "272:0",
@@ -245,7 +245,7 @@
       "pages": [
         2
       ],
-      "characters": 302
+      "characters": 469
     },
     {
       "node": "273:0",
@@ -261,7 +261,7 @@
       "pages": [
         2
       ],
-      "characters": 241
+      "characters": 364
     },
     {
       "node": "275:0",
@@ -299,9 +299,10 @@
       "node": "409:0",
       "role": "P",
       "pages": [
-        2
+        2,
+        3
       ],
-      "characters": 93
+      "characters": 611
     },
     {
       "node": "412:0",
@@ -325,7 +326,7 @@
       "pages": [
         3
       ],
-      "characters": 228
+      "characters": 355
     },
     {
       "node": "431:0",
@@ -341,7 +342,7 @@
       "pages": [
         3
       ],
-      "characters": 200
+      "characters": 366
     },
     {
       "node": "433:0",
@@ -350,14 +351,6 @@
         3
       ],
       "characters": 108
-    },
-    {
-      "node": "434:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 517
     },
     {
       "node": "435:0",
@@ -443,17 +436,10 @@
       "node": "448:0",
       "role": "P",
       "pages": [
-        3
-      ],
-      "characters": 383
-    },
-    {
-      "node": "joined-459:0",
-      "role": "P",
-      "pages": [
+        3,
         4
       ],
-      "characters": 148
+      "characters": 467
     },
     {
       "node": "461:0",
@@ -525,7 +511,7 @@
       "pages": [
         4
       ],
-      "characters": 340
+      "characters": 546
     },
     {
       "node": "470:0",
@@ -704,7 +690,7 @@
       "characters": 2260
     }
   ],
-  "tagged_content_items": 4319,
+  "tagged_content_items": 4305,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -719,7 +705,7 @@
       ],
       "sha256": "03f69c8bf94c6e7ab9a4369a59a41e5ac358bb3a30421b03f32cf1c022a6b53f",
       "kind": "figure",
-      "alt": "Figure 1: The interface of the live writing intervention as the animation reveals code in linear order. Participants were asked not to begin writing their summaries until after each animation completed playing."
+      "alt": "Code-animation task screen. A Python editor on the left shows the program partway through its animation, with the active insertion point highlighted. A large text box on the right asks the participant to summarize the program. Playback controls and a progress bar are below the code. The study asks participants to wait until the animation finishes before entering the summary."
     },
     {
       "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-002-p002.png",
@@ -733,7 +719,7 @@
       ],
       "sha256": "6f63787bd9d22615a5bda72a7d3acf5644022579dc4a12d54e67e4010b6d5783",
       "kind": "figure",
-      "alt": "Figure 2: The live writing intervention after an animation completed. The presented code remained visible and editable during the summarization task."
+      "alt": "Program-summary task screen after the animation. The full Python program remains in an editable editor on the left. A large response field and Submit button on the right collect a brief account of what the program does; the completed playback bar remains beneath the code."
     },
     {
       "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-003-p003.png",
@@ -747,7 +733,7 @@
       ],
       "sha256": "386431ab03189da4b82500dcba87a3911757f4df6c71661438da594a9fb7b8ea",
       "kind": "figure",
-      "alt": "Figure 3: After completing and submitting their summaries, participants could view their next tasks, edit code, and execute the program."
+      "alt": "Interactive task screen with the Python program in an editor on the left. Run and Tasks controls appear on the right above instructions to debug the code and identify and fix its logic problem. The participant can edit and run the program to complete these tasks."
     },
     {
       "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-004-p003.png",
@@ -761,7 +747,7 @@
       ],
       "sha256": "bf597f9103c4083b8c99aebe8f15e95bd2d44cb6ef0c3b43b6d54449908fef57",
       "kind": "figure",
-      "alt": "Figure 4: Participants could view execution errors in the intervention interface while completing each task."
+      "alt": "Runtime-error screen for the Python task. Source code is on the left and a red traceback is on the right beneath the Run and Tasks controls. The error identifies study_hard as an undefined name on line 24, showing the feedback participants receive when running faulty code."
     },
     {
       "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-005-p004.png",
@@ -775,7 +761,7 @@
       ],
       "sha256": "6590fe46db28eb2dae7bf86e53a158fcb3cb99e8b3c86424e27d794e1a1af301",
       "kind": "figure",
-      "alt": "Figure 5: Fixations of Participant 11 and 14. Participant 11 (left) tracked the animation at a high speed closely following the code as it became visible. Participant 14 (right) played the animation slowly, reading other parts of the computer code."
+      "alt": "Two eye-tracking plots compare participants P11 and P14. Horizontal axes show elapsed time in seconds and vertical axes show code line number. Green traces mark the line currently being animated; yellow marks show the participant’s gaze fixations. P11’s fixations largely follow the advancing animation line, whereas P14’s fixations are spread over other lines and a much longer session. The caption interprets this as different preferred viewing speeds."
     },
     {
       "path": "figures/spinelli-attention-patterns-for-code-animations-px182018/figure-006-p004.png",
@@ -815,12 +801,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 109,
-    "paragraph_fragments_joined": 6,
+    "line_wrap_hyphens_removed": 96,
     "line_wrap_hyphens_retained": 4,
-    "script_runs_positioned": 3
+    "paragraph_fragments_joined": 2,
+    "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/spinelli-attention-patterns-for-code-animations-px182018.json.gz",
-  "source_tags_sha256": "f0cec86652d50b5c4b0f789ec9208505cf04cf522e191afaabc4f3d95a93f024"
+  "source_tags_sha256": "6be65435aa75ba204850543c811e47829618c5fcd6abc25cc445b4bce6a74f6c"
 }

@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-05",
+  "files": [
+    {
+      "file": "chen-sifter-imx2020.pdf",
+      "before_sha256": "e8d3f1be19effb782ac989cd5ef0e4959b202c43416246cadec86f1aa113c196",
+      "after_sha256": "bc19fca4193013d013a2d8e5c94b6b99e23a9dee0be91b71768d61df74aa87a8",
+      "changes": [
+        {
+          "kind": "list_role_constraint",
+          "node": "664:0",
+          "before_role": "LBody",
+          "after_role": "Span",
+          "parent": "659:0",
+          "reason": "Continuation retained inline inside the first list item body; preserve its reviewed text and content sequence."
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 523,
+      "content_references": 7984,
+      "pages": 9,
+      "pixel_identical_144dpi": true,
+      "all_existing_stream_bytes_identical": true,
+      "content_ops_and_order_identical": true,
+      "flattened_reading_text_identical": true,
+      "list_children_valid": true,
+      "structure_checks_passed": true,
+      "verapdf_remaining_failed_rules": [
+        {
+          "clause": "5",
+          "testNumber": 1,
+          "description": "Missing PDF/UA Identification Schema (existing; no conformance claim added)."
+        }
+      ],
+      "verapdf_new_role_failures_resolved": true
+    },
+    {
+      "file": "oney-constraintjs-uist2012.pdf",
+      "before_sha256": "758f16f97afa02a31fbf0bc2bc9e2683367cdc5f280a28e0d23332e5c71be7bc",
+      "after_sha256": "8f73d21a634532f2e22a59c6f1ecca7172943f83eba2a59d89dcc4b221404a78",
+      "changes": [
+        {
+          "kind": "list_role_constraint",
+          "node": "342:0",
+          "before_role": "LBody",
+          "after_role": "P",
+          "parent": "341:0",
+          "reason": "Footnote content is a paragraph within Note, not a list body."
+        },
+        {
+          "kind": "list_role_constraint",
+          "note": "200:0",
+          "before_parent": "196:0",
+          "after_parent": "188:0",
+          "reason": "End-of-list note moved immediately after the list; flattened reading order unchanged."
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 323,
+      "content_references": 5409,
+      "pages": 10,
+      "pixel_identical_144dpi": true,
+      "all_existing_stream_bytes_identical": true,
+      "content_ops_and_order_identical": true,
+      "flattened_reading_text_identical": true,
+      "list_children_valid": true,
+      "structure_checks_passed": true,
+      "verapdf_remaining_failed_rules": [
+        {
+          "clause": "5",
+          "testNumber": 1,
+          "description": "Missing PDF/UA Identification Schema (existing; no conformance claim added)."
+        }
+      ],
+      "verapdf_new_role_failures_resolved": true
+    },
+    {
+      "file": "oney-implementing-multi-touch-gestures-chi2019.pdf",
+      "before_sha256": "2dc30df1ceaf564ac09af86ff7046311004f893b59e7854f40ace31c6efa0c70",
+      "after_sha256": "50343ad631528e897587c563f1734ec02db0331f87028131a478bce73869b881",
+      "changes": [
+        {
+          "kind": "list_role_constraint",
+          "node": "443:0",
+          "before_role": "LBody",
+          "after_role": "Span",
+          "parent": "435:0",
+          "reason": "Page continuation retained inline inside the second list item body; preserve its reviewed text and content sequence."
+        }
+      ],
+      "artifact_content_keys": [],
+      "elements": 479,
+      "content_references": 3801,
+      "pages": 12,
+      "pixel_identical_144dpi": true,
+      "all_existing_stream_bytes_identical": true,
+      "content_ops_and_order_identical": true,
+      "flattened_reading_text_identical": true,
+      "list_children_valid": true,
+      "structure_checks_passed": true,
+      "verapdf_remaining_failed_rules": [
+        {
+          "clause": "5",
+          "testNumber": 1,
+          "description": "Missing PDF/UA Identification Schema (existing; no conformance claim added)."
+        }
+      ],
+      "verapdf_new_role_failures_resolved": true
+    }
+  ]
+}

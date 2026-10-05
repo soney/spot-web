@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: e07308078562e9b15ce5c7e8fb6cb5a37e4c911fac2f26fe106e1263b35e2622 -->
+<!-- Source PDF SHA-256: eb98a219f13704f07488fcfc65192d2a9756db46133f80f2607bf15986c234a9 -->
 
 <a id="page-1"></a>
 
@@ -12,7 +12,7 @@ Fatih Kursat Ozenc<sup>1</sup>, Miso Kim<sup>1</sup>, John Zimmerman<sup>1</sup>
 
 Carnegie Mellon University, Pittsburgh, PA, USA
 
-CHI 2010, April 10–15, 2010, Atlanta, Georgia, USA. Copyright 2010 ACM 978 -1-60558-929-9/10/04....$10.00.
+> CHI 2010, April 10–15, 2010, Atlanta, Georgia, USA. Copyright 2010 ACM 978 -1-60558-929-9/10/04....$10.00.
 
 > Permission to make digital or hard copies of all or part of this work for personal or c lassroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redi stribute to lists, requires prior specific permission and/or a fee.
 
@@ -124,7 +124,7 @@ We observed that designers constantly experimented with context, including the e
 
 For example, the Radio team experimented with different situations where someone might find himself or herself in bed. After exploring a person in bed alone, the team moved to explorations of two people in bed, drawing out details of why those people might be together (Figure 1). By subjectively placing themselves as a couple in bed together, they conceived of a footboard control where one person expresses a desired volume and the other person expresses a desired channel. The situation of an intimately close couple in bed opened up the opportunity to envision a set of controls that require collaboration. Starting from the context of two people in bed led to an idea that was very different from the ideas generated around a single person in bed.
 
-![Figure 1. Drawings of Team Radio: Notice this exploratory sketch shows the context of use and not simply the systems interface. Note that most tools force designers to focus exclusively on the GUI](../figures/ozenc-how-support-designers-chi2010/figure-001-p004.png)
+![Hand-drawn concept for a foot-controlled collaborative music selector. Two people lie in bed with control strips near their feet. Annotations propose moving a foot left or right to scroll options and pointing or tapping to select. The controls include genre, station and song choices, illustrating how a couple might choose music without using their hands.](../figures/ozenc-how-support-designers-chi2010/figure-001-p004.png)
 
 Figure 1. Drawings of Team Radio: Notice this exploratory sketch shows the context of use and not simply the systems interface. Note that most tools force designers to focus exclusively on the GUI
 
@@ -202,7 +202,7 @@ conceived and communicated how things should move by moving their hands.
 
 Figure 2 shows the wireframe for the used car-purchasing interface. The novel controls include a timeline at the bottom of the screen that shows repair history and a control to allow users to change the view of the car in order to better observe any damage or wear from use. The gesture example showed hand gestures indicating the motion of getting bigger and bigger, connecting to the concept of zooming in to get a more detailed view of the car. The motion example also included billiard balls knocking together as an illustration of how the timeline should construct itself on the screen. The material example included images of marbles in a row and a toy-plane made of shiny metal. Finally, the interaction example included a performer juggling with crystal balls.
 
-![Figure 2: wireframe used-car shopping interface. A large car preview sits above a horizontal timeline of earlier and later models; sliding along the timeline changes the car year. Controls beside the car select additional attributes. The design was used as a novel control for the refinement workshop.](../figures/ozenc-how-support-designers-chi2010/figure-002-p006.png)
+![Used-car shopping interface mockup. A car preview occupies the center above a pale gray timeline with owner and maintenance markers; reviews appear on the left. A yellow strip beneath the timeline contains small car-view controls for inspecting the vehicle from different angles. The timeline presents the car’s repair history, supporting inspection of its condition and wear.](../figures/ozenc-how-support-designers-chi2010/figure-002-p006.png)
 
 Figure 2. Interface for an online used car purchasing system
 

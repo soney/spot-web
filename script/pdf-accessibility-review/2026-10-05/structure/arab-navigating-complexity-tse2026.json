@@ -1,0 +1,500 @@
+{
+  "file": "arab-navigating-complexity-tse2026.pdf",
+  "pdf_sha256": "b619fd8e204e7e6ee2f4ac6721190759314f06bb72ff18970af6274c91b6656d",
+  "normalization_warnings": "",
+  "page_count": 18,
+  "language": "en-US",
+  "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
+  "structure_elements": 887,
+  "roles": {
+    "Document": 1,
+    "Sect": 18,
+    "Note": 3,
+    "H1": 1,
+    "P": 170,
+    "H2": 9,
+    "L": 8,
+    "LI": 81,
+    "Lbl": 81,
+    "LBody": 81,
+    "H3": 16,
+    "Figure": 2,
+    "Caption": 9,
+    "H4": 24,
+    "H5": 15,
+    "Table": 7,
+    "TR": 91,
+    "TH": 106,
+    "TD": 164
+  },
+  "structure_content_references": 15972,
+  "parent_tree_entries": 18,
+  "form_xobjects_visited": 2,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_artifact": 1,
+      "text_operations_tagged": 762,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 877,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 797,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 911,
+      "vector_operations_artifact": 12
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 965,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 920,
+      "vector_operations_artifact": 4
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 924,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 862,
+      "vector_operations_artifact": 15
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 960,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 822,
+      "vector_operations_artifact": 59
+    },
+    {
+      "page": 11,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 972,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 12,
+      "text_operations_artifact": 5,
+      "vector_operations_tagged": 138,
+      "text_operations_tagged": 625,
+      "image_operations_tagged": 12,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 13,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 1083,
+      "vector_operations_artifact": 9
+    },
+    {
+      "page": 14,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 954,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 15,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 929,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 16,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 919,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 17,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 1356,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 18,
+      "text_operations_artifact": 5,
+      "text_operations_tagged": 431,
+      "vector_operations_artifact": 1
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "143:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "147:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "181:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "183:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "187:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "338:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "342:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "357:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "359:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "362:0",
+      "page": 4
+    },
+    {
+      "level": 5,
+      "element": "364:0",
+      "page": 4
+    },
+    {
+      "level": 5,
+      "element": "382:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "385:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "418:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "420:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "422:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "427:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "432:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "438:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "441:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "568:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "570:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "572:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "575:0",
+      "page": 6
+    },
+    {
+      "level": 5,
+      "element": "578:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "584:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "586:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "588:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "606:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "608:0",
+      "page": 7
+    },
+    {
+      "level": 5,
+      "element": "610:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "614:0",
+      "page": 7
+    },
+    {
+      "level": 3,
+      "element": "680:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "687:0",
+      "page": 8
+    },
+    {
+      "level": 4,
+      "element": "693:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "701:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "708:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "711:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "713:0",
+      "page": 9
+    },
+    {
+      "level": 4,
+      "element": "716:0",
+      "page": 9
+    },
+    {
+      "level": 3,
+      "element": "770:0",
+      "page": 10
+    },
+    {
+      "level": 4,
+      "element": "772:0",
+      "page": 10
+    },
+    {
+      "level": 5,
+      "element": "774:0",
+      "page": 10
+    },
+    {
+      "level": 5,
+      "element": "857:0",
+      "page": 11
+    },
+    {
+      "level": 5,
+      "element": "859:0",
+      "page": 11
+    },
+    {
+      "level": 5,
+      "element": "861:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "864:0",
+      "page": 11
+    },
+    {
+      "level": 4,
+      "element": "871:0",
+      "page": 11
+    },
+    {
+      "level": 5,
+      "element": "873:0",
+      "page": 11
+    },
+    {
+      "level": 5,
+      "element": "882:0",
+      "page": 12
+    },
+    {
+      "level": 3,
+      "element": "884:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "886:0",
+      "page": 12
+    },
+    {
+      "level": 4,
+      "element": "930:0",
+      "page": 13
+    },
+    {
+      "level": 4,
+      "element": "934:0",
+      "page": 13
+    },
+    {
+      "level": 2,
+      "element": "940:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "956:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "958:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "961:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "963:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "965:0",
+      "page": 15
+    },
+    {
+      "level": 3,
+      "element": "967:0",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "element": "971:0",
+      "page": 16
+    },
+    {
+      "level": 3,
+      "element": "978:0",
+      "page": 16
+    },
+    {
+      "level": 2,
+      "element": "991:0",
+      "page": 16
+    },
+    {
+      "level": 2,
+      "element": "994:0",
+      "page": 17
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "348:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 1. Three-phase study workflow, shown as three banners stacked from top to bottom. Phase 0, literature synthesis: derive candidate debugging contexts and strategies. Phase 1, survey: collect a sample of currently challenging debugging scenarios and their frequencies. Phase 2, expert interviews: obtain detailed accounts of strategy choice and adaptation grounded in those scenario types. The adjacent text specifies 35 survey respondents and 16 expert interviewees.",
+      "actual_text": ""
+    },
+    {
+      "element": "878:0",
+      "role": "Figure",
+      "page": 12,
+      "alt": "Figure 2. Network summarizing commonly reported debugging strategy transitions from 16 expert web developers. It is a descriptive model, not a decision tree: context questions do not uniquely determine the next strategy, and a missing edge does not rule out a transition. Six green ellipses are numbered: 1, Forward-reasoning; 2, Error-message; 3, Hypothesis-test; 4, Backward-reasoning; 5, Simplification; and 6, External Strategy. Starting from whether a defect is observable, the diagram connects a non-observable defect through codebase complexity (l) to forward reasoning. For an observable defect, clear messages (a) lead toward error-message debugging, vague messages (b) toward hypothesis testing, and client-side versus other failures (c) toward simplification or hypothesis testing. Error-message debugging connects through access to the codebase (d) to backward reasoning. Hypothesis testing connects through debugger availability (e) to backward reasoning, or through reproducibility (f), familiarity (g), and search-space size (h) to simplification. Constrained production, compiled-binary, or ownership contexts (i) distinguish external strategies from simplification. User-specific failures (j) also connect hypothesis testing to external strategies. Sporadic behavior or infeasible traces (k) connect backward reasoning back to hypothesis testing; legacy or unmaintained code (n) connects to backward reasoning. Forward reasoning connects through familiarity (m) toward hypothesis testing when familiar or external strategies when unfamiliar, and through reproducibility and a narrowed search space (o) toward simplification. Simplification connects through unsafe or limited opportunities to simplify (q) toward external strategies. Context boxes are blue for codebase characteristics, tan for defect characteristics, and pale yellow for environmental, tooling, and organizational constraints. The printed legend labels both codebase and defect characteristics as Table IV; the body text identifies codebase characteristics in Table V. Arrow weight encodes breadth of participant support: thick solid lines, at least 7 participants; thin solid lines, 4 to 6; dashed lines, 3 or fewer. Thick routes emphasize complexity to forward reasoning, clear errors to error-message debugging, debugger availability to backward reasoning, familiarity to hypothesis testing, and a large search space to simplification. Dashed routes include reproducible, narrowed problems from forward reasoning to simplification, sporadic or infeasible traces from backward reasoning to hypothesis testing, and unsafe simplification to external strategies. Table VII gives the associated conditions, participant evidence, and quotations.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

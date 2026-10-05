@@ -1,5 +1,30 @@
 # Publication PDF accessibility and appearance review
 
+The [October 5 re-audit](2026-10-05/README.md) is the current review. It covers
+every page layout and figure alternative, native reading-order and PDF/UA
+repairs, and Markdown downloads with offline figures. The
+[current PDF/UA summary](2026-10-05/pdfua/summary.json) records 73 veraPDF
+PDF/UA-1 passes. On October 5, 2026, the user accepted Myers 2013 as the one
+font/PDF-UA exception to preserve its original appearance. It retains four
+unembedded fonts and no declaration; no embedding candidate is installed.
+The [accepted exception](2026-10-05/pdfua/README.md#accepted-fontpdf-ua-exception)
+records its unchanged hash. All installed PDFs preserve their original appearance: 1,024
+pages in 73 changed PDFs are pixel-identical in both tested renderers, and
+Myers's four pages remain byte-identical.
+
+The subsequent [reading-order review](2026-10-05/reading-order/README.md)
+identified sentence interruptions and misplaced or interleaved content.
+The [repair record](2026-10-05/reading-order/repairs/README.md) documents that
+intermediate phase. Later PDF/UA work added 71 declarations, classified 8,550
+pagination artifacts, supplied numbering attributes for 149 ordered lists,
+and resolved four code-layout flags with two ActualText repairs and two
+source-verified clearances. Three [fresh reader-interface samples](2026-10-05/pdfua/at/README.md)
+check the current files. Continuous screen-reader speech and whole-corpus
+accessibility certification are outside that evidence. The October manifest
+binds current files to current checks; the September evidence below is historical.
+
+## September 14 baseline
+
 The September 14, 2026 review covers all 74 publication PDFs (1,028 pages).
 The PDFs in `assets/pdfs/` retain their original filenames and publication URLs.
 The original 73 PDFs use Git revision `8bbeb3a` as their appearance baseline;
@@ -16,7 +41,7 @@ preserve the original appearance throughout. Earlier visible contrast, chart,
 figure-placement, formula and font-substitution changes were therefore removed.
 Recovered content is retained as invisible tagged text where described below.
 
-## Verification
+## September verification
 
 All 74 copies pass the custom structural checks. veraPDF 1.30.2's PDF/UA-1
 profile reports two complete passes, 71 files whose only failure is a missing
@@ -34,17 +59,19 @@ renderers and resolution; they do not guarantee identical behavior in every
 reader or on every operating system.
 
 Earlier automated integration tests used Orca 50.2, Firefox 155.0.1, AT-SPI and
-Orca speech logs on Codelets, Expresso and Codeon. Those exact PDF bytes are
-unchanged. The tests checked sampled heading/link navigation, reading order and
+Orca speech logs on Codelets, Expresso and Codeon. Those exact PDF bytes were
+unchanged within the September phase; later October repairs changed them.
+The tests checked sampled heading/link navigation, reading order and
 table-header announcements. The HTML companions were also tested, including XML
 reflow at 500% browser zoom. This is not a human listening study, an all-page
 screen-reader test, or blanket PDF/UA or WCAG certification.
 
-The manifest is a dated review record. Check that current PDFs still match it:
+The September manifest remains a dated baseline. Check current PDFs against
+the October manifest:
 
 ```bash
 ruby -rjson -rdigest -e '
-  review = JSON.parse(File.read("script/pdf-accessibility-review/manifest.json"))
+  review = JSON.parse(File.read("script/pdf-accessibility-review/2026-10-05/manifest.json"))
   review.fetch("documents").each do |doc|
     abort "Changed since review: #{doc.fetch("path")}" unless
       Digest::SHA256.file(doc.fetch("path")).hexdigest == doc.fetch("final_sha256")
@@ -54,7 +81,7 @@ ruby -rjson -rdigest -e '
 ruby script/pdf_audit.rb
 ```
 
-## Source choices and appearance
+## September source choices and appearance
 
 - **Original editions:** VRCopilot, UI Frameworks, Crowd GUI, Explore and
   Callisto use the repository's original page content, images and
@@ -86,7 +113,7 @@ ruby script/pdf_audit.rb
 The readable Expresso table and MIT XML companions remain linked from their
 publication pages and exposed through the site's WebMCP publication tool.
 
-## Remaining findings
+## September findings
 
 Navigating Complexity arrived untagged. Its 18-page copy now has reviewed
 heading levels, column order, four research-question labels, 62 bibliography
@@ -100,14 +127,16 @@ provides the diagram's meaning.
 
 Two unembedded Helvetica resources use compatible embedded URW NimbusSans
 substitutes; both renderers confirm unchanged appearance on all 18 pages. All
-font resources are now embedded. The sole remaining veraPDF finding is the
-omitted PDF/UA declaration; the file has not been certified. The original
+font resources were embedded. The sole veraPDF finding at that phase's close was
+the omitted PDF/UA declaration; October's later PDF/UA phase resolves that
+finding. The original
 figure/table-number inconsistencies, caption typo and missing parenthesis remain
 visually unchanged and are listed in the manifest. The
 [Navigating Complexity review](navigating-complexity/final-summary.json) and its
 neighboring reports record the exact file hashes, structural checks, table and
-figure review, and page comparisons. Its new Markdown download uses this final
-tagged PDF; the original 73 PDFs and Markdown documents remain unchanged.
+figure review, and page comparisons. Its new Markdown download used that phase's
+tagged PDF; the original 73 PDFs and Markdown documents were unchanged when it
+was added. The later October work updated affected PDFs and conversions.
 
 Preserving original appearance leaves the visual limitations listed above.
 Two Table 14 category labels in the MIT thesis are absent in both source

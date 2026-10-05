@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: 8d2b3112f19c2128bb88e12dfd4baa697c3fd95d0e567f6a700f0f76dc87aabd -->
+<!-- Source PDF SHA-256: 44201fdb78730ad66b923c324ee5f66cb0f96e16fd6d3f41553002ead8fb5afa -->
 
 <a id="page-1"></a>
 
@@ -52,15 +52,15 @@ Programming Education; Code Visualization; Code History
 
 ACM Reference Format: Ashley Ge Zhang, Yan-Ru Jhou, Yinuo Yang, Shamita Rao, Maryam Arab, Yan Chen, and Steve Oney. 2026. CodeStream: Augmenting Timelines with Code Annotation for Navigating Large Coding Histories. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26), April 13–17, 2026, Barcelona, Spain. ACM, New York, NY, USA, [16](<#page-16>) pages. [https://doi.org/10.1145/3772318.3791873](<https://doi.org/10.1145/3772318.3791873>)
 
-## 1 Introduction
-
-Programming instructors often use coding exercises to assess students’ understanding of key concepts \[[40,](<#page-16>) [42,](<#page-16>) [54](<#page-16>)\]. But just as math instructors ask students to ‘show your work’, assessing understanding of coding concepts requires visibility into the process of arriving at a code solution, not just the final code submission \[[35,](<#page-16>) [59,](<#page-16>) [65](<#page-16>)\]. In addition to evaluating correctness, knowing how students think through the problems is critical for identifying misconceptions and supporting conceptual growth \[[36,](<#page-16>) [53](<#page-16>)\]. Code edit histories can reveal insights about students’ code-writing process, such as how they approached the problem, where they struggled, and how they debugged \[[35,](<#page-16>) [65](<#page-16>)\]. For example, a correct submission may involve a large copy–paste, suggesting limited understanding and over-reliance on external sources. Repeated, unproductive edits on the same concept may indicate that students are using a guess-and-check approach without understanding the underlying concept.
-
 [Creative Commons Attribution logo; this paper is licensed under CC BY 4.0.](<https://creativecommons.org/licenses/by/4.0>)
 
 [This work is licensed under a Creative Commons Attribution 4.0 International License.](<https://creativecommons.org/licenses/by/4.0>) CHI ’26, Barcelona, Spain
 
 © 2026 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-2278-3/26/04 [https://doi.org/10.1145/3772318.3791873](<https://doi.org/10.1145/3772318.3791873>)
+
+## 1 Introduction
+
+Programming instructors often use coding exercises to assess students’ understanding of key concepts \[[40,](<#page-16>) [42,](<#page-16>) [54](<#page-16>)\]. But just as math instructors ask students to ‘show your work’, assessing understanding of coding concepts requires visibility into the process of arriving at a code solution, not just the final code submission \[[35,](<#page-16>) [59,](<#page-16>) [65](<#page-16>)\]. In addition to evaluating correctness, knowing how students think through the problems is critical for identifying misconceptions and supporting conceptual growth \[[36,](<#page-16>) [53](<#page-16>)\]. Code edit histories can reveal insights about students’ code-writing process, such as how they approached the problem, where they struggled, and how they debugged \[[35,](<#page-16>) [65](<#page-16>)\]. For example, a correct submission may involve a large copy–paste, suggesting limited understanding and over-reliance on external sources. Repeated, unproductive edits on the same concept may indicate that students are using a guess-and-check approach without understanding the underlying concept.
 
 Without insight into students’ code-writing processes, instructors may overlook misconceptions, miss opportunities for timely feedback, or fail to recognize students who struggle silently \[[35,](<#page-16>) [65](<#page-16>)\]. While edit histories can provide valuable insights, they are difficult to represent in ways that are easy for instructors to interpret.
 
@@ -178,15 +178,13 @@ With the designs to address C1 and C2 , CodeStream augments the timeline visuali
 
 #### 3.2.5 Maintaining Global Context: Mini-map Navigation.
 
-Code- Stream provides a mini-map positioned at the bottom-left of the timeline view that serves as a global navigation aid (Figure [6.](<#page-8>)d). This compact timeline representation shows the instructor’s current viewport within the overall coding history, enabling quick orientation and navigation to different time periods. The minimap
+Code- Stream provides a mini-map positioned at the bottom-left of the timeline view that serves as a global navigation aid (Figure [6.](<#page-8>)d). This compact timeline representation shows the instructor’s current viewport within the overall coding history, enabling quick orientation and navigation to different time periods. The minimap maintains the same visual encoding as the main timeline, ensuring consistency in representation. It allows instructors to maintain awareness of their current location while exploring detailed code changes, supporting efficient navigation between different coding phases without losing context.
 
 <a id="page-6"></a>
 
 ![Figure 4. CodeStream links a timeline on the left to the student's full code on the right. Time runs left to right from start to finish; code lines run top to bottom from first to last. Blue blocks denote additions, orange blocks deletions. Gray row shading represents cumulative editing effort: darker means more time. Clicking a block locates its code; a scrubber selects a code snapshot. The editor displays the corresponding complete program.](https://from.so/assets/markdown/figures/zhang-codestream-chi2026/figure-004-p006.png)
 
 Figure 4: CodeStream’s user interface. (1) Timeline View: shows the evolution of edits across time, where each row corresponds to a code line and edits are encoded as blue (add) or orange (delete) (c). Gray shading indicates cumulative effort, where darker shading indicates more time spent editing a region, and lighter shading suggests less time (f). Users can navigate the timeline with controls (d), and track the number of active code lines (e). (2) Code Content View: displays the actual program text aligned with the timeline, allowing instructors to connect edits with specific code states.
-
-maintains the same visual encoding as the main timeline, ensuring consistency in representation. It allows instructors to maintain awareness of their current location while exploring detailed code changes, supporting efficient navigation between different coding phases without losing context.
 
 ### 3.3 Code Annotation &amp; Taxonomy
 
@@ -206,21 +204,17 @@ Dynamically group related code lines by keystroke edit distance. To reduce clutt
 
 Align code structures horizontally. Within each group of related code lines, we preserve indentation and horizontally align lines to match how code is normally displayed in editors. This alignment improves readability and allows instructors to quickly recognize the scope of changes and the surrounding context, making it easier to interpret the structure of edit events (Figure [8.](<#page-10>)b).
 
-Default position. We center code snippets within their edit groups to help instructors clearly associate code with the time period when it was edited. Without centering, snippets can appear offset, making changes harder to interpret. Let <sub>1</sub> <sub>2</sub> <sub>𝑛</sub><sub></sub> 𝑒 , 𝑒 , ..., 𝑒 be edits in a group with timestamps 𝑡<sub>1</sub>, ..., 𝑡<sub>𝑛</sub><sub></sub> , sorted from earliest to latest. The leftmost timestamp 𝑡<sub>1</sub><sub></sub> is mapped to the timeline using 𝑡 𝑖𝑚𝑒𝑆𝑐𝑎𝑙𝑒𝑟 , which converts timestamps to pixel positions, and we use 𝑡 𝑖𝑚𝑒𝑆𝑐𝑎𝑙𝑒𝑟 (𝑡<sub>1</sub>) as the default left position of the group. The default width of each group is defined as
-
 <a id="page-7"></a>
+
+Default position. We center code snippets within their edit groups to help instructors clearly associate code with the time period when it was edited. Without centering, snippets can appear offset, making changes harder to interpret. Let <sub>1</sub> <sub>2</sub> <sub>𝑛</sub><sub></sub> 𝑒 , 𝑒 , ..., 𝑒 be edits in a group with timestamps 𝑡<sub>1</sub>, ..., 𝑡<sub>𝑛</sub><sub></sub> , sorted from earliest to latest. The leftmost timestamp 𝑡<sub>1</sub><sub></sub> is mapped to the timeline using 𝑡 𝑖𝑚𝑒𝑆𝑐𝑎𝑙𝑒𝑟 , which converts timestamps to pixel positions, and we use 𝑡 𝑖𝑚𝑒𝑆𝑐𝑎𝑙𝑒𝑟 (𝑡<sub>1</sub>) as the default left position of the group. The default width of each group is defined as 7 ×𝑎𝑣 𝑒𝑟 𝑎𝑔𝑒 (𝑐𝑜𝑢𝑛𝑡<sub>1</sub>, ..., 𝑐𝑜𝑢𝑛𝑡<sub></sub> )/2 pixels, where 𝑐𝑜𝑢𝑛𝑡<sub>𝑖</sub><sub></sub> is the charac𝑘 ter length of line 𝑙<sub>𝑖</sub><sub></sub> , and 7 pixels is the average width of a character in our 12pt monospace font. For example, if the average line length is 20 characters, the default width is about 140 pixels. The y-position of each line is determined by its vertical placement in the layout. This design ensures each code snippet is displayed adjacent to its edit group on the timeline, making it clear which edits the snippet represents.
 
 ![Figure 5: Details of CodeStream’s user interface that address vertical clutter. (a) Code annotations embedded directly into the timeline. (b) Context summary view that abstracts dense code regions into labeled structures (e.g., functions, statements). (c) Hover interaction showing original code lines from summary labels. (d) Level-of-detail rendering, where zooming reveals progressively more detailed edits.](https://from.so/assets/markdown/figures/zhang-codestream-chi2026/figure-005-p007.png)
 
 Figure 5: Details of CodeStream’s user interface that address vertical clutter. (a) Code annotations embedded directly into the timeline. (b) Context summary view that abstracts dense code regions into labeled structures (e.g., functions, statements). (c) Hover interaction showing original code lines from summary labels. (d) Level-of-detail rendering, where zooming reveals progressively more detailed edits.
 
-- 7 ×𝑎𝑣 𝑒𝑟 𝑎𝑔𝑒 (𝑐𝑜𝑢𝑛𝑡<sub>1</sub>, ..., 𝑐𝑜𝑢𝑛𝑡<sub></sub> )/2 pixels, where 𝑐𝑜𝑢𝑛𝑡<sub>𝑖</sub><sub></sub> is the charac𝑘 ter length of line 𝑙<sub>𝑖</sub><sub></sub> , and 7 pixels is the average width of a character in our 12pt monospace font. For example, if the average line length is 20 characters, the default width is about 140 pixels. The y-position of each line is determined by its vertical placement in the layout. This design ensures each code snippet is displayed adjacent to its edit group on the timeline, making it clear which edits the snippet represents.
-  
-  #### 3.3.2 Layout Algorithm to Address Cluttering.
-  
-  To address cluttering between text, we designed a layout algorithm that arranges code
+#### 3.3.2 Layout Algorithm to Address Cluttering.
 
-annotations along the timeline while minimizing overlaps. Each code snippet is considered a time interval. It proceeds in four steps:
+To address cluttering between text, we designed a layout algorithm that arranges code annotations along the timeline while minimizing overlaps. Each code snippet is considered a time interval. It proceeds in four steps:
 
 Step 1: Sorting. All time intervals (representing edit groups) are first sorted by their start time from left to right (Figure [7.](<#page-9>)1).
 
@@ -286,9 +280,9 @@ We designed CodeStream as a general tool that visualizes keystroke-level coding 
 
 We use a dataset of Python programming histories collected in a prior study \[[66](<#page-16>)\]. The dataset contains keystroke-level edit logs from 20 participants solving two programming tasks. Participants were over 18 years old with prior Python experience and came from diverse backgrounds, including undergraduate and graduate students, software developers, data professionals, and researchers. Their experience ranged from less than 3 months to 9 years.
 
-Each participant in the dataset \[[66](<#page-16>)\] completed two 20-minute tasks: (i) implementing a command-line grade-book system and (ii) building a hospital appointment manager. Both tasks required managing JSON-based data, performing list and dictionary operations, and producing formatted outputs. For each task, participants were provided with starter code containing a task description, function TODO items, and an accompanying test file. Within the 20 minutes for each task, participants were not required to complete the entire task. Instead, they were expected to iteratively develop their
-
 <a id="page-11"></a>
+
+Each participant in the dataset \[[66](<#page-16>)\] completed two 20-minute tasks: (i) implementing a command-line grade-book system and (ii) building a hospital appointment manager. Both tasks required managing JSON-based data, performing list and dictionary operations, and producing formatted outputs. For each task, participants were provided with starter code containing a task description, function TODO items, and an accompanying test file. Within the 20 minutes for each task, participants were not required to complete the entire task. Instead, they were expected to iteratively develop their solutions starting from the provided starter code and aim to pass the tests. All participants were allowed to use external resources (including Google and ChatGPT). To obtain a variety of coding patterns, we gave different instructions for using AI tools. Half of the participants were allowed to use AI without restrictions, while the other half were told to use AI only when stuck. Across both tasks, coding sessions ranged from 188–319 lines of code with up to 2,610 edits.
 
 Table 1: Participant Demographics of the user study
 
@@ -377,8 +371,6 @@ Table 1: Participant Demographics of the user study
   </tbody>
 </table>
 
-solutions starting from the provided starter code and aim to pass the tests. All participants were allowed to use external resources (including Google and ChatGPT). To obtain a variety of coding patterns, we gave different instructions for using AI tools. Half of the participants were allowed to use AI without restrictions, while the other half were told to use AI only when stuck. Across both tasks, coding sessions ranged from 188–319 lines of code with up to 2,610 edits.
-
 The dataset was collected using the VSCode extension we built (Section [3.7](<#page-10>)), including keystroke-level coding histories and execution results from the test files. The VSCode extension was deployed on GitHub Codespaces for the user study.
 
 #### 4.1.2 Recruitment.
@@ -387,7 +379,7 @@ Because CodeStream’s intended end users are programming instructors, we reache
 
 #### 4.1.3 Baseline System.
 
-As there are no widely used visualization tools for keystroke-level code histories to compare with, we designed the baseline system as a restricted version of CodeStream, which is functionally identical to Eliph’s timeline visualization of code histories \[[35](<#page-16>)\]. The baseline systems provided keystroke-level edit indicators, enabled time travel for code histories, but without code annotation on the timeline and the cumulative effort visualizations. Although cumulative-effort visualizations were removed, users could still infer how long students spent writing by looking at the time span of their edits. Figure [9](<#page-12>) is a screenshot of the baseline system. Users were provided with a list of students’ coding histories. For each student, users can see a timeline visualization and a code editor showing the student’s code content. The change
+As there are no widely used visualization tools for keystroke-level code histories to compare with, we designed the baseline system as a restricted version of CodeStream, which is functionally identical to Eliph’s timeline visualization of code histories \[[35](<#page-16>)\]. The baseline systems provided keystroke-level edit indicators, enabled time travel for code histories, but without code annotation on the timeline and the cumulative effort visualizations. Although cumulative-effort visualizations were removed, users could still infer how long students spent writing by looking at the time span of their edits. Figure [9](<#page-12>) is a screenshot of the baseline system. Users were provided with a list of students’ coding histories. For each student, users can see a timeline visualization and a code editor showing the student’s code content. The change indicators in the timeline are the same as in CodeStream. Users can click on the change indicators or move the slider on the timeline to view historical versions of students’ code. With this baseline design, we aim to understand how the code annotation on timelines and the cumulative effort visualization influence instructors’ user experience of viewing code histories.
 
 Table 2: Categorization of the quiz questions in the user study and examples of each category.
 
@@ -417,8 +409,6 @@ Table 2: Categorization of the quiz questions in the user study and examples of 
     </tr>
   </tbody>
 </table>
-
-indicators in the timeline are the same as in CodeStream. Users can click on the change indicators or move the slider on the timeline to view historical versions of students’ code. With this baseline design, we aim to understand how the code annotation on timelines and the cumulative effort visualization influence instructors’ user experience of viewing code histories.
 
 #### 4.1.4 Study Setup.
 
@@ -546,9 +536,9 @@ In the real-time settings for keystroke-level changes, the changes may not be pr
 
 The clustering \[of code edits\] was very helpful, because it increased the readability of the code for instructors, who are always under big time pressures. The indicator of how many lines were changed was also helpful for the same reason. (P6)
 
-I think, \[CodeStream\], because I think we have a mini-map, and we can see how the code is being changed line by line. With \[the baseline\], it was quite tricky to, you know, like, again, scroll down and then see, okay, which line changed. So with, I think with, with the minimap
-
 <a id="page-14"></a>
+
+I think, \[CodeStream\], because I think we have a mini-map, and we can see how the code is being changed line by line. With \[the baseline\], it was quite tricky to, you know, like, again, scroll down and then see, okay, which line changed. So with, I think with, with the minimap ... we can, like, maximize, minimize, we can look at a specific window. (P3)
 
 Table 4: Quiz accuracy by question category for the Baseline and CodeStream conditions. Categories with statistically significant differences are marked with 𝑝 &lt; 0.05.
 
@@ -608,8 +598,6 @@ Table 4: Quiz accuracy by question category for the Baseline and CodeStream cond
     </tr>
   </tbody>
 </table>
-
-... we can, like, maximize, minimize, we can look at a specific window. (P3)
 
 #### 4.3.2 Benefits and improvement needs of the code annotation.
 
@@ -718,63 +706,63 @@ In this paper, we introduced CodeStream, a system that augments timeline-based c
 <a id="page-16"></a>
 
 - \[31\] Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas. 2014. Codewebs: scalable homework search for massive open online programming courses. In Proceedings of the 23rd international conference on World wide web. 491–502.
-  
+
   - \[32\] Michael Ogawa and Kwan-Liu Ma. 2010. Software evolution storylines. In Proceedings of the 5th international symposium on Software visualization. 35–42.
-  
+
   - \[33\] Mohd Hafeez Osman and Michel RV Chaudron. 2013. UML Usage in Open Source Software Development: A Field Study.. In EESSMod@ MoDELS. 23–32.
-  
+
   - \[34\] Claudia Ott, Anthony Robins, and Kerry Shephard. 2016. Translating principles of effective feedback for students into the CS1 context. ACM Transactions on Computing Education (TOCE) 16, 1 (2016), 1–27.
-  
+
   - \[35\] Jungkook Park, Yeong Hoon Park, Suin Kim, and Alice Oh. 2017. Eliph: Effective visualization of code history for peer assessment in programming education. In Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing. 458–467.
-  
+
   - \[36\] John Piaget. 1952. The origins of intelligence in children. International Universities (1952).
-  
+
   - \[37\] C Michael Pilato, Ben Collins-Sussman, and Brian W Fitzpatrick. 2008. Version control with subversion: next generation open source version control. " O’Reilly Media, Inc.".
-  
+
   - \[38\] Leo Porter and Daniel Zingaro. 2014. Importance of early performance in CS1: two conflicting assessment stories. In Proceedings of the 45th ACM technical
-  
+
   - symposium on Computer science education. 295–300. \[39\] Alexander Repenning, Ashok Basawapatna, and Nora Escherle. 2016. Computa-
-    
+
     - tional thinking tools. In 2016 IEEE symposium on visual languages and human-centric computing (VL/HCC). IEEE, 218–222.
-  
+
   - \[40\] Anthony Robins, Janet Rountree, and Nathan Rountree. 2003. Learning and teaching programming: A review and discussion. Computer science education 13, 2 (2003), 137–172.
-  
+
   - \[41\] Álvaro Santos, Anabela Gomes, and António Mendes. 2013. A taxonomy of exercises to support individual learning paths in initial programming learning. In 2013 IEEE Frontiers in Education Conference (FIE). IEEE, 87–93.
-  
+
   - \[42\] Jorg Schulze, Matthias Langrich, and Antje Meyer. 2007. The success of the demidovich-principle in undergraduate C# programming education. In 2007 37th Annual Frontiers In Education Conference-Global Engineering: Knowledge Without Borders, Opportunities Without Passports. IEEE, F4C–7.
-  
+
   - \[43\] Francisco Servant and James A Jones. 2012. History slicing: Assisting code-evolution tasks. In Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering. 1–11.
-  
+
   - \[44\] Francisco Servant and James A Jones. 2013. Chronos: Visualizing slices of source-code history. In 2013 First IEEE Working Conference on Software Visualization (VISSOFT). IEEE, 1–4.
-  
+
   - \[45\] Ben Shneiderman. 2003. The eyes have it: A task by data type taxonomy for information visualizations. In The craft of information visualization. Elsevier, 364–371.
-  
+
   - \[46\] Juha Sorva, Ville Karavirta, and Lauri Malmi. 2013. A review of generic program visualization systems for introductory programming education. ACM Transactions on Computing Education (TOCE) 13, 4 (2013), 1–64.
-  
+
   - \[47\] Diomidis Spinellis. 2005. Version control systems. IEEE software 22, 5 (2005), 108–109.
-  
+
   - \[48\] Diomidis Spinellis. 2012. Git. IEEE software 29, 3 (2012), 100–101.
-  
+
   - \[49\] Yingchen Tian, Yuxia Zhang, Klaas-Jan Stol, Lin Jiang, and Hui Liu. 2022. What makes a good commit message?. In Proceedings of the 44th International Conference on Software Engineering. 2389–2401.
-  
+
   - \[50\] Walter F Tichy. 1985. RCS—A system for version control. Software: Practice and Experience 15, 7 (1985), 637–654.
-  
+
   - \[51\] Sean Tsung, Huan Wei, Haotian Li, Yong Wang, Meng Xia, and Huamin Qu. 2022. Blocklens: visual analytics of student coding behaviors in block-based programming environments. In Proceedings of the Ninth ACM Conference on Learning@ Scale. 299–303.
-  
+
   - \[52\] Lucian Voinea, Alex Telea, and Jarke J Van Wijk. 2005. CVSscan: visualization of code evolution. In Proceedings of the 2005 ACM symposium on Software visualization. 47–56.
-  
+
   - \[53\] Lev S Vygotsky. 1978. Mind in society: The development of higher psychological processes. Vol. 86. Harvard university press.
-  
+
   - \[54\] April Yi Wang, Yan Chen, John Joon Young Chung, Christopher Brooks, and Steve Oney. 2021. PuzzleMe: Leveraging Peer Assessment for In-Class Programming Exercises. Proceedings of the ACM on Human-Computer Interaction 5, CSCW2 (2021), 1–24.
-  
+
   - \[55\] Dakuo Wang, Judith S Olson, Jingwen Zhang, Trung Nguyen, and Gary M Olson. 2015. DocuViz: visualizing collaborative writing. In Proceedings of the 33rd Annual ACM conference on human factors in computing systems. 1865–1874.
-  
+
   - \[56\] Nathaniel Weinman, Steven M Drucker, Titus Barik, and Robert DeLine. 2021. Fork it: Supporting stateful alternatives in computational notebooks. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems. 1–12.
-  
+
   - \[57\] Richard Wettel and Michele Lanza. 2008. Codecity: 3d visualization of large-scale software. In Companion of the 30th international conference on Software engineering. 921–922.
-  
+
   - \[58\] Moritz Wittenhagen, Christian Cherek, and Jan Borchers. 2016. Chronicler: Interactive exploration of source code history. In Proceedings of the 2016 CHI
-    
+
     - conference on human factors in computing systems. 3522–3532.
 
 - \[59\] Shiyu Xu, Ashley Ge Zhang, and Steve Oney. 2023. How pairing by code similarity influences discussions in peer learning. In Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems. 1–6.

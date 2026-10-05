@@ -1,0 +1,380 @@
+{
+  "file": "zhang-multi-click-uist2025.pdf",
+  "pdf_sha256": "ab78321bd90658f95c7ab42e3cc38f69a10156eb41b699d656b2cbe18dd13ee6",
+  "normalization_warnings": "",
+  "page_count": 10,
+  "language": "en-US",
+  "title": "Multi-Click: Cross-Tab Web Automation via Action Generalization",
+  "structure_elements": 671,
+  "roles": {
+    "Part": 1,
+    "H1": 1,
+    "Sect": 47,
+    "P": 132,
+    "Link": 187,
+    "Span": 122,
+    "Figure": 11,
+    "Caption": 14,
+    "H2": 10,
+    "Note": 2,
+    "Div": 1,
+    "H3": 12,
+    "H4": 12,
+    "L": 9,
+    "LI": 22,
+    "Lbl": 22,
+    "LBody": 22,
+    "Table": 2,
+    "TR": 8,
+    "TD": 19,
+    "TH": 13,
+    "THead": 1,
+    "TBody": 1
+  },
+  "structure_content_references": 1910,
+  "parent_tree_entries": 199,
+  "form_xobjects_visited": 22,
+  "pages": [
+    {
+      "page": 1,
+      "vector_operations_artifact": 2,
+      "text_operations_tagged": 1162,
+      "image_operations_tagged": 67,
+      "vector_operations_tagged": 270,
+      "link_annotations": 27
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 248,
+      "text_operations_tagged": 1835,
+      "link_annotations": 47
+    },
+    {
+      "page": 3,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 88,
+      "text_operations_tagged": 1452,
+      "vector_operations_tagged": 2,
+      "image_operations_tagged": 10,
+      "link_annotations": 41
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 80,
+      "vector_operations_tagged": 18,
+      "image_operations_tagged": 8,
+      "text_operations_tagged": 1186,
+      "link_annotations": 5
+    },
+    {
+      "page": 5,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 2034,
+      "link_annotations": 17
+    },
+    {
+      "page": 6,
+      "vector_operations_artifact": 6,
+      "text_operations_artifact": 599,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 1146,
+      "link_annotations": 5
+    },
+    {
+      "page": 7,
+      "text_operations_artifact": 194,
+      "image_operations_tagged": 9,
+      "text_operations_tagged": 1182,
+      "vector_operations_tagged": 81,
+      "link_annotations": 6
+    },
+    {
+      "page": 8,
+      "text_operations_artifact": 26,
+      "vector_operations_tagged": 60,
+      "text_operations_tagged": 1354,
+      "image_operations_tagged": 8,
+      "link_annotations": 9
+    },
+    {
+      "page": 9,
+      "text_operations_artifact": 34,
+      "text_operations_tagged": 2991,
+      "link_annotations": 25
+    },
+    {
+      "page": 10,
+      "text_operations_artifact": 26,
+      "text_operations_tagged": 987,
+      "link_annotations": 7
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "596:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "661:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "606:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "608:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "1010:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "996:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "1012:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "1015:0",
+      "page": 2
+    },
+    {
+      "level": 4,
+      "element": "1018:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "983:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "1058:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "1060:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "1071:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "1115:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "1209:0",
+      "page": 3
+    },
+    {
+      "level": 4,
+      "element": "1212:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1138:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "1204:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "1206:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1237:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1241:0",
+      "page": 5
+    },
+    {
+      "level": 3,
+      "element": "1278:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1307:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1310:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1397:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1400:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1403:0",
+      "page": 6
+    },
+    {
+      "level": 4,
+      "element": "1406:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1336:0",
+      "page": 7
+    },
+    {
+      "level": 2,
+      "element": "1464:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1480:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1469:0",
+      "page": 8
+    },
+    {
+      "level": 3,
+      "element": "1454:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1455:0",
+      "page": 8
+    },
+    {
+      "level": 2,
+      "element": "1492:0",
+      "page": 9
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "600:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Multi-Click is a technique for simultaneously performing the same action (e.g., clicking or typing) across multiple targets. In the illustration above, a user opens many related items on a single page using a simultaneous click ( A○). Each of these items opens in a separate tab. The user then clicks common elements across these tabs (in this case, an ‘Edit’ button B○), which performs the same action simultaneously across each tab. They then select text input elements across these tabs ( C○) and use an interactive data grid/spreadsheet as the values for each input ( D○).",
+      "actual_text": ""
+    },
+    {
+      "element": "652:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "CC-BY Logo",
+      "actual_text": ""
+    },
+    {
+      "element": "687:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Crossmark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "1065:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Screenshots from the IMDb website. After Multi-Click is activated with double-tapping Shift , users can hover over an initial element and scroll the mouse wheel to generalize to equivalent elements.",
+      "actual_text": ""
+    },
+    {
+      "element": "1134:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Overview of Multi-Click’s User Interface. The user can activate Multi-Click by double-tapping Shift and scroll to select the input elements to enter values. The generalized elements are highlighted in purple (a). The user can see selected\r\nelements in other tabs in the preview cards, where the selected elements are highlighted in blue (c). Then the user can enter values in the interactive data table (d) and calculate results for each term simultaneously.",
+      "actual_text": ""
+    },
+    {
+      "element": "1255:0",
+      "role": "Figure",
+      "page": 6,
+      "alt": "A grouped bar chart compares average task completion time, with error bars and significance brackets. For Tasks 1, 2 and 3 respectively, Multi-Click averages 1:31, 1:31 and 0:47; manual completion averages 2:23, 2:59 and 2:59; Operator averages 13:31, 9:55 and 3:36 (minutes:seconds). Multi-Click is fastest in all three tasks. The exact means and standard deviations appear in Table 1. Asterisks mark p < 0.05 in Welch’s t-test.",
+      "actual_text": ""
+    },
+    {
+      "element": "1325:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Two horizontal stacked-bar panels show NASA-TLX response distributions for Multi-Click and Operator across mental demand, physical demand, hurriedness, perceived success, effort required, and stress/discouragement. Ratings run from 1 in dark red to 7 in dark blue; 1 indicates higher load, hurry, effort or stress and lower success. Multi-Click responses lean toward the favorable higher ratings across all six questions. Operator has more low ratings for hurriedness and more middle ratings for perceived success and effort. The clearest contrast is hurriedness: Operator has responses across ratings 1 through 7, including a large rating-1 segment, while Multi-Click responses are concentrated at 4 through 7.",
+      "actual_text": ""
+    },
+    {
+      "element": "1328:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Four ACM paper tabs supply abstracts to a spreadsheet. The abstract element is selected in the first tab and generalized across the other tabs; the resulting grid has one column per paper and its abstract in the corresponding cell.",
+      "actual_text": ""
+    },
+    {
+      "element": "1329:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "A spreadsheet supplies different values to job application forms in three tabs: J&J, Slack and NVIDIA. The grid pairs job titles Data Scientist, Manager and Engineer with prior companies Meta, Amazon and Google. Generalized Job Title and Company fields on each form receive values from the matching spreadsheet column.",
+      "actual_text": ""
+    },
+    {
+      "element": "1461:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Stock quote elements from separate tabs are collected into a spreadsheet with columns for NYSE Composite, NYSE US 100, Dow Jones Industrial Average and S&P 500. Each column holds the quoted index value and its daily numeric and percentage change; the displayed changes are all negative. Purple highlights identify the corresponding quote elements selected across tabs.",
+      "actual_text": ""
+    },
+    {
+      "element": "1462:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Three Reddit post tabs contain highlighted comments. Multi-Click collects corresponding comments into a grid with one column per post and successive comments in rows, demonstrating extraction of multiple items from each tab.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

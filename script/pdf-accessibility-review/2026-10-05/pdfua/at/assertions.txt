@@ -1,0 +1,4 @@
+PASS: Notebook Table1:40 exact cell texts,13 headers,27 correct row/column header associations; Table2:14×4.
+PASS: Promises/Pitfalls: setup → Python first_name/last_name example → Section5.
+PASS: FireCrystal: Page1 sentence continues on Page2 before Figure1; word-bearing objects remain separate.
+Scope: three Firefox AT-SPI samples. This does not establish end-to-end speech or whole-corpus accessibility.

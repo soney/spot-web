@@ -1,0 +1,33 @@
+{
+  "file": "wang-puzzleme-cscw2021.pdf",
+  "before_sha256": "f828015827b2129579e149b30267e2ad5bab4549f5a543bd1f123c515e2b64c2",
+  "after_sha256": "691ed5b7a7babcc16b46ad2e995be62729db7fb1159081e7b1af5c8b94164277",
+  "changes": [
+    {
+      "kind": "inline_footnote_marker",
+      "node": "567:0",
+      "paragraph": "548:0",
+      "after_content_key": [
+        "2:0",
+        554
+      ],
+      "before": "…and improve1their coding style. We also report…online lecture and…",
+      "after": "…and improve their coding style. We also report…online lecture1 and…",
+      "source_evidence": "Rendered source p2, 144DPI: superscript1 immediately after online lecture."
+    },
+    {
+      "kind": "note_after_callout_paragraph",
+      "note": "550:0",
+      "after": "548:0",
+      "before": "P548, P549 ending contribution includes:, Note550, contributions list",
+      "result": "P548, Note550, P549 ending contribution includes:, contributions list"
+    }
+  ],
+  "artifact_content_keys": [],
+  "elements": 729,
+  "content_references": 13298,
+  "pages": 24,
+  "pixel_identical_144dpi": true,
+  "all_content_ops_and_annotations_preserved": true,
+  "assertions_passed": true
+}

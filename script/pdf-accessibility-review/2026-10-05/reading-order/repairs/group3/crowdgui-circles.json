@@ -1,0 +1,74 @@
+{
+  "file": "chen-improving-crowd-supported-gui-chi2020.pdf",
+  "before_sha256": "7577a95d69406e7bbb41de18d98cde23f22993cd9e2b21b268d5c136298d808b",
+  "after_sha256": "cbabaaf6d864398f5227ffa007e44457af47fcbfa977cacc1447352214602f2c",
+  "changes": [
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "781:0",
+      "digit_content_key": [
+        "558:0",
+        1067
+      ],
+      "alt": "circle 2",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    },
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "797:0",
+      "digit_content_key": [
+        "559:0",
+        455
+      ],
+      "alt": "circle 1",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    },
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "799:0",
+      "digit_content_key": [
+        "559:0",
+        487
+      ],
+      "alt": "circle 2",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    },
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "805:0",
+      "digit_content_key": [
+        "559:0",
+        621
+      ],
+      "alt": "circle 2",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    },
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "817:0",
+      "digit_content_key": [
+        "560:0",
+        149
+      ],
+      "alt": "circle 2",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    },
+    {
+      "kind": "inline_callout_digit_scope",
+      "figure": "889:0",
+      "digit_content_key": [
+        "565:0",
+        346
+      ],
+      "alt": "circle 1",
+      "reason": "Place printed digit inside its circle Figure scope to avoid duplicate digit after the alternative text."
+    }
+  ],
+  "artifact_content_keys": [],
+  "elements": 565,
+  "content_references": 9341,
+  "pages": 13,
+  "pixel_identical_144dpi": true,
+  "content_ops_and_order_identical": true,
+  "figure_alternatives_preserved": true
+}

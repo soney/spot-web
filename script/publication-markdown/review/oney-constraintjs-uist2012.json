@@ -2,9 +2,9 @@
   "file": "oney-constraintjs-uist2012.pdf",
   "title": "ConstraintJS: Programming Interactive Behaviors for the Web by Integrating Constraints and States",
   "publication_id": "constraintjs_programming_interactive_behaviors_for_the_web_by_integrating_constraints_and_states_2012",
-  "pdf_sha256": "0610523abebe3aa77dbaa868e8f0ef4a2f54b51970a78bce0e3d8253ba395a25",
+  "pdf_sha256": "dd37ec57b8ed50e6bfcaaa96059f3b1319756e207955a7f75bf60d963f6bc9aa",
   "markdown": "publications/oney-constraintjs-uist2012.md",
-  "markdown_sha256": "825952cd8825d1cebea7de3c6726bbecf52999d55349faf076e2d7fb2830c170",
+  "markdown_sha256": "853c936be4d3e9623823f157d3240d6a06f1c1aae0584cfe78d802b12f923b94",
   "pages": 10,
   "blocks": [
     {
@@ -24,14 +24,6 @@
       "characters": 100
     },
     {
-      "node": "171:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 905
-    },
-    {
       "node": "172:0",
       "role": "P",
       "pages": [
@@ -46,6 +38,14 @@
         1
       ],
       "characters": 81
+    },
+    {
+      "node": "171:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 905
     },
     {
       "node": "174:0",
@@ -64,20 +64,20 @@
       "characters": 843
     },
     {
-      "node": "181:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 113
-    },
-    {
       "node": "187:0",
       "role": "Note",
       "pages": [
         1
       ],
       "characters": 412
+    },
+    {
+      "node": "181:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 113
     },
     {
       "node": "176:0",
@@ -152,7 +152,7 @@
       "characters": 724
     },
     {
-      "node": "joined-186:0",
+      "node": "186:0",
       "role": "P",
       "pages": [
         1,
@@ -214,7 +214,7 @@
       "pages": [
         2
       ],
-      "characters": 223
+      "characters": 461
     },
     {
       "node": "200:0",
@@ -223,14 +223,6 @@
         2
       ],
       "characters": 118
-    },
-    {
-      "node": "201:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 239
     },
     {
       "node": "202:0",
@@ -281,7 +273,7 @@
       "characters": 21
     },
     {
-      "node": "joined-214:0",
+      "node": "214:0",
       "role": "P",
       "pages": [
         2,
@@ -314,7 +306,7 @@
       "characters": 1267
     },
     {
-      "node": "joined-220:0",
+      "node": "220:0",
       "role": "P",
       "pages": [
         3
@@ -370,7 +362,7 @@
       "characters": 868
     },
     {
-      "node": "joined-228:0",
+      "node": "228:0",
       "role": "P",
       "pages": [
         3,
@@ -440,15 +432,7 @@
       "pages": [
         4
       ],
-      "characters": 305
-    },
-    {
-      "node": "239:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 387
+      "characters": 693
     },
     {
       "node": "240:0",
@@ -465,6 +449,14 @@
         4
       ],
       "characters": 239
+    },
+    {
+      "node": "341:0",
+      "role": "Note",
+      "pages": [
+        4
+      ],
+      "characters": 148
     },
     {
       "node": "242:0",
@@ -574,17 +566,10 @@
       "node": "339:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 228
-    },
-    {
-      "node": "340:0",
-      "role": "L",
-      "pages": [
-        4
-      ],
-      "characters": 148
+      "characters": 360
     },
     {
       "node": "344:0",
@@ -601,14 +586,6 @@
         5
       ],
       "characters": 127
-    },
-    {
-      "node": "346:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 131
     },
     {
       "node": "347:0",
@@ -675,7 +652,7 @@
       "characters": 273
     },
     {
-      "node": "joined-373:0",
+      "node": "373:0",
       "role": "P",
       "pages": [
         5
@@ -856,7 +833,7 @@
       "pages": [
         6
       ],
-      "characters": 237
+      "characters": 266
     },
     {
       "node": "416:0",
@@ -907,7 +884,7 @@
       "characters": 28
     },
     {
-      "node": "joined-423:0",
+      "node": "423:0",
       "role": "P",
       "pages": [
         6,
@@ -929,7 +906,7 @@
       "pages": [
         7
       ],
-      "characters": 506
+      "characters": 226
     },
     {
       "node": "427:0",
@@ -1244,7 +1221,7 @@
       "characters": 23
     },
     {
-      "node": "joined-475:0",
+      "node": "475:0",
       "role": "P",
       "pages": [
         8
@@ -1300,7 +1277,7 @@
       "characters": 4
     },
     {
-      "node": "joined-483:0",
+      "node": "483:0",
       "role": "P",
       "pages": [
         8,
@@ -1416,17 +1393,10 @@
       "node": "499:0",
       "role": "P",
       "pages": [
-        9
-      ],
-      "characters": 303
-    },
-    {
-      "node": "501:0",
-      "role": "P",
-      "pages": [
+        9,
         10
       ],
-      "characters": 174
+      "characters": 478
     },
     {
       "node": "502:0",
@@ -1485,7 +1455,7 @@
       "characters": 19
     },
     {
-      "node": "joined-255:0",
+      "node": "255:0",
       "role": "P",
       "pages": [
         10
@@ -1566,7 +1536,7 @@
       ],
       "sha256": "0a1f370b312340292a767671d11a1af62c8ea2c347471da789d208463d33f270",
       "kind": "figure",
-      "alt": "Figure 4: (Left) An illustration of an interactive behavior where hovering over one block highlights the other block. (Right) the FSM used by both blocks to track their state."
+      "alt": "Two views of a black block show yellow hover feedback. The state machine starts in idle, changes to myhover on mouseover, and returns to idle on mouseout. The block is black in idle and yellow in myhover."
     },
     {
       "path": "figures/oney-constraintjs-uist2012/figure-005-p007.png",
@@ -1580,7 +1550,7 @@
       ],
       "sha256": "6ca0aaab227f1ffdaeaa46d3332ee8ce3ea8f468c9113d6e822ac408d86defe4",
       "kind": "figure",
-      "alt": "Figure 5: The FSM of asynchronous constraints in ConstraintJS. Asynchronous constraints are constraints that don’t have a value until after some delay period, e.g. data returned from network or file system queries. While the constraint is waiting for a value, the FSM is in the “Pending” state. When it successfully receives a value, it enters the “Resolved” state. If there is an error or the request times out, it enters the “Rejected” state."
+      "alt": "Asynchronous-value state machine: Pending transitions to Resolved on success and Rejected on error. A refresh event returns Rejected to Pending for another request."
     },
     {
       "path": "figures/oney-constraintjs-uist2012/figure-006-p008.png",
@@ -1929,13 +1899,13 @@
   ],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 299,
-    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_removed": 272,
     "line_wrap_hyphens_retained": 10,
+    "paragraph_fragments_joined": 1,
     "script_runs_positioned": 17,
     "reviewed_wrap_repairs": 2
   },
   "review_notes": [],
   "source_tags": "source-tags/oney-constraintjs-uist2012.json.gz",
-  "source_tags_sha256": "205b4707041c145d3fb5f826c9e0b687ecd5c079a09086a16fa4103fe06eaf83"
+  "source_tags_sha256": "f7eb7cd5821b39dd8a0850f737bb4ecb52ede4de4d15cd1763e223ccb2aff7f7"
 }

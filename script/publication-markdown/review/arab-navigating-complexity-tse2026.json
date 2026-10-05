@@ -2,9 +2,9 @@
   "file": "arab-navigating-complexity-tse2026.pdf",
   "title": "Navigating Complexity: How Context Shapes Debugging Strategy Choices Among Expert Developers",
   "publication_id": "navigating_complexity_how_context_shapes_debugging_strategy_choices_among_expert_developers_2026",
-  "pdf_sha256": "206d0ef7f38942c6b36a548e8c03223b7d243b9ee9459bbd4f0bb6b98317b895",
+  "pdf_sha256": "b619fd8e204e7e6ee2f4ac6721190759314f06bb72ff18970af6274c91b6656d",
   "markdown": "publications/arab-navigating-complexity-tse2026.md",
-  "markdown_sha256": "fc05e5703e67f626af633ad016365338c25fdac4d43b34c25f2d65eedea5bcc6",
+  "markdown_sha256": "93bb0d764082b878a0a8b734afe157ab340d53e55a135531aded6a43bcde78e3",
   "pages": 18,
   "blocks": [
     {
@@ -104,7 +104,7 @@
       "characters": 389
     },
     {
-      "node": "joined-154:0",
+      "node": "154:0",
       "role": "P",
       "pages": [
         1,
@@ -463,7 +463,7 @@
       "pages": [
         4
       ],
-      "characters": 1282
+      "characters": 1356
     },
     {
       "node": "387:0",
@@ -480,14 +480,6 @@
         4
       ],
       "characters": 3339
-    },
-    {
-      "node": "417:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 73
     },
     {
       "node": "418:0",
@@ -966,9 +958,10 @@
       "node": "616:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 244
+      "characters": 941
     },
     {
       "node": "618:0",
@@ -985,14 +978,6 @@
         8
       ],
       "characters": 9678
-    },
-    {
-      "node": "679:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 696
     },
     {
       "node": "680:0",
@@ -1270,9 +1255,10 @@
       "node": "717:0",
       "role": "P",
       "pages": [
-        9
+        9,
+        10
       ],
-      "characters": 333
+      "characters": 406
     },
     {
       "node": "719:0",
@@ -1289,14 +1275,6 @@
         10
       ],
       "characters": 6754
-    },
-    {
-      "node": "769:0",
-      "role": "P",
-      "pages": [
-        10
-      ],
-      "characters": 72
     },
     {
       "node": "770:0",
@@ -1543,9 +1521,10 @@
       "node": "876:0",
       "role": "P",
       "pages": [
-        11
+        11,
+        12
       ],
-      "characters": 489
+      "characters": 873
     },
     {
       "node": "878:0",
@@ -1562,14 +1541,6 @@
         12
       ],
       "characters": 762
-    },
-    {
-      "node": "880:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 383
     },
     {
       "node": "881:0",
@@ -1631,9 +1602,10 @@
       "node": "888:0",
       "role": "P",
       "pages": [
-        12
+        12,
+        13
       ],
-      "characters": 548
+      "characters": 849
     },
     {
       "node": "890:0",
@@ -1650,14 +1622,6 @@
         13
       ],
       "characters": 7790
-    },
-    {
-      "node": "928:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 300
     },
     {
       "node": "929:0",
@@ -2217,12 +2181,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 345,
-    "paragraph_fragments_joined": 15,
+    "line_wrap_hyphens_removed": 342,
+    "paragraph_fragments_joined": 14,
     "line_wrap_hyphens_retained": 97,
     "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/arab-navigating-complexity-tse2026.json.gz",
-  "source_tags_sha256": "bdb5490f8a61708cb9aa8809719d7ed03640a7bccc231107f5d12ddcb092c887"
+  "source_tags_sha256": "bac77ed58f8f01734b0fe159e256270151730096d26d7241e4f32f262838e87e"
 }

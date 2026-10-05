@@ -2,9 +2,9 @@
   "file": "chen-hybrid-crowd-machine-workflow-vlhcc2020.pdf",
   "title": "A Hybrid Crowd-Machine Workflow for Program Synthesis",
   "publication_id": "a_hybrid_crowd_machine_workflow_for_program_synthesis_2020",
-  "pdf_sha256": "92a276ab43995c369cfdf19f71b9870583d29f9e006f9685413254e63848549d",
+  "pdf_sha256": "2314b323f248936c1e2d6fe7db9ff69e50d2203a679749b737a9098f83a6b0db",
   "markdown": "publications/chen-hybrid-crowd-machine-workflow-vlhcc2020.md",
-  "markdown_sha256": "2cc3fdf2b51b440a66a8388b968acef3571ef94684bad387df84b064579e8917",
+  "markdown_sha256": "afc3563ccc35a0a0d042954f1a62fb3314dc063f5b6135a6ac491e6141e4adcb",
   "pages": 8,
   "blocks": [
     {
@@ -40,12 +40,12 @@
       "characters": 61
     },
     {
-      "node": "373:0",
-      "role": "P",
+      "node": "571:0",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 336
+      "characters": 39
     },
     {
       "node": "370:0",
@@ -72,6 +72,14 @@
       "characters": 701
     },
     {
+      "node": "373:0",
+      "role": "P",
+      "pages": [
+        1
+      ],
+      "characters": 516
+    },
+    {
       "node": "374:0",
       "role": "Figure",
       "pages": [
@@ -88,15 +96,7 @@
       "characters": 409
     },
     {
-      "node": "376:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 217
-    },
-    {
-      "node": "joined-377:0",
+      "node": "377:0",
       "role": "P",
       "pages": [
         1,
@@ -231,15 +231,7 @@
       "pages": [
         3
       ],
-      "characters": 729
-    },
-    {
-      "node": "joined-161:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 692
+      "characters": 656
     },
     {
       "node": "162:0",
@@ -248,6 +240,14 @@
         3
       ],
       "characters": 271
+    },
+    {
+      "node": "161:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 692
     },
     {
       "node": "164:0",
@@ -815,12 +815,12 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 9,
-    "line_wrap_hyphens_retained": 16,
-    "paragraph_fragments_joined": 8,
-    "script_runs_positioned": 9
+    "line_wrap_hyphens_removed": 8,
+    "line_wrap_hyphens_retained": 12,
+    "paragraph_fragments_joined": 6,
+    "script_runs_positioned": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-hybrid-crowd-machine-workflow-vlhcc2020.json.gz",
-  "source_tags_sha256": "f442efd3ac8070f8ed15434c9e66220d54d159b12d806ceb182e705848e4bf52"
+  "source_tags_sha256": "4996314876d54cfcd331ac0eb451f7ec2e82ac420544784082e6c29a46c88956"
 }

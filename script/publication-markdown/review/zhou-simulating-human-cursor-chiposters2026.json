@@ -2,9 +2,9 @@
   "file": "zhou-simulating-human-cursor-chiposters2026.pdf",
   "title": "Simulating Human Cursor Trajectories for Path-Sensitive GUI Evaluation",
   "publication_id": "simulating_human_cursor_trajectories_for_path_sensitive_gui_evaluation_2026",
-  "pdf_sha256": "1aa0e7e716417d0f97f0f1f34bddafc75d1c782139c2f5a0db39bc4a7e861321",
+  "pdf_sha256": "99e52d8a11ca858f98ec00f3eee19340ccf632463579eaa456f95bc3ee685b8b",
   "markdown": "publications/zhou-simulating-human-cursor-chiposters2026.md",
-  "markdown_sha256": "e71005b7666cdf4a6654102cd972866d8cb279528ff7f05b94f0bbbfb9abe01d",
+  "markdown_sha256": "3d61b28da6fc46b2d971e0afb787cd6ebe45e0b8355151a903e1b3446c2d440e",
   "pages": 5,
   "blocks": [
     {
@@ -33,11 +33,11 @@
     },
     {
       "node": "162:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 78
+      "characters": 80
     },
     {
       "node": "148:0",
@@ -104,6 +104,30 @@
       "characters": 421
     },
     {
+      "node": "161:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 129
+    },
+    {
+      "node": "163:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 86
+    },
+    {
+      "node": "165:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 165
+    },
+    {
       "node": "159:0",
       "role": "H2",
       "pages": [
@@ -112,20 +136,12 @@
       "characters": 17
     },
     {
-      "node": "joined-160:0",
+      "node": "160:0",
       "role": "P",
       "pages": [
         1
       ],
-      "characters": 721
-    },
-    {
-      "node": "161:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 129
+      "characters": 636
     },
     {
       "node": "297:0",
@@ -160,21 +176,13 @@
       "characters": 17
     },
     {
-      "node": "joined-310:0",
+      "node": "310:0",
       "role": "P",
       "pages": [
         1,
         2
       ],
       "characters": 1304
-    },
-    {
-      "node": "165:0",
-      "role": "Note",
-      "pages": [
-        1
-      ],
-      "characters": 165
     },
     {
       "node": "319:0",
@@ -222,7 +230,7 @@
       "pages": [
         2
       ],
-      "characters": 1063
+      "characters": 1043
     },
     {
       "node": "325:0",
@@ -230,7 +238,7 @@
       "pages": [
         2
       ],
-      "characters": 641
+      "characters": 623
     },
     {
       "node": "326:0",
@@ -238,7 +246,7 @@
       "pages": [
         2
       ],
-      "characters": 417
+      "characters": 389
     },
     {
       "node": "327:0",
@@ -249,13 +257,13 @@
       "characters": 1121
     },
     {
-      "node": "joined-328:0",
+      "node": "328:0",
       "role": "P",
       "pages": [
         2,
         3
       ],
-      "characters": 1072
+      "characters": 925
     },
     {
       "node": "341:0",
@@ -274,12 +282,36 @@
       "characters": 104
     },
     {
-      "node": "joined-344:0",
+      "node": "344:0",
       "role": "P",
       "pages": [
         3
       ],
-      "characters": 2429
+      "characters": 829
+    },
+    {
+      "node": "345:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 411
+    },
+    {
+      "node": "346:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 357
+    },
+    {
+      "node": "347:0",
+      "role": "P",
+      "pages": [
+        3
+      ],
+      "characters": 580
     },
     {
       "node": "348:0",
@@ -338,13 +370,13 @@
       "characters": 333
     },
     {
-      "node": "joined-355:0",
+      "node": "355:0",
       "role": "P",
       "pages": [
         3,
         4
       ],
-      "characters": 1148
+      "characters": 1109
     },
     {
       "node": "363:0",
@@ -583,13 +615,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 93,
-    "paragraph_fragments_joined": 9,
-    "line_wrap_hyphens_retained": 8,
-    "script_runs_positioned": 58,
+    "line_wrap_hyphens_removed": 65,
+    "paragraph_fragments_joined": 1,
+    "script_runs_positioned": 1,
+    "line_wrap_hyphens_retained": 1,
     "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/zhou-simulating-human-cursor-chiposters2026.json.gz",
-  "source_tags_sha256": "e90a94da9c772effa1bbc8d2279ceac3de1acebb7b3f298bc7754bc1737cbdba"
+  "source_tags_sha256": "468bf8e60f1090e6f0f188c2272413f45e06592b93be980e99ff75b88506241d"
 }

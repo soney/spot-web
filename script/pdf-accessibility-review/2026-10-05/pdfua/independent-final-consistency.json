@@ -1,0 +1,16 @@
+{
+  "pdfs_checked": 74,
+  "pages": 1028,
+  "all_current_report_hashes_match_actual_files": true,
+  "structure_passes": 74,
+  "verapdf_passes": 73,
+  "markdown_body_unchanged": 72,
+  "markdown_body_changed": [
+    "oney-interstate-uist2014.pdf",
+    "pandita-inferring-method-specifications-icse2012.pdf"
+  ],
+  "unchanged_figure_images": 420,
+  "fresh_at_samples_passed": true,
+  "sitemap_pdf_lastmod_changes": 73,
+  "issues": []
+}

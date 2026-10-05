@@ -2,9 +2,9 @@
   "file": "krosnick-promises-pitfalls-llms-chi2023compui.pdf",
   "title": "Promises and Pitfalls of Using LLMs for Scraping Web UIs",
   "publication_id": "promises_and_pitfalls_of_using_llms_for_scraping_web_uis_2023",
-  "pdf_sha256": "1e4046b13b21822270e05a00e4ea66e2ae0d2f764da5ce489ebe82d0cc92b23e",
+  "pdf_sha256": "00c4c8f64cd79c5dbfddfc0d0797c515b94ac003158af4b1afb68e0f2b9ad516",
   "markdown": "publications/krosnick-promises-pitfalls-llms-chi2023compui.md",
-  "markdown_sha256": "30dd349082d60f5897e4aecc1c3ea657c66f8b38b02e773720d33b5dd70394be",
+  "markdown_sha256": "16abc5565e90a3344d5e333400eeb36f5e378660aea262a5b6662af92fc00921",
   "pages": 4,
   "blocks": [
     {
@@ -152,7 +152,7 @@
       "characters": 564
     },
     {
-      "node": "joined-236:0",
+      "node": "236:0",
       "role": "P",
       "pages": [
         1,
@@ -225,6 +225,14 @@
       "characters": 374
     },
     {
+      "node": "392:0",
+      "role": "Code",
+      "pages": [
+        2
+      ],
+      "characters": 172
+    },
+    {
       "node": "385:0",
       "role": "H2",
       "pages": [
@@ -279,14 +287,6 @@
         2
       ],
       "characters": 743
-    },
-    {
-      "node": "392:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 176
     },
     {
       "node": "404:0",
@@ -400,15 +400,33 @@
       "node": "404:0"
     }
   ],
-  "code_layout": [],
+  "code_layout": [
+    {
+      "node": "392:0",
+      "pages": [
+        2
+      ],
+      "method": "printed_geometry_whitespace",
+      "changed": false,
+      "source_line_count": 2,
+      "character_pitch": 4.4832,
+      "relative_median_deviation": 0.0,
+      "pitch_consistency": 1.0,
+      "inserted_gap_spaces": 0,
+      "inserted_leading_spaces": 0,
+      "large_gap_columns": [],
+      "glyph_sequence_preserved": true,
+      "scope": "Whitespace only; printed line numbers retained; no syntax rewriting."
+    }
+  ],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 50,
-    "paragraph_fragments_joined": 3,
+    "line_wrap_hyphens_removed": 45,
+    "paragraph_fragments_joined": 2,
     "reviewed_wrap_repairs": 3,
     "line_wrap_hyphens_retained": 3
   },
   "review_notes": [],
   "source_tags": "source-tags/krosnick-promises-pitfalls-llms-chi2023compui.json.gz",
-  "source_tags_sha256": "0357e0894d4fadc66192baa0df40bfac82dbe5be2920cc5d05991907505174ec"
+  "source_tags_sha256": "5a368a90d6ffa7716dab06ae6b2cddc6f925183ec21f7cd211637cc366725375"
 }

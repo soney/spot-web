@@ -1,0 +1,169 @@
+{
+  "file": "yang-vizcode-lsdemos2024.pdf",
+  "pdf_sha256": "f4d043eb0719f578b2d343ee7f75e18cb299193e576ed472678a836faecdb291",
+  "normalization_warnings": "",
+  "page_count": 3,
+  "language": "en-US",
+  "title": "VizCode: A Practical Real-time Tool for In-Class Computer Programming Tutoring",
+  "structure_elements": 96,
+  "roles": {
+    "Document": 1,
+    "Sect": 3,
+    "Figure": 3,
+    "Link": 19,
+    "H1": 1,
+    "P": 22,
+    "Caption": 2,
+    "H2": 12,
+    "Note": 2,
+    "H3": 3,
+    "L": 4,
+    "LI": 8,
+    "Lbl": 8,
+    "LBody": 8
+  },
+  "structure_content_references": 1531,
+  "parent_tree_entries": 22,
+  "form_xobjects_visited": 6,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 575,
+      "image_operations_tagged": 2,
+      "vector_operations_tagged": 8,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 14,
+      "text_operations_tagged": 808,
+      "vector_operations_tagged": 50,
+      "vector_operations_artifact": 1,
+      "link_annotations": 9
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 19,
+      "text_operations_tagged": 160,
+      "link_annotations": 3
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "257:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "262:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "264:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "293:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "295:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "297:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "300:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "312:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "315:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "317:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "334:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "337:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "339:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "341:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "343:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "355:0",
+      "page": 3
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "256:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Crossmark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "260:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "VizCode comparison view with two student panels side by side. Each panel has document tabs above a syntax-highlighted source editor, allowing the instructor to compare students’ work. Blue document names indicate the file each student is currently editing: style.css for Student 1 and index.html for Student 2. The displayed source in both panels is HTML.",
+      "actual_text": ""
+    },
+    {
+      "element": "310:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 2. VizCode workflow. Several students edit code in VS Code. Their editing data flows to a central data server, illustrated with a JSON example containing a value, an add operation, and a position. Connections between students and server are labeled Websocket and HTTP. A bidirectional Websocket connection links the server to an instructor dashboard, allowing the instructor to monitor the students in real time.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

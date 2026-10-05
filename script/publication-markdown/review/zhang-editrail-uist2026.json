@@ -2,9 +2,9 @@
   "file": "zhang-editrail-uist2026.pdf",
   "title": "Editrail: Understanding AI Usage by Visualizing Student-AI Interaction in Code",
   "publication_id": "editrail_understanding_ai_usage_by_visualizing_student_ai_interaction_in_code_2026",
-  "pdf_sha256": "5dbaa87167d5ff7f93e7fc75bf9a421539d7eb08b5059e6daca46c9f249dccbb",
+  "pdf_sha256": "702709ec397f3899fecac393fa6c4a43f0ebd40a8fed997e19879853a8ce2e5e",
   "markdown": "publications/zhang-editrail-uist2026.md",
-  "markdown_sha256": "cf562092cff41091e9ce4daa0f226d7976c73719671d1db53fcc8cff4a26e857",
+  "markdown_sha256": "93c909c8bb75be3dcca407ee6c96072798346662a0ba4eb34405d4b57bc7386f",
   "pages": 19,
   "blocks": [
     {
@@ -73,11 +73,11 @@
     },
     {
       "node": "328:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 426
+      "characters": 428
     },
     {
       "node": "316:0",
@@ -128,6 +128,14 @@
       "characters": 440
     },
     {
+      "node": "327:0",
+      "role": "Figure",
+      "pages": [
+        1
+      ],
+      "characters": 109
+    },
+    {
       "node": "322:0",
       "role": "H2",
       "pages": [
@@ -160,21 +168,13 @@
       "characters": 617
     },
     {
-      "node": "joined-326:0",
+      "node": "326:0",
       "role": "P",
       "pages": [
         1,
         2
       ],
       "characters": 846
-    },
-    {
-      "node": "327:0",
-      "role": "Figure",
-      "pages": [
-        1
-      ],
-      "characters": 109
     },
     {
       "node": "890:0",
@@ -284,25 +284,10 @@
       "node": "906:0",
       "role": "P",
       "pages": [
-        2
-      ],
-      "characters": 944
-    },
-    {
-      "node": "959:0",
-      "role": "P",
-      "pages": [
+        2,
         3
       ],
-      "characters": 78
-    },
-    {
-      "node": "960:0",
-      "role": "P",
-      "pages": [
-        3
-      ],
-      "characters": 507
+      "characters": 1452
     },
     {
       "node": "961:0",
@@ -358,7 +343,7 @@
       "pages": [
         3
       ],
-      "characters": 15
+      "characters": 25
     },
     {
       "node": "968:0",
@@ -366,7 +351,7 @@
       "pages": [
         3
       ],
-      "characters": 939
+      "characters": 929
     },
     {
       "node": "969:0",
@@ -420,9 +405,10 @@
       "node": "986:0",
       "role": "P",
       "pages": [
-        3
+        3,
+        4
       ],
-      "characters": 737
+      "characters": 1750
     },
     {
       "node": "990:0",
@@ -439,14 +425,6 @@
         4
       ],
       "characters": 1245
-    },
-    {
-      "node": "992:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 1012
     },
     {
       "node": "993:0",
@@ -470,15 +448,7 @@
       "pages": [
         4
       ],
-      "characters": 320
-    },
-    {
-      "node": "999:0",
-      "role": "P",
-      "pages": [
-        4
-      ],
-      "characters": 84
+      "characters": 405
     },
     {
       "node": "1000:0",
@@ -577,7 +547,7 @@
       "characters": 50
     },
     {
-      "node": "joined-1018:0",
+      "node": "1018:0",
       "role": "P",
       "pages": [
         5
@@ -665,6 +635,14 @@
       "characters": 186
     },
     {
+      "node": "369:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 92
+    },
+    {
       "node": "359:0",
       "role": "H4",
       "pages": [
@@ -679,6 +657,14 @@
         6
       ],
       "characters": 683
+    },
+    {
+      "node": "370:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 158
     },
     {
       "node": "361:0",
@@ -713,6 +699,14 @@
       "characters": 276
     },
     {
+      "node": "371:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 102
+    },
+    {
       "node": "365:0",
       "role": "H3",
       "pages": [
@@ -737,37 +731,13 @@
       "characters": 14
     },
     {
-      "node": "joined-368:0",
+      "node": "368:0",
       "role": "P",
       "pages": [
         6,
         7
       ],
       "characters": 632
-    },
-    {
-      "node": "369:0",
-      "role": "Note",
-      "pages": [
-        6
-      ],
-      "characters": 92
-    },
-    {
-      "node": "370:0",
-      "role": "Note",
-      "pages": [
-        6
-      ],
-      "characters": 158
-    },
-    {
-      "node": "371:0",
-      "role": "Note",
-      "pages": [
-        6
-      ],
-      "characters": 102
     },
     {
       "node": "1050:0",
@@ -810,7 +780,7 @@
       "characters": 28
     },
     {
-      "node": "joined-1056:0",
+      "node": "1056:0",
       "role": "P",
       "pages": [
         7
@@ -999,7 +969,7 @@
       "pages": [
         9
       ],
-      "characters": 184
+      "characters": 390
     },
     {
       "node": "1098:0",
@@ -1079,7 +1049,7 @@
       "pages": [
         9
       ],
-      "characters": 91
+      "characters": 144
     },
     {
       "node": "joined-1109:0",
@@ -1088,7 +1058,7 @@
         9,
         10
       ],
-      "characters": 1424
+      "characters": 1371
     },
     {
       "node": "1118:0",
@@ -1340,20 +1310,12 @@
       "characters": 10872
     },
     {
-      "node": "1182:0",
-      "role": "P",
-      "pages": [
-        13
-      ],
-      "characters": 78
-    },
-    {
       "node": "1183:0",
       "role": "L",
       "pages": [
         13
       ],
-      "characters": 3951
+      "characters": 3973
     },
     {
       "node": "1236:0",
@@ -1588,7 +1550,7 @@
       "characters": 181
     }
   ],
-  "tagged_content_items": 12628,
+  "tagged_content_items": 12608,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1701,7 +1663,7 @@
       ],
       "sha256": "a144d48df25450fff721deb39dd80f4a3c44950a6700774fae4887ca4066dce8",
       "kind": "figure",
-      "alt": "Figure 6: Baseline system for the user study. It represents conversation turns with AI agents (left) and code states (right)."
+      "alt": "Baseline study interface with a chronological AI conversation on the left and a source-code state on the right. Alternating blue student messages and gray AI answers discuss printing rows and checking whether a list is empty. The adjacent Python editor shows the student gradebook program with line numbers and syntax highlighting."
     },
     {
       "path": "figures/zhang-editrail-uist2026/figure-008-p018.png",
@@ -1855,13 +1817,13 @@
   ],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 235,
-    "paragraph_fragments_joined": 13,
-    "line_wrap_hyphens_retained": 25,
-    "reviewed_wrap_repairs": 2,
+    "line_wrap_hyphens_removed": 217,
+    "line_wrap_hyphens_retained": 24,
+    "paragraph_fragments_joined": 9,
+    "reviewed_wrap_repairs": 1,
     "script_runs_positioned": 13
   },
   "review_notes": [],
   "source_tags": "source-tags/zhang-editrail-uist2026.json.gz",
-  "source_tags_sha256": "15abb8d0ac2010c05f583d23e8608f8627b06fb3c79667e1863ea0621159212b"
+  "source_tags_sha256": "2dc3692c5fd9bffe2cacfa790d59f9003c78dc6e49c00862920c25552f3c6dda"
 }

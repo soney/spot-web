@@ -1,0 +1,189 @@
+{
+  "file": "zhang-studying-benefits-challenges-vlhcc2019.pdf",
+  "pdf_sha256": "a3d62e8b920dfd30b89f7a48ea852e01f41f2aaf01d72cd799e48b3abdeeba2b",
+  "normalization_warnings": "",
+  "page_count": 5,
+  "language": "en-US",
+  "title": "Studying the Benefits and Challenges of Immersive Dataflow Programming",
+  "structure_elements": 183,
+  "roles": {
+    "Document": 1,
+    "Sect": 5,
+    "H1": 1,
+    "P": 41,
+    "Note": 2,
+    "Link": 47,
+    "H2": 8,
+    "Figure": 3,
+    "Caption": 3,
+    "H3": 10,
+    "L": 2,
+    "LI": 20,
+    "Lbl": 20,
+    "LBody": 20
+  },
+  "structure_content_references": 3643,
+  "parent_tree_entries": 52,
+  "form_xobjects_visited": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 670,
+      "image_operations_tagged": 1,
+      "link_annotations": 14
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 744,
+      "image_operations_tagged": 6,
+      "link_annotations": 18
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 987,
+      "link_annotations": 5
+    },
+    {
+      "page": 4,
+      "vector_operations_tagged": 32,
+      "text_operations_tagged": 880,
+      "link_annotations": 2
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 354,
+      "link_annotations": 8
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "192:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "308:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "315:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "317:0",
+      "page": 1
+    },
+    {
+      "level": 3,
+      "element": "336:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "338:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "340:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "346:0",
+      "page": 2
+    },
+    {
+      "level": 3,
+      "element": "369:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "380:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "392:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "394:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "396:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "222:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "224:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "227:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "231:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "234:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "239:0",
+      "page": 5
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "312:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Fig. 1: A screenshot of our immersive dataflow programming\ntool. The directed arrows specify edges that determine the\ndirection of data propagation. Operators accept any nunber of\ninputs and produce one or more outputs. The operator shown\nsubtracts the position of the light from the position of the\nsphere, producing a direction from the light to the sphere.\nThe result of the operator goes to the direction attribute of the\nlight. This program thus creates a scene where the light always\nshoots at the sphere, even as the sphere and light move.",
+      "actual_text": ""
+    },
+    {
+      "element": "343:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Figure 2. Six examples arranged in two columns: (a) spotlight object with Light On/Off, Position, Light Color and Light Direction properties; (b) cube object with Position and Color properties; (c) headset avatar representing tracked user position and orientation; (d) Subtract operator, (e) Vector2Number operator, and (f) Condition A > B operator. Property sockets connect objects and tracked inputs to translucent operator boxes, whose input sockets are on the left and output sockets on the right.",
+      "actual_text": ""
+    },
+    {
+      "element": "219:0",
+      "role": "Figure",
+      "page": 4,
+      "alt": "Fig. 3: An illustration of four alternative techniques for speci-\nfying edges between nodes in VR using a controller. Edges can\neither be drawn as custom shapes (A&B) or as a straight line\nbetween nodes (C&D). Users could draw edges directly with\ntheir controller (A); along two dimensions with a depth that the\nsystem computes (B); as straight edges between nodes while\nshowing intermediate feedback (C); or by selecting source and\ntarget nodes with no intermediate feedback (D).",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

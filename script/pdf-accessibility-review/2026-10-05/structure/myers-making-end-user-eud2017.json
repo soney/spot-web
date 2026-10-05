@@ -1,0 +1,303 @@
+{
+  "file": "myers-making-end-user-eud2017.pdf",
+  "pdf_sha256": "fc80abfcdd911af9796324657c281f215b9c8e0cb0c2aec6b94b346ada0cf4fa",
+  "normalization_warnings": "",
+  "page_count": 22,
+  "language": "en-US",
+  "title": "Making End User Development More Natural",
+  "structure_elements": 272,
+  "roles": {
+    "Document": 1,
+    "Sect": 22,
+    "H1": 1,
+    "P": 58,
+    "Note": 4,
+    "H2": 11,
+    "Link": 110,
+    "L": 7,
+    "LI": 15,
+    "Lbl": 12,
+    "LBody": 15,
+    "Figure": 8,
+    "Caption": 8
+  },
+  "structure_content_references": 9865,
+  "parent_tree_entries": 132,
+  "form_xobjects_visited": 0,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 255,
+      "text_operations_artifact": 144,
+      "vector_operations_artifact": 1
+    },
+    {
+      "page": 2,
+      "text_operations_tagged": 554,
+      "text_operations_artifact": 5,
+      "link_annotations": 7
+    },
+    {
+      "page": 3,
+      "text_operations_tagged": 524,
+      "text_operations_artifact": 8,
+      "link_annotations": 12
+    },
+    {
+      "page": 4,
+      "text_operations_tagged": 606,
+      "text_operations_artifact": 5,
+      "link_annotations": 7
+    },
+    {
+      "page": 5,
+      "text_operations_tagged": 238,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 2
+    },
+    {
+      "page": 6,
+      "text_operations_tagged": 543,
+      "text_operations_artifact": 5,
+      "link_annotations": 2
+    },
+    {
+      "page": 7,
+      "text_operations_tagged": 321,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 7
+    },
+    {
+      "page": 8,
+      "text_operations_tagged": 471,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 5,
+      "link_annotations": 3
+    },
+    {
+      "page": 9,
+      "text_operations_tagged": 544,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 9
+    },
+    {
+      "page": 10,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 266,
+      "text_operations_artifact": 5
+    },
+    {
+      "page": 11,
+      "text_operations_tagged": 366,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 4
+    },
+    {
+      "page": 12,
+      "text_operations_tagged": 530,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 5,
+      "link_annotations": 9
+    },
+    {
+      "page": 13,
+      "text_operations_tagged": 294,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 5
+    },
+    {
+      "page": 14,
+      "text_operations_tagged": 519,
+      "text_operations_artifact": 5,
+      "link_annotations": 10
+    },
+    {
+      "page": 15,
+      "text_operations_tagged": 527,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 4
+    },
+    {
+      "page": 16,
+      "text_operations_tagged": 236,
+      "image_operations_tagged": 1,
+      "vector_operations_artifact": 1,
+      "text_operations_artifact": 5,
+      "link_annotations": 4
+    },
+    {
+      "page": 17,
+      "text_operations_tagged": 378,
+      "image_operations_tagged": 1,
+      "text_operations_artifact": 8,
+      "link_annotations": 6
+    },
+    {
+      "page": 18,
+      "text_operations_tagged": 498,
+      "text_operations_artifact": 5,
+      "link_annotations": 7
+    },
+    {
+      "page": 19,
+      "text_operations_tagged": 499,
+      "text_operations_artifact": 8,
+      "link_annotations": 4
+    },
+    {
+      "page": 20,
+      "text_operations_tagged": 640,
+      "text_operations_artifact": 5,
+      "link_annotations": 4
+    },
+    {
+      "page": 21,
+      "text_operations_tagged": 661,
+      "text_operations_artifact": 8,
+      "link_annotations": 2
+    },
+    {
+      "page": 22,
+      "text_operations_tagged": 387,
+      "text_operations_artifact": 5,
+      "link_annotations": 2
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "346:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "362:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "397:0",
+      "page": 3
+    },
+    {
+      "level": 2,
+      "element": "428:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "530:0",
+      "page": 6
+    },
+    {
+      "level": 2,
+      "element": "237:0",
+      "page": 9
+    },
+    {
+      "level": 2,
+      "element": "569:0",
+      "page": 12
+    },
+    {
+      "level": 2,
+      "element": "597:0",
+      "page": 14
+    },
+    {
+      "level": 2,
+      "element": "444:0",
+      "page": 16
+    },
+    {
+      "level": 2,
+      "element": "467:0",
+      "page": 18
+    },
+    {
+      "level": 2,
+      "element": "494:0",
+      "page": 19
+    },
+    {
+      "level": 2,
+      "element": "503:0",
+      "page": 20
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "425:0",
+      "role": "Figure",
+      "page": 5,
+      "alt": "Fig. 1 The Whyline for Alice, showing an EUD asking why a Pac Man character did not resize,\nas expected. The Whyline explains that that it would have resized, but the condition that guarded\nthe behavior was false",
+      "actual_text": ""
+    },
+    {
+      "element": "535:0",
+      "role": "Figure",
+      "page": 7,
+      "alt": "Data Description Editor for a person name. A toolbox on the left supplies example parts; the top area shows first-name and last-name parts in alternative orders, using John and von Neumann. Selecting the last-name part opens constraints for word and letter counts, separators and capitalization. Plus and x controls add or remove constraints, and parts can be rearranged by dragging.",
+      "actual_text": ""
+    },
+    {
+      "element": "547:0",
+      "role": "Figure",
+      "page": 8,
+      "alt": "Fig. 3 An illustration of a basic InterState object, named drag_lock. Properties, which control\ndrag_lock’s display, are represented as rows (e.g. x, and y). States and transitions are repre-\nsented as columns (e.g. no_drag, drag, and drag_lock). An entry in a property’s row for a parti-\ncular state specifies a constraint that controls that property’s value in that state; while drag_lock\nis in the drag state, x and y will be constrained to mouse.x and mouse.y respectively, meaning\ndrag_lock will follow the mouse while dragging. Note that in this example, when the user per-\nforms a double click to initiate drag lock, the drag_lock object does enter and then leave the\ndrag state intermittently as a result of the mouse.down and mouse.up events that are fired during\na double click",
+      "actual_text": ""
+    },
+    {
+      "element": "557:0",
+      "role": "Figure",
+      "page": 10,
+      "alt": "Figure 4: Gneiss visual web-application builder. The numbered areas show a web API's JSON source, a spreadsheet populated from that source, a drag-and-drop web interface preview, the widget toolbox, and widget properties. The example builds a map and list of New York City jazz venues. The API query refers to TextBox1.Value in the spreadsheet, so changing the search text updates the returned data and the interface.",
+      "actual_text": ""
+    },
+    {
+      "element": "560:0",
+      "role": "Figure",
+      "page": 11,
+      "alt": "Fig. 5 Gneiss visualizes hierarchies in data using nested spreadsheet cells, and lets users\nrestructure the data by any field by drag-and-dropping a column to a different location. Here, (1)\nshows a structured document of restaurant data grouped by restaurant names. The user can\nrestructure this document to instead view the data by restaurant categories by dragging the cate-\ngories column to the front of the names column (2 and 3)",
+      "actual_text": ""
+    },
+    {
+      "element": "585:0",
+      "role": "Figure",
+      "page": 13,
+      "alt": "Azurite in Eclipse. A timeline beneath the Java editor shows recent edits as colored rectangles on separate file rows. The Interactive Selective Undo dialog compares Current Source with Preview of Selective Undo Result, with changed lines highlighted. A selected change offers Keep this code unchanged, allowing the user to preview which edits will be undone while retaining others.",
+      "actual_text": ""
+    },
+    {
+      "element": "442:0",
+      "role": "Figure",
+      "page": 16,
+      "alt": "Fig. 7 A screenshot of Variolite. Here are two variant boxes. An outer box wraps the distance\nand computeAngle functions, and has three versions “Distance1,” “Distance2,” “Distance3” that the\nuser can flip among with tabs. The inner variant box has two versions “dot,” and “dot with norm.”\nVersioning that is visible within the text editor is meant to be more accessible to novices and EUDs",
+      "actual_text": ""
+    },
+    {
+      "element": "452:0",
+      "role": "Figure",
+      "page": 17,
+      "alt": "Figure 8. Four SUGILITE phone screenshots, labeled a–d. Panel a shows the conversational interface for giving spoken commands; b shows a confirmation popup while recording a demonstration; c shows an operation-editing panel for disambiguating the recorded action; d shows the resulting script as an editable sequence of operations. These are stages of creating and refining a smartphone automation by demonstration.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

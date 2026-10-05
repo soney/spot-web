@@ -2,9 +2,9 @@
   "file": "chen-cocapture-chi2021.pdf",
   "title": "CoCapture: Effectively Communicating UI Behaviors on Existing Websites by Demonstrating and Remixing",
   "publication_id": "cocapture_effectively_communicating_ui_behaviors_on_existing_websites_by_demonstrating_and_remixing_2021",
-  "pdf_sha256": "935a97fcbe8bac213789d30bff15c02a6fd464c914ab31a9c763707ab30f70c1",
+  "pdf_sha256": "abde555d89b5cf15cd1176db009a0e4fd0ada080fa347d4de776948ff258a451",
   "markdown": "publications/chen-cocapture-chi2021.md",
-  "markdown_sha256": "676a043c8adffeb3b56e975db8df2a541d301e5de47e3e5cf5a2defd87c7cfb9",
+  "markdown_sha256": "73c87770531fe3fa70962c76e15cd8ccc1d3ee00cfb1273b528437b38056c668",
   "pages": 14,
   "blocks": [
     {
@@ -57,11 +57,11 @@
     },
     {
       "node": "765:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         1
       ],
-      "characters": 208
+      "characters": 210
     },
     {
       "node": "774:0",
@@ -85,15 +85,7 @@
       "pages": [
         1
       ],
-      "characters": 917
-    },
-    {
-      "node": "766:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 117
+      "characters": 1035
     },
     {
       "node": "767:0",
@@ -147,17 +139,10 @@
       "node": "773:0",
       "role": "P",
       "pages": [
-        1
-      ],
-      "characters": 127
-    },
-    {
-      "node": "joined-779:0",
-      "role": "P",
-      "pages": [
+        1,
         2
       ],
-      "characters": 1007
+      "characters": 1094
     },
     {
       "node": "781:0",
@@ -224,6 +209,22 @@
       "characters": 1534
     },
     {
+      "node": "801:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 90
+    },
+    {
+      "node": "802:0",
+      "role": "Note",
+      "pages": [
+        2
+      ],
+      "characters": 74
+    },
+    {
       "node": "798:0",
       "role": "P",
       "pages": [
@@ -246,22 +247,6 @@
         2
       ],
       "characters": 129
-    },
-    {
-      "node": "801:0",
-      "role": "Note",
-      "pages": [
-        2
-      ],
-      "characters": 90
-    },
-    {
-      "node": "802:0",
-      "role": "Note",
-      "pages": [
-        2
-      ],
-      "characters": 74
     },
     {
       "node": "828:0",
@@ -352,6 +337,14 @@
       "characters": 1119
     },
     {
+      "node": "963:0",
+      "role": "Note",
+      "pages": [
+        3
+      ],
+      "characters": 140
+    },
+    {
       "node": "961:0",
       "role": "H3",
       "pages": [
@@ -360,21 +353,13 @@
       "characters": 28
     },
     {
-      "node": "joined-962:0",
+      "node": "962:0",
       "role": "P",
       "pages": [
         3,
         4
       ],
       "characters": 1207
-    },
-    {
-      "node": "963:0",
-      "role": "Note",
-      "pages": [
-        3
-      ],
-      "characters": 140
     },
     {
       "node": "964:0",
@@ -553,20 +538,20 @@
       "characters": 846
     },
     {
+      "node": "1028:0",
+      "role": "Note",
+      "pages": [
+        5
+      ],
+      "characters": 106
+    },
+    {
       "node": "1027:0",
       "role": "P",
       "pages": [
         5
       ],
       "characters": 981
-    },
-    {
-      "node": "1028:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 104
     },
     {
       "node": "1041:0",
@@ -617,6 +602,14 @@
       "characters": 1024
     },
     {
+      "node": "1057:0",
+      "role": "Note",
+      "pages": [
+        6
+      ],
+      "characters": 40
+    },
+    {
       "node": "1053:0",
       "role": "H4",
       "pages": [
@@ -646,23 +639,7 @@
       "pages": [
         6
       ],
-      "characters": 402
-    },
-    {
-      "node": "1057:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 38
-    },
-    {
-      "node": "1058:0",
-      "role": "P",
-      "pages": [
-        6
-      ],
-      "characters": 232
+      "characters": 635
     },
     {
       "node": "1059:0",
@@ -729,7 +706,7 @@
       "characters": 52
     },
     {
-      "node": "joined-1067:0",
+      "node": "1067:0",
       "role": "P",
       "pages": [
         6,
@@ -767,7 +744,7 @@
       "pages": [
         7
       ],
-      "characters": 1196
+      "characters": 1358
     },
     {
       "node": "1089:0",
@@ -810,7 +787,7 @@
       "characters": 68
     },
     {
-      "node": "joined-1094:0",
+      "node": "1094:0",
       "role": "P",
       "pages": [
         7
@@ -869,41 +846,26 @@
       "node": "1111:0",
       "role": "P",
       "pages": [
-        7
+        7,
+        8
       ],
-      "characters": 271
+      "characters": 1199
     },
     {
-      "node": "1112:0",
-      "role": "Figure",
-      "pages": [
-        7
-      ],
-      "characters": 132
-    },
-    {
-      "node": "1113:0",
-      "role": "Figure",
-      "pages": [
-        7
-      ],
-      "characters": 108
-    },
-    {
-      "node": "1114:0",
-      "role": "Figure",
-      "pages": [
-        7
-      ],
-      "characters": 87
-    },
-    {
-      "node": "joined-1128:0",
-      "role": "P",
+      "node": "1135:0",
+      "role": "Note",
       "pages": [
         8
       ],
-      "characters": 968
+      "characters": 35
+    },
+    {
+      "node": "1137:0",
+      "role": "Note",
+      "pages": [
+        8
+      ],
+      "characters": 40
     },
     {
       "node": "1129:0",
@@ -933,9 +895,18 @@
       "node": "1133:0",
       "role": "P",
       "pages": [
+        8,
+        9
+      ],
+      "characters": 1273
+    },
+    {
+      "node": "1136:0",
+      "role": "Note",
+      "pages": [
         8
       ],
-      "characters": 476
+      "characters": 19
     },
     {
       "node": "1134:0",
@@ -946,36 +917,12 @@
       "characters": 36
     },
     {
-      "node": "1135:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 33
-    },
-    {
-      "node": "1136:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 17
-    },
-    {
-      "node": "1137:0",
-      "role": "P",
-      "pages": [
-        8
-      ],
-      "characters": 38
-    },
-    {
-      "node": "1148:0",
-      "role": "P",
+      "node": "1169:0",
+      "role": "Note",
       "pages": [
         9
       ],
-      "characters": 796
+      "characters": 50
     },
     {
       "node": "1149:0",
@@ -1045,17 +992,10 @@
       "node": "1168:0",
       "role": "P",
       "pages": [
-        9
+        9,
+        10
       ],
-      "characters": 1262
-    },
-    {
-      "node": "1169:0",
-      "role": "P",
-      "pages": [
-        9
-      ],
-      "characters": 48
+      "characters": 1415
     },
     {
       "node": "1178:0",
@@ -1072,14 +1012,6 @@
         10
       ],
       "characters": 440
-    },
-    {
-      "node": "1200:0",
-      "role": "P",
-      "pages": [
-        10
-      ],
-      "characters": 152
     },
     {
       "node": "1201:0",
@@ -1130,7 +1062,7 @@
       "characters": 382
     },
     {
-      "node": "joined-1207:0",
+      "node": "1207:0",
       "role": "P",
       "pages": [
         10
@@ -1234,6 +1166,14 @@
       "characters": 1029
     },
     {
+      "node": "1231:0",
+      "role": "Note",
+      "pages": [
+        11
+      ],
+      "characters": 95
+    },
+    {
       "node": "1224:0",
       "role": "H3",
       "pages": [
@@ -1288,22 +1228,6 @@
         11
       ],
       "characters": 782
-    },
-    {
-      "node": "1231:0",
-      "role": "P",
-      "pages": [
-        11
-      ],
-      "characters": 93
-    },
-    {
-      "node": "1240:0",
-      "role": "P",
-      "pages": [
-        12
-      ],
-      "characters": 40
     },
     {
       "node": "1241:0",
@@ -1467,7 +1391,7 @@
       "characters": 7058
     }
   ],
-  "tagged_content_items": 12942,
+  "tagged_content_items": 12921,
   "all_tagged_content_accounted_for_once": true,
   "assets": [
     {
@@ -1527,48 +1451,6 @@
       "alt": "Figure 4: There are three steps to create hypertext: (1) select portions of the text in the question description, (2) click “Link to a Reference,” and either (3.1) select an element in the scene or (3.2) check an animation. The hypertext will be highlighted afterwards."
     },
     {
-      "path": "figures/chen-cocapture-chi2021/figure-005-p007.png",
-      "node": "1112:0",
-      "page": 7,
-      "bbox": [
-        254.20399475097656,
-        350.877197265625,
-        280.91717529296875,
-        365.0355224609375
-      ],
-      "sha256": "91b59130dbfe3c83c9e282c461482071bc105c4711639b9844001512e2b3edb7",
-      "kind": "figure",
-      "alt": "Position and rotation icon: overlapping circles ending in a filled circle."
-    },
-    {
-      "path": "figures/chen-cocapture-chi2021/figure-006-p007.png",
-      "node": "1113:0",
-      "page": 7,
-      "bbox": [
-        156.5989990234375,
-        375.0348815917969,
-        175.5644989013672,
-        389.1925354003906
-      ],
-      "sha256": "579d535bfd072853d21ad28bab695d0b0a7af052ad0f35dcf1712331846d4978",
-      "kind": "figure",
-      "alt": "Font-size icon: small and large capital A letters."
-    },
-    {
-      "path": "figures/chen-cocapture-chi2021/figure-007-p007.png",
-      "node": "1114:0",
-      "page": 7,
-      "bbox": [
-        92.11100006103516,
-        387.11328125,
-        112.13484191894531,
-        400.0790100097656
-      ],
-      "sha256": "d4045a21ea31b5a29d99ecd1ab606ff8bbce029a51ac21324fdbd0a9267fc472",
-      "kind": "figure",
-      "alt": "Visibility icon: an open eye."
-    },
-    {
       "path": "figures/chen-cocapture-chi2021/figure-008-p008.png",
       "node": "1129:0",
       "page": 8,
@@ -1620,13 +1502,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 2,
-    "line_wrap_hyphens_removed": 223,
-    "paragraph_fragments_joined": 11,
-    "line_wrap_hyphens_retained": 13,
+    "line_wrap_hyphens_removed": 201,
+    "line_wrap_hyphens_retained": 11,
+    "paragraph_fragments_joined": 5,
     "script_runs_positioned": 30,
     "reviewed_wrap_repairs": 1
   },
   "review_notes": [],
   "source_tags": "source-tags/chen-cocapture-chi2021.json.gz",
-  "source_tags_sha256": "c5055e7623105fa72fd5c5988deab8fbb5293fbcb2c467c634bd74e8ef8f22ae"
+  "source_tags_sha256": "3fbad3900029f1d7b505ec33bf46544a4453f160b040696204bbf76d25aab38f"
 }

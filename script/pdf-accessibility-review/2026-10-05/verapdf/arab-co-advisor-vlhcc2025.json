@@ -1,0 +1,86 @@
+{
+  "report": {
+    "buildInformation": {
+      "releaseDetails": [
+        {
+          "id": "core",
+          "version": "1.30.2",
+          "buildDate": 1780497780000
+        },
+        {
+          "id": "validation-model",
+          "version": "1.30.2",
+          "buildDate": 1780497960000
+        },
+        {
+          "id": "apps",
+          "version": "1.30.2",
+          "buildDate": 1780498500000
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "itemDetails": {
+          "name": "/home/soney/nucode/spot-web/assets/pdfs/arab-co-advisor-vlhcc2025.pdf",
+          "size": 1506840
+        },
+        "validationResult": [
+          {
+            "details": {
+              "passedRules": 106,
+              "failedRules": 0,
+              "passedChecks": 288447,
+              "failedChecks": 0,
+              "ruleSummaries": []
+            },
+            "jobEndStatus": "normal",
+            "profileName": "PDF/UA-1 validation profile",
+            "statement": "PDF file is compliant with Validation Profile requirements.",
+            "compliant": true
+          }
+        ],
+        "processingTime": {
+          "start": 1791231479798,
+          "finish": 1791231483265,
+          "duration": "00:00:03.467",
+          "difference": 3467
+        }
+      }
+    ],
+    "batchSummary": {
+      "duration": {
+        "start": 1791231479688,
+        "finish": 1791231483361,
+        "duration": "00:00:03.673",
+        "difference": 3673
+      },
+      "totalJobs": 1,
+      "outOfMemory": 0,
+      "veraExceptions": 0,
+      "failedEncryptedJobs": 0,
+      "failedParsingJobs": 0,
+      "validationSummary": {
+        "nonCompliantPdfaCount": 0,
+        "compliantPdfaCount": 1,
+        "failedJobCount": 0,
+        "totalJobCount": 1,
+        "successfulJobCount": 1
+      },
+      "multiJob": false,
+      "featuresSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      },
+      "repairSummary": {
+        "failedJobCount": 0,
+        "totalJobCount": 0,
+        "successfulJobCount": 0
+      }
+    }
+  },
+  "file": "arab-co-advisor-vlhcc2025.pdf",
+  "pdf_sha256": "1a28606998b0d723230e699c3539f81d630646be90e720648dc08648c6c908a3",
+  "stderr": "Oct 05, 2026 4:18:00 PM org.verapdf.pd.font.cff.CFFFontProgram containsROS\nWARNING: The Top DICT does not begin with ROS operator\nOct 05, 2026 4:18:00 PM org.verapdf.pd.font.cff.CFFCIDFontProgram readCharSet\nWARNING: Invalid embedded cff font. Charset range exceeds number of glyphs\n"
+}

@@ -1,6 +1,6 @@
 # Publication Markdown drafts
 
-Local Markdown versions of all 74 publication PDFs (1,028 source pages), created on September 14, 2026. These are full-text drafts with 461 local figure/equation images, 125 tables and 574 source code elements. The Markdown conversion does not change the PDFs.
+Local Markdown versions of all 74 publication PDFs (1,028 source pages), created on September 14 and reviewed again on October 5, 2026. These are full-text conversions with 420 local figure/equation images, 128 tables and 578 source code elements. The Markdown conversion does not change the PDFs.
 
 Open any publication below in a GitHub-flavored Markdown reader that supports inline HTML. Each document links to its source PDF; figures are local PNG files in `figures/`. The files have no website frontmatter, and this entire directory is inside `script/`, which Jekyll already excludes.
 
@@ -10,24 +10,40 @@ The conversion follows the reviewed native PDF tags. It preserves headings, list
 
 Complex tables use semantic HTML to preserve row headers, merged cells and explicit header relationships; two simple tables use Markdown table syntax. Code uses fenced blocks. Native Code ActualText remains exact; otherwise, whitespace is recovered conservatively from printed geometry without changing the glyph sequence. Printed line numbers remain part of the examples.
 
-Equations use source images and reviewed text alternatives where available. Twelve narrow, source-checked transcriptions correct inline mathematics or pseudocode; fractions and indices use explicit linear notation where needed. The recovered MIT formulas and Inclusive code examples are included. Scoped repairs also reconnect the Expresso contribution across a page break and CFlow reference 54 across columns.
+Equations use source images and reviewed text alternatives where available. Twelve narrow, source-checked transcriptions correct inline mathematics or pseudocode; fractions and indices use explicit linear notation where needed. The recovered MIT formulas and Inclusive code examples are included. Native PDF repairs reconnect the Expresso contribution across a page break and CFlow reference 54 across columns; their former Markdown-only workarounds have been retired.
 
-All 74 documents render through the installed Kramdown GFM parser with zero warnings. Checks account for every tagged content reference exactly once, preserve all 574 code glyph sequences and 71 Code ActualText strings, verify all local images and page anchors, retain all 435 figure and 33 formula alternatives, and confirm all 125 tables, 4,911 cells and 1,595 headers in rendered HTML. Independent sample reviews cover MIT, Inclusive, VRCopilot, Codelets, Expresso, Callisto, CFlow, Cursor and the CMU thesis. The added Navigating Complexity edition was reviewed for its 270 table cells, 106 headers, 14 category bands, 234 explicit header associations, two figure alternatives, 65 headings and 62 bibliography entries.
+All 74 documents render through the installed Kramdown GFM parser with zero warnings. Checks account for every tagged content reference exactly once, preserve all 578 code glyph sequences and 76 Code ActualText strings, verify all local images and page anchors, retain all 433 figure and 33 formula alternatives, and confirm all 128 tables, 4,986 cells and 1,609 headers in rendered HTML. Independent sample reviews cover MIT, Inclusive, VRCopilot, Codelets, Expresso, Callisto, CFlow, Cursor and the CMU thesis. The added Navigating Complexity edition was reviewed for its 270 table cells, 106 headers, 14 category bands, 234 explicit header associations, two figure alternatives, 65 headings and 62 bibliography entries.
 
-These are initial conversions, not an editorially proofread edition. Research wording and source errors remain. Complex inline math, remaining paragraph boundaries and code typography merit review before publication. Four code regions retained their existing text because geometric spacing was uncertain:
+These conversions preserve research wording and source errors; they are not an editorially proofread edition. Complex inline math, paragraph boundaries and code typography can still require review. The four earlier code-spacing flags were [reviewed against the printed source](../pdf-accessibility-review/2026-10-05/pdfua/code/README.md), and no code-whitespace review warnings remain:
 
-| Publication | Source page | Review issue |
+| Publication | Source page | Source-review resolution |
 |---|---:|---|
-| [Expressing Interactivity with States and Constraints](publications/oney-expressing-interactivity-states-cmu2015.md) | 169 | Character spacing varies; native text retained. |
-| [Expressing Interactivity with States and Constraints](publications/oney-expressing-interactivity-states-cmu2015.md) | 216 | Character spacing varies; native text retained. |
-| [InterState: A Language and Environment for Expressing Interface Behavior](publications/oney-interstate-uist2014.md) | 8 | Printed run order is ambiguous; native text retained. |
-| [Inferring Method Specifications from Natural Language API Descriptions](publications/pandita-inferring-method-specifications-icse2012.md) | 6 | Character spacing varies; native text retained. |
+| [Expressing Interactivity with States and Constraints](publications/oney-expressing-interactivity-states-cmu2015.md) | 169 | Mixed font pitch; existing text, order and punctuation match the printed source. No text change. |
+| [Expressing Interactivity with States and Constraints](publications/oney-expressing-interactivity-states-cmu2015.md) | 216 | Mixed font pitch; existing text, order and punctuation match the printed source. No text change. |
+| [InterState: A Language and Environment for Expressing Interface Behavior](publications/oney-interstate-uist2014.md) | 8 | Native Code ActualText now places the printed subscripts correctly using explicit underscore notation. |
+| [Inferring Method Specifications from Natural Language API Descriptions](publications/pandita-inferring-method-specifications-icse2012.md) | 6 | Native Code ActualText now preserves variable primes, 29 numbered lines, indentation and the printed underscore. |
 
 ## Added accepted author edition
 
-[Navigating Complexity](publications/arab-navigating-complexity-tse2026.md) uses the 18-page accepted author PDF supplied on September 14, 2026. Its accessibility repairs preserve the original page appearance. The Markdown retains the corrected opening drop cap and the Table III caption alternative that names the two underlined scenario anchors. Native content order, publication notices and research wording remain, including adjacent overlapping introductory statements and a Figure 2 legend/table-reference inconsistency described in the figure alternative. Tables and figures can interrupt prose or lists, as they do in the tagged source order.
+[Navigating Complexity](publications/arab-navigating-complexity-tse2026.md) uses the 18-page accepted author PDF supplied on September 14, 2026. Its accessibility repairs preserve the original page appearance. The Markdown retains the corrected opening drop cap and the Table III caption alternative that names the two underlined scenario anchors. Native content order, publication notices and research wording remain, including adjacent overlapping introductory statements and a Figure 2 legend/table-reference inconsistency described in the figure alternative. The October reading-order repairs join paragraph continuations and place notes and floats at coherent boundaries.
 
-The previous 73 source archives, drafts, images and downloadable copies were preserved byte for byte. `verification.json` covers all 74 current drafts; `review-evidence/navigating-complexity-markdown-review.json` records the added edition. Earlier independent review evidence and `site-exclusion-check.json` describe the original 73-document snapshot of September 14, 2026, before site download integration. The earlier ZIP bundle remains that original snapshot.
+When this edition was added on September 14, the previous 73 source archives, drafts, images and downloadable copies were preserved byte for byte. The October review described below subsequently updated affected copies. `verification.json` covers all 74 current drafts; `review-evidence/navigating-complexity-markdown-review.json` records the added edition. Earlier independent review evidence and `site-exclusion-check.json` describe the original 73-document snapshot of September 14, 2026, before site download integration. The earlier ZIP bundle remains that original snapshot.
+
+## October accessibility review and offline figures
+
+The [October PDF review](../pdf-accessibility-review/2026-10-05/README.md) checked every page layout and every figure/formula alternative. The current conversions include the 66 improved descriptions, repaired headings and reading order. Codelets Table 1 and the two results tables in Arboretum Figure 5 now render as semantic tables instead of images; all their values, units and header relationships remain. `reviewed-crops.json` binds ten tighter figure crops to the current PDF hashes. The twelve existing transcriptions were rebound after verifying their exact reviewed text in native ActualText. Crop bindings were retained only after confirming unchanged figure content and page appearance.
+
+Individual paper pages offer both a single Markdown file, whose images use the site's canonical URLs, and a **Markdown + figures (ZIP)** download. Extracting the ZIP places the document beside its local `figures/` folder. Both preserve the same descriptions, tables and code. All 74 ZIPs were checked in an offline browser; their 420 images load without a network connection. Source-PDF and publisher links still require a connection.
+
+Run `convert.py`, then `render_check.rb` and `verify.py`, and finally `export_downloads.py` after changing reviewed sources. The exporter checks all input hashes before writing and produces reproducible ZIPs. It rejects obsolete generated downloads so they can be reviewed before removal. These are maintenance commands; Jekyll serves the prepared downloads without a new build step.
+
+`image-paths.json` preserves published figure filenames when native order or roles change. All 461 previously published image URLs remain available: current packages contain 420 images; 39 former callout images and two former table images remain served for earlier downloads. Current documents use inline callout descriptions and semantic tables in those places.
+
+The September review-evidence files remain historical snapshots. `verification.json`, `manifest.json`, the per-document `review/` records and `checksums.json` describe the current conversion set.
+
+The subsequent [native reading-order repairs](../pdf-accessibility-review/2026-10-05/reading-order/repairs/README.md) address all 141 recorded examples and additional confirmed issues. These conversions were regenerated from the repaired native order. An independent nine-document review checks the rebuilt Notebook table, Python example, CMU notes, Inclusive code, MIT transcriptions, CFlow reference 54 and ParamMacros list/footnote repairs. Coverage and rendering checks establish preservation; selected semantic checks do not constitute exhaustive proofreading or accessibility certification.
+
+The later [PDF/UA phase](../pdf-accessibility-review/2026-10-05/pdfua/summary.json) resolved the four code-spacing flags above, classified pagination artifacts and supplied ordered-list numbering attributes. Current archives and downloads match those PDF hashes. Seventy-three PDFs pass the automated PDF/UA-1 profile. On October 5, 2026, the user accepted Myers 2013 as the one font/PDF-UA exception to preserve appearance; its PDF remains unchanged without a font candidate or conformance declaration. Three [fresh Firefox reader-interface samples](../pdf-accessibility-review/2026-10-05/pdfua/at/README.md) check current PDF table and reading-order behavior. Earlier reading-order and September reports remain historical records of their specified file versions.
 
 ## Publications
 
@@ -124,13 +140,13 @@ python script/publication-markdown/convert.py
 
 Pass one or more PDF stems to regenerate selected documents. `prepare_sources.py` is only needed when refreshing the archived inputs from a new, complete tag-inspection index. Both source preparation and conversion check PDF hashes. A downloaded bundle can be read on its own; regeneration uses the repository PDFs.
 
-These files remain the local conversion sources. The site serves separate downloadable copies in `assets/markdown/`, linked only from individual paper pages through their `markdown` field in `_data/publications.yaml`. Refresh those copies after regenerating a conversion and its manifest:
+These files remain the local conversion sources. The site serves separate downloadable copies in `assets/markdown/`, linked only from individual paper pages through their `markdown` and `markdown_bundle` fields in `_data/publications.yaml`. Refresh those copies after regenerating a conversion and its manifest:
 
 ```bash
 python script/publication-markdown/export_downloads.py
 ```
 
-The exporter verifies source hashes and copies the Markdown and referenced images. It replaces only image destinations with absolute URLs from `_config.yml`, so the downloaded Markdown can load its figures from the website; viewing those figures requires an internet connection. The original drafts retain local image paths. Conversion reports and archived tags stay here, excluded from the site. The existing verification reports describe the local conversion and the website state when those drafts were first created.
+The exporter verifies source hashes and copies the Markdown and referenced images. For the single-file download, it replaces image destinations with absolute URLs from `_config.yml`; viewing those figures requires an internet connection. The ZIP keeps local image paths and includes the referenced images for offline reading. The original drafts also retain local image paths. Conversion reports and archived tags stay here, excluded from the site. `verification.json` describes the current conversion; the October review records current download and browser checks, while the September review-evidence files remain historical.
 
 To check rendered Markdown after regeneration:
 

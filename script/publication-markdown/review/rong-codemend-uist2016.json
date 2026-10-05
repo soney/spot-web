@@ -2,9 +2,9 @@
   "file": "rong-codemend-uist2016.pdf",
   "title": "CodeMend: Assisting Interactive Programming with Bimodal Embedding",
   "publication_id": "codemend_assisting_interactive_programming_with_bimodal_embedding_2016",
-  "pdf_sha256": "2bb575031bcb0950bfded6230a989fb817fc57e635de35c4b1dbaff6049d6937",
+  "pdf_sha256": "4da3a24e49e258cf6278993eaafb8e6d5d825e06627a38dfecd2d0e9e95d5184",
   "markdown": "publications/rong-codemend-uist2016.md",
-  "markdown_sha256": "b8e6d0139c771dedbc8a36ce8313a3efc0d9d0538840e20c41b5bbc4208444c4",
+  "markdown_sha256": "131d2275e1f9c357ca56cefd517729b98e1eaea2dfa2f3c6ef08ea3fe6231ab0",
   "pages": 12,
   "blocks": [
     {
@@ -112,6 +112,14 @@
       "characters": 30
     },
     {
+      "node": "132:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 48
+    },
+    {
       "node": "130:0",
       "role": "H2",
       "pages": [
@@ -125,15 +133,7 @@
       "pages": [
         1
       ],
-      "characters": 109
-    },
-    {
-      "node": "joined-132:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 1205
+      "characters": 1268
     },
     {
       "node": "134:0",
@@ -144,20 +144,21 @@
       "characters": 896
     },
     {
+      "node": "136:0",
+      "role": "Note",
+      "pages": [
+        1
+      ],
+      "characters": 71
+    },
+    {
       "node": "135:0",
       "role": "P",
       "pages": [
-        1
+        1,
+        2
       ],
-      "characters": 352
-    },
-    {
-      "node": "136:0",
-      "role": "P",
-      "pages": [
-        1
-      ],
-      "characters": 69
+      "characters": 869
     },
     {
       "node": "141:0",
@@ -165,7 +166,7 @@
       "pages": [
         2
       ],
-      "characters": 440
+      "characters": 433
     },
     {
       "node": "142:0",
@@ -174,14 +175,6 @@
         2
       ],
       "characters": 382
-    },
-    {
-      "node": "143:0",
-      "role": "P",
-      "pages": [
-        2
-      ],
-      "characters": 516
     },
     {
       "node": "144:0",
@@ -402,7 +395,7 @@
       "characters": 23
     },
     {
-      "node": "joined-546:0",
+      "node": "546:0",
       "role": "P",
       "pages": [
         4
@@ -445,17 +438,18 @@
       "node": "552:0",
       "role": "P",
       "pages": [
-        4
+        4,
+        5
       ],
-      "characters": 1024
+      "characters": 1265
     },
     {
       "node": "553:0",
-      "role": "P",
+      "role": "Note",
       "pages": [
         4
       ],
-      "characters": 53
+      "characters": 55
     },
     {
       "node": "559:0",
@@ -472,14 +466,6 @@
         5
       ],
       "characters": 58
-    },
-    {
-      "node": "561:0",
-      "role": "P",
-      "pages": [
-        5
-      ],
-      "characters": 240
     },
     {
       "node": "562:0",
@@ -519,7 +505,7 @@
       "pages": [
         5
       ],
-      "characters": 680
+      "characters": 553
     },
     {
       "node": "567:0",
@@ -527,7 +513,7 @@
       "pages": [
         5
       ],
-      "characters": 473
+      "characters": 401
     },
     {
       "node": "568:0",
@@ -608,7 +594,7 @@
       "pages": [
         6
       ],
-      "characters": 617
+      "characters": 577
     },
     {
       "node": "587:0",
@@ -616,7 +602,7 @@
       "pages": [
         6
       ],
-      "characters": 499
+      "characters": 454
     },
     {
       "node": "588:0",
@@ -702,9 +688,10 @@
       "node": "616:0",
       "role": "P",
       "pages": [
-        6
+        6,
+        7
       ],
-      "characters": 249
+      "characters": 442
     },
     {
       "node": "628:0",
@@ -721,14 +708,6 @@
         7
       ],
       "characters": 87
-    },
-    {
-      "node": "648:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 192
     },
     {
       "node": "649:0",
@@ -800,7 +779,7 @@
       "pages": [
         7
       ],
-      "characters": 186
+      "characters": 551
     },
     {
       "node": "697:0",
@@ -809,6 +788,14 @@
         7
       ],
       "characters": 37
+    },
+    {
+      "node": "704:0",
+      "role": "Note",
+      "pages": [
+        7
+      ],
+      "characters": 21
     },
     {
       "node": "698:0",
@@ -825,14 +812,6 @@
         7
       ],
       "characters": 52
-    },
-    {
-      "node": "700:0",
-      "role": "P",
-      "pages": [
-        7
-      ],
-      "characters": 364
     },
     {
       "node": "701:0",
@@ -854,18 +833,10 @@
       "node": "703:0",
       "role": "P",
       "pages": [
-        7
-      ],
-      "characters": 697
-    },
-    {
-      "node": "joined-704:0",
-      "role": "P",
-      "pages": [
         7,
         8
       ],
-      "characters": 517
+      "characters": 1195
     },
     {
       "node": "713:0",
@@ -1044,6 +1015,14 @@
       "characters": 659
     },
     {
+      "node": "766:0",
+      "role": "Note",
+      "pages": [
+        9
+      ],
+      "characters": 427
+    },
+    {
       "node": "762:0",
       "role": "H3",
       "pages": [
@@ -1068,20 +1047,12 @@
       "characters": 527
     },
     {
-      "node": "joined-765:0",
+      "node": "765:0",
       "role": "P",
       "pages": [
         9
       ],
       "characters": 811
-    },
-    {
-      "node": "766:0",
-      "role": "Note",
-      "pages": [
-        9
-      ],
-      "characters": 427
     },
     {
       "node": "771:0",
@@ -1308,7 +1279,7 @@
       ],
       "sha256": "bc55db7004216aca52db7837a7631c3b6c47ef86802283b7a35fa3ff8692352f",
       "kind": "figure",
-      "alt": "Figure 1. CodeMend system screenshot: (A) code editor: highlights relevant lines and columns based on the user’s natural language query; (B) preview window: shows the image generated by the code; (C) query box: allows the user to type in natural language queries; (D) multi-function information box: provides code summary and nested-layer suggestions of possible code modifications."
+      "alt": "CodeMend interface. The left editor contains a scatter-plot program and highlights the scatter call. Its output is a colored scatter plot. On the right, the query 'change transparency' produces suggestions for the alpha parameter, with 0.5 highlighted as the current value and alternative values below. Panels A–D identify the editor, plot preview, query box and suggestions."
     },
     {
       "path": "figures/rong-codemend-uist2016/figure-002-p004.png",
@@ -1329,12 +1300,12 @@
       "node": "547:0",
       "page": 4,
       "bbox": [
-        262.4093933105469,
-        15.17549991607666,
-        612.0,
-        323.2746887207031
+        323.0,
+        64.0,
+        562.0,
+        201.0
       ],
-      "sha256": "a814c7504423f731dc55885380c6f667bbf369500cf4fb58743a6753909c7535",
+      "sha256": "6330c628a1c767e1fb1bbe52c1eeef57f6a7f381474819f6f0c15a01d4123d59",
       "kind": "figure",
       "alt": "Figure 3. CodeMend architecture has offline and online stages. Offline indexing gathers code from GitHub and code/text from webpages as training data. Modeling simplifies code representations and trains a bimodal embedding model. Online, a user interacts with a user interface that sends a query and current code context to Ranking and Filtering; the trained model supplies this ranking stage, which returns code suggestions to the interface."
     },
@@ -1343,12 +1314,12 @@
       "node": "559:0",
       "page": 5,
       "bbox": [
-        0.0,
-        22.932899475097656,
-        612.0,
-        349.20489501953125
+        55.0,
+        62.0,
+        561.0,
+        268.0
       ],
-      "sha256": "30425cd25f97cc893e3b99ef4a1e50ae4f0bd589284e95106acec7e9c327755a",
+      "sha256": "3e4b3675c8f5e173d178a57542b02f7699532ebb46860e90b4040a4d19da52cd",
       "kind": "figure",
       "alt": "Figure 4. Training pipeline. GitHub and webpages supply code and natural-language content. Code becomes indexed function and argument n-grams; the example simplifies a matplotlib pie chart, title, bounding-box and axis calls. Natural-language content trains an embedding network, supplemented by API docstrings. The combined network takes a code-context vector and a natural-language vector, joins them in a hidden layer and predicts an output code element. In the example, code context plus the words color, set, face, bounding, the, box predict plt.title.set_bbox@1@facecolor, identifier 8206."
     },
@@ -1357,12 +1328,12 @@
       "node": "588:0",
       "page": 6,
       "bbox": [
-        262.4642028808594,
-        123.81220245361328,
-        612.0,
-        380.59698486328125
+        324.0,
+        168.0,
+        564.0,
+        314.0
       ],
-      "sha256": "a6ce805ce55bc0af047fe43593667d0c36f93d97fe6f74cd894b2fe50b68b367",
+      "sha256": "7af79fb5ffa1f3d6ef0019362bd885ba1a1e8bf89c974949daff44cb9314cd10",
       "kind": "figure",
       "alt": "Figure 5. Four usage scenarios of the bimodal embedding model, arranged in a two-by-two grid. Each panel shows the same network connecting code context and natural-language input through an intermediate representation to code output; colored nodes and arrows indicate the inputs or outputs used, while unused input branches are gray. Panel (a), Code to Code: code context enters the upper input branch and predicts code at the right. Panel (b), NL to Code: natural language enters the lower input branch and predicts code at the right. Panel (c), NL plus Code to Code: both input branches are supplied to predict code. Panel (d), Code to NL: code context and target code are supplied, with the right-hand arrow pointing into the network and the lower-left arrow pointing outward to indicate natural-language output."
     },
@@ -1504,13 +1475,13 @@
   "code_layout": [],
   "normalization": {
     "frontmatter_notices_grouped": 1,
-    "line_wrap_hyphens_removed": 367,
-    "line_wrap_hyphens_retained": 23,
-    "paragraph_fragments_joined": 10,
+    "line_wrap_hyphens_removed": 298,
+    "line_wrap_hyphens_retained": 19,
+    "paragraph_fragments_joined": 6,
     "reviewed_wrap_repairs": 6,
-    "script_runs_positioned": 58
+    "script_runs_positioned": 29
   },
   "review_notes": [],
   "source_tags": "source-tags/rong-codemend-uist2016.json.gz",
-  "source_tags_sha256": "0a8b98f06d53487239ef5325428a7c818cc6fbeb48dc53cbf1b0b4927b9ae956"
+  "source_tags_sha256": "ad7686a4cee3d3e5f50d731dc2c5f83f1ebe8d84296fbfbb8cf45aca7ffce3d7"
 }

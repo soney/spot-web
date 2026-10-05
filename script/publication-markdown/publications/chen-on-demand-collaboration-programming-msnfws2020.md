@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: d56af4cde1948c994405775f1ad95a5825832bc726ec9cd428bfb8aafe7162cf -->
+<!-- Source PDF SHA-256: 5317c913b5f74c0682dcebe303efe9c262f4b6653f724035c8e6e0717b97ae13 -->
 
 <a id="page-1"></a>
 
@@ -18,7 +18,7 @@ CCS Concepts: • Computer systems organization → Embedded systems; Redundancy
 
 Additional Key Words and Phrases: on-demand support; programming collaboration; crowdsourcing
 
-© 2018 Association for Computing Machinery. Manuscript submitted to ACM
+> © 2018 Association for Computing Machinery. Manuscript submitted to ACM
 
 > Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
 
@@ -33,8 +33,6 @@ Technology companies, schools, bootcamps, and makerspaces have shifted to prolon
 We envision a new collaboration mode in which developers can easily make comprehensive request on-demand that include appropriate context, and remote helpers can provide appropriate and high-quality assistance quickly. This will enable more personalized question-answering, or task hand-off type of assistance and more efficient allocation of expertise than current techniques. In addition, this paper lists potential research gaps in the field of on-demand programming assistance that might be worth exploring to help address some of the current global work conditions.
 
 <a id="page-2"></a>
-
-Chen, et al.
 
 ### 1.1 Related Work
 
@@ -60,8 +58,6 @@ Altogether, these prior studies suggest that more work needs to be done in the s
 
 <a id="page-3"></a>
 
-On-Demand Collaboration in Programming
-
 ### 1.3 Programming Assistance in Embedded System Development
 
 The rise of the Maker movement has led to a growing number of developers who prototype and program embedded systems (e.g., Arduino). However, with makerspaces and laboratories temporarily shutting down, developers must collaborate remotely to work on their projects, which can be problematic. Specifically, there are two challenges. First, capturing the context of physical devices can be daunting. Typically, development history such as prior wire connections and hardware states is not automatically captured. This makes communication inefficient, as helpers might ask requesters to try previously attempted solutions or request historical information (e.g., prior wire connections). Second, remote helpers lack access to inspect and manipulate developers’ physical devices, which limits them to providing only suggestions or guidance rather than contributing via physical changes made to the devices. Thus, in spite of the collaboration, only end-user developers have the ability to carry out the planned tasks.
@@ -72,15 +68,9 @@ To address these challenges, existing tools such as Bifröst allow developers to
 
 This position statement envisions a new collaboration mode in which developers can easily make comprehensive request on-demand that include appropriate context, and remote helpers can provide appropriate and high-quality assistance quickly. This will enable more personalized question-answering, or task hand-off type of assistance and more efficient allocation of expertise than current techniques. It also advocates facilitating effective context capturing and workforce coordination to help scale the current remote work situation. By working towards this vision, we will better understand what questions developers need answered remotely, how they ask them, and how the existing question-answering systems can support their requests. It will enable new types of programming collaboration and teamwork by using a combination of human and machine intelligence to complete programming tasks. The resulting design implications could provide guidance for future system designers to build better support tools that allow software and embedded system developers to receive on-demand assistance. The resulting system will be, for example, the first to enable developers to hand off request-based physical computing tasks on demand without relinquishing control of the devices.
 
-More broadly, the produced tools and techniques will make developers more efficient and thus more productive overall. The resulting techniques can also help expand participation in physical computing design and development in educational and collaborative work as well as DIY settings. Since shifting to an online setting, for example, programming courses across the country have had to adjust the difficulty level of the coursework or even reduce the number of collaborative projects to allow for remote study. Our work envisions a future in which students could more easily collaborate and instructors could more easily track and facilitate their progress through resulting tools. With more efficient remote support, instructors can host virtual office hours instead of in-person hours and more easily understand comprehension gaps by viewing learners’ past attempts, thus reducing the interaction delay. Additionally, the produced
-
 <a id="page-4"></a>
 
-New Future of Work ’20, August 03–05, 2020, Woodstock, NY
-
-Chen, et al.
-
-tools could enable more collaboration, from peer feedback to team projects, than digital-only communication techniques between learners, thus helping to increase learner engagement.
+More broadly, the produced tools and techniques will make developers more efficient and thus more productive overall. The resulting techniques can also help expand participation in physical computing design and development in educational and collaborative work as well as DIY settings. Since shifting to an online setting, for example, programming courses across the country have had to adjust the difficulty level of the coursework or even reduce the number of collaborative projects to allow for remote study. Our work envisions a future in which students could more easily collaborate and instructors could more easily track and facilitate their progress through resulting tools. With more efficient remote support, instructors can host virtual office hours instead of in-person hours and more easily understand comprehension gaps by viewing learners’ past attempts, thus reducing the interaction delay. Additionally, the produced tools could enable more collaboration, from peer feedback to team projects, than digital-only communication techniques between learners, thus helping to increase learner engagement.
 
 ## ACKNOWLEDGMENTS
 

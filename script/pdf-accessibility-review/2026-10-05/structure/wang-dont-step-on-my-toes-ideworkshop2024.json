@@ -1,0 +1,218 @@
+{
+  "file": "wang-dont-step-on-my-toes-ideworkshop2024.pdf",
+  "pdf_sha256": "eea22c064db1848288bb5e67aa8a3024ea916eafde4927aa22dccda42c4aaaea",
+  "normalization_warnings": "",
+  "page_count": 6,
+  "language": "en-US",
+  "title": "\"Don't Step on My Toes\": Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks",
+  "structure_elements": 233,
+  "roles": {
+    "Document": 1,
+    "Sect": 6,
+    "Figure": 3,
+    "Link": 68,
+    "H1": 1,
+    "P": 53,
+    "H2": 11,
+    "Note": 2,
+    "L": 2,
+    "LI": 25,
+    "Lbl": 25,
+    "LBody": 25,
+    "Caption": 2,
+    "H3": 5,
+    "H4": 4
+  },
+  "structure_content_references": 5124,
+  "parent_tree_entries": 74,
+  "form_xobjects_visited": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text_operations_tagged": 843,
+      "vector_operations_artifact": 5,
+      "text_operations_artifact": 2,
+      "image_operations_tagged": 1,
+      "link_annotations": 20
+    },
+    {
+      "page": 2,
+      "text_operations_artifact": 11,
+      "vector_operations_tagged": 48,
+      "image_operations_tagged": 3,
+      "text_operations_tagged": 582,
+      "vector_operations_artifact": 1,
+      "link_annotations": 16
+    },
+    {
+      "page": 3,
+      "text_operations_artifact": 22,
+      "image_operations_tagged": 1,
+      "text_operations_tagged": 981,
+      "vector_operations_artifact": 1,
+      "link_annotations": 9
+    },
+    {
+      "page": 4,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 1079,
+      "vector_operations_artifact": 1,
+      "link_annotations": 7
+    },
+    {
+      "page": 5,
+      "text_operations_artifact": 22,
+      "text_operations_tagged": 1001,
+      "vector_operations_artifact": 1,
+      "link_annotations": 4
+    },
+    {
+      "page": 6,
+      "text_operations_artifact": 11,
+      "text_operations_tagged": 636,
+      "vector_operations_artifact": 1,
+      "link_annotations": 12
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "element": "137:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "142:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "144:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "146:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "148:0",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "element": "310:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "315:0",
+      "page": 2
+    },
+    {
+      "level": 2,
+      "element": "340:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "342:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "346:0",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "element": "360:0",
+      "page": 4
+    },
+    {
+      "level": 2,
+      "element": "367:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "369:0",
+      "page": 4
+    },
+    {
+      "level": 3,
+      "element": "374:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "375:0",
+      "page": 4
+    },
+    {
+      "level": 4,
+      "element": "388:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "391:0",
+      "page": 5
+    },
+    {
+      "level": 4,
+      "element": "396:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "398:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "222:0",
+      "page": 5
+    },
+    {
+      "level": 2,
+      "element": "228:0",
+      "page": 6
+    }
+  ],
+  "figure_descriptions": [
+    {
+      "element": "136:0",
+      "role": "Figure",
+      "page": 1,
+      "alt": "Crossmark: Check for updates.",
+      "actual_text": ""
+    },
+    {
+      "element": "189:0",
+      "role": "Figure",
+      "page": 2,
+      "alt": "Two collaborative-notebook screenshots illustrate an interference problem and Padlock’s protection. In the shared notebook, blue and green collaborator markers appear beside different text-cleaning cells; red arrows point to execution counters and yellow highlights mark unexpected outputs after changes to shared data. The protected notebook shows a padlock beside a cell and a separate preview, indicating that a collaborator’s execution is restricted or isolated.",
+      "actual_text": ""
+    },
+    {
+      "element": "335:0",
+      "role": "Figure",
+      "page": 3,
+      "alt": "Figure 2: Overview of the three conflict-free mechanisms in\nPADLOCK. (A) Cell-level access control allows collaborators\nto claim ownership of the code cells and restrict others from\nediting or viewing them: (A1) Unchecking edit access for a\nuser will change the cell background and disable editing;\n(A2) Unchecking read access for a user will blur the cell. (B)\nVariable-level access control extends the idea of access con-\ntrol from cells to shared variables: (B1) Unchecking a user’s\nvariable access; (B2) After losing access, they will not be able\nto edit the variable and will receive warning when attempt-\ning to do so. (C) Parallel cell groups define a designated area\nwhere changes of the code and runtime state stay inside its\nown scope: (C1) One parallel cell group can contain multiple\ntabs; (C2) Each tab can contain multiple cells; (C3) Sync the\nvariables from the global scope to the current active tab; (C4)\nAdd a new tab; (C5) Click the radio button to mark it as the\n“main” tab.",
+      "actual_text": ""
+    }
+  ],
+  "issue_counts": {},
+  "issues": [],
+  "checks_passed": true,
+  "manual_review_required": [
+    "Logical reading order, especially columns and sidebars",
+    "Heading and paragraph boundaries",
+    "Meaningful alternatives for figures and formulas",
+    "Correct table cell/header relationships",
+    "Appropriate artifact classification",
+    "Screen-reader behavior and link navigation"
+  ]
+}

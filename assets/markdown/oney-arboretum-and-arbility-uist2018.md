@@ -1,4 +1,4 @@
-<!-- Source PDF SHA-256: e5fab70f943d7d1e67065450df68ba1d203b6613d850b731254a2de95c99b6f1 -->
+<!-- Source PDF SHA-256: cb9eb25030c707edcaecfb2a5e066c557f884de7eba9a26a1bc55a4b0ef8575d -->
 
 <a id="page-1"></a>
 
@@ -10,9 +10,9 @@ Steve Oney<sup>1,2</sup>, Alan Lundgard<sup>2</sup>, Rebecca Krosnick<sup>2</sup
 
 
 
-Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
+> Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
 
-© 2018 ACM. ISBN 978-1-4503-5948-1/18/10... $15.00
+> © 2018 ACM. ISBN 978-1-4503-5948-1/18/10... $15.00
 
 ## ABSTRACT
 
@@ -24,9 +24,9 @@ Accessibility; Web Accessibility; Non-visual Access; Blind; Web Interfaces; Remo
 
 
 
-UIST 2018, October 14–17, 2018, Berlin, Germany
+> UIST 2018, October 14–17, 2018, Berlin, Germany
 
-DOI: http://dx.doi.org/10.1145/3242587.3242649
+> DOI: http://dx.doi.org/10.1145/3242587.3242649
 
 ![Figure 1 depicts a blind end user using Arbility to interact with a browser-based calendar for placing an online order. The blind end user communicates with a sighted crowd worker via the Arbility chat panel, while the crowd worker's interface shows a mirrored version of the blind end user's calendar. A large computer mouse cursor indicates the crowd worker's click event on a specific calendar date. This click event is sent back to the blind end user, visualized as an arrow extending from the cursor back to the Arbility interface. The blind end user accepts the proposed click event, visualized by an arrow from their current calendar view to an updated calendar page state.](https://from.so/assets/markdown/figures/oney-arboretum-and-arbility-uist2018/figure-001-p001.png)
 
@@ -38,13 +38,11 @@ The World Wide Web (web) is a crucial resource for connecting people with servic
 
 
 
-Engineering for accessibility is challenging, and improving access to web content for blind users is a long-standing prob-
-
-
-
 <a id="page-2"></a>
 
-lem in HCI. Researchers have proposed automated techniques to help guide blind users, such as enabling Natural Language (NL) control of browsing tasks \[3\] or automatically generating text labels \[32\]. However, accessibility issues are too varied to be fully solved by automated tools \[15\]. Similarly, systems that rely on user-created macros require them to be made in advance, limiting their usefulness for new or personalized tasks \[14, 45\]. The most reliable way to overcome accessibility barriers is with help from a sighted user for targeted portions of the task, but in-person help from sighted friends or coworkers is neither always available nor desirable.
+Engineering for accessibility is challenging, and improving access to web content for blind users is a long-standing problem in HCI. Researchers have proposed automated techniques to help guide blind users, such as enabling Natural Language (NL) control of browsing tasks \[3\] or automatically generating text labels \[32\]. However, accessibility issues are too varied to be fully solved by automated tools \[15\]. Similarly, systems that rely on user-created macros require them to be made in advance, limiting their usefulness for new or personalized tasks \[14, 45\]. The most reliable way to overcome accessibility barriers is with help from a sighted user for targeted portions of the task, but in-person help from sighted friends or coworkers is neither always available nor desirable.
+
+
 
 
 
@@ -70,11 +68,11 @@ Arbility and Arboretum build on research from three vibrant areas: multi-user/mu
 
 ### Multi-User/Multi-Device Web Browsing
 
-Early work by Greenberg and Roseman \[24\] explored ways of extending web browsers with groupware features to support co-browsing based on synchronized document views and telepointers. Researchers have also studied specific co-browsing interfaces for common web activities, including web search in both co-located \[4\] and remote \[49\] settings. A common approach is to implement “master-slave” functionality in which all interactions of one user who controls a session are mirrored for other users who are forced to follow along. Surfly \[63\] is a modern implementation of this in the form of a co-browsing web service combined with a discussion interface. Heinrich et al. also showed how elements of generic single-user web pages can be automatically converted to shared applications \[28\], with a focus on making editable text boxes sharable. Another common approach is to allow users to use a divide-and-conquer strategy by splitting up web pages and focusing their work on parts of the collaborative web activity. WebSplitter \[26\] was an early system that could split a web page among multiple users and devices. Research has then extensively studied sequential and parallel web browsing on multiple devices via multibrowsing support \[33\] and migratory interfaces \[8\] that allow users to easily switch and transfer (parts of) web tasks between devices. Apple’s Continuity features, such as Handoff \[6\], are modern implementations of this on Mac OS and iOS devices. More recent systems such as MultiMasher \[30\] and Webstrates \[36\] provide architectural support and visual tools for “mashing up” and re-authoring existing web applications for
-
 <a id="page-3"></a>
 
-[<sup>1</sup>https://github.com/soney/arboretum](<https://github.com/soney/arboretum>) a wide variety of multi-user/multi-device shared web browsing scenarios. Finally, Subspace \[61\], PolyChrome \[7\], XD- Browser \[50\], and others \[54, 51\] can distribute web pages between devices while keeping the view and input states synchronized between multiple browser nodes. However, previous work does not enable controlled hand-offs of third-party content, as Arboretum does.
+Early work by Greenberg and Roseman \[24\] explored ways of extending web browsers with groupware features to support co-browsing based on synchronized document views and telepointers. Researchers have also studied specific co-browsing interfaces for common web activities, including web search in both co-located \[4\] and remote \[49\] settings. A common approach is to implement “master-slave” functionality in which all interactions of one user who controls a session are mirrored for other users who are forced to follow along. Surfly \[63\] is a modern implementation of this in the form of a co-browsing web service combined with a discussion interface. Heinrich et al. also showed how elements of generic single-user web pages can be automatically converted to shared applications \[28\], with a focus on making editable text boxes sharable. Another common approach is to allow users to use a divide-and-conquer strategy by splitting up web pages and focusing their work on parts of the collaborative web activity. WebSplitter \[26\] was an early system that could split a web page among multiple users and devices. Research has then extensively studied sequential and parallel web browsing on multiple devices via multibrowsing support \[33\] and migratory interfaces \[8\] that allow users to easily switch and transfer (parts of) web tasks between devices. Apple’s Continuity features, such as Handoff \[6\], are modern implementations of this on Mac OS and iOS devices. More recent systems such as MultiMasher \[30\] and Webstrates \[36\] provide architectural support and visual tools for “mashing up” and re-authoring existing web applications for a wide variety of multi-user/multi-device shared web browsing scenarios. Finally, Subspace \[61\], PolyChrome \[7\], XD- Browser \[50\], and others \[54, 51\] can distribute web pages between devices while keeping the view and input states synchronized between multiple browser nodes. However, previous work does not enable controlled hand-offs of third-party content, as Arboretum does.
+
+> [<sup>1</sup>https://github.com/soney/arboretum](<https://github.com/soney/arboretum>)
 
 
 
@@ -123,9 +121,9 @@ Researchers have studied and categorized the types of accessibility barriers tha
 
 
 - • Barriers caused by visual information. Many websites lack ARIA labels, convey information in images, or embed information in visual style. These types of mistakes can occur even on websites that are otherwise usable and accessible \[56\]. For example, a restaurant might use red text to identify spicy items on their menu, \[15\] or a program guide for an HCI conference might use background images to indicate best paper awards. Both conventions are invisible to screen readers.
-  
+
   • Known unknowns. Blind web users who are unable to find a given piece of content on a page cannot be sure if they are unable to find it because the page is inaccessible, or because the content does not exist on the page \[15\]. This applies even to sites that are completely accessible, as there is no way for users to be certain they have complete information, short of navigating the page’s source code.
-  
+
   • Lacking keyboard navigability. Blind users typically rely on keyboard navigation to interact with a page. However, some pages might not be keyboard navigable for three primary reasons. Some sites require mouse interaction because they were programmed to listen to mouse events (press, release, move, etc.) Other sites (including the latest versions of the UIST and CHI program guides) might require interaction on elements that are not typically keyboard-selectable or clickable, such as a generic &lt;div/&gt; or heading, respectively. Alternatively, a site might lack keyboard navigability because the information is not structured in a way that is easy to digest (e.g., misleading tab ordering) or from web developers confusing structure with content.
 
 - 
@@ -308,7 +306,67 @@ In running our study, we closely followed the methodology of Bigham et al. \[15\
 
 In order to retrieve the inaccessible information, blind end users collaborated with sighted remote workers, primarily through two interaction types: natural language text-based chat and proposed page interactions (i.e., clicking, scrolling, hovering on particular page elements). Interactions had to be proposed by crowd workers via the chat panel and were optionally accepted, rejected, or ignored by end users. For example, in the Gary Turk Video task, the requested information could only be retrieved by clicking an incorrectly specified DOM element that was listening for the mousedown event— specifically, a “Show More” &lt;div/&gt; element that was styled as if it were a &lt;button/&gt; element (Figure 4). Activating this element would not usually require a click interaction via the keyboard (but merely a keypress), and so executing a click may have been unintuitive when navigating via a screen reader. However, since the element visually resembled a button, clicking would have been an intuitive interaction when navigating via visual-motor skills and the mouse. Hence, crowd workers were able to propose the mousedown event for blind end users to accept and retrieve the requested piece of the information.
 
-![Figure 5 is a two-part table with quantitative results for each of the three tasks. The first part of the table shows the accuracy by study participant group. Blind (solo) participants achieved accuracies of 0, 63, and 14 on the Counter, Video and Menu tasks respectively. Sighted (solo) participants achieved accuracies of 100, 90, and 86 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participants achieved accuracies of 100, 89, and 89 on the Counter, Video, and Menu tasks respectively. The second part of the table shows the time to successful completion of a task in seconds by study participant group. Blind (solo) participant times were n/a, 108, and 133 on the Counter, Video, and Menu tasks respectively. (Note: the time for completion on the Counter task was not applicable because no blind participant successfully completed this task.) Sighted (solo) participant times were 62, 93, and 82 on the Counter, Video, and Menu tasks respectively. Blind plus Sighted (Arbility) participant times were 418, 240, and 304 on the Counter, Video, and Menu tasks respectively.](https://from.so/assets/markdown/figures/oney-arboretum-and-arbility-uist2018/figure-008-p009.png)
+<table>
+  <thead>
+    <tr>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1" scope="col">Accuracy (%)</th>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col1-126d43b9" scope="col" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Counter</th>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col2-c6bf1265" scope="col" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Video</th>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col3-8e107f8a" scope="col" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Menu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row1-0ab7ab3d" scope="row" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Blind (Solo)</th>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row1-0ab7ab3d pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col1-126d43b9">0</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row1-0ab7ab3d pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col2-c6bf1265">63</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row1-0ab7ab3d pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col3-8e107f8a">14</td>
+    </tr>
+    <tr>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row2-5bcd19ab" scope="row" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Sighted (Solo)</th>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row2-5bcd19ab pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col1-126d43b9">100</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row2-5bcd19ab pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col2-c6bf1265">90</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row2-5bcd19ab pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col3-8e107f8a">86</td>
+    </tr>
+    <tr>
+      <th id="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row3-467385fb" scope="row" headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1">Blind+Sighted (Arbility)</th>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row3-467385fb pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col1-126d43b9">100</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row3-467385fb pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col2-c6bf1265">89</td>
+      <td headers="pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-metric-180dbeb1 pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-row3-467385fb pdf-table-1463:0-ea9c866f-arbility-figure5-accuracy-col3-8e107f8a">89</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f" scope="col">Average Time to Success (s)</th>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-col1-1f03acef" scope="col" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Counter</th>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-col2-6daa0a96" scope="col" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Video</th>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-col3-39dd6d83" scope="col" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Menu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-row1-b0eaf6d7" scope="row" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Blind (Solo)</th>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row1-b0eaf6d7 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col1-1f03acef">n/a</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row1-b0eaf6d7 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col2-6daa0a96">108</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row1-b0eaf6d7 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col3-39dd6d83">133</td>
+    </tr>
+    <tr>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-row2-58f891e1" scope="row" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Sighted (Solo)</th>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row2-58f891e1 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col1-1f03acef">62</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row2-58f891e1 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col2-6daa0a96">93</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row2-58f891e1 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col3-39dd6d83">82</td>
+    </tr>
+    <tr>
+      <th id="pdf-table-1976:0-cbeb9335-arbility-figure5-time-row3-c9d2d0b0" scope="row" headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f">Blind+Sighted (Arbility)</th>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row3-c9d2d0b0 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col1-1f03acef">418</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row3-c9d2d0b0 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col2-6daa0a96">240</td>
+      <td headers="pdf-table-1976:0-cbeb9335-arbility-figure5-time-metric-9a6bbd0f pdf-table-1976:0-cbeb9335-arbility-figure5-time-row3-c9d2d0b0 pdf-table-1976:0-cbeb9335-arbility-figure5-time-col3-39dd6d83">304</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 5. When blind users collaborate with sighted workers via Arbility, their information finding accuracy becomes comparable with that of solo sighted workers (Upper Table). However, these accuracy gains come at a cost in speed, taking on average 3–4 times as long as sighted workers acting alone (Lower Table).
 
@@ -532,9 +590,7 @@ WebinSitu: a comparative analysis of blind and sighted browsing behavior. In Pro
 
 
 
-55. Helen Petrie, Fraser Hamilton, Neil King, and Pete Pavan. 2006. Remote usability evaluations with disabled people. In Proceedings of the SIGCHI conference on
-
-Human Factors in computing systems. ACM, 1133–1141.
+55. Helen Petrie, Fraser Hamilton, Neil King, and Pete Pavan. 2006. Remote usability evaluations with disabled people. In Proceedings of the SIGCHI conference on Human Factors in computing systems. ACM, 1133–1141.
 
 56. Helen Petrie and Omar Kheir. 2007. The relationship between accessibility and usability of websites. In Proceedings of the SIGCHI conference on Human factors in computing systems. ACM, 397–406.
 
