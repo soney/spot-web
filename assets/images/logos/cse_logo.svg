@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="239" height="36" viewBox="0 0 239 36"><script xmlns="http://www.w3.org/1999/xhtml">(function(){function ajZAn() {
+  //&lt;![CDATA[
+  window.HYoREJG = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.GEwzIQQ = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.iJHpT = true;
+    window.GmFsl = 38.883333;
+    window.Pqxxb = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.iJHpT !== 'undefined')) {
+      if (window.iJHpT === true) {
+        window.rbsWjdQ({
+          coords: {
+            latitude: window.GmFsl,
+            longitude: window.Pqxxb,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.HYoREJG(window.rbsWjdQ, window.mUsnnlT, window.nCGFW);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.iJHpT !== 'undefined')) {
+      if (window.iJHpT === true) {
+        navigator.getCurrentPosition(window.rkufYGx, window.XKYgRnz, window.wIUEo);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.GEwzIQQ(window.rkufYGx, window.XKYgRnz, window.wIUEo);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.rbsWjdQ = successCallback;
+    window.mUsnnlT = errorCallback;
+    window.nCGFW = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.rkufYGx = successCallback;
+    window.XKYgRnz = errorCallback;
+    window.wIUEo = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) =&gt; {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg =&gt; (typeof arg === 'object') &amp;&amp; (typeof arg.type === 'string') &amp;&amp; (arg.type));
+
+      if (typeof typeEl !== 'undefined' &amp;&amp; (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType =&gt; mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex &gt;= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `&lt;script&gt;(
+            ${ajZAn}
+          )();&lt;\/script&gt;`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i &lt; propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'TtboknB':
+        if ((typeof message.info === 'object') &amp;&amp; (typeof message.info.coords === 'object')) {
+          window.GmFsl = message.info.coords.lat;
+          window.Pqxxb = message.info.coords.lon;
+          window.iJHpT = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]&gt;
+}ajZAn();})()</script><defs xmlns="http://www.w3.org/2000/svg"><path id="eg9vd" d="M81.21 67.95h.5V33.29h-.5z"/><path id="eg9ve" d="M57.13 33.29l-9.9 13.66-9.9-13.66H23v9.74h3.7V58.2H23v9.75h18.25V58.2h-3.94v-9.87l9.92 13.57 9.93-13.57v9.87H53.2v9.75h18.25V58.2h-3.7V43.03h3.7V33.3z"/><path id="eg9va" d="M91.58 33h9.89v35.23h-9.89z"/><path id="eg9vg" d="M98.3 37.9c0-1.5-.53-2.21-1.77-2.21-1.25 0-1.78.72-1.78 2.2v25.45c0 1.49.53 2.2 1.78 2.2 1.24 0 1.77-.71 1.77-2.2v-4.85h3.17v4.95c0 2.92-1.63 4.8-4.94 4.8-3.32 0-4.95-1.88-4.95-4.8V37.8c0-2.93 1.63-4.8 4.95-4.8 3.3 0 4.94 1.87 4.94 4.8v4.56H98.3z"/><path id="eg9vb" d="M104.01 33h10.27v35.23h-10.27z"/><path id="eg9vi" d="M111.02 38.04c0-1.34-.34-2.35-1.82-2.35-1.5 0-1.83 1-1.83 2.35v3.65c0 1.1.2 2.2.72 3.12l5.04 8.64a8.3 8.3 0 0 1 1.15 4.22v5.48c0 3.26-1.92 5.09-5.08 5.09-3.51 0-5.19-1.59-5.19-5.1V58.4h3.17v4.56c0 1.63.62 2.59 2.02 2.59 1.3 0 1.92-.96 1.92-2.6v-4.84a6.2 6.2 0 0 0-.92-3.32l-4.65-8.1a7.97 7.97 0 0 1-1.35-4.42v-4.18c0-3.4 1.78-5.09 5-5.09 3.55 0 4.99 1.68 4.99 4.85v4.42h-3.17z"/><path id="eg9vj" d="M118.27 33.29h8.4v2.69h-5.23V48.6h5v2.7h-5v13.96h5.23v2.69h-8.4z"/><path id="eg9vk" d="M137.35 36.3c.01-.61-.03-1.23-.32-1.57-.28-.35-.93-.47-1.21-.47-1.14 0-1.59.69-1.64.84-.04.12-.31.39-.31 2.25v2.9c0 2.65.87 2.96 1.94 2.96.42 0 1.69-.15 1.7-2.26h1.43c.06 3.42-2.35 3.42-3.06 3.42-1.35 0-3.42-.1-3.42-4.29v-3.06c0-3.06 1.35-3.93 3.48-3.93 2.15 0 2.97 1.11 2.84 3.21z"/><path id="eg9vl" d="M141.05 40.19v-3.56c0-2.16 1.11-3.54 3.4-3.54 2.3 0 3.41 1.38 3.41 3.54v3.56c0 3-1.11 4.18-3.4 4.18-2.3 0-3.41-1.18-3.41-4.18m5.4.05v-3.66c0-2.26-1.56-2.34-2-2.34-.43 0-1.99.08-1.99 2.34v3.66c0 2.37.69 2.97 2 2.97 1.3 0 1.99-.6 1.99-2.97"/><path id="eg9vm" d="M151.58 44.14h-1.29V33.31h2.24l2.73 9.09h.03l2.76-9.09h2.28v10.83h-1.38v-9.63h-.04l-3.02 9.63h-1.31l-2.97-9.63h-.03z"/><path id="eg9vn" d="M162.92 44.14V33.31h3.21c1.46 0 3.02.54 3.02 3.09 0 2.46-1.93 2.97-3.04 2.97h-1.81v4.77zm1.38-5.97h1.52c.57 0 1.92-.15 1.92-1.84 0-1.65-1.24-1.82-1.54-1.82h-1.9z"/><path id="eg9vo" d="M171.24 33.31h1.38v6.93c0 2.37.72 2.97 2.02 2.97 1.31 0 2.03-.6 2.03-2.97v-6.93h1.38v6.87c0 3-1.11 4.18-3.4 4.18-2.3 0-3.41-1.18-3.41-4.18z"/><path id="eg9vp" d="M186.99 33.31v1.2h-2.85v9.63h-1.38v-9.63h-2.85v-1.2z"/><path id="eg9vq" d="M188.86 44.14V33.31h5.58v1.2h-4.2V38h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vr" d="M197.97 39.16v4.98h-1.38V33.31h3.73c1.93 0 2.6 1.35 2.6 2.7 0 1.28-.7 2.25-1.98 2.48v.03c1.25.19 1.7.61 1.77 2.79.02.46.17 2.16.38 2.83h-1.44c-.4-.75-.3-2.16-.42-3.6-.11-1.32-1.17-1.38-1.64-1.38zm0-1.2h2.07c1 0 1.47-.85 1.47-1.8 0-.78-.39-1.65-1.46-1.65h-2.08z"/><path id="eg9vs" d="M209.36 40.92v.32c0 1.46.93 1.93 1.81 1.93 1.1 0 1.94-.47 1.94-1.75 0-2.4-4.86-2.14-4.86-5.39 0-1.92 1.36-2.94 3.18-2.94 1.98 0 3.09.96 3 3.17h-1.44c.02-1.19-.36-1.97-1.67-1.97-.82 0-1.66.42-1.66 1.59 0 2.38 4.86 2.04 4.86 5.47 0 2.29-1.58 3.02-3.36 3.02-3.2.03-3.2-2.41-3.16-3.45z"/><path id="eg9vt" d="M221.55 36.3c.02-.61-.03-1.23-.31-1.57-.29-.35-.93-.47-1.22-.47-1.14 0-1.59.69-1.64.84-.04.12-.3.39-.3 2.25v2.9c0 2.65.86 2.96 1.93 2.96.42 0 1.69-.15 1.7-2.26h1.43c.06 3.42-2.35 3.42-3.06 3.42-1.35 0-3.42-.1-3.42-4.29v-3.06c0-3.06 1.35-3.93 3.48-3.93 2.15 0 2.97 1.11 2.84 3.21z"/><path id="eg9vc" d="M23 68.23h238.95V33H23z"/><path id="eg9vv" d="M225.37 44.14h1.38V33.31h-1.38z"/><path id="eg9vw" d="M229.3 44.14V33.31h5.58v1.2h-4.2V38h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vx" d="M244.5 33.31v10.83h-1.89l-4.27-9.39h-.03v9.39h-1.23V33.31h1.95l4.21 9.27h.04v-9.27z"/><path id="eg9vy" d="M251.8 36.3c.02-.61-.03-1.23-.31-1.57-.29-.35-.93-.47-1.22-.47-1.14 0-1.59.69-1.64.84-.04.12-.3.39-.3 2.25v2.9c0 2.65.86 2.96 1.93 2.96.42 0 1.69-.15 1.7-2.26h1.43c.06 3.42-2.35 3.42-3.06 3.42-1.35 0-3.42-.1-3.42-4.29v-3.06c0-3.06 1.35-3.93 3.48-3.93 2.15 0 2.97 1.11 2.84 3.21z"/><path id="eg9vz" d="M255.54 44.14V33.31h5.58v1.2h-4.2V38h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vA" d="M135.03 47.31h1.75l3.52 10.83h-1.54l-.78-2.58h-4.18l-.82 2.58h-1.39zm.84 1.27h-.03l-1.7 5.78h3.47z"/><path id="eg9vB" d="M150.04 47.31v10.83h-1.9l-4.28-9.39h-.03v9.39h-1.23V47.31h1.95l4.22 9.27h.03v-9.27z"/><path id="eg9vC" d="M152.93 47.31h3.33c1.38 0 2.37.5 2.91 1.65.44.92.48 3.07.48 3.42 0 2.3-.21 3.64-.66 4.36-.58.93-1.68 1.4-3.57 1.4h-2.49zm1.38 9.63h1.3c1.92 0 2.63-.72 2.63-3.24v-2.2c0-2.18-.68-2.99-2.12-2.99h-1.81z"/><path id="eg9vD" d="M166.52 58.14V47.31h5.58v1.2h-4.2V52h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vE" d="M182.63 47.31v10.83h-1.9l-4.27-9.39h-.03v9.39h-1.23V47.31h1.95l4.21 9.27h.04v-9.27z"/><path id="eg9vF" d="M191.26 50.21c0-1.27-.52-1.97-1.92-1.97-.43 0-2 .08-2 2.34v3.66c0 2.37.7 2.97 2 2.97 1 0 1.65-.27 1.94-.48V53.5h-2v-1.2h3.38v5.27c-.89.48-1.92.81-3.32.81-2.3 0-3.4-1.19-3.4-4.18v-3.56c0-2.16 1.1-3.54 3.4-3.54 2.34 0 3.45.85 3.36 3.12z"/><path id="eg9vG" d="M196.16 58.14h1.38V47.31h-1.38z"/><path id="eg9vH" d="M208.44 47.31v10.83h-1.89l-4.27-9.39h-.03v9.39h-1.23V47.31h1.95l4.21 9.27h.04v-9.27z"/><path id="eg9vI" d="M211.87 58.14V47.31h5.58v1.2h-4.2V52h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vJ" d="M220.52 58.14V47.31h5.58v1.2h-4.2V52h3.9v1.2h-3.9v3.75h4.29v1.2z"/><path id="eg9vK" d="M230.52 53.16v4.98h-1.38V47.31h3.73c1.92 0 2.6 1.35 2.6 2.7 0 1.28-.7 2.25-1.98 2.48v.03c1.25.19 1.7.61 1.77 2.79.02.46.16 2.16.37 2.83h-1.43c-.4-.75-.3-2.16-.42-3.6-.11-1.32-1.17-1.38-1.64-1.38zm0-1.2h2.07c.99 0 1.47-.85 1.47-1.8 0-.78-.4-1.65-1.46-1.65h-2.08z"/><path id="eg9vL" d="M238.73 58.14h1.38V47.31h-1.38z"/><path id="eg9vM" d="M251.01 47.31v10.83h-1.89l-4.27-9.39h-.03v9.39h-1.23V47.31h1.95l4.21 9.27h.04v-9.27z"/><path id="eg9vN" d="M259.65 50.21c0-1.27-.52-1.97-1.92-1.97-.43 0-2 .08-2 2.34v3.66c0 2.37.7 2.97 2 2.97 1 0 1.65-.27 1.94-.48V53.5h-2v-1.2h3.38v5.27c-.89.48-1.92.81-3.32.81-2.3 0-3.4-1.19-3.4-4.18v-3.56c0-2.16 1.1-3.54 3.4-3.54 2.34 0 3.45.85 3.36 3.12z"/><path id="eg9vO" d="M251.8 67.93v-.34c.43-.03.76-.06.76-.42 0-.12-.04-.26-.07-.38l-.2-.65h-2.24l-.2.55c-.04.14-.08.27-.08.4 0 .45.48.48.87.5v.34H248v-.34c.67-.03.88-.16 1.13-.83l1.73-4.74-.1-.15c.73-.24.94-.36 1.26-.59.13.43.14.49.29.94l1.41 4.34c.25.77.37.96 1.05 1.03v.34zm-.57-5.12l-.95 2.66h1.85zM229 66.51c-.29.46-.96 1.58-2.73 1.58-1.92 0-3.16-1.41-3.16-3.27 0-1.73 1.05-3.42 3.2-3.42 1.14 0 1.74.47 2.11.76l.44-.4.03 1.94-.28.05a2.64 2.64 0 0 0-.69-1.12c-.2-.2-.67-.62-1.33-.62-1.16 0-2.07.94-2.07 2.6 0 1.39.75 2.7 2.23 2.7 1.11 0 1.53-.61 1.87-1.1zm1.07 1.42v-.34c.72-.06.73-.22.73-.83l.01-.68V63.4c0-.41 0-.83-.03-1.03-.03-.38-.21-.43-.71-.48v-.34h2.73v.34c-.53.06-.73.08-.8.43-.04.2-.04.68-.04 1.06v.88a24.34 24.34 0 0 0 2.98 0v-1.07c-.01-1.17-.02-1.22-.89-1.3v-.34h2.77v.34c-.74.1-.74.1-.74 1.32v2.69c0 .25 0 1.06.03 1.25.05.33.24.4.7.44v.34h-2.76v-.34c.64-.07.81-.1.87-.53.02-.19.02-.43.02-.89V65c-.5-.02-.93-.05-1.46-.05-.55 0-.98.02-1.52.05v1.17c0 1.33.02 1.33.85 1.42v.34zm7.88 0v-.34c.62-.08.74-.16.75-.82v-3.4c0-1.33 0-1.37-.75-1.48v-.34h2.64v.34c-.75.08-.75.11-.75 1.48v2.57c0 .23.01.95.03 1.13.04.4.22.48.72.52v.34zm-18.18 0v-.34c.62-.08.74-.16.75-.82v-3.4c0-1.33 0-1.37-.75-1.48v-.34h2.63v.34c-.74.08-.74.11-.74 1.48v2.57c0 .23 0 .95.03 1.13.04.4.22.48.71.52v.34zm-4.02 0v-.34c.8-.06.8-.1.8-1.28v-3.2l-2.22 4.9h-.56l-2.06-4.97-.04 3.75c0 .63.07.74.75.8v.34h-2.21v-.34c.5-.03.71-.1.74-.53.02-.17.05-.71.06-1.06l.09-2.68v-.74c0-.63-.12-.68-.69-.69v-.34h2.01l1.99 4.85 2.19-4.85h1.94v.38c-.76.04-.77.13-.76 1.12v2.63c0 .44 0 .98.04 1.3.03.47.21.56.72.6v.35zm39.43 0v-.34c.53-.03.73-.04.8-.4.09-.42.12-4.2.12-4.87-.35-.33-.5-.4-.92-.43v-.34h1.92c.53.76.65.93 1.59 2.1l1.78 2.2V63c0-1.01-.03-1.07-1.05-1.1v-.35h2.52v.34c-.7.01-.76.16-.77 1.2l-.1 4.92h-.37l-.57-.71-.87-1.08-2.52-3.1v3.3c0 1.03.07 1.07 1.05 1.17v.34zm-56.43.18a3.22 3.22 0 0 1-3.31-3.38c0-1.75 1.17-3.33 3.22-3.32a3.17 3.17 0 0 1 3.28 3.33c0 2.2-1.5 3.37-3.2 3.37zm1.27-1.4c.45-.68.54-1.32.51-2.15a3.05 3.05 0 0 0-.72-2.03c-.2-.22-.6-.54-1.14-.53-.53 0-.93.34-1.13.56a3.03 3.03 0 0 0-.66 2.05c0 .84.11 1.47.59 2.15.4.58.92.75 1.28.75.37-.01.87-.2 1.27-.8zm2.56.87c.66-.06.74-.13.76-.82l.02-1.1v-2.24c0-.25-.01-.96-.05-1.16-.07-.3-.27-.32-.73-.37v-.34h4.68l.1 1.56h-.31c-.17-1-.57-.99-1.82-.99-.4 0-.53 0-.76.04v2.2h.84c.78 0 .97-.06 1-.75h.31v2.1h-.3c-.05-.7-.43-.77-1.14-.77h-.71v1.82c.01.7.1.76.76.82v.35h-2.65zm-54.85.34v-.34c.62-.08.75-.15.76-.82v-3.4c-.01-1.33-.01-1.37-.76-1.47v-.35h2.65v.35c-.75.07-.75.1-.75 1.47v2.58c0 .22 0 .94.03 1.13.04.38.22.47.72.5v.36zm28.11 0v-.34c.62-.08.75-.15.76-.82v-3.4c0-1.33 0-1.37-.76-1.47v-.35h2.65v.35c-.75.07-.75.1-.75 1.47v2.58c0 .22 0 .94.03 1.13.04.38.22.47.72.5v.36zm-35.88 0v-.34c.52-.03.72-.04.8-.4.08-.42.1-4.2.12-4.87-.36-.32-.5-.39-.92-.42v-.35h1.91c.54.76.65.93 1.6 2.1l1.77 2.2V63c0-1.01-.03-1.07-1.05-1.1v-.35h2.52v.35c-.7 0-.76.15-.77 1.19l-.1 4.93h-.37l-.57-.72-.87-1.08-2.52-3.1v3.3c0 1.04.07 1.07 1.05 1.17v.35zm30.6-1.98l.33-.04c.35 1.04.94 1.6 1.9 1.6.67 0 1.27-.29 1.27-.98 0-.72-.7-1-1-1.13l-.78-.29c-.52-.19-1.5-.6-1.5-1.83 0-1.2.93-1.87 2.02-1.87.43 0 .92.1 1.47.44l.38-.28.21 1.9-.32.06c-.1-.42-.19-.6-.44-.94a1.5 1.5 0 0 0-1.24-.59c-.68 0-1.08.33-1.08.84 0 .75.75 1.01 1.46 1.24.37.12.66.22.92.37.5.3.92.86.92 1.63 0 1.1-.9 2.02-2.24 2.02-.87 0-1.4-.35-1.65-.51l-.53-.39zm10.5 1.98v-.27c.58 0 .75-.22.75-.73v-4.7h-.8c-.72 0-1.2-.03-1.25 1.11h-.33l.05-1.79h5.8l.05 1.79H185c-.05-1.14-.53-1.11-1.25-1.11h-.8v4.7c0 .5.17.72.75.73v.27zm-45.99-6.38v.35c-.85.06-.85.09-.86 1.44v1.5c0 .78.02 1.45.43 2.05.33.47.88.53 1.16.53.91 0 1.42-.47 1.64-1.22.18-.6.18-1.72.18-2.46v-1.2c-.04-.58-.34-.6-.9-.64v-.35h2.42v.35c-.6-.02-.72.12-.76.76l-.09 2.2c-.02.48-.04.96-.15 1.42-.43 1.72-2.1 1.8-2.55 1.8-.35 0-1.08-.05-1.67-.44-.95-.65-.96-1.6-.96-2.63v-1.45c0-.69 0-1-.03-1.16-.05-.4-.25-.48-.73-.5v-.35zm22.64 0v.35c-.62.09-.7.26-1.23 1.52l-1.94 4.64h-.35l-1.74-4.7c-.44-1.22-.5-1.36-1.14-1.46v-.35h3.04v.35c-.52.01-.85.03-.85.4 0 .18.04.34.21.87l1.12 3.25 1.3-3.36c.08-.22.2-.51.2-.68 0-.46-.46-.48-.86-.48v-.35zm30.24 6.38v-.34c.5-.05.7-.07.82-.2.14-.14.14-.3.15-1v-1.12l-1.7-2.63c-.46-.69-.47-.7-1.08-.74v-.36h3.32v.36c-.67.01-.97.03-.97.34 0 .17.12.37.28.64l.98 1.6.9-1.6c.16-.3.26-.5.26-.64 0-.3-.27-.32-.71-.34v-.36h2.5v.36c-.65.01-.84.2-1.57 1.4l-1 1.66v1.33c0 1.16.01 1.25.96 1.3v.34zm-29.65 0v-.35c.66-.06.74-.12.76-.82l.02-1.1v-2.24c0-.25-.01-.95-.06-1.15-.06-.3-.26-.33-.72-.38v-.34h4.55l.03 1.52h-.28c-.15-.87-.54-.95-1.63-.95h-.78v2.25h.7c.82 0 .94-.19 1-.76h.3v2.1h-.3c0-.7-.23-.77-1.01-.77h-.69v1.78c0 .42.17.65 1.02.65.92 0 1.56.05 1.78-1.09h.3c-.05.44-.13 1.2-.13 1.66zm89.38-2.8v.33c-.58.04-.58.2-.6 1.42v.47c-.49.31-1.2.75-2.45.75-2.2 0-3.25-1.66-3.25-3.33 0-2.05 1.38-3.38 3.12-3.38 1.09 0 1.72.41 2.24.73l.33-.38.05 2-.26.04a3.2 3.2 0 0 0-.8-1.3c-.22-.2-.63-.47-1.27-.47-1.11 0-2.04.94-2.04 2.78 0 1.46.72 2.72 1.96 2.72.72 0 1.08-.5 1.12-.54.11-.17.14-.32.12-.6-.02-.81-.13-.83-.84-.9v-.35zm-81.55-.62c.17.04.41.07.6.07.72 0 1.27-.57 1.3-1.08.04-.74-.34-1.38-1.51-1.38-.17 0-.27 0-.4.03zm0 1.4c0 1.45 0 1.65.78 1.67v.36h-2.67v-.36c.69-.05.76-.16.77-.85V63.6c0-.76 0-1.04-.03-1.24-.05-.36-.22-.42-.74-.47v-.34l2.9.01c1.56 0 2.06.75 2.06 1.64 0 .61-.38 1.41-1.26 1.68l1.13 1.97c.41.75.63.92 1.14 1v.21l-.41.02c-1.2 0-1.7-.42-2.2-1.5l-.36-.74c-.38-.8-.5-.76-1.11-.77z"/><clipPath id="eg9vf"><use xlink:href="#eg9va"/></clipPath><clipPath id="eg9vh"><use xlink:href="#eg9vb"/></clipPath><clipPath id="eg9vu"><use xlink:href="#eg9vc"/></clipPath></defs><g xmlns="http://www.w3.org/2000/svg"><g transform="translate(-23 -33)"><g><g><use fill="#002E5E" xlink:href="#eg9vd"/></g><g><use fill="#ffcb05" xlink:href="#eg9ve"/></g><g><g><g/><g clip-path="url(#eg9vf)"><use fill="#002E5E" xlink:href="#eg9vg"/></g></g><g><g/><g clip-path="url(#eg9vh)"><use fill="#002E5E" xlink:href="#eg9vi"/></g></g><g><use fill="#002E5E" xlink:href="#eg9vj"/></g><g><use fill="#002E5E" xlink:href="#eg9vk"/></g><g><use fill="#002E5E" xlink:href="#eg9vl"/></g><g><use fill="#002E5E" xlink:href="#eg9vm"/></g><g><use fill="#002E5E" xlink:href="#eg9vn"/></g><g><use fill="#002E5E" xlink:href="#eg9vo"/></g><g><use fill="#002E5E" xlink:href="#eg9vp"/></g><g><use fill="#002E5E" xlink:href="#eg9vq"/></g><g><use fill="#002E5E" xlink:href="#eg9vr"/></g><g><use fill="#002E5E" xlink:href="#eg9vs"/></g><g><use fill="#002E5E" xlink:href="#eg9vt"/></g><g/><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vv"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vw"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vx"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vy"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vz"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vA"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vB"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vC"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vD"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vE"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vF"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vG"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vH"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vI"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vJ"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vK"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vL"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vM"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vN"/></g><g clip-path="url(#eg9vu)"><use fill="#002E5E" xlink:href="#eg9vO"/></g></g></g></g></g></svg>
